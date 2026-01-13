@@ -32,6 +32,11 @@ migrate_working_dir/
 .pub/
 /build/
 
+# Database files (開発時にエミュレータ/デバイス上に作成されるもの)
+*.db
+*.db-shm
+*.db-wal
+
 # Symbolication related
 app.*.symbols
 

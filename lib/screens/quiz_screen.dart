@@ -10,6 +10,7 @@ class QuizScreen extends ConsumerStatefulWidget {
   final String difficulty;
   final String country;
   final String region;
+  final String range;
 
   const QuizScreen({
     super.key,
@@ -17,6 +18,7 @@ class QuizScreen extends ConsumerStatefulWidget {
     required this.difficulty,
     this.country = '',
     this.region = '',
+    this.range = '',
   });
 
   @override
@@ -30,6 +32,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   bool _showResult = false;
   int _score = 0;
   bool _isLoading = true;
+  List<String> _usedQuestionIds = [];
 
   @override
   void initState() {
@@ -39,12 +42,33 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
   Future<void> _loadQuestions() async {
     try {
+      setState(() {
+        _isLoading = true;
+      });
+
       final databaseService = ref.read(databaseServiceProvider);
-      final questions = await databaseService.getQuestions(
+      
+      // タグの構築（国と地域から）
+      String? tags;
+      if (widget.region.isNotEmpty) {
+        tags = widget.region;
+      } else if (widget.country.isNotEmpty) {
+        tags = widget.country;
+      }
+      
+      final questions = await databaseService.getQuestionsOptimized(
         category: widget.category,
         difficulty: widget.difficulty,
+        tags: tags,
+        country: widget.country.isNotEmpty ? widget.country : null,
+        range: widget.range.isNotEmpty ? widget.range : null,
         limit: AppConstants.defaultQuestionsPerQuiz,
       );
+
+      // 使用した問題IDを記録
+      _usedQuestionIds = questions.map((q) => q.id).toList();
+
+      if (!mounted) return;
 
       setState(() {
         _questions = questions;
@@ -54,27 +78,71 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       // データがない場合の処理
       if (_questions.isEmpty) {
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('クイズデータが見つかりませんでした。'),
-            ),
+          _showErrorDialog(
+            context,
+            title: 'データが見つかりません',
+            message: '選択した条件に一致するクイズデータが見つかりませんでした。\n\n別の条件でお試しください。',
+            showRetry: false,
           );
-          context.pop();
         }
       }
     } catch (e) {
+      if (!mounted) return;
+      
       setState(() {
         _isLoading = false;
       });
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('エラーが発生しました: $e'),
-          ),
-        );
-        context.pop();
-      }
+
+      _showErrorDialog(
+        context,
+        title: 'エラーが発生しました',
+        message: 'クイズデータの読み込み中にエラーが発生しました。\n\nエラー内容: ${e.toString()}\n\nもう一度お試しください。',
+        showRetry: true,
+        onRetry: () => _loadQuestions(),
+      );
     }
+  }
+
+  void _showErrorDialog(
+    BuildContext context, {
+    required String title,
+    required String message,
+    bool showRetry = false,
+    VoidCallback? onRetry,
+  }) {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => AlertDialog(
+        title: Row(
+          children: [
+            Icon(Icons.error_outline, color: Colors.red.shade700),
+            const SizedBox(width: 8),
+            Expanded(child: Text(title)),
+          ],
+        ),
+        content: SingleChildScrollView(
+          child: Text(message),
+        ),
+        actions: [
+          if (showRetry && onRetry != null)
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                onRetry();
+              },
+              child: const Text('再試行'),
+            ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              context.pop();
+            },
+            child: const Text('戻る'),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
@@ -273,17 +341,21 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     if (isLastQuestion) {
       // 結果画面へ遷移
       final earnedPoints = _score * AppConstants.pointsPerCorrectAnswer;
-      if (_score == _questions.length) {
-        // 全問正解ボーナス
-        final totalPoints = earnedPoints + AppConstants.pointsPerfectScoreBonus;
-        context.push(
-          '/result?score=$_score&total=${_questions.length}&points=$totalPoints',
-        );
-      } else {
-        context.push(
-          '/result?score=$_score&total=${_questions.length}&points=$earnedPoints',
-        );
-      }
+      final totalPoints = _score == _questions.length
+          ? earnedPoints + AppConstants.pointsPerfectScoreBonus
+          : earnedPoints;
+      
+      final uri = Uri(
+        path: '/result',
+        queryParameters: {
+          'score': '$_score',
+          'total': '${_questions.length}',
+          'points': '$totalPoints',
+          'category': widget.category,
+          'difficulty': widget.difficulty,
+        },
+      );
+      context.push(uri.toString());
     } else {
       setState(() {
         _currentQuestionIndex++;

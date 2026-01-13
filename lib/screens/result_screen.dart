@@ -2,18 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../providers/user_data_provider.dart';
+import '../providers/quiz_history_provider.dart';
 import '../models/user_rank.dart';
+import '../models/quiz_history.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
   final int total;
   final int earnedPoints;
+  final String category;
+  final String difficulty;
 
   const ResultScreen({
     super.key,
     required this.score,
     required this.total,
     required this.earnedPoints,
+    required this.category,
+    required this.difficulty,
   });
 
   @override
@@ -30,6 +36,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
     super.initState();
     _checkRankUp();
     _addPoints();
+    _saveHistory();
   }
 
   void _checkRankUp() {
@@ -44,6 +51,37 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
     setState(() {
       _currentRank = ref.read(userRankProvider);
     });
+  }
+
+  Future<void> _saveHistory() async {
+    try {
+      final historyService = ref.read(quizHistoryServiceProvider);
+      final history = QuizHistory(
+        category: widget.category,
+        difficulty: widget.difficulty,
+        score: widget.score,
+        total: widget.total,
+        earnedPoints: widget.earnedPoints,
+        completedAt: DateTime.now(),
+      );
+      await historyService.saveHistory(history);
+      
+      // 履歴リストを更新
+      ref.invalidate(quizHistoryListProvider);
+      ref.invalidate(quizStatisticsProvider);
+    } catch (e) {
+      // エラーは無視（履歴保存の失敗は致命的ではない）
+      debugPrint('履歴の保存に失敗しました: $e');
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: const Text('履歴の保存に失敗しましたが、クイズ結果は正常に記録されました。'),
+            backgroundColor: Colors.orange.shade700,
+            duration: const Duration(seconds: 3),
+          ),
+        );
+      }
+    }
   }
 
   @override

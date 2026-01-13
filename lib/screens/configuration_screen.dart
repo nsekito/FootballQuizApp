@@ -18,6 +18,7 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
   String? _selectedDifficulty;
   String? _selectedRegion;
   String? _selectedCountry;
+  String? _selectedRange;
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +61,7 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
 
               // STARTボタン
               ElevatedButton(
-                onPressed: _canStart() ? _startQuiz : null,
+                onPressed: _canStart() ? _validateAndStart : null,
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   backgroundColor: Colors.green.shade700,
@@ -227,8 +228,19 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
   Widget _buildRangeSelector() {
     // 国が「日本」の場合、範囲は「J1」などが自動で候補になる
     final ranges = _selectedCountry == 'japan'
-        ? ['J1全チーム', 'J2全チーム']
-        : ['海外Top3', '指定なし'];
+        ? [
+            {'label': 'J1全チーム', 'value': 'j1_all_teams'},
+            {'label': 'J2全チーム', 'value': 'j2_all_teams'},
+            {'label': '指定なし', 'value': ''},
+          ]
+        : _selectedCountry != null && _selectedCountry!.isNotEmpty
+            ? [
+                {'label': '海外Top3', 'value': 'overseas_top3'},
+                {'label': '指定なし', 'value': ''},
+              ]
+            : [
+                {'label': '指定なし', 'value': ''},
+              ];
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -244,14 +256,11 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
           spacing: 8,
           runSpacing: 8,
           children: ranges.map((range) {
-            final value = range.toLowerCase().replaceAll(' ', '_');
             return _buildChip(
-              range,
-              value,
-              null, // 範囲選択はまだ実装していない
-              (value) {
-                // 将来の実装用
-              },
+              range['label']!,
+              range['value']!,
+              _selectedRange,
+              (value) => setState(() => _selectedRange = value),
             );
           }).toList(),
         ),
@@ -305,14 +314,34 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
     return false;
   }
 
+  Future<void> _validateAndStart() async {
+    if (!_canStart()) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: const Text('必要な設定を選択してください。'),
+          backgroundColor: Colors.orange.shade700,
+          action: SnackBarAction(
+            label: 'OK',
+            textColor: Colors.white,
+            onPressed: () {},
+          ),
+        ),
+      );
+      return;
+    }
+
+    _startQuiz();
+  }
+
   void _startQuiz() {
     final uri = Uri(
       path: '/quiz',
       queryParameters: {
         'category': widget.category,
         'difficulty': _selectedDifficulty ?? '',
-        if (_selectedRegion != null) 'region': _selectedRegion!,
-        if (_selectedCountry != null) 'country': _selectedCountry!,
+        if (_selectedRegion != null && _selectedRegion!.isNotEmpty) 'region': _selectedRegion!,
+        if (_selectedCountry != null && _selectedCountry!.isNotEmpty) 'country': _selectedCountry!,
+        if (_selectedRange != null && _selectedRange!.isNotEmpty) 'range': _selectedRange!,
       },
     );
     context.push(uri.toString());

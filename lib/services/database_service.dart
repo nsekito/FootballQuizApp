@@ -1,12 +1,19 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../models/question.dart';
+import '../utils/constants.dart';
 
 /// SQLiteデータベースサービス
 class DatabaseService {
   static Database? _database;
   static const String _databaseName = 'soccer_quiz.db';
-  static const int _databaseVersion = 1;
+  static const int _databaseVersion = 2;
+  
+  // キャッシュ用のマップ（問題ID -> Question）
+  final Map<String, Question> _questionCache = {};
+  
+  // キャッシュの最大サイズ
+  static const int _maxCacheSize = 100;
 
   /// データベースインスタンスを取得
   static Future<Database> get database async {
@@ -53,6 +60,36 @@ class DatabaseService {
       )
     ''');
 
+    // クイズ履歴テーブル
+    await db.execute('''
+      CREATE TABLE quiz_history (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        category TEXT NOT NULL,
+        difficulty TEXT NOT NULL,
+        score INTEGER NOT NULL,
+        total INTEGER NOT NULL,
+        earned_points INTEGER NOT NULL,
+        completed_at TEXT NOT NULL
+      )
+    ''');
+
+    // インデックスの追加（パフォーマンス向上のため）
+    await db.execute('''
+      CREATE INDEX idx_quiz_history_category ON quiz_history(category)
+    ''');
+    await db.execute('''
+      CREATE INDEX idx_quiz_history_difficulty ON quiz_history(difficulty)
+    ''');
+    await db.execute('''
+      CREATE INDEX idx_quiz_history_completed_at ON quiz_history(completed_at)
+    ''');
+    await db.execute('''
+      CREATE INDEX idx_questions_category_difficulty ON questions(category, difficulty)
+    ''');
+    await db.execute('''
+      CREATE INDEX idx_questions_tags ON questions(tags)
+    ''');
+
     // 初期ユーザーデータを挿入
     await db.insert('user_data', {
       'key': 'total_points',
@@ -66,7 +103,38 @@ class DatabaseService {
     int oldVersion,
     int newVersion,
   ) async {
-    // 将来のアップグレード処理をここに追加
+    // バージョン1から2へのマイグレーション
+    if (oldVersion < 2) {
+      // クイズ履歴テーブルの追加
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS quiz_history (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          category TEXT NOT NULL,
+          difficulty TEXT NOT NULL,
+          score INTEGER NOT NULL,
+          total INTEGER NOT NULL,
+          earned_points INTEGER NOT NULL,
+          completed_at TEXT NOT NULL
+        )
+      ''');
+
+      // インデックスの追加
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_quiz_history_category ON quiz_history(category)
+      ''');
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_quiz_history_difficulty ON quiz_history(difficulty)
+      ''');
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_quiz_history_completed_at ON quiz_history(completed_at)
+      ''');
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_questions_category_difficulty ON questions(category, difficulty)
+      ''');
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_questions_tags ON questions(tags)
+      ''');
+    }
   }
 
   /// クイズ問題を追加
@@ -118,7 +186,10 @@ class DatabaseService {
     String? category,
     String? difficulty,
     String? tags,
+    String? country,
+    String? range,
     int? limit,
+    List<String>? excludeIds,
   }) async {
     final db = await database;
     final List<Map<String, dynamic>> maps;
@@ -136,9 +207,50 @@ class DatabaseService {
       args.add(difficulty);
     }
 
+    // タグ検索の強化（複数タグ対応、AND検索）
     if (tags != null && tags.isNotEmpty) {
+      final tagList = tags.split(',').map((t) => t.trim()).where((t) => t.isNotEmpty).toList();
+      if (tagList.isNotEmpty) {
+        // すべてのタグを含む問題を検索（AND検索）
+        for (final tag in tagList) {
+          query += ' AND tags LIKE ?';
+          args.add('%$tag%');
+        }
+      }
+    }
+
+    // 国によるフィルタリング
+    if (country != null && country.isNotEmpty) {
       query += ' AND tags LIKE ?';
-      args.add('%$tags%');
+      args.add('%$country%');
+    }
+
+    // 範囲によるフィルタリング
+    if (range != null && range.isNotEmpty) {
+      if (range == 'j1全チーム' || range == 'j1_all_teams') {
+        // J1全チーム: japanタグとj1タグを含む
+        query += ' AND tags LIKE ? AND tags LIKE ?';
+        args.add('%japan%');
+        args.add('%j1%');
+      } else if (range == 'j2全チーム' || range == 'j2_all_teams') {
+        // J2全チーム: japanタグとj2タグを含む
+        query += ' AND tags LIKE ? AND tags LIKE ?';
+        args.add('%japan%');
+        args.add('%j2%');
+      } else if (range == '海外top3' || range == 'overseas_top3') {
+        // 海外Top3: イタリア、スペイン、イングランドのいずれか
+        query += ' AND (tags LIKE ? OR tags LIKE ? OR tags LIKE ?)';
+        args.add('%italy%');
+        args.add('%spain%');
+        args.add('%england%');
+      }
+    }
+
+    // 重複回避: 指定されたIDを除外
+    if (excludeIds != null && excludeIds.isNotEmpty) {
+      final placeholders = excludeIds.map((_) => '?').join(',');
+      query += ' AND id NOT IN ($placeholders)';
+      args.addAll(excludeIds);
     }
 
     query += ' ORDER BY RANDOM()';
@@ -153,10 +265,100 @@ class DatabaseService {
     return maps.map((map) => _mapToQuestion(map)).toList();
   }
 
-  /// MapからQuestionオブジェクトに変換
+  /// 改善されたクイズ問題取得（重複回避、難易度バランス調整）
+  Future<List<Question>> getQuestionsOptimized({
+    String? category,
+    String? difficulty,
+    String? tags,
+    String? country,
+    String? range,
+    int? limit,
+    List<String>? excludeIds,
+    bool balanceDifficulty = false,
+  }) async {
+    final requestedLimit = limit ?? AppConstants.defaultQuestionsPerQuiz;
+    
+    // 難易度バランス調整が有効な場合
+    if (balanceDifficulty && difficulty == null) {
+      return await _getQuestionsWithDifficultyBalance(
+        category: category,
+        tags: tags,
+        country: country,
+        range: range,
+        limit: requestedLimit,
+        excludeIds: excludeIds,
+      );
+    }
+
+    // 通常の取得（重複回避付き）
+    final questions = await getQuestions(
+      category: category,
+      difficulty: difficulty,
+      tags: tags,
+      country: country,
+      range: range,
+      limit: requestedLimit * 2, // 余分に取得してシャッフル
+      excludeIds: excludeIds,
+    );
+
+    // ランダム性を向上させるため、取得した問題をシャッフル
+    questions.shuffle();
+
+    // 指定された数だけ返す
+    return questions.take(requestedLimit).toList();
+  }
+
+  /// 難易度バランスを考慮した問題取得
+  Future<List<Question>> _getQuestionsWithDifficultyBalance({
+    String? category,
+    String? tags,
+    String? country,
+    String? range,
+    int? limit,
+    List<String>? excludeIds,
+  }) async {
+    final difficulties = [
+      AppConstants.difficultyEasy,
+      AppConstants.difficultyNormal,
+      AppConstants.difficultyHard,
+      AppConstants.difficultyExtreme,
+    ];
+
+    // 各難易度から均等に取得
+    final questionsPerDifficulty = (limit! / difficulties.length).ceil();
+    final List<Question> balancedQuestions = [];
+
+    for (final diff in difficulties) {
+      final questions = await getQuestions(
+        category: category,
+        difficulty: diff,
+        tags: tags,
+        country: country,
+        range: range,
+        limit: questionsPerDifficulty,
+        excludeIds: excludeIds,
+      );
+      balancedQuestions.addAll(questions);
+    }
+
+    // シャッフルしてランダム性を向上
+    balancedQuestions.shuffle();
+    return balancedQuestions.take(limit).toList();
+  }
+
+
+  /// MapからQuestionオブジェクトに変換（キャッシュ対応）
   Question _mapToQuestion(Map<String, dynamic> map) {
-    return Question(
-      id: map['id'] as String,
+    final id = map['id'] as String;
+    
+    // キャッシュから取得を試みる
+    if (_questionCache.containsKey(id)) {
+      return _questionCache[id]!;
+    }
+    
+    // キャッシュにない場合は新規作成
+    final question = Question(
+      id: id,
       text: map['text'] as String,
       options: (map['options'] as String).split('|||'),
       answerIndex: map['answerIndex'] as int,
@@ -166,6 +368,28 @@ class DatabaseService {
       difficulty: map['difficulty'] as String,
       tags: map['tags'] as String,
     );
+    
+    // キャッシュに追加（サイズ制限あり）
+    _addToCache(id, question);
+    
+    return question;
+  }
+  
+  /// キャッシュに追加（サイズ制限あり）
+  void _addToCache(String id, Question question) {
+    // キャッシュサイズが上限に達している場合、古いエントリを削除
+    if (_questionCache.length >= _maxCacheSize) {
+      // 最初のエントリを削除（FIFO方式）
+      final firstKey = _questionCache.keys.first;
+      _questionCache.remove(firstKey);
+    }
+    
+    _questionCache[id] = question;
+  }
+  
+  /// キャッシュをクリア
+  void clearCache() {
+    _questionCache.clear();
   }
 
   /// ユーザーの累計ポイントを取得

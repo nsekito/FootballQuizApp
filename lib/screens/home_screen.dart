@@ -177,6 +177,38 @@ class HomeScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 24),
 
+              // 履歴と統計へのリンク
+              Row(
+                children: [
+                  Expanded(
+                    child: Card(
+                      child: ListTile(
+                        leading: Icon(Icons.history, color: Colors.blue.shade700),
+                        title: const Text('クイズ履歴'),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () {
+                          context.push('/history');
+                        },
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Card(
+                      child: ListTile(
+                        leading: Icon(Icons.bar_chart, color: Colors.green.shade700),
+                        title: const Text('統計情報'),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () {
+                          context.push('/statistics');
+                        },
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 24),
+
               // バナー広告のプレースホルダー
               Container(
                 height: 50,
