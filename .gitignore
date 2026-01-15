@@ -37,6 +37,19 @@ migrate_working_dir/
 *.db-shm
 *.db-wal
 
+# Python
+scripts/venv/
+scripts/.env
+scripts/__pycache__/
+scripts/*.pyc
+scripts/generated/
+*.pyc
+__pycache__/
+.pytest_cache/
+
+# 例外: アプリに同梱するデータベースファイルは含める
+!data/questions.db
+
 # Symbolication related
 app.*.symbols
 

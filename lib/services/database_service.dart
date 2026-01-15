@@ -1,3 +1,5 @@
+import 'dart:io';
+import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../models/question.dart';
@@ -24,15 +26,70 @@ class DatabaseService {
 
   /// データベースを初期化
   static Future<Database> _initDatabase() async {
-    final dbPath = await getDatabasesPath();
-    final path = join(dbPath, _databaseName);
+    String dbPath;
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      // デスクトップ環境では、プロジェクトディレクトリを使用
+      dbPath = join(Directory.current.path, 'data', _databaseName);
+    } else {
+      // モバイル環境では、getDatabasesPath()を使用
+      dbPath = join(await getDatabasesPath(), _databaseName);
+    }
+    
+    final path = dbPath;
 
-    return await openDatabase(
+    // データベースファイルが存在しない場合、アセットからコピー
+    final dbFile = File(path);
+    if (!await dbFile.exists()) {
+      await _copyDatabaseFromAssets(path);
+    }
+
+    final database = await openDatabase(
       path,
       version: _databaseVersion,
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
+    
+    // データベースが空の場合（アセットからコピーした場合）、onCreateは呼ばれないため
+    // 既存のデータベースに問題があるか確認
+    final count = await database.rawQuery('SELECT COUNT(*) as count FROM questions');
+    final questionCount = count.first['count'] as int;
+    
+    if (questionCount == 0) {
+      // データベースが空の場合、アセットからコピーを試みる
+      await _copyDatabaseFromAssets(path);
+      // データベースを再オープンして、コピーしたデータを読み込む
+      await database.close();
+      return await openDatabase(
+        path,
+        version: _databaseVersion,
+        onCreate: _onCreate,
+        onUpgrade: _onUpgrade,
+      );
+    }
+    
+    return database;
+  }
+
+  /// アセットからデータベースをコピー
+  static Future<void> _copyDatabaseFromAssets(String targetPath) async {
+    try {
+      // アセットからデータベースファイルを読み込み
+      final ByteData data = await rootBundle.load('data/questions.db');
+      final List<int> bytes = data.buffer.asUint8List(
+        data.offsetInBytes,
+        data.lengthInBytes,
+      );
+      
+      // ターゲットパスに書き込み
+      final File file = File(targetPath);
+      await file.writeAsBytes(bytes);
+      
+      print('データベースをアセットからコピーしました: $targetPath');
+    } catch (e) {
+      print('アセットからのデータベースコピーに失敗しました: $e');
+      // アセットがない場合は、空のデータベースを作成（onCreateが呼ばれる）
+    }
   }
 
   /// データベース作成時の処理
