@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'dart:typed_data';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
@@ -8,7 +10,7 @@ import '../utils/constants.dart';
 /// SQLiteデータベースサービス
 class DatabaseService {
   static Database? _database;
-  static const String _databaseName = 'soccer_quiz.db';
+  static const String _databaseName = 'questions.db';  // アセットファイル名と一致させる
   static const int _databaseVersion = 2;
   
   // キャッシュ用のマップ（問題ID -> Question）
@@ -27,21 +29,48 @@ class DatabaseService {
   /// データベースを初期化
   static Future<Database> _initDatabase() async {
     String dbPath;
-    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+    
+    if (kIsWeb) {
+      // Webプラットフォームでは、IndexedDBを使用（getDatabasesPath()はWebでも動作する）
+      dbPath = join(await getDatabasesPath(), _databaseName);
+      print('Webプラットフォーム: データベースパス: $dbPath');
+      
+      // Webプラットフォームでは、データベースが存在しない場合、アセットから読み込む
+      if (!await databaseFactory.databaseExists(dbPath)) {
+        print('Webプラットフォーム: データベースが存在しないため、アセットから読み込みます');
+        await _loadDatabaseFromAssetsForWeb(dbPath);
+      } else {
+        print('Webプラットフォーム: 既存のデータベースファイルが見つかりました');
+      }
+    } else if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
       // デスクトップ環境では、プロジェクトディレクトリを使用
       dbPath = join(Directory.current.path, 'data', _databaseName);
+      print('デスクトップ環境: データベースパス: $dbPath');
+      
+      // データベースファイルが存在しない場合、アセットからコピー
+      final dbFile = File(dbPath);
+      if (!await dbFile.exists()) {
+        print('データベースファイルが存在しないため、アセットからコピーします');
+        await _copyDatabaseFromAssets(dbPath);
+      } else {
+        print('既存のデータベースファイルが見つかりました');
+      }
     } else {
       // モバイル環境では、getDatabasesPath()を使用
       dbPath = join(await getDatabasesPath(), _databaseName);
+      print('モバイル環境: データベースパス: $dbPath');
+      
+      // データベースファイルが存在しない場合、アセットからコピー
+      final dbFile = File(dbPath);
+      if (!await dbFile.exists()) {
+        print('データベースファイルが存在しないため、アセットからコピーします');
+        await _copyDatabaseFromAssets(dbPath);
+      } else {
+        print('既存のデータベースファイルが見つかりました');
+      }
     }
     
     final path = dbPath;
-
-    // データベースファイルが存在しない場合、アセットからコピー
-    final dbFile = File(path);
-    if (!await dbFile.exists()) {
-      await _copyDatabaseFromAssets(path);
-    }
 
     final database = await openDatabase(
       path,
@@ -54,24 +83,46 @@ class DatabaseService {
     // 既存のデータベースに問題があるか確認
     final count = await database.rawQuery('SELECT COUNT(*) as count FROM questions');
     final questionCount = count.first['count'] as int;
+    print('データベース内の問題数: $questionCount');
     
     if (questionCount == 0) {
-      // データベースが空の場合、アセットからコピーを試みる
-      await _copyDatabaseFromAssets(path);
-      // データベースを再オープンして、コピーしたデータを読み込む
-      await database.close();
-      return await openDatabase(
-        path,
-        version: _databaseVersion,
-        onCreate: _onCreate,
-        onUpgrade: _onUpgrade,
-      );
+      print('データベースが空のため、アセットからコピーを試みます');
+      if (kIsWeb) {
+        // Webプラットフォームでは、アセットからデータベースを再読み込み
+        await database.close();
+        await _loadDatabaseFromAssetsForWeb(path);
+        final newDatabase = await openDatabase(
+          path,
+          version: _databaseVersion,
+          onCreate: _onCreate,
+          onUpgrade: _onUpgrade,
+        );
+        final newCount = await newDatabase.rawQuery('SELECT COUNT(*) as count FROM questions');
+        final newQuestionCount = newCount.first['count'] as int;
+        print('Webプラットフォーム: 再読み込み後の問題数: $newQuestionCount');
+        return newDatabase;
+      } else {
+        // モバイル/デスクトップ環境では、アセットからコピーを試みる
+        await _copyDatabaseFromAssets(path);
+        // データベースを再オープンして、コピーしたデータを読み込む
+        await database.close();
+        final newDatabase = await openDatabase(
+          path,
+          version: _databaseVersion,
+          onCreate: _onCreate,
+          onUpgrade: _onUpgrade,
+        );
+        final newCount = await newDatabase.rawQuery('SELECT COUNT(*) as count FROM questions');
+        final newQuestionCount = newCount.first['count'] as int;
+        print('コピー後の問題数: $newQuestionCount');
+        return newDatabase;
+      }
     }
     
     return database;
   }
 
-  /// アセットからデータベースをコピー
+  /// アセットからデータベースをコピー（Webプラットフォーム以外）
   static Future<void> _copyDatabaseFromAssets(String targetPath) async {
     try {
       // アセットからデータベースファイルを読み込み
@@ -92,11 +143,49 @@ class DatabaseService {
     }
   }
 
+  /// Webプラットフォーム用: アセットからデータベースを読み込む
+  /// sqflite_common_ffi_webでは、writeDatabaseBytesメソッドを使用してアセットからデータベースを読み込む
+  static Future<void> _loadDatabaseFromAssetsForWeb(String dbPath) async {
+    try {
+      // アセットからデータベースファイルを読み込み
+      final ByteData data = await rootBundle.load('data/questions.db');
+      final Uint8List bytes = data.buffer.asUint8List(
+        data.offsetInBytes,
+        data.lengthInBytes,
+      );
+      
+      // Webプラットフォームでは、sqflite_common_ffi_webのwriteDatabaseBytesを使用
+      // このメソッドは、バイト配列からデータベースファイルを書き込む
+      // NoSuchMethodErrorをキャッチして、メソッドが存在しない場合は別の方法を試す
+      try {
+        // writeDatabaseBytesメソッドを呼び出す（dynamic型でキャスト）
+        await (databaseFactory as dynamic).writeDatabaseBytes(dbPath, bytes);
+        print('Webプラットフォーム: データベースをアセットから読み込みました: $dbPath');
+        return;
+      } on NoSuchMethodError catch (e) {
+        print('writeDatabaseBytesメソッドが存在しません: $e');
+        // メソッドが存在しない場合、別の方法を試す
+      } catch (e) {
+        print('writeDatabaseBytesメソッドの呼び出しに失敗しました: $e');
+        // その他のエラーの場合も続行
+      }
+      
+      // フォールバック: メソッドが存在しない場合の処理
+      // Webプラットフォームでは、アセットからデータベースを直接読み込むことができない場合、
+      // データベースは空の状態で作成され、必要に応じてデータを追加する必要があります
+      print('Webプラットフォーム: writeDatabaseBytesメソッドが使用できないため、データベースは空の状態で作成されます');
+      print('注意: Webプラットフォームでは、アセットからのデータベース読み込みは、sqflite_common_ffi_webのバージョンによってサポートされていない可能性があります');
+    } catch (e) {
+      print('Webプラットフォーム: アセットからのデータベース読み込みに失敗しました: $e');
+      // エラーが発生した場合でも、空のデータベースは作成される（onCreateが呼ばれる）
+    }
+  }
+
   /// データベース作成時の処理
   static Future<void> _onCreate(Database db, int version) async {
-    // クイズ問題テーブル
+    // クイズ問題テーブル（IF NOT EXISTSを追加して、既存テーブルがある場合でもエラーにならないようにする）
     await db.execute('''
-      CREATE TABLE questions (
+      CREATE TABLE IF NOT EXISTS questions (
         id TEXT PRIMARY KEY,
         text TEXT NOT NULL,
         options TEXT NOT NULL,
@@ -111,7 +200,7 @@ class DatabaseService {
 
     // ユーザーデータテーブル
     await db.execute('''
-      CREATE TABLE user_data (
+      CREATE TABLE IF NOT EXISTS user_data (
         key TEXT PRIMARY KEY,
         value TEXT NOT NULL
       )
@@ -119,7 +208,7 @@ class DatabaseService {
 
     // クイズ履歴テーブル
     await db.execute('''
-      CREATE TABLE quiz_history (
+      CREATE TABLE IF NOT EXISTS quiz_history (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         category TEXT NOT NULL,
         difficulty TEXT NOT NULL,
@@ -130,28 +219,32 @@ class DatabaseService {
       )
     ''');
 
-    // インデックスの追加（パフォーマンス向上のため）
+    // インデックスの追加（パフォーマンス向上のため、IF NOT EXISTSを追加）
     await db.execute('''
-      CREATE INDEX idx_quiz_history_category ON quiz_history(category)
+      CREATE INDEX IF NOT EXISTS idx_quiz_history_category ON quiz_history(category)
     ''');
     await db.execute('''
-      CREATE INDEX idx_quiz_history_difficulty ON quiz_history(difficulty)
+      CREATE INDEX IF NOT EXISTS idx_quiz_history_difficulty ON quiz_history(difficulty)
     ''');
     await db.execute('''
-      CREATE INDEX idx_quiz_history_completed_at ON quiz_history(completed_at)
+      CREATE INDEX IF NOT EXISTS idx_quiz_history_completed_at ON quiz_history(completed_at)
     ''');
     await db.execute('''
-      CREATE INDEX idx_questions_category_difficulty ON questions(category, difficulty)
+      CREATE INDEX IF NOT EXISTS idx_questions_category_difficulty ON questions(category, difficulty)
     ''');
     await db.execute('''
-      CREATE INDEX idx_questions_tags ON questions(tags)
+      CREATE INDEX IF NOT EXISTS idx_questions_tags ON questions(tags)
     ''');
 
-    // 初期ユーザーデータを挿入
-    await db.insert('user_data', {
-      'key': 'total_points',
-      'value': '0',
-    });
+    // 初期ユーザーデータを挿入（既に存在する場合はスキップ）
+    await db.insert(
+      'user_data',
+      {
+        'key': 'total_points',
+        'value': '0',
+      },
+      conflictAlgorithm: ConflictAlgorithm.ignore,
+    );
   }
 
   /// データベースアップグレード時の処理
@@ -322,7 +415,7 @@ class DatabaseService {
     return maps.map((map) => _mapToQuestion(map)).toList();
   }
 
-  /// 改善されたクイズ問題取得（重複回避、難易度バランス調整）
+  /// 改善されたクイズ問題取得（重複回避、難易度バランス調整、テーマ多様性確保）
   Future<List<Question>> getQuestionsOptimized({
     String? category,
     String? difficulty,
@@ -337,7 +430,7 @@ class DatabaseService {
     
     // 難易度バランス調整が有効な場合
     if (balanceDifficulty && difficulty == null) {
-      return await _getQuestionsWithDifficultyBalance(
+      final balancedQuestions = await _getQuestionsWithDifficultyBalance(
         category: category,
         tags: tags,
         country: country,
@@ -345,6 +438,8 @@ class DatabaseService {
         limit: requestedLimit,
         excludeIds: excludeIds,
       );
+      // テーマの多様性を確保
+      return _ensureThemeDiversity(balancedQuestions);
     }
 
     // 通常の取得（重複回避付き）
@@ -354,15 +449,16 @@ class DatabaseService {
       tags: tags,
       country: country,
       range: range,
-      limit: requestedLimit * 2, // 余分に取得してシャッフル
+      limit: requestedLimit * 3, // より多く取得してテーマ多様性を確保
       excludeIds: excludeIds,
     );
 
     // ランダム性を向上させるため、取得した問題をシャッフル
     questions.shuffle();
 
-    // 指定された数だけ返す
-    return questions.take(requestedLimit).toList();
+    // テーマの多様性を確保しながら、指定された数だけ返す
+    final diverseQuestions = _ensureThemeDiversity(questions);
+    return diverseQuestions.take(requestedLimit).toList();
   }
 
   /// 難易度バランスを考慮した問題取得
@@ -392,7 +488,7 @@ class DatabaseService {
         tags: tags,
         country: country,
         range: range,
-        limit: questionsPerDifficulty,
+        limit: questionsPerDifficulty * 2, // 余分に取得
         excludeIds: excludeIds,
       );
       balancedQuestions.addAll(questions);
@@ -400,7 +496,133 @@ class DatabaseService {
 
     // シャッフルしてランダム性を向上
     balancedQuestions.shuffle();
-    return balancedQuestions.take(limit).toList();
+    return balancedQuestions;
+  }
+
+  /// 問題文からテーマキーワードを抽出
+  String _extractThemeKeyword(String text) {
+    // 問題文の最初の30文字をテーマキーワードとして使用
+    // 句読点や記号を除去して、主要なキーワードを抽出
+    final prefix = text.length > 30 ? text.substring(0, 30) : text;
+    
+    // カテゴリ別のキーワード抽出パターン
+    final keywords = <String>[];
+    
+    // ルール関連のキーワード
+    if (prefix.contains('オフサイド') || prefix.contains('オフサイド')) {
+      keywords.add('オフサイド');
+    }
+    if (prefix.contains('ファウル') || prefix.contains('反則')) {
+      keywords.add('ファウル');
+    }
+    if (prefix.contains('イエローカード') || prefix.contains('警告')) {
+      keywords.add('イエローカード');
+    }
+    if (prefix.contains('レッドカード') || prefix.contains('退場')) {
+      keywords.add('レッドカード');
+    }
+    if (prefix.contains('スローイン')) {
+      keywords.add('スローイン');
+    }
+    if (prefix.contains('コーナーキック') || prefix.contains('コーナー')) {
+      keywords.add('コーナーキック');
+    }
+    if (prefix.contains('PK') || prefix.contains('ペナルティ') || prefix.contains('PK戦')) {
+      keywords.add('PK');
+    }
+    if (prefix.contains('VAR') || prefix.contains('ビデオ判定')) {
+      keywords.add('VAR');
+    }
+    if (prefix.contains('延長戦') || prefix.contains('延長')) {
+      keywords.add('延長戦');
+    }
+    
+    // チーム名や選手名を抽出（最初の名詞を取得）
+    if (keywords.isEmpty) {
+      // 問題文の最初の部分から主要なキーワードを抽出
+      final words = prefix.split(RegExp(r'[、。？\s]'));
+      if (words.isNotEmpty) {
+        final firstWord = words.first.trim();
+        if (firstWord.length > 2) {
+          keywords.add(firstWord);
+        }
+      }
+    }
+    
+    return keywords.isNotEmpty ? keywords.first : prefix.substring(0, prefix.length > 20 ? 20 : prefix.length);
+  }
+
+  /// 2つの問題が類似しているかを判定
+  bool _areQuestionsSimilar(Question q1, Question q2) {
+    final theme1 = _extractThemeKeyword(q1.text);
+    final theme2 = _extractThemeKeyword(q2.text);
+    
+    // 完全一致または部分一致をチェック
+    if (theme1 == theme2) return true;
+    
+    // 一方がもう一方を含む場合も類似と判定
+    if (theme1.length > 5 && theme2.length > 5) {
+      if (theme1.contains(theme2) || theme2.contains(theme1)) {
+        return true;
+      }
+    }
+    
+    // 問題文の最初の20文字が50%以上一致する場合も類似と判定
+    final text1 = q1.text.length > 20 ? q1.text.substring(0, 20) : q1.text;
+    final text2 = q2.text.length > 20 ? q2.text.substring(0, 20) : q2.text;
+    
+    int matches = 0;
+    final minLength = text1.length < text2.length ? text1.length : text2.length;
+    for (int i = 0; i < minLength; i++) {
+      if (text1[i] == text2[i]) matches++;
+    }
+    
+    final similarity = matches / minLength;
+    return similarity > 0.5;
+  }
+
+  /// テーマの多様性を確保して問題を並び替え
+  List<Question> _ensureThemeDiversity(List<Question> questions) {
+    if (questions.length <= 1) return questions;
+    
+    final List<Question> result = [];
+    final List<Question> remaining = List.from(questions);
+    
+    // 最初の問題をランダムに選択
+    remaining.shuffle();
+    if (remaining.isNotEmpty) {
+      result.add(remaining.removeAt(0));
+    }
+    
+    // 残りの問題を、直前の問題と異なるテーマのものを優先的に選択
+    while (remaining.isNotEmpty && result.length < questions.length) {
+      Question? selectedQuestion;
+      int selectedIndex = -1;
+      
+      // 直前の問題と異なるテーマの問題を探す
+      for (int i = 0; i < remaining.length; i++) {
+        final candidate = remaining[i];
+        final lastQuestion = result.last;
+        
+        // 直前の問題と類似していない場合
+        if (!_areQuestionsSimilar(candidate, lastQuestion)) {
+          selectedQuestion = candidate;
+          selectedIndex = i;
+          break;
+        }
+      }
+      
+      // 異なるテーマの問題が見つからない場合、ランダムに選択
+      if (selectedQuestion == null) {
+        selectedIndex = 0;
+        selectedQuestion = remaining[selectedIndex];
+      }
+      
+      result.add(selectedQuestion);
+      remaining.removeAt(selectedIndex);
+    }
+    
+    return result;
   }
 
 

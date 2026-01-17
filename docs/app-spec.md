@@ -109,9 +109,84 @@
 2. **Interstitial Ad**: リザルト画面遷移時（頻度調整可能に）。
 3. **Rewarded Ad**: 「ポイントをブーストして早くランクアップしたい」ユーザー向け。
 
-## 7. 実装フェーズ (Plan)
-1. **Phase 1 (Data)**: Pythonスクリプトによるデータ生成パイプラインの構築。
-2. **Phase 2 (App Base)**: Flutterプロジェクト構築、画面遷移、SQLite読み込み実装。
-3. **Phase 3 (Logic)**: クイズ出題ロジック、ポイント/ランク管理機能の実装。
-4. **Phase 4 (Online)**: Weekly Recap機能 (HTTP通信) の実装。
-5. **Phase 5 (Polish)**: 広告実装、UIデザイン調整。
+## 7. 実装フェーズと進捗状況
+
+### Phase 1 (Data) ✅ **完了**
+- ✅ Pythonスクリプトによるデータ生成パイプラインの構築
+  - Gemini APIを使用した問題生成スクリプト (`scripts/generate_static_questions.py`)
+  - 問題の多様性確保機能（テーマ重複回避、カテゴリ別分散）
+  - JSONからSQLite DBへの変換スクリプト (`scripts/json_to_db.py`)
+  - 問題分布分析スクリプト (`scripts/analyze_question_distribution.py`)
+- ✅ データモデル実装 (`lib/models/question.dart`)
+- ✅ カテゴリ: rules, history, teams (各カテゴリ × 4難易度 × 50問 = 600問)
+
+### Phase 2 (App Base) ✅ **完了**
+- ✅ Flutterプロジェクト構築
+- ✅ GoRouterによる画面遷移実装 (`lib/providers/router_provider.dart`)
+- ✅ SQLite読み込み実装 (`lib/services/database_service.dart`)
+- ✅ 画面実装:
+  - `home_screen.dart` - ホーム画面（ランク表示、カテゴリ選択）
+  - `configuration_screen.dart` - 設定画面（カテゴリ・難易度選択）
+  - `quiz_screen.dart` - クイズ画面（問題表示、解説ダイアログ）
+  - `result_screen.dart` - 結果画面（スコア、獲得GP表示）
+  - `history_screen.dart` - 履歴画面
+  - `statistics_screen.dart` - 統計画面
+
+### Phase 3 (Logic) ✅ **完了**
+- ✅ クイズ出題ロジック実装
+  - 問題取得最適化 (`getQuestionsOptimized`)
+  - テーマ多様性確保機能（出題時のテーマ重複回避）
+  - 難易度バランス調整機能
+- ✅ ポイント/ランク管理機能実装
+  - ポイントシステム (`lib/utils/constants.dart`)
+  - ランク称号システム (`lib/models/user_rank.dart`)
+  - ユーザーデータ管理 (`lib/providers/user_data_provider.dart`)
+- ✅ クイズ履歴管理 (`lib/services/quiz_history_service.dart`)
+
+### Phase 4 (Online) ❌ **未実装**
+- ❌ Weekly Recap機能 (HTTP通信)
+- ❌ ニュースクイズ機能
+- ❌ リモートデータ取得機能
+
+### Phase 5 (Polish) ❌ **未実装**
+- ❌ 広告実装 (google_mobile_ads)
+  - Banner Ad
+  - Interstitial Ad
+  - Rewarded Ad
+- ❌ 通知機能 (flutter_local_notifications)
+- ❌ UIデザイン調整
+
+## 8. 現在の実装状況サマリー
+
+### 実装済み機能
+- ✅ マスターモード（常設クイズ）の完全実装
+  - ルールクイズ、歴史クイズ、チームクイズ
+  - 難易度選択（EASY, NORMAL, HARD, EXTREME）
+  - 問題の多様性確保（生成時・出題時の両方）
+- ✅ ポイントシステムとランク称号システム
+- ✅ クイズ履歴と統計機能
+- ✅ データ生成パイプライン（Pythonスクリプト）
+
+### 未実装機能
+- ❌ Weekly Match Recap（月曜クイズ）
+- ❌ ニュースクイズ
+- ❌ 広告機能
+- ❌ プッシュ通知
+
+### 技術的な改善点
+- ✅ 問題生成時のテーマ多様性確保（`gemini_client.py`）
+- ✅ 出題時のテーマ重複回避（`database_service.dart`）
+- ✅ 問題分布分析ツール
+- ✅ Webプラットフォーム対応（完了）
+  - 目的: 開発時の動作確認を高速化するため（`flutter run -d chrome`）
+  - 本番リリースはモバイル端末のみを想定
+  - 実装内容:
+    - `sqflite_common_ffi_web`パッケージの追加（`pubspec.yaml`、バージョン: `^1.1.1`）
+    - Web用データベースファクトリの初期化処理（`lib/main.dart`）
+      - `databaseFactoryFfiWeb`を使用してWebプラットフォーム用のデータベースファクトリを設定
+    - Webプラットフォーム用のデータベース初期化処理（`lib/services/database_service.dart`）
+      - WebプラットフォームではIndexedDBを使用してデータベースを保存
+      - アセットからデータベースファイル（`data/questions.db`）を読み込み、`writeDatabaseBytes`メソッドを使用してIndexedDBに書き込む
+      - データベースが存在しない場合、または空の場合にアセットから自動的に読み込む
+      - `writeDatabaseBytes`メソッドが存在しない場合のフォールバック処理を実装
+    - 動作確認済み: Webブラウザで正常に問題が表示されることを確認

@@ -8,10 +8,26 @@ import 'providers/router_provider.dart';
 import 'sqflite_ffi_stub.dart'
     if (dart.library.io) 'sqflite_ffi_io.dart' as sqflite_ffi;
 
-void main() {
+// Webプラットフォーム用のインポート（条件付き）
+import 'package:sqflite/sqflite.dart';
+import 'sqflite_ffi_web_stub.dart'
+    if (dart.library.html) 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart' as sqflite_web;
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // Webプラットフォームでsqflite_common_ffi_webを初期化
+  if (kIsWeb) {
+    try {
+      // Webプラットフォーム用のデータベースファクトリを設定
+      databaseFactory = sqflite_web.databaseFactoryFfiWeb;
+      print('Webプラットフォーム用のデータベースファクトリを初期化しました');
+    } catch (e) {
+      print('Webプラットフォーム用のデータベースファクトリの初期化に失敗: $e');
+    }
+  }
   // Windows/Linux/macOS（デスクトップ）でsqflite_common_ffiを初期化
-  // WebプラットフォームとAndroid/iOSでは初期化しない
-  if (!kIsWeb && (Platform.isWindows || Platform.isLinux || Platform.isMacOS)) {
+  else if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
     try {
       sqflite_ffi.initDatabaseFactory();
     } catch (e) {
