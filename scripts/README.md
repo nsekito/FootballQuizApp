@@ -21,6 +21,23 @@ pip install -r requirements.txt
 
 ### 3. APIキーの設定
 
+#### GCPプロジェクトのAPIキーを使用する場合（推奨：従量課金）
+
+GCPプロジェクトのAPIキーを使用して、通常のGemini APIエンドポイントで認証します。
+従量課金はGCPプロジェクトに紐づいているため、自動的に適用されます。
+
+1. **GCPプロジェクトのAPIキーを取得**:
+   - [Google Cloud Console](https://console.cloud.google.com/)にアクセス
+   - プロジェクトを選択
+   - 「APIとサービス」→「認証情報」に移動
+   - 「認証情報を作成」→「APIキー」を選択
+   - 作成されたAPIキーをコピー
+
+2. **Gemini APIを有効化**:
+   - 「APIとサービス」→「ライブラリ」に移動
+   - 「Generative Language API」を検索して有効化
+
+3. **`.env`ファイルの設定**:
 `.env.example`をコピーして`.env`ファイルを作成し、APIキーを設定してください：
 
 ```powershell
@@ -29,9 +46,17 @@ copy .env.example .env
 
 `.env`ファイルを編集して、実際のAPIキーを設定：
 ```
-GEMINI_API_KEY=実際のAPIキーをここに
+API_TYPE=gemini
+GEMINI_API_KEY=実際のGCPプロジェクトのAPIキーをここに
+VERTEX_AI_PROJECT_ID=your-project-id  # 参考情報（必須ではない）
+VERTEX_AI_LOCATION=asia-northeast1    # 参考情報（必須ではない）
 FOOTBALL_API_KEY=実際のAPIキーをここに（週次クイズ用、後で設定可）
 ```
+
+**重要**: 
+- GCPプロジェクトのAPIキーは、Google Cloud Consoleで作成できます
+- Gemini APIが有効になっていることを確認してください
+- 従量課金はGCPプロジェクトに紐づいているため、自動的に適用されます
 
 **重要**: `.env`ファイルはGitにコミットしないでください（既に`.gitignore`に追加済み）
 

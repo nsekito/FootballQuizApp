@@ -125,6 +125,37 @@ def insert_questions_to_db(questions: list, db_path: str, replace: bool = True):
         print(f"スキップ: {skipped_count}問")
 
 
+def cleanup_old_json_files(current_json_file: Path):
+    """古いJSONファイルを削除（現在のファイル以外）"""
+    try:
+        # cleanup_json_files.pyをインポートして実行
+        cleanup_script = Path(__file__).parent / "cleanup_json_files.py"
+        if cleanup_script.exists():
+            import subprocess
+            json_path = str(current_json_file.resolve())
+            
+            # Windowsでのエンコーディング問題を回避
+            env = os.environ.copy()
+            env['PYTHONIOENCODING'] = 'utf-8'
+            
+            result = subprocess.run(
+                [sys.executable, str(cleanup_script), "--keep-current", json_path, "--delete-root-generated"],
+                capture_output=True,
+                text=True,
+                encoding='utf-8',
+                errors='replace',
+                env=env
+            )
+            if result.returncode == 0:
+                if result.stdout:
+                    print("\n" + result.stdout)
+            else:
+                error_msg = result.stderr if result.stderr else "不明なエラー"
+                print(f"\n警告: ファイル整理中にエラーが発生しました: {error_msg}")
+    except Exception as e:
+        print(f"\n警告: ファイル整理中にエラーが発生しました: {e}")
+
+
 def main():
     """メイン処理"""
     import argparse
@@ -134,6 +165,7 @@ def main():
     parser.add_argument('--db', default=str(DB_PATH), help='データベースファイルのパス（デフォルト: data/questions.db）')
     parser.add_argument('--replace', action='store_true', help='既存の問題を置き換える')
     parser.add_argument('--create-schema', action='store_true', help='データベーススキーマを作成')
+    parser.add_argument('--cleanup', action='store_true', default=True, help='登録後に古いJSONファイルを削除（デフォルト: True）')
     
     args = parser.parse_args()
     
@@ -145,14 +177,19 @@ def main():
         create_database_schema(args.db)
     
     # JSONファイルから問題を読み込み
-    if not os.path.exists(args.json_file):
+    json_file_path = Path(args.json_file)
+    if not json_file_path.exists():
         print(f"エラー: JSONファイルが見つかりません: {args.json_file}")
         sys.exit(1)
     
-    questions = load_questions_from_json(args.json_file)
+    questions = load_questions_from_json(str(json_file_path))
     
     # データベースに挿入
     insert_questions_to_db(questions, args.db, replace=args.replace)
+    
+    # 古いJSONファイルを削除
+    if args.cleanup:
+        cleanup_old_json_files(json_file_path)
     
     print("\n変換完了！")
 

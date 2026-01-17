@@ -6,8 +6,20 @@ from dotenv import load_dotenv
 # GitHub Actions実行時は環境変数から読み込み（自動）
 load_dotenv()
 
+# Gemini API（GCPプロジェクトのAPIキーを使用）
+# GCPプロジェクトのAPIキーは、Google Cloud Consoleの「APIとサービス」→「認証情報」で作成できます
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+
+# GCPプロジェクト情報（参考情報、必須ではない）
+# 従量課金はGCPプロジェクトに紐づいているため、自動的に適用されます
+VERTEX_AI_PROJECT_ID = os.getenv('VERTEX_AI_PROJECT_ID')  # 参考情報として残す（必須ではない）
+VERTEX_AI_LOCATION = os.getenv('VERTEX_AI_LOCATION', 'asia-northeast1')  # 参考情報として残す（必須ではない）
+
+# 使用するAPIタイプ（現在は'gemini'のみサポート）
+API_TYPE = os.getenv('API_TYPE', 'gemini')  # デフォルト: gemini
+
 FOOTBALL_API_KEY = os.getenv('FOOTBALL_API_KEY')
 
+# APIキーの検証
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEYが設定されていません。.envファイルまたは環境変数を確認してください。")
