@@ -4,6 +4,8 @@ import 'package:go_router/go_router.dart';
 import '../models/question.dart';
 import '../providers/database_provider.dart';
 import '../utils/constants.dart';
+import '../widgets/error_widget.dart';
+import '../widgets/loading_widget.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {
   final String category;
@@ -32,7 +34,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   bool _showResult = false;
   int _score = 0;
   bool _isLoading = true;
-  List<String> _usedQuestionIds = [];
 
   @override
   void initState() {
@@ -65,9 +66,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         limit: AppConstants.defaultQuestionsPerQuiz,
       );
 
-      // 使用した問題IDを記録
-      _usedQuestionIds = questions.map((q) => q.id).toList();
-
       if (!mounted) return;
 
       setState(() {
@@ -78,11 +76,12 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       // データがない場合の処理
       if (_questions.isEmpty) {
         if (mounted) {
-          _showErrorDialog(
+          showErrorDialog(
             context,
             title: 'データが見つかりません',
             message: '選択した条件に一致するクイズデータが見つかりませんでした。\n\n別の条件でお試しください。',
             showRetry: false,
+            onClose: () => context.pop(),
           );
         }
       }
@@ -93,56 +92,15 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         _isLoading = false;
       });
 
-      _showErrorDialog(
+      showErrorDialog(
         context,
         title: 'エラーが発生しました',
         message: 'クイズデータの読み込み中にエラーが発生しました。\n\nエラー内容: ${e.toString()}\n\nもう一度お試しください。',
         showRetry: true,
         onRetry: () => _loadQuestions(),
+        onClose: () => context.pop(),
       );
     }
-  }
-
-  void _showErrorDialog(
-    BuildContext context, {
-    required String title,
-    required String message,
-    bool showRetry = false,
-    VoidCallback? onRetry,
-  }) {
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (context) => AlertDialog(
-        title: Row(
-          children: [
-            Icon(Icons.error_outline, color: Colors.red.shade700),
-            const SizedBox(width: 8),
-            Expanded(child: Text(title)),
-          ],
-        ),
-        content: SingleChildScrollView(
-          child: Text(message),
-        ),
-        actions: [
-          if (showRetry && onRetry != null)
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-                onRetry();
-              },
-              child: const Text('再試行'),
-            ),
-          TextButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-              context.pop();
-            },
-            child: const Text('戻る'),
-          ),
-        ],
-      ),
-    );
   }
 
   @override
@@ -152,9 +110,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         appBar: AppBar(
           title: const Text('クイズ'),
         ),
-        body: const Center(
-          child: CircularProgressIndicator(),
-        ),
+        body: const AppLoadingWidget(),
       );
     }
 

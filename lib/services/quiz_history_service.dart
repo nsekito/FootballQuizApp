@@ -1,4 +1,3 @@
-import 'package:sqflite/sqflite.dart';
 import '../models/quiz_history.dart';
 import 'database_service.dart';
 
@@ -10,7 +9,7 @@ class QuizHistoryService {
 
   /// クイズ履歴を保存
   Future<int> saveHistory(QuizHistory history) async {
-    final db = await DatabaseService.database;
+    final db = await _databaseService.getDatabase();
     return await db.insert(
       'quiz_history',
       history.toMap(),
@@ -19,7 +18,7 @@ class QuizHistoryService {
 
   /// すべてのクイズ履歴を取得（新しい順）
   Future<List<QuizHistory>> getAllHistory({int? limit}) async {
-    final db = await DatabaseService.database;
+    final db = await _databaseService.getDatabase();
     final List<Map<String, dynamic>> maps = await db.query(
       'quiz_history',
       orderBy: 'completed_at DESC',
@@ -30,7 +29,7 @@ class QuizHistoryService {
 
   /// カテゴリ別の履歴を取得
   Future<List<QuizHistory>> getHistoryByCategory(String category) async {
-    final db = await DatabaseService.database;
+    final db = await _databaseService.getDatabase();
     final List<Map<String, dynamic>> maps = await db.query(
       'quiz_history',
       where: 'category = ?',
@@ -42,7 +41,7 @@ class QuizHistoryService {
 
   /// 難易度別の履歴を取得
   Future<List<QuizHistory>> getHistoryByDifficulty(String difficulty) async {
-    final db = await DatabaseService.database;
+    final db = await _databaseService.getDatabase();
     final List<Map<String, dynamic>> maps = await db.query(
       'quiz_history',
       where: 'difficulty = ?',
@@ -54,8 +53,8 @@ class QuizHistoryService {
 
   /// 統計情報を取得
   Future<QuizStatistics> getStatistics() async {
-    final db = await DatabaseService.database;
-    
+    final db = await _databaseService.getDatabase();
+
     // 総プレイ回数
     final totalPlaysResult = await db.rawQuery(
       'SELECT COUNT(*) as count FROM quiz_history',
@@ -68,7 +67,8 @@ class QuizHistoryService {
     );
     final totalScore = (scoreResult.first['total_score'] as int?) ?? 0;
     final totalQuestions = (scoreResult.first['total_questions'] as int?) ?? 0;
-    final overallAccuracy = totalQuestions > 0 ? totalScore / totalQuestions : 0.0;
+    final overallAccuracy =
+        totalQuestions > 0 ? totalScore / totalQuestions : 0.0;
 
     // カテゴリ別の統計
     final categoryStats = await db.rawQuery('''
@@ -97,14 +97,17 @@ class QuizHistoryService {
       overallAccuracy: overallAccuracy,
       totalScore: totalScore,
       totalQuestions: totalQuestions,
-      categoryStats: categoryStats.map((map) => CategoryStatistic.fromMap(map)).toList(),
-      difficultyStats: difficultyStats.map((map) => DifficultyStatistic.fromMap(map)).toList(),
+      categoryStats:
+          categoryStats.map((map) => CategoryStatistic.fromMap(map)).toList(),
+      difficultyStats: difficultyStats
+          .map((map) => DifficultyStatistic.fromMap(map))
+          .toList(),
     );
   }
 
   /// 履歴を削除
   Future<int> deleteHistory(int id) async {
-    final db = await DatabaseService.database;
+    final db = await _databaseService.getDatabase();
     return await db.delete(
       'quiz_history',
       where: 'id = ?',
@@ -114,7 +117,7 @@ class QuizHistoryService {
 
   /// すべての履歴を削除
   Future<int> deleteAllHistory() async {
-    final db = await DatabaseService.database;
+    final db = await _databaseService.getDatabase();
     return await db.delete('quiz_history');
   }
 }
@@ -154,7 +157,8 @@ class CategoryStatistic {
 
   double get accuracy => totalQuestions > 0 ? totalScore / totalQuestions : 0.0;
 
-  factory CategoryStatistic.fromMap(Map<String, dynamic> map) => CategoryStatistic(
+  factory CategoryStatistic.fromMap(Map<String, dynamic> map) =>
+      CategoryStatistic(
         category: map['category'] as String,
         playCount: map['play_count'] as int,
         totalScore: (map['total_score'] as int?) ?? 0,
@@ -178,7 +182,8 @@ class DifficultyStatistic {
 
   double get accuracy => totalQuestions > 0 ? totalScore / totalQuestions : 0.0;
 
-  factory DifficultyStatistic.fromMap(Map<String, dynamic> map) => DifficultyStatistic(
+  factory DifficultyStatistic.fromMap(Map<String, dynamic> map) =>
+      DifficultyStatistic(
         difficulty: map['difficulty'] as String,
         playCount: map['play_count'] as int,
         totalScore: (map['total_score'] as int?) ?? 0,

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/quiz_history_provider.dart';
-import '../services/quiz_history_service.dart';
 import '../utils/constants.dart';
+import '../widgets/error_widget.dart';
+import '../widgets/empty_state_widget.dart';
+import '../widgets/loading_widget.dart';
 
 class StatisticsScreen extends ConsumerWidget {
   const StatisticsScreen({super.key});
@@ -19,31 +21,9 @@ class StatisticsScreen extends ConsumerWidget {
       body: statisticsAsync.when(
         data: (statistics) {
           if (statistics.totalPlays == 0) {
-            return Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.bar_chart,
-                    size: 64,
-                    color: Colors.grey.shade400,
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    'まだ統計データがありません',
-                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          color: Colors.grey.shade600,
-                        ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'クイズをプレイして統計を確認しましょう！',
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: Colors.grey.shade500,
-                        ),
-                  ),
-                ],
-              ),
+            return const AppEmptyStateWidget(
+              message: 'まだ統計データがありません\nクイズをプレイして統計を確認しましょう！',
+              icon: Icons.bar_chart,
             );
           }
 
@@ -71,38 +51,10 @@ class StatisticsScreen extends ConsumerWidget {
             ),
           );
         },
-        loading: () => const Center(
-          child: CircularProgressIndicator(),
-        ),
-        error: (error, stack) => Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.error_outline,
-                size: 64,
-                color: Colors.red.shade300,
-              ),
-              const SizedBox(height: 16),
-              Text(
-                'エラーが発生しました',
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
-              const SizedBox(height: 8),
-              Text(
-                error.toString(),
-                style: Theme.of(context).textTheme.bodySmall,
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 16),
-              ElevatedButton(
-                onPressed: () {
-                  ref.invalidate(quizStatisticsProvider);
-                },
-                child: const Text('再試行'),
-              ),
-            ],
-          ),
+        loading: () => const AppLoadingWidget(),
+        error: (error, stack) => AppErrorWidget(
+          message: error.toString(),
+          onRetry: () => ref.invalidate(quizStatisticsProvider),
         ),
       ),
     );
@@ -192,7 +144,7 @@ class StatisticsScreen extends ConsumerWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: color.withOpacity(0.1),
+          color: color.withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Column(

@@ -1,6 +1,5 @@
 import 'dart:io';
-import 'dart:typed_data';
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show kIsWeb, debugPrint;
 import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
@@ -19,11 +18,16 @@ class DatabaseService {
   // キャッシュの最大サイズ
   static const int _maxCacheSize = 100;
 
-  /// データベースインスタンスを取得
+  /// データベースインスタンスを取得（静的メソッド）
   static Future<Database> get database async {
     if (_database != null) return _database!;
     _database = await _initDatabase();
     return _database!;
+  }
+
+  /// データベースインスタンスを取得（インスタンスメソッド）
+  Future<Database> getDatabase() async {
+    return await database;
   }
 
   /// データベースを初期化
@@ -33,40 +37,40 @@ class DatabaseService {
     if (kIsWeb) {
       // Webプラットフォームでは、IndexedDBを使用（getDatabasesPath()はWebでも動作する）
       dbPath = join(await getDatabasesPath(), _databaseName);
-      print('Webプラットフォーム: データベースパス: $dbPath');
+      debugPrint('Webプラットフォーム: データベースパス: $dbPath');
       
       // Webプラットフォームでは、データベースが存在しない場合、アセットから読み込む
       if (!await databaseFactory.databaseExists(dbPath)) {
-        print('Webプラットフォーム: データベースが存在しないため、アセットから読み込みます');
+        debugPrint('Webプラットフォーム: データベースが存在しないため、アセットから読み込みます');
         await _loadDatabaseFromAssetsForWeb(dbPath);
       } else {
-        print('Webプラットフォーム: 既存のデータベースファイルが見つかりました');
+        debugPrint('Webプラットフォーム: 既存のデータベースファイルが見つかりました');
       }
     } else if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
       // デスクトップ環境では、プロジェクトディレクトリを使用
       dbPath = join(Directory.current.path, 'data', _databaseName);
-      print('デスクトップ環境: データベースパス: $dbPath');
+      debugPrint('デスクトップ環境: データベースパス: $dbPath');
       
       // データベースファイルが存在しない場合、アセットからコピー
       final dbFile = File(dbPath);
       if (!await dbFile.exists()) {
-        print('データベースファイルが存在しないため、アセットからコピーします');
+        debugPrint('データベースファイルが存在しないため、アセットからコピーします');
         await _copyDatabaseFromAssets(dbPath);
       } else {
-        print('既存のデータベースファイルが見つかりました');
+        debugPrint('既存のデータベースファイルが見つかりました');
       }
     } else {
       // モバイル環境では、getDatabasesPath()を使用
       dbPath = join(await getDatabasesPath(), _databaseName);
-      print('モバイル環境: データベースパス: $dbPath');
+      debugPrint('モバイル環境: データベースパス: $dbPath');
       
       // データベースファイルが存在しない場合、アセットからコピー
       final dbFile = File(dbPath);
       if (!await dbFile.exists()) {
-        print('データベースファイルが存在しないため、アセットからコピーします');
+        debugPrint('データベースファイルが存在しないため、アセットからコピーします');
         await _copyDatabaseFromAssets(dbPath);
       } else {
-        print('既存のデータベースファイルが見つかりました');
+        debugPrint('既存のデータベースファイルが見つかりました');
       }
     }
     
@@ -83,10 +87,10 @@ class DatabaseService {
     // 既存のデータベースに問題があるか確認
     final count = await database.rawQuery('SELECT COUNT(*) as count FROM questions');
     final questionCount = count.first['count'] as int;
-    print('データベース内の問題数: $questionCount');
+    debugPrint('データベース内の問題数: $questionCount');
     
     if (questionCount == 0) {
-      print('データベースが空のため、アセットからコピーを試みます');
+      debugPrint('データベースが空のため、アセットからコピーを試みます');
       if (kIsWeb) {
         // Webプラットフォームでは、アセットからデータベースを再読み込み
         await database.close();
@@ -99,7 +103,7 @@ class DatabaseService {
         );
         final newCount = await newDatabase.rawQuery('SELECT COUNT(*) as count FROM questions');
         final newQuestionCount = newCount.first['count'] as int;
-        print('Webプラットフォーム: 再読み込み後の問題数: $newQuestionCount');
+        debugPrint('Webプラットフォーム: 再読み込み後の問題数: $newQuestionCount');
         return newDatabase;
       } else {
         // モバイル/デスクトップ環境では、アセットからコピーを試みる
@@ -114,7 +118,7 @@ class DatabaseService {
         );
         final newCount = await newDatabase.rawQuery('SELECT COUNT(*) as count FROM questions');
         final newQuestionCount = newCount.first['count'] as int;
-        print('コピー後の問題数: $newQuestionCount');
+        debugPrint('コピー後の問題数: $newQuestionCount');
         return newDatabase;
       }
     }
@@ -136,9 +140,9 @@ class DatabaseService {
       final File file = File(targetPath);
       await file.writeAsBytes(bytes);
       
-      print('データベースをアセットからコピーしました: $targetPath');
+      debugPrint('データベースをアセットからコピーしました: $targetPath');
     } catch (e) {
-      print('アセットからのデータベースコピーに失敗しました: $e');
+      debugPrint('アセットからのデータベースコピーに失敗しました: $e');
       // アセットがない場合は、空のデータベースを作成（onCreateが呼ばれる）
     }
   }
@@ -160,23 +164,23 @@ class DatabaseService {
       try {
         // writeDatabaseBytesメソッドを呼び出す（dynamic型でキャスト）
         await (databaseFactory as dynamic).writeDatabaseBytes(dbPath, bytes);
-        print('Webプラットフォーム: データベースをアセットから読み込みました: $dbPath');
+        debugPrint('Webプラットフォーム: データベースをアセットから読み込みました: $dbPath');
         return;
       } on NoSuchMethodError catch (e) {
-        print('writeDatabaseBytesメソッドが存在しません: $e');
+        debugPrint('writeDatabaseBytesメソッドが存在しません: $e');
         // メソッドが存在しない場合、別の方法を試す
       } catch (e) {
-        print('writeDatabaseBytesメソッドの呼び出しに失敗しました: $e');
+        debugPrint('writeDatabaseBytesメソッドの呼び出しに失敗しました: $e');
         // その他のエラーの場合も続行
       }
       
       // フォールバック: メソッドが存在しない場合の処理
       // Webプラットフォームでは、アセットからデータベースを直接読み込むことができない場合、
       // データベースは空の状態で作成され、必要に応じてデータを追加する必要があります
-      print('Webプラットフォーム: writeDatabaseBytesメソッドが使用できないため、データベースは空の状態で作成されます');
-      print('注意: Webプラットフォームでは、アセットからのデータベース読み込みは、sqflite_common_ffi_webのバージョンによってサポートされていない可能性があります');
+      debugPrint('Webプラットフォーム: writeDatabaseBytesメソッドが使用できないため、データベースは空の状態で作成されます');
+      debugPrint('注意: Webプラットフォームでは、アセットからのデータベース読み込みは、sqflite_common_ffi_webのバージョンによってサポートされていない可能性があります');
     } catch (e) {
-      print('Webプラットフォーム: アセットからのデータベース読み込みに失敗しました: $e');
+      debugPrint('Webプラットフォーム: アセットからのデータベース読み込みに失敗しました: $e');
       // エラーが発生した場合でも、空のデータベースは作成される（onCreateが呼ばれる）
     }
   }

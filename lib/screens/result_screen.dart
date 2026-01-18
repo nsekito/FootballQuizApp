@@ -4,7 +4,6 @@ import 'package:go_router/go_router.dart';
 import '../providers/user_data_provider.dart';
 import '../providers/quiz_history_provider.dart';
 import '../models/user_rank.dart';
-import '../models/quiz_history.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;

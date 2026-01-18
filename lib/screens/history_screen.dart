@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import '../providers/quiz_history_provider.dart';
-import '../models/quiz_history.dart';
 import '../utils/constants.dart';
+import '../widgets/error_widget.dart';
+import '../widgets/empty_state_widget.dart';
+import '../widgets/loading_widget.dart';
 
 class HistoryScreen extends ConsumerWidget {
   const HistoryScreen({super.key});
@@ -20,31 +22,9 @@ class HistoryScreen extends ConsumerWidget {
       body: historyAsync.when(
         data: (historyList) {
           if (historyList.isEmpty) {
-            return Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.history,
-                    size: 64,
-                    color: Colors.grey.shade400,
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    'まだクイズ履歴がありません',
-                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          color: Colors.grey.shade600,
-                        ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'クイズをプレイして履歴を残しましょう！',
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: Colors.grey.shade500,
-                        ),
-                  ),
-                ],
-              ),
+            return const AppEmptyStateWidget(
+              message: 'まだクイズ履歴がありません\nクイズをプレイして履歴を残しましょう！',
+              icon: Icons.history,
             );
           }
 
@@ -62,38 +42,10 @@ class HistoryScreen extends ConsumerWidget {
             ),
           );
         },
-        loading: () => const Center(
-          child: CircularProgressIndicator(),
-        ),
-        error: (error, stack) => Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.error_outline,
-                size: 64,
-                color: Colors.red.shade300,
-              ),
-              const SizedBox(height: 16),
-              Text(
-                'エラーが発生しました',
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
-              const SizedBox(height: 8),
-              Text(
-                error.toString(),
-                style: Theme.of(context).textTheme.bodySmall,
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 16),
-              ElevatedButton(
-                onPressed: () {
-                  ref.invalidate(quizHistoryListProvider);
-                },
-                child: const Text('再試行'),
-              ),
-            ],
-          ),
+        loading: () => const AppLoadingWidget(),
+        error: (error, stack) => AppErrorWidget(
+          message: error.toString(),
+          onRetry: () => ref.invalidate(quizHistoryListProvider),
         ),
       ),
     );

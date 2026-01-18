@@ -1,5 +1,5 @@
 import 'dart:io' show Platform;
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show kIsWeb, debugPrint;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'providers/router_provider.dart';
@@ -21,9 +21,9 @@ void main() async {
     try {
       // Webプラットフォーム用のデータベースファクトリを設定
       databaseFactory = sqflite_web.databaseFactoryFfiWeb;
-      print('Webプラットフォーム用のデータベースファクトリを初期化しました');
+      debugPrint('Webプラットフォーム用のデータベースファクトリを初期化しました');
     } catch (e) {
-      print('Webプラットフォーム用のデータベースファクトリの初期化に失敗: $e');
+      debugPrint('Webプラットフォーム用のデータベースファクトリの初期化に失敗: $e');
     }
   }
   // Windows/Linux/macOS（デスクトップ）でsqflite_common_ffiを初期化
@@ -32,7 +32,7 @@ void main() async {
       sqflite_ffi.initDatabaseFactory();
     } catch (e) {
       // Android/iOSでは初期化をスキップ（通常のsqfliteを使用）
-      print('sqflite_common_ffiの初期化をスキップ: $e');
+      debugPrint('sqflite_common_ffiの初期化をスキップ: $e');
     }
   }
   

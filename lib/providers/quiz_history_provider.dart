@@ -1,8 +1,11 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../services/quiz_history_service.dart';
-import '../services/database_service.dart';
 import '../models/quiz_history.dart';
 import 'database_provider.dart';
+
+// 型をエクスポートして他のファイルで使用できるようにする
+export '../services/quiz_history_service.dart' show QuizStatistics, CategoryStatistic, DifficultyStatistic;
+export '../models/quiz_history.dart' show QuizHistory;
 
 /// クイズ履歴サービスのプロバイダー
 final quizHistoryServiceProvider = Provider<QuizHistoryService>((ref) {
