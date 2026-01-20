@@ -9,6 +9,7 @@ class Question {
   final String category; // rules, history, teams, match_recap, news
   final String difficulty; // easy, normal, hard, extreme
   final String tags; // 国名、リーグ名、年度など検索用タグ
+  final String? referenceDate; // 対象年月（YYYYまたはYYYY-MM形式、オプション）
 
   Question({
     required this.id,
@@ -20,6 +21,7 @@ class Question {
     required this.category,
     required this.difficulty,
     required this.tags,
+    this.referenceDate,
   });
 
   Map<String, dynamic> toJson() => {
@@ -32,6 +34,7 @@ class Question {
         'category': category,
         'difficulty': difficulty,
         'tags': tags,
+        'referenceDate': referenceDate,
       };
 
   factory Question.fromJson(Map<String, dynamic> json) => Question(
@@ -44,5 +47,6 @@ class Question {
         category: json['category'] as String,
         difficulty: json['difficulty'] as String,
         tags: json['tags'] as String,
+        referenceDate: json['referenceDate'] as String?,
       );
 }

@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "generated_at": "2025-01-13T00:00:00Z",
+  "category": "match_recap",
+  "questions": [
+    {
+      "id": "match_recap_2025_01_13_001",
+      "text": "2025年1月12日の大阪ダービー、制したのは？",
+      "options": ["セレッソ大阪", "ガンバ大阪", "引き分け", "試合中止"],
+      "answerIndex": 0,
+      "explanation": "セレッソ大阪が2-1で勝利しました。前半に先制点を奪われましたが、後半に2点を返して逆転勝利を収めました。",
+      "trivia": "大阪ダービーは関西地方で最も熱い試合の一つとして知られています。",
+      "category": "match_recap",
+      "difficulty": "normal",
+      "tags": "japan,j1,2025"
+    },
+    {
+      "id": "match_recap_2025_01_13_002",
+      "text": "2025年1月12日の試合で、後半ATに決勝ゴールを決めたのは？",
+      "options": ["選手A", "選手B", "選手C", "選手D"],
+      "answerIndex": 1,
+      "explanation": "選手Bが89分に決勝ゴールを決めました。",
+      "trivia": "このゴールは今シーズン初の後半ATゴールでした。",
+      "category": "match_recap",
+      "difficulty": "normal",
+      "tags": "japan,j1,2025"
+    }
+  ]
+}

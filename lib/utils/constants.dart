@@ -21,4 +21,22 @@ class AppConstants {
   static const String difficultyNormal = 'normal';
   static const String difficultyHard = 'hard';
   static const String difficultyExtreme = 'extreme';
+
+  // リモートデータ設定
+  // TODO: 実際のGitHubリポジトリURLに変更してください
+  static const String githubRawBaseUrl = 'https://raw.githubusercontent.com';
+  static const String githubRepoOwner = 'your-username'; // GitHubユーザー名
+  static const String githubRepoName = 'FootballQuizApp'; // リポジトリ名
+  static const String githubBranch = 'main'; // ブランチ名
+  
+  // リモートデータのパス
+  static const String weeklyRecapDataPath = 'data/weekly_recap';
+  static const String newsDataPath = 'data/news';
+  
+  // タイムアウト設定（秒）
+  static const int remoteDataTimeoutSeconds = 30;
+  
+  // ニュースクイズフィルタ
+  static const String regionDomestic = 'domestic';
+  static const String regionWorld = 'world';
 }

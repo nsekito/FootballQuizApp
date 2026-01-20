@@ -101,11 +101,72 @@ python json_to_db.py generated/all_questions_YYYYMMDD_HHMMSS.json --create-schem
 python json_to_db.py generated/all_questions_YYYYMMDD_HHMMSS.json --replace
 ```
 
+### 手動で問題を作成・登録する
+
+Gemini APIで自動生成した問題とは別に、手動で問題を作成して登録することができます。
+
+#### 方法1: 対話型スクリプトを使用（推奨）
+
+```powershell
+# 1問作成
+python create_manual_question.py
+
+# 複数問作成
+python create_manual_question.py --count 5
+
+# 出力ファイルを指定
+python create_manual_question.py --output my_questions.json
+```
+
+スクリプトを実行すると、対話的に以下を入力できます：
+- カテゴリ（rules, history, teams）
+- 難易度（easy, normal, hard, extreme）
+- 問題文
+- 4つの選択肢
+- 正解の選択肢番号
+- 解説
+- 豆知識（オプション）
+- タグ
+- 対象年月（オプション）
+
+#### 方法2: JSONファイルを直接編集
+
+1. **テンプレートファイルをコピー**:
+   ```powershell
+   copy manual_question_template.json my_manual_questions.json
+   ```
+
+2. **JSONファイルを編集**:
+   - `my_manual_questions.json`を開いて問題を記入
+   - 問題IDは`manual_{category}_{difficulty}_{YYYYMMDD}_{3桁の連番}`形式で指定
+   - 例: `manual_rules_easy_20250119_001`
+
+3. **データベースに登録**:
+   ```powershell
+   # 手動作成の問題として登録（--manualフラグを使用）
+   python json_to_db.py my_manual_questions.json --manual --replace
+   ```
+
+#### 手動作成の問題の特徴
+
+- 問題IDは`manual_`で始まります（例: `manual_rules_easy_20250119_001`）
+- `--manual`フラグを使用すると、手動作成の問題として識別されます
+- 既存の自動生成問題と区別して管理できます
+
+#### 注意事項
+
+- 問題IDは既存の問題と重複しないように注意してください
+- 選択肢は必ず4つである必要があります
+- `answerIndex`は0-3の範囲内で指定してください（0が最初の選択肢）
+- 問題の品質（正解が1つだけ存在するなど）は手動で確認してください
+
 ## ファイル構成
 
 - `config.py` - 設定ファイル（環境変数読み込み）
 - `generate_static_questions.py` - 常設クイズ生成スクリプト
 - `json_to_db.py` - JSONからSQLite DBへの変換スクリプト
+- `create_manual_question.py` - 手動問題作成スクリプト（対話型）
+- `manual_question_template.json` - 手動作成用JSONテンプレート
 - `utils/gemini_client.py` - Gemini APIクライアント
 - `utils/question_validator.py` - 問題検証ユーティリティ
 

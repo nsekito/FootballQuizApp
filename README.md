@@ -117,6 +117,48 @@ python check_db.py
 
 詳細は [scripts/README.md](scripts/README.md) を参照してください。
 
+## リモートデータ設定（Phase 4）
+
+### GitHub Rawの設定
+
+アプリがリモートデータ（Weekly Recap、ニュースクイズ）を取得するには、GitHubリポジトリの設定が必要です。
+
+1. **GitHubリポジトリの準備**
+   - リポジトリを公開（Public）にする必要があります
+   - または、GitHub Personal Access Tokenを使用してPrivateリポジトリにもアクセス可能（実装が必要）
+
+2. **定数の設定**
+   `lib/utils/constants.dart` の以下の定数を実際の値に変更してください：
+   ```dart
+   static const String githubRepoOwner = 'your-username'; // GitHubユーザー名
+   static const String githubRepoName = 'FootballQuizApp'; // リポジトリ名
+   static const String githubBranch = 'main'; // ブランチ名
+   ```
+
+3. **データファイルの配置**
+   - Weekly Recap: `data/weekly_recap/YYYY-MM-DD.json`
+   - ニュースクイズ: `data/news/YYYY/domestic.json` または `data/news/YYYY/world.json`
+   
+   詳細は各ディレクトリの `README.md` を参照してください。
+
+4. **データの取得URL**
+   GitHub Raw URLの形式：
+   ```
+   https://raw.githubusercontent.com/{OWNER}/{REPO}/{BRANCH}/data/{PATH}
+   ```
+   
+   例：
+   - Weekly Recap: `https://raw.githubusercontent.com/your-username/FootballQuizApp/main/data/weekly_recap/2025-01-13.json`
+   - ニュースクイズ: `https://raw.githubusercontent.com/your-username/FootballQuizApp/main/data/news/2025/domestic.json`
+
+### テスト用データ
+
+テスト用のサンプルデータが `data/` ディレクトリに含まれています：
+- `data/weekly_recap/2025-01-13.json` - Weekly Recapのサンプル
+- `data/news/2025/domestic.json` - ニュースクイズのサンプル
+
+これらのファイルをGitHubリポジトリにコミット・プッシュすると、アプリからアクセス可能になります。
+
 ## 実装フェーズ
 
 1. **Phase 1 (Data)**: Pythonスクリプトによるデータ生成パイプラインの構築

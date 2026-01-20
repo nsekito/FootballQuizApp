@@ -10,7 +10,7 @@ import '../utils/constants.dart';
 class DatabaseService {
   static Database? _database;
   static const String _databaseName = 'questions.db';  // アセットファイル名と一致させる
-  static const int _databaseVersion = 2;
+  static const int _databaseVersion = 3;
   
   // キャッシュ用のマップ（問題ID -> Question）
   final Map<String, Question> _questionCache = {};
@@ -198,7 +198,8 @@ class DatabaseService {
         trivia TEXT,
         category TEXT NOT NULL,
         difficulty TEXT NOT NULL,
-        tags TEXT NOT NULL
+        tags TEXT NOT NULL,
+        reference_date TEXT
       )
     ''');
 
@@ -289,6 +290,19 @@ class DatabaseService {
         CREATE INDEX IF NOT EXISTS idx_questions_tags ON questions(tags)
       ''');
     }
+    
+    // バージョン2から3へのマイグレーション
+    if (oldVersion < 3) {
+      // reference_dateカラムを追加
+      try {
+        await db.execute('''
+          ALTER TABLE questions ADD COLUMN reference_date TEXT
+        ''');
+        debugPrint('reference_dateカラムを追加しました');
+      } catch (e) {
+        debugPrint('reference_dateカラムの追加に失敗しました（既に存在する可能性があります）: $e');
+      }
+    }
   }
 
   /// クイズ問題を追加
@@ -306,6 +320,7 @@ class DatabaseService {
         'category': question.category,
         'difficulty': question.difficulty,
         'tags': question.tags,
+        'reference_date': question.referenceDate,
       },
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
@@ -328,6 +343,7 @@ class DatabaseService {
           'category': question.category,
           'difficulty': question.difficulty,
           'tags': question.tags,
+          'reference_date': question.referenceDate,
         },
         conflictAlgorithm: ConflictAlgorithm.replace,
       );
@@ -650,6 +666,7 @@ class DatabaseService {
       category: map['category'] as String,
       difficulty: map['difficulty'] as String,
       tags: map['tags'] as String,
+      referenceDate: map['reference_date'] as String?,
     );
     
     // キャッシュに追加（サイズ制限あり）

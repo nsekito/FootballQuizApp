@@ -34,12 +34,16 @@ final routerProvider = Provider<GoRouter>((ref) {
           final country = state.uri.queryParameters['country'] ?? '';
           final region = state.uri.queryParameters['region'] ?? '';
           final range = state.uri.queryParameters['range'] ?? '';
+          final year = state.uri.queryParameters['year'];
+          final date = state.uri.queryParameters['date'];
           return QuizScreen(
             category: category,
             difficulty: difficulty,
             country: country,
             region: region,
             range: range,
+            year: year,
+            date: date,
           );
         },
       ),

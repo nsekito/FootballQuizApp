@@ -26,7 +26,8 @@ def create_database_schema(db_path: str):
             trivia TEXT,
             category TEXT NOT NULL,
             difficulty TEXT NOT NULL,
-            tags TEXT NOT NULL
+            tags TEXT NOT NULL,
+            reference_date TEXT
         )
     ''')
     
@@ -57,15 +58,23 @@ def load_questions_from_json(json_path: str) -> list:
     return questions
 
 
-def insert_questions_to_db(questions: list, db_path: str, replace: bool = True):
+def insert_questions_to_db(questions: list, db_path: str, replace: bool = True, is_manual: bool = False):
     """問題をデータベースに挿入"""
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
     inserted_count = 0
     skipped_count = 0
+    manual_count = 0
     
     for question in questions:
+        # 手動作成の問題かチェック
+        question_id = question.get('id', '')
+        if is_manual or question_id.startswith('manual_'):
+            manual_count += 1
+            # IDがmanual_で始まっていない場合は警告
+            if not question_id.startswith('manual_'):
+                print(f"警告: 手動作成の問題ですが、IDが 'manual_' で始まっていません: {question_id}")
         # 必須フィールドの確認
         required_fields = ['id', 'text', 'options', 'answerIndex', 'explanation', 'category', 'difficulty', 'tags']
         if not all(field in question for field in required_fields):
@@ -79,8 +88,8 @@ def insert_questions_to_db(questions: list, db_path: str, replace: bool = True):
         try:
             cursor.execute('''
                 INSERT INTO questions 
-                (id, text, options, answerIndex, explanation, trivia, category, difficulty, tags)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                (id, text, options, answerIndex, explanation, trivia, category, difficulty, tags, reference_date)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', (
                 question['id'],
                 question['text'],
@@ -90,7 +99,8 @@ def insert_questions_to_db(questions: list, db_path: str, replace: bool = True):
                 question.get('trivia'),
                 question['category'],
                 question['difficulty'],
-                question['tags']
+                question['tags'],
+                question.get('referenceDate')
             ))
             inserted_count += 1
         except sqlite3.IntegrityError:
@@ -99,7 +109,7 @@ def insert_questions_to_db(questions: list, db_path: str, replace: bool = True):
                 cursor.execute('''
                     UPDATE questions 
                     SET text = ?, options = ?, answerIndex = ?, explanation = ?, 
-                        trivia = ?, category = ?, difficulty = ?, tags = ?
+                        trivia = ?, category = ?, difficulty = ?, tags = ?, reference_date = ?
                     WHERE id = ?
                 ''', (
                     question['text'],
@@ -110,6 +120,7 @@ def insert_questions_to_db(questions: list, db_path: str, replace: bool = True):
                     question['category'],
                     question['difficulty'],
                     question['tags'],
+                    question.get('referenceDate'),
                     question['id']
                 ))
                 inserted_count += 1
@@ -123,6 +134,8 @@ def insert_questions_to_db(questions: list, db_path: str, replace: bool = True):
     print(f"データベースに挿入完了: {inserted_count}問")
     if skipped_count > 0:
         print(f"スキップ: {skipped_count}問")
+    if manual_count > 0:
+        print(f"手動作成の問題: {manual_count}問")
 
 
 def cleanup_old_json_files(current_json_file: Path):
@@ -166,6 +179,7 @@ def main():
     parser.add_argument('--replace', action='store_true', help='既存の問題を置き換える')
     parser.add_argument('--create-schema', action='store_true', help='データベーススキーマを作成')
     parser.add_argument('--cleanup', action='store_true', default=True, help='登録後に古いJSONファイルを削除（デフォルト: True）')
+    parser.add_argument('--manual', action='store_true', help='手動作成の問題であることを示す（IDがmanual_で始まることを期待）')
     
     args = parser.parse_args()
     
@@ -184,8 +198,18 @@ def main():
     
     questions = load_questions_from_json(str(json_file_path))
     
+    # 手動作成の問題の統計情報を表示
+    if args.manual:
+        manual_questions = [q for q in questions if q.get('id', '').startswith('manual_')]
+        auto_questions = [q for q in questions if not q.get('id', '').startswith('manual_')]
+        print(f"\n【問題の内訳】")
+        print(f"  手動作成: {len(manual_questions)}問")
+        if auto_questions:
+            print(f"  自動生成: {len(auto_questions)}問")
+            print(f"  警告: 手動作成フラグが指定されていますが、自動生成の問題が含まれています")
+    
     # データベースに挿入
-    insert_questions_to_db(questions, args.db, replace=args.replace)
+    insert_questions_to_db(questions, args.db, replace=args.replace, is_manual=args.manual)
     
     # 古いJSONファイルを削除
     if args.cleanup:

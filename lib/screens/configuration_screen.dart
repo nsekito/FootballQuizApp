@@ -19,6 +19,8 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
   String? _selectedRegion;
   String? _selectedCountry;
   String? _selectedRange;
+  String? _selectedNewsRegion; // ニュースクイズ用の地域
+  String? _selectedYear; // ニュースクイズ用の年
 
   @override
   Widget build(BuildContext context) {
@@ -56,6 +58,14 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
                 _buildCountrySelector(),
                 const SizedBox(height: 16),
                 _buildRangeSelector(),
+                const SizedBox(height: 24),
+              ],
+
+              // ニュースクイズ: 地域選択と年選択
+              if (widget.category == AppConstants.categoryNews) ...[
+                _buildNewsRegionSelector(),
+                const SizedBox(height: 16),
+                _buildYearSelector(),
                 const SizedBox(height: 24),
               ],
 
@@ -306,7 +316,7 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
       return _selectedDifficulty != null && _selectedDifficulty!.isNotEmpty;
     }
 
-    // ニュースクイズ: 難易度のみ必要
+    // ニュースクイズ: 難易度が必要（地域と年はオプション）
     if (widget.category == AppConstants.categoryNews) {
       return _selectedDifficulty != null && _selectedDifficulty!.isNotEmpty;
     }
@@ -333,6 +343,84 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
     _startQuiz();
   }
 
+  Widget _buildNewsRegionSelector() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          '地域',
+          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+        ),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: [
+            _buildChip(
+              '指定なし',
+              '',
+              _selectedNewsRegion,
+              (value) => setState(() => _selectedNewsRegion = value),
+            ),
+            _buildChip(
+              '国内',
+              AppConstants.regionDomestic,
+              _selectedNewsRegion,
+              (value) => setState(() => _selectedNewsRegion = value),
+            ),
+            _buildChip(
+              '世界',
+              AppConstants.regionWorld,
+              _selectedNewsRegion,
+              (value) => setState(() => _selectedNewsRegion = value),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  Widget _buildYearSelector() {
+    // 現在の年から過去5年分を選択肢として提供
+    final currentYear = DateTime.now().year;
+    final years = List.generate(6, (index) => (currentYear - index).toString());
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          '年',
+          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+        ),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: [
+            _buildChip(
+              '指定なし',
+              '',
+              _selectedYear,
+              (value) => setState(() => _selectedYear = value),
+            ),
+            ...years.map((year) {
+              return _buildChip(
+                year,
+                year,
+                _selectedYear,
+                (value) => setState(() => _selectedYear = value),
+              );
+            }),
+          ],
+        ),
+      ],
+    );
+  }
+
   void _startQuiz() {
     final uri = Uri(
       path: '/quiz',
@@ -342,6 +430,8 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
         if (_selectedRegion != null && _selectedRegion!.isNotEmpty) 'region': _selectedRegion!,
         if (_selectedCountry != null && _selectedCountry!.isNotEmpty) 'country': _selectedCountry!,
         if (_selectedRange != null && _selectedRange!.isNotEmpty) 'range': _selectedRange!,
+        if (_selectedNewsRegion != null && _selectedNewsRegion!.isNotEmpty) 'region': _selectedNewsRegion!,
+        if (_selectedYear != null && _selectedYear!.isNotEmpty) 'year': _selectedYear!,
       },
     );
     context.push(uri.toString());

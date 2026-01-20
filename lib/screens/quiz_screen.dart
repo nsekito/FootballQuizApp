@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../models/question.dart';
-import '../providers/database_provider.dart';
+import '../providers/question_service_provider.dart';
+import '../services/remote_data_service.dart';
 import '../utils/constants.dart';
 import '../widgets/error_widget.dart';
 import '../widgets/loading_widget.dart';
@@ -13,6 +14,8 @@ class QuizScreen extends ConsumerStatefulWidget {
   final String country;
   final String region;
   final String range;
+  final String? year; // ニュースクイズ用
+  final String? date; // Weekly Recap用（YYYY-MM-DD形式）
 
   const QuizScreen({
     super.key,
@@ -21,6 +24,8 @@ class QuizScreen extends ConsumerStatefulWidget {
     this.country = '',
     this.region = '',
     this.range = '',
+    this.year,
+    this.date,
   });
 
   @override
@@ -47,7 +52,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         _isLoading = true;
       });
 
-      final databaseService = ref.read(databaseServiceProvider);
+      final questionService = ref.read(questionServiceProvider);
       
       // タグの構築（国と地域から）
       String? tags;
@@ -57,12 +62,15 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         tags = widget.country;
       }
       
-      final questions = await databaseService.getQuestionsOptimized(
+      final questions = await questionService.getQuestions(
         category: widget.category,
         difficulty: widget.difficulty,
         tags: tags,
         country: widget.country.isNotEmpty ? widget.country : null,
+        region: widget.region.isNotEmpty ? widget.region : null,
         range: widget.range.isNotEmpty ? widget.range : null,
+        year: widget.year,
+        date: widget.date,
         limit: AppConstants.defaultQuestionsPerQuiz,
       );
 
@@ -85,6 +93,21 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           );
         }
       }
+    } on RemoteDataException catch (e) {
+      if (!mounted) return;
+      
+      setState(() {
+        _isLoading = false;
+      });
+
+      showErrorDialog(
+        context,
+        title: 'データの取得に失敗しました',
+        message: e.getUserFriendlyMessage(),
+        showRetry: true,
+        onRetry: () => _loadQuestions(),
+        onClose: () => context.pop(),
+      );
     } catch (e) {
       if (!mounted) return;
       
@@ -144,6 +167,29 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                 value: (_currentQuestionIndex + 1) / _questions.length,
               ),
               const SizedBox(height: 24),
+
+              // 対象年月の表示（存在する場合）
+              if (currentQuestion.referenceDate != null && currentQuestion.referenceDate!.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.calendar_today,
+                        size: 16,
+                        color: Colors.grey.shade600,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        _formatReferenceDate(currentQuestion.referenceDate!),
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: Colors.grey.shade600,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
 
               // 問題文
               Card(
@@ -319,5 +365,28 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         _showResult = false;
       });
     }
+  }
+
+  /// 対象年月をフォーマット（YYYYまたはYYYY-MM形式を「YYYY年時点」または「YYYY年MM月時点」に変換）
+  String _formatReferenceDate(String referenceDate) {
+    if (referenceDate.isEmpty) return '';
+    
+    // YYYY-MM形式の場合
+    if (referenceDate.contains('-')) {
+      final parts = referenceDate.split('-');
+      if (parts.length == 2) {
+        final year = parts[0];
+        final month = parts[1];
+        return '対象: ${year}年${month}月時点';
+      }
+    }
+    
+    // YYYY形式の場合
+    if (referenceDate.length == 4 && RegExp(r'^\d{4}$').hasMatch(referenceDate)) {
+      return '対象: ${referenceDate}年時点';
+    }
+    
+    // その他の形式はそのまま返す
+    return '対象: $referenceDate';
   }
 }

@@ -18,7 +18,7 @@ import google.generativeai as genai
 genai.configure(api_key=GEMINI_API_KEY)
 
 # モデルを選択（通常のGemini API用のモデル名）
-MODEL_NAME = 'gemini-2.5-flash'  # 推奨モデル
+MODEL_NAME = 'gemini-3-pro-preview'  # 推奨モデル
 # MODEL_NAME = 'gemini-flash-latest'  # 最新のFlashモデル
 # MODEL_NAME = 'gemini-2.5-pro'  # より高品質だが、クォータ制限が厳しい可能性
 
@@ -68,7 +68,8 @@ def generate_question(category: str, difficulty: str, tags: str = "", diversity_
   "options": ["選択肢1", "選択肢2", "選択肢3", "選択肢4"],
   "answerIndex": 0,
   "explanation": "詳しい解説（正解の理由や背景を含む）",
-  "trivia": "豆知識や小ネタ（ユーザーの満足度向上のため）"
+  "trivia": "豆知識や小ネタ（ユーザーの満足度向上のため）",
+  "referenceDate": "YYYYまたはYYYY-MM形式（問題の対象年月、オプション）"
 }}
 
 【問題作成の基本方針】
