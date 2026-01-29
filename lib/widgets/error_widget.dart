@@ -21,6 +21,7 @@ class AppErrorWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // エラー状態のアイコンを表示
             Icon(
               Icons.error_outline,
               size: 64,

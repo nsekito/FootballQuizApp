@@ -52,7 +52,8 @@ Copy-Item scripts\.env.example scripts\.env
 
 ```
 GEMINI_API_KEY=実際のAPIキーをここに
-FOOTBALL_API_KEY=実際のAPIキーをここに（後で設定可）
+# GEMINI_MODEL_NAME=gemini-3-pro-preview  # オプション
+# WEEKLY_RECAP_OUTPUT_DIR=data/weekly_recap  # オプション
 ```
 
 ### 6. テスト実行

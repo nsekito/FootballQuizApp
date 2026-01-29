@@ -7,6 +7,9 @@ import '../services/remote_data_service.dart';
 import '../utils/constants.dart';
 import '../widgets/error_widget.dart';
 import '../widgets/loading_widget.dart';
+import '../widgets/quiz_choice_card.dart';
+import '../constants/app_colors.dart';
+import '../widgets/background_widget.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {
   final String category;
@@ -53,7 +56,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       });
 
       final questionService = ref.read(questionServiceProvider);
-      
+
       // タグの構築（国と地域から）
       String? tags;
       if (widget.region.isNotEmpty) {
@@ -61,7 +64,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       } else if (widget.country.isNotEmpty) {
         tags = widget.country;
       }
-      
+
       final questions = await questionService.getQuestions(
         category: widget.category,
         difficulty: widget.difficulty,
@@ -95,7 +98,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       }
     } on RemoteDataException catch (e) {
       if (!mounted) return;
-      
+
       setState(() {
         _isLoading = false;
       });
@@ -110,7 +113,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       );
     } catch (e) {
       if (!mounted) return;
-      
+
       setState(() {
         _isLoading = false;
       });
@@ -118,7 +121,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       showErrorDialog(
         context,
         title: 'エラーが発生しました',
-        message: 'クイズデータの読み込み中にエラーが発生しました。\n\nエラー内容: ${e.toString()}\n\nもう一度お試しください。',
+        message:
+            'クイズデータの読み込み中にエラーが発生しました。\n\nエラー内容: ${e.toString()}\n\nもう一度お試しください。',
         showRetry: true,
         onRetry: () => _loadQuestions(),
         onClose: () => context.pop(),
@@ -154,12 +158,33 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('問題 ${_currentQuestionIndex + 1} / ${_questions.length}'),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        flexibleSpace: Stack(
+          children: [
+            // 背景画像
+            Image.asset(
+              'assets/images/03_Backgrounds/header_background_pattern.png',
+              width: double.infinity,
+              height: double.infinity,
+              repeat: ImageRepeat.repeat,
+              fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) {
+                return Container(color: AppColors.primary);
+              },
+            ),
+            // オーバーレイ
+            Container(
+              color: AppColors.primary.withValues(alpha: 0.9),
+            ),
+          ],
+        ),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
+      body: AppBackgroundWidget(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               // 進捗バー
@@ -169,7 +194,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               const SizedBox(height: 24),
 
               // 対象年月の表示（存在する場合）
-              if (currentQuestion.referenceDate != null && currentQuestion.referenceDate!.isNotEmpty)
+              if (currentQuestion.referenceDate != null &&
+                  currentQuestion.referenceDate!.isNotEmpty)
                 Padding(
                   padding: const EdgeInsets.only(bottom: 8.0),
                   child: Row(
@@ -183,9 +209,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                       Text(
                         _formatReferenceDate(currentQuestion.referenceDate!),
                         style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: Colors.grey.shade600,
-                          fontWeight: FontWeight.w500,
-                        ),
+                              color: Colors.grey.shade600,
+                              fontWeight: FontWeight.w500,
+                            ),
                       ),
                     ],
                   ),
@@ -208,42 +234,17 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                 final index = entry.key;
                 final option = entry.value;
                 final isSelected = _selectedAnswerIndex == index;
-                final isCorrect = index == currentQuestion.answerIndex;
-                final showResult = _showResult;
+                final isCorrect = _showResult
+                    ? (index == currentQuestion.answerIndex
+                        ? true
+                        : (isSelected ? false : null))
+                    : null;
 
-                return Padding(
-                  padding: const EdgeInsets.only(bottom: 12.0),
-                  child: ElevatedButton(
-                    onPressed: _showResult ? null : () => _selectAnswer(index),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(16),
-                      backgroundColor: showResult
-                          ? (isCorrect
-                              ? Colors.green.shade100
-                              : (isSelected ? Colors.red.shade100 : null))
-                          : (isSelected ? Colors.blue.shade100 : null),
-                      foregroundColor: showResult
-                          ? (isCorrect
-                              ? Colors.green.shade900
-                              : (isSelected ? Colors.red.shade900 : null))
-                          : null,
-                    ),
-                    child: Row(
-                      children: [
-                        if (showResult && isCorrect)
-                          const Icon(Icons.check_circle, color: Colors.green),
-                        if (showResult && isSelected && !isCorrect)
-                          const Icon(Icons.cancel, color: Colors.red),
-                        const SizedBox(width: 8),
-                        Expanded(
-                          child: Text(
-                            option,
-                            style: const TextStyle(fontSize: 16),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                return QuizChoiceCard(
+                  text: option,
+                  isSelected: isSelected,
+                  isCorrect: isCorrect,
+                  onTap: () => _selectAnswer(index),
                 );
               }),
 
@@ -251,18 +252,29 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
               // 次へ/結果へボタン
               if (_showResult)
-                ElevatedButton(
-                  onPressed: () => _nextQuestion(isLastQuestion),
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    backgroundColor: Colors.green.shade700,
-                    foregroundColor: Colors.white,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: ElevatedButton(
+                    onPressed: () => _nextQuestion(isLastQuestion),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      backgroundColor: AppColors.primary,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      elevation: 4,
+                    ),
+                    child: Text(
+                      isLastQuestion ? '結果を見る' : '次の問題',
+                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    ),
                   ),
-                  child: Text(isLastQuestion ? '結果を見る' : '次の問題'),
                 ),
             ],
           ),
         ),
+      ),
       ),
     );
   }
@@ -287,54 +299,117 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     showDialog(
       context: context,
       barrierDismissible: false,
-      builder: (context) => AlertDialog(
-        title: const Text('解説'),
-        content: SingleChildScrollView(
+      builder: (context) => Dialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.1),
+                blurRadius: 10,
+                offset: const Offset(0, 4),
+              ),
+            ],
+          ),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(
-                question.explanation,
-                style: const TextStyle(fontSize: 16),
-              ),
-              if (question.trivia != null && question.trivia!.isNotEmpty) ...[
-                const SizedBox(height: 16),
-                const Divider(),
-                const SizedBox(height: 8),
-                Row(
+              Container(
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: AppColors.primary,
+                  borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                  ),
+                ),
+                child: Row(
                   children: [
-                    Icon(Icons.lightbulb, color: Colors.amber.shade700, size: 20),
+                    const Icon(Icons.info_outline, color: Colors.white),
                     const SizedBox(width: 8),
                     const Text(
-                      '豆知識',
+                      '解説',
                       style: TextStyle(
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        fontSize: 14,
+                        color: Colors.white,
                       ),
+                    ),
+                    const Spacer(),
+                    IconButton(
+                      icon: const Icon(Icons.close, color: Colors.white),
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
                     ),
                   ],
                 ),
-                const SizedBox(height: 8),
-                Text(
-                  question.trivia!,
-                  style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey.shade700,
+              ),
+              Flexible(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        question.explanation,
+                        style: const TextStyle(fontSize: 16),
+                      ),
+                      if (question.trivia != null && question.trivia!.isNotEmpty) ...[
+                        const SizedBox(height: 16),
+                        const Divider(),
+                        const SizedBox(height: 8),
+                        Row(
+                          children: [
+                            Icon(Icons.lightbulb,
+                                color: Colors.amber.shade700, size: 20),
+                            const SizedBox(width: 8),
+                            const Text(
+                              '豆知識',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          question.trivia!,
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.grey.shade700,
+                          ),
+                        ),
+                      ],
+                    ],
                   ),
                 ),
-              ],
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.primary,
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                    ),
+                    child: const Text('閉じる'),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            child: const Text('閉じる'),
-          ),
-        ],
       ),
     );
   }
@@ -346,7 +421,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       final totalPoints = _score == _questions.length
           ? earnedPoints + AppConstants.pointsPerfectScoreBonus
           : earnedPoints;
-      
+
       final uri = Uri(
         path: '/result',
         queryParameters: {
@@ -370,23 +445,25 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   /// 対象年月をフォーマット（YYYYまたはYYYY-MM形式を「YYYY年時点」または「YYYY年MM月時点」に変換）
   String _formatReferenceDate(String referenceDate) {
     if (referenceDate.isEmpty) return '';
-    
+
     // YYYY-MM形式の場合
     if (referenceDate.contains('-')) {
       final parts = referenceDate.split('-');
       if (parts.length == 2) {
         final year = parts[0];
         final month = parts[1];
-        return '対象: ${year}年${month}月時点';
+        return '対象: $year年$month月時点';
       }
     }
-    
+
     // YYYY形式の場合
-    if (referenceDate.length == 4 && RegExp(r'^\d{4}$').hasMatch(referenceDate)) {
-      return '対象: ${referenceDate}年時点';
+    if (referenceDate.length == 4 &&
+        RegExp(r'^\d{4}$').hasMatch(referenceDate)) {
+      return '対象: $referenceDate年時点';
     }
-    
+
     // その他の形式はそのまま返す
     return '対象: $referenceDate';
   }
 }
+

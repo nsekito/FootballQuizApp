@@ -5,6 +5,8 @@ import '../utils/constants.dart';
 import '../widgets/error_widget.dart';
 import '../widgets/empty_state_widget.dart';
 import '../widgets/loading_widget.dart';
+import '../constants/app_colors.dart';
+import '../widgets/background_widget.dart';
 
 class StatisticsScreen extends ConsumerWidget {
   const StatisticsScreen({super.key});
@@ -16,18 +18,39 @@ class StatisticsScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('統計情報'),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        flexibleSpace: Stack(
+          children: [
+            // 背景画像
+            Image.asset(
+              'assets/images/03_Backgrounds/header_background_pattern.png',
+              width: double.infinity,
+              height: double.infinity,
+              repeat: ImageRepeat.repeat,
+              fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) {
+                return Container(color: AppColors.primary);
+              },
+            ),
+            // オーバーレイ
+            Container(
+              color: AppColors.primary.withValues(alpha: 0.9),
+            ),
+          ],
+        ),
       ),
-      body: statisticsAsync.when(
-        data: (statistics) {
-          if (statistics.totalPlays == 0) {
-            return const AppEmptyStateWidget(
-              message: 'まだ統計データがありません\nクイズをプレイして統計を確認しましょう！',
-              icon: Icons.bar_chart,
-            );
-          }
+      body: AppBackgroundWidget(
+        child: statisticsAsync.when(
+          data: (statistics) {
+            if (statistics.totalPlays == 0) {
+              return const AppEmptyStateWidget(
+                message: 'まだ統計データがありません\nクイズをプレイして統計を確認しましょう！',
+                icon: Icons.bar_chart,
+              );
+            }
 
-          return RefreshIndicator(
+            return RefreshIndicator(
             onRefresh: () async {
               ref.invalidate(quizStatisticsProvider);
             },
@@ -57,6 +80,7 @@ class StatisticsScreen extends ConsumerWidget {
           onRetry: () => ref.invalidate(quizStatisticsProvider),
         ),
       ),
+      ),
     );
   }
 
@@ -66,7 +90,19 @@ class StatisticsScreen extends ConsumerWidget {
   ) {
     return Card(
       elevation: 4,
-      child: Padding(
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Colors.blue.shade50,
+              Colors.white,
+              Colors.blue.shade50,
+            ],
+          ),
+          borderRadius: BorderRadius.circular(12),
+        ),
         padding: const EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -182,7 +218,19 @@ class StatisticsScreen extends ConsumerWidget {
 
     return Card(
       elevation: 2,
-      child: Padding(
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Colors.orange.shade50,
+              Colors.white,
+              Colors.orange.shade50,
+            ],
+          ),
+          borderRadius: BorderRadius.circular(12),
+        ),
         padding: const EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -277,11 +325,23 @@ class StatisticsScreen extends ConsumerWidget {
 
     return Card(
       elevation: 2,
-      child: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: Container(
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                AppColors.background,
+                Colors.white,
+              ],
+            ),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
             Row(
               children: [
                 Icon(
@@ -300,7 +360,8 @@ class StatisticsScreen extends ConsumerWidget {
             ),
             const SizedBox(height: 16),
             ...difficultyStats.map((stat) => _buildDifficultyStatItem(context, stat)),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -394,3 +455,4 @@ class StatisticsScreen extends ConsumerWidget {
     }
   }
 }
+

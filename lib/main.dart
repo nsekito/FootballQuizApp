@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart' show kIsWeb, debugPrint;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'providers/router_provider.dart';
+import 'constants/app_colors.dart';
 
 // 条件付きインポート: デスクトッププラットフォームのみ（Android/iOSではスタブを使用）
 import 'sqflite_ffi_stub.dart'
@@ -53,7 +54,13 @@ class SoccerQuizMasterApp extends ConsumerWidget {
     return MaterialApp.router(
       title: 'Soccer Quiz Master',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: AppColors.primary,
+          primary: AppColors.primary,
+          secondary: AppColors.accent,
+          background: AppColors.background,
+        ),
+        scaffoldBackgroundColor: AppColors.background,
         useMaterial3: true,
       ),
       routerConfig: router,

@@ -50,7 +50,8 @@ API_TYPE=gemini
 GEMINI_API_KEY=実際のGCPプロジェクトのAPIキーをここに
 VERTEX_AI_PROJECT_ID=your-project-id  # 参考情報（必須ではない）
 VERTEX_AI_LOCATION=asia-northeast1    # 参考情報（必須ではない）
-FOOTBALL_API_KEY=実際のAPIキーをここに（週次クイズ用、後で設定可）
+# GEMINI_MODEL_NAME=gemini-3-pro-preview  # オプション（デフォルト: gemini-3-pro-preview）
+# WEEKLY_RECAP_OUTPUT_DIR=data/weekly_recap  # オプション（デフォルト: data/weekly_recap）
 ```
 
 **重要**: 

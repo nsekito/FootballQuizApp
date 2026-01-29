@@ -23,6 +23,7 @@ class AppEmptyStateWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // 空状態のアイコンを表示
             Icon(
               icon ?? Icons.inbox_outlined,
               size: 64,

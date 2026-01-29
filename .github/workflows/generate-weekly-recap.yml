@@ -1,0 +1,51 @@
+name: Generate Weekly Recap
+
+on:
+  schedule:
+    # 毎週月曜日 朝6時（JST）に実行
+    # UTC時間で21:00（JST 6:00の前日）
+    - cron: '0 21 * * 1'
+  workflow_dispatch:
+    # 手動実行も可能
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        working-directory: scripts
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Generate Weekly Recap questions
+        working-directory: scripts
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python generate_weekly_recap.py
+      
+      - name: Commit and push changes
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/weekly_recap/*.json
+          if git diff --staged --quiet; then
+            echo "変更がありません。コミットをスキップします。"
+          else
+            TARGET_DATE=$(python -c "from datetime import datetime, timedelta; today = datetime.now(); days_from_monday = today.weekday() % 7; monday = today - timedelta(days=days_from_monday); print(monday.strftime('%Y-%m-%d'))")
+            git commit -m "chore: Generate weekly recap questions for $TARGET_DATE"
+            git push
+          fi

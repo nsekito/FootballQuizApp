@@ -22,7 +22,7 @@ class RemoteDataService {
             Uri.parse(url),
           )
           .timeout(
-            Duration(seconds: AppConstants.remoteDataTimeoutSeconds),
+            const Duration(seconds: AppConstants.remoteDataTimeoutSeconds),
           );
 
       if (response.statusCode == 200) {
@@ -80,7 +80,7 @@ class RemoteDataService {
     // ファイルパスを構築
     String filePath;
     if (region != null) {
-      filePath = '${AppConstants.newsDataPath}/$year/${region}.json';
+      filePath = '${AppConstants.newsDataPath}/$year/$region.json';
     } else {
       filePath = '${AppConstants.newsDataPath}/$year/all.json';
     }
@@ -150,6 +150,6 @@ class RemoteDataException implements Exception {
     if (statusCode == 404) {
       return 'データが見つかりません。\nまだ配信されていない可能性があります。';
     }
-    return 'データの取得に失敗しました。\n${message}';
+    return 'データの取得に失敗しました。\n$message';
   }
 }

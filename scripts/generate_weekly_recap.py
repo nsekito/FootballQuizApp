@@ -1,0 +1,232 @@
+"""Weekly Recap問題生成スクリプト（Gemini Grounding使用）"""
+import json
+import sys
+from datetime import datetime, timedelta
+from pathlib import Path
+
+# scripts/ディレクトリをパスに追加
+scripts_dir = Path(__file__).parent
+sys.path.insert(0, str(scripts_dir))
+
+from utils.gemini_client import generate_weekly_recap_questions_batch, balance_answer_indices
+from config import WEEKLY_RECAP_OUTPUT_DIR
+
+# プロジェクトルートを取得（scripts/から見て../）
+PROJECT_ROOT = Path(__file__).parent.parent
+
+
+def get_yesterday_date() -> str:
+    """昨日の日付をYYYY-MM-DD形式で取得"""
+    yesterday = datetime.now() - timedelta(days=1)
+    return yesterday.strftime('%Y-%m-%d')
+
+
+def get_monday_date() -> str:
+    """最新の月曜日の日付をYYYY-MM-DD形式で取得
+    
+    月曜日が今日の場合、今日の日付を返す
+    それ以外の場合、直近の月曜日の日付を返す
+    """
+    today = datetime.now()
+    # weekday(): 月曜日=0, 火曜日=1, ..., 日曜日=6
+    days_from_monday = today.weekday()
+    monday = today - timedelta(days=days_from_monday)
+    return monday.strftime('%Y-%m-%d')
+
+
+def generate_question_id(date: str, league_type: str, index: int) -> str:
+    """問題IDを生成"""
+    return f"match_recap_{date.replace('-', '_')}_{league_type}_{index+1:03d}"
+
+
+def save_weekly_recap_json(
+    questions: list,
+    date: str,
+    league_type: str,
+    output_dir: Path
+) -> Path:
+    """Weekly Recap問題をJSONファイルに保存
+    
+    Args:
+        questions: 問題のリスト
+        date: 日付（YYYY-MM-DD形式）
+        league_type: リーグタイプ（"j1" または "europe"）
+        output_dir: 出力ディレクトリ
+    
+    Returns:
+        保存されたファイルのパス
+    """
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    # ファイル名: {date}_{league_type}.json (例: 2026-01-28_j1.json)
+    filename = f"{date}_{league_type}.json"
+    filepath = output_dir / filename
+    
+    # JSON形式に整形
+    output_data = {
+        "version": "1.0",
+        "generated_at": datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ'),
+        "category": "match_recap",
+        "league_type": league_type,
+        "date": date,
+        "questions": questions
+    }
+    
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(output_data, f, ensure_ascii=False, indent=2)
+    
+    print(f"保存完了: {filepath}")
+    return filepath
+
+
+def main():
+    """メイン処理"""
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Weekly Recap問題生成スクリプト（Gemini Grounding使用）')
+    parser.add_argument('--date', type=str,
+                       help='対象日付（YYYY-MM-DD形式、指定しない場合は最新の月曜日）')
+    parser.add_argument('--output-dir', type=str,
+                       help=f'出力ディレクトリ（デフォルト: {WEEKLY_RECAP_OUTPUT_DIR}）')
+    parser.add_argument('--j1-only', action='store_true',
+                       help='J1リーグのみ生成（テスト用）')
+    parser.add_argument('--europe-only', action='store_true',
+                       help='ヨーロッパサッカーのみ生成（テスト用）')
+    
+    args = parser.parse_args()
+    
+    print("=" * 60)
+    print("Weekly Recap問題生成スクリプト（Gemini Grounding使用）")
+    print("=" * 60)
+    
+    # 日付の決定
+    if args.date:
+        target_date = args.date
+    else:
+        target_date = get_monday_date()
+    
+    print(f"\n対象日付: {target_date}")
+    
+    # 出力ディレクトリの決定
+    if args.output_dir:
+        output_dir = Path(args.output_dir)
+    else:
+        # 相対パスの場合はプロジェクトルートからの相対パスとして解釈
+        if Path(WEEKLY_RECAP_OUTPUT_DIR).is_absolute():
+            output_dir = Path(WEEKLY_RECAP_OUTPUT_DIR)
+        else:
+            output_dir = PROJECT_ROOT / WEEKLY_RECAP_OUTPUT_DIR
+    print(f"出力ディレクトリ: {output_dir}")
+    
+    saved_files = []
+    
+    # J1リーグ問題生成（10問）
+    if not args.europe_only:
+        print("\n" + "-" * 60)
+        print("J1リーグ問題生成中...")
+        print("-" * 60)
+        try:
+            j1_questions = generate_weekly_recap_questions_batch(
+                date=target_date,
+                league_type="j1",
+                count=10
+            )
+            
+            # 問題IDを追加
+            for i, question in enumerate(j1_questions):
+                question['id'] = generate_question_id(target_date, 'j1', i)
+            
+            # answerIndexのバランス調整
+            j1_questions = balance_answer_indices(j1_questions)
+            
+            # 分布を確認して表示
+            counts = [0, 0, 0, 0]
+            for q in j1_questions:
+                idx = q.get('answerIndex', 0)
+                if 0 <= idx <= 3:
+                    counts[idx] += 1
+            print(f"answerIndex分布: [0]: {counts[0]}, [1]: {counts[1]}, [2]: {counts[2]}, [3]: {counts[3]}")
+            
+            # J1リーグの問題を個別のファイルに保存
+            if j1_questions:
+                filepath = save_weekly_recap_json(j1_questions, target_date, "j1", output_dir)
+                saved_files.append(filepath)
+                print(f"J1リーグ: {len(j1_questions)}問生成完了")
+        except Exception as e:
+            print(f"エラー: J1リーグ問題の生成に失敗しました: {e}")
+            if args.j1_only:
+                raise
+    
+    # ヨーロッパサッカー問題生成（10問）
+    if not args.j1_only:
+        print("\n" + "-" * 60)
+        print("ヨーロッパサッカー問題生成中...")
+        print("-" * 60)
+        try:
+            europe_questions = generate_weekly_recap_questions_batch(
+                date=target_date,
+                league_type="europe",
+                count=10
+            )
+            
+            # 問題IDを追加
+            for i, question in enumerate(europe_questions):
+                question['id'] = generate_question_id(target_date, 'europe', i)
+            
+            # answerIndexのバランス調整
+            europe_questions = balance_answer_indices(europe_questions)
+            
+            # 分布を確認して表示
+            counts = [0, 0, 0, 0]
+            for q in europe_questions:
+                idx = q.get('answerIndex', 0)
+                if 0 <= idx <= 3:
+                    counts[idx] += 1
+            print(f"answerIndex分布: [0]: {counts[0]}, [1]: {counts[1]}, [2]: {counts[2]}, [3]: {counts[3]}")
+            
+            # ヨーロッパサッカーの問題を個別のファイルに保存
+            if europe_questions:
+                filepath = save_weekly_recap_json(europe_questions, target_date, "europe", output_dir)
+                saved_files.append(filepath)
+                print(f"ヨーロッパサッカー: {len(europe_questions)}問生成完了")
+        except Exception as e:
+            print(f"エラー: ヨーロッパサッカー問題の生成に失敗しました: {e}")
+            if args.europe_only:
+                raise
+    
+    # 結果の表示
+    print("\n" + "=" * 60)
+    print("生成結果")
+    print("=" * 60)
+    total_count = 0
+    if not args.europe_only:
+        j1_file = output_dir / f"{target_date}_j1.json"
+        if j1_file.exists():
+            with open(j1_file, 'r', encoding='utf-8') as f:
+                j1_data = json.load(f)
+                j1_count = len(j1_data.get('questions', []))
+                total_count += j1_count
+                print(f"  - J1リーグ: {j1_count}問 ({j1_file.name})")
+    if not args.j1_only:
+        europe_file = output_dir / f"{target_date}_europe.json"
+        if europe_file.exists():
+            with open(europe_file, 'r', encoding='utf-8') as f:
+                europe_data = json.load(f)
+                europe_count = len(europe_data.get('questions', []))
+                total_count += europe_count
+                print(f"  - ヨーロッパサッカー: {europe_count}問 ({europe_file.name})")
+    
+    print(f"\n合計: {total_count}問")
+    
+    if saved_files:
+        print(f"\n保存されたファイル:")
+        for filepath in saved_files:
+            print(f"  - {filepath}")
+    else:
+        print("\n警告: 生成された問題がありません")
+        sys.exit(1)
+
+
+if __name__ == '__main__':
+    main()

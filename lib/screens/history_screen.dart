@@ -6,6 +6,8 @@ import '../utils/constants.dart';
 import '../widgets/error_widget.dart';
 import '../widgets/empty_state_widget.dart';
 import '../widgets/loading_widget.dart';
+import '../constants/app_colors.dart';
+import '../widgets/background_widget.dart';
 
 class HistoryScreen extends ConsumerWidget {
   const HistoryScreen({super.key});
@@ -17,18 +19,39 @@ class HistoryScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('クイズ履歴'),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        flexibleSpace: Stack(
+          children: [
+            // 背景画像
+            Image.asset(
+              'assets/images/03_Backgrounds/header_background_pattern.png',
+              width: double.infinity,
+              height: double.infinity,
+              repeat: ImageRepeat.repeat,
+              fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) {
+                return Container(color: AppColors.primary);
+              },
+            ),
+            // オーバーレイ
+            Container(
+              color: AppColors.primary.withValues(alpha: 0.9),
+            ),
+          ],
+        ),
       ),
-      body: historyAsync.when(
-        data: (historyList) {
-          if (historyList.isEmpty) {
-            return const AppEmptyStateWidget(
-              message: 'まだクイズ履歴がありません\nクイズをプレイして履歴を残しましょう！',
-              icon: Icons.history,
-            );
-          }
+      body: AppBackgroundWidget(
+        child: historyAsync.when(
+          data: (historyList) {
+            if (historyList.isEmpty) {
+              return const AppEmptyStateWidget(
+                message: 'まだクイズ履歴がありません\nクイズをプレイして履歴を残しましょう！',
+                icon: Icons.history,
+              );
+            }
 
-          return RefreshIndicator(
+            return RefreshIndicator(
             onRefresh: () async {
               ref.invalidate(quizHistoryListProvider);
             },
@@ -48,6 +71,7 @@ class HistoryScreen extends ConsumerWidget {
           onRetry: () => ref.invalidate(quizHistoryListProvider),
         ),
       ),
+      ),
     );
   }
 
@@ -60,11 +84,23 @@ class HistoryScreen extends ConsumerWidget {
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
       elevation: 2,
-      child: Padding(
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Colors.grey.shade50,
+              Colors.white,
+              Colors.grey.shade50,
+            ],
+          ),
+          borderRadius: BorderRadius.circular(12),
+        ),
         padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -173,8 +209,8 @@ class HistoryScreen extends ConsumerWidget {
                 ),
               ],
             ),
-          ],
-        ),
+                ],
+              ),
       ),
     );
   }
@@ -237,3 +273,4 @@ class HistoryScreen extends ConsumerWidget {
     }
   }
 }
+

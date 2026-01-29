@@ -4,6 +4,8 @@ import 'package:go_router/go_router.dart';
 import '../providers/user_data_provider.dart';
 import '../providers/quiz_history_provider.dart';
 import '../models/user_rank.dart';
+import '../constants/app_colors.dart';
+import '../widgets/background_widget.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
@@ -91,18 +93,65 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('結果'),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        flexibleSpace: Stack(
+          children: [
+            // 背景画像
+            Image.asset(
+              'assets/images/03_Backgrounds/header_background_pattern.png',
+              width: double.infinity,
+              height: double.infinity,
+              repeat: ImageRepeat.repeat,
+              fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) {
+                return Container(color: AppColors.primary);
+              },
+            ),
+            // オーバーレイ
+            Container(
+              color: AppColors.primary.withValues(alpha: 0.9),
+            ),
+          ],
+        ),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
+      body: AppBackgroundWidget(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               // スコア表示
               Card(
                 elevation: 4,
-                child: Padding(
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: isPerfect
+                          ? [
+                              Colors.amber.shade50,
+                              Colors.amber.shade100,
+                              Colors.amber.shade50,
+                            ]
+                          : [
+                              Colors.green.shade50,
+                              Colors.green.shade100,
+                              Colors.green.shade50,
+                            ],
+                    ),
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: (isPerfect ? Colors.amber : Colors.green)
+                            .withValues(alpha: 0.3),
+                        blurRadius: 8,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
                   padding: const EdgeInsets.all(24.0),
                   child: Column(
                     children: [
@@ -117,7 +166,9 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
                         '${widget.score} / ${widget.total}',
                         style: Theme.of(context).textTheme.displayLarge?.copyWith(
                               fontWeight: FontWeight.bold,
-                              color: isPerfect ? Colors.amber.shade700 : Colors.green.shade700,
+                              color: isPerfect
+                                  ? Colors.amber.shade700
+                                  : Colors.green.shade700,
                             ),
                       ),
                       const SizedBox(height: 8),
@@ -184,10 +235,10 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
                       children: [
-                        Icon(
-                          Icons.trending_up,
-                          size: 48,
-                          color: Colors.amber.shade700,
+                        // 新しいランクのバッジを表示
+                        _RankBadgeWidget(
+                          rank: _currentRank!,
+                          size: 100,
                         ),
                         const SizedBox(height: 8),
                         Text(
@@ -221,7 +272,14 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
                         '現在のランク',
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
-                      const SizedBox(height: 8),
+                      const SizedBox(height: 16),
+                      // ランクバッジを表示
+                      if (_currentRank != null)
+                        _RankBadgeWidget(
+                          rank: _currentRank!,
+                          size: 120,
+                        ),
+                      const SizedBox(height: 16),
                       Text(
                         _currentRank?.japaneseName ?? '',
                         style: Theme.of(context).textTheme.headlineSmall?.copyWith(
@@ -252,8 +310,12 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
                 },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16),
-                  backgroundColor: Colors.green.shade700,
+                  backgroundColor: AppColors.primary,
                   foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  elevation: 4,
                 ),
                 child: const Text(
                   'ホームに戻る',
@@ -269,6 +331,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
                 },
                 style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16),
+                  side: BorderSide(color: AppColors.primary),
                 ),
                 child: const Text(
                   'もう一度挑戦',
@@ -278,6 +341,76 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
             ],
           ),
         ),
+      ),
+      ),
+    );
+  }
+
+}
+
+
+/// ランクバッジを表示するウィジェット
+class _RankBadgeWidget extends StatelessWidget {
+  final UserRank rank;
+  final double size;
+
+  const _RankBadgeWidget({
+    required this.rank,
+    required this.size,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    Color badgeColor;
+    IconData iconData;
+    
+    switch (rank) {
+      case UserRank.academy:
+        badgeColor = Colors.grey.shade400;
+        iconData = Icons.school;
+        break;
+      case UserRank.rookie:
+        badgeColor = Colors.blue.shade400;
+        iconData = Icons.star;
+        break;
+      case UserRank.regular:
+        badgeColor = Colors.green.shade400;
+        iconData = Icons.emoji_events;
+        break;
+      case UserRank.fantasista:
+        badgeColor = Colors.amber.shade400;
+        iconData = Icons.auto_awesome;
+        break;
+      case UserRank.legend:
+        badgeColor = Colors.purple.shade400;
+        iconData = Icons.workspace_premium;
+        break;
+    }
+
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        gradient: RadialGradient(
+          colors: [
+            badgeColor,
+            badgeColor.withValues(alpha: 0.7),
+            badgeColor.withValues(alpha: 0.5),
+          ],
+        ),
+        shape: BoxShape.circle,
+        boxShadow: [
+          BoxShadow(
+            color: badgeColor.withValues(alpha: 0.5),
+            blurRadius: 12,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Icon(
+        iconData,
+        size: size * 0.5,
+        color: Colors.white,
       ),
     );
   }

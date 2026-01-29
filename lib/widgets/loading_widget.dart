@@ -15,7 +15,10 @@ class AppLoadingWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const CircularProgressIndicator(),
+          // ローディングインジケーターを表示
+          const CircularProgressIndicator(
+            strokeWidth: 4,
+          ),
           if (message != null) ...[
             const SizedBox(height: 16),
             Text(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../utils/constants.dart';
+import '../constants/app_colors.dart';
+import '../widgets/background_widget.dart';
 
 class ConfigurationScreen extends StatefulWidget {
   final String category;
@@ -27,12 +29,33 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_getCategoryTitle()),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        flexibleSpace: Stack(
+          children: [
+            // 背景画像
+            Image.asset(
+              'assets/images/03_Backgrounds/header_background_pattern.png',
+              width: double.infinity,
+              height: double.infinity,
+              repeat: ImageRepeat.repeat,
+              fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) {
+                return Container(color: AppColors.primary);
+              },
+            ),
+            // オーバーレイ
+            Container(
+              color: AppColors.primary.withValues(alpha: 0.9),
+            ),
+          ],
+        ),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
+      body: AppBackgroundWidget(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
@@ -74,8 +97,12 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
                 onPressed: _canStart() ? _validateAndStart : null,
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16),
-                  backgroundColor: Colors.green.shade700,
+                  backgroundColor: AppColors.primary,
                   foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  elevation: 4,
                 ),
                 child: const Text(
                   'START',
@@ -85,6 +112,7 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
             ],
           ),
         ),
+      ),
       ),
     );
   }
@@ -285,14 +313,46 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
     ValueChanged<String> onSelected,
   ) {
     final isSelected = selectedValue == value;
+    Color chipColor;
+    
+    // 難易度に応じた色を設定
+    switch (value) {
+      case AppConstants.difficultyEasy:
+        chipColor = AppColors.difficultyEasy;
+        break;
+      case AppConstants.difficultyNormal:
+        chipColor = AppColors.difficultyNormal;
+        break;
+      case AppConstants.difficultyHard:
+        chipColor = AppColors.difficultyHard;
+        break;
+      case AppConstants.difficultyExtreme:
+        chipColor = AppColors.difficultyExtreme;
+        break;
+      default:
+        chipColor = Colors.grey;
+    }
+    
     return FilterChip(
-      label: Text(label),
+      label: Text(
+        label,
+        style: TextStyle(
+          fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+          color: isSelected ? Colors.white : chipColor,
+        ),
+      ),
       selected: isSelected,
       onSelected: (selected) {
         onSelected(selected ? value : '');
       },
-      selectedColor: Colors.green.shade100,
-      checkmarkColor: Colors.green.shade700,
+      selectedColor: chipColor,
+      checkmarkColor: Colors.white,
+      backgroundColor: chipColor.withValues(alpha: 0.1),
+      side: BorderSide(
+        color: isSelected ? chipColor : chipColor.withValues(alpha: 0.5),
+        width: isSelected ? 2 : 1,
+      ),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
     );
   }
 
@@ -437,3 +497,4 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
     context.push(uri.toString());
   }
 }
+

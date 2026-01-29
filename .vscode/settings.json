@@ -1,0 +1,22 @@
+{
+  // Git認証プロバイダーのターミナル環境変更を完全に無効化（警告を防ぐ）
+  "git.terminalAuthentication": false,
+  "git.enabled": true,
+  
+  // Git認証プロバイダーの動作を調整
+  "git.enableSmartCommit": false,
+  "git.autofetch": false,
+  "git.useEditorAsCommitInput": false,
+  "git.confirmSync": false,
+  
+  // ターミナルの統合設定
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.inheritEnv": true,
+  
+  // ターミナル環境変数の変更を許可しない
+  "terminal.integrated.allowWorkspaceConfiguration": false,
+  
+  // Git認証プロバイダーの拡張機能を無効化
+  "extensions.ignoreRecommendations": true
+}

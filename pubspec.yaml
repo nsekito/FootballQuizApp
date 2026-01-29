@@ -46,3 +46,4 @@ flutter:
   # アセットファイル（データベースを含む）
   assets:
     - data/questions.db
+    - assets/images/03_Backgrounds/header_background_pattern.png
