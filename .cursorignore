@@ -1,0 +1,117 @@
+# Cursor Ignore - 検索、インデックス、AIコンテキストから完全に除外
+
+# Flutter/Dart関連
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+**/doc/api/
+
+# プラットフォーム固有のビルドファイル
+
+## Android
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/.gradle/
+android/.idea/
+android/local.properties
+
+## iOS
+ios/Pods/
+ios/DerivedData/
+ios/.generated/
+ios/Flutter/ephemeral/
+ios/Flutter/flutter_assets/
+ios/**/xcuserdata/
+ios/**/*.mode1v3
+ios/**/*.mode2v3
+ios/**/*.moved-aside
+ios/**/*.pbxuser
+ios/**/*.perspectivev3
+ios/**/*sync/
+ios/**/.sconsign.dblite
+ios/**/.tags*
+ios/**/.vagrant/
+ios/**/Icon?
+ios/**/.symlinks/
+ios/**/profile/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_export_environment.sh
+ios/ServiceDefinitions.json
+
+## macOS
+macos/Pods/
+macos/.symlinks/
+macos/Flutter/ephemeral/
+macos/.flutter-plugins
+macos/.flutter-plugins-dependencies
+macos/Flutter/Flutter-Debug.xcconfig
+macos/Flutter/Flutter-Release.xcconfig
+
+## Windows/Linux
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/Makefile
+
+## Web
+web/build/
+
+# 依存関係とキャッシュ
+
+## Python
+scripts/venv/
+scripts/__pycache__/
+scripts/*.pyc
+scripts/generated/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+## Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDE・エディタ設定
+.idea/
+*.iml
+*.ipr
+*.iws
+.atom/
+.buildlog/
+.history
+.svn/
+
+# 一時ファイル・ログ
+*.log
+*.swp
+.DS_Store
+*.class
+migrate_working_dir/
+
+# データベース一時ファイル（data/questions.dbは含める）
+*.db-shm
+*.db-wal
+
+# シンボリケーション・難読化
+app.*.symbols
+app.*.map.json
+
+# その他
+*.swp
+*.swo
+*~
+.vscode/.ropeproject/
+.vscode/settings.json.bak

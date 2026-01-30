@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import '../providers/quiz_history_provider.dart';
-import '../utils/constants.dart';
 import '../widgets/error_widget.dart';
 import '../widgets/empty_state_widget.dart';
 import '../widgets/loading_widget.dart';
-import '../constants/app_colors.dart';
 import '../widgets/background_widget.dart';
+import '../widgets/app_bar_background.dart';
+import '../utils/category_difficulty_utils.dart';
 
 class HistoryScreen extends ConsumerWidget {
   const HistoryScreen({super.key});
@@ -17,30 +17,7 @@ class HistoryScreen extends ConsumerWidget {
     final historyAsync = ref.watch(quizHistoryListProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('クイズ履歴'),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        flexibleSpace: Stack(
-          children: [
-            // 背景画像
-            Image.asset(
-              'assets/images/03_Backgrounds/header_background_pattern.png',
-              width: double.infinity,
-              height: double.infinity,
-              repeat: ImageRepeat.repeat,
-              fit: BoxFit.cover,
-              errorBuilder: (context, error, stackTrace) {
-                return Container(color: AppColors.primary);
-              },
-            ),
-            // オーバーレイ
-            Container(
-              color: AppColors.primary.withValues(alpha: 0.9),
-            ),
-          ],
-        ),
-      ),
+      appBar: buildAppBarWithBackground(title: 'クイズ履歴'),
       body: AppBackgroundWidget(
         child: historyAsync.when(
           data: (historyList) {
@@ -78,8 +55,8 @@ class HistoryScreen extends ConsumerWidget {
   Widget _buildHistoryCard(BuildContext context, QuizHistory history) {
     final dateFormat = DateFormat('yyyy/MM/dd HH:mm');
     final isPerfect = history.score == history.total;
-    final categoryName = _getCategoryName(history.category);
-    final difficultyName = _getDifficultyName(history.difficulty);
+    final categoryName = CategoryDifficultyUtils.getCategoryName(history.category);
+    final difficultyName = CategoryDifficultyUtils.getDifficultyName(history.difficulty);
 
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
@@ -239,38 +216,6 @@ class HistoryScreen extends ConsumerWidget {
         ),
       ],
     );
-  }
-
-  String _getCategoryName(String category) {
-    switch (category) {
-      case AppConstants.categoryRules:
-        return 'ルールクイズ';
-      case AppConstants.categoryHistory:
-        return '歴史クイズ';
-      case AppConstants.categoryTeams:
-        return 'チームクイズ';
-      case AppConstants.categoryNews:
-        return 'ニュースクイズ';
-      case AppConstants.categoryMatchRecap:
-        return 'Monday Match Recap';
-      default:
-        return category;
-    }
-  }
-
-  String _getDifficultyName(String difficulty) {
-    switch (difficulty) {
-      case AppConstants.difficultyEasy:
-        return 'EASY';
-      case AppConstants.difficultyNormal:
-        return 'NORMAL';
-      case AppConstants.difficultyHard:
-        return 'HARD';
-      case AppConstants.difficultyExtreme:
-        return 'EXTREME';
-      default:
-        return difficulty.toUpperCase();
-    }
   }
 }
 

@@ -47,3 +47,8 @@ flutter:
   assets:
     - data/questions.db
     - assets/images/03_Backgrounds/header_background_pattern.png
+    - assets/images/09_Documentation/stitch_menu_screen.png
+    - assets/images/09_Documentation/stitch_configuration_screen.png
+    - assets/images/09_Documentation/stitch_quiz_screen.png
+    - assets/images/09_Documentation/stitch_answer_dialog_screen.png
+    - assets/images/09_Documentation/stitch_result_screen.png

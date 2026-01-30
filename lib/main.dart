@@ -58,7 +58,6 @@ class SoccerQuizMasterApp extends ConsumerWidget {
           seedColor: AppColors.primary,
           primary: AppColors.primary,
           secondary: AppColors.accent,
-          background: AppColors.background,
         ),
         scaffoldBackgroundColor: AppColors.background,
         useMaterial3: true,

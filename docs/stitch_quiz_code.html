@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clean Tech Quiz Question</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Sans+JP:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#06b6d4", // Cyan 500
+                        "background-light": "#f8fafc",
+                        "background-dark": "#020617",
+                        "card-light": "rgba(255, 255, 255, 0.7)",
+                        "card-dark": "rgba(15, 23, 42, 0.6)",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "Noto Sans JP", "sans-serif"],
+                        body: ["Inter", "Noto Sans JP", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        'xl': "1.5rem",
+                    },
+                    boxShadow: {
+                        'neon': '0 0 15px rgba(6, 182, 212, 0.4)',
+                        'neon-strong': '0 0 25px rgba(6, 182, 212, 0.6)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .grid-pattern {
+            background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .dark .grid-pattern {
+            background-image: radial-gradient(circle, #1e293b 1px, transparent 1px);
+        }
+        .glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .neon-border {
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            transition: all 0.3s ease;
+        }
+        .neon-border:hover {
+            border-color: rgba(6, 182, 212, 1);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen overflow-hidden flex flex-col items-center">
+<div class="fixed inset-0 grid-pattern opacity-40 pointer-events-none"></div>
+<div class="fixed inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none"></div>
+<main class="relative w-full max-w-md h-screen flex flex-col p-6 z-10">
+<header class="flex items-center justify-between mb-8 pt-4">
+<button class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-icons-outlined text-2xl">arrow_back_ios_new</span>
+</button>
+<div class="flex flex-col items-center">
+<span class="text-xs font-bold tracking-widest uppercase opacity-60 mb-1">Current Question</span>
+<span class="text-lg font-bold">問題 1 / 10</span>
+</div>
+<div class="relative w-10 h-10 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-slate-200 dark:text-slate-800" cx="20" cy="20" fill="transparent" r="18" stroke="currentColor" stroke-width="2"></circle>
+<circle class="text-primary" cx="20" cy="20" fill="transparent" r="18" stroke="currentColor" stroke-dasharray="113" stroke-dashoffset="30" stroke-width="2"></circle>
+</svg>
+<span class="absolute text-[10px] font-bold">24s</span>
+</div>
+</header>
+<div class="w-full h-1.5 bg-slate-200 dark:bg-slate-800 rounded-full mb-10 overflow-hidden relative">
+<div class="absolute top-0 left-0 h-full w-[10%] bg-primary shadow-neon rounded-full transition-all duration-500"></div>
+<div class="absolute top-0 left-0 h-full w-[10%] bg-primary blur-sm opacity-50"></div>
+</div>
+<div class="glass bg-card-light dark:bg-card-dark border border-white/30 dark:border-white/10 rounded-xl p-8 mb-10 shadow-xl">
+<div class="flex items-center gap-2 mb-4 opacity-60">
+<span class="material-icons-outlined text-sm">calendar_today</span>
+<span class="text-xs font-medium">対象: 2025年時点</span>
+</div>
+<h1 class="text-xl md:text-2xl font-bold leading-relaxed text-slate-800 dark:text-white">
+                ドロップボールで試合を再開する際、ボールが地面に着く前に選手が触れた場合、どうなりますか？
+            </h1>
+</div>
+<div class="flex flex-col gap-4 flex-1">
+<button class="glass bg-card-light/40 dark:bg-card-dark/40 neon-border py-5 px-6 rounded-xl text-left group flex items-center justify-between">
+<span class="text-base font-medium">プレー続行</span>
+<span class="material-icons-outlined opacity-0 group-hover:opacity-100 text-primary transition-opacity">chevron_right</span>
+</button>
+<button class="glass bg-card-light/40 dark:bg-card-dark/40 neon-border py-5 px-6 rounded-xl text-left group flex items-center justify-between">
+<span class="text-base font-medium">やり直し</span>
+<span class="material-icons-outlined opacity-0 group-hover:opacity-100 text-primary transition-opacity">chevron_right</span>
+</button>
+<button class="glass bg-card-light/40 dark:bg-card-dark/40 neon-border py-5 px-6 rounded-xl text-left group flex items-center justify-between">
+<span class="text-base font-medium">相手のボールになる</span>
+<span class="material-icons-outlined opacity-0 group-hover:opacity-100 text-primary transition-opacity">chevron_right</span>
+</button>
+<button class="glass bg-card-light/40 dark:bg-card-dark/40 neon-border py-5 px-6 rounded-xl text-left group flex items-center justify-between">
+<span class="text-base font-medium">イエローカード</span>
+<span class="material-icons-outlined opacity-0 group-hover:opacity-100 text-primary transition-opacity">chevron_right</span>
+</button>
+</div>
+<footer class="mt-auto py-6 flex justify-between items-center opacity-60 text-xs font-bold tracking-widest uppercase">
+<span>Tech Shield Active</span>
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse shadow-neon"></span>
+                System Live
+            </span>
+</footer>
+</main>
+<script>
+        // Simple dark mode toggle for testing (if needed)
+        // document.documentElement.classList.toggle('dark');
+        // Add ripple-like effect on click for futuristic feel
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mousedown', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                let ripple = document.createElement('span');
+                ripple.style.left = `${x}px`;
+                ripple.style.top = `${y}px`;
+                ripple.className = "absolute w-2 h-2 bg-primary/20 rounded-full animate-[ping_0.5s_ease-out] pointer-events-none";
+                this.appendChild(ripple);
+                setTimeout(() => {
+                    ripple.remove();
+                }, 500);
+            });
+        });
+    </script>
+
+</body></html>

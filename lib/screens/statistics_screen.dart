@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/quiz_history_provider.dart';
-import '../utils/constants.dart';
 import '../widgets/error_widget.dart';
 import '../widgets/empty_state_widget.dart';
 import '../widgets/loading_widget.dart';
 import '../constants/app_colors.dart';
 import '../widgets/background_widget.dart';
+import '../widgets/app_bar_background.dart';
+import '../utils/category_difficulty_utils.dart';
 
 class StatisticsScreen extends ConsumerWidget {
   const StatisticsScreen({super.key});
@@ -16,30 +17,7 @@ class StatisticsScreen extends ConsumerWidget {
     final statisticsAsync = ref.watch(quizStatisticsProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('統計情報'),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        flexibleSpace: Stack(
-          children: [
-            // 背景画像
-            Image.asset(
-              'assets/images/03_Backgrounds/header_background_pattern.png',
-              width: double.infinity,
-              height: double.infinity,
-              repeat: ImageRepeat.repeat,
-              fit: BoxFit.cover,
-              errorBuilder: (context, error, stackTrace) {
-                return Container(color: AppColors.primary);
-              },
-            ),
-            // オーバーレイ
-            Container(
-              color: AppColors.primary.withValues(alpha: 0.9),
-            ),
-          ],
-        ),
-      ),
+      appBar: buildAppBarWithBackground(title: '統計情報'),
       body: AppBackgroundWidget(
         child: statisticsAsync.when(
           data: (statistics) {
@@ -272,7 +250,7 @@ class StatisticsScreen extends ConsumerWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                _getCategoryName(stat.category),
+                CategoryDifficultyUtils.getCategoryName(stat.category),
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
@@ -380,7 +358,7 @@ class StatisticsScreen extends ConsumerWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                _getDifficultyName(stat.difficulty),
+                CategoryDifficultyUtils.getDifficultyName(stat.difficulty),
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
@@ -423,36 +401,5 @@ class StatisticsScreen extends ConsumerWidget {
     );
   }
 
-  String _getCategoryName(String category) {
-    switch (category) {
-      case AppConstants.categoryRules:
-        return 'ルールクイズ';
-      case AppConstants.categoryHistory:
-        return '歴史クイズ';
-      case AppConstants.categoryTeams:
-        return 'チームクイズ';
-      case AppConstants.categoryNews:
-        return 'ニュースクイズ';
-      case AppConstants.categoryMatchRecap:
-        return 'Monday Match Recap';
-      default:
-        return category;
-    }
-  }
-
-  String _getDifficultyName(String difficulty) {
-    switch (difficulty) {
-      case AppConstants.difficultyEasy:
-        return 'EASY';
-      case AppConstants.difficultyNormal:
-        return 'NORMAL';
-      case AppConstants.difficultyHard:
-        return 'HARD';
-      case AppConstants.difficultyExtreme:
-        return 'EXTREME';
-      default:
-        return difficulty.toUpperCase();
-    }
-  }
 }
 

@@ -50,6 +50,14 @@ __pycache__/
 # 例外: アプリに同梱するデータベースファイルは含める
 !data/questions.db
 
+# Data files
+# 自動生成されるJSONファイルを除外（GitHub Actionsで生成・pushされる）
+data/weekly_recap/*.json
+data/news/**/*.json
+
+# 例外: READMEファイルは含める（ドキュメントとして必要）
+!data/**/README.md
+
 # Symbolication related
 app.*.symbols
 

@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'dart:ui';
 import '../models/question.dart';
 import '../providers/question_service_provider.dart';
 import '../services/remote_data_service.dart';
 import '../utils/constants.dart';
 import '../widgets/error_widget.dart';
 import '../widgets/loading_widget.dart';
-import '../widgets/quiz_choice_card.dart';
 import '../constants/app_colors.dart';
-import '../widgets/background_widget.dart';
+import '../widgets/grid_pattern_background.dart';
+import '../widgets/glass_morphism_widget.dart';
+import '../widgets/glow_button.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {
   final String category;
@@ -57,7 +59,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
       final questionService = ref.read(questionServiceProvider);
 
-      // タグの構築（国と地域から）
       String? tags;
       if (widget.region.isNotEmpty) {
         tags = widget.region;
@@ -84,7 +85,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         _isLoading = false;
       });
 
-      // データがない場合の処理
       if (_questions.isEmpty) {
         if (mounted) {
           showErrorDialog(
@@ -147,84 +147,131 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           title: const Text('クイズ'),
         ),
         body: const Center(
-          child: Text('クイズデータがありません'),
+          child: const Text('クイズデータがありません'),
         ),
       );
     }
 
     final currentQuestion = _questions[_currentQuestionIndex];
     final isLastQuestion = _currentQuestionIndex == _questions.length - 1;
+    final progress = (_currentQuestionIndex + 1) / _questions.length;
 
     return Scaffold(
+      backgroundColor: AppColors.stitchBackgroundLight,
       appBar: AppBar(
-        title: Text('問題 ${_currentQuestionIndex + 1} / ${_questions.length}'),
         backgroundColor: Colors.transparent,
         elevation: 0,
-        flexibleSpace: Stack(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new),
+          onPressed: () => context.pop(),
+        ),
+        centerTitle: true,
+        title: Column(
           children: [
-            // 背景画像
-            Image.asset(
-              'assets/images/03_Backgrounds/header_background_pattern.png',
-              width: double.infinity,
-              height: double.infinity,
-              repeat: ImageRepeat.repeat,
-              fit: BoxFit.cover,
-              errorBuilder: (context, error, stackTrace) {
-                return Container(color: AppColors.primary);
-              },
+            Text(
+              'CURRENT QUESTION',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1.2,
+                color: Colors.grey.shade600,
+              ),
             ),
-            // オーバーレイ
-            Container(
-              color: AppColors.primary.withValues(alpha: 0.9),
+            const SizedBox(height: 4),
+            Text(
+              '問題 ${_currentQuestionIndex + 1} / ${_questions.length}',
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ],
         ),
       ),
-      body: AppBackgroundWidget(
+      body: GridPatternBackground(
         child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
+          padding: const EdgeInsets.all(24.0),
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               // 進捗バー
-              LinearProgressIndicator(
-                value: (_currentQuestionIndex + 1) / _questions.length,
-              ),
-              const SizedBox(height: 24),
-
-              // 対象年月の表示（存在する場合）
-              if (currentQuestion.referenceDate != null &&
-                  currentQuestion.referenceDate!.isNotEmpty)
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.calendar_today,
-                        size: 16,
-                        color: Colors.grey.shade600,
-                      ),
-                      const SizedBox(width: 4),
-                      Text(
-                        _formatReferenceDate(currentQuestion.referenceDate!),
-                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                              color: Colors.grey.shade600,
-                              fontWeight: FontWeight.w500,
-                            ),
-                      ),
-                    ],
-                  ),
+              TweenAnimationBuilder<double>(
+                tween: Tween(
+                  begin: _currentQuestionIndex / _questions.length,
+                  end: progress,
                 ),
+                duration: const Duration(milliseconds: 500),
+                curve: Curves.easeOutCubic,
+                builder: (context, value, child) {
+                  return Container(
+                    height: 6,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    child: Stack(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width * value,
+                          decoration: BoxDecoration(
+                            color: AppColors.stitchCyan,
+                            borderRadius: BorderRadius.circular(3),
+                            boxShadow: [
+                              BoxShadow(
+                                color: AppColors.stitchCyan.withValues(alpha: 0.4),
+                                blurRadius: 8,
+                                spreadRadius: 0,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              ),
+              const SizedBox(height: 40),
 
-              // 問題文
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Text(
-                    currentQuestion.text,
-                    style: Theme.of(context).textTheme.titleLarge,
-                  ),
+              // 問題カード
+              GlassMorphismWidget(
+                borderRadius: 16,
+                padding: const EdgeInsets.all(32),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // 対象年月の表示
+                    if (currentQuestion.referenceDate != null &&
+                        currentQuestion.referenceDate!.isNotEmpty)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 16),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.calendar_today,
+                              size: 16,
+                              color: Colors.grey.shade600,
+                            ),
+                            const SizedBox(width: 8),
+                            Text(
+                              _formatReferenceDate(currentQuestion.referenceDate!),
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.grey.shade600,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    Text(
+                      currentQuestion.text,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        height: 1.5,
+                      ),
+                    ),
+                  ],
                 ),
               ),
               const SizedBox(height: 24),
@@ -237,14 +284,17 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                 final isCorrect = _showResult
                     ? (index == currentQuestion.answerIndex
                         ? true
-                        : (isSelected ? false : null))
+                        : isSelected ? false : null)
                     : null;
 
-                return QuizChoiceCard(
-                  text: option,
-                  isSelected: isSelected,
-                  isCorrect: isCorrect,
-                  onTap: () => _selectAnswer(index),
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: _QuizChoiceButton(
+                    text: option,
+                    isSelected: isSelected,
+                    isCorrect: isCorrect,
+                    onTap: () => _selectAnswer(index),
+                  ),
                 );
               }),
 
@@ -252,29 +302,34 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
               // 次へ/結果へボタン
               if (_showResult)
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: ElevatedButton(
-                    onPressed: () => _nextQuestion(isLastQuestion),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      backgroundColor: AppColors.primary,
-                      foregroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
+                GlowButton(
+                  glowColor: AppColors.stitchCyan,
+                  onPressed: () => _nextQuestion(isLastQuestion),
+                  backgroundColor: AppColors.stitchCyan,
+                  foregroundColor: Colors.white,
+                  borderRadius: 16,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        isLastQuestion ? '結果を見る' : '次の問題',
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                      elevation: 4,
-                    ),
-                    child: Text(
-                      isLastQuestion ? '結果を見る' : '次の問題',
-                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                    ),
+                      const SizedBox(width: 8),
+                      Icon(
+                        isLastQuestion ? Icons.emoji_events : Icons.arrow_forward,
+                        size: 20,
+                      ),
+                    ],
                   ),
                 ),
             ],
           ),
         ),
-      ),
       ),
     );
   }
@@ -284,126 +339,180 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       _selectedAnswerIndex = index;
       _showResult = true;
 
-      // 正解かどうかを判定
       if (index == _questions[_currentQuestionIndex].answerIndex) {
         _score++;
       }
     });
 
-    // 解説ダイアログを表示
     _showExplanationDialog();
   }
 
   void _showExplanationDialog() {
     final question = _questions[_currentQuestionIndex];
+    final isCorrect = _selectedAnswerIndex == question.answerIndex;
+
     showDialog(
       context: context,
       barrierDismissible: false,
+      barrierColor: Colors.black.withValues(alpha: 0.4),
       builder: (context) => Dialog(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
-        child: Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(16),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withValues(alpha: 0.1),
-                blurRadius: 10,
-                offset: const Offset(0, 4),
-              ),
-            ],
-          ),
+        backgroundColor: Colors.transparent,
+        insetPadding: const EdgeInsets.all(16),
+        child: GlassMorphismWidget(
+          borderRadius: 24,
+          backgroundColor: Colors.white.withValues(alpha: 0.8),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: AppColors.primary,
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(16),
-                    topRight: Radius.circular(16),
-                  ),
-                ),
-                child: Row(
+              Padding(
+                padding: const EdgeInsets.all(32),
+                child: Column(
                   children: [
-                    const Icon(Icons.info_outline, color: Colors.white),
-                    const SizedBox(width: 8),
-                    const Text(
-                      '解説',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
+                    Container(
+                      width: 80,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        color: (isCorrect
+                                ? AppColors.stitchEmerald
+                                : Colors.red.shade400)
+                            .withValues(alpha: 0.2),
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: (isCorrect
+                                    ? AppColors.stitchEmerald
+                                    : Colors.red.shade400)
+                                .withValues(alpha: 0.4),
+                            blurRadius: 15,
+                            spreadRadius: 0,
+                          ),
+                        ],
+                      ),
+                      child: Icon(
+                        isCorrect ? Icons.check_circle : Icons.cancel,
+                        color: isCorrect
+                            ? AppColors.stitchEmerald
+                            : Colors.red.shade400,
+                        size: 48,
                       ),
                     ),
-                    const Spacer(),
-                    IconButton(
-                      icon: const Icon(Icons.close, color: Colors.white),
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
+                    const SizedBox(height: 16),
+                    Text(
+                      isCorrect ? '正解！' : '不正解',
+                      style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                        color: isCorrect
+                            ? AppColors.stitchEmerald
+                            : Colors.red.shade400,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      isCorrect ? 'Excellent job' : 'Try again',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.grey.shade600,
+                      ),
                     ),
                   ],
                 ),
               ),
-              Flexible(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        question.explanation,
-                        style: const TextStyle(fontSize: 16),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.description,
+                          color: Colors.grey.shade700,
+                          size: 20,
+                        ),
+                        const SizedBox(width: 8),
+                        const Text(
+                          '解説',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 12),
+                    Text(
+                      question.explanation,
+                      style: const TextStyle(
+                        fontSize: 15,
+                        height: 1.6,
                       ),
-                      if (question.trivia != null && question.trivia!.isNotEmpty) ...[
-                        const SizedBox(height: 16),
-                        const Divider(),
-                        const SizedBox(height: 8),
-                        Row(
+                    ),
+                    if (question.trivia != null && question.trivia!.isNotEmpty) ...[
+                      const SizedBox(height: 24),
+                      Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: Colors.amber.shade50,
+                          borderRadius: const BorderRadius.all(Radius.circular(16)),
+                          border: Border.all(
+                            color: Colors.amber.shade200,
+                          ),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Icon(Icons.lightbulb,
-                                color: Colors.amber.shade700, size: 20),
-                            const SizedBox(width: 8),
-                            const Text(
-                              '豆知識',
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.lightbulb,
+                                  color: Colors.amber.shade700,
+                                  size: 20,
+                                ),
+                                const SizedBox(width: 8),
+                                Text(
+                                  '豆知識',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 14,
+                                    color: Colors.amber.shade900,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              question.trivia!,
                               style: TextStyle(
-                                fontWeight: FontWeight.bold,
                                 fontSize: 14,
+                                color: Colors.grey.shade700,
                               ),
                             ),
                           ],
                         ),
-                        const SizedBox(height: 8),
-                        Text(
-                          question.trivia!,
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.grey.shade700,
-                          ),
-                        ),
-                      ],
+                      ),
                     ],
-                  ),
+                  ],
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(24),
                 child: SizedBox(
                   width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.primary,
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 12),
+                  child: GlowButton(
+                    glowColor: AppColors.stitchEmerald,
+                    onPressed: () => Navigator.of(context).pop(),
+                    backgroundColor: AppColors.stitchEmerald,
+                    foregroundColor: Colors.white,
+                    borderRadius: 16,
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    child: const Text(
+                      '閉じる',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                    child: const Text('閉じる'),
                   ),
                 ),
               ),
@@ -416,7 +525,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
   void _nextQuestion(bool isLastQuestion) {
     if (isLastQuestion) {
-      // 結果画面へ遷移
       final earnedPoints = _score * AppConstants.pointsPerCorrectAnswer;
       final totalPoints = _score == _questions.length
           ? earnedPoints + AppConstants.pointsPerfectScoreBonus
@@ -442,11 +550,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     }
   }
 
-  /// 対象年月をフォーマット（YYYYまたはYYYY-MM形式を「YYYY年時点」または「YYYY年MM月時点」に変換）
   String _formatReferenceDate(String referenceDate) {
     if (referenceDate.isEmpty) return '';
 
-    // YYYY-MM形式の場合
     if (referenceDate.contains('-')) {
       final parts = referenceDate.split('-');
       if (parts.length == 2) {
@@ -456,14 +562,99 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       }
     }
 
-    // YYYY形式の場合
     if (referenceDate.length == 4 &&
         RegExp(r'^\d{4}$').hasMatch(referenceDate)) {
       return '対象: $referenceDate年時点';
     }
 
-    // その他の形式はそのまま返す
     return '対象: $referenceDate';
   }
 }
 
+/// Quiz Screen用の選択肢ボタン
+class _QuizChoiceButton extends StatefulWidget {
+  final String text;
+  final bool isSelected;
+  final bool? isCorrect;
+  final VoidCallback onTap;
+
+  const _QuizChoiceButton({
+    required this.text,
+    required this.isSelected,
+    this.isCorrect,
+    required this.onTap,
+  });
+
+  @override
+  State<_QuizChoiceButton> createState() => _QuizChoiceButtonState();
+}
+
+class _QuizChoiceButtonState extends State<_QuizChoiceButton> {
+  bool _isHovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    Color borderColor;
+    Color? glowColor;
+
+    if (widget.isCorrect == true) {
+      borderColor = AppColors.stitchEmerald;
+      glowColor = AppColors.stitchEmerald;
+    } else if (widget.isCorrect == false) {
+      borderColor = Colors.red.shade400;
+      glowColor = Colors.red.shade400;
+    } else if (widget.isSelected) {
+      borderColor = AppColors.stitchCyan;
+      glowColor = AppColors.stitchCyan;
+    } else {
+      borderColor = Colors.grey.shade300;
+      glowColor = null;
+    }
+
+    return GestureDetector(
+      onTap: widget.isCorrect == null ? widget.onTap : null,
+      onTapDown: (_) => setState(() => _isHovered = true),
+      onTapUp: (_) => setState(() => _isHovered = false),
+      onTapCancel: () => setState(() => _isHovered = false),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        child: GlassMorphismWidget(
+          borderRadius: 16,
+          backgroundColor: Colors.white.withValues(alpha: 0.4),
+          borderColor: _isHovered && widget.isCorrect == null
+              ? AppColors.stitchCyan
+              : borderColor,
+          boxShadow: glowColor != null
+              ? [
+                  BoxShadow(
+                    color: glowColor.withValues(alpha: 0.4),
+                    blurRadius: 15,
+                    spreadRadius: 0,
+                  ),
+                ]
+              : null,
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
+                child: Text(
+                  widget.text,
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              if (_isHovered && widget.isCorrect == null)
+                Icon(
+                  Icons.chevron_right,
+                  color: AppColors.stitchCyan,
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

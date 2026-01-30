@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clean Tech Soccer Menu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --tech-blue: #0066FF;
+            --tech-green: #32D74B;
+            --tech-white: #F8FAFC;
+            --tech-indigo: #0F172A;
+            --tech-grey: #E2E8F0;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif;
+            background-color: var(--tech-white);
+            color: var(--tech-indigo);
+            -webkit-font-smoothing: antialiased;
+        }
+        .clean-glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 32px rgba(0, 102, 255, 0.05);
+        }
+        .stadium-overlay {
+            background: linear-gradient(180deg, rgba(0, 102, 255, 0.2) 0%, rgba(15, 23, 42, 0.6) 100%);
+        }
+        .category-btn {
+            @apply flex items-center p-4 rounded-2xl transition-all duration-300;
+            background: white;
+            border: 1px solid var(--tech-grey);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .category-btn:active {
+            transform: scale(0.97);
+            background: var(--tech-white);
+        }
+        .icon-3d {
+            filter: drop-shadow(0 4px 6px rgba(0, 102, 255, 0.15));
+            @apply flex items-center justify-center rounded-xl w-12 h-12;
+        }
+        .nav-item {
+            @apply flex flex-col items-center gap-1 transition-colors;
+            color: #64748b;
+        }
+        .nav-item.active {
+            color: var(--tech-blue);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen">
+<header class="px-6 py-5 flex justify-between items-center sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+<div class="flex flex-col">
+<h1 class="text-xl font-extrabold tracking-tight text-[var(--tech-indigo)]">
+                SOCCER<span class="text-[var(--tech-blue)]">QUIZ</span>
+</h1>
+<div class="flex items-center gap-1.5">
+<div class="w-1.5 h-1.5 rounded-full bg-[var(--tech-green)]"></div>
+<span class="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">Server Status: Online</span>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600">
+<span class="material-symbols-outlined text-xl">notifications</span>
+</button>
+</header>
+<main class="max-w-md mx-auto px-5 pb-32 pt-6 space-y-6">
+<div class="relative h-48 rounded-3xl overflow-hidden shadow-xl shadow-blue-900/10 group cursor-pointer">
+<img alt="Stadium" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7oTy_F5YMYSrsvdKQLo2V0KUkDzG5s_7XPTfpff-mRL6gQeKEeSRhirADWGGrsJvapWfdyXI_fo4rjLdnmeYzzh1Bbemwdf5BFhbXCrDkf587jEk9oOmB_xowWqtRvIg0xi8z4LW0wP-uihiinx2d8xQgWsWxpPQQacitI_oQ3JcSsmdg1rPzv1JMkTQtsaJckgBwVQ6dFtLfni7IqNs7kL7DCbhbMrxZZc6o6PWjv_VjVjoLE9vWhlZOVwfKqNBmZ4MSwil9U1c"/>
+<div class="absolute inset-0 stadium-overlay"></div>
+<div class="relative h-full p-6 flex flex-col justify-end">
+<div class="mb-auto flex justify-between items-start">
+<span class="px-3 py-1 bg-[var(--tech-blue)] text-white text-[10px] font-bold rounded-full uppercase tracking-widest">Featured</span>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-white mb-1">MATCH DAY</h2>
+<p class="text-blue-100/90 text-sm font-medium mb-4">最新の試合結果をクイズで分析</p>
+<button class="bg-white text-[var(--tech-indigo)] px-5 py-2.5 rounded-xl font-bold text-sm flex items-center gap-2 hover:bg-[var(--tech-green)] hover:text-white transition-colors">
+                        START MISSION
+                        <span class="material-symbols-outlined text-base">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+<div class="clean-glass rounded-2xl p-5 border border-white">
+<div class="flex justify-between items-center mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white shadow-lg">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<div class="text-[10px] font-bold text-[var(--tech-blue)] uppercase tracking-wider">Level 12</div>
+<h3 class="text-lg font-bold text-[var(--tech-indigo)]">アカデミー生</h3>
+</div>
+</div>
+<div class="text-right">
+<div class="text-2xl font-extrabold text-[var(--tech-indigo)]">1,250 <span class="text-xs font-medium text-slate-400">GP</span></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="h-2.5 w-full bg-slate-200/50 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-[var(--tech-blue)] to-[var(--tech-green)] w-3/4 rounded-full"></div>
+</div>
+<div class="flex justify-between text-[11px] font-semibold text-slate-500">
+<span>Next: エリート</span>
+<span>75% Complete</span>
+</div>
+</div>
+</div>
+<section class="space-y-4">
+<h3 class="text-sm font-bold text-[var(--tech-indigo)]/40 px-1 uppercase tracking-widest">Select Category</h3>
+<div class="grid grid-cols-1 gap-3">
+<button class="category-btn group">
+<div class="icon-3d bg-blue-50 text-[var(--tech-blue)] mr-4 group-hover:bg-[var(--tech-blue)] group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">gavel</span>
+</div>
+<div class="flex-grow text-left">
+<div class="text-[var(--tech-indigo)] font-bold text-base">ルールクイズ</div>
+<div class="text-[11px] font-medium text-slate-400">基本からマニアックな規定まで</div>
+</div>
+<div class="text-right">
+<div class="text-[10px] font-bold text-[var(--tech-green)]">+150 XP</div>
+<span class="material-symbols-outlined text-slate-300">chevron_right</span>
+</div>
+</button>
+<button class="category-btn group">
+<div class="icon-3d bg-amber-50 text-amber-500 mr-4 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">auto_stories</span>
+</div>
+<div class="flex-grow text-left">
+<div class="text-[var(--tech-indigo)] font-bold text-base">歴史クイズ</div>
+<div class="text-[11px] font-medium text-slate-400">伝説のプレーヤーと大会の記録</div>
+</div>
+<div class="text-right">
+<div class="text-[10px] font-bold text-[var(--tech-green)]">+300 XP</div>
+<span class="material-symbols-outlined text-slate-300">chevron_right</span>
+</div>
+</button>
+<button class="category-btn group">
+<div class="icon-3d bg-purple-50 text-purple-500 mr-4 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">groups</span>
+</div>
+<div class="flex-grow text-left">
+<div class="text-[var(--tech-indigo)] font-bold text-base">チームクイズ</div>
+<div class="text-[11px] font-medium text-slate-400">欧州・国内リーグのクラブ知識</div>
+</div>
+<div class="text-right">
+<div class="text-[10px] font-bold text-[var(--tech-green)]">+200 XP</div>
+<span class="material-symbols-outlined text-slate-300">chevron_right</span>
+</div>
+</button>
+<button class="category-btn group">
+<div class="icon-3d bg-cyan-50 text-cyan-500 mr-4 group-hover:bg-cyan-500 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">newspaper</span>
+</div>
+<div class="flex-grow text-left">
+<div class="text-[var(--tech-indigo)] font-bold text-base">ニュースクイズ</div>
+<div class="text-[11px] font-medium text-slate-400">今、サッカー界で起きていること</div>
+</div>
+<div class="text-right">
+<div class="text-[10px] font-bold text-[var(--tech-green)]">+100 XP</div>
+<span class="material-symbols-outlined text-slate-300">chevron_right</span>
+</div>
+</button>
+</div>
+</section>
+<div class="grid grid-cols-2 gap-4">
+<button class="clean-glass flex flex-col items-center gap-2 p-5 rounded-2xl hover:bg-white transition-all">
+<span class="material-symbols-outlined text-[var(--tech-blue)] text-3xl">history</span>
+<span class="text-sm font-bold text-[var(--tech-indigo)]">クイズ履歴</span>
+</button>
+<button class="clean-glass flex flex-col items-center gap-2 p-5 rounded-2xl hover:bg-white transition-all">
+<span class="material-symbols-outlined text-[var(--tech-green)] text-3xl">insights</span>
+<span class="text-sm font-bold text-[var(--tech-indigo)]">統計情報</span>
+</button>
+</div>
+<div class="py-8 text-center">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Secure Data Encryption Enabled</span>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-xl border-t border-slate-100 px-8 pt-3 pb-8 flex justify-between items-center z-50">
+<button class="nav-item active">
+<span class="material-symbols-outlined font-medium">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</button>
+<button class="nav-item">
+<span class="material-symbols-outlined font-medium">leaderboard</span>
+<span class="text-[10px] font-bold">Rank</span>
+</button>
+<div class="relative -mt-10">
+<button class="bg-[var(--tech-blue)] text-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/30 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-3xl font-bold">add</span>
+</button>
+</div>
+<button class="nav-item">
+<span class="material-symbols-outlined font-medium">shopping_bag</span>
+<span class="text-[10px] font-bold">Shop</span>
+</button>
+<button class="nav-item">
+<span class="material-symbols-outlined font-medium">settings</span>
+<span class="text-[10px] font-bold">Profile</span>
+</button>
+</nav>
+
+</body></html>

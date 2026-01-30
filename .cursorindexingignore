@@ -1,0 +1,22 @@
+# Cursor Indexing Ignore - インデックス作成のみから除外（検索は可能）
+
+# 大きなデータファイル
+# インデックス作成は不要だが、必要に応じて検索は可能
+data/questions.db
+data/weekly_recap/*.json
+
+# 生成されたプラグインファイル
+# 自動生成されるためインデックス不要だが、検索は可能
+**/GeneratedPluginRegistrant.*
+**/generated_plugin_registrant.*
+**/generated_plugins.cmake
+
+# ロックファイル
+# 依存関係の詳細は不要だが、検索は可能
+pubspec.lock
+
+# プラットフォーム固有の生成ファイル
+ios/Flutter/.last_build_id
+macos/Flutter/GeneratedPluginRegistrant.swift
+windows/flutter/generated_plugin_registrant.*
+linux/flutter/generated_plugin_registrant.*
