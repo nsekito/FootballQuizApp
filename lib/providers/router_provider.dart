@@ -36,6 +36,7 @@ final routerProvider = Provider<GoRouter>((ref) {
           final range = state.uri.queryParameters['range'] ?? '';
           final year = state.uri.queryParameters['year'];
           final date = state.uri.queryParameters['date'];
+          final leagueType = state.uri.queryParameters['leagueType'];
           return QuizScreen(
             category: category,
             difficulty: difficulty,
@@ -44,6 +45,7 @@ final routerProvider = Provider<GoRouter>((ref) {
             range: range,
             year: year,
             date: date,
+            leagueType: leagueType,
           );
         },
       ),

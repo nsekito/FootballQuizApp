@@ -5,7 +5,6 @@ import 'package:intl/intl.dart';
 import '../providers/user_data_provider.dart';
 import '../providers/quiz_history_provider.dart';
 import '../models/user_rank.dart';
-import '../models/quiz_history.dart';
 import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
@@ -148,7 +147,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                       builder: (context, animatedScore, child) {
                         return Text(
                           '${animatedScore.toInt()}',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 72,
                             fontWeight: FontWeight.w900,
                             color: AppColors.stitchEmerald,
@@ -214,7 +213,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                           builder: (context, animatedPoints, child) {
                             return Text(
                               '+${animatedPoints.toInt()} GP',
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 24,
                                 fontWeight: FontWeight.w900,
                                 color: AppColors.stitchEmerald,
@@ -349,7 +348,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                       ),
                       child: Text(
                         '累計: ${NumberFormat('#,###').format(totalPoints)} GP',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: AppColors.stitchEmerald,
@@ -372,11 +371,11 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Icon(Icons.home, size: 20),
-                    const SizedBox(width: 8),
+                    Icon(Icons.home, size: 20),
+                    SizedBox(width: 8),
                     Text(
                       'ホームに戻る',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
@@ -391,7 +390,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                 onPressed: () => context.pop(),
                 style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16),
-                  side: BorderSide(
+                  side: const BorderSide(
                     color: AppColors.stitchEmerald,
                     width: 2,
                   ),
@@ -402,11 +401,11 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Icon(Icons.refresh, size: 20),
-                    const SizedBox(width: 8),
+                    Icon(Icons.refresh, size: 20),
+                    SizedBox(width: 8),
                     Text(
                       'もう一度挑戦',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),

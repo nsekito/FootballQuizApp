@@ -23,7 +23,7 @@ class AppConstants {
   static const String difficultyExtreme = 'extreme';
 
   // リモートデータ設定
-  // TODO: 実際のGitHubリポジトリURLに変更してください
+  // 注意: 実際のGitHubリポジトリ情報に変更してください（README.mdを参照）
   static const String githubRawBaseUrl = 'https://raw.githubusercontent.com';
   static const String githubRepoOwner = 'your-username'; // GitHubユーザー名
   static const String githubRepoName = 'FootballQuizApp'; // リポジトリ名
@@ -39,4 +39,8 @@ class AppConstants {
   // ニュースクイズフィルタ
   static const String regionDomestic = 'domestic';
   static const String regionWorld = 'world';
+  
+  // Weekly Recap リーグタイプ
+  static const String leagueTypeJ1 = 'j1';
+  static const String leagueTypeEurope = 'europe';
 }

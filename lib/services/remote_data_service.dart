@@ -53,18 +53,68 @@ class RemoteDataService {
   /// Weekly Recap用の問題を取得
   /// 
   /// [date] 日付（YYYY-MM-DD形式、例: "2025-01-13"）
+  /// [leagueType] リーグタイプ（"j1" または "europe"）
   /// 指定しない場合は最新の週を取得
   Future<List<Question>> fetchWeeklyRecapQuestions({
     String? date,
+    String? leagueType,
   }) async {
     // 日付が指定されていない場合は、最新の週の月曜日の日付を使用
-    // 簡易実装: 実際の運用では、最新のファイルを検出するロジックが必要
     final targetDate = date ?? _getLatestMonday();
-    final filePath = '${AppConstants.weeklyRecapDataPath}/$targetDate.json';
+    // リーグタイプが指定されていない場合はj1をデフォルトとする
+    final targetLeagueType = leagueType ?? AppConstants.leagueTypeJ1;
+    
+    // ファイルパス: YYYY-MM-DD_leagueType.json (例: 2025-01-13_j1.json)
+    final filePath = '${AppConstants.weeklyRecapDataPath}/${targetDate}_${targetLeagueType}.json';
     final url = _buildGitHubRawUrl(filePath);
 
     final data = await _fetchFromGitHubRaw(url);
     return _parseQuestionsFromJson(data);
+  }
+
+  /// 指定日付のすべてのリーグタイプのWeekly Recap問題を取得（DB取り込み用）
+  /// 
+  /// [date] 日付（YYYY-MM-DD形式、例: "2025-01-13"）
+  /// 指定しない場合は最新の週を取得
+  /// 戻り値: Map<leagueType, List<Question>>
+  Future<Map<String, List<Question>>> fetchAllWeeklyRecapQuestions({
+    String? date,
+  }) async {
+    final targetDate = date ?? _getLatestMonday();
+    final Map<String, List<Question>> result = {};
+    
+    // J1とヨーロッパの両方を取得
+    try {
+      final j1Questions = await fetchWeeklyRecapQuestions(
+        date: targetDate,
+        leagueType: AppConstants.leagueTypeJ1,
+      );
+      result[AppConstants.leagueTypeJ1] = j1Questions;
+    } catch (e) {
+      // 404エラーの場合（ファイルが存在しない）は空リストを返す
+      if (e is RemoteDataException && e.statusCode == 404) {
+        result[AppConstants.leagueTypeJ1] = [];
+      } else {
+        rethrow;
+      }
+    }
+    
+    try {
+      final europeQuestions = await fetchWeeklyRecapQuestions(
+        date: targetDate,
+        leagueType: AppConstants.leagueTypeEurope,
+      );
+      result[AppConstants.leagueTypeEurope] = europeQuestions;
+    } catch (e) {
+      // 404エラーの場合（ファイルが存在しない）は空リストを返す
+      if (e is RemoteDataException && e.statusCode == 404) {
+        result[AppConstants.leagueTypeEurope] = [];
+      } else {
+        rethrow;
+      }
+    }
+    
+    return result;
   }
 
   /// ニュースクイズ用の問題を取得

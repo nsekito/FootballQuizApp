@@ -4,8 +4,9 @@
 
 ## ファイル命名規則
 
-- ファイル名: `YYYY-MM-DD.json`（例: `2025-01-13.json`）
+- ファイル名: `YYYY-MM-DD_{leagueType}.json`（例: `2025-01-13_j1.json`, `2025-01-13_europe.json`）
 - 日付は月曜日の日付を使用します
+- `leagueType`は`j1`（J1リーグ）または`europe`（ヨーロッパサッカー）のいずれか
 
 ## JSON形式
 
@@ -14,6 +15,8 @@
   "version": "1.0",
   "generated_at": "2025-01-13T00:00:00Z",
   "category": "match_recap",
+  "league_type": "j1",
+  "date": "2025-01-13",
   "questions": [
     {
       "id": "match_recap_2025_01_13_001",
@@ -35,8 +38,12 @@
 このディレクトリのファイルは、以下のURL形式でアクセスできます：
 
 ```
-https://raw.githubusercontent.com/{OWNER}/{REPO}/main/data/weekly_recap/YYYY-MM-DD.json
+https://raw.githubusercontent.com/{OWNER}/{REPO}/main/data/weekly_recap/YYYY-MM-DD_{leagueType}.json
 ```
+
+例:
+- J1リーグ: `https://raw.githubusercontent.com/{OWNER}/{REPO}/main/data/weekly_recap/2025-01-13_j1.json`
+- ヨーロッパサッカー: `https://raw.githubusercontent.com/{OWNER}/{REPO}/main/data/weekly_recap/2025-01-13_europe.json`
 
 ## データ生成
 

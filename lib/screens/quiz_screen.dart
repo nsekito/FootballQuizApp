@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'dart:ui';
 import '../models/question.dart';
 import '../providers/question_service_provider.dart';
 import '../services/remote_data_service.dart';
@@ -21,6 +20,7 @@ class QuizScreen extends ConsumerStatefulWidget {
   final String range;
   final String? year; // ニュースクイズ用
   final String? date; // Weekly Recap用（YYYY-MM-DD形式）
+  final String? leagueType; // Weekly Recap用（"j1" または "europe"）
 
   const QuizScreen({
     super.key,
@@ -31,6 +31,7 @@ class QuizScreen extends ConsumerStatefulWidget {
     this.range = '',
     this.year,
     this.date,
+    this.leagueType,
   });
 
   @override
@@ -75,6 +76,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         range: widget.range.isNotEmpty ? widget.range : null,
         year: widget.year,
         date: widget.date,
+        leagueType: widget.leagueType,
         limit: AppConstants.defaultQuestionsPerQuiz,
       );
 
@@ -147,7 +149,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           title: const Text('クイズ'),
         ),
         body: const Center(
-          child: const Text('クイズデータがありません'),
+          child: Text('クイズデータがありません'),
         ),
       );
     }
@@ -647,7 +649,7 @@ class _QuizChoiceButtonState extends State<_QuizChoiceButton> {
                 ),
               ),
               if (_isHovered && widget.isCorrect == null)
-                Icon(
+                const Icon(
                   Icons.chevron_right,
                   color: AppColors.stitchCyan,
                 ),

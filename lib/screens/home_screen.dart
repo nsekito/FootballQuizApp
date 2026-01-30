@@ -4,15 +4,35 @@ import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 import '../providers/user_data_provider.dart';
 import '../providers/sample_data_provider.dart';
+import '../providers/recap_data_provider.dart';
 import '../utils/constants.dart';
 import '../constants/app_colors.dart';
 import '../models/user_rank.dart';
 
-class HomeScreen extends ConsumerWidget {
+class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends ConsumerState<HomeScreen> {
+  bool _hasSyncedRecap = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // Weekly Recapデータの自動同期（バックグラウンドで実行）
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!_hasSyncedRecap) {
+        _hasSyncedRecap = true;
+        _syncWeeklyRecapData(ref);
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
     // サンプルデータの初期化を確認
     ref.watch(sampleDataInitializedProvider);
 
@@ -76,10 +96,10 @@ class HomeScreen extends ConsumerWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Column(
+          const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
+              Text(
                 'SOCCER',
                 style: TextStyle(
                   fontSize: 20,
@@ -88,7 +108,7 @@ class HomeScreen extends ConsumerWidget {
                   color: AppColors.techIndigo,
                 ),
               ),
-              const Text(
+              Text(
                 'QUIZ',
                 style: TextStyle(
                   fontSize: 20,
@@ -97,8 +117,8 @@ class HomeScreen extends ConsumerWidget {
                   color: AppColors.techBlue,
                 ),
               ),
-              const SizedBox(height: 6),
-              const Row(
+              SizedBox(height: 6),
+              Row(
                 children: [
                   SizedBox(
                     width: 6,
@@ -332,7 +352,7 @@ class HomeScreen extends ConsumerWidget {
                       const SizedBox(height: 2),
                       Text(
                         userRank.japaneseName,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w700,
                           color: AppColors.techIndigo,
@@ -399,7 +419,7 @@ class HomeScreen extends ConsumerWidget {
                 userRank.maxPoints != null
                     ? 'Next: ${_getNextRankName(userRank)}'
                     : '最高ランク達成',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w600,
                   color: AppColors.slate500,
@@ -408,7 +428,7 @@ class HomeScreen extends ConsumerWidget {
               if (userRank.maxPoints != null)
                 Text(
                   '$progressPercent% Complete',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 11,
                     fontWeight: FontWeight.w600,
                     color: AppColors.slate500,
@@ -672,6 +692,18 @@ class HomeScreen extends ConsumerWidget {
     }
     return 'レジェンド';
   }
+
+  /// Weekly Recapデータをバックグラウンドで同期
+  Future<void> _syncWeeklyRecapData(WidgetRef ref) async {
+    try {
+      final recapDataService = ref.read(recapDataServiceProvider);
+      await recapDataService.syncWeeklyRecapToDatabase();
+    } catch (e) {
+      // エラーは無視（ネットワークエラーなどは正常）
+      // デバッグ時のみログ出力
+      debugPrint('Weekly Recap自動同期エラー: $e');
+    }
+  }
 }
 
 class _CategoryButton extends StatefulWidget {
@@ -770,10 +802,10 @@ class _CategoryButtonState extends State<_CategoryButton> {
                 ],
               ),
             ),
-            Column(
+            const Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                const Text(
+                Text(
                   '+150 XP',
                   style: TextStyle(
                     fontSize: 10,
@@ -781,7 +813,7 @@ class _CategoryButtonState extends State<_CategoryButton> {
                     color: AppColors.techGreen,
                   ),
                 ),
-                const Icon(
+                Icon(
                   Icons.chevron_right,
                   color: AppColors.slate200,
                   size: 20,

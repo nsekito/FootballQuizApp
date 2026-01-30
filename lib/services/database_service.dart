@@ -10,7 +10,7 @@ import '../utils/constants.dart';
 class DatabaseService {
   static Database? _database;
   static const String _databaseName = 'questions.db';  // アセットファイル名と一致させる
-  static const int _databaseVersion = 3;
+  static const int _databaseVersion = 4;
   
   // キャッシュ用のマップ（問題ID -> Question）
   final Map<String, Question> _questionCache = {};
@@ -224,6 +224,18 @@ class DatabaseService {
       )
     ''');
 
+    // Weekly Recap同期履歴テーブル
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS recap_sync_history (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        date TEXT NOT NULL,
+        league_type TEXT NOT NULL,
+        synced_at TEXT NOT NULL,
+        question_count INTEGER NOT NULL,
+        UNIQUE(date, league_type)
+      )
+    ''');
+
     // インデックスの追加（パフォーマンス向上のため、IF NOT EXISTSを追加）
     await db.execute('''
       CREATE INDEX IF NOT EXISTS idx_quiz_history_category ON quiz_history(category)
@@ -239,6 +251,12 @@ class DatabaseService {
     ''');
     await db.execute('''
       CREATE INDEX IF NOT EXISTS idx_questions_tags ON questions(tags)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_recap_sync_history_date ON recap_sync_history(date)
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_recap_sync_history_league_type ON recap_sync_history(league_type)
     ''');
 
     // 初期ユーザーデータを挿入（既に存在する場合はスキップ）
@@ -302,6 +320,30 @@ class DatabaseService {
       } catch (e) {
         debugPrint('reference_dateカラムの追加に失敗しました（既に存在する可能性があります）: $e');
       }
+    }
+    
+    // バージョン3から4へのマイグレーション
+    if (oldVersion < 4) {
+      // recap_sync_historyテーブルの追加
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS recap_sync_history (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          date TEXT NOT NULL,
+          league_type TEXT NOT NULL,
+          synced_at TEXT NOT NULL,
+          question_count INTEGER NOT NULL,
+          UNIQUE(date, league_type)
+        )
+      ''');
+      
+      // インデックスの追加
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_recap_sync_history_date ON recap_sync_history(date)
+      ''');
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_recap_sync_history_league_type ON recap_sync_history(league_type)
+      ''');
+      debugPrint('recap_sync_historyテーブルを追加しました');
     }
   }
 
@@ -721,6 +763,49 @@ class DatabaseService {
   Future<void> addPoints(int points) async {
     final currentPoints = await getTotalPoints();
     await updateTotalPoints(currentPoints + points);
+  }
+
+  /// Weekly Recap同期履歴を記録
+  Future<void> recordRecapSync({
+    required String date,
+    required String leagueType,
+    required int questionCount,
+  }) async {
+    final db = await database;
+    await db.insert(
+      'recap_sync_history',
+      {
+        'date': date,
+        'league_type': leagueType,
+        'synced_at': DateTime.now().toIso8601String(),
+        'question_count': questionCount,
+      },
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  /// 指定日付とリーグタイプのWeekly Recapが既に同期済みかチェック
+  Future<bool> isRecapSynced({
+    required String date,
+    required String leagueType,
+  }) async {
+    final db = await database;
+    final result = await db.query(
+      'recap_sync_history',
+      where: 'date = ? AND league_type = ?',
+      whereArgs: [date, leagueType],
+    );
+    return result.isNotEmpty;
+  }
+
+  /// 同期済みの日付とリーグタイプのペアを取得
+  Future<List<Map<String, dynamic>>> getSyncedRecapDates() async {
+    final db = await database;
+    return await db.query(
+      'recap_sync_history',
+      columns: ['date', 'league_type', 'synced_at', 'question_count'],
+      orderBy: 'date DESC, league_type ASC',
+    );
   }
 
   /// データベースを閉じる

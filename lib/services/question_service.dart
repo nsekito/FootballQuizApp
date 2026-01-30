@@ -30,6 +30,7 @@ class QuestionService {
   /// [excludeIds] 除外する問題IDのリスト（オプション）
   /// [year] 年（ニュースクイズ用、オプション）
   /// [date] 日付（Weekly Recap用、YYYY-MM-DD形式、オプション）
+  /// [leagueType] リーグタイプ（Weekly Recap用、"j1" または "europe"、オプション）
   Future<List<Question>> getQuestions({
     required String category,
     required String difficulty,
@@ -41,6 +42,7 @@ class QuestionService {
     List<String>? excludeIds,
     String? year,
     String? date,
+    String? leagueType,
   }) async {
     // リモートデータが必要なカテゴリ
     if (category == AppConstants.categoryMatchRecap) {
@@ -48,6 +50,7 @@ class QuestionService {
         difficulty: difficulty,
         limit: limit,
         date: date,
+        leagueType: leagueType,
       );
     }
 
@@ -73,13 +76,42 @@ class QuestionService {
   }
 
   /// Weekly Recap問題を取得
+  /// 
+  /// まずローカルDBから取得を試み、見つからない場合はリモートから取得
   Future<List<Question>> _getWeeklyRecapQuestions({
     required String difficulty,
     int? limit,
     String? date,
+    String? leagueType,
   }) async {
+    // まずローカルDBから取得を試みる
+    final localQuestions = await _databaseService.getQuestionsOptimized(
+      category: AppConstants.categoryMatchRecap,
+      difficulty: difficulty,
+      limit: limit ?? AppConstants.defaultQuestionsPerQuiz,
+    );
+    
+    // ローカルDBにデータがある場合はそれを使用
+    if (localQuestions.isNotEmpty) {
+      // 日付やリーグタイプでフィルタリング（必要に応じて）
+      var filtered = localQuestions;
+      
+      if (date != null) {
+        filtered = filtered.where((q) => q.referenceDate == date).toList();
+      }
+      
+      // ランダムにシャッフル
+      filtered.shuffle();
+      
+      // 指定された数だけ返す
+      final resultLimit = limit ?? AppConstants.defaultQuestionsPerQuiz;
+      return filtered.take(resultLimit).toList();
+    }
+    
+    // ローカルDBにデータがない場合はリモートから取得
     final questions = await _remoteDataService.fetchWeeklyRecapQuestions(
       date: date,
+      leagueType: leagueType,
     );
 
     // 難易度でフィルタリング

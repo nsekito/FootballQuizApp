@@ -26,6 +26,7 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
   String? _selectedRange;
   String? _selectedNewsRegion; // ニュースクイズ用の地域
   String? _selectedYear; // ニュースクイズ用の年
+  String? _selectedLeagueType; // Weekly Recap用のリーグタイプ
 
   @override
   Widget build(BuildContext context) {
@@ -65,6 +66,12 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
                 // 難易度選択（全カテゴリ共通）
                 _buildDifficultySelector(),
                 const SizedBox(height: 40),
+
+                // Weekly Recap: リーグタイプ選択
+                if (widget.category == AppConstants.categoryMatchRecap) ...[
+                  _buildLeagueTypeSelector(),
+                  const SizedBox(height: 40),
+                ],
 
                 // 歴史クイズ: 地域選択
                 if (widget.category == AppConstants.categoryHistory) ...[
@@ -414,10 +421,29 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
     );
   }
 
+  Widget _buildLeagueTypeSelector() {
+    return _buildSectionSelector(
+      icon: Icons.sports_soccer,
+      title: 'リーグ',
+      children: [
+        _buildChip('J1リーグ', AppConstants.leagueTypeJ1, _selectedLeagueType,
+            (value) => setState(() => _selectedLeagueType = value)),
+        _buildChip('ヨーロッパサッカー', AppConstants.leagueTypeEurope, _selectedLeagueType,
+            (value) => setState(() => _selectedLeagueType = value)),
+      ],
+    );
+  }
+
   bool _canStart() {
-    if (widget.category == AppConstants.categoryRules ||
-        widget.category == AppConstants.categoryMatchRecap) {
+    if (widget.category == AppConstants.categoryRules) {
       return _selectedDifficulty != null && _selectedDifficulty!.isNotEmpty;
+    }
+
+    if (widget.category == AppConstants.categoryMatchRecap) {
+      return _selectedDifficulty != null &&
+          _selectedDifficulty!.isNotEmpty &&
+          _selectedLeagueType != null &&
+          _selectedLeagueType!.isNotEmpty;
     }
 
     if (widget.category == AppConstants.categoryHistory) {
@@ -475,6 +501,8 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
           'region': _selectedNewsRegion!,
         if (_selectedYear != null && _selectedYear!.isNotEmpty)
           'year': _selectedYear!,
+        if (_selectedLeagueType != null && _selectedLeagueType!.isNotEmpty)
+          'leagueType': _selectedLeagueType!,
       },
     );
     context.push(uri.toString());
