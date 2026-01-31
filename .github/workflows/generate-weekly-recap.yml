@@ -36,6 +36,15 @@ jobs:
         run: |
           python generate_weekly_recap.py
       
+      - name: Upload generated JSON files as artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-recap-json-${{ github.run_number }}
+          path: data/weekly_recap/*.json
+          retention-days: 30
+          if-no-files-found: ignore
+      
       - name: Commit and push changes
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |

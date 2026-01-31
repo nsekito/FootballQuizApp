@@ -63,9 +63,11 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
                 ),
                 const SizedBox(height: 32),
 
-                // 難易度選択（全カテゴリ共通）
-                _buildDifficultySelector(),
-                const SizedBox(height: 40),
+                // 難易度選択（Weekly Recap以外）
+                if (widget.category != AppConstants.categoryMatchRecap) ...[
+                  _buildDifficultySelector(),
+                  const SizedBox(height: 40),
+                ],
 
                 // Weekly Recap: リーグタイプ選択
                 if (widget.category == AppConstants.categoryMatchRecap) ...[
@@ -440,9 +442,7 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
     }
 
     if (widget.category == AppConstants.categoryMatchRecap) {
-      return _selectedDifficulty != null &&
-          _selectedDifficulty!.isNotEmpty &&
-          _selectedLeagueType != null &&
+      return _selectedLeagueType != null &&
           _selectedLeagueType!.isNotEmpty;
     }
 
@@ -490,7 +490,8 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
       path: '/quiz',
       queryParameters: {
         'category': widget.category,
-        'difficulty': _selectedDifficulty ?? '',
+        if (widget.category != AppConstants.categoryMatchRecap)
+          'difficulty': _selectedDifficulty ?? '',
         if (_selectedRegion != null && _selectedRegion!.isNotEmpty)
           'region': _selectedRegion!,
         if (_selectedCountry != null && _selectedCountry!.isNotEmpty)

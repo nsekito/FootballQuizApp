@@ -69,7 +69,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
       final questions = await questionService.getQuestions(
         category: widget.category,
-        difficulty: widget.difficulty,
+        difficulty: widget.category == AppConstants.categoryMatchRecap 
+            ? '' // Weekly Recapの場合は難易度を渡さない
+            : widget.difficulty,
         tags: tags,
         country: widget.country.isNotEmpty ? widget.country : null,
         region: widget.region.isNotEmpty ? widget.region : null,

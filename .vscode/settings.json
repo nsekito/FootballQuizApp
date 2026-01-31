@@ -12,11 +12,5 @@
   // ターミナルの統合設定
   "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.shellIntegration.enabled": true,
-  "terminal.integrated.inheritEnv": true,
-  
-  // ターミナル環境変数の変更を許可しない
-  "terminal.integrated.allowWorkspaceConfiguration": false,
-  
-  // Git認証プロバイダーの拡張機能を無効化
-  "extensions.ignoreRecommendations": true
+  "terminal.integrated.inheritEnv": true
 }

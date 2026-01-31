@@ -121,17 +121,43 @@ def main():
     
     saved_files = []
     
-    # J1リーグ問題生成（10問）
+    # J1リーグ問題生成（easy 3問、normal 5問、hard 2問の計10問）
     if not args.europe_only:
         print("\n" + "-" * 60)
         print("J1リーグ問題生成中...")
         print("-" * 60)
         try:
-            j1_questions = generate_weekly_recap_questions_batch(
+            j1_questions = []
+            
+            # easy 3問生成
+            print("Easy問題生成中...")
+            easy_questions = generate_weekly_recap_questions_batch(
                 date=target_date,
                 league_type="j1",
-                count=10
+                count=3,
+                difficulty="easy"
             )
+            j1_questions.extend(easy_questions)
+            
+            # normal 5問生成
+            print("Normal問題生成中...")
+            normal_questions = generate_weekly_recap_questions_batch(
+                date=target_date,
+                league_type="j1",
+                count=5,
+                difficulty="normal"
+            )
+            j1_questions.extend(normal_questions)
+            
+            # hard 2問生成
+            print("Hard問題生成中...")
+            hard_questions = generate_weekly_recap_questions_batch(
+                date=target_date,
+                league_type="j1",
+                count=2,
+                difficulty="hard"
+            )
+            j1_questions.extend(hard_questions)
             
             # 問題IDを追加
             for i, question in enumerate(j1_questions):
@@ -148,6 +174,14 @@ def main():
                     counts[idx] += 1
             print(f"answerIndex分布: [0]: {counts[0]}, [1]: {counts[1]}, [2]: {counts[2]}, [3]: {counts[3]}")
             
+            # 難易度分布を確認して表示
+            difficulty_counts = {"easy": 0, "normal": 0, "hard": 0}
+            for q in j1_questions:
+                diff = q.get('difficulty', 'normal')
+                if diff in difficulty_counts:
+                    difficulty_counts[diff] += 1
+            print(f"難易度分布: easy: {difficulty_counts['easy']}, normal: {difficulty_counts['normal']}, hard: {difficulty_counts['hard']}")
+            
             # J1リーグの問題を個別のファイルに保存
             if j1_questions:
                 filepath = save_weekly_recap_json(j1_questions, target_date, "j1", output_dir)
@@ -158,17 +192,43 @@ def main():
             if args.j1_only:
                 raise
     
-    # ヨーロッパサッカー問題生成（10問）
+    # ヨーロッパサッカー問題生成（easy 3問、normal 5問、hard 2問の計10問）
     if not args.j1_only:
         print("\n" + "-" * 60)
         print("ヨーロッパサッカー問題生成中...")
         print("-" * 60)
         try:
-            europe_questions = generate_weekly_recap_questions_batch(
+            europe_questions = []
+            
+            # easy 3問生成
+            print("Easy問題生成中...")
+            easy_questions = generate_weekly_recap_questions_batch(
                 date=target_date,
                 league_type="europe",
-                count=10
+                count=3,
+                difficulty="easy"
             )
+            europe_questions.extend(easy_questions)
+            
+            # normal 5問生成
+            print("Normal問題生成中...")
+            normal_questions = generate_weekly_recap_questions_batch(
+                date=target_date,
+                league_type="europe",
+                count=5,
+                difficulty="normal"
+            )
+            europe_questions.extend(normal_questions)
+            
+            # hard 2問生成
+            print("Hard問題生成中...")
+            hard_questions = generate_weekly_recap_questions_batch(
+                date=target_date,
+                league_type="europe",
+                count=2,
+                difficulty="hard"
+            )
+            europe_questions.extend(hard_questions)
             
             # 問題IDを追加
             for i, question in enumerate(europe_questions):
@@ -184,6 +244,14 @@ def main():
                 if 0 <= idx <= 3:
                     counts[idx] += 1
             print(f"answerIndex分布: [0]: {counts[0]}, [1]: {counts[1]}, [2]: {counts[2]}, [3]: {counts[3]}")
+            
+            # 難易度分布を確認して表示
+            difficulty_counts = {"easy": 0, "normal": 0, "hard": 0}
+            for q in europe_questions:
+                diff = q.get('difficulty', 'normal')
+                if diff in difficulty_counts:
+                    difficulty_counts[diff] += 1
+            print(f"難易度分布: easy: {difficulty_counts['easy']}, normal: {difficulty_counts['normal']}, hard: {difficulty_counts['hard']}")
             
             # ヨーロッパサッカーの問題を個別のファイルに保存
             if europe_questions:
