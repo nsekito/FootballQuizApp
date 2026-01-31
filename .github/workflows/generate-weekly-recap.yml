@@ -41,7 +41,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/weekly_recap/*.json
+          git add -f data/weekly_recap/*.json
           if git diff --staged --quiet; then
             echo "変更がありません。コミットをスキップします。"
           else
