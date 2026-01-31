@@ -65,7 +65,7 @@ class RemoteDataService {
     final targetLeagueType = leagueType ?? AppConstants.leagueTypeJ1;
     
     // ファイルパス: YYYY-MM-DD_leagueType.json (例: 2025-01-13_j1.json)
-    final filePath = '${AppConstants.weeklyRecapDataPath}/${targetDate}_${targetLeagueType}.json';
+    final filePath = '${AppConstants.weeklyRecapDataPath}/${targetDate}_$targetLeagueType.json';
     final url = _buildGitHubRawUrl(filePath);
 
     final data = await _fetchFromGitHubRaw(url);

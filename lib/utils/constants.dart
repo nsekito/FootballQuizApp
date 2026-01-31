@@ -25,21 +25,21 @@ class AppConstants {
   // リモートデータ設定
   // 注意: 実際のGitHubリポジトリ情報に変更してください（README.mdを参照）
   static const String githubRawBaseUrl = 'https://raw.githubusercontent.com';
-  static const String githubRepoOwner = 'your-username'; // GitHubユーザー名
+  static const String githubRepoOwner = 'nsekito'; // GitHubユーザー名
   static const String githubRepoName = 'FootballQuizApp'; // リポジトリ名
   static const String githubBranch = 'main'; // ブランチ名
-  
+
   // リモートデータのパス
   static const String weeklyRecapDataPath = 'data/weekly_recap';
   static const String newsDataPath = 'data/news';
-  
+
   // タイムアウト設定（秒）
   static const int remoteDataTimeoutSeconds = 30;
-  
+
   // ニュースクイズフィルタ
   static const String regionDomestic = 'domestic';
   static const String regionWorld = 'world';
-  
+
   // Weekly Recap リーグタイプ
   static const String leagueTypeJ1 = 'j1';
   static const String leagueTypeEurope = 'europe';

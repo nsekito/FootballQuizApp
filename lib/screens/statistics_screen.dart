@@ -29,35 +29,36 @@ class StatisticsScreen extends ConsumerWidget {
             }
 
             return RefreshIndicator(
-            onRefresh: () async {
-              ref.invalidate(quizStatisticsProvider);
-            },
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  // 総合統計
-                  _buildOverallStatsCard(context, statistics),
-                  const SizedBox(height: 16),
+              onRefresh: () async {
+                ref.invalidate(quizStatisticsProvider);
+              },
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    // 総合統計
+                    _buildOverallStatsCard(context, statistics),
+                    const SizedBox(height: 16),
 
-                  // カテゴリ別統計
-                  _buildCategoryStatsCard(context, statistics.categoryStats),
-                  const SizedBox(height: 16),
+                    // カテゴリ別統計
+                    _buildCategoryStatsCard(context, statistics.categoryStats),
+                    const SizedBox(height: 16),
 
-                  // 難易度別統計
-                  _buildDifficultyStatsCard(context, statistics.difficultyStats),
-                ],
+                    // 難易度別統計
+                    _buildDifficultyStatsCard(
+                        context, statistics.difficultyStats),
+                  ],
+                ),
               ),
-            ),
-          );
-        },
-        loading: () => const AppLoadingWidget(),
-        error: (error, stack) => AppErrorWidget(
-          message: error.toString(),
-          onRetry: () => ref.invalidate(quizStatisticsProvider),
+            );
+          },
+          loading: () => const AppLoadingWidget(),
+          error: (error, stack) => AppErrorWidget(
+            message: error.toString(),
+            onRetry: () => ref.invalidate(quizStatisticsProvider),
+          ),
         ),
-      ),
       ),
     );
   }
@@ -230,7 +231,8 @@ class StatisticsScreen extends ConsumerWidget {
               ],
             ),
             const SizedBox(height: 16),
-            ...categoryStats.map((stat) => _buildCategoryStatItem(context, stat)),
+            ...categoryStats
+                .map((stat) => _buildCategoryStatItem(context, stat)),
           ],
         ),
       ),
@@ -307,7 +309,7 @@ class StatisticsScreen extends ConsumerWidget {
         borderRadius: BorderRadius.circular(12),
         child: Container(
           padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -320,24 +322,25 @@ class StatisticsScreen extends ConsumerWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-            Row(
-              children: [
-                Icon(
-                  Icons.trending_up,
-                  color: Colors.purple.shade700,
-                  size: 28,
-                ),
-                const SizedBox(width: 8),
-                Text(
-                  '難易度別成績',
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 16),
-            ...difficultyStats.map((stat) => _buildDifficultyStatItem(context, stat)),
+              Row(
+                children: [
+                  Icon(
+                    Icons.trending_up,
+                    color: Colors.purple.shade700,
+                    size: 28,
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    '難易度別成績',
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
+              ...difficultyStats
+                  .map((stat) => _buildDifficultyStatItem(context, stat)),
             ],
           ),
         ),
@@ -400,6 +403,4 @@ class StatisticsScreen extends ConsumerWidget {
       ),
     );
   }
-
 }
-

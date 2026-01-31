@@ -76,7 +76,8 @@ class _AnimatedActionButtonState extends State<AnimatedActionButton>
             child: ElevatedButton(
               onPressed: widget.isLoading ? null : widget.onPressed,
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
                 backgroundColor: AppColors.primary,
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
@@ -90,7 +91,7 @@ class _AnimatedActionButtonState extends State<AnimatedActionButton>
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   if (widget.isLoading)
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                       height: 20,
                       child: CircularProgressIndicator(
@@ -134,8 +135,7 @@ class AnimatedOutlinedButton extends StatefulWidget {
   });
 
   @override
-  State<AnimatedOutlinedButton> createState() =>
-      _AnimatedOutlinedButtonState();
+  State<AnimatedOutlinedButton> createState() => _AnimatedOutlinedButtonState();
 }
 
 class _AnimatedOutlinedButtonState extends State<AnimatedOutlinedButton>
@@ -194,7 +194,8 @@ class _AnimatedOutlinedButtonState extends State<AnimatedOutlinedButton>
             child: OutlinedButton(
               onPressed: widget.isLoading ? null : widget.onPressed,
               style: OutlinedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
                 side: BorderSide(
                   color: AppColors.primary,
                   width: _isPressed ? 3 : 2,
@@ -208,7 +209,7 @@ class _AnimatedOutlinedButtonState extends State<AnimatedOutlinedButton>
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   if (widget.isLoading)
-                    SizedBox(
+                    const SizedBox(
                       width: 16,
                       height: 16,
                       child: CircularProgressIndicator(
@@ -225,7 +226,8 @@ class _AnimatedOutlinedButtonState extends State<AnimatedOutlinedButton>
                     style: TextStyle(
                       fontSize: 16,
                       color: AppColors.primary,
-                      fontWeight: _isPressed ? FontWeight.bold : FontWeight.normal,
+                      fontWeight:
+                          _isPressed ? FontWeight.bold : FontWeight.normal,
                     ),
                   ),
                 ],
