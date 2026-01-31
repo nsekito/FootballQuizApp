@@ -192,7 +192,7 @@ def main():
             if args.j1_only:
                 raise
     
-    # ヨーロッパサッカー問題生成（easy 3問、normal 5問、hard 2問の計10問）
+    # ヨーロッパサッカー問題生成（easy 7問、normal 2問、hard 1問の計10問）
     if not args.j1_only:
         print("\n" + "-" * 60)
         print("ヨーロッパサッカー問題生成中...")
@@ -200,32 +200,32 @@ def main():
         try:
             europe_questions = []
             
-            # easy 3問生成
+            # easy 7問生成
             print("Easy問題生成中...")
             easy_questions = generate_weekly_recap_questions_batch(
                 date=target_date,
                 league_type="europe",
-                count=3,
+                count=7,
                 difficulty="easy"
             )
             europe_questions.extend(easy_questions)
             
-            # normal 5問生成
+            # normal 2問生成
             print("Normal問題生成中...")
             normal_questions = generate_weekly_recap_questions_batch(
                 date=target_date,
                 league_type="europe",
-                count=5,
+                count=2,
                 difficulty="normal"
             )
             europe_questions.extend(normal_questions)
             
-            # hard 2問生成
+            # hard 1問生成
             print("Hard問題生成中...")
             hard_questions = generate_weekly_recap_questions_batch(
                 date=target_date,
                 league_type="europe",
-                count=2,
+                count=1,
                 difficulty="hard"
             )
             europe_questions.extend(hard_questions)
