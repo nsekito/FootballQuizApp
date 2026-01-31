@@ -11,6 +11,7 @@ import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
+import '../utils/category_difficulty_utils.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {
   final String category;
@@ -262,6 +263,46 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.grey.shade600,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    // 難易度の表示（recap問題の場合のみ）
+                    if (currentQuestion.category == AppConstants.categoryMatchRecap)
+                      Padding(
+                        padding: EdgeInsets.only(
+                          bottom: currentQuestion.referenceDate != null &&
+                                  currentQuestion.referenceDate!.isNotEmpty
+                              ? 0
+                              : 16,
+                        ),
+                        child: Row(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 4,
+                              ),
+                              decoration: BoxDecoration(
+                                color: _getDifficultyColor(currentQuestion.difficulty)
+                                    .withOpacity(0.2),
+                                borderRadius: BorderRadius.circular(4),
+                                border: Border.all(
+                                  color: _getDifficultyColor(currentQuestion.difficulty)
+                                      .withOpacity(0.5),
+                                  width: 1,
+                                ),
+                              ),
+                              child: Text(
+                                CategoryDifficultyUtils.getDifficultyName(
+                                  currentQuestion.difficulty,
+                                ),
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold,
+                                  color: _getDifficultyColor(currentQuestion.difficulty),
+                                ),
                               ),
                             ),
                           ],
@@ -572,6 +613,22 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     }
 
     return '対象: $referenceDate';
+  }
+
+  /// 難易度に応じたカラーを取得
+  Color _getDifficultyColor(String difficulty) {
+    switch (difficulty) {
+      case AppConstants.difficultyEasy:
+        return AppColors.difficultyEasy;
+      case AppConstants.difficultyNormal:
+        return AppColors.difficultyNormal;
+      case AppConstants.difficultyHard:
+        return AppColors.difficultyHard;
+      case AppConstants.difficultyExtreme:
+        return AppColors.difficultyExtreme;
+      default:
+        return Colors.grey;
+    }
   }
 }
 
