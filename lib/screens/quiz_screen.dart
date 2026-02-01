@@ -340,6 +340,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                     text: option,
                     isSelected: isSelected,
                     isCorrect: isCorrect,
+                    isEnabled: !_showResult,
                     onTap: () => _selectAnswer(index),
                   ),
                 );
@@ -640,12 +641,14 @@ class _QuizChoiceButton extends StatefulWidget {
   final String text;
   final bool isSelected;
   final bool? isCorrect;
+  final bool isEnabled;
   final VoidCallback onTap;
 
   const _QuizChoiceButton({
     required this.text,
     required this.isSelected,
     this.isCorrect,
+    this.isEnabled = true,
     required this.onTap,
   });
 
@@ -676,16 +679,22 @@ class _QuizChoiceButtonState extends State<_QuizChoiceButton> {
     }
 
     return GestureDetector(
-      onTap: widget.isCorrect == null ? widget.onTap : null,
-      onTapDown: (_) => setState(() => _isHovered = true),
-      onTapUp: (_) => setState(() => _isHovered = false),
-      onTapCancel: () => setState(() => _isHovered = false),
+      onTap: widget.isEnabled && widget.isCorrect == null ? widget.onTap : null,
+      onTapDown: widget.isEnabled && widget.isCorrect == null
+          ? (_) => setState(() => _isHovered = true)
+          : null,
+      onTapUp: widget.isEnabled && widget.isCorrect == null
+          ? (_) => setState(() => _isHovered = false)
+          : null,
+      onTapCancel: widget.isEnabled && widget.isCorrect == null
+          ? () => setState(() => _isHovered = false)
+          : null,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         child: GlassMorphismWidget(
           borderRadius: 16,
           backgroundColor: Colors.white.withValues(alpha: 0.4),
-          borderColor: _isHovered && widget.isCorrect == null
+          borderColor: _isHovered && widget.isEnabled && widget.isCorrect == null
               ? AppColors.stitchCyan
               : borderColor,
           boxShadow: glowColor != null
@@ -710,7 +719,7 @@ class _QuizChoiceButtonState extends State<_QuizChoiceButton> {
                   ),
                 ),
               ),
-              if (_isHovered && widget.isCorrect == null)
+              if (_isHovered && widget.isEnabled && widget.isCorrect == null)
                 const Icon(
                   Icons.chevron_right,
                   color: AppColors.stitchCyan,
