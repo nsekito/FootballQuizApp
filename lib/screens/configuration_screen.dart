@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:intl/intl.dart';
 import '../utils/constants.dart';
+import '../utils/unlock_key_utils.dart';
+import '../providers/user_data_provider.dart';
 import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
 import '../widgets/responsive_container.dart';
 import '../utils/category_difficulty_utils.dart';
+import '../models/promotion_exam.dart';
 
-class ConfigurationScreen extends StatefulWidget {
+class ConfigurationScreen extends ConsumerStatefulWidget {
   final String category;
 
   const ConfigurationScreen({
@@ -17,10 +22,10 @@ class ConfigurationScreen extends StatefulWidget {
   });
 
   @override
-  State<ConfigurationScreen> createState() => _ConfigurationScreenState();
+  ConsumerState<ConfigurationScreen> createState() => _ConfigurationScreenState();
 }
 
-class _ConfigurationScreenState extends State<ConfigurationScreen> {
+class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
   String? _selectedDifficulty;
   String? _selectedRegion;
   String? _selectedCountry;
@@ -164,95 +169,243 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
     );
   }
 
-  Widget _buildDifficultyButton(String label, String value) {
-    final isSelected = _selectedDifficulty == value;
-    Color buttonColor;
-    Color textColor;
-    Color glowColor;
-
-    switch (value) {
-      case AppConstants.difficultyEasy:
-        buttonColor = isSelected
-            ? AppColors.stitchEmerald
-            : Colors.white.withValues(alpha: 0.8);
-        textColor = isSelected
-            ? Colors.white
-            : Colors.grey.shade600;
-        glowColor = AppColors.stitchEmerald;
-        break;
-      case AppConstants.difficultyNormal:
-        buttonColor = isSelected
-            ? Colors.blue.shade400
-            : Colors.white.withValues(alpha: 0.8);
-        textColor = isSelected
-            ? Colors.white
-            : Colors.grey.shade600;
-        glowColor = Colors.blue.shade400;
-        break;
-      case AppConstants.difficultyHard:
-        buttonColor = isSelected
-            ? Colors.orange.shade400
-            : Colors.white.withValues(alpha: 0.8);
-        textColor = isSelected
-            ? Colors.white
-            : Colors.grey.shade600;
-        glowColor = Colors.orange.shade400;
-        break;
-      case AppConstants.difficultyExtreme:
-        buttonColor = isSelected
-            ? Colors.red.shade400
-            : Colors.white.withValues(alpha: 0.8);
-        textColor = isSelected
-            ? Colors.white
-            : Colors.grey.shade600;
-        glowColor = Colors.red.shade400;
-        break;
-      default:
-        buttonColor = Colors.white.withValues(alpha: 0.8);
-        textColor = Colors.grey.shade600;
-        glowColor = Colors.grey;
+  /// 現在の選択からタグを生成
+  String _generateTags() {
+    if (widget.category == AppConstants.categoryTeams) {
+      final tags = <String>['teams'];
+      if (_selectedCountry != null && _selectedCountry!.isNotEmpty) {
+        tags.add(_selectedCountry!);
+      }
+      if (_selectedRange != null && _selectedRange!.isNotEmpty) {
+        if (_selectedRange == 'j1_all_teams') {
+          tags.add('j1');
+        } else if (_selectedRange == 'j2_all_teams') {
+          tags.add('j2');
+        }
+      }
+      return tags.join(',');
+    } else if (widget.category == AppConstants.categoryHistory) {
+      final tags = <String>['history'];
+      if (_selectedRegion != null && _selectedRegion!.isNotEmpty) {
+        tags.add(_selectedRegion!);
+      }
+      return tags.join(',');
+    } else {
+      return widget.category;
     }
+  }
 
-    return GestureDetector(
-      onTap: () => setState(() {
-        _selectedDifficulty = isSelected ? null : value;
-      }),
-      child: GlassMorphismWidget(
-        borderRadius: 16,
-        backgroundColor: buttonColor,
-        borderColor: isSelected
-            ? glowColor.withValues(alpha: 0.5)
-            : Colors.grey.shade300,
-        boxShadow: isSelected
-            ? [
-                BoxShadow(
-                  color: glowColor.withValues(alpha: 0.4),
-                  blurRadius: 15,
-                  spreadRadius: 0,
-                ),
-              ]
-            : null,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  /// 難易度がアンロックされているかチェック
+  Future<bool> _isDifficultyUnlocked(String difficulty) async {
+    final tags = _generateTags();
+    final unlockKey = UnlockKeyUtils.generateUnlockKey(
+      category: widget.category,
+      difficulty: difficulty,
+      tags: tags,
+    );
+    
+    // EASYは常にアンロック
+    if (difficulty == AppConstants.difficultyEasy) {
+      return true;
+    }
+    
+    final unlockedDifficulties = ref.read(unlockedDifficultiesProvider);
+    return unlockedDifficulties.contains(unlockKey);
+  }
+
+  Widget _buildDifficultyButton(String label, String value) {
+    return FutureBuilder<bool>(
+      future: _isDifficultyUnlocked(value),
+      builder: (context, snapshot) {
+        final isUnlocked = snapshot.data ?? (value == AppConstants.difficultyEasy);
+        final isSelected = _selectedDifficulty == value;
+        Color buttonColor;
+        Color textColor;
+        Color glowColor;
+        final isEnabled = isUnlocked;
+
+        switch (value) {
+          case AppConstants.difficultyEasy:
+            buttonColor = isSelected
+                ? AppColors.stitchEmerald
+                : (isEnabled 
+                    ? Colors.white.withValues(alpha: 0.8)
+                    : Colors.grey.shade300);
+            textColor = isSelected
+                ? Colors.white
+                : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
+            glowColor = AppColors.stitchEmerald;
+            break;
+          case AppConstants.difficultyNormal:
+            buttonColor = isSelected
+                ? Colors.blue.shade400
+                : (isEnabled 
+                    ? Colors.white.withValues(alpha: 0.8)
+                    : Colors.grey.shade300);
+            textColor = isSelected
+                ? Colors.white
+                : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
+            glowColor = Colors.blue.shade400;
+            break;
+          case AppConstants.difficultyHard:
+            buttonColor = isSelected
+                ? Colors.orange.shade400
+                : (isEnabled 
+                    ? Colors.white.withValues(alpha: 0.8)
+                    : Colors.grey.shade300);
+            textColor = isSelected
+                ? Colors.white
+                : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
+            glowColor = Colors.orange.shade400;
+            break;
+          case AppConstants.difficultyExtreme:
+            buttonColor = isSelected
+                ? Colors.red.shade400
+                : (isEnabled 
+                    ? Colors.white.withValues(alpha: 0.8)
+                    : Colors.grey.shade300);
+            textColor = isSelected
+                ? Colors.white
+                : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
+            glowColor = Colors.red.shade400;
+            break;
+          default:
+            buttonColor = Colors.white.withValues(alpha: 0.8);
+            textColor = Colors.grey.shade600;
+            glowColor = Colors.grey;
+        }
+
+        // NORMALがロックされている場合、昇格試験の情報を取得
+        PromotionExam? promotionExam;
+        if (value == AppConstants.difficultyNormal && !isEnabled) {
+          final tags = _generateTags();
+          promotionExam = PromotionExam.easyToNormal(
+            category: widget.category,
+            tags: tags,
+          );
+        }
+
+        return GestureDetector(
+          onTap: isEnabled
+              ? () => setState(() {
+                  _selectedDifficulty = isSelected ? null : value;
+                })
+              : () => _showPromotionExamDialog(value),
+          child: Stack(
             children: [
-              Text(
-                label,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: textColor,
+              GlassMorphismWidget(
+                borderRadius: 16,
+                backgroundColor: buttonColor,
+                borderColor: isSelected
+                    ? glowColor.withValues(alpha: 0.5)
+                    : Colors.grey.shade300,
+                boxShadow: isSelected
+                    ? [
+                        BoxShadow(
+                          color: glowColor.withValues(alpha: 0.4),
+                          blurRadius: 15,
+                          spreadRadius: 0,
+                        ),
+                      ]
+                    : null,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              // NORMALがロックされている場合は「NORMALの昇格試験を受ける」に変更
+                              (value == AppConstants.difficultyNormal && !isEnabled)
+                                  ? 'NORMALの昇格試験を受ける'
+                                  : label,
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: textColor,
+                                fontSize: (value == AppConstants.difficultyNormal && !isEnabled) ? 12 : null,
+                              ),
+                            ),
+                            if (!isEnabled)
+                              if (promotionExam != null)
+                                // 昇格試験の条件を表示
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 4),
+                                  child: Text(
+                                    'ランクは${promotionExam.requiredRank.japaneseName}以上、ポイントは${NumberFormat('#,###').format(promotionExam.requiredPoints)}が必要です',
+                                    style: TextStyle(
+                                      fontSize: 9,
+                                      color: Colors.grey.shade600,
+                                    ),
+                                  ),
+                                )
+                              else
+                                Text(
+                                  '昇格試験でアンロック',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    color: Colors.grey.shade500,
+                                  ),
+                                ),
+                          ],
+                        ),
+                      ),
+                      if (isSelected)
+                        Icon(
+                          Icons.check_circle,
+                          color: textColor,
+                          size: 20,
+                        )
+                      else if (!isEnabled)
+                        Icon(
+                          Icons.lock,
+                          color: Colors.grey.shade400,
+                          size: 16,
+                        ),
+                    ],
+                  ),
                 ),
               ),
-              if (isSelected)
-                Icon(
-                  Icons.check_circle,
-                  color: textColor,
-                  size: 20,
-                ),
             ],
           ),
+        );
+      },
+    );
+  }
+
+  void _showPromotionExamDialog(String targetDifficulty) {
+    final tags = _generateTags();
+    
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('昇格試験が必要です'),
+        content: Text(
+          '${targetDifficulty.toUpperCase()}難易度をアンロックするには、昇格試験に合格する必要があります。',
         ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('キャンセル'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              final uri = Uri(
+                path: '/promotion-exam',
+                queryParameters: {
+                  'category': widget.category,
+                  'tags': tags,
+                  'targetDifficulty': targetDifficulty,
+                },
+              );
+              context.push(uri.toString());
+            },
+            child: const Text('昇格試験を受ける'),
+          ),
+        ],
       ),
     );
   }

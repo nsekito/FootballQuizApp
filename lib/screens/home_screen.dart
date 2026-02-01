@@ -5,10 +5,14 @@ import 'package:intl/intl.dart';
 import '../providers/user_data_provider.dart';
 import '../providers/sample_data_provider.dart';
 import '../providers/recap_data_provider.dart';
+import '../providers/database_provider.dart';
 import '../utils/constants.dart';
+import '../utils/unlock_key_utils.dart';
 import '../constants/app_colors.dart';
 import '../models/user_rank.dart';
+import '../models/promotion_exam.dart';
 import '../widgets/responsive_container.dart';
+import '../widgets/glass_morphism_widget.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -32,11 +36,52 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     });
   }
 
+  Future<Map<String, dynamic>> _getMatchDayStatus() async {
+    final databaseService = ref.read(databaseServiceProvider);
+    final canPlay = await databaseService.canPlayMatchDay();
+    final playCount = await databaseService.getMatchDayPlayCount();
+    return {
+      'canPlay': canPlay,
+      'playCount': playCount,
+    };
+  }
+
+  Future<void> _handleMatchDayTap(BuildContext context) async {
+    final databaseService = ref.read(databaseServiceProvider);
+    final canPlay = await databaseService.canPlayMatchDay();
+    final playCount = await databaseService.getMatchDayPlayCount();
+    
+    if (!mounted) return;
+    
+    if (!canPlay) {
+      // 今週のプレイ回数が上限に達している場合
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: const Text('今週のMATCH DAYのプレイ回数が上限に達しています'),
+          backgroundColor: Colors.orange.shade700,
+          duration: const Duration(seconds: 3),
+        ),
+      );
+      return;
+    }
+    
+    if (playCount == 0) {
+      // 無料でプレイ可能
+      context.push('/configuration?category=${AppConstants.categoryMatchRecap}');
+    } else {
+      // 広告視聴で追加チャレンジ
+      // TODO: 広告視聴の実装
+      // 現在は広告視聴なしでプレイ可能
+      context.push('/configuration?category=${AppConstants.categoryMatchRecap}');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     // サンプルデータの初期化を確認
     ref.watch(sampleDataInitializedProvider);
 
+    final totalExp = ref.watch(totalExpProvider);
     final totalPoints = ref.watch(totalPointsProvider);
     final userRank = ref.watch(userRankProvider);
 
@@ -61,7 +106,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       const SizedBox(height: 24),
 
                       // ユーザー情報カード
-                      _buildUserInfoCard(context, ref, totalPoints, userRank),
+                      _buildUserInfoCard(context, ref, totalExp, totalPoints, userRank),
+                      const SizedBox(height: 24),
+
+                      // 昇格試験セクション
+                      _buildPromotionExamSection(context, ref),
                       const SizedBox(height: 24),
 
                       // カテゴリ選択セクション
@@ -163,12 +212,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   }
 
   Widget _buildFeaturedCard(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        context.push('/configuration?category=${AppConstants.categoryMatchRecap}');
-      },
-      child: Container(
-        height: 192,
+    return FutureBuilder<Map<String, dynamic>>(
+      future: _getMatchDayStatus(),
+      builder: (context, snapshot) {
+        final canPlay = snapshot.data?['canPlay'] ?? true;
+        final playCount = snapshot.data?['playCount'] ?? 0;
+        final isFreePlay = playCount == 0;
+        
+        return GestureDetector(
+          onTap: canPlay ? () => _handleMatchDayTap(context) : null,
+          child: Container(
+        constraints: const BoxConstraints(minHeight: 192),
         decoration: BoxDecoration(
           borderRadius: const BorderRadius.all(Radius.circular(24)),
           boxShadow: [
@@ -201,6 +255,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 padding: const EdgeInsets.all(24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -223,7 +278,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         ),
                       ],
                     ),
-                    const Spacer(),
+                    const SizedBox(height: 16),
                     const Text(
                       'MATCH DAY',
                       style: TextStyle(
@@ -242,30 +297,72 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         color: Colors.white.withValues(alpha: 0.9),
                       ),
                     ),
-                    const SizedBox(height: 16),
+                    if (snapshot.hasData) ...[
+                      const SizedBox(height: 8),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withValues(alpha: 0.2),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              isFreePlay ? Icons.star : Icons.play_circle_outline,
+                              color: Colors.white,
+                              size: 16,
+                            ),
+                            const SizedBox(width: 6),
+                            Text(
+                              isFreePlay 
+                                  ? '無料でプレイ可能'
+                                  : '広告視聴で追加チャレンジ (${playCount}/3)',
+                              style: const TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        '報酬: ${AppConstants.matchDayExpMultiplier.toInt()}倍',
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white.withValues(alpha: 0.8),
+                        ),
+                      ),
+                    ],
+                    const SizedBox(height: 12),
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                      decoration: const BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(12)),
+                      decoration: BoxDecoration(
+                        color: canPlay ? Colors.white : Colors.grey.shade300,
+                        borderRadius: const BorderRadius.all(Radius.circular(12)),
                       ),
-                      child: const Row(
+                      child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Text(
-                            'START MISSION',
+                            canPlay ? 'START MISSION' : 'プレイ不可',
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w700,
-                              color: AppColors.techIndigo,
+                              color: canPlay ? AppColors.techIndigo : Colors.grey.shade600,
                             ),
                           ),
-                          SizedBox(width: 8),
-                          Icon(
-                            Icons.play_circle_outline,
-                            color: AppColors.techIndigo,
-                            size: 18,
-                          ),
+                          if (canPlay) ...[
+                            const SizedBox(width: 8),
+                            Icon(
+                              Icons.play_circle_outline,
+                              color: AppColors.techIndigo,
+                              size: 18,
+                            ),
+                          ],
                         ],
                       ),
                     ),
@@ -275,18 +372,21 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             ],
           ),
         ),
-      ),
+          ),
+        );
+      },
     );
   }
 
   Widget _buildUserInfoCard(
     BuildContext context,
     WidgetRef ref,
+    int totalExp,
     int totalPoints,
     dynamic userRank,
   ) {
-    final progressValue = userRank.maxPoints != null
-        ? (totalPoints - userRank.minPoints) / (userRank.maxPoints! - userRank.minPoints)
+    final progressValue = userRank.maxExp != null
+        ? (totalExp - userRank.minExp) / (userRank.maxExp! - userRank.minExp)
         : 1.0;
     final progressPercent = (progressValue * 100).clamp(0.0, 100.0).toInt();
 
@@ -340,7 +440,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Level ${_calculateLevel(totalPoints)}',
+                        'Level ${_calculateLevel(totalExp)}',
                         style: const TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.w700,
@@ -367,22 +467,55 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      Text(
-                        NumberFormat('#,###').format(totalPoints),
-                        style: const TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w800,
-                          color: AppColors.techIndigo,
-                        ),
-                      ),
-                      const SizedBox(width: 4),
-                      const Text(
-                        'GP',
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                          color: AppColors.slate400,
-                        ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text(
+                                NumberFormat('#,###').format(totalExp),
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.blue.shade700,
+                                ),
+                              ),
+                              const SizedBox(width: 4),
+                              Text(
+                                'EXP',
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.blue.shade400,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 4),
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text(
+                                NumberFormat('#,###').format(totalPoints),
+                                style: const TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800,
+                                  color: AppColors.techIndigo,
+                                ),
+                              ),
+                              const SizedBox(width: 4),
+                              const Text(
+                                'PT',
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w500,
+                                  color: AppColors.slate400,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -415,7 +548,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                userRank.maxPoints != null
+                userRank.maxExp != null
                     ? 'Next: ${_getNextRankName(userRank)}'
                     : '最高ランク達成',
                 style: const TextStyle(
@@ -424,7 +557,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                   color: AppColors.slate500,
                 ),
               ),
-              if (userRank.maxPoints != null)
+              if (userRank.maxExp != null)
                 Text(
                   '$progressPercent% Complete',
                   style: const TextStyle(
@@ -437,6 +570,182 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           ),
         ],
       ),
+    );
+  }
+
+  Widget _buildPromotionExamSection(BuildContext context, WidgetRef ref) {
+    final totalPoints = ref.watch(totalPointsProvider);
+    final userRank = ref.watch(userRankProvider);
+    final unlockedDifficulties = ref.watch(unlockedDifficultiesProvider);
+
+    // アンロック可能な昇格試験を取得
+    final availableExams = <Map<String, dynamic>>[];
+
+    // 各カテゴリと難易度の組み合わせをチェック
+    final categories = [
+      AppConstants.categoryRules,
+      AppConstants.categoryHistory,
+      AppConstants.categoryTeams,
+    ];
+
+    for (final category in categories) {
+      // EASY→NORMAL
+      final normalKey = UnlockKeyUtils.generateUnlockKey(
+        category: category,
+        difficulty: AppConstants.difficultyNormal,
+        tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
+      );
+      if (!unlockedDifficulties.contains(normalKey)) {
+        final exam = PromotionExam.easyToNormal(
+          category: category,
+          tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
+        );
+        if (userRank.index >= exam.requiredRank.index && totalPoints >= exam.requiredPoints) {
+          availableExams.add({
+            'exam': exam,
+            'category': category,
+            'tags': category == AppConstants.categoryTeams ? 'teams,japan' : category,
+            'targetDifficulty': AppConstants.difficultyNormal,
+          });
+        }
+      }
+
+      // NORMAL→HARD
+      final hardKey = UnlockKeyUtils.generateUnlockKey(
+        category: category,
+        difficulty: AppConstants.difficultyHard,
+        tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
+      );
+      if (!unlockedDifficulties.contains(hardKey) && unlockedDifficulties.contains(normalKey)) {
+        final exam = PromotionExam.normalToHard(
+          category: category,
+          tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
+        );
+        if (userRank.index >= exam.requiredRank.index && totalPoints >= exam.requiredPoints) {
+          availableExams.add({
+            'exam': exam,
+            'category': category,
+            'tags': category == AppConstants.categoryTeams ? 'teams,japan' : category,
+            'targetDifficulty': AppConstants.difficultyHard,
+          });
+        }
+      }
+
+      // HARD→EXTREME
+      final extremeKey = UnlockKeyUtils.generateUnlockKey(
+        category: category,
+        difficulty: AppConstants.difficultyExtreme,
+        tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
+      );
+      if (!unlockedDifficulties.contains(extremeKey) && unlockedDifficulties.contains(hardKey)) {
+        final exam = PromotionExam.hardToExtreme(
+          category: category,
+          tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
+        );
+        if (userRank.index >= exam.requiredRank.index && totalPoints >= exam.requiredPoints) {
+          availableExams.add({
+            'exam': exam,
+            'category': category,
+            'tags': category == AppConstants.categoryTeams ? 'teams,japan' : category,
+            'targetDifficulty': AppConstants.difficultyExtreme,
+          });
+        }
+      }
+    }
+
+    if (availableExams.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 4, bottom: 16),
+          child: Text(
+            '昇格試験',
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w700,
+              color: AppColors.techIndigo.withValues(alpha: 0.4),
+              letterSpacing: 1.2,
+            ),
+          ),
+        ),
+        ...availableExams.take(3).map((examData) {
+          final exam = examData['exam'] as PromotionExam;
+          final category = examData['category'] as String;
+          final tags = examData['tags'] as String;
+          final targetDifficulty = examData['targetDifficulty'] as String;
+          
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 12),
+            child: GestureDetector(
+              onTap: () {
+                final uri = Uri(
+                  path: '/promotion-exam',
+                  queryParameters: {
+                    'category': category,
+                    'tags': tags,
+                    'targetDifficulty': targetDifficulty,
+                  },
+                );
+                context.push(uri.toString());
+              },
+              child: GlassMorphismWidget(
+                borderRadius: 16,
+                padding: const EdgeInsets.all(16),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 48,
+                      height: 48,
+                      decoration: BoxDecoration(
+                        color: Colors.amber.shade50,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Icon(
+                        Icons.school,
+                        color: Colors.amber.shade700,
+                        size: 24,
+                      ),
+                    ),
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            exam.getTitle(),
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.techIndigo,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            '必要ポイント: ${NumberFormat('#,###').format(exam.requiredPoints)} PT',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey.shade600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.grey.shade400,
+                      size: 16,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        }),
+      ],
     );
   }
 
@@ -658,25 +967,19 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     );
   }
 
-  int _calculateLevel(int totalPoints) {
-    // 簡単なレベル計算（500ポイントごとにレベルアップ）
-    return (totalPoints / 500).floor() + 1;
+  int _calculateLevel(int totalExp) {
+    // 簡単なレベル計算（500expごとにレベルアップ）
+    return (totalExp / 500).floor() + 1;
   }
 
   String _getNextRankName(dynamic userRank) {
-    final allRanks = [
-      UserRank.academy,
-      UserRank.rookie,
-      UserRank.regular,
-      UserRank.fantasista,
-      UserRank.legend,
-    ];
+    final allRanks = UserRank.values;
     
     final currentIndex = allRanks.indexOf(userRank);
     if (currentIndex >= 0 && currentIndex < allRanks.length - 1) {
       return allRanks[currentIndex + 1].japaneseName;
     }
-    return 'レジェンド';
+    return 'サッカーの神';
   }
 
   /// Weekly Recapデータをバックグラウンドで同期

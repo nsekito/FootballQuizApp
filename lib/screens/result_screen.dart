@@ -6,6 +6,7 @@ import '../providers/user_data_provider.dart';
 import '../providers/quiz_history_provider.dart';
 import '../models/user_rank.dart';
 import '../constants/app_colors.dart';
+import '../utils/constants.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
@@ -14,6 +15,7 @@ import '../widgets/responsive_container.dart';
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
   final int total;
+  final int earnedExp;
   final int earnedPoints;
   final String category;
   final String difficulty;
@@ -22,6 +24,7 @@ class ResultScreen extends ConsumerStatefulWidget {
     super.key,
     required this.score,
     required this.total,
+    required this.earnedExp,
     required this.earnedPoints,
     required this.category,
     required this.difficulty,
@@ -38,13 +41,17 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
   bool _rankUp = false;
   late AnimationController _animationController;
   bool _showContent = false;
+  bool _rewardsClaimed = false; // 報酬が獲得済みかどうか
+  
+  // 獲得expとポイントを取得（widgetから受け取る）
+  int get _earnedExp => widget.earnedExp;
+  int get _earnedPoints => widget.earnedPoints;
 
   @override
   void initState() {
     super.initState();
     _checkRankUp();
-    _addPoints();
-    _saveHistory();
+    _saveHistory(); // ポイントとexpは広告視聴後に加算
     _animationController = AnimationController(
       duration: const Duration(milliseconds: 800),
       vsync: this,
@@ -64,17 +71,42 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
   }
 
   void _checkRankUp() {
-    final totalPoints = ref.read(totalPointsProvider);
-    _previousRank = UserRank.fromPoints(totalPoints);
-    _currentRank = UserRank.fromPoints(totalPoints + widget.earnedPoints);
+    final totalExp = ref.read(totalExpProvider);
+    _previousRank = UserRank.fromExp(totalExp);
+    _currentRank = UserRank.fromExp(totalExp + _earnedExp);
     _rankUp = _previousRank != _currentRank;
   }
 
-  Future<void> _addPoints() async {
-    await ref.read(totalPointsProvider.notifier).addPoints(widget.earnedPoints);
-    setState(() {
-      _currentRank = ref.read(userRankProvider);
-    });
+  Future<void> _claimRewards({bool withAd = false}) async {
+    if (_rewardsClaimed) return;
+    
+    try {
+      // expとポイントを加算
+      await ref.read(totalExpProvider.notifier).addExp(_earnedExp);
+      await ref.read(totalPointsProvider.notifier).addPoints(_earnedPoints);
+      
+      // 広告視聴の場合、追加報酬を加算
+      if (withAd) {
+        await ref.read(totalExpProvider.notifier).addExp(AppConstants.expRewardedAd);
+        await ref.read(totalPointsProvider.notifier).addPoints(AppConstants.pointsRewardedAd);
+      }
+      
+      setState(() {
+        _rewardsClaimed = true;
+        _currentRank = ref.read(userRankProvider);
+      });
+    } catch (e) {
+      debugPrint('報酬の獲得に失敗しました: $e');
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: const Text('報酬の獲得に失敗しました'),
+            backgroundColor: Colors.red.shade700,
+            duration: const Duration(seconds: 3),
+          ),
+        );
+      }
+    }
   }
 
   Future<void> _saveHistory() async {
@@ -109,6 +141,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
   @override
   Widget build(BuildContext context) {
     final accuracy = widget.total > 0 ? (widget.score / widget.total * 100) : 0.0;
+    final totalExp = ref.watch(totalExpProvider);
     final totalPoints = ref.watch(totalPointsProvider);
 
     return Scaffold(
@@ -185,66 +218,194 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
               ),
               const SizedBox(height: 24),
 
-              // 獲得ポイント表示
+              // 獲得expとポイント表示
               GlassMorphismWidget(
                 borderRadius: 16,
                 padding: const EdgeInsets.all(20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                child: Column(
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
-                          '獲得ポイント',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 1.2,
-                            color: Colors.grey.shade500,
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '獲得経験値',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w700,
+                                  letterSpacing: 1.2,
+                                  color: Colors.grey.shade500,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              TweenAnimationBuilder<double>(
+                                tween: Tween(
+                                  begin: 0.0,
+                                  end: _earnedExp.toDouble(),
+                                ),
+                                duration: const Duration(milliseconds: 1500),
+                                curve: Curves.easeOutCubic,
+                                builder: (context, animatedExp, child) {
+                                  return Text(
+                                    '+${animatedExp.toInt()} EXP',
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w900,
+                                      color: Colors.blue.shade600,
+                                    ),
+                                  );
+                                },
+                              ),
+                            ],
                           ),
                         ),
-                        const SizedBox(height: 4),
-                        TweenAnimationBuilder<double>(
-                          tween: Tween(
-                            begin: 0.0,
-                            end: widget.earnedPoints.toDouble(),
-                          ),
-                          duration: const Duration(milliseconds: 1500),
-                          curve: Curves.easeOutCubic,
-                          builder: (context, animatedPoints, child) {
-                            return Text(
-                              '+${animatedPoints.toInt()} GP',
-                              style: const TextStyle(
-                                fontSize: 24,
-                                fontWeight: FontWeight.w900,
-                                color: AppColors.stitchEmerald,
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '獲得ポイント',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w700,
+                                  letterSpacing: 1.2,
+                                  color: Colors.grey.shade500,
+                                ),
                               ),
-                            );
-                          },
+                              const SizedBox(height: 4),
+                              TweenAnimationBuilder<double>(
+                                tween: Tween(
+                                  begin: 0.0,
+                                  end: _earnedPoints.toDouble(),
+                                ),
+                                duration: const Duration(milliseconds: 1500),
+                                curve: Curves.easeOutCubic,
+                                builder: (context, animatedPoints, child) {
+                                  return Text(
+                                    '+${animatedPoints.toInt()} PT',
+                                    style: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w900,
+                                      color: AppColors.stitchEmerald,
+                                    ),
+                                  );
+                                },
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
-                    Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        color: Colors.amber.shade400,
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.amber.shade400.withValues(alpha: 0.6),
-                            blurRadius: 8,
-                            spreadRadius: 0,
+                    if (!_rewardsClaimed) ...[
+                      const SizedBox(height: 20),
+                      const Divider(),
+                      const SizedBox(height: 20),
+                      // 広告視聴ボタン
+                      GlowButton(
+                        glowColor: Colors.amber.shade400,
+                        onPressed: () async {
+                          // TODO: 広告視聴の実装
+                          // 現在は広告視聴なしで報酬を獲得
+                          await _claimRewards(withAd: true);
+                        },
+                        backgroundColor: Colors.amber.shade400,
+                        foregroundColor: Colors.white,
+                        borderRadius: 12,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Icon(Icons.play_circle_outline, size: 20),
+                            const SizedBox(width: 8),
+                            const Text(
+                              '広告を見て報酬を獲得',
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 4,
+                              ),
+                              decoration: BoxDecoration(
+                                color: Colors.white.withValues(alpha: 0.3),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Text(
+                                '+${AppConstants.expRewardedAd} EXP +${AppConstants.pointsRewardedAd} PT',
+                                style: const TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      // 広告を見ずにトップに戻るボタン
+                      OutlinedButton(
+                        onPressed: () {
+                          context.go('/');
+                        },
+                        style: OutlinedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          side: BorderSide(
+                            color: Colors.grey.shade400,
+                            width: 1,
                           ),
-                        ],
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
+                        child: Text(
+                          '広告を見ずにトップに戻る',
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.grey.shade700,
+                          ),
+                        ),
                       ),
-                      child: const Icon(
-                        Icons.star,
-                        color: Colors.white,
-                        size: 28,
+                    ] else ...[
+                      const SizedBox(height: 12),
+                      Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Colors.green.shade50,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                            color: Colors.green.shade200,
+                            width: 1,
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.check_circle,
+                              color: Colors.green.shade700,
+                              size: 20,
+                            ),
+                            const SizedBox(width: 8),
+                            Text(
+                              '報酬を獲得しました',
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.green.shade700,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
+                    ],
                   ],
                 ),
               ),
@@ -339,82 +500,109 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                       ),
                     ),
                     const SizedBox(height: 16),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 16,
-                        vertical: 8,
-                      ),
-                      decoration: BoxDecoration(
-                        color: AppColors.stitchEmerald.withValues(alpha: 0.1),
-                        borderRadius: const BorderRadius.all(Radius.circular(20)),
-                      ),
-                      child: Text(
-                        '累計: ${NumberFormat('#,###').format(totalPoints)} GP',
-                        style: const TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.stitchEmerald,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 8,
+                          ),
+                          decoration: BoxDecoration(
+                            color: Colors.blue.shade50,
+                            borderRadius: const BorderRadius.all(Radius.circular(20)),
+                          ),
+                          child: Text(
+                            '累計EXP: ${NumberFormat('#,###').format(totalExp)}',
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blue.shade700,
+                            ),
+                          ),
                         ),
-                      ),
+                        const SizedBox(width: 12),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 8,
+                          ),
+                          decoration: BoxDecoration(
+                            color: AppColors.stitchEmerald.withValues(alpha: 0.1),
+                            borderRadius: const BorderRadius.all(Radius.circular(20)),
+                          ),
+                          child: Text(
+                            '累計PT: ${NumberFormat('#,###').format(totalPoints)}',
+                            style: const TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.stitchEmerald,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
               ),
               const SizedBox(height: 32),
 
-              // ホームに戻るボタン
-              GlowButton(
-                glowColor: AppColors.stitchEmerald,
-                onPressed: () => context.go('/'),
-                backgroundColor: AppColors.stitchEmerald,
-                foregroundColor: Colors.white,
-                borderRadius: 16,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.home, size: 20),
-                    SizedBox(width: 8),
-                    Text(
-                      'ホームに戻る',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 12),
-
-              // もう一度挑戦ボタン
-              OutlinedButton(
-                onPressed: () => context.pop(),
-                style: OutlinedButton.styleFrom(
+              // 報酬獲得済みの場合のみボタンを表示
+              if (_rewardsClaimed) ...[
+                // ホームに戻るボタン
+                GlowButton(
+                  glowColor: AppColors.stitchEmerald,
+                  onPressed: () => context.go('/'),
+                  backgroundColor: AppColors.stitchEmerald,
+                  foregroundColor: Colors.white,
+                  borderRadius: 16,
                   padding: const EdgeInsets.symmetric(vertical: 16),
-                  side: const BorderSide(
-                    color: AppColors.stitchEmerald,
-                    width: 2,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                ),
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.refresh, size: 20),
-                    SizedBox(width: 8),
-                    Text(
-                      'もう一度挑戦',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.home, size: 20),
+                      SizedBox(width: 8),
+                      Text(
+                        'ホームに戻る',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
+                const SizedBox(height: 12),
+
+                // もう一度挑戦ボタン
+                OutlinedButton(
+                  onPressed: () => context.pop(),
+                  style: OutlinedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    side: const BorderSide(
+                      color: AppColors.stitchEmerald,
+                      width: 2,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.refresh, size: 20),
+                      SizedBox(width: 8),
+                      Text(
+                        'もう一度挑戦',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
               ],
             ),
           ),
@@ -440,25 +628,46 @@ class _RankBadgeWidget extends StatelessWidget {
     IconData iconData;
 
     switch (rank) {
-      case UserRank.academy:
+      // ランク1-5: 初期段階（グレー系）
+      case UserRank.ballPicker:
+      case UserRank.coneSetter:
+      case UserRank.bibDistributor:
+      case UserRank.eternalBench:
+      case UserRank.stoppageTimePlayer:
         badgeColor = Colors.grey.shade400;
-        iconData = Icons.school;
+        iconData = Icons.sports_soccer;
         break;
-      case UserRank.rookie:
+      // ランク6-7: 中級段階初期（ブルー系）
+      case UserRank.starterCandidate:
+      case UserRank.localCelebrity:
         badgeColor = Colors.blue.shade400;
         iconData = Icons.star;
         break;
-      case UserRank.regular:
+      // ランク8-10: 中級段階後期（グリーン系）
+      case UserRank.j3RisingStar:
+      case UserRank.j2NuclearStriker:
+      case UserRank.j1Regular:
         badgeColor = Colors.green.shade400;
         iconData = Icons.emoji_events;
         break;
-      case UserRank.fantasista:
+      // ランク11-12: 上級段階初期（ゴールド系）
+      case UserRank.nationalSecretWeapon:
+      case UserRank.worldCupWarrior:
         badgeColor = Colors.amber.shade400;
+        iconData = Icons.workspace_premium;
+        break;
+      // ランク13-15: 上級段階後期（パープル/レッド系）
+      case UserRank.overseasSamurai:
+        badgeColor = Colors.purple.shade400;
         iconData = Icons.auto_awesome;
         break;
-      case UserRank.legend:
-        badgeColor = Colors.purple.shade400;
-        iconData = Icons.workspace_premium;
+      case UserRank.ballonDor:
+        badgeColor = Colors.deepOrange.shade400;
+        iconData = Icons.auto_awesome;
+        break;
+      case UserRank.soccerGod:
+        badgeColor = Colors.red.shade400;
+        iconData = Icons.auto_awesome;
         break;
     }
 
