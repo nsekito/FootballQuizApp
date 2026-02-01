@@ -70,10 +70,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
                       // 履歴と統計
                       _buildHistoryAndStatsSection(context),
-                      const SizedBox(height: 32),
-
-                      // フッター
-                      _buildFooter(),
                     ],
                   ),
                 ),
@@ -595,19 +591,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     );
   }
 
-  Widget _buildFooter() {
-    return const Center(
-      child: Text(
-        'Secure Data Encryption Enabled',
-        style: TextStyle(
-          fontSize: 10,
-          fontWeight: FontWeight.w700,
-          color: AppColors.slate400,
-          letterSpacing: 0.2,
-        ),
-      ),
-    );
-  }
 
   Widget _buildBottomNav(BuildContext context) {
     return Container(
