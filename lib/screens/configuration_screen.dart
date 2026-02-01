@@ -69,12 +69,6 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
                 ),
                 const SizedBox(height: 32),
 
-                // 難易度選択（Weekly Recap以外）
-                if (widget.category != AppConstants.categoryMatchRecap) ...[
-                  _buildDifficultySelector(),
-                  const SizedBox(height: 40),
-                ],
-
                 // Weekly Recap: リーグタイプ選択
                 if (widget.category == AppConstants.categoryMatchRecap) ...[
                   _buildLeagueTypeSelector(),
@@ -100,6 +94,12 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
                   _buildNewsRegionSelector(),
                   const SizedBox(height: 24),
                   _buildYearSelector(),
+                  const SizedBox(height: 40),
+                ],
+
+                // 難易度選択（Weekly Recap以外）- 最後に表示
+                if (widget.category != AppConstants.categoryMatchRecap) ...[
+                  _buildDifficultySelector(),
                   const SizedBox(height: 40),
                 ],
 
@@ -151,18 +151,19 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           ],
         ),
         const SizedBox(height: 16),
-        GridView.count(
-          crossAxisCount: 2,
-          crossAxisSpacing: 12,
-          mainAxisSpacing: 12,
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          childAspectRatio: 2.5,
+        // 縦に並べる（1列）
+        Column(
           children: [
             _buildDifficultyButton('EASY', AppConstants.difficultyEasy),
+            const SizedBox(height: 12),
             _buildDifficultyButton('NORMAL', AppConstants.difficultyNormal),
+            const SizedBox(height: 12),
             _buildDifficultyButton('HARD', AppConstants.difficultyHard),
-            _buildDifficultyButton('EXTREME', AppConstants.difficultyExtreme),
+            // チームクイズではEXTREMEを表示しない
+            if (widget.category != AppConstants.categoryTeams) ...[
+              const SizedBox(height: 12),
+              _buildDifficultyButton('EXTREME', AppConstants.difficultyExtreme),
+            ],
           ],
         ),
       ],
@@ -177,10 +178,24 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
         tags.add(_selectedCountry!);
       }
       if (_selectedRange != null && _selectedRange!.isNotEmpty) {
+        // リーグ全体の選択
         if (_selectedRange == 'j1_all_teams') {
           tags.add('j1');
         } else if (_selectedRange == 'j2_all_teams') {
           tags.add('j2');
+        } else if (_selectedRange == 'serie_a_all_teams') {
+          tags.add('serie_a');
+        } else if (_selectedRange == 'la_liga_all_teams') {
+          tags.add('la_liga');
+        } else if (_selectedRange == 'premier_league_all_teams') {
+          tags.add('premier_league');
+        } else {
+          // 個別チーム名の選択 - リーグタグも含める
+          final leagueTag = _getLeagueTagForTeam(_selectedRange!);
+          if (leagueTag != null) {
+            tags.add(leagueTag);
+          }
+          tags.add(_selectedRange!);
         }
       }
       return tags.join(',');
@@ -193,6 +208,74 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
     } else {
       return widget.category;
     }
+  }
+
+  /// チーム名からリーグタグを取得
+  String? _getLeagueTagForTeam(String teamValue) {
+    // J1チーム
+    const j1Teams = [
+      'kashima_antlers',
+      'kashiwa_reysol',
+      'kyoto_sanga',
+      'sanfrecce_hiroshima',
+      'vissel_kobe',
+      'machida_zelvia',
+      'urawa_reds',
+      'kawasaki_frontale',
+      'gamba_osaka',
+      'cerezo_osaka',
+      'fc_tokyo',
+      'avispa_fukuoka',
+      'fagiano_okayama',
+      'shimizu_s_pulse',
+      'yokohama_f_marinos',
+      'nagoya_grampus',
+      'tokyo_verdy',
+    ];
+    
+    // J2チーム
+    const j2Teams = [
+      'mito_hollyhock',
+      'v_varen_nagasaki',
+      'jef_united_chiba',
+    ];
+    
+    // セリエAチーム
+    const serieATeams = [
+      'juventus',
+      'ac_milan',
+      'inter_milan',
+    ];
+    
+    // ラリーガチーム
+    const laLigaTeams = [
+      'real_madrid',
+      'barcelona',
+      'atletico_madrid',
+    ];
+    
+    // プレミアリーグチーム
+    const premierLeagueTeams = [
+      'liverpool',
+      'arsenal',
+      'manchester_city',
+      'manchester_united',
+      'chelsea',
+    ];
+    
+    if (j1Teams.contains(teamValue)) {
+      return 'j1';
+    } else if (j2Teams.contains(teamValue)) {
+      return 'j2';
+    } else if (serieATeams.contains(teamValue)) {
+      return 'serie_a';
+    } else if (laLigaTeams.contains(teamValue)) {
+      return 'la_liga';
+    } else if (premierLeagueTeams.contains(teamValue)) {
+      return 'premier_league';
+    }
+    
+    return null;
   }
 
   /// 難易度がアンロックされているかチェック
@@ -213,77 +296,170 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
     return unlockedDifficulties.contains(unlockKey);
   }
 
+  /// 次にアンロックできる難易度を取得
+  Future<String?> _getNextUnlockableDifficulty() async {
+    final tags = _generateTags();
+    
+    // EASYは常にアンロック済み
+    // NORMALがロックされている場合、NORMALが次にアンロックできる
+    final normalUnlockKey = UnlockKeyUtils.generateUnlockKey(
+      category: widget.category,
+      difficulty: AppConstants.difficultyNormal,
+      tags: tags,
+    );
+    final unlockedDifficulties = ref.read(unlockedDifficultiesProvider);
+    if (!unlockedDifficulties.contains(normalUnlockKey)) {
+      return AppConstants.difficultyNormal;
+    }
+    
+    // NORMALがアンロック済みでHARDがロックされている場合、HARDが次にアンロックできる
+    final hardUnlockKey = UnlockKeyUtils.generateUnlockKey(
+      category: widget.category,
+      difficulty: AppConstants.difficultyHard,
+      tags: tags,
+    );
+    if (!unlockedDifficulties.contains(hardUnlockKey)) {
+      return AppConstants.difficultyHard;
+    }
+    
+    // HARDがアンロック済みでEXTREMEがロックされている場合、EXTREMEが次にアンロックできる
+    if (widget.category != AppConstants.categoryTeams) {
+      final extremeUnlockKey = UnlockKeyUtils.generateUnlockKey(
+        category: widget.category,
+        difficulty: AppConstants.difficultyExtreme,
+        tags: tags,
+      );
+      if (!unlockedDifficulties.contains(extremeUnlockKey)) {
+        return AppConstants.difficultyExtreme;
+      }
+    }
+    
+    return null;
+  }
+
+  /// 難易度に対応する昇格試験を取得
+  PromotionExam? _getPromotionExamForDifficulty(String difficulty) {
+    final tags = _generateTags();
+    
+    switch (difficulty) {
+      case AppConstants.difficultyNormal:
+        return PromotionExam.easyToNormal(
+          category: widget.category,
+          tags: tags,
+        );
+      case AppConstants.difficultyHard:
+        return PromotionExam.normalToHard(
+          category: widget.category,
+          tags: tags,
+        );
+      case AppConstants.difficultyExtreme:
+        return PromotionExam.hardToExtreme(
+          category: widget.category,
+          tags: tags,
+        );
+      default:
+        return null;
+    }
+  }
+
   Widget _buildDifficultyButton(String label, String value) {
-    return FutureBuilder<bool>(
-      future: _isDifficultyUnlocked(value),
+    return FutureBuilder<List<dynamic>>(
+      future: Future.wait([
+        _isDifficultyUnlocked(value),
+        _getNextUnlockableDifficulty(),
+      ]),
       builder: (context, snapshot) {
-        final isUnlocked = snapshot.data ?? (value == AppConstants.difficultyEasy);
+        final isUnlocked = (snapshot.data?[0] as bool?) ?? (value == AppConstants.difficultyEasy);
+        final nextUnlockable = snapshot.data?[1] as String?;
+        final isNextUnlockable = !isUnlocked && nextUnlockable == value;
         final isSelected = _selectedDifficulty == value;
         Color buttonColor;
         Color textColor;
         Color glowColor;
         final isEnabled = isUnlocked;
 
-        switch (value) {
-          case AppConstants.difficultyEasy:
-            buttonColor = isSelected
-                ? AppColors.stitchEmerald
-                : (isEnabled 
-                    ? Colors.white.withValues(alpha: 0.8)
-                    : Colors.grey.shade300);
-            textColor = isSelected
-                ? Colors.white
-                : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
-            glowColor = AppColors.stitchEmerald;
-            break;
-          case AppConstants.difficultyNormal:
-            buttonColor = isSelected
-                ? Colors.blue.shade400
-                : (isEnabled 
-                    ? Colors.white.withValues(alpha: 0.8)
-                    : Colors.grey.shade300);
-            textColor = isSelected
-                ? Colors.white
-                : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
-            glowColor = Colors.blue.shade400;
-            break;
-          case AppConstants.difficultyHard:
-            buttonColor = isSelected
-                ? Colors.orange.shade400
-                : (isEnabled 
-                    ? Colors.white.withValues(alpha: 0.8)
-                    : Colors.grey.shade300);
-            textColor = isSelected
-                ? Colors.white
-                : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
-            glowColor = Colors.orange.shade400;
-            break;
-          case AppConstants.difficultyExtreme:
-            buttonColor = isSelected
-                ? Colors.red.shade400
-                : (isEnabled 
-                    ? Colors.white.withValues(alpha: 0.8)
-                    : Colors.grey.shade300);
-            textColor = isSelected
-                ? Colors.white
-                : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
-            glowColor = Colors.red.shade400;
-            break;
-          default:
-            buttonColor = Colors.white.withValues(alpha: 0.8);
-            textColor = Colors.grey.shade600;
-            glowColor = Colors.grey;
+        // 次にアンロックできる難易度の場合、特別なスタイルを適用
+        if (isNextUnlockable) {
+          switch (value) {
+            case AppConstants.difficultyNormal:
+              buttonColor = Colors.blue.shade50;
+              textColor = Colors.blue.shade700;
+              glowColor = Colors.blue.shade400;
+              break;
+            case AppConstants.difficultyHard:
+              buttonColor = Colors.orange.shade50;
+              textColor = Colors.orange.shade700;
+              glowColor = Colors.orange.shade400;
+              break;
+            case AppConstants.difficultyExtreme:
+              buttonColor = Colors.red.shade50;
+              textColor = Colors.red.shade700;
+              glowColor = Colors.red.shade400;
+              break;
+            default:
+              buttonColor = Colors.grey.shade300;
+              textColor = Colors.grey.shade400;
+              glowColor = Colors.grey;
+          }
+        } else {
+          switch (value) {
+            case AppConstants.difficultyEasy:
+              buttonColor = isSelected
+                  ? AppColors.stitchEmerald
+                  : (isEnabled 
+                      ? Colors.white.withValues(alpha: 0.8)
+                      : Colors.grey.shade300);
+              textColor = isSelected
+                  ? Colors.white
+                  : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
+              glowColor = AppColors.stitchEmerald;
+              break;
+            case AppConstants.difficultyNormal:
+              buttonColor = isSelected
+                  ? Colors.blue.shade400
+                  : (isEnabled 
+                      ? Colors.white.withValues(alpha: 0.8)
+                      : Colors.grey.shade300);
+              textColor = isSelected
+                  ? Colors.white
+                  : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
+              glowColor = Colors.blue.shade400;
+              break;
+            case AppConstants.difficultyHard:
+              buttonColor = isSelected
+                  ? Colors.orange.shade400
+                  : (isEnabled 
+                      ? Colors.white.withValues(alpha: 0.8)
+                      : Colors.grey.shade300);
+              textColor = isSelected
+                  ? Colors.white
+                  : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
+              glowColor = Colors.orange.shade400;
+              break;
+            case AppConstants.difficultyExtreme:
+              buttonColor = isSelected
+                  ? Colors.red.shade400
+                  : (isEnabled 
+                      ? Colors.white.withValues(alpha: 0.8)
+                      : Colors.grey.shade300);
+              textColor = isSelected
+                  ? Colors.white
+                  : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
+              glowColor = Colors.red.shade400;
+              break;
+            default:
+              buttonColor = Colors.white.withValues(alpha: 0.8);
+              textColor = Colors.grey.shade600;
+              glowColor = Colors.grey;
+          }
         }
 
-        // NORMALがロックされている場合、昇格試験の情報を取得
-        PromotionExam? promotionExam;
-        if (value == AppConstants.difficultyNormal && !isEnabled) {
-          final tags = _generateTags();
-          promotionExam = PromotionExam.easyToNormal(
-            category: widget.category,
-            tags: tags,
-          );
-        }
+        // 昇格試験の情報を取得
+        final promotionExam = _getPromotionExamForDifficulty(value);
+        final currentPoints = ref.read(totalPointsProvider);
+        final remainingPoints = promotionExam != null && !isEnabled
+            ? (promotionExam.requiredPoints - currentPoints)
+            : 0;
 
         return GestureDetector(
           onTap: isEnabled
@@ -296,74 +472,145 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
               GlassMorphismWidget(
                 borderRadius: 16,
                 backgroundColor: buttonColor,
-                borderColor: isSelected
-                    ? glowColor.withValues(alpha: 0.5)
-                    : Colors.grey.shade300,
-                boxShadow: isSelected
+                borderColor: isNextUnlockable
+                    ? glowColor.withValues(alpha: 0.6)
+                    : (isSelected
+                        ? glowColor.withValues(alpha: 0.5)
+                        : Colors.grey.shade300),
+                boxShadow: isNextUnlockable || isSelected
                     ? [
                         BoxShadow(
-                          color: glowColor.withValues(alpha: 0.4),
-                          blurRadius: 15,
-                          spreadRadius: 0,
+                          color: glowColor.withValues(alpha: isNextUnlockable ? 0.5 : 0.4),
+                          blurRadius: isNextUnlockable ? 20 : 15,
+                          spreadRadius: isNextUnlockable ? 2 : 0,
                         ),
                       ]
                     : null,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              // NORMALがロックされている場合は「NORMALの昇格試験を受ける」に変更
-                              (value == AppConstants.difficultyNormal && !isEnabled)
-                                  ? 'NORMALの昇格試験を受ける'
-                                  : label,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: textColor,
-                                fontSize: (value == AppConstants.difficultyNormal && !isEnabled) ? 12 : null,
-                              ),
-                            ),
-                            if (!isEnabled)
-                              if (promotionExam != null)
-                                // 昇格試験の条件を表示
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 4),
-                                  child: Text(
-                                    'ランクは${promotionExam.requiredRank.japaneseName}以上、ポイントは${NumberFormat('#,###').format(promotionExam.requiredPoints)}が必要です',
-                                    style: TextStyle(
-                                      fontSize: 9,
-                                      color: Colors.grey.shade600,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    if (isNextUnlockable)
+                                      Icon(
+                                        Icons.star,
+                                        color: glowColor,
+                                        size: 18,
+                                      ),
+                                    if (isNextUnlockable)
+                                      const SizedBox(width: 6),
+                                    Expanded(
+                                      child: Text(
+                                        isNextUnlockable
+                                            ? '🎯 $label をアンロック！'
+                                            : label,
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: textColor,
+                                          fontSize: isNextUnlockable ? 15 : 16,
+                                        ),
+                                        maxLines: 2,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                if (isNextUnlockable && promotionExam != null)
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 8),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        if (remainingPoints > 0)
+                                          Text(
+                                            'あと${NumberFormat('#,###').format(remainingPoints)}ポイントで',
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.w600,
+                                              color: textColor,
+                                            ),
+                                            maxLines: 1,
+                                            overflow: TextOverflow.ellipsis,
+                                          )
+                                        else
+                                          Text(
+                                            '✨ 今すぐ昇格試験を受験できます！',
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.w600,
+                                              color: glowColor,
+                                            ),
+                                            maxLines: 2,
+                                            overflow: TextOverflow.ellipsis,
+                                          ),
+                                        Padding(
+                                          padding: const EdgeInsets.only(top: 4),
+                                          child: Text(
+                                            remainingPoints > 0
+                                                ? '昇格試験を受験できます'
+                                                : 'タップして昇格試験へ',
+                                            style: TextStyle(
+                                              fontSize: 11,
+                                              color: textColor.withValues(alpha: 0.8),
+                                            ),
+                                            maxLines: 1,
+                                            overflow: TextOverflow.ellipsis,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                else if (!isEnabled && promotionExam != null)
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 6),
+                                    child: Text(
+                                      'ランク${promotionExam.requiredRank.japaneseName}以上、${NumberFormat('#,###').format(promotionExam.requiredPoints)}ポイント必要',
+                                      style: TextStyle(
+                                        fontSize: 11,
+                                        color: Colors.grey.shade600,
+                                      ),
+                                      maxLines: 2,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  )
+                                else if (!isEnabled)
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 6),
+                                    child: Text(
+                                      '昇格試験でアンロック',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey.shade500,
+                                      ),
                                     ),
                                   ),
-                                )
-                              else
-                                Text(
-                                  '昇格試験でアンロック',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                    color: Colors.grey.shade500,
-                                  ),
-                                ),
-                          ],
-                        ),
+                              ],
+                            ),
+                          ),
+                          if (isSelected)
+                            Icon(
+                              Icons.check_circle,
+                              color: textColor,
+                              size: 24,
+                            )
+                          else if (!isEnabled)
+                            Icon(
+                              isNextUnlockable ? Icons.lock_open : Icons.lock,
+                              color: isNextUnlockable ? glowColor : Colors.grey.shade400,
+                              size: 22,
+                            ),
+                        ],
                       ),
-                      if (isSelected)
-                        Icon(
-                          Icons.check_circle,
-                          color: textColor,
-                          size: 20,
-                        )
-                      else if (!isEnabled)
-                        Icon(
-                          Icons.lock,
-                          color: Colors.grey.shade400,
-                          size: 16,
-                        ),
                     ],
                   ),
                 ),
@@ -428,8 +675,6 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
       icon: Icons.public,
       title: '国 (Country)',
       children: [
-        _buildChip('指定なし', '', _selectedCountry,
-            (value) => setState(() => _selectedCountry = value)),
         _buildChip('日本', 'japan', _selectedCountry,
             (value) => setState(() => _selectedCountry = value)),
         _buildChip('イタリア', 'italy', _selectedCountry,
@@ -443,32 +688,103 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
   }
 
   Widget _buildRangeSelector() {
-    final ranges = _selectedCountry == 'japan'
-        ? [
-            {'label': 'J1全チーム', 'value': 'j1_all_teams'},
-            {'label': 'J2全チーム', 'value': 'j2_all_teams'},
-            {'label': '指定なし', 'value': ''},
-          ]
-        : _selectedCountry != null && _selectedCountry!.isNotEmpty
-            ? [
-                {'label': '海外Top3', 'value': 'overseas_top3'},
-                {'label': '指定なし', 'value': ''},
-              ]
-            : [
-                {'label': '指定なし', 'value': ''},
-              ];
+    List<Map<String, String>> ranges = [];
+    
+    if (_selectedCountry == 'japan') {
+      ranges = [
+        {'label': 'J1全チーム', 'value': 'j1_all_teams'},
+        {'label': 'J2全チーム', 'value': 'j2_all_teams'},
+        {'label': '鹿島アントラーズ', 'value': 'kashima_antlers'},
+        {'label': '柏レイソル', 'value': 'kashiwa_reysol'},
+        {'label': '京都サンガF.C.', 'value': 'kyoto_sanga'},
+        {'label': 'サンフレッチェ広島', 'value': 'sanfrecce_hiroshima'},
+        {'label': 'ヴィッセル神戸', 'value': 'vissel_kobe'},
+        {'label': 'FC町田ゼルビア', 'value': 'machida_zelvia'},
+        {'label': '浦和レッズ', 'value': 'urawa_reds'},
+        {'label': '川崎フロンターレ', 'value': 'kawasaki_frontale'},
+        {'label': 'ガンバ大阪', 'value': 'gamba_osaka'},
+        {'label': 'セレッソ大阪', 'value': 'cerezo_osaka'},
+        {'label': 'FC東京', 'value': 'fc_tokyo'},
+        {'label': 'アビスパ福岡', 'value': 'avispa_fukuoka'},
+        {'label': 'ファジアーノ岡山', 'value': 'fagiano_okayama'},
+        {'label': '清水エスパルス', 'value': 'shimizu_s_pulse'},
+        {'label': '横浜F・マリノス', 'value': 'yokohama_f_marinos'},
+        {'label': '名古屋グランパス', 'value': 'nagoya_grampus'},
+        {'label': '東京ヴェルディ', 'value': 'tokyo_verdy'},
+        {'label': '水戸ホーリーホック', 'value': 'mito_hollyhock'},
+        {'label': 'V・ファーレン長崎', 'value': 'v_varen_nagasaki'},
+        {'label': 'ジェフユナイテッド市原・千葉', 'value': 'jef_united_chiba'},
+      ];
+    } else if (_selectedCountry == 'italy') {
+      ranges = [
+        {'label': 'セリエA全チーム', 'value': 'serie_a_all_teams'},
+        {'label': 'ユベントス', 'value': 'juventus'},
+        {'label': 'ACミラン', 'value': 'ac_milan'},
+        {'label': 'インテルミラノ', 'value': 'inter_milan'},
+      ];
+    } else if (_selectedCountry == 'spain') {
+      ranges = [
+        {'label': 'ラリーガ全チーム', 'value': 'la_liga_all_teams'},
+        {'label': 'レアルマドリード', 'value': 'real_madrid'},
+        {'label': 'バルセロナ', 'value': 'barcelona'},
+        {'label': 'アトレティコマドリード', 'value': 'atletico_madrid'},
+      ];
+    } else if (_selectedCountry == 'england') {
+      ranges = [
+        {'label': 'プレミアリーグ全チーム', 'value': 'premier_league_all_teams'},
+        {'label': 'リバプール', 'value': 'liverpool'},
+        {'label': 'アーセナル', 'value': 'arsenal'},
+        {'label': 'マンチェスターシティ', 'value': 'manchester_city'},
+        {'label': 'マンチェスターユナイテッド', 'value': 'manchester_united'},
+        {'label': 'チェルシー', 'value': 'chelsea'},
+      ];
+    } else {
+      // 国が選択されていない場合は空のリストを返す
+      ranges = [];
+    }
 
-    return _buildSectionSelector(
-      icon: Icons.category,
-      title: '範囲',
-      children: ranges.map((range) {
-        return _buildChip(
-          range['label']!,
-          range['value']!,
-          _selectedRange,
-          (value) => setState(() => _selectedRange = value),
-        );
-      }).toList(),
+    // 範囲選択は多数の選択肢があるため、スクロール可能なレイアウトを使用
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            const Icon(
+              Icons.category,
+              color: AppColors.stitchEmerald,
+              size: 16,
+            ),
+            const SizedBox(width: 8),
+            Text(
+              '範囲'.toUpperCase(),
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+                letterSpacing: 1.2,
+                color: Colors.grey.shade600,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 16),
+        SizedBox(
+          height: ranges.length > 10 ? 200 : null, // 選択肢が多い場合は高さを制限
+          child: SingleChildScrollView(
+            child: Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: ranges.map((range) {
+                return _buildChip(
+                  range['label']!,
+                  range['value']!,
+                  _selectedRange,
+                  (value) => setState(() => _selectedRange = value),
+                );
+              }).toList(),
+            ),
+          ),
+        ),
+      ],
     );
   }
 
@@ -608,7 +924,12 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
     }
 
     if (widget.category == AppConstants.categoryTeams) {
-      return _selectedDifficulty != null && _selectedDifficulty!.isNotEmpty;
+      return _selectedDifficulty != null &&
+          _selectedDifficulty!.isNotEmpty &&
+          _selectedCountry != null &&
+          _selectedCountry!.isNotEmpty &&
+          _selectedRange != null &&
+          _selectedRange!.isNotEmpty;
     }
 
     if (widget.category == AppConstants.categoryNews) {
