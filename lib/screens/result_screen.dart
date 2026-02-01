@@ -9,6 +9,7 @@ import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
+import '../widgets/responsive_container.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
@@ -130,10 +131,11 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
       ),
       body: GridPatternBackground(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(24.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
+          child: ResponsiveContainer(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
               // スコア表示
               GlassMorphismWidget(
                 borderRadius: 24,
@@ -413,7 +415,8 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                   ],
                 ),
               ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

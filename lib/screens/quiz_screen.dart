@@ -11,6 +11,7 @@ import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
+import '../widgets/responsive_container.dart';
 import '../utils/category_difficulty_utils.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {
@@ -195,10 +196,11 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       ),
       body: GridPatternBackground(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(24.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
+          child: ResponsiveContainer(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
               // 進捗バー
               TweenAnimationBuilder<double>(
                 tween: Tween(
@@ -372,7 +374,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                     ],
                   ),
                 ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

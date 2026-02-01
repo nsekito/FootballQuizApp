@@ -7,6 +7,7 @@ import '../widgets/empty_state_widget.dart';
 import '../widgets/loading_widget.dart';
 import '../widgets/background_widget.dart';
 import '../widgets/app_bar_background.dart';
+import '../widgets/responsive_container.dart';
 import '../utils/category_difficulty_utils.dart';
 
 class HistoryScreen extends ConsumerWidget {
@@ -32,13 +33,15 @@ class HistoryScreen extends ConsumerWidget {
             onRefresh: () async {
               ref.invalidate(quizHistoryListProvider);
             },
-            child: ListView.builder(
+            child: ResponsiveContainer(
               padding: const EdgeInsets.all(16),
-              itemCount: historyList.length,
-              itemBuilder: (context, index) {
-                final history = historyList[index];
-                return _buildHistoryCard(context, history);
-              },
+              child: ListView.builder(
+                itemCount: historyList.length,
+                itemBuilder: (context, index) {
+                  final history = historyList[index];
+                  return _buildHistoryCard(context, history);
+                },
+              ),
             ),
           );
         },

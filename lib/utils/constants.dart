@@ -43,4 +43,7 @@ class AppConstants {
   // Weekly Recap リーグタイプ
   static const String leagueTypeJ1 = 'j1';
   static const String leagueTypeEurope = 'europe';
+
+  // レスポンシブデザイン
+  static const double maxContentWidth = 600.0;
 }

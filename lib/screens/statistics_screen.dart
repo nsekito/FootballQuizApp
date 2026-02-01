@@ -7,6 +7,7 @@ import '../widgets/loading_widget.dart';
 import '../constants/app_colors.dart';
 import '../widgets/background_widget.dart';
 import '../widgets/app_bar_background.dart';
+import '../widgets/responsive_container.dart';
 import '../utils/category_difficulty_utils.dart';
 
 class StatisticsScreen extends ConsumerWidget {
@@ -33,10 +34,11 @@ class StatisticsScreen extends ConsumerWidget {
                 ref.invalidate(quizStatisticsProvider);
               },
               child: SingleChildScrollView(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
+                child: ResponsiveContainer(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
                     // 総合統計
                     _buildOverallStatsCard(context, statistics),
                     const SizedBox(height: 16),
@@ -48,7 +50,8 @@ class StatisticsScreen extends ConsumerWidget {
                     // 難易度別統計
                     _buildDifficultyStatsCard(
                         context, statistics.difficultyStats),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             );

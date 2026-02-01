@@ -8,6 +8,7 @@ import '../providers/recap_data_provider.dart';
 import '../utils/constants.dart';
 import '../constants/app_colors.dart';
 import '../models/user_rank.dart';
+import '../widgets/responsive_container.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -50,29 +51,31 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             // メインコンテンツ
             Expanded(
               child: SingleChildScrollView(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Featured Card (MATCH DAY)
-                    _buildFeaturedCard(context),
-                    const SizedBox(height: 24),
+                child: ResponsiveContainer(
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // Featured Card (MATCH DAY)
+                      _buildFeaturedCard(context),
+                      const SizedBox(height: 24),
 
-                    // ユーザー情報カード
-                    _buildUserInfoCard(context, ref, totalPoints, userRank),
-                    const SizedBox(height: 24),
+                      // ユーザー情報カード
+                      _buildUserInfoCard(context, ref, totalPoints, userRank),
+                      const SizedBox(height: 24),
 
-                    // カテゴリ選択セクション
-                    _buildCategorySection(context),
-                    const SizedBox(height: 24),
+                      // カテゴリ選択セクション
+                      _buildCategorySection(context),
+                      const SizedBox(height: 24),
 
-                    // 履歴と統計
-                    _buildHistoryAndStatsSection(context),
-                    const SizedBox(height: 32),
+                      // 履歴と統計
+                      _buildHistoryAndStatsSection(context),
+                      const SizedBox(height: 32),
 
-                    // フッター
-                    _buildFooter(),
-                  ],
+                      // フッター
+                      _buildFooter(),
+                    ],
+                  ),
                 ),
               ),
             ),

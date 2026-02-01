@@ -5,6 +5,7 @@ import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
+import '../widgets/responsive_container.dart';
 import '../utils/category_difficulty_utils.dart';
 
 class ConfigurationScreen extends StatefulWidget {
@@ -49,7 +50,7 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
       ),
       body: GridPatternBackground(
         child: SingleChildScrollView(
-          child: Padding(
+          child: ResponsiveContainer(
             padding: const EdgeInsets.all(24.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
