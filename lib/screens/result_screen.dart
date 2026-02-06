@@ -11,6 +11,9 @@ import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
 import '../widgets/responsive_container.dart';
+import '../widgets/banner_ad_widget.dart';
+import '../services/ad_service.dart';
+import '../providers/ad_provider.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
@@ -42,6 +45,8 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
   late AnimationController _animationController;
   bool _showContent = false;
   bool _rewardsClaimed = false; // 報酬が獲得済みかどうか
+  bool _isLoadingAd = false; // 広告読み込み中かどうか
+  bool _isAdReady = false; // 広告が読み込まれているかどうか
   
   // 獲得expとポイントを取得（widgetから受け取る）
   int get _earnedExp => widget.earnedExp;
@@ -62,11 +67,14 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
         setState(() => _showContent = true);
       }
     });
+    // 広告を事前に読み込む
+    _loadRewardedAd();
   }
 
   @override
   void dispose() {
     _animationController.dispose();
+    // 広告サービスはシングルトンなので、ここでは破棄しない
     super.dispose();
   }
 
@@ -77,6 +85,101 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
     _rankUp = _previousRank != _currentRank;
   }
 
+  /// リワード広告を読み込む
+  Future<void> _loadRewardedAd() async {
+    if (_rewardsClaimed) return;
+    
+    setState(() {
+      _isLoadingAd = true;
+    });
+    
+    final adService = ref.read(adServiceProvider);
+    await adService.loadRewardedAd(
+      onRewarded: (rewardAmount, rewardType) {
+        // 広告視聴完了時の処理は_showRewardedAdで行う
+      },
+      onError: (error) {
+        debugPrint('リワード広告の読み込みに失敗しました: $error');
+        if (mounted) {
+          setState(() {
+            _isLoadingAd = false;
+            _isAdReady = false;
+          });
+        }
+      },
+    );
+    
+    if (mounted) {
+      setState(() {
+        _isLoadingAd = false;
+        _isAdReady = adService.isRewardedAdReady;
+      });
+    }
+  }
+  
+  /// リワード広告を表示する
+  Future<void> _showRewardedAd() async {
+    if (_rewardsClaimed || _isLoadingAd) return;
+    
+    final adService = ref.read(adServiceProvider);
+    
+    // 広告が読み込まれていない場合、読み込みを試みる
+    if (!adService.isRewardedAdReady) {
+      await _loadRewardedAd();
+      if (!adService.isRewardedAdReady) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('広告の読み込みに失敗しました。しばらくしてから再度お試しください。'),
+              backgroundColor: Colors.orange,
+              duration: Duration(seconds: 3),
+            ),
+          );
+        }
+        return;
+      }
+    }
+    
+    final success = await adService.showRewardedAd(
+      onRewarded: (rewardAmount, rewardType) async {
+        // 広告視聴完了後、報酬を付与
+        await _claimRewards(withAd: true);
+        
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('報酬を獲得しました！+${AppConstants.expRewardedAd} EXP +${AppConstants.pointsRewardedAd} PT'),
+              backgroundColor: Colors.green.shade700,
+              duration: const Duration(seconds: 3),
+            ),
+          );
+        }
+      },
+      onError: (error) {
+        debugPrint('リワード広告の表示に失敗しました: $error');
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: const Text('広告の表示に失敗しました'),
+              backgroundColor: Colors.red.shade700,
+              duration: const Duration(seconds: 3),
+            ),
+          );
+        }
+      },
+    );
+    
+    if (!success && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('広告を表示できませんでした。しばらくしてから再度お試しください。'),
+          backgroundColor: Colors.orange,
+          duration: Duration(seconds: 3),
+        ),
+      );
+    }
+  }
+  
   Future<void> _claimRewards({bool withAd = false}) async {
     if (_rewardsClaimed) return;
     
@@ -94,6 +197,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
       setState(() {
         _rewardsClaimed = true;
         _currentRank = ref.read(userRankProvider);
+        _isAdReady = false; // 広告は使用済み
       });
     } catch (e) {
       debugPrint('報酬の獲得に失敗しました: $e');
@@ -306,11 +410,9 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                       // 広告視聴ボタン
                       GlowButton(
                         glowColor: Colors.amber.shade400,
-                        onPressed: () async {
-                          // TODO: 広告視聴の実装
-                          // 現在は広告視聴なしで報酬を獲得
-                          await _claimRewards(withAd: true);
-                        },
+                        onPressed: _isLoadingAd || !_isAdReady || _rewardsClaimed
+                            ? null
+                            : _showRewardedAd,
                         backgroundColor: Colors.amber.shade400,
                         foregroundColor: Colors.white,
                         borderRadius: 12,
@@ -318,33 +420,49 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const Icon(Icons.play_circle_outline, size: 20),
+                            if (_isLoadingAd)
+                              const SizedBox(
+                                width: 20,
+                                height: 20,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2,
+                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                                ),
+                              )
+                            else
+                              const Icon(Icons.play_circle_outline, size: 20),
                             const SizedBox(width: 8),
-                            const Text(
-                              '広告を見て報酬を獲得',
-                              style: TextStyle(
+                            Text(
+                              _isLoadingAd
+                                  ? '広告を読み込み中...'
+                                  : !_isAdReady
+                                      ? '広告を準備中...'
+                                      : '広告を見て報酬を獲得',
+                              style: const TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            const SizedBox(width: 8),
-                            Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 8,
-                                vertical: 4,
-                              ),
-                              decoration: BoxDecoration(
-                                color: Colors.white.withValues(alpha: 0.3),
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Text(
-                                '+${AppConstants.expRewardedAd} EXP +${AppConstants.pointsRewardedAd} PT',
-                                style: const TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.bold,
+                            if (!_isLoadingAd && _isAdReady) ...[
+                              const SizedBox(width: 8),
+                              Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 4,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withValues(alpha: 0.3),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Text(
+                                  '+${AppConstants.expRewardedAd} EXP +${AppConstants.pointsRewardedAd} PT',
+                                  style: const TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ),
-                            ),
+                            ],
                           ],
                         ),
                       ),
@@ -608,6 +726,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
           ),
         ),
       ),
+      bottomNavigationBar: const BannerAdWidget(),
     );
   }
 }

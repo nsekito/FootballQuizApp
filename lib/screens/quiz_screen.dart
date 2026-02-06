@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../models/question.dart';
 import '../providers/question_service_provider.dart';
+import '../providers/database_provider.dart';
 import '../services/remote_data_service.dart';
 import '../utils/constants.dart';
 import '../widgets/error_widget.dart';
@@ -13,6 +14,7 @@ import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
 import '../widgets/responsive_container.dart';
 import '../utils/category_difficulty_utils.dart';
+import '../widgets/banner_ad_widget.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {
   final String category;
@@ -216,23 +218,22 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                       color: Colors.grey.shade200,
                       borderRadius: BorderRadius.circular(3),
                     ),
-                    child: Stack(
-                      children: [
-                        Container(
-                          width: MediaQuery.of(context).size.width * value,
-                          decoration: BoxDecoration(
-                            color: AppColors.stitchCyan,
-                            borderRadius: BorderRadius.circular(3),
-                            boxShadow: [
-                              BoxShadow(
-                                color: AppColors.stitchCyan.withValues(alpha: 0.4),
-                                blurRadius: 8,
-                                spreadRadius: 0,
-                              ),
-                            ],
-                          ),
+                    child: FractionallySizedBox(
+                      alignment: Alignment.centerLeft,
+                      widthFactor: value,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: AppColors.stitchCyan,
+                          borderRadius: BorderRadius.circular(3),
+                          boxShadow: [
+                            BoxShadow(
+                              color: AppColors.stitchCyan.withValues(alpha: 0.4),
+                              blurRadius: 8,
+                              spreadRadius: 0,
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
                   );
                 },
@@ -310,6 +311,42 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                           ],
                         ),
                       ),
+                    // extreme難易度の場合の警告表示
+                    if (currentQuestion.difficulty == AppConstants.difficultyExtreme)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 16),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: Colors.orange.shade50,
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: Colors.orange.shade200,
+                              width: 1,
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.info_outline,
+                                color: Colors.orange.shade700,
+                                size: 16,
+                              ),
+                              const SizedBox(width: 8),
+                              Expanded(
+                                child: Text(
+                                  'この問題は不確定情報や噂レベルの情報も含む可能性があります',
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.orange.shade900,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                     Text(
                       currentQuestion.text,
                       style: const TextStyle(
@@ -380,6 +417,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           ),
         ),
       ),
+      bottomNavigationBar: const BannerAdWidget(),
     );
   }
 
@@ -572,24 +610,48 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     );
   }
 
-  void _nextQuestion(bool isLastQuestion) {
+  void _nextQuestion(bool isLastQuestion) async {
     if (isLastQuestion) {
-      final earnedPoints = _score * AppConstants.pointsPerCorrectAnswer;
-      final totalPoints = _score == _questions.length
-          ? earnedPoints + AppConstants.pointsPerfectScoreBonus
-          : earnedPoints;
+      // MATCH DAYかどうかを判定
+      final isMatchDay = widget.category == AppConstants.categoryMatchRecap;
+      
+      // MATCH DAYの場合はプレイ履歴を記録
+      if (isMatchDay) {
+        final databaseService = ref.read(databaseServiceProvider);
+        await databaseService.recordMatchDayPlay();
+      }
+      
+      // 基本expとポイントを計算
+      final baseExp = _score * AppConstants.expPerCorrectAnswer;
+      final basePoints = _score * AppConstants.pointsPerCorrectAnswer;
+      
+      // 全問正解ボーナス
+      final bonusExp = _score == _questions.length 
+          ? AppConstants.expPerfectScoreBonus 
+          : 0;
+      final bonusPoints = _score == _questions.length 
+          ? AppConstants.pointsPerfectScoreBonus 
+          : 0;
+      
+      // MATCH DAYの場合は倍率を適用
+      final multiplier = isMatchDay ? AppConstants.matchDayExpMultiplier : 1.0;
+      final earnedExp = ((baseExp + bonusExp) * multiplier).round();
+      final earnedPoints = ((basePoints + bonusPoints) * multiplier).round();
 
       final uri = Uri(
         path: '/result',
         queryParameters: {
           'score': '$_score',
           'total': '${_questions.length}',
-          'points': '$totalPoints',
+          'exp': '$earnedExp',
+          'points': '$earnedPoints',
           'category': widget.category,
           'difficulty': widget.difficulty,
         },
       );
-      context.push(uri.toString());
+      if (mounted) {
+        context.push(uri.toString());
+      }
     } else {
       setState(() {
         _currentQuestionIndex++;
@@ -604,7 +666,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
     if (referenceDate.contains('-')) {
       final parts = referenceDate.split('-');
-      if (parts.length == 2) {
+      if (parts.length == 3) {
+        // YYYY-MM-DD形式
+        final year = parts[0];
+        final month = parts[1];
+        return '対象: $year年$month月時点';
+      } else if (parts.length == 2) {
+        // YYYY-MM形式
         final year = parts[0];
         final month = parts[1];
         return '対象: $year年$month月時点';

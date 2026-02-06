@@ -13,6 +13,7 @@ import '../models/user_rank.dart';
 import '../models/promotion_exam.dart';
 import '../widgets/responsive_container.dart';
 import '../widgets/glass_morphism_widget.dart';
+import '../widgets/banner_ad_widget.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -127,8 +128,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           ],
         ),
       ),
-      // ボトムナビゲーション
-      bottomNavigationBar: _buildBottomNav(context),
+      bottomNavigationBar: const BannerAdWidget(),
     );
   }
 
@@ -756,7 +756,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         Padding(
           padding: const EdgeInsets.only(left: 4, bottom: 16),
           child: Text(
-            'SELECT CATEGORY',
+            'SELECT QUIZ',
             style: TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w700,
@@ -793,16 +793,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           Colors.purple,
           Colors.purple.shade500,
           AppConstants.categoryTeams,
-        ),
-        const SizedBox(height: 12),
-        _buildCategoryButton(
-          context,
-          'ニュースクイズ',
-          '今、サッカー界で起きていること',
-          Icons.newspaper,
-          Colors.cyan,
-          Colors.cyan.shade500,
-          AppConstants.categoryNews,
         ),
       ],
     );
@@ -1091,23 +1081,10 @@ class _CategoryButtonState extends State<_CategoryButton> {
                 ],
               ),
             ),
-            const Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Text(
-                  '+150 XP',
-                  style: TextStyle(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w700,
-                    color: AppColors.techGreen,
-                  ),
-                ),
-                Icon(
-                  Icons.chevron_right,
-                  color: AppColors.slate200,
-                  size: 20,
-                ),
-              ],
+            const Icon(
+              Icons.chevron_right,
+              color: AppColors.slate200,
+              size: 20,
             ),
           ],
         ),

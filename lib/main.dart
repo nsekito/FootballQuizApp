@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'providers/router_provider.dart';
 import 'constants/app_colors.dart';
+import 'services/ad_service.dart';
 
 // 条件付きインポート: デスクトッププラットフォームのみ（Android/iOSではスタブを使用）
 import 'sqflite_ffi_stub.dart'
@@ -37,6 +38,15 @@ void main() async {
     }
   }
   
+  // 広告SDKを初期化（Webプラットフォームではスキップ）
+  if (!kIsWeb) {
+    try {
+      await AdService.initialize();
+    } catch (e) {
+      debugPrint('広告SDKの初期化に失敗しました（アプリは正常に動作します）: $e');
+    }
+  }
+  
   runApp(
     const ProviderScope(
       child: SoccerQuizMasterApp(),
@@ -53,6 +63,7 @@ class SoccerQuizMasterApp extends ConsumerWidget {
 
     return MaterialApp.router(
       title: 'Soccer Quiz Master',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: AppColors.primary,

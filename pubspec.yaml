@@ -23,8 +23,8 @@ dependencies:
   # HTTP & Remote Data
   http: ^1.1.0
   
-  # Ads (Phase 5で実装予定のため一時的に無効化)
-  # google_mobile_ads: ^4.0.0
+  # Ads
+  google_mobile_ads: ^4.0.0
   
   # Notifications
   flutter_local_notifications: ^17.2.3

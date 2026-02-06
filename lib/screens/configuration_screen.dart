@@ -10,6 +10,7 @@ import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
 import '../widgets/responsive_container.dart';
+import '../widgets/banner_ad_widget.dart';
 import '../utils/category_difficulty_utils.dart';
 import '../models/promotion_exam.dart';
 
@@ -124,6 +125,7 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           ),
         ),
       ),
+      bottomNavigationBar: const BannerAdWidget(),
     );
   }
 

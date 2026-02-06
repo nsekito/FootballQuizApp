@@ -9,6 +9,7 @@ import '../widgets/background_widget.dart';
 import '../widgets/app_bar_background.dart';
 import '../widgets/responsive_container.dart';
 import '../utils/category_difficulty_utils.dart';
+import '../widgets/banner_ad_widget.dart';
 
 class HistoryScreen extends ConsumerWidget {
   const HistoryScreen({super.key});
@@ -52,6 +53,7 @@ class HistoryScreen extends ConsumerWidget {
         ),
       ),
       ),
+      bottomNavigationBar: const BannerAdWidget(),
     );
   }
 

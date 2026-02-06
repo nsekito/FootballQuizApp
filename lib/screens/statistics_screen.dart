@@ -9,6 +9,7 @@ import '../widgets/background_widget.dart';
 import '../widgets/app_bar_background.dart';
 import '../widgets/responsive_container.dart';
 import '../utils/category_difficulty_utils.dart';
+import '../widgets/banner_ad_widget.dart';
 
 class StatisticsScreen extends ConsumerWidget {
   const StatisticsScreen({super.key});
@@ -63,6 +64,7 @@ class StatisticsScreen extends ConsumerWidget {
           ),
         ),
       ),
+      bottomNavigationBar: const BannerAdWidget(),
     );
   }
 
