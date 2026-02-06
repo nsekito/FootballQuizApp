@@ -69,7 +69,7 @@ class RemoteDataService {
     final url = _buildGitHubRawUrl(filePath);
 
     final data = await _fetchFromGitHubRaw(url);
-    return _parseQuestionsFromJson(data);
+    return _parseQuestionsFromJson(data, date: targetDate);
   }
 
   /// 指定日付のすべてのリーグタイプのWeekly Recap問題を取得（DB取り込み用）
@@ -151,14 +151,24 @@ class RemoteDataService {
   }
 
   /// JSONデータからQuestionリストをパース
-  List<Question> _parseQuestionsFromJson(Map<String, dynamic> json) {
+  List<Question> _parseQuestionsFromJson(Map<String, dynamic> json, {String? date}) {
     final questionsJson = json['questions'] as List<dynamic>?;
     if (questionsJson == null) {
       throw RemoteDataException('JSONに"questions"フィールドがありません');
     }
 
+    // トップレベルのdateフィールドを取得（なければ引数のdateを使用）
+    final topLevelDate = json['date'] as String? ?? date;
+
     return questionsJson
-        .map((q) => Question.fromJson(q as Map<String, dynamic>))
+        .map((q) {
+          final questionMap = q as Map<String, dynamic>;
+          // referenceDateが設定されていない場合、トップレベルのdateを使用
+          if (questionMap['referenceDate'] == null && topLevelDate != null) {
+            questionMap['referenceDate'] = topLevelDate;
+          }
+          return Question.fromJson(questionMap);
+        })
         .toList();
   }
 

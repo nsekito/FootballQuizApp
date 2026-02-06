@@ -185,7 +185,7 @@ class _QuizChoiceCardState extends State<QuizChoiceCard>
                               AnimatedOpacity(
                                 opacity: widget.isCorrect == true ? 1.0 : 0.0,
                                 duration: const Duration(milliseconds: 300),
-                                child: Icon(Icons.star,
+                                child: const Icon(Icons.star,
                                     color: AppColors.accent, size: 24),
                               ),
                           ],

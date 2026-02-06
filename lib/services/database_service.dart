@@ -1,16 +1,18 @@
 import 'dart:io';
+import 'dart:convert';
 import 'package:flutter/foundation.dart' show kIsWeb, debugPrint;
 import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../models/question.dart';
 import '../utils/constants.dart';
+import '../utils/unlock_key_utils.dart';
 
 /// SQLiteデータベースサービス
 class DatabaseService {
   static Database? _database;
   static const String _databaseName = 'questions.db';  // アセットファイル名と一致させる
-  static const int _databaseVersion = 4;
+  static const int _databaseVersion = 5;
   
   // キャッシュ用のマップ（問題ID -> Question）
   final Map<String, Question> _questionCache = {};
@@ -268,6 +270,58 @@ class DatabaseService {
       },
       conflictAlgorithm: ConflictAlgorithm.ignore,
     );
+    
+    await db.insert(
+      'user_data',
+      {
+        'key': 'total_exp',
+        'value': '0',
+      },
+      conflictAlgorithm: ConflictAlgorithm.ignore,
+    );
+    
+    // EASY難易度を最初からアンロック
+    final initialUnlocked = [
+      UnlockKeyUtils.generateUnlockKey(
+        category: AppConstants.categoryRules,
+        difficulty: AppConstants.difficultyEasy,
+        tags: AppConstants.categoryRules,
+      ),
+      UnlockKeyUtils.generateUnlockKey(
+        category: AppConstants.categoryHistory,
+        difficulty: AppConstants.difficultyEasy,
+        tags: 'history,japan',
+      ),
+      UnlockKeyUtils.generateUnlockKey(
+        category: AppConstants.categoryTeams,
+        difficulty: AppConstants.difficultyEasy,
+        tags: 'teams,japan',
+      ),
+    ];
+    
+    await db.insert(
+      'user_data',
+      {
+        'key': 'unlocked_difficulties',
+        'value': jsonEncode(initialUnlocked),
+      },
+      conflictAlgorithm: ConflictAlgorithm.ignore,
+    );
+    
+    // match_day_play_historyテーブルを作成
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS match_day_play_history (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        week_start_date TEXT NOT NULL,
+        play_date TEXT NOT NULL,
+        play_count INTEGER NOT NULL DEFAULT 1,
+        UNIQUE(week_start_date)
+      )
+    ''');
+    
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_match_day_play_history_week_start_date ON match_day_play_history(week_start_date)
+    ''');
   }
 
   /// データベースアップグレード時の処理
@@ -344,6 +398,76 @@ class DatabaseService {
         CREATE INDEX IF NOT EXISTS idx_recap_sync_history_league_type ON recap_sync_history(league_type)
       ''');
       debugPrint('recap_sync_historyテーブルを追加しました');
+    }
+    
+    // バージョン4から5へのマイグレーション
+    if (oldVersion < 5) {
+      // total_expを追加（既存のtotal_pointsの値をコピー）
+      final totalPointsResult = await db.query(
+        'user_data',
+        where: 'key = ?',
+        whereArgs: ['total_points'],
+      );
+      int existingPoints = 0;
+      if (totalPointsResult.isNotEmpty) {
+        existingPoints = int.tryParse(totalPointsResult.first['value'] as String) ?? 0;
+      }
+      
+      // total_expを追加
+      await db.insert(
+        'user_data',
+        {
+          'key': 'total_exp',
+          'value': existingPoints.toString(),
+        },
+        conflictAlgorithm: ConflictAlgorithm.replace,
+      );
+      
+      // unlocked_difficultiesを追加（EASY難易度を最初からアンロック）
+      final initialUnlocked = [
+        UnlockKeyUtils.generateUnlockKey(
+          category: AppConstants.categoryRules,
+          difficulty: AppConstants.difficultyEasy,
+          tags: AppConstants.categoryRules,
+        ),
+        UnlockKeyUtils.generateUnlockKey(
+          category: AppConstants.categoryHistory,
+          difficulty: AppConstants.difficultyEasy,
+          tags: 'history,japan',
+        ),
+        UnlockKeyUtils.generateUnlockKey(
+          category: AppConstants.categoryTeams,
+          difficulty: AppConstants.difficultyEasy,
+          tags: 'teams,japan',
+        ),
+      ];
+      
+      await db.insert(
+        'user_data',
+        {
+          'key': 'unlocked_difficulties',
+          'value': jsonEncode(initialUnlocked),
+        },
+        conflictAlgorithm: ConflictAlgorithm.replace,
+      );
+      
+      // match_day_play_historyテーブルを追加（週単位のプレイ履歴管理）
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS match_day_play_history (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          week_start_date TEXT NOT NULL,
+          play_date TEXT NOT NULL,
+          play_count INTEGER NOT NULL DEFAULT 1,
+          UNIQUE(week_start_date)
+        )
+      ''');
+      
+      // インデックスの追加
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_match_day_play_history_week_start_date ON match_day_play_history(week_start_date)
+      ''');
+      
+      debugPrint('バージョン5へのマイグレーション完了: total_expとunlocked_difficultiesを追加しました');
     }
   }
 
@@ -763,6 +887,178 @@ class DatabaseService {
   Future<void> addPoints(int points) async {
     final currentPoints = await getTotalPoints();
     await updateTotalPoints(currentPoints + points);
+  }
+
+  /// ユーザーの累計経験値（exp）を取得
+  Future<int> getTotalExp() async {
+    final db = await database;
+    final result = await db.query(
+      'user_data',
+      where: 'key = ?',
+      whereArgs: ['total_exp'],
+    );
+    if (result.isEmpty) {
+      return 0;
+    }
+    return int.tryParse(result.first['value'] as String) ?? 0;
+  }
+
+  /// ユーザーの累計経験値（exp）を更新
+  Future<void> updateTotalExp(int exp) async {
+    final db = await database;
+    await db.update(
+      'user_data',
+      {'value': exp.toString()},
+      where: 'key = ?',
+      whereArgs: ['total_exp'],
+    );
+  }
+
+  /// 経験値（exp）を追加
+  Future<void> addExp(int exp) async {
+    final currentExp = await getTotalExp();
+    await updateTotalExp(currentExp + exp);
+  }
+
+  /// アンロック済み難易度のリストを取得
+  Future<List<String>> getUnlockedDifficulties() async {
+    final db = await database;
+    final result = await db.query(
+      'user_data',
+      where: 'key = ?',
+      whereArgs: ['unlocked_difficulties'],
+    );
+    if (result.isEmpty) {
+      return [];
+    }
+    try {
+      final jsonString = result.first['value'] as String;
+      if (jsonString.isEmpty || jsonString == '[]') {
+        return [];
+      }
+      // JSON配列をパース
+      final List<dynamic> decoded = jsonDecode(jsonString);
+      return decoded.map((e) => e.toString()).toList();
+    } catch (e) {
+      debugPrint('アンロック済み難易度のパースに失敗しました: $e');
+      return [];
+    }
+  }
+
+  /// アンロック済み難易度のリストを更新
+  Future<void> updateUnlockedDifficulties(List<String> unlockedKeys) async {
+    final db = await database;
+    final jsonString = jsonEncode(unlockedKeys);
+    await db.update(
+      'user_data',
+      {'value': jsonString},
+      where: 'key = ?',
+      whereArgs: ['unlocked_difficulties'],
+    );
+  }
+
+  /// 難易度をアンロック
+  Future<void> unlockDifficulty(String unlockKey) async {
+    final unlocked = await getUnlockedDifficulties();
+    if (!unlocked.contains(unlockKey)) {
+      unlocked.add(unlockKey);
+      await updateUnlockedDifficulties(unlocked);
+    }
+  }
+
+  /// 難易度がアンロックされているかチェック
+  Future<bool> isDifficultyUnlocked(String unlockKey) async {
+    final unlocked = await getUnlockedDifficulties();
+    return unlocked.contains(unlockKey);
+  }
+
+  /// 今週の週開始日を取得（月曜日を週の開始とする）
+  String _getWeekStartDate(DateTime date) {
+    // 月曜日を週の開始とする（月曜日=1、日曜日=7）
+    final weekday = date.weekday;
+    final daysFromMonday = weekday == 7 ? 0 : weekday - 1;
+    final weekStart = date.subtract(Duration(days: daysFromMonday));
+    return '${weekStart.year}-${weekStart.month.toString().padLeft(2, '0')}-${weekStart.day.toString().padLeft(2, '0')}';
+  }
+
+  /// MATCH DAYをプレイ可能かチェック（週1回制限）
+  Future<bool> canPlayMatchDay() async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    
+    final result = await db.query(
+      'match_day_play_history',
+      where: 'week_start_date = ?',
+      whereArgs: [weekStartDate],
+    );
+    
+    // 今週のプレイ履歴がない場合、プレイ可能
+    if (result.isEmpty) {
+      return true;
+    }
+    
+    // 今週のプレイ回数を取得
+    final playCount = result.first['play_count'] as int;
+    // 無料で1回、広告視聴で最大3回まで（合計4回まで）
+    return playCount < 4;
+  }
+
+  /// MATCH DAYのプレイ回数を取得（今週）
+  Future<int> getMatchDayPlayCount() async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    
+    final result = await db.query(
+      'match_day_play_history',
+      where: 'week_start_date = ?',
+      whereArgs: [weekStartDate],
+    );
+    
+    if (result.isEmpty) {
+      return 0;
+    }
+    
+    return result.first['play_count'] as int;
+  }
+
+  /// MATCH DAYのプレイを記録
+  Future<void> recordMatchDayPlay() async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    final playDate = '${now.year}-${now.month.toString().padLeft(2, '0')}-${now.day.toString().padLeft(2, '0')}';
+    
+    final existing = await db.query(
+      'match_day_play_history',
+      where: 'week_start_date = ?',
+      whereArgs: [weekStartDate],
+    );
+    
+    if (existing.isEmpty) {
+      // 今週初めてのプレイ
+      await db.insert(
+        'match_day_play_history',
+        {
+          'week_start_date': weekStartDate,
+          'play_date': playDate,
+          'play_count': 1,
+        },
+      );
+    } else {
+      // 今週のプレイ回数を増やす
+      final currentCount = existing.first['play_count'] as int;
+      await db.update(
+        'match_day_play_history',
+        {
+          'play_date': playDate,
+          'play_count': currentCount + 1,
+        },
+        where: 'week_start_date = ?',
+        whereArgs: [weekStartDate],
+      );
+    }
   }
 
   /// Weekly Recap同期履歴を記録

@@ -6,6 +6,8 @@ import '../screens/quiz_screen.dart';
 import '../screens/result_screen.dart';
 import '../screens/history_screen.dart';
 import '../screens/statistics_screen.dart';
+import '../screens/promotion_exam_screen.dart';
+import '../screens/promotion_exam_quiz_screen.dart';
 
 /// アプリのルーティング設定
 final routerProvider = Provider<GoRouter>((ref) {
@@ -55,12 +57,15 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (context, state) {
           final score = int.tryParse(state.uri.queryParameters['score'] ?? '0') ?? 0;
           final total = int.tryParse(state.uri.queryParameters['total'] ?? '0') ?? 0;
+          // 後方互換性のため、expが指定されていない場合はpointsから計算
+          final earnedExp = int.tryParse(state.uri.queryParameters['exp'] ?? '0') ?? 0;
           final earnedPoints = int.tryParse(state.uri.queryParameters['points'] ?? '0') ?? 0;
           final category = state.uri.queryParameters['category'] ?? '';
           final difficulty = state.uri.queryParameters['difficulty'] ?? '';
           return ResultScreen(
             score: score,
             total: total,
+            earnedExp: earnedExp > 0 ? earnedExp : earnedPoints, // 後方互換性
             earnedPoints: earnedPoints,
             category: category,
             difficulty: difficulty,
@@ -76,6 +81,36 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/statistics',
         name: 'statistics',
         builder: (context, state) => const StatisticsScreen(),
+      ),
+      GoRoute(
+        path: '/promotion-exam',
+        name: 'promotion-exam',
+        builder: (context, state) {
+          final category = state.uri.queryParameters['category'] ?? '';
+          final tags = state.uri.queryParameters['tags'] ?? '';
+          final targetDifficulty = state.uri.queryParameters['targetDifficulty'] ?? '';
+          return PromotionExamScreen(
+            category: category,
+            tags: tags,
+            targetDifficulty: targetDifficulty,
+          );
+        },
+      ),
+      GoRoute(
+        path: '/promotion-exam-quiz',
+        name: 'promotion-exam-quiz',
+        builder: (context, state) {
+          final category = state.uri.queryParameters['category'] ?? '';
+          final sourceDifficulty = state.uri.queryParameters['sourceDifficulty'] ?? '';
+          final targetDifficulty = state.uri.queryParameters['targetDifficulty'] ?? '';
+          final tags = state.uri.queryParameters['tags'] ?? '';
+          return PromotionExamQuizScreen(
+            category: category,
+            sourceDifficulty: sourceDifficulty,
+            targetDifficulty: targetDifficulty,
+            tags: tags,
+          );
+        },
       ),
     ],
   );

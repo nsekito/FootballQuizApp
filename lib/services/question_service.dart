@@ -78,7 +78,9 @@ class QuestionService {
   /// Weekly Recap問題を取得
   /// 
   /// まずローカルDBから取得を試み、見つからない場合はリモートから取得
-  /// 難易度の割合: easy 3問、normal 5問、hard 2問
+  /// 難易度の割合:
+  /// - ヨーロッパサッカー: easy 7問、normal 2問、hard 1問
+  /// - J1リーグ: easy 3問、normal 5問、hard 2問
   Future<List<Question>> _getWeeklyRecapQuestions({
     required String difficulty,
     int? limit,
@@ -116,11 +118,35 @@ class QuestionService {
       }
       
       if (date != null) {
-        filtered = filtered.where((q) => q.referenceDate == date).toList();
+        // referenceDateが設定されていない古いデータも含める（後方互換性のため）
+        // ただし、referenceDateが設定されている場合は一致するもののみ
+        filtered = filtered.where((q) => 
+          q.referenceDate == null || q.referenceDate == date
+        ).toList();
       }
       
-      // 難易度の割合で選択（easy 3問、normal 5問、hard 2問）
-      return _selectQuestionsByDifficultyRatio(filtered, limit ?? 10);
+      // フィルタリング後の問題数が十分でない場合は、リモートから取得
+      if (filtered.length < (limit ?? 10)) {
+        final remoteQuestions = await _remoteDataService.fetchWeeklyRecapQuestions(
+          date: date,
+          leagueType: leagueType,
+        );
+        // リモートから取得した問題の方が多い場合はそれを使用
+        if (remoteQuestions.length > filtered.length) {
+          return _selectQuestionsByDifficultyRatio(
+            remoteQuestions, 
+            limit ?? 10,
+            leagueType: leagueType,
+          );
+        }
+      }
+      
+      // 難易度の割合で選択（リーグタイプに応じて配分が異なる）
+      return _selectQuestionsByDifficultyRatio(
+        filtered, 
+        limit ?? 10,
+        leagueType: leagueType,
+      );
     }
     
     // ローカルDBにデータがない場合はリモートから取得
@@ -129,15 +155,22 @@ class QuestionService {
       leagueType: leagueType,
     );
 
-    // 難易度の割合で選択（easy 3問、normal 5問、hard 2問）
-    return _selectQuestionsByDifficultyRatio(questions, limit ?? 10);
+    // 難易度の割合で選択（リーグタイプに応じて配分が異なる）
+    return _selectQuestionsByDifficultyRatio(
+      questions, 
+      limit ?? 10,
+      leagueType: leagueType,
+    );
   }
 
-  /// 難易度の割合で問題を選択（easy 3問、normal 5問、hard 2問）
+  /// 難易度の割合で問題を選択
+  /// ヨーロッパサッカー: easy 7問、normal 2問、hard 1問
+  /// J1リーグ: easy 3問、normal 5問、hard 2問
   List<Question> _selectQuestionsByDifficultyRatio(
     List<Question> questions,
-    int totalLimit,
-  ) {
+    int totalLimit, {
+    String? leagueType,
+  }) {
     // 難易度ごとに分類
     final easyQuestions = questions
         .where((q) => q.difficulty == AppConstants.difficultyEasy)
@@ -154,19 +187,28 @@ class QuestionService {
     normalQuestions.shuffle();
     hardQuestions.shuffle();
 
-    // 割合に基づいて選択（easy 3問、normal 5問、hard 2問）
+    // リーグタイプに応じた配分を決定
+    int easyCount;
+    int normalCount;
+    int hardCount;
+    
+    if (leagueType == AppConstants.leagueTypeEurope) {
+      // ヨーロッパサッカー: easy 7問、normal 2問、hard 1問
+      easyCount = (totalLimit * 0.7).round();
+      normalCount = (totalLimit * 0.2).round();
+      hardCount = totalLimit - easyCount - normalCount;
+    } else {
+      // J1リーグ: easy 3問、normal 5問、hard 2問
+      easyCount = (totalLimit * 0.3).round();
+      normalCount = (totalLimit * 0.5).round();
+      hardCount = totalLimit - easyCount - normalCount;
+    }
+    
     final selectedQuestions = <Question>[];
     
-    // easy 3問
-    final easyCount = (totalLimit * 0.3).round();
+    // 各難易度から指定数選択
     selectedQuestions.addAll(easyQuestions.take(easyCount));
-    
-    // normal 5問
-    final normalCount = (totalLimit * 0.5).round();
     selectedQuestions.addAll(normalQuestions.take(normalCount));
-    
-    // hard 2問
-    final hardCount = totalLimit - selectedQuestions.length;
     selectedQuestions.addAll(hardQuestions.take(hardCount));
     
     // 不足分は他の難易度から補完

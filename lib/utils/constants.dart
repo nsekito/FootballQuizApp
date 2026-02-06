@@ -1,9 +1,27 @@
 /// アプリ全体で使用する定数
 class AppConstants {
+  // 経験値（exp）システム
+  static const int expPerCorrectAnswer = 10;
+  static const int expPerfectScoreBonus = 50;
+  static const int expRewardedAd = 100;
+  
   // ポイントシステム
   static const int pointsPerCorrectAnswer = 10;
   static const int pointsPerfectScoreBonus = 50;
   static const int pointsRewardedAd = 100;
+  
+  // MATCH DAYの倍率
+  static const double matchDayExpMultiplier = 5.0;
+  static const double matchDayPointsMultiplier = 5.0;
+  
+  // 昇格試験の必要ポイント
+  static const int promotionExamPointsEasyToNormal = 1000;
+  static const int promotionExamPointsNormalToHard = 5000;
+  static const int promotionExamPointsHardToExtreme = 10000;
+  
+  // 昇格試験の設定
+  static const int promotionExamQuestionCount = 20;
+  static const int promotionExamPassScore = 16;
 
   // クイズ設定
   static const int defaultQuestionsPerQuiz = 10;

@@ -51,7 +51,7 @@ class _AppLoadingWidgetState extends State<AppLoadingWidget>
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     gradient: SweepGradient(
-                      colors: [
+                      colors: const [
                         AppColors.primary,
                         AppColors.accent,
                         AppColors.primary,
@@ -64,7 +64,7 @@ class _AppLoadingWidgetState extends State<AppLoadingWidget>
                     child: Container(
                       width: 48,
                       height: 48,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: AppColors.background,
                         shape: BoxShape.circle,
                       ),
