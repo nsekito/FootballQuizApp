@@ -320,6 +320,9 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
       await ref.read(unlockedDifficultiesProvider.notifier).unlockDifficulty(unlockKey);
     }
 
+    // 非同期処理後に再度mountedチェック
+    if (!mounted) return;
+
     // 結果ダイアログを表示
     showDialog(
       context: context,
@@ -337,7 +340,7 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              '${_score}問 / ${_questions.length}問正解',
+              '$_score問 / ${_questions.length}問正解',
               style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -377,17 +380,17 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
                   color: Colors.orange.shade50,
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: Column(
+                child: const Column(
                   children: [
-                    const Icon(
+                    Icon(
                       Icons.cancel,
                       color: Colors.orange,
                       size: 48,
                     ),
-                    const SizedBox(height: 8),
+                    SizedBox(height: 8),
                     Text(
                       '${AppConstants.promotionExamPassScore}問以上正解で合格です',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
@@ -414,9 +417,9 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
-      return Scaffold(
+      return const Scaffold(
         backgroundColor: AppColors.stitchBackgroundLight,
-        body: const Center(
+        body: Center(
           child: CircularProgressIndicator(),
         ),
       );
@@ -562,7 +565,7 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
                               child: Center(
                                 child: Text(
                                   String.fromCharCode(65 + index), // A, B, C, D
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                   ),

@@ -186,13 +186,13 @@ class NotificationService {
               ? 'ヨーロッパサッカー' 
               : '';
 
-      final title = '新しいMATCH DAYが利用可能です！';
+      const title = '新しいMATCH DAYが利用可能です！';
       final body = leagueTypeText.isNotEmpty
           ? '今週の$leagueTypeTextの試合結果をクイズで確認しましょう'
           : '今週の試合結果をクイズで確認しましょう';
 
       // ペイロードに遷移先のルート情報を設定
-      final payload = '/configuration?category=match_recap';
+      const payload = '/configuration?category=match_recap';
 
       const androidDetails = AndroidNotificationDetails(
         'weekly_recap_channel',

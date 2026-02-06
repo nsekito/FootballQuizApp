@@ -12,7 +12,6 @@ import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
 import '../widgets/responsive_container.dart';
 import '../widgets/banner_ad_widget.dart';
-import '../services/ad_service.dart';
 import '../providers/ad_provider.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
@@ -148,7 +147,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text('報酬を獲得しました！+${AppConstants.expRewardedAd} EXP +${AppConstants.pointsRewardedAd} PT'),
+              content: const Text('報酬を獲得しました！+${AppConstants.expRewardedAd} EXP +${AppConstants.pointsRewardedAd} PT'),
               backgroundColor: Colors.green.shade700,
               duration: const Duration(seconds: 3),
             ),
@@ -454,9 +453,9 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                                   color: Colors.white.withValues(alpha: 0.3),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
-                                child: Text(
+                                child: const Text(
                                   '+${AppConstants.expRewardedAd} EXP +${AppConstants.pointsRewardedAd} PT',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 11,
                                     fontWeight: FontWeight.bold,
                                   ),

@@ -11,7 +11,7 @@
 - **State Management**: Flutter Riverpod (推奨)
 - **Navigation**: GoRouter
 - **Local Database**: SQLite (sqflite) or Drift - マスターデータおよび履歴用
-- **Remote Data**: GitHub Raw / Firebase Storage - ニュースクイズ用JSON
+- **Remote Data**: GitHub Raw / Firebase Storage - Weekly Recap用JSON
 - **Ads**: google_mobile_ads
 - **Notifications**: flutter_local_notifications (更新通知用)
 
@@ -26,11 +26,7 @@
   - 順位 (例: 「今節の結果、首位に浮上したのは？」)
 - **システム**: サーバーからJSONを取得して表示。
 
-### B. トレンド・ニュースクイズ (News)
-- **概要**: 移籍市場、代表戦、大会情報などの時事クイズ。
-- **フィルタ**: 地域 (国内 / 世界) × 年 (2025 / 2026...)
-
-### C. マスターモード (常設クイズ)
+### B. マスターモード (常設クイズ)
 条件を指定して挑戦するストック型クイズ。
 1. **ルールクイズ**:
    - 難易度選択 (EASY, NORMAL, HARD, EXTREME)
@@ -53,7 +49,7 @@
       final int answerIndex;      // 正解インデックス
       final String explanation;   // 解説 (正解理由 + 試合背景など詳細に)
       final String? trivia;       // 小ネタ・豆知識 (ユーザーの満足度向上用)
-      final String category;      // rules, history, teams, match_recap, news
+      final String category;      // rules, history, teams, match_recap
       final String difficulty;    // easy, normal, hard, extreme
       final String tags;          // 国名、リーグ名、年度など検索用タグ
     }
@@ -70,9 +66,9 @@
 
 ## 5. 画面遷移 (UI Flow)
 1. **Home Screen**
-   - 上部: **Weekly Challenge Card** (未プレイ時のみ強調表示)
+   - 上部: **Weekly Challenge Card (MATCH DAY)** (未プレイ時のみ強調表示)
    - 中部: 「現在のランク称号」と「所持GP」の表示
-   - 下部: カテゴリ選択 (ルール / 歴史 / チーム / ニュース)
+   - 下部: カテゴリ選択 (ルール / 歴史 / チーム)
    - 最下部: バナー広告
 2. **Configuration Screen**
    - カテゴリに応じた条件設定 (ドロップダウン/チップUI)
@@ -82,8 +78,8 @@
    - 正解/不正解アニメーション
    - **解説ダイアログ**: 正誤にかかわらず表示。「解説」と「豆知識」を読ませる。
 4. **Result Screen**
-   - スコア表示、獲得GP表示、ランクアップ演出
-   - **インタースティシャル広告** (結果表示の直前に挿入)
+   - スコア表示、獲得EXP・ポイント表示、ランクアップ演出
+   - **リワード広告** (広告視聴でEXPとポイントを獲得)
 
 ## 6. ゲーミフィケーションと収益化 (Economy)
 
@@ -106,8 +102,9 @@
 
 ### C. 広告配置計画
 1. **Banner Ad**: 各画面下部に常設。
-2. **Interstitial Ad**: リザルト画面遷移時（頻度調整可能に）。
-3. **Rewarded Ad**: 「ポイントをブーストして早くランクアップしたい」ユーザー向け。
+2. **Rewarded Ad**: 「ポイントをブーストして早くランクアップしたい」ユーザー向け。
+   - 結果画面: 広告視聴でEXPとポイントを獲得
+   - MATCH DAY: 広告視聴で追加チャレンジ（週3回まで）
 
 ## 7. 実装フェーズと進捗状況
 
@@ -143,17 +140,29 @@
   - ユーザーデータ管理 (`lib/providers/user_data_provider.dart`)
 - ✅ クイズ履歴管理 (`lib/services/quiz_history_service.dart`)
 
-### Phase 4 (Online) ❌ **未実装**
-- ❌ Weekly Recap機能 (HTTP通信)
-- ❌ ニュースクイズ機能
-- ❌ リモートデータ取得機能
+### Phase 4 (Online) ✅ **完了**
+- ✅ Weekly Recap機能 (HTTP通信)
+  - GitHub Rawからリモートデータ取得 (`lib/services/remote_data_service.dart`)
+  - GitHub Actionsによる自動問題生成（毎週月曜日朝6時）
+  - データ同期機能 (`lib/services/recap_data_service.dart`)
+  - MATCH DAYのUI改善
+    - プレイ回数の進捗表示（進捗バーと4つのドットインジケーター）
+    - 残り回数の明確な表示
+    - 上限到達時の週リセット情報表示（次回プレイ可能日、残り日数）
+    - 報酬情報の改善（EXP ×5倍、ポイント ×5倍を明確に表示）
+  - プレイ回数制限（週4回：無料1回 + 広告視聴3回）
+  - 報酬倍率（EXP ×5倍、ポイント ×5倍）
+- ✅ リモートデータ取得機能
 
-### Phase 5 (Polish) ❌ **未実装**
-- ❌ 広告実装 (google_mobile_ads)
-  - Banner Ad
-  - Interstitial Ad
-  - Rewarded Ad
-- ❌ 通知機能 (flutter_local_notifications)
+### Phase 5 (Polish) 🔄 **部分的に完了**
+- ✅ 広告実装 (google_mobile_ads)
+  - Banner Ad: 各画面のフッターに実装済み (`lib/widgets/banner_ad_widget.dart`)
+  - Rewarded Ad: 結果画面とMATCH DAYの追加チャレンジに実装済み (`lib/services/ad_service.dart`)
+  - Interstitial Ad: 使用しない（離脱率が高いため）
+- ✅ 通知機能 (flutter_local_notifications)
+  - Weekly Recap新着通知機能 (`lib/services/notification_service.dart`)
+  - 通知タップ時の画面遷移機能
+  - 前回通知日時の保存・確認ロジック（重複防止）
 - ❌ UIデザイン調整
 
 ## 8. 現在の実装状況サマリー
@@ -163,15 +172,30 @@
   - ルールクイズ、歴史クイズ、チームクイズ
   - 難易度選択（EASY, NORMAL, HARD, EXTREME）
   - 問題の多様性確保（生成時・出題時の両方）
+- ✅ Weekly Match Recap（MATCH DAY）
+  - GitHub Actionsによる自動問題生成（毎週月曜日）
+  - リモートデータ取得と同期機能
+  - プレイ回数制限（週4回：無料1回 + 広告視聴3回）
+  - 報酬倍率（EXP ×5倍、ポイント ×5倍）
+  - UI改善（プレイ回数進捗表示、週リセット情報など）
 - ✅ ポイントシステムとランク称号システム
 - ✅ クイズ履歴と統計機能
 - ✅ データ生成パイプライン（Pythonスクリプト）
+- ✅ 広告機能
+  - Banner Ad（各画面フッター）
+  - Rewarded Ad（結果画面、MATCH DAY追加チャレンジ）
+- ✅ プッシュ通知機能
+  - Weekly Recap新着通知
+  - 通知タップ時の画面遷移
+- ✅ 昇格試験機能
+  - 難易度アンロック機能
+  - ポイント消費とクイズ合格によるアンロック
 
 ### 未実装機能
-- ❌ Weekly Match Recap（月曜クイズ）
-- ❌ ニュースクイズ
-- ❌ 広告機能
-- ❌ プッシュ通知
+- ❌ UIデザイン調整
+
+### 削除済み機能
+- ❌ ニュースクイズ機能（削除済み）
 
 ### 技術的な改善点
 - ✅ 問題生成時のテーマ多様性確保（`gemini_client.py`）
@@ -190,3 +214,31 @@
       - データベースが存在しない場合、または空の場合にアセットから自動的に読み込む
       - `writeDatabaseBytes`メソッドが存在しない場合のフォールバック処理を実装
     - 動作確認済み: Webブラウザで正常に問題が表示されることを確認
+- ✅ MATCH DAYのUI改善
+  - プレイ回数の進捗表示（進捗バーと4つのドットインジケーター）
+  - 残り回数の明確な表示
+  - 上限到達時の週リセット情報表示（次回プレイ可能日、残り日数）
+  - 報酬情報の改善（EXP ×5倍、ポイント ×5倍を明確に表示）
+- ✅ 広告機能の実装
+  - Banner AdとRewarded Adの実装
+  - Webプラットフォーム対応（広告はスキップ）
+  - 広告設定の一元管理（`lib/config/ad_config.dart`）
+- ✅ プッシュ通知機能の実装
+  - 通知サービスの実装（`lib/services/notification_service.dart`）
+  - Weekly Recap新着通知の自動送信
+  - 通知タップ時の画面遷移機能
+  - 前回通知日時の保存・確認ロジック（重複防止）
+- ✅ MATCH DAYのUI改善
+  - プレイ回数の進捗表示（進捗バーと4つのドットインジケーター）
+  - 残り回数の明確な表示
+  - 上限到達時の週リセット情報表示（次回プレイ可能日、残り日数）
+  - 報酬情報の改善（EXP ×5倍、ポイント ×5倍を明確に表示）
+- ✅ 広告機能の実装
+  - Banner AdとRewarded Adの実装
+  - Webプラットフォーム対応（広告はスキップ）
+  - 広告設定の一元管理（`lib/config/ad_config.dart`）
+- ✅ プッシュ通知機能の実装
+  - 通知サービスの実装（`lib/services/notification_service.dart`）
+  - Weekly Recap新着通知の自動送信
+  - 通知タップ時の画面遷移機能
+  - 前回通知日時の保存・確認ロジック（重複防止）

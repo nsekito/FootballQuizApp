@@ -55,18 +55,13 @@ class QuizHistoryService {
   Future<QuizStatistics> getStatistics() async {
     final db = await _databaseService.getDatabase();
 
-    // 総プレイ回数
-    final totalPlaysResult = await db.rawQuery(
-      'SELECT COUNT(*) as count FROM quiz_history',
+    // 総プレイ回数、総正答数、総問題数を1つのクエリで取得
+    final overallResult = await db.rawQuery(
+      'SELECT COUNT(*) as count, SUM(score) as total_score, SUM(total) as total_questions FROM quiz_history',
     );
-    final totalPlays = totalPlaysResult.first['count'] as int;
-
-    // 総正答数と総問題数
-    final scoreResult = await db.rawQuery(
-      'SELECT SUM(score) as total_score, SUM(total) as total_questions FROM quiz_history',
-    );
-    final totalScore = (scoreResult.first['total_score'] as int?) ?? 0;
-    final totalQuestions = (scoreResult.first['total_questions'] as int?) ?? 0;
+    final totalPlays = overallResult.first['count'] as int;
+    final totalScore = (overallResult.first['total_score'] as int?) ?? 0;
+    final totalQuestions = (overallResult.first['total_questions'] as int?) ?? 0;
     final overallAccuracy =
         totalQuestions > 0 ? totalScore / totalQuestions : 0.0;
 

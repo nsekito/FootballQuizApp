@@ -286,11 +286,11 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                               ),
                               decoration: BoxDecoration(
                                 color: _getDifficultyColor(currentQuestion.difficulty)
-                                    .withOpacity(0.2),
+                                    .withValues(alpha: 0.2),
                                 borderRadius: BorderRadius.circular(4),
                                 border: Border.all(
                                   color: _getDifficultyColor(currentQuestion.difficulty)
-                                      .withOpacity(0.5),
+                                      .withValues(alpha: 0.5),
                                   width: 1,
                                 ),
                               ),

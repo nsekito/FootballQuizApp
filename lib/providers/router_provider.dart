@@ -8,6 +8,7 @@ import '../screens/history_screen.dart';
 import '../screens/statistics_screen.dart';
 import '../screens/promotion_exam_screen.dart';
 import '../screens/promotion_exam_quiz_screen.dart';
+import '../utils/route_params_parser.dart';
 
 /// アプリのルーティング設定
 final routerProvider = Provider<GoRouter>((ref) {
@@ -23,7 +24,10 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/configuration',
         name: 'configuration',
         builder: (context, state) {
-          final category = state.uri.queryParameters['category'] ?? '';
+          final category = RouteParamsParser.parseStringParam(
+            state.uri.queryParameters,
+            'category',
+          );
           return ConfigurationScreen(category: category);
         },
       ),
@@ -31,23 +35,18 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/quiz',
         name: 'quiz',
         builder: (context, state) {
-          final category = state.uri.queryParameters['category'] ?? '';
-          final difficulty = state.uri.queryParameters['difficulty'] ?? '';
-          final country = state.uri.queryParameters['country'] ?? '';
-          final region = state.uri.queryParameters['region'] ?? '';
-          final range = state.uri.queryParameters['range'] ?? '';
-          final year = state.uri.queryParameters['year'];
-          final date = state.uri.queryParameters['date'];
-          final leagueType = state.uri.queryParameters['leagueType'];
+          final params = state.uri.queryParameters;
           return QuizScreen(
-            category: category,
-            difficulty: difficulty,
-            country: country,
-            region: region,
-            range: range,
-            year: year,
-            date: date,
-            leagueType: leagueType,
+            category: RouteParamsParser.parseStringParam(params, 'category'),
+            difficulty: RouteParamsParser.parseStringParam(params, 'difficulty'),
+            country: RouteParamsParser.parseStringParam(params, 'country'),
+            region: RouteParamsParser.parseStringParam(params, 'region'),
+            range: RouteParamsParser.parseStringParam(params, 'range'),
+            date: RouteParamsParser.parseOptionalStringParam(params, 'date'),
+            leagueType: RouteParamsParser.parseOptionalStringParam(
+              params,
+              'leagueType',
+            ),
           );
         },
       ),
@@ -55,13 +54,17 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/result',
         name: 'result',
         builder: (context, state) {
-          final score = int.tryParse(state.uri.queryParameters['score'] ?? '0') ?? 0;
-          final total = int.tryParse(state.uri.queryParameters['total'] ?? '0') ?? 0;
+          final params = state.uri.queryParameters;
+          final score = RouteParamsParser.parseIntParam(params, 'score');
+          final total = RouteParamsParser.parseIntParam(params, 'total');
           // 後方互換性のため、expが指定されていない場合はpointsから計算
-          final earnedExp = int.tryParse(state.uri.queryParameters['exp'] ?? '0') ?? 0;
-          final earnedPoints = int.tryParse(state.uri.queryParameters['points'] ?? '0') ?? 0;
-          final category = state.uri.queryParameters['category'] ?? '';
-          final difficulty = state.uri.queryParameters['difficulty'] ?? '';
+          final earnedExp = RouteParamsParser.parseIntParam(params, 'exp');
+          final earnedPoints = RouteParamsParser.parseIntParam(params, 'points');
+          final category = RouteParamsParser.parseStringParam(params, 'category');
+          final difficulty = RouteParamsParser.parseStringParam(
+            params,
+            'difficulty',
+          );
           return ResultScreen(
             score: score,
             total: total,
@@ -86,13 +89,14 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/promotion-exam',
         name: 'promotion-exam',
         builder: (context, state) {
-          final category = state.uri.queryParameters['category'] ?? '';
-          final tags = state.uri.queryParameters['tags'] ?? '';
-          final targetDifficulty = state.uri.queryParameters['targetDifficulty'] ?? '';
+          final params = state.uri.queryParameters;
           return PromotionExamScreen(
-            category: category,
-            tags: tags,
-            targetDifficulty: targetDifficulty,
+            category: RouteParamsParser.parseStringParam(params, 'category'),
+            tags: RouteParamsParser.parseStringParam(params, 'tags'),
+            targetDifficulty: RouteParamsParser.parseStringParam(
+              params,
+              'targetDifficulty',
+            ),
           );
         },
       ),
@@ -100,15 +104,18 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/promotion-exam-quiz',
         name: 'promotion-exam-quiz',
         builder: (context, state) {
-          final category = state.uri.queryParameters['category'] ?? '';
-          final sourceDifficulty = state.uri.queryParameters['sourceDifficulty'] ?? '';
-          final targetDifficulty = state.uri.queryParameters['targetDifficulty'] ?? '';
-          final tags = state.uri.queryParameters['tags'] ?? '';
+          final params = state.uri.queryParameters;
           return PromotionExamQuizScreen(
-            category: category,
-            sourceDifficulty: sourceDifficulty,
-            targetDifficulty: targetDifficulty,
-            tags: tags,
+            category: RouteParamsParser.parseStringParam(params, 'category'),
+            sourceDifficulty: RouteParamsParser.parseStringParam(
+              params,
+              'sourceDifficulty',
+            ),
+            targetDifficulty: RouteParamsParser.parseStringParam(
+              params,
+              'targetDifficulty',
+            ),
+            tags: RouteParamsParser.parseStringParam(params, 'tags'),
           );
         },
       ),

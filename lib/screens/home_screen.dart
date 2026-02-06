@@ -27,7 +27,6 @@ class HomeScreen extends ConsumerStatefulWidget {
 class _HomeScreenState extends ConsumerState<HomeScreen> {
   bool _hasSyncedRecap = false;
   bool _isLoadingAd = false; // 広告読み込み中かどうか
-  bool _isAdReady = false; // 広告が読み込まれているかどうか
 
   @override
   void initState() {
@@ -112,7 +111,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         if (mounted) {
           setState(() {
             _isLoadingAd = false;
-            _isAdReady = false;
           });
         }
       },
@@ -121,7 +119,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     if (mounted) {
       setState(() {
         _isLoadingAd = false;
-        _isAdReady = adService.isRewardedAdReady;
       });
     }
   }
@@ -129,7 +126,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   /// MATCH DAY用のリワード広告を表示する
   /// 
   /// 広告視聴完了後にプレイ回数を記録し、MATCH DAYの設定画面に遷移します。
-  Future<void> _showRewardedAdForMatchDay(BuildContext context) async {
+  Future<void> _showRewardedAdForMatchDay() async {
     if (_isLoadingAd) return;
     
     final adService = ref.read(adServiceProvider);
@@ -138,15 +135,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     if (!adService.isRewardedAdReady) {
       await _loadRewardedAd();
       if (!adService.isRewardedAdReady) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('広告の読み込みに失敗しました。しばらくしてから再度お試しください。'),
-              backgroundColor: Colors.orange,
-              duration: Duration(seconds: 3),
-            ),
-          );
-        }
+        if (!mounted) return;
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('広告の読み込みに失敗しました。しばらくしてから再度お試しください。'),
+            backgroundColor: Colors.orange,
+            duration: Duration(seconds: 3),
+          ),
+        );
         return;
       }
     }
@@ -157,25 +153,23 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         final databaseService = ref.read(databaseServiceProvider);
         await databaseService.recordMatchDayPlay();
         
-        if (mounted) {
-          // MATCH DAYの設定画面に遷移
-          context.push('/configuration?category=${AppConstants.categoryMatchRecap}');
-          
-          // 次の広告を事前に読み込む
-          _loadRewardedAd();
-        }
+        if (!mounted) return;
+        // MATCH DAYの設定画面に遷移
+        context.push('/configuration?category=${AppConstants.categoryMatchRecap}');
+        
+        // 次の広告を事前に読み込む
+        _loadRewardedAd();
       },
       onError: (error) {
         debugPrint('リワード広告の表示に失敗しました: $error');
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: const Text('広告の表示に失敗しました'),
-              backgroundColor: Colors.red.shade700,
-              duration: const Duration(seconds: 3),
-            ),
-          );
-        }
+        if (!mounted) return;
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: const Text('広告の表示に失敗しました'),
+            backgroundColor: Colors.red.shade700,
+            duration: const Duration(seconds: 3),
+          ),
+        );
       },
     );
     
@@ -199,6 +193,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     
     if (!canPlay) {
       // 今週のプレイ回数が上限に達している場合
+      if (!mounted) return;
+      if (!context.mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: const Text('今週のMATCH DAYのプレイ回数が上限に達しています'),
@@ -211,10 +207,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     
     if (playCount == 0) {
       // 無料でプレイ可能
+      if (!mounted) return;
+      if (!context.mounted) return;
       context.push('/configuration?category=${AppConstants.categoryMatchRecap}');
     } else {
       // 広告視聴で追加チャレンジ
-      await _showRewardedAdForMatchDay(context);
+      if (!mounted) return;
+      await _showRewardedAdForMatchDay();
     }
   }
 
@@ -475,7 +474,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                                   size: 16,
                                 ),
                                 const SizedBox(width: 6),
-                                Text(
+                                const Text(
                                   '今週のプレイ回数が上限に達しています',
                                   style: TextStyle(
                                     fontSize: 12,
@@ -515,7 +514,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                                   ),
                                   const SizedBox(width: 6),
                                   Text(
-                                    'あと${daysUntilNextWeek}日',
+                                    'あと$daysUntilNextWeek日',
                                     style: TextStyle(
                                       fontSize: 11,
                                       fontWeight: FontWeight.w500,
@@ -563,7 +562,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                             if (!isFreePlay) ...[
                               const SizedBox(height: 4),
                               Text(
-                                '残り回数: ${remainingPlays}回',
+                                '残り回数: $remainingPlays回',
                                 style: TextStyle(
                                   fontSize: 11,
                                   fontWeight: FontWeight.w500,
@@ -593,7 +592,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                             const SizedBox(width: 6),
                             Text(
                               '報酬: EXP ×${AppConstants.matchDayExpMultiplier.toInt()}倍、ポイント ×${AppConstants.matchDayPointsMultiplier.toInt()}倍',
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 11,
                                 fontWeight: FontWeight.w600,
                                 color: Colors.white,
@@ -623,7 +622,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                           ),
                           if (canPlay) ...[
                             const SizedBox(width: 8),
-                            Icon(
+                            const Icon(
                               Icons.play_circle_outline,
                               color: AppColors.techIndigo,
                               size: 18,
@@ -1162,7 +1161,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   }
 
   String _getNextRankName(dynamic userRank) {
-    final allRanks = UserRank.values;
+    const allRanks = UserRank.values;
     
     final currentIndex = allRanks.indexOf(userRank);
     if (currentIndex >= 0 && currentIndex < allRanks.length - 1) {

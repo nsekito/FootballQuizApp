@@ -1,0 +1,55 @@
+# Dart/FlutterファイルはLFを使用
+*.dart text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+# 設定ファイル
+*.toml text eol=lf
+*.lock text eol=lf
+*.gradle text eol=lf
+*.properties text eol=lf
+
+# その他のテキストファイル
+*.html text
+*.css text
+*.js text
+*.xml text
+*.plist text
+*.xcconfig text
+*.pbxproj text
+*.cmake text
+*.cc text
+*.h text
+*.cpp text
+*.swift text
+*.kt text
+*.java text
+*.py text
+*.sh text
+*.bat text
+*.ps1 text
+
+# バイナリファイル
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.db binary
+*.wasm binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+
+# その他
+*.jar binary
+*.class binary
+*.so binary
+*.dylib binary
+*.dll binary
+*.exe binary

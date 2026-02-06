@@ -17,7 +17,7 @@ class ResponsiveContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final maxContentWidth = this.maxWidth ?? AppConstants.maxContentWidth;
+    final maxContentWidth = maxWidth ?? AppConstants.maxContentWidth;
     return Center(
       child: ConstrainedBox(
         constraints: BoxConstraints(maxWidth: maxContentWidth),
