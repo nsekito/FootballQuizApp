@@ -6,7 +6,7 @@ import 'remote_data_service.dart';
 /// 問題取得を統合するサービス
 /// 
 /// カテゴリに応じて適切なデータソースから問題を取得します。
-/// - match_recap, news → リモートデータサービス
+/// - match_recap → リモートデータサービス
 /// - rules, history, teams → ローカルデータベースサービス
 class QuestionService {
   final DatabaseService _databaseService;
@@ -20,7 +20,7 @@ class QuestionService {
 
   /// 問題を取得（カテゴリに応じて適切なデータソースから）
   /// 
-  /// [category] カテゴリ（rules, history, teams, match_recap, news）
+  /// [category] カテゴリ（rules, history, teams, match_recap）
   /// [difficulty] 難易度（easy, normal, hard, extreme）。Weekly Recapの場合は空文字列でも可
   /// [tags] タグ（カンマ区切り、オプション）
   /// [country] 国（オプション）
@@ -28,7 +28,6 @@ class QuestionService {
   /// [range] 範囲（オプション）
   /// [limit] 取得する問題数（デフォルト: 10）
   /// [excludeIds] 除外する問題IDのリスト（オプション）
-  /// [year] 年（ニュースクイズ用、オプション）
   /// [date] 日付（Weekly Recap用、YYYY-MM-DD形式、オプション）
   /// [leagueType] リーグタイプ（Weekly Recap用、"j1" または "europe"、オプション）
   Future<List<Question>> getQuestions({
@@ -40,7 +39,6 @@ class QuestionService {
     String? range,
     int? limit,
     List<String>? excludeIds,
-    String? year,
     String? date,
     String? leagueType,
   }) async {
@@ -51,15 +49,6 @@ class QuestionService {
         limit: limit,
         date: date,
         leagueType: leagueType,
-      );
-    }
-
-    if (category == AppConstants.categoryNews) {
-      return await _getNewsQuestions(
-        difficulty: difficulty,
-        year: year,
-        region: region,
-        limit: limit,
       );
     }
 
@@ -227,29 +216,5 @@ class QuestionService {
     selectedQuestions.shuffle();
     
     return selectedQuestions.take(totalLimit).toList();
-  }
-
-  /// ニュースクイズ問題を取得
-  Future<List<Question>> _getNewsQuestions({
-    required String difficulty,
-    String? year,
-    String? region,
-    int? limit,
-  }) async {
-    // 年が指定されていない場合は現在の年を使用
-    final targetYear = year ?? DateTime.now().year.toString();
-
-    final questions = await _remoteDataService.fetchNewsQuestions(
-      year: targetYear,
-      region: region,
-      difficulty: difficulty,
-    );
-
-    // ランダムにシャッフル
-    questions.shuffle();
-
-    // 指定された数だけ返す
-    final resultLimit = limit ?? AppConstants.defaultQuestionsPerQuiz;
-    return questions.take(resultLimit).toList();
   }
 }

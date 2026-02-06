@@ -11,8 +11,6 @@ class CategoryDifficultyUtils {
         return '歴史クイズ';
       case AppConstants.categoryTeams:
         return 'チームクイズ';
-      case AppConstants.categoryNews:
-        return 'ニュースクイズ';
       case AppConstants.categoryMatchRecap:
         return 'Monday Match Recap';
       default:

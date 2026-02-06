@@ -117,39 +117,6 @@ class RemoteDataService {
     return result;
   }
 
-  /// ニュースクイズ用の問題を取得
-  /// 
-  /// [year] 年（例: "2025"）
-  /// [region] 地域（"domestic" または "world"）
-  /// [difficulty] 難易度（オプション）
-  Future<List<Question>> fetchNewsQuestions({
-    required String year,
-    String? region,
-    String? difficulty,
-  }) async {
-    // ファイルパスを構築
-    String filePath;
-    if (region != null) {
-      filePath = '${AppConstants.newsDataPath}/$year/$region.json';
-    } else {
-      filePath = '${AppConstants.newsDataPath}/$year/all.json';
-    }
-
-    final url = _buildGitHubRawUrl(filePath);
-    final data = await _fetchFromGitHubRaw(url);
-
-    List<Question> questions = _parseQuestionsFromJson(data);
-
-    // 難易度でフィルタリング
-    if (difficulty != null && difficulty.isNotEmpty) {
-      questions = questions
-          .where((q) => q.difficulty == difficulty)
-          .toList();
-    }
-
-    return questions;
-  }
-
   /// JSONデータからQuestionリストをパース
   List<Question> _parseQuestionsFromJson(Map<String, dynamic> json, {String? date}) {
     final questionsJson = json['questions'] as List<dynamic>?;

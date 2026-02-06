@@ -31,8 +31,6 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
   String? _selectedRegion;
   String? _selectedCountry;
   String? _selectedRange;
-  String? _selectedNewsRegion; // ニュースクイズ用の地域
-  String? _selectedYear; // ニュースクイズ用の年
   String? _selectedLeagueType; // Weekly Recap用のリーグタイプ
 
   @override
@@ -87,14 +85,6 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
                   _buildCountrySelector(),
                   const SizedBox(height: 24),
                   _buildRangeSelector(),
-                  const SizedBox(height: 40),
-                ],
-
-                // ニュースクイズ: 地域選択と年選択
-                if (widget.category == AppConstants.categoryNews) ...[
-                  _buildNewsRegionSelector(),
-                  const SizedBox(height: 24),
-                  _buildYearSelector(),
                   const SizedBox(height: 40),
                 ],
 
@@ -858,43 +848,6 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
     );
   }
 
-  Widget _buildNewsRegionSelector() {
-    return _buildSectionSelector(
-      icon: Icons.public,
-      title: '地域',
-      children: [
-        _buildChip('指定なし', '', _selectedNewsRegion,
-            (value) => setState(() => _selectedNewsRegion = value)),
-        _buildChip('国内', AppConstants.regionDomestic, _selectedNewsRegion,
-            (value) => setState(() => _selectedNewsRegion = value)),
-        _buildChip('世界', AppConstants.regionWorld, _selectedNewsRegion,
-            (value) => setState(() => _selectedNewsRegion = value)),
-      ],
-    );
-  }
-
-  Widget _buildYearSelector() {
-    final currentYear = DateTime.now().year;
-    final years = List.generate(6, (index) => (currentYear - index).toString());
-
-    return _buildSectionSelector(
-      icon: Icons.calendar_today,
-      title: '年',
-      children: [
-        _buildChip('指定なし', '', _selectedYear,
-            (value) => setState(() => _selectedYear = value)),
-        ...years.map((year) {
-          return _buildChip(
-            year,
-            year,
-            _selectedYear,
-            (value) => setState(() => _selectedYear = value),
-          );
-        }),
-      ],
-    );
-  }
-
   Widget _buildLeagueTypeSelector() {
     return _buildSectionSelector(
       icon: Icons.sports_soccer,
@@ -934,10 +887,6 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           _selectedRange!.isNotEmpty;
     }
 
-    if (widget.category == AppConstants.categoryNews) {
-      return _selectedDifficulty != null && _selectedDifficulty!.isNotEmpty;
-    }
-
     return false;
   }
 
@@ -975,10 +924,6 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           'country': _selectedCountry!,
         if (_selectedRange != null && _selectedRange!.isNotEmpty)
           'range': _selectedRange!,
-        if (_selectedNewsRegion != null && _selectedNewsRegion!.isNotEmpty)
-          'region': _selectedNewsRegion!,
-        if (_selectedYear != null && _selectedYear!.isNotEmpty)
-          'year': _selectedYear!,
         if (_selectedLeagueType != null && _selectedLeagueType!.isNotEmpty)
           'leagueType': _selectedLeagueType!,
       },

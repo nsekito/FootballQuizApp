@@ -15,6 +15,7 @@ import '../widgets/responsive_container.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../providers/ad_provider.dart';
+import '../providers/notification_provider.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -1174,12 +1175,42 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Future<void> _syncWeeklyRecapData(WidgetRef ref) async {
     try {
       final recapDataService = ref.read(recapDataServiceProvider);
-      await recapDataService.syncWeeklyRecapToDatabase();
+      final syncedCount = await recapDataService.syncWeeklyRecapToDatabase();
+      
+      // 新しいデータが同期された場合、通知を送信
+      if (syncedCount > 0) {
+        final notificationService = ref.read(notificationServiceProvider);
+        final latestMonday = _getLatestMonday();
+        
+        // 通知権限を確認してから送信
+        final hasPermission = await notificationService.isPermissionGranted();
+        if (hasPermission) {
+          // J1とヨーロッパの両方のデータがある場合は、両方の通知を送信
+          // ただし、同じ日付の通知は1回だけ送信される（NotificationService内で制御）
+          await notificationService.showWeeklyRecapNotification(
+            date: latestMonday,
+            leagueType: 'j1',
+          );
+          await notificationService.showWeeklyRecapNotification(
+            date: latestMonday,
+            leagueType: 'europe',
+          );
+        }
+      }
     } catch (e) {
       // エラーは無視（ネットワークエラーなどは正常）
       // デバッグ時のみログ出力
       debugPrint('Weekly Recap自動同期エラー: $e');
     }
+  }
+
+  /// 最新の月曜日の日付を取得（YYYY-MM-DD形式）
+  String _getLatestMonday() {
+    final now = DateTime.now();
+    final weekday = now.weekday;
+    final daysFromMonday = weekday == 7 ? 0 : weekday - 1;
+    final monday = now.subtract(Duration(days: daysFromMonday));
+    return '${monday.year}-${monday.month.toString().padLeft(2, '0')}-${monday.day.toString().padLeft(2, '0')}';
   }
 
   /// 日付をフォーマット（例: "2月10日（月）"）

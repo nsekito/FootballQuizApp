@@ -13,7 +13,6 @@ class AppColors {
   static const categoryRules = Color(0xFFE3F2FD); // 淡い青
   static const categoryHistory = Color(0xFFFFF9E6); // 淡い黄色
   static const categoryTeam = Color(0xFFF3E5F5); // 淡い紫
-  static const categoryNews = Color(0xFFFFF3E0); // 淡いオレンジ
 
   // 難易度別カラー
   static const difficultyEasy = Color(0xFF81C784); // 明るい緑

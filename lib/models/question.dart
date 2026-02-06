@@ -6,7 +6,7 @@ class Question {
   final int answerIndex; // 正解インデックス
   final String explanation; // 解説
   final String? trivia; // 小ネタ・豆知識
-  final String category; // rules, history, teams, match_recap, news
+  final String category; // rules, history, teams, match_recap
   final String difficulty; // easy, normal, hard, extreme
   final String tags; // 国名、リーグ名、年度など検索用タグ
   final String? referenceDate; // 対象年月（YYYYまたはYYYY-MM形式、オプション）

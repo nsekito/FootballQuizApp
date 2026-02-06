@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'providers/router_provider.dart';
 import 'constants/app_colors.dart';
 import 'services/ad_service.dart';
+import 'services/notification_service.dart';
 
 // 条件付きインポート: デスクトッププラットフォームのみ（Android/iOSではスタブを使用）
 import 'sqflite_ffi_stub.dart'
@@ -47,6 +48,19 @@ void main() async {
     }
   }
   
+  // 通知サービスを初期化（Webプラットフォームではスキップ）
+  if (!kIsWeb) {
+    try {
+      final notificationService = NotificationService();
+      await notificationService.initialize();
+      
+      // 通知タップ時の処理を設定
+      // アプリ起動時に通知から起動された場合の処理は、SoccerQuizMasterApp内で処理
+    } catch (e) {
+      debugPrint('通知サービスの初期化に失敗しました（アプリは正常に動作します）: $e');
+    }
+  }
+  
   runApp(
     const ProviderScope(
       child: SoccerQuizMasterApp(),
@@ -54,11 +68,44 @@ void main() async {
   );
 }
 
-class SoccerQuizMasterApp extends ConsumerWidget {
+class SoccerQuizMasterApp extends ConsumerStatefulWidget {
   const SoccerQuizMasterApp({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<SoccerQuizMasterApp> createState() => _SoccerQuizMasterAppState();
+}
+
+class _SoccerQuizMasterAppState extends ConsumerState<SoccerQuizMasterApp> {
+  @override
+  void initState() {
+    super.initState();
+    
+    // 通知タップ時の処理を設定（アプリ起動時）
+    if (!kIsWeb) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _handleNotificationTap();
+      });
+    }
+  }
+
+  /// 通知タップ時の処理
+  void _handleNotificationTap() {
+    if (kIsWeb) return;
+    
+    final notificationService = NotificationService();
+    final payload = notificationService.getPendingPayload();
+    
+    if (payload != null && payload.isNotEmpty) {
+      // ルーターが準備できたら遷移
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        final router = ref.read(routerProvider);
+        router.go(payload);
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final router = ref.watch(routerProvider);
 
     return MaterialApp.router(

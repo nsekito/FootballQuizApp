@@ -22,7 +22,6 @@ class QuizScreen extends ConsumerStatefulWidget {
   final String country;
   final String region;
   final String range;
-  final String? year; // ニュースクイズ用
   final String? date; // Weekly Recap用（YYYY-MM-DD形式）
   final String? leagueType; // Weekly Recap用（"j1" または "europe"）
 
@@ -33,7 +32,6 @@ class QuizScreen extends ConsumerStatefulWidget {
     this.country = '',
     this.region = '',
     this.range = '',
-    this.year,
     this.date,
     this.leagueType,
   });
@@ -80,7 +78,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         country: widget.country.isNotEmpty ? widget.country : null,
         region: widget.region.isNotEmpty ? widget.region : null,
         range: widget.range.isNotEmpty ? widget.range : null,
-        year: widget.year,
         date: widget.date,
         leagueType: widget.leagueType,
         limit: AppConstants.defaultQuestionsPerQuiz,

@@ -32,7 +32,6 @@ class AppConstants {
   static const String categoryHistory = 'history';
   static const String categoryTeams = 'teams';
   static const String categoryMatchRecap = 'match_recap';
-  static const String categoryNews = 'news';
 
   // 難易度
   static const String difficultyEasy = 'easy';
@@ -49,14 +48,9 @@ class AppConstants {
 
   // リモートデータのパス
   static const String weeklyRecapDataPath = 'data/weekly_recap';
-  static const String newsDataPath = 'data/news';
 
   // タイムアウト設定（秒）
   static const int remoteDataTimeoutSeconds = 30;
-
-  // ニュースクイズフィルタ
-  static const String regionDomestic = 'domestic';
-  static const String regionWorld = 'world';
 
   // Weekly Recap リーグタイプ
   static const String leagueTypeJ1 = 'j1';
