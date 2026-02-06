@@ -14,6 +14,7 @@ import '../models/promotion_exam.dart';
 import '../widgets/responsive_container.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/banner_ad_widget.dart';
+import '../providers/ad_provider.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -24,6 +25,8 @@ class HomeScreen extends ConsumerStatefulWidget {
 
 class _HomeScreenState extends ConsumerState<HomeScreen> {
   bool _hasSyncedRecap = false;
+  bool _isLoadingAd = false; // 広告読み込み中かどうか
+  bool _isAdReady = false; // 広告が読み込まれているかどうか
 
   @override
   void initState() {
@@ -35,16 +38,155 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         _syncWeeklyRecapData(ref);
       }
     });
+    // 広告を事前に読み込む
+    _loadRewardedAd();
   }
 
-  Future<Map<String, dynamic>> _getMatchDayStatus() async {
+  /// 今週の月曜日の日付を取得
+  DateTime _getWeekStartDate(DateTime date) {
+    final weekday = date.weekday;
+    final daysFromMonday = weekday == 7 ? 0 : weekday - 1;
+    return date.subtract(Duration(days: daysFromMonday));
+  }
+
+  /// 今週の日曜日の日付を取得
+  DateTime _getWeekEndDate(DateTime date) {
+    final weekStart = _getWeekStartDate(date);
+    return weekStart.add(const Duration(days: 6));
+  }
+
+  /// 来週の月曜日の日付を取得
+  DateTime _getNextWeekStartDate(DateTime date) {
+    final weekStart = _getWeekStartDate(date);
+    return weekStart.add(const Duration(days: 7));
+  }
+
+  /// 次回プレイ可能日までの残り日数を取得
+  int _getDaysUntilNextWeek(DateTime date) {
+    final nextWeekStart = _getNextWeekStartDate(date);
+    final now = DateTime.now();
+    final difference = nextWeekStart.difference(now);
+    return difference.inDays;
+  }
+
+  /// MATCH DAYの詳細なステータス情報を取得
+  Future<Map<String, dynamic>> _getMatchDayDetailedStatus() async {
     final databaseService = ref.read(databaseServiceProvider);
     final canPlay = await databaseService.canPlayMatchDay();
     final playCount = await databaseService.getMatchDayPlayCount();
+    final now = DateTime.now();
+    final weekStart = _getWeekStartDate(now);
+    final weekEnd = _getWeekEndDate(now);
+    final nextWeekStart = _getNextWeekStartDate(now);
+    final daysUntilNextWeek = _getDaysUntilNextWeek(now);
+    final remainingPlays = 4 - playCount; // 最大4回（無料1回 + 広告視聴3回）
+    
     return {
       'canPlay': canPlay,
       'playCount': playCount,
+      'remainingPlays': remainingPlays,
+      'weekStart': weekStart,
+      'weekEnd': weekEnd,
+      'nextWeekStart': nextWeekStart,
+      'daysUntilNextWeek': daysUntilNextWeek,
+      'isFreePlay': playCount == 0,
+      'isMaxReached': playCount >= 4,
     };
+  }
+
+
+  /// リワード広告を読み込む
+  Future<void> _loadRewardedAd() async {
+    setState(() {
+      _isLoadingAd = true;
+    });
+    
+    final adService = ref.read(adServiceProvider);
+    await adService.loadRewardedAd(
+      onRewarded: (rewardAmount, rewardType) {
+        // 広告視聴完了時の処理は_showRewardedAdForMatchDayで行う
+      },
+      onError: (error) {
+        debugPrint('リワード広告の読み込みに失敗しました: $error');
+        if (mounted) {
+          setState(() {
+            _isLoadingAd = false;
+            _isAdReady = false;
+          });
+        }
+      },
+    );
+    
+    if (mounted) {
+      setState(() {
+        _isLoadingAd = false;
+        _isAdReady = adService.isRewardedAdReady;
+      });
+    }
+  }
+
+  /// MATCH DAY用のリワード広告を表示する
+  /// 
+  /// 広告視聴完了後にプレイ回数を記録し、MATCH DAYの設定画面に遷移します。
+  Future<void> _showRewardedAdForMatchDay(BuildContext context) async {
+    if (_isLoadingAd) return;
+    
+    final adService = ref.read(adServiceProvider);
+    
+    // 広告が読み込まれていない場合、読み込みを試みる
+    if (!adService.isRewardedAdReady) {
+      await _loadRewardedAd();
+      if (!adService.isRewardedAdReady) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('広告の読み込みに失敗しました。しばらくしてから再度お試しください。'),
+              backgroundColor: Colors.orange,
+              duration: Duration(seconds: 3),
+            ),
+          );
+        }
+        return;
+      }
+    }
+    
+    final success = await adService.showRewardedAd(
+      onRewarded: (rewardAmount, rewardType) async {
+        // 広告視聴完了後、プレイ回数を記録
+        final databaseService = ref.read(databaseServiceProvider);
+        await databaseService.recordMatchDayPlay();
+        
+        if (mounted) {
+          // MATCH DAYの設定画面に遷移
+          context.push('/configuration?category=${AppConstants.categoryMatchRecap}');
+          
+          // 次の広告を事前に読み込む
+          _loadRewardedAd();
+        }
+      },
+      onError: (error) {
+        debugPrint('リワード広告の表示に失敗しました: $error');
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: const Text('広告の表示に失敗しました'),
+              backgroundColor: Colors.red.shade700,
+              duration: const Duration(seconds: 3),
+            ),
+          );
+        }
+      },
+    );
+    
+    if (!success && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('広告を表示できませんでした。しばらくしてから再度お試しください。'),
+          backgroundColor: Colors.orange,
+          duration: Duration(seconds: 3),
+        ),
+      );
+    }
   }
 
   Future<void> _handleMatchDayTap(BuildContext context) async {
@@ -71,9 +213,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       context.push('/configuration?category=${AppConstants.categoryMatchRecap}');
     } else {
       // 広告視聴で追加チャレンジ
-      // TODO: 広告視聴の実装
-      // 現在は広告視聴なしでプレイ可能
-      context.push('/configuration?category=${AppConstants.categoryMatchRecap}');
+      await _showRewardedAdForMatchDay(context);
     }
   }
 
@@ -213,11 +353,20 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   Widget _buildFeaturedCard(BuildContext context) {
     return FutureBuilder<Map<String, dynamic>>(
-      future: _getMatchDayStatus(),
+      future: _getMatchDayDetailedStatus(),
       builder: (context, snapshot) {
-        final canPlay = snapshot.data?['canPlay'] ?? true;
-        final playCount = snapshot.data?['playCount'] ?? 0;
-        final isFreePlay = playCount == 0;
+        if (!snapshot.hasData) {
+          return const SizedBox.shrink();
+        }
+        
+        final data = snapshot.data!;
+        final canPlay = data['canPlay'] as bool;
+        final playCount = data['playCount'] as int;
+        final remainingPlays = data['remainingPlays'] as int;
+        final daysUntilNextWeek = data['daysUntilNextWeek'] as int;
+        final nextWeekStart = data['nextWeekStart'] as DateTime;
+        final isFreePlay = data['isFreePlay'] as bool;
+        final isMaxReached = data['isMaxReached'] as bool;
         
         return GestureDetector(
           onTap: canPlay ? () => _handleMatchDayTap(context) : null,
@@ -297,43 +446,159 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         color: Colors.white.withValues(alpha: 0.9),
                       ),
                     ),
-                    if (snapshot.hasData) ...[
-                      const SizedBox(height: 8),
+                    const SizedBox(height: 12),
+                    // プレイ回数の進捗表示
+                    _buildPlayCountProgress(playCount, remainingPlays, isFreePlay),
+                    const SizedBox(height: 8),
+                    // 状態に応じた情報表示
+                    if (isMaxReached) ...[
+                      // 上限到達時
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Colors.orange.shade400.withValues(alpha: 0.2),
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: Colors.orange.shade300,
+                            width: 1,
+                          ),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.info_outline,
+                                  color: Colors.orange.shade200,
+                                  size: 16,
+                                ),
+                                const SizedBox(width: 6),
+                                Text(
+                                  '今週のプレイ回数が上限に達しています',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 8),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.calendar_today,
+                                  color: Colors.white.withValues(alpha: 0.8),
+                                  size: 14,
+                                ),
+                                const SizedBox(width: 6),
+                                Text(
+                                  '次回プレイ可能: ${_formatDate(nextWeekStart)}',
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.white.withValues(alpha: 0.9),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            if (daysUntilNextWeek > 0) ...[
+                              const SizedBox(height: 4),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.access_time,
+                                    color: Colors.white.withValues(alpha: 0.8),
+                                    size: 14,
+                                  ),
+                                  const SizedBox(width: 6),
+                                  Text(
+                                    'あと${daysUntilNextWeek}日',
+                                    style: TextStyle(
+                                      fontSize: 11,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.white.withValues(alpha: 0.9),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
+                    ] else ...[
+                      // プレイ可能時
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                         decoration: BoxDecoration(
                           color: Colors.white.withValues(alpha: 0.2),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(
+                                  isFreePlay ? Icons.star : Icons.play_circle_outline,
+                                  color: Colors.white,
+                                  size: 16,
+                                ),
+                                const SizedBox(width: 6),
+                                Text(
+                                  isFreePlay 
+                                      ? '無料でプレイ可能'
+                                      : '広告視聴で追加チャレンジ',
+                                  style: const TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            if (!isFreePlay) ...[
+                              const SizedBox(height: 4),
+                              Text(
+                                '残り回数: ${remainingPlays}回',
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white.withValues(alpha: 0.9),
+                                ),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      // 報酬情報
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.amber.shade400.withValues(alpha: 0.2),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Icon(
-                              isFreePlay ? Icons.star : Icons.play_circle_outline,
-                              color: Colors.white,
+                              Icons.emoji_events,
+                              color: Colors.amber.shade200,
                               size: 16,
                             ),
                             const SizedBox(width: 6),
                             Text(
-                              isFreePlay 
-                                  ? '無料でプレイ可能'
-                                  : '広告視聴で追加チャレンジ (${playCount}/3)',
-                              style: const TextStyle(
-                                fontSize: 12,
+                              '報酬: EXP ×${AppConstants.matchDayExpMultiplier.toInt()}倍、ポイント ×${AppConstants.matchDayPointsMultiplier.toInt()}倍',
+                              style: TextStyle(
+                                fontSize: 11,
                                 fontWeight: FontWeight.w600,
                                 color: Colors.white,
                               ),
                             ),
                           ],
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        '報酬: ${AppConstants.matchDayExpMultiplier.toInt()}倍',
-                        style: TextStyle(
-                          fontSize: 11,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white.withValues(alpha: 0.8),
                         ),
                       ),
                     ],
@@ -890,73 +1155,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     );
   }
 
-
-  Widget _buildBottomNav(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.9),
-        border: const Border(
-          top: BorderSide(color: AppColors.slate100, width: 1),
-        ),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          _buildNavItem(Icons.home, 'Home', true),
-          _buildNavItem(Icons.leaderboard, 'Rank', false),
-          Container(
-            margin: const EdgeInsets.only(bottom: 40),
-            width: 56,
-            height: 56,
-            decoration: BoxDecoration(
-              color: AppColors.techBlue,
-              borderRadius: const BorderRadius.all(Radius.circular(16)),
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.techBlue.withValues(alpha: 0.3),
-                  blurRadius: 12,
-                  offset: const Offset(0, 4),
-                ),
-              ],
-            ),
-            child: const Icon(
-              Icons.add,
-              color: Colors.white,
-              size: 28,
-            ),
-          ),
-          _buildNavItem(Icons.shopping_bag, 'Shop', false),
-          _buildNavItem(Icons.settings, 'Profile', false),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildNavItem(IconData icon, String label, bool isActive) {
-    return GestureDetector(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            icon,
-            color: isActive ? AppColors.techBlue : AppColors.slate500,
-            size: 24,
-          ),
-          const SizedBox(height: 4),
-          Text(
-            label,
-            style: TextStyle(
-              fontSize: 10,
-              fontWeight: FontWeight.w700,
-              color: isActive ? AppColors.techBlue : AppColors.slate500,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
   int _calculateLevel(int totalExp) {
     // 簡単なレベル計算（500expごとにレベルアップ）
     return (totalExp / 500).floor() + 1;
@@ -982,6 +1180,85 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       // デバッグ時のみログ出力
       debugPrint('Weekly Recap自動同期エラー: $e');
     }
+  }
+
+  /// 日付をフォーマット（例: "2月10日（月）"）
+  String _formatDate(DateTime date) {
+    final weekdays = ['月', '火', '水', '木', '金', '土', '日'];
+    return '${date.month}月${date.day}日（${weekdays[date.weekday - 1]}）';
+  }
+
+  /// プレイ回数の進捗表示ウィジェット
+  Widget _buildPlayCountProgress(int playCount, int remainingPlays, bool isFreePlay) {
+    const maxPlays = 4; // 無料1回 + 広告視聴3回
+    final progress = playCount / maxPlays;
+    
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'プレイ回数: $playCount/$maxPlays',
+              style: const TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
+              ),
+            ),
+            if (remainingPlays > 0)
+              Text(
+                '残り$remainingPlays回',
+                style: TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white.withValues(alpha: 0.9),
+                ),
+              ),
+          ],
+        ),
+        const SizedBox(height: 6),
+        // 進捗バー
+        Container(
+          height: 8,
+          decoration: BoxDecoration(
+            color: Colors.white.withValues(alpha: 0.2),
+            borderRadius: BorderRadius.circular(4),
+          ),
+          child: FractionallySizedBox(
+            alignment: Alignment.centerLeft,
+            widthFactor: progress,
+            child: Container(
+              decoration: BoxDecoration(
+                color: isFreePlay ? Colors.green.shade400 : Colors.amber.shade400,
+                borderRadius: BorderRadius.circular(4),
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(height: 6),
+        // プレイ回数のインジケーター（4つのドット）
+        Row(
+          children: List.generate(maxPlays, (index) {
+            final isUsed = index < playCount;
+            final isFree = index == 0;
+            return Expanded(
+              child: Container(
+                margin: EdgeInsets.only(right: index < maxPlays - 1 ? 4 : 0),
+                height: 6,
+                decoration: BoxDecoration(
+                  color: isUsed
+                      ? (isFree ? Colors.green.shade400 : Colors.amber.shade400)
+                      : Colors.white.withValues(alpha: 0.3),
+                  borderRadius: BorderRadius.circular(3),
+                ),
+              ),
+            );
+          }),
+        ),
+      ],
+    );
   }
 }
 
