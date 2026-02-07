@@ -15,12 +15,6 @@ from config import WEEKLY_RECAP_OUTPUT_DIR
 PROJECT_ROOT = Path(__file__).parent.parent
 
 
-def get_yesterday_date() -> str:
-    """昨日の日付をYYYY-MM-DD形式で取得"""
-    yesterday = datetime.now() - timedelta(days=1)
-    return yesterday.strftime('%Y-%m-%d')
-
-
 def get_monday_date() -> str:
     """最新の月曜日の日付をYYYY-MM-DD形式で取得
     
@@ -34,9 +28,47 @@ def get_monday_date() -> str:
     return monday.strftime('%Y-%m-%d')
 
 
-def generate_question_id(date: str, league_type: str, index: int) -> str:
-    """問題IDを生成"""
-    return f"match_recap_{date.replace('-', '_')}_{league_type}_{index+1:03d}"
+def calculate_weekly_meta_params(date: str) -> dict:
+    """weeklyMetaパラメータを計算
+    
+    Args:
+        date: 対象日付（YYYY-MM-DD形式）
+    
+    Returns:
+        weeklyMetaパラメータの辞書
+    """
+    date_obj = datetime.strptime(date, '%Y-%m-%d')
+    
+    # publishDate: 月曜日の日付（dateが月曜日と仮定）
+    publish_date = date
+    
+    # expiryDate: publishDate + 7日
+    expiry_date_obj = date_obj + timedelta(days=7)
+    expiry_date = expiry_date_obj.strftime('%Y-%m-%d')
+    
+    # season: YYYY-YY形式（例: 2025-26）
+    # 8月開始のシーズンを想定（8月〜7月が1シーズン）
+    year = date_obj.year
+    month = date_obj.month
+    
+    # 8月以降は同じシーズン、1-7月は前年から始まるシーズン
+    if month >= 8:
+        # 8月〜12月: YYYY-YY形式（例: 2025年8月 → 2025-26）
+        season = f"{year}-{str(year + 1)[-2:]}"
+    else:
+        # 1月〜7月: YYYY-YY形式（例: 2026年2月 → 2025-26）
+        season = f"{year - 1}-{str(year)[-2:]}"
+    
+    # matchweek: 現時点では計算ロジックが不明のため、Noneとする
+    # TODO: リーグごとの節数計算ロジックを実装する必要がある
+    matchweek = None
+    
+    return {
+        'matchweek': matchweek,
+        'publish_date': publish_date,
+        'expiry_date': expiry_date,
+        'season': season
+    }
 
 
 def save_weekly_recap_json(
@@ -119,51 +151,29 @@ def main():
             output_dir = PROJECT_ROOT / WEEKLY_RECAP_OUTPUT_DIR
     print(f"出力ディレクトリ: {output_dir}")
     
+    # weeklyMetaパラメータの計算
+    weekly_meta_params = calculate_weekly_meta_params(target_date)
+    
     saved_files = []
     
-    # J1リーグ問題生成（easy 3問、normal 5問、hard 2問の計10問）
+    # J1リーグ問題生成（30問一括生成）
     if not args.europe_only:
         print("\n" + "-" * 60)
         print("J1リーグ問題生成中...")
         print("-" * 60)
         try:
-            j1_questions = []
-            
-            # easy 3問生成
-            print("Easy問題生成中...")
-            easy_questions = generate_weekly_recap_questions_batch(
-                date=target_date,
-                league_type="j1",
-                count=3,
-                difficulty="easy"
+            print("30問を一括生成中...")
+            j1_questions = generate_weekly_recap_questions_batch(
+                region="japan",
+                reference_date=target_date,
+                matchweek=weekly_meta_params['matchweek'],
+                publish_date=weekly_meta_params['publish_date'],
+                expiry_date=weekly_meta_params['expiry_date'],
+                season=weekly_meta_params['season'],
+                start_number=1
             )
-            j1_questions.extend(easy_questions)
             
-            # normal 5問生成
-            print("Normal問題生成中...")
-            normal_questions = generate_weekly_recap_questions_batch(
-                date=target_date,
-                league_type="j1",
-                count=5,
-                difficulty="normal"
-            )
-            j1_questions.extend(normal_questions)
-            
-            # hard 2問生成
-            print("Hard問題生成中...")
-            hard_questions = generate_weekly_recap_questions_batch(
-                date=target_date,
-                league_type="j1",
-                count=2,
-                difficulty="hard"
-            )
-            j1_questions.extend(hard_questions)
-            
-            # 問題IDを追加
-            for i, question in enumerate(j1_questions):
-                question['id'] = generate_question_id(target_date, 'j1', i)
-            
-            # answerIndexのバランス調整
+            # answerIndexのバランス調整（プロンプトで0に固定されているが、バランス調整を実行）
             j1_questions = balance_answer_indices(j1_questions)
             
             # 分布を確認して表示
@@ -182,6 +192,13 @@ def main():
                     difficulty_counts[diff] += 1
             print(f"難易度分布: easy: {difficulty_counts['easy']}, normal: {difficulty_counts['normal']}, hard: {difficulty_counts['hard']}")
             
+            # カテゴリ分布を確認して表示
+            category_counts = {}
+            for q in j1_questions:
+                cat_id = q.get('categoryId', 'unknown')
+                category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
+            print(f"カテゴリ分布: {category_counts}")
+            
             # J1リーグの問題を個別のファイルに保存
             if j1_questions:
                 filepath = save_weekly_recap_json(j1_questions, target_date, "j1", output_dir)
@@ -192,49 +209,24 @@ def main():
             if args.j1_only:
                 raise
     
-    # ヨーロッパサッカー問題生成（easy 7問、normal 2問、hard 1問の計10問）
+    # ヨーロッパサッカー問題生成（30問一括生成）
     if not args.j1_only:
         print("\n" + "-" * 60)
         print("ヨーロッパサッカー問題生成中...")
         print("-" * 60)
         try:
-            europe_questions = []
-            
-            # easy 7問生成
-            print("Easy問題生成中...")
-            easy_questions = generate_weekly_recap_questions_batch(
-                date=target_date,
-                league_type="europe",
-                count=7,
-                difficulty="easy"
+            print("30問を一括生成中...")
+            europe_questions = generate_weekly_recap_questions_batch(
+                region="world",
+                reference_date=target_date,
+                matchweek=weekly_meta_params['matchweek'],
+                publish_date=weekly_meta_params['publish_date'],
+                expiry_date=weekly_meta_params['expiry_date'],
+                season=weekly_meta_params['season'],
+                start_number=1
             )
-            europe_questions.extend(easy_questions)
             
-            # normal 2問生成
-            print("Normal問題生成中...")
-            normal_questions = generate_weekly_recap_questions_batch(
-                date=target_date,
-                league_type="europe",
-                count=2,
-                difficulty="normal"
-            )
-            europe_questions.extend(normal_questions)
-            
-            # hard 1問生成
-            print("Hard問題生成中...")
-            hard_questions = generate_weekly_recap_questions_batch(
-                date=target_date,
-                league_type="europe",
-                count=1,
-                difficulty="hard"
-            )
-            europe_questions.extend(hard_questions)
-            
-            # 問題IDを追加
-            for i, question in enumerate(europe_questions):
-                question['id'] = generate_question_id(target_date, 'europe', i)
-            
-            # answerIndexのバランス調整
+            # answerIndexのバランス調整（プロンプトで0に固定されているが、バランス調整を実行）
             europe_questions = balance_answer_indices(europe_questions)
             
             # 分布を確認して表示
@@ -252,6 +244,13 @@ def main():
                 if diff in difficulty_counts:
                     difficulty_counts[diff] += 1
             print(f"難易度分布: easy: {difficulty_counts['easy']}, normal: {difficulty_counts['normal']}, hard: {difficulty_counts['hard']}")
+            
+            # カテゴリ分布を確認して表示
+            category_counts = {}
+            for q in europe_questions:
+                cat_id = q.get('categoryId', 'unknown')
+                category_counts[cat_id] = category_counts.get(cat_id, 0) + 1
+            print(f"カテゴリ分布: {category_counts}")
             
             # ヨーロッパサッカーの問題を個別のファイルに保存
             if europe_questions:

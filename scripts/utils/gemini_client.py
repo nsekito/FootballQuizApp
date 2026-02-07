@@ -32,236 +32,6 @@ MAX_RETRIES = 3  # 最大リトライ回数
 BASE_DELAY = 1  # ベース待機時間（秒）
 
 
-def generate_question(category: str, difficulty: str, tags: str = "", diversity_note: str = "") -> dict:
-    """
-    クイズ問題を1問生成する
-    
-    Args:
-        category: カテゴリ（rules, history, teams）
-        difficulty: 難易度（easy, normal, hard, extreme）
-        tags: タグ（カンマ区切り）
-        diversity_note: 多様性を確保するための追加ノート
-    
-    Returns:
-        生成された問題の辞書
-    """
-    # カテゴリに応じたプロンプトを構築
-    category_prompts = {
-        'rules': 'サッカーのルールに関する問題',
-        'history': 'サッカーの歴史に関する問題',
-        'teams': 'サッカーチームに関する問題',
-    }
-    
-    difficulty_prompts = {
-        'easy': '初心者向けの簡単な問題',
-        'normal': '中級者向けの標準的な問題',
-        'hard': '上級者向けの難しい問題',
-        'extreme': '最上級者向けの非常に難しい問題',
-    }
-    
-    # extreme難易度の場合の特別な指示
-    if difficulty == 'extreme':
-        extreme_note = """
-【EXTREME難易度について（重要）】
-EXTREME難易度の問題は、以下の特徴を持つ問題を作成してください：
-
-1. **情報源について**
-   - Wikipedia情報をメインに使用すること
-   - 一般的なサッカーファンが知らない、非常にマニアックな情報を扱うこと
-   - 身内や関係者しか知らないような情報を問題にすること
-
-2. **情報の性質について**
-   - 不確定情報や噂レベルの情報も含む可能性があることを理解した上で問題を作成すること
-   - 公式に確認されていない情報でも、信頼できる情報源（Wikipedia等）に記載されている場合は使用可能
-   - ただし、明らかに誤情報や根拠のない情報は避けること
-
-3. **問題の難易度**
-   - 一般的なサッカーファンでは知り得ない、非常に専門的でマニアックな知識を問う問題
-   - 選手の私生活、チームの内部事情、歴史的な細かいエピソードなど、深い知識を要求する問題
-
-4. **選手に関する問題の範囲**
-   以下のような選手の詳細情報も問題にしてよい：
-   - 選手の身長
-   - 出身地
-   - 所属していたクラブ（過去の所属クラブを含む）
-   - 幼少期のクラブ
-   - プロ入り前の経歴
-   - 人物像（性格、エピソード、趣味など）
-
-5. **チームに関する問題の範囲**
-   以下のようなチームの詳細情報も問題にしてよい：
-   - スポンサー情報
-   - テレビ番組（チーム関連の番組など）
-   - スローガン
-   - 本社の場所
-"""
-    else:
-        extreme_note = ""
-    
-    prompt = f"""
-以下の条件でサッカーのクイズ問題を1問生成してください。
-
-カテゴリ: {category_prompts.get(category, category)}
-難易度: {difficulty_prompts.get(difficulty, difficulty)}
-タグ: {tags if tags else '指定なし'}
-
-以下のJSON形式で出力してください：
-{{
-  "text": "問題文（4択問題）",
-  "options": ["選択肢1", "選択肢2", "選択肢3", "選択肢4"],
-  "answerIndex": 0,
-  "explanation": "詳しい解説（正解の理由や背景を含む）",
-  "trivia": "豆知識や小ネタ（150文字程度で充実した内容、ユーザーの満足度向上のため）",
-  "referenceDate": "YYYY-MM-DD形式（問題を作成した日付、例: 2026-02-01）"
-}}
-
-【問題作成の基本方針】
-1. **知識・トリビアの習得を目的とする**
-   - ユーザーがサッカー知識や興味深いトリビアを学べる問題を作成すること
-   - 単なる記憶テストではなく、理解を深める問題を目指すこと
-
-2. **明確な正解が1つだけ存在する問題**
-   - 必ず事実に基づいた、明確に1つの正解のみが存在する問題を作成すること
-   - 複数の解釈が可能な曖昧な問題は避けること
-   - 「どちらも正解と取れる」ような選択肢は絶対に含めないこと
-
-3. **ひっかけ問題の禁止**
-   - 言葉のトリックや誤解を誘うようなひっかけ問題は作成しないこと
-   - 問題文は明確で誤解の余地がないようにすること
-   - 選択肢は正確で、正解以外は明確に間違いであること
-
-4. **選択肢の品質**
-   - 4つの選択肢はすべて同じ形式・同じ詳細レベルで作成すること
-   - 正解以外の選択肢は、知識があれば明確に間違いと判断できるものにすること
-   - 選択肢間で意味が重複したり、部分的に正しいものが含まれないようにすること
-
-5. **解説とトリビアの充実**
-   - explanationでは、なぜその答えが正しいかを具体的に説明すること
-   - 関連する背景情報や歴史的経緯も含めること
-   - triviaでは、問題に関連する興味深い豆知識や小ネタを提供すること
-   - triviaは150文字程度（100-200文字の範囲）で充実した内容にすること
-   - 単なる事実の羅列ではなく、読者が「へぇ、そうなんだ！」と思えるような興味深い情報を含めること
-
-6. **問題の多様性と偏りの回避**
-   - 同じテーマやトピックに偏らないよう、幅広い分野から問題を作成すること
-   - ルールクイズの場合: オフサイド、ファウル、イエローカード、レッドカード、スローイン、コーナーキック、PK、延長戦、VARなど、様々なルールに分散させること
-   - 歴史クイズの場合: 年代、大会、選手、チーム、出来事など、様々な観点から問題を作成すること
-   - チームクイズの場合: 様々なチーム、リーグ、選手、スタジアムなどに分散させること
-   - 難易度に応じて、基本的な知識から専門的な知識まで、幅広いレベルの問題を作成すること
-
-【技術的な要件】
-- 必ず4つの選択肢を含めること
-- answerIndexは0-3の整数で、正解の選択肢のインデックス
-- JSONのみを出力し、余計な説明は含めないこと
-- 問題文、選択肢、解説はすべて日本語で記述すること
-
-【referenceDateについて】
-- referenceDateには問題を作成した日付をYYYY-MM-DD形式で必ず記載してください
-- 例: 2026年2月1日に作成した場合は "2026-02-01"
-- 今日の日付を使用してください
-{diversity_note}
-{extreme_note}
-"""
-    
-    # リトライロジック付きでAPI呼び出し
-    for attempt in range(MAX_RETRIES):
-        try:
-            response = client.models.generate_content(
-                model=MODEL_NAME,
-                contents=prompt
-            )
-            # レスポンスからJSONを抽出
-            response_text = response.text.strip()
-            
-            # マークダウンコードブロックからJSONを抽出
-            # ```json ... ``` の形式を探す
-            json_match = re.search(r'```json\s*\n(.*?)\n```', response_text, re.DOTALL)
-            if json_match:
-                # JSONブロックが見つかった場合
-                response_text = json_match.group(1).strip()
-            else:
-                # JSONブロックが見つからない場合、通常の``` ... ```を探す
-                json_match = re.search(r'```\s*\n(.*?)\n```', response_text, re.DOTALL)
-                if json_match:
-                    response_text = json_match.group(1).strip()
-                else:
-                    # コードブロックがない場合、JSONオブジェクトの開始位置を探す
-                    json_start = response_text.find('{')
-                    json_end = response_text.rfind('}') + 1
-                    if json_start != -1 and json_end > json_start:
-                        response_text = response_text[json_start:json_end]
-            
-            # JSONをパース
-            question_data = json.loads(response_text)
-            
-            # 必須フィールドの検証
-            required_fields = ['text', 'options', 'answerIndex', 'explanation']
-            for field in required_fields:
-                if field not in question_data:
-                    raise ValueError(f"必須フィールド '{field}' がありません")
-            
-            # 選択肢が4つあるか確認
-            if len(question_data['options']) != 4:
-                raise ValueError("選択肢は4つである必要があります")
-            
-            # answerIndexが0-3の範囲内か確認
-            if not (0 <= question_data['answerIndex'] <= 3):
-                raise ValueError("answerIndexは0-3の範囲内である必要があります")
-            
-            # APIレート制限対策（少し待機）
-            time.sleep(BASE_DELAY)
-            return question_data
-        
-        except Exception as e:
-            error_str = str(e)
-            
-            # クォータ超過エラー（429）の場合
-            if '429' in error_str or 'quota' in error_str.lower() or 'Quota exceeded' in error_str:
-                # リトライ待機時間を抽出（エラーメッセージから）
-                retry_delay = BASE_DELAY * (2 ** attempt)  # 指数バックオフ
-                
-                # エラーメッセージからretry_delayを抽出を試みる
-                if 'retry in' in error_str.lower() or 'retry_delay' in error_str.lower():
-                    try:
-                        # エラーメッセージから秒数を抽出
-                        import re
-                        match = re.search(r'(\d+\.?\d*)\s*秒', error_str)
-                        if match:
-                            retry_delay = float(match.group(1)) + 1  # 少し余裕を持たせる
-                    except:
-                        pass
-                
-                if attempt < MAX_RETRIES - 1:
-                    print(f"クォータ制限に達しました。{retry_delay:.1f}秒待機して再試行します... (試行 {attempt + 1}/{MAX_RETRIES})")
-                    time.sleep(retry_delay)
-                    continue
-                else:
-                    print(f"エラー: クォータ制限に達しました。しばらく待ってから再実行してください。")
-                    raise Exception(f"APIクォータ制限: {error_str}")
-            
-            # JSON解析エラーの場合
-            elif isinstance(e, json.JSONDecodeError):
-                print(f"JSON解析エラー: {e}")
-                print(f"レスポンス: {response_text}")
-                if attempt < MAX_RETRIES - 1:
-                    print(f"{BASE_DELAY * (attempt + 1)}秒待機して再試行します...")
-                    time.sleep(BASE_DELAY * (attempt + 1))
-                    continue
-                raise
-            
-            # その他のエラー
-            else:
-                if attempt < MAX_RETRIES - 1:
-                    print(f"エラーが発生しました: {e}")
-                    print(f"{BASE_DELAY * (attempt + 1)}秒待機して再試行します...")
-                    time.sleep(BASE_DELAY * (attempt + 1))
-                    continue
-                raise
-    
-    # すべてのリトライが失敗した場合
-    raise Exception("問題生成に失敗しました（最大リトライ回数に達しました）")
-
-
 def balance_answer_indices(questions: list) -> list:
     """
     問題リストのanswerIndexを均等に分散させる
@@ -344,264 +114,255 @@ def balance_answer_indices(questions: list) -> list:
     return balanced_questions
 
 
-def generate_questions_batch(category: str, difficulty: str, count: int, tags: str = "") -> list:
-    """
-    複数のクイズ問題を生成する
-    
-    Args:
-        category: カテゴリ
-        difficulty: 難易度
-        count: 生成する問題数
-        tags: タグ
-    
-    Returns:
-        生成された問題のリスト
-    """
-    import datetime
-    questions = []
-    start_time = datetime.datetime.now()
-    
-    # 既に生成した問題のテーマを記録（重複回避用）
-    generated_themes = []
-    
-    print(f"\n開始時刻: {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"生成予定: {count}問")
-    print("-" * 60)
-    
-    for i in range(count):
-        question_start = datetime.datetime.now()
-        print(f"[{i+1}/{count}] 生成開始: {question_start.strftime('%H:%M:%S')}", end=" ... ")
-        
-        try:
-            # 既に生成した問題のテーマ情報をプロンプトに追加（多様性確保）
-            diversity_note = ""
-            if generated_themes:
-                diversity_note = f"\n\n【重要】既に生成した問題のテーマ（重複を避けること）:\n"
-                diversity_note += "\n".join([f"- {theme}" for theme in generated_themes[-10:]])  # 直近10件のみ
-                diversity_note += "\n上記とは異なるテーマやトピックで問題を作成してください。"
-            
-            question = generate_question(category, difficulty, tags, diversity_note)
-            
-            # 生成された問題のテーマを抽出（問題文の最初の30文字をキーワードとして使用）
-            theme_keyword = question.get('text', '')[:30].strip()
-            generated_themes.append(theme_keyword)
-            
-            questions.append(question)
-            question_end = datetime.datetime.now()
-            elapsed = (question_end - question_start).total_seconds()
-            print(f"完了 ({elapsed:.1f}秒)")
-        except Exception as e:
-            question_end = datetime.datetime.now()
-            elapsed = (question_end - question_start).total_seconds()
-            print(f"失敗 ({elapsed:.1f}秒): {e}")
-            continue
-        
-        # 10問ごとに進捗を表示
-        if (i + 1) % 10 == 0:
-            elapsed_total = (datetime.datetime.now() - start_time).total_seconds()
-            avg_time = elapsed_total / (i + 1)
-            remaining = (count - i - 1) * avg_time
-            print(f"進捗: {i+1}/{count}問完了 | 平均: {avg_time:.1f}秒/問 | 残り時間見積もり: {remaining/60:.1f}分")
-    
-    end_time = datetime.datetime.now()
-    total_elapsed = (end_time - start_time).total_seconds()
-    print("-" * 60)
-    print(f"完了時刻: {end_time.strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"合計時間: {total_elapsed/60:.1f}分 ({total_elapsed:.1f}秒)")
-    print(f"成功: {len(questions)}問 / {count}問")
-    
-    # answerIndexの分布を均等化
-    print("\nanswerIndexの分布を均等化中...")
-    questions = balance_answer_indices(questions)
-    
-    # 分布を確認して表示
-    counts = [0, 0, 0, 0]
-    for q in questions:
-        idx = q.get('answerIndex', 0)
-        if 0 <= idx <= 3:
-            counts[idx] += 1
-    print(f"均等化後の分布: [0]: {counts[0]}, [1]: {counts[1]}, [2]: {counts[2]}, [3]: {counts[3]}")
-    
-    return questions
-
-
 def generate_weekly_recap_questions_batch(
-    date: str,
-    league_type: str,
-    count: int = 10,
-    difficulty: str = "normal"
+    region: str,
+    reference_date: str,
+    matchweek: int = None,
+    publish_date: str = None,
+    expiry_date: str = None,
+    season: str = None,
+    start_number: int = 1
 ) -> list:
     """
-    Grounding機能を使用して試合結果を取得し、クイズ問題を一括生成
+    Grounding機能を使用して最新のサッカー情報を取得し、weeklyクイズ問題を30問一括生成
     
     Args:
-        date: 日付（YYYY-MM-DD形式、例: "2025-01-12"）
-        league_type: "j1" または "europe"
-        count: 生成する問題数（デフォルト: 10）
-        difficulty: 難易度（"easy", "normal", "hard"、デフォルト: "normal"）
+        region: "japan" または "world"
+        reference_date: 参照日（YYYY-MM-DD形式、例: "2026-02-07"）
+        matchweek: 節数（オプション、該当しない場合はNone）
+        publish_date: 公開日（YYYY-MM-DD形式、例: "2026-02-10"）
+        expiry_date: 有効期限（YYYY-MM-DD形式、例: "2026-02-16"）
+        season: シーズン（年、例: "2026"）
+        start_number: IDの開始番号（デフォルト: 1）
     
     Returns:
-        生成された問題のリスト
+        生成された問題のリスト（30問）
     """
-    # リーグタイプに応じた設定
-    if league_type == "j1":
-        league_name = "J1リーグ"
-        tags = "japan,j1,2025"
-        fallback_source = "J1リーグ各チームの公式サイトやニュース"
-    else:  # europe
-        league_name = "ヨーロッパサッカー（プレミアリーグ、ラ・リーガ、ブンデスリーガ、セリエA）"
-        tags = "europe,premier_league,la_liga,bundesliga,serie_a,2025"
-        fallback_source = "各リーグやチームの公式サイト、ニュース"
+    # プロンプトテンプレート
+    prompt_template = """# Weekly サッカークイズ生成プロンプト
+
+あなたはサッカークイズの問題作成の専門家です。
+最新のサッカー情報をWeb検索で収集し、以下のルールとフォーマットに従ってweeklyクイズ問題を30問作成してください。
+
+---
+
+## 基本パラメータ
+
+- region: {region}
+- referenceDate: {referenceDate}
+- matchweek: {matchweek}
+- publishDate: {publishDate}
+- expiryDate: {expiryDate}
+- season: {season}
+- ID採番: w_{startNumber} から連番
+- 作成問題数: 30問
+
+---
+
+## 情報収集ルール
+
+1. まずWeb検索を行い、{referenceDate} を含む直近1週間のサッカー情報を収集する
+2. 検索は以下の優先順で行い、十分な情報が集まるまで複数回検索する
+3. 収集した情報の事実確認を必ず行い、複数ソースで裏取りする
+4. 速報段階で確定していない情報（移籍の噂レベル等）はクイズにしない
+5. 検索で十分な情報が得られなかったカテゴリは、得られたカテゴリに問題数を振り替える
+
+### regionごとの検索キーワード方針
+
+#### japan
+
+- Jリーグ（J1・J2）の試合結果、順位表
+- ルヴァンカップ、天皇杯、ACLの結果
+- Jリーグ公式、スポーツナビ、Football-LAB、ゲキサカ等を参照
+- 日本代表関連のニュース
+- 選手の移籍・契約更新情報
+- クラブの経営・運営に関するニュース
+
+#### world
+
+- プレミアリーグ、ラ・リーガ、セリエA、ブンデスリーガ、リーグ・アンの試合結果
+- UEFAチャンピオンズリーグ、ヨーロッパリーグの結果
+- 海外日本人選手の出場・成績
+- ESPN、BBC Sport、Transfermarkt、UEFA公式等を参照
+- 主要な移籍・契約関連のニュース
+
+---
+
+## カテゴリ一覧
+
+### japan
+
+| categoryId | category | 方向性 |
+|---|---|---|
+| weekly-jp-match | 試合・結果 | 試合結果、スコア、得点者、アシスト、出場選手。試合がない週は代表戦・カップ戦・プレシーズンマッチも対象 |
+| weekly-jp-standings | 順位・スタッツ | 順位表、勝ち点、得点ランキング、個人スタッツ。シーズン外は最終順位や年間表彰・各種アワードも対象 |
+| weekly-jp-player | 選手の動向 | 移籍・契約更新・記録達成・ケガ・復帰・代表選出・海外挑戦 |
+| weekly-jp-club | クラブ・リーグの動向 | 監督交代・新体制・スタジアム・スポンサー・新ユニフォーム・キャンプ・ACL・カップ戦運営 |
+| weekly-jp-buzz | 今週の注目ニュース | VAR・判定・番狂わせ・規約改定・話題になった出来事全般 |
+
+### world
+
+| categoryId | category | 方向性 |
+|---|---|---|
+| weekly-world-match | 試合・結果 | 欧州主要リーグ・CL・ELなどのスコア、勝敗、得点者。試合がない週はプレシーズン・代表戦も対象 |
+| weekly-world-standings | 順位・スタッツ | リーグ順位、得点王争い、CL/EL勝ち抜け状況。シーズン外は最終順位や各種アワードも対象 |
+| weekly-world-player | 選手の動向 | 移籍・移籍金・記録達成・ケガ・復帰・代表関連 |
+| weekly-world-japanese | 海外日本人選手 | 日本人選手の出場・ゴール・アシスト・移籍・契約更新・新天地での活躍 |
+| weekly-world-buzz | 今週の注目ニュース | 監督解任・番狂わせ・VAR騒動・FIFA/UEFA決定事項・大会抽選・W杯関連 |
+
+---
+
+## 問題数の配分
+
+30問を5カテゴリに配分する。検索で得られた情報量に応じて柔軟に調整する。
+
+| カテゴリ | 基本配分 | 調整方針 |
+|---|---|---|
+| match | 10問 | 試合が少ない週・シーズン外は減らし他に振り替える |
+| standings | 6問 | リーグが動いていない時期はアワード・年間成績系で補う |
+| player / japanese | 5問 | japanはplayer、worldはjapanese。移籍期間は増やしてよい |
+| club / player | 5問 | japanはclub、worldはplayer |
+| buzz | 4問 | 調整枠。他カテゴリの過不足を吸収する |
+
+**配分ルール:**
+
+- 検索結果を見て、情報が豊富なカテゴリに多く配分してよい
+- ただし1カテゴリ最低2問は確保する
+- 1カテゴリ最大12問を超えない
+- 合計は必ず30問にする
+
+---
+
+## 難易度の配分
+
+| difficulty | 問題数 | 方針 |
+|---|---|---|
+| easy | 12問 | ニュースの見出しレベルで答えられる。「〇〇 vs △△の勝者は？」のような基本問題 |
+| normal | 12問 | 試合を観たり記事を読んでいれば答えられる。「得点者は誰？」「何分のゴール？」レベル |
+| hard | 6問 | 細かいスタッツや経緯まで追っていないと答えられない。「通算何得点目？」「前回達成したのはいつ？」レベル |
+
+各カテゴリ内でeasy/normal/hardが偏らないように分散させる。
+
+---
+
+## 出力ルール
+
+1. 出力はJSON配列のみ。JSON以外のテキスト（挨拶、説明文、検索過程の報告など）は一切出力しない
+2. optionsの先頭（index 0）に必ず正解を配置し、answerIndexは常に0とする
+3. tagsは問題の内容に応じて3〜5個程度つける
+4. explanationは正解の理由や背景を含めた解説を書く（2〜3文程度）
+5. triviaは150文字程度で「へぇ〜」と思える豆知識を書く（回答者が友達に自慢できるような内容）
+6. 事実に基づいた問題のみ作成し、検索で裏取りできなかった情報は使わない
+7. 同カテゴリ内で問題の内容が重複しないようにする
+8. leagueフィールドにはその問題が関連するリーグIDを設定する（j1 / j2 / j3 / premier / laliga / seriea / bundesliga / ligue1 / ucl / uel 等）。複数リーグにまたがる場合や特定リーグに紐づかない場合は null
+9. 不正解の選択肢はもっともらしいが明確に誤りであるものにする。紛らわしすぎて議論になるような選択肢は避ける
+
+---
+
+## JSONスキーマ
+
+```json
+[
+  {{
+    "id": "w_00001",
+    "quizType": "weekly",
+    "difficulty": "easy",
+    "region": "{region}",
+    "league": null,
+    "team": null,
+    "teamId": null,
+    "category": "試合・結果",
+    "categoryId": "{category_id_example}",
+    "tags": ["tag1", "tag2", "tag3"],
+    "text": "問題文",
+    "options": ["正解", "不正解1", "不正解2", "不正解3"],
+    "answerIndex": 0,
+    "explanation": "解説文",
+    "trivia": "豆知識",
+    "referenceDate": "{referenceDate}",
+    "weeklyMeta": {{
+      "matchweek": {matchweekExample},
+      "matchDate": null,
+      "publishDate": "{publishDate}",
+      "expiryDate": "{expiryDate}",
+      "season": "{season}"
+    }}
+  }}
+]
+```
+
+**注意:** 
+- idは w_{startNumber} から連番で採番してください（例: w_00001, w_00002, ..., w_00030）
+- matchweekは数値またはnullです（該当しない場合は null）
+- categoryIdはカテゴリ一覧のcategoryIdの値を使用してください（japanの場合は weekly-jp-*、worldの場合は weekly-world-*）
+
+---
+
+## フィールド定義
+
+| フィールド | 型 | 説明 |
+|---|---|---|
+| id | string | w_で始まる5桁の連番（例: w_00001） |
+| quizType | string | 常に "weekly" |
+| difficulty | string | easy / normal / hard |
+| region | string | japan / world |
+| league | string or null | j1 / j2 / j3 / premier / laliga / seriea / bundesliga / ligue1 / ucl / uel 等。特定リーグに紐づかない場合は null |
+| team | string or null | 常に null |
+| teamId | string or null | 常に null |
+| category | string | カテゴリ一覧の category の値 |
+| categoryId | string | カテゴリ一覧の categoryId の値 |
+| tags | string[] | フリータグ 3〜5個 |
+| text | string | 問題文 |
+| options | string[4] | 選択肢4つ。index 0が必ず正解 |
+| answerIndex | number | 常に0 |
+| explanation | string | 正解の解説（2〜3文） |
+| trivia | string | 豆知識（150文字程度） |
+| referenceDate | string | {referenceDate} の値をそのまま設定 |
+| weeklyMeta.matchweek | number or null | 節数。該当しない場合は null |
+| weeklyMeta.matchDate | string or null | 問題に関連する試合日（YYYY-MM-DD）。試合に紐づかない場合は null |
+| weeklyMeta.publishDate | string | {publishDate} の値をそのまま設定 |
+| weeklyMeta.expiryDate | string | {expiryDate} の値をそのまま設定 |
+| weeklyMeta.season | string | {season} の値をそのまま設定 |
+
+---
+
+## 作成手順
+
+1. Web検索で {referenceDate} を含む直近1週間の {region} に関するサッカー情報を収集する
+2. 収集した情報を5つのカテゴリに分類する
+3. 情報量に応じて各カテゴリの問題数を決定する（配分ルールに従う）
+4. 難易度配分に従って各問題の難易度を決定する
+5. 問題を作成し、事実確認のため再度検索して裏取りする
+6. JSON配列のみを出力する
+"""
     
-    # ヨーロッパサッカーの場合は知識重視のプロンプトを使用
-    if league_type == "europe":
-        prompt = f"""
-{date}（昨日）の{league_name}の試合結果を検索して、以下の形式でクイズ問題を{count}問一括生成してください。
-
-【試合結果がない場合のフォールバック】
-試合がない週や試合結果が見つからない場合は、{fallback_source}から最新のニュース（移籍、選手情報、チーム情報など）を検索して問題を作成してください。
-
-【問題作成の基本方針】
-このアプリはサッカー知識をつけることを目的としています。単純に「誰が得点したか」を当てる問題ではなく、試合結果から知識を学べる問題を作成してください。
-
-【知識を増やす問題の例】
-以下のような形式で、サッカー知識を深められる問題を作成してください：
-- 「得点し大活躍した選手○○はどこの国の選手だ」
-- 「昨日3-1で勝ったチームのトレードマークは」
-- 「ハットトリックを達成した選手○○が所属するリーグは」
-- 「レッドカードで退場した選手○○の出身国は」
-- 「2得点を挙げた選手○○が所属するチームのエンブレムの特徴は」
-- 「逆転勝利を収めたチームのホームスタジアムの愛称は」
-- 「アシストを決めた選手○○の出身リーグは」
-
-【問題作成の要件】
-試合結果を単なる事実として扱うのではなく、そこから以下のような知識を学べる問題を作成してください：
-- 選手の国籍、出身国、出身リーグ
-- チームの特徴、トレードマーク、エンブレムの意味
-- スタジアムの名称、愛称、特徴
-- チームの歴史、伝統、戦術
-- リーグの特徴、文化、背景
-
-【避けるべき問題形式】
-以下のような単純な事実確認の問題は避けてください：
-- 「誰が得点したか」を直接聞く問題
-- 「どちらが勝ったか」だけを聞く問題
-- 試合結果の数値だけを聞く問題
-
-【推奨する問題形式】
-- 「得点した選手○○の出身国は？」（選手の知識）
-- 「勝利したチームのトレードマークは？」（チームの知識）
-- 「活躍した選手○○が所属するリーグは？」（リーグの知識）
-- 「試合が行われたスタジアムの愛称は？」（スタジアムの知識）
-
-【試合結果の記載】
-その週に試合があった場合、必ず試合結果（スコア）を問題文または解説のいずれかに含めてください：
-- 問題文に含める場合：例「○○が2得点を挙げ、チームAがチームBに3-1で勝利した試合で...」
-- 解説に含める場合：例「この試合はチームAがチームBに3-1で勝利しました。○○が2得点を挙げ...」
-試合結果は問題の文脈を理解するために重要ですので、必ず記載してください。
-
-【出力形式】
-以下のJSON配列形式で、{count}問すべてを一度に出力してください：
-[
-  {{
-    "text": "問題文（4択問題。試合結果から知識を学べる形式で作成）",
-    "options": ["選択肢1", "選択肢2", "選択肢3", "選択肢4"],
-    "answerIndex": 0,
-    "explanation": "詳しい解説（試合の詳細と、なぜその答えが正しいかの説明を含む）",
-    "trivia": "豆知識や小ネタ（150文字程度。選手、チーム、リーグに関する興味深い情報を含める）",
-    "category": "match_recap",
-    "difficulty": "{difficulty}",
-    "tags": "{tags}"
-  }},
-  ...
-]
-
-【難易度の指定】
-生成する問題はすべて難易度"{difficulty}"として設定してください。
-
-【チーム・リーグの多様性】
-以下の点に注意して、問題を作成してください：
-- リーグの多様性：プレミアリーグ、ラ・リーガ、ブンデスリーガ、セリエAをまんべんなく使用すること。特定のリーグに偏らないよう注意してください。
-- チームの多様性：同じチームに偏らないよう、できるだけ多くの異なるチームから問題を作成すること。各問題で異なるチームやリーグを使用することを推奨します。
-- 特定のチームやリーグに集中しないよう注意し、可能な限り多様なチームやリーグから問題を作成してください。
-
-【問題テーマのバランス】
-問題のテーマについて、以下のバランスを意識して作成してください：
-- チームに関する問題（エンブレム、スタジアム、歴史、トレードマークなど）だけでなく、選手に関する問題（出身国、出身リーグ、経歴、特徴など）も含めること
-- チームに関する問題と選手に関する問題のバランスを取り、選手に関する問題も適切に含めること
-- 選手に関する問題の例：
-  * 「得点した選手○○の出身国は？」
-  * 「ハットトリックを達成した選手○○が以前所属していたリーグは？」
-  * 「アシストを決めた選手○○の出身リーグは？」
-  * 「レッドカードで退場した選手○○の国籍は？」
-  * 「2得点を挙げた選手○○が代表でプレーしている国は？」
-
-【重要】
-- 検索結果に基づいた事実のみを使用すること
-- 試合結果があれば勝敗、得点者、順位変動などから問題を作成
-- 試合結果がなければ、ニュースから問題を作成
-- ハルシネーションを避けるため、検索結果の情報のみを使用すること
-- 必ず知識を増やす問題形式で作成すること（単純な事実確認ではない）
-- 必ず{count}問を生成すること
-- JSON配列形式で出力すること（単一のJSONオブジェクトではなく）
-"""
-    else:  # j1
-        prompt = f"""
-{date}（昨日）の{league_name}の試合結果を検索して、以下の形式でクイズ問題を{count}問一括生成してください。
-
-【試合結果がない場合のフォールバック】
-試合がない週や試合結果が見つからない場合は、{fallback_source}から最新のニュース（移籍、選手情報、チーム情報など）を検索して問題を作成してください。
-
-【問題作成の要件】
-単純な試合結果だけでなく、以下の要素を含めて問題を作成してください：
-- 選手の活躍（例：「○○が2得点を挙げました」「○○がアシストを決めました」）
-- レッドカード退場（例：「○○が前半でレッドカードで退場となりました」）
-- エース不在（例：「エース○○が不在でした」「主力○○が怪我で欠場しました」）
-- その他の試合の特徴（PK、延長戦、逆転劇、ハットトリックなど）
-- 試合の流れや重要な場面（例：「前半は0-0で折り返しましたが、後半に3得点を挙げました」）
-
-問題文には、これらのヒントを含めて、単純に「誰が勝ったか」だけでなく、「なぜ勝ったか」「どのような展開だったか」を考える余地を与えてください。
-
-【試合結果の記載】
-その週に試合があった場合、必ず試合結果（スコア）を問題文または解説のいずれかに含めてください：
-- 問題文に含める場合：例「○○が2得点を挙げ、チームAがチームBに3-1で勝利した試合で...」
-- 解説に含める場合：例「この試合はチームAがチームBに3-1で勝利しました。○○が2得点を挙げ...」
-試合結果は問題の文脈を理解するために重要ですので、必ず記載してください。
-
-【出力形式】
-以下のJSON配列形式で、{count}問すべてを一度に出力してください：
-[
-  {{
-    "text": "問題文（4択問題。選手の活躍、レッドカード、エース不在などのヒントを含める）",
-    "options": ["選択肢1", "選択肢2", "選択肢3", "選択肢4"],
-    "answerIndex": 0,
-    "explanation": "詳しい解説（試合の詳細またはニュースの背景を含む）",
-    "trivia": "豆知識や小ネタ（150文字程度）",
-    "category": "match_recap",
-    "difficulty": "{difficulty}",
-    "tags": "{tags}"
-  }},
-  ...
-]
-
-【難易度の指定】
-生成する問題はすべて難易度"{difficulty}"として設定してください。
-
-【チームの多様性】
-以下の点に注意して、問題を作成してください：
-- チームの多様性：J1リーグの各チームをまんべんなく使用すること。同じチームに偏らないよう、できるだけ多くの異なるチームから問題を作成してください。
-- 各問題で異なるチームを使用することを推奨します。特定のチームに集中しないよう注意し、可能な限り多様なチームから問題を作成してください。
-
-【重要】
-- 検索結果に基づいた事実のみを使用すること
-- 試合結果があれば勝敗、得点者、順位変動などから問題を作成
-- 試合結果がなければ、ニュースから問題を作成
-- ハルシネーションを避けるため、検索結果の情報のみを使用すること
-- 問題文には必ず選手の活躍、レッドカード、エース不在、試合の特徴などのヒントを含めること
-- 単純な「A対Bの試合、どちらが勝ったか」ではなく、「○○が活躍した試合は？」「○○が退場した試合は？」などの形式を推奨
-- 必ず{count}問を生成すること
-- JSON配列形式で出力すること（単一のJSONオブジェクトではなく）
-"""
+    # matchweekの文字列表現（プロンプト用）
+    matchweek_str = str(matchweek) if matchweek is not None else "null"
+    
+    # matchweekの例（JSONスキーマ用）
+    matchweek_example = matchweek if matchweek is not None else "null"
+    
+    # categoryIdの例（JSONスキーマ用）
+    if region == "japan":
+        category_id_example = "weekly-jp-match"
+    else:  # world
+        category_id_example = "weekly-world-match"
+    
+    # startNumberを5桁ゼロ埋め形式に変換
+    start_number_str = f"{start_number:05d}"
+    
+    # プロンプトにパラメータを埋め込む
+    prompt = prompt_template.format(
+        region=region,
+        referenceDate=reference_date,
+        matchweek=matchweek_str,
+        matchweekExample=matchweek_example,
+        publishDate=publish_date or "",
+        expiryDate=expiry_date or "",
+        season=season or "",
+        startNumber=start_number_str,
+        category_id_example=category_id_example
+    )
     
     # リトライロジック付きでAPI呼び出し
     for attempt in range(MAX_RETRIES):
@@ -650,15 +411,16 @@ def generate_weekly_recap_questions_batch(
             if not isinstance(questions_data, list):
                 questions_data = [questions_data]
             
-            # 問題数の確認
-            if len(questions_data) < count:
-                print(f"警告: 要求された{count}問に対して{len(questions_data)}問しか生成されませんでした")
+            # 問題数の確認（30問期待）
+            expected_count = 30
+            if len(questions_data) < expected_count:
+                print(f"警告: 要求された{expected_count}問に対して{len(questions_data)}問しか生成されませんでした")
             
-            # 各問題のバリデーション
+            # 各問題のバリデーションとフィールド補完
             validated_questions = []
-            for i, question_data in enumerate(questions_data[:count]):
+            for i, question_data in enumerate(questions_data[:expected_count]):
                 # 必須フィールドの検証
-                required_fields = ['text', 'options', 'answerIndex', 'explanation']
+                required_fields = ['text', 'options', 'answerIndex', 'explanation', 'quizType', 'region', 'categoryId', 'referenceDate', 'weeklyMeta']
                 missing_fields = [f for f in required_fields if f not in question_data]
                 if missing_fields:
                     print(f"警告: 問題{i+1}に必須フィールドがありません: {missing_fields}。スキップします。")
@@ -669,16 +431,56 @@ def generate_weekly_recap_questions_batch(
                     print(f"警告: 問題{i+1}の選択肢が4つではありません。スキップします。")
                     continue
                 
-                # answerIndexが0-3の範囲内か確認
-                if not (0 <= question_data.get('answerIndex', -1) <= 3):
-                    print(f"警告: 問題{i+1}のanswerIndexが0-3の範囲外です。スキップします。")
-                    continue
+                # answerIndexが0であることを確認（プロンプトで0に固定）
+                if question_data.get('answerIndex', -1) != 0:
+                    print(f"警告: 問題{i+1}のanswerIndexが0ではありません。0に修正します。")
+                    question_data['answerIndex'] = 0
+                
+                # quizTypeが"weekly"であることを確認
+                if question_data.get('quizType') != 'weekly':
+                    print(f"警告: 問題{i+1}のquizTypeが'weekly'ではありません。修正します。")
+                    question_data['quizType'] = 'weekly'
+                
+                # regionが正しいことを確認
+                if question_data.get('region') != region:
+                    print(f"警告: 問題{i+1}のregionが'{region}'ではありません。修正します。")
+                    question_data['region'] = region
+                
+                # tagsが配列形式であることを確認（文字列の場合は分割）
+                tags_value = question_data.get('tags', [])
+                if isinstance(tags_value, str):
+                    # カンマ区切りの文字列を配列に変換
+                    question_data['tags'] = [tag.strip() for tag in tags_value.split(',') if tag.strip()]
+                elif not isinstance(tags_value, list):
+                    question_data['tags'] = []
+                
+                # teamとteamIdは常にnull
+                question_data['team'] = None
+                question_data['teamId'] = None
+                
+                # referenceDateが正しいことを確認
+                if question_data.get('referenceDate') != reference_date:
+                    print(f"警告: 問題{i+1}のreferenceDateが'{reference_date}'ではありません。修正します。")
+                    question_data['referenceDate'] = reference_date
+                
+                # weeklyMetaの検証と補完
+                weekly_meta = question_data.get('weeklyMeta', {})
+                if not isinstance(weekly_meta, dict):
+                    weekly_meta = {}
+                
+                # weeklyMetaの必須フィールドを補完
+                weekly_meta.setdefault('matchweek', matchweek)
+                weekly_meta.setdefault('matchDate', None)
+                weekly_meta.setdefault('publishDate', publish_date)
+                weekly_meta.setdefault('expiryDate', expiry_date)
+                weekly_meta.setdefault('season', season)
+                question_data['weeklyMeta'] = weekly_meta
                 
                 # デフォルト値の設定
-                question_data.setdefault('category', 'match_recap')
                 question_data.setdefault('difficulty', 'normal')
-                question_data.setdefault('tags', tags)
+                question_data.setdefault('category', 'match_recap')
                 question_data.setdefault('trivia', '')
+                question_data.setdefault('league', None)
                 
                 validated_questions.append(question_data)
             
