@@ -10,6 +10,15 @@ class Question {
   final String difficulty; // easy, normal, hard, extreme
   final String tags; // 国名、リーグ名、年度など検索用タグ
   final String? referenceDate; // 対象年月（YYYYまたはYYYY-MM形式、オプション）
+  
+  // 新しいスキーマのフィールド（オプショナル）
+  final String? quizType; // team/history/rule/weekly
+  final String? categoryId; // システム用カテゴリID
+  final String? region; // japan/world/null
+  final String? league; // j1/j2/spain等/null
+  final String? team; // 表示用チーム名/null
+  final String? teamId; // システム用チームID/null
+  final String? weeklyMeta; // JSON文字列/null
 
   Question({
     required this.id,
@@ -22,6 +31,13 @@ class Question {
     required this.difficulty,
     required this.tags,
     this.referenceDate,
+    this.quizType,
+    this.categoryId,
+    this.region,
+    this.league,
+    this.team,
+    this.teamId,
+    this.weeklyMeta,
   });
 
   Map<String, dynamic> toJson() => {
@@ -35,6 +51,13 @@ class Question {
         'difficulty': difficulty,
         'tags': tags,
         'referenceDate': referenceDate,
+        'quizType': quizType,
+        'categoryId': categoryId,
+        'region': region,
+        'league': league,
+        'team': team,
+        'teamId': teamId,
+        'weeklyMeta': weeklyMeta,
       };
 
   factory Question.fromJson(Map<String, dynamic> json) => Question(
@@ -48,5 +71,12 @@ class Question {
         difficulty: json['difficulty'] as String,
         tags: json['tags'] as String,
         referenceDate: json['referenceDate'] as String?,
+        quizType: json['quizType']?.toString(),
+        categoryId: json['categoryId']?.toString(),
+        region: json['region']?.toString(),
+        league: json['league']?.toString(),
+        team: json['team']?.toString(),
+        teamId: json['teamId']?.toString(),
+        weeklyMeta: json['weeklyMeta']?.toString(),
       );
 }

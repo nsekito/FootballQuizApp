@@ -1,6 +1,6 @@
 # クイズ問題生成スクリプト
 
-このディレクトリには、Gemini APIを使用してクイズ問題を自動生成するPythonスクリプトが含まれています。
+このディレクトリには、Gemini APIを使用してWeekly Recap問題を自動生成するPythonスクリプトが含まれています。
 
 ## セットアップ
 
@@ -63,113 +63,97 @@ VERTEX_AI_LOCATION=asia-northeast1    # 参考情報（必須ではない）
 
 ## 使用方法
 
-### 常設クイズの生成
+### Weekly Recap問題の生成
 
-**すべてのカテゴリ・難易度を生成（本番）:**
+Weekly Recap問題は、毎週実行する必要があります。Gemini APIのGrounding機能を使用して、最新の試合結果から問題を生成します。
+
+**基本的な使用方法（最新の月曜日を対象）:**
 ```powershell
-python generate_static_questions.py
+python generate_weekly_recap.py
 ```
 
-**テストモード（各難易度5問のみ）:**
+**特定の日付を指定:**
 ```powershell
-python generate_static_questions.py --test
+python generate_weekly_recap.py --date 2026-02-03
 ```
 
-**ルールクイズのみ生成:**
+**J1リーグのみ生成（テスト用）:**
 ```powershell
-python generate_static_questions.py --category rules
+python generate_weekly_recap.py --j1-only
 ```
 
-**特定の難易度のみ生成:**
+**ヨーロッパサッカーのみ生成（テスト用）:**
 ```powershell
-python generate_static_questions.py --difficulty easy
+python generate_weekly_recap.py --europe-only
 ```
 
-**カスタム生成数:**
+**出力ディレクトリを指定:**
 ```powershell
-python generate_static_questions.py --category rules --count 10
+python generate_weekly_recap.py --output-dir data/weekly_recap
 ```
 
-生成されたJSONファイルは`generated/`ディレクトリに保存されます。
+生成されたJSONファイルは`data/weekly_recap/`ディレクトリ（デフォルト）に保存されます。
+ファイル名は`{YYYY-MM-DD}_{league_type}.json`形式（例: `2026-02-03_j1.json`）です。
 
 ### JSONからデータベースへの変換
 
+生成されたJSONファイルをデータベースに登録するには：
+
 ```powershell
 # データベーススキーマを作成して変換
-python json_to_db.py generated/all_questions_YYYYMMDD_HHMMSS.json --create-schema
+python json_to_db.py data/weekly_recap/2026-02-03_j1.json --create-schema
 
 # 既存のデータベースに追加（既存の問題は置き換え）
-python json_to_db.py generated/all_questions_YYYYMMDD_HHMMSS.json --replace
+python json_to_db.py data/weekly_recap/2026-02-03_j1.json --replace
 ```
 
-### 手動で問題を作成・登録する
+### 問題の手動作成について
 
-Gemini APIで自動生成した問題とは別に、手動で問題を作成して登録することができます。
+ルールクイズ、歴史クイズ、チームクイズの問題は、gensparkのチャットを使用して手動で作成し、作成したJSONファイルを`json_to_db.py`で登録してください。
 
-#### 方法1: 対話型スクリプトを使用（推奨）
+**詳細な手順は [MANUAL_QUESTION_GUIDE.md](MANUAL_QUESTION_GUIDE.md) を参照してください。**
 
-```powershell
-# 1問作成
-python create_manual_question.py
+**注意**: ルールクイズの問題作成時は、IFAB「サッカー競技規則」（Laws of the Game）を基準とし、大会固有ルールの場合はその旨を明記してください。
 
-# 複数問作成
-python create_manual_question.py --count 5
+#### 基本的なワークフロー
 
-# 出力ファイルを指定
-python create_manual_question.py --output my_questions.json
-```
+1. **プロンプトの準備**
+   - `MANUAL_QUESTION_GUIDE.md`に記載されているプロンプトテンプレートを使用
+   - `# 今回の作成依頼` セクションを編集
 
-スクリプトを実行すると、対話的に以下を入力できます：
-- カテゴリ（rules, history, teams）
-- 難易度（easy, normal, hard, extreme）
-- 問題文
-- 4つの選択肢
-- 正解の選択肢番号
-- 解説
-- 豆知識（オプション）
-- タグ
-- 対象年月（オプション）
+2. **問題生成**
+   - gensparkのチャットにプロンプトを貼り付け
+   - JSON配列形式で問題を生成
 
-#### 方法2: JSONファイルを直接編集
+3. **JSONファイルの保存**
+   - 適切なディレクトリに保存（`data/manual_questions/`以下）
+   - ファイル名は `{quizType}_{difficulty}_{YYYYMMDD}.json` 形式
+   - 例: `team_easy_20260207.json`
 
-1. **テンプレートファイルをコピー**:
+4. **データベースへの取り込み**
    ```powershell
-   copy manual_question_template.json my_manual_questions.json
+   python json_to_db.py data/manual_questions/team/japan/j1/team_easy_20260207.json --replace
    ```
 
-2. **JSONファイルを編集**:
-   - `my_manual_questions.json`を開いて問題を記入
-   - 問題IDは`manual_{category}_{difficulty}_{YYYYMMDD}_{3桁の連番}`形式で指定
-   - 例: `manual_rules_easy_20250119_001`
+5. **動作確認**
+   - アプリで問題が正しく表示されるか確認
 
-3. **データベースに登録**:
-   ```powershell
-   # 手動作成の問題として登録（--manualフラグを使用）
-   python json_to_db.py my_manual_questions.json --manual --replace
-   ```
+#### ファイル名規約
 
-#### 手動作成の問題の特徴
+**形式:** `{quizType}_{difficulty}_{YYYYMMDD}.json`
 
-- 問題IDは`manual_`で始まります（例: `manual_rules_easy_20250119_001`）
-- `--manual`フラグを使用すると、手動作成の問題として識別されます
-- 既存の自動生成問題と区別して管理できます
+- `quizType`: `team`, `history`, `rule`, `weekly`
+- `difficulty`: `easy`, `normal`, `hard`
+- `YYYYMMDD`: 作成日（例: `20260207`）
 
-#### 注意事項
-
-- 問題IDは既存の問題と重複しないように注意してください
-- 選択肢は必ず4つである必要があります
-- `answerIndex`は0-3の範囲内で指定してください（0が最初の選択肢）
-- 問題の品質（正解が1つだけ存在するなど）は手動で確認してください
+ファイル名から`quizType`と`difficulty`が自動的に検出され、JSON内の値と一致するか確認されます。
 
 ## ファイル構成
 
 - `config.py` - 設定ファイル（環境変数読み込み）
-- `generate_static_questions.py` - 常設クイズ生成スクリプト
+- `generate_weekly_recap.py` - Weekly Recap問題生成スクリプト
 - `json_to_db.py` - JSONからSQLite DBへの変換スクリプト
-- `create_manual_question.py` - 手動問題作成スクリプト（対話型）
-- `manual_question_template.json` - 手動作成用JSONテンプレート
-- `utils/gemini_client.py` - Gemini APIクライアント
-- `utils/question_validator.py` - 問題検証ユーティリティ
+- `utils/gemini_client.py` - Gemini APIクライアント（Weekly Recap用）
 
 ## 注意事項
 

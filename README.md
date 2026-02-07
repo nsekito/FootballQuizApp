@@ -41,81 +41,31 @@ lib/
    ```bash
    flutter pub get
    ```
-3. アプリを実行:
+3. エミュレータの起動（Androidエミュレータを使用する場合）:
    ```bash
+   # 利用可能なエミュレータを確認
+   flutter emulators
+   
+   # エミュレータを起動（例: Medium_Phone_API_36.1）
+   flutter emulators --launch Medium_Phone_API_36.1
+   ```
+   
+   エミュレータが起動するまで少し時間がかかります。起動後、以下のコマンドで利用可能なデバイスを確認できます：
+   ```bash
+   flutter devices
+   ```
+4. アプリを実行:
+   ```bash
+   # デバイスが1つのみの場合
    flutter run
+   
+   # 特定のデバイスを指定する場合
+   flutter run -d <device_id>
    ```
 
-## 問題生成（Pythonスクリプト）
+## スクリプト
 
-### venv環境の準備
-
-```powershell
-cd scripts
-py -m venv venv
-.\venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-
-### 問題生成コマンド
-
-**すべてのカテゴリ・難易度を生成（合計600問）:**
-```powershell
-python generate_static_questions.py
-```
-
-**テストモード（各難易度5問のみ）:**
-```powershell
-python generate_static_questions.py --test
-```
-
-**特定のカテゴリのみ生成:**
-```powershell
-# ルールクイズ（合計200問: easy/normal/hard/extreme × 50問）
-python generate_static_questions.py --category rules
-
-# 歴史クイズ（合計200問）
-python generate_static_questions.py --category history
-
-# チームクイズ（合計200問）
-python generate_static_questions.py --category teams
-```
-
-**特定の難易度のみ生成:**
-```powershell
-python generate_static_questions.py --difficulty easy
-python generate_static_questions.py --difficulty normal
-python generate_static_questions.py --difficulty hard
-python generate_static_questions.py --difficulty extreme
-```
-
-**カスタム生成数:**
-```powershell
-# 各難易度10問ずつ（合計40問）
-python generate_static_questions.py --category rules --count 10
-```
-
-### JSONからデータベースへの変換
-
-```powershell
-# データベーススキーマを作成して変換（既存DBを削除した場合）
-python json_to_db.py generated/all_questions_YYYYMMDD_HHMMSS.json --create-schema
-
-# 既存のデータベースに追加（既存の問題は置き換え）
-python json_to_db.py generated/all_questions_YYYYMMDD_HHMMSS.json --replace
-```
-
-### 問題分布の確認
-
-```powershell
-# データベース内の問題分布を分析
-python analyze_question_distribution.py
-
-# データベースの内容を確認
-python check_db.py
-```
-
-詳細は [scripts/README.md](scripts/README.md) を参照してください。
+Pythonスクリプトの詳細は [scripts/README.md](scripts/README.md) を参照してください。
 
 ## リモートデータ設定（Phase 4）
 

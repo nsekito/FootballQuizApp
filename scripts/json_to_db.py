@@ -27,7 +27,14 @@ def create_database_schema(db_path: str):
             category TEXT NOT NULL,
             difficulty TEXT NOT NULL,
             tags TEXT NOT NULL,
-            reference_date TEXT
+            reference_date TEXT,
+            quiz_type TEXT,
+            category_id TEXT,
+            region TEXT,
+            league TEXT,
+            team TEXT,
+            team_id TEXT,
+            weekly_meta TEXT
         )
     ''')
     
@@ -58,9 +65,39 @@ def load_questions_from_json(json_path: str) -> list:
     return questions
 
 
+def parse_filename_for_new_schema(filename: str) -> dict:
+    """
+    新しいスキーマのファイル名からquizTypeとdifficultyを解析
+    
+    ファイル名のパターン: {quizType}_{difficulty}_{YYYYMMDD}.json
+    例: team_easy_20260207.json
+    
+    Returns:
+        {'quizType': 'team', 'difficulty': 'easy'} または {}
+    """
+    import re
+    
+    # ファイル名から拡張子を除去
+    base_name = Path(filename).stem
+    
+    # パターン: {quizType}_{difficulty}_{YYYYMMDD}
+    pattern = r'^([a-z]+)_([a-z]+)_\d{8}$'
+    match = re.match(pattern, base_name)
+    if match:
+        quiz_type = match.group(1)
+        difficulty = match.group(2)
+        # 有効なquizTypeとdifficultyかチェック
+        valid_quiz_types = ['team', 'history', 'rule', 'weekly']
+        valid_difficulties = ['easy', 'normal', 'hard']
+        if quiz_type in valid_quiz_types and difficulty in valid_difficulties:
+            return {'quizType': quiz_type, 'difficulty': difficulty}
+    
+    return {}
+
+
 def infer_metadata_from_filename(filename: str) -> dict:
     """
-    ファイル名からcategory, difficulty, tagsを推測
+    ファイル名からcategory, difficulty, tagsを推測（旧スキーマ用）
     
     ファイル名のパターン:
     - rules_easy_20260119_000627.json → category=rules, difficulty=easy
@@ -209,58 +246,86 @@ def generate_sequential_id(category: str, difficulty: str, index: int) -> str:
     return f"{category}_{difficulty}_{index:03d}"
 
 
-def insert_questions_to_db(questions: list, db_path: str, replace: bool = True, is_manual: bool = False):
-    """問題をデータベースに挿入（カテゴリ・難易度ごとに連番IDを自動生成）"""
+def is_new_schema_format(question: dict) -> bool:
+    """新しいスキーマ形式かどうかを判定（quizTypeフィールドの有無で判定）"""
+    return 'quizType' in question and question['quizType'] is not None
+
+
+def convert_new_schema_to_db_format(question: dict) -> dict:
+    """
+    新しいスキーマ形式の問題をDB形式に変換
+    
+    - quizType → category の変換（team→teams, rule→rules, history→history, weekly→match_recap）
+    - tags配列 → カンマ区切り文字列
+    - weeklyMetaオブジェクト → JSON文字列
+    """
+    converted = question.copy()
+    
+    # quizType → category の変換
+    quiz_type = question.get('quizType', '')
+    category_map = {
+        'team': 'teams',
+        'rule': 'rules',
+        'history': 'history',
+        'weekly': 'match_recap'
+    }
+    if quiz_type in category_map:
+        converted['category'] = category_map[quiz_type]
+    
+    # tags配列 → カンマ区切り文字列
+    if 'tags' in question and isinstance(question['tags'], list):
+        converted['tags'] = ','.join(question['tags'])
+    
+    # weeklyMetaオブジェクト → JSON文字列
+    if 'weeklyMeta' in question and isinstance(question['weeklyMeta'], dict):
+        converted['weeklyMeta'] = json.dumps(question['weeklyMeta'], ensure_ascii=False)
+    
+    return converted
+
+
+def insert_questions_to_db(questions: list, db_path: str, replace: bool = True):
+    """問題をデータベースに挿入（新しいスキーマ形式のみ対応）"""
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
-    # カテゴリ・難易度ごとに問題をグループ化
-    from collections import defaultdict
-    questions_by_category_difficulty = defaultdict(list)
-    
-    for question in questions:
-        category = question.get('category')
-        difficulty = question.get('difficulty')
-        if not category or not difficulty:
-            print(f"警告: 問題 {question.get('id', 'unknown')} にcategoryまたはdifficultyがありません。スキップします。")
-            continue
-        questions_by_category_difficulty[(category, difficulty)].append(question)
-    
     inserted_count = 0
     skipped_count = 0
-    manual_count = 0
     updated_count = 0
     
-    # カテゴリ・難易度ごとに処理
-    for (category, difficulty), category_questions in questions_by_category_difficulty.items():
-        # このカテゴリ・難易度の次の連番を取得
-        next_index = get_next_sequential_id(cursor, category, difficulty)
-        
-        print(f"\n【{category}/{difficulty}】")
-        print(f"  既存の問題数: {next_index}問")
-        print(f"  追加する問題数: {len(category_questions)}問")
-        
-        for i, question in enumerate(category_questions):
-            # 手動作成の問題かチェック
-            original_id = question.get('id', '')
-            if is_manual or original_id.startswith('manual_'):
-                manual_count += 1
+    print("新しいスキーマ形式として処理します")
+    # 新しいスキーマの場合はIDをそのまま使用
+    for question in questions:
+        if not is_new_schema_format(question):
+            print(f"警告: 問題 {question.get('id', 'unknown')} が新しいスキーマ形式ではありません。スキップします。")
+            skipped_count += 1
+            continue
             
-            # 新しい連番IDを生成
-            new_id = generate_sequential_id(category, difficulty, next_index + i)
+            # 新しいスキーマ形式に変換
+            converted_question = convert_new_schema_to_db_format(question)
+            
+            original_id = converted_question.get('id', '')
+            if not original_id:
+                print(f"警告: 問題にIDがありません。スキップします。")
+                skipped_count += 1
+                continue
             
             # 必須フィールドの確認
-            required_fields = ['text', 'options', 'answerIndex', 'explanation', 'category', 'difficulty', 'tags']
-            if not all(field in question for field in required_fields):
+            required_fields = ['text', 'options', 'answerIndex', 'explanation', 'category', 'difficulty', 'tags', 'quizType']
+            if not all(field in converted_question for field in required_fields):
                 print(f"警告: 問題 {original_id} に必須フィールドが不足しています。スキップします。")
                 skipped_count += 1
                 continue
             
             # 選択肢を文字列に変換（|||で区切る）
-            options_str = '|||'.join(question['options'])
+            options_str = '|||'.join(converted_question['options'])
+            
+            # tagsが配列の場合は文字列に変換
+            tags_str = converted_question['tags']
+            if isinstance(tags_str, list):
+                tags_str = ','.join(tags_str)
             
             # 既存のIDがあるかチェック
-            cursor.execute('SELECT id FROM questions WHERE id = ?', (new_id,))
+            cursor.execute('SELECT id FROM questions WHERE id = ?', (original_id,))
             existing = cursor.fetchone()
             
             if existing:
@@ -269,51 +334,65 @@ def insert_questions_to_db(questions: list, db_path: str, replace: bool = True, 
                     cursor.execute('''
                         UPDATE questions 
                         SET text = ?, options = ?, answerIndex = ?, explanation = ?, 
-                            trivia = ?, category = ?, difficulty = ?, tags = ?, reference_date = ?
+                            trivia = ?, category = ?, difficulty = ?, tags = ?, reference_date = ?,
+                            quiz_type = ?, category_id = ?, region = ?, league = ?, team = ?, team_id = ?, weekly_meta = ?
                         WHERE id = ?
                     ''', (
-                        question['text'],
+                        converted_question['text'],
                         options_str,
-                        question['answerIndex'],
-                        question['explanation'],
-                        question.get('trivia'),
-                        question['category'],
-                        question['difficulty'],
-                        question['tags'],
-                        question.get('referenceDate'),
-                        new_id
+                        converted_question['answerIndex'],
+                        converted_question['explanation'],
+                        converted_question.get('trivia'),
+                        converted_question['category'],
+                        converted_question['difficulty'],
+                        tags_str,
+                        converted_question.get('referenceDate'),
+                        converted_question.get('quizType'),
+                        converted_question.get('categoryId'),
+                        converted_question.get('region'),
+                        converted_question.get('league'),
+                        converted_question.get('team'),
+                        converted_question.get('teamId'),
+                        converted_question.get('weeklyMeta'),
+                        original_id
                     ))
                     updated_count += 1
-                    if original_id != new_id:
-                        print(f"  更新: {original_id} → {new_id}")
+                    print(f"  更新: {original_id}")
                 else:
                     skipped_count += 1
-                    print(f"  スキップ: {new_id} は既に存在します")
+                    print(f"  スキップ: {original_id} は既に存在します")
             else:
                 # 新しいレコードを挿入
                 try:
                     cursor.execute('''
                         INSERT INTO questions 
-                        (id, text, options, answerIndex, explanation, trivia, category, difficulty, tags, reference_date)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        (id, text, options, answerIndex, explanation, trivia, category, difficulty, tags, reference_date,
+                         quiz_type, category_id, region, league, team, team_id, weekly_meta)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     ''', (
-                        new_id,
-                        question['text'],
+                        original_id,
+                        converted_question['text'],
                         options_str,
-                        question['answerIndex'],
-                        question['explanation'],
-                        question.get('trivia'),
-                        question['category'],
-                        question['difficulty'],
-                        question['tags'],
-                        question.get('referenceDate')
+                        converted_question['answerIndex'],
+                        converted_question['explanation'],
+                        converted_question.get('trivia'),
+                        converted_question['category'],
+                        converted_question['difficulty'],
+                        tags_str,
+                        converted_question.get('referenceDate'),
+                        converted_question.get('quizType'),
+                        converted_question.get('categoryId'),
+                        converted_question.get('region'),
+                        converted_question.get('league'),
+                        converted_question.get('team'),
+                        converted_question.get('teamId'),
+                        converted_question.get('weeklyMeta')
                     ))
                     inserted_count += 1
-                    if original_id != new_id:
-                        print(f"  追加: {original_id} → {new_id}")
+                    print(f"  追加: {original_id}")
                 except sqlite3.IntegrityError as e:
                     skipped_count += 1
-                    print(f"  エラー: {new_id} の挿入に失敗しました: {e}")
+                    print(f"  エラー: {original_id} の挿入に失敗しました: {e}")
     
     conn.commit()
     conn.close()
@@ -323,8 +402,6 @@ def insert_questions_to_db(questions: list, db_path: str, replace: bool = True, 
         print(f"更新: {updated_count}問")
     if skipped_count > 0:
         print(f"スキップ: {skipped_count}問")
-    if manual_count > 0:
-        print(f"手動作成の問題: {manual_count}問")
 
 
 def cleanup_old_json_files(current_json_file: Path):
@@ -368,12 +445,6 @@ def main():
     parser.add_argument('--replace', action='store_true', help='既存の問題を置き換える')
     parser.add_argument('--create-schema', action='store_true', help='データベーススキーマを作成')
     parser.add_argument('--cleanup', action='store_true', default=True, help='登録後に古いJSONファイルを削除（デフォルト: True）')
-    parser.add_argument('--manual', action='store_true', help='手動作成の問題であることを示す（IDがmanual_で始まることを期待）')
-    parser.add_argument('--category', choices=['rules', 'history', 'teams'], 
-                       help='カテゴリ（JSONに含まれていない場合に使用）')
-    parser.add_argument('--difficulty', choices=['easy', 'normal', 'hard', 'extreme'],
-                       help='難易度（JSONに含まれていない場合に使用）')
-    parser.add_argument('--tags', help='タグ（カンマ区切り、JSONに含まれていない場合に使用。指定がない場合はカテゴリから推測）')
     
     args = parser.parse_args()
     
@@ -392,38 +463,36 @@ def main():
     
     questions = load_questions_from_json(str(json_file_path))
     
-    # 不足しているメタデータ（id, category, difficulty, tags）を追加
-    try:
-        questions = add_missing_metadata(
-            questions,
-            category=args.category,
-            difficulty=args.difficulty,
-            tags=args.tags,
-            json_filename=json_file_path.name
-        )
-        print(f"\nメタデータを追加しました:")
-        if args.category:
-            print(f"  category: {args.category}")
-        if args.difficulty:
-            print(f"  difficulty: {args.difficulty}")
-        if args.tags:
-            print(f"  tags: {args.tags}")
-    except ValueError as e:
-        print(f"\nエラー: {e}")
+    # 新しいスキーマ形式を検証
+    is_new_schema = any(is_new_schema_format(q) for q in questions)
+    
+    if not is_new_schema:
+        print("エラー: 新しいスキーマ形式（quizTypeフィールドを含む）のJSONファイルが必要です")
         sys.exit(1)
     
-    # 手動作成の問題の統計情報を表示
-    if args.manual:
-        manual_questions = [q for q in questions if q.get('id', '').startswith('manual_')]
-        auto_questions = [q for q in questions if not q.get('id', '').startswith('manual_')]
-        print(f"\n【問題の内訳】")
-        print(f"  手動作成: {len(manual_questions)}問")
-        if auto_questions:
-            print(f"  自動生成: {len(auto_questions)}問")
-            print(f"  警告: 手動作成フラグが指定されていますが、自動生成の問題が含まれています")
+    print("新しいスキーマ形式を検出しました")
+    # ファイル名からquizTypeとdifficultyを解析
+    filename_info = parse_filename_for_new_schema(json_file_path.name)
+    if filename_info:
+        file_quiz_type = filename_info.get('quizType')
+        file_difficulty = filename_info.get('difficulty')
+        print(f"ファイル名から検出: quizType={file_quiz_type}, difficulty={file_difficulty}")
+        
+        # JSON内の値と一致するか確認
+        for question in questions:
+            json_quiz_type = question.get('quizType')
+            json_difficulty = question.get('difficulty')
+            
+            if json_quiz_type and json_quiz_type != file_quiz_type:
+                print(f"警告: 問題 {question.get('id', 'unknown')} のquizType ({json_quiz_type}) がファイル名 ({file_quiz_type}) と一致しません")
+            
+            if json_difficulty and json_difficulty != file_difficulty:
+                print(f"警告: 問題 {question.get('id', 'unknown')} のdifficulty ({json_difficulty}) がファイル名 ({file_difficulty}) と一致しません")
+    else:
+        print("警告: ファイル名からquizTypeとdifficultyを検出できませんでした")
     
     # データベースに挿入
-    insert_questions_to_db(questions, args.db, replace=args.replace, is_manual=args.manual)
+    insert_questions_to_db(questions, args.db, replace=args.replace)
     
     # 古いJSONファイルを削除
     if args.cleanup:

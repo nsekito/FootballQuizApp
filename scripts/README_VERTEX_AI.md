@@ -67,11 +67,11 @@ Vertex AIのクォータ制限は通常のGemini APIよりも高く設定され�
 
 ## 使用方法
 
-設定が完了したら、通常通り問題生成スクリプトを実行できます：
+設定が完了したら、Weekly Recap問題生成スクリプトを実行できます：
 
 ```bash
 cd scripts
-.\venv\Scripts\python.exe generate_static_questions.py --test --category rules --difficulty easy
+.\venv\Scripts\python.exe generate_weekly_recap.py --j1-only
 ```
 
 ## トラブルシューティング

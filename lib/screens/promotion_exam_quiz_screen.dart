@@ -126,165 +126,172 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
       builder: (context) => Dialog(
         backgroundColor: Colors.transparent,
         insetPadding: const EdgeInsets.all(16),
-        child: GlassMorphismWidget(
-          borderRadius: 24,
-          backgroundColor: Colors.white.withValues(alpha: 0.8),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(32),
-                child: Column(
-                  children: [
-                    Container(
-                      width: 80,
-                      height: 80,
-                      decoration: BoxDecoration(
-                        color: (isCorrect
-                                ? AppColors.stitchEmerald
-                                : Colors.red.shade400)
-                            .withValues(alpha: 0.2),
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: (isCorrect
-                                    ? AppColors.stitchEmerald
-                                    : Colors.red.shade400)
-                                .withValues(alpha: 0.4),
-                            blurRadius: 15,
-                            spreadRadius: 0,
-                          ),
-                        ],
-                      ),
-                      child: Icon(
-                        isCorrect ? Icons.check_circle : Icons.cancel,
-                        color: isCorrect
-                            ? AppColors.stitchEmerald
-                            : Colors.red.shade400,
-                        size: 48,
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      isCorrect ? '正解！' : '不正解',
-                      style: TextStyle(
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold,
-                        color: isCorrect
-                            ? AppColors.stitchEmerald
-                            : Colors.red.shade400,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      isCorrect ? 'Excellent job' : 'Try again',
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.grey.shade600,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.description,
-                          color: Colors.grey.shade700,
-                          size: 20,
-                        ),
-                        const SizedBox(width: 8),
-                        const Text(
-                          '解説',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 12),
-                    Text(
-                      question.explanation,
-                      style: const TextStyle(
-                        fontSize: 15,
-                        height: 1.6,
-                      ),
-                    ),
-                    if (question.trivia != null && question.trivia!.isNotEmpty) ...[
-                      const SizedBox(height: 24),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+            maxHeight: MediaQuery.of(context).size.height * 0.8,
+          ),
+          child: GlassMorphismWidget(
+            borderRadius: 24,
+            backgroundColor: Colors.white.withValues(alpha: 0.8),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(32),
+                  child: Column(
+                    children: [
                       Container(
-                        padding: const EdgeInsets.all(16),
+                        width: 80,
+                        height: 80,
                         decoration: BoxDecoration(
-                          color: Colors.amber.shade50,
-                          borderRadius: const BorderRadius.all(Radius.circular(16)),
-                          border: Border.all(
-                            color: Colors.amber.shade200,
-                          ),
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.lightbulb,
-                                  color: Colors.amber.shade700,
-                                  size: 20,
-                                ),
-                                const SizedBox(width: 8),
-                                Text(
-                                  '豆知識',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 14,
-                                    color: Colors.amber.shade900,
-                                  ),
-                                ),
-                              ],
+                          color: (isCorrect
+                                  ? AppColors.stitchEmerald
+                                  : Colors.red.shade400)
+                              .withValues(alpha: 0.2),
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                              color: (isCorrect
+                                      ? AppColors.stitchEmerald
+                                      : Colors.red.shade400)
+                                  .withValues(alpha: 0.4),
+                              blurRadius: 15,
+                              spreadRadius: 0,
                             ),
-                            const SizedBox(height: 8),
-                            Text(
-                              question.trivia!,
+                          ],
+                        ),
+                        child: Icon(
+                          isCorrect ? Icons.check_circle : Icons.cancel,
+                          color: isCorrect
+                              ? AppColors.stitchEmerald
+                              : Colors.red.shade400,
+                          size: 48,
+                        ),
+                      ),
+                      const SizedBox(height: 16),
+                      Text(
+                        isCorrect ? '正解！' : '不正解',
+                        style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold,
+                          color: isCorrect
+                              ? AppColors.stitchEmerald
+                              : Colors.red.shade400,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        isCorrect ? 'Excellent job' : 'Try again',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.grey.shade600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Flexible(
+                  child: SingleChildScrollView(
+                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.description,
+                              color: Colors.grey.shade700,
+                              size: 20,
+                            ),
+                            const SizedBox(width: 8),
+                            const Text(
+                              '解説',
                               style: TextStyle(
-                                fontSize: 14,
-                                color: Colors.grey.shade700,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                           ],
                         ),
-                      ),
-                    ],
-                  ],
+                        const SizedBox(height: 12),
+                        Text(
+                          question.explanation,
+                          style: const TextStyle(
+                            fontSize: 15,
+                            height: 1.6,
+                          ),
+                        ),
+                        if (question.trivia != null && question.trivia!.isNotEmpty) ...[
+                          const SizedBox(height: 24),
+                          Container(
+                            padding: const EdgeInsets.all(16),
+                            decoration: BoxDecoration(
+                              color: Colors.amber.shade50,
+                              borderRadius: const BorderRadius.all(Radius.circular(16)),
+                              border: Border.all(
+                                color: Colors.amber.shade200,
+                              ),
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.lightbulb,
+                                      color: Colors.amber.shade700,
+                                      size: 20,
+                                    ),
+                                    const SizedBox(width: 8),
+                                    Text(
+                                      '豆知識',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14,
+                                        color: Colors.amber.shade900,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 8),
+                                Text(
+                                  question.trivia!,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Colors.grey.shade700,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(24),
-                child: SizedBox(
-                  width: double.infinity,
-                  child: GlowButton(
-                    glowColor: AppColors.stitchEmerald,
-                    onPressed: () => Navigator.of(context).pop(),
-                    backgroundColor: AppColors.stitchEmerald,
-                    foregroundColor: Colors.white,
-                    borderRadius: 16,
-                    padding: const EdgeInsets.symmetric(vertical: 12),
-                    child: const Text(
-                      '閉じる',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
+                Padding(
+                  padding: const EdgeInsets.all(24),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: GlowButton(
+                      glowColor: AppColors.stitchEmerald,
+                      onPressed: () => Navigator.of(context).pop(),
+                      backgroundColor: AppColors.stitchEmerald,
+                      foregroundColor: Colors.white,
+                      borderRadius: 16,
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      child: const Text(
+                        '閉じる',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

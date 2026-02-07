@@ -110,12 +110,12 @@
 
 ### Phase 1 (Data) ✅ **完了**
 - ✅ Pythonスクリプトによるデータ生成パイプラインの構築
-  - Gemini APIを使用した問題生成スクリプト (`scripts/generate_static_questions.py`)
-  - 問題の多様性確保機能（テーマ重複回避、カテゴリ別分散）
+  - Weekly Recap問題生成スクリプト (`scripts/generate_weekly_recap.py`)
   - JSONからSQLite DBへの変換スクリプト (`scripts/json_to_db.py`)
   - 問題分布分析スクリプト (`scripts/analyze_question_distribution.py`)
 - ✅ データモデル実装 (`lib/models/question.dart`)
 - ✅ カテゴリ: rules, history, teams (各カテゴリ × 4難易度 × 50問 = 600問)
+  - 注: ルールクイズ、歴史クイズ、チームクイズの問題は、gensparkのチャットを使用して手動で作成し、JSONファイルを登録する方式に変更
 
 ### Phase 2 (App Base) ✅ **完了**
 - ✅ Flutterプロジェクト構築

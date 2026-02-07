@@ -2,6 +2,7 @@ import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart' show kIsWeb, debugPrint;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'providers/router_provider.dart';
 import 'constants/app_colors.dart';
 import 'services/ad_service.dart';
@@ -119,6 +120,23 @@ class _SoccerQuizMasterAppState extends ConsumerState<SoccerQuizMasterApp> {
         ),
         scaffoldBackgroundColor: AppColors.background,
         useMaterial3: true,
+        textTheme: TextTheme(
+          displayLarge: GoogleFonts.notoSansJp(),
+          displayMedium: GoogleFonts.notoSansJp(),
+          displaySmall: GoogleFonts.notoSansJp(),
+          headlineLarge: GoogleFonts.notoSansJp(),
+          headlineMedium: GoogleFonts.notoSansJp(),
+          headlineSmall: GoogleFonts.notoSansJp(),
+          titleLarge: GoogleFonts.notoSansJp(),
+          titleMedium: GoogleFonts.notoSansJp(),
+          titleSmall: GoogleFonts.notoSansJp(),
+          bodyLarge: GoogleFonts.notoSansJp(),
+          bodyMedium: GoogleFonts.notoSansJp(),
+          bodySmall: GoogleFonts.notoSansJp(),
+          labelLarge: GoogleFonts.notoSansJp(),
+          labelMedium: GoogleFonts.notoSansJp(),
+          labelSmall: GoogleFonts.notoSansJp(),
+        ),
       ),
       routerConfig: router,
     );

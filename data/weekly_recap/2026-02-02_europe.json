@@ -1,169 +1,1028 @@
 {
   "version": "1.0",
-  "generated_at": "2026-02-04T00:46:10Z",
+  "generated_at": "2026-02-08T00:17:04Z",
   "category": "match_recap",
   "league_type": "europe",
   "date": "2026-02-02",
   "questions": [
     {
-      "text": "2月1日のブンデスリーガで、ハイデンハイムに3-2で逆転勝利を収めたドルトムント。このチームのホームスタジアムで、欧州最大級の立ち見席「黄色い壁」で知られるスタジアムの名称は？",
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "Premier League",
+        "Liverpool",
+        "Standings"
+      ],
+      "text": "2024-25シーズン、プレミアリーグ第23節終了時点で首位に立っているクラブは？",
       "options": [
-        "ジグナル・イドゥナ・パルク",
-        "レッドブル・アレーナ",
-        "ベルリン・オリンピアシュタディオン",
-        "アリアンツ・アレーナ"
+        "リヴァプール",
+        "マンチェスター・シティ",
+        "アーセナル",
+        "アストン・ヴィラ"
       ],
       "answerIndex": 0,
-      "explanation": "この試合はドルトムントが3-2で勝利し、ギライシが2得点を挙げる活躍を見せました。ドルトムントの本拠地「ジグナル・イドゥナ・パルク（ヴェストファーレンシュタディオン）」は、南スタンドの巨大な立ち見席が「黄色い壁」として有名です。",
-      "trivia": "「黄色い壁」と呼ばれる南スタンドだけで約2万5000人を収容でき、その熱気は対戦相手にとって大きな脅威となります。",
-      "category": "match_recap",
-      "difficulty": "easy",
-      "tags": "bundesliga,dortmund,stadium,2026",
-      "id": "match_recap_2026_02_02_europe_001"
+      "explanation": "アルネ・スロット監督率いるリヴァプールは、シーズン序盤から安定した強さを見せ、2位以下にポイント差をつけて首位を走っています。",
+      "trivia": "リヴァプールはユルゲン・クロップ監督の退任後、スロット新監督の下でも好調を維持しています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": 24,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
     },
     {
-      "text": "2月2日のセリエAで、ローマを1-0で下したウディネーゼ。対戦相手であるローマの愛称「ジャッロロッソ」は、チームカラーの何色を意味している？",
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "JLeague",
+        "Super Cup",
+        "Vissel Kobe"
+      ],
+      "text": "2025年2月8日に開催される「FUJIFILM SUPER CUP 2025」の対戦カードは？",
       "options": [
-        "白と水色",
-        "黄色と赤",
-        "赤と黒",
-        "青と黒"
+        "川崎フロンターレ vs 柏レイソル",
+        "ヴィッセル神戸 vs サンフレッチェ広島",
+        "横浜F・マリノス vs 名古屋グランパス",
+        "ヴィッセル神戸 vs ガンバ大阪"
       ],
       "answerIndex": 1,
-      "explanation": "この試合はウディネーゼがエッケレンカンプのゴールで1-0と勝利しました。敗れたローマの愛称「ジャッロロッソ（Giallorossi）」はイタリア語で「黄色（Giallo）と赤（Rosso）」を意味し、ローマ市の伝統色に由来します。",
-      "trivia": "ローマのエンブレムには、ローマ建国神話に登場する「狼の乳を飲むロムルスとレムス」が描かれています。",
-      "category": "match_recap",
-      "difficulty": "easy",
-      "tags": "serie_a,roma,udinese,2026",
-      "id": "match_recap_2026_02_02_europe_002"
+      "explanation": "2024年J1王者のヴィッセル神戸と、リーグ2位のサンフレッチェ広島が対戦します（天皇杯も神戸が優勝したため、リーグ2位が出場）。",
+      "trivia": "ヴィッセル神戸は2024年シーズンにJ1リーグと天皇杯の2冠を達成しました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2025-02-08",
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
     },
     {
-      "text": "週末のプレミアリーグで、リーズ・ユナイテッドに4-0で快勝したアーセナル。このチームのエンブレムに描かれており、愛称「ガナーズ（砲手）」の由来となっているものは？",
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "Real Madrid",
+        "Mbappe",
+        "Transfer"
+      ],
+      "text": "2024-25シーズンからレアル・マドリードでプレーしているフランス代表FWは？",
       "options": [
-        "剣",
-        "盾",
-        "大砲",
-        "ライオン"
+        "ウスマン・デンベレ",
+        "エドゥアルド・カマヴィンガ",
+        "キリアン・エムバペ",
+        "オーレリアン・チュアメニ"
       ],
       "answerIndex": 2,
-      "explanation": "アーセナルはこの試合で4-0と大勝しました。チームは元々、王立兵器工場の労働者によって創設された歴史があり、エンブレムには「大砲」が描かれています。これが愛称「ガナーズ」の由来です。",
-      "trivia": "アーセナルはロンドン北部に本拠地を置きますが、創設当初はロンドン南東部のウーリッジという場所にありました。",
-      "category": "match_recap",
-      "difficulty": "easy",
-      "tags": "premier_league,arsenal,history,2026",
-      "id": "match_recap_2026_02_02_europe_003"
+      "explanation": "エムバペはパリ・サンジェルマンからフリー移籍でレアル・マドリードに加入し、背番号9を着用しています。",
+      "trivia": "エムバペは加入直後のUEFAスーパーカップでいきなりゴールを決め、タイトル獲得に貢献しました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
     },
     {
-      "text": "ラ・リーガでレアル・オビエドに3-0で勝利し、2得点を挙げる活躍を見せたキリアン・ムバッペ。彼の出身国は？",
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "Manchester United",
+        "Manager",
+        "Amorim"
+      ],
+      "text": "2024年11月にマンチェスター・ユナイテッドの新監督に就任した人物は？",
       "options": [
-        "ベルギー",
-        "ブラジル",
-        "イングランド",
-        "フランス"
+        "トーマス・トゥヘル",
+        "エリック・テン・ハグ",
+        "ルート・ファン・ニステルローイ",
+        "ルベン・アモリム"
       ],
       "answerIndex": 3,
-      "explanation": "レアル・マドリードはこの試合で3-0と勝利し、ムバッペが2得点を記録しました。彼はフランス代表のキャプテンも務める世界的なストライカーです。",
-      "trivia": "ムバッペは10代でワールドカップ優勝を経験しており、その圧倒的なスピードと決定力で知られています。",
-      "category": "match_recap",
-      "difficulty": "easy",
-      "tags": "la_liga,real_madrid,player,2026",
-      "id": "match_recap_2026_02_02_europe_004"
+      "explanation": "スポルティングCPを率いていたルベン・アモリムが、解任されたテン・ハグの後任として監督に就任しました。",
+      "trivia": "アモリム監督は30代という若さで名門ユナイテッドの指揮官に抜擢されました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
     },
     {
-      "text": "セリエAでパルマに4-1で大勝したユベントス。このチームのユニフォームの特徴から来る愛称「ビアンコネーリ」は、何色と何色を指す？",
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "Mitoma",
+        "Brighton",
+        "Japan"
+      ],
+      "text": "ブライトンに所属する三笘薫が2024-25シーズンに主に務めているポジションは？",
       "options": [
-        "白と黒",
-        "赤と黒",
-        "紫と白",
-        "青と黒"
+        "左ウイング",
+        "トップ下",
+        "右ウイング",
+        "センターフォワード"
       ],
       "answerIndex": 0,
-      "explanation": "この試合はユベントスが4-1で勝利しました。ユベントスの愛称「ビアンコネーリ（Bianconeri）」はイタリア語で「白（Bianco）と黒（Neri）」を意味し、伝統的な縦縞のユニフォームに由来します。",
-      "trivia": "実はユベントスのユニフォームは創設当初ピンク色でしたが、イギリスのノッツ・カウンティというクラブの白黒ユニフォームを誤って受け取ったことから定着しました。",
-      "category": "match_recap",
-      "difficulty": "easy",
-      "tags": "serie_a,juventus,team,2026",
-      "id": "match_recap_2026_02_02_europe_005"
+      "explanation": "三笘薫はブライトンの左サイドの主力としてプレーし、得意のドリブル突破でチャンスを演出しています。",
+      "trivia": "2024-25シーズン開幕戦のエヴァートン戦では、シーズン初ゴールを記録しました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
     },
     {
-      "text": "2月1日のブンデスリーガで、フライブルクに1-0で勝利したシュトゥットガルト。決勝点を挙げたデミロヴィッチが代表チームとしてプレーする国は？",
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "England",
+        "Manager",
+        "Tuchel"
+      ],
+      "text": "2025年1月からイングランド代表の監督に就任したドイツ人指揮官は？",
       "options": [
-        "セルビア",
-        "ボスニア・ヘルツェゴビナ",
-        "クロアチア",
-        "ドイツ"
+        "ユルゲン・クロップ",
+        "トーマス・トゥヘル",
+        "ユリアン・ナーゲルスマン",
+        "ハンジ・フリック"
       ],
       "answerIndex": 1,
-      "explanation": "シュトゥットガルトはこの試合、デミロヴィッチの決勝点で1-0と勝利しました。エルメディン・デミロヴィッチはドイツ生まれですが、ボスニア・ヘルツェゴビナ代表を選択してプレーしています。",
-      "trivia": "シュトゥットガルトには過去に岡崎慎司や遠藤航、伊藤洋輝など、多くの日本人選手が所属していたことでも知られています。",
-      "category": "match_recap",
-      "difficulty": "easy",
-      "tags": "bundesliga,stuttgart,player,2026",
-      "id": "match_recap_2026_02_02_europe_006"
+      "explanation": "元チェルシー、バイエルンのトゥヘルが、ガレス・サウスゲートの後任としてイングランド代表監督に就任しました。",
+      "trivia": "イングランド代表監督にドイツ人が就任するのは史上初めてのことです。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
     },
     {
-      "text": "ラ・リーガでエルチェに3-1で勝利したバルセロナ。このチームの愛称「ブラウグラナ」は、カタルーニャ語で何を意味する？",
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "JLeague",
+        "Vissel Kobe",
+        "Champion"
+      ],
+      "text": "2024年シーズンの明治安田J1リーグで優勝を果たしたクラブは？",
       "options": [
-        "緑と白",
-        "白と青",
-        "青とエンジ",
-        "赤と黄色"
+        "鹿島アントラーズ",
+        "町田ゼルビア",
+        "ヴィッセル神戸",
+        "サンフレッチェ広島"
       ],
       "answerIndex": 2,
-      "explanation": "バルセロナはこの試合で3-1と勝利しました。愛称「ブラウグラナ」はチームカラーである「青（Blau）」と「エンジ（Grana）」を意味します。",
-      "trivia": "バルセロナの宿敵レアル・マドリードとの試合は「エル・クラシコ」と呼ばれ、世界中で数億人が視聴する伝統の一戦です。",
-      "category": "match_recap",
-      "difficulty": "easy",
-      "tags": "la_liga,barcelona,team,2026",
-      "id": "match_recap_2026_02_02_europe_007"
+      "explanation": "ヴィッセル神戸が最終盤までサンフレッチェ広島と激しい優勝争いを繰り広げ、2年連続のリーグ優勝を果たしました。",
+      "trivia": "神戸は天皇杯も制しており、クラブ史上初の国内2冠を達成しました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
     },
     {
-      "text": "2026年2月2日に行われたプレミアリーグの試合で、サンダーランドはハビブ・ディアラの2得点などでバーンリーに3-0と快勝しました。この勝利を収めたサンダーランドの愛称は何でしょう？",
-      "options": [
-        "セインツ",
-        "ホーネッツ",
-        "ポッターズ",
-        "ブラック・キャッツ"
-      ],
-      "answerIndex": 3,
-      "explanation": "この試合はサンダーランドがバーンリーに3-0で勝利しました。ハビブ・ディアラの2ゴールとケムスディン・タルビのゴールで快勝したサンダーランドのチーム愛称は「ブラック・キャッツ（黒猫）」です。ちなみに、彼らの本拠地は「スタジアム・オブ・ライト」と呼ばれています。",
-      "trivia": "サンダーランドはこの勝利でホーム戦12試合無敗を記録し、昇格組としては異例の強さを見せています。2得点を挙げたハビブ・ディアラは、フランスのストラスブールから移籍してきた期待のMFです。",
-      "category": "match_recap",
-      "difficulty": "normal",
-      "tags": "europe,premier_league,2026",
-      "id": "match_recap_2026_02_02_europe_008"
-    },
-    {
-      "text": "2026年2月2日に行われたセリエAの試合で、ウディネーゼはユルヘン・エッケレンカンプの決勝点で強豪ローマを1-0で下しました。この決勝点を挙げたエッケレンカンプの出身国はどこでしょう？",
-      "options": [
-        "オランダ",
-        "デンマーク",
-        "ベルギー",
-        "ドイツ"
-      ],
-      "answerIndex": 0,
-      "explanation": "この試合はウディネーゼがローマに1-0で勝利しました。後半49分に決勝ゴールを決めたユルヘン・エッケレンカンプはオランダ出身のMFです。彼はアヤックスの下部組織出身で、以前はドイツのヘルタ・ベルリンなどでもプレーしていました。",
-      "trivia": "この敗戦により、ローマはリーグ順位を5位に下げトップ4から転落しました。一方、勝利したウディネーゼのホームスタジアムは「スタディオ・フリウーリ（現在はブルーエナジー・スタジアム）」という名称で親しまれています。",
-      "category": "match_recap",
-      "difficulty": "normal",
-      "tags": "europe,serie_a,2026",
-      "id": "match_recap_2026_02_02_europe_009"
-    },
-    {
-      "text": "2026年2月2日（日本時間）に行われたプレミアリーグの一戦で、マンチェスター・ユナイテッドはフラム相手に後半アディショナルタイムの決勝弾により3-2で劇的な勝利を収めました。この試合で値千金の決勝ゴールを決めたストライカー、ベンヤミン・シェシュコの出身国は次のうちどこでしょう？",
-      "options": [
-        "スロバキア",
-        "スロベニア",
-        "セルビア",
-        "クロアチア"
-      ],
-      "answerIndex": 1,
-      "explanation": "正解はスロベニアです。\n\nこの試合、マンチェスター・ユナイテッドはカゼミーロとマテウス・クーニャのゴールで一時2点をリードしましたが、粘るフラムに終盤立て続けに得点を許し、2-2の同点とされました。しかし試合終了間際の後半アディショナルタイム、ベンヤミン・シェシュコが劇的な決勝ゴールを決め、オールド・トラッフォードの観客を沸かせました。\n\nシェシュコはスロベニア出身の大型ストライカーで、その長身とスピード、決定力から同国の英雄として期待されています。",
-      "trivia": "スロベニアは人口約210万人の小国ですが、サッカー界にはシェシュコの他にも、アトレティコ・マドリードの守護神ヤン・オブラクや、かつてセリエAで活躍したヨシップ・イリチッチなど、実力者を輩出しています。シェシュコはレッドブル・ザルツブルク時代にその才能を開花させました。",
-      "category": "match_recap",
+      "id": "w_00008",
+      "quizType": "weekly",
       "difficulty": "hard",
-      "tags": "europe,premier_league,manchester_united,fulham,2026",
-      "id": "match_recap_2026_02_02_europe_010"
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "Bayern Munich",
+        "Kompany",
+        "Manager"
+      ],
+      "text": "2024-25シーズンからバイエルン・ミュンヘンの監督を務めている人物は？",
+      "options": [
+        "シャビ・アロンソ",
+        "ジョゼ・モウリーニョ",
+        "ジネディーヌ・ジダン",
+        "ヴァンサン・コンパニ"
+      ],
+      "answerIndex": 3,
+      "explanation": "バーンリーを率いていたコンパニが、サプライズ人事でバイエルンの新監督に就任しました。",
+      "trivia": "コンパニは現役時代、ハンブルガーSVでプレーしており、ドイツ語も堪能です。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "Kubo",
+        "Real Sociedad",
+        "LaLiga"
+      ],
+      "text": "レアル・ソシエダに所属する久保建英の2024-25シーズンの背番号は？",
+      "options": [
+        "14",
+        "10",
+        "19",
+        "7"
+      ],
+      "answerIndex": 0,
+      "explanation": "久保建英はレアル・ソシエダで背番号14を着用し、チームの攻撃の中心として活躍しています。",
+      "trivia": "14番はヨハン・クライフが愛用した番号としても知られていますが、ソシエダではシャビ・アロンソも着用していました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "cup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Levain Cup",
+        "Nagoya Grampus",
+        "Niigata"
+      ],
+      "text": "2024年のYBCルヴァンカップ決勝で、PK戦の末に優勝したクラブは？",
+      "options": [
+        "アルビレックス新潟",
+        "名古屋グランパス",
+        "横浜F・マリノス",
+        "アビスパ福岡"
+      ],
+      "answerIndex": 1,
+      "explanation": "名古屋グランパスがアルビレックス新潟との激闘（延長戦終了時3-3）をPK戦で制し、3年ぶり2度目の優勝を果たしました。",
+      "trivia": "この決勝戦は国立競技場で行われ、6万人を超える大観衆が集まりました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "Liverpool",
+        "Endo",
+        "Premier League"
+      ],
+      "text": "リヴァプールに所属する日本代表MF遠藤航のポジションは？",
+      "options": [
+        "センターバック",
+        "攻撃的MF",
+        "守備的MF",
+        "右サイドバック"
+      ],
+      "answerIndex": 2,
+      "explanation": "遠藤航は主にアンカー（守備的ミッドフィルダー）としてプレーし、中盤の守備を引き締める役割を担っています。",
+      "trivia": "クロップ前監督からは「遠藤がいなければ契約延長していなかったかもしれない」と絶賛されるほどの信頼を得ていました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "Parma",
+        "Suzuki",
+        "Serie A"
+      ],
+      "text": "2024-25シーズンからセリエAのパルマでプレーしている日本代表GKは？",
+      "options": [
+        "中村航輔",
+        "シュミット・ダニエル",
+        "大迫敬介",
+        "鈴木彩艶"
+      ],
+      "answerIndex": 3,
+      "explanation": "鈴木彩艶（ザイオン）はシント=トロイデンからパルマへ移籍し、セリエAで正GKとしてプレーしています。",
+      "trivia": "日本人GKがセリエAでプレーするのは史上初めての快挙です。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "Ballon d'Or",
+        "Rodri",
+        "Vinicius"
+      ],
+      "text": "2024年のバロンドールを受賞したマンチェスター・シティの選手は？",
+      "options": [
+        "ロドリ",
+        "アーリング・ハーランド",
+        "ジュード・ベリンガム",
+        "ヴィニシウス・ジュニオール"
+      ],
+      "answerIndex": 0,
+      "explanation": "スペイン代表のMFロドリが、プレミアリーグ優勝とEURO 2024優勝への貢献が評価され、自身初のバロンドールを受賞しました。",
+      "trivia": "守備的MFがバロンドールを受賞するのは非常に珍しいケースです。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "Monaco",
+        "Minamino",
+        "Ligue 1"
+      ],
+      "text": "ASモナコで背番号18を背負い、攻撃の主軸として活躍する日本代表選手は？",
+      "options": [
+        "オナイウ阿道",
+        "南野拓実",
+        "中村敬斗",
+        "伊東純也"
+      ],
+      "answerIndex": 1,
+      "explanation": "南野拓実はモナコで好調を維持しており、2024-25シーズンもチームの攻撃を牽引しています。",
+      "trivia": "南野は昨シーズン、チームのシーズンMVPに選ばれるほどの活躍を見せました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "Premier League",
+        "Top Scorer",
+        "Haaland"
+      ],
+      "text": "2024-25シーズンのプレミアリーグで、得点ランキング首位を走っているマンチェスター・シティのFWは？",
+      "options": [
+        "モハメド・サラー",
+        "コール・パーマー",
+        "アーリング・ハーランド",
+        "アレクサンデル・イサク"
+      ],
+      "answerIndex": 2,
+      "explanation": "ハーランドは開幕から驚異的なペースで得点を重ね、3シーズン連続の得点王を狙っています。",
+      "trivia": "ハーランドは開幕から数試合でハットトリックを複数回達成するなど、圧倒的な決定力を見せつけました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "Liverpool",
+        "Manager",
+        "Slot"
+      ],
+      "text": "2024-25シーズンからリヴァプールの監督を務めているオランダ人指揮官は？",
+      "options": [
+        "エリック・テン・ハグ",
+        "ロナルド・クーマン",
+        "フランク・デ・ブール",
+        "アルネ・スロット"
+      ],
+      "answerIndex": 3,
+      "explanation": "フェイエノールトを率いていたアルネ・スロットが、長期政権を築いたクロップの後任として就任しました。",
+      "trivia": "スロット監督は就任初年度からスムーズにチームを掌握し、プレミアリーグ首位争いを演じています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Champions League",
+        "Format"
+      ],
+      "text": "2024-25シーズンからUEFAチャンピオンズリーグのグループステージに代わって導入された新方式は？",
+      "options": [
+        "リーグフェーズ",
+        "ダブルエリミネーション",
+        "スイス式トーナメント",
+        "スーパーリーグ"
+      ],
+      "answerIndex": 0,
+      "explanation": "従来のグループステージが廃止され、36チームが1つのリーグで順位を争う「リーグフェーズ」が導入されました。",
+      "trivia": "各チームは異なる8チームと対戦し、上位8チームが自動的に決勝トーナメントに進出します。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "Leverkusen",
+        "Wirtz",
+        "Star"
+      ],
+      "text": "昨シーズンのブンデスリーガ無敗優勝に貢献し、2024-25シーズンもレバークーゼンの中心選手として活躍するドイツ代表MFは？",
+      "options": [
+        "カイ・ハフェルツ",
+        "フロリアン・ヴィルツ",
+        "ジャマル・ムシアラ",
+        "ヨシュア・キミッヒ"
+      ],
+      "answerIndex": 1,
+      "explanation": "ヴィルツはシャビ・アロンソ監督の下で才能を開花させ、ブンデスリーガ年間最優秀選手にも選ばれました。",
+      "trivia": "2024-25シーズンのチャンピオンズリーグ開幕戦でも2ゴールを挙げるなど、欧州の舞台でも活躍しています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "Napoli",
+        "Conte",
+        "Manager"
+      ],
+      "text": "2024-25シーズンからナポリの監督に就任し、チームの立て直しを図っているイタリア人指揮官は？",
+      "options": [
+        "ルチアーノ・スパレッティ",
+        "マッシミリアーノ・アッレグリ",
+        "アントニオ・コンテ",
+        "シモーネ・インザーギ"
+      ],
+      "answerIndex": 2,
+      "explanation": "昨季低迷したナポリは、優勝請負人として知られるコンテを招聘し、首位争いに加わる復活を見せています。",
+      "trivia": "コンテはユヴェントスやインテルでもスクデット（セリエA優勝）を獲得した経験があります。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "Sporting",
+        "Gyokeres",
+        "Striker"
+      ],
+      "text": "ポルトガルのスポルティングCPでゴールを量産し、ビッグクラブから注目を集めているスウェーデン代表FWは？",
+      "options": [
+        "デヤン・クルゼフスキ",
+        "アレクサンデル・イサク",
+        "ズラタン・イブラヒモビッチ",
+        "ヴィクトル・ギョケレス"
+      ],
+      "answerIndex": 3,
+      "explanation": "ギョケレスは驚異的な得点力でポルトガルリーグの得点王争いを独走し、CLでもマンチェスター・シティ相手にハットトリックを達成しました。",
+      "trivia": "ゴールを決めた際に両手を顔の前で組む独特の「マスク」パフォーマンスがトレードマークです。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Tottenham",
+        "Son Heung-min",
+        "Captain"
+      ],
+      "text": "トッテナム・ホットスパーでキャプテンを務めているアジア人選手は？",
+      "options": [
+        "ソン・フンミン",
+        "三笘薫",
+        "キム・ミンジェ",
+        "冨安健洋"
+      ],
+      "answerIndex": 0,
+      "explanation": "ソン・フンミンは2023-24シーズンからトッテナムのキャプテンに就任し、2024-25シーズンもチームを牽引しています。",
+      "trivia": "プレミアリーグのクラブでアジア人が正式なキャプテンを務めるのは彼が初めてのケースでした。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "FIFA",
+        "Club World Cup",
+        "USA"
+      ],
+      "text": "2025年6月から7月にかけて開催される、32チーム参加の新方式によるFIFAクラブワールドカップの開催国は？",
+      "options": [
+        "日本",
+        "アメリカ",
+        "サウジアラビア",
+        "中国"
+      ],
+      "answerIndex": 1,
+      "explanation": "新装されたクラブワールドカップはアメリカで開催され、欧州や南米の強豪クラブが一堂に会します。",
+      "trivia": "日本からは浦和レッズが出場権を獲得しています（2022年ACL優勝のため）。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "Barcelona",
+        "Yamal",
+        "Youngster"
+      ],
+      "text": "バルセロナの主力として定着し、EURO 2024でも大活躍した10代のスペイン代表選手は？",
+      "options": [
+        "ガビ",
+        "ペドリ",
+        "ラミン・ヤマル",
+        "アンス・ファティ"
+      ],
+      "answerIndex": 2,
+      "explanation": "ヤマルは16歳でEUROに出場し、大会最年少得点記録などを更新。バルセロナでも右ウイングの絶対的なレギュラーとなっています。",
+      "trivia": "彼の父親はモロッコ出身、母親は赤道ギニア出身ですが、彼はスペイン代表を選択しました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "Chelsea",
+        "Palmer",
+        "Stats"
+      ],
+      "text": "チェルシーの攻撃の中心であり、2023-24シーズンにマンチェスター・シティから移籍して大ブレイクした選手は？",
+      "options": [
+        "コナー・ギャラガー",
+        "ニコラス・ジャクソン",
+        "ノニ・マドゥエケ",
+        "コール・パーマー"
+      ],
+      "answerIndex": 3,
+      "explanation": "パーマーは移籍初年度にリーグ22得点を記録し、2024-25シーズンも得点とアシストを量産しています。",
+      "trivia": "彼はPKの名手としても知られ、チェルシー加入後PKを一度も外していません（2025年初頭時点）。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "scot",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "Celtic",
+        "Kyogo",
+        "Maeda"
+      ],
+      "text": "セルティックに所属する日本人選手の中で、2024-25シーズンもエースストライカーとして得点を重ねているのは？",
+      "options": [
+        "古橋亨梧",
+        "前田大然",
+        "岩田智輝",
+        "旗手怜央"
+      ],
+      "answerIndex": 0,
+      "explanation": "古橋亨梧はセルティックの絶対的なエースとして君臨し、CLでも得点を決めるなど活躍しています。",
+      "trivia": "彼はセルティックファンの間で絶大な人気を誇り、スタジアムでは頻繁に彼のチャントが歌われます。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "JLeague",
+        "Machida Zelvia",
+        "Promotion"
+      ],
+      "text": "2024年にJ1初昇格ながら優勝争いに加わる旋風を巻き起こしたクラブは？",
+      "options": [
+        "東京ヴェルディ",
+        "FC町田ゼルビア",
+        "ジュビロ磐田",
+        "清水エスパルス"
+      ],
+      "answerIndex": 1,
+      "explanation": "黒田剛監督率いる町田ゼルビアは、徹底した勝利への執念とフィジカルを活かしたサッカーでJ1を席巻しました。",
+      "trivia": "町田ゼルビアは、高校サッカーの名門・青森山田高校を長く率いた黒田監督がプロクラブを指揮して成功を収めた珍しい例です。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Derby",
+        "Manchester United",
+        "Manchester City"
+      ],
+      "text": "マンチェスター・ユナイテッドとマンチェスター・シティの対戦は何ダービーと呼ばれる？",
+      "options": [
+        "マージーサイド・ダービー",
+        "ロンドン・ダービー",
+        "マンチェスター・ダービー",
+        "ノースウェスト・ダービー"
+      ],
+      "answerIndex": 2,
+      "explanation": "同じマンチェスターを本拠地とする両チームの対戦は「マンチェスター・ダービー」と呼ばれ、世界中が注目する一戦です。",
+      "trivia": "近年はシティが優勢ですが、2024年のFAカップ決勝ではユナイテッドが勝利しタイトルを獲得しました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "JLeague",
+        "Schedule",
+        "Transition"
+      ],
+      "text": "Jリーグが2026年から導入を決定している大きな変更点は？",
+      "options": [
+        "外国人枠の撤廃",
+        "チーム数の削減",
+        "VARの廃止",
+        "秋春制への移行"
+      ],
+      "answerIndex": 3,
+      "explanation": "Jリーグは欧州主要リーグと同じく、8月頃に開幕し5月頃に閉幕する「秋春制」への移行を2026-27シーズンから実施します。",
+      "trivia": "これにより、夏の猛暑での試合減少や、海外移籍・ACLの日程との整合性が期待されています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "Atletico Madrid",
+        "Alvarez",
+        "Transfer"
+      ],
+      "text": "2024年夏にマンチェスター・シティからアトレティコ・マドリードへ移籍したアルゼンチン代表FWは？",
+      "options": [
+        "フリアン・アルバレス",
+        "アンヘル・コレア",
+        "ラウタロ・マルティネス",
+        "アレクシス・マック・アリスター"
+      ],
+      "answerIndex": 0,
+      "explanation": "出場機会を求めたアルバレスは、シメオネ監督率いるアトレティコへ大型移籍し、新たなエースとして期待されています。",
+      "trivia": "彼の愛称「ラ・アラーニャ（蜘蛛）」は、子供の頃のプレースタイルが蜘蛛のようにボールを絡め取っていたことに由来します。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "Red Bull",
+        "Klopp",
+        "Job"
+      ],
+      "text": "2025年1月からレッドブル・グループの「グローバルサッカー責任者」に就任した名将は？",
+      "options": [
+        "ラルフ・ラングニック",
+        "ユルゲン・クロップ",
+        "マウリシオ・ポチェッティーノ",
+        "ジョゼップ・グアルディオラ"
+      ],
+      "answerIndex": 1,
+      "explanation": "リヴァプール退任後、現場の監督ではなく、レッドブル傘下のクラブ（ライプツィヒ、ザルツブルク等）を統括する役割に就きました。",
+      "trivia": "この就任はサッカー界に大きな衝撃を与え、一部の古巣ファンからは批判の声も上がりました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-02",
+        "expiryDate": "2026-02-09",
+        "season": "2025-26"
+      }
     }
   ]
 }

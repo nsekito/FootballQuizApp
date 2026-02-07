@@ -61,8 +61,8 @@ GEMINI_API_KEY=実際のAPIキーをここに
 venvが有効化された状態で：
 
 ```powershell
-# テストモード（ルールクイズ、各難易度5問のみ）
-python scripts\generate_static_questions.py --test --category rules
+# Weekly Recap問題生成のテスト（J1リーグのみ）
+python scripts\generate_weekly_recap.py --j1-only
 ```
 
 ## トラブルシューティング

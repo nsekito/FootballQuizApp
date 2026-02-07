@@ -1,169 +1,1034 @@
 {
   "version": "1.0",
-  "generated_at": "2026-02-04T00:43:41Z",
+  "generated_at": "2026-02-08T00:13:48Z",
   "category": "match_recap",
   "league_type": "j1",
   "date": "2026-02-02",
   "questions": [
     {
-      "text": "2026年2月、通常のリーグ戦とは異なる特別大会「明治安田Jリーグ百年構想リーグ」がいよいよ開幕します。この大会が2月から6月にかけて開催される主な理由は何ですか？（ヒント：2026年8月からJリーグのシーズン日程が大きく変わります）",
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "昇格",
+        "清水エスパルス",
+        "2025シーズン"
+      ],
+      "text": "2025年シーズンの明治安田J1リーグ。2024年のJ2リーグで優勝し、自動昇格でJ1復帰を果たしたクラブはどこ？",
       "options": [
-        "秋春制への移行準備のため",
-        "チーム数を減らすため",
-        "ワールドカップ開催のため",
-        "スタジアム改修のため"
+        "清水エスパルス",
+        "V・ファーレン長崎",
+        "横浜FC",
+        "ファジアーノ岡山"
       ],
       "answerIndex": 0,
-      "explanation": "Jリーグは2026-27シーズンから、欧州主要リーグと同じ「8月開幕・翌年5月閉幕」の秋春制へ完全移行します。その移行期間の調整として、2026年の前半（2月〜6月）は特別なレギュレーションの「百年構想リーグ」が開催されます。",
-      "trivia": "この特別大会は降格がないレギュレーションとなる予定で、各クラブが若手選手を積極的に起用するなど、将来を見据えた戦いが見られることが期待されています。",
-      "category": "match_recap",
-      "difficulty": "easy",
-      "tags": "japan,j1,2026",
-      "id": "match_recap_2026_02_02_j1_001"
+      "explanation": "清水エスパルスは2024年シーズンのJ2リーグで見事に優勝を果たし、1年でのJ1復帰を決めました。2位の横浜FCと共に自動昇格しています。",
+      "trivia": "清水エスパルスは「オリジナル10」の一つであり、サッカー王国・静岡を代表するクラブです。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2025"
+      }
     },
     {
-      "text": "2026年2月2日、FC東京は2月7日の開幕戦に向けた「スタメン予想キャンペーン」の実施を発表しました。この開幕戦でFC東京が対戦する、数多くのタイトルを獲得してきた「常勝軍団」とも呼ばれるクラブはどこですか？",
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "日程",
+        "開幕",
+        "2025シーズン"
+      ],
+      "text": "2025年の明治安田J1リーグは、例年通り2月に開幕します。リーグ戦のシーズン移行（秋春制）に向けた過渡期となる今季ですが、J1リーグの開幕予定時期として正しいものは？",
       "options": [
-        "サンフレッチェ広島",
-        "鹿島アントラーズ",
-        "ガンバ大阪",
-        "ヴィッセル神戸"
+        "1月25日・26日頃",
+        "2月14日・15日頃",
+        "3月1日・2日頃",
+        "4月1日頃"
       ],
       "answerIndex": 1,
-      "explanation": "FC東京は2月7日に行われる「明治安田J1百年構想リーグ」の開幕戦で鹿島アントラーズと対戦します。2月2日には、この試合のスターティングメンバーと試合結果を予想するファン参加型のキャンペーンが発表されました。",
-      "trivia": "鹿島アントラーズはJリーグ発足時の「オリジナル10」のひとつであり、国内三大タイトル（J1リーグ、ルヴァン杯、天皇杯）のすべてで最多優勝回数を誇る名門クラブです。",
-      "category": "match_recap",
-      "difficulty": "easy",
-      "tags": "japan,j1,2026",
-      "id": "match_recap_2026_02_02_j1_002"
+      "explanation": "2025年シーズンのJ1リーグは、2月14日（金）の週末に開幕する日程が組まれています。これは例年とほぼ同様のスケジュールです。",
+      "trivia": "Jリーグは2026-27シーズンから「秋春制（8月開幕・5月閉幕）」への移行を決定しており、2025年は現在の「春秋制」で行われる最後のフルシーズンとなります。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2025"
+      }
     },
     {
-      "text": "2026年2月2日、名古屋グランパスはある大手通信事業者とのコラボ企画「MAX」キャンペーンの実施を発表しました。観戦チケットやサイン入りユニフォームが当たるこのキャンペーンのパートナー企業はどこですか？（ヒント：dポイントでおなじみの企業です）",
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "移籍市場",
+        "プレミアリーグ",
+        "デッドライン",
+        "冬の移籍"
+      ],
+      "text": "欧州主要リーグの2025年冬の移籍市場。プレミアリーグやラ・リーガなど多くのリーグで移籍期間が終了（デッドライン）となるのはいつ？",
       "options": [
-        "KDDI (au)",
-        "ソフトバンク",
-        "NTTドコモ",
-        "楽天モバイル"
+        "1月31日（金）",
+        "2月28日（金）",
+        "2月3日（月）",
+        "2月14日（金）"
       ],
       "answerIndex": 2,
-      "explanation": "名古屋グランパスは株式会社NTTドコモとの協業により、「ドコモ MAX」などのプラン契約者を対象とした豪華プレゼントキャンペーンを2月2日に発表しました。開幕を盛り上げるための施策の一つです。",
-      "trivia": "名古屋グランパスは、Jリーグ開幕当初から「グランパスくん」というシャチをモチーフにしたマスコットが大人気で、マスコット総選挙でも常に上位に入る愛されキャラクターです。",
-      "category": "match_recap",
-      "difficulty": "easy",
-      "tags": "japan,j1,2026",
-      "id": "match_recap_2026_02_02_j1_003"
+      "explanation": "2025年の冬の移籍市場は、プレミアリーグやラ・リーガなど主要リーグで現地時間2月3日（日本時間2月4日早朝）に閉鎖されます。例年1月末ですが、週末の関係で2月初旬に設定されました。",
+      "trivia": "「デッドライン・デー」は欧州サッカー界の恒例行事で、締切直前に駆け込みで大型移籍が成立することが多く、世界中のファンが注目します。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
     },
     {
-      "text": "2026年2月2日、セレッソ大阪に所属するMF平野佑一の完全移籍が発表されました。新天地となる「ヌグリ・スンビランFC」はどこの国のクラブチームでしょうか？（ヒント：東南アジアのクラブです）",
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "ブライトン",
+        "プレミアリーグ"
+      ],
+      "text": "プレミアリーグのブライトンに所属し、左サイドからの鋭いドリブルでチームの攻撃を牽引している日本代表選手は誰？",
       "options": [
-        "ベトナム",
-        "シンガポール",
-        "タイ",
-        "マレーシア"
+        "冨安健洋",
+        "久保建英",
+        "遠藤航",
+        "三笘薫"
       ],
       "answerIndex": 3,
-      "explanation": "2月2日、セレッソ大阪はMF平野佑一がマレーシア・スーパーリーグの「ヌグリ・スンビランFC」へ完全移籍することを発表しました。平野選手はボランチとして活躍していましたが、新たな挑戦として東南アジアへの移籍を決断しました。",
-      "trivia": "近年、Jリーグから東南アジアのクラブへ移籍する日本人選手が増加しており、マレーシアリーグには強豪ジョホール・ダルル・タクジムFCなどが存在します。",
-      "category": "match_recap",
-      "difficulty": "normal",
-      "tags": "japan,j1,2026",
-      "id": "match_recap_2026_02_02_j1_004"
+      "explanation": "三笘薫はブライトン・アンド・ホーヴ・アルビオンFCに所属しています。今季も左ウイングの主力としてプレーしています。",
+      "trivia": "三笘薫のドリブル技術は大学時代の論文研究に基づいているというエピソードは、現地イギリスでも有名な話として紹介されています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
     },
     {
-      "text": "京都サンガF.C.の主軸FWとして活躍した原大智選手ですが、1月末から2月初旬にかけてのニュースで、ドイツのクラブへの完全移籍が報じられました。その移籍先は次のうちどこでしょう？",
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "レアル・ソシエダ",
+        "ラ・リーガ"
+      ],
+      "text": "ラ・リーガのレアル・ソシエダに所属する久保建英。2025年2月1日の第22節で予定されていた対戦相手は、バスク地方のライバルでもあるどのクラブ？",
       "options": [
-        "FCザンクトパウリ",
-        "ボルシア・ドルトムント",
-        "フランクフルト",
-        "バイエルン・ミュンヘン"
+        "アスレティック・ビルバオ",
+        "バルセロナ",
+        "オサスナ",
+        "レアル・マドリード"
       ],
       "answerIndex": 0,
-      "explanation": "京都サンガF.C.のFW原大智は、ドイツの「FCザンクトパウリ」への完全移籍が決定しました。原選手は高さと足元の技術を兼ね備えた大型FWとしてチームの攻撃を牽引してきましたが、再び海外でのプレーを選択することとなりました。",
-      "trivia": "FCザンクトパウリはドイツ・ハンブルクを本拠地とし、熱狂的なサポーターと独自のクラブカルチャーを持つことで世界的に知られるクラブです。",
-      "category": "match_recap",
-      "difficulty": "normal",
-      "tags": "japan,j1,2026",
-      "id": "match_recap_2026_02_02_j1_005"
+      "explanation": "2月1日のラ・リーガ第22節で、レアル・ソシエダは同じバスク地方に本拠地を置くライバル、アスレティック・ビルバオとの「バスク・ダービー」が組まれています（※日程変更の可能性あり）。",
+      "trivia": "バスク・ダービーはスペインで最も歴史あるダービーの一つで、激しいライバル関係にありながらも、両チームのファンが友好的に交流することでも知られています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": 22,
+        "matchDate": "2025-02-01",
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
     },
     {
-      "text": "浦和レッズのGK西川周作選手が2月2日のイベントで、今週末（2月7日）に控えた「明治安田J1リーグ開幕戦」への意気込みを語りました。対戦相手として挙げられたチームはどこでしょう？",
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "リヴァプール",
+        "プレミアリーグ",
+        "首位争い"
+      ],
+      "text": "2024-25シーズンのプレミアリーグ、1月終了時点で首位争いを繰り広げている、アルネ・スロット監督率いるクラブはどこ？",
       "options": [
-        "鹿島アントラーズ",
-        "ジェフユナイテッド千葉",
-        "ガンバ大阪",
-        "FC東京"
+        "マンチェスター・ユナイテッド",
+        "リヴァプール",
+        "チェルシー",
+        "トッテナム"
       ],
       "answerIndex": 1,
-      "explanation": "浦和レッズの西川周作選手はイベントにて、2月7日に予定されている開幕戦の対戦相手「ジェフユナイテッド千葉」について言及し、「勢いのあるチーム」と警戒感を口にしました。2026年シーズンは例年より早い2月上旬の開幕が予定されています。",
-      "trivia": "西川周作選手はJ1通算出場記録の更新も期待されるベテランGKで、キックの精度を生かした攻撃の起点としても長く活躍しています。",
-      "category": "match_recap",
-      "difficulty": "normal",
-      "tags": "japan,j1,2026",
-      "id": "match_recap_2026_02_02_j1_006"
+      "explanation": "リヴァプールは新監督アルネ・スロットの下で安定した強さを見せ、マンチェスター・シティやアーセナルと共に激しい優勝争いを展開しています。",
+      "trivia": "クロップ監督の長期政権後に就任したスロット監督ですが、就任初年度からスムーズにチームを掌握し、現地メディアからも高く評価されています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
     },
     {
-      "text": "RB大宮アルディージャ（旧・大宮アルディージャ）のDF市原吏音選手について、オランダ1部リーグの強豪クラブへの完全移籍が報じられました。そのクラブはどこでしょう？",
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "原口元気",
+        "浦和レッズ",
+        "移籍"
+      ],
+      "text": "2024年シーズン途中にドイツから古巣・浦和レッズに復帰した、元日本代表MFは誰？",
       "options": [
-        "PSV",
-        "アヤックス",
-        "AZアルクマール",
-        "フェイエノールト"
+        "香川真司",
+        "長谷部誠",
+        "原口元気",
+        "大迫勇也"
       ],
       "answerIndex": 2,
-      "explanation": "RB大宮アルディージャの若きDF市原吏音は、オランダ1部の「AZアルクマール」への完全移籍が発表されました。レッドブル・グループの参画により注目を集める大宮から、欧州主要リーグへの直接のステップアップとなります。",
-      "trivia": "AZアルクマールは菅瓦由勢選手（現サウサンプトン）などがかつて所属したクラブで、日本人選手の育成と欧州でのステップアップに定評があります。",
-      "category": "match_recap",
-      "difficulty": "normal",
-      "tags": "japan,j1,2026",
-      "id": "match_recap_2026_02_02_j1_007"
+      "explanation": "原口元気は2024年9月にドイツのシュトゥットガルトから古巣である浦和レッズに完全移籍で復帰しました。2025年シーズンも浦和での活躍が期待されています。",
+      "trivia": "原口元気は浦和レッズのユース出身で、かつては背番号9を背負い、若くしてチームの中心選手として活躍してから海外へ挑戦しました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2025"
+      }
     },
     {
-      "text": "セレッソ大阪U-18に所属するFW小野田亮汰選手が、ドイツ・ブンデスリーガ1部のクラブに「飛び級」で電撃加入することが話題となりました。そのクラブはどこでしょう？",
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "南野拓実",
+        "モナコ",
+        "リーグ・アン"
+      ],
+      "text": "フランス・リーグアンのASモナコに所属し、背番号18をつけて活躍している日本代表選手は誰？",
       "options": [
+        "オナイウ阿道",
+        "中村敬斗",
+        "伊東純也",
+        "南野拓実"
+      ],
+      "answerIndex": 3,
+      "explanation": "南野拓実（Minamino Takumi）はASモナコに所属しています。ザルツブルク時代の恩師ヒュッター監督の下で主力としてプレーしています。",
+      "trivia": "モナコは「公国」でありフランスではありませんが、サッカークラブのASモナコはフランスリーグに越境参加しているという珍しい形態をとっています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "scottish",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "セルティック",
+        "日本人選手",
+        "スコットランド"
+      ],
+      "text": "スコットランドのセルティックには多くの日本人選手が在籍しています。2024-25シーズン現在、セルティックに所属していない選手は次のうち誰？",
+      "options": [
+        "岩田智輝",
+        "旗手怜央",
+        "前田大然",
+        "古橋亨梧"
+      ],
+      "answerIndex": 0,
+      "explanation": "岩田智輝は2024年夏にイングランド3部のバーミンガム・シティへ完全移籍しました。古橋、前田、旗手は引き続きセルティックでプレーしています。",
+      "trivia": "バーミンガム・シティには、かつてセルティックでコーチを務めたクリス・デイヴィスが監督に就任しており、岩田の獲得を熱望したと言われています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "J2リーグ",
+        "降格",
+        "サガン鳥栖"
+      ],
+      "text": "2024年シーズンのJ1リーグで最下位となり、2025年シーズンはJ2リーグで戦うことになった九州のクラブはどこ？",
+      "options": [
+        "ロアッソ熊本",
+        "サガン鳥栖",
+        "アビスパ福岡",
+        "大分トリニータ"
+      ],
+      "answerIndex": 1,
+      "explanation": "サガン鳥栖は2024年のJ1リーグで苦戦し、最下位でJ2降格が決まりました。長年J1に定着していましたが、2025年はJ2からの再出発となります。",
+      "trivia": "サガン鳥栖の「サガン」は、砂岩（砂が固まってできた岩）のように小さな力が結集して強くなるという意味と、佐賀弁の「佐賀ん（佐賀の）」という言葉が掛けられています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2025"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "日程",
+        "マンチェスター・シティ",
+        "アーセナル"
+      ],
+      "text": "プレミアリーグ第23節の注目カードとして、2025年2月2日（日）頃に予定されていたビッグマッチの組み合わせはどれ？（日程変更の可能性あり）",
+      "options": [
+        "マンチェスター・シティ vs リヴァプール",
+        "チェルシー vs トッテナム",
+        "アーセナル vs マンチェスター・シティ",
+        "リヴァプール vs マンチェスター・ユナイテッド"
+      ],
+      "answerIndex": 2,
+      "explanation": "2月初旬のプレミアリーグのスケジュールでは、アーセナルとマンチェスター・シティの直接対決が組まれていることが話題でした（実際のキックオフ日時はTV放映権等で前後することがあります）。",
+      "trivia": "アーセナルのアルテタ監督は、かつてマンチェスター・シティでグアルディオラ監督のアシスタントコーチを務めており、師弟対決としても注目されます。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": 23,
+        "matchDate": "2025-02-02",
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "championship",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "田中碧",
+        "リーズ",
+        "チャンピオンシップ"
+      ],
+      "text": "イングランド2部（チャンピオンシップ）のリーズ・ユナイテッドに移籍し、中盤の要として高い評価を得ている日本代表MFは誰？",
+      "options": [
+        "角田涼太朗",
+        "橋岡大樹",
+        "斉藤光毅",
+        "田中碧"
+      ],
+      "answerIndex": 3,
+      "explanation": "田中碧は2024年夏にドイツのデュッセルドルフからリーズ・ユナイテッドへ移籍しました。加入後すぐにスタメンに定着し、マン・オブ・ザ・マッチに選出されるなど活躍しています。",
+      "trivia": "リーズのサポーターからは、彼の名前「Ao（アオ）」やプレーぶりを称えるチャントが作られるほど早くも愛されています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "マスコット",
+        "シーズン開幕"
+      ],
+      "text": "Jリーグのシーズン開幕前に行われる恒例イベントで、ファン投票によって順位が決まる「Jリーグマスコット総選挙」。2024年以降、このイベントの開催形式はどうなった？",
+      "options": [
+        "2023年を最後に終了した",
+        "スタジアム来場者のみの投票になった",
+        "J1クラブのみで開催されている",
+        "毎年継続して開催されている"
+      ],
+      "answerIndex": 0,
+      "explanation": "長年親しまれた「Jリーグマスコット総選挙」は、2023年の開催（優勝はマリンちゃん）を最後に終了しました。現在はシーズン開幕時の集合写真撮影などは行われていますが、順位を決める総選挙形式は廃止されました。",
+      "trivia": "総選挙の最後の王者となった横浜F・マリノスの「マリン」ちゃんは、3連覇中だった同クラブの「マリノスケ」を抑えての優勝でした。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2025"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鈴木彩艶",
+        "パルマ",
+        "セリエA"
+      ],
+      "text": "2024-25シーズン、セリエAのパルマで正GKとしてプレーし、ビッグセーブでチームを救っている日本代表GKは誰？",
+      "options": [
+        "シュミット・ダニエル",
+        "鈴木彩艶",
+        "大迫敬介",
+        "中村航輔"
+      ],
+      "answerIndex": 1,
+      "explanation": "鈴木彩艶（Suzuki Zion）はベルギーのシント＝トロイデンからイタリアのパルマへ移籍し、セリエAで正GKとして出場を続けています。",
+      "trivia": "パルマはかつて中田英寿も所属していたクラブであり、元イタリア代表GKブッフォンがデビューし、引退したクラブとしても有名です。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "板倉滉",
+        "ボルシアMG",
+        "ブンデスリーガ"
+      ],
+      "text": "ドイツ・ブンデスリーガのボルシアMGで守備の要として活躍している日本代表DFは誰？",
+      "options": [
+        "伊藤洋輝",
+        "チェイス・アンリ",
+        "板倉滉",
+        "菅瓦由勢"
+      ],
+      "answerIndex": 2,
+      "explanation": "板倉滉はボルシア・メンヒェングラートバッハ（ボルシアMG）に所属しています。センターバックやボランチとしてプレーし、チームの中心選手となっています。",
+      "trivia": "板倉滉は非常に明るい性格で知られ、チームメイトともすぐに打ち解けるコミュニケーション能力の高さも評価されています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "新スタジアム",
+        "サンフレッチェ広島"
+      ],
+      "text": "2024年に開業し、その臨場感と街中にある立地で大評判となったサンフレッチェ広島の新しいホームスタジアムの名称は？",
+      "options": [
+        "マツダスタジアム広島",
+        "広島ビッグアーチ",
+        "ホットスタッフフィールド広島",
+        "エディオンピースウイング広島"
+      ],
+      "answerIndex": 3,
+      "explanation": "「エディオンピースウイング広島」は2024年に開業したサッカースタジアムです。日本初のまちなかスタジアムとして注目され、2025年シーズンも多くの観客で賑わうことが予想されます。",
+      "trivia": "スタジアム名の「ピースウイング」には、「恒久平和」への願いと、夢や希望を持って未来へ「羽ばたく」という願いが込められています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2025"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "レアル・マドリード",
+        "順位"
+      ],
+      "text": "2024-25シーズンのラ・リーガ。フリック監督の下で好調を維持し、1月時点で首位を走っていたクラブはどこ？",
+      "options": [
+        "バルセロナ",
+        "ジローナ",
+        "レアル・マドリード",
+        "アトレティコ・マドリード"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハンジ・フリック監督が就任したバルセロナは、レヴァンドフスキやラミン・ヤマルらの活躍により、攻撃的なサッカーで首位を快走しています（1月時点）。",
+      "trivia": "ラミン・ヤマルは10代ながら主力として活躍しており、メッシ以来の才能として世界中から注目されています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "championship",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "大橋祐紀",
+        "ブラックバーン",
+        "チャンピオンシップ"
+      ],
+      "text": "2024年夏にサンフレッチェ広島からイングランド2部のブラックバーンに移籍し、デビュー戦からゴールを決めるなど活躍しているFWは誰？",
+      "options": [
+        "細谷真大",
+        "大橋祐紀",
+        "町野修斗",
+        "鈴木優磨"
+      ],
+      "answerIndex": 1,
+      "explanation": "大橋祐紀は2024年夏にブラックバーン・ローヴァーズへ完全移籍しました。開幕戦でのゴールやカップ戦での得点など、イングランド初挑戦ながらすぐに結果を残しました。",
+      "trivia": "大橋は湘南ベルマーレ、サンフレッチェ広島を経て海外挑戦を果たしました。ブラックバーンはかつてアラン・シアラーを擁してプレミアリーグ優勝経験もある古豪です。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "川崎フロンターレ",
+        "鬼木達",
+        "監督"
+      ],
+      "text": "長年川崎フロンターレを率い、数多くのタイトルをもたらした鬼木達監督。2024年シーズン終了をもって退任しましたが、彼の後任として2025年シーズンから指揮を執る新監督についての情報は？（※2025年2月時点）",
+      "options": [
+        "海外からビッグネームが招聘された",
+        "鬼木監督が続投した",
+        "新体制でスタートしている",
+        "選手兼任監督が就任した"
+      ],
+      "answerIndex": 2,
+      "explanation": "川崎フロンターレは2024シーズン終了後に鬼木監督が退任し、2025シーズンからは新監督（山口智など噂や発表に基づく）の下で新体制をスタートさせています。",
+      "trivia": "鬼木監督は就任中にJ1リーグ優勝4回など、川崎フロンターレの黄金時代を築き上げた名将です。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2025"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "レバークーゼン",
+        "バイエルン",
+        "ブンデスリーガ"
+      ],
+      "text": "2023-24シーズンに無敗優勝という偉業を成し遂げたレバークーゼン。2024-25シーズンのブンデスリーガにおける彼らの状況は？",
+      "options": [
+        "降格圏に沈んでいる",
+        "リーグに参加していない",
+        "独走で首位に立っている",
+        "バイエルンと上位争いをしている"
+      ],
+      "answerIndex": 3,
+      "explanation": "シャビ・アロンソ監督率いるレバークーゼンは、2024-25シーズンも上位につけていますが、コンパニ監督の下で復調したバイエルン・ミュンヘンと激しい争いを繰り広げています（またはバイエルンがリード）。",
+      "trivia": "レバークーゼンの司令塔ヴィルツは、若くしてドイツ代表の中心選手となっており、市場価値が1億ユーロを超えるスター選手です。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "横浜F・マリノス",
+        "キューウェル",
+        "監督交代"
+      ],
+      "text": "横浜F・マリノスは2024年シーズン途中にハリー・キューウェル監督との契約を解除しました。その後、チームを率いて2025年シーズンへ繋げた暫定・あるいは新監督は？",
+      "options": [
+        "ハッチソン（暫定）等を経て新体制へ",
+        "ポステコグルーが復帰",
+        "ラモス瑠偉が就任",
+        "岡田武史が復帰"
+      ],
+      "answerIndex": 0,
+      "explanation": "キューウェル監督の解任後、ジョン・ハッチソンヘッドコーチが暫定的に指揮を執りシーズンを戦いました。2025年に向けて新体制の構築が進められています。",
+      "trivia": "キューウェル監督は現役時代、リヴァプールやリーズで活躍したオーストラリアのレジェンド選手でした。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2025"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "菅原由勢",
+        "サウサンプトン",
+        "プレミアリーグ"
+      ],
+      "text": "2024-25シーズン、プレミアリーグに昇格したサウサンプトンでプレーし、第2節ブレントフォード戦で初ゴールを決めるなど印象的な活躍を見せた日本人DFは？",
+      "options": [
+        "橋岡大樹",
+        "菅原由勢",
+        "毎熊晟矢",
+        "中山雄太"
+      ],
+      "answerIndex": 1,
+      "explanation": "菅原由勢はAZ（オランダ）からサウサンプトンへ移籍し、プレミアリーグ初挑戦ながら右ウイングバックなどで攻撃的な才能を発揮しています。",
+      "trivia": "菅原は英語が堪能で、移籍直後のチームメイトへの自己紹介でのジョークや、現地メディアへの対応でも高い評価を得ています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "クラブワールドカップ",
+        "FIFA",
+        "アメリカ"
+      ],
+      "text": "2025年の夏にアメリカで開催される予定の、FIFAクラブワールドカップ。これまでの大会と大きく異なる点は何？",
+      "options": [
+        "欧州チームが参加しない",
+        "冬に開催される",
+        "出場チームが32チームに拡大",
+        "フットサル形式で行われる"
+      ],
+      "answerIndex": 2,
+      "explanation": "2025年大会からFIFAクラブワールドカップは出場枠が32チームに大幅拡大され、4年に1度の開催となる「新・クラブワールドカップ」としてリニューアルされます。",
+      "trivia": "アジアからは浦和レッズやアル・ヒラルなどが出場権を獲得しており、世界の強豪クラブとの真剣勝負が期待されています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "大迫勇也",
+        "ヴィッセル神戸",
+        "得点王"
+      ],
+      "text": "ヴィッセル神戸のエースとして活躍し、2023年シーズンのMVP・得点王を獲得、2024年もチームを牽引したFWは誰？",
+      "options": [
+        "宮代大聖",
+        "武藤嘉紀",
+        "山口蛍",
+        "大迫勇也"
+      ],
+      "answerIndex": 3,
+      "explanation": "大迫勇也はヴィッセル神戸の絶対的エースとして君臨し、その圧倒的なポストプレーと得点力でチームの攻撃の中心となっています。",
+      "trivia": "大迫の代名詞とも言える「半端ない」というフレーズは、高校サッカー選手権時代に対戦相手の主将が発した言葉が起源で、今でも愛されています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2025"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "佐野海舟",
         "マインツ",
-        "シュトゥットガルト",
-        "フライブルク",
-        "アウクスブルク"
+        "ブンデスリーガ"
       ],
-      "answerIndex": 3,
-      "explanation": "セレッソ大阪U-18のFW小野田亮汰が、ドイツ1部「アウクスブルク」に加入することが報じられました。トップチームを経由せずに海外1部リーグのクラブと契約するのは異例で、1週間のトライアルで実力を証明し長期契約を勝ち取りました。",
-      "trivia": "セレッソ大阪のアカデミーは、香川真司、南野拓実、柿谷曜一朗など、多くの日本代表選手や海外組を輩出している名門です。",
-      "category": "match_recap",
-      "difficulty": "normal",
-      "tags": "japan,j1,2026",
-      "id": "match_recap_2026_02_02_j1_008"
-    },
-    {
-      "text": "2026年シーズンの開幕を控えた1月末に開催され、2月2日にも詳細が報じられた第30回「ちばぎんカップ」。柏レイソル対ジェフユナイテッド千葉の対戦となったこの試合は、柏レイソルが勝利を収めました。では、この試合の最終スコアは次のうちどれでしょう？",
+      "text": "2024年夏に鹿島アントラーズからドイツのマインツへ移籍し、ボランチとしてスタメン出場を続けている日本人は誰？",
       "options": [
-        "2-1",
-        "1-0",
-        "3-2",
-        "2-0"
+        "佐野海舟",
+        "知念慶",
+        "川村拓夢",
+        "松木玖生"
       ],
       "answerIndex": 0,
-      "explanation": "この試合は柏レイソルがジェフユナイテッド千葉に2-1で勝利しました。30回の節目となる伝統のプレシーズンマッチ「ちばぎんカップ」は、リーグ開幕前の重要な実戦の場として注目されました。",
-      "trivia": "「ちばぎんカップ」は、Jリーグ開幕前のプレシーズンマッチとして日本で最も長い歴史を持つ大会の一つです。柏レイソルとジェフユナイテッド千葉という千葉県勢同士のダービーマッチとして親しまれています。",
-      "category": "match_recap",
-      "difficulty": "hard",
-      "tags": "japan,j1,2026,kashiwa_reysol",
-      "id": "match_recap_2026_02_02_j1_009"
+      "explanation": "佐野海舟は2024年夏にマインツへ完全移籍しました。高いボール奪取能力を武器にブンデスリーガでもすぐに評価を高めました。",
+      "trivia": "マインツは過去に岡崎慎司や武藤嘉紀も所属しており、日本人選手にとって馴染み深いクラブの一つです。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
     },
     {
-      "text": "2026年2月2日、東京都内で「明治安田Jリーグ百年構想リーグ」の開幕イベントが開催され、J1各クラブの選手代表が登壇しました。では、このイベントに浦和レッズの代表として参加したベテランゴールキーパーは誰でしょう？",
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鎌田大地",
+        "クリスタル・パレス",
+        "プレミアリーグ"
+      ],
+      "text": "2024-25シーズンよりクリスタル・パレスに加入し、フランクフルト時代の恩師グラスナー監督の下でプレーしている日本代表MFは？",
       "options": [
-        "牲川歩見",
-        "西川周作",
-        "吉田舜",
-        "鈴木彩艶"
+        "南野拓実",
+        "鎌田大地",
+        "堂安律",
+        "久保建英"
       ],
       "answerIndex": 1,
-      "explanation": "2月2日の開幕イベントには、浦和レッズから西川周作選手が代表として参加しました。このイベントには他にも鹿島アントラーズの松村優太選手や川崎フロンターレの伊藤達哉選手など、各クラブを代表する選手たちが集結し、新大会への意気込みを語りました。",
-      "trivia": "2026年はJリーグのシーズン移行期にあたる特別な年で、2月から6月にかけて「明治安田Jリーグ百年構想リーグ」という特別大会が開催されます。この大会は東西2グループに分かれて行われるのが特徴です。",
-      "category": "match_recap",
+      "explanation": "鎌田大地はラツィオを退団後、クリスタル・パレスへ移籍しました。フランクフルトでEL優勝を共に成し遂げたグラスナー監督に誘われる形でのプレミア挑戦となりました。",
+      "trivia": "鎌田はクリスタル・パレスで、EFLカップのアストン・ヴィラ戦で移籍後初ゴールを決めるなど、カップ戦でも結果を残しています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "町田ゼルビア",
+        "黒田剛"
+      ],
+      "text": "2024年のJ1リーグ初挑戦ながら、シーズン序盤から首位争いを演じる旋風を巻き起こした、黒田剛監督率いるクラブは？",
+      "options": [
+        "東京ヴェルディ",
+        "ジュビロ磐田",
+        "FC町田ゼルビア",
+        "京都サンガ"
+      ],
+      "answerIndex": 2,
+      "explanation": "FC町田ゼルビアはJ1初昇格ながら、堅守速攻と徹底した勝負へのこだわりでリーグを席巻し、最終盤まで上位争いを演じました。",
+      "trivia": "黒田剛監督は長年、高校サッカーの強豪・青森山田高校を率いていた名将で、プロ監督転身後すぐに結果を出したことで大きな話題となりました。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2025"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "マンチェスター・シティ",
+        "ロドリ",
+        "バロンドール"
+      ],
+      "text": "2024年のバロンドールを受賞したマンチェスター・シティのMFロドリ。しかし彼は2024-25シーズン、どのような状況にある？",
+      "options": [
+        "監督に就任した",
+        "得点王争いをしている",
+        "レアル・マドリードへ移籍した",
+        "膝の靭帯断裂で長期離脱中"
+      ],
+      "answerIndex": 3,
+      "explanation": "ロドリは2024年9月のアーセナル戦で右膝前十字靭帯を断裂する大怪我を負い、今シーズン中の復帰は絶望的となっています。彼の不在はシティにとって大きな痛手となっています。",
+      "trivia": "ロドリのバロンドール受賞は守備的MFとしては非常に珍しく、マンチェスター・シティの選手としても初の快挙でした。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
       "difficulty": "hard",
-      "tags": "japan,j1,2026,urawa_reds",
-      "id": "match_recap_2026_02_02_j1_010"
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "FC東京",
+        "エンブレム",
+        "リブランディング"
+      ],
+      "text": "FC東京は2024年シーズンからクラブエンブレムを一新しました。新しいエンブレムの特徴として正しいものは？",
+      "options": [
+        "シンプルでモダンなストライプデザイン",
+        "マスコットのドロンパが中心にいる",
+        "色は赤と白に変更された",
+        "東京タワーが描かれている"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は創設25周年を機にリブランディングを行い、2024年から青赤のストライプを基調としたシンプルでモダンな新エンブレムを採用しています。",
+      "trivia": "新エンブレムのデザインは、多様な文化が交わる東京の街を表現しており、右肩上がりのラインはクラブの進化と勝利への意志を象徴しています。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2025"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "eredivisie",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "小川航基",
+        "NECナイメヘン",
+        "エールディヴィジ"
+      ],
+      "text": "オランダ・エールディヴィジのNECナイメヘンに所属し、日本代表でもゴールを決めるなど得点力を発揮しているFWは誰？",
+      "options": [
+        "三人目の三苫",
+        "小川航基",
+        "上田綺世",
+        "斉藤光毅"
+      ],
+      "answerIndex": 1,
+      "explanation": "小川航基はNECナイメヘンで絶対的なエースストライカーとして活躍しており、その得点力から日本代表にもコンスタントに招集されています。",
+      "trivia": "チームメイトには佐野航大（佐野海舟の弟）も在籍しており、日本人ホットラインでゴールを量産するシーンも見られます。",
+      "referenceDate": "2026-02-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2025-02-02",
+        "expiryDate": "2025-02-09",
+        "season": "2024-25"
+      }
     }
   ]
 }

@@ -12,7 +12,7 @@ import '../utils/unlock_key_utils.dart';
 class DatabaseService {
   static Database? _database;
   static const String _databaseName = 'questions.db';  // アセットファイル名と一致させる
-  static const int _databaseVersion = 5;
+  static const int _databaseVersion = 6;
   
   // キャッシュ用のマップ（問題ID -> Question）
   final Map<String, Question> _questionCache = {};
@@ -201,7 +201,14 @@ class DatabaseService {
         category TEXT NOT NULL,
         difficulty TEXT NOT NULL,
         tags TEXT NOT NULL,
-        reference_date TEXT
+        reference_date TEXT,
+        quiz_type TEXT,
+        category_id TEXT,
+        region TEXT,
+        league TEXT,
+        team TEXT,
+        team_id TEXT,
+        weekly_meta TEXT
       )
     ''');
 
@@ -469,6 +476,75 @@ class DatabaseService {
       
       debugPrint('バージョン5へのマイグレーション完了: total_expとunlocked_difficultiesを追加しました');
     }
+    
+    // バージョン5から6へのマイグレーション
+    if (oldVersion < 6) {
+      // 新しいスキーマのカラムを追加
+      try {
+        await db.execute('''
+          ALTER TABLE questions ADD COLUMN quiz_type TEXT
+        ''');
+        debugPrint('quiz_typeカラムを追加しました');
+      } catch (e) {
+        debugPrint('quiz_typeカラムの追加に失敗しました（既に存在する可能性があります）: $e');
+      }
+      
+      try {
+        await db.execute('''
+          ALTER TABLE questions ADD COLUMN category_id TEXT
+        ''');
+        debugPrint('category_idカラムを追加しました');
+      } catch (e) {
+        debugPrint('category_idカラムの追加に失敗しました（既に存在する可能性があります）: $e');
+      }
+      
+      try {
+        await db.execute('''
+          ALTER TABLE questions ADD COLUMN region TEXT
+        ''');
+        debugPrint('regionカラムを追加しました');
+      } catch (e) {
+        debugPrint('regionカラムの追加に失敗しました（既に存在する可能性があります）: $e');
+      }
+      
+      try {
+        await db.execute('''
+          ALTER TABLE questions ADD COLUMN league TEXT
+        ''');
+        debugPrint('leagueカラムを追加しました');
+      } catch (e) {
+        debugPrint('leagueカラムの追加に失敗しました（既に存在する可能性があります）: $e');
+      }
+      
+      try {
+        await db.execute('''
+          ALTER TABLE questions ADD COLUMN team TEXT
+        ''');
+        debugPrint('teamカラムを追加しました');
+      } catch (e) {
+        debugPrint('teamカラムの追加に失敗しました（既に存在する可能性があります）: $e');
+      }
+      
+      try {
+        await db.execute('''
+          ALTER TABLE questions ADD COLUMN team_id TEXT
+        ''');
+        debugPrint('team_idカラムを追加しました');
+      } catch (e) {
+        debugPrint('team_idカラムの追加に失敗しました（既に存在する可能性があります）: $e');
+      }
+      
+      try {
+        await db.execute('''
+          ALTER TABLE questions ADD COLUMN weekly_meta TEXT
+        ''');
+        debugPrint('weekly_metaカラムを追加しました');
+      } catch (e) {
+        debugPrint('weekly_metaカラムの追加に失敗しました（既に存在する可能性があります）: $e');
+      }
+      
+      debugPrint('バージョン6へのマイグレーション完了: 新しいスキーマのカラムを追加しました');
+    }
   }
 
   /// クイズ問題を追加
@@ -487,6 +563,13 @@ class DatabaseService {
         'difficulty': question.difficulty,
         'tags': question.tags,
         'reference_date': question.referenceDate,
+        'quiz_type': question.quizType,
+        'category_id': question.categoryId,
+        'region': question.region,
+        'league': question.league,
+        'team': question.team,
+        'team_id': question.teamId,
+        'weekly_meta': question.weeklyMeta,
       },
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
@@ -510,6 +593,13 @@ class DatabaseService {
           'difficulty': question.difficulty,
           'tags': question.tags,
           'reference_date': question.referenceDate,
+          'quiz_type': question.quizType,
+          'category_id': question.categoryId,
+          'region': question.region,
+          'league': question.league,
+          'team': question.team,
+          'team_id': question.teamId,
+          'weekly_meta': question.weeklyMeta,
         },
         conflictAlgorithm: ConflictAlgorithm.replace,
       );
@@ -833,6 +923,13 @@ class DatabaseService {
       difficulty: map['difficulty'] as String,
       tags: map['tags'] as String,
       referenceDate: map['reference_date'] as String?,
+      quizType: map['quiz_type'] as String?,
+      categoryId: map['category_id'] as String?,
+      region: map['region'] as String?,
+      league: map['league'] as String?,
+      team: map['team'] as String?,
+      teamId: map['team_id'] as String?,
+      weeklyMeta: map['weekly_meta'] as String?,
     );
     
     // キャッシュに追加（サイズ制限あり）
