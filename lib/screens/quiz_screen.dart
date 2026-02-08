@@ -21,7 +21,7 @@ class QuizScreen extends ConsumerStatefulWidget {
   final String difficulty;
   final String country;
   final String region;
-  final String range;
+  final String team;
   final String? date; // Weekly Recap用（YYYY-MM-DD形式）
   final String? leagueType; // Weekly Recap用（"j1" または "europe"）
 
@@ -31,10 +31,12 @@ class QuizScreen extends ConsumerStatefulWidget {
     required this.difficulty,
     this.country = '',
     this.region = '',
-    this.range = '',
+    String? team,
     this.date,
     this.leagueType,
-  });
+    // 後方互換性のため（非推奨: teamパラメータを使用してください）
+    String? range,
+  }) : team = team ?? range ?? '';
 
   @override
   ConsumerState<QuizScreen> createState() => _QuizScreenState();
@@ -62,22 +64,17 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
       final questionService = ref.read(questionServiceProvider);
 
-      String? tags;
-      if (widget.region.isNotEmpty) {
-        tags = widget.region;
-      } else if (widget.country.isNotEmpty) {
-        tags = widget.country;
-      }
+      // tagsパラメータは使用しない（regionフィールドとteam_idフィールドで検索するため）
 
       final questions = await questionService.getQuestions(
         category: widget.category,
-        difficulty: widget.category == AppConstants.categoryMatchRecap 
+        difficulty: widget.category == AppConstants.categoryMatchRecap
             ? '' // Weekly Recapの場合は難易度を渡さない
             : widget.difficulty,
-        tags: tags,
+        tags: null, // tagsパラメータは使用しない
         country: widget.country.isNotEmpty ? widget.country : null,
         region: widget.region.isNotEmpty ? widget.region : null,
-        range: widget.range.isNotEmpty ? widget.range : null,
+        team: widget.team.isNotEmpty ? widget.team : null,
         date: widget.date,
         leagueType: widget.leagueType,
         limit: AppConstants.defaultQuestionsPerQuiz,
@@ -161,16 +158,14 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     final isLastQuestion = _currentQuestionIndex == _questions.length - 1;
     final progress = (_currentQuestionIndex + 1) / _questions.length;
 
-    return Scaffold(
-      backgroundColor: AppColors.stitchBackgroundLight,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new),
-          onPressed: () => context.pop(),
-        ),
-        centerTitle: true,
+    return PopScope(
+      canPop: false,
+      child: Scaffold(
+        backgroundColor: AppColors.stitchBackgroundLight,
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          centerTitle: true,
         title: Column(
           children: [
             Text(
@@ -200,221 +195,234 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-              // 進捗バー
-              TweenAnimationBuilder<double>(
-                tween: Tween(
-                  begin: _currentQuestionIndex / _questions.length,
-                  end: progress,
-                ),
-                duration: const Duration(milliseconds: 500),
-                curve: Curves.easeOutCubic,
-                builder: (context, value, child) {
-                  return Container(
-                    height: 6,
-                    decoration: BoxDecoration(
-                      color: Colors.grey.shade200,
-                      borderRadius: BorderRadius.circular(3),
-                    ),
-                    child: FractionallySizedBox(
-                      alignment: Alignment.centerLeft,
-                      widthFactor: value,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: AppColors.stitchCyan,
-                          borderRadius: BorderRadius.circular(3),
-                          boxShadow: [
-                            BoxShadow(
-                              color: AppColors.stitchCyan.withValues(alpha: 0.4),
-                              blurRadius: 8,
-                              spreadRadius: 0,
-                            ),
-                          ],
-                        ),
+                // 進捗バー
+                TweenAnimationBuilder<double>(
+                  tween: Tween(
+                    begin: _currentQuestionIndex / _questions.length,
+                    end: progress,
+                  ),
+                  duration: const Duration(milliseconds: 500),
+                  curve: Curves.easeOutCubic,
+                  builder: (context, value, child) {
+                    return Container(
+                      height: 6,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade200,
+                        borderRadius: BorderRadius.circular(3),
                       ),
-                    ),
-                  );
-                },
-              ),
-              const SizedBox(height: 40),
-
-              // 問題カード
-              GlassMorphismWidget(
-                borderRadius: 16,
-                padding: const EdgeInsets.all(32),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // 対象年月の表示
-                    if (currentQuestion.referenceDate != null &&
-                        currentQuestion.referenceDate!.isNotEmpty)
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 16),
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.calendar_today,
-                              size: 16,
-                              color: Colors.grey.shade600,
-                            ),
-                            const SizedBox(width: 8),
-                            Text(
-                              _formatReferenceDate(currentQuestion.referenceDate!),
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.grey.shade600,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    // 難易度の表示（recap問題の場合のみ）
-                    if (currentQuestion.category == AppConstants.categoryMatchRecap)
-                      Padding(
-                        padding: EdgeInsets.only(
-                          bottom: currentQuestion.referenceDate != null &&
-                                  currentQuestion.referenceDate!.isNotEmpty
-                              ? 0
-                              : 16,
-                        ),
-                        child: Row(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 8,
-                                vertical: 4,
-                              ),
-                              decoration: BoxDecoration(
-                                color: _getDifficultyColor(currentQuestion.difficulty)
-                                    .withValues(alpha: 0.2),
-                                borderRadius: BorderRadius.circular(4),
-                                border: Border.all(
-                                  color: _getDifficultyColor(currentQuestion.difficulty)
-                                      .withValues(alpha: 0.5),
-                                  width: 1,
-                                ),
-                              ),
-                              child: Text(
-                                CategoryDifficultyUtils.getDifficultyName(
-                                  currentQuestion.difficulty,
-                                ),
-                                style: TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.bold,
-                                  color: _getDifficultyColor(currentQuestion.difficulty),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    // extreme難易度の場合の警告表示
-                    if (currentQuestion.difficulty == AppConstants.difficultyExtreme)
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 16),
+                      child: FractionallySizedBox(
+                        alignment: Alignment.centerLeft,
+                        widthFactor: value,
                         child: Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                           decoration: BoxDecoration(
-                            color: Colors.orange.shade50,
-                            borderRadius: BorderRadius.circular(8),
-                            border: Border.all(
-                              color: Colors.orange.shade200,
-                              width: 1,
-                            ),
+                            color: AppColors.stitchCyan,
+                            borderRadius: BorderRadius.circular(3),
+                            boxShadow: [
+                              BoxShadow(
+                                color:
+                                    AppColors.stitchCyan.withValues(alpha: 0.4),
+                                blurRadius: 8,
+                                spreadRadius: 0,
+                              ),
+                            ],
                           ),
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(height: 40),
+
+                // 問題カード
+                GlassMorphismWidget(
+                  borderRadius: 16,
+                  padding: const EdgeInsets.all(32),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // 対象年月の表示
+                      if (currentQuestion.referenceDate != null &&
+                          currentQuestion.referenceDate!.isNotEmpty)
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 16),
                           child: Row(
                             children: [
                               Icon(
-                                Icons.info_outline,
-                                color: Colors.orange.shade700,
+                                Icons.calendar_today,
                                 size: 16,
+                                color: Colors.grey.shade600,
                               ),
                               const SizedBox(width: 8),
-                              Expanded(
+                              Text(
+                                _formatReferenceDate(
+                                    currentQuestion.referenceDate!),
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.grey.shade600,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      // 難易度の表示（recap問題の場合のみ）
+                      if (currentQuestion.category ==
+                          AppConstants.categoryMatchRecap)
+                        Padding(
+                          padding: EdgeInsets.only(
+                            bottom: currentQuestion.referenceDate != null &&
+                                    currentQuestion.referenceDate!.isNotEmpty
+                                ? 0
+                                : 16,
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 4,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: _getDifficultyColor(
+                                          currentQuestion.difficulty)
+                                      .withValues(alpha: 0.2),
+                                  borderRadius: BorderRadius.circular(4),
+                                  border: Border.all(
+                                    color: _getDifficultyColor(
+                                            currentQuestion.difficulty)
+                                        .withValues(alpha: 0.5),
+                                    width: 1,
+                                  ),
+                                ),
                                 child: Text(
-                                  'この問題は不確定情報や噂レベルの情報も含む可能性があります',
+                                  CategoryDifficultyUtils.getDifficultyName(
+                                    currentQuestion.difficulty,
+                                  ),
                                   style: TextStyle(
                                     fontSize: 11,
-                                    fontWeight: FontWeight.w500,
-                                    color: Colors.orange.shade900,
+                                    fontWeight: FontWeight.bold,
+                                    color: _getDifficultyColor(
+                                        currentQuestion.difficulty),
                                   ),
                                 ),
                               ),
                             ],
                           ),
                         ),
-                      ),
-                    Text(
-                      currentQuestion.text,
-                      style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        height: 1.5,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 24),
-
-              // 選択肢
-              ...currentQuestion.options.asMap().entries.map((entry) {
-                final index = entry.key;
-                final option = entry.value;
-                final isSelected = _selectedAnswerIndex == index;
-                final isCorrect = _showResult
-                    ? (index == currentQuestion.answerIndex
-                        ? true
-                        : isSelected ? false : null)
-                    : null;
-
-                return Padding(
-                  padding: const EdgeInsets.only(bottom: 12),
-                  child: _QuizChoiceButton(
-                    text: option,
-                    isSelected: isSelected,
-                    isCorrect: isCorrect,
-                    isEnabled: !_showResult,
-                    onTap: () => _selectAnswer(index),
-                  ),
-                );
-              }),
-
-              const SizedBox(height: 24),
-
-              // 次へ/結果へボタン
-              if (_showResult)
-                GlowButton(
-                  glowColor: AppColors.stitchCyan,
-                  onPressed: () => _nextQuestion(isLastQuestion),
-                  backgroundColor: AppColors.stitchCyan,
-                  foregroundColor: Colors.white,
-                  borderRadius: 16,
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        isLastQuestion ? '結果を見る' : '次の問題',
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                      // extreme難易度の場合の警告表示
+                      if (currentQuestion.difficulty ==
+                          AppConstants.difficultyExtreme)
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 16),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 12, vertical: 8),
+                            decoration: BoxDecoration(
+                              color: Colors.orange.shade50,
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
+                                color: Colors.orange.shade200,
+                                width: 1,
+                              ),
+                            ),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.info_outline,
+                                  color: Colors.orange.shade700,
+                                  size: 16,
+                                ),
+                                const SizedBox(width: 8),
+                                Expanded(
+                                  child: Text(
+                                    'この問題は不確定情報や噂レベルの情報も含む可能性があります',
+                                    style: TextStyle(
+                                      fontSize: 11,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.orange.shade900,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ),
-                      ),
-                      const SizedBox(width: 8),
-                      Icon(
-                        isLastQuestion ? Icons.emoji_events : Icons.arrow_forward,
-                        size: 20,
+                      Text(
+                        currentQuestion.text,
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          height: 1.5,
+                        ),
                       ),
                     ],
                   ),
                 ),
+                const SizedBox(height: 24),
+
+                // 選択肢
+                ...currentQuestion.options.asMap().entries.map((entry) {
+                  final index = entry.key;
+                  final option = entry.value;
+                  final isSelected = _selectedAnswerIndex == index;
+                  final isCorrect = _showResult
+                      ? (index == currentQuestion.answerIndex
+                          ? true
+                          : isSelected
+                              ? false
+                              : null)
+                      : null;
+
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: _QuizChoiceButton(
+                      text: option,
+                      isSelected: isSelected,
+                      isCorrect: isCorrect,
+                      isEnabled: !_showResult,
+                      onTap: () => _selectAnswer(index),
+                    ),
+                  );
+                }),
+
+                const SizedBox(height: 24),
+
+                // 次へ/結果へボタン
+                if (_showResult)
+                  GlowButton(
+                    glowColor: AppColors.stitchCyan,
+                    onPressed: () => _nextQuestion(isLastQuestion),
+                    backgroundColor: AppColors.stitchCyan,
+                    foregroundColor: Colors.white,
+                    borderRadius: 16,
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          isLastQuestion ? '結果を見る' : '次の問題',
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Icon(
+                          isLastQuestion
+                              ? Icons.emoji_events
+                              : Icons.arrow_forward,
+                          size: 20,
+                        ),
+                      ],
+                    ),
+                  ),
               ],
             ),
           ),
         ),
       ),
       bottomNavigationBar: const BannerAdWidget(),
+      ),
     );
   }
 
@@ -537,13 +545,15 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                             height: 1.6,
                           ),
                         ),
-                        if (question.trivia != null && question.trivia!.isNotEmpty) ...[
+                        if (question.trivia != null &&
+                            question.trivia!.isNotEmpty) ...[
                           const SizedBox(height: 24),
                           Container(
                             padding: const EdgeInsets.all(16),
                             decoration: BoxDecoration(
                               color: Colors.amber.shade50,
-                              borderRadius: const BorderRadius.all(Radius.circular(16)),
+                              borderRadius:
+                                  const BorderRadius.all(Radius.circular(16)),
                               border: Border.all(
                                 color: Colors.amber.shade200,
                               ),
@@ -618,25 +628,24 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     if (isLastQuestion) {
       // MATCH DAYかどうかを判定
       final isMatchDay = widget.category == AppConstants.categoryMatchRecap;
-      
+
       // MATCH DAYの場合はプレイ履歴を記録
       if (isMatchDay) {
         final databaseService = ref.read(databaseServiceProvider);
         await databaseService.recordMatchDayPlay();
       }
-      
+
       // 基本expとポイントを計算
       final baseExp = _score * AppConstants.expPerCorrectAnswer;
       final basePoints = _score * AppConstants.pointsPerCorrectAnswer;
-      
+
       // 全問正解ボーナス
-      final bonusExp = _score == _questions.length 
-          ? AppConstants.expPerfectScoreBonus 
+      final bonusExp =
+          _score == _questions.length ? AppConstants.expPerfectScoreBonus : 0;
+      final bonusPoints = _score == _questions.length
+          ? AppConstants.pointsPerfectScoreBonus
           : 0;
-      final bonusPoints = _score == _questions.length 
-          ? AppConstants.pointsPerfectScoreBonus 
-          : 0;
-      
+
       // MATCH DAYの場合は倍率を適用
       final multiplier = isMatchDay ? AppConstants.matchDayExpMultiplier : 1.0;
       final earnedExp = ((baseExp + bonusExp) * multiplier).round();
@@ -766,9 +775,10 @@ class _QuizChoiceButtonState extends State<_QuizChoiceButton> {
         child: GlassMorphismWidget(
           borderRadius: 16,
           backgroundColor: Colors.white.withValues(alpha: 0.4),
-          borderColor: _isHovered && widget.isEnabled && widget.isCorrect == null
-              ? AppColors.stitchCyan
-              : borderColor,
+          borderColor:
+              _isHovered && widget.isEnabled && widget.isCorrect == null
+                  ? AppColors.stitchCyan
+                  : borderColor,
           boxShadow: glowColor != null
               ? [
                   BoxShadow(
