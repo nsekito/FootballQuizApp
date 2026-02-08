@@ -69,7 +69,10 @@ class Question {
         trivia: json['trivia'] as String?,
         category: json['category'] as String,
         difficulty: json['difficulty'] as String,
-        tags: json['tags'] as String,
+        // tagsフィールドの型チェックと変換（防御的プログラミング）
+        tags: json['tags'] is List
+            ? (json['tags'] as List).map((e) => e.toString()).join(',')
+            : (json['tags'] as String? ?? ''),
         referenceDate: json['referenceDate'] as String?,
         quizType: json['quizType']?.toString(),
         categoryId: json['categoryId']?.toString(),

@@ -8,7 +8,7 @@ from pathlib import Path
 scripts_dir = Path(__file__).parent
 sys.path.insert(0, str(scripts_dir))
 
-from utils.gemini_client import generate_weekly_recap_questions_batch, balance_answer_indices
+from utils.gemini_client import generate_weekly_recap_questions_by_category, balance_answer_indices
 from config import WEEKLY_RECAP_OUTPUT_DIR
 
 # プロジェクトルートを取得（scripts/から見て../）
@@ -156,24 +156,48 @@ def main():
     
     saved_files = []
     
-    # J1リーグ問題生成（30問一括生成）
+    # J1リーグ問題生成（カテゴリごとに分割生成）
     if not args.europe_only:
         print("\n" + "-" * 60)
         print("J1リーグ問題生成中...")
         print("-" * 60)
         try:
-            print("30問を一括生成中...")
-            j1_questions = generate_weekly_recap_questions_batch(
-                region="japan",
-                reference_date=target_date,
-                matchweek=weekly_meta_params['matchweek'],
-                publish_date=weekly_meta_params['publish_date'],
-                expiry_date=weekly_meta_params['expiry_date'],
-                season=weekly_meta_params['season'],
-                start_number=1
-            )
+            # カテゴリごとの問題数定義
+            j1_categories = [
+                ("weekly-jp-match", "試合・結果", 10),
+                ("weekly-jp-standings", "順位・スタッツ", 6),
+                ("weekly-jp-player", "選手の動向", 5),
+                ("weekly-jp-club", "クラブ・リーグの動向", 5),
+                ("weekly-jp-buzz", "今週の注目ニュース", 4),
+            ]
             
-            # answerIndexのバランス調整（プロンプトで0に固定されているが、バランス調整を実行）
+            j1_questions = []
+            current_id = 1
+            
+            for category_id, category_name, question_count in j1_categories:
+                print(f"\nカテゴリ: {category_name} ({question_count}問) 生成中...")
+                category_questions = generate_weekly_recap_questions_by_category(
+                    region="japan",
+                    category_id=category_id,
+                    category_name=category_name,
+                    question_count=question_count,
+                    reference_date=target_date,
+                    matchweek=weekly_meta_params['matchweek'],
+                    publish_date=weekly_meta_params['publish_date'],
+                    expiry_date=weekly_meta_params['expiry_date'],
+                    season=weekly_meta_params['season'],
+                    start_number=current_id
+                )
+                
+                # IDを連番に更新
+                for q in category_questions:
+                    q['id'] = f"w_{current_id:05d}"
+                    current_id += 1
+                
+                j1_questions.extend(category_questions)
+                print(f"  {len(category_questions)}問生成完了")
+            
+            # answerIndexのバランス調整
             j1_questions = balance_answer_indices(j1_questions)
             
             # 分布を確認して表示
@@ -182,7 +206,7 @@ def main():
                 idx = q.get('answerIndex', 0)
                 if 0 <= idx <= 3:
                     counts[idx] += 1
-            print(f"answerIndex分布: [0]: {counts[0]}, [1]: {counts[1]}, [2]: {counts[2]}, [3]: {counts[3]}")
+            print(f"\nanswerIndex分布: [0]: {counts[0]}, [1]: {counts[1]}, [2]: {counts[2]}, [3]: {counts[3]}")
             
             # 難易度分布を確認して表示
             difficulty_counts = {"easy": 0, "normal": 0, "hard": 0}
@@ -203,30 +227,56 @@ def main():
             if j1_questions:
                 filepath = save_weekly_recap_json(j1_questions, target_date, "j1", output_dir)
                 saved_files.append(filepath)
-                print(f"J1リーグ: {len(j1_questions)}問生成完了")
+                print(f"\nJ1リーグ: {len(j1_questions)}問生成完了")
         except Exception as e:
             print(f"エラー: J1リーグ問題の生成に失敗しました: {e}")
+            import traceback
+            traceback.print_exc()
             if args.j1_only:
                 raise
     
-    # ヨーロッパサッカー問題生成（30問一括生成）
+    # ヨーロッパサッカー問題生成（カテゴリごとに分割生成）
     if not args.j1_only:
         print("\n" + "-" * 60)
         print("ヨーロッパサッカー問題生成中...")
         print("-" * 60)
         try:
-            print("30問を一括生成中...")
-            europe_questions = generate_weekly_recap_questions_batch(
-                region="world",
-                reference_date=target_date,
-                matchweek=weekly_meta_params['matchweek'],
-                publish_date=weekly_meta_params['publish_date'],
-                expiry_date=weekly_meta_params['expiry_date'],
-                season=weekly_meta_params['season'],
-                start_number=1
-            )
+            # カテゴリごとの問題数定義
+            europe_categories = [
+                ("weekly-world-match", "試合・結果", 10),
+                ("weekly-world-standings", "順位・スタッツ", 6),
+                ("weekly-world-japanese", "海外日本人選手", 5),
+                ("weekly-world-player", "選手の動向", 5),
+                ("weekly-world-buzz", "今週の注目ニュース", 4),
+            ]
             
-            # answerIndexのバランス調整（プロンプトで0に固定されているが、バランス調整を実行）
+            europe_questions = []
+            current_id = 1
+            
+            for category_id, category_name, question_count in europe_categories:
+                print(f"\nカテゴリ: {category_name} ({question_count}問) 生成中...")
+                category_questions = generate_weekly_recap_questions_by_category(
+                    region="world",
+                    category_id=category_id,
+                    category_name=category_name,
+                    question_count=question_count,
+                    reference_date=target_date,
+                    matchweek=weekly_meta_params['matchweek'],
+                    publish_date=weekly_meta_params['publish_date'],
+                    expiry_date=weekly_meta_params['expiry_date'],
+                    season=weekly_meta_params['season'],
+                    start_number=current_id
+                )
+                
+                # IDを連番に更新
+                for q in category_questions:
+                    q['id'] = f"w_{current_id:05d}"
+                    current_id += 1
+                
+                europe_questions.extend(category_questions)
+                print(f"  {len(category_questions)}問生成完了")
+            
+            # answerIndexのバランス調整
             europe_questions = balance_answer_indices(europe_questions)
             
             # 分布を確認して表示
@@ -235,7 +285,7 @@ def main():
                 idx = q.get('answerIndex', 0)
                 if 0 <= idx <= 3:
                     counts[idx] += 1
-            print(f"answerIndex分布: [0]: {counts[0]}, [1]: {counts[1]}, [2]: {counts[2]}, [3]: {counts[3]}")
+            print(f"\nanswerIndex分布: [0]: {counts[0]}, [1]: {counts[1]}, [2]: {counts[2]}, [3]: {counts[3]}")
             
             # 難易度分布を確認して表示
             difficulty_counts = {"easy": 0, "normal": 0, "hard": 0}
@@ -256,9 +306,11 @@ def main():
             if europe_questions:
                 filepath = save_weekly_recap_json(europe_questions, target_date, "europe", output_dir)
                 saved_files.append(filepath)
-                print(f"ヨーロッパサッカー: {len(europe_questions)}問生成完了")
+                print(f"\nヨーロッパサッカー: {len(europe_questions)}問生成完了")
         except Exception as e:
             print(f"エラー: ヨーロッパサッカー問題の生成に失敗しました: {e}")
+            import traceback
+            traceback.print_exc()
             if args.europe_only:
                 raise
     

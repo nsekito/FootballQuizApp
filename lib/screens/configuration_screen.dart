@@ -30,7 +30,7 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
   String? _selectedDifficulty;
   String? _selectedRegion;
   String? _selectedCountry;
-  String? _selectedRange;
+  String? _selectedTeam;
   String? _selectedLeagueType; // Weekly Recap用のリーグタイプ
 
   @override
@@ -80,11 +80,11 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
                   const SizedBox(height: 40),
                 ],
 
-                // チームクイズ: 国選択と範囲選択
+                // チームクイズ: 国選択とチーム選択
                 if (widget.category == AppConstants.categoryTeams) ...[
                   _buildCountrySelector(),
                   const SizedBox(height: 24),
-                  _buildRangeSelector(),
+                  _buildTeamSelector(),
                   const SizedBox(height: 40),
                 ],
 
@@ -95,18 +95,33 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
                 ],
 
                 // STARTボタン
-                GlowButton(
-                  glowColor: AppColors.stitchEmerald,
-                  onPressed: _canStart() ? _validateAndStart : null,
-                  backgroundColor: AppColors.stitchEmerald,
-                  foregroundColor: Colors.white,
-                  borderRadius: 16,
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  child: const Text(
-                    'START',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
+                SizedBox(
+                  width: double.infinity,
+                  child: GlowButton(
+                    glowColor: AppColors.stitchEmerald,
+                    onPressed: _canStart() ? _validateAndStart : null,
+                    backgroundColor: AppColors.stitchEmerald,
+                    foregroundColor: Colors.white,
+                    borderRadius: 16,
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Text(
+                          'START',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Icon(
+                          Icons.play_arrow,
+                          color: Colors.white,
+                          size: 20,
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -169,25 +184,25 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
       if (_selectedCountry != null && _selectedCountry!.isNotEmpty) {
         tags.add(_selectedCountry!);
       }
-      if (_selectedRange != null && _selectedRange!.isNotEmpty) {
+      if (_selectedTeam != null && _selectedTeam!.isNotEmpty) {
         // リーグ全体の選択
-        if (_selectedRange == 'j1_all_teams') {
+        if (_selectedTeam == 'j1_all_teams') {
           tags.add('j1');
-        } else if (_selectedRange == 'j2_all_teams') {
+        } else if (_selectedTeam == 'j2_all_teams') {
           tags.add('j2');
-        } else if (_selectedRange == 'serie_a_all_teams') {
+        } else if (_selectedTeam == 'serie_a_all_teams') {
           tags.add('serie_a');
-        } else if (_selectedRange == 'la_liga_all_teams') {
+        } else if (_selectedTeam == 'la_liga_all_teams') {
           tags.add('la_liga');
-        } else if (_selectedRange == 'premier_league_all_teams') {
+        } else if (_selectedTeam == 'premier_league_all_teams') {
           tags.add('premier_league');
         } else {
           // 個別チーム名の選択 - リーグタグも含める
-          final leagueTag = _getLeagueTagForTeam(_selectedRange!);
+          final leagueTag = _getLeagueTagForTeam(_selectedTeam!);
           if (leagueTag != null) {
             tags.add(leagueTag);
           }
-          tags.add(_selectedRange!);
+          tags.add(_selectedTeam!);
         }
       }
       return tags.join(',');
@@ -679,11 +694,11 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
     );
   }
 
-  Widget _buildRangeSelector() {
-    List<Map<String, String>> ranges = [];
+  Widget _buildTeamSelector() {
+    List<Map<String, String>> teams = [];
     
     if (_selectedCountry == 'japan') {
-      ranges = [
+      teams = [
         {'label': 'J1全チーム', 'value': 'j1_all_teams'},
         {'label': 'J2全チーム', 'value': 'j2_all_teams'},
         {'label': '鹿島アントラーズ', 'value': 'kashima_antlers'},
@@ -708,21 +723,21 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
         {'label': 'ジェフユナイテッド市原・千葉', 'value': 'jef_united_chiba'},
       ];
     } else if (_selectedCountry == 'italy') {
-      ranges = [
+      teams = [
         {'label': 'セリエA全チーム', 'value': 'serie_a_all_teams'},
         {'label': 'ユベントス', 'value': 'juventus'},
         {'label': 'ACミラン', 'value': 'ac_milan'},
         {'label': 'インテルミラノ', 'value': 'inter_milan'},
       ];
     } else if (_selectedCountry == 'spain') {
-      ranges = [
+      teams = [
         {'label': 'ラリーガ全チーム', 'value': 'la_liga_all_teams'},
         {'label': 'レアルマドリード', 'value': 'real_madrid'},
         {'label': 'バルセロナ', 'value': 'barcelona'},
         {'label': 'アトレティコマドリード', 'value': 'atletico_madrid'},
       ];
     } else if (_selectedCountry == 'england') {
-      ranges = [
+      teams = [
         {'label': 'プレミアリーグ全チーム', 'value': 'premier_league_all_teams'},
         {'label': 'リバプール', 'value': 'liverpool'},
         {'label': 'アーセナル', 'value': 'arsenal'},
@@ -732,10 +747,10 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
       ];
     } else {
       // 国が選択されていない場合は空のリストを返す
-      ranges = [];
+      teams = [];
     }
 
-    // 範囲選択は多数の選択肢があるため、スクロール可能なレイアウトを使用
+    // チーム選択は多数の選択肢があるため、スクロール可能なレイアウトを使用
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -748,7 +763,7 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
             ),
             const SizedBox(width: 8),
             Text(
-              '範囲'.toUpperCase(),
+              'チーム'.toUpperCase(),
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
@@ -760,17 +775,17 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
         ),
         const SizedBox(height: 16),
         SizedBox(
-          height: ranges.length > 10 ? 200 : null, // 選択肢が多い場合は高さを制限
+          height: teams.length > 10 ? 200 : null, // 選択肢が多い場合は高さを制限
           child: SingleChildScrollView(
             child: Wrap(
               spacing: 8,
               runSpacing: 8,
-              children: ranges.map((range) {
+              children: teams.map((team) {
                 return _buildChip(
-                  range['label']!,
-                  range['value']!,
-                  _selectedRange,
-                  (value) => setState(() => _selectedRange = value),
+                  team['label']!,
+                  team['value']!,
+                  _selectedTeam,
+                  (value) => setState(() => _selectedTeam = value),
                 );
               }).toList(),
             ),
@@ -883,8 +898,8 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           _selectedDifficulty!.isNotEmpty &&
           _selectedCountry != null &&
           _selectedCountry!.isNotEmpty &&
-          _selectedRange != null &&
-          _selectedRange!.isNotEmpty;
+          _selectedTeam != null &&
+          _selectedTeam!.isNotEmpty;
     }
 
     return false;
@@ -922,8 +937,8 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           'region': _selectedRegion!,
         if (_selectedCountry != null && _selectedCountry!.isNotEmpty)
           'country': _selectedCountry!,
-        if (_selectedRange != null && _selectedRange!.isNotEmpty)
-          'range': _selectedRange!,
+        if (_selectedTeam != null && _selectedTeam!.isNotEmpty)
+          'team': _selectedTeam!,
         if (_selectedLeagueType != null && _selectedLeagueType!.isNotEmpty)
           'leagueType': _selectedLeagueType!,
       },

@@ -523,3 +523,388 @@ def generate_weekly_recap_questions_batch(
     
     # すべてのリトライが失敗した場合
     raise Exception("問題生成に失敗しました（最大リトライ回数に達しました）")
+
+
+def generate_weekly_recap_questions_by_category(
+    region: str,
+    category_id: str,
+    category_name: str,
+    question_count: int,
+    reference_date: str,
+    matchweek: int = None,
+    publish_date: str = None,
+    expiry_date: str = None,
+    season: str = None,
+    start_number: int = 1
+) -> list:
+    """
+    カテゴリごとにWeekly Recap問題を生成
+    
+    Args:
+        region: "japan" または "world"
+        category_id: カテゴリID（例: "weekly-jp-match", "weekly-world-japanese"）
+        category_name: カテゴリ名（例: "試合・結果", "海外日本人選手"）
+        question_count: 生成する問題数
+        reference_date: 参照日（YYYY-MM-DD形式）
+        matchweek: 節数（オプション）
+        publish_date: 公開日（YYYY-MM-DD形式）
+        expiry_date: 有効期限（YYYY-MM-DD形式）
+        season: シーズン
+        start_number: IDの開始番号
+    
+    Returns:
+        生成された問題のリスト
+    """
+    # regionとcategoryIdの整合性チェック
+    if region == "japan" and not category_id.startswith("weekly-jp-"):
+        raise ValueError(f"region='japan'の場合、categoryIdは'weekly-jp-*'で始まる必要があります。現在の値: {category_id}")
+    if region == "world" and not category_id.startswith("weekly-world-"):
+        raise ValueError(f"region='world'の場合、categoryIdは'weekly-world-*'で始まる必要があります。現在の値: {category_id}")
+    
+    # 難易度の配分を計算
+    easy_count = max(1, int(question_count * 0.4))  # 40%
+    normal_count = max(1, int(question_count * 0.4))  # 40%
+    hard_count = question_count - easy_count - normal_count  # 残り
+    
+    # プロンプトテンプレート
+    prompt_template = """# Weekly サッカークイズ生成プロンプト（カテゴリ別）
+
+あなたはサッカークイズの問題作成の専門家です。
+最新のサッカー情報をWeb検索で収集し、以下のルールとフォーマットに従ってweeklyクイズ問題を{questionCount}問作成してください。
+
+---
+
+## 基本パラメータ
+
+- region: {region}
+- categoryId: {categoryId}
+- category: {categoryName}
+- referenceDate: {referenceDate}
+- matchweek: {matchweek}
+- publishDate: {publishDate}
+- expiryDate: {expiryDate}
+- season: {season}
+- ID採番: w_{startNumber} から連番
+- 作成問題数: {questionCount}問
+
+**重要**: regionとcategoryIdの整合性を必ず守ってください。
+- regionが"japan"の場合、categoryIdは必ず"weekly-jp-*"で始まる必要があります
+- regionが"world"の場合、categoryIdは必ず"weekly-world-*"で始まる必要があります
+現在の設定: region={region}, categoryId={categoryId}
+
+---
+
+## 情報収集ルール
+
+1. まずWeb検索を行い、{referenceDate} を含む直近1週間のサッカー情報を収集する
+2. 検索は以下の優先順で行い、十分な情報が集まるまで複数回検索する
+3. 収集した情報の事実確認を必ず行い、複数ソースで裏取りする
+4. 速報段階で確定していない情報（移籍の噂レベル等）はクイズにしない
+
+### regionごとの検索キーワード方針
+
+#### japan
+
+- Jリーグ（J1・J2）の試合結果、順位表
+- ルヴァンカップ、天皇杯、ACLの結果
+- Jリーグ公式、スポーツナビ、Football-LAB、ゲキサカ等を参照
+- 日本代表関連のニュース
+- 選手の移籍・契約更新情報
+- クラブの経営・運営に関するニュース
+
+#### world
+
+- プレミアリーグ、ラ・リーガ、セリエA、ブンデスリーガ、リーグ・アンの試合結果
+- UEFAチャンピオンズリーグ、ヨーロッパリーグの結果
+- 海外日本人選手の出場・成績
+- ESPN、BBC Sport、Transfermarkt、UEFA公式等を参照
+- 主要な移籍・契約関連のニュース
+
+---
+
+## カテゴリの方向性
+
+{categoryName}に関する問題を作成してください。
+
+### japanのカテゴリ
+
+- weekly-jp-match (試合・結果): 試合結果、スコア、得点者、アシスト、出場選手。試合がない週は代表戦・カップ戦・プレシーズンマッチも対象
+- weekly-jp-standings (順位・スタッツ): 順位表、勝ち点、得点ランキング、個人スタッツ。シーズン外は最終順位や年間表彰・各種アワードも対象
+- weekly-jp-player (選手の動向): 移籍・契約更新・記録達成・ケガ・復帰・代表選出・海外挑戦
+- weekly-jp-club (クラブ・リーグの動向): 監督交代・新体制・スタジアム・スポンサー・新ユニフォーム・キャンプ・ACL・カップ戦運営
+- weekly-jp-buzz (今週の注目ニュース): VAR・判定・番狂わせ・規約改定・話題になった出来事全般
+
+### worldのカテゴリ
+
+- weekly-world-match (試合・結果): 欧州主要リーグ・CL・ELなどのスコア、勝敗、得点者。試合がない週はプレシーズン・代表戦も対象
+- weekly-world-standings (順位・スタッツ): リーグ順位、得点王争い、CL/EL勝ち抜け状況。シーズン外は最終順位や各種アワードも対象
+- weekly-world-player (選手の動向): 移籍・移籍金・記録達成・ケガ・復帰・代表関連
+- weekly-world-japanese (海外日本人選手): 日本人選手の出場・ゴール・アシスト・移籍・契約更新・新天地での活躍
+- weekly-world-buzz (今週の注目ニュース): 監督解任・番狂わせ・VAR騒動・FIFA/UEFA決定事項・大会抽選・W杯関連
+
+---
+
+## 難易度の配分
+
+{questionCount}問を以下のように配分してください：
+
+- easy: {easyCount}問（ニュースの見出しレベルで答えられる。「〇〇 vs △△の勝者は？」のような基本問題）
+- normal: {normalCount}問（試合を観たり記事を読んでいれば答えられる。「得点者は誰？」「何分のゴール？」レベル）
+- hard: {hardCount}問（細かいスタッツや経緯まで追っていないと答えられない。「通算何得点目？」「前回達成したのはいつ？」レベル）
+
+---
+
+## 出力ルール
+
+1. 出力はJSON配列のみ。JSON以外のテキスト（挨拶、説明文、検索過程の報告など）は一切出力しない
+2. optionsの先頭（index 0）に必ず正解を配置し、answerIndexは常に0とする
+3. tagsは問題の内容に応じて3〜5個程度つける
+4. explanationは正解の理由や背景を含めた解説を書く（2〜3文程度）
+5. triviaは150文字程度で「へぇ〜」と思える豆知識を書く（回答者が友達に自慢できるような内容）
+6. 事実に基づいた問題のみ作成し、検索で裏取りできなかった情報は使わない
+7. 同カテゴリ内で問題の内容が重複しないようにする
+8. leagueフィールドにはその問題が関連するリーグIDを設定する（j1 / j2 / j3 / premier / laliga / seriea / bundesliga / ligue1 / ucl / uel 等）。複数リーグにまたがる場合や特定リーグに紐づかない場合は null
+9. 不正解の選択肢はもっともらしいが明確に誤りであるものにする。紛らわしすぎて議論になるような選択肢は避ける
+10. **重要**: regionフィールドには必ず"{region}"を設定し、categoryIdフィールドには必ず"{categoryId}"を設定してください
+
+---
+
+## JSONスキーマ
+
+```json
+[
+  {{
+    "id": "w_{startNumber}",
+    "quizType": "weekly",
+    "difficulty": "easy",
+    "region": "{region}",
+    "league": null,
+    "team": null,
+    "teamId": null,
+    "category": "{categoryName}",
+    "categoryId": "{categoryId}",
+    "tags": ["tag1", "tag2", "tag3"],
+    "text": "問題文",
+    "options": ["正解", "不正解1", "不正解2", "不正解3"],
+    "answerIndex": 0,
+    "explanation": "解説文",
+    "trivia": "豆知識",
+    "referenceDate": "{referenceDate}",
+    "weeklyMeta": {{
+      "matchweek": {matchweekExample},
+      "matchDate": null,
+      "publishDate": "{publishDate}",
+      "expiryDate": "{expiryDate}",
+      "season": "{season}"
+    }}
+  }}
+]
+```
+
+**注意:** 
+- idは w_{startNumber} から連番で採番してください（例: w_{startNumber}, w_{startNumberPlus1}, ...）
+- matchweekは数値またはnullです（該当しない場合は null）
+- regionとcategoryIdは必ず指定された値を使用してください
+
+---
+
+## 作成手順
+
+1. Web検索で {referenceDate} を含む直近1週間の {region} に関するサッカー情報を収集する
+2. {categoryName}カテゴリに関連する情報を抽出する
+3. 難易度配分に従って各問題の難易度を決定する
+4. 問題を作成し、事実確認のため再度検索して裏取りする
+5. JSON配列のみを出力する
+"""
+    
+    # matchweekの文字列表現（プロンプト用）
+    matchweek_str = str(matchweek) if matchweek is not None else "null"
+    
+    # matchweekの例（JSONスキーマ用）
+    matchweek_example = matchweek if matchweek is not None else "null"
+    
+    # startNumberを5桁ゼロ埋め形式に変換
+    start_number_str = f"{start_number:05d}"
+    start_number_plus1_str = f"{start_number + 1:05d}"
+    
+    # プロンプトにパラメータを埋め込む
+    prompt = prompt_template.format(
+        region=region,
+        categoryId=category_id,
+        categoryName=category_name,
+        referenceDate=reference_date,
+        matchweek=matchweek_str,
+        matchweekExample=matchweek_example,
+        publishDate=publish_date or "",
+        expiryDate=expiry_date or "",
+        season=season or "",
+        startNumber=start_number_str,
+        startNumberPlus1=start_number_plus1_str,
+        questionCount=question_count,
+        easyCount=easy_count,
+        normalCount=normal_count,
+        hardCount=hard_count
+    )
+    
+    # リトライロジック付きでAPI呼び出し
+    for attempt in range(MAX_RETRIES):
+        try:
+            # 新しいAPIを使用（google_searchツールを有効化）
+            response = client.models.generate_content(
+                model=MODEL_NAME,
+                contents=prompt,
+                config={
+                    "tools": [{"google_search": {}}],  # Grounding機能を有効化
+                }
+            )
+            
+            # レスポンスからJSONを抽出
+            response_text = response.text.strip()
+            
+            # マークダウンコードブロックからJSONを抽出
+            json_match = re.search(r'```json\s*\n(.*?)\n```', response_text, re.DOTALL)
+            if json_match:
+                response_text = json_match.group(1).strip()
+            else:
+                json_match = re.search(r'```\s*\n(.*?)\n```', response_text, re.DOTALL)
+                if json_match:
+                    response_text = json_match.group(1).strip()
+                else:
+                    json_start = response_text.find('[')
+                    json_end = response_text.rfind(']') + 1
+                    if json_start != -1 and json_end > json_start:
+                        response_text = response_text[json_start:json_end]
+                    else:
+                        if '[' in response_text:
+                            response_text = response_text[response_text.find('['):]
+                            if ']' in response_text:
+                                response_text = response_text[:response_text.rfind(']') + 1]
+            
+            # JSON配列をパース
+            questions_data = json.loads(response_text)
+            
+            # リストでない場合はリストに変換
+            if not isinstance(questions_data, list):
+                questions_data = [questions_data]
+            
+            # 問題数の確認
+            if len(questions_data) < question_count:
+                print(f"警告: 要求された{question_count}問に対して{len(questions_data)}問しか生成されませんでした")
+            
+            # 各問題のバリデーションとフィールド補完
+            validated_questions = []
+            for i, question_data in enumerate(questions_data[:question_count]):
+                # 必須フィールドの検証
+                required_fields = ['text', 'options', 'answerIndex', 'explanation', 'quizType', 'region', 'categoryId', 'referenceDate', 'weeklyMeta']
+                missing_fields = [f for f in required_fields if f not in question_data]
+                if missing_fields:
+                    print(f"警告: 問題{i+1}に必須フィールドがありません: {missing_fields}。スキップします。")
+                    continue
+                
+                # 選択肢が4つあるか確認
+                if len(question_data.get('options', [])) != 4:
+                    print(f"警告: 問題{i+1}の選択肢が4つではありません。スキップします。")
+                    continue
+                
+                # answerIndexが0であることを確認
+                if question_data.get('answerIndex', -1) != 0:
+                    print(f"警告: 問題{i+1}のanswerIndexが0ではありません。0に修正します。")
+                    question_data['answerIndex'] = 0
+                
+                # quizTypeが"weekly"であることを確認
+                if question_data.get('quizType') != 'weekly':
+                    print(f"警告: 問題{i+1}のquizTypeが'weekly'ではありません。修正します。")
+                    question_data['quizType'] = 'weekly'
+                
+                # regionが正しいことを確認
+                if question_data.get('region') != region:
+                    print(f"警告: 問題{i+1}のregionが'{region}'ではありません。修正します。")
+                    question_data['region'] = region
+                
+                # categoryIdが正しいことを確認
+                if question_data.get('categoryId') != category_id:
+                    print(f"警告: 問題{i+1}のcategoryIdが'{category_id}'ではありません。修正します。")
+                    question_data['categoryId'] = category_id
+                
+                # regionとcategoryIdの整合性をチェック
+                question_region = question_data.get('region', '')
+                question_category_id = question_data.get('categoryId', '')
+                if question_region == "japan" and not question_category_id.startswith("weekly-jp-"):
+                    print(f"エラー: 問題{i+1}でregion='japan'なのにcategoryId='{question_category_id}'です。スキップします。")
+                    continue
+                if question_region == "world" and not question_category_id.startswith("weekly-world-"):
+                    print(f"エラー: 問題{i+1}でregion='world'なのにcategoryId='{question_category_id}'です。スキップします。")
+                    continue
+                
+                # tagsが配列形式であることを確認（文字列の場合は分割）
+                tags_value = question_data.get('tags', [])
+                if isinstance(tags_value, str):
+                    question_data['tags'] = [tag.strip() for tag in tags_value.split(',') if tag.strip()]
+                elif not isinstance(tags_value, list):
+                    question_data['tags'] = []
+                
+                # teamとteamIdは常にnull
+                question_data['team'] = None
+                question_data['teamId'] = None
+                
+                # referenceDateが正しいことを確認
+                if question_data.get('referenceDate') != reference_date:
+                    print(f"警告: 問題{i+1}のreferenceDateが'{reference_date}'ではありません。修正します。")
+                    question_data['referenceDate'] = reference_date
+                
+                # weeklyMetaの検証と補完
+                weekly_meta = question_data.get('weeklyMeta', {})
+                if not isinstance(weekly_meta, dict):
+                    weekly_meta = {}
+                
+                weekly_meta.setdefault('matchweek', matchweek)
+                weekly_meta.setdefault('matchDate', None)
+                weekly_meta.setdefault('publishDate', publish_date)
+                weekly_meta.setdefault('expiryDate', expiry_date)
+                weekly_meta.setdefault('season', season)
+                question_data['weeklyMeta'] = weekly_meta
+                
+                # デフォルト値の設定
+                question_data.setdefault('difficulty', 'normal')
+                question_data.setdefault('category', category_name)
+                question_data.setdefault('trivia', '')
+                question_data.setdefault('league', None)
+                
+                validated_questions.append(question_data)
+            
+            if len(validated_questions) == 0:
+                raise ValueError(f"有効な問題が1問も生成されませんでした（カテゴリ: {category_id}）")
+            
+            print(f"成功: {len(validated_questions)}問を生成しました（カテゴリ: {category_id}）")
+            return validated_questions
+        
+        except json.JSONDecodeError as e:
+            print(f"JSON解析エラー: {e}")
+            print(f"レスポンス（最初の500文字）: {response_text[:500]}")
+            if attempt < MAX_RETRIES - 1:
+                print(f"{BASE_DELAY * (attempt + 1)}秒待機して再試行します...")
+                time.sleep(BASE_DELAY * (attempt + 1))
+                continue
+            raise
+        
+        except Exception as e:
+            error_str = str(e)
+            
+            if '429' in error_str or 'quota' in error_str.lower() or 'Quota exceeded' in error_str:
+                retry_delay = BASE_DELAY * (2 ** attempt)
+                if attempt < MAX_RETRIES - 1:
+                    print(f"クォータ制限に達しました。{retry_delay:.1f}秒待機して再試行します... (試行 {attempt + 1}/{MAX_RETRIES})")
+                    time.sleep(retry_delay)
+                    continue
+                else:
+                    print(f"エラー: クォータ制限に達しました。しばらく待ってから再実行してください。")
+                    raise Exception(f"APIクォータ制限: {error_str}")
+            
+            if attempt < MAX_RETRIES - 1:
+                print(f"エラーが発生しました: {e}")
+                print(f"{BASE_DELAY * (attempt + 1)}秒待機して再試行します...")
+                time.sleep(BASE_DELAY * (attempt + 1))
+                continue
+            raise
+    
+    raise Exception(f"問題生成に失敗しました（最大リトライ回数に達しました、カテゴリ: {category_id}）")

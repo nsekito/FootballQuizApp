@@ -54,9 +54,21 @@ def create_database_schema(db_path: str):
 
 
 def load_questions_from_json(json_path: str) -> list:
-    """JSONファイルから問題を読み込む"""
+    """JSONファイルから問題を読み込む
+    
+    Weekly Recap形式（{"questions": [...]}）と通常形式（[...]）の両方に対応
+    """
     with open(json_path, 'r', encoding='utf-8') as f:
-        questions = json.load(f)
+        data = json.load(f)
+    
+    # Weekly Recap形式の場合（questionsフィールドがある）
+    if isinstance(data, dict) and 'questions' in data:
+        questions = data['questions']
+        print(f"Weekly Recap形式を検出しました")
+    elif isinstance(data, list):
+        questions = data
+    else:
+        raise ValueError("JSONファイルは問題のリスト、または{'questions': [...]}形式である必要があります")
     
     if not isinstance(questions, list):
         raise ValueError("JSONファイルは問題のリストである必要があります")
@@ -293,106 +305,117 @@ def insert_questions_to_db(questions: list, db_path: str, replace: bool = True):
     updated_count = 0
     
     print("新しいスキーマ形式として処理します")
+    print(f"処理対象の問題数: {len(questions)}問")
     # 新しいスキーマの場合はIDをそのまま使用
-    for question in questions:
+    for i, question in enumerate(questions):
+        if i < 3:  # 最初の3問の詳細を表示
+            print(f"\n[問題 {i+1}] ID: {question.get('id', 'unknown')}, quizType: {question.get('quizType', 'unknown')}")
         if not is_new_schema_format(question):
             print(f"警告: 問題 {question.get('id', 'unknown')} が新しいスキーマ形式ではありません。スキップします。")
             skipped_count += 1
             continue
-            
-            # 新しいスキーマ形式に変換
-            converted_question = convert_new_schema_to_db_format(question)
-            
-            original_id = converted_question.get('id', '')
-            if not original_id:
-                print(f"警告: 問題にIDがありません。スキップします。")
-                skipped_count += 1
-                continue
-            
-            # 必須フィールドの確認
-            required_fields = ['text', 'options', 'answerIndex', 'explanation', 'category', 'difficulty', 'tags', 'quizType']
-            if not all(field in converted_question for field in required_fields):
-                print(f"警告: 問題 {original_id} に必須フィールドが不足しています。スキップします。")
-                skipped_count += 1
-                continue
-            
-            # 選択肢を文字列に変換（|||で区切る）
-            options_str = '|||'.join(converted_question['options'])
-            
-            # tagsが配列の場合は文字列に変換
-            tags_str = converted_question['tags']
-            if isinstance(tags_str, list):
-                tags_str = ','.join(tags_str)
-            
-            # 既存のIDがあるかチェック
-            cursor.execute('SELECT id FROM questions WHERE id = ?', (original_id,))
-            existing = cursor.fetchone()
-            
-            if existing:
-                if replace:
-                    # 既存のレコードを置き換え
-                    cursor.execute('''
-                        UPDATE questions 
-                        SET text = ?, options = ?, answerIndex = ?, explanation = ?, 
-                            trivia = ?, category = ?, difficulty = ?, tags = ?, reference_date = ?,
-                            quiz_type = ?, category_id = ?, region = ?, league = ?, team = ?, team_id = ?, weekly_meta = ?
-                        WHERE id = ?
-                    ''', (
-                        converted_question['text'],
-                        options_str,
-                        converted_question['answerIndex'],
-                        converted_question['explanation'],
-                        converted_question.get('trivia'),
-                        converted_question['category'],
-                        converted_question['difficulty'],
-                        tags_str,
-                        converted_question.get('referenceDate'),
-                        converted_question.get('quizType'),
-                        converted_question.get('categoryId'),
-                        converted_question.get('region'),
-                        converted_question.get('league'),
-                        converted_question.get('team'),
-                        converted_question.get('teamId'),
-                        converted_question.get('weeklyMeta'),
-                        original_id
-                    ))
-                    updated_count += 1
-                    print(f"  更新: {original_id}")
-                else:
-                    skipped_count += 1
-                    print(f"  スキップ: {original_id} は既に存在します")
+        
+        # 新しいスキーマ形式に変換
+        converted_question = convert_new_schema_to_db_format(question)
+        
+        if i < 3:  # 最初の3問の変換後の内容を表示
+            print(f"  変換後 - category: {converted_question.get('category')}, quizType: {converted_question.get('quizType')}, tags: {type(converted_question.get('tags'))}")
+        
+        original_id = converted_question.get('id', '')
+        if not original_id:
+            print(f"警告: 問題にIDがありません。スキップします。")
+            skipped_count += 1
+            continue
+        
+        # 必須フィールドの確認
+        required_fields = ['text', 'options', 'answerIndex', 'explanation', 'category', 'difficulty', 'tags', 'quizType']
+        missing_fields = [field for field in required_fields if field not in converted_question]
+        if missing_fields:
+            print(f"警告: 問題 {original_id} に必須フィールドが不足しています。不足フィールド: {missing_fields}")
+            skipped_count += 1
+            continue
+        
+        # 選択肢を文字列に変換（|||で区切る）
+        if not isinstance(converted_question['options'], list):
+            print(f"警告: 問題 {original_id} のoptionsが配列ではありません。スキップします。")
+            skipped_count += 1
+            continue
+        options_str = '|||'.join(converted_question['options'])
+        
+        # tagsが配列の場合は文字列に変換
+        tags_str = converted_question['tags']
+        if isinstance(tags_str, list):
+            tags_str = ','.join(tags_str)
+        
+        # 既存のIDがあるかチェック
+        cursor.execute('SELECT id FROM questions WHERE id = ?', (original_id,))
+        existing = cursor.fetchone()
+        
+        if existing:
+            if replace:
+                # 既存のレコードを置き換え
+                cursor.execute('''
+                    UPDATE questions 
+                    SET text = ?, options = ?, answerIndex = ?, explanation = ?, 
+                        trivia = ?, category = ?, difficulty = ?, tags = ?, reference_date = ?,
+                        quiz_type = ?, category_id = ?, region = ?, league = ?, team = ?, team_id = ?, weekly_meta = ?
+                    WHERE id = ?
+                ''', (
+                    converted_question['text'],
+                    options_str,
+                    converted_question['answerIndex'],
+                    converted_question['explanation'],
+                    converted_question.get('trivia'),
+                    converted_question['category'],
+                    converted_question['difficulty'],
+                    tags_str,
+                    converted_question.get('referenceDate'),
+                    converted_question.get('quizType'),
+                    converted_question.get('categoryId'),
+                    converted_question.get('region'),
+                    converted_question.get('league'),
+                    converted_question.get('team'),
+                    converted_question.get('teamId'),
+                    converted_question.get('weeklyMeta'),
+                    original_id
+                ))
+                updated_count += 1
+                print(f"  更新: {original_id}")
             else:
-                # 新しいレコードを挿入
-                try:
-                    cursor.execute('''
-                        INSERT INTO questions 
-                        (id, text, options, answerIndex, explanation, trivia, category, difficulty, tags, reference_date,
-                         quiz_type, category_id, region, league, team, team_id, weekly_meta)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                    ''', (
-                        original_id,
-                        converted_question['text'],
-                        options_str,
-                        converted_question['answerIndex'],
-                        converted_question['explanation'],
-                        converted_question.get('trivia'),
-                        converted_question['category'],
-                        converted_question['difficulty'],
-                        tags_str,
-                        converted_question.get('referenceDate'),
-                        converted_question.get('quizType'),
-                        converted_question.get('categoryId'),
-                        converted_question.get('region'),
-                        converted_question.get('league'),
-                        converted_question.get('team'),
-                        converted_question.get('teamId'),
-                        converted_question.get('weeklyMeta')
-                    ))
-                    inserted_count += 1
-                    print(f"  追加: {original_id}")
-                except sqlite3.IntegrityError as e:
-                    skipped_count += 1
-                    print(f"  エラー: {original_id} の挿入に失敗しました: {e}")
+                skipped_count += 1
+                print(f"  スキップ: {original_id} は既に存在します")
+        else:
+            # 新しいレコードを挿入
+            try:
+                cursor.execute('''
+                    INSERT INTO questions 
+                    (id, text, options, answerIndex, explanation, trivia, category, difficulty, tags, reference_date,
+                     quiz_type, category_id, region, league, team, team_id, weekly_meta)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ''', (
+                    original_id,
+                    converted_question['text'],
+                    options_str,
+                    converted_question['answerIndex'],
+                    converted_question['explanation'],
+                    converted_question.get('trivia'),
+                    converted_question['category'],
+                    converted_question['difficulty'],
+                    tags_str,
+                    converted_question.get('referenceDate'),
+                    converted_question.get('quizType'),
+                    converted_question.get('categoryId'),
+                    converted_question.get('region'),
+                    converted_question.get('league'),
+                    converted_question.get('team'),
+                    converted_question.get('teamId'),
+                    converted_question.get('weeklyMeta')
+                ))
+                inserted_count += 1
+                print(f"  追加: {original_id}")
+            except sqlite3.IntegrityError as e:
+                skipped_count += 1
+                print(f"  エラー: {original_id} の挿入に失敗しました: {e}")
     
     conn.commit()
     conn.close()

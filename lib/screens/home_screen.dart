@@ -80,7 +80,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final nextWeekStart = _getNextWeekStartDate(now);
     final daysUntilNextWeek = _getDaysUntilNextWeek(now);
     final remainingPlays = 4 - playCount; // 最大4回（無料1回 + 広告視聴3回）
-    
+
     return {
       'canPlay': canPlay,
       'playCount': playCount,
@@ -94,13 +94,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     };
   }
 
-
   /// リワード広告を読み込む
   Future<void> _loadRewardedAd() async {
     setState(() {
       _isLoadingAd = true;
     });
-    
+
     final adService = ref.read(adServiceProvider);
     await adService.loadRewardedAd(
       onRewarded: (rewardAmount, rewardType) {
@@ -115,7 +114,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         }
       },
     );
-    
+
     if (mounted) {
       setState(() {
         _isLoadingAd = false;
@@ -124,13 +123,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   }
 
   /// MATCH DAY用のリワード広告を表示する
-  /// 
+  ///
   /// 広告視聴完了後にプレイ回数を記録し、MATCH DAYの設定画面に遷移します。
   Future<void> _showRewardedAdForMatchDay() async {
     if (_isLoadingAd) return;
-    
+
     final adService = ref.read(adServiceProvider);
-    
+
     // 広告が読み込まれていない場合、読み込みを試みる
     if (!adService.isRewardedAdReady) {
       await _loadRewardedAd();
@@ -146,17 +145,18 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         return;
       }
     }
-    
+
     final success = await adService.showRewardedAd(
       onRewarded: (rewardAmount, rewardType) async {
         // 広告視聴完了後、プレイ回数を記録
         final databaseService = ref.read(databaseServiceProvider);
         await databaseService.recordMatchDayPlay();
-        
+
         if (!mounted) return;
         // MATCH DAYの設定画面に遷移
-        context.push('/configuration?category=${AppConstants.categoryMatchRecap}');
-        
+        context
+            .push('/configuration?category=${AppConstants.categoryMatchRecap}');
+
         // 次の広告を事前に読み込む
         _loadRewardedAd();
       },
@@ -172,7 +172,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         );
       },
     );
-    
+
     if (!success && mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -188,9 +188,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final databaseService = ref.read(databaseServiceProvider);
     final canPlay = await databaseService.canPlayMatchDay();
     final playCount = await databaseService.getMatchDayPlayCount();
-    
+
     if (!mounted) return;
-    
+
     if (!canPlay) {
       // 今週のプレイ回数が上限に達している場合
       if (!mounted) return;
@@ -204,12 +204,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       );
       return;
     }
-    
+
     if (playCount == 0) {
       // 無料でプレイ可能
       if (!mounted) return;
       if (!context.mounted) return;
-      context.push('/configuration?category=${AppConstants.categoryMatchRecap}');
+      context
+          .push('/configuration?category=${AppConstants.categoryMatchRecap}');
     } else {
       // 広告視聴で追加チャレンジ
       if (!mounted) return;
@@ -233,12 +234,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           children: [
             // ヘッダー
             _buildHeader(context),
-            
+
             // メインコンテンツ
             Expanded(
               child: SingleChildScrollView(
                 child: ResponsiveContainer(
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -247,7 +249,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       const SizedBox(height: 24),
 
                       // ユーザー情報カード
-                      _buildUserInfoCard(context, ref, totalExp, totalPoints, userRank),
+                      _buildUserInfoCard(
+                          context, ref, totalExp, totalPoints, userRank),
                       const SizedBox(height: 24),
 
                       // 昇格試験セクション
@@ -338,7 +341,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             decoration: const BoxDecoration(
               color: AppColors.slate100,
               shape: BoxShape.circle,
-              border: Border.fromBorderSide(BorderSide(color: AppColors.slate200)),
+              border:
+                  Border.fromBorderSide(BorderSide(color: AppColors.slate200)),
             ),
             child: const Icon(
               Icons.notifications_outlined,
@@ -358,285 +362,359 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         if (!snapshot.hasData) {
           return const SizedBox.shrink();
         }
-        
+
         final data = snapshot.data!;
         final canPlay = data['canPlay'] as bool;
         final playCount = data['playCount'] as int;
-        final remainingPlays = data['remainingPlays'] as int;
         final daysUntilNextWeek = data['daysUntilNextWeek'] as int;
         final nextWeekStart = data['nextWeekStart'] as DateTime;
-        final isFreePlay = data['isFreePlay'] as bool;
         final isMaxReached = data['isMaxReached'] as bool;
-        
+
         return GestureDetector(
           onTap: canPlay ? () => _handleMatchDayTap(context) : null,
           child: Container(
-        constraints: const BoxConstraints(minHeight: 192),
-        decoration: BoxDecoration(
-          borderRadius: const BorderRadius.all(Radius.circular(24)),
-          boxShadow: [
-            BoxShadow(
-              color: AppColors.techBlue.withValues(alpha: 0.1),
-              blurRadius: 20,
-              offset: const Offset(0, 8),
-            ),
-          ],
-        ),
-        child: ClipRRect(
-          borderRadius: const BorderRadius.all(Radius.circular(24)),
-          child: Stack(
-            children: [
-              // 背景画像の代わりにグラデーション
-              Container(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      AppColors.techBlue.withValues(alpha: 0.2),
-                      AppColors.techIndigo.withValues(alpha: 0.6),
-                    ],
-                  ),
+            constraints: const BoxConstraints(minHeight: 280),
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.all(Radius.circular(24)),
+              boxShadow: [
+                BoxShadow(
+                  color: AppColors.techBlue.withValues(alpha: 0.1),
+                  blurRadius: 20,
+                  offset: const Offset(0, 8),
                 ),
-              ),
-              // コンテンツ
-              Padding(
-                padding: const EdgeInsets.all(24),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                          decoration: const BoxDecoration(
-                            color: AppColors.techBlue,
-                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                          ),
-                          child: const Text(
-                            'FEATURED',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.white,
-                              letterSpacing: 1.2,
+              ],
+            ),
+            child: ClipRRect(
+              borderRadius: const BorderRadius.all(Radius.circular(24)),
+              child: Stack(
+                children: [
+                  // スタジアム背景画像
+                  Positioned.fill(
+                    child: Image.asset(
+                      'assets/images/03_Backgrounds/stadium_background.png',
+                      fit: BoxFit.cover,
+                      errorBuilder: (context, error, stackTrace) {
+                        // 画像が存在しない場合はグラデーションを表示
+                        debugPrint('スタジアム画像の読み込みエラー: $error');
+                        return Container(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                AppColors.techBlue.withValues(alpha: 0.2),
+                                AppColors.techIndigo.withValues(alpha: 0.6),
+                              ],
                             ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  // オーバーレイ（テキストの可読性を向上）
+                  Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.black.withValues(alpha: 0.5),
+                          Colors.black.withValues(alpha: 0.8),
+                        ],
+                      ),
+                    ),
+                  ),
+                  // コンテンツ
+                  Padding(
+                    padding: const EdgeInsets.all(24),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        ShaderMask(
+                          shaderCallback: (bounds) => LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [
+                              Colors.white,
+                              Colors.blue.shade100,
+                              Colors.cyan.shade200,
+                            ],
+                          ).createShader(bounds),
+                          child: const Text(
+                            'MATCH DAY',
+                            style: TextStyle(
+                              fontSize: 32,
+                              fontWeight: FontWeight.w900,
+                              color: Colors.white,
+                              letterSpacing: 1.0,
+                              shadows: [
+                                Shadow(
+                                  offset: Offset(0, 3),
+                                  blurRadius: 12,
+                                  color: Colors.black,
+                                ),
+                                Shadow(
+                                  offset: Offset(0, 6),
+                                  blurRadius: 20,
+                                  color: Colors.black87,
+                                ),
+                                Shadow(
+                                  offset: Offset(0, 2),
+                                  blurRadius: 8,
+                                  color: Colors.blue,
+                                ),
+                              ],
+                            ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                        const SizedBox(height: 24),
+                        // 状態に応じた情報表示
+                        if (isMaxReached) ...[
+                          // 上限到達時
+                          Container(
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              color:
+                                  Colors.orange.shade400.withValues(alpha: 0.2),
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(
+                                color: Colors.orange.shade300,
+                                width: 1,
+                              ),
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.info_outline,
+                                      color: Colors.orange.shade200,
+                                      size: 16,
+                                    ),
+                                    const SizedBox(width: 6),
+                                    Text(
+                                      '今週のプレイ回数が上限に達しています',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                        shadows: [
+                                          Shadow(
+                                            offset: const Offset(0, 1),
+                                            blurRadius: 4,
+                                            color: Colors.black
+                                                .withValues(alpha: 0.8),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 8),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.calendar_today,
+                                      color:
+                                          Colors.white.withValues(alpha: 0.8),
+                                      size: 14,
+                                    ),
+                                    const SizedBox(width: 6),
+                                    Text(
+                                      '次回プレイ可能: ${_formatDate(nextWeekStart)}',
+                                      style: TextStyle(
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.w500,
+                                        color:
+                                            Colors.white.withValues(alpha: 0.9),
+                                        shadows: [
+                                          Shadow(
+                                            offset: const Offset(0, 1),
+                                            blurRadius: 3,
+                                            color: Colors.black
+                                                .withValues(alpha: 0.7),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                if (daysUntilNextWeek > 0) ...[
+                                  const SizedBox(height: 4),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.access_time,
+                                        color:
+                                            Colors.white.withValues(alpha: 0.8),
+                                        size: 14,
+                                      ),
+                                      const SizedBox(width: 6),
+                                      Text(
+                                        'あと$daysUntilNextWeek日',
+                                        style: TextStyle(
+                                          fontSize: 11,
+                                          fontWeight: FontWeight.w500,
+                                          color: Colors.white
+                                              .withValues(alpha: 0.9),
+                                          shadows: [
+                                            Shadow(
+                                              offset: const Offset(0, 1),
+                                              blurRadius: 3,
+                                              color: Colors.black
+                                                  .withValues(alpha: 0.7),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ],
+                            ),
+                          ),
+                        ],
+                        const SizedBox(height: 12),
+                        Container(
+                          width: double.infinity,
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 16),
+                          decoration: BoxDecoration(
+                            gradient: canPlay
+                                ? LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors: [
+                                      Colors.blue.shade400
+                                          .withValues(alpha: 0.2),
+                                      Colors.cyan.shade400
+                                          .withValues(alpha: 0.1),
+                                      AppColors.techBlue
+                                          .withValues(alpha: 0.15),
+                                    ],
+                                  )
+                                : null,
+                            color: canPlay ? null : Colors.grey.shade300,
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(16)),
+                            border: canPlay
+                                ? Border.all(
+                                    color: Colors.white.withValues(alpha: 0.3),
+                                    width: 1.5,
+                                  )
+                                : null,
+                            boxShadow: canPlay
+                                ? [
+                                    BoxShadow(
+                                      color: Colors.blue.shade400
+                                          .withValues(alpha: 0.4),
+                                      blurRadius: 20,
+                                      offset: const Offset(0, 6),
+                                      spreadRadius: 2,
+                                    ),
+                                    BoxShadow(
+                                      color: Colors.cyan.shade300
+                                          .withValues(alpha: 0.3),
+                                      blurRadius: 16,
+                                      offset: const Offset(0, 4),
+                                      spreadRadius: 1,
+                                    ),
+                                    BoxShadow(
+                                      color:
+                                          Colors.black.withValues(alpha: 0.2),
+                                      blurRadius: 12,
+                                      offset: const Offset(0, 3),
+                                    ),
+                                  ]
+                                : null,
+                          ),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              // メインテキストとアイコン
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    isMaxReached
+                                        ? 'プレイ不可'
+                                        : (playCount == 0
+                                            ? 'START MISSION'
+                                            : '広告を見てプレイ'),
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w900,
+                                      color: canPlay
+                                          ? Colors.white
+                                          : Colors.grey.shade600,
+                                      letterSpacing: 1.0,
+                                      shadows: canPlay
+                                          ? [
+                                              Shadow(
+                                                offset: const Offset(0, 2),
+                                                blurRadius: 6,
+                                                color: Colors.black
+                                                    .withValues(alpha: 0.5),
+                                              ),
+                                              Shadow(
+                                                offset: const Offset(0, 1),
+                                                blurRadius: 3,
+                                                color: Colors.blue.shade900
+                                                    .withValues(alpha: 0.3),
+                                              ),
+                                            ]
+                                          : null,
+                                    ),
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
+                                  if (canPlay) ...[
+                                    const SizedBox(width: 8),
+                                    Icon(
+                                      Icons.play_circle_filled,
+                                      color: Colors.white,
+                                      size: 22,
+                                    ),
+                                  ],
+                                ],
+                              ),
+                              if (!isMaxReached) ...[
+                                const SizedBox(height: 6),
+                                // サブテキスト（5倍ボーナスとプレイ回数）
+                                Text(
+                                  '${AppConstants.matchDayExpMultiplier.toInt()}倍ボーナス | プレイ回数: $playCount/4',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w700,
+                                    color: canPlay
+                                        ? Colors.white.withValues(alpha: 0.9)
+                                        : Colors.grey.shade500,
+                                    shadows: canPlay
+                                        ? [
+                                            Shadow(
+                                              offset: const Offset(0, 1),
+                                              blurRadius: 3,
+                                              color: Colors.black
+                                                  .withValues(alpha: 0.4),
+                                            ),
+                                          ]
+                                        : null,
+                                  ),
+                                ),
+                              ],
+                            ],
                           ),
                         ),
                       ],
                     ),
-                    const SizedBox(height: 16),
-                    const Text(
-                      'MATCH DAY',
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white,
-                        letterSpacing: -0.5,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      '最新の試合結果をクイズで分析',
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white.withValues(alpha: 0.9),
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    // プレイ回数の進捗表示
-                    _buildPlayCountProgress(playCount, remainingPlays, isFreePlay),
-                    const SizedBox(height: 8),
-                    // 状態に応じた情報表示
-                    if (isMaxReached) ...[
-                      // 上限到達時
-                      Container(
-                        padding: const EdgeInsets.all(12),
-                        decoration: BoxDecoration(
-                          color: Colors.orange.shade400.withValues(alpha: 0.2),
-                          borderRadius: BorderRadius.circular(12),
-                          border: Border.all(
-                            color: Colors.orange.shade300,
-                            width: 1,
-                          ),
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.info_outline,
-                                  color: Colors.orange.shade200,
-                                  size: 16,
-                                ),
-                                const SizedBox(width: 6),
-                                const Text(
-                                  '今週のプレイ回数が上限に達しています',
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(height: 8),
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.calendar_today,
-                                  color: Colors.white.withValues(alpha: 0.8),
-                                  size: 14,
-                                ),
-                                const SizedBox(width: 6),
-                                Text(
-                                  '次回プレイ可能: ${_formatDate(nextWeekStart)}',
-                                  style: TextStyle(
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.w500,
-                                    color: Colors.white.withValues(alpha: 0.9),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            if (daysUntilNextWeek > 0) ...[
-                              const SizedBox(height: 4),
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.access_time,
-                                    color: Colors.white.withValues(alpha: 0.8),
-                                    size: 14,
-                                  ),
-                                  const SizedBox(width: 6),
-                                  Text(
-                                    'あと$daysUntilNextWeek日',
-                                    style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.white.withValues(alpha: 0.9),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ],
-                        ),
-                      ),
-                    ] else ...[
-                      // プレイ可能時
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withValues(alpha: 0.2),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Icon(
-                                  isFreePlay ? Icons.star : Icons.play_circle_outline,
-                                  color: Colors.white,
-                                  size: 16,
-                                ),
-                                const SizedBox(width: 6),
-                                Text(
-                                  isFreePlay 
-                                      ? '無料でプレイ可能'
-                                      : '広告視聴で追加チャレンジ',
-                                  style: const TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            if (!isFreePlay) ...[
-                              const SizedBox(height: 4),
-                              Text(
-                                '残り回数: $remainingPlays回',
-                                style: TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.white.withValues(alpha: 0.9),
-                                ),
-                              ),
-                            ],
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      // 報酬情報
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                        decoration: BoxDecoration(
-                          color: Colors.amber.shade400.withValues(alpha: 0.2),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(
-                              Icons.emoji_events,
-                              color: Colors.amber.shade200,
-                              size: 16,
-                            ),
-                            const SizedBox(width: 6),
-                            Text(
-                              '報酬: EXP ×${AppConstants.matchDayExpMultiplier.toInt()}倍、ポイント ×${AppConstants.matchDayPointsMultiplier.toInt()}倍',
-                              style: const TextStyle(
-                                fontSize: 11,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                    const SizedBox(height: 12),
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                      decoration: BoxDecoration(
-                        color: canPlay ? Colors.white : Colors.grey.shade300,
-                        borderRadius: const BorderRadius.all(Radius.circular(12)),
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text(
-                            canPlay ? 'START MISSION' : 'プレイ不可',
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w700,
-                              color: canPlay ? AppColors.techIndigo : Colors.grey.shade600,
-                            ),
-                          ),
-                          if (canPlay) ...[
-                            const SizedBox(width: 8),
-                            const Icon(
-                              Icons.play_circle_outline,
-                              color: AppColors.techIndigo,
-                              size: 18,
-                            ),
-                          ],
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-            ],
-          ),
-        ),
+            ),
           ),
         );
       },
@@ -863,13 +941,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       if (!unlockedDifficulties.contains(normalKey)) {
         final exam = PromotionExam.easyToNormal(
           category: category,
-          tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
+          tags:
+              category == AppConstants.categoryTeams ? 'teams,japan' : category,
         );
-        if (userRank.index >= exam.requiredRank.index && totalPoints >= exam.requiredPoints) {
+        if (userRank.index >= exam.requiredRank.index &&
+            totalPoints >= exam.requiredPoints) {
           availableExams.add({
             'exam': exam,
             'category': category,
-            'tags': category == AppConstants.categoryTeams ? 'teams,japan' : category,
+            'tags': category == AppConstants.categoryTeams
+                ? 'teams,japan'
+                : category,
             'targetDifficulty': AppConstants.difficultyNormal,
           });
         }
@@ -881,16 +963,21 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         difficulty: AppConstants.difficultyHard,
         tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
       );
-      if (!unlockedDifficulties.contains(hardKey) && unlockedDifficulties.contains(normalKey)) {
+      if (!unlockedDifficulties.contains(hardKey) &&
+          unlockedDifficulties.contains(normalKey)) {
         final exam = PromotionExam.normalToHard(
           category: category,
-          tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
+          tags:
+              category == AppConstants.categoryTeams ? 'teams,japan' : category,
         );
-        if (userRank.index >= exam.requiredRank.index && totalPoints >= exam.requiredPoints) {
+        if (userRank.index >= exam.requiredRank.index &&
+            totalPoints >= exam.requiredPoints) {
           availableExams.add({
             'exam': exam,
             'category': category,
-            'tags': category == AppConstants.categoryTeams ? 'teams,japan' : category,
+            'tags': category == AppConstants.categoryTeams
+                ? 'teams,japan'
+                : category,
             'targetDifficulty': AppConstants.difficultyHard,
           });
         }
@@ -902,16 +989,21 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         difficulty: AppConstants.difficultyExtreme,
         tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
       );
-      if (!unlockedDifficulties.contains(extremeKey) && unlockedDifficulties.contains(hardKey)) {
+      if (!unlockedDifficulties.contains(extremeKey) &&
+          unlockedDifficulties.contains(hardKey)) {
         final exam = PromotionExam.hardToExtreme(
           category: category,
-          tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
+          tags:
+              category == AppConstants.categoryTeams ? 'teams,japan' : category,
         );
-        if (userRank.index >= exam.requiredRank.index && totalPoints >= exam.requiredPoints) {
+        if (userRank.index >= exam.requiredRank.index &&
+            totalPoints >= exam.requiredPoints) {
           availableExams.add({
             'exam': exam,
             'category': category,
-            'tags': category == AppConstants.categoryTeams ? 'teams,japan' : category,
+            'tags': category == AppConstants.categoryTeams
+                ? 'teams,japan'
+                : category,
             'targetDifficulty': AppConstants.difficultyExtreme,
           });
         }
@@ -942,7 +1034,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           final category = examData['category'] as String;
           final tags = examData['tags'] as String;
           final targetDifficulty = examData['targetDifficulty'] as String;
-          
+
           return Padding(
             padding: const EdgeInsets.only(bottom: 12),
             child: GestureDetector(
@@ -1162,7 +1254,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   String _getNextRankName(dynamic userRank) {
     const allRanks = UserRank.values;
-    
+
     final currentIndex = allRanks.indexOf(userRank);
     if (currentIndex >= 0 && currentIndex < allRanks.length - 1) {
       return allRanks[currentIndex + 1].japaneseName;
@@ -1175,12 +1267,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     try {
       final recapDataService = ref.read(recapDataServiceProvider);
       final syncedCount = await recapDataService.syncWeeklyRecapToDatabase();
-      
+
       // 新しいデータが同期された場合、通知を送信
       if (syncedCount > 0) {
         final notificationService = ref.read(notificationServiceProvider);
         final latestMonday = _getLatestMonday();
-        
+
         // 通知権限を確認してから送信
         final hasPermission = await notificationService.isPermissionGranted();
         if (hasPermission) {
@@ -1216,79 +1308,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   String _formatDate(DateTime date) {
     final weekdays = ['月', '火', '水', '木', '金', '土', '日'];
     return '${date.month}月${date.day}日（${weekdays[date.weekday - 1]}）';
-  }
-
-  /// プレイ回数の進捗表示ウィジェット
-  Widget _buildPlayCountProgress(int playCount, int remainingPlays, bool isFreePlay) {
-    const maxPlays = 4; // 無料1回 + 広告視聴3回
-    final progress = playCount / maxPlays;
-    
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              'プレイ回数: $playCount/$maxPlays',
-              style: const TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.w600,
-                color: Colors.white,
-              ),
-            ),
-            if (remainingPlays > 0)
-              Text(
-                '残り$remainingPlays回',
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white.withValues(alpha: 0.9),
-                ),
-              ),
-          ],
-        ),
-        const SizedBox(height: 6),
-        // 進捗バー
-        Container(
-          height: 8,
-          decoration: BoxDecoration(
-            color: Colors.white.withValues(alpha: 0.2),
-            borderRadius: BorderRadius.circular(4),
-          ),
-          child: FractionallySizedBox(
-            alignment: Alignment.centerLeft,
-            widthFactor: progress,
-            child: Container(
-              decoration: BoxDecoration(
-                color: isFreePlay ? Colors.green.shade400 : Colors.amber.shade400,
-                borderRadius: BorderRadius.circular(4),
-              ),
-            ),
-          ),
-        ),
-        const SizedBox(height: 6),
-        // プレイ回数のインジケーター（4つのドット）
-        Row(
-          children: List.generate(maxPlays, (index) {
-            final isUsed = index < playCount;
-            final isFree = index == 0;
-            return Expanded(
-              child: Container(
-                margin: EdgeInsets.only(right: index < maxPlays - 1 ? 4 : 0),
-                height: 6,
-                decoration: BoxDecoration(
-                  color: isUsed
-                      ? (isFree ? Colors.green.shade400 : Colors.amber.shade400)
-                      : Colors.white.withValues(alpha: 0.3),
-                  borderRadius: BorderRadius.circular(3),
-                ),
-              ),
-            );
-          }),
-        ),
-      ],
-    );
   }
 }
 
@@ -1347,7 +1366,9 @@ class _CategoryButtonState extends State<_CategoryButton> {
               width: 48,
               height: 48,
               decoration: BoxDecoration(
-                color: _isHovered ? widget.iconColor : widget.iconBgColor.withValues(alpha: 0.1),
+                color: _isHovered
+                    ? widget.iconColor
+                    : widget.iconBgColor.withValues(alpha: 0.1),
                 borderRadius: const BorderRadius.all(Radius.circular(12)),
                 boxShadow: [
                   BoxShadow(

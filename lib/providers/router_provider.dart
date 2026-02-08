@@ -36,12 +36,15 @@ final routerProvider = Provider<GoRouter>((ref) {
         name: 'quiz',
         builder: (context, state) {
           final params = state.uri.queryParameters;
+          // 後方互換性: teamパラメータが指定されていない場合はrangeパラメータを使用
+          final teamParam = RouteParamsParser.parseStringParam(params, 'team');
+          final rangeParam = RouteParamsParser.parseStringParam(params, 'range');
           return QuizScreen(
             category: RouteParamsParser.parseStringParam(params, 'category'),
             difficulty: RouteParamsParser.parseStringParam(params, 'difficulty'),
             country: RouteParamsParser.parseStringParam(params, 'country'),
             region: RouteParamsParser.parseStringParam(params, 'region'),
-            range: RouteParamsParser.parseStringParam(params, 'range'),
+            team: teamParam.isNotEmpty ? teamParam : rangeParam,
             date: RouteParamsParser.parseOptionalStringParam(params, 'date'),
             leagueType: RouteParamsParser.parseOptionalStringParam(
               params,

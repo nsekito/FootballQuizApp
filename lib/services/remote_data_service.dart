@@ -130,10 +130,26 @@ class RemoteDataService {
     return questionsJson
         .map((q) {
           final questionMap = q as Map<String, dynamic>;
+          
+          // tagsフィールドの型変換（List → String）
+          // json_to_db.pyのconvert_new_schema_to_db_format関数と同じロジック
+          if (questionMap['tags'] is List) {
+            final tagsList = questionMap['tags'] as List;
+            questionMap['tags'] = tagsList.map((e) => e.toString()).join(',');
+          } else if (questionMap['tags'] == null) {
+            questionMap['tags'] = '';
+          }
+          
+          // weeklyMetaオブジェクト → JSON文字列（json_to_db.pyと同じロジック）
+          if (questionMap['weeklyMeta'] is Map) {
+            questionMap['weeklyMeta'] = jsonEncode(questionMap['weeklyMeta']);
+          }
+          
           // referenceDateが設定されていない場合、トップレベルのdateを使用
           if (questionMap['referenceDate'] == null && topLevelDate != null) {
             questionMap['referenceDate'] = topLevelDate;
           }
+          
           return Question.fromJson(questionMap);
         })
         .toList();

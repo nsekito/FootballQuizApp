@@ -12,7 +12,7 @@ import '../utils/unlock_key_utils.dart';
 class DatabaseService {
   static Database? _database;
   static const String _databaseName = 'questions.db';  // アセットファイル名と一致させる
-  static const int _databaseVersion = 6;
+  static const int _databaseVersion = 7;  // バージョンを上げて新しいデータベースを強制的に適用
   
   // キャッシュ用のマップ（問題ID -> Question）
   final Map<String, Question> _questionCache = {};
@@ -545,6 +545,46 @@ class DatabaseService {
       
       debugPrint('バージョン6へのマイグレーション完了: 新しいスキーマのカラムを追加しました');
     }
+    
+    // バージョン6から7へのマイグレーション
+    if (oldVersion < 7) {
+      debugPrint('バージョン7へのマイグレーション開始: questionsテーブルを再作成してアセットからデータを読み込みます');
+      
+      // questionsテーブルを削除して再作成（アセットから新しいデータを読み込むため）
+      await db.execute('DROP TABLE IF EXISTS questions');
+      await db.execute('''
+        CREATE TABLE questions (
+          id TEXT PRIMARY KEY,
+          text TEXT NOT NULL,
+          options TEXT NOT NULL,
+          answerIndex INTEGER NOT NULL,
+          explanation TEXT NOT NULL,
+          trivia TEXT,
+          category TEXT NOT NULL,
+          difficulty TEXT NOT NULL,
+          tags TEXT NOT NULL,
+          reference_date TEXT,
+          quiz_type TEXT,
+          category_id TEXT,
+          region TEXT,
+          league TEXT,
+          team TEXT,
+          team_id TEXT,
+          weekly_meta TEXT
+        )
+      ''');
+      
+      // インデックスを再作成
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_questions_category_difficulty ON questions(category, difficulty)
+      ''');
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_questions_tags ON questions(tags)
+      ''');
+      
+      debugPrint('バージョン7へのマイグレーション完了: questionsテーブルを再作成しました');
+      debugPrint('注意: アセットからデータベースをコピーするには、アプリを再起動してください');
+    }
   }
 
   /// クイズ問題を追加
@@ -613,10 +653,15 @@ class DatabaseService {
     String? difficulty,
     String? tags,
     String? country,
-    String? range,
+    String? region,
+    String? team,
     int? limit,
     List<String>? excludeIds,
+    // 後方互換性のため（非推奨: teamパラメータを使用してください）
+    String? range,
   }) async {
+    // 後方互換性: rangeパラメータが指定されている場合はteamに変換
+    final teamParam = team ?? range;
     final db = await database;
     final List<Map<String, dynamic>> maps;
 
@@ -633,42 +678,46 @@ class DatabaseService {
       args.add(difficulty);
     }
 
-    // タグ検索の強化（複数タグ対応、AND検索）
-    if (tags != null && tags.isNotEmpty) {
-      final tagList = tags.split(',').map((t) => t.trim()).where((t) => t.isNotEmpty).toList();
-      if (tagList.isNotEmpty) {
-        // すべてのタグを含む問題を検索（AND検索）
-        for (final tag in tagList) {
-          query += ' AND tags LIKE ?';
-          args.add('%$tag%');
-        }
-      }
+    // tagsパラメータによるフィルタリングは削除
+    // regionフィールドとteam_idフィールドで検索するため、tagsでのフィルタリングは不要
+
+    // 地域によるフィルタリング（regionフィールドを使用）
+    // regionが指定されている場合はそれを優先し、指定されていない場合はcountryを使用
+    final regionParam = region ?? country;
+    if (regionParam != null && regionParam.isNotEmpty) {
+      query += ' AND region = ?';
+      args.add(regionParam);
     }
 
-    // 国によるフィルタリング
-    if (country != null && country.isNotEmpty) {
-      query += ' AND tags LIKE ?';
-      args.add('%$country%');
-    }
-
-    // 範囲によるフィルタリング
-    if (range != null && range.isNotEmpty) {
-      if (range == 'j1全チーム' || range == 'j1_all_teams') {
+    // チームによるフィルタリング
+    if (teamParam != null && teamParam.isNotEmpty) {
+      if (teamParam == 'j1全チーム' || teamParam == 'j1_all_teams') {
         // J1全チーム: japanタグとj1タグを含む
         query += ' AND tags LIKE ? AND tags LIKE ?';
         args.add('%japan%');
         args.add('%j1%');
-      } else if (range == 'j2全チーム' || range == 'j2_all_teams') {
+      } else if (teamParam == 'j2全チーム' || teamParam == 'j2_all_teams') {
         // J2全チーム: japanタグとj2タグを含む
         query += ' AND tags LIKE ? AND tags LIKE ?';
         args.add('%japan%');
         args.add('%j2%');
-      } else if (range == '海外top3' || range == 'overseas_top3') {
+      } else if (teamParam == '海外top3' || teamParam == 'overseas_top3') {
         // 海外Top3: イタリア、スペイン、イングランドのいずれか
         query += ' AND (tags LIKE ? OR tags LIKE ? OR tags LIKE ?)';
         args.add('%italy%');
         args.add('%spain%');
         args.add('%england%');
+      } else {
+        // チームIDへの変換（設定画面の値やチーム名からteam_idに変換）
+        final teamId = _convertRangeToTeamId(teamParam);
+        
+        // デバッグログ（一時的）
+        debugPrint('チーム検索: teamParam=$teamParam, teamId=$teamId');
+        
+        // team_idフィールドで直接検索（最も確実）
+        // データベースにはteam_idフィールドに値が設定されているため、これで確実にマッチする
+        query += ' AND team_id = ?';
+        args.add(teamId);
       }
     }
 
@@ -686,7 +735,14 @@ class DatabaseService {
       args.add(limit);
     }
 
+    // デバッグログ（一時的）
+    debugPrint('SQLクエリ: $query');
+    debugPrint('SQL引数: $args');
+
     maps = await db.rawQuery(query, args);
+    
+    // デバッグログ（一時的）
+    debugPrint('取得した問題数: ${maps.length}');
 
     return maps.map((map) => _mapToQuestion(map)).toList();
   }
@@ -697,20 +753,26 @@ class DatabaseService {
     String? difficulty,
     String? tags,
     String? country,
-    String? range,
+    String? region,
+    String? team,
     int? limit,
     List<String>? excludeIds,
     bool balanceDifficulty = false,
+    // 後方互換性のため（非推奨: teamパラメータを使用してください）
+    String? range,
   }) async {
+    // 後方互換性: rangeパラメータが指定されている場合はteamに変換
+    final teamParam = team ?? range;
+    
     final requestedLimit = limit ?? AppConstants.defaultQuestionsPerQuiz;
     
     // 難易度バランス調整が有効な場合
     if (balanceDifficulty && difficulty == null) {
       final balancedQuestions = await _getQuestionsWithDifficultyBalance(
         category: category,
-        tags: tags,
         country: country,
-        range: range,
+        region: region,
+        team: teamParam,
         limit: requestedLimit,
         excludeIds: excludeIds,
       );
@@ -724,7 +786,8 @@ class DatabaseService {
       difficulty: difficulty,
       tags: tags,
       country: country,
-      range: range,
+      region: region,
+      team: teamParam,
       limit: requestedLimit * 3, // より多く取得してテーマ多様性を確保
       excludeIds: excludeIds,
     );
@@ -740,9 +803,9 @@ class DatabaseService {
   /// 難易度バランスを考慮した問題取得
   Future<List<Question>> _getQuestionsWithDifficultyBalance({
     String? category,
-    String? tags,
     String? country,
-    String? range,
+    String? region,
+    String? team,
     int? limit,
     List<String>? excludeIds,
   }) async {
@@ -761,9 +824,10 @@ class DatabaseService {
       final questions = await getQuestions(
         category: category,
         difficulty: diff,
-        tags: tags,
+        tags: null, // tagsパラメータは使用しない
         country: country,
-        range: range,
+        region: region,
+        team: team,
         limit: questionsPerDifficulty * 2, // 余分に取得
         excludeIds: excludeIds,
       );
@@ -775,7 +839,82 @@ class DatabaseService {
     return balancedQuestions;
   }
 
-  /// 問題文からテーマキーワードを抽出
+  /// 設定画面の値やチーム名をteamIdに変換（検索用）
+  /// rangeパラメータ（設定画面の値）やチーム名からteam_idに変換
+  static String _convertRangeToTeamId(String rangeValue) {
+    // 設定画面で使用される値からteam_idへのマッピング
+    final rangeToTeamIdMap = {
+      // J1リーグ
+      'kashiwa_reysol': 'kashiwa',
+      'kashima_antlers': 'kashima',
+      'kyoto_sanga': 'kyoto',
+      'sanfrecce_hiroshima': 'sanfrecce',
+      'vissel_kobe': 'vissel',
+      'machida_zelvia': 'machida',
+      'urawa_reds': 'urawa',
+      'kawasaki_frontale': 'kawasaki',
+      'gamba_osaka': 'gamba',
+      'cerezo_osaka': 'cerezo',
+      'fc_tokyo': 'fc_tokyo',
+      'avispa_fukuoka': 'avispa',
+      'fagiano_okayama': 'fagiano',
+      'shimizu_s_pulse': 'shimizu',
+      'yokohama_f_marinos': 'yokohama',
+      'nagoya_grampus': 'nagoya',
+      'tokyo_verdy': 'verdy',
+      'mito_hollyhock': 'mito',
+      'v_varen_nagasaki': 'v_varen',
+      'jef_united_chiba': 'jef_chiba',
+      // 海外リーグ
+      'juventus': 'juventus',
+      'ac_milan': 'ac_milan',
+      'inter_milan': 'inter_milan',
+      'real_madrid': 'real_madrid',
+      'barcelona': 'barcelona',
+      'atletico_madrid': 'atletico_madrid',
+      'liverpool': 'liverpool',
+      'arsenal': 'arsenal',
+      'manchester_city': 'manchester_city',
+      'manchester_united': 'manchester_united',
+      'chelsea': 'chelsea',
+    };
+    
+    // 設定画面の値がマッピングにある場合はそれを返す
+    if (rangeToTeamIdMap.containsKey(rangeValue)) {
+      return rangeToTeamIdMap[rangeValue]!;
+    }
+    
+    // チーム名とteamIdのマッピング（JSONファイルの実際のteamIdに合わせる）
+    final teamNameToIdMap = {
+      '柏レイソル': 'kashiwa',
+      '鹿島アントラーズ': 'kashima',
+      '京都サンガF.C.': 'kyoto',
+      'サンフレッチェ広島': 'sanfrecce',
+      'ヴィッセル神戸': 'vissel',
+      'FC町田ゼルビア': 'machida',
+      '浦和レッズ': 'urawa',
+      '川崎フロンターレ': 'kawasaki',
+      'ガンバ大阪': 'gamba',
+      'セレッソ大阪': 'cerezo',
+      'FC東京': 'fc_tokyo',
+      'アビスパ福岡': 'avispa',
+      'ファジアーノ岡山': 'fagiano',
+      '清水エスパルス': 'shimizu',
+      '横浜F・マリノス': 'yokohama',
+      '名古屋グランパス': 'nagoya',
+      '東京ヴェルディ': 'verdy',
+    };
+    
+    // チーム名がマッピングにある場合はそれを返す
+    if (teamNameToIdMap.containsKey(rangeValue)) {
+      return teamNameToIdMap[rangeValue]!;
+    }
+    
+    // 既にteam_id形式の場合はそのまま返す
+    // それ以外の場合は小文字に変換してアンダースコアに置換
+    return rangeValue.toLowerCase().replaceAll(' ', '_');
+  }
+
   String _extractThemeKeyword(String text) {
     // 問題文の最初の30文字をテーマキーワードとして使用
     // 句読点や記号を除去して、主要なキーワードを抽出

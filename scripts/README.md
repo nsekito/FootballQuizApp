@@ -132,7 +132,14 @@ python json_to_db.py data/weekly_recap/2026-02-03_j1.json --replace
 
 4. **データベースへの取り込み**
    ```powershell
-   python json_to_db.py data/manual_questions/team/japan/j1/team_easy_20260207.json --replace
+   # ルールクイズの場合
+   python json_to_db.py data/manual_questions/rule/rule_easy_20260207.json --create-schema --replace
+   
+   # チームクイズの場合
+   python json_to_db.py data/manual_questions/team/japan/j1/team_normal_20260207.json --replace
+   
+   # 歴史クイズの場合
+   python json_to_db.py data/manual_questions/history/japan/history_easy_20260207.json --replace
    ```
 
 5. **動作確認**

@@ -280,12 +280,19 @@ region, league を設定。team, teamId は null。
 ### 4. データベースへの取り込み
 
 ```powershell
-# データベースに取り込む
-python scripts/json_to_db.py data/manual_questions/team/japan/j1/team_easy_20260207.json --replace
+# ルールクイズの場合（初回は--create-schemaが必要）
+python scripts/json_to_db.py data/manual_questions/rule/rule_easy_20260207.json --create-schema --replace
+
+# チームクイズの場合
+python scripts/json_to_db.py data/manual_questions/team/japan/j1/team_normal_20260207.json --replace
+
+# 歴史クイズの場合
+python scripts/json_to_db.py data/manual_questions/history/japan/history_easy_20260207.json --replace
 
 # 複数ファイルを一度に取り込む場合
-python scripts/json_to_db.py data/manual_questions/team/japan/j1/team_easy_20260207.json --replace
-python scripts/json_to_db.py data/manual_questions/team/japan/j1/team_normal_20260207.json --replace
+python scripts/json_to_db.py data/manual_questions/rule/rule_easy_20260207.json --replace
+python scripts/json_to_db.py data/manual_questions/rule/rule_normal_20260207.json --replace
+python scripts/json_to_db.py data/manual_questions/rule/rule_hard_20260207.json --replace
 ```
 
 ### 5. 動作確認

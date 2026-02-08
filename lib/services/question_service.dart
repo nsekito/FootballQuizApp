@@ -25,7 +25,7 @@ class QuestionService {
   /// [tags] タグ（カンマ区切り、オプション）
   /// [country] 国（オプション）
   /// [region] 地域（オプション）
-  /// [range] 範囲（オプション）
+  /// [team] チーム（オプション）
   /// [limit] 取得する問題数（デフォルト: 10）
   /// [excludeIds] 除外する問題IDのリスト（オプション）
   /// [date] 日付（Weekly Recap用、YYYY-MM-DD形式、オプション）
@@ -36,12 +36,17 @@ class QuestionService {
     String? tags,
     String? country,
     String? region,
-    String? range,
+    String? team,
     int? limit,
     List<String>? excludeIds,
     String? date,
     String? leagueType,
+    // 後方互換性のため（非推奨: teamパラメータを使用してください）
+    String? range,
   }) async {
+    // 後方互換性: rangeパラメータが指定されている場合はteamに変換
+    final teamParam = team ?? range;
+    
     // リモートデータが必要なカテゴリ
     if (category == AppConstants.categoryMatchRecap) {
       return await _getWeeklyRecapQuestions(
@@ -56,9 +61,10 @@ class QuestionService {
     return await _databaseService.getQuestionsOptimized(
       category: category,
       difficulty: difficulty,
-      tags: tags,
+      tags: null, // tagsパラメータは使用しない
       country: country,
-      range: range,
+      region: region,
+      team: teamParam,
       limit: limit,
       excludeIds: excludeIds,
     );
