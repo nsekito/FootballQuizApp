@@ -27,6 +27,7 @@ class HomeScreen extends ConsumerStatefulWidget {
 class _HomeScreenState extends ConsumerState<HomeScreen> {
   bool _hasSyncedRecap = false;
   bool _isLoadingAd = false; // 広告読み込み中かどうか
+  bool _isRankIconExpanded = false; // ランクアイコンの拡大状態
 
   @override
   void initState() {
@@ -229,47 +230,53 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
     return Scaffold(
       backgroundColor: AppColors.techWhite,
-      body: SafeArea(
-        child: Column(
-          children: [
-            // ヘッダー
-            _buildHeader(context),
+      body: Stack(
+        children: [
+          SafeArea(
+            child: Column(
+              children: [
+                // ヘッダー
+                _buildHeader(context),
 
-            // メインコンテンツ
-            Expanded(
-              child: SingleChildScrollView(
-                child: ResponsiveContainer(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Featured Card (MATCH DAY)
-                      _buildFeaturedCard(context),
-                      const SizedBox(height: 24),
+                // メインコンテンツ
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: ResponsiveContainer(
+                      padding:
+                          const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // Featured Card (MATCH DAY)
+                          _buildFeaturedCard(context),
+                          const SizedBox(height: 24),
 
-                      // ユーザー情報カード
-                      _buildUserInfoCard(
-                          context, ref, totalExp, totalPoints, userRank),
-                      const SizedBox(height: 24),
+                          // ユーザー情報カード
+                          _buildUserInfoCard(
+                              context, ref, totalExp, totalPoints, userRank),
+                          const SizedBox(height: 24),
 
-                      // 昇格試験セクション
-                      _buildPromotionExamSection(context, ref),
-                      const SizedBox(height: 24),
+                          // 昇格試験セクション
+                          _buildPromotionExamSection(context, ref),
+                          const SizedBox(height: 24),
 
-                      // カテゴリ選択セクション
-                      _buildCategorySection(context),
-                      const SizedBox(height: 24),
+                          // カテゴリ選択セクション
+                          _buildCategorySection(context),
+                          const SizedBox(height: 24),
 
-                      // 履歴と統計
-                      _buildHistoryAndStatsSection(context),
-                    ],
+                          // 履歴と統計
+                          _buildHistoryAndStatsSection(context),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
+          ),
+          // 拡大時のオーバーレイ
+          if (_isRankIconExpanded) _buildExpandedRankOverlay(userRank),
+        ],
       ),
       bottomNavigationBar: const BannerAdWidget(),
     );
@@ -726,7 +733,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     WidgetRef ref,
     int totalExp,
     int totalPoints,
-    dynamic userRank,
+    UserRank userRank,
   ) {
     final progressValue = userRank.maxExp != null
         ? (totalExp - userRank.minExp) / (userRank.maxExp! - userRank.minExp)
@@ -754,28 +761,44 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             children: [
               Row(
                 children: [
-                  Container(
-                    width: 48,
-                    height: 48,
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [Color(0xFF3B82F6), Color(0xFF4F46E5)],
-                      ),
-                      borderRadius: const BorderRadius.all(Radius.circular(12)),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.blue.withValues(alpha: 0.3),
-                          blurRadius: 8,
-                          offset: const Offset(0, 4),
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _isRankIconExpanded = !_isRankIconExpanded;
+                      });
+                    },
+                    child: SizedBox(
+                      width: 80,
+                      height: 80,
+                      child: Image.asset(
+                        'assets/images/rank_icons/${userRank.name}.png',
+                        fit: BoxFit.contain,
+                        filterQuality: FilterQuality.high,
+                        errorBuilder: (_, __, ___) => Container(
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [Color(0xFF3B82F6), Color(0xFF4F46E5)],
+                            ),
+                            borderRadius: const BorderRadius.all(Radius.circular(12)),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.blue.withValues(alpha: 0.3),
+                                blurRadius: 8,
+                                offset: const Offset(0, 4),
+                              ),
+                            ],
+                          ),
+                          child: const Icon(
+                            Icons.person,
+                            color: Colors.white,
+                            size: 40,
+                          ),
                         ),
-                      ],
-                    ),
-                    child: const Icon(
-                      Icons.person,
-                      color: Colors.white,
-                      size: 24,
+                      ),
                     ),
                   ),
                   const SizedBox(width: 12),
@@ -1252,7 +1275,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     return (totalExp / 500).floor() + 1;
   }
 
-  String _getNextRankName(dynamic userRank) {
+  String _getNextRankName(UserRank userRank) {
     const allRanks = UserRank.values;
 
     final currentIndex = allRanks.indexOf(userRank);
@@ -1308,6 +1331,69 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   String _formatDate(DateTime date) {
     final weekdays = ['月', '火', '水', '木', '金', '土', '日'];
     return '${date.month}月${date.day}日（${weekdays[date.weekday - 1]}）';
+  }
+
+  /// 拡大されたランクアイコンを表示するオーバーレイ
+  Widget _buildExpandedRankOverlay(UserRank userRank) {
+    // 画面サイズを取得
+    final screenWidth = MediaQuery.of(context).size.width;
+    final iconSize = (screenWidth * 0.75).clamp(200.0, 350.0);
+    
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          _isRankIconExpanded = false;
+        });
+      },
+      child: Container(
+        color: Colors.black54,
+        child: Center(
+          child: GestureDetector(
+            onTap: () {}, // アイコン自体のタップは無視（親のonTapを発火させない）
+            child: AnimatedScale(
+              scale: _isRankIconExpanded ? 1.0 : 0.0,
+              duration: const Duration(milliseconds: 400),
+              curve: Curves.elasticOut,
+              child: AnimatedOpacity(
+                opacity: _isRankIconExpanded ? 1.0 : 0.0,
+                duration: const Duration(milliseconds: 200),
+                child: Image.asset(
+                  'assets/images/rank_icons/${userRank.name}.png',
+                  width: iconSize,
+                  height: iconSize,
+                  fit: BoxFit.contain,
+                  filterQuality: FilterQuality.high,
+                  errorBuilder: (_, __, ___) => Container(
+                    width: iconSize,
+                    height: iconSize,
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [Color(0xFF3B82F6), Color(0xFF4F46E5)],
+                      ),
+                      borderRadius: const BorderRadius.all(Radius.circular(20)),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.blue.withValues(alpha: 0.5),
+                          blurRadius: 20,
+                          offset: const Offset(0, 8),
+                        ),
+                      ],
+                    ),
+                    child: Icon(
+                      Icons.person,
+                      color: Colors.white,
+                      size: iconSize * 0.5,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
 

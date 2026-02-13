@@ -740,13 +740,35 @@ class _RankBadgeWidget extends StatelessWidget {
     required this.size,
   });
 
+  static const String _rankIconsPath = 'assets/images/rank_icons';
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: size,
+      height: size,
+      child: Image.asset(
+        '$_rankIconsPath/${rank.name}.png',
+        fit: BoxFit.contain,
+        errorBuilder: (_, __, ___) => _FallbackRankBadge(rank: rank, size: size),
+      ),
+    );
+  }
+}
+
+/// ランクアイコン画像がない場合のフォールバック表示
+class _FallbackRankBadge extends StatelessWidget {
+  final UserRank rank;
+  final double size;
+
+  const _FallbackRankBadge({required this.rank, required this.size});
+
   @override
   Widget build(BuildContext context) {
     Color badgeColor;
     IconData iconData;
 
     switch (rank) {
-      // ランク1-5: 初期段階（グレー系）
       case UserRank.ballPicker:
       case UserRank.coneSetter:
       case UserRank.bibDistributor:
@@ -755,26 +777,22 @@ class _RankBadgeWidget extends StatelessWidget {
         badgeColor = Colors.grey.shade400;
         iconData = Icons.sports_soccer;
         break;
-      // ランク6-7: 中級段階初期（ブルー系）
       case UserRank.starterCandidate:
       case UserRank.localCelebrity:
         badgeColor = Colors.blue.shade400;
         iconData = Icons.star;
         break;
-      // ランク8-10: 中級段階後期（グリーン系）
       case UserRank.j3RisingStar:
       case UserRank.j2NuclearStriker:
       case UserRank.j1Regular:
         badgeColor = Colors.green.shade400;
         iconData = Icons.emoji_events;
         break;
-      // ランク11-12: 上級段階初期（ゴールド系）
       case UserRank.nationalSecretWeapon:
       case UserRank.worldCupWarrior:
         badgeColor = Colors.amber.shade400;
         iconData = Icons.workspace_premium;
         break;
-      // ランク13-15: 上級段階後期（パープル/レッド系）
       case UserRank.overseasSamurai:
         badgeColor = Colors.purple.shade400;
         iconData = Icons.auto_awesome;

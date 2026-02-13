@@ -49,6 +49,7 @@ flutter:
   # アセットファイル（データベースを含む）
   assets:
     - data/questions.db
+    - assets/images/rank_icons/
     - assets/images/03_Backgrounds/header_background_pattern.png
     - assets/images/03_Backgrounds/stadium_background.png
     - assets/images/09_Documentation/stitch_menu_screen.png
