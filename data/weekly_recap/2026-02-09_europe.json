@@ -1,0 +1,1055 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-02-09T21:57:03Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-02-09",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Ligue 1",
+        "PSG",
+        "Marseille",
+        "Le Classique"
+      ],
+      "text": "2026年2月8日に行われたリーグ・アン第21節「ル・クラシク」、パリ・サンジェルマン対マルセイユの結果は？",
+      "options": [
+        "5-0でPSGの勝利",
+        "1-0でマルセイユの勝利",
+        "2-1でPSGの勝利",
+        "1-1の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "PSGはウスマン・デンベレの2ゴールやクヴィチャ・クヴァラツヘリアの得点などでマルセイユを5-0と圧倒しました。マルセイユにとっては屈辱的な大敗となりました。",
+      "trivia": "この試合でPSGはマルセイユ相手にクラブ史上最大得点差での勝利を記録しました。デンベレは「僕たちが戻ってきたというメッセージを送りたかった」とコメントしています。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 21,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Premier League",
+        "Liverpool",
+        "Man City",
+        "Big Match"
+      ],
+      "text": "2026年2月8日に行われたプレミアリーグのビッグマッチ、リヴァプール対マンチェスター・シティの勝者は？",
+      "options": [
+        "延期",
+        "マンチェスター・シティ",
+        "リヴァプール",
+        "引き分け"
+      ],
+      "answerIndex": 1,
+      "explanation": "マンチェスター・シティが2-1で勝利しました。ベルナルド・シウヴァの同点弾と、後半アディショナルタイムのハーランドのPKで逆転勝利を収めました。",
+      "trivia": "この勝利により、マンチェスター・シティはタイトル争いで重要な勝ち点3を獲得しました。リヴァプールはソボスライが先制点を挙げましたが守りきれませんでした。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "La Liga",
+        "Real Madrid",
+        "Valencia",
+        "Mbappe"
+      ],
+      "text": "2026年2月8日のラ・リーガ第23節、レアル・マドリード対バレンシアの試合結果は？",
+      "options": [
+        "1-0でバレンシアの勝利",
+        "3-1でレアル・マドリードの勝利",
+        "2-0でレアル・マドリードの勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 2,
+      "explanation": "レアル・マドリードが2-0で勝利しました。後半にアルバロ・カレーラスとキリアン・エムバペが得点を挙げ、リーグ戦7連勝を飾りました。",
+      "trivia": "エムバペはこのゴールで直近6試合9得点と好調を維持しています。一方、敗れたバレンシアは降格圏ギリギリの17位に沈んでいます。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 23,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Premier League",
+        "Crystal Palace",
+        "Brighton",
+        "Derby"
+      ],
+      "text": "2026年2月8日に行われた「M23ダービー」、クリスタル・パレス対ブライトンの結果は？",
+      "options": [
+        "0-0の引き分け",
+        "2-2の引き分け",
+        "3-1でブライトンの勝利",
+        "1-0でクリスタル・パレスの勝利"
+      ],
+      "answerIndex": 3,
+      "explanation": "クリスタル・パレスがホームで1-0と勝利しました。イスマイラ・サールが後半61分に決勝ゴールを決め、チームの公式戦13試合ぶりの勝利に貢献しました。",
+      "trivia": "この勝利によりパレスは降格圏との勝ち点差を広げました。ブライトンはリーグ戦5試合勝利なしと苦しい状況が続いています。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Bundesliga",
+        "Bayern",
+        "Hoffenheim",
+        "Hattrick"
+      ],
+      "text": "2026年2月8日のブンデスリーガ、バイエルン対ホッフェンハイム（5-1）でハットトリックを達成した選手は？",
+      "options": [
+        "ルイス・ディアス",
+        "ジャマル・ムシアラ",
+        "マイケル・オリーズ",
+        "ハリー・ケイン"
+      ],
+      "answerIndex": 0,
+      "explanation": "ルイス・ディアスがハットトリックを達成しました。さらに彼は2つのPKも獲得し、それらをハリー・ケインが決めたため、全5得点に絡む活躍を見せました。",
+      "trivia": "バイエルンに加入したルイス・ディアスはこの試合でマン・オブ・ザ・マッチ級の活躍を見せ、チームの快勝に大きく貢献しました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 21,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Serie A",
+        "Juventus",
+        "Lazio",
+        "Score"
+      ],
+      "text": "2026年2月8日に行われたセリエA第24節、ユヴェントス対ラツィオの試合結果は？",
+      "options": [
+        "0-0の引き分け",
+        "2-2の引き分け",
+        "2-1でラツィオの勝利",
+        "1-0でユヴェントスの勝利"
+      ],
+      "answerIndex": 1,
+      "explanation": "強豪同士の一戦は2-2の引き分けに終わりました。両チームともに勝ち点1を分け合う結果となり、順位争いに影響を与えるドローとなりました。",
+      "trivia": "同日に行われた他の試合では、インテルがサッスオーロに5-0で大勝し、ナポリはジェノアとの打ち合いを3-2で制しています。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 24,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Premier League",
+        "Arsenal",
+        "Sunderland",
+        "Scorer"
+      ],
+      "text": "2026年2月7日のプレミアリーグ、アーセナル対サンダーランド（3-0）で2得点を挙げた選手は？",
+      "options": [
+        "カイ・ハヴァーツ",
+        "マルティン・ウーデゴール",
+        "ヴィクトル・ギョケレス",
+        "ブカヨ・サカ"
+      ],
+      "answerIndex": 2,
+      "explanation": "アーセナルのストライカー、ヴィクトル・ギョケレスが2得点を挙げる活躍を見せました。もう1点はマルティン・ズビメンディが記録しています。",
+      "trivia": "昇格組のサンダーランド相手にアーセナルは危なげなく勝利しました。ギョケレスは加入後も得点力を発揮し続けています。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2026-02-07",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "La Liga",
+        "Betis",
+        "Atletico Madrid",
+        "Scorer"
+      ],
+      "text": "2026年2月9日（現地8日）のラ・リーガ、レアル・ベティス対アトレティコ・マドリードで決勝点を挙げた選手は？",
+      "options": [
+        "ナビル・フェキル",
+        "イスコ",
+        "パブロ・フォルナルス",
+        "アントニー"
+      ],
+      "answerIndex": 3,
+      "explanation": "ベティスのアントニーが前半に挙げたゴールが決勝点となり、1-0でベティスがアトレティコを下しました。アトレティコはコパ・デル・レイでの大勝を再現できませんでした。",
+      "trivia": "アントニーにとってこれは今季公式戦10ゴール目となりました。この勝利でベティスは4位ビジャレアルとの勝ち点差を縮めています。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 23,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Bundesliga",
+        "Leipzig",
+        "Cologne",
+        "Player"
+      ],
+      "text": "2026年2月8日に行われたRBライプツィヒ対ケルンの試合で、2得点を挙げてチームを勝利（2-1）に導いた選手は？",
+      "options": [
+        "クリストフ・バウムガルトナー",
+        "ロイス・オペンダ",
+        "ベンヤミン・シェシュコ",
+        "シャビ・シモンズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "クリストフ・バウムガルトナーが2得点を挙げ、ライプツィヒがケルンに2-1で競り勝ちました。この勝利でライプツィヒはCL出場圏内の4位に浮上しました。",
+      "trivia": "ケルンは試合序盤にチャンスを作りましたが決めきれず、逆にバウムガルトナーの決定力に屈する形となりました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 21,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Bundesliga",
+        "Hoffenheim",
+        "Red Card",
+        "Rules"
+      ],
+      "text": "2026年2月8日のバイエルン対ホッフェンハイム戦で、前半17分にルイス・ディアスを倒して一発退場となったホッフェンハイムの選手は？",
+      "options": [
+        "オザン・カバク",
+        "ケヴィン・アクポグマ",
+        "フロリアン・グリリッチュ",
+        "パベル・カデジャーベク"
+      ],
+      "answerIndex": 1,
+      "explanation": "ケヴィン・アクポグマが決定機阻止でレッドカードを受けました。映像ではディアスもユニフォームを引っ張っていたように見えましたが、VARの介入はなく退場処分となりました。",
+      "trivia": "この判定に対しホッフェンハイム側は不満を露わにしましたが、数的不利となったチームはその後崩れ、1-5の大敗を喫しました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 21,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "premier-league",
+        "man-city",
+        "liverpool",
+        "result"
+      ],
+      "text": "2026年2月8日に行われたプレミアリーグ第25節、リヴァプール対マンチェスター・シティのビッグマッチの試合結果は？",
+      "options": [
+        "リヴァプールが2-1で勝利",
+        "マンチェスター・シティが3-0で勝利",
+        "マンチェスター・シティが2-1で勝利",
+        "1-1の引き分け"
+      ],
+      "answerIndex": 2,
+      "explanation": "アンフィールドで行われた注目の上位対決は、後半にソボスライのゴールでリヴァプールが先制するも、マンチェスター・シティがベルナルド・シウバとハーランドのゴールで逆転し、1-2で勝利しました。",
+      "trivia": "この試合ではリヴァプールのソボスライが見事なFKを決めたものの、試合終了間際にハーランドへのファウル（シャツを引っ張った）で退場処分となる劇的な幕切れでした。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "premier-league",
+        "arsenal",
+        "sunderland",
+        "standings"
+      ],
+      "text": "今節、首位アーセナルはホームでサンダーランドと対戦しました。試合結果として正しいものは？",
+      "options": [
+        "サンダーランドが2-1で勝利",
+        "アーセナルが1-0で勝利",
+        "1-1の引き分け",
+        "アーセナルが3-0で勝利"
+      ],
+      "answerIndex": 3,
+      "explanation": "アーセナルはスビメンディの先制点とヴィクトル・ギェケレシュの2ゴールにより、昇格組のサンダーランドに3-0で快勝し、首位をキープしました。",
+      "trivia": "アーセナルはこの勝利により、2位マンチェスター・シティとの勝ち点差「6」を維持しています。ギェケレシュは終了間際の90+3分にもダメ押しゴールを決めました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2026-02-07",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "premier-league",
+        "chelsea",
+        "player-stats",
+        "hat-trick"
+      ],
+      "text": "2026年2月7日のウルーヴス対チェルシー戦（1-3）で、ハットトリックを達成したチェルシーの選手は？",
+      "options": [
+        "コール・パーマー",
+        "エンソ・フェルナンデス",
+        "クリストファー・エンクンク",
+        "ノニ・マドゥエケ"
+      ],
+      "answerIndex": 0,
+      "explanation": "チェルシーのコール・パーマーはこの試合の前半だけで3得点を挙げ、チームを勝利に導きました。そのうち2得点はPKによるものでした。",
+      "trivia": "パーマーの得点時間は13分（PK）、35分（PK）、38分と非常に短い間隔で記録されました。彼は今シーズンもチェルシーの絶対的なエースとして君臨しています。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2026-02-07",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "premier-league",
+        "man-utd",
+        "tottenham",
+        "player"
+      ],
+      "text": "マンチェスター・ユナイテッドがトッテナムを2-0で下した試合で、前半36分に先制ゴールを決めた選手は？",
+      "options": [
+        "アレハンドロ・ガルナチョ",
+        "ブライアン・エンベウモ",
+        "ブルーノ・フェルナンデス",
+        "マーカス・ラッシュフォード"
+      ],
+      "answerIndex": 1,
+      "explanation": "マンチェスター・ユナイテッドはホームでトッテナムに2-0で勝利しました。先制点はブライアン・エンベウモ（36分）、追加点はブルーノ・フェルナンデス（81分）が記録しました。",
+      "trivia": "エンベウモはブレントフォードでの活躍が評価されビッグクラブへステップアップを果たしており、この重要な一戦でも結果を残しました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2026-02-07",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "premier-league",
+        "stats",
+        "man-city",
+        "haaland"
+      ],
+      "text": "リヴァプール対マンチェスター・シティ戦の決勝点となったアーリング・ハーランドのPKゴール。記録された時間は？",
+      "options": [
+        "75分",
+        "84分",
+        "90+3分",
+        "88分"
+      ],
+      "answerIndex": 2,
+      "explanation": "試合は1-1のままアディショナルタイムに突入しましたが、マンチェスター・シティが土壇場でPKを獲得。これをハーランドが90+3分に沈め、劇的な勝利を収めました。",
+      "trivia": "この試合の同点弾（84分）はベルナルド・シウバが決めており、シティは残り10分を切ってからの2得点でアンフィールドでの逆転劇を演じました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "premier-league",
+        "standings",
+        "arsenal",
+        "man-city"
+      ],
+      "text": "2026年2月9日時点（第25節終了時）のプレミアリーグ順位表において、首位アーセナルと2位マンチェスター・シティの勝ち点差は何ポイント？",
+      "options": [
+        "3ポイント",
+        "4ポイント",
+        "8ポイント",
+        "6ポイント"
+      ],
+      "answerIndex": 3,
+      "explanation": "アーセナルがサンダーランドに勝利し、マンチェスター・シティもリヴァプールに勝利したため、両チームの勝ち点差は「6」のまま維持されました。",
+      "trivia": "シティはリヴァプール戦での敗北を回避したことで、逆転優勝への望みを繋ぎました。一方、リヴァプールはこの敗戦で優勝争いから一歩後退する痛恨の結果となりました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2026-02-09",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "Mitoma",
+        "Brighton",
+        "Premier League",
+        "Match Result"
+      ],
+      "text": "三笘薫が所属するブライトンは、2026年2月8日に行われたプレミアリーグのライバル対決（M23ダービー）でクリスタル・パレスと対戦しました。この試合の衝撃的な結果は？",
+      "options": [
+        "1-6 でブライトンの大敗",
+        "0-0 の引き分け",
+        "3-3 の打ち合い",
+        "2-1 でブライトンの勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "ホームで行われた宿敵クリスタル・パレスとの一戦でしたが、ブライトンは守備が崩壊し1-6という歴史的な大敗を喫しました。三笘薫も出場しましたがチームを救うことはできませんでした。",
+      "trivia": "ブライトンとクリスタル・パレスのライバル関係は「M23ダービー」と呼ばれ、両クラブを結ぶ高速道路に由来します。地理的には離れていますが、激しい対抗意識を持つことで知られています。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 24,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "english_championship",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "Kyogo Furuhashi",
+        "Transfer",
+        "Championship"
+      ],
+      "text": "セルティックで数々のタイトル獲得に貢献した古橋亨梧ですが、2025-26シーズン後半（2026年2月時点）に所属しているクラブはどこ？",
+      "options": [
+        "スタッド・レンヌ",
+        "バーミンガム・シティ",
+        "ヴィッセル神戸",
+        "サウサンプトン"
+      ],
+      "answerIndex": 1,
+      "explanation": "古橋亨梧は長年活躍したセルティックを離れ、イングランドのバーミンガム・シティ（チャンピオンシップ）に移籍しました。新天地での挑戦が注目されています。",
+      "trivia": "古橋はセルティック在籍中にスコットランドリーグ得点王やMVPを獲得し、通算60ゴール以上を記録するなど、クラブの伝説的な選手の一人として愛されました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "Takefusa Kubo",
+        "Real Sociedad",
+        "La Liga",
+        "Injury"
+      ],
+      "text": "レアル・ソシエダの久保建英は、2026年2月上旬の試合（エルチェ戦など）を欠場しています。その主な理由は？",
+      "options": [
+        "インフルエンザ",
+        "累積警告による出場停止",
+        "ハムストリングの負傷",
+        "監督との戦術的な対立"
+      ],
+      "answerIndex": 2,
+      "explanation": "久保建英は1月後半にハムストリングを負傷し、現在戦列を離れています。復帰は3月頃と予想されており、チームにとって大きな痛手となっています。",
+      "trivia": "ハムストリングの怪我はスプリントを多用するウインガーに多く、再発しやすいため慎重なリハビリが求められます。久保はこれまで大きな長期離脱が少なかった選手です。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 23,
+        "matchDate": "2026-02-07",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "Yukinari Sugawara",
+        "Southampton",
+        "Premier League"
+      ],
+      "text": "2025-26シーズン、プレミアリーグのサウサンプトンに所属し、右サイドバックとしてプレーしている日本代表選手は？",
+      "options": [
+        "毎熊晟矢",
+        "中山雄太",
+        "橋岡大樹",
+        "菅原由勢"
+      ],
+      "answerIndex": 3,
+      "explanation": "菅原由勢はオランダのAZからサウサンプトンに移籍し、プレミアリーグでのキャリアをスタートさせました。高精度のクロスと攻撃参加を武器に定位置を争っています。",
+      "trivia": "サウサンプトンにはかつて吉田麻也や李忠成、南野拓実も所属していました。菅原は同クラブでプレーする4人目の日本人選手となります。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "fa_cup",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "Wataru Endo",
+        "Liverpool",
+        "FA Cup",
+        "Buzz"
+      ],
+      "text": "2026年2月9日に行われたFAカップで、遠藤航が所属するリヴァプールを1-0で破る「ジャイアントキリング」を達成したクラブは？",
+      "options": [
+        "プリマス・アーガイル",
+        "リーズ・ユナイテッド",
+        "ブラックバーン",
+        "ポーツマス"
+      ],
+      "answerIndex": 0,
+      "explanation": "チャンピオンシップ（2部）所属のプリマス・アーガイルが、強豪リヴァプールをホームで1-0で下す大番狂わせを演じました。カップ戦ならではの波乱として大きく報じられています。",
+      "trivia": "プリマス・アーガイルはイングランド南西部の港町を本拠地とし、「ピルグリムズ（巡礼者）」の愛称で知られています。ホームスタジアムのホーム・パークは熱狂的な雰囲気で有名です。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-09",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "transfer",
+        "premier_league",
+        "man_utd",
+        "aston_villa"
+      ],
+      "text": "マンチェスター・ユナイテッドでの出場機会激減を受け、今シーズン終了までのローン移籍でアストン・ヴィラに加入することが発表されたイングランド代表FWは誰？",
+      "options": [
+        "ラヒーム・スターリング",
+        "マーカス・ラッシュフォード",
+        "ジェイドン・サンチョ",
+        "メイソン・マウント"
+      ],
+      "answerIndex": 1,
+      "explanation": "ラッシュフォードはアモリム監督の下で構想外となり、アストン・ヴィラへのローン移籍が決定しました。契約には約4000万ポンドでの買い取りオプションが含まれていると報じられています。",
+      "trivia": "アストン・ヴィラはラッシュフォードの週給の大部分（75%以上）を負担することになります。彼は今季ユナイテッドで公式戦12試合連続で出番なしという状況が続いていました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "copa_del_rey",
+        "real_madrid",
+        "leganes",
+        "youngster"
+      ],
+      "text": "コパ・デル・レイ準々決勝のレガネス戦で、2-2で迎えた後半アディショナルタイムに劇的な決勝ゴールを決め、レアル・マドリードを準決勝に導いたカスティージャ（Bチーム）所属の若手FWは？",
+      "options": [
+        "アルダ・ギュレル",
+        "エンドリッキ",
+        "ゴンサロ・ガルシア",
+        "ニコ・パス"
+      ],
+      "answerIndex": 2,
+      "explanation": "20歳のゴンサロ・ガルシアが劇的な決勝点を挙げ、3-2の勝利に貢献しました。この試合ではモドリッチとエンドリッキも得点を記録していますが、決勝点はゴンサロでした。",
+      "trivia": "ゴンサロ・ガルシアはこの試合の直前にカスティージャの試合で4得点を挙げる活躍を見せており、トップチーム招集即ゴールという最高の結果を残しました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "transfer",
+        "saudi_arabia",
+        "aston_villa",
+        "colombia"
+      ],
+      "text": "アストン・ヴィラからサウジアラビアのアル・ナスルへ、サウジリーグ史上2番目の高額移籍金（約6500万ポンド）で完全移籍したコロンビア代表ストライカーは？",
+      "options": [
+        "ドゥバン・サパタ",
+        "ルイス・ディアス",
+        "オリー・ワトキンス",
+        "ジョン・デュラン"
+      ],
+      "answerIndex": 3,
+      "explanation": "ジョン・デュラン（Jhon Durán）は、クリスティアーノ・ロナウドらが所属するアル・ナスルへの移籍が完了しました。21歳の若さでのサウジ行きは大きな話題となりました。",
+      "trivia": "デュランは今季プレミアリーグで「スーパーサブ」として得点を量産していましたが、スタメン定着には至っていませんでした。移籍金は約7700万ユーロに達すると見られています。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "coppa_italia",
+        "ac_milan",
+        "roma",
+        "loan"
+      ],
+      "text": "コッパ・イタリア準々決勝のACミラン対ASローマ戦で、保有元のローマ相手に2ゴールを決め、ミランの3-1の勝利の立役者となったイングランド人FWは？",
+      "options": [
+        "タミー・エイブラハム",
+        "フィカヨ・トモリ",
+        "クリスチャン・プリシッチ",
+        "ルーベン・ロフタス＝チーク"
+      ],
+      "answerIndex": 0,
+      "explanation": "ローマからミランにローン移籍中のタミー・エイブラハムが、契約上出場可能だった古巣戦で2得点を挙げる活躍を見せました。もう1点はジョアン・フェリックス（途中出場）が決めています。",
+      "trivia": "エイブラハムはローマ加入初年度にカンファレンスリーグ優勝に貢献しましたが、怪我の影響もありミランへ貸し出されていました。皮肉にも親元クラブをカップ戦から敗退させる結果となりました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "buzz",
+        "man_utd",
+        "manager",
+        "quote"
+      ],
+      "text": "マンチェスター・ユナイテッドのアモリム監督が、ラッシュフォードをベンチ外にした理由を問われた際、「全力を尽くさない選手より彼をベンチに置く方がマシだ」と引き合いに出した人物は？",
+      "options": [
+        "自分自身（監督）",
+        "63歳のGKコーチ（ジョルジェ・ヴィタル）",
+        "U-18の練習生",
+        "引退した元選手のアシスタントコーチ"
+      ],
+      "answerIndex": 1,
+      "explanation": "アモリム監督は「全力を尽くさない選手よりも、63歳のGKコーチ（Jorge Vital）をベンチに置く」と発言し、ラッシュフォードのトレーニング態度を厳しく批判しました。これが移籍の決定打となりました。",
+      "trivia": "この発言はフルアム戦後の会見で飛び出しました。ラッシュフォードの他にもアントニーがレアル・ベティスへ放出されるなど、アモリム監督による規律重視のチーム改革が急速に進んでいます。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "premier_league",
+        "man_city",
+        "liverpool",
+        "match_result"
+      ],
+      "text": "2026年2月8日に行われたプレミアリーグのビッグマッチ、リヴァプール vs マンチェスター・シティの試合結果は？",
+      "options": [
+        "1-1の引き分け",
+        "リヴァプールが2-1で勝利",
+        "マンチェスター・シティが2-1で勝利",
+        "マンチェスター・シティが3-0で勝利"
+      ],
+      "answerIndex": 2,
+      "explanation": "マンチェスター・シティはアンフィールドでの激戦を2-1で制しました。試合はベルナルド・シウバのゴールで同点に追いつき、後半アディショナルタイム（90+3分）にアーリング・ハーランドがPKを決めて劇的な勝利を収めました。",
+      "trivia": "この試合で決勝点を決めたハーランドは、今シーズンの得点ランキングでも首位を独走しています。一方、敗れたリヴァプールは優勝争いで痛い一敗となりました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "chelsea",
+        "cole_palmer",
+        "premier_league",
+        "hat_trick"
+      ],
+      "text": "今週行われたウルヴァーハンプトン戦（3-1でチェルシー勝利）で、前半だけでハットトリックを達成したチェルシーの選手は誰？",
+      "options": [
+        "ニコラス・ジャクソン",
+        "クリストファー・エンクンク",
+        "エンソ・フェルナンデス",
+        "コール・パーマー"
+      ],
+      "answerIndex": 3,
+      "explanation": "コール・パーマーはウルヴス戦の前半13分、35分（共にPK）、38分に立て続けにゴールを決め、ハットトリックを達成してチームを勝利に導きました。",
+      "trivia": "パーマーはこの試合での活躍により、チェルシーでの1試合複数得点記録をさらに伸ばしました。また、この試合では元マンチェスター・シティの同僚たちからも称賛が送られています。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2026-02-07",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "real_madrid",
+        "manager",
+        "laliga"
+      ],
+      "text": "今週バレンシアを2-0で下したレアル・マドリードですが、現在チームを指揮している監督（ヘッドコーチ）は誰？",
+      "options": [
+        "アルバロ・アルベロア",
+        "ラウール・ゴンサレス",
+        "カルロ・アンチェロッティ",
+        "シャビ・アロンソ"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリードは現在、アルバロ・アルベロア監督が指揮を執っています。今週のバレンシア戦ではエムバペのゴールなどで2-0と勝利し、首位バルセロナを勝ち点1差で追走しています。",
+      "trivia": "アルベロアは現役時代にレアル・マドリードのDFとして活躍し、引退後は下部組織（フベニールAなど）の監督を経てトップチームの指揮官に就任しました。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": 23,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "transfer",
+        "crystal_palace",
+        "premier_league"
+      ],
+      "text": "2026年1月の移籍市場で、クリスタル・パレスがクラブ史上最高額で獲得し、今週のブライトン戦でデビューしたストライカーは？",
+      "options": [
+        "マテウス・クーニャ",
+        "ヨルゲン・ストランド・ラーセン",
+        "アントワーヌ・セメンヨ",
+        "イスマイラ・サール"
+      ],
+      "answerIndex": 1,
+      "explanation": "クリスタル・パレスはウルヴァーハンプトンからヨルゲン・ストランド・ラーセンをクラブレコードとなる移籍金で獲得しました。彼は今週のブライトン戦（1-0で勝利）でデビューを果たしています。",
+      "trivia": "なお、この試合の決勝点を決めたのはイスマイラ・サールでした。パレスはこの勝利で公式戦13試合ぶりの白星を挙げ、宿敵ブライトンを下しています。",
+      "referenceDate": "2026-02-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-08",
+        "publishDate": "2026-02-09",
+        "expiryDate": "2026-02-16",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
