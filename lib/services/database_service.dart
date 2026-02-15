@@ -12,7 +12,7 @@ import '../utils/unlock_key_utils.dart';
 class DatabaseService {
   static Database? _database;
   static const String _databaseName = 'questions.db';  // アセットファイル名と一致させる
-  static const int _databaseVersion = 7;  // バージョンを上げて新しいデータベースを強制的に適用
+  static const int _databaseVersion = 8;  // バージョンを上げて新しいデータベースを強制的に適用
   
   // キャッシュ用のマップ（問題ID -> Question）
   final Map<String, Question> _questionCache = {};
@@ -329,6 +329,18 @@ class DatabaseService {
     await db.execute('''
       CREATE INDEX IF NOT EXISTS idx_match_day_play_history_week_start_date ON match_day_play_history(week_start_date)
     ''');
+    
+    // 開放済み問題テーブル
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS unlocked_questions (
+        question_id TEXT PRIMARY KEY,
+        unlocked_at TEXT NOT NULL
+      )
+    ''');
+    
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_unlocked_questions_unlocked_at ON unlocked_questions(unlocked_at)
+    ''');
   }
 
   /// データベースアップグレード時の処理
@@ -584,6 +596,23 @@ class DatabaseService {
       
       debugPrint('バージョン7へのマイグレーション完了: questionsテーブルを再作成しました');
       debugPrint('注意: アセットからデータベースをコピーするには、アプリを再起動してください');
+    }
+    
+    // バージョン7から8へのマイグレーション
+    if (oldVersion < 8) {
+      // 開放済み問題テーブルを作成
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS unlocked_questions (
+          question_id TEXT PRIMARY KEY,
+          unlocked_at TEXT NOT NULL
+        )
+      ''');
+      
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_unlocked_questions_unlocked_at ON unlocked_questions(unlocked_at)
+      ''');
+      
+      debugPrint('バージョン8へのマイグレーション完了: unlocked_questionsテーブルを追加しました');
     }
   }
 
@@ -1338,6 +1367,76 @@ class DatabaseService {
       columns: ['date', 'league_type', 'synced_at', 'question_count'],
       orderBy: 'date DESC, league_type ASC',
     );
+  }
+
+  /// 問題を開放
+  Future<void> unlockQuestion(String questionId) async {
+    final db = await database;
+    final now = DateTime.now().toIso8601String();
+    await db.insert(
+      'unlocked_questions',
+      {
+        'question_id': questionId,
+        'unlocked_at': now,
+      },
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  /// 問題が開放済みかチェック
+  Future<bool> isQuestionUnlocked(String questionId) async {
+    final db = await database;
+    final result = await db.query(
+      'unlocked_questions',
+      where: 'question_id = ?',
+      whereArgs: [questionId],
+    );
+    return result.isNotEmpty;
+  }
+
+  /// 開放済み問題IDのリストを取得
+  Future<List<String>> getUnlockedQuestionIds() async {
+    final db = await database;
+    final result = await db.query(
+      'unlocked_questions',
+      columns: ['question_id'],
+      orderBy: 'unlocked_at DESC',
+    );
+    return result.map((row) => row['question_id'] as String).toList();
+  }
+
+  /// 開放済み問題のリストを取得
+  Future<List<Question>> getUnlockedQuestions() async {
+    final db = await database;
+    final unlockedIds = await getUnlockedQuestionIds();
+    if (unlockedIds.isEmpty) {
+      return [];
+    }
+    
+    // IN句用のプレースホルダーを生成
+    final placeholders = List.filled(unlockedIds.length, '?').join(',');
+    final result = await db.rawQuery(
+      'SELECT * FROM questions WHERE id IN ($placeholders)',
+      unlockedIds,
+    );
+    
+    return result.map((map) => _mapToQuestion(map)).toList();
+  }
+
+  /// 問題IDから問題を取得
+  Future<Question?> getQuestionById(String questionId) async {
+    final db = await database;
+    final result = await db.query(
+      'questions',
+      where: 'id = ?',
+      whereArgs: [questionId],
+    );
+    
+    if (result.isEmpty) {
+      return null;
+    }
+    
+    return _mapToQuestion(result.first);
   }
 
   /// データベースを閉じる

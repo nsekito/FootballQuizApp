@@ -58,4 +58,7 @@ class AppConstants {
 
   // レスポンシブデザイン
   static const double maxContentWidth = 600.0;
+
+  // 問題開放システム
+  static const int questionUnlockPoints = 3; // 1問開放に必要なポイント数
 }

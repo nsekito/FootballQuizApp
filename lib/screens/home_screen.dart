@@ -265,7 +265,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                           const SizedBox(height: 24),
 
                           // 履歴と統計
-                          _buildHistoryAndStatsSection(context),
+                          _buildQuestionUnlockSection(context),
                         ],
                       ),
                     ),
@@ -681,7 +681,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                                   ),
                                   if (canPlay) ...[
                                     const SizedBox(width: 8),
-                                    Icon(
+                                    const Icon(
                                       Icons.play_circle_filled,
                                       color: Colors.white,
                                       size: 22,
@@ -767,38 +767,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         _isRankIconExpanded = !_isRankIconExpanded;
                       });
                     },
-                    child: SizedBox(
-                      width: 80,
-                      height: 80,
-                      child: Image.asset(
-                        'assets/images/rank_icons/${userRank.name}.png',
-                        fit: BoxFit.contain,
-                        filterQuality: FilterQuality.high,
-                        errorBuilder: (_, __, ___) => Container(
-                          width: 80,
-                          height: 80,
-                          decoration: BoxDecoration(
-                            gradient: const LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [Color(0xFF3B82F6), Color(0xFF4F46E5)],
-                            ),
-                            borderRadius: const BorderRadius.all(Radius.circular(12)),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.blue.withValues(alpha: 0.3),
-                                blurRadius: 8,
-                                offset: const Offset(0, 4),
-                              ),
-                            ],
-                          ),
-                          child: const Icon(
-                            Icons.person,
-                            color: Colors.white,
-                            size: 40,
-                          ),
-                        ),
-                      ),
+                    child: _buildRankIconWithFrame(
+                      'assets/images/rank_icons/${userRank.name}.png',
+                      80.0,
+                      userRank,
                     ),
                   ),
                   const SizedBox(width: 12),
@@ -1199,29 +1171,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     );
   }
 
-  Widget _buildHistoryAndStatsSection(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: _buildHistoryStatsButton(
-            context,
-            Icons.history,
-            'クイズ履歴',
-            AppColors.techBlue,
-            () => context.push('/history'),
-          ),
-        ),
-        const SizedBox(width: 16),
-        Expanded(
-          child: _buildHistoryStatsButton(
-            context,
-            Icons.insights,
-            '統計情報',
-            AppColors.techGreen,
-            () => context.push('/statistics'),
-          ),
-        ),
-      ],
+  Widget _buildQuestionUnlockSection(BuildContext context) {
+    return _buildHistoryStatsButton(
+      context,
+      Icons.lock_open,
+      '問題開放',
+      Colors.purple.shade500,
+      () => context.push('/question-unlock'),
     );
   }
 
@@ -1283,6 +1239,138 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       return allRanks[currentIndex + 1].japaneseName;
     }
     return 'サッカーの神';
+  }
+
+  /// ランクに応じたボーダーの色を返す
+  List<Color> _getRankBorderColors(UserRank rank) {
+    switch (rank) {
+      case UserRank.ballPicker:
+      case UserRank.coneSetter:
+      case UserRank.waterCarrier:
+      case UserRank.bibDistributor:
+      case UserRank.trainee:
+      case UserRank.benchPlayer:
+        return [Colors.grey.shade400, Colors.grey.shade600];
+      case UserRank.substitute:
+      case UserRank.starter:
+        return [Colors.blue.shade300, Colors.blue.shade600];
+      case UserRank.numberTen:
+      case UserRank.captain:
+        return [Colors.green.shade300, Colors.green.shade600];
+      case UserRank.domesticMVP:
+      case UserRank.overseasTransfer:
+        return [Colors.amber.shade300, Colors.orange.shade600];
+      case UserRank.worldClass:
+        return [Colors.purple.shade300, Colors.purple.shade600];
+      case UserRank.ballonDor:
+        return [Colors.deepOrange.shade300, Colors.deepOrange.shade700];
+      case UserRank.legend:
+        return [Colors.red.shade300, Colors.red.shade700];
+    }
+  }
+
+  /// ランクに応じたグロー効果の色を返す
+  Color _getRankGlowColor(UserRank rank) {
+    switch (rank) {
+      case UserRank.ballPicker:
+      case UserRank.coneSetter:
+      case UserRank.waterCarrier:
+      case UserRank.bibDistributor:
+      case UserRank.trainee:
+      case UserRank.benchPlayer:
+        return Colors.grey.shade400;
+      case UserRank.substitute:
+      case UserRank.starter:
+        return Colors.blue.shade400;
+      case UserRank.numberTen:
+      case UserRank.captain:
+        return Colors.green.shade400;
+      case UserRank.domesticMVP:
+      case UserRank.overseasTransfer:
+        return Colors.amber.shade400;
+      case UserRank.worldClass:
+        return Colors.purple.shade400;
+      case UserRank.ballonDor:
+        return Colors.deepOrange.shade400;
+      case UserRank.legend:
+        return Colors.red.shade400;
+    }
+  }
+
+  /// 枠付きランクアイコンを構築する共通ウィジェット
+  Widget _buildRankIconWithFrame(String imagePath, double size, UserRank rank) {
+    final borderColors = _getRankBorderColors(rank);
+    final glowColor = _getRankGlowColor(rank);
+    final borderWidth = size * 0.05; // サイズの5%をボーダー幅とする
+
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        border: Border.all(
+          width: borderWidth,
+          color: borderColors[0],
+        ),
+        boxShadow: [
+          // 外側のグロー効果（複数レイヤー）
+          BoxShadow(
+            color: glowColor.withValues(alpha: 0.6),
+            blurRadius: size * 0.15,
+            spreadRadius: size * 0.05,
+          ),
+          BoxShadow(
+            color: glowColor.withValues(alpha: 0.4),
+            blurRadius: size * 0.25,
+            spreadRadius: size * 0.1,
+          ),
+          BoxShadow(
+            color: glowColor.withValues(alpha: 0.2),
+            blurRadius: size * 0.35,
+            spreadRadius: size * 0.15,
+          ),
+          // 内側の影（深みを出す）
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.3),
+            blurRadius: size * 0.1,
+            spreadRadius: -size * 0.05,
+          ),
+        ],
+      ),
+      child: ClipOval(
+        child: Container(
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            border: Border.all(
+              width: borderWidth * 0.5,
+              color: borderColors[1],
+            ),
+          ),
+          child: Image.asset(
+            imagePath,
+            fit: BoxFit.cover,
+            filterQuality: FilterQuality.high,
+            errorBuilder: (_, __, ___) => Container(
+              width: size,
+              height: size,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: borderColors,
+                ),
+                shape: BoxShape.circle,
+              ),
+              child: Icon(
+                Icons.person,
+                color: Colors.white,
+                size: size * 0.5,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 
   /// Weekly Recapデータをバックグラウンドで同期
@@ -1357,36 +1445,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               child: AnimatedOpacity(
                 opacity: _isRankIconExpanded ? 1.0 : 0.0,
                 duration: const Duration(milliseconds: 200),
-                child: Image.asset(
+                child: _buildRankIconWithFrame(
                   'assets/images/rank_icons/${userRank.name}.png',
-                  width: iconSize,
-                  height: iconSize,
-                  fit: BoxFit.contain,
-                  filterQuality: FilterQuality.high,
-                  errorBuilder: (_, __, ___) => Container(
-                    width: iconSize,
-                    height: iconSize,
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [Color(0xFF3B82F6), Color(0xFF4F46E5)],
-                      ),
-                      borderRadius: const BorderRadius.all(Radius.circular(20)),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.blue.withValues(alpha: 0.5),
-                          blurRadius: 20,
-                          offset: const Offset(0, 8),
-                        ),
-                      ],
-                    ),
-                    child: Icon(
-                      Icons.person,
-                      color: Colors.white,
-                      size: iconSize * 0.5,
-                    ),
-                  ),
+                  iconSize,
+                  userRank,
                 ),
               ),
             ),

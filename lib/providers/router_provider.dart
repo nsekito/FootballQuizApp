@@ -4,8 +4,8 @@ import '../screens/home_screen.dart';
 import '../screens/configuration_screen.dart';
 import '../screens/quiz_screen.dart';
 import '../screens/result_screen.dart';
-import '../screens/history_screen.dart';
-import '../screens/statistics_screen.dart';
+import '../screens/question_unlock_screen.dart';
+import '../screens/question_view_screen.dart';
 import '../screens/promotion_exam_screen.dart';
 import '../screens/promotion_exam_quiz_screen.dart';
 import '../utils/route_params_parser.dart';
@@ -79,14 +79,18 @@ final routerProvider = Provider<GoRouter>((ref) {
         },
       ),
       GoRoute(
-        path: '/history',
-        name: 'history',
-        builder: (context, state) => const HistoryScreen(),
+        path: '/question-unlock',
+        name: 'question-unlock',
+        builder: (context, state) => const QuestionUnlockScreen(),
       ),
       GoRoute(
-        path: '/statistics',
-        name: 'statistics',
-        builder: (context, state) => const StatisticsScreen(),
+        path: '/question-view',
+        name: 'question-view',
+        builder: (context, state) {
+          final params = state.uri.queryParameters;
+          final questionId = RouteParamsParser.parseStringParam(params, 'questionId');
+          return QuestionViewScreen(questionId: questionId);
+        },
       ),
       GoRoute(
         path: '/promotion-exam',
