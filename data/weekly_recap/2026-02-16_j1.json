@@ -1,0 +1,1041 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-02-16T21:44:35Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-02-16",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "セレッソ大阪",
+        "ガンバ大阪",
+        "大阪ダービー"
+      ],
+      "text": "2025明治安田J1リーグ開幕戦（金J）として行われた「ガンバ大阪 vs セレッソ大阪」の試合結果は？",
+      "options": [
+        "セレッソ大阪が5-2で勝利",
+        "セレッソ大阪が1-0で勝利",
+        "2-2の引き分け",
+        "ガンバ大阪が2-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "2月14日に行われた開幕戦は、アウェイのセレッソ大阪が北野颯太の2ゴールや香川真司の得点などで5得点を挙げ、5-2で大阪ダービーを制しました。",
+      "trivia": "この試合で先制点を決めた北野颯太のゴールは、セレッソ大阪にとってJ1通算1200得点目のメモリアルゴールとなりました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2025-02-14",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "川崎フロンターレ",
+        "名古屋グランパス"
+      ],
+      "text": "J1第1節「川崎フロンターレ vs 名古屋グランパス」の試合結果は？",
+      "options": [
+        "名古屋が2-1で勝利",
+        "川崎が4-0で勝利",
+        "川崎が3-2で勝利",
+        "1-1の引き分け"
+      ],
+      "answerIndex": 1,
+      "explanation": "ホームの川崎フロンターレが攻撃陣爆発。高井幸大、山田新、山内日向汰、宮城天が得点を挙げ、4-0で快勝しました。",
+      "trivia": "途中出場からゴールを決めた山内日向汰と宮城天など、川崎のアカデミー出身選手たちが躍動した試合となりました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2025-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "スーパーカップ",
+        "サンフレッチェ広島",
+        "ヴィッセル神戸"
+      ],
+      "text": "シーズン開幕を告げる「FUJIFILM SUPER CUP 2025」。ヴィッセル神戸対サンフレッチェ広島の勝者は？",
+      "options": [
+        "両チーム優勝",
+        "PK戦でヴィッセル神戸",
+        "サンフレッチェ広島",
+        "ヴィッセル神戸"
+      ],
+      "answerIndex": 2,
+      "explanation": "2月8日に国立競技場で行われた一戦は、サンフレッチェ広島が2-0で勝利し、今季最初のタイトルを獲得しました。",
+      "trivia": "広島のスーパーカップ優勝は2016年以来、9年ぶり5回目となります。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2025-02-08",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "海外日本人",
+        "三笘薫",
+        "プレミアリーグ"
+      ],
+      "text": "ブライトンの三笘薫が2月14日の試合で先制ゴールを決め、3-0の勝利に貢献した対戦相手は？",
+      "options": [
+        "アーセナル",
+        "リヴァプール",
+        "マンチェスター・ユナイテッド",
+        "チェルシー"
+      ],
+      "answerIndex": 3,
+      "explanation": "三笘薫は強豪チェルシー相手に巧みなトラップから先制ゴールを記録。チームも3-0で完勝しました。",
+      "trivia": "三笘はこのゴールで公式戦2試合連続得点となり、現地メディアからも「魔法のようなタッチ」と絶賛されました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2025-02-14",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "ヴィッセル神戸",
+        "浦和レッズ"
+      ],
+      "text": "J1第1節「ヴィッセル神戸 vs 浦和レッズ」の試合結果は？",
+      "options": [
+        "0-0の引き分け",
+        "1-1の引き分け",
+        "浦和が2-1で勝利",
+        "神戸が1-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "昨季王者の神戸と浦和の注目の一戦は、激しい攻防の末、両者譲らずスコアレスドロー（0-0）に終わりました。",
+      "trivia": "浦和は新戦力のマテウス・サヴィオらがスタメン出場し、神戸もベストメンバーで臨みましたが、両GKの好守もあり得点は生まれませんでした。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2025-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "横浜F・マリノス",
+        "アルビレックス新潟"
+      ],
+      "text": "J1第1節「横浜F・マリノス vs アルビレックス新潟」の試合結果は？",
+      "options": [
+        "0-0の引き分け",
+        "1-1の引き分け",
+        "横浜FMが2-0で勝利",
+        "新潟が3-2で勝利"
+      ],
+      "answerIndex": 1,
+      "explanation": "新潟が太田修介のゴールで先制しましたが、横浜FMはアンデルソン・ロペスのゴールで追いつき、1-1の引き分けとなりました。",
+      "trivia": "この試合でのゴールにより、アンデルソン・ロペスはJ1通算100得点を達成しました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2025-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "柏レイソル",
+        "アビスパ福岡"
+      ],
+      "text": "プレシーズンマッチ「ちばぎんカップ」で勝利した柏レイソル。J1開幕戦（対アビスパ福岡）の結果は？",
+      "options": [
+        "3-0で柏が勝利",
+        "0-0の引き分け",
+        "1-0で柏が勝利",
+        "2-1で福岡が勝利"
+      ],
+      "answerIndex": 2,
+      "explanation": "柏レイソルはアウェイでアビスパ福岡と対戦し、途中出場のジエゴが決勝点を挙げ、1-0で勝利しました。",
+      "trivia": "柏は前週に行われた「ちばぎんカップ」でもジェフ千葉に3-0で快勝しており、公式戦連勝スタートとなりました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2025-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "鹿島アントラーズ",
+        "湘南ベルマーレ"
+      ],
+      "text": "J1第1節、鹿島アントラーズは湘南ベルマーレと対戦しました。試合結果は？",
+      "options": [
+        "3-2で鹿島が勝利",
+        "2-0で鹿島が勝利",
+        "1-1の引き分け",
+        "0-1で鹿島が敗戦"
+      ],
+      "answerIndex": 3,
+      "explanation": "鹿島アントラーズは湘南ベルマーレ相手に0-1で敗れ、黒星スタートとなりました。",
+      "trivia": "鹿島はプレシーズンの「いばらきサッカーフェスティバル」でも水戸と引き分けており、シーズン序盤の巻き返しが期待されます。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2025-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "個人記録",
+        "北野颯太"
+      ],
+      "text": "J1開幕戦（G大阪 vs C大阪）で、セレッソ大阪の若手FW北野颯太は何ゴールを記録した？",
+      "options": [
+        "2ゴール",
+        "3ゴール（ハットトリック）",
+        "1ゴール",
+        "0ゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "北野颯太は前半の先制点と、同点に追いつかれた直後の後半開始早々の勝ち越し弾の計2ゴールを挙げ、チームの勝利に大きく貢献しました。",
+      "trivia": "この試合では香川真司、田中駿汰、復帰した中島元彦もゴールを決め、セレッソは計5得点を挙げました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2025-02-14",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "東京ヴェルディ",
+        "FC町田ゼルビア"
+      ],
+      "text": "J1第1節「FC町田ゼルビア vs 東京ヴェルディ」で、東京Vの決勝ゴールを決めた選手は？",
+      "options": [
+        "見木友哉",
+        "齋藤功佑",
+        "木村勇大",
+        "染野唯月"
+      ],
+      "answerIndex": 1,
+      "explanation": "東京ヴェルディは前半に齋藤功佑が挙げたゴールを守りきり、1-0でFC町田ゼルビアに勝利しました。",
+      "trivia": "昨シーズンの上位争いを繰り広げた両チームの対戦は、アウェイの東京ヴェルディが接戦を制する形となりました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2025-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "百年構想リーグ",
+        "2026シーズン"
+      ],
+      "text": "2026-27シーズンからの秋春制移行に伴い、その準備期間となる2026年2月から6月にかけて開催されているJリーグの特別大会の名称は？",
+      "options": [
+        "Jリーグ プレシーズンチャレンジ",
+        "明治安田Jリーグ スプリングカップ",
+        "明治安田Jリーグ百年構想リーグ",
+        "明治安田J1リーグ 2026シーズン"
+      ],
+      "answerIndex": 2,
+      "explanation": "2026年8月の秋春制開幕までの期間、J1・J2・J3の全クラブが参加する「明治安田Jリーグ百年構想リーグ」が2月に開幕しました。通常のリーグ戦とは異なる特別大会として実施されています。",
+      "trivia": "この大会はJ1が20チーム、J2・J3が計40チームに分かれて実施され、J1の優勝チームには次期ACLEの出場権が与えられます。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "東京ヴェルディ",
+        "順位表"
+      ],
+      "text": "2026年2月に開幕した「明治安田Jリーグ百年構想リーグ」。2月15日に行われた第2節終了時点で、J1・EASTグループの首位に立ったクラブは？",
+      "options": [
+        "FC東京",
+        "北海道コンサドーレ札幌",
+        "鹿島アントラーズ",
+        "東京ヴェルディ"
+      ],
+      "answerIndex": 3,
+      "explanation": "東京ヴェルディは開幕から2連勝を飾り、EASTグループの首位に浮上しました。一方、WESTグループでは広島、神戸、名古屋などが勝ち点で並ぶ混戦となっています。",
+      "trivia": "百年構想リーグは地域性を考慮したグループ分け（EAST/WESTなど）が行われており、近隣クラブとのダービーマッチが多く組まれる日程となっています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "acl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "ACLE",
+        "ヴィッセル神戸",
+        "FCソウル"
+      ],
+      "text": "2026年2月10日に行われたACLE 2025-26（リーグステージ第7節）で、韓国のFCソウルを2-0で下し、首位通過へ前進したJクラブは？",
+      "options": [
+        "ヴィッセル神戸",
+        "サンフレッチェ広島",
+        "横浜F・マリノス",
+        "川崎フロンターレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィッセル神戸はホームでFCソウルと対戦し、2-0で勝利しました。この勝利により、リーグステージの上位突破（ラウンド16進出）を決定的なものにしています。",
+      "trivia": "ACLE（AFCチャンピオンズリーグエリート）は2024-25シーズンから新方式となり、東西各12チームによるリーグステージ制が導入されています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-02-10",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "スーパーカップ",
+        "Jリーグ",
+        "歴史"
+      ],
+      "text": "例年2月のJリーグ開幕前に開催されていた「FUJIFILM SUPER CUP」ですが、2026年の開催状況について正しい記述はどれ？",
+      "options": [
+        "名称を「Jリーグスーパーカップ」に戻して開催",
+        "秋春制移行に伴い開催されていない",
+        "例年通り国立競技場で開催された",
+        "8月のシーズン開幕直前に延期された"
+      ],
+      "answerIndex": 1,
+      "explanation": "Jリーグのシーズン移行（秋春制）に伴い、FUJIFILM SUPER CUPは2025年大会をもって終了（または形式変更による休止）となりました。2026年2月は代わりに特別大会「百年構想リーグ」が開催されています。",
+      "trivia": "2025年2月8日に行われた最後の大会では、サンフレッチェ広島がヴィッセル神戸を2-0で下し、有終の美を飾りました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "百年構想リーグ",
+        "レギュレーション",
+        "ACL"
+      ],
+      "text": "2026年前半に行われている「明治安田Jリーグ百年構想リーグ」。J1リーグ優勝チームに与えられる、賞金以外の重要な特典は何？",
+      "options": [
+        "2026-27シーズンの勝ち点15",
+        "クラブワールドカップ2029出場権",
+        "ACLE 2026-27の出場権",
+        "Jリーグカップ（ルヴァン杯）シード権"
+      ],
+      "answerIndex": 2,
+      "explanation": "この特別大会の優勝チームには、2026年8月から始まる来シーズンのACLE（AFCチャンピオンズリーグエリート）出場権が与えられます。これにより、プレシーズンマッチではなく真剣勝負の場としての意義が高められています。",
+      "trivia": "ちなみに、大会での個人の出場記録や得点数は、通常のJリーグ通算記録には「含まれない」扱いとなっています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "百年構想リーグ",
+        "記録",
+        "ルール"
+      ],
+      "text": "2026年2月〜6月に開催される「明治安田Jリーグ百年構想リーグ」での個人の出場数や得点数は、Jリーグの通算記録（J1/J2/J3通算）にどのように扱われる？",
+      "options": [
+        "通算記録に含まれる",
+        "優勝チームの選手のみ含まれる",
+        "得点のみ含まれる",
+        "通算記録には含まれない"
+      ],
+      "answerIndex": 3,
+      "explanation": "百年構想リーグは公式戦ではありますが、通常のリーグ戦とは別大会として扱われるため、出場記録や得点はリーグ戦通算記録には加算されません。",
+      "trivia": "ただし、月間MVPやベストゴールなどの表彰は通常のリーグ戦と同様に実施され、結果に応じた賞金（助成金）もクラブに支払われます。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "premier_league",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "遠藤航",
+        "リバプール",
+        "日本代表",
+        "ケガ"
+      ],
+      "text": "2026年2月11日に行われたサンダーランド戦で今季リーグ戦初先発を飾るも、後半に左足首を負傷して途中交代となった日本代表キャプテンは？",
+      "options": [
+        "遠藤航",
+        "守田英正",
+        "板倉滉",
+        "冨安健洋"
+      ],
+      "answerIndex": 0,
+      "explanation": "遠藤航はサンダーランド戦に右サイドバックとして先発出場しましたが、後半24分に負傷交代しました。スロット監督は試合後、長期離脱の可能性を示唆しています。",
+      "trivia": "本職はボランチですが、この試合ではチームの負傷者事情もあり右サイドバックとして起用されていました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "宇佐美貴史",
+        "ガンバ大阪",
+        "Jリーグ",
+        "ケガ"
+      ],
+      "text": "2026年2月13日、ガンバ大阪が公式に負傷を発表した、チームの背番号7を背負うFWは誰？",
+      "options": [
+        "岸本武流",
+        "宇佐美貴史",
+        "鈴木武蔵",
+        "山田康太"
+      ],
+      "answerIndex": 1,
+      "explanation": "ガンバ大阪は2月13日、FW宇佐美貴史の負傷を発表しました。チームは現在「明治安田Jリーグ百年構想リーグ」を戦っています。",
+      "trivia": "宇佐美貴史はガンバ大阪のユース出身で、ドイツのバイエルン・ミュンヘンなど海外クラブでのプレー経験も豊富です。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "jupiler_pro_league",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "伊東純也",
+        "KRCゲンク",
+        "ベルギーリーグ",
+        "日本代表"
+      ],
+      "text": "2026年2月13日に行われたメヘレン戦で2得点に絡む活躍を見せ、チームの勝利に貢献した伊東純也の現在の所属クラブは？",
+      "options": [
+        "ロイヤル・ユニオン・サン＝ジロワーズ",
+        "スタッド・ランス",
+        "KRCゲンク",
+        "柏レイソル"
+      ],
+      "answerIndex": 2,
+      "explanation": "伊東純也は現在ベルギーのKRCゲンクに所属しています（スタッド・ランスから復帰）。メヘレン戦では3-2の逆転勝利に大きく貢献しました。",
+      "trivia": "伊東純也にとってゲンクは、かつてリーグ優勝やアシスト王を獲得した馴染み深い古巣でもあります。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "championship",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "古橋亨梧",
+        "バーミンガム・シティ",
+        "移籍",
+        "セルティック"
+      ],
+      "text": "2026年2月現在、イングランドのバーミンガム・シティに所属しているものの、出場機会の確保に苦しんでいる日本人FWは？",
+      "options": [
+        "前田大然",
+        "小川航基",
+        "旗手怜央",
+        "古橋亨梧"
+      ],
+      "answerIndex": 3,
+      "explanation": "古橋亨梧はセルティックからバーミンガム・シティに移籍しましたが、現在はチーム内での序列が低下し、直近の試合では出場機会がありませんでした。",
+      "trivia": "現地メディアによると、2026年1月の移籍市場でセルティックへ復帰する可能性もありましたが、最終的にバーミンガム残留を選択したと報じられています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "久保建英",
+        "レアル・ソシエダ",
+        "ラ・リーガ",
+        "ケガ"
+      ],
+      "text": "2026年2月14日に行われたラ・リーガのレアル・マドリード戦を、怪我のため欠場したレアル・ソシエダ所属の日本代表MFは？",
+      "options": [
+        "久保建英",
+        "鎌田大地",
+        "南野拓実",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "久保建英は負傷のため、2月14日のレアル・マドリード戦（1-4で敗戦）を欠場しました。コパ・デル・レイ準々決勝のアラベス戦なども欠場が続いています。",
+      "trivia": "レアル・ソシエダの現在の監督はペレグリーノ・マタラッツォ氏で、久保にとってはシュツットガルト時代にも指導を受けた恩師にあたります。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "supercup",
+        "sanfrecce",
+        "vissel"
+      ],
+      "text": "2025年2月8日に開催された「FUJIFILM SUPER CUP 2025」。ヴィッセル神戸を2-0で破り、9年ぶり5回目の優勝を果たしたクラブは？",
+      "options": [
+        "横浜F・マリノス",
+        "サンフレッチェ広島",
+        "鹿島アントラーズ",
+        "ガンバ大阪"
+      ],
+      "answerIndex": 1,
+      "explanation": "2024年シーズンの天皇杯王者として出場したヴィッセル神戸に対し、リーグ戦2位のサンフレッチェ広島が2-0で勝利しました。トルガイ・アルスランと荒木隼人が得点を挙げました。",
+      "trivia": "この大会は2026-27シーズンからの秋春制移行に伴い、2月開催の「シーズン開幕を告げる大会」としては今回が最後となる可能性があります。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "j1",
+        "cerezo",
+        "gamba",
+        "osakaderby"
+      ],
+      "text": "2025年2月14日に行われたJ1リーグ開幕戦「ガンバ大阪 vs セレッソ大阪」。大阪ダービーとなったこの試合の結果は？",
+      "options": [
+        "1-1の引き分け",
+        "ガンバ大阪が2-1で勝利",
+        "セレッソ大阪が5-2で勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 2,
+      "explanation": "2025シーズンのオープニングマッチとして行われた大阪ダービーは、アウェイのセレッソ大阪が5得点を奪い快勝しました。北野颯太の2ゴールや香川真司の得点などが決まりました。",
+      "trivia": "この試合は「金J（フライデーナイトJリーグ）」として開催され、パナソニックスタジアム吹田には3万4000人以上の観客が詰めかけました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "j1",
+        "okayama",
+        "promotion"
+      ],
+      "text": "2024年のJ1昇格プレーオフを制し、2025年シーズンからクラブ史上初となるJ1昇格を果たしたクラブはどこ？",
+      "options": [
+        "モンテディオ山形",
+        "ベガルタ仙台",
+        "V・ファーレン長崎",
+        "ファジアーノ岡山"
+      ],
+      "answerIndex": 3,
+      "explanation": "ファジアーノ岡山はJ1昇格プレーオフ決勝でベガルタ仙台を2-0で下し、悲願のJ1初昇格を決めました。他には清水エスパルスと横浜FCが自動昇格しています。",
+      "trivia": "ファジアーノ岡山はJ2参入から16年目にして初のJ1昇格となりました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "acle",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "acle",
+        "vissel",
+        "fmarinos",
+        "frontale"
+      ],
+      "text": "2025年2月中旬に行われたACLE（AFCチャンピオンズリーグエリート）第7節。日本勢3クラブ（神戸、横浜FM、川崎F）の成績はどうだった？",
+      "options": [
+        "3クラブとも勝利した",
+        "神戸のみ敗れた",
+        "全チーム引き分けだった",
+        "横浜FMのみ敗れた"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本勢は好調を維持しており、第7節ではヴィッセル神戸が上海海港に、横浜F・マリノスが上海申花に、川崎フロンターレが浦項スティーラーズにそれぞれ勝利しました。",
+      "trivia": "特に横浜F・マリノスはこの勝利で東地区の首位争いに踏みとどまり、決勝トーナメント進出をより確実なものにしました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "jleague",
+        "regulation",
+        "season"
+      ],
+      "text": "2025年シーズンのJリーグに関する記述として正しいものはどれ？",
+      "options": [
+        "VAR（ビデオ・アシスタント・レフェリー）が廃止された",
+        "「春秋制」で行われる最後のフルシーズンである",
+        "既に「秋春制」に移行しており8月に開幕した",
+        "J1リーグのチーム数が18チームに削減された"
+      ],
+      "answerIndex": 1,
+      "explanation": "Jリーグは2026-27シーズンから「秋春制（8月開幕）」への移行を決定しています。そのため、2月から12月まで行われる従来の「春秋制」は2025年シーズンが最後となります。",
+      "trivia": "2026年の前半（2月〜5月頃）には、シーズン移行期間を埋めるための特別大会（仮称：百年構想リーグなど）が開催される予定です。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "スーパーカップ",
+        "サンフレッチェ広島",
+        "ヴィッセル神戸"
+      ],
+      "text": "2025年2月8日に行われた「FUJIFILM SUPER CUP 2025」で、ヴィッセル神戸を2-0で破り優勝したクラブは？",
+      "options": [
+        "浦和レッズ",
+        "横浜F・マリノス",
+        "サンフレッチェ広島",
+        "ガンバ大阪"
+      ],
+      "answerIndex": 2,
+      "explanation": "昨季J1王者のヴィッセル神戸と対戦したサンフレッチェ広島は、トルガイ・アルスランと荒木隼人のゴールにより2-0で勝利し、9年ぶり5回目の優勝を果たしました。",
+      "trivia": "この大会は2026-27シーズンからの秋春制移行に伴い、2月開催のスーパーカップとしては今回が最後となる可能性があります。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "開幕戦",
+        "セレッソ大阪",
+        "ガンバ大阪"
+      ],
+      "text": "2025年2月14日に行われた明治安田J1リーグ開幕戦「ガンバ大阪 vs セレッソ大阪」の結果は？",
+      "options": [
+        "0-1でセレッソ大阪の勝利",
+        "2-1でガンバ大阪の勝利",
+        "1-1の引き分け",
+        "2-5でセレッソ大阪の勝利"
+      ],
+      "answerIndex": 3,
+      "explanation": "2025シーズンのオープニングマッチとなった「大阪ダービー」は、アウェイのセレッソ大阪が香川真司や北野颯太のゴールなどで5得点を奪い、5-2で大勝しました。",
+      "trivia": "この試合でC大阪の北野颯太は前半開始早々と後半開始直後にゴールを決め、チームの開幕ダッシュに大きく貢献しました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "川崎フロンターレ",
+        "名古屋グランパス",
+        "試合結果"
+      ],
+      "text": "2025年2月15日に行われたJ1リーグ第1節「川崎フロンターレ vs 名古屋グランパス」の試合結果として正しいものは？",
+      "options": [
+        "4-0で川崎フロンターレの勝利",
+        "0-1で名古屋グランパスの勝利",
+        "2-2の引き分け",
+        "1-0で川崎フロンターレの勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "ホーム開幕戦となった川崎フロンターレは、攻撃陣が爆発し名古屋グランパス相手に4-0と快勝。好スタートを切りました。",
+      "trivia": "同日に行われた他会場では、柏レイソルがアビスパ福岡に1-0で勝利し、湘南ベルマーレも鹿島アントラーズを1-0で下しています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "海外日本人",
+        "ベルギーリーグ",
+        "後藤啓介",
+        "シント=トロイデン"
+      ],
+      "text": "ベルギー1部シント=トロイデン所属のFW後藤啓介が、2025年2月15日の試合で達成した記録は？",
+      "options": [
+        "移籍後初のハットトリックを達成",
+        "今季10得点目を決め得点ランク首位に浮上",
+        "リーグ戦全試合フル出場を達成",
+        "欧州カップ戦での初ゴールを記録"
+      ],
+      "answerIndex": 1,
+      "explanation": "ズルテ・ワレヘム戦に出場した後藤啓介は、自ら獲得したPKを決めて今季10点目をマーク。これによりリーグ得点ランキングのトップ（タイ）に浮上しました。",
+      "trivia": "この試合では同じくシント=トロイデン所属の山本理仁も決勝ゴールをアシストし、日本人選手が多く活躍する中での逆転勝利（3-2）となりました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
