@@ -17,6 +17,7 @@ import '../widgets/banner_ad_widget.dart';
 import '../providers/ad_provider.dart';
 import '../providers/notification_provider.dart';
 import '../providers/admin_mode_provider.dart';
+import '../providers/login_bonus_provider.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -255,6 +256,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                           // ユーザー情報カード
                           _buildUserInfoCard(
                               context, ref, totalExp, totalPoints, userRank),
+                          const SizedBox(height: 24),
+
+                          // ログインボーナスカード
+                          _buildLoginBonusCard(context, ref),
                           const SizedBox(height: 24),
 
                           // 昇格試験セクション
@@ -933,6 +938,131 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             ],
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildLoginBonusCard(BuildContext context, WidgetRef ref) {
+    final loginBonusStatus = ref.watch(loginBonusStatusProvider);
+    final canClaim = loginBonusStatus.canClaim && !loginBonusStatus.hasClaimedToday;
+
+    return GestureDetector(
+      onTap: () {
+        context.push('/login-bonus');
+      },
+      child: Container(
+        padding: const EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          gradient: canClaim
+              ? LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    AppColors.accent.withValues(alpha: 0.2),
+                    AppColors.accent.withValues(alpha: 0.1),
+                  ],
+                )
+              : null,
+          color: canClaim ? null : Colors.white.withValues(alpha: 0.7),
+          borderRadius: const BorderRadius.all(Radius.circular(16)),
+          border: Border.all(
+            color: canClaim
+                ? AppColors.accent.withValues(alpha: 0.5)
+                : Colors.white.withValues(alpha: 0.8),
+            width: canClaim ? 2 : 1,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: canClaim
+                  ? AppColors.accent.withValues(alpha: 0.2)
+                  : AppColors.techBlue.withValues(alpha: 0.05),
+              blurRadius: canClaim ? 16 : 8,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 56,
+              height: 56,
+              decoration: BoxDecoration(
+                color: canClaim
+                    ? AppColors.accent
+                    : AppColors.slate200,
+                borderRadius: const BorderRadius.all(Radius.circular(12)),
+              ),
+              child: Icon(
+                Icons.calendar_today,
+                color: canClaim ? Colors.white : AppColors.slate400,
+                size: 28,
+              ),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        'ログインボーナス',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                          color: canClaim
+                              ? AppColors.textDark
+                              : AppColors.textLight,
+                        ),
+                      ),
+                      if (canClaim) ...[
+                        const SizedBox(width: 8),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 2,
+                          ),
+                          decoration: BoxDecoration(
+                            color: AppColors.accent,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Text(
+                            'NEW',
+                            style: TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    canClaim
+                        ? '${loginBonusStatus.points}ポイント受け取り可能'
+                        : loginBonusStatus.hasClaimedToday
+                            ? '本日受け取り済み'
+                            : '${loginBonusStatus.streakDays}日連続ログイン中',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w500,
+                      color: canClaim
+                          ? AppColors.primary
+                          : AppColors.slate400,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Icon(
+              Icons.chevron_right,
+              color: canClaim ? AppColors.accent : AppColors.slate200,
+              size: 24,
+            ),
+          ],
+        ),
       ),
     );
   }

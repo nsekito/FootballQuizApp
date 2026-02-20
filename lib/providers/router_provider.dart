@@ -9,6 +9,7 @@ import '../screens/question_view_screen.dart';
 import '../screens/promotion_exam_screen.dart';
 import '../screens/promotion_exam_quiz_screen.dart';
 import '../screens/admin_settings_screen.dart';
+import '../screens/login_bonus_screen.dart';
 import '../utils/route_params_parser.dart';
 
 /// アプリのルーティング設定
@@ -131,6 +132,11 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/admin-settings',
         name: 'admin-settings',
         builder: (context, state) => const AdminSettingsScreen(),
+      ),
+      GoRoute(
+        path: '/login-bonus',
+        name: 'login-bonus',
+        builder: (context, state) => const LoginBonusScreen(),
       ),
     ],
   );
