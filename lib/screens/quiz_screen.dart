@@ -15,6 +15,8 @@ import '../widgets/glow_button.dart';
 import '../widgets/responsive_container.dart';
 import '../utils/category_difficulty_utils.dart';
 import '../widgets/banner_ad_widget.dart';
+import '../providers/admin_mode_provider.dart';
+import 'dart:math';
 
 class QuizScreen extends ConsumerStatefulWidget {
   final String category;
@@ -82,8 +84,14 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
       if (!mounted) return;
 
+      // 管理者モードがOFFの場合、選択肢をシャッフル
+      final adminMode = ref.read(adminModeProvider);
+      final processedQuestions = adminMode
+          ? questions
+          : questions.map((q) => _shuffleQuestionOptions(q)).toList();
+
       setState(() {
-        _questions = questions;
+        _questions = processedQuestions;
         _isLoading = false;
       });
 
@@ -130,6 +138,48 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         onClose: () => context.pop(),
       );
     }
+  }
+
+  /// 問題の選択肢をシャッフルし、answerIndexを更新する
+  Question _shuffleQuestionOptions(Question question) {
+    if (question.options.length != 4) {
+      // 選択肢が4つでない場合はそのまま返す
+      return question;
+    }
+
+    // 正解の選択肢を取得
+    final correctAnswer = question.options[question.answerIndex];
+
+    // 正解以外の選択肢をシャッフル
+    final otherOptions = List<String>.from(question.options);
+    otherOptions.removeAt(question.answerIndex);
+    otherOptions.shuffle();
+
+    // ランダムな位置に正解を挿入
+    final random = Random();
+    final newIndex = random.nextInt(4);
+    otherOptions.insert(newIndex, correctAnswer);
+
+    // 新しいQuestionオブジェクトを作成
+    return Question(
+      id: question.id,
+      text: question.text,
+      options: otherOptions,
+      answerIndex: newIndex,
+      explanation: question.explanation,
+      trivia: question.trivia,
+      category: question.category,
+      difficulty: question.difficulty,
+      tags: question.tags,
+      referenceDate: question.referenceDate,
+      quizType: question.quizType,
+      categoryId: question.categoryId,
+      region: question.region,
+      league: question.league,
+      team: question.team,
+      teamId: question.teamId,
+      weeklyMeta: question.weeklyMeta,
+    );
   }
 
   @override

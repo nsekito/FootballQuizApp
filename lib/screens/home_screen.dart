@@ -16,6 +16,7 @@ import '../widgets/glass_morphism_widget.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../providers/ad_provider.dart';
 import '../providers/notification_provider.dart';
+import '../providers/admin_mode_provider.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -342,20 +343,45 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               ),
             ],
           ),
-          Container(
-            width: 40,
-            height: 40,
-            decoration: const BoxDecoration(
-              color: AppColors.slate100,
-              shape: BoxShape.circle,
-              border:
-                  Border.fromBorderSide(BorderSide(color: AppColors.slate200)),
-            ),
-            child: const Icon(
-              Icons.notifications_outlined,
-              color: AppColors.slate500,
-              size: 20,
-            ),
+          Row(
+            children: [
+              // 管理者設定ボタン（管理者権限がある場合のみ表示）
+              if (ref.watch(isAdminProvider))
+                Padding(
+                  padding: const EdgeInsets.only(right: 12),
+                  child: GestureDetector(
+                    onTap: () => context.push('/admin-settings'),
+                    child: Container(
+                      width: 40,
+                      height: 40,
+                      decoration: const BoxDecoration(
+                        color: AppColors.stitchEmerald,
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.admin_panel_settings,
+                        color: Colors.white,
+                        size: 20,
+                      ),
+                    ),
+                  ),
+                ),
+              Container(
+                width: 40,
+                height: 40,
+                decoration: const BoxDecoration(
+                  color: AppColors.slate100,
+                  shape: BoxShape.circle,
+                  border:
+                      Border.fromBorderSide(BorderSide(color: AppColors.slate200)),
+                ),
+                child: const Icon(
+                  Icons.notifications_outlined,
+                  color: AppColors.slate500,
+                  size: 20,
+                ),
+              ),
+            ],
           ),
         ],
       ),

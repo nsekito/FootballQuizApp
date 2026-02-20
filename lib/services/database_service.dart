@@ -1237,6 +1237,121 @@ class DatabaseService {
     return unlocked.contains(unlockKey);
   }
 
+  /// 難易度解放をリセット（初期状態に戻す）
+  Future<void> resetUnlockedDifficulties() async {
+    // 初期状態（EASY難易度のみ）
+    final initialUnlocked = [
+      UnlockKeyUtils.generateUnlockKey(
+        category: AppConstants.categoryRules,
+        difficulty: AppConstants.difficultyEasy,
+        tags: AppConstants.categoryRules,
+      ),
+      UnlockKeyUtils.generateUnlockKey(
+        category: AppConstants.categoryHistory,
+        difficulty: AppConstants.difficultyEasy,
+        tags: 'history,japan',
+      ),
+      UnlockKeyUtils.generateUnlockKey(
+        category: AppConstants.categoryTeams,
+        difficulty: AppConstants.difficultyEasy,
+        tags: 'teams,japan',
+      ),
+    ];
+    await updateUnlockedDifficulties(initialUnlocked);
+  }
+
+  /// 全カテゴリ・全タグのNORMAL難易度を一括開放
+  Future<void> unlockAllNormalDifficulties() async {
+    final unlocked = await getUnlockedDifficulties();
+    
+    // カテゴリとタグの組み合わせ
+    final categories = [
+      AppConstants.categoryRules,
+      AppConstants.categoryHistory,
+      AppConstants.categoryTeams,
+    ];
+    
+    // 各カテゴリの主要タグ
+    final categoryTags = {
+      AppConstants.categoryRules: ['rules'],
+      AppConstants.categoryHistory: ['history,japan', 'history,world'],
+      AppConstants.categoryTeams: [
+        'teams,japan',
+        'teams,italy',
+        'teams,spain',
+        'teams,england',
+        'teams,japan,j1',
+        'teams,japan,j2',
+        'teams,italy,serie_a',
+        'teams,spain,la_liga',
+        'teams,england,premier_league',
+      ],
+    };
+    
+    // 各組み合わせに対してNORMAL難易度を開放
+    for (final category in categories) {
+      final tags = categoryTags[category] ?? [];
+      for (final tag in tags) {
+        final unlockKey = UnlockKeyUtils.generateUnlockKey(
+          category: category,
+          difficulty: AppConstants.difficultyNormal,
+          tags: tag,
+        );
+        if (!unlocked.contains(unlockKey)) {
+          unlocked.add(unlockKey);
+        }
+      }
+    }
+    
+    await updateUnlockedDifficulties(unlocked);
+  }
+
+  /// 全カテゴリ・全タグのHARD難易度を一括開放
+  Future<void> unlockAllHardDifficulties() async {
+    final unlocked = await getUnlockedDifficulties();
+    
+    // カテゴリとタグの組み合わせ
+    final categories = [
+      AppConstants.categoryRules,
+      AppConstants.categoryHistory,
+      AppConstants.categoryTeams,
+    ];
+    
+    // 各カテゴリの主要タグ
+    final categoryTags = {
+      AppConstants.categoryRules: ['rules'],
+      AppConstants.categoryHistory: ['history,japan', 'history,world'],
+      AppConstants.categoryTeams: [
+        'teams,japan',
+        'teams,italy',
+        'teams,spain',
+        'teams,england',
+        'teams,japan,j1',
+        'teams,japan,j2',
+        'teams,italy,serie_a',
+        'teams,spain,la_liga',
+        'teams,england,premier_league',
+      ],
+    };
+    
+    // 各組み合わせに対してHARD難易度を開放
+    for (final category in categories) {
+      final tags = categoryTags[category] ?? [];
+      for (final tag in tags) {
+        final unlockKey = UnlockKeyUtils.generateUnlockKey(
+          category: category,
+          difficulty: AppConstants.difficultyHard,
+          tags: tag,
+        );
+        if (!unlocked.contains(unlockKey)) {
+          unlocked.add(unlockKey);
+        }
+      }
+    }
+    
+    await updateUnlockedDifficulties(unlocked);
+  }
+
   /// 今週の週開始日を取得（月曜日を週の開始とする）
   String _getWeekStartDate(DateTime date) {
     // 月曜日を週の開始とする（月曜日=1、日曜日=7）
@@ -1421,6 +1536,12 @@ class DatabaseService {
     );
     
     return result.map((map) => _mapToQuestion(map)).toList();
+  }
+
+  /// 問題解放をリセット（全削除）
+  Future<void> resetUnlockedQuestions() async {
+    final db = await database;
+    await db.delete('unlocked_questions');
   }
 
   /// 問題IDから問題を取得

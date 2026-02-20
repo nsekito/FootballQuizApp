@@ -26,6 +26,12 @@ class TotalExpNotifier extends StateNotifier<int> {
     await _loadExp();
   }
 
+  /// EXPを直接設定する（管理者用）
+  Future<void> setExp(int exp) async {
+    await _databaseService.updateTotalExp(exp);
+    await _loadExp();
+  }
+
   Future<void> refresh() async {
     await _loadExp();
   }
@@ -64,6 +70,12 @@ class TotalPointsNotifier extends StateNotifier<int> {
     }
   }
 
+  /// ポイントを直接設定する（管理者用）
+  Future<void> setPoints(int points) async {
+    await _databaseService.updateTotalPoints(points);
+    await _loadPoints();
+  }
+
   Future<void> refresh() async {
     await _loadPoints();
   }
@@ -100,6 +112,24 @@ class UnlockedDifficultiesNotifier extends StateNotifier<List<String>> {
 
   Future<bool> isUnlocked(String unlockKey) async {
     return await _databaseService.isDifficultyUnlocked(unlockKey);
+  }
+
+  /// 難易度解放をリセット（初期状態に戻す）
+  Future<void> resetUnlockedDifficulties() async {
+    await _databaseService.resetUnlockedDifficulties();
+    await _loadUnlockedDifficulties();
+  }
+
+  /// 全カテゴリ・全タグのNORMAL難易度を一括開放
+  Future<void> unlockAllNormalDifficulties() async {
+    await _databaseService.unlockAllNormalDifficulties();
+    await _loadUnlockedDifficulties();
+  }
+
+  /// 全カテゴリ・全タグのHARD難易度を一括開放
+  Future<void> unlockAllHardDifficulties() async {
+    await _databaseService.unlockAllHardDifficulties();
+    await _loadUnlockedDifficulties();
   }
 
   Future<void> refresh() async {

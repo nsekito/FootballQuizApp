@@ -31,7 +31,7 @@ class PromotionExam {
     return PromotionExam(
       targetDifficulty: AppConstants.difficultyNormal,
       sourceDifficulty: AppConstants.difficultyEasy,
-      requiredRank: UserRank.starterCandidate,
+      requiredRank: UserRank.starter,
       requiredPoints: AppConstants.promotionExamPointsEasyToNormal,
       questionCount: AppConstants.promotionExamQuestionCount,
       passScore: AppConstants.promotionExamPassScore,
@@ -48,7 +48,7 @@ class PromotionExam {
     return PromotionExam(
       targetDifficulty: AppConstants.difficultyHard,
       sourceDifficulty: AppConstants.difficultyNormal,
-      requiredRank: UserRank.j3RisingStar,
+      requiredRank: UserRank.numberTen,
       requiredPoints: AppConstants.promotionExamPointsNormalToHard,
       questionCount: AppConstants.promotionExamQuestionCount,
       passScore: AppConstants.promotionExamPassScore,
@@ -65,7 +65,7 @@ class PromotionExam {
     return PromotionExam(
       targetDifficulty: AppConstants.difficultyExtreme,
       sourceDifficulty: AppConstants.difficultyHard,
-      requiredRank: UserRank.j1Regular,
+      requiredRank: UserRank.captain,
       requiredPoints: AppConstants.promotionExamPointsHardToExtreme,
       questionCount: AppConstants.promotionExamQuestionCount,
       passScore: AppConstants.promotionExamPassScore,

@@ -2,19 +2,19 @@
 enum UserRank {
   ballPicker('Ball Picker', 'ボール拾い', 0, 99),
   coneSetter('Cone Setter', 'コーン並べ係', 100, 199),
-  bibDistributor('Bib Distributor', 'ビブス配り担当', 200, 299),
-  eternalBench('Eternal Bench', '万年ベンチ', 300, 449),
-  stoppageTimePlayer('Stoppage Time Player', 'ロスタイム要員', 450, 649),
-  starterCandidate('Starter Candidate', 'スタメン候補', 650, 999),
-  localCelebrity('Local Celebrity', '地元の有名人', 1000, 1499),
-  j3RisingStar('J3 Rising Star', 'J3の新星', 1500, 2199),
-  j2NuclearStriker('J2 Nuclear Striker', 'J2の核弾頭', 2200, 3199),
-  j1Regular('J1 Regular', 'J1レギュラー', 3200, 4699),
-  nationalSecretWeapon('National Secret Weapon', '代表の秘密兵器', 4700, 6999),
-  worldCupWarrior('World Cup Warrior', 'ワールドカップ戦士', 7000, 9999),
-  overseasSamurai('Overseas Samurai', '海を渡った侍', 10000, 14999),
-  ballonDor('Ballon d\'Or', 'バロンドーラー', 15000, 24999),
-  soccerGod('Soccer God', 'サッカーの神', 25000, null);
+  waterCarrier('Water Carrier', '給水係', 200, 299),
+  bibDistributor('Bib Distributor', 'ビブス配り', 300, 449),
+  trainee('Trainee', '練習生', 450, 649),
+  benchPlayer('Bench Player', 'ベンチ入り', 650, 999),
+  substitute('Substitute', '途中出場', 1000, 1499),
+  starter('Starter', 'スタメン', 1500, 2199),
+  numberTen('Number Ten', '背番号10', 2200, 3199),
+  captain('Captain', 'キャプテン', 3200, 4699),
+  domesticMVP('Domestic MVP', '国内MVP', 4700, 6999),
+  overseasTransfer('Overseas Transfer', '海外移籍', 7000, 9999),
+  worldClass('World Class', 'ワールドクラス', 10000, 14999),
+  ballonDor('Ballon d\'Or', 'バロンドール', 15000, 24999),
+  legend('Legend', 'レジェンド', 25000, null);
 
   final String englishName;
   final String japaneseName;

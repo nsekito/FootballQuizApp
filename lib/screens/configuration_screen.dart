@@ -104,18 +104,18 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
                     foregroundColor: Colors.white,
                     borderRadius: 16,
                     padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Text(
+                        Text(
                           'START',
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        const SizedBox(width: 8),
+                        SizedBox(width: 8),
                         Icon(
                           Icons.play_arrow,
                           color: Colors.white,

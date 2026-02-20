@@ -8,6 +8,7 @@ import '../screens/question_unlock_screen.dart';
 import '../screens/question_view_screen.dart';
 import '../screens/promotion_exam_screen.dart';
 import '../screens/promotion_exam_quiz_screen.dart';
+import '../screens/admin_settings_screen.dart';
 import '../utils/route_params_parser.dart';
 
 /// アプリのルーティング設定
@@ -125,6 +126,11 @@ final routerProvider = Provider<GoRouter>((ref) {
             tags: RouteParamsParser.parseStringParam(params, 'tags'),
           );
         },
+      ),
+      GoRoute(
+        path: '/admin-settings',
+        name: 'admin-settings',
+        builder: (context, state) => const AdminSettingsScreen(),
       ),
     ],
   );

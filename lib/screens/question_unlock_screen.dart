@@ -18,10 +18,12 @@ class QuestionUnlockScreen extends ConsumerStatefulWidget {
   const QuestionUnlockScreen({super.key});
 
   @override
-  ConsumerState<QuestionUnlockScreen> createState() => _QuestionUnlockScreenState();
+  ConsumerState<QuestionUnlockScreen> createState() =>
+      _QuestionUnlockScreenState();
 }
 
-class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> with SingleTickerProviderStateMixin {
+class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen>
+    with SingleTickerProviderStateMixin {
   late TabController _tabController;
   String? _selectedCategory;
   String? _selectedDifficulty;
@@ -78,7 +80,7 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
           children: [
             // フィルタセクション
             _buildFilterSection(),
-            
+
             // タブ
             TabBar(
               controller: _tabController,
@@ -90,18 +92,19 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
                 Tab(text: '開放済み'),
               ],
             ),
-            
+
             // 問題一覧
             Expanded(
               child: TabBarView(
                 controller: _tabController,
                 children: [
                   _buildUnlockedQuestionsList(unlockedQuestionIdsAsync),
-                  _buildUnlockedQuestionsList(unlockedQuestionIdsAsync, showUnlocked: true),
+                  _buildUnlockedQuestionsList(unlockedQuestionIdsAsync,
+                      showUnlocked: true),
                 ],
               ),
             ),
-            
+
             // バナー広告
             const BannerAdWidget(),
           ],
@@ -119,17 +122,17 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
           // カテゴリ選択
           _buildCategoryFilter(),
           const SizedBox(height: 16),
-          
+
           // 難易度選択
           if (_selectedCategory != AppConstants.categoryMatchRecap)
             _buildDifficultyFilter(),
-          
+
           // チームクイズの場合の追加フィルタ
           if (_selectedCategory == AppConstants.categoryTeams) ...[
             const SizedBox(height: 16),
             _buildTeamFilter(),
           ],
-          
+
           // 歴史クイズの場合の地域フィルタ
           if (_selectedCategory == AppConstants.categoryHistory) ...[
             const SizedBox(height: 16),
@@ -159,17 +162,20 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
             _buildFilterChip(
               'ルール',
               _selectedCategory == AppConstants.categoryRules,
-              () => setState(() => _selectedCategory = AppConstants.categoryRules),
+              () => setState(
+                  () => _selectedCategory = AppConstants.categoryRules),
             ),
             _buildFilterChip(
               '歴史',
               _selectedCategory == AppConstants.categoryHistory,
-              () => setState(() => _selectedCategory = AppConstants.categoryHistory),
+              () => setState(
+                  () => _selectedCategory = AppConstants.categoryHistory),
             ),
             _buildFilterChip(
               'チーム',
               _selectedCategory == AppConstants.categoryTeams,
-              () => setState(() => _selectedCategory = AppConstants.categoryTeams),
+              () => setState(
+                  () => _selectedCategory = AppConstants.categoryTeams),
             ),
           ],
         ),
@@ -196,22 +202,26 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
             _buildFilterChip(
               'EASY',
               _selectedDifficulty == AppConstants.difficultyEasy,
-              () => setState(() => _selectedDifficulty = AppConstants.difficultyEasy),
+              () => setState(
+                  () => _selectedDifficulty = AppConstants.difficultyEasy),
             ),
             _buildFilterChip(
               'NORMAL',
               _selectedDifficulty == AppConstants.difficultyNormal,
-              () => setState(() => _selectedDifficulty = AppConstants.difficultyNormal),
+              () => setState(
+                  () => _selectedDifficulty = AppConstants.difficultyNormal),
             ),
             _buildFilterChip(
               'HARD',
               _selectedDifficulty == AppConstants.difficultyHard,
-              () => setState(() => _selectedDifficulty = AppConstants.difficultyHard),
+              () => setState(
+                  () => _selectedDifficulty = AppConstants.difficultyHard),
             ),
             _buildFilterChip(
               'EXTREME',
               _selectedDifficulty == AppConstants.difficultyExtreme,
-              () => setState(() => _selectedDifficulty = AppConstants.difficultyExtreme),
+              () => setState(
+                  () => _selectedDifficulty = AppConstants.difficultyExtreme),
             ),
           ],
         ),
@@ -238,9 +248,11 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
             ),
-            contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+            contentPadding:
+                const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           ),
-          onChanged: (value) => setState(() => _selectedTeam = value.isEmpty ? null : value),
+          onChanged: (value) =>
+              setState(() => _selectedTeam = value.isEmpty ? null : value),
         ),
       ],
     );
@@ -288,7 +300,9 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
     );
   }
 
-  Widget _buildUnlockedQuestionsList(AsyncValue<List<String>> unlockedQuestionIdsAsync, {bool showUnlocked = false}) {
+  Widget _buildUnlockedQuestionsList(
+      AsyncValue<List<String>> unlockedQuestionIdsAsync,
+      {bool showUnlocked = false}) {
     return unlockedQuestionIdsAsync.when(
       data: (unlockedIds) {
         return FutureBuilder<List<Question>>(
@@ -298,18 +312,18 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
             if (snapshot.connectionState == ConnectionState.waiting) {
               return const Center(child: CircularProgressIndicator());
             }
-            
+
             if (snapshot.hasError) {
               return Center(
                 child: Text('エラー: ${snapshot.error}'),
               );
             }
-            
+
             final questions = snapshot.data ?? [];
             final filteredQuestions = showUnlocked
                 ? questions.where((q) => unlockedIds.contains(q.id)).toList()
                 : questions.where((q) => !unlockedIds.contains(q.id)).toList();
-            
+
             if (filteredQuestions.isEmpty) {
               return Center(
                 child: Text(
@@ -318,7 +332,7 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
                 ),
               );
             }
-            
+
             return ListView.builder(
               padding: const EdgeInsets.all(16),
               itemCount: filteredQuestions.length,
@@ -375,7 +389,7 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
               overflow: TextOverflow.ellipsis,
             ),
             const SizedBox(height: 8),
-            
+
             // カテゴリと難易度
             Row(
               children: [
@@ -385,13 +399,14 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
                 ),
                 const SizedBox(width: 8),
                 _buildInfoChip(
-                  CategoryDifficultyUtils.getDifficultyName(question.difficulty),
+                  CategoryDifficultyUtils.getDifficultyName(
+                      question.difficulty),
                   Colors.orange,
                 ),
               ],
             ),
             const SizedBox(height: 12),
-            
+
             // アクションボタン
             SizedBox(
               width: double.infinity,
@@ -400,7 +415,8 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
                     ? () => _viewQuestion(question)
                     : () => _unlockQuestion(question),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: isUnlocked ? AppColors.techGreen : AppColors.techBlue,
+                  backgroundColor:
+                      isUnlocked ? AppColors.techGreen : AppColors.techBlue,
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 12),
                   shape: RoundedRectangleBorder(
@@ -411,11 +427,11 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     if (!isUnlocked) ...[
-                      Icon(Icons.lock_open, size: 18),
+                      const Icon(Icons.lock_open, size: 18),
                       const SizedBox(width: 8),
-                      Text('${AppConstants.questionUnlockPoints} PTで開放'),
+                      const Text('${AppConstants.questionUnlockPoints} PTで開放'),
                     ] else ...[
-                      Icon(Icons.visibility, size: 18),
+                      const Icon(Icons.visibility, size: 18),
                       const SizedBox(width: 8),
                       const Text('見る'),
                     ],
@@ -449,25 +465,26 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
 
   Future<void> _unlockQuestion(Question question) async {
     final totalPoints = ref.read(totalPointsProvider);
-    
+
     if (totalPoints < AppConstants.questionUnlockPoints) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('ポイントが不足しています。${AppConstants.questionUnlockPoints}ポイント必要です。'),
+          const SnackBar(
+            content: Text(
+                'ポイントが不足しています。${AppConstants.questionUnlockPoints}ポイント必要です。'),
             backgroundColor: Colors.red,
           ),
         );
       }
       return;
     }
-    
+
     // 確認ダイアログ
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('問題を開放しますか？'),
-        content: Text(
+        content: const Text(
           '${AppConstants.questionUnlockPoints}ポイントを消費してこの問題を開放します。',
         ),
         actions: [
@@ -485,9 +502,9 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> wit
         ],
       ),
     );
-    
+
     if (confirmed != true) return;
-    
+
     try {
       await ref.read(unlockQuestionProvider(question.id).future);
       if (mounted) {

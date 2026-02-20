@@ -36,7 +36,8 @@ class QuestionViewScreen extends ConsumerWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Icon(Icons.error_outline, size: 48, color: Colors.red),
+                    const Icon(Icons.error_outline,
+                        size: 48, color: Colors.red),
                     const SizedBox(height: 16),
                     const Text('問題が見つかりません'),
                     const SizedBox(height: 16),
@@ -48,13 +49,14 @@ class QuestionViewScreen extends ConsumerWidget {
                 ),
               );
             }
-            
+
             return unlockedQuestionsAsync.when(
               data: (unlockedQuestions) {
-                final currentIndex = unlockedQuestions.indexWhere((q) => q.id == questionId);
+                final currentIndex =
+                    unlockedQuestions.indexWhere((q) => q.id == questionId);
                 final hasPrevious = currentIndex > 0;
                 final hasNext = currentIndex < unlockedQuestions.length - 1;
-                
+
                 return SingleChildScrollView(
                   child: ResponsiveContainer(
                     padding: const EdgeInsets.all(16),
@@ -63,9 +65,9 @@ class QuestionViewScreen extends ConsumerWidget {
                       children: [
                         // 問題カード
                         _buildQuestionCard(question),
-                        
+
                         const SizedBox(height: 16),
-                        
+
                         // ナビゲーションボタン
                         if (unlockedQuestions.length > 1)
                           _buildNavigationButtons(
@@ -126,7 +128,7 @@ class QuestionViewScreen extends ConsumerWidget {
             ],
           ),
           const SizedBox(height: 24),
-          
+
           // 問題文
           Text(
             question.text,
@@ -137,13 +139,13 @@ class QuestionViewScreen extends ConsumerWidget {
             ),
           ),
           const SizedBox(height: 24),
-          
+
           // 選択肢
           ...question.options.asMap().entries.map((entry) {
             final index = entry.key;
             final option = entry.value;
             final isCorrect = index == question.answerIndex;
-            
+
             return Padding(
               padding: const EdgeInsets.only(bottom: 12),
               child: Container(
@@ -176,7 +178,8 @@ class QuestionViewScreen extends ConsumerWidget {
                           String.fromCharCode(65 + index), // A, B, C, D
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: isCorrect ? Colors.white : Colors.grey.shade700,
+                            color:
+                                isCorrect ? Colors.white : Colors.grey.shade700,
                           ),
                         ),
                       ),
@@ -187,13 +190,16 @@ class QuestionViewScreen extends ConsumerWidget {
                         option,
                         style: TextStyle(
                           fontSize: 16,
-                          fontWeight: isCorrect ? FontWeight.w600 : FontWeight.normal,
-                          color: isCorrect ? Colors.green.shade900 : Colors.black87,
+                          fontWeight:
+                              isCorrect ? FontWeight.w600 : FontWeight.normal,
+                          color: isCorrect
+                              ? Colors.green.shade900
+                              : Colors.black87,
                         ),
                       ),
                     ),
                     if (isCorrect)
-                      Icon(
+                      const Icon(
                         Icons.check_circle,
                         color: Colors.green,
                         size: 24,
@@ -203,9 +209,9 @@ class QuestionViewScreen extends ConsumerWidget {
               ),
             );
           }),
-          
+
           const SizedBox(height: 24),
-          
+
           // 解説
           Container(
             padding: const EdgeInsets.all(16),
@@ -218,7 +224,8 @@ class QuestionViewScreen extends ConsumerWidget {
               children: [
                 const Row(
                   children: [
-                    Icon(Icons.lightbulb_outline, color: AppColors.techBlue, size: 20),
+                    Icon(Icons.lightbulb_outline,
+                        color: AppColors.techBlue, size: 20),
                     SizedBox(width: 8),
                     Text(
                       '解説',
@@ -241,7 +248,7 @@ class QuestionViewScreen extends ConsumerWidget {
               ],
             ),
           ),
-          
+
           // 豆知識
           if (question.trivia != null && question.trivia!.isNotEmpty) ...[
             const SizedBox(height: 16),

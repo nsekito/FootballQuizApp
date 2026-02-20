@@ -51,3 +51,12 @@ final unlockQuestionProvider = FutureProvider.family<bool, String>((ref, questio
   
   return success;
 });
+
+/// 問題解放をリセットするプロバイダー
+final resetUnlockedQuestionsProvider = FutureProvider<void>((ref) async {
+  final databaseService = ref.watch(databaseServiceProvider);
+  await databaseService.resetUnlockedQuestions();
+  // 開放済み問題リストを更新
+  ref.invalidate(unlockedQuestionIdsProvider);
+  ref.invalidate(unlockedQuestionsProvider);
+});

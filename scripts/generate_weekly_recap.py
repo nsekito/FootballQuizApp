@@ -8,7 +8,7 @@ from pathlib import Path
 scripts_dir = Path(__file__).parent
 sys.path.insert(0, str(scripts_dir))
 
-from utils.gemini_client import generate_weekly_recap_questions_by_category, balance_answer_indices
+from utils.gemini_client import generate_weekly_recap_questions_by_category
 from config import WEEKLY_RECAP_OUTPUT_DIR
 
 # プロジェクトルートを取得（scripts/から見て../）
@@ -197,9 +197,6 @@ def main():
                 j1_questions.extend(category_questions)
                 print(f"  {len(category_questions)}問生成完了")
             
-            # answerIndexのバランス調整
-            j1_questions = balance_answer_indices(j1_questions)
-            
             # 分布を確認して表示
             counts = [0, 0, 0, 0]
             for q in j1_questions:
@@ -275,9 +272,6 @@ def main():
                 
                 europe_questions.extend(category_questions)
                 print(f"  {len(category_questions)}問生成完了")
-            
-            # answerIndexのバランス調整
-            europe_questions = balance_answer_indices(europe_questions)
             
             # 分布を確認して表示
             counts = [0, 0, 0, 0]
