@@ -42,6 +42,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.0
 
 flutter:
   uses-material-design: true
@@ -57,3 +58,13 @@ flutter:
     - assets/images/09_Documentation/stitch_quiz_screen.png
     - assets/images/09_Documentation/stitch_answer_dialog_screen.png
     - assets/images/09_Documentation/stitch_result_screen.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+  adaptive_icon_inset: 10
