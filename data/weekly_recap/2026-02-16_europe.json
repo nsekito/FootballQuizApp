@@ -1,0 +1,1058 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-02-16T21:55:12Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-02-16",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "レアル・ソシエダ",
+        "試合結果"
+      ],
+      "text": "2026年2月15日に行われたラ・リーガの試合、レアル・マドリード対レアル・ソシエダの結果は？",
+      "options": [
+        "4-1でレアル・マドリードの勝利",
+        "1-2でレアル・ソシエダの勝利",
+        "1-1の引き分け",
+        "2-0でレアル・マドリードの勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "ホームのレアル・マドリードが攻撃力を爆発させ、レアル・ソシエダ相手に4-1で快勝しました。",
+      "trivia": "この試合での勝利により、レアル・マドリードはリーグタイトル争いにおいて重要な勝ち点3を獲得しました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 24,
+        "matchDate": "2026-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "facup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "FAカップ",
+        "マンチェスター・シティ",
+        "サルフォード・シティ",
+        "試合結果"
+      ],
+      "text": "2026年2月14日に行われたFAカップで、マンチェスター・シティが2-0で勝利した相手クラブは？",
+      "options": [
+        "レクサム",
+        "サルフォード・シティ",
+        "ボルトン・ワンダラーズ",
+        "ストックポート・カウンティ"
+      ],
+      "answerIndex": 1,
+      "explanation": "マンチェスター・シティはFAカップでサルフォード・シティと対戦し、2-0で勝利して次のラウンドへ駒を進めました。",
+      "trivia": "サルフォード・シティは、マンチェスター・ユナイテッドの伝説的なOBたち「クラス・オブ・92」が共同オーナーを務めるクラブとして知られています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-14",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "facup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "FAカップ",
+        "ウェストハム",
+        "バートン・アルビオン",
+        "試合結果"
+      ],
+      "text": "2026年2月14日のFAカップ、バートン・アルビオン対ウェストハムの試合結果は？",
+      "options": [
+        "0-3でウェストハムの勝利",
+        "1-0でバートン・アルビオンの勝利",
+        "0-1でウェストハムの勝利",
+        "1-1の引き分け（PK戦）"
+      ],
+      "answerIndex": 2,
+      "explanation": "ウェストハムはアウェイでバートン・アルビオンと対戦し、延長戦の末に1-0で競り勝ちました。",
+      "trivia": "バートン・アルビオンは「ブリュワーズ（醸造家）」の愛称で知られ、ホームスタジアムのピレリ・スタジアムは熱狂的な雰囲気で有名です。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-14",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "facup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "FAカップ",
+        "シェフィールド・ユナイテッド",
+        "ポーツマス",
+        "試合結果"
+      ],
+      "text": "2026年2月14日のFAカップ、ポーツマス対シェフィールド・ユナイテッドの勝者は？",
+      "options": [
+        "ポーツマス",
+        "引き分け（再試合）",
+        "試合中止",
+        "シェフィールド・ユナイテッド"
+      ],
+      "answerIndex": 3,
+      "explanation": "アウェイのシェフィールド・ユナイテッドがポーツマスを0-1で下し、勝利を収めました。",
+      "trivia": "シェフィールド・ユナイテッドの愛称「ブレイズ」は、鉄鋼の街シェフィールドの歴史に由来しています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-14",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "facup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "FAカップ",
+        "サウサンプトン",
+        "レスター・シティ",
+        "試合結果"
+      ],
+      "text": "2026年2月14日に行われたFAカップ、サウサンプトン対レスター・シティの試合結果として正しいものは？",
+      "options": [
+        "2-1でサウサンプトンの勝利（延長）",
+        "2-2でPK戦決着",
+        "0-2でレスター・シティの勝利",
+        "1-0でサウサンプトンの勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "サウサンプトンはホームでレスター・シティと対戦し、延長戦までもつれ込む接戦の末、2-1で勝利しました。",
+      "trivia": "両クラブは近年プレミアリーグとチャンピオンシップを行き来するライバル関係にあり、カップ戦でも激しい試合が繰り広げられました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-14",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "ヘタフェ",
+        "ビジャレアル",
+        "試合結果"
+      ],
+      "text": "2026年2月15日に行われたラ・リーガ、ヘタフェ対ビジャレアルの試合結果は？",
+      "options": [
+        "0-0の引き分け",
+        "2-1でヘタフェの勝利",
+        "0-1でビジャレアルの勝利",
+        "1-3でビジャレアルの勝利"
+      ],
+      "answerIndex": 1,
+      "explanation": "ヘタフェがホームで粘り強さを見せ、強豪ビジャレアルを2-1で破る金星を挙げました。",
+      "trivia": "ヘタフェの本拠地コリセウム・アルフォンソ・ペレスは、マドリード郊外に位置し、堅守を誇るチームの要塞として知られています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 24,
+        "matchDate": "2026-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "エスパニョール",
+        "セルタ",
+        "試合結果"
+      ],
+      "text": "2026年2月15日に行われたラ・リーガ、エスパニョール対セルタ・デ・ビーゴの試合結果は？",
+      "options": [
+        "1-0でエスパニョールの勝利",
+        "0-2でセルタの勝利",
+        "2-2の引き分け",
+        "3-2でエスパニョールの勝利"
+      ],
+      "answerIndex": 2,
+      "explanation": "両チームが点を取り合う展開となり、エスパニョール対セルタは2-2の引き分けに終わりました。",
+      "trivia": "エスパニョールはバルセロナを本拠地とするクラブで、同じ街のFCバルセロナとは「バルセロナ・ダービー」で激しく争います。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 24,
+        "matchDate": "2026-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "facup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "FAカップ",
+        "マンスフィールド・タウン",
+        "バーンリー",
+        "番狂わせ"
+      ],
+      "text": "2026年2月14日のFAカップで、マンスフィールド・タウンがアウェイでバーンリーを破る番狂わせを演じました。そのスコアは？",
+      "options": [
+        "1-0",
+        "3-2",
+        "4-3",
+        "2-1"
+      ],
+      "answerIndex": 3,
+      "explanation": "下部リーグのマンスフィールド・タウンが、格上のバーンリーをアウェイ（ターフ・ムーア）で1-2（スコア表記はバーンリー1-2マンスフィールド）で破るジャイアントキリングを達成しました。",
+      "trivia": "マンスフィールド・タウンの愛称は「スタッグス（雄鹿）」で、シャーウッドの森に近いことから鹿がシンボルになっています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-14",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "エルチェ",
+        "オサスナ",
+        "試合結果"
+      ],
+      "text": "2026年2月13日（金）に行われたラ・リーガ、エルチェ対オサスナの試合結果は？",
+      "options": [
+        "0-0の引き分け",
+        "1-0でエルチェの勝利",
+        "1-1の引き分け",
+        "0-1でオサスナの勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "金曜開催となったこの試合は、両チームともに決め手を欠き、スコアレスドロー（0-0）に終わりました。",
+      "trivia": "エルチェは「緑と白の縞模様」のユニフォームが特徴的で、スペイン東部のバレンシア州に本拠地を置いています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 24,
+        "matchDate": "2026-02-13",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "facup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "FAカップ",
+        "ノリッジ・シティ",
+        "ウェスト・ブロムウィッチ",
+        "試合結果"
+      ],
+      "text": "2026年2月14日のFAカップ、ノリッジ・シティ対ウェスト・ブロムウィッチ（WBA）の試合結果は？",
+      "options": [
+        "2-0でノリッジの勝利",
+        "3-1でノリッジの勝利",
+        "2-2の引き分け",
+        "1-2でWBAの勝利"
+      ],
+      "answerIndex": 1,
+      "explanation": "ノリッジ・シティがホームのキャロウ・ロードで3得点を挙げ、3-1でウェスト・ブロムウィッチを下しました。",
+      "trivia": "ノリッジ・シティのサポーターは試合前に「オン・ザ・ボール、シティ」という世界最古のサッカーチャントを歌うことで有名です。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-14",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "Premier League",
+        "Arsenal",
+        "Manchester City",
+        "順位表"
+      ],
+      "text": "2026年2月16日現在、2025-26シーズンのプレミアリーグで、2位マンチェスター・シティに勝ち点4差をつけて首位に立っているクラブは？",
+      "options": [
+        "リヴァプール",
+        "チェルシー",
+        "アーセナル",
+        "アストン・ヴィラ"
+      ],
+      "answerIndex": 2,
+      "explanation": "2月16日時点の順位表では、アーセナルが勝ち点57で首位をキープしており、2位のマンチェスター・シティ（勝ち点53）との優勝争いをリードしています。",
+      "trivia": "今シーズンのアーセナルは得失点差でも+32とリーグ最高を記録しており、攻守にわたって安定した強さを見せています。3位にはアストン・ヴィラが健闘しています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "Bundesliga",
+        "Bayern Munich",
+        "Dortmund",
+        "順位表"
+      ],
+      "text": "2025-26シーズンのブンデスリーガ第22節終了時点で、2位ドルトムントに勝ち点12の大差をつけて独走しているクラブは？",
+      "options": [
+        "レバークーゼン",
+        "シュツットガルト",
+        "RBライプツィヒ",
+        "バイエルン・ミュンヘン"
+      ],
+      "answerIndex": 3,
+      "explanation": "バイエルン・ミュンヘンは22試合で勝ち点63（18勝）を積み上げ、2位ドルトムント（勝ち点51）を大きく引き離して首位を独走しています。",
+      "trivia": "今季のバイエルンは22試合で82得点という驚異的な攻撃力を発揮しており、1試合平均4点に迫るペースでゴールを量産しています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 22,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "LaLiga",
+        "Real Madrid",
+        "Barcelona",
+        "順位表"
+      ],
+      "text": "2026年2月16日時点のラ・リーガ順位表で、首位レアル・マドリード（勝ち点60）を勝ち点2差で追走している2位のクラブは？",
+      "options": [
+        "バルセロナ",
+        "ジローナ",
+        "アトレティコ・マドリード",
+        "ビジャレアル"
+      ],
+      "answerIndex": 0,
+      "explanation": "ラ・リーガはレアル・マドリード（60pt）とバルセロナ（58pt）のマッチレースの様相を呈しています。3位ビジャレアルは勝ち点45と大きく離されています。",
+      "trivia": "バルセロナのラミン・ヤマルは今シーズン、平均評価点7.95（Sofascore）を記録するなど、チームの攻撃を牽引する素晴らしいパフォーマンスを見せています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "UCL",
+        "Real Madrid",
+        "Benfica",
+        "対戦カード"
+      ],
+      "text": "2025-26シーズンUEFAチャンピオンズリーグ、2月17日から始まる決勝トーナメント・プレーオフで、レアル・マドリードと対戦するクラブは？",
+      "options": [
+        "クラブ・ブルッヘ",
+        "ベンフィカ",
+        "スポルティングCP",
+        "ガラタサライ"
+      ],
+      "answerIndex": 1,
+      "explanation": "CLの新フォーマットで行われるプレーオフ（ラウンドオブ16進出決定戦）で、レアル・マドリードはベンフィカとの対戦が決定しています。",
+      "trivia": "新フォーマットではリーグフェーズの上位8チームがストレートイン、9位〜24位がプレーオフを戦います。昨季王者のレアルがプレーオフに回る波乱の展開となっています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-17",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "Serie A",
+        "Inter",
+        "AC Milan",
+        "順位表"
+      ],
+      "text": "2026年2月16日時点のセリエAで、首位インテル（勝ち点61）に次いで2位につけているクラブはどこか？",
+      "options": [
+        "アタランタ",
+        "ユヴェントス",
+        "ACミラン",
+        "ナポリ"
+      ],
+      "answerIndex": 2,
+      "explanation": "セリエAはインテルが独走気味ですが、2位争いは熾烈です。現在はACミランが勝ち点53で2位、ナポリが49で3位、ユヴェントスが46で4位と続いています。",
+      "trivia": "首位インテルは25試合でわずか21失点と、リーグ随一の堅守を誇っています。一方、2位ミランはインテルに勝ち点8差をつけられており、逆転には連勝が必要です。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "FA Cup",
+        "Man City",
+        "Newcastle",
+        "抽選結果"
+      ],
+      "text": "2026年2月16日に行われたFAカップ5回戦の組み合わせ抽選の結果、マンチェスター・シティの対戦相手に決まったプレミアリーグのクラブは？",
+      "options": [
+        "トッテナム",
+        "マンチェスター・ユナイテッド",
+        "アーセナル",
+        "ニューカッスル"
+      ],
+      "answerIndex": 3,
+      "explanation": "FAカップ5回戦屈指の好カードとして、ニューカッスル対マンチェスター・シティの対戦が決定しました。なお、アーセナルはマンスフィールドと対戦します。",
+      "trivia": "この抽選では他にも「レクサム vs チェルシー」という注目カードが組まれました。ハリウッドオーナーを持つレクサムが強豪チェルシーに挑む一戦は大きな話題となっています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "ブライトン",
+        "プレミアリーグ",
+        "ゴール"
+      ],
+      "text": "2025年2月14日に行われたプレミアリーグ第25節、ブライトン対チェルシーの試合で、先制ゴールを決めた日本人選手は？",
+      "options": [
+        "三笘薫",
+        "鎌田大地",
+        "冨安健洋",
+        "遠藤航"
+      ],
+      "answerIndex": 0,
+      "explanation": "三笘薫はチェルシー戦に先発出場し、前半27分に鮮やかなボールタッチから先制ゴールを記録しました。試合はブライトンが3-0で快勝しました。",
+      "trivia": "このゴールは三笘の今季リーグ戦7得点目となりました。また、チームメイトのヤンクバ・ミンテもこの試合で2得点を挙げています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2025-02-14",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "古橋亨梧",
+        "移籍",
+        "リーグ・アン",
+        "セルティック"
+      ],
+      "text": "2025年1月の移籍市場で、セルティックからフランスのスタッド・レンヌ（レンヌ）へ完全移籍した日本人ストライカーは？",
+      "options": [
+        "旗手怜央",
+        "古橋亨梧",
+        "浅野拓磨",
+        "前田大然"
+      ],
+      "answerIndex": 1,
+      "explanation": "古橋亨梧は2025年1月27日にセルティックからリーグ・アンのレンヌへ完全移籍しました。移籍金は約1000万ポンドと報じられています。",
+      "trivia": "古橋はセルティック在籍中に85ゴールを記録し、5つのタイトル獲得に貢献しました。レンヌでは背番号も注目されています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2025-01-27",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "レアル・ソシエダ",
+        "ラ・リーガ",
+        "欠場"
+      ],
+      "text": "2025年2月15日に行われたレアル・マドリード対レアル・ソシエダの試合で、久保建英がベンチ入りメンバーから外れた主な理由は何ですか？",
+      "options": [
+        "監督との対立",
+        "累積警告による出場停止",
+        "ハムストリングの負傷",
+        "他クラブへの移籍交渉"
+      ],
+      "answerIndex": 2,
+      "explanation": "久保建英はハムストリングの負傷（太もも裏のケガ）により、古巣レアル・マドリードとの重要な一戦を欠場しました。チームは久保を欠いた状態で試合に臨みました。",
+      "trivia": "この試合でレアル・ソシエダはブライス・メンデスも出場停止で欠いており、主力2人を欠く厳しい布陣となりました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 24,
+        "matchDate": "2025-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "南野拓実",
+        "モナコ",
+        "CL",
+        "対戦相手"
+      ],
+      "text": "南野拓実が所属するASモナコは、2025年2月中旬のUEFAチャンピオンズリーグ（CL）でどのクラブと対戦する予定ですか？",
+      "options": [
+        "インテル",
+        "バイエルン・ミュンヘン",
+        "バルセロナ",
+        "ベンフィカ"
+      ],
+      "answerIndex": 3,
+      "explanation": "モナコは2月18日にCLの試合でポルトガルのベンフィカと対戦します。南野拓実は主力として期待されており、得点に絡む活躍が注目されています。",
+      "trivia": "南野はモナコ加入後、攻撃的なポジションで定着しており、特にリーグ・アンでの得点関与数が増加しています。ベンフィカ戦はアウェイ（リスボン）での開催です。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2025-02-18",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "菅原由勢",
+        "サウサンプトン",
+        "プレミアリーグ",
+        "交代出場"
+      ],
+      "text": "2025年2月15日のサウサンプトン対ボーンマス戦で、ベンチスタートだった菅原由勢がピッチに投入されたタイミングはいつですか？",
+      "options": [
+        "ハーフタイム（後半開始時）",
+        "後半30分",
+        "後半15分",
+        "試合終了間際"
+      ],
+      "answerIndex": 0,
+      "explanation": "菅原由勢は前半終了後にカイル・ウォーカー＝ピータースらと共に投入され、後半開始（ハーフタイム）からプレーしました。チームは守備の立て直しを図りましたが、1-3で敗れました。",
+      "trivia": "この試合ではサウサンプトンは前半で0-2とリードを許しており、ラッセル・マーティン監督はハーフタイムに2枚替えを行いました。菅原は右サイドバックに入りました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": "2025-02-15",
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "England",
+        "Manager",
+        "Contract"
+      ],
+      "text": "2026年2月、イングランドサッカー協会（FA）が2028年のEUROまで契約を延長したと発表した男子代表監督は誰？",
+      "options": [
+        "ユルゲン・クロップ",
+        "トーマス・トゥヘル",
+        "エディ・ハウ",
+        "ジョゼップ・グアルディオラ"
+      ],
+      "answerIndex": 1,
+      "explanation": "イングランドサッカー協会は、トーマス・トゥヘル監督との契約を2028年のUEFA EUROまで延長しました。2026年W杯に向けた体制継続が確認されています。",
+      "trivia": "トゥヘル監督率いるイングランド代表は、2026年W杯に向けた直前キャンプをアメリカのフロリダ州で行うことも合わせて発表されました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "Transfer",
+        "Manchester City",
+        "Bournemouth"
+      ],
+      "text": "2026年冬の移籍市場で、ボーンマスからマンチェスター・シティへ約6500万ポンドの移籍金で加入したガーナ代表FWは？",
+      "options": [
+        "エベレチ・エゼ",
+        "モハメド・クドゥス",
+        "アントワーヌ・セメンヨ",
+        "ブライアン・ムベウモ"
+      ],
+      "answerIndex": 2,
+      "explanation": "マンチェスター・シティはボーンマスで活躍していたFWアントワーヌ・セメンヨを獲得しました。ペップ・グアルディオラ監督が後半戦の起爆剤として期待しています。",
+      "trivia": "セメンヨの移籍金6500万ポンド（約8400万ユーロ）は、2026年冬の移籍市場におけるプレミアリーグ最高額の取引となりました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "UCL",
+        "Goalkeeper",
+        "Goal"
+      ],
+      "text": "2026年1月のCLレアル・マドリード戦で、後半アディショナルタイムに劇的なヘディングゴールを決め、チームをプレーオフに導いたベンフィカのGKは？",
+      "options": [
+        "エデルソン",
+        "アンドレ・オナナ",
+        "ディオゴ・コスタ",
+        "アナトリー・トルビン"
+      ],
+      "answerIndex": 3,
+      "explanation": "ウクライナ代表GKアナトリー・トルビンは、CLリーグフェーズ最終節のレアル・マドリード戦で98分にセットプレーからヘディングシュートを決め、4-2の勝利とプレーオフ進出に貢献しました。",
+      "trivia": "この敗戦によりレアル・マドリードは自動出場権（トップ8）を逃し、2月のプレーオフで再びベンフィカと対戦することになるという因縁が生まれました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "Transfer",
+        "Crystal Palace",
+        "Wolves"
+      ],
+      "text": "2026年冬の移籍市場で、ウルブスからクリスタル・パレスへクラブ史上最高額となる約4300万ポンドで移籍したノルウェー代表FWは？",
+      "options": [
+        "ヨルゲン・ストランド・ラーセン",
+        "オスカー・ボブ",
+        "エリリング・ハーランド",
+        "アレクサンダー・セルロート"
+      ],
+      "answerIndex": 0,
+      "explanation": "クリスタル・パレスは得点力不足解消のため、ウルブスの長身FWヨルゲン・ストランド・ラーセンをクラブレコードとなる移籍金で獲得しました。",
+      "trivia": "クリスタル・パレスは同じく冬の市場でトッテナムからブレナン・ジョンソンも獲得しており、前線の大型補強を敢行しました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "Transfer",
+        "Brazil",
+        "West Ham"
+      ],
+      "text": "2026年冬にウェストハム・ユナイテッドを退団し、母国ブラジルのフラメンゴへ約3580万ポンドで完全移籍したMFは誰？",
+      "options": [
+        "カゼミーロ",
+        "ルーカス・パケタ",
+        "ジョエリントン",
+        "ブルーノ・ギマランイス"
+      ],
+      "answerIndex": 1,
+      "explanation": "ウェストハムの主力として活躍していたルーカス・パケタですが、2026年冬に古巣であるブラジルの名門フラメンゴへの復帰が決まりました。",
+      "trivia": "パケタの移籍金約5000万ユーロ（3580万ポンド）は、南米クラブが支払う移籍金としては歴史的な高額取引の部類に入ります。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "FA Cup",
+        "England",
+        "Manchester City",
+        "Newcastle United",
+        "Draw"
+      ],
+      "text": "2026年2月16日に行われたFAカップ5回戦の組み合わせ抽選の結果、マンチェスター・シティの対戦相手となったプレミアリーグのクラブはどこ？",
+      "options": [
+        "トッテナム・ホットスパー",
+        "アストン・ヴィラ",
+        "ニューカッスル・ユナイテッド",
+        "リヴァプール"
+      ],
+      "answerIndex": 2,
+      "explanation": "2026年2月16日に行われたFAカップ5回戦の抽選会で、マンチェスター・シティはニューカッスル・ユナイテッドと対戦することが決定しました。カラバオカップ準決勝の再戦としても注目されています。",
+      "trivia": "この対戦カードは、昨シーズンのカラバオカップ準決勝と同じ組み合わせとなりました。両チームは近年、カップ戦での対戦頻度が増えています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "FA Cup",
+        "Wrexham",
+        "Chelsea",
+        "Ryan Reynolds",
+        "Hollywood"
+      ],
+      "text": "ハリウッドスターがオーナーを務めることで世界的に注目を集めるレクサム（Wrexham）。2025-26シーズンのFAカップ5回戦で彼らが対戦することになったビッグクラブは？",
+      "options": [
+        "マンチェスター・シティ",
+        "マンチェスター・ユナイテッド",
+        "アーセナル",
+        "チェルシー"
+      ],
+      "answerIndex": 3,
+      "explanation": "快進撃を続けるレクサムは、FAカップ5回戦でプレミアリーグの強豪チェルシーと対戦することが決まりました。注目度の高い「ハリウッド・ダービー」ならぬビッグマッチとなります。",
+      "trivia": "レクサムのオーナーは俳優のライアン・レイノルズとロブ・マケルヘニーです。彼らの買収以降、チームは着実に力をつけ、カップ戦でも上位に進出するようになりました。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "FA Cup",
+        "Leeds United",
+        "Norwich City",
+        "Daniel Farke",
+        "Manager"
+      ],
+      "text": "FAカップ5回戦の抽選により、ダニエル・ファルケ監督にとっての「古巣対決」が実現することになりました。彼が率いるリーズ・ユナイテッドの対戦相手は？",
+      "options": [
+        "ノリッジ・シティ",
+        "ボルシア・ドルトムント",
+        "イプスウィッチ・タウン",
+        "サウサンプトン"
+      ],
+      "answerIndex": 0,
+      "explanation": "リーズ・ユナイテッドのダニエル・ファルケ監督にとって、かつて2度のプレミアリーグ昇格を成し遂げた古巣ノリッジ・シティとの対戦が決まり、「ファルケ・ダービー」として話題になっています。",
+      "trivia": "ダニエル・ファルケはノリッジ・シティを率いて2018-19、2020-21シーズンにチャンピオンシップ優勝を果たしました。ドイツ人指揮官としてイングランド2部リーグで確固たる実績を持っています。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "FA Cup",
+        "Arsenal",
+        "Mansfield Town",
+        "Underdog",
+        "Draw"
+      ],
+      "text": "FAカップ5回戦に進出し、ホーム「フィールド・ミル」にプレミアリーグの強豪アーセナルを迎えることになった下部リーグのクラブはどこ？",
+      "options": [
+        "クローリー・タウン",
+        "マンスフィールド・タウン",
+        "ハローゲート・タウン",
+        "ストックポート・カウンティ"
+      ],
+      "answerIndex": 1,
+      "explanation": "2026年2月16日の抽選の結果、マンスフィールド・タウンがホームでアーセナルと対戦することが決まりました。下部リーグのクラブにとって、プレミア上位クラブとの対戦は財政的にも大きな意味を持ちます。",
+      "trivia": "マンスフィールド・タウンの愛称は「The Stags（雄鹿）」です。ホームスタジアムのフィールド・ミルは、現在プロサッカーの試合が行われているスタジアムとしては世界最古の部類に入ります。",
+      "referenceDate": "2026-02-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-16",
+        "expiryDate": "2026-02-23",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
