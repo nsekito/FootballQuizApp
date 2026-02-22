@@ -1,4 +1,5 @@
 import 'package:shared_preferences/shared_preferences.dart';
+import '../constants/gameConfig.dart';
 
 /// ログインボーナスサービス
 /// 
@@ -75,29 +76,20 @@ class LoginBonusService {
     }
   }
 
-  /// 連続日数に応じたポイントを取得
+  /// 連続日数に応じたポイントを取得（LOGIN_BONUS.DAILY_PTを参照）
   int getLoginBonusPoints(int streakDay) {
-    switch (streakDay) {
-      case 1:
-      case 2:
-      case 3:
-        return 1;
-      case 4:
-        return 4;
-      case 5:
-      case 6:
-        return 1;
-      case 7:
-        return 10;
-      default:
-        return 1; // フォールバック
+    if (streakDay >= 1 && streakDay <= LOGIN_BONUS.dailyPt.length) {
+      return LOGIN_BONUS.dailyPt[streakDay - 1];
     }
+    // 7日を超える場合は1日目に戻る
+    return LOGIN_BONUS.dailyPt[0];
   }
 
   /// ログインボーナスを受け取る
   /// 
   /// 日付と連続日数を更新し、受け取ったポイントを返します。
-  Future<int> claimLoginBonus() async {
+  /// 7日連続の場合はEXPも返します（戻り値はポイントのみ、EXPは別途処理）。
+  Future<Map<String, dynamic>> claimLoginBonus() async {
     final prefs = await SharedPreferences.getInstance();
     final lastDate = prefs.getString(_keyLastLoginBonusDate);
     final currentDate = getCurrentDateString();
@@ -109,8 +101,20 @@ class LoginBonusService {
     await prefs.setString(_keyLastLoginBonusDate, currentDate);
     await prefs.setInt(_keyLoginStreakDays, newStreak);
     
-    // ポイントを計算して返す
-    return getLoginBonusPoints(newStreak);
+    // ポイントを計算
+    final points = getLoginBonusPoints(newStreak);
+    
+    // 7日連続の場合はEXPも付与
+    int exp = 0;
+    if (newStreak == 7) {
+      exp = LOGIN_BONUS.consecutive7DayBonusExp;
+    }
+    
+    return {
+      'points': points,
+      'exp': exp,
+      'streak': newStreak,
+    };
   }
 
   /// ログインボーナスの状態を取得
@@ -134,10 +138,17 @@ class LoginBonusService {
     
     final points = getLoginBonusPoints(streak);
     
+    // 7日連続の場合はEXPも返す
+    int exp = 0;
+    if (streak == 7 && canClaim) {
+      exp = LOGIN_BONUS.consecutive7DayBonusExp;
+    }
+    
     return {
       'canClaim': canClaim,
       'streakDays': streak,
       'points': points,
+      'exp': exp,
       'lastDate': lastDate,
       'currentDate': currentDate,
     };

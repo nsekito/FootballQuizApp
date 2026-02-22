@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../services/login_bonus_service.dart';
 import 'user_data_provider.dart';
+import '../constants/gameConfig.dart';
 
 /// ログインボーナスサービスのプロバイダー
 final loginBonusServiceProvider = Provider<LoginBonusService>((ref) {
@@ -92,16 +93,23 @@ class LoginBonusNotifier extends StateNotifier<LoginBonusStatus> {
   }
 
   /// ログインボーナスを受け取る
-  Future<int> claimLoginBonus() async {
+  Future<Map<String, dynamic>> claimLoginBonus() async {
     if (!state.canClaim) {
       throw Exception('今日は既にログインボーナスを受け取りました');
     }
 
-    final points = await _service.claimLoginBonus();
+    final result = await _service.claimLoginBonus();
+    final points = result['points'] as int;
+    final exp = result['exp'] as int;
     _claimedPoints = points;
     
     // ポイントを追加
     await _ref.read(totalPointsProvider.notifier).addPoints(points);
+    
+    // 7日連続の場合はEXPも付与
+    if (exp > 0) {
+      await _ref.read(totalExpProvider.notifier).addExp(exp);
+    }
     
     // 状態を即座に更新（hasClaimedTodayをtrueに設定）
     final currentDate = _service.getCurrentDateString();
@@ -114,11 +122,11 @@ class LoginBonusNotifier extends StateNotifier<LoginBonusStatus> {
     // その後、非同期で完全な状態を読み込む
     _loadStatus();
     
-    return points;
+    return result;
   }
 
-  /// 広告視聴後にポイントを2倍にする
-  Future<void> doublePointsWithAd() async {
+  /// 広告視聴後にポイントをAD_BONUS.LOGIN_BONUS_MULTIPLIER倍にする
+  Future<void> multiplyPointsWithAd() async {
     if (_claimedPoints == null) {
       throw Exception('ログインボーナスを受け取っていません');
     }
@@ -127,12 +135,19 @@ class LoginBonusNotifier extends StateNotifier<LoginBonusStatus> {
       throw Exception('既に広告を視聴済みです');
     }
 
-    // 追加でポイントを付与（2倍にするため、もう一度同じポイントを追加）
-    await _ref.read(totalPointsProvider.notifier).addPoints(_claimedPoints!);
+    // AD_BONUS.LOGIN_BONUS_MULTIPLIER（2.0倍）を適用
+    final additionalPoints = (_claimedPoints! * AD_BONUS.loginBonusMultiplier).floor() - _claimedPoints!;
+    await _ref.read(totalPointsProvider.notifier).addPoints(additionalPoints);
     _hasWatchedAd = true;
     
     // 状態を更新
     state = state.copyWith(hasWatchedAd: true);
+  }
+  
+  // 後方互換性のため、doublePointsWithAdメソッドを残す
+  @Deprecated('Use multiplyPointsWithAd instead')
+  Future<void> doublePointsWithAd() async {
+    await multiplyPointsWithAd();
   }
 
   /// 状態をリフレッシュ

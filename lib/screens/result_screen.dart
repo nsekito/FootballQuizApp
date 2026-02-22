@@ -14,6 +14,9 @@ import '../widgets/glow_button.dart';
 import '../widgets/responsive_container.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../providers/ad_provider.dart';
+import '../constants/gameConfig.dart';
+import '../providers/database_provider.dart';
+import 'dart:math' as math;
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
@@ -22,6 +25,7 @@ class ResultScreen extends ConsumerStatefulWidget {
   final int earnedPoints;
   final String category;
   final String difficulty;
+  final bool isMatchDay;
 
   const ResultScreen({
     super.key,
@@ -31,6 +35,7 @@ class ResultScreen extends ConsumerStatefulWidget {
     required this.earnedPoints,
     required this.category,
     required this.difficulty,
+    this.isMatchDay = false,
   });
 
   @override
@@ -205,19 +210,20 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
     if (_rewardsClaimed) return;
 
     try {
-      // expとポイントを加算
-      await ref.read(totalExpProvider.notifier).addExp(_earnedExp);
-      await ref.read(totalPointsProvider.notifier).addPoints(_earnedPoints);
+      var finalExp = _earnedExp;
+      var finalPoints = _earnedPoints;
 
-      // 広告視聴の場合、追加報酬を加算
+      // 広告視聴の場合、AD_BONUS.RESULT_SCREEN_MULTIPLIER（0.5倍）を適用して加算
       if (withAd) {
-        await ref
-            .read(totalExpProvider.notifier)
-            .addExp(AppConstants.expRewardedAd);
-        await ref
-            .read(totalPointsProvider.notifier)
-            .addPoints(AppConstants.pointsRewardedAd);
+        final adBonusExp = math.max(0, (_earnedExp * AD_BONUS.resultScreenMultiplier).floor());
+        final adBonusPoints = math.max(0, (_earnedPoints * AD_BONUS.resultScreenMultiplier).floor());
+        finalExp += adBonusExp;
+        finalPoints += adBonusPoints;
       }
+
+      // expとポイントを加算
+      await ref.read(totalExpProvider.notifier).addExp(finalExp);
+      await ref.read(totalPointsProvider.notifier).addPoints(finalPoints);
 
       setState(() {
         _rewardsClaimed = true;

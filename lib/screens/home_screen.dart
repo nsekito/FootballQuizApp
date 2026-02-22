@@ -18,6 +18,7 @@ import '../providers/ad_provider.dart';
 import '../providers/notification_provider.dart';
 import '../providers/admin_mode_provider.dart';
 import '../providers/login_bonus_provider.dart';
+import '../constants/gameConfig.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -82,7 +83,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final weekEnd = _getWeekEndDate(now);
     final nextWeekStart = _getNextWeekStartDate(now);
     final daysUntilNextWeek = _getDaysUntilNextWeek(now);
-    final remainingPlays = 4 - playCount; // 最大4回（無料1回 + 広告視聴3回）
+    // MATCHDAY.maxPlaysPerWeek = 3回まで
+    final remainingPlays = MATCHDAY.maxPlaysPerWeek - playCount;
 
     return {
       'canPlay': canPlay,
@@ -93,7 +95,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       'nextWeekStart': nextWeekStart,
       'daysUntilNextWeek': daysUntilNextWeek,
       'isFreePlay': playCount == 0,
-      'isMaxReached': playCount >= 4,
+      'isMaxReached': playCount >= MATCHDAY.maxPlaysPerWeek,
+      'multiplier': playCount < MATCHDAY.playMultipliers.length 
+          ? MATCHDAY.playMultipliers[playCount] 
+          : MATCHDAY.playMultipliers.last,
     };
   }
 
@@ -209,13 +214,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     }
 
     if (playCount == 0) {
-      // 無料でプレイ可能
+      // 無料でプレイ可能（1回目）
       if (!mounted) return;
       if (!context.mounted) return;
       context
           .push('/configuration?category=${AppConstants.categoryMatchRecap}');
-    } else {
-      // 広告視聴で追加チャレンジ
+    } else if (playCount < MATCHDAY.maxPlaysPerWeek) {
+      // 2回目・3回目は広告視聴で追加チャレンジ
       if (!mounted) return;
       await _showRewardedAdForMatchDay();
     }
@@ -722,9 +727,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                               ),
                               if (!isMaxReached) ...[
                                 const SizedBox(height: 6),
-                                // サブテキスト（5倍ボーナスとプレイ回数）
+                                // サブテキスト（倍率とプレイ回数）
                                 Text(
-                                  '${AppConstants.matchDayExpMultiplier.toInt()}倍ボーナス | プレイ回数: $playCount/4',
+                                  '倍率: ${(data['multiplier'] as double).toStringAsFixed(1)}x | プレイ回数: $playCount/${MATCHDAY.maxPlaysPerWeek}',
                                   style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w700,

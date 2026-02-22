@@ -3,6 +3,7 @@ import '../services/question_unlock_service.dart';
 import '../models/question.dart';
 import '../providers/user_data_provider.dart';
 import '../utils/constants.dart';
+import '../constants/gameConfig.dart';
 import 'database_provider.dart';
 
 /// 問題開放サービスプロバイダー
@@ -35,15 +36,15 @@ final unlockQuestionProvider = FutureProvider.family<bool, String>((ref, questio
   final totalPoints = ref.watch(totalPointsProvider);
   
   // ポイントが十分かチェック
-  if (totalPoints < AppConstants.questionUnlockPoints) {
-    throw Exception('ポイントが不足しています。${AppConstants.questionUnlockPoints}ポイント必要です。');
+  if (totalPoints < HISTORY_UNLOCK.singleQuestionCost) {
+    throw Exception('ポイントが不足しています。${HISTORY_UNLOCK.singleQuestionCost}ポイント必要です。');
   }
   
   // ポイントを消費
-  await ref.read(totalPointsProvider.notifier).consumePoints(AppConstants.questionUnlockPoints);
+  await ref.read(totalPointsProvider.notifier).consumePoints(HISTORY_UNLOCK.singleQuestionCost);
   
   // 問題を開放
-  final success = await unlockService.unlockQuestion(questionId, AppConstants.questionUnlockPoints);
+  final success = await unlockService.unlockQuestion(questionId, HISTORY_UNLOCK.singleQuestionCost);
   
   // 開放済み問題リストを更新
   ref.invalidate(unlockedQuestionIdsProvider);

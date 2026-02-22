@@ -1,0 +1,280 @@
+/// ゲーム設定定数
+/// アプリ内のすべてのポイント・EXP計算はこの定数ファイルを参照すること。
+/// ハードコーディングは禁止。
+
+// ============================================
+// ランク設定
+// ============================================
+class RankConfig {
+  final int rank;
+  final String name;
+  final int requiredExp;
+
+  const RankConfig({
+    required this.rank,
+    required this.name,
+    required this.requiredExp,
+  });
+}
+
+final List<RankConfig> RANKS = [
+  const RankConfig(rank: 1, name: 'ボール拾い', requiredExp: 0),
+  const RankConfig(rank: 2, name: 'コーン並べ係', requiredExp: 100),
+  const RankConfig(rank: 3, name: '給水係', requiredExp: 300),
+  const RankConfig(rank: 4, name: 'ビブス配り', requiredExp: 600),
+  const RankConfig(rank: 5, name: '練習生', requiredExp: 1000),
+  const RankConfig(rank: 6, name: 'ベンチ入り', requiredExp: 1600),
+  const RankConfig(rank: 7, name: '途中出場', requiredExp: 2400),
+  const RankConfig(rank: 8, name: 'スタメン', requiredExp: 3500),
+  const RankConfig(rank: 9, name: '背番号10', requiredExp: 5000),
+  const RankConfig(rank: 10, name: 'キャプテン', requiredExp: 7000),
+  const RankConfig(rank: 11, name: '国内MVP', requiredExp: 9500),
+  const RankConfig(rank: 12, name: '海外移籍', requiredExp: 13000),
+  const RankConfig(rank: 13, name: 'ワールドクラス', requiredExp: 17500),
+  const RankConfig(rank: 14, name: 'バロンドール', requiredExp: 23000),
+  const RankConfig(rank: 15, name: 'レジェンド', requiredExp: 30000),
+];
+
+// ============================================
+// クイズ報酬設定
+// ============================================
+/// 正答数の区分: '0-3' | '4-5' | '6-7' | '8-9' | '10'
+class QuizReward {
+  final int exp;
+  final int pt;
+
+  const QuizReward({required this.exp, required this.pt});
+}
+
+class QuizRewardsConfig {
+  final Map<String, QuizReward> rewards;
+
+  const QuizRewardsConfig({required this.rewards});
+}
+
+final Map<String, QuizRewardsConfig> QUIZ_REWARDS = {
+  'MATCHDAY': const QuizRewardsConfig(rewards: {
+    '0-3': QuizReward(exp: 15, pt: 8),
+    '4-5': QuizReward(exp: 25, pt: 20),
+    '6-7': QuizReward(exp: 45, pt: 40),
+    '8-9': QuizReward(exp: 75, pt: 60),
+    '10': QuizReward(exp: 120, pt: 90),
+  }),
+  'EASY': const QuizRewardsConfig(rewards: {
+    '0-3': QuizReward(exp: 3, pt: 2),
+    '4-5': QuizReward(exp: 5, pt: 4),
+    '6-7': QuizReward(exp: 10, pt: 7),
+    '8-9': QuizReward(exp: 16, pt: 12),
+    '10': QuizReward(exp: 25, pt: 18),
+  }),
+  'NORMAL': const QuizRewardsConfig(rewards: {
+    '0-3': QuizReward(exp: 5, pt: 3),
+    '4-5': QuizReward(exp: 9, pt: 7),
+    '6-7': QuizReward(exp: 16, pt: 12),
+    '8-9': QuizReward(exp: 28, pt: 20),
+    '10': QuizReward(exp: 45, pt: 30),
+  }),
+  'HARD': const QuizRewardsConfig(rewards: {
+    '0-3': QuizReward(exp: 7, pt: 5),
+    '4-5': QuizReward(exp: 14, pt: 10),
+    '6-7': QuizReward(exp: 25, pt: 18),
+    '8-9': QuizReward(exp: 42, pt: 32),
+    '10': QuizReward(exp: 70, pt: 50),
+  }),
+};
+
+// ============================================
+// MATCHDAY設定
+// ============================================
+class MatchDayConfig {
+  final int maxPlaysPerWeek;
+  final List<double> playMultipliers;
+  final WeeklyBonusConfig weeklyBonus;
+
+  const MatchDayConfig({
+    required this.maxPlaysPerWeek,
+    required this.playMultipliers,
+    required this.weeklyBonus,
+  });
+}
+
+class WeeklyBonusConfig {
+  final int requiredPlays;
+  final int requiredCorrectTotal;
+  final int bonusExp;
+  final int bonusPt;
+
+  const WeeklyBonusConfig({
+    required this.requiredPlays,
+    required this.requiredCorrectTotal,
+    required this.bonusExp,
+    required this.bonusPt,
+  });
+}
+
+const MATCHDAY = MatchDayConfig(
+  maxPlaysPerWeek: 3,
+  playMultipliers: [1.0, 0.7, 0.5],
+  weeklyBonus: WeeklyBonusConfig(
+    requiredPlays: 3,
+    requiredCorrectTotal: 25,
+    bonusExp: 50,
+    bonusPt: 30,
+  ),
+);
+
+// ============================================
+// 広告ボーナス設定
+// ============================================
+class AdBonusConfig {
+  final double resultScreenMultiplier;
+  final double loginBonusMultiplier;
+  final int historyFreeUnlockDailyLimit;
+  final double promotionExamRetryDiscount;
+
+  const AdBonusConfig({
+    required this.resultScreenMultiplier,
+    required this.loginBonusMultiplier,
+    required this.historyFreeUnlockDailyLimit,
+    required this.promotionExamRetryDiscount,
+  });
+}
+
+const AD_BONUS = AdBonusConfig(
+  resultScreenMultiplier: 0.5,
+  loginBonusMultiplier: 2.0,
+  historyFreeUnlockDailyLimit: 3,
+  promotionExamRetryDiscount: 0.5,
+);
+
+// ============================================
+// ログインボーナス設定
+// ============================================
+class LoginBonusConfig {
+  final List<int> dailyPt;
+  final int consecutive7DayBonusExp;
+
+  const LoginBonusConfig({
+    required this.dailyPt,
+    required this.consecutive7DayBonusExp,
+  });
+}
+
+const LOGIN_BONUS = LoginBonusConfig(
+  dailyPt: [1, 2, 3, 4, 5, 7, 10],
+  consecutive7DayBonusExp: 20,
+);
+
+// ============================================
+// 難易度解放設定
+// ============================================
+class UnlockCategoryConfig {
+  final UnlockDifficultyConfig rule;
+  final UnlockDifficultyConfig history;
+  final UnlockDifficultyConfig team;
+
+  const UnlockCategoryConfig({
+    required this.rule,
+    required this.history,
+    required this.team,
+  });
+}
+
+class UnlockDifficultyConfig {
+  final int cost;
+  final int passLine;
+  final int forfeit;
+  final int retryCost;
+  final int bonusExp;
+  final int bonusPt;
+  final int requiredRank;
+
+  const UnlockDifficultyConfig({
+    required this.cost,
+    required this.passLine,
+    required this.forfeit,
+    required this.retryCost,
+    required this.bonusExp,
+    required this.bonusPt,
+    required this.requiredRank,
+  });
+}
+
+final Map<String, UnlockCategoryConfig> UNLOCK_CONFIG = {
+  'NORMAL': const UnlockCategoryConfig(
+    rule: UnlockDifficultyConfig(
+      cost: 120,
+      passLine: 7,
+      forfeit: 35,
+      retryCost: 35,
+      bonusExp: 50,
+      bonusPt: 25,
+      requiredRank: 4,
+    ),
+    history: UnlockDifficultyConfig(
+      cost: 120,
+      passLine: 7,
+      forfeit: 35,
+      retryCost: 35,
+      bonusExp: 50,
+      bonusPt: 25,
+      requiredRank: 4,
+    ),
+    team: UnlockDifficultyConfig(
+      cost: 100,
+      passLine: 6,
+      forfeit: 30,
+      retryCost: 30,
+      bonusExp: 40,
+      bonusPt: 20,
+      requiredRank: 4,
+    ),
+  ),
+  'HARD': const UnlockCategoryConfig(
+    rule: UnlockDifficultyConfig(
+      cost: 500,
+      passLine: 8,
+      forfeit: 150,
+      retryCost: 150,
+      bonusExp: 150,
+      bonusPt: 75,
+      requiredRank: 8,
+    ),
+    history: UnlockDifficultyConfig(
+      cost: 500,
+      passLine: 8,
+      forfeit: 150,
+      retryCost: 150,
+      bonusExp: 150,
+      bonusPt: 75,
+      requiredRank: 8,
+    ),
+    team: UnlockDifficultyConfig(
+      cost: 400,
+      passLine: 7,
+      forfeit: 120,
+      retryCost: 120,
+      bonusExp: 120,
+      bonusPt: 60,
+      requiredRank: 8,
+    ),
+  ),
+};
+
+// ============================================
+// クイズ履歴解放設定
+// ============================================
+class HistoryUnlockConfig {
+  final int singleQuestionCost;
+  final int bundle10Cost;
+
+  const HistoryUnlockConfig({
+    required this.singleQuestionCost,
+    required this.bundle10Cost,
+  });
+}
+
+const HISTORY_UNLOCK = HistoryUnlockConfig(
+  singleQuestionCost: 3,
+  bundle10Cost: 25,
+);

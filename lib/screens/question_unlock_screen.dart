@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
+import 'package:flutter/foundation.dart' show debugPrint;
 import '../providers/question_unlock_provider.dart';
 import '../providers/question_service_provider.dart';
 import '../providers/user_data_provider.dart';
@@ -13,6 +14,9 @@ import '../widgets/app_bar_background.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../utils/category_difficulty_utils.dart';
 import '../models/question.dart';
+import '../constants/gameConfig.dart';
+import '../services/history_unlock_service.dart';
+import '../providers/ad_provider.dart';
 
 class QuestionUnlockScreen extends ConsumerStatefulWidget {
   const QuestionUnlockScreen({super.key});
@@ -30,6 +34,8 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen>
   String? _selectedRegion;
   String? _selectedCountry;
   String? _selectedTeam;
+  final HistoryUnlockService _historyUnlockService = HistoryUnlockService();
+  int _remainingFreeUnlocks = 0;
 
   @override
   void initState() {
@@ -37,6 +43,16 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen>
     _tabController = TabController(length: 2, vsync: this);
     _selectedCategory = AppConstants.categoryRules;
     _selectedDifficulty = AppConstants.difficultyEasy;
+    _loadRemainingFreeUnlocks();
+  }
+
+  Future<void> _loadRemainingFreeUnlocks() async {
+    final remaining = await _historyUnlockService.getRemainingFreeUnlocks();
+    if (mounted) {
+      setState(() {
+        _remainingFreeUnlocks = remaining;
+      });
+    }
   }
 
   @override
@@ -49,6 +65,8 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen>
   Widget build(BuildContext context) {
     final totalPoints = ref.watch(totalPointsProvider);
     final unlockedQuestionIdsAsync = ref.watch(unlockedQuestionIdsProvider);
+    // 残り無料解放回数を定期的に更新
+    Future.microtask(() => _loadRemainingFreeUnlocks());
 
     return Scaffold(
       backgroundColor: AppColors.stitchBackgroundLight,
@@ -408,37 +426,75 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen>
             const SizedBox(height: 12),
 
             // アクションボタン
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: isUnlocked
-                    ? () => _viewQuestion(question)
-                    : () => _unlockQuestion(question),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor:
-                      isUnlocked ? AppColors.techGreen : AppColors.techBlue,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(vertical: 12),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
+            if (!isUnlocked) ...[
+              // 無料解放ボタン（残り回数がある場合）
+              if (_remainingFreeUnlocks > 0)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton.icon(
+                      onPressed: () => _unlockQuestionFree(question),
+                      icon: const Icon(Icons.play_circle_outline, size: 18),
+                      label: Text('広告を見て無料開放（残り$_remainingFreeUnlocks回）'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.stitchEmerald,
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                    ),
                   ),
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    if (!isUnlocked) ...[
+              // PT消費で開放ボタン
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () => _unlockQuestion(question),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.techBlue,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
                       const Icon(Icons.lock_open, size: 18),
                       const SizedBox(width: 8),
-                      const Text('${AppConstants.questionUnlockPoints} PTで開放'),
-                    ] else ...[
-                      const Icon(Icons.visibility, size: 18),
-                      const SizedBox(width: 8),
-                      const Text('見る'),
+                      Text('${HISTORY_UNLOCK.singleQuestionCost} PTで開放'),
                     ],
-                  ],
+                  ),
                 ),
               ),
-            ),
+            ] else ...[
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () => _viewQuestion(question),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.techGreen,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.visibility, size: 18),
+                      SizedBox(width: 8),
+                      Text('見る'),
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ],
         ),
       ),
@@ -466,12 +522,12 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen>
   Future<void> _unlockQuestion(Question question) async {
     final totalPoints = ref.read(totalPointsProvider);
 
-    if (totalPoints < AppConstants.questionUnlockPoints) {
+    if (totalPoints < HISTORY_UNLOCK.singleQuestionCost) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
+          SnackBar(
             content: Text(
-                'ポイントが不足しています。${AppConstants.questionUnlockPoints}ポイント必要です。'),
+                'ポイントが不足しています。${HISTORY_UNLOCK.singleQuestionCost}ポイント必要です。'),
             backgroundColor: Colors.red,
           ),
         );
@@ -484,8 +540,8 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen>
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('問題を開放しますか？'),
-        content: const Text(
-          '${AppConstants.questionUnlockPoints}ポイントを消費してこの問題を開放します。',
+        content: Text(
+          '${HISTORY_UNLOCK.singleQuestionCost}ポイントを消費してこの問題を開放します。',
         ),
         actions: [
           TextButton(
@@ -524,6 +580,91 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen>
           ),
         );
       }
+    }
+  }
+
+  Future<void> _unlockQuestionFree(Question question) async {
+    final adService = ref.read(adServiceProvider);
+    
+    if (!adService.isRewardedAdReady) {
+      await adService.loadRewardedAd(
+        onRewarded: (_, __) {},
+        onError: (error) {
+          debugPrint('広告読み込みエラー: $error');
+        },
+      );
+    }
+
+    if (!adService.isRewardedAdReady) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('広告の読み込みに失敗しました'),
+          backgroundColor: Colors.orange,
+        ),
+      );
+      return;
+    }
+
+    final success = await adService.showRewardedAd(
+      onRewarded: (_, __) async {
+        // 無料解放を使用
+        final used = await _historyUnlockService.useFreeUnlock();
+        if (!used) {
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('無料解放の残り回数がありません'),
+                backgroundColor: Colors.orange,
+              ),
+            );
+          }
+          return;
+        }
+
+        // 問題を開放（PT消費なし）
+        try {
+          final unlockService = ref.read(questionUnlockServiceProvider);
+          await unlockService.unlockQuestion(question.id, 0); // コスト0で開放
+          
+          // 開放済み問題リストを更新
+          ref.invalidate(unlockedQuestionIdsProvider);
+          ref.invalidate(unlockedQuestionsProvider);
+          
+          // 残り回数を更新
+          await _loadRemainingFreeUnlocks();
+          
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('問題を無料開放しました！'),
+                backgroundColor: Colors.green,
+              ),
+            );
+          }
+        } catch (e) {
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text('エラー: $e'),
+                backgroundColor: Colors.red,
+              ),
+            );
+          }
+        }
+      },
+      onError: (error) {
+        debugPrint('広告表示エラー: $error');
+      },
+    );
+
+    if (!success && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('広告を表示できませんでした'),
+          backgroundColor: Colors.orange,
+        ),
+      );
     }
   }
 

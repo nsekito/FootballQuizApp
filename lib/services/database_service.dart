@@ -12,7 +12,7 @@ import '../utils/unlock_key_utils.dart';
 class DatabaseService {
   static Database? _database;
   static const String _databaseName = 'questions.db';  // アセットファイル名と一致させる
-  static const int _databaseVersion = 8;  // バージョンを上げて新しいデータベースを強制的に適用
+  static const int _databaseVersion = 9;  // バージョンを上げて新しいデータベースを強制的に適用
   
   // キャッシュ用のマップ（問題ID -> Question）
   final Map<String, Question> _questionCache = {};
@@ -613,6 +613,21 @@ class DatabaseService {
       ''');
       
       debugPrint('バージョン8へのマイグレーション完了: unlocked_questionsテーブルを追加しました');
+    }
+    
+    // バージョン8から9へのマイグレーション
+    if (oldVersion < 9) {
+      // match_day_play_historyテーブルに週間正答数カラムを追加
+      try {
+        await db.execute('''
+          ALTER TABLE match_day_play_history ADD COLUMN weekly_correct_total INTEGER NOT NULL DEFAULT 0
+        ''');
+        debugPrint('weekly_correct_totalカラムを追加しました');
+      } catch (e) {
+        debugPrint('weekly_correct_totalカラムの追加に失敗しました（既に存在する可能性があります）: $e');
+      }
+      
+      debugPrint('バージョン9へのマイグレーション完了: weekly_correct_totalカラムを追加しました');
     }
   }
 
@@ -1380,8 +1395,8 @@ class DatabaseService {
     
     // 今週のプレイ回数を取得
     final playCount = result.first['play_count'] as int;
-    // 無料で1回、広告視聴で最大3回まで（合計4回まで）
-    return playCount < 4;
+    // MATCHDAY.maxPlaysPerWeek = 3回まで
+    return playCount < 3;
   }
 
   /// MATCH DAYのプレイ回数を取得（今週）
@@ -1424,6 +1439,7 @@ class DatabaseService {
           'week_start_date': weekStartDate,
           'play_date': playDate,
           'play_count': 1,
+          'weekly_correct_total': 0,
         },
       );
     } else {
@@ -1434,6 +1450,62 @@ class DatabaseService {
         {
           'play_date': playDate,
           'play_count': currentCount + 1,
+        },
+        where: 'week_start_date = ?',
+        whereArgs: [weekStartDate],
+      );
+    }
+  }
+
+  /// MATCH DAYの週間正答数合計を取得
+  Future<int> getMatchDayWeeklyCorrectTotal() async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    
+    final result = await db.query(
+      'match_day_play_history',
+      where: 'week_start_date = ?',
+      whereArgs: [weekStartDate],
+    );
+    
+    if (result.isEmpty) {
+      return 0;
+    }
+    
+    return result.first['weekly_correct_total'] as int? ?? 0;
+  }
+
+  /// MATCH DAYの週間正答数合計を更新
+  Future<void> updateMatchDayWeeklyCorrectTotal(int total) async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    
+    final existing = await db.query(
+      'match_day_play_history',
+      where: 'week_start_date = ?',
+      whereArgs: [weekStartDate],
+    );
+    
+    if (existing.isEmpty) {
+      // レコードが存在しない場合は作成
+      final playDate = '${now.year}-${now.month.toString().padLeft(2, '0')}-${now.day.toString().padLeft(2, '0')}';
+      await db.insert(
+        'match_day_play_history',
+        {
+          'week_start_date': weekStartDate,
+          'play_date': playDate,
+          'play_count': 0,
+          'weekly_correct_total': total,
+        },
+      );
+    } else {
+      // 既存レコードを更新
+      await db.update(
+        'match_day_play_history',
+        {
+          'weekly_correct_total': total,
         },
         where: 'week_start_date = ?',
         whereArgs: [weekStartDate],

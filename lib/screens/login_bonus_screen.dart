@@ -106,13 +106,13 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
       onRewarded: (rewardAmount, rewardType) async {
         // ポイントを2倍にする
         try {
-          await loginBonusNotifier.doublePointsWithAd();
+          await loginBonusNotifier.multiplyPointsWithAd();
           if (mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: const Text('ポイントが2倍になりました！'),
+              const SnackBar(
+                content: Text('ポイントが2倍になりました！'),
                 backgroundColor: AppColors.success,
-                duration: const Duration(seconds: 2),
+                duration: Duration(seconds: 2),
               ),
             );
           }
@@ -147,19 +147,22 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
 
   /// ログインボーナスを受け取る
   Future<void> _claimLoginBonus() async {
+    final loginBonusNotifier = ref.read(loginBonusStatusProvider.notifier);
     try {
       final loginBonusNotifier = ref.read(loginBonusStatusProvider.notifier);
-      final points = await loginBonusNotifier.claimLoginBonus();
+      final result = await loginBonusNotifier.claimLoginBonus();
+      final points = result['points'] as int;
+      final exp = result['exp'] as int;
       
       if (mounted) {
         _bounceAnimationController.forward(from: 0.0);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('${points}ポイント獲得しました！'),
+            content: Text('$pointsポイント獲得しました！'),
             backgroundColor: AppColors.success,
             duration: const Duration(milliseconds: 1500), // 表示時間を短く（1.5秒）
             behavior: SnackBarBehavior.floating,
-            margin: EdgeInsets.only(
+            margin: const EdgeInsets.only(
               bottom: 100, // ボタンの上に表示
               left: 20,
               right: 20,
@@ -253,7 +256,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(
+              const Icon(
                 Icons.local_fire_department,
                 color: AppColors.accent,
                 size: 18,
@@ -261,7 +264,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
               const SizedBox(width: 8),
               Text(
                 '${status.streakDays}日連続達成中',
-                style: TextStyle(
+                style: const TextStyle(
                   color: AppColors.accent,
                   fontWeight: FontWeight.bold,
                   fontSize: 14,
@@ -350,7 +353,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
             remainingDays > 0
                 ? 'あと$remainingDays日でグランドプライズ！'
                 : 'グランドプライズ達成！',
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w500,
               color: AppColors.slate500,
@@ -428,7 +431,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
           children: [
             Flexible(
               child: Text(
-                '${day}日目',
+                '$day日目',
                 style: TextStyle(
                   fontSize: 10,
                   fontWeight: FontWeight.bold,
@@ -492,7 +495,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
               color: AppColors.accent.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(12),
             ),
-            child: Icon(
+            child: const Icon(
               Icons.card_giftcard,
               color: AppColors.accent,
               size: 32,
@@ -513,7 +516,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
                   ),
                 ),
                 const SizedBox(height: 4),
-                Text(
+                const Text(
                   'グランドプライズ',
                   style: TextStyle(
                     fontSize: 18,
@@ -527,7 +530,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Text(
+              const Text(
                 '10',
                 style: TextStyle(
                   fontSize: 24,
@@ -612,13 +615,13 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
                 elevation: 4,
                 shadowColor: AppColors.success.withValues(alpha: 0.2),
               ),
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Icon(Icons.card_giftcard, size: 20),
-                  const SizedBox(width: 8),
-                  const Text(
+                  SizedBox(width: 8),
+                  Text(
                     '報酬を受け取る',
                     style: TextStyle(
                       fontSize: 16,
@@ -661,13 +664,13 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
                   valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
                 ),
               )
-            : Row(
+            : const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Icon(Icons.play_circle, size: 20),
-                  const SizedBox(width: 8),
-                  const Text(
+                  SizedBox(width: 8),
+                  Text(
                     '動画を見てポイント2倍 (x2)',
                     style: TextStyle(
                       fontSize: 16,
@@ -687,7 +690,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
+          const Icon(
             Icons.check_circle,
             color: AppColors.success,
             size: 24,

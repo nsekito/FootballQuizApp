@@ -16,6 +16,7 @@ import '../widgets/responsive_container.dart';
 import '../utils/category_difficulty_utils.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../providers/admin_mode_provider.dart';
+import '../utils/reward_calculator.dart';
 import 'dart:math';
 
 class QuizScreen extends ConsumerStatefulWidget {
@@ -678,28 +679,43 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     if (isLastQuestion) {
       // MATCH DAYかどうかを判定
       final isMatchDay = widget.category == AppConstants.categoryMatchRecap;
+      final databaseService = ref.read(databaseServiceProvider);
 
-      // MATCH DAYの場合はプレイ履歴を記録
+      int earnedExp = 0;
+      int earnedPoints = 0;
+
       if (isMatchDay) {
-        final databaseService = ref.read(databaseServiceProvider);
+        // MATCH DAYの場合はプレイ回数を取得してから記録
+        final playCount = await databaseService.getMatchDayPlayCount();
         await databaseService.recordMatchDayPlay();
+        final newPlayCount = playCount + 1;
+        
+        // 週間正答数の合計を取得
+        final weeklyCorrectTotal = await databaseService.getMatchDayWeeklyCorrectTotal();
+        
+        // MATCH DAY報酬を計算（広告視聴はまだしていないのでfalse）
+        final reward = RewardCalculator.calculateMatchDayReward(
+          correctCount: _score,
+          playCount: newPlayCount,
+          watchedAd: false, // 広告視聴は結果画面で行う
+          weeklyCorrectTotal: weeklyCorrectTotal + _score, // 今回の正答数を加算
+        );
+        earnedExp = reward.$1;
+        earnedPoints = reward.$2;
+        
+        // 週間正答数を更新
+        await databaseService.updateMatchDayWeeklyCorrectTotal(weeklyCorrectTotal + _score);
+      } else {
+        // 定常クイズの報酬を計算
+        final difficultyUpper = widget.difficulty.toUpperCase();
+        final reward = RewardCalculator.calculateRegularQuizReward(
+          difficulty: difficultyUpper,
+          correctCount: _score,
+          watchedAd: false, // 広告視聴は結果画面で行う
+        );
+        earnedExp = reward.$1;
+        earnedPoints = reward.$2;
       }
-
-      // 基本expとポイントを計算
-      final baseExp = _score * AppConstants.expPerCorrectAnswer;
-      final basePoints = _score * AppConstants.pointsPerCorrectAnswer;
-
-      // 全問正解ボーナス
-      final bonusExp =
-          _score == _questions.length ? AppConstants.expPerfectScoreBonus : 0;
-      final bonusPoints = _score == _questions.length
-          ? AppConstants.pointsPerfectScoreBonus
-          : 0;
-
-      // MATCH DAYの場合は倍率を適用
-      final multiplier = isMatchDay ? AppConstants.matchDayExpMultiplier : 1.0;
-      final earnedExp = ((baseExp + bonusExp) * multiplier).round();
-      final earnedPoints = ((basePoints + bonusPoints) * multiplier).round();
 
       final uri = Uri(
         path: '/result',
@@ -710,6 +726,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           'points': '$earnedPoints',
           'category': widget.category,
           'difficulty': widget.difficulty,
+          'isMatchDay': isMatchDay.toString(),
         },
       );
       if (mounted) {

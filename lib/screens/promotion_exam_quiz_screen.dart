@@ -13,6 +13,9 @@ import '../widgets/glow_button.dart';
 import '../widgets/responsive_container.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../providers/admin_mode_provider.dart';
+import '../services/promotion_exam_service.dart';
+import '../constants/gameConfig.dart';
+import '../providers/ad_provider.dart';
 import 'dart:math';
 
 class PromotionExamQuizScreen extends ConsumerStatefulWidget {
@@ -20,6 +23,7 @@ class PromotionExamQuizScreen extends ConsumerStatefulWidget {
   final String sourceDifficulty;
   final String targetDifficulty;
   final String tags;
+  final int? reservedPoints; // 仮徴収したPT
 
   const PromotionExamQuizScreen({
     super.key,
@@ -27,6 +31,7 @@ class PromotionExamQuizScreen extends ConsumerStatefulWidget {
     required this.sourceDifficulty,
     required this.targetDifficulty,
     required this.tags,
+    this.reservedPoints,
   });
 
   @override
@@ -40,11 +45,35 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
   bool _showAnswerResult = false;
   int _score = 0;
   bool _isLoading = true;
+  int? _reservedPoints; // 仮徴収したPT
+  bool _hasWatchedAdForRetry = false; // 再挑戦用広告視聴済みか
 
   @override
   void initState() {
     super.initState();
+    // 仮徴収したPTを設定
+    _reservedPoints = widget.reservedPoints;
+    // PTを仮徴収（確定するまで保留）
+    if (_reservedPoints != null && _reservedPoints! > 0) {
+      _reservePoints();
+    }
     _loadQuestions();
+  }
+
+  Future<void> _reservePoints() async {
+    // 仮徴収は実際にはポイントを減らさず、結果画面で確定する
+    // ここではチェックのみ
+    final currentPoints = ref.read(totalPointsProvider);
+    if (currentPoints < _reservedPoints!) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('ポイントが不足しています'),
+          backgroundColor: Colors.red,
+        ),
+      );
+      context.pop();
+    }
   }
 
   Future<void> _loadQuestions() async {
@@ -363,18 +392,48 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
   }
 
   Future<void> _showResult() async {
-    final passed = _score >= AppConstants.promotionExamPassScore;
+    final examService = ref.read(promotionExamServiceProvider);
+    final config = examService.getExamConfig(
+      category: widget.category,
+      targetDifficulty: widget.targetDifficulty,
+    );
+    
+    if (config == null) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('昇格試験の設定が見つかりませんでした'),
+          backgroundColor: Colors.red,
+        ),
+      );
+      context.go('/');
+      return;
+    }
+
+    final passed = _score >= config.passLine;
     
     if (!mounted) return;
 
-    // 合格した場合、難易度をアンロック
+    // 合格時の処理
     if (passed) {
-      final unlockKey = UnlockKeyUtils.generateUnlockKey(
-        category: widget.category,
-        difficulty: widget.targetDifficulty,
-        tags: widget.tags,
-      );
-      await ref.read(unlockedDifficultiesProvider.notifier).unlockDifficulty(unlockKey);
+      if (_reservedPoints != null && _reservedPoints! > 0) {
+        await examService.handlePass(
+          category: widget.category,
+          targetDifficulty: widget.targetDifficulty,
+          tags: widget.tags,
+          reservedPoints: _reservedPoints!,
+        );
+      }
+    } else {
+      // 不合格時の処理
+      if (_reservedPoints != null && _reservedPoints! > 0) {
+        await examService.handleFail(
+          category: widget.category,
+          targetDifficulty: widget.targetDifficulty,
+          reservedPoints: _reservedPoints!,
+          watchedAd: false, // 結果画面で広告視聴する
+        );
+      }
     }
 
     // 非同期処理後に再度mountedチェック
@@ -427,34 +486,66 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
                       ),
                       textAlign: TextAlign.center,
                     ),
+                    const SizedBox(height: 8),
+                    Text(
+                      'ボーナス: +${config.bonusExp} EXP +${config.bonusPt} PT',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.green.shade700,
+                      ),
+                    ),
                   ],
                 ),
               )
             else
-              Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Colors.orange.shade50,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: const Column(
-                  children: [
-                    Icon(
-                      Icons.cancel,
-                      color: Colors.orange,
-                      size: 48,
+              Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.orange.shade50,
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    SizedBox(height: 8),
-                    Text(
-                      '${AppConstants.promotionExamPassScore}問以上正解で合格です',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
+                    child: Column(
+                      children: [
+                        const Icon(
+                          Icons.cancel,
+                          color: Colors.orange,
+                          size: 48,
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          '${config.passLine}問以上正解で合格です',
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          '${config.forfeit} PTが没収されました',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.orange.shade700,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  // 広告視聴で再挑戦コスト半額
+                  if (!_hasWatchedAdForRetry)
+                    ElevatedButton.icon(
+                      onPressed: () => _showRetryAdDiscount(),
+                      icon: const Icon(Icons.play_circle_outline),
+                      label: const Text('広告を見て再挑戦コストを半額に'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.stitchEmerald,
+                        foregroundColor: Colors.white,
                       ),
-                      textAlign: TextAlign.center,
                     ),
-                  ],
-                ),
+                ],
               ),
           ],
         ),
@@ -466,9 +557,100 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
             },
             child: const Text('ホームに戻る'),
           ),
+          if (!passed && _hasWatchedAdForRetry)
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                // 再挑戦（広告視聴済みなので割引適用）
+                _retryExam();
+              },
+              child: Text(
+                '再挑戦 (${examService.calculateRetryCost(
+                  category: widget.category,
+                  targetDifficulty: widget.targetDifficulty,
+                  watchedAd: true,
+                )} PT)',
+              ),
+            ),
         ],
       ),
     );
+  }
+
+  Future<void> _showRetryAdDiscount() async {
+    final adService = ref.read(adServiceProvider);
+    
+    if (!adService.isRewardedAdReady) {
+      await adService.loadRewardedAd(
+        onRewarded: (_, __) {},
+        onError: (error) {
+          debugPrint('広告読み込みエラー: $error');
+        },
+      );
+    }
+
+    if (!adService.isRewardedAdReady) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('広告の読み込みに失敗しました'),
+          backgroundColor: Colors.orange,
+        ),
+      );
+      return;
+    }
+
+    final success = await adService.showRewardedAd(
+      onRewarded: (_, __) {
+        setState(() {
+          _hasWatchedAdForRetry = true;
+        });
+        if (mounted) {
+          Navigator.of(context).pop(); // ダイアログを閉じて再表示
+          _showResult(); // 結果ダイアログを再表示
+        }
+      },
+      onError: (error) {
+        debugPrint('広告表示エラー: $error');
+      },
+    );
+
+    if (!success && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('広告を表示できませんでした'),
+          backgroundColor: Colors.orange,
+        ),
+      );
+    }
+  }
+
+  Future<void> _retryExam() async {
+    final examService = ref.read(promotionExamServiceProvider);
+    final retryCost = examService.calculateRetryCost(
+      category: widget.category,
+      targetDifficulty: widget.targetDifficulty,
+      watchedAd: _hasWatchedAdForRetry,
+    );
+
+    final currentPoints = ref.read(totalPointsProvider);
+    if (currentPoints < retryCost) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('ポイントが不足しています: $retryCost PT必要'),
+          backgroundColor: Colors.red,
+        ),
+      );
+      return;
+    }
+
+    // PTを仮徴収
+    await ref.read(totalPointsProvider.notifier).consumePoints(retryCost);
+    _reservedPoints = retryCost;
+
+    // クイズを再読み込み
+    await _loadQuestions();
   }
 
   @override

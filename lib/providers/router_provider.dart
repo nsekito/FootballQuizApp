@@ -70,6 +70,10 @@ final routerProvider = Provider<GoRouter>((ref) {
             params,
             'difficulty',
           );
+          final isMatchDay = RouteParamsParser.parseStringParam(
+            params,
+            'isMatchDay',
+          ) == 'true';
           return ResultScreen(
             score: score,
             total: total,
@@ -77,6 +81,7 @@ final routerProvider = Provider<GoRouter>((ref) {
             earnedPoints: earnedPoints,
             category: category,
             difficulty: difficulty,
+            isMatchDay: isMatchDay,
           );
         },
       ),
@@ -125,6 +130,7 @@ final routerProvider = Provider<GoRouter>((ref) {
               'targetDifficulty',
             ),
             tags: RouteParamsParser.parseStringParam(params, 'tags'),
+            reservedPoints: RouteParamsParser.parseIntParam(params, 'reservedPoints'),
           );
         },
       ),

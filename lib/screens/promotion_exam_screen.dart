@@ -96,34 +96,33 @@ class _PromotionExamScreenState extends ConsumerState<PromotionExamScreen> {
   Future<void> _startExam() async {
     if (_exam == null || !_canTakeExam) return;
     
-    // ポイントを消費
-    try {
-      await ref.read(totalPointsProvider.notifier).consumePoints(_exam!.requiredPoints);
-      
+    // ポイントを仮徴収（確定するまで保留）
+    final currentPoints = ref.read(totalPointsProvider);
+    if (currentPoints < _exam!.requiredPoints) {
       if (!mounted) return;
-      
-      // 昇格試験クイズ画面に遷移
-      final uri = Uri(
-        path: '/promotion-exam-quiz',
-        queryParameters: {
-          'category': widget.category,
-          'sourceDifficulty': _exam!.sourceDifficulty,
-          'targetDifficulty': widget.targetDifficulty,
-          'tags': widget.tags,
-        },
-      );
-      context.push(uri.toString());
-    } catch (e) {
-      if (!mounted) return;
-      
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('ポイントが不足しています: ${e.toString()}'),
+          content: Text('ポイントが不足しています: ${_exam!.requiredPoints} PT必要'),
           backgroundColor: Colors.red.shade700,
           duration: const Duration(seconds: 3),
         ),
       );
+      return;
     }
+    
+    // 昇格試験クイズ画面に遷移（PTは仮徴収としてクエリパラメータで渡す）
+    final uri = Uri(
+      path: '/promotion-exam-quiz',
+      queryParameters: {
+        'category': widget.category,
+        'sourceDifficulty': _exam!.sourceDifficulty,
+        'targetDifficulty': widget.targetDifficulty,
+        'tags': widget.tags,
+        'reservedPoints': _exam!.requiredPoints.toString(),
+      },
+    );
+    if (!mounted) return;
+    context.push(uri.toString());
   }
 
   @override
