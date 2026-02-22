@@ -12,7 +12,7 @@ import '../utils/unlock_key_utils.dart';
 class DatabaseService {
   static Database? _database;
   static const String _databaseName = 'questions.db';  // アセットファイル名と一致させる
-  static const int _databaseVersion = 9;  // バージョンを上げて新しいデータベースを強制的に適用
+  static const int _databaseVersion = 10;  // バージョンを上げて新しいデータベースを強制的に適用
   
   // キャッシュ用のマップ（問題ID -> Question）
   final Map<String, Question> _questionCache = {};
@@ -315,19 +315,49 @@ class DatabaseService {
       conflictAlgorithm: ConflictAlgorithm.ignore,
     );
     
-    // match_day_play_historyテーブルを作成
+    // match_day_play_historyテーブルを作成（league_typeカラムを含む）
     await db.execute('''
       CREATE TABLE IF NOT EXISTS match_day_play_history (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         week_start_date TEXT NOT NULL,
+        league_type TEXT NOT NULL DEFAULT 'j1',
         play_date TEXT NOT NULL,
         play_count INTEGER NOT NULL DEFAULT 1,
-        UNIQUE(week_start_date)
+        weekly_correct_total INTEGER NOT NULL DEFAULT 0,
+        UNIQUE(week_start_date, league_type)
       )
     ''');
     
     await db.execute('''
       CREATE INDEX IF NOT EXISTS idx_match_day_play_history_week_start_date ON match_day_play_history(week_start_date)
+    ''');
+    
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_match_day_play_history_league_type ON match_day_play_history(league_type)
+    ''');
+    
+    // weekly_recap_question_historyテーブルを作成（出題済み問題の履歴管理）
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS weekly_recap_question_history (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        week_start_date TEXT NOT NULL,
+        league_type TEXT NOT NULL,
+        question_id TEXT NOT NULL,
+        played_at TEXT NOT NULL,
+        UNIQUE(week_start_date, league_type, question_id)
+      )
+    ''');
+    
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_weekly_recap_question_history_week_start_date ON weekly_recap_question_history(week_start_date)
+    ''');
+    
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_weekly_recap_question_history_league_type ON weekly_recap_question_history(league_type)
+    ''');
+    
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_weekly_recap_question_history_question_id ON weekly_recap_question_history(question_id)
     ''');
     
     // 開放済み問題テーブル
@@ -628,6 +658,101 @@ class DatabaseService {
       }
       
       debugPrint('バージョン9へのマイグレーション完了: weekly_correct_totalカラムを追加しました');
+    }
+    
+    // バージョン9から10へのマイグレーション
+    if (oldVersion < 10) {
+      // match_day_play_historyテーブルにleague_typeカラムを追加
+      try {
+        // 既存のデータをバックアップするため、一時テーブルを作成
+        await db.execute('''
+          CREATE TABLE IF NOT EXISTS match_day_play_history_backup AS 
+          SELECT * FROM match_day_play_history
+        ''');
+        
+        // 既存のテーブルを削除
+        await db.execute('DROP TABLE IF EXISTS match_day_play_history');
+        
+        // 新しいスキーマでテーブルを再作成
+        await db.execute('''
+          CREATE TABLE IF NOT EXISTS match_day_play_history (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            week_start_date TEXT NOT NULL,
+            league_type TEXT NOT NULL DEFAULT 'j1',
+            play_date TEXT NOT NULL,
+            play_count INTEGER NOT NULL DEFAULT 1,
+            weekly_correct_total INTEGER NOT NULL DEFAULT 0,
+            UNIQUE(week_start_date, league_type)
+          )
+        ''');
+        
+        // バックアップからデータを復元（league_typeは'j1'をデフォルトとして設定）
+        await db.execute('''
+          INSERT INTO match_day_play_history (week_start_date, league_type, play_date, play_count, weekly_correct_total)
+          SELECT week_start_date, 'j1', play_date, play_count, COALESCE(weekly_correct_total, 0)
+          FROM match_day_play_history_backup
+        ''');
+        
+        // バックアップテーブルを削除
+        await db.execute('DROP TABLE IF EXISTS match_day_play_history_backup');
+        
+        // インデックスを再作成
+        await db.execute('''
+          CREATE INDEX IF NOT EXISTS idx_match_day_play_history_week_start_date ON match_day_play_history(week_start_date)
+        ''');
+        
+        await db.execute('''
+          CREATE INDEX IF NOT EXISTS idx_match_day_play_history_league_type ON match_day_play_history(league_type)
+        ''');
+        
+        debugPrint('match_day_play_historyテーブルにleague_typeカラムを追加しました');
+      } catch (e) {
+        debugPrint('match_day_play_historyテーブルの更新に失敗しました: $e');
+        // エラーが発生した場合、バックアップから復元を試みる
+        try {
+          await db.execute('DROP TABLE IF EXISTS match_day_play_history');
+          await db.execute('''
+            CREATE TABLE IF NOT EXISTS match_day_play_history AS 
+            SELECT * FROM match_day_play_history_backup
+          ''');
+          await db.execute('DROP TABLE IF EXISTS match_day_play_history_backup');
+        } catch (restoreError) {
+          debugPrint('バックアップからの復元に失敗しました: $restoreError');
+        }
+      }
+      
+      // weekly_recap_question_historyテーブルを作成
+      try {
+        await db.execute('''
+          CREATE TABLE IF NOT EXISTS weekly_recap_question_history (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            week_start_date TEXT NOT NULL,
+            league_type TEXT NOT NULL,
+            question_id TEXT NOT NULL,
+            played_at TEXT NOT NULL,
+            UNIQUE(week_start_date, league_type, question_id)
+          )
+        ''');
+        
+        // インデックスの追加
+        await db.execute('''
+          CREATE INDEX IF NOT EXISTS idx_weekly_recap_question_history_week_start_date ON weekly_recap_question_history(week_start_date)
+        ''');
+        
+        await db.execute('''
+          CREATE INDEX IF NOT EXISTS idx_weekly_recap_question_history_league_type ON weekly_recap_question_history(league_type)
+        ''');
+        
+        await db.execute('''
+          CREATE INDEX IF NOT EXISTS idx_weekly_recap_question_history_question_id ON weekly_recap_question_history(question_id)
+        ''');
+        
+        debugPrint('weekly_recap_question_historyテーブルを作成しました');
+      } catch (e) {
+        debugPrint('weekly_recap_question_historyテーブルの作成に失敗しました: $e');
+      }
+      
+      debugPrint('バージョン10へのマイグレーション完了');
     }
   }
 
@@ -1511,6 +1636,222 @@ class DatabaseService {
         whereArgs: [weekStartDate],
       );
     }
+  }
+
+  /// MATCH DAYをプレイ可能かチェック（リーグタイプ別、週3回制限）
+  Future<bool> canPlayMatchDayByLeagueType(String leagueType) async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    
+    final result = await db.query(
+      'match_day_play_history',
+      where: 'week_start_date = ? AND league_type = ?',
+      whereArgs: [weekStartDate, leagueType],
+    );
+    
+    // 今週のプレイ履歴がない場合、プレイ可能
+    if (result.isEmpty) {
+      return true;
+    }
+    
+    // 今週のプレイ回数を取得
+    final playCount = result.first['play_count'] as int;
+    // リーグタイプ別に3回まで
+    return playCount < 3;
+  }
+
+  /// MATCH DAYのプレイ回数を取得（リーグタイプ別、今週）
+  Future<int> getMatchDayPlayCountByLeagueType(String leagueType) async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    
+    final result = await db.query(
+      'match_day_play_history',
+      where: 'week_start_date = ? AND league_type = ?',
+      whereArgs: [weekStartDate, leagueType],
+    );
+    
+    if (result.isEmpty) {
+      return 0;
+    }
+    
+    return result.first['play_count'] as int;
+  }
+
+  /// MATCH DAYのプレイを記録（リーグタイプ別）
+  Future<void> recordMatchDayPlayByLeagueType(String leagueType) async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    final playDate = '${now.year}-${now.month.toString().padLeft(2, '0')}-${now.day.toString().padLeft(2, '0')}';
+    
+    final existing = await db.query(
+      'match_day_play_history',
+      where: 'week_start_date = ? AND league_type = ?',
+      whereArgs: [weekStartDate, leagueType],
+    );
+    
+    if (existing.isEmpty) {
+      // 今週初めてのプレイ
+      await db.insert(
+        'match_day_play_history',
+        {
+          'week_start_date': weekStartDate,
+          'league_type': leagueType,
+          'play_date': playDate,
+          'play_count': 1,
+          'weekly_correct_total': 0,
+        },
+      );
+    } else {
+      // 今週のプレイ回数を増やす
+      final currentCount = existing.first['play_count'] as int;
+      await db.update(
+        'match_day_play_history',
+        {
+          'play_date': playDate,
+          'play_count': currentCount + 1,
+        },
+        where: 'week_start_date = ? AND league_type = ?',
+        whereArgs: [weekStartDate, leagueType],
+      );
+    }
+  }
+
+  /// MATCH DAYの週間正答数合計を取得（リーグタイプ別）
+  Future<int> getMatchDayWeeklyCorrectTotalByLeagueType(String leagueType) async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    
+    final result = await db.query(
+      'match_day_play_history',
+      where: 'week_start_date = ? AND league_type = ?',
+      whereArgs: [weekStartDate, leagueType],
+    );
+    
+    if (result.isEmpty) {
+      return 0;
+    }
+    
+    return result.first['weekly_correct_total'] as int? ?? 0;
+  }
+
+  /// MATCH DAYの週間正答数合計を更新（リーグタイプ別）
+  Future<void> updateMatchDayWeeklyCorrectTotalByLeagueType(String leagueType, int total) async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    
+    final existing = await db.query(
+      'match_day_play_history',
+      where: 'week_start_date = ? AND league_type = ?',
+      whereArgs: [weekStartDate, leagueType],
+    );
+    
+    if (existing.isEmpty) {
+      // レコードが存在しない場合は作成
+      final playDate = '${now.year}-${now.month.toString().padLeft(2, '0')}-${now.day.toString().padLeft(2, '0')}';
+      await db.insert(
+        'match_day_play_history',
+        {
+          'week_start_date': weekStartDate,
+          'league_type': leagueType,
+          'play_date': playDate,
+          'play_count': 0,
+          'weekly_correct_total': total,
+        },
+      );
+    } else {
+      // 既存レコードを更新
+      await db.update(
+        'match_day_play_history',
+        {
+          'weekly_correct_total': total,
+        },
+        where: 'week_start_date = ? AND league_type = ?',
+        whereArgs: [weekStartDate, leagueType],
+      );
+    }
+  }
+
+  /// Weekly Recap出題済み問題を記録
+  Future<void> recordWeeklyRecapQuestionPlay(String leagueType, List<String> questionIds) async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    final playedAt = DateTime.now().toIso8601String();
+    
+    final batch = db.batch();
+    for (final questionId in questionIds) {
+      batch.insert(
+        'weekly_recap_question_history',
+        {
+          'week_start_date': weekStartDate,
+          'league_type': leagueType,
+          'question_id': questionId,
+          'played_at': playedAt,
+        },
+        conflictAlgorithm: ConflictAlgorithm.ignore,
+      );
+    }
+    await batch.commit(noResult: true);
+  }
+
+  /// 出題済み問題IDリストを取得（リーグタイプ別）
+  Future<List<String>> getPlayedQuestionIds(String leagueType) async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    
+    final result = await db.query(
+      'weekly_recap_question_history',
+      columns: ['question_id'],
+      where: 'week_start_date = ? AND league_type = ?',
+      whereArgs: [weekStartDate, leagueType],
+    );
+    
+    return result.map((row) => row['question_id'] as String).toList();
+  }
+
+  /// Weekly Recap出題済み問題履歴をクリア（週が変わったとき用）
+  Future<void> clearWeeklyRecapQuestionHistory(String weekStartDate) async {
+    final db = await database;
+    await db.delete(
+      'weekly_recap_question_history',
+      where: 'week_start_date = ?',
+      whereArgs: [weekStartDate],
+    );
+  }
+
+  /// MATCH DAYのプレイ履歴をリセット（今週分のみ）
+  Future<void> resetMatchDayPlayHistory() async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    
+    // 今週のプレイ履歴を削除
+    await db.delete(
+      'match_day_play_history',
+      where: 'week_start_date = ?',
+      whereArgs: [weekStartDate],
+    );
+  }
+
+  /// Weekly Recap出題済み問題履歴をリセット（今週分のみ）
+  Future<void> resetWeeklyRecapQuestionHistory() async {
+    final db = await database;
+    final now = DateTime.now();
+    final weekStartDate = _getWeekStartDate(now);
+    
+    // 今週の出題済み問題履歴を削除
+    await db.delete(
+      'weekly_recap_question_history',
+      where: 'week_start_date = ?',
+      whereArgs: [weekStartDate],
+    );
   }
 
   /// Weekly Recap同期履歴を記録

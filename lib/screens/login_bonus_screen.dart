@@ -641,19 +641,17 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
   Widget _buildVideoButton() {
     return SizedBox(
       width: double.infinity,
-      child: OutlinedButton(
+      child: ElevatedButton(
         onPressed: _isAdReady ? _showRewardedAd : null,
-        style: OutlinedButton.styleFrom(
-          foregroundColor: Colors.blue.shade600,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.difficultyNormal,
+          foregroundColor: Colors.white,
           padding: const EdgeInsets.symmetric(vertical: 16),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
-          side: BorderSide(
-            color: Colors.blue.shade200,
-            width: 1,
-          ),
-          backgroundColor: Colors.blue.shade50.withValues(alpha: 0.1),
+          elevation: 4,
+          shadowColor: AppColors.difficultyNormal.withValues(alpha: 0.3),
         ),
         child: _isLoadingAd
             ? const SizedBox(
@@ -661,7 +659,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
                 height: 24,
                 child: CircularProgressIndicator(
                   strokeWidth: 2,
-                  valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
                 ),
               )
             : const Row(

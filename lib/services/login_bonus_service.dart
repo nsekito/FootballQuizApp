@@ -153,4 +153,13 @@ class LoginBonusService {
       'currentDate': currentDate,
     };
   }
+
+  /// ログインボーナスをリセットする（管理者用）
+  /// 
+  /// 最後に受け取った日付と連続日数を削除し、初期状態に戻します。
+  Future<void> resetLoginBonus() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_keyLastLoginBonusDate);
+    await prefs.remove(_keyLoginStreakDays);
+  }
 }

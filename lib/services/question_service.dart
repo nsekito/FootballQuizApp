@@ -54,6 +54,7 @@ class QuestionService {
         limit: limit,
         date: date,
         leagueType: leagueType,
+        excludeIds: excludeIds,
       );
     }
 
@@ -76,12 +77,27 @@ class QuestionService {
   /// 難易度の割合:
   /// - ヨーロッパサッカー: easy 7問、normal 2問、hard 1問
   /// - J1リーグ: easy 3問、normal 5問、hard 2問
+  /// 出題済み問題は除外される
   Future<List<Question>> _getWeeklyRecapQuestions({
     required String difficulty,
     int? limit,
     String? date,
     String? leagueType,
+    List<String>? excludeIds,
   }) async {
+    // 出題済み問題IDリストを取得（リーグタイプが指定されている場合）
+    List<String> playedQuestionIds = [];
+    if (leagueType != null && leagueType.isNotEmpty) {
+      playedQuestionIds = await _databaseService.getPlayedQuestionIds(leagueType);
+    }
+    
+    // excludeIdsと出題済み問題IDをマージ
+    final allExcludeIds = <String>{};
+    if (excludeIds != null) {
+      allExcludeIds.addAll(excludeIds);
+    }
+    allExcludeIds.addAll(playedQuestionIds);
+    final finalExcludeIds = allExcludeIds.isEmpty ? null : allExcludeIds.toList();
     // リーグタイプに応じたtagsフィルタリング
     String? tagsFilter;
     if (leagueType != null && leagueType.isNotEmpty) {
@@ -100,6 +116,7 @@ class QuestionService {
       difficulty: '', // 難易度でフィルタリングしない（全難易度を取得）
       tags: tagsFilter, // リーグタイプでフィルタリング
       limit: 1000, // 十分な数を取得
+      excludeIds: finalExcludeIds, // 出題済み問題を除外
     );
     
     // ローカルDBにデータがある場合はそれを使用
@@ -120,16 +137,26 @@ class QuestionService {
         ).toList();
       }
       
+      // 出題済み問題を除外
+      if (finalExcludeIds != null && finalExcludeIds.isNotEmpty) {
+        filtered = filtered.where((q) => !finalExcludeIds.contains(q.id)).toList();
+      }
+      
       // フィルタリング後の問題数が十分でない場合は、リモートから取得
       if (filtered.length < (limit ?? 10)) {
         final remoteQuestions = await _remoteDataService.fetchWeeklyRecapQuestions(
           date: date,
           leagueType: leagueType,
         );
+        // 出題済み問題を除外
+        var remoteFiltered = remoteQuestions;
+        if (finalExcludeIds != null && finalExcludeIds.isNotEmpty) {
+          remoteFiltered = remoteQuestions.where((q) => !finalExcludeIds.contains(q.id)).toList();
+        }
         // リモートから取得した問題の方が多い場合はそれを使用
-        if (remoteQuestions.length > filtered.length) {
+        if (remoteFiltered.length > filtered.length) {
           return _selectQuestionsByDifficultyRatio(
-            remoteQuestions, 
+            remoteFiltered, 
             limit ?? 10,
             leagueType: leagueType,
           );
@@ -149,10 +176,16 @@ class QuestionService {
       date: date,
       leagueType: leagueType,
     );
+    
+    // 出題済み問題を除外
+    var finalQuestions = questions;
+    if (finalExcludeIds != null && finalExcludeIds.isNotEmpty) {
+      finalQuestions = questions.where((q) => !finalExcludeIds.contains(q.id)).toList();
+    }
 
     // 難易度の割合で選択（リーグタイプに応じて配分が異なる）
     return _selectQuestionsByDifficultyRatio(
-      questions, 
+      finalQuestions, 
       limit ?? 10,
       leagueType: leagueType,
     );

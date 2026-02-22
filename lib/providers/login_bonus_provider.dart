@@ -154,4 +154,12 @@ class LoginBonusNotifier extends StateNotifier<LoginBonusStatus> {
   Future<void> refresh() async {
     await _loadStatus();
   }
+
+  /// ログインボーナスをリセットする（管理者用）
+  Future<void> resetLoginBonus() async {
+    await _service.resetLoginBonus();
+    _claimedPoints = null;
+    _hasWatchedAd = false;
+    await _loadStatus();
+  }
 }

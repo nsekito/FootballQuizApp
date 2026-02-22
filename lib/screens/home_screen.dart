@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:go_router/go_router.dart' as go_router;
 import 'package:intl/intl.dart';
 import '../providers/user_data_provider.dart';
 import '../providers/sample_data_provider.dart';
@@ -27,14 +28,17 @@ class HomeScreen extends ConsumerStatefulWidget {
   ConsumerState<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends ConsumerState<HomeScreen> {
+class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObserver {
   bool _hasSyncedRecap = false;
   bool _isLoadingAd = false; // 広告読み込み中かどうか
   bool _isRankIconExpanded = false; // ランクアイコンの拡大状態
+  int _refreshKey = 0; // FutureBuilderの再構築用キー
+  String? _lastRoutePath; // 前回のルートパスを記録
 
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     // Weekly Recapデータの自動同期（バックグラウンドで実行）
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!_hasSyncedRecap) {
@@ -44,6 +48,40 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     });
     // 広告を事前に読み込む
     _loadRewardedAd();
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // 画面が戻ってきたときにFutureBuilderを再構築
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        setState(() {
+          _refreshKey++;
+        });
+      }
+    });
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    // アプリがフォアグラウンドに戻った時にリフレッシュ
+    if (state == AppLifecycleState.resumed && mounted) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) {
+          setState(() {
+            _refreshKey++;
+          });
+        }
+      });
+    }
   }
 
   /// 今週の月曜日の日付を取得
@@ -66,38 +104,73 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   }
 
   /// 次回プレイ可能日までの残り日数を取得
-  int _getDaysUntilNextWeek(DateTime date) {
-    final nextWeekStart = _getNextWeekStartDate(date);
+  /// プレイ回数が上限に達した場合、次回プレイ可能日は今週の月曜日（バッチ実行後）
+  int _getDaysUntilNextWeek(DateTime date, {bool isMaxReached = false}) {
     final now = DateTime.now();
-    final difference = nextWeekStart.difference(now);
-    return difference.inDays;
+    DateTime nextPlayableDate;
+    
+    if (isMaxReached) {
+      // プレイ回数が上限に達した場合、次回プレイ可能日は今週の月曜日
+      final weekStart = _getWeekStartDate(date);
+      nextPlayableDate = weekStart;
+    } else {
+      // まだプレイ可能な場合、次回プレイ可能日は来週の月曜日
+      nextPlayableDate = _getNextWeekStartDate(date);
+    }
+    
+    final difference = nextPlayableDate.difference(now);
+    // 日数を計算（時間部分を考慮して、1日未満でも1日としてカウント）
+    final days = difference.inDays;
+    // 時間が残っている場合は1日追加
+    return days + (difference.inHours % 24 > 0 ? 1 : 0);
+  }
+  
+  /// 次回プレイ可能日の日付を取得
+  /// プレイ回数が上限に達した場合、次回プレイ可能日は今週の月曜日（バッチ実行後）
+  DateTime _getNextPlayableDate(DateTime date, {bool isMaxReached = false}) {
+    if (isMaxReached) {
+      // プレイ回数が上限に達した場合、次回プレイ可能日は今週の月曜日
+      return _getWeekStartDate(date);
+    } else {
+      // まだプレイ可能な場合、次回プレイ可能日は来週の月曜日
+      return _getNextWeekStartDate(date);
+    }
   }
 
-  /// MATCH DAYの詳細なステータス情報を取得
+  /// MATCH DAYの詳細なステータス情報を取得（リーグタイプ別）
   Future<Map<String, dynamic>> _getMatchDayDetailedStatus() async {
     final databaseService = ref.read(databaseServiceProvider);
-    final canPlay = await databaseService.canPlayMatchDay();
-    final playCount = await databaseService.getMatchDayPlayCount();
+    final j1PlayCount = await databaseService.getMatchDayPlayCountByLeagueType(AppConstants.leagueTypeJ1);
+    final europePlayCount = await databaseService.getMatchDayPlayCountByLeagueType(AppConstants.leagueTypeEurope);
+    final totalPlayCount = j1PlayCount + europePlayCount;
+    final j1CanPlay = await databaseService.canPlayMatchDayByLeagueType(AppConstants.leagueTypeJ1);
+    final europeCanPlay = await databaseService.canPlayMatchDayByLeagueType(AppConstants.leagueTypeEurope);
+    final canPlay = j1CanPlay || europeCanPlay;
+    
     final now = DateTime.now();
     final weekStart = _getWeekStartDate(now);
     final weekEnd = _getWeekEndDate(now);
-    final nextWeekStart = _getNextWeekStartDate(now);
-    final daysUntilNextWeek = _getDaysUntilNextWeek(now);
-    // MATCHDAY.maxPlaysPerWeek = 3回まで
-    final remainingPlays = MATCHDAY.maxPlaysPerWeek - playCount;
+    final isMaxReached = totalPlayCount >= MATCHDAY.maxPlaysPerWeek;
+    final nextPlayableDate = _getNextPlayableDate(now, isMaxReached: isMaxReached);
+    final daysUntilNextWeek = _getDaysUntilNextWeek(now, isMaxReached: isMaxReached);
+    final remainingPlays = MATCHDAY.maxPlaysPerWeek - totalPlayCount;
 
     return {
       'canPlay': canPlay,
-      'playCount': playCount,
+      'playCount': totalPlayCount,
+      'j1PlayCount': j1PlayCount,
+      'europePlayCount': europePlayCount,
+      'j1CanPlay': j1CanPlay,
+      'europeCanPlay': europeCanPlay,
       'remainingPlays': remainingPlays,
       'weekStart': weekStart,
       'weekEnd': weekEnd,
-      'nextWeekStart': nextWeekStart,
+      'nextWeekStart': nextPlayableDate, // 次回プレイ可能日
       'daysUntilNextWeek': daysUntilNextWeek,
-      'isFreePlay': playCount == 0,
-      'isMaxReached': playCount >= MATCHDAY.maxPlaysPerWeek,
-      'multiplier': playCount < MATCHDAY.playMultipliers.length 
-          ? MATCHDAY.playMultipliers[playCount] 
+      'isFreePlay': totalPlayCount == 0,
+      'isMaxReached': isMaxReached,
+      'multiplier': totalPlayCount < MATCHDAY.playMultipliers.length 
+          ? MATCHDAY.playMultipliers[totalPlayCount] 
           : MATCHDAY.playMultipliers.last,
     };
   }
@@ -156,9 +229,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
     final success = await adService.showRewardedAd(
       onRewarded: (rewardAmount, rewardType) async {
-        // 広告視聴完了後、プレイ回数を記録
-        final databaseService = ref.read(databaseServiceProvider);
-        await databaseService.recordMatchDayPlay();
+        // 広告視聴完了後、設定画面に遷移
+        // プレイ回数の記録は、設定画面でリーグタイプを選択してクイズを開始するときにQuizScreenで行う
 
         if (!mounted) return;
         // MATCH DAYの設定画面に遷移
@@ -194,8 +266,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   Future<void> _handleMatchDayTap(BuildContext context) async {
     final databaseService = ref.read(databaseServiceProvider);
-    final canPlay = await databaseService.canPlayMatchDay();
-    final playCount = await databaseService.getMatchDayPlayCount();
+    final j1PlayCount = await databaseService.getMatchDayPlayCountByLeagueType(AppConstants.leagueTypeJ1);
+    final europePlayCount = await databaseService.getMatchDayPlayCountByLeagueType(AppConstants.leagueTypeEurope);
+    final totalPlayCount = j1PlayCount + europePlayCount;
+    final j1CanPlay = await databaseService.canPlayMatchDayByLeagueType(AppConstants.leagueTypeJ1);
+    final europeCanPlay = await databaseService.canPlayMatchDayByLeagueType(AppConstants.leagueTypeEurope);
+    final canPlay = j1CanPlay || europeCanPlay;
 
     if (!mounted) return;
 
@@ -205,7 +281,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       if (!context.mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: const Text('今週のMATCH DAYのプレイ回数が上限に達しています'),
+          content: const Text('今週のMATCH DAYのプレイ回数が上限に達しています（J1・Europeそれぞれ3回ずつ）'),
           backgroundColor: Colors.orange.shade700,
           duration: const Duration(seconds: 3),
         ),
@@ -213,14 +289,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       return;
     }
 
-    if (playCount == 0) {
+    if (totalPlayCount == 0) {
       // 無料でプレイ可能（1回目）
       if (!mounted) return;
       if (!context.mounted) return;
       context
           .push('/configuration?category=${AppConstants.categoryMatchRecap}');
-    } else if (playCount < MATCHDAY.maxPlaysPerWeek) {
-      // 2回目・3回目は広告視聴で追加チャレンジ
+    } else if (totalPlayCount < MATCHDAY.maxPlaysPerWeek) {
+      // 2回目以降は広告視聴で追加チャレンジ
       if (!mounted) return;
       await _showRewardedAdForMatchDay();
     }
@@ -234,6 +310,23 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final totalExp = ref.watch(totalExpProvider);
     final totalPoints = ref.watch(totalPointsProvider);
     final userRank = ref.watch(userRankProvider);
+
+    // ルートが変更された場合（結果画面から戻った時など）にリフレッシュ
+    final routerState = go_router.GoRouterState.of(context);
+    final currentLocation = routerState.uri.toString();
+    if (currentLocation != _lastRoutePath) {
+      _lastRoutePath = currentLocation;
+      // ホーム画面に戻ってきた時にリフレッシュ
+      if (currentLocation == '/' || currentLocation.startsWith('/?')) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) {
+            setState(() {
+              _refreshKey++;
+            });
+          }
+        });
+      }
+    }
 
     return Scaffold(
       backgroundColor: AppColors.techWhite,
@@ -400,6 +493,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   Widget _buildFeaturedCard(BuildContext context) {
     return FutureBuilder<Map<String, dynamic>>(
+      key: ValueKey(_refreshKey), // キーを追加して再構築を強制
       future: _getMatchDayDetailedStatus(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
@@ -413,9 +507,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         final nextWeekStart = data['nextWeekStart'] as DateTime;
         final isMaxReached = data['isMaxReached'] as bool;
 
-        return GestureDetector(
-          onTap: canPlay ? () => _handleMatchDayTap(context) : null,
-          child: Container(
+        return AbsorbPointer(
+          absorbing: !canPlay, // プレイ不可の場合はタップを無効化
+          child: GestureDetector(
+            onTap: canPlay ? () => _handleMatchDayTap(context) : null,
+            child: Container(
             constraints: const BoxConstraints(minHeight: 280),
             decoration: BoxDecoration(
               borderRadius: const BorderRadius.all(Radius.circular(24)),
@@ -467,6 +563,20 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       ),
                     ),
                   ),
+                  // 右側の矢印アイコン（プレイ可能時のみ表示）
+                  if (canPlay)
+                    Positioned(
+                      right: 16,
+                      top: 0,
+                      bottom: 0,
+                      child: Center(
+                        child: Icon(
+                          Icons.chevron_right,
+                          color: Colors.white.withValues(alpha: 0.8),
+                          size: 28,
+                        ),
+                      ),
+                    ),
                   // コンテンツ
                   Padding(
                     padding: const EdgeInsets.all(24),
@@ -759,6 +869,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               ),
             ),
           ),
+        ),
         );
       },
     );

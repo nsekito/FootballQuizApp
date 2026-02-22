@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import '../utils/constants.dart';
 import '../utils/unlock_key_utils.dart';
 import '../providers/user_data_provider.dart';
+import '../providers/database_provider.dart';
 import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
@@ -35,23 +36,22 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.stitchBackgroundLight,
-      appBar: AppBar(
-        backgroundColor: Colors.white.withValues(alpha: 0.7),
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => context.pop(),
-        ),
-        title: Text(
-          CategoryDifficultyUtils.getCategoryTitle(widget.category),
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
+    return PopScope(
+      canPop: false,
+      child: Scaffold(
+        backgroundColor: AppColors.stitchBackgroundLight,
+        appBar: AppBar(
+          backgroundColor: Colors.white.withValues(alpha: 0.7),
+          elevation: 0,
+          automaticallyImplyLeading: false, // 戻るボタンを非表示
+          title: Text(
+            CategoryDifficultyUtils.getCategoryTitle(widget.category),
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
           ),
         ),
-      ),
       body: GridPatternBackground(
         child: SingleChildScrollView(
           child: ResponsiveContainer(
@@ -131,6 +131,7 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
         ),
       ),
       bottomNavigationBar: const BannerAdWidget(),
+      ),
     );
   }
 
@@ -864,15 +865,117 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
   }
 
   Widget _buildLeagueTypeSelector() {
-    return _buildSectionSelector(
-      icon: Icons.sports_soccer,
-      title: 'リーグ',
-      children: [
-        _buildChip('J1リーグ', AppConstants.leagueTypeJ1, _selectedLeagueType,
-            (value) => setState(() => _selectedLeagueType = value)),
-        _buildChip('ヨーロッパサッカー', AppConstants.leagueTypeEurope, _selectedLeagueType,
-            (value) => setState(() => _selectedLeagueType = value)),
-      ],
+    return FutureBuilder<Map<String, int>>(
+      future: _getLeagueTypePlayCounts(),
+      builder: (context, snapshot) {
+        final playCounts = snapshot.data ?? {};
+        final j1PlayCount = playCounts[AppConstants.leagueTypeJ1] ?? 0;
+        final europePlayCount = playCounts[AppConstants.leagueTypeEurope] ?? 0;
+        final j1CanPlay = j1PlayCount < 3;
+        final europeCanPlay = europePlayCount < 3;
+        
+        return _buildSectionSelector(
+          icon: Icons.sports_soccer,
+          title: 'リーグ',
+          children: [
+            _buildLeagueTypeChip(
+              'J1リーグ',
+              AppConstants.leagueTypeJ1,
+              _selectedLeagueType,
+              j1CanPlay,
+              j1PlayCount,
+              (value) => setState(() => _selectedLeagueType = value),
+            ),
+            _buildLeagueTypeChip(
+              'ヨーロッパサッカー',
+              AppConstants.leagueTypeEurope,
+              _selectedLeagueType,
+              europeCanPlay,
+              europePlayCount,
+              (value) => setState(() => _selectedLeagueType = value),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  Future<Map<String, int>> _getLeagueTypePlayCounts() async {
+    final databaseService = ref.read(databaseServiceProvider);
+    final j1Count = await databaseService.getMatchDayPlayCountByLeagueType(AppConstants.leagueTypeJ1);
+    final europeCount = await databaseService.getMatchDayPlayCountByLeagueType(AppConstants.leagueTypeEurope);
+    return {
+      AppConstants.leagueTypeJ1: j1Count,
+      AppConstants.leagueTypeEurope: europeCount,
+    };
+  }
+
+  Widget _buildLeagueTypeChip(
+    String label,
+    String value,
+    String? selectedValue,
+    bool canPlay,
+    int playCount,
+    ValueChanged<String> onSelected,
+  ) {
+    final isSelected = selectedValue == value;
+    final isDisabled = !canPlay;
+
+    return GestureDetector(
+      onTap: isDisabled
+          ? null
+          : () => onSelected(isSelected ? '' : value),
+      child: Opacity(
+        opacity: isDisabled ? 0.5 : 1.0,
+        child: GlassMorphismWidget(
+          borderRadius: 20,
+          backgroundColor: isDisabled
+              ? Colors.grey.shade300
+              : (isSelected
+                  ? AppColors.techIndigo
+                  : Colors.white.withValues(alpha: 0.8)),
+          borderColor: isDisabled
+              ? Colors.grey.shade400
+              : (isSelected
+                  ? AppColors.stitchEmerald.withValues(alpha: 0.3)
+                  : Colors.grey.shade300),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                label,
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 14,
+                  color: isDisabled
+                      ? Colors.grey.shade600
+                      : (isSelected ? Colors.white : Colors.grey.shade700),
+                ),
+              ),
+              if (isDisabled) ...[
+                const SizedBox(width: 8),
+                Text(
+                  '(3回プレイ済み)',
+                  style: TextStyle(
+                    fontSize: 11,
+                    color: Colors.grey.shade600,
+                  ),
+                ),
+              ] else if (playCount > 0) ...[
+                const SizedBox(width: 8),
+                Text(
+                  '($playCount/3回)',
+                  style: TextStyle(
+                    fontSize: 11,
+                    color: isSelected ? Colors.white.withValues(alpha: 0.8) : Colors.grey.shade600,
+                  ),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ),
     );
   }
 

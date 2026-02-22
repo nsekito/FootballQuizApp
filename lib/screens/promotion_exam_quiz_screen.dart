@@ -5,7 +5,6 @@ import '../models/question.dart';
 import '../providers/question_service_provider.dart';
 import '../providers/user_data_provider.dart';
 import '../utils/constants.dart';
-import '../utils/unlock_key_utils.dart';
 import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
@@ -14,9 +13,8 @@ import '../widgets/responsive_container.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../providers/admin_mode_provider.dart';
 import '../services/promotion_exam_service.dart';
-import '../constants/gameConfig.dart';
 import '../providers/ad_provider.dart';
-import 'dart:math';
+import '../utils/question_utils.dart';
 
 class PromotionExamQuizScreen extends ConsumerStatefulWidget {
   final String category;
@@ -93,11 +91,12 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
 
       if (!mounted) return;
 
-      // 管理者モードがOFFの場合、選択肢をシャッフル
+      // 管理者モードに応じて問題を処理（共通ロジックを使用）
       final adminMode = ref.read(adminModeProvider);
-      final processedQuestions = adminMode
-          ? questions
-          : questions.map((q) => _shuffleQuestionOptions(q)).toList();
+      final processedQuestions = QuestionUtils.processQuestionsForAdminMode(
+        questions,
+        adminMode,
+      );
 
       setState(() {
         _questions = processedQuestions;
@@ -131,47 +130,6 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
     }
   }
 
-  /// 問題の選択肢をシャッフルし、answerIndexを更新する
-  Question _shuffleQuestionOptions(Question question) {
-    if (question.options.length != 4) {
-      // 選択肢が4つでない場合はそのまま返す
-      return question;
-    }
-
-    // 正解の選択肢を取得
-    final correctAnswer = question.options[question.answerIndex];
-
-    // 正解以外の選択肢をシャッフル
-    final otherOptions = List<String>.from(question.options);
-    otherOptions.removeAt(question.answerIndex);
-    otherOptions.shuffle();
-
-    // ランダムな位置に正解を挿入
-    final random = Random();
-    final newIndex = random.nextInt(4);
-    otherOptions.insert(newIndex, correctAnswer);
-
-    // 新しいQuestionオブジェクトを作成
-    return Question(
-      id: question.id,
-      text: question.text,
-      options: otherOptions,
-      answerIndex: newIndex,
-      explanation: question.explanation,
-      trivia: question.trivia,
-      category: question.category,
-      difficulty: question.difficulty,
-      tags: question.tags,
-      referenceDate: question.referenceDate,
-      quizType: question.quizType,
-      categoryId: question.categoryId,
-      region: question.region,
-      league: question.league,
-      team: question.team,
-      teamId: question.teamId,
-      weeklyMeta: question.weeklyMeta,
-    );
-  }
 
   void _selectAnswer(int index) {
     if (_showAnswerResult) return;

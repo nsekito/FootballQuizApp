@@ -17,7 +17,7 @@ import '../utils/category_difficulty_utils.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../providers/admin_mode_provider.dart';
 import '../utils/reward_calculator.dart';
-import 'dart:math';
+import '../utils/question_utils.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {
   final String category;
@@ -66,6 +66,15 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       });
 
       final questionService = ref.read(questionServiceProvider);
+      final databaseService = ref.read(databaseServiceProvider);
+
+      // Weekly Recapの場合、出題済み問題IDを取得
+      List<String>? excludeIds;
+      if (widget.category == AppConstants.categoryMatchRecap && 
+          widget.leagueType != null && 
+          widget.leagueType!.isNotEmpty) {
+        excludeIds = await databaseService.getPlayedQuestionIds(widget.leagueType!);
+      }
 
       // tagsパラメータは使用しない（regionフィールドとteam_idフィールドで検索するため）
 
@@ -81,15 +90,17 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         date: widget.date,
         leagueType: widget.leagueType,
         limit: AppConstants.defaultQuestionsPerQuiz,
+        excludeIds: excludeIds, // 出題済み問題を除外
       );
 
       if (!mounted) return;
 
-      // 管理者モードがOFFの場合、選択肢をシャッフル
+      // 管理者モードに応じて問題を処理（共通ロジックを使用）
       final adminMode = ref.read(adminModeProvider);
-      final processedQuestions = adminMode
-          ? questions
-          : questions.map((q) => _shuffleQuestionOptions(q)).toList();
+      final processedQuestions = QuestionUtils.processQuestionsForAdminMode(
+        questions,
+        adminMode,
+      );
 
       setState(() {
         _questions = processedQuestions;
@@ -141,47 +152,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     }
   }
 
-  /// 問題の選択肢をシャッフルし、answerIndexを更新する
-  Question _shuffleQuestionOptions(Question question) {
-    if (question.options.length != 4) {
-      // 選択肢が4つでない場合はそのまま返す
-      return question;
-    }
-
-    // 正解の選択肢を取得
-    final correctAnswer = question.options[question.answerIndex];
-
-    // 正解以外の選択肢をシャッフル
-    final otherOptions = List<String>.from(question.options);
-    otherOptions.removeAt(question.answerIndex);
-    otherOptions.shuffle();
-
-    // ランダムな位置に正解を挿入
-    final random = Random();
-    final newIndex = random.nextInt(4);
-    otherOptions.insert(newIndex, correctAnswer);
-
-    // 新しいQuestionオブジェクトを作成
-    return Question(
-      id: question.id,
-      text: question.text,
-      options: otherOptions,
-      answerIndex: newIndex,
-      explanation: question.explanation,
-      trivia: question.trivia,
-      category: question.category,
-      difficulty: question.difficulty,
-      tags: question.tags,
-      referenceDate: question.referenceDate,
-      quizType: question.quizType,
-      categoryId: question.categoryId,
-      region: question.region,
-      league: question.league,
-      team: question.team,
-      teamId: question.teamId,
-      weeklyMeta: question.weeklyMeta,
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -216,6 +186,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
+          automaticallyImplyLeading: false, // 戻るボタンを非表示
           centerTitle: true,
         title: Column(
           children: [
@@ -685,26 +656,39 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       int earnedPoints = 0;
 
       if (isMatchDay) {
-        // MATCH DAYの場合はプレイ回数を取得してから記録
-        final playCount = await databaseService.getMatchDayPlayCount();
-        await databaseService.recordMatchDayPlay();
-        final newPlayCount = playCount + 1;
+        // MATCH DAYの場合はリーグタイプ別にプレイ回数を取得してから記録
+        final leagueType = widget.leagueType ?? AppConstants.leagueTypeJ1;
+        await databaseService.recordMatchDayPlayByLeagueType(leagueType);
         
-        // 週間正答数の合計を取得
-        final weeklyCorrectTotal = await databaseService.getMatchDayWeeklyCorrectTotal();
+        // 出題済み問題を記録
+        final questionIds = _questions.map((q) => q.id).toList();
+        await databaseService.recordWeeklyRecapQuestionPlay(leagueType, questionIds);
+        
+        // 週間正答数の合計を取得（リーグタイプ別）
+        final weeklyCorrectTotal = await databaseService.getMatchDayWeeklyCorrectTotalByLeagueType(leagueType);
+        
+        // 全体のプレイ回数を取得（報酬計算用）
+        final j1PlayCount = await databaseService.getMatchDayPlayCountByLeagueType(AppConstants.leagueTypeJ1);
+        final europePlayCount = await databaseService.getMatchDayPlayCountByLeagueType(AppConstants.leagueTypeEurope);
+        final totalPlayCount = j1PlayCount + europePlayCount;
+        
+        // 全体の週間正答数の合計を取得（報酬計算用）
+        final j1CorrectTotal = await databaseService.getMatchDayWeeklyCorrectTotalByLeagueType(AppConstants.leagueTypeJ1);
+        final europeCorrectTotal = await databaseService.getMatchDayWeeklyCorrectTotalByLeagueType(AppConstants.leagueTypeEurope);
+        final totalWeeklyCorrectTotal = j1CorrectTotal + europeCorrectTotal + _score;
         
         // MATCH DAY報酬を計算（広告視聴はまだしていないのでfalse）
         final reward = RewardCalculator.calculateMatchDayReward(
           correctCount: _score,
-          playCount: newPlayCount,
+          playCount: totalPlayCount, // 全体のプレイ回数を使用
           watchedAd: false, // 広告視聴は結果画面で行う
-          weeklyCorrectTotal: weeklyCorrectTotal + _score, // 今回の正答数を加算
+          weeklyCorrectTotal: totalWeeklyCorrectTotal, // 全体の週間正答数を使用
         );
         earnedExp = reward.$1;
         earnedPoints = reward.$2;
         
-        // 週間正答数を更新
-        await databaseService.updateMatchDayWeeklyCorrectTotal(weeklyCorrectTotal + _score);
+        // 週間正答数を更新（リーグタイプ別）
+        await databaseService.updateMatchDayWeeklyCorrectTotalByLeagueType(leagueType, weeklyCorrectTotal + _score);
       } else {
         // 定常クイズの報酬を計算
         final difficultyUpper = widget.difficulty.toUpperCase();

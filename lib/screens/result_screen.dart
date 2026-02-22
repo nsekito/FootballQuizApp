@@ -15,8 +15,6 @@ import '../widgets/responsive_container.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../providers/ad_provider.dart';
 import '../constants/gameConfig.dart';
-import '../providers/database_provider.dart';
-import 'dart:math' as math;
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
@@ -280,15 +278,14 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
     final totalExp = ref.watch(totalExpProvider);
     final totalPoints = ref.watch(totalPointsProvider);
 
-    return Scaffold(
-      backgroundColor: AppColors.stitchBackgroundLight,
-      appBar: AppBar(
-        backgroundColor: AppColors.stitchEmerald.withValues(alpha: 0.9),
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Colors.white),
-          onPressed: () => context.pop(),
-        ),
+    return PopScope(
+      canPop: false,
+      child: Scaffold(
+        backgroundColor: AppColors.stitchBackgroundLight,
+        appBar: AppBar(
+          backgroundColor: AppColors.stitchEmerald.withValues(alpha: 0.9),
+          elevation: 0,
+          automaticallyImplyLeading: false, // 戻るボタンを非表示
         title: const Text(
           '結果',
           style: TextStyle(
@@ -892,6 +889,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
         ),
       ),
       bottomNavigationBar: const BannerAdWidget(),
+      ),
     );
   }
 }

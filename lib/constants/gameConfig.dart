@@ -53,12 +53,13 @@ class QuizRewardsConfig {
 }
 
 final Map<String, QuizRewardsConfig> QUIZ_REWARDS = {
+  // MATCHDAY報酬（広告視聴6回対応のため、基本報酬を半分に調整）
   'MATCHDAY': const QuizRewardsConfig(rewards: {
-    '0-3': QuizReward(exp: 15, pt: 8),
-    '4-5': QuizReward(exp: 25, pt: 20),
-    '6-7': QuizReward(exp: 45, pt: 40),
-    '8-9': QuizReward(exp: 75, pt: 60),
-    '10': QuizReward(exp: 120, pt: 90),
+    '0-3': QuizReward(exp: 7, pt: 4),      // 15→7, 8→4
+    '4-5': QuizReward(exp: 12, pt: 10),    // 25→12, 20→10
+    '6-7': QuizReward(exp: 22, pt: 20),    // 45→22, 40→20
+    '8-9': QuizReward(exp: 37, pt: 30),    // 75→37, 60→30
+    '10': QuizReward(exp: 60, pt: 45),     // 120→60, 90→45
   }),
   'EASY': const QuizRewardsConfig(rewards: {
     '0-3': QuizReward(exp: 3, pt: 2),
@@ -112,12 +113,15 @@ class WeeklyBonusConfig {
   });
 }
 
+// MATCHDAY設定
+// 広告視聴で最大6回プレイ可能（J1とEuropeをそれぞれ3回ずつ）
+// 基本報酬は半分に調整されているため、ポイントの価値を維持
 const MATCHDAY = MatchDayConfig(
-  maxPlaysPerWeek: 3,
-  playMultipliers: [1.0, 0.7, 0.5],
+  maxPlaysPerWeek: 6,  // 総プレイ回数（リーグタイプ別に3回ずつ）
+  playMultipliers: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],  // 基本報酬が半分なので、すべて1.0倍
   weeklyBonus: WeeklyBonusConfig(
-    requiredPlays: 3,
-    requiredCorrectTotal: 25,
+    requiredPlays: 6,  // 6回プレイでボーナス
+    requiredCorrectTotal: 50,  // 60問中50問正解でボーナス
     bonusExp: 50,
     bonusPt: 30,
   ),

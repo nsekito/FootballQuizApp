@@ -6,6 +6,9 @@ import 'package:intl/intl.dart';
 import '../providers/admin_mode_provider.dart';
 import '../providers/user_data_provider.dart';
 import '../providers/question_unlock_provider.dart';
+import '../providers/login_bonus_provider.dart';
+import '../providers/quiz_history_provider.dart';
+import '../providers/database_provider.dart';
 import '../models/user_rank.dart';
 import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
@@ -30,6 +33,10 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
   bool _isResettingDifficulties = false;
   bool _isUnlockingNormal = false;
   bool _isUnlockingHard = false;
+  bool _isResettingLoginBonus = false;
+  bool _isResettingHistory = false;
+  bool _isResettingMatchDay = false;
+  bool _isResettingAllData = false;
 
   @override
   void initState() {
@@ -261,6 +268,22 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
 
                 // 難易度解放管理
                 _buildDifficultyUnlockSection(),
+                const SizedBox(height: 24),
+
+                // ログインボーナスリセット
+                _buildLoginBonusResetSection(),
+                const SizedBox(height: 24),
+
+                // クイズ履歴リセット
+                _buildHistoryResetSection(),
+                const SizedBox(height: 24),
+
+                // MATCH DAYプレイ回数リセット
+                _buildMatchDayResetSection(),
+                const SizedBox(height: 24),
+
+                // 全ユーザーデータリセット
+                _buildFullDataResetSection(),
               ],
             ),
           ),
@@ -967,6 +990,540 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
       if (mounted) {
         setState(() {
           _isUnlockingHard = false;
+        });
+      }
+    }
+  }
+
+  Widget _buildLoginBonusResetSection() {
+    final loginBonusStatus = ref.watch(loginBonusStatusProvider);
+    
+    return GlassMorphismWidget(
+      borderRadius: 16,
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.calendar_today,
+                color: Colors.purple.shade700,
+                size: 24,
+              ),
+              const SizedBox(width: 8),
+              const Text(
+                'ログインボーナスリセット',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Text(
+            '現在の連続日数: ${loginBonusStatus.streakDays}日',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.grey.shade700,
+            ),
+          ),
+          if (loginBonusStatus.lastDate != null) ...[
+            const SizedBox(height: 8),
+            Text(
+              '最後に受け取った日: ${loginBonusStatus.lastDate}',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey.shade700,
+              ),
+            ),
+          ],
+          const SizedBox(height: 16),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: _isResettingLoginBonus ? null : _resetLoginBonus,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.purple.shade700,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: _isResettingLoginBonus
+                  ? const SizedBox(
+                      height: 20,
+                      width: 20,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                      ),
+                    )
+                  : const Text(
+                      'ログインボーナスをリセット',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildHistoryResetSection() {
+    final historyStatsAsync = ref.watch(quizStatisticsProvider);
+    
+    return GlassMorphismWidget(
+      borderRadius: 16,
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.history,
+                color: Colors.blue.shade700,
+                size: 24,
+              ),
+              const SizedBox(width: 8),
+              const Text(
+                'クイズ履歴リセット',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          historyStatsAsync.when(
+            data: (stats) => Text(
+              '現在のプレイ回数: ${stats.totalPlays}回',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey.shade700,
+              ),
+            ),
+            loading: () => Text(
+              '読み込み中...',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey.shade700,
+              ),
+            ),
+            error: (_, __) => Text(
+              'エラーが発生しました',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.red.shade700,
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: _isResettingHistory ? null : _resetHistory,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue.shade700,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: _isResettingHistory
+                  ? const SizedBox(
+                      height: 20,
+                      width: 20,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                      ),
+                    )
+                  : const Text(
+                      'クイズ履歴をリセット',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildMatchDayResetSection() {
+    return GlassMorphismWidget(
+      borderRadius: 16,
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.sports_soccer,
+                color: Colors.green.shade700,
+                size: 24,
+              ),
+              const SizedBox(width: 8),
+              const Text(
+                'MATCH DAYプレイ回数リセット',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Text(
+            '今週のMATCH DAYプレイ回数と出題済み問題履歴をリセットします。',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.grey.shade700,
+            ),
+          ),
+          const SizedBox(height: 16),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: _isResettingMatchDay ? null : _resetMatchDay,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green.shade700,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: _isResettingMatchDay
+                  ? const SizedBox(
+                      height: 20,
+                      width: 20,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                      ),
+                    )
+                  : const Text(
+                      'MATCH DAYプレイ回数をリセット',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _resetMatchDay() async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('MATCH DAYプレイ回数をリセット'),
+        content: const Text(
+          '今週のMATCH DAYプレイ回数と出題済み問題履歴をリセットします。この操作は元に戻せません。\n\n本当に実行しますか？',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('キャンセル'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.green.shade700,
+            ),
+            child: const Text('リセットする'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    setState(() {
+      _isResettingMatchDay = true;
+    });
+
+    try {
+      final databaseService = ref.read(databaseServiceProvider);
+      await databaseService.resetMatchDayPlayHistory();
+      await databaseService.resetWeeklyRecapQuestionHistory();
+      if (mounted) {
+        _showSuccessSnackBar('MATCH DAYプレイ回数をリセットしました');
+      }
+    } catch (e) {
+      if (mounted) {
+        _showErrorSnackBar('リセットに失敗しました: $e');
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isResettingMatchDay = false;
+        });
+      }
+    }
+  }
+
+  Widget _buildFullDataResetSection() {
+    final currentExp = ref.watch(totalExpProvider);
+    final currentPoints = ref.watch(totalPointsProvider);
+    final currentRank = ref.watch(userRankProvider);
+    
+    return GlassMorphismWidget(
+      borderRadius: 16,
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.warning,
+                color: Colors.red.shade700,
+                size: 24,
+              ),
+              const SizedBox(width: 8),
+              const Text(
+                '全ユーザーデータリセット',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Text(
+            '現在の状態:',
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+              color: Colors.grey.shade700,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'EXP: ${NumberFormat('#,###').format(currentExp)}',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.grey.shade700,
+            ),
+          ),
+          Text(
+            'ポイント: ${NumberFormat('#,###').format(currentPoints)}',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.grey.shade700,
+            ),
+          ),
+          Text(
+            'ランク: ${currentRank.japaneseName}',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.grey.shade700,
+            ),
+          ),
+          const SizedBox(height: 16),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: _isResettingAllData ? null : _resetAllData,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red.shade700,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: _isResettingAllData
+                  ? const SizedBox(
+                      height: 20,
+                      width: 20,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                      ),
+                    )
+                  : const Text(
+                      '全データをリセット',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _resetLoginBonus() async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('ログインボーナスをリセット'),
+        content: const Text(
+          'ログインボーナスの連続日数と最後に受け取った日付をリセットします。この操作は元に戻せません。\n\n本当に実行しますか？',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('キャンセル'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.purple.shade700,
+            ),
+            child: const Text('リセットする'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    setState(() {
+      _isResettingLoginBonus = true;
+    });
+
+    try {
+      await ref.read(loginBonusStatusProvider.notifier).resetLoginBonus();
+      if (mounted) {
+        _showSuccessSnackBar('ログインボーナスをリセットしました');
+      }
+    } catch (e) {
+      if (mounted) {
+        _showErrorSnackBar('リセットに失敗しました: $e');
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isResettingLoginBonus = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _resetHistory() async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('クイズ履歴をリセット'),
+        content: const Text(
+          'すべてのクイズ履歴と統計情報を削除します。この操作は元に戻せません。\n\n本当に実行しますか？',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('キャンセル'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue.shade700,
+            ),
+            child: const Text('リセットする'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    setState(() {
+      _isResettingHistory = true;
+    });
+
+    try {
+      final historyService = ref.read(quizHistoryServiceProvider);
+      await historyService.deleteAllHistory();
+      // プロバイダーを無効化して再読み込み
+      ref.invalidate(quizHistoryListProvider);
+      ref.invalidate(quizStatisticsProvider);
+      if (mounted) {
+        _showSuccessSnackBar('クイズ履歴をリセットしました');
+      }
+    } catch (e) {
+      if (mounted) {
+        _showErrorSnackBar('リセットに失敗しました: $e');
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isResettingHistory = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _resetAllData() async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('全ユーザーデータをリセット'),
+        content: const Text(
+          'EXP、ポイント、ランクをすべて0にリセットします。この操作は元に戻せません。\n\n本当に実行しますか？',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('キャンセル'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.red.shade700,
+            ),
+            child: const Text('リセットする'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    setState(() {
+      _isResettingAllData = true;
+    });
+
+    try {
+      // EXPとポイントを0に設定
+      await ref.read(totalExpProvider.notifier).setExp(0);
+      await ref.read(totalPointsProvider.notifier).setPoints(0);
+      if (mounted) {
+        setState(() {
+          _selectedRank = UserRank.fromExp(0);
+          _expController.text = '0';
+          _pointsController.text = '0';
+        });
+        _showSuccessSnackBar('全ユーザーデータをリセットしました');
+      }
+    } catch (e) {
+      if (mounted) {
+        _showErrorSnackBar('リセットに失敗しました: $e');
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isResettingAllData = false;
         });
       }
     }
