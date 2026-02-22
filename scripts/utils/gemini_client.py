@@ -4,6 +4,7 @@ import re
 import time
 import sys
 import random
+from datetime import datetime, timedelta
 from pathlib import Path
 
 # サードパーティライブラリのインポート
@@ -30,6 +31,54 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 # リトライ設定
 MAX_RETRIES = 3  # 最大リトライ回数
 BASE_DELAY = 1  # ベース待機時間（秒）
+
+
+def fix_json_escapes(json_str: str) -> str:
+    """
+    JSON文字列内の未エスケープダブルクォートを修正する
+    文字列値内のダブルクォートを\"にエスケープする
+    
+    Args:
+        json_str: JSON文字列
+    
+    Returns:
+        修正されたJSON文字列
+    """
+    # 文字列値内の未エスケープダブルクォートを検出・修正
+    # パターン: "..." の中の " を \" に置換（ただし既にエスケープされているものは除く）
+    result = []
+    i = 0
+    in_string = False
+    escape_next = False
+    
+    while i < len(json_str):
+        char = json_str[i]
+        
+        if escape_next:
+            result.append(char)
+            escape_next = False
+        elif char == '\\':
+            result.append(char)
+            escape_next = True
+        elif char == '"':
+            if in_string:
+                # 文字列内のダブルクォートの場合、前の文字を確認
+                # 既にエスケープされている場合はそのまま
+                if i > 0 and json_str[i-1] == '\\':
+                    result.append(char)
+                else:
+                    # 未エスケープのダブルクォートをエスケープ
+                    result.append('\\"')
+            else:
+                # 文字列の開始/終了
+                result.append(char)
+                in_string = not in_string
+        else:
+            result.append(char)
+        
+        i += 1
+    
+    return ''.join(result)
 
 
 def balance_answer_indices(questions: list) -> list:
@@ -114,6 +163,45 @@ def balance_answer_indices(questions: list) -> list:
     return balanced_questions
 
 
+def _calculate_date_range(reference_date: str) -> dict:
+    """
+    参照日から1週間の日付範囲を計算する
+    
+    Args:
+        reference_date: 参照日（YYYY-MM-DD形式）
+    
+    Returns:
+        日付範囲の辞書（start_date, end_date, start_date_jp, end_date_jp, year）
+    """
+    reference_date_obj = datetime.strptime(reference_date, '%Y-%m-%d')
+    start_date_obj = reference_date_obj - timedelta(days=7)
+    
+    start_date = start_date_obj.strftime('%Y-%m-%d')
+    end_date = reference_date
+    
+    # 日本語形式（年を明示、Windows対応）
+    try:
+        # Unix系システム（%-m, %-d）
+        start_date_jp = start_date_obj.strftime('%Y年%-m月%-d日')
+        end_date_jp = reference_date_obj.strftime('%Y年%-m月%-d日')
+    except ValueError:
+        # Windows（%#m, %#d）
+        start_date_jp = start_date_obj.strftime('%Y年%#m月%#d日')
+        end_date_jp = reference_date_obj.strftime('%Y年%#m月%#d日')
+    
+    year = reference_date_obj.year
+    prev_year = year - 1
+    
+    return {
+        'start_date': start_date,
+        'end_date': end_date,
+        'start_date_jp': start_date_jp,
+        'end_date_jp': end_date_jp,
+        'year': year,
+        'prev_year': prev_year
+    }
+
+
 def generate_weekly_recap_questions_batch(
     region: str,
     reference_date: str,
@@ -138,6 +226,9 @@ def generate_weekly_recap_questions_batch(
     Returns:
         生成された問題のリスト（30問）
     """
+    # 日付範囲を計算
+    date_range = _calculate_date_range(reference_date)
+    
     # プロンプトテンプレート
     prompt_template = """# Weekly サッカークイズ生成プロンプト
 
@@ -150,6 +241,7 @@ def generate_weekly_recap_questions_batch(
 
 - region: {region}
 - referenceDate: {referenceDate}
+- 検索対象期間: {start_date_jp}から{end_date_jp}まで（{start_date}から{end_date}まで）
 - matchweek: {matchweek}
 - publishDate: {publishDate}
 - expiryDate: {expiryDate}
@@ -161,11 +253,15 @@ def generate_weekly_recap_questions_batch(
 
 ## 情報収集ルール
 
-1. まずWeb検索を行い、{referenceDate} を含む直近1週間のサッカー情報を収集する
-2. 検索は以下の優先順で行い、十分な情報が集まるまで複数回検索する
-3. 収集した情報の事実確認を必ず行い、複数ソースで裏取りする
-4. 速報段階で確定していない情報（移籍の噂レベル等）はクイズにしない
-5. 検索で十分な情報が得られなかったカテゴリは、得られたカテゴリに問題数を振り替える
+1. **重要**: Web検索を行い、**{year}年{start_date_jp}から{end_date_jp}までの期間**のサッカー情報を収集してください
+2. **重要**: 必ず{year}年のデータのみを検索し、{prev_year}年のデータは使用しないでください
+3. 検索キーワードの例：「{year}年{start_date_jp}から{end_date_jp} {region_search_keyword} 試合結果」
+4. 検索は以下の優先順で行い、十分な情報が集まるまで複数回検索する
+5. 収集した情報の事実確認を必ず行い、複数ソースで裏取りする
+6. 速報段階で確定していない情報（移籍の噂レベル等）はクイズにしない
+7. 検索で十分な情報が得られなかったカテゴリは、得られたカテゴリに問題数を振り替える
+8. **重要**: 試合日（matchDate）は必ず{start_date}から{end_date}までの期間の日付である必要があります。それより古い日付の試合は使用しないでください
+9. **重要**: 問題文内の日付も必ず{year}年の日付のみを使用し、{prev_year}年の日付は使用しないでください
 
 ### regionごとの検索キーワード方針
 
@@ -256,6 +352,9 @@ def generate_weekly_recap_questions_batch(
 7. 同カテゴリ内で問題の内容が重複しないようにする
 8. leagueフィールドにはその問題が関連するリーグIDを設定する（j1 / j2 / j3 / premier / laliga / seriea / bundesliga / ligue1 / ucl / uel 等）。複数リーグにまたがる場合や特定リーグに紐づかない場合は null
 9. 不正解の選択肢はもっともらしいが明確に誤りであるものにする。紛らわしすぎて議論になるような選択肢は避ける
+10. **重要**: matchDateを設定する場合は、必ず{start_date}から{end_date}までの期間の日付である必要があります。それより古い日付の試合は使用せず、matchDateはnullに設定してください
+11. **重要**: 問題文内の日付も必ず{year}年の日付のみを使用してください。{prev_year}年の日付が含まれている場合は、必ず{year}年に修正してください
+12. **重要**: JSON内の文字列値にダブルクォート（`"`）が含まれる場合は、必ずバックスラッシュでエスケープして`\"`としてください。エスケープされていないダブルクォートがあるとJSONパースエラーになります
 
 ---
 
@@ -319,7 +418,7 @@ def generate_weekly_recap_questions_batch(
 | trivia | string | 豆知識（150文字程度） |
 | referenceDate | string | {referenceDate} の値をそのまま設定 |
 | weeklyMeta.matchweek | number or null | 節数。該当しない場合は null |
-| weeklyMeta.matchDate | string or null | 問題に関連する試合日（YYYY-MM-DD）。試合に紐づかない場合は null |
+| weeklyMeta.matchDate | string or null | 問題に関連する試合日（YYYY-MM-DD）。**必ずreferenceDateを含む直近1週間（referenceDateから7日前まで）の日付である必要があります。**試合に紐づかない場合や、それより古い日付の試合の場合は null |
 | weeklyMeta.publishDate | string | {publishDate} の値をそのまま設定 |
 | weeklyMeta.expiryDate | string | {expiryDate} の値をそのまま設定 |
 | weeklyMeta.season | string | {season} の値をそのまま設定 |
@@ -328,12 +427,13 @@ def generate_weekly_recap_questions_batch(
 
 ## 作成手順
 
-1. Web検索で {referenceDate} を含む直近1週間の {region} に関するサッカー情報を収集する
+1. Web検索で {year}年{start_date_jp}から{end_date_jp}までの期間の {region} に関するサッカー情報を収集する（必ず{year}年のデータのみを使用）
 2. 収集した情報を5つのカテゴリに分類する
 3. 情報量に応じて各カテゴリの問題数を決定する（配分ルールに従う）
 4. 難易度配分に従って各問題の難易度を決定する
 5. 問題を作成し、事実確認のため再度検索して裏取りする
-6. JSON配列のみを出力する
+6. 問題文内の日付が{year}年であることを確認する（{prev_year}年の日付が含まれていないかチェック）
+7. JSON配列のみを出力する
 """
     
     # matchweekの文字列表現（プロンプト用）
@@ -345,8 +445,10 @@ def generate_weekly_recap_questions_batch(
     # categoryIdの例（JSONスキーマ用）
     if region == "japan":
         category_id_example = "weekly-jp-match"
+        region_search_keyword = "J1"
     else:  # world
         category_id_example = "weekly-world-match"
+        region_search_keyword = "プレミアリーグ"
     
     # startNumberを5桁ゼロ埋め形式に変換
     start_number_str = f"{start_number:05d}"
@@ -355,6 +457,13 @@ def generate_weekly_recap_questions_batch(
     prompt = prompt_template.format(
         region=region,
         referenceDate=reference_date,
+        start_date=date_range['start_date'],
+        end_date=date_range['end_date'],
+        start_date_jp=date_range['start_date_jp'],
+        end_date_jp=date_range['end_date_jp'],
+        year=date_range['year'],
+        prev_year=date_range['prev_year'],
+        region_search_keyword=region_search_keyword,
         matchweek=matchweek_str,
         matchweekExample=matchweek_example,
         publishDate=publish_date or "",
@@ -474,6 +583,45 @@ def generate_weekly_recap_questions_batch(
                 weekly_meta.setdefault('publishDate', publish_date)
                 weekly_meta.setdefault('expiryDate', expiry_date)
                 weekly_meta.setdefault('season', season)
+                
+                # matchDateの日付範囲チェック
+                match_date = weekly_meta.get('matchDate')
+                reference_date_obj = datetime.strptime(reference_date, '%Y-%m-%d')
+                reference_year = reference_date_obj.year
+                
+                if match_date:
+                    try:
+                        match_date_obj = datetime.strptime(match_date, '%Y-%m-%d')
+                        min_date = reference_date_obj - timedelta(days=7)
+                        if match_date_obj < min_date:
+                            print(f"警告: 問題{i+1}のmatchDateが'{match_date}'で、referenceDateから7日以上前です。nullに設定します。")
+                            weekly_meta['matchDate'] = None
+                        # 年のチェック
+                        elif match_date_obj.year != reference_year:
+                            print(f"警告: 問題{i+1}のmatchDateが'{match_date}'で、referenceDateの年({reference_year}年)と異なります。nullに設定します。")
+                            weekly_meta['matchDate'] = None
+                    except ValueError:
+                        print(f"警告: 問題{i+1}のmatchDateが無効な形式です: '{match_date}'。nullに設定します。")
+                        weekly_meta['matchDate'] = None
+                
+                # 問題文内の日付をチェック（YYYY年M月D日形式を検出）
+                question_text = question_data.get('text', '')
+                explanation_text = question_data.get('explanation', '')
+                trivia_text = question_data.get('trivia', '')
+                all_text = f"{question_text} {explanation_text} {trivia_text}"
+                
+                # 日付パターンを検出（YYYY年M月D日形式）
+                date_pattern = r'(\d{4})年(\d{1,2})月(\d{1,2})日'
+                date_matches = re.findall(date_pattern, all_text)
+                
+                for year_str, month_str, day_str in date_matches:
+                    try:
+                        found_year = int(year_str)
+                        if found_year != reference_year:
+                            print(f"警告: 問題{i+1}のテキスト内に{found_year}年の日付が含まれています。referenceDateは{reference_year}年です。")
+                    except ValueError:
+                        pass
+                
                 question_data['weeklyMeta'] = weekly_meta
                 
                 # デフォルト値の設定
@@ -566,6 +714,9 @@ def generate_weekly_recap_questions_by_category(
     normal_count = max(1, int(question_count * 0.4))  # 40%
     hard_count = question_count - easy_count - normal_count  # 残り
     
+    # 日付範囲を計算
+    date_range = _calculate_date_range(reference_date)
+    
     # プロンプトテンプレート
     prompt_template = """# Weekly サッカークイズ生成プロンプト（カテゴリ別）
 
@@ -580,6 +731,7 @@ def generate_weekly_recap_questions_by_category(
 - categoryId: {categoryId}
 - category: {categoryName}
 - referenceDate: {referenceDate}
+- 検索対象期間: {start_date_jp}から{end_date_jp}まで（{start_date}から{end_date}まで）
 - matchweek: {matchweek}
 - publishDate: {publishDate}
 - expiryDate: {expiryDate}
@@ -596,10 +748,14 @@ def generate_weekly_recap_questions_by_category(
 
 ## 情報収集ルール
 
-1. まずWeb検索を行い、{referenceDate} を含む直近1週間のサッカー情報を収集する
-2. 検索は以下の優先順で行い、十分な情報が集まるまで複数回検索する
-3. 収集した情報の事実確認を必ず行い、複数ソースで裏取りする
-4. 速報段階で確定していない情報（移籍の噂レベル等）はクイズにしない
+1. **重要**: Web検索を行い、**{year}年{start_date_jp}から{end_date_jp}までの期間**のサッカー情報を収集してください
+2. **重要**: 必ず{year}年のデータのみを検索し、{prev_year}年のデータは使用しないでください
+3. 検索キーワードの例：「{year}年{start_date_jp}から{end_date_jp} {region_search_keyword} 試合結果」
+4. 検索は以下の優先順で行い、十分な情報が集まるまで複数回検索する
+5. 収集した情報の事実確認を必ず行い、複数ソースで裏取りする
+6. 速報段階で確定していない情報（移籍の噂レベル等）はクイズにしない
+7. **重要**: 試合日（matchDate）は必ず{start_date}から{end_date}までの期間の日付である必要があります。それより古い日付の試合は使用しないでください
+8. **重要**: 問題文内の日付も必ず{year}年の日付のみを使用し、{prev_year}年の日付は使用しないでください
 
 ### regionごとの検索キーワード方針
 
@@ -611,6 +767,7 @@ def generate_weekly_recap_questions_by_category(
 - 日本代表関連のニュース
 - 選手の移籍・契約更新情報
 - クラブの経営・運営に関するニュース
+- **検索例**: 「{year}年{start_date_jp}から{end_date_jp} J1 試合結果」
 
 #### world
 
@@ -619,6 +776,7 @@ def generate_weekly_recap_questions_by_category(
 - 海外日本人選手の出場・成績
 - ESPN、BBC Sport、Transfermarkt、UEFA公式等を参照
 - 主要な移籍・契約関連のニュース
+- **検索例**: 「{year}年{start_date_jp}から{end_date_jp} プレミアリーグ 試合結果」
 
 ---
 
@@ -666,6 +824,9 @@ def generate_weekly_recap_questions_by_category(
 8. leagueフィールドにはその問題が関連するリーグIDを設定する（j1 / j2 / j3 / premier / laliga / seriea / bundesliga / ligue1 / ucl / uel 等）。複数リーグにまたがる場合や特定リーグに紐づかない場合は null
 9. 不正解の選択肢はもっともらしいが明確に誤りであるものにする。紛らわしすぎて議論になるような選択肢は避ける
 10. **重要**: regionフィールドには必ず"{region}"を設定し、categoryIdフィールドには必ず"{categoryId}"を設定してください
+11. **重要**: matchDateを設定する場合は、必ず{start_date}から{end_date}までの期間の日付である必要があります。それより古い日付の試合は使用せず、matchDateはnullに設定してください
+12. **重要**: 問題文内の日付も必ず{year}年の日付のみを使用してください。{prev_year}年の日付が含まれている場合は、必ず{year}年に修正してください
+13. **重要**: JSON内の文字列値にダブルクォート（`"`）が含まれる場合は、必ずバックスラッシュでエスケープして`\"`としてください。エスケープされていないダブルクォートがあるとJSONパースエラーになります
 
 ---
 
@@ -710,11 +871,12 @@ def generate_weekly_recap_questions_by_category(
 
 ## 作成手順
 
-1. Web検索で {referenceDate} を含む直近1週間の {region} に関するサッカー情報を収集する
+1. Web検索で {year}年{start_date_jp}から{end_date_jp}までの期間の {region} に関するサッカー情報を収集する（必ず{year}年のデータのみを使用）
 2. {categoryName}カテゴリに関連する情報を抽出する
 3. 難易度配分に従って各問題の難易度を決定する
 4. 問題を作成し、事実確認のため再度検索して裏取りする
-5. JSON配列のみを出力する
+5. 問題文内の日付が{year}年であることを確認する（{prev_year}年の日付が含まれていないかチェック）
+6. JSON配列のみを出力する
 """
     
     # matchweekの文字列表現（プロンプト用）
@@ -727,12 +889,25 @@ def generate_weekly_recap_questions_by_category(
     start_number_str = f"{start_number:05d}"
     start_number_plus1_str = f"{start_number + 1:05d}"
     
+    # regionごとの検索キーワード
+    if region == "japan":
+        region_search_keyword = "J1"
+    else:  # world
+        region_search_keyword = "プレミアリーグ"
+    
     # プロンプトにパラメータを埋め込む
     prompt = prompt_template.format(
         region=region,
         categoryId=category_id,
         categoryName=category_name,
         referenceDate=reference_date,
+        start_date=date_range['start_date'],
+        end_date=date_range['end_date'],
+        start_date_jp=date_range['start_date_jp'],
+        end_date_jp=date_range['end_date_jp'],
+        year=date_range['year'],
+        prev_year=date_range['prev_year'],
+        region_search_keyword=region_search_keyword,
         matchweek=matchweek_str,
         matchweekExample=matchweek_example,
         publishDate=publish_date or "",
@@ -780,8 +955,18 @@ def generate_weekly_recap_questions_by_category(
                             if ']' in response_text:
                                 response_text = response_text[:response_text.rfind(']') + 1]
             
-            # JSON配列をパース
-            questions_data = json.loads(response_text)
+            # JSON配列をパース（エスケープ修正を試みる）
+            try:
+                questions_data = json.loads(response_text)
+            except json.JSONDecodeError as e:
+                # エスケープ修正を試みる
+                try:
+                    fixed_text = fix_json_escapes(response_text)
+                    questions_data = json.loads(fixed_text)
+                    print("警告: JSON内の未エスケープダブルクォートを自動修正しました")
+                except json.JSONDecodeError:
+                    # 修正してもダメな場合は元のエラーを再発生
+                    raise e
             
             # リストでない場合はリストに変換
             if not isinstance(questions_data, list):
@@ -862,6 +1047,45 @@ def generate_weekly_recap_questions_by_category(
                 weekly_meta.setdefault('publishDate', publish_date)
                 weekly_meta.setdefault('expiryDate', expiry_date)
                 weekly_meta.setdefault('season', season)
+                
+                # matchDateの日付範囲チェック
+                match_date = weekly_meta.get('matchDate')
+                reference_date_obj = datetime.strptime(reference_date, '%Y-%m-%d')
+                reference_year = reference_date_obj.year
+                
+                if match_date:
+                    try:
+                        match_date_obj = datetime.strptime(match_date, '%Y-%m-%d')
+                        min_date = reference_date_obj - timedelta(days=7)
+                        if match_date_obj < min_date:
+                            print(f"警告: 問題{i+1}のmatchDateが'{match_date}'で、referenceDateから7日以上前です。nullに設定します。")
+                            weekly_meta['matchDate'] = None
+                        # 年のチェック
+                        elif match_date_obj.year != reference_year:
+                            print(f"警告: 問題{i+1}のmatchDateが'{match_date}'で、referenceDateの年({reference_year}年)と異なります。nullに設定します。")
+                            weekly_meta['matchDate'] = None
+                    except ValueError:
+                        print(f"警告: 問題{i+1}のmatchDateが無効な形式です: '{match_date}'。nullに設定します。")
+                        weekly_meta['matchDate'] = None
+                
+                # 問題文内の日付をチェック（YYYY年M月D日形式を検出）
+                question_text = question_data.get('text', '')
+                explanation_text = question_data.get('explanation', '')
+                trivia_text = question_data.get('trivia', '')
+                all_text = f"{question_text} {explanation_text} {trivia_text}"
+                
+                # 日付パターンを検出（YYYY年M月D日形式）
+                date_pattern = r'(\d{4})年(\d{1,2})月(\d{1,2})日'
+                date_matches = re.findall(date_pattern, all_text)
+                
+                for year_str, month_str, day_str in date_matches:
+                    try:
+                        found_year = int(year_str)
+                        if found_year != reference_year:
+                            print(f"警告: 問題{i+1}のテキスト内に{found_year}年の日付が含まれています。referenceDateは{reference_year}年です。")
+                    except ValueError:
+                        pass
+                
                 question_data['weeklyMeta'] = weekly_meta
                 
                 # デフォルト値の設定
