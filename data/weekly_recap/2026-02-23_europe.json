@@ -1,0 +1,1043 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-02-23T22:01:19Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-02-23",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Premier League",
+        "Man City",
+        "Newcastle"
+      ],
+      "text": "2026年2月21日に行われたプレミアリーグ第27節、マンチェスター・シティ対ニューカッスルの試合結果は？",
+      "options": [
+        "マンチェスター・シティが2-1で勝利",
+        "1-1の引き分け",
+        "ニューカッスルが2-1で勝利",
+        "マンチェスター・シティが4-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティはホームでニューカッスルと対戦し、2-1で接戦を制しました。若手のニコ・オライリー（Nico O'Reilly）が得点に絡む活躍を見せました。",
+      "trivia": "マンチェスター・シティのアカデミー出身であるニコ・オライリーは、ペップ・グアルディオラ監督の下で徐々に出場機会を増やしています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "La Liga",
+        "Real Madrid",
+        "Osasuna"
+      ],
+      "text": "2026年2月21日に行われたラ・リーガ第25節、オサスナ対レアル・マドリードの試合で起きた波乱の結果は？",
+      "options": [
+        "オサスナが2-1で勝利",
+        "レアル・マドリードが3-0で勝利",
+        "1-1の引き分け",
+        "オサスナが4-3で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "オサスナはホームのエル・サダールでレアル・マドリードを迎え撃ち、2-1で勝利する金星を挙げました。アンテ・ブディミルらがゴールを決めました。",
+      "trivia": "レアル・マドリードはヴィニシウス・ジュニオールのゴールで反撃しましたが、オサスナの堅い守備を崩しきれず、優勝争いで痛い勝ち点ロストとなりました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UCL",
+        "Galatasaray",
+        "Juventus"
+      ],
+      "text": "2026年2月17日に行われたUEFAチャンピオンズリーグ決勝トーナメント1回戦、ガラタサライ対ユベントスの第1戦のスコアは？",
+      "options": [
+        "5-2でガラタサライ勝利",
+        "1-0でユベントス勝利",
+        "2-2の引き分け",
+        "3-1でガラタサライ勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "トルコのガラタサライがホームで爆発的な攻撃力を見せ、イタリアの強豪ユベントスを5-2という大差で破る衝撃的な結果となりました。",
+      "trivia": "イスタンブールの熱狂的なサポーターの後押しを受けたガラタサライが、第2戦に向けて大きなアドバンテージを得ました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-17",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Bundesliga",
+        "Bayern",
+        "Frankfurt"
+      ],
+      "text": "2026年2月21日に行われたブンデスリーガの試合、バイエルン・ミュンヘン対アイントラハト・フランクフルトの結果は？",
+      "options": [
+        "バイエルンが3-2で勝利",
+        "フランクフルトが2-1で勝利",
+        "1-1の引き分け",
+        "バイエルンが5-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "バイエルンはフランクフルトとの打ち合いを3-2で制し、リーグ戦での好調を維持しました。",
+      "trivia": "両チーム合わせて5ゴールが生まれるスリリングな展開となり、アリアンツ・アレーナの観客を沸かせました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UCL",
+        "Bodo/Glimt",
+        "Inter"
+      ],
+      "text": "2026年2月18日に行われたUEFAチャンピオンズリーグ決勝トーナメント1回戦、ノルウェーのボデ/グリムト対インテルの試合結果は？",
+      "options": [
+        "ボデ/グリムトが3-1で勝利",
+        "インテルが2-0で勝利",
+        "0-0の引き分け",
+        "ボデ/グリムトが1-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "ノルウェー王者のボデ/グリムトが、ホームの人工芝ピッチでセリエA王者インテル相手に3-1と快勝する波乱を起こしました。",
+      "trivia": "ボデ/グリムトは北極圏に本拠地を置くクラブとして知られ、ホームゲームでは欧州の強豪相手にも無類の強さを誇ります。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-18",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Serie A",
+        "Juventus",
+        "Como"
+      ],
+      "text": "2026年2月21日に行われたセリエAの試合で、ユベントスがホームで昇格組のコモ（Como）に喫した敗戦のスコアは？",
+      "options": [
+        "0-2",
+        "1-2",
+        "0-1",
+        "2-3"
+      ],
+      "answerIndex": 0,
+      "explanation": "ユベントスはホームで昇格組のコモに対し0-2で完封負けを喫するという衝撃的な結果に終わりました。",
+      "trivia": "セリエAに復帰し健闘を見せるコモが、トリノの地でユベントス相手に歴史的な勝利を収めました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UCL",
+        "Newcastle",
+        "Qarabag"
+      ],
+      "text": "2026年2月18日に行われたUEFAチャンピオンズリーグ決勝トーナメント1回戦、カラバフ対ニューカッスルの試合結果は？",
+      "options": [
+        "ニューカッスルが6-1で圧勝",
+        "カラバフが1-0で勝利",
+        "2-2の引き分け",
+        "ニューカッスルが2-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "ニューカッスルはアウェイで圧倒的な攻撃力を見せつけ、アゼルバイジャンのカラバフを6-1で粉砕しました。",
+      "trivia": "ニューカッスルにとってチャンピオンズリーグ決勝トーナメントでのアウェイ6得点は、クラブ史に残る大勝となりました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-18",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UCL",
+        "PSG",
+        "Monaco"
+      ],
+      "text": "2026年2月17日に行われたUEFAチャンピオンズリーグ決勝トーナメント1回戦、モナコ対PSGの「リーグ・アン対決」の結果は？",
+      "options": [
+        "PSGが3-2で勝利",
+        "モナコが2-1で勝利",
+        "1-1の引き分け",
+        "PSGが4-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "フランス勢同士の対戦となったこの試合は、アウェイのパリ・サンジェルマン（PSG）が3-2で競り勝ちました。",
+      "trivia": "国内リーグでもライバル関係にある両チームが欧州の舞台で激突し、計5ゴールが生まれる激戦となりました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-17",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "La Liga",
+        "Real Sociedad",
+        "Real Oviedo"
+      ],
+      "text": "2026年2月21日に行われたラ・リーガの試合、レアル・ソシエダ対レアル・オビエドの結果は？",
+      "options": [
+        "3-3の引き分け",
+        "レアル・ソシエダが2-0で勝利",
+        "レアル・オビエドが1-0で勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・ソシエダとレアル・オビエドの一戦は、両チームが点を取り合う展開となり、3-3のドローに終わりました。",
+      "trivia": "レアル・ソシエダはオスカルソン（Oskarsson）が2ゴールを決める活躍を見せましたが、粘るオビエド相手に勝ち点1を分け合う結果となりました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "Serie A",
+        "AC Milan",
+        "Parma"
+      ],
+      "text": "2026年2月21日に行われたセリエAの試合、ACミラン対パルマの結果は？",
+      "options": [
+        "パルマが1-0で勝利",
+        "ACミランが2-0で勝利",
+        "2-2の引き分け",
+        "ACミランが3-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "サン・シーロで行われた一戦で、アウェイのパルマがACミランを1-0で下すサプライズを起こしました。",
+      "trivia": "ミランはホームでの手痛い敗戦となり、上位争いにおいて足踏みすることとなりました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "Premier League",
+        "Arsenal",
+        "Table"
+      ],
+      "text": "2026年2月23日時点のプレミアリーグ順位表で、マンチェスター・シティを抑えて首位に立っているクラブはどこですか？",
+      "options": [
+        "アーセナル",
+        "リヴァプール",
+        "アストン・ヴィラ",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年2月第4週終了時点で、アーセナルは勝ち点61（または58）を積み上げ、2位のマンチェスター・シティ（勝ち点56程度）をリードして首位に立っています。",
+      "trivia": "アーセナルは2025-26シーズン、堅守をベースに安定した戦いを続けており、悲願のリーグ制覇に向けて重要な時期を迎えています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 27,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "La Liga",
+        "Mbappe",
+        "Top Scorer"
+      ],
+      "text": "2026年2月23日現在のラ・リーガ得点ランキングにおいて、23ゴールを挙げて単独首位を独走している選手は誰ですか？",
+      "options": [
+        "キリアン・エンバペ",
+        "ロベルト・レヴァンドフスキ",
+        "ヴィニシウス・ジュニオール",
+        "ジュード・ベリンガム"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリードのキリアン・エンバペは、2026年2月時点で23得点を記録し、ピチーチ（得点王）争いで他を大きく引き離しています。",
+      "trivia": "エンバペは加入シーズンながら驚異的なペースで得点を量産しており、2位以下に5ゴール以上の差をつけています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "Serie A",
+        "Inter",
+        "Table"
+      ],
+      "text": "2026年2月23日時点のセリエA順位表で、2位のACミランに勝ち点10差をつけて首位を独走しているクラブはどこですか？",
+      "options": [
+        "インテル",
+        "ユヴェントス",
+        "ナポリ",
+        "アタランタ"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテルは第26節終了時点で勝ち点64を獲得しており、2位のACミラン（勝ち点54）に対し大きなリードを築いてスクデット獲得へ前進しています。",
+      "trivia": "インテルはリーグ最多得点（62得点）と最少失点（21失点）の両方でリーグトップクラスの数字を記録しています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 26,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "Bundesliga",
+        "Dortmund",
+        "Table"
+      ],
+      "text": "2026年2月23日時点のブンデスリーガ順位表で、首位バイエルン・ミュンヘンを追う2位につけているクラブはどこですか？",
+      "options": [
+        "ドルトムント",
+        "レヴァークーゼン",
+        "RBライプツィヒ",
+        "シュトゥットガルト"
+      ],
+      "answerIndex": 0,
+      "explanation": "ドルトムントは勝ち点51前後を獲得し、首位バイエルン（勝ち点57前後）を追走する2位の座をキープしています。",
+      "trivia": "昨シーズンの王者レヴァークーゼンは今季やや苦戦しており、現時点ではトップ4圏外の6位付近に留まっています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 23,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "La Liga",
+        "Muriqi",
+        "Stats"
+      ],
+      "text": "2026年2月23日時点のラ・リーガ得点ランキングで、エンバペに次ぐ2位（16得点）というサプライズを起こしているマジョルカの選手は誰ですか？",
+      "options": [
+        "ヴェダト・ムリキ",
+        "イアゴ・アスパス",
+        "アンテ・ブディミル",
+        "ジェラール・モレノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マジョルカの長身FWヴェダト・ムリキが好調を維持しており、バルセロナのフェラン・トーレスやレヴァンドフスキを抑えて得点ランク2位につけています。",
+      "trivia": "ムリキはコソボ代表のストライカーで、その高さと強さを活かしたポストプレーだけでなく、今季は決定力の高さも際立っています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 25,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "Bundesliga",
+        "Hoffenheim",
+        "Table"
+      ],
+      "text": "2026年2月23日時点のブンデスリーガにおいて、シュトゥットガルトやライプツィヒを抑え、3位という好順位につけているクラブはどこですか？",
+      "options": [
+        "ホッフェンハイム",
+        "フランクフルト",
+        "フライブルク",
+        "ヴォルフスブルク"
+      ],
+      "answerIndex": 0,
+      "explanation": "ホッフェンハイムが勝ち点45前後を獲得して3位に躍進しています。4位シュトゥットガルト、5位ライプツィヒとのCL出場権争いをリードする形となっています。",
+      "trivia": "ホッフェンハイムの躍進は今季のブンデスリーガのサプライズの一つとなっており、高い攻撃力を武器に上位を維持しています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 23,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "ブンデスリーガ",
+        "藤田譲瑠チマ",
+        "ザンクトパウリ",
+        "ゴール"
+      ],
+      "text": "2026年2月22日に行われたブンデスリーガ第23節で、ザンクトパウリに所属する藤田譲瑠チマが待望のブンデスリーガ初ゴールを決めました。この試合の対戦相手はどこでしょう？",
+      "options": [
+        "ブレーメン",
+        "バイエルン・ミュンヘン",
+        "ドルトムント",
+        "シュトゥットガルト"
+      ],
+      "answerIndex": 0,
+      "explanation": "藤田譲瑠チマはブレーメンとの残留争い直接対決でスタメン出場し、1-1で迎えた後半70分に決勝点となるゴールを記録。チームを2-1の勝利に導きました。",
+      "trivia": "藤田譲瑠チマは試合前に裸足でピッチを歩いて感触を確かめるルーティンがあり、現地メディアでも「裸足の狂気」として話題になりました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 23,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "ベルギーリーグ",
+        "シント=トロイデン",
+        "伊藤涼太郎",
+        "山本理仁"
+      ],
+      "text": "2026年2月22日、ベルギーリーグ第26節でシント=トロイデンはデンデルに4-1で快勝しました。この試合でゴールを決めた日本人選手の組み合わせとして正しいものは？",
+      "options": [
+        "伊藤涼太郎と山本理仁",
+        "藤田譲瑠チマと伊藤涼太郎",
+        "谷口彰悟と小久保玲央ブライアン",
+        "南野拓実と伊東純也"
+      ],
+      "answerIndex": 0,
+      "explanation": "この試合では伊藤涼太郎が前半34分に逆転ゴールを、山本理仁が後半67分に追加点を決めました。GK小久保玲央ブライアンやDF谷口彰悟もフル出場して勝利に貢献しました。",
+      "trivia": "シント=トロイデンはこの試合、日本人選手6人が先発出場しました（小久保、畑、谷口、山本、伊藤、後藤）。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 26,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "オーストリアリーグ",
+        "北野颯太",
+        "ザルツブルク",
+        "ゴール"
+      ],
+      "text": "2026年2月22日に行われたオーストリア・ブンデスリーガのLASK戦で、今季5点目となるゴールを決めたレッドブル・ザルツブルク所属の日本人選手は誰でしょう？",
+      "options": [
+        "北野颯太",
+        "南野拓実",
+        "中村敬斗",
+        "奥川雅也"
+      ],
+      "answerIndex": 0,
+      "explanation": "北野颯太（きたの そうた）は4-3-3のインサイドハーフで先発し、前半37分にチームの3点目を決めました。試合は5-1でザルツブルクが勝利しています。",
+      "trivia": "北野颯太はセレッソ大阪の下部組織出身で、現地メディアからは「プレーする喜びに満ち溢れている」と高く評価されました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 20,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "ベルギーリーグ",
+        "坂本一彩",
+        "ウェステルロー",
+        "ゴール"
+      ],
+      "text": "2026年2月22日のベルギーリーグ、ウェステルロー対シャルルロワ戦で後半アディショナルタイムに劇的な逆転ゴールを決めた日本人FWは誰でしょう？",
+      "options": [
+        "坂本一彩",
+        "後藤啓介",
+        "町野修斗",
+        "上田綺世"
+      ],
+      "answerIndex": 0,
+      "explanation": "ウェステルローの坂本一彩（さかもと いさ）が後半ATに今季4点目となる決勝ゴールを決め、チームを2-1の逆転勝利に導きました。",
+      "trivia": "坂本一彩はガンバ大阪からウェステルローへ移籍しており、このゴールはチームにとって2026年のホーム初勝利をもたらすものでした。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "女子サッカー",
+        "FAカップ",
+        "藤野あおば",
+        "マンチェスター・シティ"
+      ],
+      "text": "2026年2月23日に行われた女子FAカップ5回戦で、マンチェスター・シティに所属する藤野あおばがゴールを決めました。対戦相手はどこでしょう？",
+      "options": [
+        "シェフィールド・ユナイテッド",
+        "アーセナル",
+        "チェルシー",
+        "リヴァプール"
+      ],
+      "answerIndex": 0,
+      "explanation": "藤野あおばはシェフィールド・ユナイテッド戦で先発出場し、前半21分に先制点につながる重要なゴール（チーム2点目）を決めました。試合は4-0で勝利しました。",
+      "trivia": "同日の女子FAカップでは、ブライトン所属の清家貴子もウェストハム戦で決勝ゴールを決めており、なでしこジャパンの選手たちが躍動しました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-23",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ブンデスリーガ",
+        "ハリー・ケイン",
+        "バイエルン",
+        "得点王"
+      ],
+      "text": "2026年2月22日時点のブンデスリーガで、シーズン28ゴールを記録し得点ランキング首位に立っているバイエルン・ミュンヘンの選手は誰でしょう？",
+      "options": [
+        "ハリー・ケイン",
+        "ジャマル・ムシアラ",
+        "フロリアン・ヴィルツ",
+        "ヴィクター・ボニフェイス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年2月22日時点の統計によると、ハリー・ケインは28ゴールを挙げ、ブンデスリーガの得点王争いを独走しています。",
+      "trivia": "ケインは2025-26シーズンも驚異的なペースで得点を量産しており、2月時点ですでに30ゴールに迫る勢いを見せています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 23,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "ベンフィカ",
+        "出場停止",
+        "人種差別問題"
+      ],
+      "text": "2026年2月、レアル・マドリードとのCLプレーオフ第1戦でのヴィニシウスに対する人種差別疑惑により、UEFAから暫定出場停止処分を受けたベンフィカの選手は？",
+      "options": [
+        "ジャンルカ・プレスティアンニ",
+        "アンヘル・ディ・マリア",
+        "アントニオ・シウヴァ",
+        "オルクン・コクチュ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ベンフィカの若手MFジャンルカ・プレスティアンニは、レアル・マドリード戦での人種差別的言動の疑いでUEFAから調査を受け、第2戦への出場が暫定的に禁止されました。",
+      "trivia": "この件について、レアル・マドリードのキリアン・エムバペも「彼はCLでプレーするに値しない」と厳しいコメントを残しています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-23",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "レアル・マドリード",
+        "トレント・アレクサンダー＝アーノルド",
+        "コメント",
+        "移籍"
+      ],
+      "text": "2026年2月、ベンフィカの選手による人種差別疑惑について「サッカーの恥」と批判コメントを出した、レアル・マドリード所属のイングランド代表DFは？",
+      "options": [
+        "トレント・アレクサンダー＝アーノルド",
+        "ジュード・ベリンガム",
+        "カイル・ウォーカー",
+        "リース・ジェームズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年2月の報道において、トレント・アレクサンダー＝アーノルドはレアル・マドリードのDFとして紹介され、同僚ヴィニシウスへの差別行為を強く非難しました。",
+      "trivia": "かつてリヴァプールの象徴的存在だったアーノルドですが、2026年時点ではレアル・マドリードの一員としてプレーしており、チームメイトを守る発言を行っています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-23",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "トッテナム",
+        "試合結果"
+      ],
+      "text": "2026年2月22日に行われたプレミアリーグのノースロンドン・ダービー、トッテナム対アーセナルの試合結果は？",
+      "options": [
+        "1-4でアーセナル勝利",
+        "2-2で引き分け",
+        "1-0でトッテナム勝利",
+        "0-0で引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "トッテナムのホームで行われたこの一戦は、アウェイのアーセナルが攻撃力を爆発させ、1-4の大差で勝利しました。",
+      "trivia": "同じ日に行われた試合では、クリスタル・パレスがウルヴァーハンプトンに1-0で勝利しています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 26,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "リヴァプール",
+        "ノッティンガム・フォレスト",
+        "試合結果"
+      ],
+      "text": "2026年2月22日に行われたプレミアリーグ、ノッティンガム・フォレスト対リヴァプールの試合結果は？",
+      "options": [
+        "0-1でリヴァプール勝利",
+        "1-1で引き分け",
+        "2-1でフォレスト勝利",
+        "0-3でリヴァプール勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "リヴァプールは敵地シティ・グラウンドで苦戦しながらも、0-1で貴重な勝利を収めました。",
+      "trivia": "2026年2月22日のプレミアリーグでは、他にサンダーランドがフラムに1-3で敗れる結果も記録されています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 26,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "Premier League",
+        "Arsenal",
+        "Tottenham",
+        "Derby"
+      ],
+      "text": "2026年2月22日に行われたプレミアリーグ第27節、トッテナム対アーセナルの「ノースロンドン・ダービー」の結果は？",
+      "options": [
+        "アーセナルが4-1で勝利",
+        "トッテナムが2-1で勝利",
+        "2-2の引き分け",
+        "アーセナルが1-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "アウェイのアーセナルが4-1でトッテナムに大勝しました。エベレチ・エゼの2ゴールなどでライバルを圧倒しました。",
+      "trivia": "この勝利により、アーセナルはトッテナム・ホットスパー・スタジアムでの相性の良さを改めて証明し、シーズンダブル（ホーム・アウェイ共に勝利）に近づきました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 27,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "UCL",
+        "Bodo/Glimt",
+        "Inter",
+        "Upset"
+      ],
+      "text": "2026年2月18日に行われたUEFAチャンピオンズリーグの決勝トーナメント・プレーオフで、イタリア王者インテルを3-1で破る番狂わせを演じたノルウェーのクラブは？",
+      "options": [
+        "ボデ/グリムト",
+        "モルデ",
+        "ローゼンボリ",
+        "コペンハーゲン"
+      ],
+      "answerIndex": 0,
+      "explanation": "ノルウェーのボデ/グリムト（Bodø/Glimt）がホームでインテルに対し3-1の勝利を収めました。北極圏に近い本拠地での強さを改めて証明しました。",
+      "trivia": "ボデ/グリムトの本拠地アスプミラ・スタディオンは北極圏内に位置しており、冬場の過酷な環境と人工芝ピッチはアウェイチームにとって大きな障壁となっています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-18",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "Premier League",
+        "Arsenal",
+        "Player",
+        "Eberechi Eze"
+      ],
+      "text": "2026年2月22日のトッテナム戦で2ゴールを挙げ、4-1の勝利に貢献したアーセナルのMFは？（元クリスタル・パレス所属）",
+      "options": [
+        "エベレチ・エゼ",
+        "マイケル・オリーセ",
+        "コナー・ギャラガー",
+        "ブカヨ・サカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "元クリスタル・パレスのエベレチ・エゼ（Eberechi Eze）が2得点の活躍を見せました。彼は夏にトッテナムへの移籍の噂もありましたが、アーセナルを選択し、ダービーで結果を残しました。",
+      "trivia": "現地メディアによると、エゼは今シーズンのプレミアリーグでトッテナム相手に通算5ゴールを決めており（前半戦のハットトリック含む）、「スパーズ・キラー」ぶりを発揮しています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 27,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "UCL",
+        "Galatasaray",
+        "Juventus",
+        "Score"
+      ],
+      "text": "2026年2月17日のUEFAチャンピオンズリーグで、ユベントス相手にホームで5-2と大量得点で勝利したトルコのクラブは？",
+      "options": [
+        "ガラタサライ",
+        "フェネルバフチェ",
+        "ベシクタシュ",
+        "トラブゾンスポル"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガラタサライがホームのイスタンブールでユベントスを5-2で粉砕しました。ガブリエル・サラなどの得点でイタリアの強豪を圧倒しました。",
+      "trivia": "ガラタサライはホームスタジアム「RAMSパーク」での圧倒的なサポーターの応援を背景に、欧州の舞台でも屈指のホームアドバンテージを持つことで知られています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-17",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
