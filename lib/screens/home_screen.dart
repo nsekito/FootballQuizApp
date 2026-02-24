@@ -1,25 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:go_router/go_router.dart' as go_router;
 import 'package:intl/intl.dart';
 import '../providers/user_data_provider.dart';
 import '../providers/sample_data_provider.dart';
 import '../providers/recap_data_provider.dart';
 import '../providers/database_provider.dart';
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 import '../utils/unlock_key_utils.dart';
+import '../utils/app_date_utils.dart';
 import '../constants/app_colors.dart';
 import '../models/user_rank.dart';
 import '../models/promotion_exam.dart';
 import '../widgets/responsive_container.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/banner_ad_widget.dart';
-import '../providers/ad_provider.dart';
+import '../widgets/rank_icon_widget.dart';
+import 'home/category_section.dart';
 import '../providers/notification_provider.dart';
 import '../providers/admin_mode_provider.dart';
 import '../providers/login_bonus_provider.dart';
-import '../constants/gameConfig.dart';
+import '../constants/game_config.dart';
+import '../utils/rewarded_ad_helper.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -30,24 +32,27 @@ class HomeScreen extends ConsumerStatefulWidget {
 
 class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObserver {
   bool _hasSyncedRecap = false;
-  bool _isLoadingAd = false; // 広告読み込み中かどうか
-  bool _isRankIconExpanded = false; // ランクアイコンの拡大状態
-  int _refreshKey = 0; // FutureBuilderの再構築用キー
-  String? _lastRoutePath; // 前回のルートパスを記録
+  late final RewardedAdHelper _adHelper;
+  bool _isRankIconExpanded = false;
+  int _refreshKey = 0;
+  String? _lastRoutePath;
 
   @override
   void initState() {
     super.initState();
+    _adHelper = RewardedAdHelper(
+      ref: ref,
+      onStateChanged: () => setState(() {}),
+      isMounted: () => mounted,
+    );
     WidgetsBinding.instance.addObserver(this);
-    // Weekly Recapデータの自動同期（バックグラウンドで実行）
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!_hasSyncedRecap) {
         _hasSyncedRecap = true;
         _syncWeeklyRecapData(ref);
       }
     });
-    // 広告を事前に読み込む
-    _loadRewardedAd();
+    _adHelper.loadRewardedAd();
   }
 
   @override
@@ -84,56 +89,19 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
     }
   }
 
-  /// 今週の月曜日の日付を取得
-  DateTime _getWeekStartDate(DateTime date) {
-    final weekday = date.weekday;
-    final daysFromMonday = weekday == 7 ? 0 : weekday - 1;
-    return date.subtract(Duration(days: daysFromMonday));
-  }
-
-  /// 今週の日曜日の日付を取得
-  DateTime _getWeekEndDate(DateTime date) {
-    final weekStart = _getWeekStartDate(date);
-    return weekStart.add(const Duration(days: 6));
-  }
-
-  /// 来週の月曜日の日付を取得
-  DateTime _getNextWeekStartDate(DateTime date) {
-    final weekStart = _getWeekStartDate(date);
-    return weekStart.add(const Duration(days: 7));
-  }
-
-  /// 次回プレイ可能日までの残り日数を取得
-  /// プレイ回数が上限に達した場合、次回プレイ可能日は今週の月曜日（バッチ実行後）
   int _getDaysUntilNextWeek(DateTime date, {bool isMaxReached = false}) {
     final now = DateTime.now();
-    DateTime nextPlayableDate;
-    
-    if (isMaxReached) {
-      // プレイ回数が上限に達した場合、次回プレイ可能日は今週の月曜日
-      final weekStart = _getWeekStartDate(date);
-      nextPlayableDate = weekStart;
-    } else {
-      // まだプレイ可能な場合、次回プレイ可能日は来週の月曜日
-      nextPlayableDate = _getNextWeekStartDate(date);
-    }
-    
+    final nextPlayableDate = _getNextPlayableDate(date, isMaxReached: isMaxReached);
     final difference = nextPlayableDate.difference(now);
-    // 日数を計算（時間部分を考慮して、1日未満でも1日としてカウント）
     final days = difference.inDays;
-    // 時間が残っている場合は1日追加
     return days + (difference.inHours % 24 > 0 ? 1 : 0);
   }
-  
-  /// 次回プレイ可能日の日付を取得
-  /// プレイ回数が上限に達した場合、次回プレイ可能日は今週の月曜日（バッチ実行後）
+
   DateTime _getNextPlayableDate(DateTime date, {bool isMaxReached = false}) {
     if (isMaxReached) {
-      // プレイ回数が上限に達した場合、次回プレイ可能日は今週の月曜日
-      return _getWeekStartDate(date);
+      return AppDateUtils.getWeekStartDate(date);
     } else {
-      // まだプレイ可能な場合、次回プレイ可能日は来週の月曜日
-      return _getNextWeekStartDate(date);
+      return AppDateUtils.getNextWeekStartDate(date);
     }
   }
 
@@ -148,8 +116,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
     final canPlay = j1CanPlay || europeCanPlay;
     
     final now = DateTime.now();
-    final weekStart = _getWeekStartDate(now);
-    final weekEnd = _getWeekEndDate(now);
+    final weekStart = AppDateUtils.getWeekStartDate(now);
+    final weekEnd = AppDateUtils.getWeekEndDate(now);
     final isMaxReached = totalPlayCount >= MATCHDAY.maxPlaysPerWeek;
     final nextPlayableDate = _getNextPlayableDate(now, isMaxReached: isMaxReached);
     final daysUntilNextWeek = _getDaysUntilNextWeek(now, isMaxReached: isMaxReached);
@@ -175,93 +143,16 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
     };
   }
 
-  /// リワード広告を読み込む
-  Future<void> _loadRewardedAd() async {
-    setState(() {
-      _isLoadingAd = true;
-    });
-
-    final adService = ref.read(adServiceProvider);
-    await adService.loadRewardedAd(
-      onRewarded: (rewardAmount, rewardType) {
-        // 広告視聴完了時の処理は_showRewardedAdForMatchDayで行う
-      },
-      onError: (error) {
-        debugPrint('リワード広告の読み込みに失敗しました: $error');
-        if (mounted) {
-          setState(() {
-            _isLoadingAd = false;
-          });
-        }
-      },
-    );
-
-    if (mounted) {
-      setState(() {
-        _isLoadingAd = false;
-      });
-    }
-  }
-
-  /// MATCH DAY用のリワード広告を表示する
-  ///
-  /// 広告視聴完了後にプレイ回数を記録し、MATCH DAYの設定画面に遷移します。
   Future<void> _showRewardedAdForMatchDay() async {
-    if (_isLoadingAd) return;
-
-    final adService = ref.read(adServiceProvider);
-
-    // 広告が読み込まれていない場合、読み込みを試みる
-    if (!adService.isRewardedAdReady) {
-      await _loadRewardedAd();
-      if (!adService.isRewardedAdReady) {
+    await _adHelper.showRewardedAd(
+      context: context,
+      onRewarded: () async {
         if (!mounted) return;
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('広告の読み込みに失敗しました。しばらくしてから再度お試しください。'),
-            backgroundColor: Colors.orange,
-            duration: Duration(seconds: 3),
-          ),
-        );
-        return;
-      }
-    }
-
-    final success = await adService.showRewardedAd(
-      onRewarded: (rewardAmount, rewardType) async {
-        // 広告視聴完了後、設定画面に遷移
-        // プレイ回数の記録は、設定画面でリーグタイプを選択してクイズを開始するときにQuizScreenで行う
-
-        if (!mounted) return;
-        // MATCH DAYの設定画面に遷移
         context
             .push('/configuration?category=${AppConstants.categoryMatchRecap}');
-
-        // 次の広告を事前に読み込む
-        _loadRewardedAd();
-      },
-      onError: (error) {
-        debugPrint('リワード広告の表示に失敗しました: $error');
-        if (!mounted) return;
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: const Text('広告の表示に失敗しました'),
-            backgroundColor: Colors.red.shade700,
-            duration: const Duration(seconds: 3),
-          ),
-        );
+        _adHelper.loadRewardedAd();
       },
     );
-
-    if (!success && mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('広告を表示できませんでした。しばらくしてから再度お試しください。'),
-          backgroundColor: Colors.orange,
-          duration: Duration(seconds: 3),
-        ),
-      );
-    }
   }
 
   Future<void> _handleMatchDayTap(BuildContext context) async {
@@ -312,7 +203,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
     final userRank = ref.watch(userRankProvider);
 
     // ルートが変更された場合（結果画面から戻った時など）にリフレッシュ
-    final routerState = go_router.GoRouterState.of(context);
+    final routerState = GoRouterState.of(context);
     final currentLocation = routerState.uri.toString();
     if (currentLocation != _lastRoutePath) {
       _lastRoutePath = currentLocation;
@@ -364,8 +255,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
                           _buildPromotionExamSection(context, ref),
                           const SizedBox(height: 24),
 
-                          // カテゴリ選択セクション
-                          _buildCategorySection(context),
+                          const CategorySection(),
                           const SizedBox(height: 24),
 
                           // 履歴と統計
@@ -678,7 +568,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
                                     ),
                                     const SizedBox(width: 6),
                                     Text(
-                                      '次回プレイ可能: ${_formatDate(nextWeekStart)}',
+                                      '次回プレイ可能: ${AppDateUtils.formatDateJapanese(nextWeekStart)}',
                                       style: TextStyle(
                                         fontSize: 11,
                                         fontWeight: FontWeight.w500,
@@ -914,10 +804,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
                         _isRankIconExpanded = !_isRankIconExpanded;
                       });
                     },
-                    child: _buildRankIconWithFrame(
-                      'assets/images/rank_icons/${userRank.name}.png',
-                      80.0,
-                      userRank,
+                    child: RankIconWidget(
+                      rank: userRank,
+                      size: 80.0,
                     ),
                   ),
                   const SizedBox(width: 12),
@@ -1373,76 +1262,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
     );
   }
 
-  Widget _buildCategorySection(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(left: 4, bottom: 16),
-          child: Text(
-            'SELECT QUIZ',
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.w700,
-              color: AppColors.techIndigo.withValues(alpha: 0.4),
-              letterSpacing: 1.2,
-            ),
-          ),
-        ),
-        _buildCategoryButton(
-          context,
-          'ルールクイズ',
-          '基本からマニアックな規定まで',
-          Icons.gavel,
-          Colors.blue,
-          AppColors.techBlue,
-          AppConstants.categoryRules,
-        ),
-        const SizedBox(height: 12),
-        _buildCategoryButton(
-          context,
-          '歴史クイズ',
-          '伝説のプレーヤーと大会の記録',
-          Icons.auto_stories,
-          Colors.amber,
-          Colors.amber.shade500,
-          AppConstants.categoryHistory,
-        ),
-        const SizedBox(height: 12),
-        _buildCategoryButton(
-          context,
-          'チームクイズ',
-          '欧州・国内リーグのクラブ知識',
-          Icons.groups,
-          Colors.purple,
-          Colors.purple.shade500,
-          AppConstants.categoryTeams,
-        ),
-      ],
-    );
-  }
-
-  Widget _buildCategoryButton(
-    BuildContext context,
-    String title,
-    String subtitle,
-    IconData icon,
-    Color iconBgColor,
-    Color iconColor,
-    String category,
-  ) {
-    return _CategoryButton(
-      title: title,
-      subtitle: subtitle,
-      icon: icon,
-      iconBgColor: iconBgColor,
-      iconColor: iconColor,
-      onTap: () {
-        context.push('/configuration?category=$category');
-      },
-    );
-  }
-
   Widget _buildQuestionUnlockSection(BuildContext context) {
     return _buildHistoryStatsButton(
       context,
@@ -1513,138 +1332,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
     return 'サッカーの神';
   }
 
-  /// ランクに応じたボーダーの色を返す
-  List<Color> _getRankBorderColors(UserRank rank) {
-    switch (rank) {
-      case UserRank.ballPicker:
-      case UserRank.coneSetter:
-      case UserRank.waterCarrier:
-      case UserRank.bibDistributor:
-      case UserRank.trainee:
-      case UserRank.benchPlayer:
-        return [Colors.grey.shade400, Colors.grey.shade600];
-      case UserRank.substitute:
-      case UserRank.starter:
-        return [Colors.blue.shade300, Colors.blue.shade600];
-      case UserRank.numberTen:
-      case UserRank.captain:
-        return [Colors.green.shade300, Colors.green.shade600];
-      case UserRank.domesticMVP:
-      case UserRank.overseasTransfer:
-        return [Colors.amber.shade300, Colors.orange.shade600];
-      case UserRank.worldClass:
-        return [Colors.purple.shade300, Colors.purple.shade600];
-      case UserRank.ballonDor:
-        return [Colors.deepOrange.shade300, Colors.deepOrange.shade700];
-      case UserRank.legend:
-        return [Colors.red.shade300, Colors.red.shade700];
-    }
-  }
-
-  /// ランクに応じたグロー効果の色を返す
-  Color _getRankGlowColor(UserRank rank) {
-    switch (rank) {
-      case UserRank.ballPicker:
-      case UserRank.coneSetter:
-      case UserRank.waterCarrier:
-      case UserRank.bibDistributor:
-      case UserRank.trainee:
-      case UserRank.benchPlayer:
-        return Colors.grey.shade400;
-      case UserRank.substitute:
-      case UserRank.starter:
-        return Colors.blue.shade400;
-      case UserRank.numberTen:
-      case UserRank.captain:
-        return Colors.green.shade400;
-      case UserRank.domesticMVP:
-      case UserRank.overseasTransfer:
-        return Colors.amber.shade400;
-      case UserRank.worldClass:
-        return Colors.purple.shade400;
-      case UserRank.ballonDor:
-        return Colors.deepOrange.shade400;
-      case UserRank.legend:
-        return Colors.red.shade400;
-    }
-  }
-
-  /// 枠付きランクアイコンを構築する共通ウィジェット
-  Widget _buildRankIconWithFrame(String imagePath, double size, UserRank rank) {
-    final borderColors = _getRankBorderColors(rank);
-    final glowColor = _getRankGlowColor(rank);
-    final borderWidth = size * 0.05; // サイズの5%をボーダー幅とする
-
-    return Container(
-      width: size,
-      height: size,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        border: Border.all(
-          width: borderWidth,
-          color: borderColors[0],
-        ),
-        boxShadow: [
-          // 外側のグロー効果（複数レイヤー）
-          BoxShadow(
-            color: glowColor.withValues(alpha: 0.6),
-            blurRadius: size * 0.15,
-            spreadRadius: size * 0.05,
-          ),
-          BoxShadow(
-            color: glowColor.withValues(alpha: 0.4),
-            blurRadius: size * 0.25,
-            spreadRadius: size * 0.1,
-          ),
-          BoxShadow(
-            color: glowColor.withValues(alpha: 0.2),
-            blurRadius: size * 0.35,
-            spreadRadius: size * 0.15,
-          ),
-          // 内側の影（深みを出す）
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.3),
-            blurRadius: size * 0.1,
-            spreadRadius: -size * 0.05,
-          ),
-        ],
-      ),
-      child: ClipOval(
-        child: Container(
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            border: Border.all(
-              width: borderWidth * 0.5,
-              color: borderColors[1],
-            ),
-          ),
-          child: Image.asset(
-            imagePath,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            errorBuilder: (_, __, ___) => Container(
-              width: size,
-              height: size,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: borderColors,
-                ),
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                Icons.person,
-                color: Colors.white,
-                size: size * 0.5,
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-
   /// Weekly Recapデータをバックグラウンドで同期
   Future<void> _syncWeeklyRecapData(WidgetRef ref) async {
     try {
@@ -1654,7 +1341,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
       // 新しいデータが同期された場合、通知を送信
       if (syncedCount > 0) {
         final notificationService = ref.read(notificationServiceProvider);
-        final latestMonday = _getLatestMonday();
+        final latestMonday = AppDateUtils.getLatestMondayString();
 
         // 通知権限を確認してから送信
         final hasPermission = await notificationService.isPermissionGranted();
@@ -1676,21 +1363,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
       // デバッグ時のみログ出力
       debugPrint('Weekly Recap自動同期エラー: $e');
     }
-  }
-
-  /// 最新の月曜日の日付を取得（YYYY-MM-DD形式）
-  String _getLatestMonday() {
-    final now = DateTime.now();
-    final weekday = now.weekday;
-    final daysFromMonday = weekday == 7 ? 0 : weekday - 1;
-    final monday = now.subtract(Duration(days: daysFromMonday));
-    return '${monday.year}-${monday.month.toString().padLeft(2, '0')}-${monday.day.toString().padLeft(2, '0')}';
-  }
-
-  /// 日付をフォーマット（例: "2月10日（月）"）
-  String _formatDate(DateTime date) {
-    final weekdays = ['月', '火', '水', '木', '金', '土', '日'];
-    return '${date.month}月${date.day}日（${weekdays[date.weekday - 1]}）';
   }
 
   /// 拡大されたランクアイコンを表示するオーバーレイ
@@ -1717,10 +1389,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
               child: AnimatedOpacity(
                 opacity: _isRankIconExpanded ? 1.0 : 0.0,
                 duration: const Duration(milliseconds: 200),
-                child: _buildRankIconWithFrame(
-                  'assets/images/rank_icons/${userRank.name}.png',
-                  iconSize,
-                  userRank,
+                child: RankIconWidget(
+                  rank: userRank,
+                  size: iconSize,
                 ),
               ),
             ),
@@ -1731,112 +1402,3 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with WidgetsBindingObse
   }
 }
 
-class _CategoryButton extends StatefulWidget {
-  final String title;
-  final String subtitle;
-  final IconData icon;
-  final Color iconBgColor;
-  final Color iconColor;
-  final VoidCallback onTap;
-
-  const _CategoryButton({
-    required this.title,
-    required this.subtitle,
-    required this.icon,
-    required this.iconBgColor,
-    required this.iconColor,
-    required this.onTap,
-  });
-
-  @override
-  State<_CategoryButton> createState() => _CategoryButtonState();
-}
-
-class _CategoryButtonState extends State<_CategoryButton> {
-  bool _isHovered = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTapDown: (_) => setState(() => _isHovered = true),
-      onTapUp: (_) {
-        setState(() => _isHovered = false);
-        widget.onTap();
-      },
-      onTapCancel: () => setState(() => _isHovered = false),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: AppColors.techGrey),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.05),
-              blurRadius: 4,
-              offset: const Offset(0, 2),
-            ),
-          ],
-        ),
-        child: Row(
-          children: [
-            AnimatedContainer(
-              duration: const Duration(milliseconds: 200),
-              width: 48,
-              height: 48,
-              decoration: BoxDecoration(
-                color: _isHovered
-                    ? widget.iconColor
-                    : widget.iconBgColor.withValues(alpha: 0.1),
-                borderRadius: const BorderRadius.all(Radius.circular(12)),
-                boxShadow: [
-                  BoxShadow(
-                    color: widget.iconColor.withValues(alpha: 0.15),
-                    blurRadius: 4,
-                    offset: const Offset(0, 2),
-                  ),
-                ],
-              ),
-              child: Icon(
-                widget.icon,
-                color: _isHovered ? Colors.white : widget.iconColor,
-                size: 24,
-              ),
-            ),
-            const SizedBox(width: 16),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    widget.title,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w700,
-                      color: AppColors.techIndigo,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    widget.subtitle,
-                    style: const TextStyle(
-                      fontSize: 11,
-                      fontWeight: FontWeight.w500,
-                      color: AppColors.slate400,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            const Icon(
-              Icons.chevron_right,
-              color: AppColors.slate200,
-              size: 20,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}

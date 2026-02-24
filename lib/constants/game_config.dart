@@ -1,6 +1,7 @@
 /// ゲーム設定定数
 /// アプリ内のすべてのポイント・EXP計算はこの定数ファイルを参照すること。
 /// ハードコーディングは禁止。
+library;
 
 // ============================================
 // ランク設定
@@ -17,7 +18,7 @@ class RankConfig {
   });
 }
 
-final List<RankConfig> RANKS = [
+final List<RankConfig> ranks = [
   const RankConfig(rank: 1, name: 'ボール拾い', requiredExp: 0),
   const RankConfig(rank: 2, name: 'コーン並べ係', requiredExp: 100),
   const RankConfig(rank: 3, name: '給水係', requiredExp: 300),

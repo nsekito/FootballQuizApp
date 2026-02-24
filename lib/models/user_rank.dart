@@ -1,4 +1,4 @@
-import '../constants/gameConfig.dart';
+import '../constants/game_config.dart';
 
 /// ユーザーのランク称号
 enum UserRank {
@@ -20,7 +20,7 @@ enum UserRank {
 
   final String englishName;
   final String japaneseName;
-  final int rankIndex; // RANKS配列のインデックス
+  final int rankIndex; // ranks配列のインデックス
 
   const UserRank(
     this.englishName,
@@ -28,19 +28,19 @@ enum UserRank {
     this.rankIndex,
   );
 
-  /// RANKS定数からランク情報を取得
+  /// ranks定数からランク情報を取得
   RankConfig get config {
-    if (rankIndex >= 0 && rankIndex < RANKS.length) {
-      return RANKS[rankIndex];
+    if (rankIndex >= 0 && rankIndex < ranks.length) {
+      return ranks[rankIndex];
     }
-    return RANKS[0]; // フォールバック
+    return ranks[0]; // フォールバック
   }
 
-  /// 累計expからランクを取得（RANKS定数を参照）
+  /// 累計expからランクを取得（ranks定数を参照）
   static UserRank fromExp(int totalExp) {
-    // RANKSを逆順に走査して、totalExpがrequiredExp以上になる最初のランクを返す
-    for (int i = RANKS.length - 1; i >= 0; i--) {
-      if (totalExp >= RANKS[i].requiredExp) {
+    // ranksを逆順に走査して、totalExpがrequiredExp以上になる最初のランクを返す
+    for (int i = ranks.length - 1; i >= 0; i--) {
+      if (totalExp >= ranks[i].requiredExp) {
         return UserRank.values[i];
       }
     }
@@ -51,32 +51,17 @@ enum UserRank {
   int? expToNextRank(int currentExp) {
     if (rankIndex < UserRank.values.length - 1) {
       final nextRankIndex = rankIndex + 1;
-      final nextRankConfig = RANKS[nextRankIndex];
+      final nextRankConfig = ranks[nextRankIndex];
       return nextRankConfig.requiredExp - currentExp;
     }
     return null; // 最高ランクの場合
   }
   
-  // 後方互換性のため、fromPointsメソッドを残す（expとして扱う）
-  @Deprecated('Use fromExp instead')
-  static UserRank fromPoints(int totalPoints) {
-    return fromExp(totalPoints);
-  }
-  
-  // 後方互換性のため、pointsToNextRankメソッドを残す
-  @Deprecated('Use expToNextRank instead')
-  int? pointsToNextRank(int currentPoints) {
-    return expToNextRank(currentPoints);
-  }
-
-  // 後方互換性のため、minExpとmaxExpのgetterを提供
-  @Deprecated('Use config.requiredExp instead')
   int get minExp => config.requiredExp;
-  
-  @Deprecated('Use next rank\'s requiredExp instead')
+
   int? get maxExp {
     if (rankIndex < UserRank.values.length - 1) {
-      return RANKS[rankIndex + 1].requiredExp - 1;
+      return ranks[rankIndex + 1].requiredExp - 1;
     }
     return null;
   }

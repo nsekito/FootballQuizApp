@@ -1,5 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
-import '../constants/gameConfig.dart';
+import '../constants/game_config.dart';
+import '../utils/app_date_utils.dart';
 
 /// クイズ履歴解放サービス
 /// 無料解放の残り回数管理と日次リセット処理
@@ -7,11 +8,7 @@ class HistoryUnlockService {
   static const String _keyFreeUnlockCount = 'history_free_unlock_count';
   static const String _keyLastResetDate = 'history_free_unlock_last_reset_date';
 
-  /// 現在の日付をYYYY-MM-DD形式で取得
-  String _getCurrentDateString() {
-    final now = DateTime.now();
-    return '${now.year}-${now.month.toString().padLeft(2, '0')}-${now.day.toString().padLeft(2, '0')}';
-  }
+  String _getCurrentDateString() => AppDateUtils.getCurrentDateString();
 
   /// 日次リセットをチェックして実行
   Future<void> _checkAndResetDaily() async {

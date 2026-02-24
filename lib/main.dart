@@ -9,12 +9,12 @@ import 'services/ad_service.dart';
 import 'services/notification_service.dart';
 
 // 条件付きインポート: デスクトッププラットフォームのみ（Android/iOSではスタブを使用）
-import 'sqflite_ffi_stub.dart'
-    if (dart.library.io) 'sqflite_ffi_io.dart' as sqflite_ffi;
+import 'platform/sqflite_ffi_stub.dart'
+    if (dart.library.io) 'platform/sqflite_ffi_io.dart' as sqflite_ffi;
 
 // Webプラットフォーム用のインポート（条件付き）
 import 'package:sqflite/sqflite.dart';
-import 'sqflite_ffi_web_stub.dart'
+import 'platform/sqflite_ffi_web_stub.dart'
     if (dart.library.html) 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart' as sqflite_web;
 
 void main() async {

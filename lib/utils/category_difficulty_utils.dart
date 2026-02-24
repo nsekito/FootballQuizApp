@@ -1,4 +1,4 @@
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 
 /// カテゴリ名と難易度名の変換ユーティリティ
 class CategoryDifficultyUtils {
@@ -32,10 +32,5 @@ class CategoryDifficultyUtils {
       default:
         return difficulty.toUpperCase();
     }
-  }
-
-  /// カテゴリのタイトルを取得
-  static String getCategoryTitle(String category) {
-    return getCategoryName(category);
   }
 }

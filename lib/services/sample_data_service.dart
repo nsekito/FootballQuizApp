@@ -1,6 +1,6 @@
 import '../models/question.dart';
 import '../services/database_service.dart';
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 
 /// サンプルデータをデータベースに追加するサービス
 class SampleDataService {

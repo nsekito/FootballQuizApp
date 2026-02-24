@@ -1,5 +1,5 @@
 import '../models/user_rank.dart';
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 
 /// 昇格試験の定義
 class PromotionExam {

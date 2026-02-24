@@ -5,7 +5,7 @@ import 'package:intl/intl.dart';
 import '../models/promotion_exam.dart';
 import '../models/user_rank.dart';
 import '../providers/user_data_provider.dart';
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';

@@ -7,14 +7,14 @@ import '../providers/user_data_provider.dart';
 import '../providers/quiz_history_provider.dart';
 import '../models/user_rank.dart';
 import '../constants/app_colors.dart';
-import '../utils/constants.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
 import '../widgets/responsive_container.dart';
 import '../widgets/banner_ad_widget.dart';
-import '../providers/ad_provider.dart';
-import '../constants/gameConfig.dart';
+import '../widgets/rank_icon_widget.dart';
+import '../constants/game_config.dart';
+import '../utils/rewarded_ad_helper.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
@@ -49,19 +49,22 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
   late AnimationController _rankUpAnimationController;
   late AnimationController _bounceAnimationController;
   late AnimationController _sparkleAnimationController;
-  bool _rewardsClaimed = false; // 報酬が獲得済みかどうか
-  bool _isLoadingAd = false; // 広告読み込み中かどうか
-  bool _isAdReady = false; // 広告が読み込まれているかどうか
+  late final RewardedAdHelper _adHelper;
+  bool _rewardsClaimed = false;
 
-  // 獲得expとポイントを取得（widgetから受け取る）
   int get _earnedExp => widget.earnedExp;
   int get _earnedPoints => widget.earnedPoints;
 
   @override
   void initState() {
     super.initState();
+    _adHelper = RewardedAdHelper(
+      ref: ref,
+      onStateChanged: () => setState(() {}),
+      isMounted: () => mounted,
+    );
     _checkRankUp();
-    _saveHistory(); // ポイントとexpは広告視聴後に加算
+    _saveHistory();
     _animationController = AnimationController(
       duration: const Duration(milliseconds: 800),
       vsync: this,
@@ -87,8 +90,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
         }
       }
     });
-    // 広告を事前に読み込む
-    _loadRewardedAd();
+    _adHelper.loadRewardedAd();
   }
 
   @override
@@ -97,7 +99,6 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
     _rankUpAnimationController.dispose();
     _bounceAnimationController.dispose();
     _sparkleAnimationController.dispose();
-    // 広告サービスはシングルトンなので、ここでは破棄しない
     super.dispose();
   }
 
@@ -108,100 +109,23 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
     _rankUp = _previousRank != _currentRank;
   }
 
-  /// リワード広告を読み込む
-  Future<void> _loadRewardedAd() async {
-    if (_rewardsClaimed) return;
-
-    setState(() {
-      _isLoadingAd = true;
-    });
-
-    final adService = ref.read(adServiceProvider);
-    await adService.loadRewardedAd(
-      onRewarded: (rewardAmount, rewardType) {
-        // 広告視聴完了時の処理は_showRewardedAdで行う
-      },
-      onError: (error) {
-        debugPrint('リワード広告の読み込みに失敗しました: $error');
-        if (mounted) {
-          setState(() {
-            _isLoadingAd = false;
-            _isAdReady = false;
-          });
-        }
-      },
-    );
-
-    if (mounted) {
-      setState(() {
-        _isLoadingAd = false;
-        _isAdReady = adService.isRewardedAdReady;
-      });
-    }
-  }
-
-  /// リワード広告を表示する
   Future<void> _showRewardedAd() async {
-    if (_rewardsClaimed || _isLoadingAd) return;
-
-    final adService = ref.read(adServiceProvider);
-
-    // 広告が読み込まれていない場合、読み込みを試みる
-    if (!adService.isRewardedAdReady) {
-      await _loadRewardedAd();
-      if (!adService.isRewardedAdReady) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('広告の読み込みに失敗しました。しばらくしてから再度お試しください。'),
-              backgroundColor: Colors.orange,
-              duration: Duration(seconds: 3),
-            ),
-          );
-        }
-        return;
-      }
-    }
-
-    final success = await adService.showRewardedAd(
-      onRewarded: (rewardAmount, rewardType) async {
-        // 広告視聴完了後、報酬を付与
+    if (_rewardsClaimed) return;
+    await _adHelper.showRewardedAd(
+      context: context,
+      onRewarded: () async {
         await _claimRewards(withAd: true);
-
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: const Text(
-                  '報酬を獲得しました！+${AppConstants.expRewardedAd} EXP +${AppConstants.pointsRewardedAd} PT'),
+              content: const Text('報酬を獲得しました！'),
               backgroundColor: Colors.green.shade700,
               duration: const Duration(seconds: 3),
             ),
           );
         }
       },
-      onError: (error) {
-        debugPrint('リワード広告の表示に失敗しました: $error');
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: const Text('広告の表示に失敗しました'),
-              backgroundColor: Colors.red.shade700,
-              duration: const Duration(seconds: 3),
-            ),
-          );
-        }
-      },
     );
-
-    if (!success && mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('広告を表示できませんでした。しばらくしてから再度お試しください。'),
-          backgroundColor: Colors.orange,
-          duration: Duration(seconds: 3),
-        ),
-      );
-    }
   }
 
   Future<void> _claimRewards({bool withAd = false}) async {
@@ -226,7 +150,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
       setState(() {
         _rewardsClaimed = true;
         _currentRank = ref.read(userRankProvider);
-        _isAdReady = false; // 広告は使用済み
+        _adHelper.isAdReady = false;
       });
     } catch (e) {
       debugPrint('報酬の獲得に失敗しました: $e');
@@ -442,7 +366,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                           child: GlowButton(
                             glowColor: AppColors.stitchEmerald,
                             onPressed:
-                                _isLoadingAd || !_isAdReady || _rewardsClaimed
+                                _adHelper.isLoadingAd || !_adHelper.isAdReady || _rewardsClaimed
                                     ? null
                                     : _showRewardedAd,
                             backgroundColor: AppColors.stitchEmerald,
@@ -452,7 +376,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                if (_isLoadingAd)
+                                if (_adHelper.isLoadingAd)
                                   const SizedBox(
                                     width: 20,
                                     height: 20,
@@ -467,9 +391,9 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                                       size: 24),
                                 const SizedBox(width: 8),
                                 Text(
-                                  _isLoadingAd
+                                  _adHelper.isLoadingAd
                                       ? '広告を読み込み中...'
-                                      : !_isAdReady
+                                      : !_adHelper.isAdReady
                                           ? '広告を準備中...'
                                           : '広告を見て報酬を獲得',
                                   style: const TextStyle(
@@ -626,7 +550,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                                           ),
                                           child: Transform.rotate(
                                             angle: _sparkleAnimationController.value * 2 * math.pi * 0.1,
-                                            child: _RankBadgeWidget(
+                                            child: RankIconWidget(
                                               rank: _currentRank!,
                                               size: 140,
                                             ),
@@ -770,7 +694,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                           // 報酬獲得前は前のランク、獲得後は現在のランクを表示
                           final displayRank = _rewardsClaimed ? _currentRank : _previousRank;
                           if (displayRank != null) {
-                            return _RankBadgeWidget(
+                            return RankIconWidget(
                               rank: displayRank,
                               size: 128,
                             );
@@ -894,221 +818,3 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
   }
 }
 
-/// ランクバッジを表示するウィジェット
-class _RankBadgeWidget extends StatelessWidget {
-  final UserRank rank;
-  final double size;
-
-  const _RankBadgeWidget({
-    required this.rank,
-    required this.size,
-  });
-
-  static const String _rankIconsPath = 'assets/images/rank_icons';
-
-  /// ランクに応じたボーダーの色を返す
-  List<Color> _getRankBorderColors(UserRank rank) {
-    switch (rank) {
-      case UserRank.ballPicker:
-      case UserRank.coneSetter:
-      case UserRank.waterCarrier:
-      case UserRank.bibDistributor:
-      case UserRank.trainee:
-      case UserRank.benchPlayer:
-        return [Colors.grey.shade400, Colors.grey.shade600];
-      case UserRank.substitute:
-      case UserRank.starter:
-        return [Colors.blue.shade300, Colors.blue.shade600];
-      case UserRank.numberTen:
-      case UserRank.captain:
-        return [Colors.green.shade300, Colors.green.shade600];
-      case UserRank.domesticMVP:
-      case UserRank.overseasTransfer:
-        return [Colors.amber.shade300, Colors.orange.shade600];
-      case UserRank.worldClass:
-        return [Colors.purple.shade300, Colors.purple.shade600];
-      case UserRank.ballonDor:
-        return [Colors.deepOrange.shade300, Colors.deepOrange.shade700];
-      case UserRank.legend:
-        return [Colors.red.shade300, Colors.red.shade700];
-    }
-  }
-
-  /// ランクに応じたグロー効果の色を返す
-  Color _getRankGlowColor(UserRank rank) {
-    switch (rank) {
-      case UserRank.ballPicker:
-      case UserRank.coneSetter:
-      case UserRank.waterCarrier:
-      case UserRank.bibDistributor:
-      case UserRank.trainee:
-      case UserRank.benchPlayer:
-        return Colors.grey.shade400;
-      case UserRank.substitute:
-      case UserRank.starter:
-        return Colors.blue.shade400;
-      case UserRank.numberTen:
-      case UserRank.captain:
-        return Colors.green.shade400;
-      case UserRank.domesticMVP:
-      case UserRank.overseasTransfer:
-        return Colors.amber.shade400;
-      case UserRank.worldClass:
-        return Colors.purple.shade400;
-      case UserRank.ballonDor:
-        return Colors.deepOrange.shade400;
-      case UserRank.legend:
-        return Colors.red.shade400;
-    }
-  }
-
-  /// 枠付きランクアイコンを構築する共通ウィジェット
-  Widget _buildRankIconWithFrame(String imagePath, double size, UserRank rank) {
-    final borderColors = _getRankBorderColors(rank);
-    final glowColor = _getRankGlowColor(rank);
-    final borderWidth = size * 0.05; // サイズの5%をボーダー幅とする
-
-    return Container(
-      width: size,
-      height: size,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        border: Border.all(
-          width: borderWidth,
-          color: borderColors[0],
-        ),
-        boxShadow: [
-          // 外側のグロー効果（複数レイヤー）
-          BoxShadow(
-            color: glowColor.withValues(alpha: 0.6),
-            blurRadius: size * 0.15,
-            spreadRadius: size * 0.05,
-          ),
-          BoxShadow(
-            color: glowColor.withValues(alpha: 0.4),
-            blurRadius: size * 0.25,
-            spreadRadius: size * 0.1,
-          ),
-          BoxShadow(
-            color: glowColor.withValues(alpha: 0.2),
-            blurRadius: size * 0.35,
-            spreadRadius: size * 0.15,
-          ),
-          // 内側の影（深みを出す）
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.3),
-            blurRadius: size * 0.1,
-            spreadRadius: -size * 0.05,
-          ),
-        ],
-      ),
-      child: ClipOval(
-        child: Container(
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            border: Border.all(
-              width: borderWidth * 0.5,
-              color: borderColors[1],
-            ),
-          ),
-          child: Image.asset(
-            imagePath,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            errorBuilder: (_, __, ___) =>
-                _FallbackRankBadge(rank: rank, size: size),
-          ),
-        ),
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return _buildRankIconWithFrame(
-      '$_rankIconsPath/${rank.name}.png',
-      size,
-      rank,
-    );
-  }
-}
-
-/// ランクアイコン画像がない場合のフォールバック表示
-class _FallbackRankBadge extends StatelessWidget {
-  final UserRank rank;
-  final double size;
-
-  const _FallbackRankBadge({required this.rank, required this.size});
-
-  @override
-  Widget build(BuildContext context) {
-    Color badgeColor;
-    IconData iconData;
-
-    switch (rank) {
-      case UserRank.ballPicker:
-      case UserRank.coneSetter:
-      case UserRank.waterCarrier:
-      case UserRank.bibDistributor:
-      case UserRank.trainee:
-      case UserRank.benchPlayer:
-        badgeColor = Colors.grey.shade400;
-        iconData = Icons.sports_soccer;
-        break;
-      case UserRank.substitute:
-      case UserRank.starter:
-        badgeColor = Colors.blue.shade400;
-        iconData = Icons.star;
-        break;
-      case UserRank.numberTen:
-      case UserRank.captain:
-        badgeColor = Colors.green.shade400;
-        iconData = Icons.emoji_events;
-        break;
-      case UserRank.domesticMVP:
-      case UserRank.overseasTransfer:
-        badgeColor = Colors.amber.shade400;
-        iconData = Icons.workspace_premium;
-        break;
-      case UserRank.worldClass:
-        badgeColor = Colors.purple.shade400;
-        iconData = Icons.auto_awesome;
-        break;
-      case UserRank.ballonDor:
-        badgeColor = Colors.deepOrange.shade400;
-        iconData = Icons.auto_awesome;
-        break;
-      case UserRank.legend:
-        badgeColor = Colors.red.shade400;
-        iconData = Icons.auto_awesome;
-        break;
-    }
-
-    return Container(
-      width: size,
-      height: size,
-      decoration: BoxDecoration(
-        gradient: RadialGradient(
-          colors: [
-            badgeColor,
-            badgeColor.withValues(alpha: 0.7),
-            badgeColor.withValues(alpha: 0.5),
-          ],
-        ),
-        shape: BoxShape.circle,
-        boxShadow: [
-          BoxShadow(
-            color: badgeColor.withValues(alpha: 0.5),
-            blurRadius: 12,
-            offset: const Offset(0, 4),
-          ),
-        ],
-      ),
-      child: Icon(
-        iconData,
-        size: size * 0.5,
-        color: Colors.white,
-      ),
-    );
-  }
-}

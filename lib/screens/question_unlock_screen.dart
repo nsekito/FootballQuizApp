@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
-import 'package:flutter/foundation.dart' show debugPrint;
 import '../providers/question_unlock_provider.dart';
 import '../providers/question_service_provider.dart';
 import '../providers/user_data_provider.dart';
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 import '../constants/app_colors.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/grid_pattern_background.dart';
@@ -14,7 +13,7 @@ import '../widgets/app_bar_background.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../utils/category_difficulty_utils.dart';
 import '../models/question.dart';
-import '../constants/gameConfig.dart';
+import '../constants/game_config.dart';
 import '../services/history_unlock_service.dart';
 import '../providers/ad_provider.dart';
 
@@ -412,7 +411,7 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen>
             Row(
               children: [
                 _buildInfoChip(
-                  CategoryDifficultyUtils.getCategoryTitle(question.category),
+                  CategoryDifficultyUtils.getCategoryName(question.category),
                   Colors.blue,
                 ),
                 const SizedBox(width: 8),

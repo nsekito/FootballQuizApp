@@ -1,5 +1,5 @@
 import 'package:shared_preferences/shared_preferences.dart';
-import '../constants/gameConfig.dart';
+import '../constants/game_config.dart';
 
 /// ログインボーナスサービス
 /// 

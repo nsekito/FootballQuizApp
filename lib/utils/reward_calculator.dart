@@ -1,5 +1,5 @@
 import 'dart:math' as math;
-import '../constants/gameConfig.dart';
+import '../constants/game_config.dart';
 
 /// 報酬計算ユーティリティ
 /// すべての報酬計算はこのクラスを通じて行う

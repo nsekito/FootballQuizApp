@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../providers/login_bonus_provider.dart';
-import '../providers/ad_provider.dart';
 import '../constants/app_colors.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/responsive_container.dart';
 import '../widgets/grid_pattern_background.dart';
+import '../utils/rewarded_ad_helper.dart';
 
 class LoginBonusScreen extends ConsumerStatefulWidget {
   const LoginBonusScreen({super.key});
@@ -17,14 +17,18 @@ class LoginBonusScreen extends ConsumerStatefulWidget {
 
 class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
     with TickerProviderStateMixin {
-  bool _isLoadingAd = false;
-  bool _isAdReady = false;
+  late final RewardedAdHelper _adHelper;
   late AnimationController _animationController;
   late AnimationController _bounceAnimationController;
 
   @override
   void initState() {
     super.initState();
+    _adHelper = RewardedAdHelper(
+      ref: ref,
+      onStateChanged: () => setState(() {}),
+      isMounted: () => mounted,
+    );
     _animationController = AnimationController(
       duration: const Duration(milliseconds: 800),
       vsync: this,
@@ -34,8 +38,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
       vsync: this,
     );
     _animationController.forward();
-    _loadRewardedAd();
-    // 画面が開かれたときに状態をリフレッシュ
+    _adHelper.loadRewardedAd();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       ref.read(loginBonusStatusProvider.notifier).refresh();
     });
@@ -48,63 +51,11 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
     super.dispose();
   }
 
-  /// リワード広告を読み込む
-  Future<void> _loadRewardedAd() async {
-    setState(() {
-      _isLoadingAd = true;
-    });
-
-    final adService = ref.read(adServiceProvider);
-    await adService.loadRewardedAd(
-      onRewarded: (rewardAmount, rewardType) {
-        // 広告視聴完了時の処理は_showRewardedAdで行う
-      },
-      onError: (error) {
-        debugPrint('リワード広告の読み込みに失敗しました: $error');
-        if (mounted) {
-          setState(() {
-            _isLoadingAd = false;
-            _isAdReady = false;
-          });
-        }
-      },
-    );
-
-    if (mounted) {
-      setState(() {
-        _isLoadingAd = false;
-        _isAdReady = adService.isRewardedAdReady;
-      });
-    }
-  }
-
-  /// リワード広告を表示する
   Future<void> _showRewardedAd() async {
-    if (_isLoadingAd) return;
-
-    final adService = ref.read(adServiceProvider);
-
-    // 広告が読み込まれていない場合、読み込みを試みる
-    if (!adService.isRewardedAdReady) {
-      await _loadRewardedAd();
-      if (!adService.isRewardedAdReady) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('広告の読み込みに失敗しました。しばらくしてから再度お試しください。'),
-              backgroundColor: Colors.red,
-            ),
-          );
-        }
-        return;
-      }
-    }
-
     final loginBonusNotifier = ref.read(loginBonusStatusProvider.notifier);
-
-    final success = await adService.showRewardedAd(
-      onRewarded: (rewardAmount, rewardType) async {
-        // ポイントを2倍にする
+    await _adHelper.showRewardedAd(
+      context: context,
+      onRewarded: () async {
         try {
           await loginBonusNotifier.multiplyPointsWithAd();
           if (mounted) {
@@ -120,40 +71,16 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
           debugPrint('ポイントの2倍処理に失敗しました: $e');
         }
       },
-      onError: (error) {
-        debugPrint('リワード広告の表示に失敗しました: $error');
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('広告の表示に失敗しました: $error'),
-              backgroundColor: Colors.red,
-            ),
-          );
-        }
-      },
     );
-
-    if (!success) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('広告の表示に失敗しました。しばらくしてから再度お試しください。'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
-    }
   }
 
   /// ログインボーナスを受け取る
   Future<void> _claimLoginBonus() async {
-    final loginBonusNotifier = ref.read(loginBonusStatusProvider.notifier);
     try {
       final loginBonusNotifier = ref.read(loginBonusStatusProvider.notifier);
       final result = await loginBonusNotifier.claimLoginBonus();
       final points = result['points'] as int;
-      final exp = result['exp'] as int;
-      
+
       if (mounted) {
         _bounceAnimationController.forward(from: 0.0);
         ScaffoldMessenger.of(context).showSnackBar(
@@ -214,25 +141,25 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const SizedBox(height: 16),
-                
+
                 // 連続日数バッジとヒーローセクション
                 _buildStreakHeroSection(loginBonusStatus),
-                
+
                 const SizedBox(height: 24),
-                
+
                 // 進捗バー
                 _buildProgressBar(loginBonusStatus),
-                
+
                 const SizedBox(height: 24),
-                
+
                 // 7日間のカレンダーグリッド
                 _buildCalendarGrid(loginBonusStatus),
-                
+
                 const SizedBox(height: 24),
-                
+
                 // アクションボタン
                 _buildActionButtons(loginBonusStatus),
-                
+
                 const SizedBox(height: 24),
               ],
             ),
@@ -273,26 +200,26 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
             ],
           ),
         ),
-        
+
         const SizedBox(height: 16),
-        
+
         // ヒーロータイトル
         Text(
           '${status.streakDays}日間',
           style: Theme.of(context).textTheme.displayLarge?.copyWith(
-            fontWeight: FontWeight.w900,
-            fontSize: 48,
-            letterSpacing: -1,
-            color: AppColors.textDark,
-          ),
+                fontWeight: FontWeight.w900,
+                fontSize: 48,
+                letterSpacing: -1,
+                color: AppColors.textDark,
+              ),
         ),
         Text(
           '連続ログイン！',
           style: Theme.of(context).textTheme.displayLarge?.copyWith(
-            fontWeight: FontWeight.w900,
-            fontSize: 36,
-            color: AppColors.accent,
-          ),
+                fontWeight: FontWeight.w900,
+                fontSize: 36,
+                color: AppColors.accent,
+              ),
         ),
       ],
     );
@@ -302,7 +229,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
   Widget _buildProgressBar(LoginBonusStatus status) {
     final progress = status.streakDays / 7.0;
     final remainingDays = 7 - status.streakDays;
-    
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
@@ -350,9 +277,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
           ),
           const SizedBox(height: 8),
           Text(
-            remainingDays > 0
-                ? 'あと$remainingDays日でグランドプライズ！'
-                : 'グランドプライズ達成！',
+            remainingDays > 0 ? 'あと$remainingDays日でグランドプライズ！' : 'グランドプライズ達成！',
             style: const TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w500,
@@ -399,12 +324,12 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
     final points = _getPointsForDay(day);
     final isCurrentDay = day == status.streakDays;
     final isPastDay = day < status.streakDays;
-    
+
     Color textColor;
     IconData iconData;
     Color iconColor;
     double opacity = 1.0;
-    
+
     if (isCurrentDay) {
       textColor = AppColors.accent;
       iconData = Icons.stars;
@@ -436,7 +361,9 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
                   fontSize: 10,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 0.5,
-                  color: isCurrentDay ? AppColors.accent : textColor.withValues(alpha: 0.5),
+                  color: isCurrentDay
+                      ? AppColors.accent
+                      : textColor.withValues(alpha: 0.5),
                 ),
                 textAlign: TextAlign.center,
                 maxLines: 1,
@@ -578,15 +505,14 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
     return Column(
       children: [
         // 報酬を受け取るボタン（受け取り可能な場合のみ）
-        if (status.canClaim && !status.hasClaimedToday)
-          _buildClaimButton(),
-        
+        if (status.canClaim && !status.hasClaimedToday) _buildClaimButton(),
+
         // 動画ボタン（受け取り済みで広告未視聴の場合のみ）
         if (status.hasClaimedToday && !status.hasWatchedAd) ...[
           const SizedBox(height: 16),
           _buildVideoButton(),
         ],
-        
+
         // 完了メッセージ（広告視聴済みの場合）
         if (status.hasClaimedToday && status.hasWatchedAd)
           _buildCompletedMessage(status),
@@ -642,7 +568,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
     return SizedBox(
       width: double.infinity,
       child: ElevatedButton(
-        onPressed: _isAdReady ? _showRewardedAd : null,
+        onPressed: _adHelper.isAdReady ? _showRewardedAd : null,
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.difficultyNormal,
           foregroundColor: Colors.white,
@@ -653,7 +579,7 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
           elevation: 4,
           shadowColor: AppColors.difficultyNormal.withValues(alpha: 0.3),
         ),
-        child: _isLoadingAd
+        child: _adHelper.isLoadingAd
             ? const SizedBox(
                 width: 24,
                 height: 24,
@@ -697,9 +623,9 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
           Text(
             '広告視聴済み（${status.points * 2}ポイント獲得）',
             style: Theme.of(context).textTheme.titleMedium?.copyWith(
-              color: AppColors.success,
-              fontWeight: FontWeight.bold,
-            ),
+                  color: AppColors.success,
+                  fontWeight: FontWeight.bold,
+                ),
           ),
         ],
       ),

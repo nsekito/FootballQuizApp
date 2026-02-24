@@ -117,7 +117,7 @@ class QuestionViewScreen extends ConsumerWidget {
           Row(
             children: [
               _buildInfoChip(
-                CategoryDifficultyUtils.getCategoryTitle(question.category),
+                CategoryDifficultyUtils.getCategoryName(question.category),
                 Colors.blue,
               ),
               const SizedBox(width: 8),

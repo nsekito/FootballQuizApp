@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 import '../utils/unlock_key_utils.dart';
 import '../providers/user_data_provider.dart';
 import '../providers/database_provider.dart';
@@ -45,7 +45,7 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           elevation: 0,
           automaticallyImplyLeading: false, // 戻るボタンを非表示
           title: Text(
-            CategoryDifficultyUtils.getCategoryTitle(widget.category),
+            CategoryDifficultyUtils.getCategoryName(widget.category),
             style: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 
 /// レスポンシブ対応のコンテナウィジェット
 /// 最大幅を設定し、それ以上広がった場合は中央配置で左右に空白を表示します

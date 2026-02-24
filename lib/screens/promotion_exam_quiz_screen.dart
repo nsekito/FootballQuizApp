@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../models/question.dart';
 import '../providers/question_service_provider.dart';
 import '../providers/user_data_provider.dart';
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';

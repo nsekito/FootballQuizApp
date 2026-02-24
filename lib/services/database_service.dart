@@ -5,8 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../models/question.dart';
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 import '../utils/unlock_key_utils.dart';
+import '../utils/app_date_utils.dart';
 
 /// SQLiteデータベースサービス
 class DatabaseService {
@@ -1492,14 +1493,8 @@ class DatabaseService {
     await updateUnlockedDifficulties(unlocked);
   }
 
-  /// 今週の週開始日を取得（月曜日を週の開始とする）
-  String _getWeekStartDate(DateTime date) {
-    // 月曜日を週の開始とする（月曜日=1、日曜日=7）
-    final weekday = date.weekday;
-    final daysFromMonday = weekday == 7 ? 0 : weekday - 1;
-    final weekStart = date.subtract(Duration(days: daysFromMonday));
-    return '${weekStart.year}-${weekStart.month.toString().padLeft(2, '0')}-${weekStart.day.toString().padLeft(2, '0')}';
-  }
+  String _getWeekStartDate(DateTime date) =>
+      AppDateUtils.getLatestMondayString(now: date);
 
   /// MATCH DAYをプレイ可能かチェック（週1回制限）
   Future<bool> canPlayMatchDay() async {

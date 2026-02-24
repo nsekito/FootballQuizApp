@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../services/login_bonus_service.dart';
 import 'user_data_provider.dart';
-import '../constants/gameConfig.dart';
+import '../constants/game_config.dart';
 
 /// ログインボーナスサービスのプロバイダー
 final loginBonusServiceProvider = Provider<LoginBonusService>((ref) {

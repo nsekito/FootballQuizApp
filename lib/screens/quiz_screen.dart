@@ -5,7 +5,7 @@ import '../models/question.dart';
 import '../providers/question_service_provider.dart';
 import '../providers/database_provider.dart';
 import '../services/remote_data_service.dart';
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 import '../widgets/error_widget.dart';
 import '../widgets/loading_widget.dart';
 import '../constants/app_colors.dart';

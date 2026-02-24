@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart' show debugPrint;
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
+import '../utils/app_date_utils.dart';
 import 'database_service.dart';
 import 'remote_data_service.dart';
 
@@ -112,12 +113,5 @@ class RecapDataService {
     return dates.toList()..sort((a, b) => b.compareTo(a)); // 新しい順
   }
 
-  /// 最新の月曜日の日付を取得（YYYY-MM-DD形式）
-  String _getLatestMonday() {
-    final now = DateTime.now();
-    // 月曜日を取得（月曜日 = 1）
-    int daysFromMonday = (now.weekday - 1) % 7;
-    final monday = now.subtract(Duration(days: daysFromMonday));
-    return '${monday.year}-${monday.month.toString().padLeft(2, '0')}-${monday.day.toString().padLeft(2, '0')}';
-  }
+  String _getLatestMonday() => AppDateUtils.getLatestMondayString();
 }

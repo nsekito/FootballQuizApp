@@ -1,4 +1,4 @@
-import '../constants/gameConfig.dart';
+import '../constants/game_config.dart';
 import '../providers/user_data_provider.dart';
 import '../utils/unlock_key_utils.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -51,7 +51,7 @@ class PromotionExamService {
 
   /// ランク条件を満たしているかチェック
   bool checkRankRequirement(int requiredRank, int currentRankIndex) {
-    // RANKS配列のインデックスで比較（1ベースのrankから0ベースのインデックスに変換）
+    // ranks配列のインデックスで比較（1ベースのrankから0ベースのインデックスに変換）
     return currentRankIndex >= (requiredRank - 1);
   }
 

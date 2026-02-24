@@ -1,5 +1,5 @@
 import '../models/question.dart';
-import '../utils/constants.dart';
+import '../constants/app_constants.dart';
 import 'database_service.dart';
 import 'remote_data_service.dart';
 
