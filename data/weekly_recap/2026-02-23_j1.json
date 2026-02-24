@@ -1,0 +1,1031 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-02-23T21:53:30Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-02-23",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "大会形式"
+      ],
+      "text": "2026年シーズンの秋春制移行に伴い、2月から6月にかけて開催されている特別大会の名称は？",
+      "options": [
+        "明治安田J1百年構想リーグ",
+        "明治安田J1スプリングカップ",
+        "明治安田J1移行記念大会",
+        "明治安田J1プレシーズンリーグ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年のシーズン移行期に合わせ、「明治安田J1百年構想リーグ」という特別大会が開催されています。2月6日から6月7日までの日程で行われます。",
+      "trivia": "この大会はリーグ戦形式ですが、降格はありません。優勝クラブには2026-27シーズンのACLエリート出場権が与えられます。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "ルール"
+      ],
+      "text": "「明治安田J1百年構想リーグ」において、90分で決着がつかなかった場合に適用されるルールは？",
+      "options": [
+        "即座にPK戦を実施して勝敗を決定",
+        "引き分けとして勝ち点1を分け合う",
+        "15分ハーフの延長戦を実施",
+        "ゴールデンゴール方式の延長戦"
+      ],
+      "answerIndex": 0,
+      "explanation": "この大会では引き分けがなく、90分で同点の場合はPK戦を行って勝者を決定します。第3節でも東京ヴェルディや水戸ホーリーホックがPK戦で勝利しています。",
+      "trivia": "かつてのJリーグでも完全決着方式が採用されていました。この大会では「勝ち切る力」を養うなどの目的で導入されています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "川崎フロンターレ",
+        "FC東京",
+        "多摩川クラシコ"
+      ],
+      "text": "2月21日に行われた「多摩川クラシコ」、川崎フロンターレ対FC東京の試合結果は？",
+      "options": [
+        "FC東京が2-1で勝利",
+        "川崎フロンターレが2-1で勝利",
+        "2-2でPK戦突入",
+        "0-0でPK戦突入"
+      ],
+      "answerIndex": 0,
+      "explanation": "等々力陸上競技場で行われた一戦は、アウェイのFC東京が2-1で勝利しました。",
+      "trivia": "今シーズンのFC東京は好調を維持しており、この勝利で開幕からの連勝を伸ばしました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "鹿島アントラーズ",
+        "柏レイソル"
+      ],
+      "text": "2月21日に行われた鹿島アントラーズ対柏レイソルの試合結果は？",
+      "options": [
+        "鹿島が2-0で勝利",
+        "柏が2-0で勝利",
+        "1-1でPK戦突入",
+        "鹿島が3-2で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "ホームの鹿島アントラーズが2-0で完封勝利を収めました。前半22分のPKピンチをGK早川が防いだ後、レオ・セアラなどのゴールで勝利しました。",
+      "trivia": "鹿島はこの勝利でホームでの強さを見せつけました。一方、柏は開幕から苦しい戦いが続いています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "浦和レッズ",
+        "横浜F・マリノス"
+      ],
+      "text": "2月21日、日産スタジアムで行われた横浜F・マリノス対浦和レッズの試合結果は？",
+      "options": [
+        "浦和レッズが2-0で勝利",
+        "横浜F・マリノスが2-0で勝利",
+        "2-2でPK戦突入",
+        "横浜F・マリノスが3-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "アウェイの浦和レッズが2-0で勝利しました。伝統のライバル対決を制し、浦和が勝ち点を積み上げました。",
+      "trivia": "この試合は「オリジナル10」同士の対戦としても注目されました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "サンフレッチェ広島",
+        "セレッソ大阪"
+      ],
+      "text": "2月22日に行われたセレッソ大阪対サンフレッチェ広島の試合結果は？",
+      "options": [
+        "広島が2-1で勝利",
+        "C大阪が2-1で勝利",
+        "1-1でPK戦突入",
+        "0-0でPK戦突入"
+      ],
+      "answerIndex": 0,
+      "explanation": "アウェイのサンフレッチェ広島が2-1で勝利しました。後半アディショナルタイムの劇的な決勝点で広島が競り勝ちました。",
+      "trivia": "広島はこの勝利で開幕からの無敗を維持し、好調なスタートを切っています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "acl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ACLエリート",
+        "サンフレッチェ広島"
+      ],
+      "text": "2月18日にリーグステージが終了したACLエリート。サンフレッチェ広島のラウンド16での対戦相手はどこに決まった？",
+      "options": [
+        "ジョホール・ダルル・タクジム（マレーシア）",
+        "ブリーラム・ユナイテッド（タイ）",
+        "セントラルコースト・マリナーズ（オーストラリア）",
+        "光州FC（韓国）"
+      ],
+      "answerIndex": 0,
+      "explanation": "リーグステージの結果により、サンフレッチェ広島はマレーシアのジョホール・ダルル・タクジム（JDT）と対戦することが決まりました。",
+      "trivia": "JDTはヴィッセル神戸を破るなど健闘を見せており、油断できない相手です。ラウンド16は3月に行われます。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-18",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "acl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ACL2",
+        "ガンバ大阪"
+      ],
+      "text": "2月19日・20日に行われたACL Twoラウンド16第2戦、ガンバ大阪対浦項スティーラーズの結果は？",
+      "options": [
+        "2-1で勝利（2戦合計3-2で準々決勝進出）",
+        "1-0で勝利（2戦合計2-1で準々決勝進出）",
+        "1-1の引き分け（2戦合計2-2、PK戦で敗退）",
+        "0-1で敗戦（2戦合計1-2で敗退）"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガンバ大阪はホームで行われた第2戦を2-1で制し、2戦合計3-2として準々決勝進出を決めました。デニズ・フムメトや山下諒也が得点しました。",
+      "trivia": "ACL Two（旧AFCカップ相当の上位大会）において、日本勢としてしっかり結果を残しています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-20",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "V・ファーレン長崎",
+        "名古屋グランパス"
+      ],
+      "text": "2月21日、J1昇格組のV・ファーレン長崎がアウェイで名古屋グランパスを破ったスコアは？",
+      "options": [
+        "3-1",
+        "1-0",
+        "2-1",
+        "4-3"
+      ],
+      "answerIndex": 0,
+      "explanation": "V・ファーレン長崎がアウェイ豊田スタジアムで名古屋グランパス相手に3ゴールを奪い、3-1で快勝しました。",
+      "trivia": "長崎は2025シーズンにJ1昇格を果たし、この特別大会でも存在感を示しています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "清水エスパルス",
+        "ヴィッセル神戸"
+      ],
+      "text": "2月21日に行われた清水エスパルス対ヴィッセル神戸の試合結果は？",
+      "options": [
+        "清水が1-0で勝利",
+        "神戸が1-0で勝利",
+        "2-2でPK戦突入",
+        "清水が2-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "清水エスパルスがホームでヴィッセル神戸を1-0で下しました。ACL参戦中の強豪神戸を相手に貴重な勝利を挙げました。",
+      "trivia": "清水エスパルスも2026年のJ1リーグ（特別大会含む）に参加しており、この勝利はファンを沸かせました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "レギュレーション",
+        "百年構想リーグ"
+      ],
+      "text": "2026年2月に開幕した「明治安田J1百年構想リーグ」で採用されている、勝ち点に関する特別なルールは次のうちどれ？",
+      "options": [
+        "90分で同点の場合はPK戦を行い、勝者に勝ち点2、敗者に勝ち点1が入る",
+        "90分で同点の場合は引き分けとし、両チームに勝ち点0.5が入る",
+        "90分で同点の場合は延長戦を行い、決着がつかない場合は引き分けとする",
+        "90分で同点の場合は抽選を行い、当選したチームに勝ち点3が入る"
+      ],
+      "answerIndex": 0,
+      "explanation": "本大会は秋春制移行前の特別大会として開催され、全試合で完全決着方式を採用しています。90分で同点の場合は即PK戦が行われ、PK戦の勝者には勝ち点2、敗者には勝ち点1が与えられます（90分勝利は勝ち点3）。",
+      "trivia": "この「完全決着方式」は、ファンに新たなエンターテインメントを提供すると同時に、緊張感のある試合を増やす目的で試験的に導入されました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "サンフレッチェ広島",
+        "順位表"
+      ],
+      "text": "2026年2月22日に行われた第3節終了時点で、「明治安田J1百年構想リーグ」WESTグループの首位に立っているチームは？",
+      "options": [
+        "サンフレッチェ広島",
+        "ガンバ大阪",
+        "京都サンガF.C.",
+        "ヴィッセル神戸"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンフレッチェ広島は第3節でセレッソ大阪に2-1で勝利し、開幕からの無敗を維持して勝ち点8でWESTグループの単独首位に立っています。",
+      "trivia": "広島は第3節、終了間際に追いつかれる展開となりましたが、直後に東俊希選手が決勝ゴールを決め、劇的な勝利を収めました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "東京ヴェルディ",
+        "FC町田ゼルビア",
+        "試合結果"
+      ],
+      "text": "2026年2月21日に行われたJ1百年構想リーグ第3節、東京ヴェルディ対FC町田ゼルビアの試合結果として正しいものは？",
+      "options": [
+        "2-2で90分を終了し、PK戦の末に東京ヴェルディが勝利した",
+        "2-2で90分を終了し、PK戦の末にFC町田ゼルビアが勝利した",
+        "東京ヴェルディが2-0で90分勝利した",
+        "FC町田ゼルビアが3-2で90分勝利した"
+      ],
+      "answerIndex": 0,
+      "explanation": "味の素スタジアムで行われた一戦は、激しい攻防の末2-2の同点で90分を終了しました。大会規定により行われたPK戦を東京ヴェルディが4-3で制し、勝ち点2を獲得しました。",
+      "trivia": "この勝利により東京ヴェルディは勝ち点を8に伸ばし、EASTグループの首位をキープしています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "セレッソ大阪",
+        "サンフレッチェ広島",
+        "試合結果"
+      ],
+      "text": "2026年2月22日に行われたJ1百年構想リーグ第3節、セレッソ大阪対サンフレッチェ広島の試合で、セレッソ大阪が後半アディショナルタイムに見せたプレーは？",
+      "options": [
+        "櫻川ソロモンがバイシクルシュートで同点弾を決めたが、直後に勝ち越された",
+        "香川真司がフリーキックを直接決めて逆転勝利した",
+        "GKがコーナーキックに上がりヘディングで同点ゴールを決めた",
+        "相手のPKをストップして1-0の勝利を守り切った"
+      ],
+      "answerIndex": 0,
+      "explanation": "セレッソ大阪は後半ATに櫻川ソロモン選手のバイシクルシュートで一度は同点に追いつきましたが、その直後のラストプレーで広島に決勝点を許し、1-2で敗れました。",
+      "trivia": "敗れはしましたが、櫻川選手の豪快なバイシクルシュートは今節のベストゴール候補として多くのメディアに取り上げられました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "順位表",
+        "浦和レッズ",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年2月23日（第3節終了）時点の「明治安田J1百年構想リーグ」EASTグループ順位表において、首位の東京ヴェルディ（勝点8）に次いで勝点7で並んでいる2チームは？",
+      "options": [
+        "浦和レッズと鹿島アントラーズ",
+        "FC東京と横浜F・マリノス",
+        "川崎フロンターレとFC町田ゼルビア",
+        "柏レイソルとジェフユナイテッド千葉"
+      ],
+      "answerIndex": 0,
+      "explanation": "第3節終了時点で、浦和レッズは横浜FMに勝利、鹿島アントラーズは柏に勝利し、共に2勝1PK負け（またはそれに準ずる成績）で勝点を7に伸ばし、2位・3位につけています。",
+      "trivia": "EASTグループは首位から中位までが僅差でひしめく混戦模様となっており、1試合の結果で順位が大きく入れ替わる状況です。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-23",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "鹿島アントラーズ",
+        "柏レイソル",
+        "試合結果"
+      ],
+      "text": "2026年2月21日に行われたJ1百年構想リーグ第3節、鹿島アントラーズ対柏レイソルの試合結果と、敗れた柏レイソルの開幕からの成績として正しいものは？",
+      "options": [
+        "鹿島が2-0で勝利し、柏は開幕3連敗（勝点0）となった",
+        "鹿島が1-0で勝利し、柏は1勝2敗となった",
+        "2-2からのPK戦で鹿島が勝利し、柏は初の勝点1を獲得した",
+        "柏が2-1で勝利し、鹿島の連勝をストップさせた"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズはホームで2-0と完勝しました。一方、敗れた柏レイソルは開幕から3試合連続で90分負けを喫しており、勝点0でEASTグループ最下位に沈んでいます。",
+      "trivia": "鹿島アントラーズはこの勝利で勝点を7に伸ばし、上位争いに踏みとどまりました。一方の柏は厳しいシーズン序盤となっています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "Jリーグ",
+        "サンフレッチェ広島",
+        "セレッソ大阪",
+        "東俊希",
+        "劇的ゴール"
+      ],
+      "text": "2026年2月22日に行われた明治安田J1百年構想リーグ第3節、セレッソ大阪対サンフレッチェ広島の試合で、後半アディショナルタイム（90+7分）に決勝ゴールを決め、チームを2-1の劇的勝利に導いた広島の選手は？",
+      "options": [
+        "東俊希",
+        "ジャーメイン良",
+        "満田誠",
+        "大橋祐紀"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半55分にジャーメイン良のゴールで先制した広島は、90+5分にC大阪の櫻川ソロモンに同点弾を許しましたが、その直後の90+7分に東俊希がこぼれ球を右足で押し込み、劇的な決勝点を挙げました。",
+      "trivia": "この試合が行われたヨドコウ桜スタジアムでは、試合終了間際の2分間で同点・勝ち越しが生まれるという、今季でも屈指のドラマチックな展開となりました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "プレミアリーグ",
+        "三笘薫",
+        "海外日本人選手",
+        "ブライトン"
+      ],
+      "text": "2026年2月21日に行われたプレミアリーグ第27節、三笘薫が先発出場したブライトン対ブレントフォードの試合結果は？",
+      "options": [
+        "ブライトンが2-0で勝利",
+        "1-1の引き分け",
+        "ブレントフォードが1-0で勝利",
+        "ブライトンが3-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "アウェイのブライトンが前半に2得点を挙げ、2-0で勝利しました。三笘薫は左ウイングで先発フル出場し、先制点の起点となるなど勝利に貢献しました。",
+      "trivia": "この勝利によりブライトンはプレミアリーグで7試合ぶりの白星を挙げ、長いトンネルを脱出しました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": 27,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "海外日本人選手",
+        "古橋亨梧",
+        "移籍情報",
+        "バーミンガム"
+      ],
+      "text": "イングランド2部バーミンガム・シティに所属するFW古橋亨梧に対し、2026年2月下旬に現地メディアで報じられた移籍の可能性のあるリーグはどこ？",
+      "options": [
+        "MLS（アメリカ）",
+        "Jリーグ（日本）",
+        "サウジ・プロリーグ（サウジアラビア）",
+        "ブンデスリーガ（ドイツ）"
+      ],
+      "answerIndex": 0,
+      "explanation": "バーミンガムで出場機会が減少している古橋に対し、移籍市場が開いているMLS（メジャーリーグサッカー）への移籍の噂が浮上しました。クリス・デイビス監督も可能性を否定していません。",
+      "trivia": "古橋亨梧は2026年夏のW杯出場を目指しており、出場機会の確保が最優先事項とされています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "Jリーグ",
+        "大会形式",
+        "秋春制",
+        "ニュース"
+      ],
+      "text": "Jリーグの秋春制移行に伴い、2026年2月から6月にかけて開催されているJリーグの特別大会の名称は？",
+      "options": [
+        "明治安田Jリーグ百年構想リーグ",
+        "明治安田Jリーグ・プレシーズンカップ",
+        "明治安田Jリーグ・スプリングステージ",
+        "明治安田Jリーグ・ドリームマッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026-27シーズンからの秋春制移行に向けた端境期として、2026年前半は「明治安田Jリーグ百年構想リーグ」という特別大会が開催されています。",
+      "trivia": "この「百年構想リーグ」のJ1優勝クラブには、2026/27シーズンのAFCチャンピオンズリーグエリート（ACLE）への出場権が与えられる予定です。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "J2",
+        "J3",
+        "RB大宮アルディージャ",
+        "順位表"
+      ],
+      "text": "2026年2月21日時点で、「明治安田J2・J3百年構想リーグ」EAST-Bグループの首位に立っている、レッドブル・グループが運営するクラブの名称は？",
+      "options": [
+        "RB大宮アルディージャ",
+        "レッドブル大宮",
+        "大宮レッドブルズ",
+        "RB埼玉"
+      ],
+      "answerIndex": 0,
+      "explanation": "大宮アルディージャは2025年にレッドブル・グループの一員となり、チーム名を「RB大宮アルディージャ」に変更しました。2026年の百年構想リーグでは開幕から3連勝で首位に立っています。",
+      "trivia": "レッドブル・グループは他にもドイツのRBライプツィヒやオーストリアのレッドブル・ザルツブルクなどを運営しており、RB大宮もそのネットワークを活用した強化が期待されています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-21",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "2026シーズン",
+        "大会形式"
+      ],
+      "text": "2026年8月の「秋春制」本格移行までの期間（2月〜5月）を利用して開催されている、Jリーグ特別大会の名称は？",
+      "options": [
+        "明治安田Jリーグ百年構想リーグ",
+        "明治安田Jリーグ・スプリングカップ",
+        "明治安田Jリーグ・プレシーズンマッチ",
+        "明治安田Jリーグ・フューチャーリーグ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026-27シーズンからの秋春制移行に伴い、2026年前半の移行期間に行われる特別大会として「明治安田Jリーグ百年構想リーグ」が2026年2月に開幕しました。",
+      "trivia": "この特別大会では引き分けが廃止されており、90分で同点の場合は即PK戦を行い勝敗を決する完全決着方式が採用されています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "移籍",
+        "浦和レッズ",
+        "Jリーグ"
+      ],
+      "text": "2026年2月23日、浦和レッズへの完全移籍加入が発表された、かつて同クラブにも在籍していたFWは誰？",
+      "options": [
+        "オナイウ阿道",
+        "原口元気",
+        "浅野拓磨",
+        "古橋亨梧"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズは2026年2月23日、FWオナイウ阿道の完全移籍加入を発表しました。2017年以来、約9年ぶりの浦和復帰となります。",
+      "trivia": "オナイウ阿道選手は、浦和を離れた後、横浜F・マリノスでの活躍を経て、フランスのトゥールーズやオセールなどでプレーしていました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ACL",
+        "ガンバ大阪",
+        "試合結果"
+      ],
+      "text": "2026年2月19日に行われたACL2（AFCチャンピオンズリーグ2）ラウンド16第2戦で、浦項スティーラース（韓国）を下し準々決勝進出を決めたJクラブは？",
+      "options": [
+        "ガンバ大阪",
+        "サンフレッチェ広島",
+        "横浜F・マリノス",
+        "ヴィッセル神戸"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガンバ大阪は2月19日（日本時間20日）の第2戦で浦項スティーラースに2-1で勝利し、2戦合計スコアを3-2として準々決勝進出を決めました。",
+      "trivia": "ガンバ大阪は2008年にACL（当時の名称）で優勝し、アジア王者としてクラブワールドカップに出場し3位になった実績があります。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-19",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ACL",
+        "町田ゼルビア",
+        "ヴィッセル神戸",
+        "サンフレッチェ広島"
+      ],
+      "text": "2026年2月18日にリーグステージが終了した「ACLエリート2025-26」において、ラウンド16進出を決めたJリーグ勢3クラブの組み合わせとして正しいものは？",
+      "options": [
+        "町田、神戸、広島",
+        "横浜FM、川崎、神戸",
+        "町田、横浜FM、広島",
+        "神戸、川崎、鹿島"
+      ],
+      "answerIndex": 0,
+      "explanation": "ACLエリート2025-26の東地区リーグステージでは、FC町田ゼルビア、ヴィッセル神戸、サンフレッチェ広島の3クラブが上位8チームに入り、ラウンド16進出を決めました。",
+      "trivia": "FC町田ゼルビアは初のアジア挑戦ながら、東地区のリーグステージを首位で通過するという快挙を成し遂げました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-18",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "サンフレッチェ広島",
+        "ゴール"
+      ],
+      "text": "2026年2月22日に行われた「明治安田J1百年構想リーグ」の試合で、セレッソ大阪相手に劇的な決勝ゴールを決めたサンフレッチェ広島の選手は？",
+      "options": [
+        "東俊希",
+        "満田誠",
+        "大迫敬介",
+        "ピエロス・ソティリウ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2月22日の試合で、サンフレッチェ広島は東俊希（ひがし しゅんき）の劇的な決勝ゴールにより、セレッソ大阪に勝利しました。",
+      "trivia": "「明治安田Jリーグ百年構想リーグ」はJ1・J2・J3の全クラブが参加しており、地域ごとにグループ分けされて対戦が行われています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-22",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "2026シーズン",
+        "レギュレーション"
+      ],
+      "text": "2026年2月に開幕し、現在開催中のJリーグ特別大会（明治安田Jリーグ百年構想リーグ）における、例年のリーグ戦との最も大きな違いの一つは何ですか？",
+      "options": [
+        "成績による降格がない",
+        "外国籍選手の出場枠が無制限",
+        "オフサイドがない",
+        "監督のベンチ入り禁止"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026-27シーズンからの秋春制移行に伴う0.5シーズンの特別大会（2月〜5月開催）では、成績によるカテゴリー降格が行われません。この期間は「準備期間」や「新たな挑戦の場」としても位置づけられています。",
+      "trivia": "この特別大会のJ1優勝クラブには、2026-27シーズンのACLエリート出場権が与えられます。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "大会方式",
+        "2026シーズン"
+      ],
+      "text": "2026年前半に行われている「明治安田Jリーグ百年構想リーグ」のJ1リーグ戦は、全20クラブがどのような形式で対戦していますか？",
+      "options": [
+        "東西2つのグループに分かれて対戦",
+        "全20クラブによる総当たり戦",
+        "前年の順位に基づく上位・下位リーグ",
+        "トーナメント形式のみ"
+      ],
+      "answerIndex": 0,
+      "explanation": "特別大会のJ1リーグは、全20クラブを所在地に基づいて「東グループ」と「西グループ」の各10クラブに分け、グループ内でホーム＆アウェイの総当たり戦を行っています。",
+      "trivia": "J2・J3は合同で40チームが4つのグループ（北・東・西・南など）に分かれて戦う形式が採用されています。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "ルール改正",
+        "2026シーズン"
+      ],
+      "text": "2026年の特別大会「地域リーグラウンド」で採用されている、90分で同点だった場合の独自の勝ち点ルールはどれですか？",
+      "options": [
+        "即PK戦を行い、勝者に勝ち点2、敗者に勝ち点1",
+        "引き分けとし、両チームに勝ち点0.5",
+        "延長戦を行い、決着がつけば勝ち点3",
+        "コイントスで勝者を決め、勝ち点3"
+      ],
+      "answerIndex": 0,
+      "explanation": "この特別大会では「完全決着方式」が採用されており、90分で同点の場合は延長戦なしでPK戦が行われます。90分勝利は勝ち点3、PK戦勝利は勝ち点2、PK戦敗北は勝ち点1が与えられます。",
+      "trivia": "この「引き分けなし・PK決着」のルールは、ファンや選手に常に勝敗の緊張感を持たせるための試みとして導入されました。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "acle",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ACL",
+        "日本代表",
+        "日程"
+      ],
+      "text": "今週（2026年2月18日）日程を終了した「AFCチャンピオンズリーグエリート（ACLE）2025/26」のリーグステージ。東地区・西地区それぞれ何チームが3月のラウンド16に進出しますか？",
+      "options": [
+        "各地区 8チーム（計16チーム）",
+        "各地区 4チーム（計8チーム）",
+        "各地区 6チーム（計12チーム）",
+        "各地区 2チーム（計4チーム）"
+      ],
+      "answerIndex": 0,
+      "explanation": "ACLE 2025/26のリーグステージは2026年2月中旬に全日程を終了しました。各地区12チーム中、上位8チームがノックアウトステージ（ラウンド16）への進出権を獲得します。",
+      "trivia": "ラウンド16は2026年3月初旬に行われ、準々決勝以降は4月下旬にサウジアラビアでの集中開催（ファイナルステージ）となります。",
+      "referenceDate": "2026-02-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-02-18",
+        "publishDate": "2026-02-23",
+        "expiryDate": "2026-03-02",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
