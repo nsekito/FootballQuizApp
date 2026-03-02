@@ -1,0 +1,1040 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-03-02T21:43:55Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-03-02",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "鹿島アントラーズ",
+        "浦和レッズ",
+        "百年構想リーグ"
+      ],
+      "text": "2026年2月28日に行われたJ1百年構想リーグ第4節、浦和レッズ対鹿島アントラーズの試合結果は？",
+      "options": [
+        "鹿島が0-2から3点を奪い逆転勝利",
+        "浦和が2-0で逃げ切り勝利",
+        "2-2の同点でPK戦の末、浦和が勝利",
+        "2-2の同点でPK戦の末、鹿島が勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "埼玉スタジアムで行われた一戦は、浦和が前半に2点を先行しましたが、鹿島が前半終了間際から反撃を開始。レオ・セアラ、鈴木優磨のゴールで追いつき、最後はチャヴリッチが決勝点を決めて3-2で逆転勝利しました。",
+      "trivia": "この勝利により鹿島アントラーズはEASTグループの暫定首位に浮上しました。浦和の肥田野蓮治は大卒ルーキーながらこの試合で先制点を挙げ、開幕4試合で3得点と好調を維持しています。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "柏レイソル",
+        "FC東京",
+        "百年構想リーグ"
+      ],
+      "text": "2026年2月28日に行われたJ1百年構想リーグ第4節、FC東京対柏レイソルの試合で、今大会初勝利を挙げたチームは？",
+      "options": [
+        "柏レイソル",
+        "FC東京",
+        "引き分け（PK戦で柏勝利）",
+        "引き分け（PK戦でFC東京勝利）"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏レイソルがアウェイでFC東京を2-0で下し、今大会初勝利を挙げました。後半に垣田裕暉と瀬川祐輔が得点を決めました。",
+      "trivia": "柏レイソルはこの試合まで白星がありませんでしたが、昨季2位の実力を発揮し、敵地味の素スタジアムで完封勝利を収めました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "京都サンガF.C.",
+        "サンフレッチェ広島",
+        "百年構想リーグ"
+      ],
+      "text": "2026年2月27日に行われたJ1百年構想リーグ第4節、広島対京都戦で、後半アディショナルタイムに決勝ゴールを決め、京都を勝利に導いた選手は？",
+      "options": [
+        "エンリケ・トレヴィザン",
+        "ラファエル・エリアス",
+        "マルコ・トゥーリオ",
+        "原大智"
+      ],
+      "answerIndex": 0,
+      "explanation": "京都は1-1で迎えた後半90+3分、CKからエンリケ・トレヴィザンがヘディングで決勝ゴールを決め、2-1で逆転勝利を収めました。",
+      "trivia": "この勝利により、京都サンガF.C.はWESTグループの首位に浮上しました。京都は試合終盤に自陣ゴール前で鈴木義宜らが驚異的なシュートブロックを見せ、その直後の劇的弾でした。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-27",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "ガンバ大阪",
+        "清水エスパルス",
+        "百年構想リーグ"
+      ],
+      "text": "2026年2月28日に行われたJ1百年構想リーグ第4節、ガンバ大阪対清水エスパルスの試合結果に関する記述として正しいものは？",
+      "options": [
+        "2-2の同点の後、PK戦でG大阪が勝利した",
+        "G大阪が2-0で勝利した",
+        "清水が0-2から3点を奪い逆転勝利した",
+        "2-2の同点の後、PK戦で清水が勝利した"
+      ],
+      "answerIndex": 0,
+      "explanation": "G大阪が2点を先行しましたが、清水が後半終盤に北川航也とカピシャーバのゴールで2-2に追いつきました。規定により行われたPK戦では、G大阪が5人全員成功させて勝利（勝ち点2）を収めました。",
+      "trivia": "清水エスパルスは第2節の京都戦に続き、今大会2度目のPK戦敗戦となりました。百年構想リーグでは90分同点の場合、即PK戦を行い、勝者に勝ち点2、敗者に勝ち点1が与えられます。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "レギュレーション",
+        "百年構想リーグ"
+      ],
+      "text": "2026年2月から6月にかけて開催されている、90分同点の場合にPK戦で決着をつけるJリーグの特別大会の名称は？",
+      "options": [
+        "明治安田Jリーグ百年構想リーグ",
+        "明治安田Jリーグ・スプリングカップ",
+        "明治安田Jリーグ・プレシーズンマッチ",
+        "明治安田Jリーグ・チャレンジカップ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年からの秋春制移行に伴い、2月から6月までの期間は「明治安田Jリーグ百年構想リーグ」という特別大会が開催されています。この大会では引き分けがなく、同点の場合はPK戦で勝ち点の配分が決まります。",
+      "trivia": "この大会のJ1優勝チームには、2026/27シーズンのAFCチャンピオンズリーグエリート（ACLE）出場権が与えられます。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "鹿島アントラーズ",
+        "チャヴリッチ",
+        "百年構想リーグ"
+      ],
+      "text": "2026年2月28日の浦和戦で、後半終了間際にCKからヘディングで決勝点を決め、鹿島アントラーズを逆転勝利に導いた選手は？",
+      "options": [
+        "チャヴリッチ",
+        "鈴木優磨",
+        "植田直通",
+        "知念慶"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半45分、柴崎岳のCKに合わせて決勝ゴールを決めたのはチャヴリッチでした。彼は当初キッカーを務める予定でしたが、柴崎の投入によりゴール前に入る役割に変更し、見事に結果を残しました。",
+      "trivia": "チャヴリッチは試合後、「知念選手が（キーパーの前に）すでにいたので役割を変えた」と語っており、ピッチ内での臨機応変な判断が劇的ゴールを生みました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "横浜F・マリノス",
+        "東京ヴェルディ",
+        "百年構想リーグ"
+      ],
+      "text": "2026年2月28日に行われた横浜F・マリノス対東京ヴェルディの試合で、チームの3点目を決め、横浜FMの今大会初勝利に貢献した選手は？",
+      "options": [
+        "山根陸",
+        "谷村海那",
+        "遠野大弥",
+        "アンデルソン・ロペス"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜F・マリノスは谷村海那、遠野大弥のゴールでリードし、後半4分（49分）に山根陸が3点目を決めました。その後、東京Vに2点を返されましたが3-2で逃げ切り、初勝利を挙げました。",
+      "trivia": "東京ヴェルディは0-3から染野唯月らのゴールで1点差まで詰め寄りましたが、あと一歩及びませんでした。横浜FMにとっては待望の今季初白星となりました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "清水エスパルス",
+        "ガンバ大阪",
+        "百年構想リーグ"
+      ],
+      "text": "2026年2月28日のG大阪戦で、清水エスパルスは0-2のビハインドから同点に追いつきました。86分に同点ゴールを決めた選手は？",
+      "options": [
+        "カピシャーバ",
+        "北川航也",
+        "乾貴士",
+        "松崎快"
+      ],
+      "answerIndex": 0,
+      "explanation": "83分に北川航也が1点差に迫るゴールを決め、その3分後の86分にカピシャーバが同点ゴールを決めました。試合は2-2で終了し、PK戦の末に清水は敗れましたが、驚異的な粘りを見せました。",
+      "trivia": "この試合で清水は敗れはしましたが、0-2から追いついてPK戦（勝ち点1）に持ち込みました。百年構想リーグではPK負けでも勝ち点1が与えられるため、この粘りは順位表で意味を持ちます。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "順位表",
+        "京都サンガF.C.",
+        "百年構想リーグ"
+      ],
+      "text": "2026年3月2日時点で、J1百年構想リーグ・地域リーグラウンドWESTグループの単独首位に立っているチームは？",
+      "options": [
+        "京都サンガF.C.",
+        "サンフレッチェ広島",
+        "ヴィッセル神戸",
+        "ガンバ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "第4節で首位だったサンフレッチェ広島との直接対決を2-1で制した京都サンガF.C.が、勝ち点を積み上げてWESTグループの単独首位に浮上しました。",
+      "trivia": "EASTグループでは、浦和レッズに逆転勝利した鹿島アントラーズが首位に立っています。特別大会の初代王者を目指し、各地で熱戦が繰り広げられています。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-03-01",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "ヴィッセル神戸",
+        "アビスパ福岡",
+        "百年構想リーグ"
+      ],
+      "text": "2026年2月27日に行われたJ1百年構想リーグ第4節、ヴィッセル神戸がホームで2-1と勝利した相手チームは？",
+      "options": [
+        "アビスパ福岡",
+        "セレッソ大阪",
+        "サガン鳥栖",
+        "V・ファーレン長崎"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィッセル神戸はホームでアビスパ福岡と対戦し、2-1で勝利しました。これにより神戸は上位争いに踏みとどまりました。",
+      "trivia": "ヴィッセル神戸はACLE（アジア・チャンピオンズリーグエリート）でもラウンド16に進出しており、過密日程の中で国内リーグでも結果を残しています。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-27",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j3",
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "レイラック滋賀",
+        "初勝利",
+        "Jリーグ百年構想リーグ"
+      ],
+      "text": "2026年2月28日に行われた「明治安田J2・J3百年構想リーグ」第4節で、Jリーグ参入初年度のレイラック滋賀が記念すべき初勝利を挙げました。対戦相手は？",
+      "options": [
+        "ギラヴァンツ北九州",
+        "AC長野パルセイロ",
+        "FC大阪",
+        "ツエーゲン金沢"
+      ],
+      "answerIndex": 0,
+      "explanation": "レイラック滋賀はアウェイでギラヴァンツ北九州と対戦し、人見拓哉と田部井悠のゴールにより2-1で勝利しました。これがクラブ史上初のJリーグ公式戦勝利となりました。",
+      "trivia": "レイラック滋賀は2025年のJFLで2位となり、J3最下位のアスルクラロ沼津との入替戦を制してJ3昇格を果たしました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      },
+      "team": null,
+      "teamId": null
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "鹿島アントラーズ",
+        "浦和レッズ",
+        "逆転勝利"
+      ],
+      "text": "2026年2月28日のJ1百年構想リーグ、浦和レッズ対鹿島アントラーズ戦は劇的な展開となりました。0-2から逆転し、3-2で勝利した鹿島の決勝点を決めた選手は？",
+      "options": [
+        "アレクサンダル・チャヴリッチ",
+        "鈴木優磨",
+        "レオ・セアラ",
+        "名古新太郎"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島は前半に2点をリードされましたが、レオ・セアラと鈴木優磨のゴールで追いつき、試合終了間際の90分にチャヴリッチが決勝ゴールを決めました。",
+      "trivia": "この勝利により鹿島アントラーズは「明治安田J1百年構想リーグ」で3連勝を飾りました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      },
+      "team": null,
+      "teamId": null
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "レギュレーション",
+        "PK戦",
+        "勝ち点"
+      ],
+      "text": "2026年前半に行われている「明治安田Jリーグ百年構想リーグ」の独自のレギュレーションとして正しいものはどれですか？",
+      "options": [
+        "90分で引き分けの場合はPK戦を行い、勝者に勝ち点2、敗者に1が与えられる",
+        "90分で引き分けの場合は延長戦を行い、決着がつかない場合に引き分けとなる",
+        "引き分けはなく、必ず再試合が行われる",
+        "勝ち点は勝利4、引き分け2、敗戦0で計算される"
+      ],
+      "answerIndex": 0,
+      "explanation": "この特別大会では、90分で同点の場合に即座にPK戦が行われます。勝ち点は、90分勝利：3、PK戦勝利：2、PK戦敗北：1、90分敗北：0となっています。",
+      "trivia": "2月28日のG大阪vs清水、3月1日の川崎Fvs水戸などの試合でも、実際にPK戦決着となり勝ち点が振り分けられました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-01",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      },
+      "team": null,
+      "teamId": null
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "RB大宮アルディージャ",
+        "Red Bull",
+        "好調"
+      ],
+      "text": "2026年よりチーム名を変更し、J2・J3百年構想リーグ EAST-Bで開幕4連勝と絶好調のクラブはどこですか？",
+      "options": [
+        "RB大宮アルディージャ",
+        "レッドブル・ザルツブルク東京",
+        "大宮レッドブルズ",
+        "アルディージャ・レッド"
+      ],
+      "answerIndex": 0,
+      "explanation": "大宮アルディージャはレッドブル・グループの参画により「RB大宮アルディージャ」へ名称を変更しました。第4節ではAC長野パルセイロを2-1で下し、開幕4連勝を飾っています。",
+      "trivia": "レッドブル・グループが日本のクラブオーナーとなるのはこれが初。ユニフォームやエンブレムのデザイン変更も大きな話題となりました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      },
+      "team": null,
+      "teamId": null
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "水戸ホーリーホック",
+        "昇格",
+        "川崎フロンターレ"
+      ],
+      "text": "2025シーズンに悲願のJ1初昇格を果たし、2026年のJ1百年構想リーグに参加している水戸ホーリーホック。3月1日の第4節ではどのクラブ相手にPK戦までもつれ込む激闘を演じましたか？",
+      "options": [
+        "川崎フロンターレ",
+        "横浜F・マリノス",
+        "FC東京",
+        "鹿島アントラーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "水戸ホーリーホックは3月1日に川崎フロンターレと対戦しました。試合は2-2で終了し、PK戦の末に2-4で敗れましたが、J1強豪相手に善戦し勝ち点1を獲得しました。",
+      "trivia": "水戸は2025年のJ2リーグで優勝し、クラブ創設以来初のJ1昇格を達成しました。長年「J2の主」と呼ばれてきましたが、ついにトップカテゴリーの舞台に立ちました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-03-01",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      },
+      "team": null,
+      "teamId": null
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "V・ファーレン長崎",
+        "J1昇格",
+        "勝利"
+      ],
+      "text": "2025年に8年ぶりのJ1復帰を果たし、2026年2月28日の試合でセレッソ大阪を1-0で破ったクラブはどこですか？",
+      "options": [
+        "V・ファーレン長崎",
+        "ジェフユナイテッド千葉",
+        "清水エスパルス",
+        "ジュビロ磐田"
+      ],
+      "answerIndex": 0,
+      "explanation": "V・ファーレン長崎はホーム（ピースタ）でセレッソ大阪と対戦し、1-0で勝利しました。長崎は2025年のJ2で2位に入り、自動昇格を果たしています。",
+      "trivia": "この試合が行われた「PEACE STADIUM Connected by SoftBank（ピースタ）」は、2024年に開業した長崎の新しい本拠地です。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      },
+      "team": null,
+      "teamId": null
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "J1",
+        "得点ランキング",
+        "FC町田ゼルビア"
+      ],
+      "text": "2026年2月末時点の「J1百年構想リーグ EAST」において、4得点を挙げ得点ランキング単独首位に立っているFC町田ゼルビアのストライカーは誰ですか？",
+      "options": [
+        "エリキ",
+        "ミッチェル・デューク",
+        "藤尾翔太",
+        "オ・セフン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年2月末時点で、FC町田ゼルビアのエリキは4得点を挙げ、J1百年構想リーグEASTの得点ランキングで首位に立っています。チームメイトの相馬勇紀などが3得点で続いています。",
+      "trivia": "2026年のJリーグは、秋春制への移行期として「百年構想リーグ」という特別な大会形式で開催されており、EASTとWESTに分かれて試合が行われています。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ヴィッセル神戸",
+        "負傷情報",
+        "J1"
+      ],
+      "text": "2026年2月26日、ヴィッセル神戸はACLEの試合で負傷したあるDFの診断結果を「右鎖骨粉砕骨折」と発表しました。その選手は誰ですか？",
+      "options": [
+        "岩波拓也",
+        "酒井高徳",
+        "山川哲史",
+        "菊池流帆"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィッセル神戸は2月26日、DF岩波拓也が2月17日のACLEジョホール・ダルル・タクジム戦で負傷し、右鎖骨粉砕骨折と診断されたことを発表しました。手術は無事に成功しています。",
+      "trivia": "岩波選手はこの試合が今季初先発でしたが、不運なアクシデントにより長期離脱を余儀なくされました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "Jリーグ選抜",
+        "コーチ就任"
+      ],
+      "text": "2026年3月2日に発表された「U-19 Jリーグ選抜」のスタッフで、コーチに就任した元日本代表のファンタジスタは誰ですか？",
+      "options": [
+        "中村俊輔",
+        "小野伸二",
+        "中村憲剛",
+        "遠藤保仁"
+      ],
+      "answerIndex": 0,
+      "explanation": "JFAとJリーグは3月2日、ポストユース世代の強化を目的とした「U-19 Jリーグ選抜」のスタッフを発表し、コーチに中村俊輔氏が就任しました。監督はU-19日本代表コーチの菅原大介氏が務めます。",
+      "trivia": "この選抜チームは3月中旬に全日本大学選抜や全韓国大学選抜と対戦する予定です。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "FC町田ゼルビア",
+        "J1",
+        "スタッツ"
+      ],
+      "text": "2026年2月末時点のJ1得点ランキングで、エリキ選手に次ぐ3得点を記録しているFC町田ゼルビア所属の日本代表経験者は誰ですか？",
+      "options": [
+        "相馬勇紀",
+        "昌子源",
+        "谷晃生",
+        "中山雄太"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年シーズンのFC町田ゼルビアでは、エリキ選手が得点ランク首位の4得点、相馬勇紀選手が3得点と、強力な攻撃陣を牽引しています。",
+      "trivia": "相馬選手はサイドからの突破力だけでなく、セットプレーのキッカーとしても高い精度を誇り、得点源となっています。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "FC東京",
+        "負傷情報",
+        "J1"
+      ],
+      "text": "2026年3月1日、FC東京は2月中旬の浦和レッズ戦で負傷したMFの診断結果を「右ハムストリング肉離れ」と発表しました。この選手は誰ですか？",
+      "options": [
+        "高宇洋",
+        "松木玖生",
+        "荒木遼太郎",
+        "小泉慶"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は3月1日、MF高宇洋（こう・たかひろ）が2月14日の浦和レッズ戦で負傷し、右ハムストリング肉離れと診断されたことを発表しました。",
+      "trivia": "高宇洋選手は中盤の底でのボール奪取と展開力が持ち味で、チームの攻守の要として期待されていました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "百年構想リーグ",
+        "ルール"
+      ],
+      "text": "2026年2月に開幕した特別大会「明治安田Jリーグ百年構想リーグ」では、通常のリーグ戦とは異なる勝ち点決定方式が採用されています。90分で同点だった場合の扱いは？",
+      "options": [
+        "PK戦を行い、勝者に勝ち点2、敗者に勝ち点1",
+        "引き分けとし、両チームに勝ち点1",
+        "延長戦を行い、決着がつかなければ引き分け",
+        "コイントスで勝敗を決定する"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年前半に行われる特別大会では、90分で同点の場合にPK戦が行われます。勝ち点は90分勝利が3、PK戦勝利が2、PK戦敗北が1、90分敗北が0となります。",
+      "trivia": "この特別大会は、2026-27シーズンからの秋春制移行に伴う空白期間（2月〜5月）に開催されており、エンターテインメント性を高めるために全試合完全決着方式が導入されました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "acl",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ACL",
+        "FC町田ゼルビア",
+        "ヴィッセル神戸",
+        "サンフレッチェ広島"
+      ],
+      "text": "2026年3月に決勝トーナメント（ラウンド16）が行われる「ACLエリート2025-26」。日本から勝ち残っている3クラブは、ヴィッセル神戸、サンフレッチェ広島とどこ？",
+      "options": [
+        "FC町田ゼルビア",
+        "横浜F・マリノス",
+        "川崎フロンターレ",
+        "浦和レッズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本からはヴィッセル神戸、サンフレッチェ広島、FC町田ゼルビアの3クラブがラウンド16に進出しました。町田は江原FC（韓国）と対戦します。",
+      "trivia": "初出場ながらリーグステージを首位で通過したFC町田ゼルビアは、3月3日に敵地で第1戦を迎えます。神戸はFCソウルと対戦します。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "鹿島アントラーズ",
+        "浦和レッズ",
+        "試合結果"
+      ],
+      "text": "2026年2月28日に行われた「明治安田J1百年構想リーグ」第4節、鹿島アントラーズ対浦和レッズの試合結果は？",
+      "options": [
+        "鹿島が3-2で逆転勝利",
+        "浦和が2-0で完封勝利",
+        "2-2の末、PK戦で鹿島が勝利",
+        "1-1の末、PK戦で浦和が勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズが浦和レッズに対し、3-2で逆転勝利を収めました。両チームは百年構想リーグの「EAST」グループに所属しています。",
+      "trivia": "今大会はJ1クラブが東西10チームずつに分かれてリーグ戦を行っています。鹿島と浦和の対戦は常に注目を集めるカードです。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "V・ファーレン長崎",
+        "セレッソ大阪",
+        "マテウス・ジェズス"
+      ],
+      "text": "2026年シーズンからJ1の舞台で戦うV・ファーレン長崎。2月28日のセレッソ大阪戦で決勝ゴールを決め、1-0の勝利をもたらした選手は？",
+      "options": [
+        "マテウス・ジェズス",
+        "エジガル・ジュニオ",
+        "フアンマ・デルガド",
+        "マルコス・ギリェルメ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マテウス・ジェズスの決勝ゴールにより、V・ファーレン長崎がセレッソ大阪を1-0で下しました。長崎は今季、新スタジアム「PEACE STADIUM」を本拠地としています。",
+      "trivia": "長崎スタジアムシティは2024年秋に開業し、2026年2月にはこけら落としライブの記録映画（福山雅治監督）が公開されるなど話題が続いています。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "レイラック滋賀",
+        "初勝利",
+        "J3"
+      ],
+      "text": "2026年2月28日の試合で、Jリーグ参入後「歴史的な初勝利」を挙げたと報じられた滋賀県のクラブは？",
+      "options": [
+        "レイラック滋賀",
+        "MIOびわこ滋賀",
+        "滋賀ユナイテッド",
+        "おこしやす滋賀"
+      ],
+      "answerIndex": 0,
+      "explanation": "レイラック滋賀がJリーグ（J2・J3百年構想リーグ）で記念すべき初勝利を挙げました。同クラブは2023年にMIOびわこ滋賀から名称を変更し、Jリーグ入りを果たしました。",
+      "trivia": "滋賀県勢として初のJリーグクラブとなったレイラック滋賀。長年の悲願であったJリーグでの1勝は、クラブと地域にとって大きな一歩となりました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "ルール",
+        "PK戦"
+      ],
+      "text": "2026年2月から開催されている特別大会「明治安田J1百年構想リーグ」において、90分で同点の場合に適用される特別なルールは次のうちどれですか？",
+      "options": [
+        "PK戦を行い勝敗を決める",
+        "延長戦（前後半15分）を行う",
+        "引き分けのまま終了する",
+        "アウェイゴール数で勝敗を決める"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年秋からのシーズン移行に向けた特別大会「百年構想リーグ」では、90分で同点の場合に引き分けとせず、即座にPK戦を行って勝敗（または勝ち点の配分）を決定する方式が採用されています。",
+      "trivia": "この大会はJ1が「EAST」と「WEST」の2グループに分かれてリーグ戦を行うという、かつての2ステージ制とも異なるユニークな形式で開催されています。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J1",
+        "試合結果",
+        "浦和レッズ",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年2月28日に行われた「浦和レッズ vs 鹿島アントラーズ」の試合結果は次のうちどれですか？",
+      "options": [
+        "2-3で鹿島の勝利",
+        "2-0で浦和の勝利",
+        "1-1で引き分け（PK戦で浦和勝利）",
+        "0-0で引き分け（PK戦で鹿島勝利）"
+      ],
+      "answerIndex": 0,
+      "explanation": "埼玉スタジアムで行われた注目の一戦は、激しい撃ち合いの末、アウェイの鹿島アントラーズが3-2で勝利を収めました。",
+      "trivia": "この試合は「百年構想リーグ」の第4節として行われました。鹿島は開幕から好調を維持しており、EASTグループの上位争いを演じています。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J3",
+        "初勝利",
+        "レイラック滋賀"
+      ],
+      "text": "2026年2月28日に行われた試合で、AC長野パルセイロを2-1で下し、クラブ史上初となる「Jリーグ初勝利」を挙げたクラブはどこですか？",
+      "options": [
+        "レイラック滋賀",
+        "栃木シティ",
+        "高知ユナイテッドSC",
+        "ヴィアティン三重"
+      ],
+      "answerIndex": 0,
+      "explanation": "JFLから昇格したレイラック滋賀は、敵地での長野戦で人見拓哉と田部井悠がゴールを決め、2-1で勝利。記念すべきJリーグ初白星を飾りました。",
+      "trivia": "レイラック滋賀（旧MIOびわこ滋賀）のJリーグ入りにより、滋賀県初のJクラブが誕生し、Jリーグがない都道府県がまた一つ減ることになりました。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-28",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J1",
+        "復帰",
+        "ジェフ千葉"
+      ],
+      "text": "2026年の特別大会で、2009年以来「17シーズンぶり」にJ1の舞台に復帰して戦っているオリジナル10のクラブはどこですか？",
+      "options": [
+        "ジェフユナイテッド千葉",
+        "東京ヴェルディ",
+        "清水エスパルス",
+        "ジュビロ磐田"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジェフユナイテッド千葉は昨シーズンのJ1昇格プレーオフを制し、17年ぶりのJ1復帰を果たしました。今大会では「EAST」グループに所属しています。",
+      "trivia": "今シーズンは水戸ホーリーホックもクラブ史上初のJ1昇格を果たしており、千葉の復帰と共にフレッシュな顔ぶれがJ1百年構想リーグを盛り上げています。",
+      "referenceDate": "2026-03-02",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-02-27",
+        "publishDate": "2026-03-02",
+        "expiryDate": "2026-03-09",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
