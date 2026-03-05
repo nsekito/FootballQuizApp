@@ -77,11 +77,14 @@ class LoginBonusService {
   }
 
   /// 連続日数に応じたポイントを取得（LOGIN_BONUS.DAILY_PTを参照）
+  /// 8日目以降は1日目に戻る（7日周期）
   int getLoginBonusPoints(int streakDay) {
-    if (streakDay >= 1 && streakDay <= LOGIN_BONUS.dailyPt.length) {
-      return LOGIN_BONUS.dailyPt[streakDay - 1];
+    // 8日目以降は1日目に戻る（7日周期）
+    final normalizedDay = ((streakDay - 1) % 7) + 1;
+    if (normalizedDay >= 1 && normalizedDay <= LOGIN_BONUS.dailyPt.length) {
+      return LOGIN_BONUS.dailyPt[normalizedDay - 1];
     }
-    // 7日を超える場合は1日目に戻る
+    // フォールバック
     return LOGIN_BONUS.dailyPt[0];
   }
 
@@ -93,9 +96,28 @@ class LoginBonusService {
     final prefs = await SharedPreferences.getInstance();
     final lastDate = prefs.getString(_keyLastLoginBonusDate);
     final currentDate = getCurrentDateString();
+    final currentStreak = await getCurrentStreakDays();
     
-    // 連続日数を計算
-    final newStreak = await calculateStreakAsync(lastDate, currentDate);
+    int newStreak;
+    
+    // 管理者が設定した連続日数がある場合（昨日の日付が設定されている場合）
+    // その日数をそのまま使用（+1しない）
+    if (lastDate != null && currentStreak > 0) {
+      final last = DateTime.parse(lastDate);
+      final current = DateTime.parse(currentDate);
+      final difference = current.difference(last).inDays;
+      
+      if (difference == 1) {
+        // 昨日から今日になった場合、設定された日数をそのまま使用
+        newStreak = currentStreak;
+      } else {
+        // 通常の連続日数計算
+        newStreak = await calculateStreakAsync(lastDate, currentDate);
+      }
+    } else {
+      // 通常の連続日数計算
+      newStreak = await calculateStreakAsync(lastDate, currentDate);
+    }
     
     // 日付と連続日数を保存
     await prefs.setString(_keyLastLoginBonusDate, currentDate);
@@ -122,14 +144,32 @@ class LoginBonusService {
     final canClaim = await canClaimLoginBonus();
     final lastDate = await getLastLoginBonusDate();
     final currentDate = getCurrentDateString();
+    final currentStreak = await getCurrentStreakDays();
     
     int streak;
     if (canClaim) {
-      // 受け取り可能な場合は、新しい連続日数を計算
-      streak = await calculateStreakAsync(lastDate, currentDate);
+      // 受け取り可能な場合
+      if (lastDate != null && currentStreak > 0) {
+        // 管理者が設定した連続日数がある場合（昨日の日付が設定されている場合）
+        // その日数をそのまま使用（+1しない）
+        final last = DateTime.parse(lastDate);
+        final current = DateTime.parse(currentDate);
+        final difference = current.difference(last).inDays;
+        
+        if (difference == 1) {
+          // 昨日から今日になった場合、設定された日数をそのまま使用
+          streak = currentStreak;
+        } else {
+          // 通常の連続日数計算
+          streak = await calculateStreakAsync(lastDate, currentDate);
+        }
+      } else {
+        // 通常の連続日数計算
+        streak = await calculateStreakAsync(lastDate, currentDate);
+      }
     } else {
       // 受け取り済みの場合は、現在の連続日数を取得
-      streak = await getCurrentStreakDays();
+      streak = currentStreak;
       if (streak == 0) {
         // まだ受け取ったことがない場合は1日目
         streak = 1;
@@ -161,5 +201,29 @@ class LoginBonusService {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyLastLoginBonusDate);
     await prefs.remove(_keyLoginStreakDays);
+  }
+
+  /// 連続日数を設定する（管理者用）
+  /// 
+  /// 指定した連続日数を設定します。日付は現在の日付から1日前に設定されます。
+  /// これにより、次回ログイン時に指定した日数として受け取れます。
+  /// 8日目以降は1日目に戻ります（8日目→1日目、9日目→2日目...）。
+  Future<void> setStreakDays(int streakDays) async {
+    if (streakDays < 1) {
+      throw Exception('連続日数は1日以上で設定してください');
+    }
+    
+    final prefs = await SharedPreferences.getInstance();
+    final now = DateTime.now();
+    final yesterday = now.subtract(const Duration(days: 1));
+    final yesterdayString = '${yesterday.year}-${yesterday.month.toString().padLeft(2, '0')}-${yesterday.day.toString().padLeft(2, '0')}';
+    
+    // 8日目以降は1日目に戻る（7日周期）
+    final normalizedStreak = ((streakDays - 1) % 7) + 1;
+    
+    // 昨日の日付を設定（これにより今日受け取れるようになる）
+    await prefs.setString(_keyLastLoginBonusDate, yesterdayString);
+    // 連続日数を設定（正規化後の日数、次回受け取る際の日数として使用）
+    await prefs.setInt(_keyLoginStreakDays, normalizedStreak);
   }
 }

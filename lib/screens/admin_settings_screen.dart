@@ -11,6 +11,7 @@ import '../providers/quiz_history_provider.dart';
 import '../providers/database_provider.dart';
 import '../models/user_rank.dart';
 import '../constants/app_colors.dart';
+import '../constants/game_config.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/responsive_container.dart';
@@ -34,6 +35,8 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
   bool _isUnlockingNormal = false;
   bool _isUnlockingHard = false;
   bool _isResettingLoginBonus = false;
+  bool _isSettingStreakDays = false;
+  final TextEditingController _streakDaysController = TextEditingController();
   bool _isResettingHistory = false;
   bool _isResettingMatchDay = false;
   bool _isResettingAllData = false;
@@ -48,6 +51,7 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
   void dispose() {
     _expController.dispose();
     _pointsController.dispose();
+    _streakDaysController.dispose();
     super.dispose();
   }
 
@@ -1013,7 +1017,7 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
               ),
               const SizedBox(width: 8),
               const Text(
-                'ログインボーナスリセット',
+                'ログインボーナス管理',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -1039,13 +1043,115 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
               ),
             ),
           ],
+          const SizedBox(height: 8),
+          Text(
+            '次回受け取り時のポイント: ${loginBonusStatus.points}ポイント',
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w600,
+              color: Colors.purple.shade700,
+            ),
+          ),
+          const SizedBox(height: 24),
+          // 連続日数設定
+          const Text(
+            '連続日数を設定（1日以上、8日目以降は1日目に戻る）',
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              Expanded(
+                child: TextField(
+                  controller: _streakDaysController,
+                  keyboardType: TextInputType.number,
+                  inputFormatters: [
+                    FilteringTextInputFormatter.digitsOnly,
+                    LengthLimitingTextInputFormatter(1),
+                  ],
+                  decoration: InputDecoration(
+                    hintText: '1〜7',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    contentPadding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 12,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 12),
+              ElevatedButton(
+                onPressed: _isSettingStreakDays ? null : _setStreakDays,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.purple.shade700,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 12,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                child: _isSettingStreakDays
+                    ? const SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                        ),
+                      )
+                    : const Text('設定'),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          // クイック設定ボタン（1〜14日目まで表示、8日目以降は1日目に戻る）
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: List.generate(14, (index) {
+              final day = index + 1;
+              final normalizedDay = ((day - 1) % 7) + 1;
+              final points = _getPointsForDay(normalizedDay);
+              final displayDay = day <= 7 ? day : '$day日目($normalizedDay日目相当)';
+              return ElevatedButton(
+                onPressed: _isSettingStreakDays
+                    ? null
+                    : () {
+                        _streakDaysController.text = day.toString();
+                        _setStreakDays();
+                      },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: normalizedDay == 4 || normalizedDay == 7
+                      ? Colors.orange.shade600
+                      : Colors.purple.shade300,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 8,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                child: Text('$displayDay (${points}pt)'),
+              );
+            }),
+          ),
           const SizedBox(height: 16),
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
               onPressed: _isResettingLoginBonus ? null : _resetLoginBonus,
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.purple.shade700,
+                backgroundColor: Colors.red.shade600,
                 foregroundColor: Colors.white,
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(
@@ -1073,6 +1179,14 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
         ],
       ),
     );
+  }
+
+  /// 日数に応じたポイントを取得
+  int _getPointsForDay(int day) {
+    if (day >= 1 && day <= 7) {
+      return LOGIN_BONUS.dailyPt[day - 1];
+    }
+    return LOGIN_BONUS.dailyPt[0];
   }
 
   Widget _buildHistoryResetSection() {
@@ -1372,6 +1486,72 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
         ],
       ),
     );
+  }
+
+  Future<void> _setStreakDays() async {
+    final streakDaysText = _streakDaysController.text.trim();
+    if (streakDaysText.isEmpty) {
+      _showErrorSnackBar('連続日数を入力してください');
+      return;
+    }
+
+    final streakDays = int.tryParse(streakDaysText);
+    if (streakDays == null || streakDays < 1) {
+      _showErrorSnackBar('連続日数は1日以上で設定してください');
+      return;
+    }
+
+    // 8日目以降は1日目に戻る（7日周期）
+    final normalizedDay = ((streakDays - 1) % 7) + 1;
+    final points = _getPointsForDay(normalizedDay);
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('連続日数を設定'),
+        content: Text(
+          streakDays <= 7
+              ? '連続日数を${streakDays}日に設定します。\n次回ログインボーナス受け取り時に${points}ポイント獲得できます。\n\n本当に設定しますか？'
+              : '連続日数を${streakDays}日（${normalizedDay}日目相当）に設定します。\n次回ログインボーナス受け取り時に${points}ポイント獲得できます。\n\n本当に設定しますか？',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('キャンセル'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.purple.shade700,
+            ),
+            child: const Text('設定する'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    setState(() {
+      _isSettingStreakDays = true;
+    });
+
+    try {
+      await ref.read(loginBonusStatusProvider.notifier).setStreakDays(streakDays);
+      if (mounted) {
+        _showSuccessSnackBar('連続日数を${streakDays}日に設定しました（次回受け取り時: ${points}ポイント）');
+        _streakDaysController.clear();
+      }
+    } catch (e) {
+      if (mounted) {
+        _showErrorSnackBar('設定に失敗しました: $e');
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isSettingStreakDays = false;
+        });
+      }
+    }
   }
 
   Future<void> _resetLoginBonus() async {

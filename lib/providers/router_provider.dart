@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import '../screens/title_screen.dart';
 import '../screens/home_screen.dart';
 import '../screens/configuration_screen.dart';
 import '../screens/quiz_screen.dart';
@@ -15,8 +16,13 @@ import '../utils/route_params_parser.dart';
 /// アプリのルーティング設定
 final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
-    initialLocation: '/',
+    initialLocation: '/title',
     routes: [
+      GoRoute(
+        path: '/title',
+        name: 'title',
+        builder: (context, state) => const TitleScreen(),
+      ),
       GoRoute(
         path: '/',
         name: 'home',

@@ -162,4 +162,12 @@ class LoginBonusNotifier extends StateNotifier<LoginBonusStatus> {
     _hasWatchedAd = false;
     await _loadStatus();
   }
+
+  /// 連続日数を設定する（管理者用）
+  Future<void> setStreakDays(int streakDays) async {
+    await _service.setStreakDays(streakDays);
+    _claimedPoints = null;
+    _hasWatchedAd = false;
+    await _loadStatus();
+  }
 }

@@ -38,9 +38,9 @@ class RewardCalculator {
     required bool watchedAd,
     required int weeklyCorrectTotal,
   }) {
-    // 1. QUIZ_REWARDS.MATCHDAYから正答数区分に対応するbase報酬を取得
+    // 1. quizRewards.MATCHDAYから正答数区分に対応するbase報酬を取得
     final tier = getRewardTier(correctCount);
-    final baseReward = QUIZ_REWARDS['MATCHDAY']!.rewards[tier]!;
+    final baseReward = quizRewards['MATCHDAY']!.rewards[tier]!;
     var exp = baseReward.exp;
     var pt = baseReward.pt;
 
@@ -81,9 +81,9 @@ class RewardCalculator {
     required int correctCount,
     required bool watchedAd,
   }) {
-    // 1. クイズの難易度に応じてQUIZ_REWARDSから区分を取得
+    // 1. クイズの難易度に応じてquizRewardsから区分を取得
     final difficultyUpper = difficulty.toUpperCase();
-    if (!QUIZ_REWARDS.containsKey(difficultyUpper)) {
+    if (!quizRewards.containsKey(difficultyUpper)) {
       // 難易度が存在しない場合はEASYとして扱う
       return calculateRegularQuizReward(
         difficulty: 'EASY',
@@ -93,7 +93,7 @@ class RewardCalculator {
     }
 
     final tier = getRewardTier(correctCount);
-    final baseReward = QUIZ_REWARDS[difficultyUpper]!.rewards[tier]!;
+    final baseReward = quizRewards[difficultyUpper]!.rewards[tier]!;
     var exp = baseReward.exp;
     var pt = baseReward.pt;
 

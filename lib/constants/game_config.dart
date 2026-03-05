@@ -53,7 +53,7 @@ class QuizRewardsConfig {
   const QuizRewardsConfig({required this.rewards});
 }
 
-final Map<String, QuizRewardsConfig> QUIZ_REWARDS = {
+final Map<String, QuizRewardsConfig> quizRewards = {
   // MATCHDAY報酬（広告視聴6回対応のため、基本報酬を半分に調整）
   'MATCHDAY': const QuizRewardsConfig(rewards: {
     '0-3': QuizReward(exp: 7, pt: 4),      // 15→7, 8→4
@@ -166,7 +166,8 @@ class LoginBonusConfig {
 }
 
 const LOGIN_BONUS = LoginBonusConfig(
-  dailyPt: [1, 2, 3, 4, 5, 7, 10],
+  // 1日目: 2pt, 2日目: 2pt, 3日目: 2pt, 4日目: 4pt, 5日目: 2pt, 6日目: 2pt, 7日目: 10pt
+  dailyPt: [2, 2, 2, 4, 2, 2, 10],
   consecutive7DayBonusExp: 20,
 );
 
