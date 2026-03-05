@@ -125,7 +125,36 @@ class DatabaseService {
         return newDatabase;
       }
     }
-    
+
+    // アプリ起動時のバージョンアップ確認: アセットの方が新しい場合は自動更新
+    final assetQuestionCount = await _getAssetQuestionCount();
+    debugPrint('アセットの問題数: $assetQuestionCount, 実機の問題数: $questionCount');
+
+    if (assetQuestionCount > questionCount) {
+      debugPrint('アセットのデータベースが新しいため、更新します');
+      final userDataBackup = await _backupUserDataTables(database);
+      await database.close();
+
+      if (kIsWeb) {
+        await _loadDatabaseFromAssetsForWeb(path);
+      } else {
+        await _copyDatabaseFromAssets(path);
+      }
+
+      final newDatabase = await openDatabase(
+        path,
+        version: _databaseVersion,
+        onCreate: _onCreate,
+        onUpgrade: _onUpgrade,
+      );
+      await _restoreUserDataTables(newDatabase, userDataBackup);
+
+      final newCount = await newDatabase.rawQuery('SELECT COUNT(*) as count FROM questions');
+      final newQuestionCount = newCount.first['count'] as int;
+      debugPrint('データベース更新完了。更新後の問題数: $newQuestionCount');
+      return newDatabase;
+    }
+
     return database;
   }
 
@@ -185,6 +214,106 @@ class DatabaseService {
     } catch (e) {
       debugPrint('Webプラットフォーム: アセットからのデータベース読み込みに失敗しました: $e');
       // エラーが発生した場合でも、空のデータベースは作成される（onCreateが呼ばれる）
+    }
+  }
+
+  /// アセットのデータベースの問題数を取得（バージョンアップ確認用）
+  /// Web/モバイル/デスクトップ対応
+  static Future<int> _getAssetQuestionCount() async {
+    try {
+      final ByteData data = await rootBundle.load('data/questions.db');
+      final Uint8List bytes = data.buffer.asUint8List(
+        data.offsetInBytes,
+        data.lengthInBytes,
+      );
+
+      if (kIsWeb) {
+        // Web: 一時パスに書き込んで開く
+        final tempPath = join(await getDatabasesPath(), 'temp_asset_$_databaseName');
+        try {
+          await (databaseFactory as dynamic).writeDatabaseBytes(tempPath, bytes);
+          final tempDb = await openDatabase(tempPath, readOnly: true);
+          final count = await tempDb.rawQuery('SELECT COUNT(*) as count FROM questions');
+          final questionCount = count.first['count'] as int;
+          await tempDb.close();
+          try {
+            await databaseFactory.deleteDatabase(tempPath);
+          } catch (_) {}
+          return questionCount;
+        } catch (e) {
+          debugPrint('アセットの問題数取得(Web)に失敗: $e');
+          return 0;
+        }
+      } else {
+        // モバイル/デスクトップ: 一時ファイルに書き込んで開く
+        final tempPath = join(await getDatabasesPath(), 'temp_asset_$_databaseName');
+        final tempFile = File(tempPath);
+        await tempFile.writeAsBytes(bytes);
+        try {
+          final tempDb = await openDatabase(tempPath, readOnly: true);
+          final count = await tempDb.rawQuery('SELECT COUNT(*) as count FROM questions');
+          final questionCount = count.first['count'] as int;
+          await tempDb.close();
+          await tempFile.delete();
+          return questionCount;
+        } catch (e) {
+          if (await tempFile.exists()) {
+            await tempFile.delete();
+          }
+          rethrow;
+        }
+      }
+    } catch (e) {
+      debugPrint('アセットのデータベースの問題数取得に失敗しました: $e');
+      return 0;
+    }
+  }
+
+  /// ユーザーデータテーブルをバックアップ
+  static Future<Map<String, List<Map<String, dynamic>>>> _backupUserDataTables(
+    Database db,
+  ) async {
+    final backup = <String, List<Map<String, dynamic>>>{};
+    const tables = [
+      'user_data',
+      'quiz_history',
+      'recap_sync_history',
+      'match_day_play_history',
+      'weekly_recap_question_history',
+      'unlocked_questions',
+    ];
+    for (final table in tables) {
+      try {
+        final rows = await db.rawQuery('SELECT * FROM $table');
+        backup[table] = rows;
+      } catch (e) {
+        debugPrint('バックアップ($table)スキップ: $e');
+        backup[table] = [];
+      }
+    }
+    return backup;
+  }
+
+  /// ユーザーデータテーブルを復元
+  static Future<void> _restoreUserDataTables(
+    Database db,
+    Map<String, List<Map<String, dynamic>>> backup,
+  ) async {
+    for (final entry in backup.entries) {
+      final table = entry.key;
+      final rows = entry.value;
+      if (rows.isEmpty) continue;
+      try {
+        for (final row in rows) {
+          await db.insert(
+            table,
+            row,
+            conflictAlgorithm: ConflictAlgorithm.replace,
+          );
+        }
+      } catch (e) {
+        debugPrint('復元($table)エラー: $e');
+      }
     }
   }
 
@@ -826,6 +955,9 @@ class DatabaseService {
     String? region,
     String? team,
     int? limit,
+    int? offset,
+    /// ソート順: 'RANDOM()'（デフォルト）または 'id'（ページネーション用）
+    String orderBy = 'RANDOM()',
     List<String>? excludeIds,
     // 後方互換性のため（非推奨: teamパラメータを使用してください）
     String? range,
@@ -855,8 +987,25 @@ class DatabaseService {
     // regionが指定されている場合はそれを優先し、指定されていない場合はcountryを使用
     final regionParam = region ?? country;
     if (regionParam != null && regionParam.isNotEmpty) {
-      query += ' AND region = ?';
-      args.add(regionParam);
+      // ルールクイズの場合、regionフィールドがNULLのデータも含める（後方互換性のため）
+      // チームクイズの場合も、regionがNULLのデータも含める（念のため）
+      if (category == 'rules') {
+        // ルールクイズはregionフィールドがNULLのため、regionフィルタを適用しない
+        // ただし、regionが明示的に指定されている場合は適用する
+        if (region != null && region.isNotEmpty) {
+          query += ' AND region = ?';
+          args.add(regionParam);
+        }
+      } else if (category == 'teams') {
+        // チームクイズの場合、regionがNULLのデータも含める（後方互換性のため）
+        query += ' AND (region = ? OR region IS NULL OR region = ?)';
+        args.add(regionParam);
+        args.add(''); // 空文字列も含める
+      } else {
+        // その他のカテゴリ（history等）は通常通りregionフィルタを適用
+        query += ' AND region = ?';
+        args.add(regionParam);
+      }
     }
 
     // チームによるフィルタリング
@@ -898,11 +1047,18 @@ class DatabaseService {
       args.addAll(excludeIds);
     }
 
-    query += ' ORDER BY RANDOM()';
+    // orderByはホワイトリストで検証（SQLインジェクション対策）
+    final safeOrderBy = (orderBy == 'id') ? 'id' : 'RANDOM()';
+    query += ' ORDER BY $safeOrderBy';
 
     if (limit != null) {
       query += ' LIMIT ?';
       args.add(limit);
+    }
+
+    if (offset != null && offset > 0) {
+      query += ' OFFSET ?';
+      args.add(offset);
     }
 
     // デバッグログ（一時的）

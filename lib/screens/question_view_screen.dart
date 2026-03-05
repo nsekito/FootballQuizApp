@@ -27,6 +27,11 @@ class QuestionViewScreen extends ConsumerWidget {
       backgroundColor: AppColors.stitchBackgroundLight,
       appBar: buildAppBarWithBackground(
         title: '問題詳細',
+        leading: IconButton(
+          icon: const Icon(Icons.home, color: Colors.white),
+          onPressed: () => context.go('/'),
+          tooltip: 'ホームへ戻る',
+        ),
       ),
       body: GridPatternBackground(
         child: questionAsync.when(

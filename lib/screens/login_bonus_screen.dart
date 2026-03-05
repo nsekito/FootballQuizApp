@@ -122,6 +122,13 @@ class _LoginBonusScreenState extends ConsumerState<LoginBonusScreen>
           icon: const Icon(Icons.close),
           onPressed: () => context.pop(),
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.home, color: AppColors.techIndigo),
+            onPressed: () => context.go('/'),
+            tooltip: 'ホームへ戻る',
+          ),
+        ],
         title: const Text(
           'ログインボーナス',
           style: TextStyle(

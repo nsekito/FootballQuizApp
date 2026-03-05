@@ -27,8 +27,6 @@ class CategoryDifficultyUtils {
         return 'NORMAL';
       case AppConstants.difficultyHard:
         return 'HARD';
-      case AppConstants.difficultyExtreme:
-        return 'EXTREME';
       default:
         return difficulty.toUpperCase();
     }

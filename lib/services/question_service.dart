@@ -71,6 +71,36 @@ class QuestionService {
     );
   }
 
+  /// 問題開放画面用: ページネーション対応の軽量取得
+  ///
+  /// getQuestionsOptimizedは使用せず、ORDER BY idでoffset/limitを指定。
+  /// match_recapカテゴリは対象外（問題開放画面では使用しない）。
+  Future<List<Question>> getQuestionsForUnlockScreen({
+    required String category,
+    required String difficulty,
+    String? country,
+    String? region,
+    String? team,
+    int limit = AppConstants.questionUnlockPageSize,
+    int offset = 0,
+    String? range,
+  }) async {
+    if (category == AppConstants.categoryMatchRecap) {
+      return [];
+    }
+
+    return await _databaseService.getQuestions(
+      category: category,
+      difficulty: difficulty,
+      country: country,
+      region: region,
+      team: team ?? range,
+      limit: limit,
+      offset: offset,
+      orderBy: 'id',
+    );
+  }
+
   /// Weekly Recap問題を取得
   /// 
   /// まずローカルDBから取得を試み、見つからない場合はリモートから取得

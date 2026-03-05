@@ -13,6 +13,9 @@ class AppConstants {
   static const int defaultQuestionsPerQuiz = 10;
   static const int optionsPerQuestion = 4;
 
+  // 問題開放画面のページネーション
+  static const int questionUnlockPageSize = 50;
+
   // カテゴリ
   static const String categoryRules = 'rules';
   static const String categoryHistory = 'history';

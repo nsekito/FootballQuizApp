@@ -226,6 +226,13 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
           icon: const Icon(Icons.arrow_back),
           onPressed: () => context.pop(),
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.home, color: AppColors.techIndigo),
+            onPressed: () => context.go('/'),
+            tooltip: 'ホームへ戻る',
+          ),
+        ],
         title: const Text(
           '管理者設定',
           style: TextStyle(
@@ -1510,8 +1517,8 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
         title: const Text('連続日数を設定'),
         content: Text(
           streakDays <= 7
-              ? '連続日数を${streakDays}日に設定します。\n次回ログインボーナス受け取り時に${points}ポイント獲得できます。\n\n本当に設定しますか？'
-              : '連続日数を${streakDays}日（${normalizedDay}日目相当）に設定します。\n次回ログインボーナス受け取り時に${points}ポイント獲得できます。\n\n本当に設定しますか？',
+              ? '連続日数を$streakDays日に設定します。\n次回ログインボーナス受け取り時に$pointsポイント獲得できます。\n\n本当に設定しますか？'
+              : '連続日数を$streakDays日（$normalizedDay日目相当）に設定します。\n次回ログインボーナス受け取り時に$pointsポイント獲得できます。\n\n本当に設定しますか？',
         ),
         actions: [
           TextButton(
@@ -1538,7 +1545,7 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
     try {
       await ref.read(loginBonusStatusProvider.notifier).setStreakDays(streakDays);
       if (mounted) {
-        _showSuccessSnackBar('連続日数を${streakDays}日に設定しました（次回受け取り時: ${points}ポイント）');
+        _showSuccessSnackBar('連続日数を$streakDays日に設定しました（次回受け取り時: $pointsポイント）');
         _streakDaysController.clear();
       }
     } catch (e) {

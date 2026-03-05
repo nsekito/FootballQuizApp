@@ -57,12 +57,6 @@ class _PromotionExamScreenState extends ConsumerState<PromotionExamScreen> {
           tags: widget.tags,
         );
         break;
-      case AppConstants.difficultyExtreme:
-        exam = PromotionExam.hardToExtreme(
-          category: widget.category,
-          tags: widget.tags,
-        );
-        break;
     }
     
     setState(() {
@@ -164,6 +158,13 @@ class _PromotionExamScreenState extends ConsumerState<PromotionExamScreen> {
           icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => context.pop(),
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.home, color: Colors.white),
+            onPressed: () => context.go('/'),
+            tooltip: 'ホームへ戻る',
+          ),
+        ],
         title: const Text(
           '昇格試験',
           style: TextStyle(

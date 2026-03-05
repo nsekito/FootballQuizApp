@@ -109,10 +109,28 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
       if (_questions.isEmpty) {
         if (mounted) {
+          // 詳細なエラーメッセージを構築
+          final categoryName = CategoryDifficultyUtils.getCategoryName(widget.category);
+          final difficultyName = widget.difficulty.isNotEmpty
+              ? CategoryDifficultyUtils.getDifficultyName(widget.difficulty)
+              : '指定なし';
+          
+          String conditionDetails = 'カテゴリ: $categoryName\n難易度: $difficultyName';
+          
+          if (widget.team.isNotEmpty) {
+            conditionDetails += '\nチーム: ${widget.team}';
+          }
+          if (widget.country.isNotEmpty) {
+            conditionDetails += '\n国: ${widget.country}';
+          }
+          if (widget.region.isNotEmpty) {
+            conditionDetails += '\n地域: ${widget.region}';
+          }
+          
           showErrorDialog(
             context,
             title: 'データが見つかりません',
-            message: '選択した条件に一致するクイズデータが見つかりませんでした。\n\n別の条件でお試しください。',
+            message: '選択した条件に一致するクイズデータが見つかりませんでした。\n\n【選択した条件】\n$conditionDetails\n\n別の条件でお試しください。',
             showRetry: false,
             onClose: () => context.pop(),
           );
@@ -329,44 +347,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                                 ),
                               ),
                             ],
-                          ),
-                        ),
-                      // extreme難易度の場合の警告表示
-                      if (currentQuestion.difficulty ==
-                          AppConstants.difficultyExtreme)
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 16),
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 12, vertical: 8),
-                            decoration: BoxDecoration(
-                              color: Colors.orange.shade50,
-                              borderRadius: BorderRadius.circular(8),
-                              border: Border.all(
-                                color: Colors.orange.shade200,
-                                width: 1,
-                              ),
-                            ),
-                            child: Row(
-                              children: [
-                                Icon(
-                                  Icons.info_outline,
-                                  color: Colors.orange.shade700,
-                                  size: 16,
-                                ),
-                                const SizedBox(width: 8),
-                                Expanded(
-                                  child: Text(
-                                    'この問題は不確定情報や噂レベルの情報も含む可能性があります',
-                                    style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.orange.shade900,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
                           ),
                         ),
                       Text(
@@ -760,8 +740,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         return AppColors.difficultyNormal;
       case AppConstants.difficultyHard:
         return AppColors.difficultyHard;
-      case AppConstants.difficultyExtreme:
-        return AppColors.difficultyExtreme;
       default:
         return Colors.grey;
     }

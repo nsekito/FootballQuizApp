@@ -1399,32 +1399,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
           });
         }
       }
-
-      // HARD→EXTREME
-      final extremeKey = UnlockKeyUtils.generateUnlockKey(
-        category: category,
-        difficulty: AppConstants.difficultyExtreme,
-        tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
-      );
-      if (!unlockedDifficulties.contains(extremeKey) &&
-          unlockedDifficulties.contains(hardKey)) {
-        final exam = PromotionExam.hardToExtreme(
-          category: category,
-          tags:
-              category == AppConstants.categoryTeams ? 'teams,japan' : category,
-        );
-        if (userRank.index >= exam.requiredRank.index &&
-            totalPoints >= exam.requiredPoints) {
-          availableExams.add({
-            'exam': exam,
-            'category': category,
-            'tags': category == AppConstants.categoryTeams
-                ? 'teams,japan'
-                : category,
-            'targetDifficulty': AppConstants.difficultyExtreme,
-          });
-        }
-      }
     }
 
     if (availableExams.isEmpty) {

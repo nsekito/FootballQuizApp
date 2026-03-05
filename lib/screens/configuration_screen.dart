@@ -33,6 +33,21 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
   String? _selectedCountry;
   String? _selectedTeam;
   String? _selectedLeagueType; // Weekly Recap用のリーグタイプ
+  final ScrollController _teamScrollController = ScrollController();
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.category == AppConstants.categoryTeams) {
+      _selectedCountry = 'japan';
+    }
+  }
+
+  @override
+  void dispose() {
+    _teamScrollController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,6 +59,11 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           backgroundColor: Colors.white.withValues(alpha: 0.7),
           elevation: 0,
           automaticallyImplyLeading: false, // 戻るボタンを非表示
+          leading: IconButton(
+            icon: const Icon(Icons.home, color: AppColors.techIndigo),
+            onPressed: () => context.go('/'),
+            tooltip: 'ホームへ戻る',
+          ),
           title: Text(
             CategoryDifficultyUtils.getCategoryName(widget.category),
             style: const TextStyle(
@@ -52,83 +72,90 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
             ),
           ),
         ),
-      body: GridPatternBackground(
-        child: SingleChildScrollView(
-          child: ResponsiveContainer(
-            padding: const EdgeInsets.all(24.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text(
-                  'クイズ設定',
-                  style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(height: 32),
-
-                // Weekly Recap: リーグタイプ選択
-                if (widget.category == AppConstants.categoryMatchRecap) ...[
-                  _buildLeagueTypeSelector(),
-                  const SizedBox(height: 40),
-                ],
-
-                // 歴史クイズ: 地域選択
-                if (widget.category == AppConstants.categoryHistory) ...[
-                  _buildRegionSelector(),
-                  const SizedBox(height: 40),
-                ],
-
-                // チームクイズ: 国選択とチーム選択
-                if (widget.category == AppConstants.categoryTeams) ...[
-                  _buildCountrySelector(),
-                  const SizedBox(height: 24),
-                  _buildTeamSelector(),
-                  const SizedBox(height: 40),
-                ],
-
-                // 難易度選択（Weekly Recap以外）- 最後に表示
-                if (widget.category != AppConstants.categoryMatchRecap) ...[
-                  _buildDifficultySelector(),
-                  const SizedBox(height: 40),
-                ],
-
-                // STARTボタン
-                SizedBox(
-                  width: double.infinity,
-                  child: GlowButton(
-                    glowColor: AppColors.stitchEmerald,
-                    onPressed: _canStart() ? _validateAndStart : null,
-                    backgroundColor: AppColors.stitchEmerald,
-                    foregroundColor: Colors.white,
-                    borderRadius: 16,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: const Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          'START',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(width: 8),
-                        Icon(
-                          Icons.play_arrow,
-                          color: Colors.white,
-                          size: 20,
-                        ),
-                      ],
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          return GridPatternBackground(
+            child: SizedBox(
+              height: constraints.maxHeight,
+              child: ResponsiveContainer(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'クイズ設定',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                ),
-              ],
+                  const SizedBox(height: 16),
+
+                  // Weekly Recap: リーグタイプ選択
+                  if (widget.category == AppConstants.categoryMatchRecap) ...[
+                    _buildLeagueTypeSelector(),
+                    const SizedBox(height: 24),
+                  ],
+
+                  // 歴史クイズ: 地域選択
+                  if (widget.category == AppConstants.categoryHistory) ...[
+                    _buildRegionSelector(),
+                    const SizedBox(height: 24),
+                  ],
+
+                  // チームクイズ: 国選択とチーム選択
+                  if (widget.category == AppConstants.categoryTeams) ...[
+                    _buildCountrySelector(),
+                    const SizedBox(height: 16),
+                    Expanded(child: _buildTeamSelector()),
+                    const SizedBox(height: 16),
+                  ],
+
+                  // 難易度選択（Weekly Recap以外）- 最後に表示
+                  if (widget.category != AppConstants.categoryMatchRecap) ...[
+                    if (widget.category != AppConstants.categoryTeams)
+                      const SizedBox(height: 16),
+                    _buildDifficultySelector(),
+                    const SizedBox(height: 24),
+                  ],
+
+                  // STARTボタン
+                  SizedBox(
+                    width: double.infinity,
+                    child: GlowButton(
+                      glowColor: AppColors.stitchEmerald,
+                      onPressed: _canStart() ? _validateAndStart : null,
+                      backgroundColor: AppColors.stitchEmerald,
+                      foregroundColor: Colors.white,
+                      borderRadius: 16,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'START',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(width: 8),
+                          Icon(
+                            Icons.play_arrow,
+                            color: Colors.white,
+                            size: 20,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-        ),
+        );
+        },
       ),
       bottomNavigationBar: const BannerAdWidget(),
       ),
@@ -148,7 +175,7 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
             ),
             const SizedBox(width: 8),
             Text(
-              '難易度 (Difficulty)',
+              '難易度',
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
@@ -159,19 +186,13 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           ],
         ),
         const SizedBox(height: 16),
-        // 縦に並べる（1列）
-        Column(
+        Row(
           children: [
-            _buildDifficultyButton('EASY', AppConstants.difficultyEasy),
-            const SizedBox(height: 12),
-            _buildDifficultyButton('NORMAL', AppConstants.difficultyNormal),
-            const SizedBox(height: 12),
-            _buildDifficultyButton('HARD', AppConstants.difficultyHard),
-            // チームクイズではEXTREMEを表示しない
-            if (widget.category != AppConstants.categoryTeams) ...[
-              const SizedBox(height: 12),
-              _buildDifficultyButton('EXTREME', AppConstants.difficultyExtreme),
-            ],
+            Expanded(child: _buildDifficultyButton('EASY', AppConstants.difficultyEasy)),
+            const SizedBox(width: 8),
+            Expanded(child: _buildDifficultyButton('NORMAL', AppConstants.difficultyNormal)),
+            const SizedBox(width: 8),
+            Expanded(child: _buildDifficultyButton('HARD', AppConstants.difficultyHard)),
           ],
         ),
       ],
@@ -330,18 +351,6 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
       return AppConstants.difficultyHard;
     }
     
-    // HARDがアンロック済みでEXTREMEがロックされている場合、EXTREMEが次にアンロックできる
-    if (widget.category != AppConstants.categoryTeams) {
-      final extremeUnlockKey = UnlockKeyUtils.generateUnlockKey(
-        category: widget.category,
-        difficulty: AppConstants.difficultyExtreme,
-        tags: tags,
-      );
-      if (!unlockedDifficulties.contains(extremeUnlockKey)) {
-        return AppConstants.difficultyExtreme;
-      }
-    }
-    
     return null;
   }
 
@@ -360,11 +369,6 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           category: widget.category,
           tags: tags,
         );
-      case AppConstants.difficultyExtreme:
-        return PromotionExam.hardToExtreme(
-          category: widget.category,
-          tags: tags,
-        );
       default:
         return null;
     }
@@ -378,91 +382,52 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
       ]),
       builder: (context, snapshot) {
         final isUnlocked = (snapshot.data?[0] as bool?) ?? (value == AppConstants.difficultyEasy);
-        final nextUnlockable = snapshot.data?[1] as String?;
-        final isNextUnlockable = !isUnlocked && nextUnlockable == value;
         final isSelected = _selectedDifficulty == value;
         Color buttonColor;
         Color textColor;
         Color glowColor;
         final isEnabled = isUnlocked;
 
-        // 次にアンロックできる難易度の場合、特別なスタイルを適用
-        if (isNextUnlockable) {
-          switch (value) {
-            case AppConstants.difficultyNormal:
-              buttonColor = Colors.blue.shade50;
-              textColor = Colors.blue.shade700;
-              glowColor = Colors.blue.shade400;
-              break;
-            case AppConstants.difficultyHard:
-              buttonColor = Colors.orange.shade50;
-              textColor = Colors.orange.shade700;
-              glowColor = Colors.orange.shade400;
-              break;
-            case AppConstants.difficultyExtreme:
-              buttonColor = Colors.red.shade50;
-              textColor = Colors.red.shade700;
-              glowColor = Colors.red.shade400;
-              break;
-            default:
-              buttonColor = Colors.grey.shade300;
-              textColor = Colors.grey.shade400;
-              glowColor = Colors.grey;
-          }
-        } else {
-          switch (value) {
-            case AppConstants.difficultyEasy:
-              buttonColor = isSelected
-                  ? AppColors.stitchEmerald
-                  : (isEnabled 
-                      ? Colors.white.withValues(alpha: 0.8)
-                      : Colors.grey.shade300);
-              textColor = isSelected
-                  ? Colors.white
-                  : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
-              glowColor = AppColors.stitchEmerald;
-              break;
-            case AppConstants.difficultyNormal:
-              buttonColor = isSelected
-                  ? Colors.blue.shade400
-                  : (isEnabled 
-                      ? Colors.white.withValues(alpha: 0.8)
-                      : Colors.grey.shade300);
-              textColor = isSelected
-                  ? Colors.white
-                  : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
-              glowColor = Colors.blue.shade400;
-              break;
-            case AppConstants.difficultyHard:
-              buttonColor = isSelected
-                  ? Colors.orange.shade400
-                  : (isEnabled 
-                      ? Colors.white.withValues(alpha: 0.8)
-                      : Colors.grey.shade300);
-              textColor = isSelected
-                  ? Colors.white
-                  : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
-              glowColor = Colors.orange.shade400;
-              break;
-            case AppConstants.difficultyExtreme:
-              buttonColor = isSelected
-                  ? Colors.red.shade400
-                  : (isEnabled 
-                      ? Colors.white.withValues(alpha: 0.8)
-                      : Colors.grey.shade300);
-              textColor = isSelected
-                  ? Colors.white
-                  : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
-              glowColor = Colors.red.shade400;
-              break;
-            default:
-              buttonColor = Colors.white.withValues(alpha: 0.8);
-              textColor = Colors.grey.shade600;
-              glowColor = Colors.grey;
-          }
+        switch (value) {
+          case AppConstants.difficultyEasy:
+            buttonColor = isSelected
+                ? AppColors.stitchEmerald
+                : (isEnabled
+                    ? Colors.white.withValues(alpha: 0.8)
+                    : Colors.grey.shade300);
+            textColor = isSelected
+                ? Colors.white
+                : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
+            glowColor = AppColors.stitchEmerald;
+            break;
+          case AppConstants.difficultyNormal:
+            buttonColor = isSelected
+                ? Colors.blue.shade400
+                : (isEnabled
+                    ? Colors.white.withValues(alpha: 0.8)
+                    : Colors.grey.shade300);
+            textColor = isSelected
+                ? Colors.white
+                : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
+            glowColor = Colors.blue.shade400;
+            break;
+          case AppConstants.difficultyHard:
+            buttonColor = isSelected
+                ? Colors.orange.shade400
+                : (isEnabled
+                    ? Colors.white.withValues(alpha: 0.8)
+                    : Colors.grey.shade300);
+            textColor = isSelected
+                ? Colors.white
+                : (isEnabled ? Colors.grey.shade600 : Colors.grey.shade400);
+            glowColor = Colors.orange.shade400;
+            break;
+          default:
+            buttonColor = Colors.white.withValues(alpha: 0.8);
+            textColor = Colors.grey.shade600;
+            glowColor = Colors.grey;
         }
 
-        // 昇格試験の情報を取得
         final promotionExam = _getPromotionExamForDifficulty(value);
         final currentPoints = ref.read(totalPointsProvider);
         final remainingPoints = promotionExam != null && !isEnabled
@@ -471,159 +436,64 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
 
         return GestureDetector(
           onTap: isEnabled
-              ? () => setState(() {
-                  _selectedDifficulty = isSelected ? null : value;
-                })
+              ? () => setState(() => _selectedDifficulty = value)
               : () => _showPromotionExamDialog(value),
-          child: Stack(
-            children: [
-              GlassMorphismWidget(
-                borderRadius: 16,
-                backgroundColor: buttonColor,
-                borderColor: isNextUnlockable
-                    ? glowColor.withValues(alpha: 0.6)
-                    : (isSelected
-                        ? glowColor.withValues(alpha: 0.5)
-                        : Colors.grey.shade300),
-                boxShadow: isNextUnlockable || isSelected
-                    ? [
-                        BoxShadow(
-                          color: glowColor.withValues(alpha: isNextUnlockable ? 0.5 : 0.4),
-                          blurRadius: isNextUnlockable ? 20 : 15,
-                          spreadRadius: isNextUnlockable ? 2 : 0,
-                        ),
-                      ]
-                    : null,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
+          child: GlassMorphismWidget(
+            borderRadius: 16,
+            backgroundColor: buttonColor,
+            borderColor: isSelected
+                ? glowColor.withValues(alpha: 0.5)
+                : Colors.grey.shade300,
+            boxShadow: isSelected
+                ? [
+                    BoxShadow(
+                      color: glowColor.withValues(alpha: 0.4),
+                      blurRadius: 15,
+                    ),
+                  ]
+                : null,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  children: [
-                                    if (isNextUnlockable)
-                                      Icon(
-                                        Icons.star,
-                                        color: glowColor,
-                                        size: 18,
-                                      ),
-                                    if (isNextUnlockable)
-                                      const SizedBox(width: 6),
-                                    Expanded(
-                                      child: Text(
-                                        isNextUnlockable
-                                            ? '🎯 $label をアンロック！'
-                                            : label,
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: textColor,
-                                          fontSize: isNextUnlockable ? 15 : 16,
-                                        ),
-                                        maxLines: 2,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                if (isNextUnlockable && promotionExam != null)
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 8),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        if (remainingPoints > 0)
-                                          Text(
-                                            'あと${NumberFormat('#,###').format(remainingPoints)}ポイントで',
-                                            style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.w600,
-                                              color: textColor,
-                                            ),
-                                            maxLines: 1,
-                                            overflow: TextOverflow.ellipsis,
-                                          )
-                                        else
-                                          Text(
-                                            '✨ 今すぐ昇格試験を受験できます！',
-                                            style: TextStyle(
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.w600,
-                                              color: glowColor,
-                                            ),
-                                            maxLines: 2,
-                                            overflow: TextOverflow.ellipsis,
-                                          ),
-                                        Padding(
-                                          padding: const EdgeInsets.only(top: 4),
-                                          child: Text(
-                                            remainingPoints > 0
-                                                ? '昇格試験を受験できます'
-                                                : 'タップして昇格試験へ',
-                                            style: TextStyle(
-                                              fontSize: 11,
-                                              color: textColor.withValues(alpha: 0.8),
-                                            ),
-                                            maxLines: 1,
-                                            overflow: TextOverflow.ellipsis,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                else if (!isEnabled && promotionExam != null)
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 6),
-                                    child: Text(
-                                      'ランク${promotionExam.requiredRank.japaneseName}以上、${NumberFormat('#,###').format(promotionExam.requiredPoints)}ポイント必要',
-                                      style: TextStyle(
-                                        fontSize: 11,
-                                        color: Colors.grey.shade600,
-                                      ),
-                                      maxLines: 2,
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                  )
-                                else if (!isEnabled)
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 6),
-                                    child: Text(
-                                      '昇格試験でアンロック',
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        color: Colors.grey.shade500,
-                                      ),
-                                    ),
-                                  ),
-                              ],
-                            ),
-                          ),
-                          if (isSelected)
-                            Icon(
-                              Icons.check_circle,
-                              color: textColor,
-                              size: 24,
-                            )
-                          else if (!isEnabled)
-                            Icon(
-                              isNextUnlockable ? Icons.lock_open : Icons.lock,
-                              color: isNextUnlockable ? glowColor : Colors.grey.shade400,
-                              size: 22,
-                            ),
-                        ],
+                      Text(
+                        label,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: textColor,
+                          fontSize: 14,
+                        ),
                       ),
+                      if (!isEnabled) ...[
+                        const SizedBox(width: 4),
+                        Icon(
+                          Icons.lock,
+                          color: Colors.grey.shade400,
+                          size: 16,
+                        ),
+                      ],
                     ],
                   ),
-                ),
+                  if (!isEnabled && promotionExam != null) ...[
+                    const SizedBox(height: 4),
+                    Text(
+                      '昇格試験まであと${NumberFormat('#,###').format(remainingPoints > 0 ? remainingPoints : 0)}pt',
+                      style: TextStyle(
+                        fontSize: 10,
+                        color: Colors.grey.shade600,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ],
               ),
-            ],
+            ),
           ),
         );
       },
@@ -679,19 +549,92 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
   }
 
   Widget _buildCountrySelector() {
-    return _buildSectionSelector(
-      icon: Icons.public,
-      title: '国 (Country)',
+    final countries = [
+      {'label': '日本', 'value': 'japan', 'flag': '🇯🇵'},
+      {'label': 'イングランド', 'value': 'england', 'flag': '🇬🇧'},
+      {'label': 'スペイン', 'value': 'spain', 'flag': '🇪🇸'},
+      {'label': 'イタリア', 'value': 'italy', 'flag': '🇮🇹'},
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _buildChip('日本', 'japan', _selectedCountry,
-            (value) => setState(() => _selectedCountry = value)),
-        _buildChip('イタリア', 'italy', _selectedCountry,
-            (value) => setState(() => _selectedCountry = value)),
-        _buildChip('スペイン', 'spain', _selectedCountry,
-            (value) => setState(() => _selectedCountry = value)),
-        _buildChip('イングランド', 'england', _selectedCountry,
-            (value) => setState(() => _selectedCountry = value)),
+        Row(
+          children: [
+            const Icon(
+              Icons.public,
+              color: AppColors.stitchEmerald,
+              size: 16,
+            ),
+            const SizedBox(width: 8),
+            Text(
+              '国',
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+                letterSpacing: 1.2,
+                color: Colors.grey.shade600,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 16),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: countries.map((c) {
+              return Padding(
+                padding: const EdgeInsets.only(right: 8),
+                child: _buildCountryChip(
+                  c['label']!,
+                  c['value']!,
+                  c['flag']!,
+                  _selectedCountry,
+                  (value) => setState(() => _selectedCountry = value),
+                ),
+              );
+            }).toList(),
+          ),
+        ),
       ],
+    );
+  }
+
+  Widget _buildCountryChip(
+    String label,
+    String value,
+    String flag,
+    String? selectedValue,
+    ValueChanged<String> onSelected,
+  ) {
+    final isSelected = selectedValue == value;
+
+    return GestureDetector(
+      onTap: () => onSelected(value),
+      child: GlassMorphismWidget(
+        borderRadius: 20,
+        backgroundColor: isSelected
+            ? AppColors.techIndigo
+            : Colors.white.withValues(alpha: 0.8),
+        borderColor: isSelected
+            ? AppColors.stitchEmerald.withValues(alpha: 0.3)
+            : Colors.grey.shade300,
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(flag, style: const TextStyle(fontSize: 18)),
+            const SizedBox(width: 8),
+            Text(
+              label,
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 14,
+                color: isSelected ? Colors.white : Colors.grey.shade700,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
@@ -700,8 +643,6 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
     
     if (_selectedCountry == 'japan') {
       teams = [
-        {'label': 'J1全チーム', 'value': 'j1_all_teams'},
-        {'label': 'J2全チーム', 'value': 'j2_all_teams'},
         {'label': '鹿島アントラーズ', 'value': 'kashima_antlers'},
         {'label': '柏レイソル', 'value': 'kashiwa_reysol'},
         {'label': '京都サンガF.C.', 'value': 'kyoto_sanga'},
@@ -751,7 +692,7 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
       teams = [];
     }
 
-    // チーム選択は多数の選択肢があるため、スクロール可能なレイアウトを使用
+    // チーム選択は2列グリッド + スクロールバーで表示
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -764,7 +705,7 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
             ),
             const SizedBox(width: 8),
             Text(
-              'チーム'.toUpperCase(),
+              'チーム',
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
@@ -775,24 +716,176 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           ],
         ),
         const SizedBox(height: 16),
-        SizedBox(
-          height: teams.length > 10 ? 200 : null, // 選択肢が多い場合は高さを制限
-          child: SingleChildScrollView(
-            child: Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: teams.map((team) {
-                return _buildChip(
+        Expanded(
+          child: Scrollbar(
+            controller: _teamScrollController,
+            thumbVisibility: true,
+            child: GridView.builder(
+              controller: _teamScrollController,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                childAspectRatio: 3.5,
+                crossAxisSpacing: 8,
+                mainAxisSpacing: 8,
+              ),
+              itemCount: teams.length,
+              itemBuilder: (context, index) {
+                final team = teams[index];
+                return _buildTeamCard(
                   team['label']!,
                   team['value']!,
                   _selectedTeam,
                   (value) => setState(() => _selectedTeam = value),
                 );
-              }).toList(),
+              },
             ),
           ),
         ),
       ],
+    );
+  }
+
+  Widget _buildTeamColorBar(List<Color> colors) {
+    if (colors.isEmpty) return const SizedBox.shrink();
+    return Container(
+      width: 28,
+      height: 28,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(6),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.15),
+            blurRadius: 2,
+            offset: const Offset(0, 1),
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(6),
+        child: colors.length == 1
+            ? ColoredBox(color: colors[0])
+            : Column(
+                children: colors
+                    .map((c) => Expanded(
+                          child: Container(color: c),
+                        ))
+                    .toList(),
+              ),
+      ),
+    );
+  }
+
+  /// チームのクラブカラーを取得（著作権を避けるためロゴの代わりにカラー表示）
+  List<Color> _getTeamColors(String teamValue) {
+    final colors = <String, List<int>>{
+      // J1/J2（ユーザー提供の公式カラー）
+      'kashima_antlers': [0xFF8B0000, 0xFF001F3F, 0xFFFFD700], // ディープレッド・ネイビー・ゴールド
+      'mito_hollyhock': [0xFF003399, 0xFF87CEEB], // 青・水色
+      'urawa_reds': [0xFFDC143C, 0xFF000000], // 赤・黒
+      'jef_united_chiba': [0xFFFFD700, 0xFF228B22, 0xFFDC143C], // 黄色・緑・赤
+      'kashiwa_reysol': [0xFFFFD700, 0xFF000000], // 黄色・黒
+      'fc_tokyo': [0xFF003399, 0xFFDC143C], // 青・赤
+      'tokyo_verdy': [0xFF228B22, 0xFFFFFFFF, 0xFFFFD700], // 緑・白・ゴールド
+      'machida_zelvia': [0xFF001F3F, 0xFF0066CC], // ネイビー〜ブルー
+      'kawasaki_frontale': [0xFF4799B0, 0xFF000000], // サックスブルー・黒
+      'yokohama_f_marinos': [0xFF003399, 0xFFDC143C, 0xFFFFFFFF], // 青・赤・白（トリコロール）
+      'shimizu_s_pulse': [0xFFFF8C00, 0xFF003399], // オレンジ・青
+      'nagoya_grampus': [0xFFDC143C, 0xFFFF8C00, 0xFFFFD700], // 赤・オレンジ・黄色
+      'kyoto_sanga': [0xFF6A0DAD, 0xFFDC143C], // パープル・赤
+      'gamba_osaka': [0xFF003399, 0xFF000000], // 青・黒
+      'cerezo_osaka': [0xFFE91E8C, 0xFF001F3F], // セレッソピンク・ネイビー
+      'vissel_kobe': [0xFF8B0000, 0xFF000000, 0xFFFFFFFF], // クリムゾンレッド・黒・白
+      'fagiano_okayama': [0xFF722F37, 0xFF001F3F], // エンジ・ネイビー
+      'sanfrecce_hiroshima': [0xFF6A0DAD, 0xFFFFFFFF], // 紫・白
+      'avispa_fukuoka': [0xFF001F3F, 0xFF87CEEB], // ネイビー・水色
+      'v_varen_nagasaki': [0xFFFF8C00, 0xFF003399], // オレンジ・青
+      // セリエA
+      'serie_a_all_teams': [0xFF003399],
+      'juventus': [0xFFFFFFFF, 0xFF000000], // 白・黒
+      'ac_milan': [0xFFDC143C, 0xFF000000], // 赤・黒
+      'inter_milan': [0xFF003399, 0xFF000000], // 青・黒
+      // ラリーガ
+      'la_liga_all_teams': [0xFF003399],
+      'real_madrid': [0xFFFFFFFF],
+      'barcelona': [0xFF003399, 0xFFDC143C], // 青・赤
+      'atletico_madrid': [0xFFDC143C, 0xFFFFFFFF], // 赤・白
+      // プレミアリーグ
+      'premier_league_all_teams': [0xFF003399],
+      'liverpool': [0xFFDC143C],
+      'arsenal': [0xFFDC143C, 0xFFFFFFFF],
+      'manchester_city': [0xFF6CACE4],
+      'manchester_united': [0xFFDC143C],
+      'chelsea': [0xFF003399],
+    };
+    final hexList = colors[teamValue] ?? [0xFF9E9E9E]; // デフォルトはグレー
+    return hexList.map((h) => Color(h)).toList();
+  }
+
+  Widget _buildTeamCard(
+    String label,
+    String value,
+    String? selectedValue,
+    ValueChanged<String> onSelected,
+  ) {
+    final isSelected = selectedValue == value;
+    final teamColors = _getTeamColors(value);
+
+    return GestureDetector(
+      onTap: () => onSelected(value),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: isSelected
+                ? AppColors.stitchEmerald
+                : Colors.grey.shade300,
+            width: isSelected ? 2 : 1,
+          ),
+        ),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        child: Row(
+          children: [
+            _buildTeamColorBar(teamColors),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                label,
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 13,
+                  color: Colors.grey.shade800,
+                ),
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+            Container(
+              width: 22,
+              height: 22,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: isSelected
+                    ? AppColors.stitchEmerald
+                    : Colors.transparent,
+                border: Border.all(
+                  color: isSelected
+                      ? AppColors.stitchEmerald
+                      : Colors.grey.shade400,
+                  width: 2,
+                ),
+              ),
+              child: isSelected
+                  ? const Icon(
+                      Icons.check,
+                      size: 14,
+                      color: Colors.white,
+                    )
+                  : null,
+            ),
+          ],
+        ),
+      ),
     );
   }
 
@@ -842,7 +935,7 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
     final isSelected = selectedValue == value;
 
     return GestureDetector(
-      onTap: () => onSelected(isSelected ? '' : value),
+      onTap: () => onSelected(value),
       child: GlassMorphismWidget(
         borderRadius: 20,
         backgroundColor: isSelected

@@ -80,13 +80,16 @@ class _AppBarPatternPainter extends CustomPainter {
 
 /// AppBarを背景付きで構築するヘルパー関数
 PreferredSizeWidget buildAppBarWithBackground({
-  required String title,
+  String? title,
+  Widget? titleWidget,
   List<Widget>? actions,
+  Widget? leading,
 }) {
   return AppBar(
-    title: Text(title),
+    title: titleWidget ?? (title != null ? Text(title) : null),
     backgroundColor: Colors.transparent,
     elevation: 0,
+    leading: leading,
     actions: actions,
     flexibleSpace: const AppBarBackgroundWidget(
       child: SizedBox.shrink(),
