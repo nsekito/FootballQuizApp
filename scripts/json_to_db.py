@@ -64,6 +64,12 @@ def load_questions_from_json(json_path: str) -> list:
     # Weekly Recap形式の場合（questionsフィールドがある）
     if isinstance(data, dict) and 'questions' in data:
         questions = data['questions']
+        top_level_date = data.get('date')
+        # 各問題に referenceDate がなければトップレベルの date を設定
+        if top_level_date:
+            for q in questions:
+                if isinstance(q, dict) and not q.get('referenceDate'):
+                    q['referenceDate'] = top_level_date
         print(f"Weekly Recap形式を検出しました")
     elif isinstance(data, list):
         questions = data
@@ -468,6 +474,7 @@ def main():
     parser.add_argument('--replace', action='store_true', help='既存の問題を置き換える')
     parser.add_argument('--create-schema', action='store_true', help='データベーススキーマを作成')
     parser.add_argument('--cleanup', action='store_true', default=True, help='登録後に古いJSONファイルを削除（デフォルト: True）')
+    parser.add_argument('--no-cleanup', dest='cleanup', action='store_false', help='登録後にJSONファイルを削除しない（Weekly Recap用）')
     
     args = parser.parse_args()
     

@@ -45,12 +45,22 @@ jobs:
           retention-days: 30
           if-no-files-found: ignore
       
+      - name: Update questions.db with Weekly Recap
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          TARGET_DATE=$(python -c "from datetime import datetime, timedelta; today = datetime.now(); days_from_monday = today.weekday() % 7; monday = today - timedelta(days=days_from_monday); print(monday.strftime('%Y-%m-%d'))")
+          for file in data/weekly_recap/${TARGET_DATE}_j1.json data/weekly_recap/${TARGET_DATE}_europe.json; do
+            if [ -f "$file" ]; then
+              python scripts/json_to_db.py "$file" --no-cleanup
+            fi
+          done
+      
       - name: Commit and push changes
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -f data/weekly_recap/*.json
+          git add -f data/weekly_recap/*.json data/questions.db
           if git diff --staged --quiet; then
             echo "変更がありません。コミットをスキップします。"
           else
