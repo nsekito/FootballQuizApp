@@ -1,0 +1,1042 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-03-09T21:46:21Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-03-09",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "ニューカッスル",
+        "マンチェスター・ユナイテッド"
+      ],
+      "text": "2026年3月4日に行われたプレミアリーグで、マンチェスター・ユナイテッドを2-1で破ったクラブはどれでしょう？",
+      "options": [
+        "ニューカッスル",
+        "アストン・ヴィラ",
+        "チェルシー",
+        "アーセナル"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月4日の試合で、ニューカッスルがマンチェスター・ユナイテッドを2-1で下しました。ニューカッスルがホームの利を活かして貴重な勝ち点3を獲得しています。",
+      "trivia": "マグパイズの愛称で知られるニューカッスルは、ホームのセント・ジェームズ・パークで熱狂的なサポーターの応援を背に戦います。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-04",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "ラミネ・ヤマル"
+      ],
+      "text": "2026年3月7日のラ・リーガで、バルセロナはアスレティック・ビルバオを1-0で下しました。この試合で決勝ゴールを決めた選手は誰でしょう？",
+      "options": [
+        "ラミネ・ヤマル",
+        "ペドリ",
+        "ロベルト・レヴァンドフスキ",
+        "ハフィーニャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月7日に行われた一戦で、バルセロナはアスレティック・ビルバオに1-0で勝利しました。後半23分にラミネ・ヤマルが決勝点を挙げています。",
+      "trivia": "弱冠15歳でトップチームデビューを果たしたヤマルは、バルセロナのみならずスペイン代表でも数々の最年少記録を塗り替えています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-07",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "ACミラン",
+        "インテル",
+        "ミラノダービー"
+      ],
+      "text": "2026年3月8日に行われたセリエAの「ミラノダービー」で、首位のインテルを1-0で破り勝利したクラブはどこでしょう？",
+      "options": [
+        "ACミラン",
+        "ユベントス",
+        "ASローマ",
+        "ナポリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月8日に行われたACミランとインテルの「ミラノダービー」は、1-0でACミランが勝利を収めました。首位インテルとの勝ち点差を縮める大きな1勝となりました。",
+      "trivia": "同じスタジアムを本拠地とする両チームですが、ミランの主催試合では「サン・シーロ」、インテルの主催試合では「ジュゼッペ・メアッツァ」と呼び分けられます。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-08",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "ユベントス",
+        "ジェレミー・ボガ"
+      ],
+      "text": "2026年3月7日のセリエA、ユベントスがピサを4-0で下した試合で、後半90+3分にダメ押しとなるチームの4点目を決めた選手は誰でしょう？",
+      "options": [
+        "ジェレミー・ボガ",
+        "ケフラン・テュラム",
+        "ケナン・ユルディズ",
+        "アンドレア・カンビアソ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月7日の試合で、ユベントスはピサに4-0で大勝しました。後半にゴールラッシュとなり、最後は90+3分にジェレミー・ボガがダメ押しの4点目を決めています。",
+      "trivia": "ジェレミー・ボガはコートジボワール代表ですが、フランスのマルセイユ出身で、チェルシーの下部組織で育った経歴を持っています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-07",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "トッテナム",
+        "プレミアリーグ",
+        "監督"
+      ],
+      "text": "2026年3月にチャンピオンズリーグ・ラウンド16を控える中、「CLよりもプレミアリーグでの残留争いが優先」と発言したトッテナムの暫定監督は誰でしょう？",
+      "options": [
+        "イゴール・トゥドール",
+        "アントニオ・コンテ",
+        "ジョゼ・モウリーニョ",
+        "マウリシオ・ポチェッティーノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "トッテナムのイゴール・トゥドール暫定監督は、CLアトレティコ・マドリード戦を前に「チャンピオンズリーグよりもプレミアリーグでの残留争いが優先」と発言し、話題となりました。",
+      "trivia": "イゴール・トゥドールは現役時代、ユベントスの屈強なディフェンダーとして活躍し、クロアチア代表としてもワールドカップに出場しました。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "フェデリコ・バルベルデ"
+      ],
+      "text": "2026年3月6日に行われたラ・リーガ、セルタ・ビーゴ対レアル・マドリードの試合は、後半アディショナルタイムの劇的なゴールでレアル・マドリードが2-1で勝利しました。この決勝点を挙げたのは誰でしょう？",
+      "options": [
+        "フェデリコ・バルベルデ",
+        "オーレリアン・チュアメニ",
+        "ジュード・ベリンガム",
+        "ヴィニシウス・ジュニオール"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月6日に行われたセルタ・ビーゴ対レアル・マドリードは、1-1で迎えた後半アディショナルタイムにフェデリコ・バルベルデが劇的な勝ち越しゴールを決め、2-1で勝利しました。",
+      "trivia": "ウルグアイ代表のバルベルデは、強烈なミドルシュートと無尽蔵のスタミナが持ち味で、「小鳥」という愛称から近年は「ハヤブサ」と呼ばれるようになりました。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-06",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・シティ",
+        "ノッティンガム・フォレスト"
+      ],
+      "text": "2026年3月4日のプレミアリーグ、マンチェスター・シティはノッティンガム・フォレストと対戦しましたが、この試合の結果はどうなったでしょう？",
+      "options": [
+        "2-2の引き分け",
+        "マンチェスター・シティの勝利",
+        "ノッティンガム・フォレストの勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月4日に行われた試合で、マンチェスター・シティはノッティンガム・フォレストと対戦し、2-2の引き分けに終わりました。シティにとっては痛い勝ち点の取りこぼしとなりました。",
+      "trivia": "ノッティンガム・フォレストは過去にチャンピオンズリーグの前身であるチャンピオンズカップを2連覇したことがある、歴史あるクラブです。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-04",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "ウルブス",
+        "リヴァプール"
+      ],
+      "text": "2026年3月3日のプレミアリーグで、リヴァプールを2-1で撃破する金星を挙げたクラブはどこでしょう？",
+      "options": [
+        "ウルブス",
+        "エヴァートン",
+        "ブレントフォード",
+        "サンダーランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月3日の試合で、ウルブスがリヴァプール相手に2-1で勝利を収めました。リヴァプールにとってはシーズン終盤に向けて痛手となる敗戦でした。",
+      "trivia": "ウルブス（ウォルバーハンプトン・ワンダラーズ）のエンブレムに描かれている狼の顔は、実は六角形の幾何学的なデザインで構成されています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-03",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "スコティッシュカップ",
+        "セルティック",
+        "レンジャーズ"
+      ],
+      "text": "2026年3月8日に行われたスコティッシュカップで、セルティックがレンジャーズとの「オールドファーム」を制しましたが、その決着方法はどれでしょう？",
+      "options": [
+        "PK戦",
+        "延長戦でのVゴール",
+        "90分以内での逆転勝利",
+        "アウェーゴールルール"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月8日に行われたスコティッシュカップのレンジャーズ対セルティックの一戦は、激闘の末にPK戦へ突入し、セルティックが4-2で制して勝ち上がりを決めました。",
+      "trivia": "グラスゴーを本拠地とするセルティックとレンジャーズのダービーマッチ「オールドファーム」は、世界で最も熱狂的で歴史のあるダービーの一つとして知られています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-08",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "アタランタ",
+        "ジャンルカ・スカマッカ"
+      ],
+      "text": "2026年3月7日のセリエAで、アタランタはウディネーゼに2点を先行される苦しい展開となりましたが、終盤に2ゴールを挙げて2-2の引き分けに持ち込みました。同点劇の立役者となった選手は誰でしょう？",
+      "options": [
+        "ジャンルカ・スカマッカ",
+        "アデモラ・ルックマン",
+        "シャルル・デ・ケテラーレ",
+        "トゥーン・コープマイナース"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月7日の試合で、アタランタはウディネーゼに0-2とリードされましたが、ジャンルカ・スカマッカが後半30分と34分に立て続けにゴールを奪い、2-2のドローに持ち込みました。",
+      "trivia": "スカマッカはイタリア出身ですが、育成年代の一時期をオランダのPSVアイントホーフェンのユースで過ごしたという珍しい経歴の持ち主です。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-07",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "順位表"
+      ],
+      "text": "2025-26シーズンのプレミアリーグで、2026年3月上旬時点でマンチェスター・シティに勝ち点7差をつけて首位に立っているクラブはどこでしょう？",
+      "options": [
+        "アーセナル",
+        "リヴァプール",
+        "チェルシー",
+        "アストン・ヴィラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは30試合を消化して勝ち点67を獲得し、1試合未消化のマンチェスター・シティ（勝ち点60）を抑えて首位に立っています。",
+      "trivia": "アーセナルが最後にプレミアリーグを制覇したのは「インビンシブルズ」と呼ばれた無敗優勝の2003-04シーズンです。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "得点王",
+        "インテル"
+      ],
+      "text": "2025-26シーズンのセリエAで、2026年3月上旬時点で14ゴールを挙げ、得点ランキングトップに立っているインテル・ミラノの選手は誰でしょう？",
+      "options": [
+        "ラウタロ・マルティネス",
+        "マルクス・テュラム",
+        "ドゥシャン・ヴラホヴィッチ",
+        "ハカン・チャルハノール"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテル・ミラノのキャプテンでもあるラウタロ・マルティネスは、28節終了時点で14ゴールを記録し、セリエA得点王争いをリードしています。",
+      "trivia": "ラウタロ・マルティネスは2023-24シーズンにも24ゴールを挙げ、セリエA得点王とリーグ最優秀選手（MVP）に輝いています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ブンデスリーガ",
+        "得点ランキング",
+        "シュトゥットガルト"
+      ],
+      "text": "2026年3月上旬時点のブンデスリーガ得点ランキングで、30ゴールを挙げ首位を独走するハリー・ケイン（バイエルン）に次ぐ15ゴールを記録し、単独2位につけているシュトゥットガルトの選手は誰でしょう？",
+      "options": [
+        "デニス・ウンダフ",
+        "セール・ギラシ",
+        "ルイス・ディアス",
+        "ロイス・オペンダ"
+      ],
+      "answerIndex": 0,
+      "explanation": "シュトゥットガルトのデニス・ウンダフは、25節終了時点で15ゴールを記録し、得点ランキングでハリー・ケインに次ぐ2位につけています。",
+      "trivia": "ウンダフはドイツの下部リーグから這い上がってきた苦労人で、イングランドのブライトンなどでもプレー経験があるストライカーです。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "得点王",
+        "レアル・マドリード"
+      ],
+      "text": "2025-26シーズンのラ・リーガで、2026年3月上旬時点で23ゴールを挙げ、得点ランキングトップを走っているレアル・マドリードの選手は誰でしょう？",
+      "options": [
+        "キリアン・エムバペ",
+        "ヴィニシウス・ジュニオール",
+        "ジュード・ベリンガム",
+        "ロドリゴ"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリードに加入したキリアン・エムバペは、ラ・リーガ初挑戦のシーズンながら順調にゴールを量産し、2026年3月上旬時点で23ゴールを記録しています。",
+      "trivia": "エムバペはパリ・サンジェルマン時代にもリーグ・アンで6年連続の得点王に輝いており、異なる国でも圧倒的な得点力を証明しています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "ラウンド16",
+        "対戦カード"
+      ],
+      "text": "2025-26シーズンのUEFAチャンピオンズリーグで、2026年3月10日・11日から始まる「ラウンド16」において、実現することになった強豪同士の対戦組み合わせは次のうちどれでしょう？",
+      "options": [
+        "レアル・マドリード vs マンチェスター・シティ",
+        "バイエルン・ミュンヘン vs バルセロナ",
+        "パリ・サンジェルマン vs アーセナル",
+        "インテル vs リヴァプール"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年2月末に行われた抽選会の結果、ラウンド16でレアル・マドリードとマンチェスター・シティという、近年CLで何度も激闘を繰り広げている両者の対戦が決定しました。",
+      "trivia": "UEFAチャンピオンズリーグは2024-25シーズンからフォーマットが変更され、出場枠が36チームに拡大、従来のグループステージが「リーグフェーズ」へと移行しました。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "順位表",
+        "コモ"
+      ],
+      "text": "2025-26シーズンのセリエA第28節終了時点（2026年3月8日）で、インテル、ミラン、ナポリの3強に次ぐ4位（勝ち点51）と、大きな躍進を見せているクラブはどこでしょう？",
+      "options": [
+        "コモ",
+        "ローマ",
+        "アタランタ",
+        "ユヴェントス"
+      ],
+      "answerIndex": 0,
+      "explanation": "コモは28試合で勝ち点51を獲得し、ローマ（勝ち点51、得失点差で下回る）やユヴェントス（勝ち点50）を抑えて堂々の4位に位置しています。",
+      "trivia": "コモは元スペイン代表のセスク・ファブレガスが監督（および共同オーナーの一人）を務めており、近年セリエBから昇格し急速に力をつけているクラブです。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": 28,
+        "matchDate": "2026-03-08",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "上田綺世",
+        "フェイエノールト",
+        "ゴール",
+        "エールディビジ"
+      ],
+      "text": "2026年3月8日のエールディビジ第26節・NACブレダ戦で、フェイエノールトの上田綺世が2ゴールを挙げる活躍を見せました。この得点により、上田はリーグ戦今季通算何ゴールに到達したでしょうか？",
+      "options": [
+        "20ゴール",
+        "15ゴール",
+        "25ゴール",
+        "30ゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "上田綺世は前半と後半にヘディングで1点ずつを奪い、約3ヶ月ぶりの得点で今季リーグ戦20ゴールの大台に到達しました。なお試合は3-3の引き分けに終わっています。",
+      "trivia": "上田綺世はベルギーリーグのセルクル・ブルッヘ時代にもリーグ戦22ゴールを記録しており、欧州の異なるリーグでシーズン20ゴールの大台に乗せるという日本人離れした決定力を誇ります。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": 26,
+        "matchDate": "2026-03-08",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "レアル・ソシエダ",
+        "コパ・デル・レイ",
+        "スペイン"
+      ],
+      "text": "2026年3月4日に行われたコパ・デル・レイ準決勝第2戦で、レアル・ソシエダはアスレティック・ビルバオを下し6年ぶりの決勝進出を決めました。負傷離脱中の久保建英も歓喜の輪に加わったこの大会ですが、決勝の対戦相手はどのクラブでしょうか？",
+      "options": [
+        "アトレティコ・マドリー",
+        "レアル・マドリー",
+        "バルセロナ",
+        "マジョルカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ソシエダはバスク・ダービーとなった準決勝を2戦合計2-0で制し、決勝へ進出しました。4月に行われる決勝戦ではアトレティコ・マドリーと対戦します。",
+      "trivia": "ソシエダが最後にコパ・デル・レイで優勝したのは2019-20シーズンですが、この時はコロナ禍の影響でファンを入れて開催するため、決勝戦が約1年延期される異例の事態となりました。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-04",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "佐野航大",
+        "NEC",
+        "KNVBカップ",
+        "アシスト"
+      ],
+      "text": "2026年3月3日のKNVBカップ（オランダ国内杯）準決勝で、NECに所属する佐野航大はフル出場し、同点ゴールをアシストする活躍を見せました。NECが3-2で逆転勝利し、2年ぶりの決勝進出を決めたこの試合の対戦相手はどこでしょうか？",
+      "options": [
+        "PSV",
+        "アヤックス",
+        "フェイエノールト",
+        "AZ"
+      ],
+      "answerIndex": 0,
+      "explanation": "国内リーグで首位を快走する強豪PSVを相手に、NECは佐野航大のアシストなどで接戦を制しました。同じくNECに所属する小川航基はベンチ入りしたものの出場はありませんでした。",
+      "trivia": "佐野航大の兄・佐野海舟も欧州（ドイツのブンデスリーガ）でプレーしており、兄弟揃って海外リーグの第一線で奮闘しています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-03",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "堂安律",
+        "フランクフルト",
+        "ブンデスリーガ",
+        "ドイツ"
+      ],
+      "text": "2026年3月2日に行われたブンデスリーガ第24節で、フランクフルトの堂安律は後半途中から出場し、決定機を演出するなど2-0の勝利に貢献しました。この試合の対戦相手であり、堂安が2025年夏まで所属していた古巣クラブはどこでしょうか？",
+      "options": [
+        "フライブルク",
+        "ビーレフェルト",
+        "フローニンゲン",
+        "PSV"
+      ],
+      "answerIndex": 0,
+      "explanation": "今季からフランクフルトでプレーする堂安律は、古巣フライブルク戦で今季初のリーグ戦ベンチスタートとなりましたが、後半途中からの出場で攻撃を活性化させました。",
+      "trivia": "堂安律はフランクフルトでインサイドハーフなど新しいポジションに挑戦しており、現地メディアに対して「8番と10番を合わせたような役割」にトライしていると語っています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": 24,
+        "matchDate": "2026-03-02",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "ブライトン",
+        "プレミアリーグ",
+        "負傷"
+      ],
+      "text": "2026年3月4日のプレミアリーグ第29節・アーセナル戦で、ブライトンの三笘薫は前半12分にペナルティエリア内でタックルを受け、左足首を負傷してハーフタイムでの交代を余儀なくされました。この場面で三笘にタックルをしたアーセナルのDFは誰でしょうか？",
+      "options": [
+        "ガブリエウ・マガリャンイス",
+        "ウィリアン・サリバ",
+        "ベン・ホワイト",
+        "オレクサンドル・ジンチェンコ"
+      ],
+      "answerIndex": 0,
+      "explanation": "三笘薫はボックス内に切り込んだ際、ガブリエウのタックルで左足首をひねってしまいました。足を引きずりながらも前半終了までプレーを続けましたが、大事をとってハーフタイムに交代しました。",
+      "trivia": "この試合でブライトンは0-1で敗れましたが、ヒュルツェラー監督は試合後、アーセナル側の過度な時間稼ぎなどの戦い方に激怒し「サッカーをしようとしていたのは一方のチームだけだ」と苦言を呈しました。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": 29,
+        "matchDate": "2026-03-04",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "ブライトン",
+        "三笘薫",
+        "負傷"
+      ],
+      "text": "2026年3月4日に行われたプレミアリーグ第29節のアーセナル戦で、タックルを受けて途中交代した日本人選手は誰でしょう？",
+      "options": [
+        "三笘薫",
+        "久保建英",
+        "冨安健洋",
+        "遠藤航"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブライトンの三笘薫はアーセナル戦の前半12分にペナルティエリア内でタックルを受けて左足首を負傷し、交代を余儀なくされました。",
+      "trivia": "ヒュルツェラー監督は試合直後に「大きなケガではない」と語っていましたが、後日松葉杖をつく姿が目撃されファンから心配の声が上がっています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": 29,
+        "matchDate": "2026-03-04",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "ロドリゴ",
+        "負傷"
+      ],
+      "text": "2026年3月2日のヘタフェ戦で右膝の前十字靭帯断裂などの大ケガを負い、2026年ワールドカップの欠場が濃厚となったレアル・マドリードのブラジル代表FWは誰でしょう？",
+      "options": [
+        "ロドリゴ",
+        "ヴィニシウス・ジュニオール",
+        "エンドリッキ",
+        "ハフィーニャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ロドリゴはヘタフェ戦に途中出場したものの右膝を負傷。復帰まで約10ヶ月かかると見られ、ブラジル代表としても大きな痛手となっています。",
+      "trivia": "彼は約1ヶ月にわたる腱炎での離脱から復帰したばかりの試合で、無念のシーズン終了となってしまいました。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-02",
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "リヴァプール",
+        "フラーフェンベルフ",
+        "契約延長"
+      ],
+      "text": "2026年3月にリヴァプールと2032年6月までの長期契約延長を発表した、チームの主軸として活躍するオランダ代表MFは誰でしょう？",
+      "options": [
+        "ライアン・フラーフェンベルフ",
+        "コーディ・ガクポ",
+        "フィルジル・ファン・ダイク",
+        "フレンキー・デ・ヨング"
+      ],
+      "answerIndex": 0,
+      "explanation": "フラーフェンベルフは2023年にバイエルンから加入。アルネ・スロット監督のもとで絶対的なレギュラーに定着し、クラブとの長期契約に至りました。",
+      "trivia": "アヤックスのユース出身である彼は、加入当初こそ出場機会に恵まれませんでしたが、同郷のスロット監督の就任を機に飛躍を遂げました。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "リヴァプール",
+        "マクアリスター",
+        "移籍動向"
+      ],
+      "text": "2026年3月、父親が「契約延長の交渉は行われていない」と明かし、レアル・マドリードからの関心も報じられている、リヴァプールで背番号10を背負うアルゼンチン代表MFは誰でしょう？",
+      "options": [
+        "アレクシス・マクアリスター",
+        "エンソ・フェルナンデス",
+        "フリアン・アルバレス",
+        "ロドリゴ・デ・パウル"
+      ],
+      "answerIndex": 0,
+      "explanation": "マクアリスターは2028年夏までリヴァプールと契約を結んでいますが、現時点で延長交渉は行われておらず、今後の去就に注目が集まっています。",
+      "trivia": "父親のカルロス氏も元プロサッカー選手であり、ディエゴ・マラドーナとともにボカ・ジュニアーズでプレーした経験を持っています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アル・ナスル",
+        "クリスティアーノ・ロナウド",
+        "ポルトガル代表",
+        "負傷"
+      ],
+      "text": "2026年3月、アル・ナスルに所属するクリスティアーノ・ロナウドがリーグ戦でハムストリングを負傷しました。この負傷が起きた試合の対戦相手はどのクラブでしょう？",
+      "options": [
+        "アル・フェイハ",
+        "アル・ヒラル",
+        "アル・シャバブ",
+        "アル・アハリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "クリスティアーノ・ロナウドはアル・フェイハ戦の終盤にハムストリングを負傷してピッチを退きました。これによりポルトガル代表の親善試合への出場も危ぶまれています。",
+      "trivia": "ポルトガル代表は2026年ワールドカップに向けた強化試合として、3月にアメリカやメキシコとの対戦を予定しています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "マンチェスター・ユナイテッド",
+        "プレミアリーグ",
+        "監督解任",
+        "ルーベン・アモリム"
+      ],
+      "text": "2026年3月上旬、成績不振により就任から約14ヶ月でイングランド・プレミアリーグの名門マンチェスター・ユナイテッドの監督を解任されたポルトガル人指揮官は誰？",
+      "options": [
+        "ルーベン・アモリム",
+        "エリック・テン・ハグ",
+        "ジョゼ・モウリーニョ",
+        "セルジオ・コンセイソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "就任から約14ヶ月間チームを率いたアモリム監督でしたが、直近のリーグ戦で15位に沈むなど成績が低迷し、2026年3月に解任されました。",
+      "trivia": "アモリム解任直後のバーンリー戦では、U-18のコーチを務めていた元同クラブ選手のダレン・フレッチャーが暫定的に指揮を執りました。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "フラメンゴ",
+        "ブラジル",
+        "監督解任",
+        "フィリペ・ルイス"
+      ],
+      "text": "2026年3月3日、ブラジルの名門フラメンゴが、州選手権で8-0の記録的大勝を収めたわずか数時間後に監督を解任して話題となりました。解任されたのは現役時代にアトレティコ・マドリードなどで活躍した誰？",
+      "options": [
+        "フィリペ・ルイス",
+        "ディエゴ・シメオネ",
+        "チアゴ・モッタ",
+        "ルイス・ファビアーノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "フィリペ・ルイスは就任から約1年でコパ・リベルタドーレスなど5つのタイトルを獲得しましたが、今季の不振を理由に大勝直後という異例のタイミングで2026年3月に解任されました。",
+      "trivia": "彼はクラブ歴代2位となる勝率69.9%という好成績を残しており、後任には元モナコ監督のレオナルド・ジャルディムらの名前が浮上しています。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "FAカップ",
+        "チェルシー",
+        "ポート・ヴェイル"
+      ],
+      "text": "2026年3月9日に組み合わせ抽選が行われた今シーズンのFAカップ準々決勝で、チェルシーと対戦することになったリーグ1（実質3部）のクラブはどこ？",
+      "options": [
+        "ポート・ヴェイル",
+        "サンダーランド",
+        "ボルトン・ワンダラーズ",
+        "レクサム"
+      ],
+      "answerIndex": 0,
+      "explanation": "5回戦でサンダーランドを破る波乱を起こしたリーグ1のポート・ヴェイルがベスト8に進出し、準々決勝でスタンフォード・ブリッジに乗り込んでチェルシーと対戦することが決まりました。",
+      "trivia": "ポート・ヴェイルの本拠地は「陶器の街」として知られるストーク＝オン＝トレントにあり、同都市のライバルであるストーク・シティとの対戦は「ポッタリーズ・ダービー」と呼ばれます。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "チャンピオンズリーグ",
+        "ボデ/グリムト",
+        "スポルティングCP"
+      ],
+      "text": "2026年3月10日・11日に第1戦が行われる今シーズンのUEFAチャンピオンズリーグ・ラウンド16で、ノルウェーのボデ/グリムトと対戦するクラブはどこ？",
+      "options": [
+        "スポルティングCP",
+        "ベンフィカ",
+        "FCポルト",
+        "ブラガ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年2月末の抽選の結果、ボデ/グリムトはポルトガルの強豪スポルティングCPと対戦することが決定しました。第1戦は2026年3月11日にノルウェーで行われます。",
+      "trivia": "ボデ/グリムトは北極圏に位置するクラブとして知られ、ホームスタジアムの極寒の環境や人工芝のピッチは多くのヨーロッパの強豪クラブを苦しめてきました。",
+      "referenceDate": "2026-03-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-09",
+        "expiryDate": "2026-03-16",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
