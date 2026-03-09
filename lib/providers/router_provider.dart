@@ -80,6 +80,10 @@ final routerProvider = Provider<GoRouter>((ref) {
             params,
             'isMatchDay',
           ) == 'true';
+          final isDailyQuiz = RouteParamsParser.parseStringParam(
+            params,
+            'isDailyQuiz',
+          ) == 'true';
           return ResultScreen(
             score: score,
             total: total,
@@ -88,6 +92,7 @@ final routerProvider = Provider<GoRouter>((ref) {
             category: category,
             difficulty: difficulty,
             isMatchDay: isMatchDay,
+            isDailyQuiz: isDailyQuiz,
           );
         },
       ),

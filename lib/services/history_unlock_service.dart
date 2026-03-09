@@ -18,7 +18,7 @@ class HistoryUnlockService {
 
     // 日付が変わった場合はリセット
     if (lastResetDate != currentDate) {
-      await prefs.setInt(_keyFreeUnlockCount, AD_BONUS.historyFreeUnlockDailyLimit);
+      await prefs.setInt(_keyFreeUnlockCount, adBonus.historyFreeUnlockDailyLimit);
       await prefs.setString(_keyLastResetDate, currentDate);
     }
   }
@@ -27,14 +27,14 @@ class HistoryUnlockService {
   Future<int> getRemainingFreeUnlocks() async {
     await _checkAndResetDaily();
     final prefs = await SharedPreferences.getInstance();
-    return prefs.getInt(_keyFreeUnlockCount) ?? AD_BONUS.historyFreeUnlockDailyLimit;
+    return prefs.getInt(_keyFreeUnlockCount) ?? adBonus.historyFreeUnlockDailyLimit;
   }
 
   /// 無料解放を使用
   Future<bool> useFreeUnlock() async {
     await _checkAndResetDaily();
     final prefs = await SharedPreferences.getInstance();
-    final remaining = prefs.getInt(_keyFreeUnlockCount) ?? AD_BONUS.historyFreeUnlockDailyLimit;
+    final remaining = prefs.getInt(_keyFreeUnlockCount) ?? adBonus.historyFreeUnlockDailyLimit;
 
     if (remaining <= 0) {
       return false;
@@ -46,11 +46,11 @@ class HistoryUnlockService {
 
   /// 10問セット解放のコストを取得
   int getBundle10Cost() {
-    return HISTORY_UNLOCK.bundle10Cost;
+    return historyUnlock.bundle10Cost;
   }
 
   /// 1問解放のコストを取得
   int getSingleQuestionCost() {
-    return HISTORY_UNLOCK.singleQuestionCost;
+    return historyUnlock.singleQuestionCost;
   }
 }

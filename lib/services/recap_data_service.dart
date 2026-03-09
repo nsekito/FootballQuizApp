@@ -17,59 +17,70 @@ class RecapDataService {
 
   /// Weekly Recapデータをリモートから取得してDBに同期
   /// 
-  /// [date] 日付（YYYY-MM-DD形式、指定しない場合は最新の週）
+  /// [date] 日付（YYYY-MM-DD形式、指定しない場合は最新の週、404時は過去週を試行）
   /// [force] trueの場合、既に同期済みでも再同期する
   /// 戻り値: 同期した問題数の合計
   Future<int> syncWeeklyRecapToDatabase({
     String? date,
     bool force = false,
   }) async {
-    final targetDate = date ?? _getLatestMonday();
+    const maxWeeksToTry = 4;
+    var tryDate = date ?? _getLatestMonday();
     int totalSynced = 0;
 
     try {
-      // すべてのリーグタイプのデータを取得
-      final allQuestions = await _remoteDataService.fetchAllWeeklyRecapQuestions(
-        date: targetDate,
-      );
+      for (var i = 0; i < maxWeeksToTry; i++) {
+        // すべてのリーグタイプのデータを取得
+        final allQuestions = await _remoteDataService.fetchAllWeeklyRecapQuestions(
+          date: tryDate,
+        );
 
-      // 各リーグタイプごとに処理
-      for (final entry in allQuestions.entries) {
-        final leagueType = entry.key;
-        final questions = entry.value;
-
-        // 既に同期済みかチェック
-        if (!force) {
-          final isSynced = await _databaseService.isRecapSynced(
-            date: targetDate,
-            leagueType: leagueType,
-          );
-          if (isSynced) {
-            debugPrint('Weekly Recap ($targetDate, $leagueType) は既に同期済みです');
-            continue;
-          }
-        }
-
-        // 問題が空の場合はスキップ
-        if (questions.isEmpty) {
-          debugPrint('Weekly Recap ($targetDate, $leagueType) に問題がありません');
+        final hasData = allQuestions.values.any((list) => list.isNotEmpty);
+        if (!hasData) {
+          tryDate = AppDateUtils.getPreviousMondayString(tryDate);
           continue;
         }
 
-        // DBに保存
-        await _databaseService.insertQuestions(questions);
-        totalSynced += questions.length;
+        // 各リーグタイプごとに処理
+        for (final entry in allQuestions.entries) {
+          final leagueType = entry.key;
+          final questions = entry.value;
 
-        // 同期履歴を記録
-        await _databaseService.recordRecapSync(
-          date: targetDate,
-          leagueType: leagueType,
-          questionCount: questions.length,
-        );
+          // 既に同期済みかチェック
+          if (!force) {
+            final isSynced = await _databaseService.isRecapSynced(
+              date: tryDate,
+              leagueType: leagueType,
+            );
+            if (isSynced) {
+              debugPrint('Weekly Recap ($tryDate, $leagueType) は既に同期済みです');
+              continue;
+            }
+          }
 
-        debugPrint(
-          'Weekly Recap ($targetDate, $leagueType): ${questions.length}問をDBに同期しました',
-        );
+          // 問題が空の場合はスキップ
+          if (questions.isEmpty) {
+            debugPrint('Weekly Recap ($tryDate, $leagueType) に問題がありません');
+            continue;
+          }
+
+          // DBに保存
+          await _databaseService.insertQuestions(questions);
+          totalSynced += questions.length;
+
+          // 同期履歴を記録
+          await _databaseService.recordRecapSync(
+            date: tryDate,
+            leagueType: leagueType,
+            questionCount: questions.length,
+          );
+
+          debugPrint(
+            'Weekly Recap ($tryDate, $leagueType): ${questions.length}問をDBに同期しました',
+          );
+        }
+
+        return totalSynced;
       }
 
       return totalSynced;

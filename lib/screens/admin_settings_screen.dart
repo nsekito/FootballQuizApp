@@ -39,6 +39,7 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
   final TextEditingController _streakDaysController = TextEditingController();
   bool _isResettingHistory = false;
   bool _isResettingMatchDay = false;
+  bool _isResettingDailyQuiz = false;
   bool _isResettingAllData = false;
 
   @override
@@ -291,6 +292,10 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
 
                 // MATCH DAYプレイ回数リセット
                 _buildMatchDayResetSection(),
+                const SizedBox(height: 24),
+
+                // Daily Quizプレイ回数リセット
+                _buildDailyQuizResetSection(),
                 const SizedBox(height: 24),
 
                 // 全ユーザーデータリセット
@@ -1191,9 +1196,9 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
   /// 日数に応じたポイントを取得
   int _getPointsForDay(int day) {
     if (day >= 1 && day <= 7) {
-      return LOGIN_BONUS.dailyPt[day - 1];
+      return loginBonus.dailyPt[day - 1];
     }
-    return LOGIN_BONUS.dailyPt[0];
+    return loginBonus.dailyPt[0];
   }
 
   Widget _buildHistoryResetSection() {
@@ -1348,6 +1353,123 @@ class _AdminSettingsScreenState extends ConsumerState<AdminSettingsScreen> {
         ],
       ),
     );
+  }
+
+  Widget _buildDailyQuizResetSection() {
+    return GlassMorphismWidget(
+      borderRadius: 16,
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.today,
+                color: Colors.indigo.shade700,
+                size: 24,
+              ),
+              const SizedBox(width: 8),
+              const Text(
+                'Daily Quizプレイ回数リセット',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Text(
+            '今日のDaily Quizプレイ回数をリセットします。',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.grey.shade700,
+            ),
+          ),
+          const SizedBox(height: 16),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: _isResettingDailyQuiz ? null : _resetDailyQuiz,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.indigo.shade700,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: _isResettingDailyQuiz
+                  ? const SizedBox(
+                      height: 20,
+                      width: 20,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                      ),
+                    )
+                  : const Text(
+                      'Daily Quizプレイ回数をリセット',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _resetDailyQuiz() async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Daily Quizプレイ回数をリセット'),
+        content: const Text(
+          '今日のDaily Quizプレイ回数をリセットします。この操作は元に戻せません。\n\n本当に実行しますか？',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('キャンセル'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.indigo.shade700,
+            ),
+            child: const Text('リセットする'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    setState(() {
+      _isResettingDailyQuiz = true;
+    });
+
+    try {
+      final databaseService = ref.read(databaseServiceProvider);
+      await databaseService.resetDailyQuizPlayHistory();
+      if (mounted) {
+        _showSuccessSnackBar('Daily Quizプレイ回数をリセットしました');
+      }
+    } catch (e) {
+      if (mounted) {
+        _showErrorSnackBar('リセットに失敗しました: $e');
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isResettingDailyQuiz = false;
+        });
+      }
+    }
   }
 
   Future<void> _resetMatchDay() async {

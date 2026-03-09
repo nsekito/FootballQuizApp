@@ -73,6 +73,81 @@ class RemoteDataService {
     return _parseQuestionsFromJson(data, date: targetDate);
   }
 
+  /// Weekly Recap用の問題を取得（404時は過去週を順に試行）
+  /// 
+  /// 最新週のファイルが未配信の場合、最大4週間前まで遡って取得を試みる。
+  /// [leagueType] リーグタイプ（"j1" または "europe"）
+  /// [maxWeeksToTry] 試行する週数（デフォルト: 4）
+  Future<List<Question>> fetchWeeklyRecapQuestionsWithDateFallback({
+    String? leagueType,
+    int maxWeeksToTry = 4,
+  }) async {
+    var tryDate = _getLatestMonday();
+    RemoteDataException? lastException;
+
+    for (var i = 0; i < maxWeeksToTry; i++) {
+      try {
+        final questions = await fetchWeeklyRecapQuestions(
+          date: tryDate,
+          leagueType: leagueType,
+        );
+        if (questions.isNotEmpty) {
+          return questions;
+        }
+        // 空の場合は前週を試行
+        tryDate = AppDateUtils.getPreviousMondayString(tryDate);
+      } on RemoteDataException catch (e) {
+        lastException = e;
+        if (e.statusCode == 404) {
+          tryDate = AppDateUtils.getPreviousMondayString(tryDate);
+          continue;
+        }
+        rethrow;
+      }
+    }
+
+    if (lastException != null) {
+      throw lastException;
+    }
+    return [];
+  }
+
+  /// 指定日付のすべてのリーグタイプのWeekly Recap問題を取得（404時は過去週を順に試行）
+  /// 
+  /// 最新週のファイルが未配信の場合、最大4週間前まで遡って取得を試みる。
+  Future<Map<String, List<Question>>> fetchAllWeeklyRecapQuestionsWithDateFallback({
+    int maxWeeksToTry = 4,
+  }) async {
+    var tryDate = _getLatestMonday();
+    RemoteDataException? lastException;
+
+    for (var i = 0; i < maxWeeksToTry; i++) {
+      try {
+        final result = await fetchAllWeeklyRecapQuestions(date: tryDate);
+        final hasData = result.values.any((list) => list.isNotEmpty);
+        if (hasData) {
+          return result;
+        }
+        tryDate = AppDateUtils.getPreviousMondayString(tryDate);
+      } on RemoteDataException catch (e) {
+        lastException = e;
+        if (e.statusCode == 404) {
+          tryDate = AppDateUtils.getPreviousMondayString(tryDate);
+          continue;
+        }
+        rethrow;
+      }
+    }
+
+    if (lastException != null) {
+      throw lastException;
+    }
+    return {
+      AppConstants.leagueTypeJ1: [],
+      AppConstants.leagueTypeEurope: [],
+    };
+  }
+
   /// 指定日付のすべてのリーグタイプのWeekly Recap問題を取得（DB取り込み用）
   /// 
   /// [date] 日付（YYYY-MM-DD形式、例: "2025-01-13"）

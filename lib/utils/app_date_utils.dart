@@ -32,6 +32,19 @@ class AppDateUtils {
     return formatDateYmd(monday);
   }
 
+  /// 指定日付の1週間前の月曜日を YYYY-MM-DD 形式で返す。
+  /// [dateStr] YYYY-MM-DD 形式の文字列
+  static String getPreviousMondayString(String dateStr) {
+    final parts = dateStr.split('-');
+    final date = DateTime(
+      int.parse(parts[0]),
+      int.parse(parts[1]),
+      int.parse(parts[2]),
+    );
+    final previousMonday = date.subtract(const Duration(days: 7));
+    return formatDateYmd(previousMonday);
+  }
+
   /// 今日の日付を YYYY-MM-DD 形式の文字列で返す。
   static String getCurrentDateString({DateTime? now}) {
     final date = now ?? DateTime.now();

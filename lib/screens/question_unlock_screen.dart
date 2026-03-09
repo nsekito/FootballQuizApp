@@ -219,7 +219,7 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
             ),
             if (unlockedCount != null && totalCount != null)
               Text(
-                '${unlockedCount}/${totalCount}問 (${percentage?.toStringAsFixed(1) ?? '0'}%) 解放',
+                '$unlockedCount/$totalCount問 (${percentage?.toStringAsFixed(1) ?? '0'}%) 解放',
                 style: TextStyle(
                   color: Colors.white.withValues(alpha: 0.9),
                   fontSize: 12,
@@ -721,7 +721,7 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
                     children: [
                       const Icon(Icons.lock_open, size: 18),
                       const SizedBox(width: 8),
-                      Text('${HISTORY_UNLOCK.singleQuestionCost} PTで開放'),
+                      Text('${historyUnlock.singleQuestionCost} PTで開放'),
                     ],
                   ),
                 ),
@@ -775,12 +775,12 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
   Future<void> _unlockQuestion(Question question) async {
     final totalPoints = ref.read(totalPointsProvider);
 
-    if (totalPoints < HISTORY_UNLOCK.singleQuestionCost) {
+    if (totalPoints < historyUnlock.singleQuestionCost) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              'ポイントが不足しています。${HISTORY_UNLOCK.singleQuestionCost}ポイント必要です。',
+              'ポイントが不足しています。${historyUnlock.singleQuestionCost}ポイント必要です。',
             ),
             backgroundColor: Colors.red,
           ),
@@ -794,7 +794,7 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
       builder: (context) => AlertDialog(
         title: const Text('問題を開放しますか？'),
         content: Text(
-          '${HISTORY_UNLOCK.singleQuestionCost}ポイントを消費してこの問題を開放します。',
+          '${historyUnlock.singleQuestionCost}ポイントを消費してこの問題を開放します。',
         ),
         actions: [
           TextButton(

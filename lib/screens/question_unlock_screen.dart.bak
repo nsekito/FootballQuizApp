@@ -1,0 +1,949 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import 'package:intl/intl.dart';
+import '../providers/question_unlock_provider.dart';
+import '../providers/question_service_provider.dart';
+import '../providers/user_data_provider.dart';
+import '../constants/app_constants.dart';
+import '../constants/app_colors.dart';
+import '../widgets/glass_morphism_widget.dart';
+import '../widgets/grid_pattern_background.dart';
+import '../widgets/app_bar_background.dart';
+import '../widgets/banner_ad_widget.dart';
+import '../utils/category_difficulty_utils.dart';
+import '../models/question.dart';
+import '../constants/game_config.dart';
+import '../services/history_unlock_service.dart';
+import '../providers/ad_provider.dart';
+
+class QuestionUnlockScreen extends ConsumerStatefulWidget {
+  const QuestionUnlockScreen({super.key});
+
+  @override
+  ConsumerState<QuestionUnlockScreen> createState() =>
+      _QuestionUnlockScreenState();
+}
+
+class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen>
+    with SingleTickerProviderStateMixin {
+  late TabController _tabController;
+  String? _selectedCategory;
+  String? _selectedDifficulty;
+  String? _selectedRegion;
+  String? _selectedCountry;
+  String? _selectedTeam;
+  final HistoryUnlockService _historyUnlockService = HistoryUnlockService();
+  int _remainingFreeUnlocks = 0;
+
+  // 段階的ロード用
+  final List<Question> _questions = [];
+  bool _isLoading = false;
+  bool _isLoadingMore = false;
+  bool _hasMore = true;
+  int _offset = 0;
+  final ScrollController _scrollController1 = ScrollController();
+  final ScrollController _scrollController2 = ScrollController();
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: 2, vsync: this);
+    _selectedCategory = AppConstants.categoryRules;
+    _selectedDifficulty = AppConstants.difficultyEasy;
+    _selectedCountry = 'japan'; // チームクイズ用デフォルト
+    _loadRemainingFreeUnlocks();
+    _scrollController1.addListener(_onScroll1);
+    _scrollController2.addListener(_onScroll2);
+  }
+
+  void _onScroll1() => _onScroll(_scrollController1);
+  void _onScroll2() => _onScroll(_scrollController2);
+
+  void _onScroll(ScrollController controller) {
+    if (_isLoadingMore || !_hasMore) return;
+    if (!_canLoadQuestions()) return;
+    final position = controller.position;
+    if (position.pixels >= position.maxScrollExtent - 200) {
+      _loadMoreQuestions();
+    }
+  }
+
+  Future<void> _loadRemainingFreeUnlocks() async {
+    final remaining = await _historyUnlockService.getRemainingFreeUnlocks();
+    if (mounted) {
+      setState(() {
+        _remainingFreeUnlocks = remaining;
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    _scrollController1.removeListener(_onScroll1);
+    _scrollController2.removeListener(_onScroll2);
+    _scrollController1.dispose();
+    _scrollController2.dispose();
+    _tabController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final totalPoints = ref.watch(totalPointsProvider);
+    final unlockedQuestionIdsAsync = ref.watch(unlockedQuestionIdsProvider);
+    // 残り無料解放回数を定期的に更新
+    Future.microtask(() => _loadRemainingFreeUnlocks());
+
+    return Scaffold(
+      backgroundColor: AppColors.stitchBackgroundLight,
+      appBar: buildAppBarWithBackground(
+        title: '問題開放',
+        leading: IconButton(
+          icon: const Icon(Icons.home, color: Colors.white),
+          onPressed: () => context.go('/'),
+          tooltip: 'ホームへ戻る',
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 16),
+            child: Center(
+              child: Row(
+                children: [
+                  Icon(Icons.stars, color: Colors.amber.shade700, size: 20),
+                  const SizedBox(width: 4),
+                  Text(
+                    '${NumberFormat('#,###').format(totalPoints)} PT',
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+      body: GridPatternBackground(
+        child: Column(
+          children: [
+            // フィルタセクション
+            _buildFilterSection(),
+
+            // タブ
+            TabBar(
+              controller: _tabController,
+              labelColor: AppColors.techIndigo,
+              unselectedLabelColor: Colors.grey,
+              indicatorColor: AppColors.techIndigo,
+              tabs: const [
+                Tab(text: '未開放'),
+                Tab(text: '開放済み'),
+              ],
+            ),
+
+            // 問題一覧
+            Expanded(
+              child: TabBarView(
+                controller: _tabController,
+                children: [
+                  _buildUnlockedQuestionsList(unlockedQuestionIdsAsync),
+                  _buildUnlockedQuestionsList(unlockedQuestionIdsAsync,
+                      showUnlocked: true),
+                ],
+              ),
+            ),
+
+            // バナー広告
+            const BannerAdWidget(),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildFilterSection() {
+    return GlassMorphismWidget(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // カテゴリ選択
+          _buildCategoryFilter(),
+          const SizedBox(height: 16),
+
+          // 難易度選択
+          if (_selectedCategory != AppConstants.categoryMatchRecap)
+            _buildDifficultyFilter(),
+
+          // チームクイズの場合の追加フィルタ
+          if (_selectedCategory == AppConstants.categoryTeams) ...[
+            const SizedBox(height: 16),
+            _buildTeamFilter(),
+          ],
+
+          // 歴史クイズの場合の地域フィルタ
+          if (_selectedCategory == AppConstants.categoryHistory) ...[
+            const SizedBox(height: 16),
+            _buildRegionFilter(),
+          ],
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCategoryFilter() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          'カテゴリ',
+          style: TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+            color: AppColors.techIndigo,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 8,
+          children: [
+            _buildFilterChip(
+              'ルール',
+              _selectedCategory == AppConstants.categoryRules,
+              () => setState(() {
+                _selectedCategory = AppConstants.categoryRules;
+                _resetAndLoadQuestions();
+              }),
+            ),
+            _buildFilterChip(
+              '歴史',
+              _selectedCategory == AppConstants.categoryHistory,
+              () => setState(() {
+                _selectedCategory = AppConstants.categoryHistory;
+                _resetAndLoadQuestions();
+              }),
+            ),
+            _buildFilterChip(
+              'チーム',
+              _selectedCategory == AppConstants.categoryTeams,
+              () => setState(() {
+                _selectedCategory = AppConstants.categoryTeams;
+                _selectedCountry = 'japan';
+                _selectedTeam = null;
+                _resetAndLoadQuestions();
+              }),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  Widget _buildDifficultyFilter() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          '難易度',
+          style: TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+            color: AppColors.techIndigo,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 8,
+          children: [
+            _buildFilterChip(
+              'EASY',
+              _selectedDifficulty == AppConstants.difficultyEasy,
+              () => setState(() {
+                _selectedDifficulty = AppConstants.difficultyEasy;
+                _resetAndLoadQuestions();
+              }),
+            ),
+            _buildFilterChip(
+              'NORMAL',
+              _selectedDifficulty == AppConstants.difficultyNormal,
+              () => setState(() {
+                _selectedDifficulty = AppConstants.difficultyNormal;
+                _resetAndLoadQuestions();
+              }),
+            ),
+            _buildFilterChip(
+              'HARD',
+              _selectedDifficulty == AppConstants.difficultyHard,
+              () => setState(() {
+                _selectedDifficulty = AppConstants.difficultyHard;
+                _resetAndLoadQuestions();
+              }),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  Widget _buildTeamFilter() {
+    final teams = _getTeamListForCountry(_selectedCountry ?? 'japan');
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          '国',
+          style: TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+            color: AppColors.techIndigo,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: [
+            _buildFilterChip(
+              '日本',
+              _selectedCountry == 'japan',
+              () => setState(() {
+                _selectedCountry = 'japan';
+                _selectedTeam = null;
+                _resetAndLoadQuestions();
+              }),
+            ),
+            _buildFilterChip(
+              'イタリア',
+              _selectedCountry == 'italy',
+              () => setState(() {
+                _selectedCountry = 'italy';
+                _selectedTeam = null;
+                _resetAndLoadQuestions();
+              }),
+            ),
+            _buildFilterChip(
+              'スペイン',
+              _selectedCountry == 'spain',
+              () => setState(() {
+                _selectedCountry = 'spain';
+                _selectedTeam = null;
+                _resetAndLoadQuestions();
+              }),
+            ),
+            _buildFilterChip(
+              'イングランド',
+              _selectedCountry == 'england',
+              () => setState(() {
+                _selectedCountry = 'england';
+                _selectedTeam = null;
+                _resetAndLoadQuestions();
+              }),
+            ),
+          ],
+        ),
+        const SizedBox(height: 16),
+        const Text(
+          'チーム',
+          style: TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+            color: AppColors.techIndigo,
+          ),
+        ),
+        const SizedBox(height: 8),
+        SizedBox(
+          height: teams.length > 10 ? 200 : null,
+          child: SingleChildScrollView(
+            child: Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: teams.map((team) {
+                return _buildFilterChip(
+                  team['label']!,
+                  _selectedTeam == team['value'],
+                  () => setState(() {
+                    _selectedTeam = team['value'];
+                    _resetAndLoadQuestions();
+                  }),
+                );
+              }).toList(),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  List<Map<String, String>> _getTeamListForCountry(String country) {
+    switch (country) {
+      case 'japan':
+        return [
+          {'label': 'J1全チーム', 'value': 'j1_all_teams'},
+          {'label': 'J2全チーム', 'value': 'j2_all_teams'},
+          {'label': '鹿島アントラーズ', 'value': 'kashima_antlers'},
+          {'label': '柏レイソル', 'value': 'kashiwa_reysol'},
+          {'label': '京都サンガF.C.', 'value': 'kyoto_sanga'},
+          {'label': 'サンフレッチェ広島', 'value': 'sanfrecce_hiroshima'},
+          {'label': 'ヴィッセル神戸', 'value': 'vissel_kobe'},
+          {'label': 'FC町田ゼルビア', 'value': 'machida_zelvia'},
+          {'label': '浦和レッズ', 'value': 'urawa_reds'},
+          {'label': '川崎フロンターレ', 'value': 'kawasaki_frontale'},
+          {'label': 'ガンバ大阪', 'value': 'gamba_osaka'},
+          {'label': 'セレッソ大阪', 'value': 'cerezo_osaka'},
+          {'label': 'FC東京', 'value': 'fc_tokyo'},
+          {'label': 'アビスパ福岡', 'value': 'avispa_fukuoka'},
+          {'label': 'ファジアーノ岡山', 'value': 'fagiano_okayama'},
+          {'label': '清水エスパルス', 'value': 'shimizu_s_pulse'},
+          {'label': '横浜F・マリノス', 'value': 'yokohama_f_marinos'},
+          {'label': '名古屋グランパス', 'value': 'nagoya_grampus'},
+          {'label': '東京ヴェルディ', 'value': 'tokyo_verdy'},
+          {'label': '水戸ホーリーホック', 'value': 'mito_hollyhock'},
+          {'label': 'V・ファーレン長崎', 'value': 'v_varen_nagasaki'},
+          {'label': 'ジェフユナイテッド市原・千葉', 'value': 'jef_united_chiba'},
+        ];
+      case 'italy':
+        return [
+          {'label': 'セリエA全チーム', 'value': 'serie_a_all_teams'},
+          {'label': 'ユベントス', 'value': 'juventus'},
+          {'label': 'ACミラン', 'value': 'ac_milan'},
+          {'label': 'インテルミラノ', 'value': 'inter_milan'},
+        ];
+      case 'spain':
+        return [
+          {'label': 'ラリーガ全チーム', 'value': 'la_liga_all_teams'},
+          {'label': 'レアルマドリード', 'value': 'real_madrid'},
+          {'label': 'バルセロナ', 'value': 'barcelona'},
+          {'label': 'アトレティコマドリード', 'value': 'atletico_madrid'},
+        ];
+      case 'england':
+        return [
+          {'label': 'プレミアリーグ全チーム', 'value': 'premier_league_all_teams'},
+          {'label': 'リバプール', 'value': 'liverpool'},
+          {'label': 'アーセナル', 'value': 'arsenal'},
+          {'label': 'マンチェスターシティ', 'value': 'manchester_city'},
+          {'label': 'マンチェスターユナイテッド', 'value': 'manchester_united'},
+          {'label': 'チェルシー', 'value': 'chelsea'},
+        ];
+      default:
+        return [];
+    }
+  }
+
+  Widget _buildRegionFilter() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          '地域',
+          style: TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+            color: AppColors.techIndigo,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 8,
+          children: [
+            _buildFilterChip(
+              '日本',
+              _selectedRegion == 'japan',
+              () => setState(() {
+                _selectedRegion = 'japan';
+                _resetAndLoadQuestions();
+              }),
+            ),
+            _buildFilterChip(
+              '世界',
+              _selectedRegion == 'world',
+              () => setState(() {
+                _selectedRegion = 'world';
+                _resetAndLoadQuestions();
+              }),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  Widget _buildFilterChip(String label, bool isSelected, VoidCallback onTap) {
+    return FilterChip(
+      label: Text(label),
+      selected: isSelected,
+      onSelected: (_) => onTap(),
+      selectedColor: AppColors.techBlue.withValues(alpha: 0.3),
+      checkmarkColor: AppColors.techIndigo,
+    );
+  }
+
+  bool _canLoadQuestions() {
+    if (_selectedCategory == AppConstants.categoryTeams) {
+      return _selectedTeam != null && _selectedTeam!.isNotEmpty;
+    }
+    return true;
+  }
+
+  void _resetAndLoadQuestions() {
+    setState(() {
+      _questions.clear();
+      _offset = 0;
+      _hasMore = true;
+    });
+    _loadInitialQuestions();
+  }
+
+  Future<void> _loadInitialQuestions() async {
+    if (!_canLoadQuestions()) return;
+    if (_isLoading) return;
+
+    setState(() {
+      _isLoading = true;
+      _offset = 0;
+      _hasMore = true;
+    });
+
+    try {
+      final questionService = ref.read(questionServiceProvider);
+      final batch = await questionService.getQuestionsForUnlockScreen(
+        category: _selectedCategory!,
+        difficulty: _selectedDifficulty!,
+        country: _selectedCategory == AppConstants.categoryTeams
+            ? _selectedCountry
+            : null,
+        region: _selectedCategory == AppConstants.categoryHistory
+            ? _selectedRegion
+            : null,
+        team: _selectedTeam,
+        limit: AppConstants.questionUnlockPageSize,
+        offset: 0,
+      );
+
+      if (mounted) {
+        setState(() {
+          _questions.clear();
+          _questions.addAll(batch);
+          _offset = batch.length;
+          _hasMore = batch.length >= AppConstants.questionUnlockPageSize;
+          _isLoading = false;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+          _hasMore = false;
+        });
+      }
+    }
+  }
+
+  Future<void> _loadMoreQuestions() async {
+    if (!_canLoadQuestions()) return;
+    if (_isLoadingMore || !_hasMore) return;
+
+    setState(() => _isLoadingMore = true);
+
+    try {
+      final questionService = ref.read(questionServiceProvider);
+      final batch = await questionService.getQuestionsForUnlockScreen(
+        category: _selectedCategory!,
+        difficulty: _selectedDifficulty!,
+        country: _selectedCategory == AppConstants.categoryTeams
+            ? _selectedCountry
+            : null,
+        region: _selectedCategory == AppConstants.categoryHistory
+            ? _selectedRegion
+            : null,
+        team: _selectedTeam,
+        limit: AppConstants.questionUnlockPageSize,
+        offset: _offset,
+      );
+
+      if (mounted) {
+        setState(() {
+          _questions.addAll(batch);
+          _offset += batch.length;
+          _hasMore = batch.length >= AppConstants.questionUnlockPageSize;
+          _isLoadingMore = false;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _hasMore = false;
+          _isLoadingMore = false;
+        });
+      }
+    }
+  }
+
+  Widget _buildUnlockedQuestionsList(
+      AsyncValue<List<String>> unlockedQuestionIdsAsync,
+      {bool showUnlocked = false}) {
+    return unlockedQuestionIdsAsync.when(
+      data: (unlockedIds) {
+        // Set化してcontainsをO(1)に
+        final unlockedIdsSet = Set<String>.from(unlockedIds);
+
+        // チームクイズでチーム未選択の場合はプロンプト表示
+        if (_selectedCategory == AppConstants.categoryTeams &&
+            (_selectedTeam == null || _selectedTeam!.isEmpty)) {
+          return Center(
+            child: Padding(
+              padding: const EdgeInsets.all(24),
+              child: Text(
+                'チームを選択してください',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.grey.shade600,
+                ),
+              ),
+            ),
+          );
+        }
+
+        // 初回ロードのトリガー
+        if (_questions.isEmpty && !_isLoading && _canLoadQuestions()) {
+          setState(() => _isLoading = true);
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            _loadInitialQuestions();
+          });
+        }
+
+        if (_isLoading && _questions.isEmpty) {
+          return const Center(child: CircularProgressIndicator());
+        }
+
+        final filteredQuestions = showUnlocked
+            ? _questions.where((q) => unlockedIdsSet.contains(q.id)).toList()
+            : _questions.where((q) => !unlockedIdsSet.contains(q.id)).toList();
+
+        if (filteredQuestions.isEmpty && !_isLoading) {
+          return Center(
+            child: Text(
+              showUnlocked
+                  ? '開放済みの問題がありません'
+                  : 'すべての問題が開放済みです',
+              style: const TextStyle(color: Colors.grey),
+            ),
+          );
+        }
+
+        return ListView.builder(
+          key: ValueKey('${_getQuestionsKey()}_$showUnlocked'),
+          controller: showUnlocked ? _scrollController2 : _scrollController1,
+          padding: const EdgeInsets.all(16),
+          itemCount: filteredQuestions.length + (_isLoadingMore ? 1 : 0),
+          itemBuilder: (context, index) {
+            if (index >= filteredQuestions.length) {
+              return const Padding(
+                padding: EdgeInsets.symmetric(vertical: 16),
+                child: Center(child: CircularProgressIndicator()),
+              );
+            }
+            final question = filteredQuestions[index];
+            final isUnlocked = unlockedIdsSet.contains(question.id);
+            return _buildQuestionCard(question, isUnlocked);
+          },
+        );
+      },
+      loading: () => const Center(child: CircularProgressIndicator()),
+      error: (error, stack) => Center(
+        child: Text('エラー: $error'),
+      ),
+    );
+  }
+
+  String _getQuestionsKey() {
+    return '${_selectedCategory}_${_selectedDifficulty}_${_selectedRegion ?? ''}_${_selectedCountry ?? ''}_${_selectedTeam ?? ''}';
+  }
+
+  Widget _buildQuestionCard(Question question, bool isUnlocked) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: GlassMorphismWidget(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // 問題文のプレビュー
+            Text(
+              question.text,
+              style: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+                color: AppColors.techIndigo,
+              ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
+            const SizedBox(height: 8),
+
+            // カテゴリと難易度
+            Row(
+              children: [
+                _buildInfoChip(
+                  CategoryDifficultyUtils.getCategoryName(question.category),
+                  Colors.blue,
+                ),
+                const SizedBox(width: 8),
+                _buildInfoChip(
+                  CategoryDifficultyUtils.getDifficultyName(
+                      question.difficulty),
+                  Colors.orange,
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+
+            // アクションボタン
+            if (!isUnlocked) ...[
+              // 無料解放ボタン（残り回数がある場合）
+              if (_remainingFreeUnlocks > 0)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton.icon(
+                      onPressed: () => _unlockQuestionFree(question),
+                      icon: const Icon(Icons.play_circle_outline, size: 18),
+                      label: Text('広告を見て無料開放（残り$_remainingFreeUnlocks回）'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.stitchEmerald,
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              // PT消費で開放ボタン
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () => _unlockQuestion(question),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.techBlue,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Icon(Icons.lock_open, size: 18),
+                      const SizedBox(width: 8),
+                      Text('${HISTORY_UNLOCK.singleQuestionCost} PTで開放'),
+                    ],
+                  ),
+                ),
+              ),
+            ] else ...[
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () => _viewQuestion(question),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.techGreen,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.visibility, size: 18),
+                      SizedBox(width: 8),
+                      Text('見る'),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildInfoChip(String label, Color color) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.2),
+        borderRadius: BorderRadius.circular(4),
+      ),
+      child: Text(
+        label,
+        style: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w600,
+          color: color,
+        ),
+      ),
+    );
+  }
+
+  Future<void> _unlockQuestion(Question question) async {
+    final totalPoints = ref.read(totalPointsProvider);
+
+    if (totalPoints < HISTORY_UNLOCK.singleQuestionCost) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+                'ポイントが不足しています。${HISTORY_UNLOCK.singleQuestionCost}ポイント必要です。'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+      return;
+    }
+
+    // 確認ダイアログ
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('問題を開放しますか？'),
+        content: Text(
+          '${HISTORY_UNLOCK.singleQuestionCost}ポイントを消費してこの問題を開放します。',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('キャンセル'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.techBlue,
+            ),
+            child: const Text('開放する'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    try {
+      await ref.read(unlockQuestionProvider(question.id).future);
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('問題を開放しました！'),
+            backgroundColor: Colors.green,
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('エラー: $e'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
+  }
+
+  Future<void> _unlockQuestionFree(Question question) async {
+    final adService = ref.read(adServiceProvider);
+    
+    if (!adService.isRewardedAdReady) {
+      await adService.loadRewardedAd(
+        onRewarded: (_, __) {},
+        onError: (error) {
+          debugPrint('広告読み込みエラー: $error');
+        },
+      );
+    }
+
+    if (!adService.isRewardedAdReady) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('広告の読み込みに失敗しました'),
+          backgroundColor: Colors.orange,
+        ),
+      );
+      return;
+    }
+
+    final success = await adService.showRewardedAd(
+      onRewarded: (_, __) async {
+        // 無料解放を使用
+        final used = await _historyUnlockService.useFreeUnlock();
+        if (!used) {
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('無料解放の残り回数がありません'),
+                backgroundColor: Colors.orange,
+              ),
+            );
+          }
+          return;
+        }
+
+        // 問題を開放（PT消費なし）
+        try {
+          final unlockService = ref.read(questionUnlockServiceProvider);
+          await unlockService.unlockQuestion(question.id, 0); // コスト0で開放
+          
+          // 開放済み問題リストを更新
+          ref.invalidate(unlockedQuestionIdsProvider);
+          ref.invalidate(unlockedQuestionsProvider);
+          
+          // 残り回数を更新
+          await _loadRemainingFreeUnlocks();
+          
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('問題を無料開放しました！'),
+                backgroundColor: Colors.green,
+              ),
+            );
+          }
+        } catch (e) {
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text('エラー: $e'),
+                backgroundColor: Colors.red,
+              ),
+            );
+          }
+        }
+      },
+      onError: (error) {
+        debugPrint('広告表示エラー: $error');
+      },
+    );
+
+    if (!success && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('広告を表示できませんでした'),
+          backgroundColor: Colors.orange,
+        ),
+      );
+    }
+  }
+
+  void _viewQuestion(Question question) {
+    context.push('/question-view?questionId=${question.id}');
+  }
+}

@@ -125,7 +125,7 @@ class LoginBonusNotifier extends StateNotifier<LoginBonusStatus> {
     return result;
   }
 
-  /// 広告視聴後にポイントをAD_BONUS.LOGIN_BONUS_MULTIPLIER倍にする
+  /// 広告視聴後にポイントをadBonus.LOGIN_BONUS_MULTIPLIER倍にする
   Future<void> multiplyPointsWithAd() async {
     if (_claimedPoints == null) {
       throw Exception('ログインボーナスを受け取っていません');
@@ -135,8 +135,8 @@ class LoginBonusNotifier extends StateNotifier<LoginBonusStatus> {
       throw Exception('既に広告を視聴済みです');
     }
 
-    // AD_BONUS.LOGIN_BONUS_MULTIPLIER（2.0倍）を適用
-    final additionalPoints = (_claimedPoints! * AD_BONUS.loginBonusMultiplier).floor() - _claimedPoints!;
+    // adBonus.LOGIN_BONUS_MULTIPLIER（2.0倍）を適用
+    final additionalPoints = (_claimedPoints! * adBonus.loginBonusMultiplier).floor() - _claimedPoints!;
     await _ref.read(totalPointsProvider.notifier).addPoints(additionalPoints);
     _hasWatchedAd = true;
     

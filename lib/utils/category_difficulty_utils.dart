@@ -13,6 +13,8 @@ class CategoryDifficultyUtils {
         return 'チームクイズ';
       case AppConstants.categoryMatchRecap:
         return 'Monday Match Recap';
+      case AppConstants.categoryDailyQuiz:
+        return 'Daily Quiz';
       default:
         return category;
     }

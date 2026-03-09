@@ -70,28 +70,32 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
       // Weekly Recapの場合、出題済み問題IDを取得
       List<String>? excludeIds;
-      if (widget.category == AppConstants.categoryMatchRecap && 
-          widget.leagueType != null && 
+      if (widget.category == AppConstants.categoryMatchRecap &&
+          widget.leagueType != null &&
           widget.leagueType!.isNotEmpty) {
         excludeIds = await databaseService.getPlayedQuestionIds(widget.leagueType!);
       }
 
-      // tagsパラメータは使用しない（regionフィールドとteam_idフィールドで検索するため）
-
-      final questions = await questionService.getQuestions(
-        category: widget.category,
-        difficulty: widget.category == AppConstants.categoryMatchRecap
-            ? '' // Weekly Recapの場合は難易度を渡さない
-            : widget.difficulty,
-        tags: null, // tagsパラメータは使用しない
-        country: widget.country.isNotEmpty ? widget.country : null,
-        region: widget.region.isNotEmpty ? widget.region : null,
-        team: widget.team.isNotEmpty ? widget.team : null,
-        date: widget.date,
-        leagueType: widget.leagueType,
-        limit: AppConstants.defaultQuestionsPerQuiz,
-        excludeIds: excludeIds, // 出題済み問題を除外
-      );
+      List<Question> questions;
+      if (widget.category == AppConstants.categoryDailyQuiz) {
+        questions = await questionService.getDailyQuizQuestions();
+      } else {
+        // tagsパラメータは使用しない（regionフィールドとteam_idフィールドで検索するため）
+        questions = await questionService.getQuestions(
+          category: widget.category,
+          difficulty: widget.category == AppConstants.categoryMatchRecap
+              ? '' // Weekly Recapの場合は難易度を渡さない
+              : widget.difficulty,
+          tags: null, // tagsパラメータは使用しない
+          country: widget.country.isNotEmpty ? widget.country : null,
+          region: widget.region.isNotEmpty ? widget.region : null,
+          team: widget.team.isNotEmpty ? widget.team : null,
+          date: widget.date,
+          leagueType: widget.leagueType,
+          limit: AppConstants.defaultQuestionsPerQuiz,
+          excludeIds: excludeIds, // 出題済み問題を除外
+        );
+      }
 
       if (!mounted) return;
 
@@ -109,6 +113,16 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
       if (_questions.isEmpty) {
         if (mounted) {
+          if (widget.category == AppConstants.categoryDailyQuiz) {
+            showErrorDialog(
+              context,
+              title: 'データが見つかりません',
+              message: 'Daily Quiz用のデータが不足しています。しばらくしてから再度お試しください。',
+              showRetry: false,
+              onClose: () => context.pop(),
+            );
+            return;
+          }
           // 詳細なエラーメッセージを構築
           final categoryName = CategoryDifficultyUtils.getCategoryName(widget.category);
           final difficultyName = widget.difficulty.isNotEmpty
@@ -305,9 +319,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                             ],
                           ),
                         ),
-                      // 難易度の表示（recap問題の場合のみ）
+                      // 難易度の表示（recap問題またはDaily Quizの場合）
                       if (currentQuestion.category ==
-                          AppConstants.categoryMatchRecap)
+                              AppConstants.categoryMatchRecap ||
+                          widget.category == AppConstants.categoryDailyQuiz)
                         Padding(
                           padding: EdgeInsets.only(
                             bottom: currentQuestion.referenceDate != null &&
@@ -628,8 +643,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
   void _nextQuestion(bool isLastQuestion) async {
     if (isLastQuestion) {
-      // MATCH DAYかどうかを判定
+      // MATCH DAY / Daily Quiz かどうかを判定
       final isMatchDay = widget.category == AppConstants.categoryMatchRecap;
+      final isDailyQuiz = widget.category == AppConstants.categoryDailyQuiz;
       final databaseService = ref.read(databaseServiceProvider);
 
       int earnedExp = 0;
@@ -639,24 +655,24 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         // MATCH DAYの場合はリーグタイプ別にプレイ回数を取得してから記録
         final leagueType = widget.leagueType ?? AppConstants.leagueTypeJ1;
         await databaseService.recordMatchDayPlayByLeagueType(leagueType);
-        
+
         // 出題済み問題を記録
         final questionIds = _questions.map((q) => q.id).toList();
         await databaseService.recordWeeklyRecapQuestionPlay(leagueType, questionIds);
-        
+
         // 週間正答数の合計を取得（リーグタイプ別）
         final weeklyCorrectTotal = await databaseService.getMatchDayWeeklyCorrectTotalByLeagueType(leagueType);
-        
+
         // 全体のプレイ回数を取得（報酬計算用）
         final j1PlayCount = await databaseService.getMatchDayPlayCountByLeagueType(AppConstants.leagueTypeJ1);
         final europePlayCount = await databaseService.getMatchDayPlayCountByLeagueType(AppConstants.leagueTypeEurope);
         final totalPlayCount = j1PlayCount + europePlayCount;
-        
+
         // 全体の週間正答数の合計を取得（報酬計算用）
         final j1CorrectTotal = await databaseService.getMatchDayWeeklyCorrectTotalByLeagueType(AppConstants.leagueTypeJ1);
         final europeCorrectTotal = await databaseService.getMatchDayWeeklyCorrectTotalByLeagueType(AppConstants.leagueTypeEurope);
         final totalWeeklyCorrectTotal = j1CorrectTotal + europeCorrectTotal + _score;
-        
+
         // MATCH DAY報酬を計算（広告視聴はまだしていないのでfalse）
         final reward = RewardCalculator.calculateMatchDayReward(
           correctCount: _score,
@@ -666,9 +682,19 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         );
         earnedExp = reward.$1;
         earnedPoints = reward.$2;
-        
+
         // 週間正答数を更新（リーグタイプ別）
         await databaseService.updateMatchDayWeeklyCorrectTotalByLeagueType(leagueType, weeklyCorrectTotal + _score);
+      } else if (isDailyQuiz) {
+        // Daily Quizの場合はプレイを記録し、NORMAL報酬で計算
+        await databaseService.recordDailyQuizPlay();
+        final reward = RewardCalculator.calculateRegularQuizReward(
+          difficulty: 'NORMAL',
+          correctCount: _score,
+          watchedAd: false, // 広告視聴は結果画面で行う
+        );
+        earnedExp = reward.$1;
+        earnedPoints = reward.$2;
       } else {
         // 定常クイズの報酬を計算
         final difficultyUpper = widget.difficulty.toUpperCase();
@@ -689,8 +715,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           'exp': '$earnedExp',
           'points': '$earnedPoints',
           'category': widget.category,
-          'difficulty': widget.difficulty,
+          'difficulty': isDailyQuiz ? 'normal' : widget.difficulty,
           'isMatchDay': isMatchDay.toString(),
+          'isDailyQuiz': isDailyQuiz.toString(),
         },
       );
       if (mounted) {

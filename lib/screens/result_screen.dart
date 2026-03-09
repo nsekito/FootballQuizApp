@@ -24,6 +24,7 @@ class ResultScreen extends ConsumerStatefulWidget {
   final String category;
   final String difficulty;
   final bool isMatchDay;
+  final bool isDailyQuiz;
 
   const ResultScreen({
     super.key,
@@ -34,6 +35,7 @@ class ResultScreen extends ConsumerStatefulWidget {
     required this.category,
     required this.difficulty,
     this.isMatchDay = false,
+    this.isDailyQuiz = false,
   });
 
   @override
@@ -135,10 +137,10 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
       var finalExp = _earnedExp;
       var finalPoints = _earnedPoints;
 
-      // 広告視聴の場合、AD_BONUS.RESULT_SCREEN_MULTIPLIER（0.5倍）を適用して加算
+      // 広告視聴の場合、adBonus.RESULT_SCREEN_MULTIPLIER（0.5倍）を適用して加算
       if (withAd) {
-        final adBonusExp = math.max(0, (_earnedExp * AD_BONUS.resultScreenMultiplier).floor());
-        final adBonusPoints = math.max(0, (_earnedPoints * AD_BONUS.resultScreenMultiplier).floor());
+        final adBonusExp = math.max(0, (_earnedExp * adBonus.resultScreenMultiplier).floor());
+        final adBonusPoints = math.max(0, (_earnedPoints * adBonus.resultScreenMultiplier).floor());
         finalExp += adBonusExp;
         finalPoints += adBonusPoints;
       }

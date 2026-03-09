@@ -37,19 +37,19 @@ final unlockQuestionProvider =
   final totalPoints = ref.watch(totalPointsProvider);
 
   // ポイントが十分かチェック
-  if (totalPoints < HISTORY_UNLOCK.singleQuestionCost) {
+  if (totalPoints < historyUnlock.singleQuestionCost) {
     throw Exception(
-        'ポイントが不足しています。${HISTORY_UNLOCK.singleQuestionCost}ポイント必要です。');
+        'ポイントが不足しています。${historyUnlock.singleQuestionCost}ポイント必要です。');
   }
 
   // ポイントを消費
   await ref
       .read(totalPointsProvider.notifier)
-      .consumePoints(HISTORY_UNLOCK.singleQuestionCost);
+      .consumePoints(historyUnlock.singleQuestionCost);
 
   // 問題を開放
   final success = await unlockService.unlockQuestion(
-      questionId, HISTORY_UNLOCK.singleQuestionCost);
+      questionId, historyUnlock.singleQuestionCost);
 
   // 開放済み問題リストを更新
   ref.invalidate(unlockedQuestionIdsProvider);

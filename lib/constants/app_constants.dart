@@ -21,6 +21,7 @@ class AppConstants {
   static const String categoryHistory = 'history';
   static const String categoryTeams = 'teams';
   static const String categoryMatchRecap = 'match_recap';
+  static const String categoryDailyQuiz = 'daily_quiz';
 
   // 難易度
   static const String difficultyEasy = 'easy';
@@ -46,4 +47,10 @@ class AppConstants {
 
   // レスポンシブデザイン
   static const double maxContentWidth = 600.0;
+
+  // 背景画像パス（Featured Cards）
+  static const String assetStadiumBackground =
+      'assets/images/03_Backgrounds/stadium_background.png';
+  static const String assetDailyQuizBackground =
+      'assets/images/03_Backgrounds/daily_quiz_background.png';
 }

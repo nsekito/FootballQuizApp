@@ -71,6 +71,141 @@ class QuestionService {
     );
   }
 
+  /// Daily Quiz用の問題を取得
+  /// チーム4問(easy2, normal1, hard1)、歴史3問(easy1, normal2, hard0)、ルール3問(easy1, normal1, hard1)
+  /// 合計: easy4, normal4, hard2
+  Future<List<Question>> getDailyQuizQuestions() async {
+    final allQuestions = <Question>[];
+    final usedIds = <String>{};
+
+    // チーム: easy 2, normal 1, hard 1
+    final teamEasy = await _databaseService.getQuestions(
+      category: AppConstants.categoryTeams,
+      difficulty: AppConstants.difficultyEasy,
+      team: 'j1_all_teams',
+      limit: 3,
+    );
+    final teamNormal = await _databaseService.getQuestions(
+      category: AppConstants.categoryTeams,
+      difficulty: AppConstants.difficultyNormal,
+      team: 'j1_all_teams',
+      limit: 2,
+    );
+    final teamHard = await _databaseService.getQuestions(
+      category: AppConstants.categoryTeams,
+      difficulty: AppConstants.difficultyHard,
+      team: 'j1_all_teams',
+      limit: 2,
+    );
+
+    _addUniqueQuestions(allQuestions, usedIds, teamEasy, 2);
+    _addUniqueQuestions(allQuestions, usedIds, teamNormal, 1);
+    _addUniqueQuestions(allQuestions, usedIds, teamHard, 1);
+
+    // 歴史: easy 1, normal 2
+    final historyEasy = await _databaseService.getQuestions(
+      category: AppConstants.categoryHistory,
+      difficulty: AppConstants.difficultyEasy,
+      limit: 2,
+    );
+    final historyNormal = await _databaseService.getQuestions(
+      category: AppConstants.categoryHistory,
+      difficulty: AppConstants.difficultyNormal,
+      limit: 3,
+    );
+
+    _addUniqueQuestions(allQuestions, usedIds, historyEasy, 1);
+    _addUniqueQuestions(allQuestions, usedIds, historyNormal, 2);
+
+    // ルール: easy 1, normal 1, hard 1
+    final ruleEasy = await _databaseService.getQuestions(
+      category: AppConstants.categoryRules,
+      difficulty: AppConstants.difficultyEasy,
+      limit: 2,
+    );
+    final ruleNormal = await _databaseService.getQuestions(
+      category: AppConstants.categoryRules,
+      difficulty: AppConstants.difficultyNormal,
+      limit: 2,
+    );
+    final ruleHard = await _databaseService.getQuestions(
+      category: AppConstants.categoryRules,
+      difficulty: AppConstants.difficultyHard,
+      limit: 2,
+    );
+
+    _addUniqueQuestions(allQuestions, usedIds, ruleEasy, 1);
+    _addUniqueQuestions(allQuestions, usedIds, ruleNormal, 1);
+    _addUniqueQuestions(allQuestions, usedIds, ruleHard, 1);
+
+    // データ不足時は他難易度・他カテゴリで補完
+    if (allQuestions.length < 10) {
+      final needed = 10 - allQuestions.length;
+      final fallback = await _databaseService.getQuestions(
+        category: AppConstants.categoryTeams,
+        difficulty: AppConstants.difficultyEasy,
+        team: 'j1_all_teams',
+        limit: needed + 5,
+      );
+      for (final q in fallback) {
+        if (allQuestions.length >= 10) break;
+        if (!usedIds.contains(q.id)) {
+          allQuestions.add(q);
+          usedIds.add(q.id);
+        }
+        if (allQuestions.length >= 10) break;
+      }
+      if (allQuestions.length < 10) {
+        final moreHistory = await _databaseService.getQuestions(
+          category: AppConstants.categoryHistory,
+          difficulty: AppConstants.difficultyNormal,
+          limit: needed + 5,
+        );
+        for (final q in moreHistory) {
+          if (allQuestions.length >= 10) break;
+          if (!usedIds.contains(q.id)) {
+            allQuestions.add(q);
+            usedIds.add(q.id);
+          }
+        }
+      }
+      if (allQuestions.length < 10) {
+        final moreRules = await _databaseService.getQuestions(
+          category: AppConstants.categoryRules,
+          difficulty: AppConstants.difficultyEasy,
+          limit: needed + 5,
+        );
+        for (final q in moreRules) {
+          if (allQuestions.length >= 10) break;
+          if (!usedIds.contains(q.id)) {
+            allQuestions.add(q);
+            usedIds.add(q.id);
+          }
+        }
+      }
+    }
+
+    allQuestions.shuffle();
+    return allQuestions.take(10).toList();
+  }
+
+  void _addUniqueQuestions(
+    List<Question> target,
+    Set<String> usedIds,
+    List<Question> source,
+    int count,
+  ) {
+    var added = 0;
+    for (final q in source) {
+      if (added >= count) break;
+      if (!usedIds.contains(q.id)) {
+        target.add(q);
+        usedIds.add(q.id);
+        added++;
+      }
+    }
+  }
+
   /// 問題開放画面用: ページネーション対応の軽量取得
   ///
   /// getQuestionsOptimizedは使用せず、ORDER BY idでoffset/limitを指定。
@@ -174,10 +309,14 @@ class QuestionService {
       
       // フィルタリング後の問題数が十分でない場合は、リモートから取得
       if (filtered.length < (limit ?? 10)) {
-        final remoteQuestions = await _remoteDataService.fetchWeeklyRecapQuestions(
-          date: date,
-          leagueType: leagueType,
-        );
+        final remoteQuestions = date != null
+            ? await _remoteDataService.fetchWeeklyRecapQuestions(
+                date: date,
+                leagueType: leagueType,
+              )
+            : await _remoteDataService.fetchWeeklyRecapQuestionsWithDateFallback(
+                leagueType: leagueType,
+              );
         // 出題済み問題を除外
         var remoteFiltered = remoteQuestions;
         if (finalExcludeIds != null && finalExcludeIds.isNotEmpty) {
@@ -201,11 +340,15 @@ class QuestionService {
       );
     }
     
-    // ローカルDBにデータがない場合はリモートから取得
-    final questions = await _remoteDataService.fetchWeeklyRecapQuestions(
-      date: date,
-      leagueType: leagueType,
-    );
+    // ローカルDBにデータがない場合はリモートから取得（404時は過去週を試行）
+    final questions = date != null
+        ? await _remoteDataService.fetchWeeklyRecapQuestions(
+            date: date,
+            leagueType: leagueType,
+          )
+        : await _remoteDataService.fetchWeeklyRecapQuestionsWithDateFallback(
+            leagueType: leagueType,
+          );
     
     // 出題済み問題を除外
     var finalQuestions = questions;

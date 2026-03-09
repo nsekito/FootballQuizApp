@@ -54,8 +54,8 @@ class QuizRewardsConfig {
 }
 
 final Map<String, QuizRewardsConfig> quizRewards = {
-  // MATCHDAY報酬（広告視聴6回対応のため、基本報酬を半分に調整）
-  'MATCHDAY': const QuizRewardsConfig(rewards: {
+  // matchDay報酬（広告視聴6回対応のため、基本報酬を半分に調整）
+  'matchDay': const QuizRewardsConfig(rewards: {
     '0-3': QuizReward(exp: 7, pt: 4),      // 15→7, 8→4
     '4-5': QuizReward(exp: 12, pt: 10),    // 25→12, 20→10
     '6-7': QuizReward(exp: 22, pt: 20),    // 45→22, 40→20
@@ -117,7 +117,7 @@ class WeeklyBonusConfig {
 // MATCHDAY設定
 // 広告視聴で最大6回プレイ可能（J1とEuropeをそれぞれ3回ずつ）
 // 基本報酬は半分に調整されているため、ポイントの価値を維持
-const MATCHDAY = MatchDayConfig(
+const matchDay = MatchDayConfig(
   maxPlaysPerWeek: 6,  // 総プレイ回数（リーグタイプ別に3回ずつ）
   playMultipliers: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],  // 基本報酬が半分なので、すべて1.0倍
   weeklyBonus: WeeklyBonusConfig(
@@ -126,6 +126,21 @@ const MATCHDAY = MatchDayConfig(
     bonusExp: 50,
     bonusPt: 30,
   ),
+);
+
+// ============================================
+// DAILY QUIZ設定
+// ============================================
+class DailyQuizConfig {
+  final int maxPlaysPerDay;
+
+  const DailyQuizConfig({
+    required this.maxPlaysPerDay,
+  });
+}
+
+const dailyQuiz = DailyQuizConfig(
+  maxPlaysPerDay: 2,
 );
 
 // ============================================
@@ -145,7 +160,7 @@ class AdBonusConfig {
   });
 }
 
-const AD_BONUS = AdBonusConfig(
+const adBonus = AdBonusConfig(
   resultScreenMultiplier: 0.5,
   loginBonusMultiplier: 2.0,
   historyFreeUnlockDailyLimit: 3,
@@ -165,7 +180,7 @@ class LoginBonusConfig {
   });
 }
 
-const LOGIN_BONUS = LoginBonusConfig(
+const loginBonus = LoginBonusConfig(
   // 1日目: 2pt, 2日目: 2pt, 3日目: 2pt, 4日目: 4pt, 5日目: 2pt, 6日目: 2pt, 7日目: 10pt
   dailyPt: [2, 2, 2, 4, 2, 2, 10],
   consecutive7DayBonusExp: 20,
@@ -206,7 +221,7 @@ class UnlockDifficultyConfig {
   });
 }
 
-final Map<String, UnlockCategoryConfig> UNLOCK_CONFIG = {
+final Map<String, UnlockCategoryConfig> unlockConfig = {
   'NORMAL': const UnlockCategoryConfig(
     rule: UnlockDifficultyConfig(
       cost: 120,
@@ -280,7 +295,7 @@ class HistoryUnlockConfig {
   });
 }
 
-const HISTORY_UNLOCK = HistoryUnlockConfig(
+const historyUnlock = HistoryUnlockConfig(
   singleQuestionCost: 3,
   bundle10Cost: 25,
 );

@@ -13,7 +13,7 @@ import '../utils/app_date_utils.dart';
 class DatabaseService {
   static Database? _database;
   static const String _databaseName = 'questions.db';  // アセットファイル名と一致させる
-  static const int _databaseVersion = 10;  // バージョンを上げて新しいデータベースを強制的に適用
+  static const int _databaseVersion = 11;  // バージョンを上げて新しいデータベースを強制的に適用
   
   // キャッシュ用のマップ（問題ID -> Question）
   final Map<String, Question> _questionCache = {};
@@ -280,6 +280,7 @@ class DatabaseService {
       'recap_sync_history',
       'match_day_play_history',
       'weekly_recap_question_history',
+      'daily_quiz_play_history',
       'unlocked_questions',
     ];
     for (final table in tables) {
@@ -500,6 +501,17 @@ class DatabaseService {
     
     await db.execute('''
       CREATE INDEX IF NOT EXISTS idx_unlocked_questions_unlocked_at ON unlocked_questions(unlocked_at)
+    ''');
+
+    // Daily Quizプレイ履歴テーブル
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS daily_quiz_play_history (
+        play_date TEXT PRIMARY KEY,
+        play_count INTEGER NOT NULL DEFAULT 0
+      )
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_daily_quiz_play_history_play_date ON daily_quiz_play_history(play_date)
     ''');
   }
 
@@ -883,6 +895,21 @@ class DatabaseService {
       }
       
       debugPrint('バージョン10へのマイグレーション完了');
+    }
+
+    // バージョン10から11へのマイグレーション
+    if (oldVersion < 11) {
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS daily_quiz_play_history (
+          play_date TEXT PRIMARY KEY,
+          play_count INTEGER NOT NULL DEFAULT 0
+        )
+      ''');
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_daily_quiz_play_history_play_date ON daily_quiz_play_history(play_date)
+      ''');
+      debugPrint('daily_quiz_play_historyテーブルを追加しました');
+      debugPrint('バージョン11へのマイグレーション完了');
     }
   }
 
@@ -1674,7 +1701,7 @@ class DatabaseService {
     
     // 今週のプレイ回数を取得
     final playCount = result.first['play_count'] as int;
-    // MATCHDAY.maxPlaysPerWeek = 3回まで
+    // matchDay.maxPlaysPerWeek = 3回まで
     return playCount < 3;
   }
 
@@ -2006,6 +2033,73 @@ class DatabaseService {
       where: 'week_start_date = ?',
       whereArgs: [weekStartDate],
     );
+  }
+
+  /// daily_quiz_play_history テーブルが存在しない場合に作成する
+  Future<void> _ensureDailyQuizTable(Database db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS daily_quiz_play_history (
+        play_date TEXT PRIMARY KEY,
+        play_count INTEGER NOT NULL DEFAULT 0
+      )
+    ''');
+  }
+
+  /// Daily Quizの今日のプレイ回数を取得
+  Future<int> getDailyQuizPlayCount() async {
+    final db = await database;
+    await _ensureDailyQuizTable(db);
+    final playDate = AppDateUtils.getCurrentDateString();
+    
+    final result = await db.query(
+      'daily_quiz_play_history',
+      where: 'play_date = ?',
+      whereArgs: [playDate],
+    );
+    
+    if (result.isEmpty) {
+      return 0;
+    }
+    
+    return result.first['play_count'] as int;
+  }
+
+  /// Daily Quizのプレイを記録
+  Future<void> recordDailyQuizPlay() async {
+    final db = await database;
+    await _ensureDailyQuizTable(db);
+    final playDate = AppDateUtils.getCurrentDateString();
+    
+    final existing = await db.query(
+      'daily_quiz_play_history',
+      where: 'play_date = ?',
+      whereArgs: [playDate],
+    );
+    
+    if (existing.isEmpty) {
+      await db.insert(
+        'daily_quiz_play_history',
+        {
+          'play_date': playDate,
+          'play_count': 1,
+        },
+      );
+    } else {
+      final currentCount = existing.first['play_count'] as int;
+      await db.update(
+        'daily_quiz_play_history',
+        {'play_count': currentCount + 1},
+        where: 'play_date = ?',
+        whereArgs: [playDate],
+      );
+    }
+  }
+
+  /// Daily Quizのプレイ履歴をリセット
+  Future<void> resetDailyQuizPlayHistory() async {
+    final db = await database;
+    await _ensureDailyQuizTable(db);
+    await db.delete('daily_quiz_play_history');
   }
 
   /// Weekly Recap同期履歴を記録

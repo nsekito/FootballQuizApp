@@ -10,7 +10,7 @@ class PromotionExamService {
 
   PromotionExamService(this._ref);
 
-  /// カテゴリ名をUNLOCK_CONFIGのキーに変換
+  /// カテゴリ名をunlockConfigのキーに変換
   String _getCategoryKey(String category) {
     switch (category.toUpperCase()) {
       case 'RULES':
@@ -32,11 +32,11 @@ class PromotionExamService {
     final categoryKey = _getCategoryKey(category);
     final difficultyUpper = targetDifficulty.toUpperCase();
     
-    if (!UNLOCK_CONFIG.containsKey(difficultyUpper)) {
+    if (!unlockConfig.containsKey(difficultyUpper)) {
       return null;
     }
     
-    final categoryConfig = UNLOCK_CONFIG[difficultyUpper]!;
+    final categoryConfig = unlockConfig[difficultyUpper]!;
     switch (categoryKey) {
       case 'rule':
         return categoryConfig.rule;
@@ -136,7 +136,7 @@ class PromotionExamService {
     
     // 広告視聴時は割引
     if (watchedAd) {
-      retryCost = (retryCost * AD_BONUS.promotionExamRetryDiscount).floor();
+      retryCost = (retryCost * adBonus.promotionExamRetryDiscount).floor();
     }
     
     return retryCost;

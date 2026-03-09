@@ -76,16 +76,16 @@ class LoginBonusService {
     }
   }
 
-  /// 連続日数に応じたポイントを取得（LOGIN_BONUS.DAILY_PTを参照）
+  /// 連続日数に応じたポイントを取得（loginBonus.DAILY_PTを参照）
   /// 8日目以降は1日目に戻る（7日周期）
   int getLoginBonusPoints(int streakDay) {
     // 8日目以降は1日目に戻る（7日周期）
     final normalizedDay = ((streakDay - 1) % 7) + 1;
-    if (normalizedDay >= 1 && normalizedDay <= LOGIN_BONUS.dailyPt.length) {
-      return LOGIN_BONUS.dailyPt[normalizedDay - 1];
+    if (normalizedDay >= 1 && normalizedDay <= loginBonus.dailyPt.length) {
+      return loginBonus.dailyPt[normalizedDay - 1];
     }
     // フォールバック
-    return LOGIN_BONUS.dailyPt[0];
+    return loginBonus.dailyPt[0];
   }
 
   /// ログインボーナスを受け取る
@@ -129,7 +129,7 @@ class LoginBonusService {
     // 7日連続の場合はEXPも付与
     int exp = 0;
     if (newStreak == 7) {
-      exp = LOGIN_BONUS.consecutive7DayBonusExp;
+      exp = loginBonus.consecutive7DayBonusExp;
     }
     
     return {
@@ -181,7 +181,7 @@ class LoginBonusService {
     // 7日連続の場合はEXPも返す
     int exp = 0;
     if (streak == 7 && canClaim) {
-      exp = LOGIN_BONUS.consecutive7DayBonusExp;
+      exp = loginBonus.consecutive7DayBonusExp;
     }
     
     return {

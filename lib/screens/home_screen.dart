@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -40,10 +41,16 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
   String? _lastRoutePath;
   bool _hasShownLoginBonusDialog = false;
   bool _isFromTitleScreen = false;
+  late final PageController _featuredPageController;
+  int _featuredPageIndex = 0;
+  Timer? _autoScrollTimer;
+  Future<(bool canPlay, bool needsAd, int playCount, int remaining)>? _dailyQuizStatusFuture;
+  int? _dailyQuizStatusCacheKey;
 
   @override
   void initState() {
     super.initState();
+    _featuredPageController = PageController(initialPage: 500);
     _adHelper = RewardedAdHelper(
       ref: ref,
       onStateChanged: () => setState(() {}),
@@ -64,10 +71,29 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
       }
     });
     _adHelper.loadRewardedAd();
+    _startAutoScroll();
+  }
+
+  void _startAutoScroll() {
+    _autoScrollTimer?.cancel();
+    _autoScrollTimer = Timer.periodic(const Duration(seconds: 6), (_) {
+      if (!mounted || !_featuredPageController.hasClients) return;
+      final currentPage = _featuredPageController.page?.round() ?? 500;
+      final nextPage = currentPage + 1;
+      if (nextPage < 1000) {
+        _featuredPageController.animateToPage(
+          nextPage,
+          duration: const Duration(milliseconds: 400),
+          curve: Curves.easeInOut,
+        );
+      }
+    });
   }
 
   @override
   void dispose() {
+    _autoScrollTimer?.cancel();
+    _featuredPageController.dispose();
     WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
@@ -100,21 +126,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     }
   }
 
-  int _getDaysUntilNextWeek(DateTime date, {bool isMaxReached = false}) {
+  int _getDaysUntilNextWeek(DateTime date) {
     final now = DateTime.now();
-    final nextPlayableDate =
-        _getNextPlayableDate(date, isMaxReached: isMaxReached);
+    final nextPlayableDate = _getNextPlayableDate(date);
     final difference = nextPlayableDate.difference(now);
     final days = difference.inDays;
     return days + (difference.inHours % 24 > 0 ? 1 : 0);
   }
 
-  DateTime _getNextPlayableDate(DateTime date, {bool isMaxReached = false}) {
-    if (isMaxReached) {
-      return AppDateUtils.getWeekStartDate(date);
-    } else {
-      return AppDateUtils.getNextWeekStartDate(date);
-    }
+  DateTime _getNextPlayableDate(DateTime date) {
+    // 上限到達時も次回プレイ可能日は来週の月曜日
+    return AppDateUtils.getNextWeekStartDate(date);
   }
 
   /// MATCH DAYの詳細なステータス情報を取得（リーグタイプ別）
@@ -134,12 +156,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     final now = DateTime.now();
     final weekStart = AppDateUtils.getWeekStartDate(now);
     final weekEnd = AppDateUtils.getWeekEndDate(now);
-    final isMaxReached = totalPlayCount >= MATCHDAY.maxPlaysPerWeek;
-    final nextPlayableDate =
-        _getNextPlayableDate(now, isMaxReached: isMaxReached);
-    final daysUntilNextWeek =
-        _getDaysUntilNextWeek(now, isMaxReached: isMaxReached);
-    final remainingPlays = MATCHDAY.maxPlaysPerWeek - totalPlayCount;
+    final isMaxReached = totalPlayCount >= matchDay.maxPlaysPerWeek;
+    final nextPlayableDate = _getNextPlayableDate(now);
+    final daysUntilNextWeek = _getDaysUntilNextWeek(now);
+    final remainingPlays = matchDay.maxPlaysPerWeek - totalPlayCount;
 
     return {
       'canPlay': canPlay,
@@ -155,9 +175,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
       'daysUntilNextWeek': daysUntilNextWeek,
       'isFreePlay': totalPlayCount == 0,
       'isMaxReached': isMaxReached,
-      'multiplier': totalPlayCount < MATCHDAY.playMultipliers.length
-          ? MATCHDAY.playMultipliers[totalPlayCount]
-          : MATCHDAY.playMultipliers.last,
+      'multiplier': totalPlayCount < matchDay.playMultipliers.length
+          ? matchDay.playMultipliers[totalPlayCount]
+          : matchDay.playMultipliers.last,
     };
   }
 
@@ -171,6 +191,43 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
         _adHelper.loadRewardedAd();
       },
     );
+  }
+
+  Future<void> _handleDailyQuizTap(BuildContext context) async {
+    final dailyQuizService = ref.read(dailyQuizServiceProvider);
+    final (canPlay, needsAd) = await dailyQuizService.canPlayDailyQuiz();
+
+    if (!mounted) return;
+
+    if (!canPlay) {
+      if (!context.mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('本日のDaily Quizのプレイ回数が上限に達しています'),
+          backgroundColor: Colors.orange,
+          duration: Duration(seconds: 3),
+        ),
+      );
+      return;
+    }
+
+    if (needsAd) {
+      await _adHelper.showRewardedAd(
+        context: context,
+        onRewarded: () async {
+          if (!mounted) return;
+          context.push(
+            '/quiz?category=${AppConstants.categoryDailyQuiz}&difficulty=normal',
+          );
+          _adHelper.loadRewardedAd();
+        },
+      );
+    } else {
+      if (!context.mounted) return;
+      context.push(
+        '/quiz?category=${AppConstants.categoryDailyQuiz}&difficulty=normal',
+      );
+    }
   }
 
   Future<void> _handleMatchDayTap(BuildContext context) async {
@@ -209,7 +266,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
       if (!context.mounted) return;
       context
           .push('/configuration?category=${AppConstants.categoryMatchRecap}');
-    } else if (totalPlayCount < MATCHDAY.maxPlaysPerWeek) {
+    } else if (totalPlayCount < matchDay.maxPlaysPerWeek) {
       // 2回目以降は広告視聴で追加チャレンジ
       if (!mounted) return;
       await _showRewardedAdForMatchDay();
@@ -309,8 +366,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          // Featured Card (MATCH DAY)
-                          _buildFeaturedCard(context),
+                          // Featured Cards (MATCH DAY / Daily Quiz)
+                          _buildFeaturedSection(context),
                           const SizedBox(height: 24),
 
                           // ユーザー情報カード
@@ -448,13 +505,173 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     );
   }
 
-  Widget _buildFeaturedCard(BuildContext context) {
+  Widget _buildFeaturedSection(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SizedBox(
+          height: 300,
+          child: PageView.builder(
+            controller: _featuredPageController,
+            onPageChanged: (index) {
+              setState(() => _featuredPageIndex = index % 2);
+            },
+            itemCount: 1000,
+            itemBuilder: (context, index) {
+              return index.isEven
+                  ? _buildMatchDayCard(context)
+                  : _buildDailyQuizCard(context);
+            },
+          ),
+        ),
+        const SizedBox(height: 12),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: List.generate(2, (index) {
+            final isActive = _featuredPageIndex == index;
+            return GestureDetector(
+              onTap: () {
+                final currentPage = _featuredPageController.page?.round() ?? 500;
+                final targetPage = currentPage - (currentPage % 2) + index;
+                _featuredPageController.animateToPage(
+                  targetPage.clamp(0, 999),
+                  duration: const Duration(milliseconds: 300),
+                  curve: Curves.easeInOut,
+                );
+              },
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 200),
+                margin: const EdgeInsets.symmetric(horizontal: 4),
+                width: isActive ? 24 : 8,
+                height: 8,
+                decoration: BoxDecoration(
+                  color: isActive
+                      ? AppColors.techBlue
+                      : AppColors.slate400.withValues(alpha: 0.6),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              ),
+            );
+          }),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildCardPlaceholder({
+    required String title,
+    required List<Color> gradientColors,
+  }) {
+    return Container(
+      constraints: const BoxConstraints(minHeight: 280),
+      decoration: BoxDecoration(
+        borderRadius: const BorderRadius.all(Radius.circular(24)),
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: gradientColors,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.techBlue.withValues(alpha: 0.1),
+            blurRadius: 20,
+            offset: const Offset(0, 8),
+          ),
+        ],
+      ),
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              title,
+              style: TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.w900,
+                color: Colors.white.withValues(alpha: 0.9),
+                letterSpacing: 1.0,
+              ),
+            ),
+            const SizedBox(height: 16),
+            const SizedBox(
+              width: 24,
+              height: 24,
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.white70),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildFeaturedCardBackground({
+    required String imagePath,
+    required List<Color> fallbackGradientColors,
+    double overlayOpacityTop = 0.15,
+    double overlayOpacityBottom = 0.4,
+  }) {
+    return Stack(
+      children: [
+        Positioned.fill(
+          child: Image.asset(
+            imagePath,
+            fit: BoxFit.cover,
+            errorBuilder: (context, error, stackTrace) {
+              debugPrint('背景画像の読み込みエラー: $error');
+              return Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: fallbackGradientColors,
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+        Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Colors.black.withValues(alpha: overlayOpacityTop),
+                Colors.black.withValues(alpha: overlayOpacityBottom),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildMatchDayCard(BuildContext context) {
     return FutureBuilder<Map<String, dynamic>>(
       key: ValueKey(_refreshKey), // キーを追加して再構築を強制
       future: _getMatchDayDetailedStatus(),
       builder: (context, snapshot) {
+        if (snapshot.hasError) {
+          debugPrint('Match Day status error: ${snapshot.error}');
+          return _buildCardPlaceholder(
+            title: 'MATCH DAY',
+            gradientColors: [
+              AppColors.techBlue.withValues(alpha: 0.2),
+              AppColors.techIndigo.withValues(alpha: 0.6),
+            ],
+          );
+        }
         if (!snapshot.hasData) {
-          return const SizedBox.shrink();
+          return _buildCardPlaceholder(
+            title: 'MATCH DAY',
+            gradientColors: [
+              AppColors.techBlue.withValues(alpha: 0.2),
+              AppColors.techIndigo.withValues(alpha: 0.6),
+            ],
+          );
         }
 
         final data = snapshot.data!;
@@ -467,6 +684,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
         return AbsorbPointer(
           absorbing: !canPlay, // プレイ不可の場合はタップを無効化
           child: GestureDetector(
+            behavior: HitTestBehavior.opaque,
             onTap: canPlay ? () => _handleMatchDayTap(context) : null,
             child: Container(
               constraints: const BoxConstraints(minHeight: 280),
@@ -484,43 +702,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                 borderRadius: const BorderRadius.all(Radius.circular(24)),
                 child: Stack(
                   children: [
-                    // スタジアム背景画像
-                    Positioned.fill(
-                      child: Image.asset(
-                        'assets/images/03_Backgrounds/stadium_background.png',
-                        fit: BoxFit.cover,
-                        errorBuilder: (context, error, stackTrace) {
-                          // 画像が存在しない場合はグラデーションを表示
-                          debugPrint('スタジアム画像の読み込みエラー: $error');
-                          return Container(
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  AppColors.techBlue.withValues(alpha: 0.2),
-                                  AppColors.techIndigo.withValues(alpha: 0.6),
-                                ],
-                              ),
-                            ),
-                          );
-                        },
-                      ),
+                    _buildFeaturedCardBackground(
+                      imagePath: AppConstants.assetStadiumBackground,
+                      fallbackGradientColors: [
+                        AppColors.techBlue.withValues(alpha: 0.2),
+                        AppColors.techIndigo.withValues(alpha: 0.6),
+                      ],
                     ),
-                    // オーバーレイ（テキストの可読性を向上）
-                    Container(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Colors.black.withValues(alpha: 0.5),
-                            Colors.black.withValues(alpha: 0.8),
-                          ],
-                        ),
-                      ),
-                    ),
-                    // 右側の矢印アイコン（プレイ可能時のみ表示）
                     if (canPlay)
                       Positioned(
                         right: 16,
@@ -534,55 +722,61 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                           ),
                         ),
                       ),
-                    // コンテンツ
-                    Padding(
-                      padding: const EdgeInsets.all(24),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          ShaderMask(
-                            shaderCallback: (bounds) => LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [
-                                Colors.white,
-                                Colors.blue.shade100,
-                                Colors.cyan.shade200,
-                              ],
-                            ).createShader(bounds),
-                            child: const Text(
-                              'MATCH DAY',
-                              style: TextStyle(
-                                fontSize: 32,
-                                fontWeight: FontWeight.w900,
-                                color: Colors.white,
-                                letterSpacing: 1.0,
-                                shadows: [
-                                  Shadow(
-                                    offset: Offset(0, 3),
-                                    blurRadius: 12,
-                                    color: Colors.black,
-                                  ),
-                                  Shadow(
-                                    offset: Offset(0, 6),
-                                    blurRadius: 20,
-                                    color: Colors.black87,
-                                  ),
-                                  Shadow(
-                                    offset: Offset(0, 2),
-                                    blurRadius: 8,
-                                    color: Colors.blue,
-                                  ),
-                                ],
+                    Positioned(
+                      top: 24,
+                      left: 24,
+                      right: 24,
+                      child: ShaderMask(
+                        shaderCallback: (bounds) => LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [
+                            Colors.white,
+                            Colors.blue.shade100,
+                            Colors.cyan.shade200,
+                          ],
+                        ).createShader(bounds),
+                        child: const Text(
+                          'MATCH DAY',
+                          style: TextStyle(
+                            fontSize: 32,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.white,
+                            letterSpacing: 1.0,
+                            shadows: [
+                              Shadow(
+                                offset: Offset(0, 3),
+                                blurRadius: 12,
+                                color: Colors.black,
                               ),
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                            ),
+                              Shadow(
+                                offset: Offset(0, 6),
+                                blurRadius: 20,
+                                color: Colors.black87,
+                              ),
+                              Shadow(
+                                offset: Offset(0, 2),
+                                blurRadius: 8,
+                                color: Colors.blue,
+                              ),
+                            ],
                           ),
-                          const SizedBox(height: 24),
-                          // 状態に応じた情報表示
-                          if (isMaxReached) ...[
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 24,
+                      right: 24,
+                      top: 0,
+                      bottom: 0,
+                      child: Center(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            if (isMaxReached) ...[
                             // 上限到達時
                             Container(
                               padding: const EdgeInsets.all(12),
@@ -688,102 +882,84 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                               ),
                             ),
                           ],
-                          const SizedBox(height: 12),
-                          Container(
-                            width: double.infinity,
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 20, vertical: 16),
-                            decoration: BoxDecoration(
-                              gradient: canPlay
-                                  ? LinearGradient(
-                                      begin: Alignment.topLeft,
-                                      end: Alignment.bottomRight,
-                                      colors: [
-                                        Colors.blue.shade400
-                                            .withValues(alpha: 0.2),
-                                        Colors.cyan.shade400
-                                            .withValues(alpha: 0.1),
-                                        AppColors.techBlue
-                                            .withValues(alpha: 0.15),
-                                      ],
-                                    )
-                                  : null,
-                              color: canPlay ? null : Colors.grey.shade300,
-                              borderRadius:
-                                  const BorderRadius.all(Radius.circular(16)),
-                              border: canPlay
-                                  ? Border.all(
-                                      color:
-                                          Colors.white.withValues(alpha: 0.3),
-                                      width: 1.5,
-                                    )
-                                  : null,
-                              boxShadow: canPlay
-                                  ? [
-                                      BoxShadow(
-                                        color: Colors.blue.shade400
-                                            .withValues(alpha: 0.4),
-                                        blurRadius: 20,
-                                        offset: const Offset(0, 6),
-                                        spreadRadius: 2,
+                          // プレイ可能時のみボタンを表示
+                          if (canPlay) ...[
+                            const SizedBox(height: 12),
+                            Container(
+                              width: double.infinity,
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 20, vertical: 16),
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Colors.blue.shade400.withValues(alpha: 0.2),
+                                    Colors.cyan.shade400.withValues(alpha: 0.1),
+                                    AppColors.techBlue.withValues(alpha: 0.15),
+                                  ],
+                                ),
+                                borderRadius:
+                                    const BorderRadius.all(Radius.circular(16)),
+                                border: Border.all(
+                                  color: Colors.white.withValues(alpha: 0.3),
+                                  width: 1.5,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.blue.shade400
+                                        .withValues(alpha: 0.4),
+                                    blurRadius: 20,
+                                    offset: const Offset(0, 6),
+                                    spreadRadius: 2,
+                                  ),
+                                  BoxShadow(
+                                    color: Colors.cyan.shade300
+                                        .withValues(alpha: 0.3),
+                                    blurRadius: 16,
+                                    offset: const Offset(0, 4),
+                                    spreadRadius: 1,
+                                  ),
+                                  BoxShadow(
+                                    color: Colors.black.withValues(alpha: 0.2),
+                                    blurRadius: 12,
+                                    offset: const Offset(0, 3),
+                                  ),
+                                ],
+                              ),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        playCount == 0
+                                            ? 'START MISSION'
+                                            : '広告を見てプレイ',
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w900,
+                                          color: Colors.white,
+                                          letterSpacing: 1.0,
+                                          shadows: [
+                                            Shadow(
+                                              offset: const Offset(0, 2),
+                                              blurRadius: 6,
+                                              color: Colors.black
+                                                  .withValues(alpha: 0.5),
+                                            ),
+                                            Shadow(
+                                              offset: const Offset(0, 1),
+                                              blurRadius: 3,
+                                              color: Colors.blue.shade900
+                                                  .withValues(alpha: 0.3),
+                                            ),
+                                          ],
+                                        ),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
                                       ),
-                                      BoxShadow(
-                                        color: Colors.cyan.shade300
-                                            .withValues(alpha: 0.3),
-                                        blurRadius: 16,
-                                        offset: const Offset(0, 4),
-                                        spreadRadius: 1,
-                                      ),
-                                      BoxShadow(
-                                        color:
-                                            Colors.black.withValues(alpha: 0.2),
-                                        blurRadius: 12,
-                                        offset: const Offset(0, 3),
-                                      ),
-                                    ]
-                                  : null,
-                            ),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                // メインテキストとアイコン
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      isMaxReached
-                                          ? 'プレイ不可'
-                                          : (playCount == 0
-                                              ? 'START MISSION'
-                                              : '広告を見てプレイ'),
-                                      style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w900,
-                                        color: canPlay
-                                            ? Colors.white
-                                            : Colors.grey.shade600,
-                                        letterSpacing: 1.0,
-                                        shadows: canPlay
-                                            ? [
-                                                Shadow(
-                                                  offset: const Offset(0, 2),
-                                                  blurRadius: 6,
-                                                  color: Colors.black
-                                                      .withValues(alpha: 0.5),
-                                                ),
-                                                Shadow(
-                                                  offset: const Offset(0, 1),
-                                                  blurRadius: 3,
-                                                  color: Colors.blue.shade900
-                                                      .withValues(alpha: 0.3),
-                                                ),
-                                              ]
-                                            : null,
-                                      ),
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                    if (canPlay) ...[
                                       const SizedBox(width: 8),
                                       const Icon(
                                         Icons.play_circle_filled,
@@ -791,36 +967,332 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                                         size: 22,
                                       ),
                                     ],
+                                  ),
+                                  if (!isMaxReached) ...[
+                                    const SizedBox(height: 6),
+                                    Text(
+                                      '倍率: ${(data['multiplier'] as double).toStringAsFixed(1)}x | プレイ回数: $playCount/${matchDay.maxPlaysPerWeek}',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w700,
+                                        color: Colors.white.withValues(alpha: 0.9),
+                                        shadows: [
+                                          Shadow(
+                                            offset: const Offset(0, 1),
+                                            blurRadius: 3,
+                                            color: Colors.black
+                                                .withValues(alpha: 0.4),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
                                   ],
+                                ],
+                              ),
+                            ),
+                            ],
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Future<(bool canPlay, bool needsAd, int playCount, int remaining)> _getDailyQuizStatusFuture() {
+    if (_dailyQuizStatusFuture == null || _dailyQuizStatusCacheKey != _refreshKey) {
+      _dailyQuizStatusCacheKey = _refreshKey;
+      _dailyQuizStatusFuture = () async {
+        final dailyQuizService = ref.read(dailyQuizServiceProvider);
+        final (canPlay, needsAd) = await dailyQuizService.canPlayDailyQuiz();
+        final playCount = await dailyQuizService.getDailyQuizPlayCount();
+        final remaining = await dailyQuizService.getRemainingPlays();
+        return (canPlay, needsAd, playCount, remaining);
+      }();
+    }
+    return _dailyQuizStatusFuture!;
+  }
+
+  Widget _buildDailyQuizCard(BuildContext context) {
+    return FutureBuilder<(bool canPlay, bool needsAd, int playCount, int remaining)>(
+      key: ValueKey(_refreshKey),
+      future: _getDailyQuizStatusFuture(),
+      builder: (context, snapshot) {
+        if (!snapshot.hasData && !snapshot.hasError) {
+          return _buildCardPlaceholder(
+            title: 'Daily Quiz',
+            gradientColors: [
+              AppColors.techIndigo.withValues(alpha: 0.2),
+              AppColors.techBlue.withValues(alpha: 0.6),
+            ],
+          );
+        }
+        if (snapshot.hasError) {
+          debugPrint('Daily Quiz status error: ${snapshot.error}');
+        }
+        final (canPlay, needsAd, playCount, remaining) = snapshot.hasData
+            ? snapshot.data!
+            : (true, false, 0, dailyQuiz.maxPlaysPerDay);
+        final isMaxReached = !canPlay;
+
+        return AbsorbPointer(
+          absorbing: !canPlay,
+          child: GestureDetector(
+            behavior: HitTestBehavior.opaque,
+            onTap: canPlay ? () => _handleDailyQuizTap(context) : null,
+            child: Container(
+              constraints: const BoxConstraints(minHeight: 280),
+              decoration: BoxDecoration(
+                borderRadius: const BorderRadius.all(Radius.circular(24)),
+                boxShadow: [
+                  BoxShadow(
+                    color: AppColors.techIndigo.withValues(alpha: 0.1),
+                    blurRadius: 20,
+                    offset: const Offset(0, 8),
+                  ),
+                ],
+              ),
+              child: ClipRRect(
+                borderRadius: const BorderRadius.all(Radius.circular(24)),
+                child: Stack(
+                  children: [
+                    _buildFeaturedCardBackground(
+                      imagePath: AppConstants.assetDailyQuizBackground,
+                      fallbackGradientColors: [
+                        AppColors.techIndigo.withValues(alpha: 0.2),
+                        AppColors.techBlue.withValues(alpha: 0.6),
+                      ],
+                      overlayOpacityTop: 0.0,
+                      overlayOpacityBottom: 0.2,
+                    ),
+                    if (canPlay)
+                      Positioned(
+                        right: 16,
+                        top: 0,
+                        bottom: 0,
+                        child: Center(
+                          child: Icon(
+                            Icons.chevron_right,
+                            color: Colors.white.withValues(alpha: 0.8),
+                            size: 28,
+                          ),
+                        ),
+                      ),
+                    Positioned(
+                      top: 24,
+                      left: 24,
+                      right: 24,
+                      child: Text(
+                        'Daily Quiz',
+                        style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.w900,
+                          color: const Color(0xFF1A237E),
+                          letterSpacing: 1.0,
+                          shadows: [
+                            Shadow(
+                              offset: const Offset(0, 0),
+                              blurRadius: 8,
+                              color: Colors.white.withValues(alpha: 0.9),
+                            ),
+                            Shadow(
+                              offset: const Offset(1, 1),
+                              blurRadius: 4,
+                              color: Colors.white.withValues(alpha: 0.8),
+                            ),
+                            Shadow(
+                              offset: const Offset(-1, -1),
+                              blurRadius: 4,
+                              color: Colors.white.withValues(alpha: 0.8),
+                            ),
+                          ],
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                    Positioned(
+                      left: 24,
+                      right: 24,
+                      top: 0,
+                      bottom: 0,
+                      child: Center(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            if (isMaxReached) ...[
+                            Container(
+                              padding: const EdgeInsets.all(12),
+                              decoration: BoxDecoration(
+                                color: Colors.orange.shade400
+                                    .withValues(alpha: 0.2),
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(
+                                  color: Colors.orange.shade300,
+                                  width: 1,
                                 ),
-                                if (!isMaxReached) ...[
-                                  const SizedBox(height: 6),
-                                  // サブテキスト（倍率とプレイ回数）
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.info_outline,
+                                        color: Colors.orange.shade200,
+                                        size: 16,
+                                      ),
+                                      const SizedBox(width: 6),
+                                      Text(
+                                        '本日のプレイ回数が上限に達しています',
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w600,
+                                          color: Colors.white,
+                                          shadows: [
+                                            Shadow(
+                                              offset: const Offset(0, 1),
+                                              blurRadius: 4,
+                                              color: Colors.black
+                                                  .withValues(alpha: 0.8),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 8),
                                   Text(
-                                    '倍率: ${(data['multiplier'] as double).toStringAsFixed(1)}x | プレイ回数: $playCount/${MATCHDAY.maxPlaysPerWeek}',
+                                    'チーム4問・歴史3問・ルール3問の計10問',
                                     style: TextStyle(
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w700,
-                                      color: canPlay
-                                          ? Colors.white.withValues(alpha: 0.9)
-                                          : Colors.grey.shade500,
-                                      shadows: canPlay
-                                          ? [
-                                              Shadow(
-                                                offset: const Offset(0, 1),
-                                                blurRadius: 3,
-                                                color: Colors.black
-                                                    .withValues(alpha: 0.4),
-                                              ),
-                                            ]
-                                          : null,
+                                      fontSize: 11,
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.white.withValues(alpha: 0.9),
+                                      shadows: [
+                                        Shadow(
+                                          offset: const Offset(0, 1),
+                                          blurRadius: 3,
+                                          color: Colors.black.withValues(alpha: 0.7),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ],
-                              ],
+                              ),
+                            ),
+                          ],
+                          if (canPlay) ...[
+                            const SizedBox(height: 12),
+                            GestureDetector(
+                              behavior: HitTestBehavior.opaque,
+                              onTap: () => _handleDailyQuizTap(context),
+                              child: Container(
+                                width: double.infinity,
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 20, vertical: 16),
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors: [
+                                      Colors.indigo.shade400.withValues(alpha: 0.2),
+                                      Colors.purple.shade400.withValues(alpha: 0.1),
+                                      AppColors.techIndigo.withValues(alpha: 0.15),
+                                    ],
+                                  ),
+                                  borderRadius:
+                                      const BorderRadius.all(Radius.circular(16)),
+                                  border: Border.all(
+                                    color: Colors.white.withValues(alpha: 0.3),
+                                    width: 1.5,
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.indigo.shade400
+                                          .withValues(alpha: 0.4),
+                                      blurRadius: 20,
+                                      offset: const Offset(0, 6),
+                                      spreadRadius: 2,
+                                    ),
+                                    BoxShadow(
+                                      color: Colors.black.withValues(alpha: 0.2),
+                                      blurRadius: 12,
+                                      offset: const Offset(0, 3),
+                                    ),
+                                  ],
+                                ),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          needsAd ? '広告を見てプレイ' : 'START',
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.w900,
+                                            color: Colors.white,
+                                            letterSpacing: 1.0,
+                                            shadows: [
+                                              Shadow(
+                                                offset: const Offset(0, 2),
+                                                blurRadius: 6,
+                                                color: Colors.black
+                                                    .withValues(alpha: 0.5),
+                                              ),
+                                              Shadow(
+                                                offset: const Offset(0, 1),
+                                                blurRadius: 3,
+                                                color: Colors.indigo.shade900
+                                                    .withValues(alpha: 0.3),
+                                              ),
+                                            ],
+                                          ),
+                                          maxLines: 1,
+                                          overflow: TextOverflow.ellipsis,
+                                        ),
+                                        const SizedBox(width: 8),
+                                        const Icon(
+                                          Icons.play_circle_filled,
+                                          color: Colors.white,
+                                          size: 22,
+                                        ),
+                                      ],
+                                    ),
+                                    if (!isMaxReached) ...[
+                                      const SizedBox(height: 6),
+                                      Text(
+                                        '残り: $remaining回 | 今日: $playCount/${dailyQuiz.maxPlaysPerDay}',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w700,
+                                        color: Colors.white.withValues(alpha: 0.9),
+                                        shadows: [
+                                          Shadow(
+                                            offset: const Offset(0, 1),
+                                            blurRadius: 3,
+                                            color: Colors.black
+                                                .withValues(alpha: 0.4),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ],
+                              ),
                             ),
                           ),
-                        ],
+                            ],
+                          ],
+                        ),
                       ),
                     ),
                   ],
@@ -1283,7 +1755,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
         Navigator.of(dialogContext).pop();
       }
 
-      // 広告を表示
+      // 広告を表示（context使用前にmountedを確認）
+      if (!mounted) return;
       await _adHelper.showRewardedAd(
         context: context,
         onRewarded: () async {
@@ -1323,6 +1796,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
       // エラーが発生した場合はダイアログを閉じずにエラーメッセージを表示
       if (dialogContext.mounted) {
         Navigator.of(dialogContext).pop();
+      }
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('エラーが発生しました: $e'),
