@@ -319,6 +319,58 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                             ],
                           ),
                         ),
+                      // カテゴリバッジ（常時表示）
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 16),
+                        child: Row(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 4,
+                              ),
+                              decoration: BoxDecoration(
+                                color: _getCategoryColor(
+                                        currentQuestion.category)
+                                    .withValues(alpha: 0.2),
+                                borderRadius: BorderRadius.circular(4),
+                                border: Border.all(
+                                  color: _getCategoryColor(
+                                          currentQuestion.category)
+                                      .withValues(alpha: 0.5),
+                                  width: 1,
+                                ),
+                              ),
+                              child: Text(
+                                CategoryDifficultyUtils.getCategoryShortName(
+                                  currentQuestion.category,
+                                ),
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold,
+                                  color: _getCategoryColor(
+                                      currentQuestion.category),
+                                ),
+                              ),
+                            ),
+                            // チームクイズの場合のみチーム名を表示
+                            if (currentQuestion.category ==
+                                    AppConstants.categoryTeams &&
+                                currentQuestion.team != null &&
+                                currentQuestion.team!.isNotEmpty) ...[
+                              const SizedBox(width: 8),
+                              Text(
+                                currentQuestion.team!,
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.grey.shade700,
+                                ),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
                       // 難易度の表示（recap問題またはDaily Quizの場合）
                       if (currentQuestion.category ==
                               AppConstants.categoryMatchRecap ||
@@ -453,10 +505,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       }
     });
 
-    _showExplanationDialog();
+    _showExplanationDialog(isLastQuestion: _currentQuestionIndex == _questions.length - 1);
   }
 
-  void _showExplanationDialog() {
+  void _showExplanationDialog({required bool isLastQuestion}) {
     final question = _questions[_currentQuestionIndex];
     final isCorrect = _selectedAnswerIndex == question.answerIndex;
 
@@ -531,6 +583,40 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                     ],
                   ),
                 ),
+                if (!isCorrect) ...[
+                  const SizedBox(height: 16),
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    margin: const EdgeInsets.symmetric(horizontal: 24),
+                    decoration: BoxDecoration(
+                      color: AppColors.stitchEmerald.withValues(alpha: 0.15),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: AppColors.stitchEmerald.withValues(alpha: 0.5),
+                      ),
+                    ),
+                    child: Row(
+                      children: [
+                        const Icon(
+                          Icons.check_circle,
+                          color: AppColors.stitchEmerald,
+                          size: 24,
+                        ),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Text(
+                            '正解は ${String.fromCharCode(65 + question.answerIndex)}: ${question.options[question.answerIndex]}',
+                            style: const TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w600,
+                              color: AppColors.stitchEmerald,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
                 Flexible(
                   child: SingleChildScrollView(
                     padding: const EdgeInsets.symmetric(horizontal: 24),
@@ -618,14 +704,17 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                     width: double.infinity,
                     child: GlowButton(
                       glowColor: AppColors.stitchEmerald,
-                      onPressed: () => Navigator.of(context).pop(),
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                        if (mounted) _nextQuestion(isLastQuestion);
+                      },
                       backgroundColor: AppColors.stitchEmerald,
                       foregroundColor: Colors.white,
                       borderRadius: 16,
                       padding: const EdgeInsets.symmetric(vertical: 12),
-                      child: const Text(
-                        '閉じる',
-                        style: TextStyle(
+                      child: Text(
+                        isLastQuestion ? '結果を見る' : '次の問題',
+                        style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
@@ -767,6 +856,22 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         return AppColors.difficultyNormal;
       case AppConstants.difficultyHard:
         return AppColors.difficultyHard;
+      default:
+        return Colors.grey;
+    }
+  }
+
+  /// カテゴリに応じたカラーを取得（バッジの枠線・文字色用）
+  Color _getCategoryColor(String category) {
+    switch (category) {
+      case AppConstants.categoryRules:
+        return const Color(0xFF1976D2); // 青
+      case AppConstants.categoryHistory:
+        return const Color(0xFFF57C00); // アンバー
+      case AppConstants.categoryTeams:
+        return const Color(0xFF7B1FA2); // 紫
+      case AppConstants.categoryMatchRecap:
+        return AppColors.stitchCyan;
       default:
         return Colors.grey;
     }

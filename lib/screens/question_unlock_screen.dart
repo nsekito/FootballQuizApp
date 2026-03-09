@@ -357,6 +357,56 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
     );
   }
 
+  Widget _buildComingSoonChip(String label) {
+    return Stack(
+      clipBehavior: Clip.none,
+      children: [
+        FilterChip(
+          label: Text(
+            label,
+            style: TextStyle(color: Colors.grey.shade400),
+          ),
+          selected: false,
+          onSelected: null,
+          backgroundColor: Colors.grey.shade100,
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        ),
+        Positioned(
+          top: -4,
+          right: -4,
+          child: Transform.rotate(
+            angle: -0.15,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [Color(0xFFFF6B35), Color(0xFFFF3366)],
+                ),
+                borderRadius: BorderRadius.circular(3),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFFFF3366).withValues(alpha: 0.4),
+                    blurRadius: 4,
+                    offset: const Offset(0, 1),
+                  ),
+                ],
+              ),
+              child: const Text(
+                'COMING SOON',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 7,
+                  fontWeight: FontWeight.w900,
+                  letterSpacing: 1.0,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
   Widget _buildHorizontalChipRow(List<Widget> chips) {
     return SizedBox(
       height: 44,
@@ -406,7 +456,14 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
           })),
     ];
 
+    final isOverseas = _selectedCountry == 'england' ||
+        _selectedCountry == 'spain' ||
+        _selectedCountry == 'italy';
+
     final teamChips = teams.map((team) {
+      if (isOverseas) {
+        return _buildComingSoonChip(team['label']!);
+      }
       return _buildFilterChip(
         team['label']!,
         _selectedTeam == team['value'],
@@ -435,8 +492,6 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
     switch (country) {
       case 'japan':
         return [
-          {'label': 'J1全チーム', 'value': 'j1_all_teams'},
-          {'label': 'J2全チーム', 'value': 'j2_all_teams'},
           {'label': '鹿島アントラーズ', 'value': 'kashima_antlers'},
           {'label': '柏レイソル', 'value': 'kashiwa_reysol'},
           {'label': '京都サンガF.C.', 'value': 'kyoto_sanga'},
@@ -460,21 +515,18 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
         ];
       case 'italy':
         return [
-          {'label': 'セリエA全チーム', 'value': 'serie_a_all_teams'},
           {'label': 'ユベントス', 'value': 'juventus'},
           {'label': 'ACミラン', 'value': 'ac_milan'},
           {'label': 'インテルミラノ', 'value': 'inter_milan'},
         ];
       case 'spain':
         return [
-          {'label': 'ラリーガ全チーム', 'value': 'la_liga_all_teams'},
           {'label': 'レアルマドリード', 'value': 'real_madrid'},
           {'label': 'バルセロナ', 'value': 'barcelona'},
           {'label': 'アトレティコマドリード', 'value': 'atletico_madrid'},
         ];
       case 'england':
         return [
-          {'label': 'プレミアリーグ全チーム', 'value': 'premier_league_all_teams'},
           {'label': 'リバプール', 'value': 'liverpool'},
           {'label': 'アーセナル', 'value': 'arsenal'},
           {'label': 'マンチェスターシティ', 'value': 'manchester_city'},

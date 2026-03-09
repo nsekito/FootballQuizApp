@@ -227,6 +227,40 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
                     ],
                   ),
                 ),
+                if (!isCorrect) ...[
+                  const SizedBox(height: 16),
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    margin: const EdgeInsets.symmetric(horizontal: 24),
+                    decoration: BoxDecoration(
+                      color: AppColors.stitchEmerald.withValues(alpha: 0.15),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: AppColors.stitchEmerald.withValues(alpha: 0.5),
+                      ),
+                    ),
+                    child: Row(
+                      children: [
+                        const Icon(
+                          Icons.check_circle,
+                          color: AppColors.stitchEmerald,
+                          size: 24,
+                        ),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Text(
+                            '正解は ${String.fromCharCode(65 + question.answerIndex)}: ${question.options[question.answerIndex]}',
+                            style: const TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w600,
+                              color: AppColors.stitchEmerald,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
                 Flexible(
                   child: SingleChildScrollView(
                     padding: const EdgeInsets.symmetric(horizontal: 24),
@@ -312,14 +346,19 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
                     width: double.infinity,
                     child: GlowButton(
                       glowColor: AppColors.stitchEmerald,
-                      onPressed: () => Navigator.of(context).pop(),
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                        if (mounted) _nextQuestion();
+                      },
                       backgroundColor: AppColors.stitchEmerald,
                       foregroundColor: Colors.white,
                       borderRadius: 16,
                       padding: const EdgeInsets.symmetric(vertical: 12),
-                      child: const Text(
-                        '閉じる',
-                        style: TextStyle(
+                      child: Text(
+                        _currentQuestionIndex == _questions.length - 1
+                            ? '結果を見る'
+                            : '次の問題へ',
+                        style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),

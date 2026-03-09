@@ -212,12 +212,6 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
           tags.add('j1');
         } else if (_selectedTeam == 'j2_all_teams') {
           tags.add('j2');
-        } else if (_selectedTeam == 'serie_a_all_teams') {
-          tags.add('serie_a');
-        } else if (_selectedTeam == 'la_liga_all_teams') {
-          tags.add('la_liga');
-        } else if (_selectedTeam == 'premier_league_all_teams') {
-          tags.add('premier_league');
         } else {
           // 個別チーム名の選択 - リーグタグも含める
           final leagueTag = _getLeagueTagForTeam(_selectedTeam!);
@@ -666,21 +660,18 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
       ];
     } else if (_selectedCountry == 'italy') {
       teams = [
-        {'label': 'セリエA全チーム', 'value': 'serie_a_all_teams'},
         {'label': 'ユベントス', 'value': 'juventus'},
         {'label': 'ACミラン', 'value': 'ac_milan'},
         {'label': 'インテルミラノ', 'value': 'inter_milan'},
       ];
     } else if (_selectedCountry == 'spain') {
       teams = [
-        {'label': 'ラリーガ全チーム', 'value': 'la_liga_all_teams'},
         {'label': 'レアルマドリード', 'value': 'real_madrid'},
         {'label': 'バルセロナ', 'value': 'barcelona'},
         {'label': 'アトレティコマドリード', 'value': 'atletico_madrid'},
       ];
     } else if (_selectedCountry == 'england') {
       teams = [
-        {'label': 'プレミアリーグ全チーム', 'value': 'premier_league_all_teams'},
         {'label': 'リバプール', 'value': 'liverpool'},
         {'label': 'アーセナル', 'value': 'arsenal'},
         {'label': 'マンチェスターシティ', 'value': 'manchester_city'},
@@ -731,11 +722,15 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
               itemCount: teams.length,
               itemBuilder: (context, index) {
                 final team = teams[index];
+                final isOverseas = _selectedCountry == 'england' ||
+                    _selectedCountry == 'spain' ||
+                    _selectedCountry == 'italy';
                 return _buildTeamCard(
                   team['label']!,
                   team['value']!,
                   _selectedTeam,
                   (value) => setState(() => _selectedTeam = value),
+                  isComingSoon: isOverseas,
                 );
               },
             ),
@@ -800,17 +795,14 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
       'avispa_fukuoka': [0xFF001F3F, 0xFF87CEEB], // ネイビー・水色
       'v_varen_nagasaki': [0xFFFF8C00, 0xFF003399], // オレンジ・青
       // セリエA
-      'serie_a_all_teams': [0xFF003399],
       'juventus': [0xFFFFFFFF, 0xFF000000], // 白・黒
       'ac_milan': [0xFFDC143C, 0xFF000000], // 赤・黒
       'inter_milan': [0xFF003399, 0xFF000000], // 青・黒
       // ラリーガ
-      'la_liga_all_teams': [0xFF003399],
       'real_madrid': [0xFFFFFFFF],
       'barcelona': [0xFF003399, 0xFFDC143C], // 青・赤
       'atletico_madrid': [0xFFDC143C, 0xFFFFFFFF], // 赤・白
       // プレミアリーグ
-      'premier_league_all_teams': [0xFF003399],
       'liverpool': [0xFFDC143C],
       'arsenal': [0xFFDC143C, 0xFFFFFFFF],
       'manchester_city': [0xFF6CACE4],
@@ -825,66 +817,122 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
     String label,
     String value,
     String? selectedValue,
-    ValueChanged<String> onSelected,
-  ) {
-    final isSelected = selectedValue == value;
+    ValueChanged<String> onSelected, {
+    bool isComingSoon = false,
+  }) {
+    final isSelected = !isComingSoon && selectedValue == value;
     final teamColors = _getTeamColors(value);
 
     return GestureDetector(
-      onTap: () => onSelected(value),
-      child: Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color: isSelected
-                ? AppColors.stitchEmerald
-                : Colors.grey.shade300,
-            width: isSelected ? 2 : 1,
-          ),
-        ),
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        child: Row(
-          children: [
-            _buildTeamColorBar(teamColors),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(
-                label,
-                style: TextStyle(
-                  fontWeight: FontWeight.w500,
-                  fontSize: 13,
-                  color: Colors.grey.shade800,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
-            ),
-            Container(
-              width: 22,
-              height: 22,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
+      onTap: isComingSoon ? null : () => onSelected(value),
+      child: Stack(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              color: isComingSoon
+                  ? Colors.grey.shade100
+                  : Colors.white,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
                 color: isSelected
                     ? AppColors.stitchEmerald
-                    : Colors.transparent,
-                border: Border.all(
-                  color: isSelected
-                      ? AppColors.stitchEmerald
-                      : Colors.grey.shade400,
-                  width: 2,
+                    : Colors.grey.shade300,
+                width: isSelected ? 2 : 1,
+              ),
+            ),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+            child: Row(
+              children: [
+                Opacity(
+                  opacity: isComingSoon ? 0.4 : 1.0,
+                  child: _buildTeamColorBar(teamColors),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    label,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 13,
+                      color: isComingSoon
+                          ? Colors.grey.shade400
+                          : Colors.grey.shade800,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+                if (!isComingSoon)
+                  Container(
+                    width: 22,
+                    height: 22,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: isSelected
+                          ? AppColors.stitchEmerald
+                          : Colors.transparent,
+                      border: Border.all(
+                        color: isSelected
+                            ? AppColors.stitchEmerald
+                            : Colors.grey.shade400,
+                        width: 2,
+                      ),
+                    ),
+                    child: isSelected
+                        ? const Icon(
+                            Icons.check,
+                            size: 14,
+                            color: Colors.white,
+                          )
+                        : null,
+                  ),
+              ],
+            ),
+          ),
+          if (isComingSoon)
+            Positioned.fill(
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(12),
+                child: Container(
+                  color: Colors.black.withValues(alpha: 0.35),
+                  child: Center(
+                    child: Transform.rotate(
+                      angle: -0.15,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 14,
+                          vertical: 4,
+                        ),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [Color(0xFFFF6B35), Color(0xFFFF3366)],
+                          ),
+                          borderRadius: BorderRadius.circular(4),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color(0xFFFF3366)
+                                  .withValues(alpha: 0.4),
+                              blurRadius: 8,
+                              offset: const Offset(0, 2),
+                            ),
+                          ],
+                        ),
+                        child: const Text(
+                          'COMING SOON',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 9,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: 1.5,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
               ),
-              child: isSelected
-                  ? const Icon(
-                      Icons.check,
-                      size: 14,
-                      color: Colors.white,
-                    )
-                  : null,
             ),
-          ],
-        ),
+        ],
       ),
     );
   }

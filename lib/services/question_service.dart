@@ -286,11 +286,14 @@ class QuestionService {
     
     // ローカルDBにデータがある場合はそれを使用
     if (localQuestions.isNotEmpty) {
-      // ヨーロッパの場合、j1が含まれないことを確認
       var filtered = localQuestions;
       if (leagueType == AppConstants.leagueTypeEurope) {
-        filtered = filtered.where((q) => 
-          q.tags.contains('europe') && !q.tags.contains('j1')
+        filtered = filtered.where((q) =>
+          q.region == 'world' || (q.league != null && q.league != 'j1' && q.league != 'j2')
+        ).toList();
+      } else if (leagueType == AppConstants.leagueTypeJ1) {
+        filtered = filtered.where((q) =>
+          q.region == 'japan' || q.league == 'j1'
         ).toList();
       }
       

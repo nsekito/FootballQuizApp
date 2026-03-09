@@ -248,7 +248,7 @@ def main():
             ]
             
             europe_questions = []
-            current_id = 1
+            current_id = 10001
             
             for category_id, category_name, question_count in europe_categories:
                 print(f"\nカテゴリ: {category_name} ({question_count}問) 生成中...")

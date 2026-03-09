@@ -193,7 +193,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     );
   }
 
-  Future<void> _handleDailyQuizTap(BuildContext context) async {
+  Future<void> _handleDailyQuizTap() async {
     final dailyQuizService = ref.read(dailyQuizServiceProvider);
     final (canPlay, needsAd) = await dailyQuizService.canPlayDailyQuiz();
 
@@ -216,6 +216,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
         context: context,
         onRewarded: () async {
           if (!mounted) return;
+          if (!context.mounted) return;
           context.push(
             '/quiz?category=${AppConstants.categoryDailyQuiz}&difficulty=normal',
           );
@@ -1045,7 +1046,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
           absorbing: !canPlay,
           child: GestureDetector(
             behavior: HitTestBehavior.opaque,
-            onTap: canPlay ? () => _handleDailyQuizTap(context) : null,
+            onTap: canPlay ? () => _handleDailyQuizTap() : null,
             child: Container(
               constraints: const BoxConstraints(minHeight: 280),
               decoration: BoxDecoration(
@@ -1192,7 +1193,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                             const SizedBox(height: 12),
                             GestureDetector(
                               behavior: HitTestBehavior.opaque,
-                              onTap: () => _handleDailyQuizTap(context),
+                              onTap: () => _handleDailyQuizTap(),
                               child: Container(
                                 width: double.infinity,
                                 padding: const EdgeInsets.symmetric(

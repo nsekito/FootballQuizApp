@@ -1037,16 +1037,16 @@ class DatabaseService {
 
     // チームによるフィルタリング
     if (teamParam != null && teamParam.isNotEmpty) {
-      if (teamParam == 'j1全チーム' || teamParam == 'j1_all_teams') {
-        // J1全チーム: japanタグとj1タグを含む
-        query += ' AND tags LIKE ? AND tags LIKE ?';
-        args.add('%japan%');
-        args.add('%j1%');
-      } else if (teamParam == 'j2全チーム' || teamParam == 'j2_all_teams') {
-        // J2全チーム: japanタグとj2タグを含む
-        query += ' AND tags LIKE ? AND tags LIKE ?';
-        args.add('%japan%');
-        args.add('%j2%');
+      if (teamParam == 'j1_all_teams') {
+        // J1全チーム: region と league で検索
+        query += ' AND region = ? AND league = ?';
+        args.add('japan');
+        args.add('j1');
+      } else if (teamParam == 'j2_all_teams') {
+        // J2全チーム: region と league で検索
+        query += ' AND region = ? AND league = ?';
+        args.add('japan');
+        args.add('j2');
       } else if (teamParam == '海外top3' || teamParam == 'overseas_top3') {
         // 海外Top3: イタリア、スペイン、イングランドのいずれか
         query += ' AND (tags LIKE ? OR tags LIKE ? OR tags LIKE ?)';
@@ -1604,14 +1604,8 @@ class DatabaseService {
       AppConstants.categoryHistory: ['history,japan', 'history,world'],
       AppConstants.categoryTeams: [
         'teams,japan',
-        'teams,italy',
-        'teams,spain',
-        'teams,england',
         'teams,japan,j1',
         'teams,japan,j2',
-        'teams,italy,serie_a',
-        'teams,spain,la_liga',
-        'teams,england,premier_league',
       ],
     };
     
@@ -1650,14 +1644,8 @@ class DatabaseService {
       AppConstants.categoryHistory: ['history,japan', 'history,world'],
       AppConstants.categoryTeams: [
         'teams,japan',
-        'teams,italy',
-        'teams,spain',
-        'teams,england',
         'teams,japan,j1',
         'teams,japan,j2',
-        'teams,italy,serie_a',
-        'teams,spain,la_liga',
-        'teams,england,premier_league',
       ],
     };
     
