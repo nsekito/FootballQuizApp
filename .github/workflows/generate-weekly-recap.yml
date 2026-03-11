@@ -3,8 +3,8 @@ name: Generate Weekly Recap
 on:
   schedule:
     # 毎週月曜日 朝6時（JST）に実行
-    # UTC時間で21:00（JST 6:00の前日）
-    - cron: '0 21 * * 1'
+    # 日曜 21:00 UTC = 月曜 6:00 JST
+    - cron: '0 21 * * 0'
   workflow_dispatch:
     # 手動実行も可能
 
