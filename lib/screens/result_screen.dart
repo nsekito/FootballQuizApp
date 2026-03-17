@@ -2,17 +2,14 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:intl/intl.dart';
 import '../providers/user_data_provider.dart';
 import '../providers/quiz_history_provider.dart';
 import '../models/user_rank.dart';
 import '../constants/app_colors.dart';
-import '../widgets/grid_pattern_background.dart';
 import '../widgets/glass_morphism_widget.dart';
 import '../widgets/glow_button.dart';
 import '../widgets/responsive_container.dart';
 import '../widgets/banner_ad_widget.dart';
-import '../widgets/rank_icon_widget.dart';
 import '../constants/game_config.dart';
 import '../utils/rewarded_ad_helper.dart';
 
@@ -53,7 +50,9 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
   late AnimationController _sparkleAnimationController;
   late final RewardedAdHelper _adHelper;
   bool _rewardsClaimed = false;
+  late final List<_ConfettiParticle> _confettiParticles;
 
+  bool get _isPerfect => widget.score == widget.total && widget.total > 0;
   int get _earnedExp => widget.earnedExp;
   int get _earnedPoints => widget.earnedPoints;
 
@@ -93,6 +92,9 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
       }
     });
     _adHelper.loadRewardedAd();
+    _confettiParticles = _isPerfect
+        ? List.generate(60, (_) => _ConfettiParticle.random())
+        : const [];
   }
 
   @override
@@ -137,7 +139,6 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
       var finalExp = _earnedExp;
       var finalPoints = _earnedPoints;
 
-      // 広告視聴の場合、adBonus.RESULT_SCREEN_MULTIPLIER（0.5倍）を適用して加算
       if (withAd) {
         final adBonusExp = math.max(0, (_earnedExp * adBonus.resultScreenMultiplier).floor());
         final adBonusPoints = math.max(0, (_earnedPoints * adBonus.resultScreenMultiplier).floor());
@@ -145,7 +146,6 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
         finalPoints += adBonusPoints;
       }
 
-      // expとポイントを加算
       await ref.read(totalExpProvider.notifier).addExp(finalExp);
       await ref.read(totalPointsProvider.notifier).addPoints(finalPoints);
 
@@ -202,621 +202,844 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
     final accuracy =
         widget.total > 0 ? (widget.score / widget.total * 100) : 0.0;
     final totalExp = ref.watch(totalExpProvider);
-    final totalPoints = ref.watch(totalPointsProvider);
+    final displayRank = _rewardsClaimed ? _currentRank : _previousRank;
 
     return PopScope(
       canPop: false,
       child: Scaffold(
         backgroundColor: AppColors.stitchBackgroundLight,
-        appBar: AppBar(
-          backgroundColor: AppColors.stitchEmerald.withValues(alpha: 0.9),
-          elevation: 0,
-          automaticallyImplyLeading: false, // 戻るボタンを非表示
-        title: const Text(
-          '結果',
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
+        body: Stack(
+          children: [
+            SingleChildScrollView(
+              child: ResponsiveContainer(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    _buildHeaderSection(accuracy),
+                    const SizedBox(height: 32),
+                    _buildScoreGaugeSection(accuracy),
+                    if (displayRank != null) ...[
+                      const SizedBox(height: 32),
+                      _buildRankSection(totalExp, displayRank),
+                    ],
+                    const SizedBox(height: 32),
+                    _buildRewardsSection(),
+                    const SizedBox(height: 40),
+                    _buildActionSection(),
+                    const SizedBox(height: 40),
+                  ],
+                ),
+              ),
+            ),
+            if (_isPerfect)
+              Positioned.fill(
+                child: IgnorePointer(
+                  child: AnimatedBuilder(
+                    animation: _sparkleAnimationController,
+                    builder: (context, child) => CustomPaint(
+                      painter: _FallingConfettiPainter(
+                        particles: _confettiParticles,
+                        progress: _sparkleAnimationController.value,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+          ],
         ),
-        centerTitle: true,
+        bottomNavigationBar: const BannerAdWidget(),
       ),
-      body: GridPatternBackground(
-        child: SingleChildScrollView(
-          child: ResponsiveContainer(
-            padding: const EdgeInsets.all(24.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                // スコア表示
-                GlassMorphismWidget(
-                  borderRadius: 24,
-                  padding: const EdgeInsets.all(32),
-                  child: Column(
-                    children: [
-                      TweenAnimationBuilder<double>(
-                        tween: Tween(begin: 0.0, end: widget.score.toDouble()),
-                        duration: const Duration(milliseconds: 1500),
-                        curve: Curves.easeOutCubic,
-                        builder: (context, animatedScore, child) {
-                          return Text(
-                            '${animatedScore.toInt()}',
-                            style: const TextStyle(
-                              fontSize: 72,
-                              fontWeight: FontWeight.w900,
-                              color: AppColors.stitchEmerald,
-                              letterSpacing: -2,
-                            ),
-                          );
-                        },
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            ' / ${widget.total}',
-                            style: TextStyle(
-                              fontSize: 36,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.grey.shade400,
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        '正答率: ${accuracy.toStringAsFixed(1)}%',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.grey.shade600,
-                        ),
-                      ),
-                    ],
-                  ),
+    );
+  }
+
+  String _getPerformanceLabel(double accuracy) {
+    if (accuracy >= 100) return 'PERFECT CLEAR';
+    if (accuracy >= 80) return 'EXCELLENT';
+    if (accuracy >= 60) return 'GREAT';
+    if (accuracy >= 40) return 'GOOD';
+    return 'KEEP GOING';
+  }
+
+  Widget _buildHeaderSection(double accuracy) {
+    return SafeArea(
+      bottom: false,
+      child: Container(
+        padding: const EdgeInsets.only(top: 24, bottom: 24, left: 16, right: 16),
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: Opacity(
+                opacity: 0.2,
+                child: CustomPaint(
+                  painter: _ConfettiPatternPainter(),
                 ),
-                const SizedBox(height: 24),
-
-                // 獲得expとポイント表示
-                GlassMorphismWidget(
-                  borderRadius: 16,
-                  padding: const EdgeInsets.all(20),
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  '獲得経験値',
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w700,
-                                    letterSpacing: 1.2,
-                                    color: Colors.grey.shade500,
-                                  ),
-                                ),
-                                const SizedBox(height: 4),
-                                TweenAnimationBuilder<double>(
-                                  tween: Tween(
-                                    begin: 0.0,
-                                    end: _earnedExp.toDouble(),
-                                  ),
-                                  duration: const Duration(milliseconds: 1500),
-                                  curve: Curves.easeOutCubic,
-                                  builder: (context, animatedExp, child) {
-                                    return Text(
-                                      '+${animatedExp.toInt()} EXP',
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.w900,
-                                        color: Colors.blue.shade600,
-                                      ),
-                                    );
-                                  },
-                                ),
-                              ],
-                            ),
-                          ),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  '獲得ポイント',
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w700,
-                                    letterSpacing: 1.2,
-                                    color: Colors.grey.shade500,
-                                  ),
-                                ),
-                                const SizedBox(height: 4),
-                                TweenAnimationBuilder<double>(
-                                  tween: Tween(
-                                    begin: 0.0,
-                                    end: _earnedPoints.toDouble(),
-                                  ),
-                                  duration: const Duration(milliseconds: 1500),
-                                  curve: Curves.easeOutCubic,
-                                  builder: (context, animatedPoints, child) {
-                                    return Text(
-                                      '+${animatedPoints.toInt()} PT',
-                                      style: const TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.w900,
-                                        color: AppColors.stitchEmerald,
-                                      ),
-                                    );
-                                  },
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      if (!_rewardsClaimed) ...[
-                        const SizedBox(height: 20),
-                        const Divider(),
-                        const SizedBox(height: 20),
-                        // 広告視聴ボタン
-                        SizedBox(
-                          width: double.infinity,
-                          child: GlowButton(
-                            glowColor: AppColors.stitchEmerald,
-                            onPressed:
-                                _adHelper.isLoadingAd || !_adHelper.isAdReady || _rewardsClaimed
-                                    ? null
-                                    : _showRewardedAd,
-                            backgroundColor: AppColors.stitchEmerald,
-                            foregroundColor: Colors.white,
-                            borderRadius: 12,
-                            padding: const EdgeInsets.symmetric(vertical: 16),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                if (_adHelper.isLoadingAd)
-                                  const SizedBox(
-                                    width: 20,
-                                    height: 20,
-                                    child: CircularProgressIndicator(
-                                      strokeWidth: 2,
-                                      valueColor: AlwaysStoppedAnimation<Color>(
-                                          Colors.white),
-                                    ),
-                                  )
-                                else
-                                  const Icon(Icons.play_circle_outline,
-                                      size: 24),
-                                const SizedBox(width: 8),
-                                Text(
-                                  _adHelper.isLoadingAd
-                                      ? '広告を読み込み中...'
-                                      : !_adHelper.isAdReady
-                                          ? '広告を準備中...'
-                                          : '広告を見て報酬を獲得',
-                                  style: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        // 広告を見ずにトップに戻るボタン
-                        SizedBox(
-                          width: double.infinity,
-                          child: OutlinedButton(
-                            onPressed: () {
-                              context.go('/');
-                            },
-                            style: OutlinedButton.styleFrom(
-                              padding: const EdgeInsets.symmetric(vertical: 16),
-                              side: BorderSide(
-                                color: Colors.grey.shade400,
-                                width: 1,
-                              ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                            ),
-                            child: Text(
-                              'トップに戻る（報酬は入手できません）',
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.grey.shade700,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ] else ...[
-                        const SizedBox(height: 12),
-                        Container(
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: Colors.green.shade50,
-                            borderRadius: BorderRadius.circular(8),
-                            border: Border.all(
-                              color: Colors.green.shade200,
-                              width: 1,
-                            ),
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(
-                                Icons.check_circle,
-                                color: Colors.green.shade700,
-                                size: 20,
-                              ),
-                              const SizedBox(width: 8),
-                              Text(
-                                '報酬を獲得しました',
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.green.shade700,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ],
+              ),
+            ),
+            Center(
+              child: Column(
+                children: [
+                  const Icon(
+                    Icons.celebration,
+                    color: AppColors.resultPrimary,
+                    size: 48,
                   ),
-                ),
-                const SizedBox(height: 24),
-
-                // ランクアップ演出
-                if (_rankUp && _currentRank != null) ...[
-                  AnimatedBuilder(
-                    animation: Listenable.merge([
-                      _rankUpAnimationController,
-                      _bounceAnimationController,
-                    ]),
-                    builder: (context, child) {
-                      final scaleValue = Tween<double>(
-                        begin: 0.0,
-                        end: 1.0,
-                      ).animate(CurvedAnimation(
-                        parent: _rankUpAnimationController,
-                        curve: Curves.elasticOut,
-                      )).value;
-
-                      final bounceValue = Tween<double>(
-                        begin: 0.0,
-                        end: 10.0,
-                      ).animate(CurvedAnimation(
-                        parent: _bounceAnimationController,
-                        curve: Curves.easeInOut,
-                      )).value;
-
-                      final opacityValue = Tween<double>(
-                        begin: 0.0,
-                        end: 1.0,
-                      ).animate(CurvedAnimation(
-                        parent: _rankUpAnimationController,
-                        curve: Curves.easeIn,
-                      )).value;
-
-                      return Opacity(
-                        opacity: opacityValue,
-                        child: Transform.scale(
-                          scale: scaleValue,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(24),
-                              gradient: LinearGradient(
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                                colors: [
-                                  Colors.amber.shade300,
-                                  Colors.orange.shade400,
-                                  Colors.pink.shade300,
-                                ],
-                              ),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.amber.withValues(alpha: 0.5),
-                                  blurRadius: 30,
-                                  spreadRadius: 5,
-                                ),
-                                BoxShadow(
-                                  color: Colors.orange.withValues(alpha: 0.3),
-                                  blurRadius: 50,
-                                  spreadRadius: 10,
-                                ),
-                              ],
-                            ),
-                            padding: const EdgeInsets.all(32),
-                            child: Column(
-                              children: [
-                                // キラキラ効果
-                                AnimatedBuilder(
-                                  animation: _sparkleAnimationController,
-                                  builder: (context, child) {
-                                    return Stack(
-                                      alignment: Alignment.center,
-                                      clipBehavior: Clip.none,
-                                      children: [
-                                        Transform.translate(
-                                          offset: Offset(
-                                            bounceValue * 0.5,
-                                            -bounceValue,
-                                          ),
-                                          child: Transform.rotate(
-                                            angle: _sparkleAnimationController.value * 2 * math.pi * 0.1,
-                                            child: RankIconWidget(
-                                              rank: _currentRank!,
-                                              size: 140,
-                                            ),
-                                          ),
-                                        ),
-                                        // キラキラパーティクル
-                                        ...List.generate(8, (index) {
-                                          final angle = (index / 8) * 2 * math.pi;
-                                          final radius = 90.0 + bounceValue * 2;
-                                          final sparkleOpacity = (0.4 + 0.6 * math.sin(_sparkleAnimationController.value * 2 * math.pi + index)).clamp(0.0, 1.0);
-                                          final sparkleRadius = radius * (1 + 0.2 * math.sin(_sparkleAnimationController.value * 2 * math.pi * 2 + index));
-                                          return Positioned(
-                                            left: sparkleRadius * math.cos(angle),
-                                            top: sparkleRadius * math.sin(angle),
-                                            child: Opacity(
-                                              opacity: sparkleOpacity,
-                                              child: Transform.rotate(
-                                                angle: _sparkleAnimationController.value * 2 * math.pi,
-                                                child: Icon(
-                                                  Icons.star,
-                                                  color: Colors.white,
-                                                  size: 18 + bounceValue * 0.3,
-                                                ),
-                                              ),
-                                            ),
-                                          );
-                                        }),
-                                      ],
-                                    );
-                                  },
-                                ),
-                                const SizedBox(height: 24),
-                                // グラデーションテキスト「ランクアップ！」
-                                ShaderMask(
-                                  shaderCallback: (bounds) => LinearGradient(
-                                    begin: Alignment.topLeft,
-                                    end: Alignment.bottomRight,
-                                    colors: [
-                                      Colors.amber.shade300,
-                                      Colors.orange.shade600,
-                                      Colors.pink.shade400,
-                                      Colors.purple.shade400,
-                                    ],
-                                  ).createShader(bounds),
-                                  child: Text(
-                                    'ランクアップ！',
-                                    style: TextStyle(
-                                      fontSize: 36,
-                                      fontWeight: FontWeight.w900,
-                                      color: Colors.white,
-                                      letterSpacing: 2,
-                                      shadows: [
-                                        Shadow(
-                                          color: Colors.black.withValues(alpha: 0.5),
-                                          blurRadius: 10,
-                                          offset: const Offset(0, 2),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                const SizedBox(height: 12),
-                                // ランク変化の表示
-                                AnimatedOpacity(
-                                  opacity: _rankUpAnimationController.value > 0.5 ? 1.0 : 0.0,
-                                  duration: const Duration(milliseconds: 500),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        _previousRank?.japaneseName ?? '',
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.grey.shade700,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                                        child: AnimatedBuilder(
-                                          animation: _sparkleAnimationController,
-                                          builder: (context, child) {
-                                            return Transform.rotate(
-                                              angle: _sparkleAnimationController.value * 2 * math.pi,
-                                              child: Icon(
-                                                Icons.arrow_forward,
-                                                color: Colors.amber.shade700,
-                                                size: 24,
-                                              ),
-                                            );
-                                          },
-                                        ),
-                                      ),
-                                      ShaderMask(
-                                        shaderCallback: (bounds) => LinearGradient(
-                                          colors: [
-                                            Colors.amber.shade400,
-                                            Colors.orange.shade600,
-                                          ],
-                                        ).createShader(bounds),
-                                        child: Text(
-                                          _currentRank?.japaneseName ?? '',
-                                          style: const TextStyle(
-                                            fontSize: 22,
-                                            fontWeight: FontWeight.w900,
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      );
-                    },
+                  const SizedBox(height: 8),
+                  const Text(
+                    '結果発表',
+                    style: TextStyle(
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF0F172A),
+                      letterSpacing: -1,
+                    ),
                   ),
-                  const SizedBox(height: 24),
-                ],
-
-                // 現在のランク表示
-                GlassMorphismWidget(
-                  borderRadius: 24,
-                  padding: const EdgeInsets.all(32),
-                  child: Column(
-                    children: [
-                      Text(
-                        '現在のランク',
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w700,
-                          letterSpacing: 1.2,
-                          color: Colors.grey.shade500,
-                        ),
-                      ),
-                      const SizedBox(height: 24),
-                      Builder(
-                        builder: (context) {
-                          // 報酬獲得前は前のランク、獲得後は現在のランクを表示
-                          final displayRank = _rewardsClaimed ? _currentRank : _previousRank;
-                          if (displayRank != null) {
-                            return RankIconWidget(
-                              rank: displayRank,
-                              size: 128,
-                            );
-                          }
-                          return const SizedBox.shrink();
-                        },
-                      ),
-                      const SizedBox(height: 24),
-                      Builder(
-                        builder: (context) {
-                          final displayRank = _rewardsClaimed ? _currentRank : _previousRank;
-                          return Text(
-                            displayRank?.japaneseName ?? '',
-                            style: const TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.w900,
-                            ),
-                          );
-                        },
-                      ),
-                      const SizedBox(height: 4),
-                      Builder(
-                        builder: (context) {
-                          final displayRank = _rewardsClaimed ? _currentRank : _previousRank;
-                          return Text(
-                            displayRank?.englishName ?? '',
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.grey.shade500,
-                              letterSpacing: 1.2,
-                            ),
-                          );
-                        },
-                      ),
-                      const SizedBox(height: 16),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 8,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.blue.shade50,
-                              borderRadius:
-                                  const BorderRadius.all(Radius.circular(20)),
-                            ),
-                            child: Text(
-                              '累計EXP: ${NumberFormat('#,###').format(totalExp)}',
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.blue.shade700,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 8,
-                            ),
-                            decoration: BoxDecoration(
-                              color: AppColors.stitchEmerald
-                                  .withValues(alpha: 0.1),
-                              borderRadius:
-                                  const BorderRadius.all(Radius.circular(20)),
-                            ),
-                            child: Text(
-                              '累計PT: ${NumberFormat('#,###').format(totalPoints)}',
-                              style: const TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.bold,
-                                color: AppColors.stitchEmerald,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 32),
-
-                // 報酬獲得済みの場合のみボタンを表示
-                if (_rewardsClaimed) ...[
-                  // ホームに戻るボタン
-                  GlowButton(
-                    glowColor: AppColors.stitchEmerald,
-                    onPressed: () => context.go('/'),
-                    backgroundColor: AppColors.stitchEmerald,
-                    foregroundColor: Colors.white,
-                    borderRadius: 16,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: const Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                  const SizedBox(height: 8),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: AppColors.resultPrimary.withValues(alpha: 0.1),
+                      borderRadius: BorderRadius.circular(9999),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(Icons.home, size: 20),
-                        SizedBox(width: 8),
+                        const Icon(
+                          Icons.auto_awesome,
+                          color: AppColors.resultPrimary,
+                          size: 14,
+                        ),
+                        const SizedBox(width: 4),
                         Text(
-                          'ホームに戻る',
-                          style: TextStyle(
-                            fontSize: 16,
+                          _getPerformanceLabel(accuracy),
+                          style: const TextStyle(
+                            color: AppColors.resultPrimary,
                             fontWeight: FontWeight.bold,
+                            fontSize: 12,
                           ),
                         ),
                       ],
                     ),
                   ),
                 ],
-              ],
+              ),
             ),
-          ),
+          ],
         ),
       ),
-      bottomNavigationBar: const BannerAdWidget(),
+    );
+  }
+
+  Widget _buildScoreGaugeSection(double accuracy) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: GlassMorphismWidget(
+        borderRadius: 16,
+        borderColor: AppColors.resultPrimary.withValues(alpha: 0.2),
+        padding: const EdgeInsets.all(32),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.1),
+            blurRadius: 25,
+            offset: const Offset(0, 10),
+          ),
+        ],
+        child: Column(
+          children: [
+            Text(
+              '今回のスコア',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                color: Colors.grey.shade500,
+              ),
+            ),
+            const SizedBox(height: 24),
+            TweenAnimationBuilder<double>(
+              tween: Tween(begin: 0.0, end: accuracy),
+              duration: const Duration(milliseconds: 1500),
+              curve: Curves.easeOutCubic,
+              builder: (context, animatedAccuracy, child) {
+                return SizedBox(
+                  width: 160,
+                  height: 160,
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      CustomPaint(
+                        size: const Size(160, 160),
+                        painter: _CircularGaugePainter(
+                          percentage: animatedAccuracy,
+                          backgroundColor: const Color(0xFFE2E8F0),
+                          fillColor: AppColors.resultPrimary,
+                        ),
+                      ),
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          TweenAnimationBuilder<double>(
+                            tween: Tween(
+                                begin: 0.0,
+                                end: widget.score.toDouble()),
+                            duration: const Duration(milliseconds: 1500),
+                            curve: Curves.easeOutCubic,
+                            builder: (context, animatedScore, child) {
+                              return Text(
+                                '${animatedScore.toInt()}',
+                                style: const TextStyle(
+                                  fontSize: 48,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color(0xFF0F172A),
+                                ),
+                              );
+                            },
+                          ),
+                          Text(
+                            '/ ${widget.total}',
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey.shade400,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildRankSection(int totalExp, UserRank displayRank) {
+    final expToNext = displayRank.expToNextRank(totalExp);
+    final isMaxRank = expToNext == null;
+
+    double progress;
+    if (isMaxRank) {
+      progress = 1.0;
+    } else {
+      final currentMin = displayRank.minExp;
+      final nextRankIndex = displayRank.rankIndex + 1;
+      final nextRankMinExp = ranks[nextRankIndex].requiredExp;
+      final range = nextRankMinExp - currentMin;
+      progress =
+          range > 0 ? ((totalExp - currentMin) / range).clamp(0.0, 1.0) : 1.0;
+    }
+
+    String? nextRankLabel;
+    if (!isMaxRank && displayRank.rankIndex + 1 < UserRank.values.length) {
+      nextRankLabel = UserRank.values[displayRank.rankIndex + 1].japaneseName;
+    }
+
+    Widget content = Container(
+      margin: const EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: const Color(0xFFF1F5F9)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.05),
+            blurRadius: 8,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Column(
+        children: [
+          Stack(
+            clipBehavior: Clip.none,
+            alignment: Alignment.center,
+            children: [
+              AnimatedBuilder(
+                animation: _bounceAnimationController,
+                builder: (context, child) {
+                  final bounceValue = _rankUp
+                      ? Tween<double>(begin: 0.0, end: -10.0)
+                          .animate(CurvedAnimation(
+                            parent: _bounceAnimationController,
+                            curve: Curves.easeInOut,
+                          ))
+                          .value
+                      : 0.0;
+                  return Transform.translate(
+                    offset: Offset(0, bounceValue),
+                    child: Container(
+                      width: 128,
+                      height: 128,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: const LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+                            AppColors.resultPrimary,
+                            AppColors.resultAccentGreen,
+                          ],
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color:
+                                AppColors.resultPrimary.withValues(alpha: 0.3),
+                            blurRadius: 20,
+                            spreadRadius: 2,
+                          ),
+                        ],
+                        border: Border.all(color: Colors.white, width: 4),
+                      ),
+                      child: ClipOval(
+                        child: Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: Image.asset(
+                            'assets/images/rank_icons/${displayRank.name}.png',
+                            fit: BoxFit.contain,
+                            errorBuilder: (_, __, ___) => const Icon(
+                              Icons.school,
+                              size: 56,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+              if (_rankUp)
+                Positioned(
+                  bottom: -8,
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: AppColors.resultAccentGreen,
+                      borderRadius: BorderRadius.circular(9999),
+                      border: Border.all(color: Colors.white, width: 2),
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppColors.resultAccentGreen
+                              .withValues(alpha: 0.4),
+                          blurRadius: 8,
+                        ),
+                      ],
+                    ),
+                    child: const Text(
+                      'RANK UP!',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+            ],
+          ),
+          const SizedBox(height: 20),
+          Text(
+            displayRank.japaneseName,
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            isMaxRank ? 'レベルMax' : '次のランクまで $expToNext XP',
+            style: TextStyle(
+              fontSize: 13,
+              color: Colors.grey.shade500,
+            ),
+          ),
+          const SizedBox(height: 16),
+          Container(
+            height: 16,
+            decoration: BoxDecoration(
+              color: const Color(0xFFF1F5F9),
+              borderRadius: BorderRadius.circular(9999),
+              border: Border.all(color: const Color(0xFFE2E8F0)),
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(9999),
+              child: TweenAnimationBuilder<double>(
+                tween: Tween(begin: 0.0, end: progress),
+                duration: const Duration(milliseconds: 1000),
+                curve: Curves.easeOutCubic,
+                builder: (context, animatedProgress, child) {
+                  return FractionallySizedBox(
+                    alignment: Alignment.centerLeft,
+                    widthFactor: animatedProgress,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        gradient: const LinearGradient(
+                          colors: [
+                            AppColors.resultPrimary,
+                            AppColors.resultAccentGreen,
+                          ],
+                        ),
+                        borderRadius: BorderRadius.circular(9999),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                displayRank.japaneseName,
+                style: TextStyle(
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey.shade400,
+                  letterSpacing: 0.5,
+                ),
+              ),
+              Text(
+                isMaxRank
+                    ? '${displayRank.englishName} (Level Max)'
+                    : nextRankLabel ?? '',
+                style: TextStyle(
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                  color:
+                      isMaxRank ? AppColors.resultAccentGreen : Colors.grey.shade400,
+                  letterSpacing: 0.5,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+
+    if (_rankUp) {
+      return AnimatedBuilder(
+        animation: _rankUpAnimationController,
+        builder: (context, child) {
+          final scaleValue = Tween<double>(begin: 0.8, end: 1.0)
+              .animate(CurvedAnimation(
+                parent: _rankUpAnimationController,
+                curve: Curves.elasticOut,
+              ))
+              .value;
+          final opacityValue = Tween<double>(begin: 0.0, end: 1.0)
+              .animate(CurvedAnimation(
+                parent: _rankUpAnimationController,
+                curve: const Interval(0.0, 0.4, curve: Curves.easeIn),
+              ))
+              .value;
+          return Opacity(
+            opacity: opacityValue,
+            child: Transform.scale(
+              scale: scaleValue,
+              child: content,
+            ),
+          );
+        },
+      );
+    }
+
+    return content;
+  }
+
+  Widget _buildRewardsSection() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: Row(
+        children: [
+          Expanded(
+            child: _buildRewardCard(
+              icon: Icons.trending_up,
+              accentColor: AppColors.resultPrimary,
+              label: 'EXPERIENCE',
+              child: TweenAnimationBuilder<double>(
+                tween: Tween(begin: 0.0, end: _earnedExp.toDouble()),
+                duration: const Duration(milliseconds: 1500),
+                curve: Curves.easeOutCubic,
+                builder: (context, animatedExp, child) {
+                  return Text(
+                    '+${animatedExp.toInt()} EXP',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF0F172A),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+          const SizedBox(width: 16),
+          Expanded(
+            child: _buildRewardCard(
+              icon: Icons.monetization_on,
+              accentColor: AppColors.resultAccentGreen,
+              label: 'POINTS',
+              child: TweenAnimationBuilder<double>(
+                tween: Tween(begin: 0.0, end: _earnedPoints.toDouble()),
+                duration: const Duration(milliseconds: 1500),
+                curve: Curves.easeOutCubic,
+                builder: (context, animatedPoints, child) {
+                  return Text(
+                    '+${animatedPoints.toInt()} PT',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF0F172A),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildRewardCard({
+    required IconData icon,
+    required Color accentColor,
+    required String label,
+    required Widget child,
+  }) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.7),
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.05),
+            blurRadius: 8,
+          ),
+        ],
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: Stack(
+        children: [
+          Positioned(
+            left: 0,
+            top: 0,
+            bottom: 0,
+            child: Container(width: 4, color: accentColor),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Center(
+              child: Column(
+                children: [
+                  Icon(icon, color: accentColor, size: 24),
+                  const SizedBox(height: 4),
+                  Text(
+                    label,
+                    style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.grey.shade500,
+                      letterSpacing: 0.5,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  child,
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildActionSection() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: Column(
+        children: [
+          if (!_rewardsClaimed) ...[
+            GlowButton(
+              glowColor: AppColors.resultAccentGreen,
+              onPressed:
+                  _adHelper.isLoadingAd || !_adHelper.isAdReady || _rewardsClaimed
+                      ? null
+                      : _showRewardedAd,
+              backgroundColor: AppColors.resultAccentGreen,
+              foregroundColor: Colors.white,
+              borderRadius: 16,
+              padding: const EdgeInsets.symmetric(vertical: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  if (_adHelper.isLoadingAd)
+                    const SizedBox(
+                      width: 20,
+                      height: 20,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor:
+                            AlwaysStoppedAnimation<Color>(Colors.white),
+                      ),
+                    )
+                  else
+                    const Icon(Icons.play_circle, size: 24),
+                  const SizedBox(width: 12),
+                  Text(
+                    _adHelper.isLoadingAd
+                        ? '広告を読み込み中...'
+                        : !_adHelper.isAdReady
+                            ? '広告を準備中...'
+                            : '広告を見て報酬を2倍にする',
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton(
+                onPressed: () => context.go('/'),
+                style: OutlinedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  side: BorderSide(color: Colors.grey.shade300),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  backgroundColor: Colors.white.withValues(alpha: 0.5),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.home, size: 20, color: Colors.grey.shade600),
+                    const SizedBox(width: 8),
+                    Text(
+                      'トップへ戻る（報酬は獲得できません）',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ] else ...[
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: AppColors.resultAccentGreen.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: AppColors.resultAccentGreen.withValues(alpha: 0.3),
+                ),
+              ),
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.check_circle,
+                      color: AppColors.resultAccentGreen, size: 20),
+                  SizedBox(width: 8),
+                  Text(
+                    '報酬を獲得しました',
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.resultAccentGreen,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+            GlowButton(
+              glowColor: AppColors.resultPrimary,
+              onPressed: () => context.go('/'),
+              backgroundColor: AppColors.resultPrimary,
+              foregroundColor: Colors.white,
+              borderRadius: 16,
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.home, size: 20),
+                  SizedBox(width: 8),
+                  Text(
+                    'ホームに戻る',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ],
       ),
     );
   }
 }
 
+class _CircularGaugePainter extends CustomPainter {
+  final double percentage;
+  final Color backgroundColor;
+  final Color fillColor;
+  static const double strokeWidth = 12;
+
+  _CircularGaugePainter({
+    required this.percentage,
+    required this.backgroundColor,
+    required this.fillColor,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final center = Offset(size.width / 2, size.height / 2);
+    final radius = (math.min(size.width, size.height) - strokeWidth) / 2;
+
+    final bgPaint = Paint()
+      ..color = backgroundColor
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = strokeWidth
+      ..strokeCap = StrokeCap.round;
+    canvas.drawCircle(center, radius, bgPaint);
+
+    if (percentage > 0) {
+      final fillPaint = Paint()
+        ..color = fillColor
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = strokeWidth
+        ..strokeCap = StrokeCap.round;
+      final sweepAngle = 2 * math.pi * (percentage / 100);
+      canvas.drawArc(
+        Rect.fromCircle(center: center, radius: radius),
+        -math.pi / 2,
+        sweepAngle,
+        false,
+        fillPaint,
+      );
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _CircularGaugePainter oldDelegate) =>
+      percentage != oldDelegate.percentage;
+}
+
+class _ConfettiPatternPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final bluePaint = Paint()..color = AppColors.resultPrimary;
+    final greenPaint = Paint()..color = AppColors.resultAccentGreen;
+    const spacing = 20.0;
+    const dotRadius = 1.0;
+
+    for (double x = 0; x < size.width; x += spacing) {
+      for (double y = 0; y < size.height; y += spacing) {
+        canvas.drawCircle(Offset(x, y), dotRadius, bluePaint);
+      }
+    }
+    for (double x = spacing / 2; x < size.width; x += spacing) {
+      for (double y = spacing / 2; y < size.height; y += spacing) {
+        canvas.drawCircle(Offset(x, y), dotRadius, greenPaint);
+      }
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
+}
+
+class _ConfettiParticle {
+  final double x;
+  final double phase;
+  final double speed;
+  final double size;
+  final Color color;
+  final double rotation;
+  final double wobbleAmount;
+
+  const _ConfettiParticle({
+    required this.x,
+    required this.phase,
+    required this.speed,
+    required this.size,
+    required this.color,
+    required this.rotation,
+    required this.wobbleAmount,
+  });
+
+  static const _colors = [
+    AppColors.resultPrimary,
+    AppColors.resultAccentGreen,
+    Color(0xFFFFD700),
+    Color(0xFFFF6B6B),
+    Color(0xFFAB47BC),
+  ];
+
+  factory _ConfettiParticle.random() {
+    final r = math.Random();
+    return _ConfettiParticle(
+      x: r.nextDouble(),
+      phase: r.nextDouble(),
+      speed: 0.6 + r.nextDouble() * 0.8,
+      size: 4 + r.nextDouble() * 6,
+      color: _colors[r.nextInt(_colors.length)],
+      rotation: r.nextDouble() * math.pi * 2,
+      wobbleAmount: 0.01 + r.nextDouble() * 0.025,
+    );
+  }
+}
+
+class _FallingConfettiPainter extends CustomPainter {
+  final List<_ConfettiParticle> particles;
+  final double progress;
+
+  _FallingConfettiPainter({required this.particles, required this.progress});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    for (final p in particles) {
+      final t = (progress * p.speed + p.phase) % 1.0;
+      final y = t * 1.4 - 0.2;
+      final x = p.x + math.sin(t * math.pi * 4 + p.rotation) * p.wobbleAmount;
+      final opacity = (1.0 - (y - 0.8).clamp(0.0, 0.4) / 0.4).clamp(0.0, 0.7);
+
+      final paint = Paint()
+        ..color = p.color.withValues(alpha: opacity)
+        ..style = PaintingStyle.fill;
+
+      canvas.save();
+      canvas.translate(x * size.width, y * size.height);
+      canvas.rotate(progress * math.pi * 3 * p.speed + p.rotation);
+      canvas.drawRRect(
+        RRect.fromRectAndRadius(
+          Rect.fromCenter(
+            center: Offset.zero,
+            width: p.size,
+            height: p.size * 0.6,
+          ),
+          const Radius.circular(1),
+        ),
+        paint,
+      );
+      canvas.restore();
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _FallingConfettiPainter oldDelegate) =>
+      progress != oldDelegate.progress;
+}

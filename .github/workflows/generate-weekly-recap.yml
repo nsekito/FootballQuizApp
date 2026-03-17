@@ -48,7 +48,7 @@ jobs:
       - name: Update questions.db with Weekly Recap
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
-          TARGET_DATE=$(python -c "from datetime import datetime, timedelta; today = datetime.now(); days_from_monday = today.weekday() % 7; monday = today - timedelta(days=days_from_monday); print(monday.strftime('%Y-%m-%d'))")
+          TARGET_DATE=$(python -c "from datetime import datetime, timedelta, timezone; jst = timezone(timedelta(hours=9)); today = datetime.now(jst); days_from_monday = today.weekday(); monday = today - timedelta(days=days_from_monday); print(monday.strftime('%Y-%m-%d'))")
           for file in data/weekly_recap/${TARGET_DATE}_j1.json data/weekly_recap/${TARGET_DATE}_europe.json; do
             if [ -f "$file" ]; then
               python scripts/json_to_db.py "$file" --no-cleanup
@@ -64,7 +64,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "変更がありません。コミットをスキップします。"
           else
-            TARGET_DATE=$(python -c "from datetime import datetime, timedelta; today = datetime.now(); days_from_monday = today.weekday() % 7; monday = today - timedelta(days=days_from_monday); print(monday.strftime('%Y-%m-%d'))")
+            TARGET_DATE=$(python -c "from datetime import datetime, timedelta, timezone; jst = timezone(timedelta(hours=9)); today = datetime.now(jst); days_from_monday = today.weekday(); monday = today - timedelta(days=days_from_monday); print(monday.strftime('%Y-%m-%d'))")
             git commit -m "chore: Generate weekly recap questions for $TARGET_DATE"
             git push
           fi

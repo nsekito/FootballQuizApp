@@ -1,7 +1,7 @@
 """Weekly Recap問題生成スクリプト（Gemini Grounding使用）"""
 import json
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 # scripts/ディレクトリをパスに追加
@@ -16,12 +16,13 @@ PROJECT_ROOT = Path(__file__).parent.parent
 
 
 def get_monday_date() -> str:
-    """最新の月曜日の日付をYYYY-MM-DD形式で取得
+    """最新の月曜日の日付をYYYY-MM-DD形式で取得（JST基準）
     
     月曜日が今日の場合、今日の日付を返す
     それ以外の場合、直近の月曜日の日付を返す
     """
-    today = datetime.now()
+    JST = timezone(timedelta(hours=9))
+    today = datetime.now(JST)
     # weekday(): 月曜日=0, 火曜日=1, ..., 日曜日=6
     days_from_monday = today.weekday()
     monday = today - timedelta(days=days_from_monday)
@@ -98,7 +99,7 @@ def save_weekly_recap_json(
     # JSON形式に整形
     output_data = {
         "version": "1.0",
-        "generated_at": datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ'),
+        "generated_at": datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
         "category": "match_recap",
         "league_type": league_type,
         "date": date,

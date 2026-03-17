@@ -1,52 +1,78 @@
 <!DOCTYPE html>
+
 <html lang="ja"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Clean Tech Quiz Results</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-<script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        primary: "#10B981", // Vibrant Emerald for Clean Tech feel
-                        "background-light": "#F8FAFC",
-                        "background-dark": "#0F172A",
+                        "primary": "#2badee",
+                        "accent-green": "#4ade80",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
                     },
                     fontFamily: {
-                        display: ["Inter", "Noto Sans JP", "sans-serif"],
+                        "display": ["Space Grotesk", "sans-serif"]
                     },
-                    borderRadius: {
-                        DEFAULT: "1rem",
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    keyframes: {
+                        'rank-pop': {
+                            '0%': { transform: 'scale(0.8) translateY(20px)', opacity: '0' },
+                            '60%': { transform: 'scale(1.1) translateY(-5px)', opacity: '1' },
+                            '100%': { transform: 'scale(1) translateY(0)', opacity: '1' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
                     },
-                    backgroundImage: {
-                        'grid-pattern': "radial-gradient(circle, #e2e8f0 1px, transparent 1px)",
-                        'grid-pattern-dark': "radial-gradient(circle, #1e293b 1px, transparent 1px)",
+                    animation: {
+                        'rank-pop': 'rank-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
+                        'float': 'float 3s ease-in-out infinite',
                     }
                 },
             },
-        };
+        }
     </script>
 <style>
-        body {
-            font-family: 'Inter', 'Noto Sans JP', sans-serif;
-            -webkit-tap-highlight-color: transparent;
-        }
-        .glass {
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
-        .grid-bg {
-            background-size: 24px 24px;
+        .glow-green {
+            box-shadow: 0 0 20px rgba(74, 222, 128, 0.4);
         }
-        .glow-star {
-            filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.6));
+        .confetti-bg {
+            background-image: radial-gradient(#2badee 1px, transparent 1px), radial-gradient(#4ade80 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
         }
-        .rank-aura {
-            background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+        .circular-gauge {
+            position: relative;
+            width: 160px;
+            height: 160px;
+        }
+        .circular-gauge svg {
+            transform: rotate(-90deg);
+        }
+        .circular-gauge circle {
+            fill: none;
+            stroke-width: 12;
+            stroke-linecap: round;
+        }
+        .gauge-bg { stroke: #e2e8f0; }
+        .gauge-fill {
+            stroke: #2badee;
+            stroke-dasharray: 440;
+            stroke-dashoffset: calc(440 - (440 * 80) / 100);
+            transition: stroke-dashoffset 1.5s ease-out;
         }
     </style>
 <style>
@@ -54,63 +80,97 @@
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 min-h-screen flex items-center justify-center p-0 sm:p-4">
-<div class="w-full max-w-[430px] h-full sm:h-[844px] bg-background-light dark:bg-background-dark relative overflow-hidden sm:rounded-[3rem] sm:border-[8px] border-slate-200 dark:border-slate-800 flex flex-col grid-bg bg-grid-pattern dark:bg-grid-pattern-dark shadow-2xl">
-<header class="sticky top-0 z-50 px-6 pt-12 pb-6 flex items-center justify-between bg-primary/90 backdrop-blur-md text-white">
-<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors">
-<span class="material-symbols-outlined">arrow_back</span>
-</button>
-<h1 class="text-xl font-bold tracking-tight">結果</h1>
-<div class="w-10"></div> 
-</header>
-<main class="flex-1 overflow-y-auto px-6 pt-8 space-y-6 pb-24">
-<section class="glass bg-white/40 dark:bg-slate-800/40 border border-white/40 dark:border-slate-700/40 rounded-3xl p-8 text-center shadow-xl shadow-slate-200/50 dark:shadow-none">
-<div class="space-y-2">
-<p class="text-6xl font-black text-primary tracking-tighter">3 <span class="text-3xl text-slate-400 dark:text-slate-500 font-medium">/ 10</span></p>
-<p class="text-lg font-medium text-slate-600 dark:text-slate-300">正答率: <span class="text-slate-900 dark:text-white font-bold">30.0%</span></p>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex min-h-screen w-full max-w-md mx-auto flex-col overflow-x-hidden pb-10">
+<!-- Header Section -->
+<div class="relative pt-12 pb-6 px-4 text-center overflow-hidden">
+<div class="absolute inset-0 opacity-20 confetti-bg"></div>
+<div class="relative z-10">
+<div class="flex justify-center mb-2">
+<span class="material-symbols-outlined text-primary text-5xl">celebration</span>
 </div>
-</section>
-<section class="glass bg-white/60 dark:bg-slate-800/60 border border-white/50 dark:border-slate-700/50 rounded-2xl p-5 flex items-center justify-between shadow-lg shadow-slate-200/30 dark:shadow-none">
-<div class="space-y-1">
-<p class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">獲得ポイント</p>
-<p class="text-2xl font-black text-primary">+30 GP</p>
-</div>
-<div class="w-12 h-12 flex items-center justify-center bg-amber-400 rounded-full glow-star">
-<span class="material-symbols-outlined text-white text-3xl fill-current">star</span>
-</div>
-</section>
-<section class="glass bg-white/60 dark:bg-slate-800/60 border border-white/50 dark:border-slate-700/50 rounded-3xl p-8 text-center space-y-6 relative overflow-hidden">
-<div class="absolute inset-0 rank-aura"></div>
-<div class="relative">
-<p class="text-sm font-bold text-slate-500 dark:text-slate-400 tracking-wider">現在のランク</p>
-<div class="mt-6 mb-4 flex justify-center">
-<div class="w-32 h-32 rounded-full bg-gradient-to-tr from-slate-200 to-white dark:from-slate-700 dark:to-slate-600 flex items-center justify-center shadow-inner relative">
-<div class="absolute inset-0 rounded-full border border-primary/20 animate-pulse"></div>
-<span class="material-symbols-outlined text-6xl text-slate-400 dark:text-slate-300">school</span>
+<h1 class="text-4xl font-bold tracking-tight text-slate-900">結果発表</h1>
+<div class="mt-2 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-bold text-sm">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+                    PERFECT CLEAR
+                </div>
 </div>
 </div>
-<div class="space-y-1">
-<h2 class="text-2xl font-black text-slate-900 dark:text-white">アカデミー生</h2>
-<p class="text-xs font-medium text-slate-400 dark:text-slate-500 uppercase">Academy</p>
+<!-- Main Score Card with Gauge -->
+<div class="px-6 mb-8">
+<div class="glass-card rounded-xl p-8 flex flex-col items-center justify-center shadow-xl border-primary/20 relative overflow-hidden">
+<p class="text-slate-500 font-medium mb-6">今回のスコア</p>
+<div class="circular-gauge mb-4">
+<svg class="w-full h-full" viewbox="0 0 160 160">
+<circle class="gauge-bg" cx="80" cy="80" r="70"></circle>
+<circle class="gauge-fill" cx="80" cy="80" r="70"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-5xl font-bold text-slate-900">80</span>
+<span class="text-sm font-bold text-slate-400">POINTS</span>
 </div>
-<div class="mt-4 inline-block px-4 py-1.5 bg-primary/10 rounded-full">
-<p class="text-primary font-bold text-sm">累計: 30 GP</p>
 </div>
 </div>
-</section>
-</main>
-<footer class="absolute bottom-0 left-0 right-0 p-6 space-y-3 bg-gradient-to-t from-background-light via-background-light/95 to-transparent dark:from-background-dark dark:via-background-dark/95">
-<button class="w-full h-14 bg-gradient-to-r from-primary to-emerald-400 text-white font-bold text-lg rounded-2xl shadow-lg shadow-primary/25 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2">
-<span class="material-symbols-outlined">home</span>
-                ホームに戻る
+</div>
+<!-- Rank-up Section -->
+<div class="px-6 mb-8">
+<div class="bg-white dark:bg-slate-800/50 rounded-xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col items-center animate-rank-pop">
+<div class="relative mb-4">
+<!-- Rank Icon with Glow -->
+<div class="w-32 h-32 rounded-full bg-gradient-to-tr from-primary to-accent-green flex items-center justify-center shadow-lg relative z-10 animate-float border-4 border-white">
+<span class="material-symbols-outlined text-white text-6xl">school</span>
+</div>
+<!-- Rank Badge -->
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-accent-green text-white px-4 py-1 rounded-full text-sm font-bold shadow-md z-20 border-2 border-white">
+                        RANK UP!
+                    </div>
+</div>
+<h3 class="text-xl font-bold mb-1">Academy Student</h3>
+<p class="text-slate-500 text-sm mb-4">次のランクまで 0 XP</p>
+<!-- Progress Bar -->
+<div class="w-full h-4 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
+<div class="h-full bg-gradient-to-r from-primary to-accent-green w-full rounded-full transition-all duration-1000"></div>
+</div>
+<div class="flex justify-between w-full mt-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+<span>Junior</span>
+<span class="text-accent-green">Academy (Level Max)</span>
+</div>
+</div>
+</div>
+<!-- Rewards Cards -->
+<div class="px-6 grid grid-cols-2 gap-4 mb-10">
+<div class="glass-card rounded-xl p-4 flex flex-col items-center justify-center border-l-4 border-primary shadow-sm">
+<span class="material-symbols-outlined text-primary mb-1">trending_up</span>
+<span class="text-xs text-slate-500 font-medium uppercase">Experience</span>
+<span class="text-xl font-bold text-slate-900">+450 EXP</span>
+</div>
+<div class="glass-card rounded-xl p-4 flex flex-col items-center justify-center border-l-4 border-accent-green shadow-sm">
+<span class="material-symbols-outlined text-accent-green mb-1">monetization_on</span>
+<span class="text-xs text-slate-500 font-medium uppercase">Points</span>
+<span class="text-xl font-bold text-slate-900">+120 PT</span>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="px-6 flex flex-col gap-4 mt-auto">
+<button class="bg-accent-green text-white py-5 rounded-xl font-bold text-lg flex items-center justify-center gap-3 glow-green hover:brightness-105 transition-all active:scale-95 shadow-lg">
+<span class="material-symbols-outlined">play_circle</span>
+                広告を見て報酬を2倍にする
             </button>
-<button class="w-full h-14 border-2 border-primary/30 dark:border-primary/20 bg-white/50 dark:bg-slate-800/50 text-primary font-bold text-lg rounded-2xl hover:bg-primary/5 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
-<span class="material-symbols-outlined">replay</span>
-                もう一度挑戦
+<button class="bg-white/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300 py-4 rounded-xl font-bold text-base flex items-center justify-center gap-2 border border-slate-200 dark:border-slate-700 hover:bg-white/80 transition-all active:scale-95">
+<span class="material-symbols-outlined text-xl">home</span>
+                トップへ戻る（報酬は獲得できません）
             </button>
-</footer>
-<div class="hidden sm:block absolute top-0 left-1/2 -translate-x-1/2 w-40 h-7 bg-primary rounded-b-3xl z-[60]"></div>
+<a class="text-slate-400 text-xs font-medium text-center pt-2 hover:text-primary transition-colors" href="#">
+                利用規約に同意して続行
+            </a>
 </div>
-
+</div>
+<!-- Decorative Elements -->
+<div class="fixed top-20 left-10 opacity-20 pointer-events-none">
+<img class="w-16 h-16 blur-xl bg-primary rounded-full" data-alt="Floating abstract blue circle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4imrj2Wa_b8qafKGmc0-qNP4CKFp5FowpgYviY_zwVo4x3Y3mRiLrzHs_Nbe5v4VthwlDGxtpLz7HR7J1l03R5EiuB0FH1MoKxA8slxLeDST_eLwRy_LrdJgheNVs_iMH9sZeRQaDO6uApzV__EmGItvtlUVEfSNjeMKRcwF4Csn25Bn9Qp5bPVrSfIjxTQSXUE809mW65f8ftMmxzrgGdbn1FR_Yew9w1UQ0leUYDof-RMHdf3tXkNfjOxm2Mceilkw2hBOkQNU"/>
+</div>
+<div class="fixed bottom-40 right-10 opacity-20 pointer-events-none">
+<img class="w-24 h-24 blur-2xl bg-accent-green rounded-full" data-alt="Floating abstract green circle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARsBj8gsnCokMR1zuy1UeR5peNKy_FQ5bBVHzjy6PT2YzAQick7xs6XjHJX_lTONr-BrpOjJ1kxQB3IXJf_kAegR0sFlhzX8nfJhE9D0UurKf0x_k8nCYyiTPSRTSecS-D91_aHyiNJOhx2EG1lNQgDQL9WF64RyVsRiBUupAMPL8foecw6bnOADCBL1I5rOK-rSDl1kl3DVsHELMpsK_v4tvtEhS7tnOZyHx_nk-XdOdMqlsb_Qym3YFQuTA75gaijGKMvRGiEDY"/>
+</div>
 </body></html>

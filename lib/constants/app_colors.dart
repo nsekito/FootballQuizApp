@@ -59,7 +59,11 @@ class AppColors {
   static const stitchBackgroundDark = Color(0xFF0F172A); // 背景ダーク
   static const stitchCardLight = Color(0xB3FFFFFF); // カードライト（70%透明度）
   static const stitchCardDark = Color(0xB31E293B); // カードダーク（70%透明度）
-  
+
+  // Stitch結果画面用カラー
+  static const resultPrimary = Color(0xFF2BADEE);
+  static const resultAccentGreen = Color(0xFF4ADE80);
+
   // ガラスモーフィズム用カラー
   static const glassWhite = Color(0xB3FFFFFF); // ガラス白（70%透明度）
   static const glassBorder = Color(0x33FFFFFF); // ガラスボーダー（20%透明度）

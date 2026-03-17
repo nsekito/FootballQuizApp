@@ -181,8 +181,8 @@ class LoginBonusConfig {
 }
 
 const loginBonus = LoginBonusConfig(
-  // 1日目: 2pt, 2日目: 2pt, 3日目: 2pt, 4日目: 4pt, 5日目: 2pt, 6日目: 2pt, 7日目: 10pt
-  dailyPt: [2, 2, 2, 4, 2, 2, 10],
+  // 1日目: 10pt, 2日目: 10pt, 3日目: 10pt, 4日目: 30pt, 5日目: 10pt, 6日目: 10pt, 7日目: 50pt
+  dailyPt: [10, 10, 10, 30, 10, 10, 50],
   consecutive7DayBonusExp: 20,
 );
 
@@ -296,6 +296,6 @@ class HistoryUnlockConfig {
 }
 
 const historyUnlock = HistoryUnlockConfig(
-  singleQuestionCost: 3,
+  singleQuestionCost: 15,
   bundle10Cost: 25,
 );
