@@ -1,0 +1,1055 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-03-22T21:41:55Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-03-23",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "レアル・マドリード",
+        "マンチェスター・シティ",
+        "試合結果"
+      ],
+      "text": "2026年3月17日に行われたUEFAチャンピオンズリーグ・ラウンド16の第2戦、マンチェスター・シティ対レアル・マドリードの試合で、全2ゴールを挙げてレアル・マドリードをベスト8進出に導いたブラジル代表FWは誰？",
+      "options": [
+        "ヴィニシウス・ジュニオール",
+        "ロドリゴ",
+        "ジュード・ベリンガム",
+        "フェデリコ・バルベルデ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月17日のCLラウンド16第2戦で、レアル・マドリードはマンチェスター・シティに2-1で勝利しました。ヴィニシウス・ジュニオールがPKと後半アディショナルタイムにゴールを挙げ、チームを勝利に導きました。",
+      "trivia": "この勝利により、レアル・マドリードは過去5年間で4度もマンチェスター・シティをチャンピオンズリーグから敗退させることになりました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-17",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "バルセロナ",
+        "ニューカッスル",
+        "試合結果"
+      ],
+      "text": "2026年3月18日のUEFAチャンピオンズリーグ・ラウンド16で、バルセロナはニューカッスルを7-2の大差で粉砕しました。この試合で2ゴールを記録したポーランド代表ストライカーは誰？",
+      "options": [
+        "ロベルト・レヴァンドフスキ",
+        "ハフィーニャ",
+        "ラミン・ヤマル",
+        "フェルミン・ロペス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月18日に行われた試合で、バルセロナはニューカッスルを7-2で圧倒しました。ロベルト・レヴァンドフスキはこの試合で後半に2ゴールを記録する活躍を見せました。",
+      "trivia": "この試合では10代のラミン・ヤマルも前半終了間際にPKで貴重な逆転ゴールを決めており、バルセロナの後半のゴールラッシュの口火を切りました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-18",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "スポルティングCP",
+        "大逆転",
+        "試合結果"
+      ],
+      "text": "2026年3月17日のUEFAチャンピオンズリーグ・ラウンド16第2戦で、初戦0-3のビハインドから延長戦の末にボデ/グリムトを5-0で破り、大逆転でベスト8へ進出したポルトガルのクラブはどこ？",
+      "options": [
+        "スポルティングCP",
+        "ベンフィカ",
+        "FCポルト",
+        "ブラガ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月17日のCLラウンド16第2戦で、スポルティングCPは初戦0-3の不利な状況からホームで大反撃を見せ、延長戦の末に5-0で大逆転勝利を収めました。",
+      "trivia": "チャンピオンズリーグの歴史において、第1戦の3点差以上のビハインドを逆転したのは、2016-17シーズンのバルセロナ（対PSG戦）などに次ぐ歴史的な快挙です。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-17",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "プレミアリーグ",
+        "イングランド勢",
+        "試合結果"
+      ],
+      "text": "2025-26シーズンのUEFAチャンピオンズリーグでは、ラウンド16にイングランドから史上最多の6クラブが進出しました。そのうち準々決勝（ベスト8）に勝ち進んだのはアーセナルと、もう1クラブはどこ？",
+      "options": [
+        "リヴァプール",
+        "マンチェスター・シティ",
+        "チェルシー",
+        "トッテナム"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月中旬に行われたラウンド16の結果、ベスト8に進出したイングランドのクラブはアーセナルとリヴァプールの2クラブのみとなりました。",
+      "trivia": "マンチェスター・シティ、チェルシー、ニューカッスル、トッテナムの4クラブは、いずれもスペインのラ・リーガ勢やフランスのPSGなどに敗れ、ラウンド16で姿を消しました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "リヴァプール",
+        "ガラタサライ",
+        "試合結果"
+      ],
+      "text": "2026年3月18日のUEFAチャンピオンズリーグ・ラウンド16、リヴァプール対ガラタサライの試合で、前半にPKを失敗したものの、後半に1ゴール2アシストの活躍を見せたエジプト代表FWは誰？",
+      "options": [
+        "モハメド・サラー",
+        "ダルウィン・ヌニェス",
+        "ルイス・ディアス",
+        "コーディ・ガクポ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月18日のCLラウンド16第2戦で、リヴァプールはガラタサライに4-0で勝利しました。モハメド・サラーは前半終了間際にPKを外しましたが、後半に巻き返して勝利の立役者となりました。",
+      "trivia": "リヴァプールはこの勝利で国内リーグでの悪い流れを断ち切りました。サラーのアシストからゴールを決めたエキティケとフラーフェンベルフも勝利に大きく貢献しています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-18",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "バイエルン・ミュンヘン",
+        "アタランタ",
+        "試合結果"
+      ],
+      "text": "2026年3月18日のUEFAチャンピオンズリーグ・ラウンド16、バイエルン・ミュンヘン対アタランタの試合で、バイエルンの4-1の勝利に貢献する2ゴールを挙げたイングランド代表FWは誰？",
+      "options": [
+        "ハリー・ケイン",
+        "ジャマル・ムシアラ",
+        "トーマス・ミュラー",
+        "レロイ・サネ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月18日のCLラウンド16第2戦で、バイエルンはアタランタを4-1で退けました。ハリー・ケインが2ゴールを挙げ、2戦合計10-2という圧倒的なスコアでの勝ち抜けに貢献しました。",
+      "trivia": "この試合でのケインの2点目は、巧みな足元のステップから強烈なライジングショットを突き刺す素晴らしいゴールだったと現地メディアで絶賛されました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-18",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "ブライトン",
+        "リヴァプール",
+        "試合結果"
+      ],
+      "text": "2026年3月21日に行われたプレミアリーグで、ブライトンはリヴァプールに2-1で勝利しました。この試合でブライトンの全2ゴールを挙げた元イングランド代表FWは誰？",
+      "options": [
+        "ダニー・ウェルベック",
+        "エヴァン・ファーガソン",
+        "ジョアン・ペドロ",
+        "三笘薫"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月21日のプレミアリーグで、ブライトンは前年度王者のリヴァプールから金星を挙げました。ダニー・ウェルベックが前後半に1点ずつ（14分、56分）を奪う活躍を見せました。",
+      "trivia": "敗れたリヴァプールはこの試合でリーグ戦3試合連続未勝利となり、優勝争いにおいて非常に痛い勝ち点の取りこぼしとなりました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-21",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "フラム",
+        "バーンリー",
+        "試合結果"
+      ],
+      "text": "2026年3月21日に行われたプレミアリーグで、フラムはバーンリーに3-1で勝利しました。後半アディショナルタイムにPKでダメ押しの3点目を決めたメキシコ代表FWは誰？",
+      "options": [
+        "ラウール・ヒメネス",
+        "アレックス・イウォビ",
+        "ロドリゴ・ムニス",
+        "ハリー・ウィルソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月21日のプレミアリーグで、フラムはバーンリーに3-1で勝利しました。試合終了間際の95分にラウール・ヒメネスがPKを沈め、試合を決定づけました。",
+      "trivia": "敗れたバーンリーは残留圏内から勝ち点9差の降格圏に沈んでおり、残り7試合で非常に厳しい状況に追い込まれました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-21",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "マンチェスター・シティ",
+        "退場",
+        "レッドカード"
+      ],
+      "text": "2026年3月17日のUEFAチャンピオンズリーグ・ラウンド16、マンチェスター・シティ対レアル・マドリードの試合で、前半20分にゴールライン上で意図的なハンドを犯して一発退場となったシティの選手は誰？",
+      "options": [
+        "ベルナルド・シウバ",
+        "ルベン・ディアス",
+        "ロドリ",
+        "カイル・ウォーカー"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月17日のCLラウンド16で、マンチェスター・シティの主将を務めていたベルナルド・シウバは前半20分にゴールライン上でシュートを腕で防ぎ、VARの介入を経てレッドカードで退場となりました。",
+      "trivia": "このハンドによって与えられたPKをヴィニシウスが冷静に沈め、早い段階で数的不利となったシティは、アーリング・ハーランドが同点弾を挙げるも力尽きました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-17",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "エヴァートン",
+        "チェルシー",
+        "試合結果"
+      ],
+      "text": "2026年3月21日に行われたプレミアリーグの試合で、エヴァートンはチェルシーに3-0で快勝しました。この試合で2ゴールを挙げる活躍を見せたポルトガル国籍のストライカーは誰？",
+      "options": [
+        "ベト",
+        "ドミニク・キャルバート＝ルーウィン",
+        "ユミト・ナジ",
+        "イリマン・ンディアイエ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月21日のプレミアリーグで、エヴァートンはチェルシーを3-0で一蹴しました。ポルトガル出身のストライカーであるベトが33分と62分にゴールを奪い、勝利の原動力となりました。",
+      "trivia": "敗れたチェルシーはこの週の半ばに行われたチャンピオンズリーグのPSG戦にも0-3で敗れており、わずか数日の間に屈辱的な大敗を連続で喫してしまいました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-21",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "レアル・マドリード",
+        "バイエルン・ミュンヘン",
+        "抽選会"
+      ],
+      "text": "2026年3月18日に抽選が行われたUEFAチャンピオンズリーグ2025-26の準々決勝で、レアル・マドリードと対戦することが決まったクラブはどこでしょう？",
+      "options": [
+        "バイエルン・ミュンヘン",
+        "パリ・サンジェルマン",
+        "リヴァプール",
+        "アーセナル"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月18日に行われたCL準々決勝の抽選で、レアル・マドリードはドイツの強豪バイエルン・ミュンヘンと対戦することが決定しました。",
+      "trivia": "その他の準々決勝のカードは、バルセロナ対アトレティコ・マドリード、PSG対リヴァプール、スポルティングCP対アーセナルという好カードが揃っています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "レアル・マドリード",
+        "順位表"
+      ],
+      "text": "2026年3月21日時点のラ・リーガ順位表で、2位レアル・マドリードを抑えて勝ち点70で首位に立っているクラブはどこでしょう？",
+      "options": [
+        "バルセロナ",
+        "アトレティコ・マドリード",
+        "ビジャレアル",
+        "レアル・ベティス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月下旬時点でバルセロナは勝ち点70を獲得し、2位のレアル・マドリードに4ポイント差をつけてラ・リーガの首位を快走しています。",
+      "trivia": "今シーズンのバルセロナは圧倒的な攻撃力を見せており、大ベテランのロベルト・レヴァンドフスキがゴールを量産して首位快走の原動力となっています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "得点ランキング",
+        "ブレントフォード",
+        "イゴール・チアゴ"
+      ],
+      "text": "2026年3月中旬時点のプレミアリーグ得点ランキングで、首位のハーランドに次ぐ18ゴールを挙げ、単独2位につけているブレントフォードのストライカーは誰でしょう？",
+      "options": [
+        "イゴール・チアゴ",
+        "アントワーヌ・セメニョ",
+        "ジョアン・ペドロ",
+        "ヴィクトル・ギョケレス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月時点でブレントフォードのイゴール・チアゴは18ゴールを挙げており、22ゴールのハーランド（マンチェスター・C）に次ぐプレミア得点ランク2位につけています。",
+      "trivia": "イゴール・チアゴはクラブ・ブルッヘからブレントフォードに加入したブラジル人ストライカーで、チームの新たな得点源として大きなインパクトを残しています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "コモ",
+        "順位表",
+        "躍進"
+      ],
+      "text": "2026年3月22日時点のセリエA順位表で、インテル、ミラン、ナポリの3強に次ぐ4位に位置し、大躍進を見せているクラブはどこでしょう？",
+      "options": [
+        "コモ",
+        "ユヴェントス",
+        "アタランタ",
+        "ボローニャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月22日時点のセリエA順位表で、コモがユヴェントスやローマなどを抑えて4位につけており、来季のCL出場権獲得を目指して旋風を巻き起こしています。",
+      "trivia": "コモはセスク・ファブレガスが監督としてチームを率いており、ポゼッションを主体とした魅力的なスタイルで結果を残しています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "得点ランキング",
+        "ニューカッスル",
+        "アントニー・ゴードン"
+      ],
+      "text": "2026年3月中旬時点のUEFAチャンピオンズリーグ得点ランキングで、首位エンバペに次ぐ10得点を記録し、ハリー・ケインと並んで2位タイにつけているニューカッスルの選手は誰でしょう？",
+      "options": [
+        "アントニー・ゴードン",
+        "アレクサンデル・イサク",
+        "ハーヴェイ・バーンズ",
+        "ブルーノ・ギマランイス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月中旬時点のCL得点ランキングで、ニューカッスルのアントニー・ゴードンは10ゴールを記録し、バイエルンのハリー・ケインと並び2位タイにつけています。",
+      "trivia": "トップは13ゴールのキリアン・エンバペですが、ゴードンは10得点に加えてアシストも複数記録しており、大会屈指のゴール関与数を誇っています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "通算ゴール",
+        "マンチェスター・シティ",
+        "エーリング・ハーランド"
+      ],
+      "text": "2026年3月時点の記録として、プレミアリーグ史上最速となる「111試合」で通算100ゴールに到達した選手は誰でしょう？",
+      "options": [
+        "エーリング・ハーランド",
+        "モハメド・サラー",
+        "ハリー・ケイン",
+        "ソン・フンミン"
+      ],
+      "answerIndex": 0,
+      "explanation": "エーリング・ハーランドは111試合でプレミアリーグ通算100ゴールを達成し、これまでアラン・シアラーが持っていた124試合という最速記録を大幅に更新しました。",
+      "trivia": "現在プレミアリーグの歴代最多得点記録はアラン・シアラーの260ゴールですが、ハーランドの驚異的な得点ペースなら将来の記録更新も夢ではないと言われています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "塩貝健人",
+        "ヴォルフスブルク",
+        "海外日本人選手"
+      ],
+      "text": "2026年3月19日、欧州遠征を行う日本代表メンバーが発表されました。この中で、A代表初招集となったドイツ・ヴォルフスブルクに所属する20歳の若手ストライカーは誰でしょう？",
+      "options": [
+        "塩貝健人",
+        "鈴木唯人",
+        "佐野航大",
+        "後藤啓介"
+      ],
+      "answerIndex": 0,
+      "explanation": "ドイツ1部のヴォルフスブルクでプレーする20歳の塩貝健人が、A代表初招集を受けました。オランダでの活躍を経て冬にドイツへステップアップし、スーパーサブとして存在感を示しています。",
+      "trivia": "塩貝健人はNECナイメヘン時代、エールディビジにおいて史上初となる「途中出場のみで2桁得点」という珍しい記録を達成しています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-19",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "プレミアリーグ",
+        "三笘薫",
+        "ブライトン",
+        "海外日本人選手"
+      ],
+      "text": "2026年3月21日に行われたプレミアリーグ第31節のブライトン対リバプール戦で、負傷から2試合ぶりに復帰して後半途中から出場し、チームの勝利に貢献した日本人選手は誰でしょう？",
+      "options": [
+        "三笘薫",
+        "遠藤航",
+        "鎌田大地",
+        "南野拓実"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブライトンの三笘薫は後半31分から途中出場し、ピッチに入ってすぐに決定機を演出するなど存在感を示しました。なお、リバプールの遠藤航は負傷離脱中のため欠場しています。",
+      "trivia": "この注目の一戦に合わせ、日本の複数の映画館では大画面と迫力の音響でプレミアリーグを楽しむライブビューイングイベントが開催されました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 31,
+        "matchDate": "2026-03-21",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "ブンデスリーガ",
+        "塩貝健人",
+        "菅原由勢",
+        "海外日本人選手"
+      ],
+      "text": "2026年3月21日のブンデスリーガ第27節、ヴォルフスブルク対ブレーメンの試合は、日本人選手がともに出場する一戦となりました。この試合に出場した両チームの日本人選手の組み合わせとして正しいのはどれでしょう？",
+      "options": [
+        "塩貝健人と菅原由勢",
+        "堂安律と板倉滉",
+        "町野修斗と伊藤洋輝",
+        "佐野海舟とチェイス・アンリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴォルフスブルクの塩貝健人は後半30分から途中出場し、ブレーメンの菅原由勢は右サイドバックで先発フル出場を果たしました。試合は1-0でブレーメンが勝利しています。",
+      "trivia": "ブレーメンの守護神ミオ・バックハウスは日本とドイツのハーフ（日本名：長田澪）で、この試合でもビッグセーブを連発し無失点勝利に貢献しました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 27,
+        "matchDate": "2026-03-21",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "ブンデスリーガ",
+        "伊藤洋輝",
+        "バイエルン",
+        "海外日本人選手"
+      ],
+      "text": "2026年3月21日に行われたブンデスリーガ第27節のウニオン・ベルリン戦で、負傷から復帰して途中出場を果たしたバイエルン・ミュンヘン所属の日本人DFは誰でしょう？",
+      "options": [
+        "伊藤洋輝",
+        "板倉滉",
+        "町田浩樹",
+        "瀬古歩夢"
+      ],
+      "answerIndex": 0,
+      "explanation": "伊藤洋輝は後半27分から途中出場し、チームの4-0の無失点勝利に貢献しました。3月18日のチャンピオンズリーグでの復帰に続き、リーグ戦でも戦列に戻り、日本代表への復帰も発表されています。",
+      "trivia": "バイエルンはこの試合の勝利でリーグ戦8試合連続無敗とし、ブンデスリーガの首位を快走しています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 27,
+        "matchDate": "2026-03-21",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "セリエA",
+        "鈴木彩艶",
+        "パルマ",
+        "海外日本人選手"
+      ],
+      "text": "2026年3月21日のセリエA第30節・クレモネーゼ戦で先発出場し、約4ヶ月ぶりの復帰から2試合連続でゴールマウスを守ったパルマのGK鈴木彩艶。彼が今シーズン前半の11月に左手の中指などを骨折する重傷を負ったのは、どのクラブとの試合だったでしょう？",
+      "options": [
+        "ミラン",
+        "インテル",
+        "ユベントス",
+        "ローマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "鈴木彩艶は開幕からスタメンに定着していましたが、11月8日のミラン戦で負傷し長期離脱となりました。2026年3月13日のトリノ戦で復帰後、21日のクレモネーゼ戦にも出場しましたが、チームは連敗を喫しています。",
+      "trivia": "鈴木が離脱していた間は24歳のイタリア人GKエドアルド・コルヴィが代役を務め、5試合無敗を維持するなど見事なパフォーマンスを見せてチームを支えました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 30,
+        "matchDate": "2026-03-21",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "リヴァプール",
+        "アリソン",
+        "プレミアリーグ",
+        "負傷"
+      ],
+      "text": "2026年3月、自身のInstagramで負傷により「しばらく戦列を離れる」と発表した、リヴァプールに所属するブラジル代表GKは誰でしょう？",
+      "options": [
+        "アリソン・ベッカー",
+        "エデルソン",
+        "ネト",
+        "グリエルモ・ヴィカーリオ"
+      ],
+      "answerIndex": 0,
+      "explanation": "リヴァプールの正守護神であるアリソンは、CLのガラタサライ戦で筋肉を負傷し、2026年3月21日にSNSを通じて長期離脱の可能性を示唆しました。",
+      "trivia": "アリソンが欠場する間、リヴァプールのゴールマウスはジョージア代表GKのギオルギ・ママルダシュヴィリが守ることになります。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "チェルシー",
+        "リース・ジェームズ",
+        "プレミアリーグ",
+        "契約延長"
+      ],
+      "text": "2026年3月13日、所属するチェルシーと2032年までの長期の契約延長を発表した、同クラブの主将を務めるイングランド代表DFは誰でしょう？",
+      "options": [
+        "リース・ジェームズ",
+        "ベン・チルウェル",
+        "レヴィ・コルウィル",
+        "コナー・ギャラガー"
+      ],
+      "answerIndex": 0,
+      "explanation": "チェルシーのキャプテンであるリース・ジェームズは、新たに2032年までとなる長期契約にサインし、「未来に胸を躍らせている」と喜びを語りました。",
+      "trivia": "リース・ジェームズの妹であるローレン・ジェームズもチェルシー・ウィメンに所属しており、同日に契約延長が発表されました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "セルティック",
+        "カスパー・シュマイケル",
+        "負傷",
+        "引退示唆"
+      ],
+      "text": "2026年3月、肩の重傷により2度の手術が必要となり、「キャリア最後の試合を終えたかもしれない」と現役引退の可能性を示唆したセルティック所属のベテランGKは誰でしょう？",
+      "options": [
+        "カスパー・シュマイケル",
+        "ジョー・ハート",
+        "クレイグ・ゴードン",
+        "マヌエル・ノイアー"
+      ],
+      "answerIndex": 0,
+      "explanation": "デンマーク代表のカスパー・シュマイケルは肩の脱臼などに伴う複数の重傷により、10〜12ヶ月の長期離脱を余儀なくされると明かしました。",
+      "trivia": "カスパー・シュマイケルは、レスター・シティ時代に「奇跡のプレミアリーグ優勝」を成し遂げた伝説のメンバーの一人です。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "マンチェスター・ユナイテッド",
+        "コビー・メイヌー",
+        "プレミアリーグ",
+        "契約延長"
+      ],
+      "text": "2026年3月、所属するマンチェスター・ユナイテッドと2031年夏までの新契約に合意したと報じられた、下部組織出身の若手イングランド代表MFは誰でしょう？",
+      "options": [
+        "コビー・メイヌー",
+        "アレハンドロ・ガルナチョ",
+        "メイソン・マウント",
+        "マーカス・ラッシュフォード"
+      ],
+      "answerIndex": 0,
+      "explanation": "前監督体制では出場機会が限られていたメイヌーですが、マイケル・キャリック暫定監督の就任に伴いスタメンに返り咲き、大幅な昇給を含む新契約に合意しました。",
+      "trivia": "メイヌーは10代にして前回のEUROに出場し、イングランド代表の準優勝に大きく貢献した稀代の逸材です。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "パルマ",
+        "鈴木彩艶",
+        "セリエA",
+        "日本代表"
+      ],
+      "text": "2026年3月14日に行われたセリエAのトリノ戦で、骨折による長期離脱から約4ヶ月ぶりの先発復帰を果たしたパルマ所属の日本代表GKは誰でしょう？",
+      "options": [
+        "鈴木彩艶",
+        "大迫敬介",
+        "谷晃生",
+        "前川黛也"
+      ],
+      "answerIndex": 0,
+      "explanation": "鈴木彩艶は左手中指と舟状骨を骨折して長期離脱していましたが、2026年3月14日の第29節トリノ戦で先発出場し、実戦復帰を果たしました。",
+      "trivia": "鈴木彩艶は身体能力の高さを買われ、パルマ加入前はプレミアリーグの強豪からも関心を寄せられていた注目のゴールキーパーです。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "FCバルセロナ",
+        "ニューカッスル"
+      ],
+      "text": "2026年3月18日に行われたUEFAチャンピオンズリーグラウンド16第2戦で、ニューカッスルを7-2の大勝で下し、2戦合計8-3で準々決勝進出を決めたスペインのクラブはどこでしょう？",
+      "options": [
+        "FCバルセロナ",
+        "レアル・マドリード",
+        "アトレティコ・マドリード",
+        "セビージャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "敵地での第1戦を1-1で引き分けていたFCバルセロナは、ホームでの第2戦でニューカッスル・ユナイテッド相手にゴールラッシュを見せ、2戦合計8-3と圧倒して準々決勝へ駒を進めました。",
+      "trivia": "この日行われたラウンド16第2戦では、バイエルンもアタランタに4-1（2戦合計10-2）で大勝するなど、強豪クラブの圧倒的な得点力が光る結果となりました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-18",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "プレミアリーグ",
+        "トッテナム",
+        "記録"
+      ],
+      "text": "2026年3月21日頃に行われたプレミアリーグの試合でノッティンガム・フォレストに0-3で敗れ、「2026年に入ってからリーグ戦未勝利」のままであることが話題になったビッグクラブはどこでしょう？",
+      "options": [
+        "トッテナム・ホットスパー",
+        "マンチェスター・ユナイテッド",
+        "ウェストハム・ユナイテッド",
+        "アストン・ヴィラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イゴール・トゥドール暫定監督が率いるトッテナムはノッティンガム・フォレストに敗北を喫し、2026年に入ってからのプレミアリーグで未だ勝利がなく、降格圏がすぐ背後に迫る危機的状況となっています。",
+      "trivia": "トッテナムが最後にイングランドトップリーグから降格したのは1976-77シーズンであり、それ以来となる2部降格の危機にファンからは大きな不安の声が上がっています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-21",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "チェルシー",
+        "プレミアリーグ",
+        "制裁"
+      ],
+      "text": "2026年3月16日、過去の財務報告やユース育成に関するプレミアリーグの規則に違反したとして、約1075万ポンドの罰金やアカデミー選手の補強禁止などの処分を受けたクラブはどこでしょう？",
+      "options": [
+        "チェルシー",
+        "マンチェスター・シティ",
+        "エヴァートン",
+        "ノッティンガム・フォレスト"
+      ],
+      "answerIndex": 0,
+      "explanation": "チェルシーの現オーナー陣が2011年から2018年にかけての歴史的な規則違反の可能性を自発的に報告した結果、独立委員会によって罰金やアカデミーの選手登録禁止、執行猶予付きのトップチーム補強禁止処分が下されました。",
+      "trivia": "チェルシーが受けたトップチームの選手移籍禁止処分は「2年間の執行猶予付き」であるため即時適用されるわけではありませんが、今後のクラブ運営に大きな制約が課されました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-16",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ラ・リーガ",
+        "アトレティコ・マドリード",
+        "マドリード・ダービー"
+      ],
+      "text": "2026年3月22日に行われたラ・リーガのマドリード・ダービーにおいて、レアル・マドリード相手に先制ゴールを挙げた、アトレティコ・マドリードに所属するナイジェリア代表FWは誰でしょう？",
+      "options": [
+        "アデモラ・ルックマン",
+        "ビクター・オシムヘン",
+        "サミュエル・チュクウェゼ",
+        "ケレチ・イヘアナチョ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アトレティコ・マドリードに所属するアデモラ・ルックマンは、サンティアゴ・ベルナベウで行われたマドリード・ダービーで前半34分に先制ゴールを奪い、宿敵レアル・マドリードを相手に躍動しました。",
+      "trivia": "アデモラ・ルックマンはイングランド生まれでユース年代はイングランド代表としてプレーしましたが、フル代表では自身のルーツであるナイジェリアを選択し、アフリカネイションズカップなどでも活躍しています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-22",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    }
+  ]
+}

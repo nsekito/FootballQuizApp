@@ -1,0 +1,1043 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-03-22T21:36:11Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-03-23",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "なでしこジャパン",
+        "アジアカップ",
+        "オーストラリア代表"
+      ],
+      "text": "2026年3月21日に行われた「AFC女子アジアカップオーストラリア2026」の決勝で、なでしこジャパンが1-0で破った対戦相手はどこ？",
+      "options": [
+        "オーストラリア",
+        "韓国",
+        "中国",
+        "北朝鮮"
+      ],
+      "answerIndex": 0,
+      "explanation": "なでしこジャパンは完全アウェイのスタジアム・オーストラリアでの決勝戦で、開催国のオーストラリアを1-0で下して優勝を果たしました。",
+      "trivia": "後半の終盤には長谷川唯を下げて南萌華を投入し、システムを変更して逃げ切るしたたかさを見せました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-21",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "なでしこジャパン",
+        "アジアカップ",
+        "韓国代表"
+      ],
+      "text": "「AFC女子アジアカップオーストラリア2026」の準決勝（2026年3月18日開催）で、なでしこジャパンが4-1で快勝した相手はどこ？",
+      "options": [
+        "韓国",
+        "中国",
+        "フィリピン",
+        "ベトナム"
+      ],
+      "answerIndex": 0,
+      "explanation": "なでしこジャパンは準決勝で宿敵・韓国と対戦し、4-1の快勝を収めてファイナルの舞台へと勝ち進みました。",
+      "trivia": "韓国とは様々な大会で因縁の対決が続いていますが、この試合ではなでしこジャパンが圧倒的な攻撃力を見せつけました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-18",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "SAMURAI BLUE",
+        "日本代表",
+        "スコットランド代表"
+      ],
+      "text": "2026年3月19日、男子日本代表（SAMURAI BLUE）の英国遠征メンバーが発表されました。3月28日に対戦する相手国はどこ？",
+      "options": [
+        "スコットランド",
+        "ウェールズ",
+        "アイルランド",
+        "イングランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は「キリンワールドチャレンジ2026」として英国遠征を行い、3月28日にグラスゴーでスコットランド代表と対戦します。",
+      "trivia": "スコットランド戦の後、3月31日にはロンドンのウェンブリー・スタジアムでイングランド代表との試合が組まれています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "鹿島アントラーズ",
+        "ジェフユナイテッド千葉"
+      ],
+      "text": "2026年3月22日に行われた明治安田J1第8節で、ジェフユナイテッド千葉を下し「開幕7連勝」を飾ったクラブはどこ？",
+      "options": [
+        "鹿島アントラーズ",
+        "浦和レッズ",
+        "FC町田ゼルビア",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズはメルカリスタジアムで行われた第8節の千葉戦に勝利し、破竹の開幕7連勝を達成しました。",
+      "trivia": "この試合はリーグ首位と最下位の対決（トップボトム対決）として大きな注目を集めました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-03-22",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "なでしこジャパン",
+        "アジアカップ",
+        "優勝"
+      ],
+      "text": "「AFC女子アジアカップオーストラリア2026」で優勝を果たしたなでしこジャパン。今回のアジア制覇は何大会ぶり、何度目の優勝？",
+      "options": [
+        "2大会ぶり3度目",
+        "3大会ぶり2度目",
+        "2大会連続3度目",
+        "初優勝"
+      ],
+      "answerIndex": 0,
+      "explanation": "なでしこジャパンは2018年大会以来となる王座奪還に成功し、2大会ぶり3度目のアジア制覇を果たしました。",
+      "trivia": "前回（2022年）大会では、準決勝で中国にPK戦の末に敗れており、悔しさを晴らす見事な優勝劇となりました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-21",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "鹿島アントラーズ",
+        "植田直通"
+      ],
+      "text": "2026年3月22日に行われた明治安田J1第8節、鹿島アントラーズ対ジェフユナイテッド千葉で、鹿島に勝利をもたらす決勝ゴールを決めた選手は？",
+      "options": [
+        "植田直通",
+        "鈴木優磨",
+        "樋口歓太",
+        "知念慶"
+      ],
+      "answerIndex": 0,
+      "explanation": "首位を走る鹿島アントラーズは、ディフェンダーの植田直通の決勝弾によって千葉を1-0で下し、連勝を伸ばしました。",
+      "trivia": "植田直通は強靭なフィジカルを活かした対人守備だけでなく、セットプレーからの高い得点力も大きな武器です。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-03-22",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "塩貝健人",
+        "ヴォルフスブルク"
+      ],
+      "text": "2026年3月の日本代表英国遠征メンバーに初招集された、今冬にドイツ・ヴォルフスブルクへ移籍した若手FWは誰？",
+      "options": [
+        "塩貝健人",
+        "後藤啓介",
+        "佐藤龍之介",
+        "福田師王"
+      ],
+      "answerIndex": 0,
+      "explanation": "オランダ・NECナイメーヘンでの活躍を経て、2026年1月にドイツのヴォルフスブルクへステップアップした塩貝健人が、A代表初招集を果たしました。",
+      "trivia": "森保監督は、塩貝に対して試合の流れを劇的に変える「スーパーサブ（ジョーカー）」としての役割を期待していると報じられています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "冨安健洋",
+        "アヤックス"
+      ],
+      "text": "2026年3月に発表された日本代表メンバーで、2024年6月以来となる約1年9か月ぶりの代表復帰を果たしたオランダ・アヤックス所属のDFは？",
+      "options": [
+        "冨安健洋",
+        "板倉滉",
+        "菅原由勢",
+        "渡辺剛"
+      ],
+      "answerIndex": 0,
+      "explanation": "怪我の再発に苦しみ、長いリハビリ生活を経てアヤックスで復活を遂げた冨安健洋が、久しぶりに日本代表のユニフォームに袖を通します。",
+      "trivia": "冨安と同じく、バイエルン・ミュンヘン所属の伊藤洋輝も約1年ぶりの代表復帰を果たし、守備陣の要が揃う形となりました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "佐藤龍之介",
+        "FC東京"
+      ],
+      "text": "2026年3月19日に発表された男子日本代表の英国遠征メンバーのうち、Jリーグクラブ（FC東京）から選出された若手選手は誰？",
+      "options": [
+        "佐藤龍之介",
+        "早川友基",
+        "大迫敬介",
+        "松木玖生"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグからは早川友基（鹿島）、大迫敬介（広島）、佐藤龍之介（FC東京）の3名が選出されました。",
+      "trivia": "佐藤龍之介は2028年ロサンゼルス五輪世代の有望株であり、A代表のトレーニングパートナーとしての成長が期待されています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "神奈川ダービー",
+        "横浜F・マリノス"
+      ],
+      "text": "2026年3月22日に行われた明治安田J1第8節の「神奈川ダービー」で、5ゴールを奪って大勝したクラブはどこ？",
+      "options": [
+        "横浜F・マリノス",
+        "川崎フロンターレ",
+        "湘南ベルマーレ",
+        "横浜FC"
+      ],
+      "answerIndex": 0,
+      "explanation": "明治安田J1第8節で行われた神奈川ダービーは、横浜F・マリノスが圧倒的な攻撃力を見せつけ、5発大勝を飾りました。",
+      "trivia": "同日に同じ神奈川県内では、湘南ベルマーレが全日本フットサル選手権大会で準決勝に進出するというニュースもありました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-03-22",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J1百年構想リーグ",
+        "順位表",
+        "鹿島アントラーズ"
+      ],
+      "text": "3月22日に第8節を終えた「明治安田J1百年構想リーグ」。EASTグループで無敗のまま首位を独走しているチームはどこでしょう？",
+      "options": [
+        "鹿島アントラーズ",
+        "FC東京",
+        "FC町田ゼルビア",
+        "浦和レッズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズは8試合を終えて7勝1PK敗と無敗を維持し、勝ち点22でEASTグループの首位を独走しています。",
+      "trivia": "2026年の特別大会では引き分けがなく、90分で同点の場合はPK戦で勝敗（PK勝=勝点2、PK敗=勝点1）を決める完全決着方式が採用されています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-03-22",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "得点ランキング",
+        "川崎フロンターレ",
+        "エリソン"
+      ],
+      "text": "「明治安田J1百年構想リーグ」の3月22日時点の得点ランキングで、G大阪のデニス・ヒュメットと並び5得点でトップタイに立っている川崎フロンターレの選手は誰でしょう？",
+      "options": [
+        "エリソン",
+        "マルシーニョ",
+        "脇坂泰斗",
+        "家長昭博"
+      ],
+      "answerIndex": 0,
+      "explanation": "川崎フロンターレのエリソンは、開幕戦（柏戦）でのハットトリックを含む5得点を挙げ、3月22日時点で得点ランキングのトップタイに立っています。",
+      "trivia": "エリソンは開幕戦の前半だけでハットトリックを達成しました。その試合は最終的に川崎Fが5-3という乱打戦を制しています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-22",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "MUFGスタジアム",
+        "FC町田ゼルビア",
+        "鹿島アントラーズ"
+      ],
+      "text": "3月18日に行われた「明治安田J1百年構想リーグ」第7節の大一番、FC町田ゼルビアvs鹿島アントラーズ。この試合の会場となったスタジアムはどこでしょう？",
+      "options": [
+        "MUFGスタジアム（国立競技場）",
+        "町田GIONスタジアム",
+        "カシマサッカースタジアム",
+        "味の素スタジアム"
+      ],
+      "answerIndex": 0,
+      "explanation": "EASTの上位対決となった一戦は「THE国立DAY」としてMUFGスタジアム（国立競技場）で開催され、アウェイの鹿島が3-0で完勝しました。",
+      "trivia": "2026年より国立競技場は「MUFGスタジアム」という名称になっています。Jリーグはこのスタジアムでの車椅子席エリアの共通運用などを試験導入しています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-03-18",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "横浜F・マリノス",
+        "川崎フロンターレ",
+        "試合結果"
+      ],
+      "text": "3月22日に行われた第8節、川崎フロンターレvs横浜F・マリノス（MUFGスタジアム）の試合結果として正しいスコアはどれでしょう？",
+      "options": [
+        "川崎F 0-5 横浜FM",
+        "川崎F 2-1 横浜FM",
+        "川崎F 1-3 横浜FM",
+        "川崎F 0-0 (PK 4-5) 横浜FM"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜F・マリノスは途中出場の天野純が2ゴール1アシストの活躍を見せるなど、川崎フロンターレを相手に5-0の大量得点で圧勝しました。",
+      "trivia": "この試合で川崎FのルーキーDF林駿佑がプロデビューを果たしましたが、チームにとっては今季最多の5失点というほろ苦い試合となりました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-03-22",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "WESTグループ",
+        "順位表",
+        "京都サンガF.C."
+      ],
+      "text": "3月22日の第8節終了時点で、「明治安田J1百年構想リーグ」WESTグループの首位に立っているチームはどこでしょう？",
+      "options": [
+        "京都サンガF.C.",
+        "ガンバ大阪",
+        "ヴィッセル神戸",
+        "清水エスパルス"
+      ],
+      "answerIndex": 0,
+      "explanation": "WESTグループは混戦模様となっており、3月22日終了時点で京都サンガF.C.とガンバ大阪が勝ち点14で並んでいますが、得失点差で京都が首位に立っています。",
+      "trivia": "WESTグループは上位陣の勝ち点差が非常に詰まっており、3位のヴィッセル神戸から5位の名古屋グランパスまでが勝ち点13でひしめき合っています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-03-22",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "PK戦",
+        "アビスパ福岡",
+        "ガンバ大阪",
+        "試合結果"
+      ],
+      "text": "3月22日に行われた第8節、アビスパ福岡vsガンバ大阪はPK戦にもつれ込みました。最終的なPK戦のスコア（福岡 - G大阪）はいくつだったでしょう？",
+      "options": [
+        "14 - 13",
+        "5 - 4",
+        "8 - 7",
+        "11 - 10"
+      ],
+      "answerIndex": 0,
+      "explanation": "2-2で90分を終えた試合は壮絶なPK戦となり、両チーム合わせて15人目まで突入した結果、14-13で福岡が勝利を収めました。",
+      "trivia": "アビスパ福岡はこのPK戦勝利により、開幕からの連敗を「6」でストップしました。辻岡佑真が後半アディショナルタイムに起死回生の同点弾を決めてPK戦に持ち込みました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-03-22",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "塩貝健人",
+        "ヴォルフスブルク",
+        "初招集"
+      ],
+      "text": "3月19日に発表されたサッカー日本代表の英国遠征メンバーで、ドイツ1部・ヴォルフスブルクから初招集された20歳のFWは誰？",
+      "options": [
+        "塩貝健人",
+        "後藤啓介",
+        "佐藤龍之介",
+        "チェイス・アンリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "慶應義塾大学出身の塩貝健人は、オランダのNECナイメヘンでの活躍を経て2026年1月にヴォルフスブルクへ移籍し、今回A代表に初招集されました。",
+      "trivia": "塩貝健人は大学1年次に横浜F・マリノスの特別指定選手となり、J1デビューも果たしている逸材です。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "FC東京",
+        "長友佑都",
+        "負傷",
+        "日本代表"
+      ],
+      "text": "3月14日の試合で右ハムストリング肉離れを負傷し、3月下旬に行われる日本代表の英国遠征への参加が絶望的となったFC東京のDFは誰？",
+      "options": [
+        "長友佑都",
+        "森重真人",
+        "酒井宏樹",
+        "谷口彰悟"
+      ],
+      "answerIndex": 0,
+      "explanation": "開幕から連続スタメン出場を続けていた長友佑都ですが、水戸ホーリーホック戦の前半にスプリントした際に右ハムストリングを負傷し、離脱を余儀なくされました。",
+      "trivia": "39歳となった長友佑都は、自身5度目となる2026年ワールドカップ出場を目指しています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "大分トリニータ",
+        "清武弘嗣",
+        "負傷"
+      ],
+      "text": "3月22日に大分トリニータが負傷を発表した元日本代表MF清武弘嗣。昨年から長期離脱の原因となり、今回再発してしまった負傷箇所はどこ？",
+      "options": [
+        "左ヒラメ筋",
+        "右膝前十字靭帯",
+        "左アキレス腱",
+        "右大腿四頭筋"
+      ],
+      "answerIndex": 0,
+      "explanation": "清武弘嗣は3月14日のテゲバジャーロ宮崎戦で負傷し、昨年も悩まされた左ヒラメ筋肉離れの再発と診断されました。",
+      "trivia": "清武は怪我が続く中で一度は引退もよぎったと語っていましたが、「このまま引退したら必ず後悔する」と現役続行を決断していました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "V・ファーレン長崎",
+        "ノーマン・キャンベル",
+        "代表選出"
+      ],
+      "text": "3月21日、V・ファーレン長崎に所属するFWノーマン・キャンベルが、FIFAワールドカップ2026のプレーオフトーナメントに臨むある国の代表メンバーに選出されました。その国はどこ？",
+      "options": [
+        "ジャマイカ",
+        "トリニダード・トバゴ",
+        "ハイチ",
+        "パナマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジャマイカ代表に選出されたノーマン・キャンベルは、W杯出場権をかけてニューカレドニア代表などと大陸間プレーオフを戦います。",
+      "trivia": "ジャマイカ代表がプレーオフを勝ち抜けば、1998年のフランス大会以来となるワールドカップ出場を果たします。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "U-21日本代表",
+        "アルビレックス新潟",
+        "佐藤海宏",
+        "飛び級"
+      ],
+      "text": "3月20日に発表されたU-21日本代表の韓国遠征メンバーで、2007年生まれの「飛び級」として大岩剛監督体制で初招集されたアルビレックス新潟のDFは誰？",
+      "options": [
+        "佐藤海宏",
+        "森壮一朗",
+        "山田海斗",
+        "土屋櫂大"
+      ],
+      "answerIndex": 0,
+      "explanation": "ロス五輪世代のU-21日本代表において、アルビレックス新潟のDF佐藤海宏が飛び級で初招集されました。",
+      "trivia": "今回のU-21日本代表は、当初トルコ遠征の予定でしたが、中東情勢の悪化を受けて急遽韓国遠征へと変更されました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "acle",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ACL",
+        "FC町田ゼルビア",
+        "ヴィッセル神戸"
+      ],
+      "text": "2026年3月にラウンド16の第2戦が開催された「AFCチャンピオンズリーグエリート（ACLE）」で、見事ベスト8進出を決めたJリーグクラブの組み合わせはどれでしょう？",
+      "options": [
+        "FC町田ゼルビアとヴィッセル神戸",
+        "サンフレッチェ広島とヴィッセル神戸",
+        "FC町田ゼルビアとサンフレッチェ広島",
+        "日本勢は全滅した"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィッセル神戸はFCソウルに、FC町田ゼルビアは江原FCにそれぞれ勝利してベスト8に進出しました。一方、サンフレッチェ広島はマレーシアのジョホールに敗れ、無念の敗退となりました。",
+      "trivia": "今シーズンから始まった「ACLエリート」は、アジアのトップ24クラブのみが参加する最高峰の大会としてリニューアルされた新フォーマットの大会です。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "JPFA",
+        "チャリティー",
+        "社会貢献"
+      ],
+      "text": "日本プロサッカー選手会（JPFA）が2026年3月16日より第2弾の出品を開始したチャリティーオークションは、どの災害への復興支援をメインに掲げているでしょう？",
+      "options": [
+        "東日本大震災",
+        "能登半島地震",
+        "熊本地震",
+        "北海道胆振東部地震"
+      ],
+      "answerIndex": 0,
+      "explanation": "東日本大震災の復興支援を風化させないため、選手会所属選手がスパイクやユニフォームを出品するオークションが定期的に開催されています。",
+      "trivia": "JPFAが設立した「J100年基金」は、このオークションの売上などを原資とし、被災地でのサッカー教室の開催など継続的な支援活動を行っています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "スポンサー",
+        "Jリーグオールスター",
+        "特別シーズン"
+      ],
+      "text": "2026年3月に発表された、三菱UFJ銀行とJリーグのパートナーシップ契約において、同行がプラチナパートナーに就任することになった大会の名称は何でしょう？",
+      "options": [
+        "JリーグオールスターDAZNカップ",
+        "FUJIFILM SUPER CUP",
+        "JリーグYBCルヴァンカップ",
+        "明治安田Jリーグワールドチャレンジ"
+      ],
+      "answerIndex": 0,
+      "explanation": "三菱UFJ銀行は、秋春制移行の特別シーズンである「明治安田Jリーグ百年構想リーグ」のトップパートナー、および「JリーグオールスターDAZNカップ」のプラチナパートナーに就任しました。",
+      "trivia": "Jリーグと金融機関のパートナーシップは増えており、近年ではクラブの地域ネットワークを活かした社会課題解決など、SDGsの観点からの協業が目立っています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "シャレン！",
+        "社会連携",
+        "アウォーズ"
+      ],
+      "text": "2026年3月10日よりファン投票が開始された、Jクラブの社会連携活動を表彰する「2026 Jリーグシャレン！アウォーズ」で、一般投票によって決定する賞の名称は何でしょう？",
+      "options": [
+        "ファン・サポーター選考賞",
+        "パブリック賞",
+        "ソーシャルチャレンジャー賞",
+        "明治安田地元の元気賞"
+      ],
+      "answerIndex": 0,
+      "explanation": "「ファン・サポーター選考賞」は、自分が応援しているクラブの地域でも実施してほしいと思える活動に対し、特設サイトから誰でも投票できる参加型の賞です。",
+      "trivia": "シャレン！（社会連携）活動のアウォーズは2020年から本格的に始まり、クラブが持つ「つなぐ力」を活かした地域貢献活動が高く評価される舞台となっています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "スポンサー",
+        "シュワーボ東京",
+        "社会人リーグ"
+      ],
+      "text": "2026年3月18日、Jリーグ加盟を目指す「シュワーボ東京」とクラブスポンサー契約を締結した、株式会社イードが運営するゲーム情報メディアは何でしょう？",
+      "options": [
+        "Game*Spark",
+        "ファミ通.com",
+        "電撃オンライン",
+        "4Gamer.net"
+      ],
+      "answerIndex": 0,
+      "explanation": "YouTuberのLeo the football氏が代表・監督を務めるシュワーボ東京が、創刊20周年を迎えるハードコアゲーマー向けメディア「Game*Spark」とスポンサー契約を結びました。",
+      "trivia": "シュワーボ東京は「リアルサッカードキュメンタリー」としてクラブの裏側をYouTubeで配信しており、従来の枠に囚われない新たなファン層の獲得に成功しています。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "SAMURAI BLUE",
+        "メンバー発表",
+        "塩貝健人"
+      ],
+      "text": "2026年3月19日に発表されたサッカー日本代表（SAMURAI BLUE）メンバーで、A代表初招集となった選手は誰？",
+      "options": [
+        "塩貝健人",
+        "鈴木唯人",
+        "佐野航大",
+        "佐藤龍之介"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月に行われるスコットランド戦・イングランド戦に向けたメンバーが発表され、今冬ヴォルフスブルクへ移籍した塩貝健人が初招集されました。",
+      "trivia": "負傷の影響で戦列を離れていた冨安健洋も、約1年9ヶ月ぶりの代表復帰を果たしました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-19",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "なでしこジャパン",
+        "アジアカップ",
+        "オーストラリア",
+        "決勝"
+      ],
+      "text": "2026年3月21日に行われたAFC女子アジアカップ決勝で、なでしこジャパンはオーストラリアを破り優勝しました。この試合のスコアは次のうちどれ？",
+      "options": [
+        "1-0",
+        "2-1",
+        "2-0",
+        "3-1"
+      ],
+      "answerIndex": 0,
+      "explanation": "完全アウェイのスタジアムで行われたオーストラリアとの決勝戦。日本は相手の猛攻を耐え凌ぎ、1-0で逃げ切って優勝を果たしました。",
+      "trivia": "今大会の日本は、グループステージでもインド相手に11-0、フィリピンに7-0と圧倒的な攻撃力を見せつけました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-21",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "鹿島アントラーズ",
+        "連勝記録",
+        "植田直通"
+      ],
+      "text": "2026年3月22日に行われた明治安田J1百年構想リーグ第8節で、鹿島アントラーズは千葉に2-1で勝利し開幕7連勝を達成しました。この試合の決勝ゴールを決めた選手は誰？",
+      "options": [
+        "植田直通",
+        "エウベル",
+        "鈴木優磨",
+        "知念慶"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1で迎えた後半39分、得意のコーナーキックから知念慶がフリックしたボールを植田直通が頭で押し込み、これが決勝点となりました。",
+      "trivia": "この試合の先制点は前半4分、自陣からのカウンターでエウベルが左サイドを独走して決めたゴールでした。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-03-22",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "モンテディオ山形",
+        "退場",
+        "みちのくダービー"
+      ],
+      "text": "2026年3月22日に行われたモンテディオ山形とベガルタ仙台によるみちのくダービーで、試合開始わずか2分でDOGSO（決定的な得点機会の阻止）により一発退場となった山形の選手は誰？",
+      "options": [
+        "城和隼颯",
+        "山田拓巳",
+        "南秀仁",
+        "氣田亮真"
+      ],
+      "answerIndex": 0,
+      "explanation": "開始2分、抜け出そうとした仙台の小林心に対し、山形の城和隼颯が競り合いの中で背後から倒してしまい、主審はDOGSOと判断してレッドカードを提示しました。",
+      "trivia": "試合開始直後の退場劇により、山形は残り時間のほとんどを10人で戦うという非常に厳しい展開を強いられました。",
+      "referenceDate": "2026-03-23",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-03-22",
+        "publishDate": "2026-03-23",
+        "expiryDate": "2026-03-30",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
