@@ -494,9 +494,44 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
     );
   }
 
+  /// 昇格試験のタグが一意に決まるまでに必要な選択が揃っているか
+  bool _hasScopeForPromotionExam() {
+    if (widget.category == AppConstants.categoryHistory) {
+      return _selectedRegion != null && _selectedRegion!.isNotEmpty;
+    }
+    if (widget.category == AppConstants.categoryTeams) {
+      return _selectedCountry != null &&
+          _selectedCountry!.isNotEmpty &&
+          _selectedTeam != null &&
+          _selectedTeam!.isNotEmpty;
+    }
+    return true;
+  }
+
+  String _messageWhenPromotionExamScopeMissing() {
+    if (widget.category == AppConstants.categoryHistory) {
+      return '昇格試験に進むには、先に地域（日本または世界）を選んでください。';
+    }
+    if (widget.category == AppConstants.categoryTeams) {
+      return '昇格試験に進むには、先に国とチームを選んでください。';
+    }
+    return '必要な設定を選択してください。';
+  }
+
   void _showPromotionExamDialog(String targetDifficulty) {
+    if (!_hasScopeForPromotionExam()) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(_messageWhenPromotionExamScopeMissing()),
+          backgroundColor: Colors.orange.shade700,
+          duration: const Duration(seconds: 4),
+        ),
+      );
+      return;
+    }
+
     final tags = _generateTags();
-    
+
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -1155,13 +1190,7 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
         SnackBar(
           content: const Text('必要な設定を選択してください。'),
           backgroundColor: Colors.orange.shade700,
-          action: SnackBarAction(
-            label: 'OK',
-            textColor: Colors.white,
-            onPressed: () {
-              ScaffoldMessenger.of(context).hideCurrentSnackBar();
-            },
-          ),
+          duration: const Duration(seconds: 4),
         ),
       );
       return;

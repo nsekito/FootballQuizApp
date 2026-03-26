@@ -1,5 +1,7 @@
 import '../models/question.dart';
 import '../constants/app_constants.dart';
+import '../utils/history_quiz_tags_parser.dart';
+import '../utils/team_quiz_tags_parser.dart';
 import 'database_service.dart';
 import 'remote_data_service.dart';
 
@@ -22,7 +24,8 @@ class QuestionService {
   /// 
   /// [category] カテゴリ（rules, history, teams, match_recap）
   /// [difficulty] 難易度（easy, normal, hard, extreme）。Weekly Recapの場合は空文字列でも可
-  /// [tags] タグ（カンマ区切り、オプション）
+  /// [tags] タグ（カンマ区切り、オプション）。昇格試験など region を渡さない経路では、
+  /// teams / history いずれもタグから region（および teams の場合は team）を復元する。
   /// [country] 国（オプション）
   /// [region] 地域（オプション）
   /// [team] チーム（オプション）
@@ -45,8 +48,38 @@ class QuestionService {
     String? range,
   }) async {
     // 後方互換性: rangeパラメータが指定されている場合はteamに変換
-    final teamParam = team ?? range;
-    
+    var effectiveTeam = team ?? range;
+    if (effectiveTeam != null && effectiveTeam.isEmpty) {
+      effectiveTeam = null;
+    }
+    var effectiveRegion = region;
+    if (effectiveRegion != null && effectiveRegion.isEmpty) {
+      effectiveRegion = null;
+    }
+    var effectiveCountry = country;
+    if (effectiveCountry != null && effectiveCountry.isEmpty) {
+      effectiveCountry = null;
+    }
+
+    // 昇格試験など tags のみ渡る経路: チームクイズはタグから region / team を復元する
+    if (category == AppConstants.categoryTeams &&
+        tags != null &&
+        tags.isNotEmpty) {
+      final parsed = TeamQuizQueryParams.fromTags(tags);
+      effectiveRegion ??= parsed.region;
+      effectiveCountry ??= parsed.region;
+      effectiveTeam ??= parsed.team;
+    }
+
+    // 昇格試験など: 歴史は history,<region> から region を復元する
+    if (category == AppConstants.categoryHistory &&
+        tags != null &&
+        tags.isNotEmpty) {
+      final parsed = HistoryQuizQueryParams.fromTags(tags);
+      effectiveRegion ??= parsed.region;
+      effectiveCountry ??= parsed.region;
+    }
+
     // リモートデータが必要なカテゴリ
     if (category == AppConstants.categoryMatchRecap) {
       return await _getWeeklyRecapQuestions(
@@ -62,10 +95,10 @@ class QuestionService {
     return await _databaseService.getQuestionsOptimized(
       category: category,
       difficulty: difficulty,
-      tags: null, // tagsパラメータは使用しない
-      country: country,
-      region: region,
-      team: teamParam,
+      tags: null, // tags は上で region/team に反映済み
+      country: effectiveCountry,
+      region: effectiveRegion,
+      team: effectiveTeam,
       limit: limit,
       excludeIds: excludeIds,
     );

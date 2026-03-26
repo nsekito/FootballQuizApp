@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -12,6 +13,7 @@ import '../widgets/responsive_container.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../constants/game_config.dart';
 import '../utils/rewarded_ad_helper.dart';
+import '../providers/sound_service_provider.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
@@ -59,6 +61,10 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      unawaited(ref.read(soundServiceProvider).playQuizResultScreen());
+    });
     _adHelper = RewardedAdHelper(
       ref: ref,
       onStateChanged: () => setState(() {}),

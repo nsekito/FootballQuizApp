@@ -99,8 +99,6 @@ class PromotionExamService {
   Future<void> handleFail({
     required String category,
     required String targetDifficulty,
-    required int reservedPoints,
-    required bool watchedAd,
   }) async {
     final config = getExamConfig(
       category: category,
@@ -109,37 +107,35 @@ class PromotionExamService {
     
     if (config == null) return;
 
-    // forfeit分のPTを没収
+    // 参加費はクイズ開始前にウォレットからは引いていないため、不合格時は没収分のみを差し引く
+    // （旧: 返還 addPoints をすると consume と相殺され実質没収にならない）
     await _ref.read(totalPointsProvider.notifier).consumePoints(config.forfeit);
-    
-    // 残り（cost - forfeit）をユーザーに返還
-    final refund = reservedPoints - config.forfeit;
-    if (refund > 0) {
-      await _ref.read(totalPointsProvider.notifier).addPoints(refund);
-    }
   }
 
-  /// 再挑戦コストを計算（広告視聴時は割引）
-  int calculateRetryCost({
+  /// 不合格時リワード広告でキャッシュバックするPT（没収分に対する割合は [adBonus.promotionExamFailCashbackRatio]）
+  int calculateFailForfeitCashback({
     required String category,
     required String targetDifficulty,
-    required bool watchedAd,
   }) {
     final config = getExamConfig(
       category: category,
       targetDifficulty: targetDifficulty,
     );
-    
     if (config == null) return 0;
+    return (config.forfeit * adBonus.promotionExamFailCashbackRatio).floor();
+  }
 
-    var retryCost = config.retryCost;
-    
-    // 広告視聴時は割引
-    if (watchedAd) {
-      retryCost = (retryCost * adBonus.promotionExamRetryDiscount).floor();
-    }
-    
-    return retryCost;
+  /// 不合格時リワードのキャッシュバックを付与
+  Future<void> grantFailCashbackFromAd({
+    required String category,
+    required String targetDifficulty,
+  }) async {
+    final amount = calculateFailForfeitCashback(
+      category: category,
+      targetDifficulty: targetDifficulty,
+    );
+    if (amount <= 0) return;
+    await _ref.read(totalPointsProvider.notifier).addPoints(amount);
   }
 }
 

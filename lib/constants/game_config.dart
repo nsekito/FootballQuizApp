@@ -150,13 +150,14 @@ class AdBonusConfig {
   final double resultScreenMultiplier;
   final double loginBonusMultiplier;
   final int historyFreeUnlockDailyLimit;
-  final double promotionExamRetryDiscount;
+  /// 昇格試験不合格時リワード広告で、没収PTに対して還元する割合（例: 0.5 で没収の半額をキャッシュバック）
+  final double promotionExamFailCashbackRatio;
 
   const AdBonusConfig({
     required this.resultScreenMultiplier,
     required this.loginBonusMultiplier,
     required this.historyFreeUnlockDailyLimit,
-    required this.promotionExamRetryDiscount,
+    required this.promotionExamFailCashbackRatio,
   });
 }
 
@@ -164,7 +165,7 @@ const adBonus = AdBonusConfig(
   resultScreenMultiplier: 0.5,
   loginBonusMultiplier: 2.0,
   historyFreeUnlockDailyLimit: 3,
-  promotionExamRetryDiscount: 0.5,
+  promotionExamFailCashbackRatio: 0.5,
 );
 
 // ============================================
@@ -203,7 +204,6 @@ class UnlockCategoryConfig {
 
 class UnlockDifficultyConfig {
   final int cost;
-  final int passLine;
   final int forfeit;
   final int retryCost;
   final int bonusExp;
@@ -212,7 +212,6 @@ class UnlockDifficultyConfig {
 
   const UnlockDifficultyConfig({
     required this.cost,
-    required this.passLine,
     required this.forfeit,
     required this.retryCost,
     required this.bonusExp,
@@ -225,27 +224,24 @@ final Map<String, UnlockCategoryConfig> unlockConfig = {
   'NORMAL': const UnlockCategoryConfig(
     rule: UnlockDifficultyConfig(
       cost: 120,
-      passLine: 7,
-      forfeit: 35,
-      retryCost: 35,
+      forfeit: 500,
+      retryCost: 500,
       bonusExp: 50,
       bonusPt: 25,
       requiredRank: 4,
     ),
     history: UnlockDifficultyConfig(
       cost: 120,
-      passLine: 7,
-      forfeit: 35,
-      retryCost: 35,
+      forfeit: 500,
+      retryCost: 500,
       bonusExp: 50,
       bonusPt: 25,
       requiredRank: 4,
     ),
     team: UnlockDifficultyConfig(
       cost: 100,
-      passLine: 6,
-      forfeit: 30,
-      retryCost: 30,
+      forfeit: 500,
+      retryCost: 500,
       bonusExp: 40,
       bonusPt: 20,
       requiredRank: 4,
@@ -254,27 +250,24 @@ final Map<String, UnlockCategoryConfig> unlockConfig = {
   'HARD': const UnlockCategoryConfig(
     rule: UnlockDifficultyConfig(
       cost: 500,
-      passLine: 8,
-      forfeit: 150,
-      retryCost: 150,
+      forfeit: 500,
+      retryCost: 500,
       bonusExp: 150,
       bonusPt: 75,
       requiredRank: 8,
     ),
     history: UnlockDifficultyConfig(
       cost: 500,
-      passLine: 8,
-      forfeit: 150,
-      retryCost: 150,
+      forfeit: 500,
+      retryCost: 500,
       bonusExp: 150,
       bonusPt: 75,
       requiredRank: 8,
     ),
     team: UnlockDifficultyConfig(
       cost: 400,
-      passLine: 7,
-      forfeit: 120,
-      retryCost: 120,
+      forfeit: 500,
+      retryCost: 500,
       bonusExp: 120,
       bonusPt: 60,
       requiredRank: 8,

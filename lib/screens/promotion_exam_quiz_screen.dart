@@ -1,6 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:intl/intl.dart';
+
+import '../constants/game_config.dart';
 import '../models/question.dart';
 import '../providers/question_service_provider.dart';
 import '../providers/user_data_provider.dart';
@@ -14,6 +19,7 @@ import '../widgets/banner_ad_widget.dart';
 import '../providers/admin_mode_provider.dart';
 import '../services/promotion_exam_service.dart';
 import '../providers/ad_provider.dart';
+import '../providers/sound_service_provider.dart';
 import '../utils/question_utils.dart';
 
 class PromotionExamQuizScreen extends ConsumerStatefulWidget {
@@ -44,7 +50,6 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
   int _score = 0;
   bool _isLoading = true;
   int? _reservedPoints; // 仮徴収したPT
-  bool _hasWatchedAdForRetry = false; // 再挑戦用広告視聴済みか
 
   @override
   void initState() {
@@ -103,6 +108,10 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
         _isLoading = false;
       });
 
+      if (_questions.isNotEmpty) {
+        unawaited(ref.read(soundServiceProvider).playQuizStart());
+      }
+
       if (_questions.isEmpty) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
@@ -144,12 +153,13 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
       _score++;
     }
 
-    // 解説ダイアログを表示
-    Future.delayed(const Duration(milliseconds: 500), () {
-      if (mounted) {
-        _showExplanationDialog();
-      }
-    });
+    unawaited(ref.read(soundServiceProvider).playQuizResult(isCorrect));
+
+    // 通常クイズ（quiz_screen）と同様、解説は即表示。遅延するとメイン画面に
+    // 「次の問題へ」が一瞬映るため delay は使わない。
+    if (mounted) {
+      _showExplanationDialog();
+    }
   }
 
   void _showExplanationDialog() {
@@ -394,7 +404,7 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
       category: widget.category,
       targetDifficulty: widget.targetDifficulty,
     );
-    
+
     if (config == null) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
@@ -407,11 +417,10 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
       return;
     }
 
-    final passed = _score >= config.passLine;
-    
+    final passed = _score >= AppConstants.promotionExamPassLine;
+
     if (!mounted) return;
 
-    // 合格時の処理
     if (passed) {
       if (_reservedPoints != null && _reservedPoints! > 0) {
         await examService.handlePass(
@@ -422,161 +431,300 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
         );
       }
     } else {
-      // 不合格時の処理
       if (_reservedPoints != null && _reservedPoints! > 0) {
         await examService.handleFail(
           category: widget.category,
           targetDifficulty: widget.targetDifficulty,
-          reservedPoints: _reservedPoints!,
-          watchedAd: false, // 結果画面で広告視聴する
         );
       }
     }
 
-    // 非同期処理後に再度mountedチェック
     if (!mounted) return;
 
-    // 結果ダイアログを表示
-    showDialog(
+    final cashbackPreview = examService.calculateFailForfeitCashback(
+      category: widget.category,
+      targetDifficulty: widget.targetDifficulty,
+    );
+
+    if (!mounted) return;
+
+    _showPromotionResultGlassDialog(
+      config: config,
+      passed: passed,
+      cashbackPreview: cashbackPreview,
+    );
+  }
+
+  void _showPromotionResultGlassDialog({
+    required UnlockDifficultyConfig config,
+    required bool passed,
+    required int cashbackPreview,
+  }) {
+    final nf = NumberFormat('#,###');
+    var cashbackClaimed = false;
+
+    showDialog<void>(
       context: context,
       barrierDismissible: false,
-      builder: (context) => AlertDialog(
-        title: Text(
-          passed ? '合格！' : '不合格',
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-            color: passed ? Colors.green : Colors.red,
-          ),
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              '$_score問 / ${_questions.length}問正解',
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 16),
-            if (passed)
-              Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Colors.green.shade50,
-                  borderRadius: BorderRadius.circular(8),
+      barrierColor: Colors.black.withValues(alpha: 0.4),
+      builder: (dialogContext) {
+        return StatefulBuilder(
+          builder: (context, setDialogState) {
+            const accentPass = AppColors.stitchEmerald;
+            final accentFail = Colors.red.shade400;
+            final targetName = widget.targetDifficulty.toUpperCase();
+
+            return Dialog(
+              backgroundColor: Colors.transparent,
+              insetPadding: const EdgeInsets.all(16),
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxHeight: MediaQuery.of(context).size.height * 0.88,
                 ),
-                child: Column(
-                  children: [
-                    const Icon(
-                      Icons.check_circle,
-                      color: Colors.green,
-                      size: 48,
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      '${widget.targetDifficulty.toUpperCase()}難易度をアンロックしました！',
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      'ボーナス: +${config.bonusExp} EXP +${config.bonusPt} PT',
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.green.shade700,
-                      ),
-                    ),
-                  ],
-                ),
-              )
-            else
-              Column(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: Colors.orange.shade50,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
+                child: GlassMorphismWidget(
+                  borderRadius: 24,
+                  backgroundColor: Colors.white.withValues(alpha: 0.88),
+                  child: SingleChildScrollView(
+                    padding: const EdgeInsets.all(24),
                     child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(
-                          Icons.cancel,
-                          color: Colors.orange,
-                          size: 48,
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          '${config.passLine}問以上正解で合格です',
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
+                        Container(
+                          width: 88,
+                          height: 88,
+                          decoration: BoxDecoration(
+                            color: (passed ? accentPass : accentFail)
+                                .withValues(alpha: 0.15),
+                            shape: BoxShape.circle,
+                            boxShadow: [
+                              BoxShadow(
+                                color: (passed ? accentPass : accentFail)
+                                    .withValues(alpha: 0.35),
+                                blurRadius: 18,
+                                spreadRadius: 0,
+                              ),
+                            ],
                           ),
-                          textAlign: TextAlign.center,
+                          child: Icon(
+                            passed ? Icons.emoji_events : Icons.school_outlined,
+                            color: passed ? accentPass : accentFail,
+                            size: 48,
+                          ),
                         ),
-                        const SizedBox(height: 8),
+                        const SizedBox(height: 16),
                         Text(
-                          '${config.forfeit} PTが没収されました',
+                          passed ? '合格！' : '不合格',
                           style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.orange.shade700,
+                            fontSize: 32,
+                            fontWeight: FontWeight.bold,
+                            color: passed ? accentPass : accentFail,
+                          ),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          '$_score / ${_questions.length} 問正解',
+                          style: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.techIndigo,
+                          ),
+                        ),
+                        if (passed) ...[
+                          const SizedBox(height: 20),
+                          Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.all(18),
+                            decoration: BoxDecoration(
+                              color: accentPass.withValues(alpha: 0.1),
+                              borderRadius: BorderRadius.circular(16),
+                              border: Border.all(
+                                color: accentPass.withValues(alpha: 0.4),
+                              ),
+                            ),
+                            child: Column(
+                              children: [
+                                Text(
+                                  '$targetName 難易度をアンロックしました',
+                                  textAlign: TextAlign.center,
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColors.techIndigo,
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                Text(
+                                  'ボーナス +${config.bonusExp} EXP  +${config.bonusPt} PT',
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w600,
+                                    color: accentPass.withValues(alpha: 0.95),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ] else ...[
+                          const SizedBox(height: 20),
+                          Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.all(18),
+                            decoration: BoxDecoration(
+                              color: Colors.orange.shade50.withValues(alpha: 0.9),
+                              borderRadius: BorderRadius.circular(16),
+                              border: Border.all(
+                                color: Colors.deepOrange.shade200.withValues(alpha: 0.85),
+                              ),
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  '${AppConstants.promotionExamPassLine}問以上正解で合格です',
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColors.techIndigo,
+                                  ),
+                                ),
+                                const SizedBox(height: 10),
+                                Text(
+                                  'ウォレットから ${nf.format(config.forfeit)} PT が没収されました',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    height: 1.45,
+                                    color: Colors.grey.shade800,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          if (!cashbackClaimed && cashbackPreview > 0) ...[
+                            const SizedBox(height: 16),
+                            GlowButton(
+                              glowColor: AppColors.stitchEmerald,
+                              onPressed: () async {
+                                final ok = await _watchFailCashbackAd();
+                                if (ok && mounted) {
+                                  cashbackClaimed = true;
+                                  setDialogState(() {});
+                                }
+                              },
+                              backgroundColor: AppColors.stitchEmerald,
+                              foregroundColor: Colors.white,
+                              borderRadius: 16,
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 12,
+                                horizontal: 12,
+                              ),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  const Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Icon(
+                                        Icons.play_circle_outline,
+                                        size: 22,
+                                        color: Colors.white,
+                                      ),
+                                      SizedBox(width: 8),
+                                      Text(
+                                        '広告を見る',
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 6),
+                                  Text(
+                                    '没収の ${nf.format(cashbackPreview)} PT を',
+                                    textAlign: TextAlign.center,
+                                    style: const TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                      height: 1.2,
+                                    ),
+                                  ),
+                                  const Text(
+                                    'キャッシュバック',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                      height: 1.2,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              '没収されたポイントの一部を広告視聴で還元します（1回のみ）',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 12,
+                                height: 1.35,
+                                color: Colors.grey.shade600,
+                              ),
+                            ),
+                          ],
+                          if (cashbackClaimed && cashbackPreview > 0) ...[
+                            const SizedBox(height: 12),
+                            Text(
+                              '+${nf.format(cashbackPreview)} PT をキャッシュバックしました',
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                color: AppColors.stitchEmerald,
+                              ),
+                            ),
+                          ],
+                        ],
+                        const SizedBox(height: 28),
+                        SizedBox(
+                          width: double.infinity,
+                          child: GlowButton(
+                            glowColor: AppColors.stitchEmerald,
+                            onPressed: () {
+                              Navigator.of(dialogContext).pop();
+                              context.go('/');
+                            },
+                            backgroundColor: AppColors.stitchEmerald,
+                            foregroundColor: Colors.white,
+                            borderRadius: 16,
+                            padding: const EdgeInsets.symmetric(vertical: 14),
+                            child: const Text(
+                              'ホームに戻る',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ],
                     ),
                   ),
-                  const SizedBox(height: 16),
-                  // 広告視聴で再挑戦コスト半額
-                  if (!_hasWatchedAdForRetry)
-                    ElevatedButton.icon(
-                      onPressed: () => _showRetryAdDiscount(),
-                      icon: const Icon(Icons.play_circle_outline),
-                      label: const Text('広告を見て再挑戦コストを半額に'),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.stitchEmerald,
-                        foregroundColor: Colors.white,
-                      ),
-                    ),
-                ],
+                ),
               ),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-              context.go('/');
-            },
-            child: const Text('ホームに戻る'),
-          ),
-          if (!passed && _hasWatchedAdForRetry)
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-                // 再挑戦（広告視聴済みなので割引適用）
-                _retryExam();
-              },
-              child: Text(
-                '再挑戦 (${examService.calculateRetryCost(
-                  category: widget.category,
-                  targetDifficulty: widget.targetDifficulty,
-                  watchedAd: true,
-                )} PT)',
-              ),
-            ),
-        ],
-      ),
+            );
+          },
+        );
+      },
     );
   }
 
-  Future<void> _showRetryAdDiscount() async {
+  Future<bool> _watchFailCashbackAd() async {
     final adService = ref.read(adServiceProvider);
-    
+
     if (!adService.isRewardedAdReady) {
       await adService.loadRewardedAd(
         onRewarded: (_, __) {},
@@ -587,25 +735,24 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
     }
 
     if (!adService.isRewardedAdReady) {
-      if (!mounted) return;
+      if (!mounted) return false;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('広告の読み込みに失敗しました'),
           backgroundColor: Colors.orange,
         ),
       );
-      return;
+      return false;
     }
 
     final success = await adService.showRewardedAd(
       onRewarded: (_, __) {
-        setState(() {
-          _hasWatchedAdForRetry = true;
-        });
-        if (mounted) {
-          Navigator.of(context).pop(); // ダイアログを閉じて再表示
-          _showResult(); // 結果ダイアログを再表示
-        }
+        unawaited(
+          ref.read(promotionExamServiceProvider).grantFailCashbackFromAd(
+                category: widget.category,
+                targetDifficulty: widget.targetDifficulty,
+              ),
+        );
       },
       onError: (error) {
         debugPrint('広告表示エラー: $error');
@@ -620,34 +767,8 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
         ),
       );
     }
-  }
 
-  Future<void> _retryExam() async {
-    final examService = ref.read(promotionExamServiceProvider);
-    final retryCost = examService.calculateRetryCost(
-      category: widget.category,
-      targetDifficulty: widget.targetDifficulty,
-      watchedAd: _hasWatchedAdForRetry,
-    );
-
-    final currentPoints = ref.read(totalPointsProvider);
-    if (currentPoints < retryCost) {
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('ポイントが不足しています: $retryCost PT必要'),
-          backgroundColor: Colors.red,
-        ),
-      );
-      return;
-    }
-
-    // PTを仮徴収
-    await ref.read(totalPointsProvider.notifier).consumePoints(retryCost);
-    _reservedPoints = retryCost;
-
-    // クイズを再読み込み
-    await _loadQuestions();
+    return success;
   }
 
   @override
@@ -836,34 +957,7 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
                   );
                 }),
 
-                const SizedBox(height: 24),
-
-                // 次へボタン
-                if (_showAnswerResult)
-                  GlowButton(
-                    glowColor: AppColors.stitchEmerald,
-                    onPressed: _nextQuestion,
-                    backgroundColor: AppColors.stitchEmerald,
-                    foregroundColor: Colors.white,
-                    borderRadius: 16,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          _currentQuestionIndex == _questions.length - 1
-                              ? '結果を見る'
-                              : '次の問題へ',
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        const Icon(Icons.arrow_forward, size: 20),
-                      ],
-                    ),
-                  ),
+                // 「次の問題へ」は解説ダイアログ内のみ（4択の下には出さない）
               ],
             ),
           ),

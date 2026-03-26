@@ -1,9 +1,12 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../constants/app_colors.dart';
 import '../providers/sample_data_provider.dart';
 import '../providers/recap_data_provider.dart';
+import '../providers/sound_service_provider.dart';
 
 /// タイトル画面
 class TitleScreen extends ConsumerStatefulWidget {
@@ -153,6 +156,8 @@ class _TitleScreenState extends ConsumerState<TitleScreen> {
   /// GAME STARTボタンが押されたときの処理
   Future<void> _handleGameStart() async {
     if (_isDownloading) return;
+
+    unawaited(ref.read(soundServiceProvider).playTitleStart());
 
     setState(() {
       _isDownloading = true;

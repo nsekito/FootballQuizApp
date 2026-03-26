@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -16,6 +18,7 @@ import '../widgets/responsive_container.dart';
 import '../utils/category_difficulty_utils.dart';
 import '../widgets/banner_ad_widget.dart';
 import '../providers/admin_mode_provider.dart';
+import '../providers/sound_service_provider.dart';
 import '../utils/reward_calculator.dart';
 import '../utils/question_utils.dart';
 
@@ -110,6 +113,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         _questions = processedQuestions;
         _isLoading = false;
       });
+
+      if (_questions.isNotEmpty) {
+        unawaited(ref.read(soundServiceProvider).playQuizStart());
+      }
 
       if (_questions.isEmpty) {
         if (mounted) {
@@ -496,14 +503,18 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   }
 
   void _selectAnswer(int index) {
+    final isCorrect = index == _questions[_currentQuestionIndex].answerIndex;
+
     setState(() {
       _selectedAnswerIndex = index;
       _showResult = true;
 
-      if (index == _questions[_currentQuestionIndex].answerIndex) {
+      if (isCorrect) {
         _score++;
       }
     });
+
+    unawaited(ref.read(soundServiceProvider).playQuizResult(isCorrect));
 
     _showExplanationDialog(isLastQuestion: _currentQuestionIndex == _questions.length - 1);
   }

@@ -25,6 +25,42 @@ import '../providers/login_bonus_provider.dart';
 import '../constants/game_config.dart';
 import '../utils/rewarded_ad_helper.dart';
 
+/// チームクイズの昇格試験案内を出さない条件（汎用タグで解放済み、またはいずれかのチーム・リーグ単位でNORMAL/HARDが解放済み）。
+bool _shouldHideTeamPromotionReminder(Iterable<String> unlockedDifficulties) {
+  final genericNormal = UnlockKeyUtils.generateUnlockKey(
+    category: AppConstants.categoryTeams,
+    difficulty: AppConstants.difficultyNormal,
+    tags: 'teams,japan',
+  );
+  final genericHard = UnlockKeyUtils.generateUnlockKey(
+    category: AppConstants.categoryTeams,
+    difficulty: AppConstants.difficultyHard,
+    tags: 'teams,japan',
+  );
+  if (unlockedDifficulties.contains(genericNormal) ||
+      unlockedDifficulties.contains(genericHard)) {
+    return true;
+  }
+  return unlockedDifficulties.any((k) {
+    if (k.startsWith('teams_normal_') && k != genericNormal) return true;
+    if (k.startsWith('teams_hard_') && k != genericHard) return true;
+    return false;
+  });
+}
+
+String _promotionQuizCategoryLabel(String category) {
+  switch (category) {
+    case AppConstants.categoryRules:
+      return 'ルールクイズ';
+    case AppConstants.categoryHistory:
+      return '歴史クイズ';
+    case AppConstants.categoryTeams:
+      return 'チームクイズ';
+    default:
+      return category;
+  }
+}
+
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
@@ -413,29 +449,51 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Column(
+          Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'SOCCER',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: -0.5,
-                  color: AppColors.techIndigo,
-                ),
+              Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Positioned(
+                    left: 0,
+                    top: 1,
+                    child: Text(
+                      'Kickpedia',
+                      style: GoogleFonts.rajdhani(
+                        fontSize: 26,
+                        fontWeight: FontWeight.w800,
+                        letterSpacing: 1.0,
+                        height: 1.0,
+                        color: AppColors.techIndigo.withValues(alpha: 0.12),
+                      ),
+                    ),
+                  ),
+                  ShaderMask(
+                    blendMode: BlendMode.srcIn,
+                    shaderCallback: (bounds) => const LinearGradient(
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                      colors: [
+                        AppColors.techIndigo,
+                        AppColors.techBlue,
+                      ],
+                    ).createShader(bounds),
+                    child: Text(
+                      'Kickpedia',
+                      style: GoogleFonts.rajdhani(
+                        fontSize: 26,
+                        fontWeight: FontWeight.w800,
+                        letterSpacing: 1.0,
+                        height: 1.0,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
               ),
-              Text(
-                'QUIZ',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: -0.5,
-                  color: AppColors.techBlue,
-                ),
-              ),
-              SizedBox(height: 6),
-              Row(
+              const SizedBox(height: 6),
+              const Row(
                 children: [
                   SizedBox(
                     width: 6,
@@ -1825,6 +1883,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     ];
 
     for (final category in categories) {
+      if (category == AppConstants.categoryTeams &&
+          _shouldHideTeamPromotionReminder(unlockedDifficulties)) {
+        continue;
+      }
+
       // EASY→NORMAL
       final normalKey = UnlockKeyUtils.generateUnlockKey(
         category: category,
@@ -1842,10 +1905,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
           availableExams.add({
             'exam': exam,
             'category': category,
-            'tags': category == AppConstants.categoryTeams
-                ? 'teams,japan'
-                : category,
-            'targetDifficulty': AppConstants.difficultyNormal,
           });
         }
       }
@@ -1868,10 +1927,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
           availableExams.add({
             'exam': exam,
             'category': category,
-            'tags': category == AppConstants.categoryTeams
-                ? 'teams,japan'
-                : category,
-            'targetDifficulty': AppConstants.difficultyHard,
           });
         }
       }
@@ -1896,75 +1951,77 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
             ),
           ),
         ),
-        ...availableExams.take(3).map((examData) {
+        ...availableExams.map((examData) {
           final exam = examData['exam'] as PromotionExam;
           final category = examData['category'] as String;
-          final tags = examData['tags'] as String;
-          final targetDifficulty = examData['targetDifficulty'] as String;
+          final isTeam = category == AppConstants.categoryTeams;
 
           return Padding(
             padding: const EdgeInsets.only(bottom: 12),
-            child: GestureDetector(
-              onTap: () {
-                final uri = Uri(
-                  path: '/promotion-exam',
-                  queryParameters: {
-                    'category': category,
-                    'tags': tags,
-                    'targetDifficulty': targetDifficulty,
-                  },
-                );
-                context.push(uri.toString());
-              },
-              child: GlassMorphismWidget(
-                borderRadius: 16,
-                padding: const EdgeInsets.all(16),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        color: Colors.amber.shade50,
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Icon(
-                        Icons.school,
-                        color: Colors.amber.shade700,
-                        size: 24,
-                      ),
+            child: GlassMorphismWidget(
+              borderRadius: 16,
+              padding: const EdgeInsets.all(16),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 48,
+                    height: 48,
+                    decoration: BoxDecoration(
+                      color: Colors.amber.shade50,
+                      borderRadius: BorderRadius.circular(12),
                     ),
-                    const SizedBox(width: 16),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            exam.getTitle(),
-                            style: const TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: AppColors.techIndigo,
-                            ),
+                    child: Icon(
+                      Icons.school_outlined,
+                      color: Colors.amber.shade700,
+                      size: 24,
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          _promotionQuizCategoryLabel(category),
+                          style: const TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.techIndigo,
                           ),
-                          const SizedBox(height: 4),
-                          Text(
-                            '必要ポイント: ${NumberFormat('#,###').format(exam.requiredPoints)} PT',
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: Colors.grey.shade600,
-                            ),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          '${exam.getTitle()}を受けられます',
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.techIndigo,
                           ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          isTeam
+                              ? 'チームごとにクイズ設定画面から昇格試験を受けてください。'
+                              : 'クイズ設定画面から昇格試験を受けてください。',
+                          style: TextStyle(
+                            fontSize: 12,
+                            height: 1.35,
+                            color: Colors.grey.shade700,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          '必要条件: ランク・${NumberFormat('#,###').format(exam.requiredPoints)} PT',
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: Colors.grey.shade600,
+                          ),
+                        ),
+                      ],
                     ),
-                    Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.grey.shade400,
-                      size: 16,
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           );

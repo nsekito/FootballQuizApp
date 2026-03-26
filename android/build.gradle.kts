@@ -1,3 +1,6 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 allprojects {
     repositories {
         google()
@@ -15,7 +18,7 @@ subprojects {
     val newSubprojectBuildDir: Directory = newBuildDir.dir(project.name)
     project.layout.buildDirectory.value(newSubprojectBuildDir)
     
-    // Javaバージョンを統一（Java 17に設定）
+    // Java / Kotlin の JVM ターゲットを統一（プラグイン側が 1.8 のままだとビルド失敗する）
     afterEvaluate {
         if (project.hasProperty("android")) {
             project.extensions.findByType<com.android.build.gradle.BaseExtension>()?.apply {
@@ -23,6 +26,11 @@ subprojects {
                     sourceCompatibility = JavaVersion.VERSION_17
                     targetCompatibility = JavaVersion.VERSION_17
                 }
+            }
+        }
+        tasks.withType<KotlinCompile>().configureEach {
+            compilerOptions {
+                jvmTarget.set(JvmTarget.JVM_17)
             }
         }
     }

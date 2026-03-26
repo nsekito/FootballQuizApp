@@ -32,6 +32,9 @@ dependencies:
   # Fonts
   google_fonts: ^6.1.0
   
+  # Audio
+  audioplayers: ^6.1.0
+
   # Utilities
   shared_preferences: ^2.2.2
   intl: ^0.19.0
@@ -61,6 +64,7 @@ flutter:
     - assets/images/09_Documentation/stitch_quiz_screen.png
     - assets/images/09_Documentation/stitch_answer_dialog_screen.png
     - assets/images/09_Documentation/stitch_result_screen.png
+    - assets/sounds/
 
 flutter_launcher_icons:
   android: true

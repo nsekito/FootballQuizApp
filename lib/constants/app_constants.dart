@@ -7,7 +7,11 @@ class AppConstants {
 
   // 昇格試験の設定
   static const int promotionExamQuestionCount = 20;
-  static const int promotionExamPassScore = 16;
+  /// 合格に必要な正解率（例: 20問なら 0.8 → 16問以上）
+  static const double promotionExamPassRatio = 0.8;
+  /// 合格に必要な正解数（問題数 × `promotionExamPassRatio` を切り上げ）
+  static int get promotionExamPassLine =>
+      (promotionExamQuestionCount * promotionExamPassRatio).ceil();
 
   // クイズ設定
   static const int defaultQuestionsPerQuiz = 10;

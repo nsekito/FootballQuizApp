@@ -8,7 +8,7 @@ class PromotionExam {
   final UserRank requiredRank; // 必要なランク
   final int requiredPoints; // 必要なポイント
   final int questionCount; // 問題数（20問）
-  final int passScore; // 合格スコア（16問以上）
+  final int passScore; // 合格に必要な正解数（AppConstants.promotionExamPassLine と同期）
   final String category; // 対象カテゴリ
   final String tags; // 対象タグ（カンマ区切り、例："teams,japan,kashiwa"）
 
@@ -34,7 +34,7 @@ class PromotionExam {
       requiredRank: UserRank.starter,
       requiredPoints: AppConstants.promotionExamPointsEasyToNormal,
       questionCount: AppConstants.promotionExamQuestionCount,
-      passScore: AppConstants.promotionExamPassScore,
+      passScore: AppConstants.promotionExamPassLine,
       category: category,
       tags: tags,
     );
@@ -51,7 +51,7 @@ class PromotionExam {
       requiredRank: UserRank.numberTen,
       requiredPoints: AppConstants.promotionExamPointsNormalToHard,
       questionCount: AppConstants.promotionExamQuestionCount,
-      passScore: AppConstants.promotionExamPassScore,
+      passScore: AppConstants.promotionExamPassLine,
       category: category,
       tags: tags,
     );
@@ -68,7 +68,7 @@ class PromotionExam {
       requiredRank: UserRank.captain,
       requiredPoints: AppConstants.promotionExamPointsHardToExtreme,
       questionCount: AppConstants.promotionExamQuestionCount,
-      passScore: AppConstants.promotionExamPassScore,
+      passScore: AppConstants.promotionExamPassLine,
       category: category,
       tags: tags,
     );

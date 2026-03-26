@@ -9,8 +9,10 @@ import '../constants/app_constants.dart';
 import '../constants/app_colors.dart';
 import '../widgets/grid_pattern_background.dart';
 import '../widgets/glow_button.dart';
+import '../widgets/glass_morphism_widget.dart';
 import '../widgets/responsive_container.dart';
 import '../widgets/banner_ad_widget.dart';
+import '../services/promotion_exam_service.dart';
 
 class PromotionExamScreen extends ConsumerStatefulWidget {
   final String category;
@@ -55,6 +57,12 @@ class _PromotionExamScreenState extends ConsumerState<PromotionExamScreen> {
           tags: widget.tags,
         );
         break;
+      case AppConstants.difficultyExtreme:
+        exam = PromotionExam.hardToExtreme(
+          category: widget.category,
+          tags: widget.tags,
+        );
+        break;
     }
     
     setState(() {
@@ -82,8 +90,7 @@ class _PromotionExamScreenState extends ConsumerState<PromotionExamScreen> {
 
   Future<void> _startExam() async {
     if (_exam == null || !_canTakeExam) return;
-    
-    // ポイントを仮徴収（確定するまで保留）
+
     final currentPoints = ref.read(totalPointsProvider);
     if (currentPoints < _exam!.requiredPoints) {
       if (!mounted) return;
@@ -96,8 +103,149 @@ class _PromotionExamScreenState extends ConsumerState<PromotionExamScreen> {
       );
       return;
     }
-    
-    // 昇格試験クイズ画面に遷移（PTは仮徴収としてクエリパラメータで渡す）
+
+    final examService = ref.read(promotionExamServiceProvider);
+    final unlockCfg = examService.getExamConfig(
+      category: widget.category,
+      targetDifficulty: widget.targetDifficulty,
+    );
+
+    final requiredPt = _exam!.requiredPoints;
+    final nf = NumberFormat('#,###');
+
+    final confirmed = await showDialog<bool>(
+      context: context,
+      barrierDismissible: false,
+      barrierColor: Colors.black.withValues(alpha: 0.4),
+      builder: (ctx) => Dialog(
+        backgroundColor: Colors.transparent,
+        insetPadding: const EdgeInsets.all(20),
+        child: GlassMorphismWidget(
+          borderRadius: 24,
+          backgroundColor: Colors.white.withValues(alpha: 0.92),
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const Row(
+                  children: [
+                    Icon(Icons.paid_outlined, color: AppColors.stitchEmerald, size: 28),
+                    SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                        'ポイントの確認',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.techIndigo,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+                Text(
+                  '参加に必要なポイント',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.grey.shade700,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  '${nf.format(requiredPt)} PT',
+                  style: const TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.stitchEmerald,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                Text(
+                  'クイズ終了後に確定します。合格時は上記のポイントが消費され、ボーナスが付与されます。',
+                  style: TextStyle(
+                    fontSize: 14,
+                    height: 1.45,
+                    color: Colors.grey.shade800,
+                  ),
+                ),
+                if (unlockCfg != null) ...[
+                  const SizedBox(height: 16),
+                  Container(
+                    padding: const EdgeInsets.all(14),
+                    decoration: BoxDecoration(
+                      color: AppColors.stitchEmerald.withValues(alpha: 0.08),
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(
+                        color: AppColors.stitchEmerald.withValues(alpha: 0.25),
+                      ),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          '不合格の場合',
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey.shade800,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          '・不合格時: ウォレットから ${nf.format(unlockCfg.forfeit)} PT が没収されます',
+                          style: TextStyle(fontSize: 14, color: Colors.grey.shade800, height: 1.4),
+                        ),
+                        Text(
+                          '（参加に必要な ${nf.format(requiredPt)} PT は開始前に引かれません）',
+                          style: TextStyle(fontSize: 13, color: Colors.grey.shade700, height: 1.4),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+                const SizedBox(height: 24),
+                Row(
+                  children: [
+                    Expanded(
+                      child: OutlinedButton(
+                        onPressed: () => Navigator.of(ctx).pop(false),
+                        style: OutlinedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          side: BorderSide(color: Colors.grey.shade400),
+                        ),
+                        child: Text('キャンセル', style: TextStyle(color: Colors.grey.shade800)),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: GlowButton(
+                        glowColor: AppColors.stitchEmerald,
+                        onPressed: () => Navigator.of(ctx).pop(true),
+                        backgroundColor: AppColors.stitchEmerald,
+                        foregroundColor: Colors.white,
+                        borderRadius: 14,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        child: const Text(
+                          '試験を開始',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+
+    if (confirmed != true || !mounted) return;
+
     final uri = Uri(
       path: '/promotion-exam-quiz',
       queryParameters: {
@@ -108,14 +256,13 @@ class _PromotionExamScreenState extends ConsumerState<PromotionExamScreen> {
         'reservedPoints': _exam!.requiredPoints.toString(),
       },
     );
-    if (!mounted) return;
     context.push(uri.toString());
   }
 
   @override
   Widget build(BuildContext context) {
     if (_isLoading || _exam == null) {
-      return Scaffold(
+      return const Scaffold(
         backgroundColor: AppColors.stitchBackgroundLight,
         body: Center(
           child: CircularProgressIndicator(color: AppColors.stitchEmerald),
@@ -150,7 +297,7 @@ class _PromotionExamScreenState extends ConsumerState<PromotionExamScreen> {
             ),
             child: Column(
               children: [
-                Icon(
+                const Icon(
                   Icons.emoji_events,
                   color: AppColors.accent,
                   size: 48,
@@ -255,17 +402,17 @@ class _PromotionExamScreenState extends ConsumerState<PromotionExamScreen> {
                         foregroundColor: Colors.white,
                         borderRadius: 16,
                         padding: const EdgeInsets.symmetric(vertical: 16),
-                        child: Row(
+                        child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const Text(
+                            Text(
                               '試験を開始する',
                               style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            const SizedBox(width: 8),
+                            SizedBox(width: 8),
                             Icon(Icons.arrow_forward, size: 20, color: Colors.white),
                           ],
                         ),
