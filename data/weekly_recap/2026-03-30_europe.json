@@ -1,0 +1,1034 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-03-29T21:47:15Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-03-30",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "W杯予選",
+        "イタリア代表",
+        "北アイルランド代表"
+      ],
+      "text": "2026年3月26日に行われたW杯欧州予選プレーオフで、北アイルランドに2-0で勝利し決勝に進出した国はどこでしょう？",
+      "options": [
+        "イタリア",
+        "スペイン",
+        "フランス",
+        "オランダ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イタリア代表はサンドロ・トナーリとモイーズ・キーンのゴールにより北アイルランドを2-0で下し、プレーオフ決勝へ駒を進めました。",
+      "trivia": "イタリア代表は前回と前々回のW杯本大会出場を逃しており、今回は国を挙げて悲願の出場権獲得を目指しています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "国際親善試合",
+        "ブラジル代表",
+        "フランス代表"
+      ],
+      "text": "2026年3月26日に行われた国際親善試合「ブラジル代表 vs フランス代表」の試合結果はどうなったでしょう？",
+      "options": [
+        "フランスが2-1で勝利",
+        "ブラジルが2-1で勝利",
+        "1-1の引き分け",
+        "ブラジルが3-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "注目を集めた強豪国同士のテストマッチは、アウェイのフランス代表が2-1でブラジル代表を撃破しました。",
+      "trivia": "フランスとブラジルは過去のW杯の決勝や準々決勝など、歴史的な大舞台で幾度も名勝負を繰り広げてきた因縁のライバルです。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "日本代表",
+        "スコットランド代表",
+        "国際親善試合"
+      ],
+      "text": "2026年3月26日、日本代表は国際親善試合でスコットランド代表と対戦しました。勝者はどちらでしょう？",
+      "options": [
+        "日本（1-0で勝利）",
+        "スコットランド（1-0で勝利）",
+        "引き分け（0-0）",
+        "引き分け（1-1）"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は敵地でのスコットランド戦に臨み、見事1-0の完封勝利で強豪相手に結果を残しました。",
+      "trivia": "スコットランドのセルティックには多くの日本人選手が在籍した歴史があり、現地ファンにとっても日本サッカーは非常に馴染み深い存在です。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "国際親善試合",
+        "オランダ代表",
+        "ノルウェー代表"
+      ],
+      "text": "2026年3月26日に行われた国際親善試合で、ノルウェー代表に2-1で勝利した欧州の強豪国はどこでしょう？",
+      "options": [
+        "オランダ",
+        "イングランド",
+        "ドイツ",
+        "ポルトガル"
+      ],
+      "answerIndex": 0,
+      "explanation": "オランダ代表がホームでノルウェー代表を迎え撃ち、両者譲らぬ展開の中で2-1と接戦を制しました。",
+      "trivia": "ノルウェー代表には世界的なスター選手が多く在籍していますが、意外にもW杯本大会からは長らく遠ざかっており、躍進が期待されています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "W杯予選",
+        "スウェーデン代表",
+        "ヴィクトル・ギョケレス"
+      ],
+      "text": "2026年3月26日のW杯欧州予選プレーオフで、スウェーデンはウクライナを3-1で下しました。この試合でハットトリックを達成したスウェーデン代表FWは誰でしょう？",
+      "options": [
+        "ヴィクトル・ギョケレス",
+        "アレクサンデル・イサク",
+        "デヤン・クルゼフスキ",
+        "エミル・フォルスベリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "絶好調のヴィクトル・ギョケレスがハットトリックの大活躍を見せ、スウェーデンをウクライナ戦の勝利に導きました。",
+      "trivia": "ギョケレスはスポルティングCPなどクラブレベルでも驚異的なペースでゴールを量産し、欧州屈指のストライカーとしてその名を轟かせています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "W杯予選",
+        "イタリア代表",
+        "得点者"
+      ],
+      "text": "2026年3月26日のW杯欧州予選プレーオフで、イタリア代表が北アイルランドに2-0で勝利しました。この試合で得点を挙げた2人の選手は誰でしょう？",
+      "options": [
+        "トナーリとキーン",
+        "バレッラとキエーザ",
+        "ラスパドーリとスカマッカ",
+        "ペッレグリーニとフラッテージ"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンドロ・トナーリとモイーズ・キーンの2人が重要なゴールを奪い、イタリアのプレーオフ決勝進出に大きく貢献しました。",
+      "trivia": "トナーリはかつて出場停止処分を経験するという苦難の時期がありましたが、復帰後はクラブと代表の両方で再び欠かせない役割を担っています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "W杯予選",
+        "チェコ代表",
+        "アイルランド代表"
+      ],
+      "text": "2026年3月26日のW杯欧州予選プレーオフで、チェコはアイルランドと対戦しました。試合終盤にチェコを救う同点ゴールを決め、PK戦での勝利に繋げた選手は誰でしょう？",
+      "options": [
+        "ラディスラフ・クレイチー",
+        "パトリック・シック",
+        "トマーシュ・ソウチェク",
+        "アダム・フロジェク"
+      ],
+      "answerIndex": 0,
+      "explanation": "ラディスラフ・クレイチーが土壇場で劇的な同点ゴールを決めて2-2とし、その後チェコがPK戦を4-3で制しました。",
+      "trivia": "クレイチーは本職が守備的なポジションでありながら、セットプレーなどでの高い得点能力を兼ね備えており、攻守両面でチームを支える存在です。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "W杯予選",
+        "ポーランド代表",
+        "レヴァンドフスキ"
+      ],
+      "text": "2026年3月26日のW杯欧州予選プレーオフ「ポーランド vs アルバニア」は、ポーランドが2-1で逆転勝利を収めました。この試合で重要な同点ゴールを決めたポーランドの絶対的エースは誰でしょう？",
+      "options": [
+        "ロベルト・レヴァンドフスキ",
+        "アルカディウシュ・ミリク",
+        "ピオトル・ジエリンスキ",
+        "クシシュトフ・ピョンテク"
+      ],
+      "answerIndex": 0,
+      "explanation": "先制を許す苦しい展開の中、キャプテンのロベルト・レヴァンドフスキが貴重な同点ゴールを決め、チームの逆転勝利への流れを作りました。",
+      "trivia": "レヴァンドフスキは30代後半になっても世界トップクラスの決定力を維持しており、ポーランド代表の歴代最多得点記録を不動のものとしています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "国際親善試合",
+        "ドイツ代表",
+        "スイス代表"
+      ],
+      "text": "2026年3月26日に行われたスイス代表とドイツ代表の国際親善試合は、両チーム合わせて7ゴールが生まれる乱打戦となりました。試合結果はどうなったでしょう？",
+      "options": [
+        "ドイツが4-3で勝利",
+        "スイスが4-3で勝利",
+        "ドイツが5-2で勝利",
+        "スイスが5-2で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "激しい打ち合いとなったこの試合は、アウェイのドイツ代表が最終的に4-3でスイス代表を振り切りました。",
+      "trivia": "スイスとドイツは国境を接する隣国同士であり、サッカーにおいても歴史的に何度も激闘を演じてきた特別なライバル関係にあります。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "W杯予選",
+        "ジャマイカ代表",
+        "ニューカレドニア代表"
+      ],
+      "text": "2026年3月27日に行われたFIFAワールドカップ2026・大陸間プレーオフ準決勝で、ニューカレドニアを1-0で破り決勝に進出した国はどこでしょう？",
+      "options": [
+        "ジャマイカ",
+        "ボリビア",
+        "スリナム",
+        "コンゴ民主共和国"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジャマイカ代表がニューカレドニア代表を1-0で退け、本大会出場を懸けたコンゴ民主共和国との大陸間プレーオフ決勝へと駒を進めました。",
+      "trivia": "ジャマイカがW杯本大会に出場したのは過去に1度のみであり、もし今回出場権を獲得できれば国中が熱狂する歴史的な快挙となります。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-27",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "順位表",
+        "アーセナル"
+      ],
+      "text": "2026年3月末時点のプレミアリーグ順位表で、マンチェスター・シティなどを抑えて首位に立っているクラブはどこでしょう？",
+      "options": [
+        "アーセナル",
+        "マンチェスター・シティ",
+        "マンチェスター・ユナイテッド",
+        "リヴァプール"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月末時点で、アーセナルは31試合を消化し勝ち点70を獲得して首位を走っています。",
+      "trivia": "2位のマンチェスター・シティは消化試合が1試合少ないものの勝ち点61にとどまっており、アーセナルが大きくリードを保っています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ予選",
+        "ウェールズ",
+        "ボスニア・ヘルツェゴビナ"
+      ],
+      "text": "2026年3月26日に行われた2026年W杯欧州予選プレーオフ準決勝で、ウェールズをPK戦の末に破り決勝へ駒を進めた国はどこでしょう？",
+      "options": [
+        "ボスニア・ヘルツェゴビナ",
+        "イタリア",
+        "トルコ",
+        "ポーランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "ボスニア・ヘルツェゴビナはウェールズと対戦し、延長戦を終えて1-1となった後のPK戦を4-2で制して勝ち抜けました。",
+      "trivia": "ウェールズ代表のベン・デイヴィスは負傷中でしたが、ベンチからチームメイトを鼓舞し続けました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ予選",
+        "大陸間プレーオフ",
+        "ジャマイカ"
+      ],
+      "text": "2026年3月26日に行われたW杯大陸間プレーオフ準決勝で、ジャマイカが1-0で勝利した相手国はどこでしょう？",
+      "options": [
+        "ニューカレドニア",
+        "コンゴ民主共和国",
+        "ニュージーランド",
+        "ソロモン諸島"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジャマイカは大陸間プレーオフ準決勝でオセアニアのニューカレドニアに1-0で勝利し、決勝へ進出しました。",
+      "trivia": "ジャマイカはW杯本大会のグループKへの切符を懸けて、次戦のプレーオフ決勝でコンゴ民主共和国と対戦します。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ予選",
+        "スウェーデン",
+        "ポーランド"
+      ],
+      "text": "2026年3月26日のW杯欧州予選プレーオフ準決勝で、スウェーデンはウクライナに3-1で勝利しました。スウェーデンがW杯出場権を懸けた決勝で対戦することになった国はどこでしょう？",
+      "options": [
+        "ポーランド",
+        "アルバニア",
+        "トルコ",
+        "イタリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "もう一方の準決勝でポーランドがアルバニアに勝利したため、プレーオフ決勝のカードは「スウェーデン対ポーランド」となりました。",
+      "trivia": "スウェーデン代表の若手MFルーカス・ベリヴァルは、このウクライナ戦が代表7キャップ目となり、終盤に出場して勝利に貢献しました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "スタッツ"
+      ],
+      "text": "2026年3月末時点のプレミアリーグで、アーセナルは31試合を消化し勝ち点70で首位に立っています。この時点でのアーセナルの得失点差はいくつでしょう？",
+      "options": [
+        "+39",
+        "+32",
+        "+45",
+        "+28"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月末時点の順位表において、アーセナルは61得点22失点で、得失点差「+39」という圧倒的な数字を記録しています。",
+      "trivia": "2位のマンチェスター・シティは60得点28失点で得失点差「+32」となっており、攻守両面においてアーセナルがリーグトップクラスの数字を残しています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ予選",
+        "ルーマニア",
+        "ラドゥ・ドラグシン"
+      ],
+      "text": "2026年3月26日のW杯欧州予選プレーオフ準決勝で、ルーマニアはトルコに0-1で敗れました。この試合でフル出場を果たした、トッテナム所属のルーマニア代表DFは誰でしょう？",
+      "options": [
+        "ラドゥ・ドラグシン",
+        "ミッキー・ファン・デ・フェン",
+        "クリスティアン・ロメロ",
+        "ベン・デイヴィス"
+      ],
+      "answerIndex": 0,
+      "explanation": "トッテナム所属のラドゥ・ドラグシンは、長期の負傷から復帰してこのトルコ戦にフル出場しましたが、チームは惜しくも敗退しました。",
+      "trivia": "ドラグシンにとっては前十字靭帯（ACL）のケガから復帰し、2024年11月以来となる代表での公式戦復帰の舞台でした。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "伊東純也",
+        "親善試合"
+      ],
+      "text": "2026年3月28日に行われた日本代表対スコットランド代表の国際親善試合で、後半に決勝ゴールを決めた選手は誰でしょう？",
+      "options": [
+        "伊東純也",
+        "三笘薫",
+        "堂安律",
+        "南野拓実"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半39分、左サイドの崩しから塩貝健人が落としたボールを、右サイドから走り込んだ伊東純也が右足で冷静に決めました。",
+      "trivia": "伊東はこのゴールについて「一つ前のチャンスを決めきれていればもっと良かった」と、自身の決定機逸を反省するストイックなコメントを残しています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "塩貝健人",
+        "アシスト"
+      ],
+      "text": "2026年3月28日のスコットランド戦でA代表デビューを果たし、伊東純也の決勝点をアシストした若手FWは誰でしょう？",
+      "options": [
+        "塩貝健人",
+        "後藤啓介",
+        "鈴木唯人",
+        "福田師王"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半から途中出場した塩貝健人は、左サイドからのクロスをダイレクトで落とし、伊東のゴールを見事にアシスト。デビュー戦でいきなり結果を残しました。",
+      "trivia": "塩貝は試合後、「攻撃でも守備でもしっかりチームに貢献することと、あとは点を取ることだけを考えていた。アシストは狙っていた」と語っています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "前田大然",
+        "キャプテン"
+      ],
+      "text": "2026年3月28日に行われた日本代表対スコットランド代表の試合で、プロキャリア初となるゲームキャプテンの大役を務めた選手は誰でしょう？",
+      "options": [
+        "前田大然",
+        "古橋亨梧",
+        "旗手怜央",
+        "板倉滉"
+      ],
+      "answerIndex": 0,
+      "explanation": "遠藤航が不在で、この試合で堂安律がベンチスタートとなったため、スコットランドの名門セルティックでプレーする前田大然がゲームキャプテンに指名されました。",
+      "trivia": "前田は人生初のキャプテンマークに焦り、試合当日の昼食後に森保監督から伝えられた直後、遠藤航に「コイントスのやり方」などを教わるべくすぐ連絡したそうです。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "鈴木彩艶",
+        "ゴールキーパー"
+      ],
+      "text": "2026年3月28日の日本代表対スコットランド戦で、前半に至近距離からの決定的なシュートを左手一本で弾き出すスーパーセーブを見せ、無失点勝利の立役者となったGKは誰でしょう？",
+      "options": [
+        "鈴木彩艶",
+        "大迫敬介",
+        "前川黛也",
+        "谷晃生"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半8分、マクトミネイの至近距離からの決定的なシュートを、鈴木彩艶が左手一本で防いでポストに当て、チームの最大のピンチを救い無失点に大きく貢献しました。",
+      "trivia": "鈴木自身はこのセーブについて「本能的な反応だった。ケガから5ヶ月ぶりに代表に復帰して結果を出せたことは大きい」と自身のパフォーマンスを振り返っています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "鈴木淳之介",
+        "FCコペンハーゲン"
+      ],
+      "text": "2026年3月28日のスコットランド戦でA代表デビューを果たし、左サイドからオーバーラップして決勝点の起点となるクロスを供給した、FCコペンハーゲン所属の日本人選手は誰でしょう？",
+      "options": [
+        "鈴木淳之介",
+        "町田浩樹",
+        "角田涼太朗",
+        "渡辺剛"
+      ],
+      "answerIndex": 0,
+      "explanation": "湘南ベルマーレからデンマークのFCコペンハーゲンへ移籍した鈴木淳之介は、後半から左ストッパーとして途中出場し、見事な攻撃参加で決勝点につながるクロスを上げました。",
+      "trivia": "鈴木は岐阜県の帝京大可児高校出身で、高校時代はボランチとしてプレーしていましたが、プロ入り後にセンターバックやストッパーとしての才能を開花させました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ハフィーニャ",
+        "ブラジル代表",
+        "バルセロナ",
+        "負傷"
+      ],
+      "text": "2026年3月26日に行われたフランス代表との親善試合で右ハムストリングを負傷し、約5週間の離脱が決まったバルセロナ所属のブラジル代表FWは誰でしょう？",
+      "options": [
+        "ハフィーニャ",
+        "ヴィニシウス・ジュニオール",
+        "ロドリゴ",
+        "エンドリッキ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハフィーニャはフランス戦で右ハムストリングを負傷し、所属するバルセロナが4月に控えるUEFAチャンピオンズリーグ準々決勝のアトレティコ・マドリード戦などを欠場する見込みです。",
+      "trivia": "3月のインターナショナルブレイクはシーズン終盤の重要な時期と重なるため、代表戦での怪我はクラブにとって非常に痛手となり「FIFAウイルス」と恐れられています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "キリアン・エムバペ",
+        "フランス代表",
+        "レアル・マドリード"
+      ],
+      "text": "左膝の負傷で約1か月離脱していたものの、2026年3月26日に行われたブラジル代表との親善試合に先発出場し、先制ゴールを決めて復活をアピールしたフランス代表のストライカーは誰でしょう？",
+      "options": [
+        "キリアン・エムバペ",
+        "アントワーヌ・グリーズマン",
+        "ランダル・コロ・ムアニ",
+        "マルクス・テュラム"
+      ],
+      "answerIndex": 0,
+      "explanation": "エムバペは所属するレアル・マドリードでの試合で左膝の捻挫から復帰したばかりでしたが、ブラジル戦でもキレのある動きを見せ、2-1での勝利に貢献しました。",
+      "trivia": "この試合はアメリカ・マサチューセッツ州のジレット・スタジアムで行われ、2026年ワールドカップに向けたテストマッチとしての側面も持っていました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "フェリックス・ヌメチャ",
+        "ドイツ代表",
+        "ドルトムント"
+      ],
+      "text": "2026年3月のインターナショナルブレイク直前に膝を負傷し、ドイツ代表のナーゲルスマン監督から「ワールドカップ欠場の可能性もある」と状態を心配されているドルトムント所属のMFは誰でしょう？",
+      "options": [
+        "フェリックス・ヌメチャ",
+        "ロベルト・アンドリッヒ",
+        "レオン・ゴレツカ",
+        "パスカル・グロス"
+      ],
+      "answerIndex": 0,
+      "explanation": "フェリックス・ヌメチャはドルトムントでの試合で膝を負傷し、3月の代表戦を欠場。指揮官は彼の怪我が軽傷ではなく、ワールドカップへの参加が危ぶまれると明言しました。",
+      "trivia": "フェリックス・ヌメチャの兄であるルーカス・ヌメチャもプロサッカー選手であり、兄弟揃って各年代の代表でプレーしてきた経歴を持っています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "サンティアゴ・ヒメネス",
+        "メキシコ代表",
+        "ACミラン"
+      ],
+      "text": "足首の手術から約5か月ぶりに所属先のACミランで復帰を果たしたものの、長期間の離脱を考慮して2026年3月の代表戦メンバーから外れたメキシコ代表のストライカーは誰でしょう？",
+      "options": [
+        "サンティアゴ・ヒメネス",
+        "ラウル・ヒメネス",
+        "イルビング・ロサノ",
+        "エンリケ・マルティン"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンティアゴ・ヒメネスは足首の怪我で長期離脱していましたが、3月のインターナショナルブレイク直前にミランで実戦復帰しました。しかし、アギーレ監督は慎重を期して今シリーズの招集を見送りました。",
+      "trivia": "メキシコは2026年ワールドカップの共同開催国の一つであり、自国開催の大会に向けて主力選手たちの怪我の状況がファンにとって大きな懸念材料となっています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "マルティン・ウーデゴール",
+        "ノルウェー代表",
+        "アーセナル"
+      ],
+      "text": "膝の負傷により2026年3月のノルウェー代表の親善試合を辞退したマルティン・ウーデゴールですが、所属するアーセナルが4月4日に控えている彼の復帰目標の試合（大会と対戦相手）はどれでしょう？",
+      "options": [
+        "FAカップのサウサンプトン戦",
+        "プレミアリーグのマンチェスター・シティ戦",
+        "チャンピオンズリーグのバイエルン戦",
+        "カラバオカップのチェルシー戦"
+      ],
+      "answerIndex": 0,
+      "explanation": "ウーデゴールは膝の違和感により代表戦を回避し、ロンドンに残って治療を続けています。クラブは彼が4月4日に行われるFAカップ準々決勝のサウサンプトン戦に間に合うことを期待しています。",
+      "trivia": "ウーデゴールのように若くして代表キャプテンを任される選手は責任感が強く、代表戦とクラブの試合のバランスを取るためにメディカルスタッフとの連携が不可欠です。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "トッテナム",
+        "プレミアリーグ",
+        "監督解任",
+        "イゴール・トゥドール"
+      ],
+      "text": "2026年3月29日、成績不振により就任からわずか44日（7試合）でイゴール・トゥドール監督を解任したプレミアリーグのクラブはどこでしょう？",
+      "options": [
+        "トッテナム・ホットスパー",
+        "チェルシー",
+        "ウェストハム・ユナイテッド",
+        "ノッティンガム・フォレスト"
+      ],
+      "answerIndex": 0,
+      "explanation": "トッテナムは2月中旬にトゥドール監督を招聘しましたが、リーグ戦での成績不振やチャンピオンズリーグ敗退を受け、わずか44日で双方合意による契約解除を発表しました。",
+      "trivia": "トゥドール体制での唯一の勝利はチャンピオンズリーグのアトレティコ・マドリード戦（第2戦）でしたが、2戦合計での敗退を防ぐことはできませんでした。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-29",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "アメリカ代表",
+        "ベルギー代表",
+        "親善試合",
+        "ポチェッティーノ"
+      ],
+      "text": "2026年3月28日にアトランタで行われた親善試合で、ワールドカップ開催国のアメリカ代表（USMNT）を5-2で粉砕したヨーロッパの強豪国はどこでしょう？",
+      "options": [
+        "ベルギー",
+        "フランス",
+        "オランダ",
+        "ポルトガル"
+      ],
+      "answerIndex": 0,
+      "explanation": "マウリシオ・ポチェッティーノ監督率いるアメリカ代表は、先制したもののベルギーの猛攻を受け、ルケバキオの2ゴールなどにより2-5と大敗を喫しました。",
+      "trivia": "この試合で先制点を挙げたのはアメリカのウェストン・マッケニーでしたが、その後ベルギーが一気に5ゴールを奪う逆転劇を見せました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "スウェーデン代表",
+        "ヴィクトル・ギョケレス",
+        "W杯予選",
+        "ハットトリック"
+      ],
+      "text": "2026年3月26日に行われた2026年W杯欧州予選プレーオフ準決勝のウクライナ戦で、ハットトリックを達成してスウェーデン代表を3-1の勝利に導いたストライカーは誰でしょう？",
+      "options": [
+        "ヴィクトル・ギョケレス",
+        "アレクサンデル・イサク",
+        "デヤン・クルゼフスキ",
+        "アントニー・エランガ"
+      ],
+      "answerIndex": 0,
+      "explanation": "スポルティングCPやアーセナルで活躍するギョケレスが全3得点を挙げる大活躍を見せ、スウェーデン代表に貴重な勝利をもたらしました。",
+      "trivia": "グレアム・ポッター監督は2025年10月にスウェーデン代表監督に就任して以来未勝利が続いていましたが、この試合が待望の初勝利となりました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-26",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "イングランド代表",
+        "ウルグアイ代表",
+        "親善試合",
+        "ウェンブリー"
+      ],
+      "text": "2026年3月のインターナショナルウィークに行われたワールドカップ前哨戦で、イングランド代表とウェンブリー・スタジアムで対戦し、引き分けた南米のチームはどこでしょう？",
+      "options": [
+        "ウルグアイ",
+        "ブラジル",
+        "コロンビア",
+        "エクアドル"
+      ],
+      "answerIndex": 0,
+      "explanation": "トーマス・トゥヘル監督率いるイングランド代表は、ウェンブリー・スタジアムにウルグアイ代表を迎えて親善試合を行いましたが、ベン・ホワイトの活躍などで結果は引き分けに終わりました。",
+      "trivia": "同じ週に行われた南米勢の親善試合では、ブラジル代表がフランス代表に1-2で敗れるなど、ワールドカップ本番に向けた各国の仕上がりが注目されました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-27",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    }
+  ]
+}

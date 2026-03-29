@@ -1,0 +1,1048 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-03-29T21:41:25Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-03-30",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "スコットランド",
+        "親善試合"
+      ],
+      "text": "日本代表が2026年3月28日（日本時間29日）に行った国際親善試合（キリンワールドチャレンジ2026）の対戦相手はどこだったでしょうか？",
+      "options": [
+        "スコットランド",
+        "イングランド",
+        "ウェールズ",
+        "アイルランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は敵地グラスゴーのハムデン・パークでスコットランド代表と対戦し、1-0で勝利しました。",
+      "trivia": "日本代表はスコットランド戦の後、日本時間4月1日にはウェンブリー・スタジアムで強豪イングランド代表と対戦する予定です。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "伊東純也",
+        "ゴール"
+      ],
+      "text": "2026年3月28日に行われたスコットランド代表との試合で、後半39分に決勝ゴールを決めた日本代表選手は誰でしょうか？",
+      "options": [
+        "伊東純也",
+        "三笘薫",
+        "中村敬斗",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "伊東純也が塩貝健人からの落としを受け、キックフェイントで相手GKをかわして左足で決勝ゴールを決めました。",
+      "trivia": "この試合のボールポゼッションはスコットランド45％に対し、日本55％と、敵地でも主導権を握る戦いを見せました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "前田大然",
+        "キャプテン"
+      ],
+      "text": "2026年3月28日のスコットランド代表戦で、A代表として初めてゲームキャプテンを務めた選手は誰でしょうか？",
+      "options": [
+        "前田大然",
+        "冨安健洋",
+        "板倉滉",
+        "守田英正"
+      ],
+      "answerIndex": 0,
+      "explanation": "セルティックで活躍し、スコットランドでのプレー経験が豊富な前田大然が、この試合で初めて日本代表のゲームキャプテンを任されました。",
+      "trivia": "前田大然は試合序盤のピンチでも自陣深くまで戻って守備に対応するなど、攻守においてチームを牽引する働きを見せました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "塩貝健人",
+        "アシスト"
+      ],
+      "text": "2026年3月にA代表初招集を受け、28日のスコットランド代表戦のデビュー戦で伊東純也の決勝ゴールをアシストした選手は誰でしょうか？",
+      "options": [
+        "塩貝健人",
+        "鈴木唯人",
+        "松木玖生",
+        "細谷真大"
+      ],
+      "answerIndex": 0,
+      "explanation": "今冬にドイツ・ブンデスリーガのヴォルフスブルクへ移籍した20歳の塩貝健人が、A代表デビュー戦で見事なアシストを記録しました。",
+      "trivia": "塩貝健人は慶應義塾大学在学中に横浜F・マリノスの特別指定選手としてJリーグデビューを果たし、その後海外挑戦を始めました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "冨安健洋",
+        "メンバー発表"
+      ],
+      "text": "2026年3月の欧州遠征に向けた日本代表メンバーに、2024年6月以来となる久しぶりの復帰を果たしたディフェンダーは誰でしょうか？",
+      "options": [
+        "冨安健洋",
+        "吉田麻也",
+        "長友佑都",
+        "酒井宏樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "怪我に苦しんでいた冨安健洋が代表に復帰し、スコットランド戦やイングランド戦に向けて守備陣の要として招集されました。",
+      "trivia": "冨安健洋はアーセナルでも重要な役割を担っており、万全な状態での代表復帰は多くのファンから待ち望まれていました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "鈴木彩艶",
+        "ゴールキーパー"
+      ],
+      "text": "2026年3月28日のスコットランド代表戦で、試合序盤に至近距離からのシュートを左手一本で防ぐスーパーセーブを見せた日本代表のGKは誰でしょうか？",
+      "options": [
+        "鈴木彩艶",
+        "大迫敬介",
+        "谷晃生",
+        "前川黛也"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半8分にスコット・マクトミネイの至近距離からのシュートを左手一本で弾き出し、チームを失点のピンチから救いました。",
+      "trivia": "鈴木彩艶はパルマ（イタリア）で正GKとしてプレーしており、セリエAでの厳しい環境で培った経験が代表戦でも活きています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "FC町田ゼルビア",
+        "川崎フロンターレ",
+        "PK戦"
+      ],
+      "text": "2026年3月28日に行われた「明治安田J1百年構想リーグ」第5節、FC町田ゼルビア対川崎フロンターレの試合の勝敗決着方法はどれでしょうか？",
+      "options": [
+        "PK戦",
+        "延長戦",
+        "Vゴール",
+        "コイントス"
+      ],
+      "answerIndex": 0,
+      "explanation": "90分を1-1で終えたためPK戦に突入し、町田が3-1で勝利を収めました。",
+      "trivia": "2026年シーズンに特別フォーマットで開催されている同リーグでは、90分で同点の場合は引き分けではなく、PK戦で勝敗を決するルールが採用されています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC町田ゼルビア",
+        "谷晃生",
+        "PKセーブ"
+      ],
+      "text": "2026年3月28日のFC町田ゼルビア対川崎フロンターレの試合で、PK戦で相手のキックを3本ストップする大活躍を見せた町田のGKは誰でしょうか？",
+      "options": [
+        "谷晃生",
+        "西川周作",
+        "ランゲラック",
+        "大迫敬介"
+      ],
+      "answerIndex": 0,
+      "explanation": "谷晃生は川崎Fの1人目、3人目、4人目のキックを見事にセーブし、チームを勝利に導きました。",
+      "trivia": "谷晃生はガンバ大阪や湘南ベルマーレなどでのプレー経験があり、日本代表にも選出されたことのある実力派GKです。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC町田ゼルビア",
+        "エリキ",
+        "レッドカード"
+      ],
+      "text": "2026年3月28日のFC町田ゼルビア対川崎フロンターレの試合で、後半32分にVARの介入によりレッドカードで一発退場となった町田の選手は誰でしょうか？",
+      "options": [
+        "エリキ",
+        "オ・セフン",
+        "藤尾翔太",
+        "ナ・サンホ"
+      ],
+      "answerIndex": 0,
+      "explanation": "エリキはルーズボールの競り合いで相手選手を踏みつける形となり、オンフィールドレビューの結果レッドカードが提示されました。",
+      "trivia": "10人となった町田ですが、最後まで川崎Fの猛攻を耐え凌ぎ、1-1のまま突入したPK戦の末に勝利を掴み取りました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "FC町田ゼルビア",
+        "川崎フロンターレ"
+      ],
+      "text": "2026年3月28日に行われた「明治安田J1百年構想リーグ」第5節で、FC町田ゼルビアと対戦したチームはどこでしょうか？",
+      "options": [
+        "川崎フロンターレ",
+        "横浜F・マリノス",
+        "FC東京",
+        "湘南ベルマーレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "町田GIONスタジアムで行われたこの試合は、1-1の末にPK戦となり、町田が川崎フロンターレを下しました。",
+      "trivia": "川崎フロンターレはこの試合の前節で5失点の大敗を喫しており、町田相手に再起を図る一戦として注目されていました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "順位表",
+        "鹿島アントラーズ",
+        "百年構想リーグ"
+      ],
+      "text": "2026年シーズン移行に伴う特別大会「明治安田J1百年構想リーグ」。3月22日時点の「EASTグループ」で首位に立っているクラブはどこでしょうか？",
+      "options": [
+        "鹿島アントラーズ",
+        "FC東京",
+        "FC町田ゼルビア",
+        "浦和レッズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズは8試合を消化して7勝1敗（勝ち点22）という好成績を残し、EASTグループの首位を走っています。",
+      "trivia": "J1百年構想リーグはEASTとWESTの2グループ（各10チーム）に分かれて地域リーグラウンドを行い、その後プレーオフで優勝を争う特別レギュレーションとなっています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "得点ランキング",
+        "川崎フロンターレ",
+        "エリソン"
+      ],
+      "text": "2026年3月末時点の「明治安田J1百年構想リーグ」EASTグループで、得点ランキング首位となる6得点を挙げている川崎フロンターレのブラジル人FWは誰でしょうか？",
+      "options": [
+        "エリソン",
+        "マルシーニョ",
+        "バフェティンビ・ゴミス",
+        "エリキ"
+      ],
+      "answerIndex": 0,
+      "explanation": "エリソンは3月28日時点で6得点を挙げ、EASTグループの得点ランキングトップに立っています。",
+      "trivia": "エリソンは「猛牛（エル・トーロ）」の愛称で知られ、ゴール後には闘牛士のような情熱的なパフォーマンスを見せることでサポーターから愛されています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "順位表",
+        "テゲバジャーロ宮崎",
+        "百年構想リーグ"
+      ],
+      "text": "2026年に開催されている「明治安田J2・J3百年構想リーグ」のWEST-Bグループで、開幕から快進撃を見せ3月29日終了時点で首位に立っているクラブはどれでしょうか？",
+      "options": [
+        "テゲバジャーロ宮崎",
+        "大分トリニータ",
+        "レノファ山口FC",
+        "鹿児島ユナイテッドFC"
+      ],
+      "answerIndex": 0,
+      "explanation": "テゲバジャーロ宮崎は開幕から連勝を重ね、3月29日のレイラック滋賀FC戦で初黒星を喫するまで圧倒的な成績で首位に立っています。",
+      "trivia": "特別大会のWEST-Bグループは九州・山口・沖縄エリアを中心としたクラブのほか、レイラック滋賀FCなども同じグループに組み込まれて熱戦を繰り広げています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "得点ランキング",
+        "ガンバ大阪",
+        "デニス・ヒュメット"
+      ],
+      "text": "「明治安田J1百年構想リーグ」において、2026年3月末時点で5得点を挙げ得点ランキング上位につけているデニス・ヒュメットが所属しているクラブはどこでしょうか？",
+      "options": [
+        "ガンバ大阪",
+        "セレッソ大阪",
+        "ヴィッセル神戸",
+        "京都サンガF.C."
+      ],
+      "answerIndex": 0,
+      "explanation": "デニス・ヒュメットはスウェーデンのユールゴーデンIFからガンバ大阪へ加入し、2026年も持ち前の高い決定力でゴールを量産しています。",
+      "trivia": "身長189cmの大型ストライカーである彼はトルコにルーツを持っており、世代別ではトルコ代表としてプレーした経験もあります。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "ルール",
+        "百年構想リーグ",
+        "勝ち点"
+      ],
+      "text": "2026年の「明治安田Jリーグ百年構想リーグ」の地域リーグラウンドでは、90分で同点だった場合はPK戦が行われます。この大会の勝ち点に関する規定として正しいものはどれでしょうか？",
+      "options": [
+        "90分勝ちは勝ち点3、PK勝ちは勝ち点2、PK負けは勝ち点1",
+        "90分勝ちは勝ち点3、PK勝ちは勝ち点1、PK負けは勝ち点0",
+        "90分勝ち・PK勝ちともに勝ち点3、PK負けは勝ち点0",
+        "引き分けの場合はPK戦を行わず、両チームに勝ち点1"
+      ],
+      "answerIndex": 0,
+      "explanation": "特別大会では引き分けがなく、90分で同点の場合はPK戦で勝敗を決します。勝点配分は「90分勝ち:3、PK勝ち:2、PK負け:1、90分負け:0」となっています。",
+      "trivia": "過去のJリーグでも延長戦やPK戦（1993年〜1998年など）が導入され、勝点配分が細かく分かれていた時代がありました。今回は短期決戦のため白黒つけるルールが復活しています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "試合結果",
+        "FC町田ゼルビア",
+        "川崎フロンターレ",
+        "PK戦"
+      ],
+      "text": "2026年3月28日に行われた明治安田J1百年構想リーグで、FC町田ゼルビアは川崎フロンターレと90分を1-1で終えた後、PK戦を行いました。このPK戦のスコアはどうなったでしょうか？",
+      "options": [
+        "町田 3-1 川崎F",
+        "町田 4-2 川崎F",
+        "町田 5-4 川崎F",
+        "町田 2-0 川崎F"
+      ],
+      "answerIndex": 0,
+      "explanation": "90分を1-1で終えた後、PK戦に突入し、町田が3-1で勝利を収めて勝ち点2を獲得しました（川崎Fは勝ち点1を獲得）。",
+      "trivia": "今大会のレギュレーションでは、90分で決着がつかない場合は延長戦を行わず、即PK戦が行われるスリリングな形式が採用されています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "満田誠",
+        "ヴィッセル神戸",
+        "ガンバ大阪",
+        "移籍"
+      ],
+      "text": "2026年3月28日、FW満田誠がガンバ大阪から期限付き移籍で加入することが発表されたJ1のクラブはどこでしょう？",
+      "options": [
+        "ヴィッセル神戸",
+        "サンフレッチェ広島",
+        "セレッソ大阪",
+        "FC町田ゼルビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年2月にサンフレッチェ広島からガンバ大阪へ期限付き移籍していた満田誠ですが、3月28日にヴィッセル神戸への期限付き移籍が発表されました。",
+      "trivia": "満田は契約上の規定により、期限付き移籍期間中は移籍元であるガンバ大阪と対戦するすべての公式戦に出場することができません。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "冨安健洋",
+        "日本代表",
+        "負傷",
+        "辞退"
+      ],
+      "text": "2026年3月に予定されていたスコットランド戦およびイングランド戦の日本代表メンバーに約1年9カ月ぶりに選出されるも、直後の3月24日に怪我のため無念の不参加が発表されたDFは誰でしょう？",
+      "options": [
+        "冨安健洋",
+        "板倉滉",
+        "町田浩樹",
+        "渡辺剛"
+      ],
+      "answerIndex": 0,
+      "explanation": "アヤックスに所属する冨安健洋は、2024年6月以来となる代表復帰を果たしましたが、直前に怪我のため離脱となってしまいました。",
+      "trivia": "森保一監督はメンバー発表会見で「思い切ってプレーできるように回復したことを一人の指導者としてうれしく思う」と冨安の復帰を喜んでいましたが、無念の辞退となりました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "塩貝健人",
+        "日本代表",
+        "スコットランド代表",
+        "デビュー"
+      ],
+      "text": "2026年3月28日に行われたスコットランド代表との国際親善試合でA代表デビューを果たし、後半84分に伊東純也の決勝ゴールをアシストする活躍を見せた20歳の若きストライカーは誰でしょう？",
+      "options": [
+        "塩貝健人",
+        "後藤啓介",
+        "小川航基",
+        "鈴木唯人"
+      ],
+      "answerIndex": 0,
+      "explanation": "今冬にドイツのヴォルフスブルクへ移籍した塩貝健人は、今回がA代表初招集でした。後半途中から出場すると、積極的なプレーで伊東純也の決勝点を見事アシストしました。",
+      "trivia": "塩貝は自身のスピードを磨くため、陸上のウサイン・ボルトの走り方を分析し、どこの筋肉が発達しているかやフォームを参考にしてトレーニングに取り入れています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "伊藤翔",
+        "横浜FC",
+        "引退"
+      ],
+      "text": "2026年3月26日、現役引退を発表した横浜FCのストライカーは誰でしょう？高校卒業後にJリーグを経由せず直接フランスのクラブへ加入した経歴でも知られています。",
+      "options": [
+        "伊藤翔",
+        "大迫勇也",
+        "指宿洋史",
+        "宮市亮"
+      ],
+      "answerIndex": 0,
+      "explanation": "伊藤翔は高校卒業後の2007年にフランスのグルノーブルへ加入し、その後は清水エスパルス、横浜F・マリノス、鹿島アントラーズなどで活躍。J1通算280試合に出場し、37歳でスパイクを脱ぐ決断をしました。",
+      "trivia": "高校時代、そのプレースタイルやポテンシャルの高さから「和製アンリ」という異名を取り、アーセン・ベンゲル監督率いるアーセナルの練習に参加した経験も持っています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "マルクス・ヴィニシウス",
+        "名古屋グランパス",
+        "負傷",
+        "FC今治"
+      ],
+      "text": "2026年3月25日、名古屋グランパスは開幕から7戦連続で先発出場していた新加入のブラジル人FWがトレーニング中に負傷（左脛骨内果骨折）したことを発表しました。FC今治から加入したこの選手は誰でしょう？",
+      "options": [
+        "マルクス・ヴィニシウス",
+        "パトリッキ・ヴェロン",
+        "チアゴ・アウベス",
+        "アンデルソン・ロペス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026シーズンにFC今治から名古屋グランパスに加入したマルクス・ヴィニシウスは、前線で強力な存在感を放っていましたが、3月21日のトレーニング中に負傷し離脱を余儀なくされました。",
+      "trivia": "マルクス・ヴィニシウスは2023年にJ3のFC今治に加入すると、圧倒的な身体能力と得点力でJ3を席巻し、J1の強豪クラブへとステップアップを果たした苦労人ストライカーです。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "JFA",
+        "コンプライアンス"
+      ],
+      "text": "2026年3月29日、日本サッカー協会(JFA)、Jリーグ、WEリーグおよび全クラブが連名で発表した共同声明のテーマは何でしょうか？",
+      "options": [
+        "倫理・コンプライアンス",
+        "気候変動への対策",
+        "スタジアムの完全キャッシュレス化",
+        "地域スポーツ振興"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月29日、日本サッカー界の信頼回復と持続的な発展に向け、関係者全員が高い倫理観を持って行動する姿勢を示す「日本サッカー 倫理・コンプライアンスに関する共同声明」が発表されました。",
+      "trivia": "発表の際、日本サッカー協会の宮本恒靖会長もコンプライアンス重視の組織基盤構築についてコメントしています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-29",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ヴィッセル神戸",
+        "ガンバ大阪",
+        "満田誠",
+        "移籍"
+      ],
+      "text": "2026年3月28日、ガンバ大阪からヴィッセル神戸への期限付き移籍が発表された、2022年のEAFF E-1サッカー選手権で日本代表デビューも飾っているアタッカーは誰でしょうか？",
+      "options": [
+        "満田誠",
+        "相馬勇紀",
+        "町野修斗",
+        "森島司"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンフレッチェ広島から2025年にガンバ大阪へ加入し、2026年から完全移籍となっていた満田誠ですが、出場機会を求めてヴィッセル神戸への期限付き移籍を決断しました。",
+      "trivia": "満田誠は広島ユースから流通経済大を経てプロ入りし、ルーキーイヤーからリーグ戦9ゴールを挙げる大活躍を見せました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "acle",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ACLE",
+        "FC町田ゼルビア",
+        "ヴィッセル神戸"
+      ],
+      "text": "2026年3月25日に組み合わせ抽選会が行われたAFCチャンピオンズリーグエリート（ACLE）のファイナルズ（準々決勝）に、Jリーグから進出した2クラブはどれでしょうか？",
+      "options": [
+        "FC町田ゼルビアとヴィッセル神戸",
+        "横浜F・マリノスと川崎フロンターレ",
+        "浦和レッズとサンフレッチェ広島",
+        "鹿島アントラーズとガンバ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "アジア最強クラブを決めるACLEの東地区を勝ち抜き、JリーグからはFC町田ゼルビアとヴィッセル神戸がサウジアラビアでの集中開催となるファイナルズに進出しました。",
+      "trivia": "ACLEの「ファイナルズ」は準々決勝から決勝までの全試合がサウジアラビアでの1発勝負の集中開催で行われます。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-25",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "FC町田ゼルビア",
+        "川崎フロンターレ",
+        "谷晃生",
+        "PK戦"
+      ],
+      "text": "2026年3月28日に行われたJ1第5節のFC町田ゼルビア対川崎フロンターレ戦で、1-1で突入したPK戦において相手シュートを3本ストップし、勝利の立役者となった町田のGKは誰でしょうか？",
+      "options": [
+        "谷晃生",
+        "チョン・ソンリョン",
+        "大迫敬介",
+        "鈴木彩艶"
+      ],
+      "answerIndex": 0,
+      "explanation": "ACLEの影響で後ろ倒しとなっていたこの試合は、数的不利となった町田が粘ってPK戦に持ち込み、日本代表GKの谷晃生が4人中3人のPKを止める大活躍を見せました。",
+      "trivia": "PK戦ではキッカーとの駆け引きが勝負を分けますが、川崎Fの選手は試合後「蹴ったら先に動かれていた。駆け引きで上回られた」と谷の対応を称賛しました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "FC岐阜",
+        "J3リーグ",
+        "川本梨誉",
+        "ハットトリック"
+      ],
+      "text": "2026年3月28日に行われたJ3第8節で、AC長野パルセイロ相手にハットトリックを達成し、チームを快勝に導いたFC岐阜の選手は誰でしょうか？",
+      "options": [
+        "川本梨誉",
+        "藤岡浩介",
+        "窪田稜",
+        "粟飯原尚平"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月28日のJ3第8節で、FC岐阜の川本梨誉がハットトリックを達成し、チームの勝利に大きく貢献しました。",
+      "trivia": "川本梨誉は清水エスパルスの育成組織出身で、これまでにファジアーノ岡山やザスパクサツ群馬など複数のJクラブでプレー経験があります。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "伊東純也",
+        "スコットランド代表",
+        "親善試合"
+      ],
+      "text": "2026年3月29日（日本時間）に行われた国際親善試合で、日本代表はスコットランド代表に1-0で勝利しました。この試合で決勝ゴールを決めた選手は誰でしょうか？",
+      "options": [
+        "伊東純也",
+        "三笘薫",
+        "上田綺世",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "84分、三笘薫からのパスを受けた鈴木淳之介の折り返しを塩貝健人がつなぎ、最後は伊東純也が冷静に押し込んで均衡を破りました。",
+      "trivia": "このスコットランド戦では、前田大然がA代表で初めてキャプテンマークを巻いてプレーしました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-29",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "FC町田ゼルビア",
+        "川崎フロンターレ",
+        "谷晃生",
+        "PK戦"
+      ],
+      "text": "2026年3月28日に行われた「明治安田J1百年構想リーグ」第5節の町田vs川崎Fは、1-1のままPK戦に突入しました。このPK戦で町田のGK谷晃生は相手のキックを何本ストップして勝利に貢献したでしょうか？",
+      "options": [
+        "3本",
+        "1本",
+        "2本",
+        "4本"
+      ],
+      "answerIndex": 0,
+      "explanation": "谷晃生はPK戦で川崎Fのキックを3本連続でストップする大活躍を見せ、町田の勝利（PK戦3-1）の立役者となりました。",
+      "trivia": "この試合は川崎Fのアジア・チャンピオンズリーグ・エリート（ACLE）参戦の影響で、延期分として組み込まれていました。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "奈良クラブ",
+        "川﨑修平",
+        "移籍",
+        "ポルティモネンセ"
+      ],
+      "text": "2026年3月26日、奈良クラブはポルトガルのポルティモネンセからある24歳の日本人FWを完全移籍で獲得したと発表しました。2日後の試合で先発出場し大勝に貢献したこの選手は誰でしょうか？",
+      "options": [
+        "川﨑修平",
+        "中島翔哉",
+        "藤本寛也",
+        "邦本宜裕"
+      ],
+      "answerIndex": 0,
+      "explanation": "奈良クラブはポルティモネンセから川﨑修平を完全移籍で獲得しました。2026年3月28日の試合で加入後即先発出場し、規格外のプレーで大勝を呼び込みました。",
+      "trivia": "川﨑修平はガンバ大阪のアカデミー出身で、トップチーム昇格後にポルティモネンセへ完全移籍し、ヴィッセル神戸や東京ヴェルディでのプレーも経験しています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-28",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "レイラック滋賀",
+        "テゲバジャーロ宮崎",
+        "J2・J3百年構想リーグ",
+        "番狂わせ"
+      ],
+      "text": "2026年3月28日・29日に行われた「明治安田J2・J3百年構想リーグ」第8節で、ここまで開幕から全勝だったテゲバジャーロ宮崎に土をつけ、初黒星を味わわせたクラブはどこでしょうか？",
+      "options": [
+        "レイラック滋賀",
+        "徳島ヴォルティス",
+        "ガイナーレ鳥取",
+        "ヴァンラーレ八戸"
+      ],
+      "answerIndex": 0,
+      "explanation": "レイラック滋賀は、開幕から連勝を続けていたテゲバジャーロ宮崎との対戦を制し、宮崎の連勝記録をストップさせました。",
+      "trivia": "2026年シーズン前半は移行期の特別大会「明治安田Jリーグ百年構想リーグ」として開催されており、J2とJ3のクラブは東西南北のグループに分かれて熱戦を繰り広げています。",
+      "referenceDate": "2026-03-30",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-03-29",
+        "publishDate": "2026-03-30",
+        "expiryDate": "2026-04-06",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
