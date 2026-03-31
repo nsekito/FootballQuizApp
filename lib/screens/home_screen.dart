@@ -48,6 +48,20 @@ bool _shouldHideTeamPromotionReminder(Iterable<String> unlockedDifficulties) {
   });
 }
 
+/// 歴史クイズは設定画面と同じ history,region タグでキーが保存される。
+String _historyUnlockKey(String difficulty, String region) {
+  return UnlockKeyUtils.generateUnlockKey(
+    category: AppConstants.categoryHistory,
+    difficulty: difficulty,
+    tags: 'history,$region',
+  );
+}
+
+bool _historyBothRegionsUnlocked(Iterable<String> unlocked, String difficulty) {
+  return unlocked.contains(_historyUnlockKey(difficulty, 'japan')) &&
+      unlocked.contains(_historyUnlockKey(difficulty, 'world'));
+}
+
 String _promotionQuizCategoryLabel(String category) {
   switch (category) {
     case AppConstants.categoryRules:
@@ -519,46 +533,24 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
               ),
             ],
           ),
-          Row(
-            children: [
-              // 管理者設定ボタン（管理者権限がある場合のみ表示）
-              if (ref.watch(isAdminProvider))
-                Padding(
-                  padding: const EdgeInsets.only(right: 12),
-                  child: GestureDetector(
-                    onTap: () => context.push('/admin-settings'),
-                    child: Container(
-                      width: 40,
-                      height: 40,
-                      decoration: const BoxDecoration(
-                        color: AppColors.stitchEmerald,
-                        shape: BoxShape.circle,
-                      ),
-                      child: const Icon(
-                        Icons.admin_panel_settings,
-                        color: Colors.white,
-                        size: 20,
-                      ),
-                    ),
-                  ),
-                ),
-              Container(
+          // 管理者設定ボタン（管理者権限がある場合のみ表示）
+          if (ref.watch(isAdminProvider))
+            GestureDetector(
+              onTap: () => context.push('/admin-settings'),
+              child: Container(
                 width: 40,
                 height: 40,
                 decoration: const BoxDecoration(
-                  color: AppColors.slate100,
+                  color: AppColors.stitchEmerald,
                   shape: BoxShape.circle,
-                  border: Border.fromBorderSide(
-                      BorderSide(color: AppColors.slate200)),
                 ),
                 child: const Icon(
-                  Icons.notifications_outlined,
-                  color: AppColors.slate500,
+                  Icons.admin_panel_settings,
+                  color: Colors.white,
                   size: 20,
                 ),
               ),
-            ],
-          ),
+            ),
         ],
       ),
     );
@@ -1894,7 +1886,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
         difficulty: AppConstants.difficultyNormal,
         tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
       );
-      if (!unlockedDifficulties.contains(normalKey)) {
+      final showEasyToNormal = category == AppConstants.categoryHistory
+          ? !_historyBothRegionsUnlocked(
+              unlockedDifficulties, AppConstants.difficultyNormal)
+          : !unlockedDifficulties.contains(normalKey);
+
+      if (showEasyToNormal) {
         final exam = PromotionExam.easyToNormal(
           category: category,
           tags:
@@ -1915,8 +1912,16 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
         difficulty: AppConstants.difficultyHard,
         tags: category == AppConstants.categoryTeams ? 'teams,japan' : category,
       );
-      if (!unlockedDifficulties.contains(hardKey) &&
-          unlockedDifficulties.contains(normalKey)) {
+      final hasNormalUnlockedEverywhere = category == AppConstants.categoryHistory
+          ? _historyBothRegionsUnlocked(
+              unlockedDifficulties, AppConstants.difficultyNormal)
+          : unlockedDifficulties.contains(normalKey);
+      final showNormalToHard = category == AppConstants.categoryHistory
+          ? !_historyBothRegionsUnlocked(
+              unlockedDifficulties, AppConstants.difficultyHard)
+          : !unlockedDifficulties.contains(hardKey);
+
+      if (showNormalToHard && hasNormalUnlockedEverywhere) {
         final exam = PromotionExam.normalToHard(
           category: category,
           tags:

@@ -49,6 +49,14 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
     super.dispose();
   }
 
+  /// 地域・国・チームなど出題スコープが変わったとき、難易度を未選択に戻す。
+  void _onScopeChanged(VoidCallback applySelectionChange) {
+    setState(() {
+      applySelectionChange();
+      _selectedDifficulty = null;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return PopScope(
@@ -569,10 +577,14 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
       icon: Icons.public,
       title: '地域',
       children: [
-        _buildChip('日本', 'japan', _selectedRegion,
-            (value) => setState(() => _selectedRegion = value)),
-        _buildChip('世界', 'world', _selectedRegion,
-            (value) => setState(() => _selectedRegion = value)),
+        _buildChip('日本', 'japan', _selectedRegion, (value) {
+          if (_selectedRegion == value) return;
+          _onScopeChanged(() => _selectedRegion = value);
+        }),
+        _buildChip('世界', 'world', _selectedRegion, (value) {
+          if (_selectedRegion == value) return;
+          _onScopeChanged(() => _selectedRegion = value);
+        }),
       ],
     );
   }
@@ -618,7 +630,13 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
                   c['value']!,
                   c['flag']!,
                   _selectedCountry,
-                  (value) => setState(() => _selectedCountry = value),
+                  (value) {
+                    if (_selectedCountry == value) return;
+                    _onScopeChanged(() {
+                      _selectedCountry = value;
+                      _selectedTeam = null;
+                    });
+                  },
                 ),
               );
             }).toList(),
@@ -764,7 +782,10 @@ class _ConfigurationScreenState extends ConsumerState<ConfigurationScreen> {
                   team['label']!,
                   team['value']!,
                   _selectedTeam,
-                  (value) => setState(() => _selectedTeam = value),
+                  (value) {
+                    if (_selectedTeam == value) return;
+                    _onScopeChanged(() => _selectedTeam = value);
+                  },
                   isComingSoon: isOverseas,
                 );
               },
