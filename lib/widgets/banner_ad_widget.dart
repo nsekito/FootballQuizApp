@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../config/ad_config.dart';
 
+
+
 /// バナー広告を表示するウィジェット
 /// 
 /// 画面下部に固定表示されるバナー広告です。
@@ -36,8 +38,7 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
 
   /// バナー広告を読み込む
   void _loadBannerAd() {
-    // Webプラットフォームでは広告を表示しない
-    if (kIsWeb) {
+    if (kIsWeb || AdConfig.hideAdsForScreenshot) {
       return;
     }
 
@@ -84,8 +85,7 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
 
   @override
   Widget build(BuildContext context) {
-    // Webプラットフォームでは何も表示しない
-    if (kIsWeb) {
+    if (kIsWeb || AdConfig.hideAdsForScreenshot) {
       return const SizedBox.shrink();
     }
 

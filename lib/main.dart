@@ -110,7 +110,7 @@ class _SoccerQuizMasterAppState extends ConsumerState<SoccerQuizMasterApp> {
     final router = ref.watch(routerProvider);
 
     return MaterialApp.router(
-      title: 'Soccer Quiz Master',
+      title: 'Kickpedia',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(

@@ -15,6 +15,9 @@ class AdConfig {
   /// テスト広告を使用するかどうか
   /// 開発中はtrue、本番リリース時はfalseに変更
   static const bool useTestAds = true;
+
+  /// 広告を非表示にするかどうか（スクリーンショット撮影時にtrueに設定）
+  static const bool hideAdsForScreenshot = true;
   
   /// リワード広告のユニットIDを取得
   static String get rewardedAdUnitId {

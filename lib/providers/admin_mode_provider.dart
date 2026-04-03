@@ -1,12 +1,12 @@
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../config/ad_config.dart';
 
 /// 管理者権限があるかどうかを判定するプロバイダー
 /// 現在はデバッグビルドの場合のみ管理者権限があると判定
 final isAdminProvider = Provider<bool>((ref) {
-  // デバッグビルドの場合のみ管理者権限がある
-  // 将来的には、特定のユーザーIDや設定で判定するように変更可能
+  if (AdConfig.hideAdsForScreenshot) return false;
   return kDebugMode;
 });
 
