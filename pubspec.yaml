@@ -1,7 +1,7 @@
 name: soccer_quiz_master
 description: AI-powered soccer quiz app with weekly match recap and master mode quizzes.
 publish_to: 'none'
-version: 1.0.0+2
+version: 1.0.0+3
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
