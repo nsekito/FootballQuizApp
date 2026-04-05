@@ -1,0 +1,1045 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-04-05T21:46:04Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-04-06",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "マンチェスター・シティ",
+        "リヴァプール",
+        "FAカップ",
+        "アーリング・ハーランド"
+      ],
+      "text": "2026年4月4日に行われたFAカップ準々決勝、マンチェスター・シティ対リヴァプールの試合で、ハットトリックを達成しシティを4-0の勝利に導いた選手は誰でしょう？",
+      "options": [
+        "アーリング・ハーランド",
+        "フィル・フォーデン",
+        "ケヴィン・デ・ブライネ",
+        "フリアン・アルバレス"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティはハーランドのハットトリックの活躍でリヴァプールを4-0で粉砕し、FAカップ準決勝進出を決めました。",
+      "trivia": "この試合でリヴァプールのモハメド・サラーはPKを失敗しており、両チームのエースで明暗が分かれる結果となりました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-04",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "アーセナル",
+        "サウサンプトン",
+        "FAカップ",
+        "番狂わせ"
+      ],
+      "text": "2026年4月4日のFAカップ準々決勝で、プレミアリーグで優勝争いをするアーセナルを2-1で撃破する大番狂わせを起こした2部（チャンピオンシップ）のクラブはどこでしょう？",
+      "options": [
+        "サウサンプトン",
+        "リーズ・ユナイテッド",
+        "サンダーランド",
+        "ミドルズブラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "サウサンプトンは85分にシェイ・チャールズが決勝点を挙げ、アーセナルを2-1で下して準決勝へ駒を進めました。",
+      "trivia": "アーセナルはこの敗戦により、すでに敗退しているカラバオ杯に続き、国内カップ戦はどちらも姿を消すことになりました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-04",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "バルセロナ",
+        "アトレティコ・マドリード",
+        "ロベルト・レヴァンドフスキ",
+        "ラ・リーガ"
+      ],
+      "text": "2026年4月4日のラ・リーガで、バルセロナがアトレティコ・マドリードに2-1で逆転勝利しました。この試合の87分に決勝ゴールを決めたのは誰でしょう？",
+      "options": [
+        "ロベルト・レヴァンドフスキ",
+        "ペドリ",
+        "ラミン・ヤマル",
+        "ラフィーニャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジョアン・カンセロのシュートを相手GKが弾いたところ、レヴァンドフスキの肩に当たってゴールに入るという劇的な決勝点となりました。",
+      "trivia": "アトレティコ・マドリードはこの試合の前半アディショナルタイムにニコ・ゴンザレスが退場し、ほぼ半分の時間を数的不利で戦っていました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-04",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "インテル",
+        "ASローマ",
+        "ラウタロ・マルティネス",
+        "セリエA"
+      ],
+      "text": "2026年4月5日のセリエAで、インテルはASローマを5-2で粉砕しました。この試合で負傷から約2ヶ月ぶりに復帰し、いきなり2ゴールを挙げたエースは誰でしょう？",
+      "options": [
+        "ラウタロ・マルティネス",
+        "マルクス・テュラム",
+        "ニコロ・バレッラ",
+        "メフディ・タレミ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2月から離脱していたラウタロ・マルティネスは復帰戦で開始わずか1分過ぎに先制点を挙げると、後半にも追加点を奪う大活躍を見せました。",
+      "trivia": "インテルはこの勝利で公式戦の連続未勝利を4でストップさせ、首位固めに成功しています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "レアル・マドリード",
+        "マジョルカ",
+        "ラ・リーガ",
+        "金星"
+      ],
+      "text": "2026年4月4日に行われたラ・リーガの試合で、レアル・マドリードはアウェイで1-2の敗戦を喫しました。彼らを下した相手クラブはどこでしょう？",
+      "options": [
+        "マジョルカ",
+        "ヘタフェ",
+        "ラージョ・バジェカーノ",
+        "オサスナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マジョルカは42分に先制すると、同点に追いつかれた直後の後半アディショナルタイムにヴェダト・ムリキが劇的な決勝点を奪い、レアル・マドリードから金星を挙げました。",
+      "trivia": "レアル・マドリードはこの敗戦により、首位バルセロナとの勝ち点差が7に広がってしまいました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-04",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "レアル・マドリード",
+        "マジョルカ",
+        "エデル・ミリトン",
+        "ラ・リーガ"
+      ],
+      "text": "2026年4月4日のマジョルカ戦で、レアル・マドリードは敗れはしたものの、怪我から約4ヶ月ぶりに復帰したブラジル人DFが88分に一時同点となる見事なヘディング弾を決めました。その選手は誰でしょう？",
+      "options": [
+        "エデル・ミリトン",
+        "アントニオ・リュディガー",
+        "ダビド・アラバ",
+        "オーレリアン・チュアメニ"
+      ],
+      "answerIndex": 0,
+      "explanation": "膝の負傷で長期離脱していたエデル・ミリトンが復帰戦で一時同点となる強烈なヘディングシュートを決めましたが、チームは直後に失点し敗れました。",
+      "trivia": "この試合ではキリアン・エンバペがスタメン出場した一方、代表戦での軽い打撲の影響でヴィニシウス・ジュニオールはベンチスタートとなっていました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-04",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "フィオレンティーナ",
+        "エラス・ヴェローナ",
+        "ダビド・デ・ヘア",
+        "セリエA"
+      ],
+      "text": "2026年4月4日のセリエAで、フィオレンティーナはエラス・ヴェローナに1-0で勝利しました。この試合で好セーブを連発し、無失点勝利の立役者となった元スペイン代表のGKは誰でしょう？",
+      "options": [
+        "ダビド・デ・ヘア",
+        "ケパ・アリサバラガ",
+        "ダビド・ラヤ",
+        "ウナイ・シモン"
+      ],
+      "answerIndex": 0,
+      "explanation": "フィオレンティーナの守護神ダビド・デ・ヘアが再三のビッグセーブを見せチームを救い、82分のニコロ・ファジョーリの決勝点につながりました。",
+      "trivia": "この試合では、ヴェローナのススロフとフィオレンティーナのグズムンドソンが乱闘を起こし、ユニフォームを引き裂き合いながら両者退場処分となりました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-04",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "バイエル・レヴァークーゼン",
+        "ヴォルフスブルク",
+        "ブンデスリーガ"
+      ],
+      "text": "2026年4月4日のブンデスリーガで、バイエル・レヴァークーゼンが6-3で大勝しました。敗北により、1997年の昇格以来となるクラブ史上初の2部降格の危機に瀕している相手クラブはどこでしょう？",
+      "options": [
+        "ヴォルフスブルク",
+        "ボーフム",
+        "マインツ",
+        "ウニオン・ベルリン"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴォルフスブルクはレヴァークーゼンとの撃ち合いに3-6で敗れ、残留圏から勝ち点4差の自動降格圏に沈んでおり、史上初の2部降格が現実味を帯びています。",
+      "trivia": "ヴォルフスブルクは2008-09シーズンには長谷部誠やグラフィッチらを擁してブンデスリーガ初優勝を飾ったこともある古豪です。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-04",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "インテル",
+        "ASローマ",
+        "ハカン・チャルハノール",
+        "セリエA"
+      ],
+      "text": "2026年4月5日のセリエAで、インテルがASローマを5-2で下しました。この試合で、強烈な30m級のミドルシュートを決めた上に、正確なCKで味方のゴールをアシストしたトルコ代表MFは誰でしょう？",
+      "options": [
+        "ハカン・チャルハノール",
+        "アルダ・ギュレル",
+        "サリフ・エズジャン",
+        "オルクン・コクチュ"
+      ],
+      "answerIndex": 0,
+      "explanation": "チャルハノールは前半終了間際に約30メートルの距離から鮮やかなミドルシュートを沈め、さらに後半にはコーナーキックからマルクス・テュラムのヘディング弾をアシストしました。",
+      "trivia": "チャルハノールはこの直前の代表ウィークで、トルコ代表のワールドカップ出場権獲得にも大きく貢献していました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "アイントラハト・フランクフルト",
+        "ケルン",
+        "アルノー・カリムエンド",
+        "ブンデスリーガ"
+      ],
+      "text": "2026年4月5日に行われたブンデスリーガで、フランクフルトはアウェイでケルンと2-2で引き分けました。フランクフルトの2得点を挙げた選手は、ブルカルトともう一人は誰でしょう？",
+      "options": [
+        "アルノー・カリムエンド",
+        "ウーゴ・エキティケ",
+        "オマル・マルムシュ",
+        "マリオ・ゲッツェ"
+      ],
+      "answerIndex": 0,
+      "explanation": "フランクフルトは66分にジョナサン・ブルカルト、69分にアルノー・カリムエンドが立て続けにゴールを奪いましたが、終盤に追いつかれて引き分けに終わりました。",
+      "trivia": "ケルンは暫定監督の初陣でしたが、終盤の連続ゴールでなんとか勝ち点1をもぎ取りました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "順位表"
+      ],
+      "text": "2026年4月上旬時点で、イングランド・プレミアリーグの首位を走っているクラブはどこ？",
+      "options": [
+        "アーセナル",
+        "マンチェスター・シティ",
+        "マンチェスター・ユナイテッド",
+        "アストン・ヴィラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルが勝ち点70に到達して首位を走り、2位のマンチェスター・シティに勝ち点9差をつけてタイトルに向けて前進しています。",
+      "trivia": "今季のアーセナルはスーパーコンピューターの予測でも優勝確率が90%を超えるなど、圧倒的な強さを見せています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "順位表"
+      ],
+      "text": "2026年4月上旬時点で、スペイン・ラ・リーガで勝ち点76を獲得し首位に立っているクラブはどこ？",
+      "options": [
+        "バルセロナ",
+        "レアル・マドリード",
+        "アトレティコ・マドリード",
+        "ビジャレアル"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナが好調を維持し、2位のレアル・マドリードに勝ち点7差をつけて首位を独走しています。",
+      "trivia": "今季のバルセロナは得失点差も＋51と他クラブを圧倒する驚異的な成績を残しています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "キリアン・ムバッペ",
+        "得点ランキング"
+      ],
+      "text": "2025-26シーズンのUEFAチャンピオンズリーグで、2026年4月の準々決勝を前に13ゴールを挙げて得点ランキング首位に立っている選手は誰？",
+      "options": [
+        "キリアン・ムバッペ",
+        "アーリング・ハーランド",
+        "ハリー・ケイン",
+        "アンソニー・ゴードン"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリードのキリアン・ムバッペが13ゴールで首位に立ち、ケインやゴードンら（10ゴール）を引き離しています。",
+      "trivia": "ムバッペはラ・リーガでも20ゴール以上を挙げて得点ランキング首位を走っており、個人タイトルの二冠達成が期待されています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "インテル",
+        "試合結果"
+      ],
+      "text": "2026年4月5日のセリエAでローマを5-2で下し、2位ACミランに勝ち点6差をつけて首位をキープしたクラブはどこ？",
+      "options": [
+        "インテル",
+        "ナポリ",
+        "ユベントス",
+        "アタランタ"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテルがラウタロ・マルティネスの2ゴールやテュラムのゴールなどの活躍でローマを粉砕し、スクデット獲得へ前進しました。",
+      "trivia": "この試合で復帰した主将のラウタロ・マルティネスは、約2ヶ月ぶりの実戦ながら圧巻のパフォーマンスでチームを牽引しました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ブンデスリーガ",
+        "バイエルン・ミュンヘン",
+        "順位表"
+      ],
+      "text": "2026年4月上旬時点のブンデスリーガで、バイエルン・ミュンヘンは28試合を終えて100得点を記録し首位を独走しています。この時点での同クラブの勝ち点はいくつ？",
+      "options": [
+        "73",
+        "69",
+        "77",
+        "81"
+      ],
+      "answerIndex": 0,
+      "explanation": "バイエルンは28試合で23勝4分1敗の勝ち点73を獲得し、2位ドルトムント（勝ち点64）を大きくリードしています。",
+      "trivia": "バイエルンはわずか28試合で100ゴールの大台に乗せており、1試合平均約3.5ゴールという驚異的な得点力を誇っています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "ヴェダト・ムリキ",
+        "得点ランキング"
+      ],
+      "text": "2026年4月上旬時点のラ・リーガ得点ランキングで、23ゴールの首位ムバッペに次ぐ19ゴールを挙げ、得点王争い2位につけているマジョルカの選手は誰？",
+      "options": [
+        "ヴェダト・ムリキ",
+        "ロベルト・レヴァンドフスキ",
+        "ラミン・ヤマル",
+        "アレクサンダー・セルロート"
+      ],
+      "answerIndex": 0,
+      "explanation": "コソボ代表のストライカーであるヴェダト・ムリキがマジョルカでゴールを量産し、得点王争い（ピチーチ賞）で2位につけるサプライズを起こしています。",
+      "trivia": "ムリキは194cmの長身を活かした空中戦の強さと気迫あふれるプレーが持ち味で、「海賊（El Pirata）」の愛称でファンから親しまれています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "日本代表",
+        "イングランド代表"
+      ],
+      "text": "2026年3月31日、ウェンブリー・スタジアムで行われたイングランド代表との親善試合で、前半23分に歴史的な決勝ゴールを決めた日本人選手は誰でしょう？",
+      "options": [
+        "三笘薫",
+        "中村敬斗",
+        "鎌田大地",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半23分、中村敬斗からのクロスに三笘薫がダイレクトで合わせ決勝点を奪いました。日本代表はこのゴールを守り切り、サッカーの母国イングランドから1-0で初勝利を挙げました。",
+      "trivia": "この試合でマン・オブ・ザ・マッチ級の評価を受けた三笘は、イングランド代表GKピックフォードが継続していた536日間の無失点記録を見事に打ち破りました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-31",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "堂安律",
+        "日本代表",
+        "キャプテン"
+      ],
+      "text": "キャプテンの遠藤航が負傷離脱する中、2026年3月31日のイングランド代表戦で日本代表のキャプテンマークを巻いて先発出場した選手は誰でしょう？",
+      "options": [
+        "堂安律",
+        "冨安健洋",
+        "板倉滉",
+        "鎌田大地"
+      ],
+      "answerIndex": 0,
+      "explanation": "ウェンブリーで行われたイングランド戦では、堂安律がキャプテンとしてチームを牽引しました。持ち前の闘志でチームをまとめ、強豪相手の歴史的勝利に大きく貢献しました。",
+      "trivia": "堂安は試合前、「競り合いで勝てないとイングランドのような強豪には勝てない」と語っており、ピッチ上で自ら激しい球際を見せて有言実行のプレーを披露しました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-31",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "遠藤航",
+        "リヴァプール",
+        "負傷"
+      ],
+      "text": "左足のリスフラン靭帯断裂の重傷を負い、2026年のワールドカップ出場に間に合わせるために「ある決断」をした遠藤航。その決断とは何でしょう？",
+      "options": [
+        "復帰を早めるために人工靭帯を入れる手術を受けた",
+        "患部の負担を減らすため特注の装具だけでプレーする道を選んだ",
+        "手術を回避し自然治癒のみで強行出場を目指すことにした",
+        "痛みを消すための特殊な神経ブロック注射を打ち続けた"
+      ],
+      "answerIndex": 0,
+      "explanation": "遠藤航はプレートを入れる手術だと再度外す手術が必要になりW杯に間に合わない可能性があるため、短期間で復帰できる「人工靭帯を入れる手術」を選択したとポッドキャスト番組内で明かしました。",
+      "trivia": "怪我をした直後、遠藤は激痛の中で倒れ込みながらもプレーを続行し、コーナーキックの守備までこなしてから担架で運ばれるという驚異的な精神力を見せました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "冨安健洋",
+        "アヤックス",
+        "移籍"
+      ],
+      "text": "2026年現在アヤックスに所属している冨安健洋ですが、2026年4月の現地報道によると同夏に退団する可能性が浮上しています。その主な理由とされているのは何でしょう？",
+      "options": [
+        "年俸がクラブの給与体系に収まらないため",
+        "監督と起用法を巡って激しく対立したため",
+        "オランダの寒冷な気候が体に合わなかったため",
+        "ライバルチームであるPSVへの移籍が内定しているため"
+      ],
+      "answerIndex": 0,
+      "explanation": "現地メディアの報道によると、冨安の年俸（約10億円）がアヤックスの給与体系に収まらず、クラブ側は残留を望んでいるものの契約延長交渉が平行線をたどっていると伝えられています。",
+      "trivia": "アヤックスには同じ日本代表の板倉滉も所属しており、クラブの大規模な構造改革の影響で、板倉もプレースタイルや起用法の不満から退団の可能性が報じられています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鎌田大地",
+        "日本代表",
+        "戦術"
+      ],
+      "text": "2026年3月末の英国遠征（スコットランド戦・イングランド戦）で、日本代表が試合途中から試した新しい戦術において、鎌田大地が任されたポジションはどこでしょう？",
+      "options": [
+        "アンカー",
+        "センターバック",
+        "ウイングバック",
+        "偽9番（ゼロトップ）"
+      ],
+      "answerIndex": 0,
+      "explanation": "森保監督はスコットランド戦やイングランド戦の後半、鎌田大地を中盤の底であるアンカーに置く「3-1-4-2」などの新布陣をテストし、より攻撃的なボール保持の展開を模索しました。",
+      "trivia": "このアンカー起用について、元日本代表の柿谷曜一朗はスポーツ番組で「鎌田がいればなんとかなるという感覚になった」と絶賛し、チームの新たなオプションとして高く評価しました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-03-31",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "インテル・マイアミ",
+        "リオネル・メッシ",
+        "MLS",
+        "新スタジアム"
+      ],
+      "text": "2026年4月上旬、インテル・マイアミの新本拠地「Nu Stadium」での初陣となるオースティンFC戦で、記念すべき同スタジアム初ゴールを決めた選手は誰でしょうか？",
+      "options": [
+        "リオネル・メッシ",
+        "ルイス・スアレス",
+        "セルヒオ・ブスケツ",
+        "ジョルディ・アルバ"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテル・マイアミは待望の新スタジアム「Nu Stadium」をオープンし、記念すべき開場初ゴールをキャプテンのメッシが記録しました（試合は2-2の引き分け）。",
+      "trivia": "インテル・マイアミの共同オーナーであるデビッド・ベッカムも、10年越しのスタジアム建設計画が実現した新本拠地の開幕戦をスタンドから見守りました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ニューカッスル",
+        "プレミアリーグ",
+        "退団",
+        "キーラン・トリッピアー"
+      ],
+      "text": "2026年4月、4年半在籍したニューカッスル・ユナイテッドを2026年夏限りで退団することが報じられたイングランド人DFは誰でしょうか？",
+      "options": [
+        "キーラン・トリッピアー",
+        "ダン・バーン",
+        "ジャマール・ラッセルズ",
+        "ファビアン・シェア"
+      ],
+      "answerIndex": 0,
+      "explanation": "サウジアラビア資本による買収後の象徴的な補強の一人であったトリッピアーですが、契約を延長せずに2026年夏にチームを離れることが報じられました。",
+      "trivia": "トリッピアーは2021-22シーズン後半に加入し、クラブを降格の危機から救うとともに、後のチャンピオンズリーグ出場権獲得にも大きく貢献しました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "トッテナム",
+        "インテル",
+        "移籍の噂",
+        "グリエルモ・ヴィカーリオ"
+      ],
+      "text": "2026年4月、インテルやユヴェントスといったセリエAのクラブによる争奪戦が報じられた、トッテナムに所属するイタリア人GKは誰でしょうか？",
+      "options": [
+        "グリエルモ・ヴィカーリオ",
+        "ジャンルイジ・ドンナルンマ",
+        "アレックス・メレト",
+        "ヴァンヤ・ミリンコヴィッチ＝サヴィッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテルは37歳のヤン・ゾマーの後継者としてトッテナムのヴィカーリオの獲得を画策しており、ユヴェントスも動向を注視していると報じられました。",
+      "trivia": "トッテナムの新たな指揮官に就任したロベルト・デ・ゼルビ監督が足元の配球能力をGKにより強く求めているチーム事情から、売却の可能性が浮上しています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "バルセロナ",
+        "ハフィーニャ",
+        "負傷離脱",
+        "チャンピオンズリーグ"
+      ],
+      "text": "2026年3月末のブラジル代表戦でハムストリングを負傷し、4月に行われるアトレティコ・マドリードとのチャンピオンズリーグ準々決勝を欠場することになったバルセロナのFWは誰でしょうか？",
+      "options": [
+        "ハフィーニャ",
+        "ヴィニシウス・ジュニオール",
+        "ロドリゴ",
+        "ガブリエウ・マルティネッリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブラジル代表対フランス代表の親善試合で負傷したハフィーニャは約5週間の離脱となり、同国対決となるCL準々決勝という大一番を欠場することになりました。",
+      "trivia": "今シーズンのハフィーニャは好調を維持しており、CLラウンド16のニューカッスル戦でも2ゴールを挙げる大活躍を見せていました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "バルセロナ",
+        "マルク・ベルナル",
+        "負傷離脱",
+        "ラ・リーガ"
+      ],
+      "text": "2026年4月上旬のラ・リーガ（アトレティコ・マドリード戦）でプレー中に左足首を捻挫し、直後に行われるチャンピオンズリーグ準々決勝第1戦の欠場が確定したバルセロナの若手MFは誰でしょうか？",
+      "options": [
+        "マルク・ベルナル",
+        "ガビ",
+        "ペドリ",
+        "マルク・カサド"
+      ],
+      "answerIndex": 0,
+      "explanation": "リーグ戦のアトレティコ戦で負傷交代したマルク・ベルナルは左足首の捻挫で10日間の離脱となり、直後に行われるCL準々決勝第1戦の欠場を余儀なくされました。",
+      "trivia": "同じ試合でハムストリングの違和感を訴えて前半で交代したロナルド・アラウホは、幸いにも大事には至らずCLの試合には出場可能と診断されました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "イタリア代表",
+        "ワールドカップ欧州予選",
+        "監督解任"
+      ],
+      "text": "2026年3月末に行われた北中米W杯欧州予選プレーオフ決勝で敗れ、3大会連続でW杯出場を逃した結果、ジェンナロ・ガットゥーゾ監督を解任したヨーロッパの強豪国はどこでしょう？",
+      "options": [
+        "イタリア",
+        "ドイツ",
+        "スペイン",
+        "イングランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "イタリア代表はボスニア・ヘルツェゴビナとのプレーオフ決勝にPK戦の末に敗れ、過去2大会に続き3大会連続でW杯出場を逃すという悲劇に見舞われました。",
+      "trivia": "イタリアはW杯で4度の優勝を誇る強豪ですが、最後に決勝トーナメントに進出したのは過去のドイツ大会まで遡ります。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ガーナ代表",
+        "監督解任",
+        "ワールドカップ"
+      ],
+      "text": "2026年3月31日、北中米W杯開幕まで約2ヶ月半と迫るなか、親善試合での不振を理由にオットー・アッド監督を電撃解任したアフリカの代表チームはどこでしょう？",
+      "options": [
+        "ガーナ",
+        "セネガル",
+        "カメルーン",
+        "ナイジェリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガーナ代表はW杯本大会の出場権を獲得していたものの、直近の親善試合でドイツなどに4連敗を喫したため、協会は開幕直前での監督交代を決断しました。",
+      "trivia": "オットー・アッド監督は前回のカタールW杯でもガーナ代表を指揮しており、2大会連続でW杯本大会の指揮を執る直前での無念の解任となりました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "セネガル代表",
+        "アフリカネイションズカップ",
+        "没収試合",
+        "CAF"
+      ],
+      "text": "2026年3月のCAF（アフリカサッカー連盟）の裁定により、アフリカネイションズカップ決勝での試合放棄を理由に優勝タイトルを剥奪された国はどこでしょう？",
+      "options": [
+        "セネガル",
+        "エジプト",
+        "コートジボワール",
+        "アルジェリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "決勝戦の終盤にモロッコにPKが与えられた判定に激怒したセネガルの選手たちが試合を放棄しました。一度はセネガルの優勝とされたものの、2026年3月の再裁定でタイトルが剥奪されました。",
+      "trivia": "スポーツの国際大会において、表彰式まで終わった数ヶ月後に優勝国が変更されるのは極めて異例で、アフリカ全土を巻き込む大論争に発展しました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "マレーシア代表",
+        "アジアカップ予選",
+        "帰化選手",
+        "没収試合"
+      ],
+      "text": "2026年3月、帰化選手の資格書類に関する不正スキャンダルが発覚し、過去の公式戦が0-3の没収試合となりアジアカップ予選で大きなペナルティを受けた国はどこでしょう？",
+      "options": [
+        "マレーシア",
+        "インドネシア",
+        "タイ",
+        "ベトナム"
+      ],
+      "answerIndex": 0,
+      "explanation": "マレーシア代表は帰化選手の適格性に関する書類問題が発覚し、AFC（アジアサッカー連盟）の裁定によりネパール戦やベトナム戦などが没収試合とされました。",
+      "trivia": "近年、東南アジアの代表チームでは帰化選手の積極的な起用がトレンドになっていますが、今回の一件は資格審査の厳格化を促すきっかけとなりました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    }
+  ]
+}

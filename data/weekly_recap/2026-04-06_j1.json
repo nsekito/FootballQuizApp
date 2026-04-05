@@ -1,0 +1,1032 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-04-05T21:40:41Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-04-06",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "柏レイソル",
+        "横浜F・マリノス",
+        "Jリーグ"
+      ],
+      "text": "2026年4月5日に行われた明治安田J1百年構想リーグ第9節で、序盤に相手の退場で得た数的優位を活かし、横浜F・マリノスに3-0で快勝したクラブはどこでしょう？",
+      "options": [
+        "柏レイソル",
+        "FC東京",
+        "浦和レッズ",
+        "鹿島アントラーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏レイソルは前半12分に相手DFが退場し数的優位に立つと、PKでの小見洋太の先制点を皮切りに後半にも2点を追加し快勝しました。",
+      "trivia": "柏レイソルは前節に続いて2試合連続の3-0での完封勝利となり、今季初の90分での連勝を飾りました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ヴィッセル神戸",
+        "ファジアーノ岡山",
+        "Jリーグ"
+      ],
+      "text": "2026年4月5日に行われた明治安田J1百年構想リーグ WEST第9節で、ファジアーノ岡山に4-1で大勝し、WEST首位を堅持したクラブはどこでしょう？",
+      "options": [
+        "ヴィッセル神戸",
+        "サンフレッチェ広島",
+        "ガンバ大阪",
+        "セレッソ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィッセル神戸は前半から優位に試合を進め、永戸勝也や扇原貴宏らのゴールで4点を奪い、WESTの首位を堅持しました。",
+      "trivia": "神戸にはサンフレッチェ広島から満田誠が加入したばかりで、この試合で早速先発出場して存在感を示しました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "名古屋グランパス",
+        "セレッソ大阪",
+        "山岸祐也"
+      ],
+      "text": "2026年4月4日に行われた明治安田J1百年構想リーグ第9節で、セレッソ大阪に3-0で快勝した名古屋グランパス。この試合で2ゴールを挙げる活躍を見せたFWは誰でしょう？",
+      "options": [
+        "山岸祐也",
+        "キャスパー・ユンカー",
+        "パトリック",
+        "永井謙佑"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半に一気に攻撃を爆発させた名古屋グランパスは、山岸祐也の2ゴールと和泉竜司の追加点でセレッソ大阪を圧倒しました。",
+      "trivia": "前半はスコアレスで拮抗していましたが、後半開始直後の46分に均衡が破れると、そこからわずか15分間で3ゴールが生まれました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-04-04",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "いわきFC",
+        "松本山雅FC",
+        "PK戦"
+      ],
+      "text": "2026年4月5日に行われた明治安田J2・J3百年構想リーグ第9節で、松本山雅FCをPK戦の末に下し、破竹の5連勝で首位に浮上したクラブはどこでしょう？",
+      "options": [
+        "いわきFC",
+        "カターレ富山",
+        "RB大宮アルディージャ",
+        "レノファ山口FC"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合は2-2で90分を終え、PK戦の末にいわきFCが勝利を収めました。これによりいわきFCは5連勝を達成しています。",
+      "trivia": "いわきFCはこの勝利でリーグの首位に浮上し、J2・J3百年構想リーグで旋風を巻き起こしています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ジェフユナイテッド千葉",
+        "東京ヴェルディ",
+        "日高大"
+      ],
+      "text": "2026年4月4日に行われた明治安田J1百年構想リーグ第9節のジェフユナイテッド千葉対東京ヴェルディの試合は、後半に東京Vが2点差を追いつく激闘となりました。この試合、85分に千葉の決勝ゴールを決めた選手は誰でしょう？",
+      "options": [
+        "日高大",
+        "呉屋大翔",
+        "髙橋壱晟",
+        "田口泰士"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半に千葉が呉屋大翔の2得点でリードするも、後半に東京Vが2点を返し同点に。しかし85分に途中出場の日高大が決勝のボレーシュートを突き刺しました。",
+      "trivia": "ジェフユナイテッド千葉と東京ヴェルディの顔合わせは、Jリーグ創設時の「オリジナル10」同士の対戦として大きな注目を集めました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-04-04",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "清水エスパルス",
+        "V・ファーレン長崎",
+        "オ・セフン"
+      ],
+      "text": "2026年4月5日に行われた明治安田J1百年構想リーグ WEST第9節で、清水エスパルスはV・ファーレン長崎に3-0で快勝しました。この試合で、開始わずか「7秒」という電光石火の先制ゴールを決めた選手は誰でしょう？",
+      "options": [
+        "オ・セフン",
+        "北川航也",
+        "カルリーニョス・ジュニオ",
+        "矢島慎也"
+      ],
+      "answerIndex": 0,
+      "explanation": "清水エスパルスは開始直後にオ・セフンが電光石火のゴールを奪い、前半のうちに3点のリードを奪って試合を決定づけました。",
+      "trivia": "長崎の本拠地であるピースタジアムで行われたこの試合では、キックオフ直後の開始わずか7秒で先制点が生まれる衝撃的な幕開けとなりました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "サンフレッチェ広島",
+        "アビスパ福岡",
+        "Jリーグ"
+      ],
+      "text": "2026年4月5日に行われた明治安田J1百年構想リーグ WEST第9節で、アビスパ福岡にホームで0-1で敗れ、これで「4連敗」と苦しい状況に陥ってしまったクラブはどこでしょう？",
+      "options": [
+        "サンフレッチェ広島",
+        "サガン鳥栖",
+        "京都サンガF.C.",
+        "大分トリニータ"
+      ],
+      "answerIndex": 0,
+      "explanation": "16分に生まれた橋本悠のゴールを守り抜いたアビスパ福岡が今大会初の勝点3を手にしました。一方のサンフレッチェ広島は苦しい4連敗となりました。",
+      "trivia": "サンフレッチェ広島は内容では優位に立つ試合もありながら、この試合を含めてPK戦での敗戦がないにも関わらず公式戦4連敗と結果が出ていません。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "川崎フロンターレ",
+        "浦和レッズ",
+        "河原創"
+      ],
+      "text": "2026年4月5日に行われた明治安田J1百年構想リーグ EAST第9節の川崎フロンターレ対浦和レッズの試合は、2度追いついた川崎Fが終了間際に3-2の逆転勝利を収めました。90+4分に劇的な決勝点を挙げた川崎Fの選手は誰でしょう？",
+      "options": [
+        "河原創",
+        "ラザル・ロマニッチ",
+        "脇坂泰斗",
+        "山田新"
+      ],
+      "answerIndex": 0,
+      "explanation": "川崎Fは浦和に二度先行される苦しい展開でしたが、78分にラザル・ロマニッチのヘディングゴールで追いつき、最後は河原創が逆転弾を決めました。",
+      "trivia": "この試合では両チームともに試合前や前半にアクシデントによる選手の緊急交代が行われる波乱の展開となりました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC町田ゼルビア",
+        "FC東京",
+        "谷晃生"
+      ],
+      "text": "2026年4月5日に行われた明治安田J1百年構想リーグ EAST第9節のFC東京対FC町田ゼルビアの一戦はスコアレスで終了し、PK戦の末に町田が勝利しました。このPK戦で、FC東京のキックを2本ストップする大活躍を見せた町田のGKは誰でしょう？",
+      "options": [
+        "谷晃生",
+        "福井和樹",
+        "ポープ・ウィリアム",
+        "ソン・ボムグン"
+      ],
+      "answerIndex": 0,
+      "explanation": "4日前に対戦したばかりの両チームの再戦はスコアレスでPK戦にもつれ込み、町田のGK谷晃生が2本のシュートを見事に止めて勝利に導きました。",
+      "trivia": "黒田剛監督は試合後、「1週間で同じチームに2回負けるのは絶対に許されない」と語り、4日前に0-3で敗れた相手に対する強い意気込みを見せていました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "テゲバジャーロ宮崎",
+        "レノファ山口FC",
+        "奥村晃司"
+      ],
+      "text": "2026年4月5日に行われた明治安田J2・J3百年構想リーグ第9節で、レノファ山口FCに3-0で快勝したテゲバジャーロ宮崎。この試合の前半29分に先制ゴールを挙げた選手は誰でしょう？",
+      "options": [
+        "奥村晃司",
+        "井上怜",
+        "下川陽太",
+        "力安祥伍"
+      ],
+      "answerIndex": 0,
+      "explanation": "テゲバジャーロ宮崎は前半29分に奥村晃司が先制点を挙げると、後半にも井上怜と下川陽太が追加点を奪い、3-0の快勝を収めました。",
+      "trivia": "この試合は宮崎のホームである「いちご宮崎新富サッカー場」で行われ、チームはホームでの無敗記録をさらに伸ばしました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "順位表",
+        "鹿島アントラーズ",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年4月5日終了時点で、今季の特別大会「明治安田J1百年構想リーグ」EASTグループで首位に立っているクラブはどこでしょう？",
+      "options": [
+        "鹿島アントラーズ",
+        "FC東京",
+        "FC町田ゼルビア",
+        "浦和レッズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年4月5日の第9節終了時点のEASTグループ順位表では、9試合で勝ち点23（7勝0分2PK敗）を獲得した鹿島アントラーズが単独首位に立っています。2位にはFC東京が続いています。",
+      "trivia": "2026年のJリーグは秋春シーズン移行に伴い、前半戦に「明治安田Jリーグ百年構想リーグ」という特別大会を実施しています。J1は東西10クラブずつに分かれてリーグ戦を行います。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "順位表",
+        "ヴィッセル神戸",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年4月5日終了時点で、「明治安田J1百年構想リーグ」WESTグループで3連勝を飾り、首位を堅持しているクラブはどこでしょう？",
+      "options": [
+        "ヴィッセル神戸",
+        "ガンバ大阪",
+        "名古屋グランパス",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "第9節でファジアーノ岡山に4-1で大勝したヴィッセル神戸が3連勝を飾り、勝ち点19でWESTグループの首位を守っています。2位はガンバ大阪、3位は名古屋グランパスと続いています。",
+      "trivia": "WESTグループは関西圏以西のクラブを中心に構成されており、ヴィッセル神戸やガンバ大阪など実力のあるクラブが激しい上位争いを繰り広げています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "得点ランキング",
+        "川崎フロンターレ",
+        "ストライカー"
+      ],
+      "text": "2026年4月5日時点の「明治安田J1百年構想リーグ」得点ランキングで、6得点を挙げてトップタイに立っている選手は次のうち誰でしょう？",
+      "options": [
+        "エリソン",
+        "レオ セアラ",
+        "オ セフン",
+        "鈴木 優磨"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年4月5日時点でJ1の得点ランキングトップに立っているのは、6得点をマークしているエリソン（川崎F）、山岸祐也（名古屋）、デニス ヒュメット（G大阪）の3選手です。",
+      "trivia": "特別大会は引き分けなしの完全決着ルールの影響もあり、各クラブが最後までゴールを狙い続けるため、非常に激しい得点王争いが展開されています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "得点ランキング",
+        "J2",
+        "J3"
+      ],
+      "text": "2026年4月5日時点の特別大会「明治安田J2・J3百年構想リーグ」で、得点ランキング単独トップの8得点を挙げている徳島ヴォルティスの選手は誰でしょう？",
+      "options": [
+        "ルーカス バルセロス",
+        "泉 柊椰",
+        "山本 桜大",
+        "川本 梨誉"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年4月5日現在、J2・J3合同で行われている特別大会の得点ランキングでは、徳島ヴォルティスのルーカス バルセロスが8得点でトップに立っています。",
+      "trivia": "2位タイの7得点には、レッドブル・グループが経営に参画し名称が新しくなった「RB大宮アルディージャ」の泉柊椰と山本桜大がランクインしています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "ルール",
+        "PK戦",
+        "勝ち点"
+      ],
+      "text": "2026年に行われている特別大会「明治安田Jリーグ百年構想リーグ」では引き分けが廃止されています。90分で決着がつかずPK戦で勝利した場合、得られる勝ち点はいくつでしょう？",
+      "options": [
+        "2",
+        "1",
+        "1.5",
+        "3"
+      ],
+      "answerIndex": 0,
+      "explanation": "この特別大会では、90分で勝利した場合は「勝ち点3」、PK戦で勝利した場合は「勝ち点2」、PK戦で敗北した場合は「勝ち点1」が与えられる特殊な勝ち点システムが採用されています。",
+      "trivia": "かつて1990年代のJリーグ創設期にも、引き分けがなくVゴール方式の延長戦やPK戦で必ず決着をつけるシステムが採用されていました。オールドファンには懐かしいルールと言えます。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "試合結果",
+        "アビスパ福岡",
+        "サンフレッチェ広島"
+      ],
+      "text": "2026年4月5日に行われた明治安田J1百年構想リーグ第9節で、サンフレッチェ広島に1-0で勝利し、今大会初の「90分勝利（勝ち点3）」を手にしたWESTグループのクラブはどこでしょう？",
+      "options": [
+        "アビスパ福岡",
+        "セレッソ大阪",
+        "V・ファーレン長崎",
+        "ファジアーノ岡山"
+      ],
+      "answerIndex": 0,
+      "explanation": "アビスパ福岡は前半16分に生まれたゴールを守り抜き、広島に1-0で勝利。第9節にして今大会初の90分勝利による勝ち点3を手にしました。",
+      "trivia": "一方、敗れたサンフレッチェ広島はこの試合でまさかの4連敗を喫し、上位争いから一歩後退する苦しい展開となっています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "Jリーグ",
+        "プロ契約",
+        "ルール変更"
+      ],
+      "text": "2026年4月1日よりJリーグのプロ契約に関する年齢制限が改定されました。これまで「満16歳以上」だった条件は、満何歳に達した日以降の最初の4月1日から可能になったでしょうか？",
+      "options": [
+        "満15歳",
+        "満14歳",
+        "満17歳",
+        "年齢制限は撤廃された"
+      ],
+      "answerIndex": 0,
+      "explanation": "JFAの規則改定により、才能ある若年層の選手がより早期にプロとして活動できるよう、2026年4月1日からプロ契約の年齢制限が「満15歳」に引き下げられました。",
+      "trivia": "この新ルール適用初日となる2026年4月1日には、FC岐阜がU-18所属で当時15歳のDF山川弘飛選手と早速プロ契約を結び話題になりました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "京都サンガF.C.",
+        "移籍",
+        "新加入"
+      ],
+      "text": "2026年4月3日、ブラジルのカナンECから18歳のブラジル人FWデイビッジ・シルバ選手を完全移籍で獲得したと発表したJリーグのクラブはどこでしょうか？",
+      "options": [
+        "京都サンガF.C.",
+        "ファジアーノ岡山",
+        "ヴィッセル神戸",
+        "アルビレックス新潟"
+      ],
+      "answerIndex": 0,
+      "explanation": "スピードと高さを備え、左足でのフィニッシュを得意とする18歳のFWデイビッジ・シルバ選手は、京都サンガF.C.へ背番号19で加入しました。",
+      "trivia": "同じ2026年4月3日には、ファジアーノ岡山もブラジルのオペラリオ・フェロヴィアリオECからFWレオ・ガウショ選手を完全移籍で獲得したと発表しています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "横浜F・マリノス",
+        "プロ契約",
+        "最年少記録"
+      ],
+      "text": "2026年4月2日、16歳の誕生日に横浜F・マリノスとプロ契約を結び、クラブ史上最年少のプロ契約選手となったU-17日本代表プレーヤーは誰でしょうか？",
+      "options": [
+        "三井寺眞",
+        "山川弘飛",
+        "後藤啓介",
+        "名和田我空"
+      ],
+      "answerIndex": 0,
+      "explanation": "仙台を拠点とする「フォーリクラッセ東北」出身の三井寺眞（みいでら まこと）選手が、16歳の誕生日当日に横浜FMとクラブ最年少でプロ契約を結びました。",
+      "trivia": "三井寺選手は鋭いドリブルと左足の強烈なシュートが武器で、飛び級でU-17日本代表にも選出されており、複数のJリーグクラブが争奪戦を繰り広げた逸材です。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "藤枝MYFC",
+        "水戸ホーリーホック",
+        "期限付き移籍"
+      ],
+      "text": "2026年3月31日、藤枝MYFCはFW久保征一郎選手が期限付き移籍で加入することを発表しました。移籍元のクラブはどこでしょうか？",
+      "options": [
+        "水戸ホーリーホック",
+        "アルビレックス新潟",
+        "FC東京",
+        "V・ファーレン長崎"
+      ],
+      "answerIndex": 0,
+      "explanation": "以前から水戸ホーリーホックに在籍していた久保征一郎選手が、2026年4月1日から6月30日までの期限付き移籍で藤枝MYFCに加入しました。",
+      "trivia": "久保選手は法政大学時代、FC東京の特別指定選手としてもプレー経験があります。また同時期に新潟のMF吉田陣平選手も福島ユナイテッドFCへ期限付き移籍しています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ギラヴァンツ北九州",
+        "負傷",
+        "離脱"
+      ],
+      "text": "2026年3月31日、ギラヴァンツ北九州はMF平松昇選手の負傷を発表しました。全治約6週間と診断されたケガの部位はどこでしょうか？",
+      "options": [
+        "左第2趾基節骨（足の指）",
+        "右膝前十字靭帯",
+        "左大腿二頭筋（太もも裏）",
+        "右足関節外側靭帯（足首）"
+      ],
+      "answerIndex": 0,
+      "explanation": "平松昇選手は2026年3月7日に行われたJリーグの試合で負傷し、左第2趾基節骨骨折（ひだりだいにしきせつこつこっせつ）と診断されました。",
+      "trivia": "同じ2026年3月末から4月頭にかけては、大宮のMF加藤玄選手（右大腿二頭筋肉離れ）や長野のMF森田大智選手（右内側側副靱帯損傷）などの負傷も各クラブから発表されました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "監督交代",
+        "AC長野パルセイロ",
+        "小林伸二",
+        "Jリーグ"
+      ],
+      "text": "2026年3月31日、開幕から未勝利が続いていたAC長野パルセイロが新監督の就任を発表しました。藤本主税監督の後任として就任したのは誰でしょう？",
+      "options": [
+        "小林伸二",
+        "石崎信弘",
+        "吉田謙",
+        "木山隆之"
+      ],
+      "answerIndex": 0,
+      "explanation": "AC長野パルセイロは開幕から8試合勝利がなく、藤本主税監督との契約を解除しました。後任には「昇格請負人」としても知られる小林伸二氏が就任しました。",
+      "trivia": "小林伸二監督はこれまでに大分トリニータ、モンテディオ山形、徳島ヴォルティス、清水エスパルスをJ1昇格に導いた実績を持っています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "大会方式",
+        "Jリーグ",
+        "シーズン移行"
+      ],
+      "text": "Jリーグは2026年秋からのシーズン移行に伴い、2026年前半に特別大会を開催しています。この大会の名称「明治安田〇〇リーグ」の〇〇に入る言葉は何でしょう？",
+      "options": [
+        "百年構想",
+        "ネクストジェネレーション",
+        "サマースプリング",
+        "トランジション"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月からの秋春制（シーズン移行）に向けて、2月から6月の約4ヶ月間限定で「明治安田J1百年構想リーグ」「明治安田J2・J3百年構想リーグ」が開催されています。",
+      "trivia": "この特別大会のためだけに限定デザインのユニフォームを用意したクラブも多く、通常のリーグ戦とは異なる装いがファンに楽しまれています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "スポンサー",
+        "Jリーグパートナー",
+        "パートナーシップ"
+      ],
+      "text": "2026年4月、あるメガバンクがJリーグが主催する「明治安田Jリーグ百年構想リーグ」のトップパートナー契約を開始しました。地域連携や金融DXで協業を強化するこの銀行はどこでしょう？",
+      "options": [
+        "三菱UFJ銀行",
+        "三井住友銀行",
+        "みずほ銀行",
+        "りそな銀行"
+      ],
+      "answerIndex": 0,
+      "explanation": "三菱UFJ銀行はJリーグとパートナーシップ契約を結び、2026年4月から「明治安田Jリーグ百年構想リーグ」のトップパートナーとして契約を開始しました。",
+      "trivia": "Jリーグの他のトップパートナーには、アイデム、ルートインジャパン、イオンリテール、NTTドコモ、サントリーなどが名を連ねています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "清水エスパルス",
+        "イベント",
+        "ファンサービス",
+        "スタジアム"
+      ],
+      "text": "2026年4月、清水エスパルスはホームのIAIスタジアム日本平でファン向けの特別な宿泊イベントを開催することを発表しました。このイベントの主な内容はどれでしょう？",
+      "options": [
+        "ピッチ上でのテント宿泊キャンプ",
+        "ロッカールームでの雑魚寝体験",
+        "VIPルームでのパブリックビューイングお泊まり会",
+        "ベンチでの車中泊体験"
+      ],
+      "answerIndex": 0,
+      "explanation": "清水エスパルスは「STADIUM CAMP inアイスタ」と題し、日本一のピッチと称されるIAIスタジアム日本平のピッチ上にテントを張って一晩を過ごすイベントを企画・募集しました。",
+      "trivia": "このイベントの夕食には、ホームゲーム終了後の食事として選手に人気の高い「牛丼＆親子丼のあい盛り」などが参加者に提供される予定です。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "柏レイソル",
+        "スポンサー",
+        "パートナーシップ"
+      ],
+      "text": "2026年4月3日、柏レイソルは千葉県我孫子市に本社を置く企業と新たにクラブスポンサー契約を締結したと発表しました。その企業はどこでしょう？",
+      "options": [
+        "株式会社南雲ハウジング",
+        "株式会社モルテン",
+        "株式会社アイデム",
+        "ルートインジャパン株式会社"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏レイソルは2026年4月3日、外壁や屋根工事塗装、内装リフォームなどを手がける「株式会社南雲ハウジング」との新規クラブスポンサー契約を発表しました。",
+      "trivia": "南雲ハウジングは「スタジアムでの体験価値向上と、地域との繋がりづくりに貢献したい」と、スポンサー契約の意気込みを語っています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "水戸ホーリーホック",
+        "鹿島アントラーズ",
+        "茨城ダービー",
+        "J1"
+      ],
+      "text": "2026年4月4日に行われた明治安田J1百年構想リーグ第9節で、J1リーグ戦として初開催となった「茨城ダービー」が行われました。この試合でPK戦の末に勝利を収めたクラブはどこでしょう？",
+      "options": [
+        "水戸ホーリーホック",
+        "鹿島アントラーズ",
+        "浦和レッズ",
+        "ジェフユナイテッド千葉"
+      ],
+      "answerIndex": 0,
+      "explanation": "水戸ホーリーホックは後半に退場者を出し10人になりながらも1-1でしのぎ、特別大会のルールであるPK戦を4-2で制して王者・鹿島アントラーズの連勝を7でストップさせました。",
+      "trivia": "水戸はこれまで天皇杯などのカップ戦では鹿島と対戦経験がありましたが、今季J1に昇格したことでリーグ戦での茨城ダービーが初めて実現しました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-04",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "コラボ",
+        "ゲーム"
+      ],
+      "text": "2026年の特別大会「明治安田Jリーグ百年構想リーグ」は全60クラブが「EAST」と「WEST」に分かれて戦います。この東西の共通点を生かし、Jリーグがコラボレーション企画を実施している人気ゲームは何でしょう？",
+      "options": [
+        "桃太郎電鉄2",
+        "人生ゲーム",
+        "いただきストリート",
+        "モノポリー"
+      ],
+      "answerIndex": 0,
+      "explanation": "シリーズ最新作『桃太郎電鉄2 ～あなたの町も きっとある～』が「東日本編」と「西日本編」のマップに分かれていることから、東西開催の特別リーグとのコラボが実現しました。",
+      "trivia": "全国の各スタジアムでのコラボイベントでは、ホームタウンとコラボビジュアルが描かれた限定キーホルダーの抽選プレゼントなども行われています。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ガイナーレ鳥取",
+        "レイラック滋賀",
+        "試合中止"
+      ],
+      "text": "2026年4月5日に開催予定だった明治安田J2・J3百年構想リーグの「ガイナーレ鳥取 vs レイラック滋賀」の試合が、前日に急遽中止となりました。その珍しい理由は何でしょう？",
+      "options": [
+        "スタジアムの屋根が一部破損したため",
+        "ピッチに大量の鳥の群れが居座ったため",
+        "スタジアム付近で不発弾が見つかったため",
+        "アウェイチームのバスが故障し到着できなかったため"
+      ],
+      "answerIndex": 0,
+      "explanation": "会場であるスタジアム（鳥取）の屋根が一部破損した影響で安全確保が難しいと判断され、試合前日の4月4日に急遽中止が発表されました。",
+      "trivia": "スタジアムの屋根破損を理由とする試合中止はJリーグでも非常に珍しく、SNS上のサッカーファンの間でも驚きの声があがりました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-05",
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "社会貢献",
+        "サステナビリティ"
+      ],
+      "text": "2026年4月、Jリーグの5クラブ（湘南、G大阪、山口、福岡、北九州）が参画し、社会課題を解決する「サステナプレイヤー」を育成するプロジェクトが本格始動しました。このプログラムは主にどの学年の授業で行われるでしょう？",
+      "options": [
+        "小学5年生",
+        "小学1年生",
+        "中学2年生",
+        "高校1年生"
+      ],
+      "answerIndex": 0,
+      "explanation": "クラブ・教育・地域企業が三位一体となり、小学5年生の探求学習の授業内でサステナビリティ人財を育成するこれまでにない産官学連携プログラムです。",
+      "trivia": "この取り組みは過去に湘南ベルマーレと茅ヶ崎市が連携して実証的にスタートしており、手応えを得たことで2026年度から5クラブ体制での全国展開へ拡大しました。",
+      "referenceDate": "2026-04-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-06",
+        "expiryDate": "2026-04-13",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
