@@ -1,0 +1,1044 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-04-13T14:07:17Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-04-13",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "セレッソ大阪",
+        "ガンバ大阪",
+        "大阪ダービー",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年4月11日に行われた「明治安田J1百年構想リーグ」第10節の大阪ダービー、セレッソ大阪対ガンバ大阪の試合結果は？",
+      "options": [
+        "セレッソ大阪が1-0で勝利",
+        "ガンバ大阪が1-0で勝利",
+        "1-1の引き分けからPK戦でセレッソ大阪が勝利",
+        "1-1の引き分けからPK戦でガンバ大阪が勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年4月11日の第10節で行われた大阪ダービーは、セレッソ大阪が1-0でガンバ大阪を下しました。",
+      "trivia": "2026年の百年構想リーグでは、90分で引き分けの場合はPK戦で勝敗を決める完全決着方式が採用されています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-11",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "鹿島アントラーズ",
+        "川崎フロンターレ",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年4月12日の明治安田J1百年構想リーグ第10節、川崎フロンターレ対鹿島アントラーズの試合の勝者は？",
+      "options": [
+        "鹿島アントラーズ",
+        "川崎フロンターレ",
+        "引き分け（PK戦で鹿島が勝利）",
+        "引き分け（PK戦で川崎が勝利）"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズが敵地のUvanceとどろきスタジアム by Fujitsuで川崎フロンターレを2-0で撃破し、EASTグループの首位をキープしました。",
+      "trivia": "鹿島はこの勝利により、EASTグループにおいて安定した強さを見せ、他チームを一歩リードする形となりました。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-12",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "浦和レッズ",
+        "東京ヴェルディ",
+        "PK戦",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年4月12日に行われた明治安田J1百年構想リーグ第10節、浦和レッズと東京ヴェルディの試合はどのような結末となったでしょう？",
+      "options": [
+        "1-1からPK戦の末に東京ヴェルディが勝利",
+        "1-1からPK戦の末に浦和レッズが勝利",
+        "東京ヴェルディが90分以内に1-0で勝利",
+        "浦和レッズが90分以内に1-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "埼玉スタジアムで行われた一戦は1-1で90分を終え、PK戦（1-3）の末に東京ヴェルディが勝利を収めました。",
+      "trivia": "百年構想リーグの特別ルールにより、リーグ戦であっても引き分けのまま試合終了とはならず、PK戦で決着をつけるシステムが導入されています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-12",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "いわきFC",
+        "福島ユナイテッドFC",
+        "ダービーマッチ"
+      ],
+      "text": "2026年4月12日の明治安田J2・J3百年構想リーグで、福島ユナイテッドFCとの「福島ダービー」を制して6連勝を飾り、EASTグループ首位をキープしたチームは？",
+      "options": [
+        "いわきFC",
+        "ロアッソ熊本",
+        "ブラウブリッツ秋田",
+        "ツエーゲン金沢"
+      ],
+      "answerIndex": 0,
+      "explanation": "いわきFCはダービーマッチで福島ユナイテッドFCに勝利し、見事6連勝を達成して首位をキープしました。",
+      "trivia": "福島県をホームタウンとする両クラブの対戦は「福島ダービー」と呼ばれ、県内のサッカーファンが大いに盛り上がる一戦です。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-12",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ヴィッセル神戸",
+        "名古屋グランパス",
+        "得点者"
+      ],
+      "text": "2026年4月11日に行われたヴィッセル神戸対名古屋グランパスの試合は3-2で神戸が勝利しました。この試合で神戸の得点者として記録されていないのは次のうち誰でしょう？",
+      "options": [
+        "大迫勇也",
+        "酒井高徳",
+        "佐々木大樹",
+        "武藤嘉紀"
+      ],
+      "answerIndex": 0,
+      "explanation": "この試合でのヴィッセル神戸の得点者は、酒井高徳（27分）、佐々木大樹（68分）、武藤嘉紀（81分）の3選手でした。",
+      "trivia": "ノエビアスタジアム神戸で行われたこの試合は、両チーム合わせて5ゴールが生まれる白熱した展開となりました。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-11",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "徳島ヴォルティス",
+        "四国ダービー",
+        "大勝"
+      ],
+      "text": "2026年4月12日に行われた明治安田J2・J3百年構想リーグの「四国ダービー」で、徳島ヴォルティスはどのチームを相手に5得点を奪って大勝したでしょう？",
+      "options": [
+        "カマタマーレ讃岐",
+        "愛媛FC",
+        "FC今治",
+        "高知ユナイテッドSC"
+      ],
+      "answerIndex": 0,
+      "explanation": "徳島ヴォルティスはカマタマーレ讃岐との四国ダービーに臨み、5ゴールを奪う圧倒的な攻撃力を見せて大勝しました。",
+      "trivia": "徳島と讃岐による四国ダービーは「東四国クラシコ」とも呼ばれ、プライドがぶつかり合う熱い試合として知られています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-12",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "フットサル日本代表",
+        "国際親善試合",
+        "ポルトガル"
+      ],
+      "text": "2026年4月9日にポルトガルのコインブラで行われた、フットサル日本代表の国際親善試合（対ポルトガル戦）の試合結果はどうなったでしょう？",
+      "options": [
+        "ポルトガルに1-4で敗戦",
+        "スペインに1-4で敗戦",
+        "ポルトガルに3-2で勝利",
+        "スペインに3-2で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "フットサル日本代表は強豪ポルトガルと対戦しましたが、1-4で敗れる結果となりました。",
+      "trivia": "コインブラはポルトガル第3の都市であり、ヨーロッパ最古の大学の一つであるコインブラ大学があることで有名な学術都市です。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-09",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC東京",
+        "横浜F・マリノス",
+        "得点者"
+      ],
+      "text": "2026年4月11日に行われたFC東京対横浜F・マリノスの試合は、FC東京が3-1で勝利しました。この試合でのFC東京の得点は、佐藤恵允、オウンゴールと、あと一人は誰でしょう？",
+      "options": [
+        "マルセロ・ヒアン",
+        "ディエゴ・オリヴェイラ",
+        "荒木遼太郎",
+        "仲川輝人"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は佐藤恵允の先制点、マルセロ・ヒアンの追加点、そしてオウンゴールにより3得点を挙げて横浜F・マリノスを下しました。",
+      "trivia": "マルセロ・ヒアンは2024年にサガン鳥栖でブレイクし、その才能が高く評価されてきたブラジル人ストライカーです。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-11",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "鹿島アントラーズ",
+        "川崎フロンターレ",
+        "得点者"
+      ],
+      "text": "2026年4月12日の川崎フロンターレ対鹿島アントラーズ戦（2-0で鹿島が勝利）で、鹿島アントラーズの得点者2人の組み合わせとして正しいのは？",
+      "options": [
+        "鈴木優磨とレオ・セアラ",
+        "鈴木優磨とチャヴリッチ",
+        "仲間隼斗とレオ・セアラ",
+        "知念慶と名古新太郎"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズは鈴木優磨とレオ・セアラの強力なアタッカー陣がそれぞれゴールを決め、敵地で川崎フロンターレを撃破しました。",
+      "trivia": "レオ・セアラは過去にセレッソ大阪や横浜F・マリノスでゴールを量産したストライカーで、Jリーグでの実績は折り紙付きです。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-12",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ブラウブリッツ秋田",
+        "横浜FC",
+        "決勝点"
+      ],
+      "text": "2026年4月11日の明治安田J2・J3百年構想リーグ第10節に向けたプレビュー記事の中で、「前節の横浜FC戦で終了間際に決勝点を挙げた」と紹介されたブラウブリッツ秋田の選手は誰でしょう？",
+      "options": [
+        "吉岡雅和",
+        "梶谷政仁",
+        "小松蓮",
+        "丹羽詩温"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブラウブリッツ秋田の吉岡雅和は、第9節の横浜FC戦で終了間際に劇的な決勝ゴールを挙げ、チームを勝利に導きました。",
+      "trivia": "吉岡雅和はアビスパ福岡からプロキャリアをスタートさせ、V・ファーレン長崎やレノファ山口FCなど複数のクラブで経験を積んだテクニシャンです。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-11",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "特別大会",
+        "ルール",
+        "勝ち点"
+      ],
+      "text": "2026年に開催されている特別大会「明治安田J1百年構想リーグ」では、90分で同点の場合にPK戦が行われます。このPK戦で勝利したチームに与えられる「勝ち点」はいくつでしょう？",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "1.5"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1百年構想リーグの地域リーグラウンドでは、90分で引き分けの場合は延長戦を行わず即PK戦を実施します。勝ち点は「90分勝利＝3、PK勝利＝2、PK敗戦＝1、90分敗戦＝0」となります。",
+      "trivia": "かつてのJリーグ草創期にも、同点の場合にVゴール方式の延長戦やPK戦が行われており、オールドファンには懐かしいレギュレーションとなっています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "鹿島アントラーズ",
+        "順位表",
+        "首位"
+      ],
+      "text": "「明治安田J1百年構想リーグ」EASTグループで、第10節（2026年4月12日）終了時点で90分での敗戦を一度も喫さず、勝ち点26で単独首位を走っているクラブはどこでしょう？",
+      "options": [
+        "鹿島アントラーズ",
+        "FC東京",
+        "FC町田ゼルビア",
+        "浦和レッズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズは2026年4月12日の川崎フロンターレ戦に2-0で勝利し、ここまで8勝2PK負の勝ち点26と無敗を維持し、EASTグループの首位をがっちりキープしています。",
+      "trivia": "鹿島は今大会の最初の10試合で18得点5失点と、攻守両面において他を寄せ付けない圧倒的なスタッツを残しています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-12",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "大阪ダービー",
+        "セレッソ大阪",
+        "ガンバ大阪"
+      ],
+      "text": "2026年4月11日に行われた「明治安田J1百年構想リーグ」WESTグループ第10節の「ガンバ大阪 vs セレッソ大阪」の大阪ダービーは、どのような結果になったでしょう？",
+      "options": [
+        "セレッソ大阪が勝利",
+        "ガンバ大阪が勝利",
+        "PK戦でガンバ大阪が勝利",
+        "PK戦でセレッソ大阪が勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "パナソニックスタジアム吹田で行われた注目の大阪ダービーは、アウェイのセレッソ大阪が1-0でガンバ大阪を下し、90分勝利による勝ち点3を獲得しました。",
+      "trivia": "2026年シーズンはJリーグの秋春制移行に伴う過渡期であり、両クラブともこの特別大会から順位やプライドを懸けて熱い火花を散らしています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-11",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "J3",
+        "いわきFC",
+        "連勝"
+      ],
+      "text": "2026年4月12日に行われた「明治安田J2・J3百年構想リーグ」第10節で、福島ユナイテッドFCとのダービーマッチを制し、6連勝でEAST-Bグループの首位をキープしたクラブはどこでしょう？",
+      "options": [
+        "いわきFC",
+        "ブラウブリッツ秋田",
+        "ベガルタ仙台",
+        "モンテディオ山形"
+      ],
+      "answerIndex": 0,
+      "explanation": "いわきFCは福島ユナイテッドFCとの「福島ダービー」に3-2で競り勝って6連勝を飾り、EAST-Bグループの首位の座を堅持しました。",
+      "trivia": "J2とJ3のクラブが混在して行われるこの特別大会では、普段のシーズンではなかなか見られないリーグの垣根を越えた白熱のダービーマッチが実現しています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-12",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "得点ランキング",
+        "オ・セフン",
+        "清水エスパルス"
+      ],
+      "text": "2026年4月12日時点の「明治安田J1百年構想リーグ」WESTグループの得点ランキングで、6ゴールを挙げて山岸祐也（名古屋）、デニス・ヒュメット（G大阪）と並んで首位タイに立っている選手は誰でしょう？",
+      "options": [
+        "オ・セフン（清水）",
+        "小松蓮（神戸）",
+        "マルコ・トゥーリオ（京都）",
+        "ジャーメイン良（広島）"
+      ],
+      "answerIndex": 0,
+      "explanation": "WESTグループの得点ランキングは、オ・セフン（清水エスパルス）、山岸祐也（名古屋グランパス）、デニス・ヒュメット（ガンバ大阪）の3選手が6得点でトップに並ぶ大混戦となっています。",
+      "trivia": "オ・セフンは韓国出身の大型ストライカーで、その圧倒的なフィジカルと得点感覚を活かし、チームの攻撃の起点としても活躍しています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-12",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "得点ランキング",
+        "エリソン",
+        "川崎フロンターレ"
+      ],
+      "text": "2026年4月12日時点の「明治安田J1百年構想リーグ」EASTグループの得点ランキングで、6ゴールを挙げてレオ・セアラ（鹿島）とともに首位タイに立っている選手は誰でしょう？",
+      "options": [
+        "エリソン（川崎F）",
+        "鈴木優磨（鹿島）",
+        "エリキ（町田）",
+        "染野唯月（東京V）"
+      ],
+      "answerIndex": 0,
+      "explanation": "EASTグループの得点ランキングは、エリソン（川崎フロンターレ）とレオ・セアラ（鹿島アントラーズ）が6ゴールで首位タイとなっています。次いで鈴木優磨（鹿島）とエリキ（町田）が5ゴールで追っています。",
+      "trivia": "エリソンはブラジル出身のストライカーで、強烈な左足のシュートと「闘牛」とも称されるアグレッシブなプレースタイルが特徴です。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-04-12",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ツエーゲン金沢",
+        "沖崎颯",
+        "移籍",
+        "期限付き移籍"
+      ],
+      "text": "2026年4月11日、ツエーゲン金沢のMF沖崎颯が期限付き移籍することが発表されました。移籍先のクラブはどれでしょう？",
+      "options": [
+        "FC.ISE-SHIMA",
+        "おこしやす京都AC",
+        "アルテリーヴォ和歌山",
+        "南葛SC"
+      ],
+      "answerIndex": 0,
+      "explanation": "ツエーゲン金沢のMF沖崎颯は、東海社会人サッカーリーグ1部のFC.ISE-SHIMAへ2026年6月30日までの期限付き移籍をすることが発表されました。",
+      "trivia": "FC.ISE-SHIMAは三重県中南勢地域をホームタウンとしており、元日本代表の小倉隆史氏が理事長兼監督を務めていたことでも知られています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "サガン鳥栖",
+        "上原牧人",
+        "塩浜遼",
+        "負傷"
+      ],
+      "text": "2026年4月10日、サガン鳥栖はトレーニング中に3名の選手が負傷したことを発表しました。このうち、左ハムストリング損傷により全治8週と診断されたDFは誰でしょう？",
+      "options": [
+        "上原牧人",
+        "塩浜遼",
+        "ジョー",
+        "原田亘"
+      ],
+      "answerIndex": 0,
+      "explanation": "サガン鳥栖はDF上原牧人が左ハムストリング損傷で全治8週、FW塩浜遼が左ヒラメ筋肉離れで全治6週、FWジョーが負傷したことをまとめて発表しました。",
+      "trivia": "サガン鳥栖では過去にも同じタイミングで複数人の負傷離脱が発表されたことがあり、サポーターからはメディカルチームや練習強度を心配する声が上がることもあります。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ヴィッセル神戸",
+        "日髙光揮",
+        "負傷",
+        "骨折"
+      ],
+      "text": "2026年4月11日の名古屋グランパス戦で、ヴィッセル神戸のMF日髙光揮は扇原貴宏の負傷交代を受けてスクランブル出場しましたが、試合後にある衝撃の事実を明かしました。それは何でしょう？",
+      "options": [
+        "実は足の指を骨折した状態でプレーしていた",
+        "試合前に高熱を出していたが隠していた",
+        "コンタクトレンズを落として見えないままプレーしていた",
+        "ハーフタイムに別の選手のユニフォームを間違えて着ていた"
+      ],
+      "answerIndex": 0,
+      "explanation": "MF扇原貴宏の負傷により緊急投入された日髙光揮ですが、実は自身も足の指を骨折している中での出場でした。ケガを感じさせない気迫のプレーでチームの3-2の勝利に貢献しました。",
+      "trivia": "日髙光揮は相生学院高校時代に、通信制高校で学びながらヨーロッパのクラブとプロ契約を目指す独自のプロジェクトに参加していたという異色の経歴を持つ選手です。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-11",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "いわきFC",
+        "柴田壮介",
+        "負傷",
+        "前十字靭帯損傷"
+      ],
+      "text": "2026年4月8日、いわきFCは試合中に負傷したMF柴田壮介の診断結果を発表しました。全治6ヶ月と診断された大ケガの内容はどれでしょう？",
+      "options": [
+        "右膝前十字靱帯損傷および右膝外側半月板損傷",
+        "アキレス腱断裂",
+        "第5中足骨骨折",
+        "右肩関節脱臼"
+      ],
+      "answerIndex": 0,
+      "explanation": "MF柴田壮介は4月5日の松本山雅FC戦で負傷し、右膝前十字靱帯損傷および右膝外側半月板損傷で全治約6ヶ月と診断されました。4月7日に無事手術を終えています。",
+      "trivia": "柴田壮介は湘南ベルマーレのアカデミー出身で、トップチーム昇格後、複数クラブへの期限付き移籍を経ていわきFCに完全移籍し、中盤の要として活躍しています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ヴァンフォーレ甲府",
+        "荒木翔",
+        "記録達成",
+        "200試合出場"
+      ],
+      "text": "2026年4月9日、ヴァンフォーレ甲府の荒木翔がJ通算200試合出場を達成した記念グッズが発売されました。彼がこの記録を達成した3月28日の試合の対戦相手はどこだったでしょう？",
+      "options": [
+        "RB大宮アルディージャ",
+        "ベガルタ仙台",
+        "清水エスパルス",
+        "モンテディオ山形"
+      ],
+      "answerIndex": 0,
+      "explanation": "荒木翔は3月28日の第8節・RB大宮アルディージャ戦でJ通算200試合出場を達成しました。記念グッズの発表にあたり「若手選手に負けるわけにはいかない」と熱いコメントを残しています。",
+      "trivia": "対戦相手のRB大宮アルディージャは、2024年にレッドブル・グループに買収されたのち、クラブ名を変更して新たなエンブレムとともに新時代を歩んでいるクラブです。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "国内カップ戦",
+        "秋春制"
+      ],
+      "text": "2026年、Jリーグの「秋春制」へのシーズン移行や特別大会の開催に伴い、ある国内主要大会が1995年以来となる開催見送りとなりました。その大会はどれでしょう？",
+      "options": [
+        "ルヴァンカップ",
+        "天皇杯",
+        "FUJIFILM SUPER CUP",
+        "Jリーグアジアチャレンジ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年はJリーグが「春秋制」から「秋春制」に移行するため、上半期は特別大会の「明治安田Jリーグ百年構想リーグ」が組まれ、ルヴァンカップの開催は見送られることが決定しました。",
+      "trivia": "ルヴァンカップ（旧ヤマザキナビスコカップ）の開催が見送られるのは、過密日程への配慮などにより開催されなかった1995年シーズン以来、実に31年ぶりとなります。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "スポンサー",
+        "Jリーグ",
+        "トップパートナー"
+      ],
+      "text": "2026年4月から新たにJリーグとの「トップパートナー契約」を開始した、日本を代表する企業はどれでしょう？",
+      "options": [
+        "三菱UFJ銀行",
+        "トヨタ自動車",
+        "日本航空",
+        "サントリー"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは株式会社三菱UFJフィナンシャル・グループの連結子会社である三菱UFJ銀行とトップパートナー契約を締結し、2026年4月から契約を開始しました。全国のJクラブと連携し、地域振興などを推進します。",
+      "trivia": "三菱UFJ銀行のパーパスである「世界が進むチカラになる。」と、Jリーグの掲げる世界水準のリーグを目指す理念が共鳴し、今回の大型パートナーシップ契約締結に至りました。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "監督交代",
+        "FC今治",
+        "人事"
+      ],
+      "text": "2026年4月8日、明治安田J2・J3百年構想リーグを戦うFC今治は倉石圭二監督の退任を発表しました。後任の新監督に就任したのは誰でしょう？",
+      "options": [
+        "塚田雄二",
+        "服部年宏",
+        "大嶽直人",
+        "工藤直人"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC今治は倉石圭二監督の退任を発表し、かつてヴァンフォーレ甲府やセレッソ大阪で監督を務めた経験を持つ塚田雄二氏が新監督に就任することを発表しました。",
+      "trivia": "新監督に就任した塚田雄二氏は今季、FC今治のホームグロウングループおよびレディースグループの執行役員を務めていましたが、チームの立て直しのために急遽トップチームの指揮を執ることになりました。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "秋春制",
+        "日程発表",
+        "Jリーグ"
+      ],
+      "text": "2026年4月7日、秋春制となる「2026-27シーズン」のJリーグ試合日程の発表時期が公開されました。J1〜J3の「2026年開催分」のキックオフ日時はいつ頃発表されることになったでしょう？",
+      "options": [
+        "7月上旬",
+        "6月中旬",
+        "8月上旬",
+        "5月下旬"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは2026-27シーズンの対戦カードを6月中旬に、2026年開催分（J1第1〜20節、J2・J3第1〜22節）のキックオフ日時やスタジアムを7月上旬に発表することを決定しました。",
+      "trivia": "シーズンが年を跨ぐ「秋春制」へ移行したことで、日程発表も2段階に分かれることになりました。2027年開催分のキックオフ日時などは12月上旬に発表される予定です。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "特別指定選手",
+        "移籍・加入",
+        "FC町田ゼルビア"
+      ],
+      "text": "2026年4月10日に発表された「2026年JFA・Jリーグ特別指定選手」の認定で、流通経済大学のDF西川楓人選手を新たに受け入れることになったJクラブはどこでしょう？",
+      "options": [
+        "FC町田ゼルビア",
+        "京都サンガF.C.",
+        "柏レイソル",
+        "ガンバ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本サッカー協会（JFA）は流通経済大学の西川楓人選手を「2026年JFA・Jリーグ特別指定選手」として認定し、FC町田ゼルビアが受入先となることを発表しました。",
+      "trivia": "同日には新潟医療福祉大学のMF立川遼翔選手が特別指定選手に認定されたことも発表されました。立川選手は中高時代を下部組織で過ごした古巣の京都サンガF.C.が受入先となっています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "FC今治",
+        "監督交代",
+        "Jリーグ"
+      ],
+      "text": "2026年4月8日付で倉石圭二監督の退任を発表し、新監督に塚田雄二氏の就任を発表したクラブはどこでしょうか？",
+      "options": [
+        "FC今治",
+        "FC岐阜",
+        "愛媛FC",
+        "カマタマーレ讃岐"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC今治は2026年4月8日、成績不振により倉石圭二監督の退任を発表し、後任として塚田雄二氏が新監督に就任することを発表しました。",
+      "trivia": "塚田雄二氏は過去にヴァンフォーレ甲府やセレッソ大阪などで監督を務め、豊富な経験を持つ指導者として知られています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "サンフレッチェ広島",
+        "清水エスパルス",
+        "VAR",
+        "判定"
+      ],
+      "text": "2026年4月11日に行われたサンフレッチェ広島対清水エスパルス戦で、シュートがゴールラインを割ったかどうかのVAR判定が物議を醸しました。清水のGK梅田透吾に防がれ、最終的にノーゴール判定となったこのシュートを放った広島の選手は誰でしょうか？",
+      "options": [
+        "ジャーメイン良",
+        "大橋祐紀",
+        "満田誠",
+        "加藤陸次樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年4月11日の試合で、ジャーメイン良の放ったシュートを清水のGK梅田透吾が掻き出しました。VARでの確認が行われましたが、最終的にノーゴールという判定になり、ファンの間で物議を醸しました。",
+      "trivia": "この試合が行われた2026年のJリーグは特別シーズンとして「百年構想リーグ」という名称で開催され、引き分けの場合にPK戦が導入されるという新しい試みが行われています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-11",
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "JFA審判委員会",
+        "レフェリング",
+        "ルール"
+      ],
+      "text": "2026年4月8日、JFA審判委員会がレフェリーブリーフィングを実施しました。今季のJリーグにおいて、選手の安全に対して危険性を感じさせるとして特に増加を指摘し、警鐘を鳴らしたプレーは何でしょうか？",
+      "options": [
+        "危険なタックル",
+        "ペナルティエリア内でのシミュレーション",
+        "過剰な異議申し立て",
+        "不必要に腕を広げるブロック"
+      ],
+      "answerIndex": 0,
+      "explanation": "JFA審判委員会は2026年4月8日のブリーフィングで、今季のJリーグにおいて選手の安全を脅かす「危険なタックル」が増加していると指摘し、本当にフェアなチャレンジかどうか見極めるよう警鐘を鳴らしました。",
+      "trivia": "JFA審判委員会は定期的にメディア向けのレフェリーブリーフィングを開催し、実際のプレー映像を用いながら判定基準の透明性確保と理解促進に努めています。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "シーズン移行",
+        "秋春制",
+        "野々村芳和"
+      ],
+      "text": "2026年4月13日に公開されたインタビューで、野々村芳和Jリーグチェアマンは、2026年8月から開始される「秋春制」へのシーズン移行について、最大の理由として何を挙げていたでしょうか？",
+      "options": [
+        "真夏の厳しい環境を避けるため",
+        "ヨーロッパの移籍市場と期間を合わせるため",
+        "AFCチャンピオンズリーグの開催時期に対応するため",
+        "日本代表の活動スケジュールを確保するため"
+      ],
+      "answerIndex": 0,
+      "explanation": "野々村芳和チェアマンは2026年4月13日のインタビューにおいて、8月からのシーズン移行（秋春制）の最大の理由として「真夏の過酷な環境を避け、選手のパフォーマンスレベルを保つため」と明言しました。",
+      "trivia": "従来の春秋制シーズンでは、猛暑となる8月の試合で選手のパフォーマンスデータが著しく低下することがデータサイエンスの観点からも課題として指摘されていました。",
+      "referenceDate": "2026-04-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-04-13",
+        "expiryDate": "2026-04-20",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
