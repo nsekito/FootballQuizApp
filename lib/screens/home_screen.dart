@@ -21,6 +21,7 @@ import '../widgets/rank_icon_widget.dart';
 import 'home/category_section.dart';
 import '../providers/notification_provider.dart';
 import '../providers/admin_mode_provider.dart';
+import '../providers/sound_effects_enabled_provider.dart';
 import '../providers/login_bonus_provider.dart';
 import '../constants/game_config.dart';
 import '../utils/rewarded_ad_helper.dart';
@@ -452,6 +453,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
   }
 
   Widget _buildHeader(BuildContext context) {
+    final soundEffectsOn = ref.watch(soundEffectsEnabledProvider);
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
       decoration: BoxDecoration(
@@ -533,24 +535,41 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
               ),
             ],
           ),
-          // 管理者設定ボタン（管理者権限がある場合のみ表示）
-          if (ref.watch(isAdminProvider))
-            GestureDetector(
-              onTap: () => context.push('/admin-settings'),
-              child: Container(
-                width: 40,
-                height: 40,
-                decoration: const BoxDecoration(
-                  color: AppColors.stitchEmerald,
-                  shape: BoxShape.circle,
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              IconButton(
+                tooltip: soundEffectsOn
+                    ? '効果音をオフにする'
+                    : '効果音をオンにする',
+                icon: Icon(
+                  soundEffectsOn ? Icons.volume_up : Icons.volume_off,
+                  color: AppColors.techIndigo,
                 ),
-                child: const Icon(
-                  Icons.admin_panel_settings,
-                  color: Colors.white,
-                  size: 20,
-                ),
+                onPressed: () => ref
+                    .read(soundEffectsEnabledProvider.notifier)
+                    .toggle(),
               ),
-            ),
+              // 管理者設定ボタン（管理者権限がある場合のみ表示）
+              if (ref.watch(isAdminProvider))
+                GestureDetector(
+                  onTap: () => context.push('/admin-settings'),
+                  child: Container(
+                    width: 40,
+                    height: 40,
+                    decoration: const BoxDecoration(
+                      color: AppColors.stitchEmerald,
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Icon(
+                      Icons.admin_panel_settings,
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                  ),
+                ),
+            ],
+          ),
         ],
       ),
     );

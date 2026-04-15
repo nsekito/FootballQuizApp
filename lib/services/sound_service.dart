@@ -6,8 +6,12 @@ import 'package:flutter/foundation.dart';
 /// [AssetSource] のパスは [AudioCache] のデフォルト接頭辞 `assets/` に対する
 /// **相対パス**（例: `sounds/foo.mp3`）とすること。
 class SoundService {
-  SoundService() : _player = AudioPlayer();
+  SoundService({
+    bool Function()? isSoundEffectsEnabled,
+  })  : _isSoundEffectsEnabled = isSoundEffectsEnabled ?? (() => true),
+        _player = AudioPlayer();
 
+  final bool Function() _isSoundEffectsEnabled;
   final AudioPlayer _player;
   bool _configured = false;
 
@@ -26,6 +30,7 @@ class SoundService {
   }
 
   Future<void> _playAsset(String relativePath) async {
+    if (!_isSoundEffectsEnabled()) return;
     try {
       await _ensureConfigured();
       await _player.stop();

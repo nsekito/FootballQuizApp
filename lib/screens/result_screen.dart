@@ -802,13 +802,25 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                         ? '広告を読み込み中...'
                         : !_adHelper.isAdReady
                             ? '広告を準備中...'
-                            : '広告を見て報酬を2倍にする',
+                            : '広告を見て報酬を受け取る',
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: Text(
+                'この画面でのみ報酬を加算できます',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.grey.shade600,
+                  height: 1.35,
+                ),
               ),
             ),
             const SizedBox(height: 16),
@@ -830,7 +842,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                     Icon(Icons.home, size: 20, color: Colors.grey.shade600),
                     const SizedBox(width: 8),
                     Text(
-                      'トップへ戻る（報酬は獲得できません）',
+                      'ホームに戻る（報酬は受け取れません）',
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
