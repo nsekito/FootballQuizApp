@@ -1,0 +1,1040 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-03T21:54:55Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-05-04",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "インテル",
+        "優勝",
+        "スクデット"
+      ],
+      "text": "2026年5月3日、パルマに2-0で勝利し、通算21回目のセリエA優勝（スクデット）を決めたクラブはどこでしょう？",
+      "options": [
+        "インテル",
+        "ユヴェントス",
+        "ACミラン",
+        "ナポリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテルはパルマ戦の勝利により、2位以下に追いつかれない勝ち点差をつけ、3試合を残して21回目のリーグ優勝を飾りました。",
+      "trivia": "インテルがホームのサン・シーロでリーグ優勝を決めたのは、実に1989年以来の出来事でした。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "タイトル争い"
+      ],
+      "text": "2026年5月2日、フラムに3-0で快勝し、マンチェスター・シティにプレッシャーをかけてプレミアリーグの首位を走っているチームはどこでしょう？",
+      "options": [
+        "アーセナル",
+        "リヴァプール",
+        "チェルシー",
+        "トッテナム"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは前半だけでブカヨ・サカの1得点とヴィクトル・ギョケレスの2得点が生まれ、フラムを圧倒しました。",
+      "trivia": "ブカヨ・サカが同じ試合でゴールとアシストの両方を記録したのは、2024年以来となる久々の出来事でした。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-02",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ブンデスリーガ",
+        "シャルケ",
+        "昇格"
+      ],
+      "text": "2026年5月2日、フォルトゥナ・デュッセルドルフに1-0で勝利し、3年ぶりのブンデスリーガ1部昇格を決めた名門クラブはどこでしょう？",
+      "options": [
+        "シャルケ",
+        "ハンブルガーSV",
+        "ヘルタ・ベルリン",
+        "ヴェルダー・ブレーメン"
+      ],
+      "answerIndex": 0,
+      "explanation": "シャルケはこの勝利で1部への自動昇格を確定させ、翌日にはライバルチームの敗戦により2部リーグ優勝も決まりました。",
+      "trivia": "今季のドイツ2部ではエルヴェアスベルクも大躍進を見せ、シャルケと共に1部自動昇格圏内につけています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-02",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "レヴァンドフスキ"
+      ],
+      "text": "2026年5月2日、アウェーでオサスナに2-1で勝利し、ラ・リーガ優勝に王手をかけたクラブはどこでしょう？",
+      "options": [
+        "バルセロナ",
+        "レアル・マドリード",
+        "アトレティコ・マドリード",
+        "ジローナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナはロベルト・レヴァンドフスキとフェラン・トーレスの終盤のゴールでオサスナを下し、リーグ優勝へ大きく前進しました。",
+      "trivia": "この試合の勝利により、バルセロナはリーグ戦での連勝を「9」に伸ばし、圧倒的な強さを見せています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-02",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "ACミラン",
+        "退場"
+      ],
+      "text": "2026年5月3日のサッスオーロ戦で0-2と敗れ、来季のチャンピオンズリーグ出場権争いで苦境に立たされたACミランですが、前半24分に退場処分を受けたイングランド人DFは誰でしょう？",
+      "options": [
+        "フィカヨ・トモリ",
+        "マリック・チャウ",
+        "ピエール・カルル",
+        "ダヴィデ・カラブリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "フィカヨ・トモリが前半のうちに2枚目のイエローカードを受けて退場となり、数的不利となったミランはサッスオーロに完敗しました。",
+      "trivia": "この敗戦によりミランは直近7試合で4敗目を喫し、アレッグリ監督へのプレッシャーが高まっています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "サンダーランド",
+        "レッドカード",
+        "珍事"
+      ],
+      "text": "2026年5月2日のプレミアリーグ（サンダーランド対ウォルバーハンプトン戦）で、サンダーランドのDFダン・バラードが一発退場となりました。近年のリーグで増加傾向にある、その反則の理由はどれでしょう？",
+      "options": [
+        "相手の髪の毛を引っ張ったため",
+        "相手に噛みついたため",
+        "観客席に向かって暴言を吐いたため",
+        "意図的に手で決定機を阻止したため"
+      ],
+      "answerIndex": 0,
+      "explanation": "ダン・バラードはウルブスのFWトル・アロコダレの髪の毛を引っ張ってしまい、レッドカードを提示されました。",
+      "trivia": "今シーズンのプレミアリーグにおいて「髪を引っ張る反則」での退場者は、なんとこれで3人目となりました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-02",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "PSG",
+        "バイエルン"
+      ],
+      "text": "2026年4月28日に行われたUEFAチャンピオンズリーグ準決勝1stレグで、バイエルン・ミュンヘンとの計9ゴールが生まれる乱打戦を5-4で制したクラブはどこでしょう？",
+      "options": [
+        "パリ・サンジェルマン",
+        "レアル・マドリード",
+        "マンチェスター・シティ",
+        "アーセナル"
+      ],
+      "answerIndex": 0,
+      "explanation": "パルク・デ・プランスで行われた第1戦は、両チームの攻撃陣が爆発し、ホームのパリ・サンジェルマンが5-4で先勝しました。",
+      "trivia": "ルイス・エンリケ監督率いるPSGは、守備面の批判を受けながらも超攻撃的なスタイルでこのビッグマッチを制しました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-28",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ブンデスリーガ",
+        "ボルシアMG",
+        "ドルトムント"
+      ],
+      "text": "2026年5月3日、ボルシア・ドルトムントを1-0で下し、ブンデスリーガ残留を決めたボルシア・メンヒェングラートバッハの決勝点を挙げた選手は誰でしょう？",
+      "options": [
+        "ハリス・タバコヴィッチ",
+        "ティム・クラインディーンスト",
+        "アラサン・プレア",
+        "ロビン・ハック"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハリス・タバコヴィッチが試合終盤に劇的なゴールを決め、強豪ドルトムントから貴重な勝ち点3を奪って残留を確定させました。",
+      "trivia": "同じ日にはマインツも勝利を収めて残留を決めており、下位争いはヴォルフスブルクやザンクトパウリなどに絞られました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "インテル",
+        "優勝",
+        "スタッツ"
+      ],
+      "text": "2026年5月3日にインテルのリーグ優勝を決定づけたパルマ戦（2-0）で、後半にダメ押しとなる2点目のゴールを挙げた37歳のベテランMFは誰でしょう？",
+      "options": [
+        "ヘンリク・ムヒタリアン",
+        "ハカン・チャルハノール",
+        "ニコロ・バレッラ",
+        "ダヴィデ・フラッテージ"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半終了間際にマルクス・テュラムが先制し、後半80分にラウタロ・マルティネスのパスを受けたヘンリク・ムヒタリアンが追加点を決めました。",
+      "trivia": "この試合でアシストを記録したラウタロ・マルティネスは、怪我からの復帰戦をベンチスタートから見事に飾りました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "ブレントフォード",
+        "得点ランキング"
+      ],
+      "text": "2026年5月2日、ウェストハムに3-0で大勝したブレントフォードで、今季リーグ戦22ゴール目となるPKを決めたブラジル人ストライカーは誰でしょう？",
+      "options": [
+        "イゴール・チアゴ",
+        "イヴァン・トニー",
+        "ブライアン・ムベウモ",
+        "ヨアネ・ウィサ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イゴール・チアゴは後半54分にペナルティキックを沈め、自身の今季ゴール数を22に伸ばしてチームの大勝に貢献しました。",
+      "trivia": "イゴール・チアゴはクラブ・ブルッヘからブレントフォードに加入して以降、見事な得点力で前線の絶対的エースとして君臨しています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-02",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "インテル",
+        "優勝"
+      ],
+      "text": "2026年5月3日、パルマに2-0で勝利して2025-26シーズンのセリエA優勝（通算21回目）を決めたクラブはどこでしょう？",
+      "options": [
+        "インテル",
+        "ナポリ",
+        "ACミラン",
+        "ユヴェントス"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテルが残り3試合を残して2位ナポリに12ポイントの差をつけ、通算21回目のスクデット（セリエA優勝）を獲得しました。",
+      "trivia": "インテルは昨シーズン、タイトル獲得まであと一歩のところでナポリに及ばず涙を飲みましたが、今季は圧倒的な強さでリーグを制覇しました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・シティ",
+        "アーリング・ハーランド"
+      ],
+      "text": "2026年5月上旬時点で、2025-26シーズンのプレミアリーグ得点ランキング首位（24ゴール）に立っているマンチェスター・シティの選手は誰でしょう？",
+      "options": [
+        "アーリング・ハーランド",
+        "モハメド・サラー",
+        "アントワーヌ・セメニョ",
+        "ジョアン・ペドロ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティのアーリング・ハーランドが24ゴールを挙げ、自身3度目となる得点王（ゴールデンブーツ）獲得に向けて首位を走っています。",
+      "trivia": "ハーランドはプレミアリーグ参戦1年目の2022-23シーズンに36ゴールというリーグ記録を打ち立てており、常に得点王争いの中心にいます。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "PSG",
+        "バイエルン・ミュンヘン"
+      ],
+      "text": "2026年4月28日に行われた2025-26シーズンのUEFAチャンピオンズリーグ準決勝第1戦、パリ・サンジェルマン対バイエルン・ミュンヘンの試合はどういった結果になったでしょう？",
+      "options": [
+        "5-4でPSGが勝利",
+        "3-3の引き分け",
+        "2-1でバイエルンが勝利",
+        "1-0でPSGが勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "パルク・デ・プランスで行われた準決勝第1戦は、両チーム合わせて9ゴールが生まれる壮絶な乱打戦となり、PSGが5-4で先勝しました。",
+      "trivia": "この両者は2019-20シーズンのチャンピオンズリーグ決勝でも対戦しており、その時はバイエルンが1-0で勝利して優勝を果たしています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-28",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリー",
+        "キリアン・エムバペ"
+      ],
+      "text": "2026年4月末時点での2025-26シーズン ラ・リーガ得点ランキングで、24ゴールを挙げて首位を走っているレアル・マドリーの選手は誰でしょう？",
+      "options": [
+        "キリアン・エムバペ",
+        "ヴィニシウス・ジュニオール",
+        "ジュード・ベリンガム",
+        "ロドリゴ"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリーに加入して初のシーズンを戦っているキリアン・エムバペが、順調にゴールを重ねてピチーチ賞（得点王）の最有力候補となっています。",
+      "trivia": "エムバペはPSG時代からゴールを量産し続けており、フランスのリーグ・アンでは過去に6回も得点王に輝いた実績を持っています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "インテル",
+        "クリスティアン・キヴ"
+      ],
+      "text": "2026年5月3日にインテルをセリエA優勝に導いた監督で、現役時代にも同クラブでプレーし2010年の「トレブル（3冠）」達成に貢献したルーマニア出身の人物は誰でしょう？",
+      "options": [
+        "クリスティアン・キヴ",
+        "デヤン・スタンコビッチ",
+        "ハビエル・サネッティ",
+        "エステバン・カンビアッソ"
+      ],
+      "answerIndex": 0,
+      "explanation": "元ルーマニア代表DFのクリスティアン・キヴは、ユースチームの指導を経てトップチームの監督に就任し、見事に古巣へスクデットをもたらしました。",
+      "trivia": "キヴは現役時代に頭部を負傷する大ケガを負いましたが、復帰後は安全のためにヘッドギアを着用してプレーを続けたことでもよく知られています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "ブレントフォード",
+        "イゴール・チアゴ"
+      ],
+      "text": "2026年5月上旬時点の2025-26シーズン プレミアリーグ得点ランキングで、首位のアーリング・ハーランドに次ぐ22ゴールを挙げ、2位につけているブレントフォードのFWは誰でしょう？",
+      "options": [
+        "イゴール・チアゴ",
+        "ブライアン・ムベウモ",
+        "ヨアン・ウィサ",
+        "イヴァン・トニー"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブラジル人ストライカーのイゴール・チアゴは、ブレントフォードで得点源として見事な活躍を見せ、プレミアリーグの得点王争いに食い込んでいます。",
+      "trivia": "イゴール・チアゴは2023-24シーズンにベルギーのクラブ・ブルッヘで公式戦29ゴールを挙げる大ブレイクを果たし、プレミアリーグへのステップアップを勝ち取りました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "堂安律",
+        "フランクフルト",
+        "ブンデスリーガ"
+      ],
+      "text": "2026年5月2日に行われたブンデスリーガ第32節で、堂安律が所属するフランクフルトはハンブルガーSVに敗れました。この試合、堂安律が出場しなかった理由は何でしょう？",
+      "options": [
+        "累積警告による出場停止",
+        "負傷による長期離脱",
+        "監督との戦術的対立",
+        "移籍交渉のため"
+      ],
+      "answerIndex": 0,
+      "explanation": "堂安は前節のアウクスブルク戦でゴールを決める活躍を見せましたが、この試合は累積警告のため欠場となりました。",
+      "trivia": "右サイドからのカットインや強烈な左足のシュートを得意とする堂安律は、フランクフルトでも攻撃の核として背番号20を背負ってプレーしています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-02",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "伊藤洋輝",
+        "バイエルン・ミュンヘン",
+        "ブンデスリーガ"
+      ],
+      "text": "2026年5月2日に行われたブンデスリーガのハイデンハイム戦で、バイエルン・ミュンヘンの伊藤洋輝は後半アディショナルタイムに何に関与してチームを同点に導いたでしょうか？",
+      "options": [
+        "オウンゴールを誘発した",
+        "自ら直接フリーキックを決めた",
+        "PKを獲得した",
+        "決勝点となるアシストを記録した"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハイデンハイム戦で4戦連続のフル出場を果たした伊藤は、後半アディショナルタイム11分に執念のオウンゴールを誘発し、同点劇に貢献しました。",
+      "trivia": "伊藤洋輝は左利きで、センターバックだけでなく左サイドバックとしても高い能力を発揮し、選手層の厚いバイエルンでも重宝されています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-02",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "ブライトン",
+        "プレミアリーグ"
+      ],
+      "text": "2026年5月2日に行われたプレミアリーグ第35節ニューカッスル戦に出場したブライトンの三笘薫ですが、この試合の途中で監督の指示によりいつもと違うどのポジションでプレーしたでしょうか？",
+      "options": [
+        "右サイド",
+        "センターフォワード",
+        "トップ下",
+        "左サイドバック"
+      ],
+      "answerIndex": 0,
+      "explanation": "いつも通り左サイドで先発した三笘でしたが、試合途中からヒュルツェラー監督の意図により右サイドにポジションを移してプレーしました。",
+      "trivia": "三笘薫の代名詞といえば「左サイドからのカットイン」ですが、戦術の幅を広げるために右サイドでのプレーも求められています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-02",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "伊藤洋輝",
+        "バイエルン・ミュンヘン",
+        "チャンピオンズリーグ"
+      ],
+      "text": "2026年4月29日に行われたUEFAチャンピオンズリーグ準決勝のファーストレグで、伊藤洋輝が所属するバイエルン・ミュンヘンが対戦した相手クラブはどこでしょう？",
+      "options": [
+        "パリ・サンジェルマン",
+        "レアル・マドリード",
+        "マンチェスター・シティ",
+        "インテル"
+      ],
+      "answerIndex": 0,
+      "explanation": "準々決勝でレアル・マドリードを下したバイエルンは、準決勝でフランスの強豪パリ・サンジェルマンと対戦しました。",
+      "trivia": "チャンピオンズリーグという世界最高峰の舞台で、日本人ディフェンダーが強豪クラブの主力としてプレーするのは歴史的な快挙です。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-29",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "板倉滉",
+        "アヤックス",
+        "エールディビジ"
+      ],
+      "text": "2026年5月3日に行われたエールディビジ第32節のPSV戦で、アヤックスに所属する日本代表DF板倉滉はどのポジションで先発出場したでしょうか？",
+      "options": [
+        "ボランチ",
+        "センターバック",
+        "右サイドバック",
+        "トップ下"
+      ],
+      "answerIndex": 0,
+      "explanation": "冨安健洋も所属するアヤックスで、この日の板倉はボランチ（守備的ミッドフィルダー）として先発出場し、宿敵PSVとの一戦を戦いました。",
+      "trivia": "板倉滉は本職のセンターバックだけでなく、ボランチとしても高いパス精度と展開力を見せることができ、チームの状況に応じて起用されます。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・シティ",
+        "移籍",
+        "ジョン・ストーンズ"
+      ],
+      "text": "2026年5月上旬、マンチェスター・シティに所属するイングランド代表DFジョン・ストーンズが今夏でクラブを退団することが報じられました。ストーンズはマンチェスター・シティに何年在籍したことになるでしょう？",
+      "options": [
+        "10年",
+        "8年",
+        "12年",
+        "14年"
+      ],
+      "answerIndex": 0,
+      "explanation": "2016年夏にエヴァートンからマンチェスター・シティに加入したジョン・ストーンズは、約10年にわたってクラブの最終ラインを支え、数々のタイトル獲得に貢献してきました。2026年5月の負傷者・移籍情報の更新の中で彼の退団がプレミアリーグ関連ニュースで示唆されました。",
+      "trivia": "ストーンズはシティ加入時、ディフェンダーとして当時のイングランド史上最高額となる移籍金で加入し、大きな話題を呼びました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "移籍",
+        "ダニ・カルバハル"
+      ],
+      "text": "2026年5月3日の報道で、レアル・マドリードが契約延長のオファーを提示せず、今夏での退団が確実となったと報じられた長年右サイドバックを務めたベテラン選手は誰でしょう？",
+      "options": [
+        "ダニ・カルバハル",
+        "ルーカス・バスケス",
+        "ナチョ・フェルナンデス",
+        "フェルラン・メンディ"
+      ],
+      "answerIndex": 0,
+      "explanation": "長らくクラブのキャプテンの一人としても活躍してきたダニ・カルバハルに対し、レアル・マドリードは新たな契約延長のオファーを行わない方針を決定し、今夏での退団が濃厚となりました。クラブは後継者の獲得に動くと報じられています。",
+      "trivia": "レアル・マドリードの下部組織出身のカルバハルは、一度ドイツのレヴァークーゼンへ移籍した後に買い戻され、以降は不動の右サイドバックとして黄金期を支えました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・ユナイテッド",
+        "契約延長",
+        "コビー・メイヌー"
+      ],
+      "text": "2026年5月上旬、マンチェスター・ユナイテッドはイングランド代表MFコビー・メイヌーとの新たな契約締結を発表しました。中盤の柱になりつつある彼が、現在「最後のレッスン」を受けていると報じられた、今夏での退団が確実視されるチームメイトのベテランMFは誰でしょう？",
+      "options": [
+        "カゼミロ",
+        "クリスティアン・エリクセン",
+        "ブルーノ・フェルナンデス",
+        "スコット・マクトミネイ"
+      ],
+      "answerIndex": 0,
+      "explanation": "今夏での退団が決定的となっているカゼミロから指導を受けているとされるメイヌーは、ユナイテッドの中盤の未来を担う存在として新たな契約にサインしました。2026年5月に行われたリヴァプール戦などでの活躍も高く評価されています。",
+      "trivia": "コビー・メイヌーはユナイテッドのアカデミー出身で、10代の頃から大舞台での強さを見せ、イングランド代表にも定着しつつある次世代のスターです。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "トッテナム",
+        "負傷",
+        "ハビ・シモンズ"
+      ],
+      "text": "2026年4月末の報道で、トッテナムに所属するオランダ代表MFハビ・シモンズが試合中に前十字靭帯（ACL）断裂の重傷を負ったことが発表されました。彼がこの負傷を負うことになった対戦相手のクラブはどこでしょう？",
+      "options": [
+        "ウォルバーハンプトン",
+        "アーセナル",
+        "チェルシー",
+        "アストン・ヴィラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年4月25日に行われたウォルバーハンプトン（ウルブス）との試合でハビ・シモンズは負傷交代し、その後の検査で前十字靭帯断裂という非常に重い診断が下されました。チームにとって終盤戦の大きな痛手となっています。",
+      "trivia": "今シーズンのトッテナムは、他の選手たちも同様に膝の重傷を負っており、一部メディアからは「ホーム戦の勝利数よりも膝の重傷者の数の方が多い」と揶揄される事態になっています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・ユナイテッド",
+        "移籍",
+        "ベンヤミン・シェシュコ"
+      ],
+      "text": "2026年5月の報道で、マンチェスター・ユナイテッドからの退団が確実となっているカゼミロについて、「彼のような選手が必要だ」とその喪失を嘆くコメントを残した、チームメイトのストライカーは誰でしょう？",
+      "options": [
+        "ベンヤミン・シェシュコ",
+        "ラスムス・ホイルンド",
+        "アレクサンデル・イサク",
+        "ジョシュア・ザークツィー"
+      ],
+      "answerIndex": 0,
+      "explanation": "イギリス紙の2026年5月3日の報道で、マンチェスター・ユナイテッドでプレーするベンヤミン・シェシュコが、ベテランMFカゼミロの退団を惜しむコメントを残したことが伝えられました。シェシュコはチームの重要な戦力として活躍しています。",
+      "trivia": "この記事ではユナイテッドがリヴァプールに勝利して来季のチャンピオンズリーグ復帰を決めたことも触れられており、シェシュコの体に当たって入るという珍しいゴールシーンも話題になりました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "PSG",
+        "バイエルン・ミュンヘン",
+        "チャンピオンズリーグ"
+      ],
+      "text": "2026年4月28日に行われたUEFAチャンピオンズリーグ準決勝1stレグで、両チーム合計9ゴールという歴史的な乱打戦を5-4で制したクラブはどれでしょう？",
+      "options": [
+        "パリ・サンジェルマン (PSG)",
+        "バイエルン・ミュンヘン",
+        "レアル・マドリード",
+        "アーセナル"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年4月28日に行われたCL準決勝1stレグで、PSGはバイエルン・ミュンヘンに5-4で勝利しました。欧州の準決勝で両チームが4ゴール以上を挙げたのは史上初の出来事でした。",
+      "trivia": "欧州カップ戦の準決勝において1試合で9ゴールが生まれたのは、1960年のアイントラハト・フランクフルト対レンジャーズ（6-3）以来の最多タイ記録です。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-28",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "アーセナル",
+        "アトレティコ・マドリード",
+        "VAR",
+        "チャンピオンズリーグ"
+      ],
+      "text": "2026年4月29日に行われたUEFAチャンピオンズリーグ準決勝1stレグのアトレティコ・マドリード対アーセナル戦（1-1）で、アルテタ監督が「ルールに反している」と激怒したVAR判定がありました。一度はPKを獲得したものの、判定が覆されたアーセナルの選手は誰でしょう？",
+      "options": [
+        "エベレチ・エゼ",
+        "ブカヨ・サカ",
+        "マルティン・ウーデゴール",
+        "デクラン・ライス"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半途中に投入されたアーセナルのエゼは、ペナルティエリア内で倒されて一度はPK判定を受けましたが、長いVARチェックの末に判定が取り消され、アルテタ監督が強く抗議しました。",
+      "trivia": "この試合ではアトレティコのシメオネ監督も第4の審判に対して激しい抗議を行っており、両軍の監督の振る舞いとVAR判定が大きな話題を呼びました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-29",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ルイス・エンリケ",
+        "PSG",
+        "チャンピオンズリーグ",
+        "記録"
+      ],
+      "text": "2026年4月28日のUEFAチャンピオンズリーグ準決勝バイエルン・ミュンヘン戦で5-4の勝利を収めたPSGのルイス・エンリケ監督は、この試合で大会史上最速となるCL通算50勝を達成しました。彼がこの記録に到達するまでに要した試合数はいくつでしょう？",
+      "options": [
+        "77試合",
+        "82試合",
+        "89試合",
+        "94試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "ルイス・エンリケ監督はわずか77試合目でCL通算50勝に到達し、これまでの大会記録を更新して史上最速での偉業達成となりました。",
+      "trivia": "ルイス・エンリケはバルセロナ監督時代の2014-15シーズンに、就任1年目でいきなりチャンピオンズリーグ優勝を果たしています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-28",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "uel",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ヨーロッパリーグ",
+        "ノッティンガム・フォレスト",
+        "アストン・ヴィラ",
+        "クリス・ウッド"
+      ],
+      "text": "2026年4月30日に行われたUEFAヨーロッパリーグ準決勝1stレグで、ノッティンガム・フォレストはアストン・ヴィラに1-0で先勝しました。VARチェックを経て71分に決勝点となるPKを決めた選手は誰でしょう？",
+      "options": [
+        "クリス・ウッド",
+        "タイウォ・アウォニイ",
+        "カラム・ハドソン＝オドイ",
+        "モルガン・ギブス＝ホワイト"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半71分、長いVARチェックの末にハンドの判定となり、クリス・ウッドがPKを決めてノッティンガム・フォレストが1-0で勝利を収めました。",
+      "trivia": "この勝利により、ノッティンガム・フォレストは実に46年ぶりとなる主要な欧州カップ戦での決勝進出に向けて大きな一歩を踏み出しました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-30",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    }
+  ]
+}

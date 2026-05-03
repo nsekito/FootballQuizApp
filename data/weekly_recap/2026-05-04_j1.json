@@ -1,0 +1,1043 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-03T21:49:43Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-05-04",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "浦和レッズ",
+        "川崎フロンターレ",
+        "監督交代",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年4月29日に行われた明治安田J1百年構想リーグ第13節の川崎F戦で、スコルジャ監督の後任として浦和の暫定監督を務め、連敗ストップとなる勝利をもたらしたのは誰？",
+      "options": [
+        "田中達也",
+        "西野朗",
+        "大槻毅",
+        "堀孝史"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和はマチェイ・スコルジャ監督との契約解除後、U-21チーム監督兼トップチームアシスタントコーチの田中達也氏が暫定監督に就任しました。初陣となった川崎F戦を2-0で制し、連敗を「7」でストップさせています。",
+      "trivia": "田中達也氏は現役時代に「ワンダーボーイ」として浦和レッズで長く活躍し、多くのサポーターに愛されたレジェンドです。暫定ながら指揮官としての初陣勝利にスタジアムは大いに沸きました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-29",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "鹿島アントラーズ",
+        "FC町田ゼルビア",
+        "PK戦",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年5月3日に行われた明治安田J1百年構想リーグ第14節の鹿島vs町田は、1-1のままPK戦に突入しました。このPK戦で相手のキックをストップし、鹿島を勝利に導いたゴールキーパーは誰？",
+      "options": [
+        "早川友基",
+        "沖悠哉",
+        "山田大樹",
+        "パク・ウィジョン"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合は鹿島がレオ・セアラのゴールで先制するも町田が追いつき、1-1のままPK戦へ突入しました。PK戦では鹿島のGK早川友基が町田の4人目のキックを見事にストップし、勝利を引き寄せました。",
+      "trivia": "明治安田J1百年構想リーグは2026年夏からの「秋春制」移行に向けたハーフシーズンの特別大会で、90分で決着がつかない場合は引き分けではなくPK戦で勝敗を決するレギュレーションが採用されています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "名古屋グランパス",
+        "V・ファーレン長崎",
+        "逆転勝利",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年5月3日に行われた明治安田J1百年構想リーグ第14節の長崎戦で、1点のビハインドから2ゴールを挙げ、名古屋を逆転勝利に導いたベテランFWは誰？",
+      "options": [
+        "永井謙佑",
+        "パトリック",
+        "キャスパー・ユンカー",
+        "山岸智也"
+      ],
+      "answerIndex": 0,
+      "explanation": "名古屋は前半29分に長崎のチアゴ・サンタナに先制を許しましたが、35分と54分に永井謙佑が連続ゴールを奪い、敵地で2-1の逆転勝利を収めました。",
+      "trivia": "永井謙佑は圧倒的なスピードを武器に長年Jリーグで活躍していますが、ベテランになってもそのスプリント能力は健在で、前線からの献身的な守備でもチームに欠かせない存在です。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "柏レイソル",
+        "東京ヴェルディ",
+        "ボール支配率",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年5月3日の明治安田J1百年構想リーグ第14節で、柏は東京Vに0-1で敗れました。ボール支配率70%を記録しながらも無得点で敗れた柏は、これでリーグ戦何連敗となったでしょう？",
+      "options": [
+        "5連敗",
+        "3連敗",
+        "7連敗",
+        "9連敗"
+      ],
+      "answerIndex": 0,
+      "explanation": "リカルド・ロドリゲス監督率いる柏は、敵地でポゼッション7割を超えるなどボールを握りましたが、後半終了間際に東京Vの新井悠太に決勝点を奪われ、泥沼の5連敗となりました。",
+      "trivia": "対戦相手の東京Vは、城福浩監督が途中出場の選手で試合を決める見事な采配を見せました。チーム全体で粘り強く戦い抜き、この勝利で東京Vは4連勝を達成しています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "浦和レッズ",
+        "川崎フロンターレ",
+        "途中出場",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年4月29日に行われた明治安田J1百年構想リーグ第13節の浦和vs川崎Fで、途中出場からわずか1分後の71分にダメ押しとなる追加点を決めた浦和の選手は誰？",
+      "options": [
+        "小森飛絢",
+        "松尾佑介",
+        "オナイウ阿道",
+        "安部裕葵"
+      ],
+      "answerIndex": 0,
+      "explanation": "マテウス・サヴィオのゴールで先制した浦和は、70分に金子拓郎に代わって小森飛絢を投入。その直後の71分、小森がボックス外から左足を振り抜き、負傷復帰を自ら祝う見事な追加点を決めました。",
+      "trivia": "ジェフユナイテッド千葉でプロデビューし、ルーキーイヤーから得点を量産してストライカーとしての才能を開花させた小森飛絢は、その得点感覚の高さから多くのJ1クラブの的となっていました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-29",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "京都サンガF.C.",
+        "ガンバ大阪",
+        "移籍後初ゴール",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年4月29日に行われた明治安田J1百年構想リーグ第13節の京都vsG大阪で、スコアレスで迎えた89分に豪快なミドルシュートを突き刺し、京都に勝利をもたらした新加入選手は誰？",
+      "options": [
+        "新井晴樹",
+        "平戸太貴",
+        "鈴木冬一",
+        "原大智"
+      ],
+      "answerIndex": 0,
+      "explanation": "拮抗した展開でPK戦突入の気配も漂っていた89分、途中出場の新井晴樹が左サイドからのドリブルで右足を一閃。ゴール右上に突き刺さる見事なシュートは、彼の京都加入後初ゴールとなりました。",
+      "trivia": "新井晴樹は圧倒的なスプリント力と推進力を持つサイドアタッカーで、過去にはクロアチアのクラブに期限付き移籍し、欧州でのプレー経験も積んでいます。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-29",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "横浜F・マリノス",
+        "ジェフユナイテッド千葉",
+        "劇的勝利",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年4月29日の明治安田J1百年構想リーグ第13節、千葉vs横浜FMは乱打戦となりました。後半アディショナルタイム（90+10分）に劇的な決勝点を奪い、横浜FMを3-2の勝利に導いた選手は誰？",
+      "options": [
+        "呉屋大翔",
+        "アンデルソン・ロペス",
+        "エウベル",
+        "ヤン・マテウス"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合は千葉が主導権を握る展開もありましたが、横浜FMが徐々に修正。最後は90+10分という土壇場で途中出場の呉屋大翔がゴールを奪い、劇的な逆転勝利を収めました。",
+      "trivia": "呉屋大翔はガンバ大阪でプロ入り後、複数のJクラブを渡り歩いてきた生粋のストライカーです。ボックス内での得点感覚に優れ、勝負所での決定力は健在です。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-29",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "清水エスパルス",
+        "V・ファーレン長崎",
+        "数的不利",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年4月29日の明治安田J1百年構想リーグ第13節で清水は長崎と対戦。前半早々に退場者を出し10人となった清水ですが、前半21分に見事な先制ゴールを奪いました。このゴールを決めた若手選手は誰？",
+      "options": [
+        "嶋本悠大",
+        "北川航也",
+        "乾貴士",
+        "カルリーニョス・ジュニオ"
+      ],
+      "answerIndex": 0,
+      "explanation": "清水は前半8分という早い時間帯に退場者を出し数的不利となりました。その中で21分に嶋本悠大が強引な突破から先制ゴールを奪って意地を見せましたが、最終的には長崎に1-2で逆転負けを喫しています。",
+      "trivia": "大津高校からプロ入りした嶋本悠大は、年代別日本代表にも選ばれてきた逸材です。強引な突破など個のアイディアでチャンスを作る能力に長けています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-04-29",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "セレッソ大阪",
+        "アビスパ福岡",
+        "DFのゴール",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年5月3日に行われた明治安田J1百年構想リーグ第14節のC大阪vs福岡で、C大阪は前半終了間際（45+1分）にあるディフェンダーが貴重な同点ゴールを決めました。その選手は誰？",
+      "options": [
+        "井上黎生人",
+        "鳥海晃司",
+        "進藤亮佑",
+        "毎熊晟矢"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合は前半11分に福岡の碓井聖生が先制しましたが、C大阪は前半アディショナルタイムに井上黎生人が同点ゴールをマーク。その後スコアは動かず、PK戦の末にC大阪が勝利しました。",
+      "trivia": "井上黎生人はガイナーレ鳥取でプロキャリアをスタートさせ、J3からJ2のファジアーノ岡山、J1の京都サンガF.C.へと順調にステップアップを果たしてきた苦労人です。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "鹿島アントラーズ",
+        "FC町田ゼルビア",
+        "アシスト",
+        "J1百年構想リーグ"
+      ],
+      "text": "2026年5月3日に行われた明治安田J1百年構想リーグ第14節の鹿島vs町田で、後半50分に鹿島のレオ・セアラがヘディングで先制ゴールを決めました。このゴールをアシストした右コーナーキックを蹴った選手は誰？",
+      "options": [
+        "柴崎岳",
+        "樋口雄太",
+        "名古新太郎",
+        "松村優太"
+      ],
+      "answerIndex": 0,
+      "explanation": "スコアレスで迎えた後半50分（後半5分）、柴崎岳が蹴った精度の高い右コーナーキックにレオ・セアラが頭で合わせ、ホームのメルカリスタジアムを沸かせる先制ゴールを生み出しました。",
+      "trivia": "この日の試合は「LuckyFes × ANTLERS SPECIAL MATCH 2.0 ～茨城からアジアへ～」として開催され、ゴールデンウィークということもありチケットは完売、スタジアムは華やかな雰囲気に包まれました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1百年構想リーグ",
+        "EASTグループ",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年5月3日時点で、明治安田J1百年構想リーグのEASTグループで首位を走っているクラブはどこでしょう？",
+      "options": [
+        "鹿島アントラーズ",
+        "FC東京",
+        "FC町田ゼルビア",
+        "浦和レッズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年5月3日時点で、EASTグループは勝ち点34の鹿島アントラーズが首位に立ち、2位のFC東京（勝ち点32）と激しい順位争いを繰り広げています。",
+      "trivia": "鹿島アントラーズはEASTグループ第14節のFC町田ゼルビア戦で、90分間で1-1の引き分けの後、PK戦を4-2で制して首位をキープしました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-05-02",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "ガンバ大阪",
+        "デニス・ヒュメット",
+        "得点ランキング"
+      ],
+      "text": "2026年5月3日時点の明治安田J1百年構想リーグ得点ランキングで、8得点を挙げ単独首位に立っているガンバ大阪の外国人FWは誰でしょう？",
+      "options": [
+        "デニス・ヒュメット",
+        "エリソン",
+        "レオ・セアラ",
+        "チャヴリッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガンバ大阪のデニス・ヒュメットは、5月3日時点で8ゴールをマークし、得点ランキングのトップに立っています。ゴール後に見せるバットマンのパフォーマンスもおなじみです。",
+      "trivia": "ヒュメットはスウェーデン出身ですが、年代別代表ではトルコを選択し、U-21トルコ代表としてプレーした経験があります。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1百年構想リーグ",
+        "レギュレーション",
+        "Jリーグ"
+      ],
+      "text": "秋春制移行の端境期に開催されている特別大会「明治安田J1百年構想リーグ」の勝ち点ルールで、90分間で同点だった場合の扱いとして正しいものはどれでしょう？",
+      "options": [
+        "延長戦は行わずPK戦を実施し、勝者に勝ち点2、敗者に勝ち点1を与える",
+        "延長戦を行い、決着がつかなければPK戦を実施し、勝者に勝ち点2、敗者に勝ち点1を与える",
+        "延長戦やPK戦は行わず、両チームに勝ち点1ずつを与える",
+        "延長戦やPK戦は行わず、両チームともに勝ち点0となる"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1百年構想リーグでは完全決着方式が採用されており、90分で引き分けの場合はPK戦を実施します。勝ち点は90分勝利が3、PK勝利が2、PK敗戦が1、90分敗戦が0となっています。",
+      "trivia": "JリーグでPK戦による決着方式がレギュラーシーズンで採用されたのは、1998年シーズン以来、実に28年ぶりのことです。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1百年構想リーグ",
+        "WESTグループ",
+        "ヴィッセル神戸"
+      ],
+      "text": "2026年5月3日現在、明治安田J1百年構想リーグのWESTグループで首位に立っているのはどのクラブでしょう？",
+      "options": [
+        "ヴィッセル神戸",
+        "名古屋グランパス",
+        "ガンバ大阪",
+        "セレッソ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年5月3日時点のWESTグループでは、ヴィッセル神戸が勝ち点26で首位に立っています。名古屋グランパスとガンバ大阪が勝ち点25でそれを追う展開となっています。",
+      "trivia": "ヴィッセル神戸の直近の成績は好調を維持しており、得失点差でもグループトップとなる「+7」を記録しています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-05-03",
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1百年構想リーグ",
+        "レギュレーション",
+        "ACLE"
+      ],
+      "text": "特別大会「明治安田J1百年構想リーグ」の優勝クラブに与えられる権利として正しいものはどれでしょう？",
+      "options": [
+        "AFCチャンピオンズリーグエリート（ACLE）のリーグステージ出場権",
+        "FIFAクラブワールドカップの出場権",
+        "AFCチャンピオンズリーグ2（ACL2）の出場権",
+        "次シーズンの明治安田J1リーグでの勝ち点アドバンテージ"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1百年構想リーグの優勝クラブには、2026/27シーズンのAFCチャンピオンズリーグエリート（ACLE）における日本の第2代表としてのリーグステージ出場権が与えられます。",
+      "trivia": "ちなみに準優勝クラブには、ACLEの第5代表としてのプレリミナリーステージ出場権が与えられることになっています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "デニス・ヒュメット",
+        "ガンバ大阪",
+        "移籍"
+      ],
+      "text": "2026シーズンの明治安田J1百年構想リーグで得点を量産しているガンバ大阪のFWデニス・ヒュメットですが、彼がガンバ大阪に加入する直前に所属していたスウェーデンのクラブはどこでしょう？",
+      "options": [
+        "ユールゴーデンIF",
+        "マルメFF",
+        "IFエルフスボリ",
+        "カルマルFF"
+      ],
+      "answerIndex": 0,
+      "explanation": "スウェーデン出身でトルコにもルーツを持つデニス・ヒュメットは、2025年3月にスウェーデンのユールゴーデンIFからガンバ大阪へ完全移籍で加入しました。",
+      "trivia": "ヒュメットは189cmの長身を活かしたポストプレーだけでなく、エリア外からの強烈な右足のシュートも持ち味としており、今季のゴール量産につながっています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "引退",
+        "ツエーゲン金沢",
+        "ガンバ大阪"
+      ],
+      "text": "2026年5月1日、昨季までツエーゲン金沢に所属していたMF塚元大が2025シーズンをもって現役引退することを発表しました。彼がユースからトップ昇格を果たし、プロキャリアをスタートさせたJ1クラブはどこでしょう？",
+      "options": [
+        "ガンバ大阪",
+        "セレッソ大阪",
+        "京都サンガF.C.",
+        "ヴィッセル神戸"
+      ],
+      "answerIndex": 0,
+      "explanation": "塚元大はガンバ大阪ユースから2020年にトップチームへ昇格しました。相次ぐ怪我に苦しみ、2025シーズンをもって引退を決断しています。",
+      "trivia": "6年間の現役生活で、J1リーグ通算17試合、J3リーグ通算58試合に出場し8得点を記録しました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "FC琉球",
+        "移籍",
+        "モハメド・バイ・カマラ"
+      ],
+      "text": "2026年5月1日、FC琉球はFK Metta（ラトビア）からDFモハメド バイ カマラが完全移籍で加入することを発表しました。彼の出身国はどこでしょう？",
+      "options": [
+        "シエラレオネ",
+        "ナイジェリア",
+        "セネガル",
+        "カメルーン"
+      ],
+      "answerIndex": 0,
+      "explanation": "モハメド バイ カマラはシエラレオネ出身の21歳で、FC琉球での背番号は5に決定しました。",
+      "trivia": "2025シーズンはラトビアのトップリーグであるヴィルスリーガの「FK Metta」でプレーしていました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ヴァンフォーレ甲府",
+        "移籍",
+        "メンデス"
+      ],
+      "text": "2026年5月1日、ヴァンフォーレ甲府はあるブラジル人DFの加入を発表しました。2020年から2シーズン在籍しており、5シーズンぶりの復帰となるこの選手は誰でしょう？",
+      "options": [
+        "メンデス",
+        "エドゥアルド・マンシャ",
+        "リラ",
+        "クリスティアーノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "DFメンデスは2020年から2021年までヴァンフォーレ甲府に所属しており、今回5シーズンぶりの復帰となりました。",
+      "trivia": "190cmの長身を活かした打点の高いヘディングと、左足から繰り出される精度の高いフィードが武器のセンターバックです。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ガンバ大阪",
+        "契約解除",
+        "フィリップ・マックス"
+      ],
+      "text": "2026年4月30日、ガンバ大阪は今年3月に加入したばかりのDFフィリップ マックスとの契約を双方合意のうえで解除したと発表しました。彼は同クラブにおいてJ1リーグ戦で何試合に出場したでしょう？",
+      "options": [
+        "0試合",
+        "1試合",
+        "3試合",
+        "5試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "フィリップ マックスは今年3月に加入したものの、明治安田J1百年構想リーグでの出場は1試合もないまま退団となりました。",
+      "trivia": "わずか1ヶ月強でのスピード退団劇となり、サポーターの間でも驚きの声が上がりました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ヴィッセル神戸",
+        "負傷",
+        "扇原貴宏"
+      ],
+      "text": "2026年4月30日、ヴィッセル神戸はMF扇原貴宏が負傷し、神戸市内の病院で手術を行い無事に成功したと発表しました。診断結果は次のうちどれでしょう？",
+      "options": [
+        "右膝関節軟骨損傷",
+        "右膝前十字靭帯断裂",
+        "右腓腹筋肉離れ",
+        "左アキレス腱断裂"
+      ],
+      "answerIndex": 0,
+      "explanation": "扇原貴宏は右膝関節軟骨損傷と診断され、手術を受けました。",
+      "trivia": "扇原選手は長短の正確なパスを武器に、ヴィッセル神戸の中盤を支える重要なレフティーです。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "浦和レッズ",
+        "監督交代",
+        "田中達也"
+      ],
+      "text": "2026年4月28日、浦和レッズはマチェイ・スコルジャ監督との契約解除を発表しました。後任として今季終了まで暫定監督として指揮を執ることになったのは誰でしょう？",
+      "options": [
+        "田中達也",
+        "阿部勇樹",
+        "鈴木啓太",
+        "平川忠亮"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズはスコルジャ監督との契約解除を発表し、U-21チーム監督兼トップチームアシスタントコーチの田中達也氏が暫定的にトップチームの監督に就任することを明かしました。",
+      "trivia": "田中達也氏は現役時代に浦和レッズで長く活躍し、「ワンダーボーイ」の愛称で多くのサポーターから愛されたレジェンドです。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "グッズ",
+        "コラボ"
+      ],
+      "text": "2026年5月2日より、Jリーグとあるアパレルチェーンのコラボにより、J1全20クラブのオリジナルTシャツが販売開始されました。そのアパレルショップはどこでしょう？",
+      "options": [
+        "マックハウス",
+        "ライトオン",
+        "ユニクロ",
+        "しまむら"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグとマックハウスがコラボレーションし、J1全20クラブのアイデンティティをカジュアルなデザインへと昇華させた特別なオリジナルTシャツなどが企画・販売されました。",
+      "trivia": "応援グッズの枠を超え、デニムやチノパンに合わせやすく日常シーンでデイリー使いできるヴィンテージライクなグラフィックを採用しています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "カターレ富山",
+        "スポンサー",
+        "ユニフォーム"
+      ],
+      "text": "2026年からJリーグのユニフォームで新たに広告掲出が解禁された「腹（前面の裾部分）」スペース。4月30日にユースキン製薬と契約を結び、新規導入の“腹スポンサー”第1号となったクラブはどこでしょう？",
+      "options": [
+        "カターレ富山",
+        "ツエーゲン金沢",
+        "アルビレックス新潟",
+        "松本山雅FC"
+      ],
+      "answerIndex": 0,
+      "explanation": "カターレ富山はユースキン製薬とユニフォームパートナー契約を締結し、2026年から解禁されたユニフォームの前面裾部分（腹スポンサー）における第1号となりました。",
+      "trivia": "新規導入された腹スポンサーの規定では、掲出場所は「前面の裾部分左右2か所」で、サイズは「各40平方センチメートル以下」と定められています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "スタジアム",
+        "沖縄県",
+        "施設整備"
+      ],
+      "text": "2026年4月27日、沖縄県はスポーツコンベンションの推進に向けて「（仮称）沖縄スタジアム」整備等推進事業の実施方針等を公表しました。このJリーグ規格スタジアムは何年度の供用開始を目指しているでしょう？",
+      "options": [
+        "2031年度",
+        "2028年度",
+        "2034年度",
+        "2040年度"
+      ],
+      "answerIndex": 0,
+      "explanation": "沖縄県はスポーツ交流拠点の形成のため、2031年度の供用開始に向けたJリーグ規格スタジアム「（仮称）沖縄スタジアム」の整備に取り組んでおり、実施方針の公表を行いました。",
+      "trivia": "スタジアム整備の事業効果として、観光やスポーツ振興だけでなく、地域活性化や社会貢献、DX推進など多岐にわたる効果が見込まれています。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "浦和レッズ",
+        "マチェイ・スコルジャ",
+        "退任"
+      ],
+      "text": "2026年4月28日に浦和レッズの監督を退任したマチェイ・スコルジャ氏は、ファンへの感謝のコメントの中で「特に私の心に深く刻まれ続けるでしょう」とある大会のファイナルを挙げました。それはどれでしょう？",
+      "options": [
+        "2022年ACL",
+        "2023年クラブワールドカップ",
+        "2024年ルヴァンカップ",
+        "2025年天皇杯"
+      ],
+      "answerIndex": 0,
+      "explanation": "スコルジャ監督は退任時のコメントで、「ここで得た全ての経験はかけがえのないもの。特に2022ACLファイナルで経験したことは、これからも心に深く刻まれ続けるでしょう」と感謝を述べました。",
+      "trivia": "スコルジャ監督は浦和レッズの指揮官として2022年のACL（AFCチャンピオンズリーグ）を制覇し、アジアの頂点に立った確かな実績を残しました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "特別大会",
+        "百年構想リーグ",
+        "ルール"
+      ],
+      "text": "2026年上半期に開催されている特別大会「明治安田Jリーグ百年構想リーグ」。この大会の地域リーグラウンドでは、90分で同点だった場合に完全決着をつけるため、あるルールが採用されています。それはどれでしょう？",
+      "options": [
+        "PK戦（延長戦なし）",
+        "延長戦（前後半15分）",
+        "ゴールデンゴール方式（Vゴール）",
+        "アウェイゴールルールの適用"
+      ],
+      "answerIndex": 0,
+      "explanation": "「明治安田Jリーグ百年構想リーグ」の地域リーグラウンドでは引き分けがなく、90分で同点だった場合は延長戦を行わずにすぐPK戦で勝敗を決するレギュレーションが採用されています。",
+      "trivia": "Jリーグのリーグ戦（特別大会含む）で引き分けが廃止されPK戦が実施されるのは、1999年に引き分け制が導入されて以来のこととなります。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "特別大会",
+        "百年構想リーグ",
+        "ルール"
+      ],
+      "text": "2026年上半期に開催されている特別大会「明治安田Jリーグ百年構想リーグ」の地域リーグラウンドにおける、「勝ち点」のルールとして正しいものはどれでしょう？",
+      "options": [
+        "PK戦勝利で2、PK戦敗北で1",
+        "PK戦勝利で3、PK戦敗北で0",
+        "PK戦勝利で1、PK戦敗北で0",
+        "PK戦勝利で3、PK戦敗北で1"
+      ],
+      "answerIndex": 0,
+      "explanation": "同大会の地域リーグラウンドでは、90分での勝利で勝ち点3、PK戦での勝利で勝ち点2、PK戦での敗北で勝ち点1、90分での敗戦で勝ち点0という特別な配分が採用されています。",
+      "trivia": "特別大会ではクラブへの「特別助成金」も成績に応じて支払われ、J1ではPK戦勝利で400万円、PK敗北でも200万円が支給されます。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "審判",
+        "JFA",
+        "ポーランド"
+      ],
+      "text": "2026年4月30日、日本サッカー協会とJリーグは「審判交流プログラム」の一環として、ある国から3名の審判員を招聘することを発表しました。ダミアン・コス主審らが来日する、この派遣元の国はどこでしょう？",
+      "options": [
+        "ポーランド",
+        "イングランド",
+        "オーストラリア",
+        "カタール"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年4月30日の発表で、ポーランドサッカー協会と連携してダミアン・コス主審ら3名が来日し、J1百年構想リーグの終盤戦（第15節〜第18節）を担当することが決定しました。",
+      "trivia": "同プログラムの一環で、2026年4月には長峯滉希主審ら日本人の審判員トリオがポーランド1部リーグに派遣され、4試合を担当していました。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ガンバ大阪",
+        "移籍",
+        "退団",
+        "ドイツ代表"
+      ],
+      "text": "2026年4月30日、ガンバ大阪はある外国人選手と双方合意のうえで契約を解除したと発表しました。今年3月に加入したものの、試合出場がないままわずか49日で退団となった元ドイツ代表DFは誰でしょう？",
+      "options": [
+        "フィリップ・マックス",
+        "ジェローム・ボアテング",
+        "マティアス・ギンター",
+        "ロビン・ゴセンス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年3月にギリシャのパナシナイコスからガンバ大阪に加入したフィリップ・マックスですが、コンディション面の問題などから本人がピッチで貢献することが難しいと判断し、わずか49日での退団となりました。",
+      "trivia": "フィリップ・マックスの父親のマルティン・マックスも元ドイツ代表選手で、ブンデスリーガで2度の得点王に輝いた名ストライカーでした。",
+      "referenceDate": "2026-05-04",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-04",
+        "expiryDate": "2026-05-11",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
