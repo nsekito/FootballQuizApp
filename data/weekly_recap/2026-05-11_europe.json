@@ -1,0 +1,1033 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-10T22:02:46Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-05-11",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "パリ・サンジェルマン",
+        "アーセナル"
+      ],
+      "text": "2026年5月5日と6日に行われたUEFAチャンピオンズリーグ（CL）準決勝の結果、2025-26シーズンの決勝カードはどの組み合わせに決定したでしょう？",
+      "options": [
+        "パリ・サンジェルマンとアーセナル",
+        "バイエルン・ミュンヘンとアトレティコ・マドリード",
+        "レアル・マドリードとマンチェスター・シティ",
+        "インテルとバルセロナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "PSGがバイエルンを2戦合計6-5で、アーセナルがアトレティコ・マドリードを同2-1で下し、それぞれ決勝進出を決めました。",
+      "trivia": "決勝戦は2026年5月30日、ハンガリーの首都ブダペストにあるプスカシュ・アレーナで開催されます。アーセナルにとっては2006年以来の決勝進出です。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "レアル・マドリード",
+        "エル・クラシコ"
+      ],
+      "text": "2026年5月10日に行われた「エル・クラシコ」でレアル・マドリードを2-0で破り、2025-26シーズンのラ・リーガ優勝を決めたクラブはどこでしょう？",
+      "options": [
+        "バルセロナ",
+        "アトレティコ・マドリード",
+        "ジローナ",
+        "アスレティック・ビルバオ"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナはホームにレアル・マドリードを迎えた大一番で2-0の完勝を収め、3試合を残して今季のリーグ優勝を確定させました。",
+      "trivia": "バルセロナの先制点は、今季から加入したマーカス・ラッシュフォードが直接フリーキックから見事に決めたものでした。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 36,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "ウェストハム"
+      ],
+      "text": "2026年5月10日のプレミアリーグで、アーセナルはウェストハムに1-0で勝利し優勝に王手をかけました。この試合の決勝点を決めた選手は誰でしょう？",
+      "options": [
+        "レアンドロ・トロサール",
+        "ブカヨ・サカ",
+        "マルティン・ウーデゴール",
+        "デクラン・ライス"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは敵地でのウェストハム戦で、83分にレアンドロ・トロサールが挙げた貴重なゴールを守り切り勝ち点3を獲得しました。",
+      "trivia": "この勝利により、アーセナルは22年ぶりとなる悲願のプレミアリーグ制覇まであと一歩のところまで迫っています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 36,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "インテル",
+        "ラツィオ"
+      ],
+      "text": "2026年5月9日に行われたセリエAの試合で、敵地でラツィオを相手に3-0の快勝を収めたクラブはどこでしょう？",
+      "options": [
+        "インテル",
+        "ユベントス",
+        "ACミラン",
+        "ASローマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテルはラツィオの本拠地に乗り込み、ラウタロ・マルティネス、ルカ・スチッチ、ヘンリク・ムヒタリアンのゴールで3-0と完勝しました。",
+      "trivia": "インテルは前半6分にラウタロ・マルティネスが早々に先制点を奪い、試合の主導権を握ることに成功しました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 36,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "パリ・サンジェルマン",
+        "バイエルン・ミュンヘン"
+      ],
+      "text": "2026年5月6日のチャンピオンズリーグ準決勝第2戦、バイエルン・ミュンヘン対PSGは1-1の引き分けに終わりました。この試合でPSGの先制点を決めたのは誰でしょう？",
+      "options": [
+        "ウスマン・デンベレ",
+        "キリアン・エムバペ",
+        "ブラッドリー・バルコラ",
+        "ゴンサロ・ハモス"
+      ],
+      "answerIndex": 0,
+      "explanation": "PSGは前半3分、クビチャ・クワラツヘリアのカウンターからのアシストをウスマン・デンベレが決めて先制しました。",
+      "trivia": "バイエルンも後半アディショナルタイムにハリー・ケインが同点弾を決め意地を見せましたが、2戦合計6-5でPSGが決勝へ駒を進めました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-06",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "女子チャンピオンズリーグ",
+        "オリンピック・リヨン",
+        "アーセナル"
+      ],
+      "text": "2026年5月上旬に行われた女子チャンピオンズリーグ（UWCL）準決勝で、第1戦のビハインドを跳ね返し、アーセナルを下して決勝進出を決めたフランスのクラブは？",
+      "options": [
+        "オリンピック・リヨン",
+        "パリ・サンジェルマン",
+        "パリFC",
+        "モンペリエ"
+      ],
+      "answerIndex": 0,
+      "explanation": "オリンピック・リヨンは第2戦でアーセナルに3-1で勝利し、2戦合計4-3と逆転して決勝に駒を進めました。",
+      "trivia": "リヨンのDFウェンディ・ルナールはこの試合でPKを決めており、35歳286日でのUWCL準決勝最年長得点記録を樹立しました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "リバプール",
+        "チェルシー"
+      ],
+      "text": "2026年5月9日のプレミアリーグで、リバプールとチェルシーの強豪対決が行われました。この試合のスコアと結果として正しいものはどれでしょう？",
+      "options": [
+        "1-1の引き分け",
+        "2-1でリバプールの勝利",
+        "0-2でチェルシーの勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半6分にリバプールのライアン・フラーフェンベルフが先制しましたが、35分にチェルシーのエンソ・フェルナンデスが同点弾を決め、1-1の引き分けに終わりました。",
+      "trivia": "この週末に行われたプレミアリーグの試合では、ホームチームが敗れたのはわずか1試合のみという、各チームのホームの強さが際立つ節となりました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 36,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "アーセナル",
+        "アトレティコ・マドリード"
+      ],
+      "text": "2026年5月5日に行われたチャンピオンズリーグ準決勝第2戦で、アーセナルはアトレティコ・マドリードに1-0で勝利しました。この試合の決勝点となるゴールを決めたのは誰でしょう？",
+      "options": [
+        "ブカヨ・サカ",
+        "マルティン・ウーデゴール",
+        "ガブリエウ・マルティネッリ",
+        "カイ・ハフェルツ"
+      ],
+      "answerIndex": 0,
+      "explanation": "63分、右サイドからカットインしたブカヨ・サカの放ったシュートがディフェンダーに当たってコースが変わり、ゴールネットを揺らしました。",
+      "trivia": "第1戦の1-1から、この1点が決定打となり、アーセナルは2戦合計2-1で2006年以来20年ぶりとなるCL決勝進出を果たしました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-05",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "ユベントス",
+        "レッチェ"
+      ],
+      "text": "2026年5月9日のセリエA、レッチェ対ユベントスの試合は、開始わずか1分に決まった電光石火のゴールが決勝点となりました。このゴールを決めたユベントスの選手は誰でしょう？",
+      "options": [
+        "ドゥシャン・ヴラホヴィッチ",
+        "フェデリコ・キエーザ",
+        "アルカディウシュ・ミリク",
+        "アドリアン・ラビオ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アウェイに乗り込んだユベントスは、キックオフ直後の1分にエースのドゥシャン・ヴラホヴィッチが決めたゴールを最後まで守り切り、1-0で勝利しました。",
+      "trivia": "ヴラホヴィッチはこの素早い先制点でチームに勢いをもたらし、ユベントスはアウェイで貴重な勝ち点3を獲得しました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 36,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "女子チャンピオンズリーグ",
+        "バルセロナ",
+        "バイエルン・ミュンヘン"
+      ],
+      "text": "2026年5月上旬に行われた女子チャンピオンズリーグ（UWCL）準決勝第2戦で、バイエルン・ミュンヘンを相手に2ゴールを挙げ、バルセロナを決勝へ導いた選手は誰でしょう？",
+      "options": [
+        "アレクシア・プテジャス",
+        "アイタナ・ボンマティ",
+        "サルマ・パラジュエロ",
+        "キャロライン・グラハム・ハンセン"
+      ],
+      "answerIndex": 0,
+      "explanation": "カンプ・ノウに約6万人の観客を集めた試合で、ベテランのアレクシア・プテジャスが2ゴールを挙げる活躍を見せ、チームを4-2の勝利に導きました。",
+      "trivia": "この試合では、昨年11月に足の骨折で長期離脱していたバロンドール受賞者のアイタナ・ボンマティが後半から途中出場し、待望の復帰を果たしています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "アーセナル",
+        "パリ・サンジェルマン"
+      ],
+      "text": "2026年5月6日と7日に行われたUEFAチャンピオンズリーグ準決勝第2レグの結果、今シーズンの決勝カードとして決まった組み合わせはどれでしょう？",
+      "options": [
+        "アーセナルとパリ・サンジェルマン",
+        "バイエルンとアトレティコ・マドリード",
+        "アーセナルとバイエルン",
+        "パリ・サンジェルマンとアトレティコ・マドリード"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルはアトレティコ・マドリードを、パリ・サンジェルマンはバイエルンをそれぞれ2戦合計で下し、決勝へ駒を進めました。",
+      "trivia": "今シーズンのチャンピオンズリーグ決勝戦の舞台は、ハンガリーの首都ブダペストにある「プスカシュ・アレーナ」で開催される予定です。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "降格",
+        "ウルヴァーハンプトン"
+      ],
+      "text": "2026年5月上旬のプレミアリーグ第35節終了時点で、チャンピオンシップ（2部）への降格が確定した2クラブは、バーンリーとどこでしょう？",
+      "options": [
+        "ウルヴァーハンプトン・ワンダラーズ",
+        "ノッティンガム・フォレスト",
+        "クリスタル・パレス",
+        "ウェストハム"
+      ],
+      "answerIndex": 0,
+      "explanation": "第35節を終えた段階で、バーンリー（勝ち点20）とウルヴァーハンプトン（勝ち点18）が19位・20位に沈み、残り試合数から降格圏脱出が不可能となりました。",
+      "trivia": "ウルヴァーハンプトンは2018年にチャンピオンシップから昇格して以来、長らくプレミアリーグの中堅クラブとして定着していましたが、ついに降格の憂き目に遭いました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 35,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "アーセナル",
+        "チャンピオンズリーグ",
+        "記録"
+      ],
+      "text": "2026年5月6日、チャンピオンズリーグ準決勝でアトレティコ・マドリードを下し、決勝進出を決めたアーセナル。彼らがCL決勝に到達するのは何年ぶりのことでしょう？",
+      "options": [
+        "20年ぶり",
+        "15年ぶり",
+        "10年ぶり",
+        "25年ぶり"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルが最後にCL決勝を戦ったのは、バルセロナに敗れて準優勝となった2006年のことです。それ以来、20年ぶりの大舞台となります。",
+      "trivia": "2006年の決勝では、GKのイェンス・レーマンが前半早々に退場し、ソル・キャンベルのゴールで先制するも終盤に逆転負けを喫するという劇的な展開でした。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-06",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ブンデスリーガ",
+        "残留争い",
+        "ヴォルフスブルク",
+        "ザンクトパウリ"
+      ],
+      "text": "2026年5月上旬のブンデスリーガ第33節終了時点で共に勝ち点26で並び、最終節で「入れ替え戦圏内」の16位と「自動降格圏内」の17位を巡る直接対決に挑むことになった2クラブはどこでしょう？",
+      "options": [
+        "ヴォルフスブルクとザンクトパウリ",
+        "マインツとボーフム",
+        "ケルンとブレーメン",
+        "ウニオン・ベルリンとハイデンハイム"
+      ],
+      "answerIndex": 0,
+      "explanation": "16位のヴォルフスブルクと17位のザンクトパウリが、残留へのわずかな望みをかけて最終節で激突します。両チームには日本人選手も複数所属しており、現地でも大きな注目を集めています。",
+      "trivia": "ブンデスリーガの「入れ替え戦」は、1部の16位チームと2部の3位チームがホーム＆アウェイ方式で戦い、来季の1部でのプレー権を争う過酷なサバイバルマッチです。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 33,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "パリ・サンジェルマン",
+        "チャンピオンズリーグ",
+        "ウスマン・デンベレ"
+      ],
+      "text": "2026年5月7日のチャンピオンズリーグ準決勝第2レグ、バイエルン対パリ・サンジェルマンの試合で、前半3分にPSGの貴重な先制点を挙げた選手は誰でしょう？",
+      "options": [
+        "ウスマン・デンベレ",
+        "キリアン・ムバッペ",
+        "フヴィチャ・クヴァラツヘリア",
+        "ブラッドリー・バルコラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "クヴァラツヘリアのパスを受けたデンベレが左足でゴールに押し込み先制しました。試合はハリー・ケインのゴールで1-1の引き分けとなりましたが、2戦合計6-5でPSGが勝利しました。",
+      "trivia": "デンベレは左右両足を完璧に使いこなすことで有名ですが、ペナルティキックを蹴る時や力強いシュートを打つ時は左足を好むという傾向があります。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-07",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "優勝争い",
+        "マンチェスター・シティ"
+      ],
+      "text": "2026年5月上旬のプレミアリーグ第35節を終えた段階で、首位アーセナル（勝ち点76）を追う2位マンチェスター・シティ（勝ち点71）ですが、この時点でシティはアーセナルよりも消化試合が何試合少なかったでしょう？",
+      "options": [
+        "1試合",
+        "0試合（消化数は同じ）",
+        "2試合",
+        "3試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "第35節終了時点でアーセナルは35試合を消化していましたが、マンチェスター・シティは未消化の延期分が1試合あり、34試合消化で勝ち点5差を追いかける展開となっていました。",
+      "trivia": "マンチェスター・シティは過去の優勝シーズンでも、シーズン終盤の未消化試合をきっちり勝ち切って逆転優勝を果たすケースが多く、終盤の勝負強さには定評があります。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 35,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "ブライトン",
+        "プレミアリーグ",
+        "日本代表"
+      ],
+      "text": "2026年5月9日に行われたプレミアリーグ第36節のウルブス戦で、日本代表メンバー発表を目前に控えたブライトンの三笘薫を襲ったアクシデントは次のうちどれでしょう？",
+      "options": [
+        "左太もも裏の負傷",
+        "足首の捻挫",
+        "レッドカードで一発退場",
+        "脳震盪"
+      ],
+      "answerIndex": 0,
+      "explanation": "三笘薫はウルブス戦の後半58分、左太もも裏を押さえて倒れ込み、自ら歩いて交代を要求しました。試合後には松葉杖をついてスタジアムを後にしており、W杯に向けたコンディションが懸念されています。",
+      "trivia": "三笘は過去にもハムストリング（太もも裏）のケガに悩まされた経験があり、特に爆発的なスピードを武器とするドリブラーにとって、筋疲労のケアはキャリアにおける大きな課題とされています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "レアル・ソシエダ",
+        "ラ・リーガ"
+      ],
+      "text": "2026年5月9日に行われたラ・リーガ第35節のベティス戦（2-2）で、先発復帰したレアル・ソシエダの久保建英が前半に見せたプレーとして話題になったのはどれでしょう？",
+      "options": [
+        "決定機を演出する3本のスルーパス",
+        "約30メートルの無回転ミドルシュート",
+        "ゴールライン上でのクリア",
+        "ハットトリック達成"
+      ],
+      "answerIndex": 0,
+      "explanation": "久保建英は前半に非の打ち所がないスルーパスを3本放ち、味方の決定機を演出しました。しかし味方がゴールを決めきれず、自身も54分に途中交代となっています。",
+      "trivia": "この試合で久保が見せたパスは「魔法の左足」と絶賛されましたが、一方で地元メディアからは「一度も相手を抜けなかった」と厳しい評価も下されており、エースに対する現地メディアの要求の高さが窺えます。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "長谷川唯",
+        "マンチェスター・シティ",
+        "WSL"
+      ],
+      "text": "2026年5月、長谷川唯ら日本人選手が所属するマンチェスター・シティ・ウィメンズが10年ぶりに女子スーパーリーグ（WSL）優勝を果たしました。これにより、あるクラブのリーグ連覇記録を「6」でストップさせましたが、そのクラブはどこでしょう？",
+      "options": [
+        "チェルシー",
+        "アーセナル",
+        "マンチェスター・ユナイテッド",
+        "アストン・ヴィラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2019-20シーズンから6連覇を達成していた絶対王者チェルシーの記録を止め、マンチェスター・シティが2015-16シーズン以来10年ぶりとなるリーグ優勝を飾りました。",
+      "trivia": "優勝に大きく貢献した長谷川唯は、英メディアから10点満点中9点という非常に高い評価を受け、「卓越した技術を持ち、チームの攻撃に新たな幅を生み出した」と絶賛されています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "菅原由勢",
+        "ブレーメン",
+        "ブンデスリーガ"
+      ],
+      "text": "2026年5月9日に行われたブンデスリーガ第33節・ホッフェンハイム戦で、ブレーメンの菅原由勢が前半5分という早い時間帯に受けてしまった判定はどれでしょう？",
+      "options": [
+        "レッドカードによる一発退場",
+        "ペナルティキックの献上",
+        "イエローカード（次節出場停止）",
+        "オフサイド判定でのゴール取り消し"
+      ],
+      "answerIndex": 0,
+      "explanation": "菅原由勢は前半5分、後方からの激しいアプローチで足裏が相手のふくらはぎに接触してしまい、VAR介入の末にレッドカードで一発退場となりました。",
+      "trivia": "今季サウサンプトンからレンタルで加入し主力として活躍していた菅原ですが、この退場により最終節が出場停止となり、不完全燃焼のままブレーメンでのプレー期間を終える可能性が現地で報じられました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鎌田大地",
+        "クリスタル・パレス",
+        "プレミアリーグ"
+      ],
+      "text": "2026年5月10日のプレミアリーグで、鎌田大地が所属するクリスタル・パレスはエバートンと2-2で引き分けました。パレスはこの試合の3日前に行われた欧州大会で、クラブ初となる決勝進出を決めていますが、その大会名は何でしょう？",
+      "options": [
+        "UEFAカンファレンスリーグ",
+        "UEFAチャンピオンズリーグ",
+        "UEFAヨーロッパリーグ",
+        "UEFAスーパーカップ"
+      ],
+      "answerIndex": 0,
+      "explanation": "クリスタル・パレスは2026年5月7日に行われたUEFAカンファレンスリーグ（ECL）の準決勝で勝利し、クラブ史上初の欧州タイトルに王手をかけました。鎌田はその歓喜から中2日でリーグ戦にフル出場しています。",
+      "trivia": "クリスタル・パレスは過去にFAカップなどの国内タイトル獲得経験はありますが、欧州の舞台で決勝に進出するのはクラブ創設以来初の歴史的な快挙です。鎌田は持ち前の戦術眼でチームの躍進を支えています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "mls",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "リオネル・メッシ",
+        "インテル・マイアミ",
+        "記録達成"
+      ],
+      "text": "2026年5月、MLS（メジャーリーグ・サッカー）において、史上最速となる64試合で「通算100得点関与（ゴール＋アシスト）」を達成したインテル・マイアミの選手は誰でしょう？",
+      "options": [
+        "リオネル・メッシ",
+        "ルイス・スアレス",
+        "セルヒオ・ブスケツ",
+        "ゴンサロ・イグアイン"
+      ],
+      "answerIndex": 0,
+      "explanation": "リオネル・メッシはMLSにおいて、史上最速となるわずか64試合で通算100得点関与という大記録を樹立したことが2026年5月に報じられました。",
+      "trivia": "インテル・マイアミの共同オーナーであるデビッド・ベッカムは、世界最高峰の選手であるメッシをアメリカへ連れてくるため、何年にもわたって粘り強く交渉を続けていました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "フィル・フォーデン",
+        "マンチェスター・シティ",
+        "契約延長"
+      ],
+      "text": "2026年5月、マンチェスター・シティと2030年までの新契約に原則合意したと報じられた、同クラブの下部組織出身のイングランド代表MFは誰でしょう？",
+      "options": [
+        "フィル・フォーデン",
+        "コール・パーマー",
+        "ジャック・グリーリッシュ",
+        "ジェイドン・サンチョ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティの主力として活躍するフィル・フォーデンは、自身の boyhood club（少年時代からの応援クラブ）であるシティと2030年までの新たな長期契約に合意したと報じられました。",
+      "trivia": "フォーデンは幼少期から生粋のマンチェスター・シティファンであり、少年時代にはエティハド・スタジアムでボールボーイを務めていたエピソードが有名です。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ニクラス・ズーレ",
+        "ドルトムント",
+        "現役引退"
+      ],
+      "text": "2026年5月、十字靭帯断裂の疑いなどの負傷が引き金となり、今季限り（2026年夏）での現役引退を発表した、ボルシア・ドルトムント所属の元ドイツ代表DFは誰でしょう？",
+      "options": [
+        "ニクラス・ズーレ",
+        "マッツ・フンメルス",
+        "ニコ・シュロッターベック",
+        "マティアス・ギンター"
+      ],
+      "answerIndex": 0,
+      "explanation": "元ドイツ代表の大型センターバックであるニクラス・ズーレは、自身のポッドキャスト番組内で、負傷の影響などもあり2026年夏での契約満了をもって現役を引退することを発表しました。",
+      "trivia": "ズーレはホッフェンハイム、バイエルン・ミュンヘン、そしてドルトムントと、長年にわたりブンデスリーガの強豪クラブを渡り歩き、最終ラインにそびえ立つ壁として活躍しました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ヘンリク・ムヒタリアン",
+        "インテル",
+        "引退検討"
+      ],
+      "text": "2026年5月、契約満了を迎える今夏での現役引退を検討していると報じられたインテル所属の選手で、かつてドルトムントやマンチェスター・ユナイテッドなどでもプレーした元アルメニア代表MFは誰でしょう？",
+      "options": [
+        "ヘンリク・ムヒタリアン",
+        "ハカン・チャルハノール",
+        "イヴァン・ペリシッチ",
+        "マルセロ・ブロゾヴィッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテルで主力としてプレーしてきたヘンリク・ムヒタリアンは、2026年6月で現在の契約が切れるため、そのままプロサッカー界から引退する可能性が浮上していると報じられました。",
+      "trivia": "ムヒタリアンはアルメニア人として初めてプレミアリーグやセリエAでプレーした選手であり、母国アルメニアの国民的英雄として絶大な人気を誇ります。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "mls",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ハメス・ロドリゲス",
+        "ミネソタ・ユナイテッド",
+        "退団",
+        "引退検討"
+      ],
+      "text": "2026年5月、ワールドカップ終了後の現役引退を検討していると報じられたコロンビア代表のハメス・ロドリゲスですが、彼が今夏に退団する見込みとされている現在所属中のMLSのクラブはどこでしょう？",
+      "options": [
+        "ミネソタ・ユナイテッド",
+        "ロサンゼルス・ギャラクシー",
+        "アトランタ・ユナイテッド",
+        "シアトル・サウンダーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハメス・ロドリゲスはMLSのミネソタ・ユナイテッドで十分な出場機会を得られず、代表活動に専念するため今夏の退団とワールドカップ後の現役引退を検討していると報じられました。",
+      "trivia": "2014年のW杯で大会得点王に輝いたハメスは、ヨーロッパの数々のビッグクラブを渡り歩いた後、近年はカタール、ギリシャ、ブラジル、そしてアメリカと世界各国のクラブでプレーしました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "チャンピオンズリーグ",
+        "パリ・サンジェルマン",
+        "バイエルン"
+      ],
+      "text": "2026年5月6日に行われたUEFAチャンピオンズリーグ準決勝・第2戦の結果、バイエルン・ミュンヘンを下して決勝進出を決めたフランスのクラブはどこでしょう？",
+      "options": [
+        "パリ・サンジェルマン",
+        "オリンピック・リヨン",
+        "オリンピック・マルセイユ",
+        "ASモナコ"
+      ],
+      "answerIndex": 0,
+      "explanation": "5月6日の第2戦を1-1で引き分けたパリ・サンジェルマンは、2戦合計6-5という激戦の末にバイエルンを退け、ブダペストで行われる決勝へ駒を進めました。",
+      "trivia": "今季のCLでは、パリ・サンジェルマンとバイエルンの両クラブが1つの大会でそれぞれチーム計40ゴール以上を記録する、大会史上初の珍事となりました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-06",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "uel",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ヨーロッパリーグ",
+        "アストン・ヴィラ",
+        "プレミアリーグ"
+      ],
+      "text": "2026年5月、UEFAヨーロッパリーグ準決勝でノッティンガム・フォレストとの同国対決を制し、決勝進出を決めたイングランドのクラブはどこでしょう？",
+      "options": [
+        "アストン・ヴィラ",
+        "クリスタル・パレス",
+        "トッテナム・ホットスパー",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラはEL準決勝でノッティンガム・フォレストを破り、見事決勝に進出しました。 なお、同じイングランド勢のクリスタル・パレスはカンファレンスリーグで決勝へ進出しています。",
+      "trivia": "アストン・ヴィラを率いるウナイ・エメリ監督は過去にセビージャ等でELを4度制覇しており、今回勝てばイングランドのクラブで初となる自身の5度目のタイトル獲得となります。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-07",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "チャンピオンズリーグ",
+        "アーセナル",
+        "アトレティコ・マドリード"
+      ],
+      "text": "2026年5月5日のUEFAチャンピオンズリーグ準決勝・第2戦で、アーセナルはアトレティコ・マドリードを退け決勝進出を果たしました。この試合の時点でアーセナルが記録していた、今季CLでの連続無敗記録（クラブタイ記録）は何試合でしょう？",
+      "options": [
+        "13試合",
+        "11試合",
+        "15試合",
+        "17試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは今季のCLで10勝3分けの無敗（13試合連続）を維持して決勝へ進出しており、2005-06年シーズンに記録したクラブ最長無敗記録に並びました。",
+      "trivia": "今季のCLで無敗を維持しているのは全参加クラブの中でアーセナルのみであり、長年越えられなかったクラブの黄金期の記録に肩を並べる快挙となりました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-05",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "CONCACAF",
+        "チャンピオンズカップ",
+        "ナッシュビルSC"
+      ],
+      "text": "2026年5月5日に行われたCONCACAFチャンピオンズカップ準決勝・第2戦で、MLSのナッシュビルSCを退け、2戦合計スコア2-0で決勝進出を決めたメキシコのクラブはどこでしょう？",
+      "options": [
+        "ティグレスUANL",
+        "クラブ・アメリカ",
+        "CFモンテレイ",
+        "クルス・アスル"
+      ],
+      "answerIndex": 0,
+      "explanation": "ナッシュビルSCはインテル・マイアミやクラブ・アメリカを破りクラブ史上初の準決勝に進出しましたが、メキシコの強豪ティグレスUANLの前に第2戦を0-1で落とし、合計0-2で敗退しました。",
+      "trivia": "ナッシュビルSCはこの年、国内リーグ（MLS）と並行して全大会で「平均4日に1試合」という超過密日程をこなしながら、国際大会で大きな躍進を見せました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-05",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    }
+  ]
+}

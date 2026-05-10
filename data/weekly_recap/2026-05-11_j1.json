@@ -1,0 +1,1050 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-10T21:57:07Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-05-11",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "セレッソ大阪",
+        "V・ファーレン長崎",
+        "香川真司",
+        "試合結果"
+      ],
+      "text": "2026年5月9日に行われた明治安田J1百年構想リーグ第16節「セレッソ大阪 vs V・ファーレン長崎」で、後半アディショナルタイムに劇的な決勝ゴールを挙げたセレッソ大阪の元日本代表選手は誰でしょうか？",
+      "options": [
+        "香川真司",
+        "乾貴士",
+        "清武弘嗣",
+        "柴崎岳"
+      ],
+      "answerIndex": 0,
+      "explanation": "2-2で迎えた90+4分に香川真司が劇的な決勝ゴールを挙げ、セレッソ大阪が3-2で勝利しました。",
+      "trivia": "この試合のセレッソ大阪の得点者は、チアゴ・アンドラーデ、田中駿汰、香川真司でした。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC東京",
+        "東京ヴェルディ",
+        "東京ダービー",
+        "試合結果"
+      ],
+      "text": "2026年5月10日に行われた明治安田J1百年構想リーグ第16節の「東京ダービー」（FC東京 vs 東京ヴェルディ）で、勝利したクラブはどちらでしょうか？",
+      "options": [
+        "FC東京",
+        "東京ヴェルディ",
+        "引き分け",
+        "PK戦で東京ヴェルディ"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半を1-1で折り返したのち、後半アディショナルタイムに決勝点が生まれ、FC東京が2-1で勝利しました。",
+      "trivia": "この試合ではFC東京は室屋成と長倉幹樹が得点し、東京ヴェルディは森田晃樹が得点を挙げました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "浦和レッズ",
+        "水戸ホーリーホック",
+        "イサーク・キーセ・テリン",
+        "試合結果"
+      ],
+      "text": "2026年5月9日に行われた明治安田J1百年構想リーグ第16節「水戸ホーリーホック vs 浦和レッズ」で、立て続けに2ゴールを挙げて勝利に貢献した浦和の外国人FWは誰でしょうか？",
+      "options": [
+        "イサーク・キーセ・テリン",
+        "ブライアン・リンセン",
+        "チアゴ・サンタナ",
+        "アレクサンダー・ショルツ"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズは安居海渡、小森飛絢のゴールに加え、イサーク・キーセ・テリンが77分と79分に連続ゴールを決め、4-1で勝利しました。",
+      "trivia": "イサーク・キーセ・テリンはスウェーデン代表経験もあるストライカーで、マルメFFなどでの活躍を経てJリーグでプレーしています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "大会方式",
+        "秋春制",
+        "百年構想リーグ"
+      ],
+      "text": "Jリーグが「秋春制」へ移行するにあたり、2026年2月から6月にかけて開催されている特別大会の名称は「明治安田Jリーグ〇〇リーグ」でしょうか？",
+      "options": [
+        "百年構想",
+        "トランジション",
+        "インターバル",
+        "オールスター"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月からの秋春制移行に伴い、空白期間となる上半期に特別大会「明治安田Jリーグ百年構想リーグ」が開催されています。",
+      "trivia": "この特別大会では通常のリーグ戦での勝ち点システムとは異なり、全試合で引き分けが廃止され、90分で同点の場合はPK戦が行われます。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "鹿島アントラーズ",
+        "水戸ホーリーホック",
+        "茨城ダービー",
+        "試合結果"
+      ],
+      "text": "2026年5月6日に行われた明治安田J1百年構想リーグ第15節の茨城ダービー「鹿島アントラーズ vs 水戸ホーリーホック」の試合結果は、次のうちどれでしょうか？",
+      "options": [
+        "鹿島が3-0で勝利",
+        "水戸が1-0で勝利",
+        "1-1でPK戦となり鹿島が勝利",
+        "1-1でPK戦となり水戸が勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "ホームの鹿島アントラーズが3-0で水戸ホーリーホックを下し、茨城ダービーを制しました。",
+      "trivia": "水戸ホーリーホックは前年の結果を受けてJ1百年構想リーグ（EAST）に参戦しており、同組の鹿島との熱いダービーが実現しました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-05-06",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC東京",
+        "東京ヴェルディ",
+        "試合結果",
+        "長倉幹樹"
+      ],
+      "text": "2026年5月10日の明治安田J1百年構想リーグ第16節「FC東京 vs 東京ヴェルディ」で、後半アディショナルタイム（90+5分）に決勝ゴールを決めたFC東京の選手は誰でしょうか？",
+      "options": [
+        "長倉幹樹",
+        "荒木遼太郎",
+        "室屋成",
+        "俵積田晃太"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1で迎えた後半アディショナルタイム（90+5分）に長倉幹樹が劇的な決勝ゴールを挙げ、FC東京が2-1で勝利しました。",
+      "trivia": "FC東京の先制点（41分）は、ヨーロッパから復帰したサイドバックの室屋成によってもたらされました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "百年構想リーグ",
+        "レギュレーション",
+        "ルール"
+      ],
+      "text": "明治安田J1百年構想リーグのレギュレーションにおいて、90分で引き分けとなった場合に行われるPK戦で勝利したクラブに与えられる勝ち点はいくつでしょうか？",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "1.5"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグ百年構想リーグでは引き分けが廃止されており、勝ち点は「90分勝利＝3、PK勝利＝2、PK敗戦＝1、90分敗戦＝0」となっています。",
+      "trivia": "さらに特別大会の助成金として、獲得した勝ち点1につき200万円が各クラブに支給される仕組みとなっています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "清水エスパルス",
+        "アビスパ福岡",
+        "試合結果",
+        "オ・セフン"
+      ],
+      "text": "2026年5月10日に行われた明治安田J1百年構想リーグ第16節「清水エスパルス vs アビスパ福岡」はPK戦の末に清水が勝利しました。この試合で清水の同点ゴールを決めた韓国人FWは誰でしょうか？",
+      "options": [
+        "オ・セフン",
+        "チョン・ソンリョン",
+        "キム・ミンテ",
+        "パク・ゴヌ"
+      ],
+      "answerIndex": 0,
+      "explanation": "70分に福岡の碓井聖生が先制しましたが、75分にオ・セフンが同点ゴールを決めました。その後PK戦（4-3）で清水が勝利しています。",
+      "trivia": "オ・セフンは過去にも清水エスパルスに所属していたことがあり、古巣復帰後に再びチームの貴重な得点源として活躍しています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "百年構想リーグ",
+        "ACLE",
+        "賞金"
+      ],
+      "text": "明治安田J1百年構想リーグの優勝クラブには賞金1.5億円とともに「AFCチャンピオンズリーグエリート2026/27」の出場権が与えられます。これは日本の第何代表としての出場権でしょうか？",
+      "options": [
+        "第2代表",
+        "第1代表",
+        "第3代表",
+        "第4代表"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1百年構想リーグの優勝クラブには、「AFCチャンピオンズリーグエリート2026/27」の日本第2代表としてのリーグステージ出場権が与えられます。",
+      "trivia": "準優勝クラブには、同大会の日本第5代表としてのプレリミナリーステージ（予選）出場権が与えられるレギュレーションとなっています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "浦和レッズ",
+        "水戸ホーリーホック",
+        "試合結果",
+        "安居海渡"
+      ],
+      "text": "2026年5月9日の明治安田J1百年構想リーグ第16節「水戸ホーリーホック vs 浦和レッズ」は1-4で浦和が勝利しました。この試合で前半24分に先制ゴールを決めた浦和レッズの選手は誰でしょうか？",
+      "options": [
+        "安居海渡",
+        "小森飛絢",
+        "伊藤敦樹",
+        "前田直輝"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半24分に安居海渡が先制ゴールを挙げました。その後、小森飛絢、イサーク・キーセ・テリン（2得点）が追加点を奪い、浦和が大勝しました。",
+      "trivia": "この試合は浦和レッズの攻撃陣が爆発し、枠内シュートや決定機の多さで水戸を圧倒する内容となりました。水戸の唯一の得点は84分の山本隼大によるものでした。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1百年構想リーグ",
+        "鹿島アントラーズ",
+        "順位表"
+      ],
+      "text": "2026年5月上旬時点で、特別大会「明治安田J1百年構想リーグ」EASTグループで首位を走っているクラブはどこ？",
+      "options": [
+        "鹿島アントラーズ",
+        "FC東京",
+        "浦和レッズ",
+        "横浜F・マリノス"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズは第15節終了時点で勝ち点37を獲得し、2位のFC東京に勝ち点5差をつけてEASTグループの首位に立っています。高い得点力と堅固な守備が好調の要因です。",
+      "trivia": "「明治安田J1百年構想リーグ」は、Jリーグのシーズン移行（秋春制）に伴い、2026年上半期の特別大会として東西2グループ制で開催されています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1百年構想リーグ",
+        "レギュレーション",
+        "大会方式"
+      ],
+      "text": "2026年上半期に開催されている「明治安田J1百年構想リーグ」で、90分で同点だった場合に実施される決着方法はどれ？",
+      "options": [
+        "PK戦",
+        "延長戦",
+        "引き分けのまま終了",
+        "ゴールデンゴール方式の延長戦"
+      ],
+      "answerIndex": 0,
+      "explanation": "本大会では「引き分け」が廃止されており、90分間で決着がつかなかった場合は即座にPK戦が行われます。これにより、毎試合必ず勝敗が決まるスリリングな形式となりました。",
+      "trivia": "Jリーグ創設初期（1990年代）にも、90分で決着がつかない場合はVゴール方式の延長戦やPK戦が行われており、当時を懐かしむファンも多いシステムです。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1百年構想リーグ",
+        "勝ち点",
+        "レギュレーション"
+      ],
+      "text": "「明治安田J1百年構想リーグ」の勝ち点システムにおいて、「PK戦での勝利」に与えられる勝ち点はいくつ？",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "1.5"
+      ],
+      "answerIndex": 0,
+      "explanation": "この大会の勝ち点は、90分勝ちが「3」、PK勝ちが「2」、PK負けが「1」、90分負けが「0」と規定されています。PK戦で敗れても勝ち点1を獲得できるのが特徴です。",
+      "trivia": "この勝ち点方式は、Bリーグ（バスケットボール）やアイスホッケーなどの他のスポーツリーグでも採用されている、国際的にポピュラーな勝ち点計算方法の一つです。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "ガンバ大阪",
+        "デニス・ヒュメット",
+        "得点ランキング"
+      ],
+      "text": "2026年5月9日時点で、「明治安田J1百年構想リーグ」WESTグループの得点ランキング首位（8得点）に立っているガンバ大阪の選手は誰？",
+      "options": [
+        "デニス・ヒュメット",
+        "オ・セフン",
+        "チアゴ・サンタナ",
+        "ラファエル・エリアス"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガンバ大阪のデニス・ヒュメット選手は、高い決定力を武器に得点を量産し、5月上旬時点でWESTグループの得点ランキングトップに立っています。オ・セフン選手（清水）らはその後を追う展開です。",
+      "trivia": "デニス・ヒュメットはスウェーデン出身ですが、ルーツを持つトルコのU-21代表としてプレーした経歴も持っている実力派ストライカーです。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "鹿島アントラーズ",
+        "レオ・セアラ",
+        "横浜F・マリノス",
+        "得点ランキング"
+      ],
+      "text": "2026年5月10日に行われた横浜F・マリノス戦で、後半アディショナルタイムに劇的な同点弾を決め、同時点でEASTグループ得点ランク首位の10得点に乗せた鹿島の選手は誰？",
+      "options": [
+        "レオ・セアラ",
+        "鈴木優磨",
+        "師岡柊生",
+        "知念慶"
+      ],
+      "answerIndex": 0,
+      "explanation": "首位を走る鹿島アントラーズのレオ・セアラ選手は、古巣である横浜FMとの一戦で90+5分に起死回生の同点ゴールを決め、得点ランキング首位を快走しています。鹿島はその後PK戦を制しました。",
+      "trivia": "この試合では、2025年4月にアキレス腱断裂の大ケガを負った師岡柊生選手が、約1年ぶりの先発復帰を果たしたことでも話題を呼びました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1百年構想リーグ",
+        "順位表",
+        "大会方式",
+        "レギュレーション"
+      ],
+      "text": "「明治安田J1百年構想リーグ」の順位決定方法について。グループ内で勝ち点が並んだ場合、「最初」に比較される基準は何？",
+      "options": [
+        "得失点差",
+        "当該チーム間の対戦成績",
+        "総得点数",
+        "反則ポイント"
+      ],
+      "answerIndex": 0,
+      "explanation": "大会規定により、勝ち点が並んだ場合は最初に「得失点差」が比較されます。それでも同じ場合は「総得点数」、次に「当該チーム間の対戦成績（勝点、得失点差、総得点数）」の順で決定されます。",
+      "trivia": "もし上記の条件（得失点差、総得点数、当該チーム間の対戦成績）まで全て同じだった場合は、最終的に「抽選」によって順位が決定されるルールとなっています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "三浦知良",
+        "記録達成",
+        "最年長記録"
+      ],
+      "text": "2026年5月10日に行われた磐田戦に出場し、J公式戦の最年長出場記録を59歳2カ月14日に更新した福島ユナイテッドFCの選手は誰でしょう？",
+      "options": [
+        "三浦知良",
+        "伊東輝悦",
+        "遠藤保仁",
+        "小野伸二"
+      ],
+      "answerIndex": 0,
+      "explanation": "福島ユナイテッドFCの三浦知良は、2026年5月10日の磐田戦に後半43分から出場し、自身の持つ最年長出場記録を更新しました。",
+      "trivia": "今季から期限付き移籍で福島ユナイテッドFCに加入し、チームの貴重な戦力としてプレーを続けています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "山見大登",
+        "負傷",
+        "東京ヴェルディ"
+      ],
+      "text": "2026年5月4日、東京ヴェルディがトレーニング中に左膝前十字靭帯損傷の重傷を負ったことを発表したアタッカーは誰でしょう？",
+      "options": [
+        "山見大登",
+        "木村勇大",
+        "染野唯月",
+        "見木友哉"
+      ],
+      "answerIndex": 0,
+      "explanation": "東京ヴェルディは2026年5月4日、FW山見大登がトレーニング中に左膝前十字靭帯損傷を負ったこと、ならびにDF吉田泰授の負傷も併せて発表しました。",
+      "trivia": "山見大登はスピードとドリブルを武器とし、今季もヴェルディの攻撃のアクセントとして活躍していました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "山岸祐也",
+        "ハットトリック",
+        "名古屋グランパス"
+      ],
+      "text": "2026年5月10日に行われたJ1第16節の京都サンガF.C.戦で、ハットトリックを達成して名古屋グランパスを3-0の快勝に導いたFWは誰でしょう？",
+      "options": [
+        "山岸祐也",
+        "キャスパー・ユンカー",
+        "パトリック",
+        "永井謙佑"
+      ],
+      "answerIndex": 0,
+      "explanation": "名古屋グランパスの山岸祐也は、2026年5月10日の京都サンガF.C.戦で前半に2点、試合終了間際に1点を決め、見事ハットトリックを達成しました。",
+      "trivia": "山岸祐也はこのハットトリックにより、得点王争いでも上位に浮上する見事な活躍を見せました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "セランテス",
+        "現役引退",
+        "FC岐阜"
+      ],
+      "text": "アビスパ福岡やFC今治などでプレーし、2026年5月7日にFC岐阜を通じて現役引退を発表したスペイン出身のGKは誰でしょう？",
+      "options": [
+        "セランテス",
+        "ランゲラック",
+        "スウォビク",
+        "ブローダーセン"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC岐阜は2026年5月7日、GKのセランテスが現役を引退することを発表しました。日本で通算6シーズンプレーし、ファンからも愛された選手でした。",
+      "trivia": "セランテスは引退のコメントで「日本の文化、食事、人々の優しさ、そして素晴らしい伝統のすべてが大好きです」と日本への深い愛を語りました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "関沼海亜",
+        "移籍",
+        "FC大阪"
+      ],
+      "text": "2026年5月5日、FC大阪はGK陣に負傷者が続出したため、期限付き移籍中のある選手の契約内容を特例で変更し、移籍元の奈良クラブとの試合でメンバー入り可能にしました。このGKは誰でしょう？",
+      "options": [
+        "関沼海亜",
+        "永井建成",
+        "櫻庭立樹",
+        "服部一輝"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC大阪のGK関沼海亜は奈良クラブからの期限付き移籍中でしたが、FC大阪の起用可能なGKが2名未満となったため、両クラブ合意の上で契約内容が変更されました。",
+      "trivia": "通常、期限付き移籍中の選手は移籍元との公式戦に出場できない契約を結ぶことが一般的ですが、負傷者が重なったことによる異例の救済措置となりました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "監督交代",
+        "徳島ヴォルティス",
+        "Jリーグ",
+        "百年構想リーグ"
+      ],
+      "text": "2026年5月8日、J2・J3百年構想リーグのWEST-Aグループに所属するあるクラブが、成績不振からゲルト・エンゲルス監督の契約解除を発表し、後任として大谷武文氏の就任を発表しました。このクラブは？",
+      "options": [
+        "徳島ヴォルティス",
+        "FC今治",
+        "愛媛FC",
+        "カマタマーレ讃岐"
+      ],
+      "answerIndex": 0,
+      "explanation": "徳島ヴォルティスは百年構想リーグでWEST-Aグループの上位につけていましたが、安定した試合内容が見られないとしてエンゲルス監督との契約解除を決断しました。",
+      "trivia": "ゲルト・エンゲルス氏は過去に浦和レッズや京都サンガF.C.などでも監督を務め、天皇杯優勝などの実績を持つ名将です。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "we_league",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "WEリーグ",
+        "INAC神戸レオネッサ",
+        "女子サッカー",
+        "記録"
+      ],
+      "text": "2026年5月上旬にWEリーグの2025-26シーズン優勝を決めたINAC神戸レオネッサですが、同クラブを率いる宮本ともみ監督はWEリーグ史上「初」となるある記録を達成しました。それは次のうちどれ？",
+      "options": [
+        "女性監督としてのWEリーグ優勝",
+        "監督就任1年目での全勝優勝",
+        "現役時代と同じクラブでの優勝",
+        "無失点でのリーグ優勝"
+      ],
+      "answerIndex": 0,
+      "explanation": "INAC神戸の宮本ともみ監督は、WEリーグの発足から5季目で初めてとなる「女性監督によるリーグ優勝」を達成しました。",
+      "trivia": "宮本ともみ監督は現役時代、日本代表として長らく活躍し、ワールドカップにも出場した元なでしこジャパンの名ボランチです。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "emperor_cup",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "天皇杯",
+        "東京都代表",
+        "クリアソン新宿",
+        "JFL"
+      ],
+      "text": "2026年5月9日に行われた天皇杯の東京都サッカートーナメント（東京都代表決定戦）決勝で、クリアソン新宿が1-0で勝利し本大会出場を決めました。この試合の対戦相手となったJFLのクラブは？",
+      "options": [
+        "横河武蔵野FC",
+        "東京武蔵野ユナイテッドFC",
+        "南葛SC",
+        "エリース東京FC"
+      ],
+      "answerIndex": 0,
+      "explanation": "決勝戦はJFL勢同士の対戦となり、クリアソン新宿が横河武蔵野FCを1-0で下し、3年ぶり2度目となる天皇杯本大会への出場権を獲得しました。",
+      "trivia": "横河武蔵野FCは、一時期「東京武蔵野ユナイテッドFC」として活動していましたが、提携解消に伴いチーム名を「横河武蔵野FC」に戻してJFLに参戦しています。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "emperor_cup",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "天皇杯",
+        "千葉県代表",
+        "ブリオベッカ浦安",
+        "アマチュア"
+      ],
+      "text": "2026年5月9日に行われた天皇杯の千葉県代表決定戦決勝で、FC GRASION東葛に4-1で快勝し、2大会ぶり8度目となる本大会への切符を手にしたクラブは？",
+      "options": [
+        "ブリオベッカ浦安",
+        "VONDS市原",
+        "順天堂大学",
+        "ジェフユナイテッド千葉U-18"
+      ],
+      "answerIndex": 0,
+      "explanation": "フクダ電子アリーナで行われた千葉県予選決勝で、JFLに所属するブリオベッカ浦安が立ち上がりからのゴールラッシュで快勝し、天皇杯の千葉県代表となりました。",
+      "trivia": "ブリオベッカ浦安の名称の由来は、浦安周辺の海を意味する「Brillo（輝く）」と「Becca（1人乗りの船）」を合わせた造語です。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "スポンサー",
+        "FC東京",
+        "イベント",
+        "Jリーグ"
+      ],
+      "text": "2026年5月10日に行われた「明治安田J1百年構想リーグ」第16節のFC東京対東京ヴェルディ戦において、FC東京のクラブスポンサーによる応援イベント「〇〇 Day」が開催されました。このスポンサー企業は？",
+      "options": [
+        "きらぼし銀行",
+        "東京ガス",
+        "三菱商事",
+        "ミクシィ"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京のクラブスポンサーである「きらぼし銀行」がマッチデースポンサーとなり、味の素スタジアムでオリジナルクリアファイルの配布や抽選会などのイベント「きらぼし Day」を実施しました。",
+      "trivia": "きらぼし銀行は、東京都民銀行、八千代銀行、新銀行東京の3行が合併して2018年に誕生した銀行です。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "秋春制",
+        "百年構想リーグ",
+        "注目ニュース"
+      ],
+      "text": "2026年8月からのJリーグ「秋春制」移行に伴う空白期間を埋めるため、同年2月から6月にかけて開催されている特別大会の名称はどれ？",
+      "options": [
+        "明治安田Jリーグ百年構想リーグ",
+        "明治安田Jリーグ・スプリングカップ",
+        "明治安田Jリーグ・トランジションリーグ",
+        "明治安田Jリーグ・サマーシリーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年秋からの秋春制移行に向けた半年間の空白期間を埋めるための特別大会として、「百年構想リーグ」が各カテゴリ（J1・J2・J3）で開催されています。",
+      "trivia": "この大会の地域リーグラウンドでは、90分で決着がつかない場合は引き分けとならず、即PK戦で勝敗を決する特別ルールが採用されています。Jリーグがかつて1990年代に採用していた完全決着方式を彷彿とさせると話題です。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "鹿島アントラーズ",
+        "横浜F・マリノス",
+        "レオ・セアラ",
+        "J1"
+      ],
+      "text": "2026年5月10日に行われた明治安田J1百年構想リーグ第16節の横浜F・マリノス対鹿島アントラーズ戦で、後半アディショナルタイムに劇的な同点FKを沈めた鹿島の選手は誰？",
+      "options": [
+        "レオ・セアラ",
+        "鈴木優磨",
+        "知念慶",
+        "アレクサンダル・チャヴリッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "90+5分にレオ・セアラが直接FKから同点ゴールを決めて1-1とし、その後のPK戦を鹿島が5-4で制して貴重な勝ち点2を獲得しました。",
+      "trivia": "PK戦では、この日攻守にわたって大活躍を見せていた横浜FMの宮市亮がキックを外すという結末となりました。試合自体は横浜FMが主導権を握っていましたが、鹿島の執念が実った一戦です。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "FC東京",
+        "東京ヴェルディ",
+        "東京ダービー",
+        "長倉幹樹"
+      ],
+      "text": "2026年5月10日に行われた明治安田J1百年構想リーグ第16節の東京ダービー「FC東京 vs 東京ヴェルディ」で、後半アディショナルタイムに劇的な決勝ゴールを挙げたFC東京の選手は誰？",
+      "options": [
+        "長倉幹樹",
+        "室屋成",
+        "ディエゴ・オリヴェイラ",
+        "荒木遼太郎"
+      ],
+      "answerIndex": 0,
+      "explanation": "東京Vが先制後、FC東京の室屋成が同点ゴールを挙げ、最後は90+5分に長倉幹樹が劇的な決勝ゴールを奪って2-1で逆転勝利を収めました。",
+      "trivia": "劇的ゴールを決めた長倉幹樹は、新潟からFC東京へ移籍後も持ち前の優れた得点感覚でチームの攻撃を牽引しています。また、この試合では海外から復帰した室屋成も同点ゴールをマークし、スタジアムを大いに沸かせました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-10",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "浦和レッズ",
+        "水戸ホーリーホック",
+        "イサーク・キーセ・テリン",
+        "J1"
+      ],
+      "text": "2026年5月9日に行われた明治安田J1百年構想リーグ第16節「水戸ホーリーホック vs 浦和レッズ」で、途中出場から立て続けに2ゴールを挙げた浦和のFWは誰？",
+      "options": [
+        "イサーク・キーセ・テリン",
+        "ブライアン・リンセン",
+        "チアゴ・サンタナ",
+        "サミュエル・グスタフソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズのイサーク・キーセ・テリンは、後半から途中出場すると77分と79分に立て続けにゴールを奪い、チームの4-1での快勝に大きく貢献しました。",
+      "trivia": "スウェーデン代表経験もあるキーセ・テリンは、長身を生かした強靭なポストプレーと高い決定力が持ち味のストライカーです。この日は田中達也監督の采配が見事に的中し、途中出場から一気に試合を決定づけました。",
+      "referenceDate": "2026-05-11",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-05-09",
+        "publishDate": "2026-05-11",
+        "expiryDate": "2026-05-18",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
