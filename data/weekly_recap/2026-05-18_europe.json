@@ -1,0 +1,1041 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-17T22:08:33Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-05-18",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "トッテナム",
+        "リーズ"
+      ],
+      "text": "2026年5月11日に行われたプレミアリーグのトッテナム対リーズ・ユナイテッドの一戦で、リーズに貴重な同点ゴール（PK）をもたらした選手は誰でしょう？",
+      "options": [
+        "ドミニク・キャルバート＝ルーウィン",
+        "パトリック・バンフォード",
+        "ウィルフリード・ニョント",
+        "イーサン・アンパドゥ"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半にトッテナムのマティス・テルが犯したファウルにより獲得したPKを、キャルバート＝ルーウィンが冷静に沈めました。降格を争うリーズにとって貴重な勝ち点1をもたらすゴールとなり、試合は1-1の引き分けで終了しています。",
+      "trivia": "キャルバート＝ルーウィンはかつてエバートンで長年プレーし、空中戦の圧倒的な強さと得点感覚で幾度となくチームを救ってきた実績を持つイングランドを代表するストライカーの一人です。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-11",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "セビージャ"
+      ],
+      "text": "2026年5月17日のラ・リーガで、レアル・マドリードがセビージャに1-0で勝利しました。この試合の決勝点となるゴールを決めた選手は誰でしょう？",
+      "options": [
+        "ヴィニシウス・ジュニオール",
+        "キリアン・エムバペ",
+        "ジュード・ベリンガム",
+        "ロドリゴ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アウェイのセビージャ戦で、ヴィニシウス・ジュニオールが値千金の決勝ゴールを記録しました。レアル・マドリードはこの勝利によってリーグ戦2位の座を確固たるものにしています。",
+      "trivia": "ヴィニシウスは重要な局面でゴールを決める勝負強さが最大の持ち味であり、レアル・マドリードの攻撃陣において最も警戒されるウインガーとして世界中から高く評価されています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-17",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "アストン・ビラ",
+        "リバプール"
+      ],
+      "text": "2026年5月15日に行われたプレミアリーグで、アストン・ビラがリバプールとの打ち合いを制しました。この試合の最終スコアはどれでしょう？",
+      "options": [
+        "4-2（アストン・ビラの勝利）",
+        "3-1（アストン・ビラの勝利）",
+        "2-1（リバプールの勝利）",
+        "3-3（引き分け）"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ビラはホームでリバプールと対戦し、両チーム合わせて計6ゴールが生まれる乱打戦の末に4-2で勝利を収めました。",
+      "trivia": "アストン・ビラのホームスタジアムであるヴィラ・パークは、熱狂的なサポーターが作り出す異様な雰囲気で知られ、ビッグクラブにとっても非常に戦いにくい鬼門となっています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-15",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "アーセナル",
+        "パリ・サンジェルマン"
+      ],
+      "text": "2026年5月末にアーセナルとパリ・サンジェルマンが対戦することが決まった「UEFAチャンピオンズリーグ決勝」の開催地に指定されているスタジアムはどこでしょう？",
+      "options": [
+        "プスカシュ・アレーナ（ブダペスト）",
+        "ウェンブリー・スタジアム（ロンドン）",
+        "アリアンツ・アレーナ（ミュンヘン）",
+        "サン・シーロ（ミラノ）"
+      ],
+      "answerIndex": 0,
+      "explanation": "今シーズンのチャンピオンズリーグ決勝は、ハンガリーの首都ブダペストにあるプスカシュ・アレーナで開催されることが決定しています。アーセナルとPSGが欧州の頂点を懸けて戦います。",
+      "trivia": "プスカシュ・アレーナはハンガリーの伝説的選手であるフェレンツ・プスカシュの名を冠しており、2023年のヨーロッパリーグ決勝などUEFAの主要大会で度々使用されています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "レバンドフスキ"
+      ],
+      "text": "2026年5月17日にバルセロナはホームでレアル・ベティスと対戦しました。この試合は、ある大物ストライカーにとってカンプ・ノウでのラストゲームとして大きな注目を集めましたが、それは誰でしょう？",
+      "options": [
+        "ロベルト・レバンドフスキ",
+        "ハフィーニャ",
+        "フェラン・トーレス",
+        "ジョアン・フェリックス"
+      ],
+      "answerIndex": 0,
+      "explanation": "すでにリーグ連覇を決めていたバルセロナがベティスと対戦したこの試合は、長らく最前線を牽引してきたポーランド代表FWロベルト・レバンドフスキにとって本拠地カンプ・ノウでの最後の試合となりました。",
+      "trivia": "レバンドフスキはバイエルン・ミュンヘン時代に1シーズンでブンデスリーガ41ゴールという大記録を打ち立て、ゲルト・ミュラーの伝説的記録を更新した稀代の点取り屋です。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-17",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "ニューカッスル",
+        "ウェストハム"
+      ],
+      "text": "2026年5月17日のプレミアリーグで、ニューカッスルはウェストハムを3-1で下し、相手を降格の危機へと追い込みました。この試合で2ゴールを挙げる活躍を見せたニューカッスルの選手は誰でしょう？",
+      "options": [
+        "ウィリアム・オスラ",
+        "アレクサンデル・イサク",
+        "アンソニー・ゴードン",
+        "カラム・ウィルソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "ニューカッスルはウィリアム・オスラが2ゴール（ダブル）を奪う活躍を見せ、3-1で勝利しました。一方のウェストハムはこの敗戦により、残留争いで非常に厳しい立場に立たされました。",
+      "trivia": "ウィリアム・オスラはシェフィールド・ユナイテッドのアカデミー出身で、若くしてそのスピードとフィジカルを生かしたダイナミックなプレースタイルが高く評価されているアタッカーです。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-17",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "アトレティコ・マドリード",
+        "グリーズマン"
+      ],
+      "text": "2026年5月17日付近に行われたジローナ戦は、アトレティコ・マドリードの歴代最多得点者であるアントワーヌ・グリーズマンのホーム最終戦となりました。彼は来シーズンからMLS（メジャーリーグサッカー）のどのクラブへの加入が決定しているでしょう？",
+      "options": [
+        "オーランド・シティ",
+        "インテル・マイアミ",
+        "ロサンゼルスFC",
+        "ニューヨーク・シティFC"
+      ],
+      "answerIndex": 0,
+      "explanation": "ディエゴ・シメオネ監督から「ここで指導した中で最もゲームを変えられる天才」と大絶賛されたグリーズマンは、シーズン終了後にMLSのオーランド・シティへ移籍することが決まっています。",
+      "trivia": "グリーズマンは大のバスケットボール（NBA）好きとして知られ、アメリカの文化に強い憧れを持っていたため、キャリア終盤でのアメリカ挑戦は彼の長年の夢でもありました。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-17",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "エムバペ"
+      ],
+      "text": "2026年5月17日のセビージャ戦で先発復帰したキリアン・エムバペは、試合の数日前に自身を「チームの4番手のストライカーにした」として、レアル・マドリードの監督を公然と批判していました。当時のレアル・マドリードの監督は誰でしょう？",
+      "options": [
+        "アルバロ・アルベロア",
+        "シャビ・アロンソ",
+        "カルロ・アンチェロッティ",
+        "ジネディーヌ・ジダン"
+      ],
+      "answerIndex": 0,
+      "explanation": "怪我から復帰したエムバペですが、自身を序列の4番手に位置付けたアルバロ・アルベロア監督の起用法に不満を爆発させ、大きな波紋を呼びました。その後、17日の試合でスタメンに復帰しています。",
+      "trivia": "アルバロ・アルベロアは現役時代にレアル・マドリードやリバプールでサイドバックとして活躍し、引退後はレアルの下部組織で監督としてのキャリアを着実に積んできました。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-17",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "トッテナム",
+        "リーズ"
+      ],
+      "text": "2026年5月11日のトッテナム対リーズの一戦で、トッテナムの先制点を挙げたマティス・テルですが、後半にペナルティエリア内でハイキックのファウルを犯しPKを献上しました。この時、ファウルを受けたリーズの選手は誰でしょう？",
+      "options": [
+        "イーサン・アンパドゥ",
+        "ジョー・ロドン",
+        "アーチー・グレイ",
+        "イラン・メリエ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マティス・テルの高く上がった足がイーサン・アンパドゥの頭部に接触したと判定され、リーズにPKが与えられました。これをキャルバート＝ルーウィンが決め、1-1の引き分けとなりました。",
+      "trivia": "イーサン・アンパドゥはウェールズ代表として若くして頭角を現し、チェルシーなどに所属した後、リーズで守備の要としてチームを支える存在に成長しました。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-11",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "サンダーランド",
+        "エバートン"
+      ],
+      "text": "2026年5月17日に行われたプレミアリーグの試合で、サンダーランドはアウェイに乗り込み、あるクラブを3-1で撃破しました。その対戦相手はどこでしょう？",
+      "options": [
+        "エバートン",
+        "クリスタル・パレス",
+        "ノッティンガム・フォレスト",
+        "ウェストハム・ユナイテッド"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンダーランドは敵地でエバートンと対戦し、3-1の見事なアウェイ勝利を収めました。サンダーランドにとって非常に価値のある勝ち点3となっています。",
+      "trivia": "サンダーランドの熱狂的なサポーターは「マックム」と呼ばれ、同じく北東部を本拠地とするニューカッスル・ユナイテッドとのタイン・ウェア・ダービーはイングランド屈指の熱戦として有名です。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-17",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "順位",
+        "インテル"
+      ],
+      "text": "2026年5月中旬の時点で、すでに2025-26シーズンのセリエA優勝を確定させているクラブはどこでしょう？",
+      "options": [
+        "インテル",
+        "ナポリ",
+        "ACミラン",
+        "ユヴェントス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2025-26シーズンのセリエAでは、インテルが圧倒的な強さを見せ、2026年5月時点ですでに2位ナポリ以下を引き離して優勝（スクデット）を確定させています。",
+      "trivia": "インテルはこれで昨シーズンに続くセリエA連覇となり、イタリア国内での強さを不動のものとしています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "アーセナル",
+        "パリ・サンジェルマン"
+      ],
+      "text": "2025-26シーズンのUEFAチャンピオンズリーグで、2026年5月30日に開催予定の決勝戦の対戦カードはどれでしょう？",
+      "options": [
+        "アーセナル vs パリ・サンジェルマン",
+        "アーセナル vs バイエルン・ミュンヘン",
+        "アトレティコ・マドリード vs パリ・サンジェルマン",
+        "レアル・マドリード vs パリ・サンジェルマン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2025-26シーズンのCL決勝は、準決勝でバイエルン・ミュンヘンを破ったパリ・サンジェルマンと、アトレティコ・マドリードを破ったアーセナルの顔合わせとなりました。",
+      "trivia": "決勝戦は2026年5月30日に、ハンガリーの首都ブダペストにあるプスカシュ・アレーナで開催されます。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "得点ランキング",
+        "キリアン・エムバペ"
+      ],
+      "text": "2026年5月17日時点で、2025-26シーズンのラ・リーガ得点ランキングでトップ（24得点）に立っている選手は誰でしょう？",
+      "options": [
+        "キリアン・エムバペ",
+        "ロベルト・レヴァンドフスキ",
+        "ジュード・ベリンガム",
+        "アントワーヌ・グリーズマン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2025-26シーズンよりレアル・マドリードに加入したキリアン・エムバペは、ラ・リーガで24得点をマークし、得点王（ピチーチ賞）争いのトップに立っています。",
+      "trivia": "エムバペは公式戦トータルでシーズン40得点以上を記録しており、新天地スペインでも驚異的な決定力を遺憾なく発揮しています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "得点ランキング",
+        "イゴール・チアゴ"
+      ],
+      "text": "2025-26シーズンのプレミアリーグ得点ランキングで、2026年5月17日時点で首位のアーリング・ハーランド（26得点）に次ぐ2位（22得点）につけている、ブレントフォードの選手は誰でしょう？",
+      "options": [
+        "イゴール・チアゴ",
+        "イヴァン・トニー",
+        "ブライアン・ムベウモ",
+        "アレクサンデル・イサク"
+      ],
+      "answerIndex": 0,
+      "explanation": "首位のアーリング・ハーランド（マンチェスター・C）を追う2位には、22得点を挙げているブレントフォードのFWイゴール・チアゴがつけています。",
+      "trivia": "ブラジル出身のイゴール・チアゴは、ブルガリアのルドゴレツ、ベルギーのクラブ・ブルッヘを経てプレミアリーグに参戦し、大ブレイクを果たしました。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "順位",
+        "コモ"
+      ],
+      "text": "2025-26シーズンのセリエAにおいて、2026年5月17日時点でユヴェントスと並んで勝ち点68を稼ぎ、5位と大躍進を遂げているクラブはどこでしょう？",
+      "options": [
+        "コモ",
+        "パルマ",
+        "ヴェネツィア",
+        "フロジノーネ"
+      ],
+      "answerIndex": 0,
+      "explanation": "セスク・ファブレガスらが指導に関わってきたことで知られるコモは、近年昇格したクラブながら今季大旋風を巻き起こし、チャンピオンズリーグ出場権を争う5位につけています。",
+      "trivia": "コモ（Como 1907）は風光明媚なコモ湖のほとりに本拠地を置き、共同オーナーにはティエリ・アンリなど元スター選手も名を連ねています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ブンデスリーガ",
+        "得点ランキング",
+        "デニズ・ウンダフ"
+      ],
+      "text": "2025-26シーズンのブンデスリーガ得点ランキングで、2026年5月時点で首位を独走するハリー・ケインに次ぐ2位（19得点）にランクインしている、VfBシュトゥットガルトのドイツ代表FWは誰でしょう？",
+      "options": [
+        "デニズ・ウンダフ",
+        "エルメディン・デミロヴィッチ",
+        "セルフ・ギラシ",
+        "マクシミリアン・バイアー"
+      ],
+      "answerIndex": 0,
+      "explanation": "バイエルンのハリー・ケインが30得点以上を挙げ独走していますが、シュトゥットガルトのデニズ・ウンダフが19得点を記録して堂々の2位にランクインしています。",
+      "trivia": "ウンダフは遅咲きのストライカーで、下部リーグから這い上がり、ブライトンなどを経てドイツ代表にまで上り詰めた苦労人です。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "長友佑都"
+      ],
+      "text": "2026年5月15日、FIFAワールドカップ2026に臨む日本代表メンバー26人が発表されました。今回、日本人単独最多となる「5大会連続」でのW杯代表選出を果たしたベテランDFは誰でしょう？",
+      "options": [
+        "長友佑都",
+        "川島永嗣",
+        "吉田麻也",
+        "酒井宏樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京に所属する39歳の長友佑都が選出され、日本選手史上初となる5大会連続のワールドカップメンバー入りという歴史的偉業を達成しました。",
+      "trivia": "前回大会から継続して選出されたのは26人中13人でした。長友選手と今大会最年少メンバーの後藤啓介選手（20歳）とは、親子ほど年齢が離れています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "eredivisie",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "上田綺世",
+        "フェイエノールト",
+        "エールディビジ",
+        "得点王"
+      ],
+      "text": "2026年5月17日、オランダ・エールディビジで日本人初となる「欧州主要1部リーグ得点王」に輝いたフェイエノールト所属の日本代表FWは誰でしょう？",
+      "options": [
+        "上田綺世",
+        "小川航基",
+        "古橋亨梧",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "フェイエノールトの上田綺世が得点ランキングを独走して得点王を獲得しました。日本人選手が欧州主要1部リーグで得点王になるのは史上初の快挙です。",
+      "trivia": "オランダ・エールディビジの得点王は、過去にデニス・ベルカンプやルート・ファン・ニステルローイ、ルイス・スアレスなど、世界的なストライカーたちが獲得してきた名誉あるタイトルです。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "対戦国"
+      ],
+      "text": "2026年5月15日のW杯日本代表メンバー発表時にも話題となりましたが、日本代表は今大会グループFに入りました。6月14日のグループステージ初戦で激突する欧州の強豪国はどこでしょう？",
+      "options": [
+        "オランダ",
+        "スウェーデン",
+        "チュニジア",
+        "デンマーク"
+      ],
+      "answerIndex": 0,
+      "explanation": "史上最多の48カ国が参加する北中米ワールドカップで、日本代表はグループFに入り、オランダ、チュニジア、スウェーデンと同組になりました。注目の初戦の相手はオランダです。",
+      "trivia": "今大会で指揮を執る森保一監督は、前回カタール大会から引き続きワールドカップの舞台で日本代表を率いることになり、史上初めて2大会連続でW杯本大会の指揮を執る日本人監督となります。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "ブライトン",
+        "日本代表",
+        "ワールドカップ"
+      ],
+      "text": "2026年5月15日に発表されたW杯日本代表メンバーから、発表直前の5月9日に行われたリーグ戦で太もも（ハムストリング）を負傷したことにより、無念の選外となったブライトン所属の選手は誰でしょう？",
+      "options": [
+        "三笘薫",
+        "南野拓実",
+        "伊東純也",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブライトンの三笘薫はウォルバーハンプトン戦で負傷し、大会期間中にコンディションを戻すのは難しいとメディカルスタッフが判断したため選外となりました。また、左膝十字靭帯断裂の重傷を負っていた南野拓実も選外となっています。",
+      "trivia": "三笘選手は前回のカタール大会で、ゴールラインぎりぎりでボールを折り返した「三笘の1ミリ」が世界中で大きな話題となりましたが、今回は無念の欠場となりました。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "eredivisie",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "上田綺世",
+        "フェイエノールト",
+        "エールディビジ",
+        "スタッツ"
+      ],
+      "text": "2026年5月17日にオランダ・エールディビジの得点王を獲得したフェイエノールトの上田綺世。彼が2025-26シーズンに記録したリーグ戦のゴール数はいくつでしょう？",
+      "options": [
+        "25",
+        "21",
+        "28",
+        "31"
+      ],
+      "answerIndex": 0,
+      "explanation": "上田綺世は今シーズン、リーグ戦31試合に出場して25ゴールをマークしました。2位のアヤックスの選手に8ゴール差をつける圧倒的な成績での戴冠でした。",
+      "trivia": "上田選手は第9節ヘラクレス戦でエールディビジの日本人選手として初のハットトリックを達成し、第15節ズウォレ戦では圧巻の4ゴールを叩き込むなど、1試合での爆発力でも現地のファンを魅了しました。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ブレンデン・アーロンソン",
+        "アメリカ代表",
+        "リーズ・ユナイテッド",
+        "負傷"
+      ],
+      "text": "W杯自国開催を控えるアメリカ代表にとって懸念となるニュースです。2026年5月17日のブライトン戦で左膝を負傷し、途中交代したリーズ所属の選手は誰でしょう？",
+      "options": [
+        "ブレンデン・アーロンソン",
+        "クリスチャン・プリシッチ",
+        "ウェストン・マッケニー",
+        "タイラー・アダムス"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーロンソンは試合の59分に負傷交代し、5月下旬に発表されるアメリカ代表のW杯メンバー選考への影響が懸念されています。クラブのメディカルスタッフによる今後の診断結果が待たれます。",
+      "trivia": "アメリカ代表として2022年のカタール大会にも出場した経験を持つアーロンソンですが、彼の弟のパクストンもプロサッカー選手として活躍しており、兄弟揃ってアメリカの有望株として知られています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-17",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "マヌエル・ノイアー",
+        "バイエルン・ミュンヘン",
+        "ドイツ代表",
+        "負傷"
+      ],
+      "text": "2026年5月中旬、ふくらはぎの負傷によりバイエルンの国内カップ戦決勝に向けた不安材料となったものの、自国開催だったEURO2024後に引退したドイツ代表への復帰（W杯出場）が噂されているベテランGKは誰でしょう？",
+      "options": [
+        "マヌエル・ノイアー",
+        "マルク＝アンドレ・テア・シュテーゲン",
+        "ケヴィン・トラップ",
+        "ベルント・レノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "40歳となったノイアーは5月16日の試合で今季3度目となる左ふくらはぎの負傷で離脱しました。しかし、ナーゲルスマン監督のW杯予備登録メンバー55名に含まれていると報じられ、代表復帰が現実味を帯びています。",
+      "trivia": "ノイアーは最近バイエルンと2027年夏までの契約延長を果たしており、不屈の精神で現役続行への強い意欲を見せています。スイーパーキーパーの代名詞として、いまだに世界トップクラスの存在感を放っています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-16",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "カディジャ・ショー",
+        "マンチェスター・シティ",
+        "WSL",
+        "記録達成"
+      ],
+      "text": "2026年5月16日、マンチェスター・シティ女子チームのカディジャ・ショーは、ウィメンズ・スーパーリーグ（WSL）史上初となる偉業を達成しました。それは次のうちどれでしょう？",
+      "options": [
+        "3シーズン連続の得点王",
+        "シーズン30ゴール達成",
+        "通算100アシスト達成",
+        "5試合連続ハットトリック"
+      ],
+      "answerIndex": 0,
+      "explanation": "ウェストハム戦で2得点を挙げたショーは、22試合で21ゴールを記録しました。これにより、ウィメンズ・スーパーリーグ史上初となる3シーズン連続でのゴールデンブーツ（得点王）に輝く快挙を成し遂げました。",
+      "trivia": "ジャマイカ代表のストライカーである彼女は「バニー（Bunny）」の愛称で親しまれています。圧倒的なフィジカルと得点感覚を武器に、マンチェスター・シティとジャマイカ代表の両方で絶対的なエースとして君臨しています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-16",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "サム・カー",
+        "チェルシー",
+        "退団",
+        "記録達成"
+      ],
+      "text": "今夏でチェルシーを退団することが決まっているサム・カーは、2026年5月16日の最終戦でゴールを決め、クラブの女子歴代最多得点記録に並びました。この記録となる通算得点数はいくつでしょう？",
+      "options": [
+        "115ゴール",
+        "100ゴール",
+        "85ゴール",
+        "130ゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・ユナイテッド戦で決勝点を挙げたカーは、元チームメイトのフラン・カービーが持つ115ゴールのクラブ記録に並びました。この試合を最後に彼女はチェルシーでの素晴らしいキャリアに幕を下ろします。",
+      "trivia": "カーはチェルシーに在籍した6年半で158試合に出場し、12個もの主要タイトル獲得に貢献しました。前線での得点力だけでなく、ゴール後のトレードマークであるバックフリップ（宙返り）でもファンを大いに沸かせました。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-16",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ジェス・フィッシュロック",
+        "ウェールズ代表",
+        "シアトル・レイン",
+        "引退"
+      ],
+      "text": "2026年5月17日、ウェールズ女子代表の歴代最多出場・最多得点記録を持つジェス・フィッシュロックが、2026年シーズンをもって現役を引退すると発表しました。彼女が現在所属しているNWSLのクラブはどこでしょう？",
+      "options": [
+        "シアトル・レイン",
+        "エンジェル・シティー",
+        "サンディエゴ・ウェーブ",
+        "ポートランド・ソーンズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ウェールズ代表として166試合出場48ゴールを記録したフィッシュロックは、現在所属するシアトル・レインでの2026年NWSLシーズン終了後にスパイクを脱ぐ決断を下しました。怪我からの復帰を目指し、キャリアの最後をピッチで締めくくる意向です。",
+      "trivia": "彼女はこれまでのキャリアにおいて、母国ウェールズやアメリカだけでなく、オランダ、オーストラリア、ドイツ、フランスなど世界各国のトップリーグでプレーし、それぞれの国でタイトルを獲得してきた真のレジェンドです。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "FAカップ",
+        "マンチェスター・シティ",
+        "チェルシー",
+        "イングランド"
+      ],
+      "text": "2026年5月16日に行われたFAカップ決勝でチェルシーを下し、通算8度目の優勝を果たしたクラブはどこ？",
+      "options": [
+        "マンチェスター・シティ",
+        "アーセナル",
+        "マンチェスター・ユナイテッド",
+        "リヴァプール"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年5月16日にウェンブリー・スタジアムで行われた決勝で、マンチェスター・シティがチェルシーを1-0で破り、ペップ・グアルディオラ監督体制で3度目、クラブ通算8度目のFAカップ制覇を成し遂げました。",
+      "trivia": "グアルディオラ監督にとって、このFAカップ制覇はマンチェスター・シティでの20個目の主要タイトル獲得となりました。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-16",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "VAR",
+        "ワールドカップ",
+        "ルール変更",
+        "FIFA"
+      ],
+      "text": "2026年5月に話題となった、2026年ワールドカップから新たにVAR（ビデオ・アシスタント・レフェリー）の介入対象として追加されることになった事象はどれ？",
+      "options": [
+        "2枚目のイエローカード",
+        "スローインの反則",
+        "フリーキックの壁の距離",
+        "アドバンテージの適用ミス"
+      ],
+      "answerIndex": 0,
+      "explanation": "これまでのVARは「一発退場」のみが対象でしたが、2026年のワールドカップからは「2枚目のイエローカード（退場）」や「コーナーキック／ゴールキックの判定」もVARの介入対象として試験導入されることが決まりました。",
+      "trivia": "判定の精度向上を目指すFIFAに対し、プレミアリーグのクラブは試合のテンポが損なわれることを懸念し、来季の国内リーグでの新基準導入を見送る方針と報じられています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "FAカップ",
+        "マンチェスター・シティ",
+        "ゴール",
+        "決勝"
+      ],
+      "text": "2026年5月16日のFAカップ決勝・マンチェスター・シティ対チェルシー戦で、72分に優勝を決定づける決勝ゴールを決めた選手は誰？",
+      "options": [
+        "セメニョ",
+        "アーリング・ハーランド",
+        "ベルナルド・シウバ",
+        "フィル・フォーデン"
+      ],
+      "answerIndex": 0,
+      "explanation": "0-0で迎えた72分、ベルナルド・シウバの起点からアーリング・ハーランドが折り返したクロスを、セメニョがヒール気味に合わせて決勝点を奪いました。",
+      "trivia": "セメニョは難しい体勢からの見事なフィニッシュを見せ、ウェンブリー・スタジアムに詰めかけたスカイブルーのサポーターを熱狂させました。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-16",
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ハメス・ロドリゲス",
+        "移籍",
+        "MLS",
+        "コロンビア代表"
+      ],
+      "text": "2026年5月、ワールドカップに向けた準備などを理由に早期退団することが発表されたコロンビア代表のハメス・ロドリゲスが所属していたMLSのクラブはどこ？",
+      "options": [
+        "ミネソタ・ユナイテッド",
+        "ロサンゼルス・ギャラクシー",
+        "インテル・マイアミ",
+        "シカゴ・ファイアー"
+      ],
+      "answerIndex": 0,
+      "explanation": "コロンビア代表のハメス・ロドリゲスは、2026年W杯を前にMLSのミネソタ・ユナイテッドを退団することが発表されました。同クラブではわずか数試合の出場にとどまり、ゴールやアシストは記録していませんでした。",
+      "trivia": "クラブ関係者は、出場機会は限られていたものの、彼のチームでの振る舞いは「完璧なプロフェッショナルだった」と評価しています。",
+      "referenceDate": "2026-05-18",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-18",
+        "expiryDate": "2026-05-25",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
