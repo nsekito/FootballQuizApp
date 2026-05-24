@@ -1,0 +1,1037 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-24T22:08:48Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-05-25",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "uel",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ヨーロッパリーグ",
+        "アストン・ヴィラ",
+        "決勝"
+      ],
+      "text": "2026年5月20日に行われたUEFAヨーロッパリーグ決勝で、アストン・ヴィラがフライブルクを3-0で下し優勝しました。アストン・ヴィラの監督として、自身通算5回目の同大会優勝を果たした指揮官は誰でしょう？",
+      "options": [
+        "ウナイ・エメリ",
+        "ジョゼ・モウリーニョ",
+        "ディエゴ・シメオネ",
+        "ユルゲン・クロップ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラを率いるウナイ・エメリ監督は、セビージャやビジャレアル時代と合わせて自身5度目のヨーロッパリーグ制覇を成し遂げました。",
+      "trivia": "アストン・ヴィラは決勝でティーレマンス、ブエンディア、モーガン・ロジャーズが得点を挙げました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-20",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "優勝"
+      ],
+      "text": "2026年5月24日、2025-26シーズンのプレミアリーグ最終節が行われました。クリスタル・パレスを2-1で下し、2003-04シーズン以来、22年ぶりとなるリーグ優勝を果たしたクラブはどこでしょう？",
+      "options": [
+        "アーセナル",
+        "リヴァプール",
+        "マンチェスター・ユナイテッド",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "「インビンシブルズ」と呼ばれた無敗優勝のシーズン以来、22年ぶりにアーセナルが悲願のプレミアリーグ制覇を達成しました。",
+      "trivia": "最終節の勝利後、本拠地で歓喜のタイトルセレモニーが行われました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 38,
+        "matchDate": "2026-05-24",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "DFBポカール",
+        "バイエルン・ミュンヘン",
+        "ハリー・ケイン"
+      ],
+      "text": "2026年5月23日に行われたDFBポカール決勝で、バイエルン・ミュンヘンがシュトゥットガルトを3-0で下して国内2冠を達成しました。この試合でハットトリックの活躍を見せたストライカーは誰でしょう？",
+      "options": [
+        "ハリー・ケイン",
+        "レロイ・サネ",
+        "ジャマル・ムシアラ",
+        "マイケル・オリーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イングランド代表のハリー・ケインが後半に見事なハットトリックを達成し、ヴァンサン・コンパニ監督率いるバイエルンの2冠に大きく貢献しました。",
+      "trivia": "バイエルンはこの優勝により、通算21回目のDFBポカール制覇となりました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-23",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "レヴァンドフスキ"
+      ],
+      "text": "2026年5月に行われたラ・リーガ最終節、バルセロナはバレンシアに1-3で敗れました。この試合でバルセロナでのラストマッチを迎え、チーム唯一のゴールを決めたポーランド代表ストライカーは誰でしょう？",
+      "options": [
+        "ロベルト・レヴァンドフスキ",
+        "ジョアン・フェリックス",
+        "ハフィーニャ",
+        "フェラン・トーレス"
+      ],
+      "answerIndex": 0,
+      "explanation": "37歳となったロベルト・レヴァンドフスキは、バレンシア戦でゴールを決めた後、バルセロナと双方合意の上で契約を解除し退団することとなりました。",
+      "trivia": "2025-26シーズンのラ・リーガでは、ジローナとマジョルカの2部降格が決定しています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 38,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "退団"
+      ],
+      "text": "2026年5月のラ・リーガ最終節、レアル・マドリードはアスレティック・ビルバオに4-2で勝利しました。この試合を最後にレアル・マドリードを退団することになった2人のベテランDFは誰と誰でしょう？",
+      "options": [
+        "ダニ・カルバハルとダビド・アラバ",
+        "トニ・クロースとナチョ",
+        "ルーカス・バスケスとアントニオ・リュディガー",
+        "フェルラン・メンディとエデル・ミリトン"
+      ],
+      "answerIndex": 0,
+      "explanation": "長年チームを支えたカルバハルとアラバにとって、このビルバオとの最終戦がレアル・マドリードでのラストマッチとなりました。",
+      "trivia": "この試合ではキリアン・エンバペもゴールを記録し、本拠地サンティアゴ・ベルナベウでの勝利に花を添えました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 38,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "FAカップ",
+        "マンチェスター・シティ",
+        "セメニョ"
+      ],
+      "text": "FAカップ決勝でチェルシーを1-0で破り優勝したマンチェスター・シティ。この試合で唯一のゴールを挙げ、チームを優勝に導いた冬の新戦力は誰でしょう？",
+      "options": [
+        "アントワーヌ・セメニョ",
+        "ジェレミー・ドク",
+        "マテウス・ヌネス",
+        "サヴィオ"
+      ],
+      "answerIndex": 0,
+      "explanation": "冬の移籍市場でボーンマスからマンチェスター・シティに加入したアントワーヌ・セメニョが、決勝という大舞台で貴重な決勝ゴールを挙げました。",
+      "trivia": "マンチェスター・シティにとって通算8回目のFAカップ優勝となりました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "リーグ・アン",
+        "PSG",
+        "パリFC"
+      ],
+      "text": "2026年5月に行われたリーグ・アン最終節で、すでに優勝を決めていたパリ・サンジェルマンは、同じ都市のライバルとのダービーマッチに1-2で敗れました。その対戦相手のクラブはどこでしょう？",
+      "options": [
+        "パリFC",
+        "レッドスターFC",
+        "USクレテイユ",
+        "RCランス"
+      ],
+      "answerIndex": 0,
+      "explanation": "パリ・サンジェルマンは、同じパリを本拠地とするパリFCに最終戦で敗戦を喫しました。パリFCにとっては歴史的な金星となりました。",
+      "trivia": "この結果にかかわらずPSGは優勝を果たしていますが、同節の結果によりリールが3位に入り来季のCL出場権を獲得しています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 34,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "uel",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ヨーロッパリーグ",
+        "アストン・ヴィラ",
+        "記録"
+      ],
+      "text": "2026年5月20日にUEFAヨーロッパリーグで優勝したアストン・ヴィラですが、彼らが欧州の主要タイトルを獲得したのは何年ぶりとなるでしょう？",
+      "options": [
+        "44年ぶり (1982年以来)",
+        "30年ぶり (1996年以来)",
+        "25年ぶり (2001年以来)",
+        "初優勝"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラにとって、欧州の主要タイトルは1982年のヨーロピアンカップ（現チャンピオンズリーグ）制覇以来、実に44年ぶりの快挙でした。",
+      "trivia": "1996年のリーグカップ優勝以来、国内を含めたすべての主要大会でも30年ぶりのタイトル獲得となりました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-20",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "レッチェ",
+        "残留"
+      ],
+      "text": "2026年5月24日に行われたセリエA最終節で、レッチェはジェノアに1-0で勝利し、クラブ史上初となる「5シーズン連続のセリエA残留」を達成しました。この偉業に導いた監督は誰でしょう？",
+      "options": [
+        "エウゼビオ・ディ・フランチェスコ",
+        "ロベルト・ダヴェルサ",
+        "ルカ・ゴッティ",
+        "ファビオ・グロッソ"
+      ],
+      "answerIndex": 0,
+      "explanation": "フロジノーネとヴェネツィアで2シーズン連続のセリエB降格を味わっていたディ・フランチェスコ監督が、レッチェで見事に残留を果たし歴史を作りました。",
+      "trivia": "レッチェは他会場のクレモネーゼ対コモの結果により、試合終了前に残留が実質的に確定していました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 38,
+        "matchDate": "2026-05-24",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "残留争い",
+        "降格"
+      ],
+      "text": "最終節までもつれた2025-26シーズンのプレミアリーグ残留争い。トッテナムがエヴァートンに勝利して残留を決めた一方、リーズに3-0で勝利したものの降格が決まってしまったロンドンのクラブはどこでしょう？",
+      "options": [
+        "ウェストハム・ユナイテッド",
+        "クリスタル・パレス",
+        "フラム",
+        "ブレントフォード"
+      ],
+      "answerIndex": 0,
+      "explanation": "ウェストハムは最終節でリーズに勝利して意地を見せましたが、ライバルのトッテナムが勝利したため、無念のチャンピオンシップ（2部）降格となりました。",
+      "trivia": "このシーズンはバーンリーとウォルヴァーハンプトンも降格の憂き目に遭っています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 38,
+        "matchDate": "2026-05-24",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "順位表",
+        "アーセナル",
+        "優勝"
+      ],
+      "text": "2026年5月24日に最終節が行われた2025-26シーズンのプレミアリーグで、マンチェスター・シティを抑えて優勝を果たしたクラブはどこでしょう？",
+      "options": [
+        "アーセナル",
+        "リヴァプール",
+        "マンチェスター・ユナイテッド",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルがマンチェスター・シティとの熾烈な優勝争いを制し、2003-04シーズン以来となるプレミアリーグ制覇を達成しました。",
+      "trivia": "アーセナルにとってこれは4回目のプレミアリーグ優勝であり、クラブ通算では14回目のトップリーグ制覇となります。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 38,
+        "matchDate": "2026-05-24",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "得点王",
+        "キリアン・エムバペ",
+        "個人スタッツ"
+      ],
+      "text": "2026年5月24日に幕を閉じた2025-26シーズンのラ・リーガで、25ゴールを挙げて得点王（ピチーチ賞）に輝いた選手は誰でしょう？",
+      "options": [
+        "キリアン・エムバペ",
+        "ロベルト・レヴァンドフスキ",
+        "ヴィニシウス・ジュニオール",
+        "ジュード・ベリンガム"
+      ],
+      "answerIndex": 0,
+      "explanation": "キリアン・エムバペがラ・リーガで25ゴールを記録し、見事得点王に輝きました。",
+      "trivia": "エムバペはフランスのリーグ・アンで長年得点王を独占していましたが、スペイン挑戦でもその得点力を遺憾なく発揮しています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "順位表",
+        "降格",
+        "ウェストハム"
+      ],
+      "text": "2025-26シーズンのプレミアリーグにおいて、2026年5月24日の最終節の終了をもって2部（チャンピオンシップ）への降格が決定したロンドンのクラブはどれでしょう？",
+      "options": [
+        "ウェストハム・ユナイテッド",
+        "クリスタル・パレス",
+        "フラム",
+        "ブレントフォード"
+      ],
+      "answerIndex": 0,
+      "explanation": "ウェストハムは最終節で奇跡を起こせず、2011-12シーズン以来となる2部降格が決定しました。",
+      "trivia": "同じロンドンのクラブであるアーセナルが優勝の歓喜に沸く一方で、ウェストハムは降格の悲哀を味わう対照的な結末となりました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 38,
+        "matchDate": "2026-05-24",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "得点王",
+        "アーリング・ハーランド",
+        "個人スタッツ"
+      ],
+      "text": "2025-26シーズンのプレミアリーグで得点王を獲得したアーリング・ハーランド（マンチェスター・シティ）は、このシーズンのリーグ戦で何ゴールを記録したでしょう？",
+      "options": [
+        "27ゴール",
+        "25ゴール",
+        "30ゴール",
+        "32ゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハーランドは2025-26シーズンも驚異的な決定力を維持し、27ゴールで得点王に輝きました。",
+      "trivia": "プレミアリーグにおける通算ゴール数を着実に伸ばし続けており、リーグの歴史に残るストライカーとしての地位を確立しています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "マンチェスター・シティ",
+        "試合結果"
+      ],
+      "text": "2026年5月19日、マンチェスター・シティがアウェイで引き分けたことによりアーセナルのプレミアリーグ優勝が確定しました。この試合でシティと1-1で引き分けた対戦相手はどこでしょう？",
+      "options": [
+        "ボーンマス",
+        "アストン・ヴィラ",
+        "ブライトン",
+        "ブレントフォード"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティはアウェイのボーンマス戦で1-1のドローに終わり、この結果によりアーセナルのタイトル獲得が決定しました。",
+      "trivia": "ボーンマスはこのシーズン、強豪相手にも粘り強い戦いを見せ、優勝争いを左右する重要な役割を果たしました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 37,
+        "matchDate": "2026-05-19",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "順位表",
+        "優勝"
+      ],
+      "text": "2026年5月24日に終了した2025-26シーズンのラ・リーガで、バルセロナは通算29回目の優勝を飾りました。このシーズン、バルセロナが最終的に獲得した勝ち点はいくつでしょう？",
+      "options": [
+        "94",
+        "88",
+        "91",
+        "96"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナは38試合で31勝1分6敗という圧倒的な成績を残し、勝ち点94でリーグを制しました。",
+      "trivia": "2位のレアル・マドリード（勝ち点86）に8ポイントの差をつけての独走優勝となり、宿敵を大きく引き離す結果となりました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "吉田麻也",
+        "日本代表",
+        "LAギャラクシー"
+      ],
+      "text": "2026年5月21日、日本サッカー協会は親善試合に向けてあるベテラン選手の追加招集を発表しました。約3年ぶりの代表復帰となったその選手は誰でしょう？",
+      "options": [
+        "吉田麻也",
+        "長友佑都",
+        "酒井宏樹",
+        "川島永嗣"
+      ],
+      "answerIndex": 0,
+      "explanation": "鎌田大地の合流遅れに伴い、アイスランド戦までの限定的な帯同として吉田麻也が追加招集されました。チームの一体感や情報共有の面で期待されての選出です。",
+      "trivia": "吉田麻也は現在アメリカのLAギャラクシーでプレーしており、北中米W杯の開催地事情に明るいことも招集の理由の1つと見られています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鈴木彩艶",
+        "パルマ",
+        "移籍の噂"
+      ],
+      "text": "2026年5月の現地メディア報道によると、セリエAでパルマの残留に貢献した鈴木彩艶に対し、あるイタリアの強豪クラブが獲得に関心を示しているとされています。そのクラブはどこでしょう？",
+      "options": [
+        "インテル",
+        "ユヴェントス",
+        "ACミラン",
+        "ASローマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "パルマの正GKとして活躍する鈴木彩艶に対し、プレミアリーグのクラブに加えてセリエAの強豪インテルも関心を示していると地元紙「Parma Today」が報じました。",
+      "trivia": "所属先のパルマは今季、セリエA史上2番目に若いカルロス・クエスタ監督の下で、4試合を残しての早期残留という素晴らしい結果を残しました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "ブライトン",
+        "ベストゴール"
+      ],
+      "text": "負傷により2026年W杯欠場が決まったブライトンの三笘薫ですが、5月にクラブの年間ベストゴール賞を受賞しました。この受賞にまつわる彼自身の記録として正しいものはどれでしょう？",
+      "options": [
+        "3年連続の受賞",
+        "日本人初の受賞",
+        "満票での受賞",
+        "ルーキーイヤーからの受賞"
+      ],
+      "answerIndex": 0,
+      "explanation": "三笘薫は4月に決めたトッテナム戦での鮮やかなボレー弾が評価され、ブライトンのクラブ年間ベストゴール賞を3年連続で受賞する快挙を成し遂げました。",
+      "trivia": "三笘はハムストリングの負傷で長期離脱を余儀なくされましたが、ブライトンの同僚カディオグルなどからは彼を気遣う温かいエールが多く送られました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鎌田大地",
+        "クリスタル・パレス",
+        "記録達成"
+      ],
+      "text": "2026年5月24日に最終節が行われたプレミアリーグで、クリスタル・パレスの鎌田大地は5月中に日本人選手として史上7人目となるある記録を達成しました。その記録とは何でしょう？",
+      "options": [
+        "プレミアリーグ通算50試合出場",
+        "プレミアリーグ通算10得点",
+        "プレミアリーグ通算20アシスト",
+        "1シーズン全試合出場"
+      ],
+      "answerIndex": 0,
+      "explanation": "鎌田大地は5月11日のバーンリー戦に出場したことで、日本人選手として7人目となるプレミアリーグ通算50試合出場を達成しました。",
+      "trivia": "これまでプレミアリーグで50試合以上に出場した日本人選手には、吉田麻也や岡崎慎司、冨安健洋らが名を連ねています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 38,
+        "matchDate": "2026-05-24",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "遠藤航",
+        "リヴァプール",
+        "ケガ復帰"
+      ],
+      "text": "2026年2月に左足首の靭帯断裂という重傷を負っていたリヴァプールの遠藤航ですが、5月24日の最終節ブレントフォード戦でベンチ入りを果たしました。公式戦でのメンバー入りは何日ぶりだったでしょう？",
+      "options": [
+        "102日ぶり",
+        "85日ぶり",
+        "140日ぶり",
+        "200日ぶり"
+      ],
+      "answerIndex": 0,
+      "explanation": "遠藤航は2月のサンダーランド戦での負傷から懸命なリハビリを重ね、最終節で102日ぶりにメンバー入りを果たし、ファンから歓喜の声があがりました。",
+      "trivia": "この最終節の試合でリヴァプールはドローに終わりましたが、来季のチャンピオンズリーグ出場権を無事に獲得しています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 38,
+        "matchDate": "2026-05-24",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アスピリクエタ",
+        "スペイン代表",
+        "引退"
+      ],
+      "text": "2026年5月22日、長年プレミアリーグのチェルシーなどで活躍し、スペイン代表のキャプテンも務めた名DFが現役引退を発表しました。その選手は誰でしょう？",
+      "options": [
+        "セサル・アスピリクエタ",
+        "セルヒオ・ラモス",
+        "ダニ・カルバハル",
+        "ジョルディ・アルバ"
+      ],
+      "answerIndex": 0,
+      "explanation": "長年チェルシーなどで活躍し、アトレティコ・マドリードでもプレーしたアスピリクエタが、2026年ワールドカップを前にスパイクを脱ぐ決断を下しました。数多くのタイトルを獲得した偉大なキャリアに幕を下ろします。",
+      "trivia": "アスピリクエタはチェルシー時代、サポーターから「デイブ」という愛称で親しまれていました。これは彼のバスク語の苗字が長くて発音しにくかったため、ファンが勝手に親しみやすい名前を付けたのが始まりです。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "フェルミン・ロペス",
+        "バルセロナ",
+        "スペイン代表"
+      ],
+      "text": "2026年5月18日に手術を受けることが発表され、右足の第5中足骨骨折によりワールドカップ出場が絶望的となったバルセロナ所属のスペイン代表MFは誰でしょう？",
+      "options": [
+        "フェルミン・ロペス",
+        "ペドリ",
+        "ガビ",
+        "ラミン・ヤマル"
+      ],
+      "answerIndex": 0,
+      "explanation": "フェルミン・ロペスは5月17日のベティス戦で負傷し、無念のワールドカップ欠場となりました。チームメイトのラミン・ヤマルもハムストリングの負傷を抱えており、スペイン代表にとって痛手となっています。",
+      "trivia": "彼が骨折した「第5中足骨」は足の小指の付け根にある骨で、ここの骨折は「ジョーンズ骨折」とも呼ばれます。急激なターンやステップを多用するサッカー選手に非常に起こりやすい怪我として知られています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ネイマール",
+        "ブラジル代表",
+        "負傷"
+      ],
+      "text": "2026年5月22日、ワールドカップのブラジル代表メンバーに選出されているネイマールが、練習中に右ふくらはぎを痛めたと報じられました。現在、彼が所属している母国ブラジルのクラブはどこでしょう？",
+      "options": [
+        "サントス",
+        "フラメンゴ",
+        "パルメイラス",
+        "サンパウロ"
+      ],
+      "answerIndex": 0,
+      "explanation": "古巣のサントスに復帰してプレーしているネイマールですが、代表合流直前にふくらはぎを痛め、カルロ・アンチェロッティ監督率いるブラジル代表のスタッフをヒヤリとさせました。大事には至らず数日で回復する見込みです。",
+      "trivia": "2026年ワールドカップからブラジル代表を指揮するカルロ・アンチェロッティ監督は、代表選手たちに厳格なフィットネス基準を設けています。ネイマールを含め、全員が最高のコンディションで大会に臨むことを求めています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "イングランド代表",
+        "ワールドカップ",
+        "メンバー発表"
+      ],
+      "text": "2026年5月22日、トーマス・トゥヘル監督率いるイングランド代表がワールドカップメンバー26名のアナウンス映像を公開しました。その特別な発表映像のBGMとして使用された、世界的ロックバンドの楽曲はどれでしょう？",
+      "options": [
+        "The Beatles『Come Together』",
+        "Queen『We Will Rock You』",
+        "Oasis『Wonderwall』",
+        "The Rolling Stones『Start Me Up』"
+      ],
+      "answerIndex": 0,
+      "explanation": "イングランド代表のメンバー発表映像は、ビートルズの名曲『Come Together』にのせて公開されました。トーマス・トゥヘル監督が選んだ26名の名前が、ニューヨークの街並みを背景に浮かび上がるシネマティックな演出でした。",
+      "trivia": "映像のロケ地がイギリスではなくニューヨークだったのは、今回のワールドカップがアメリカ・カナダ・メキシコの北中米共同開催だからです。1960年代にビートルズがアメリカを席巻した文化的背景もオマージュされています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "スコットランド代表",
+        "ワールドカップ",
+        "メンバー発表"
+      ],
+      "text": "2026年5月19日に公開されたスコットランド代表のワールドカップメンバー発表映像で、感動的なナレーションを担当した同国出身の有名俳優は誰でしょう？",
+      "options": [
+        "ユアン・マクレガー",
+        "ショーン・コネリー",
+        "ジェラルド・バトラー",
+        "ジェームズ・マカヴォイ"
+      ],
+      "answerIndex": 0,
+      "explanation": "スコットランドの壮大な風景やバグパイプの音色とともに、『スター・ウォーズ』のオビ＝ワン・ケノービ役などで知られるユアン・マクレガーがナレーションを務めました。国中がワールドカップに向けて一つになる感動的な映像となりました。",
+      "trivia": "スコットランド代表の熱狂的なサポーターは「タータン・アーミー」と呼ばれています。国際大会のたびに開催国の街中でキルトを着てバグパイプを吹き鳴らし、お祭り騒ぎを起こす陽気なファンとして世界中で愛されています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "優勝"
+      ],
+      "text": "2025-26シーズンのプレミアリーグで、2003-04シーズン以来となる22年ぶりの優勝を果たしたクラブはどこでしょう？",
+      "options": [
+        "アーセナル",
+        "マンチェスター・シティ",
+        "リヴァプール",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "第37節で2位のマンチェスター・シティが引き分けたため、1試合を残してアーセナルの優勝が決定しました。無敗優勝を飾った2003-04シーズン以来となる悲願のタイトル獲得です。",
+      "trivia": "アーセナルは今季、コーナーキックからプレミアリーグ新記録となる18得点を挙げるなど、セットプレーの強さが優勝の原動力の一つとなりました。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": 37,
+        "matchDate": "2026-05-19",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "マンチェスター・シティ",
+        "監督",
+        "退任"
+      ],
+      "text": "2026年5月22日、10年間にわたる長期政権の終焉となる「今季限りでの退任」を発表した、マンチェスター・シティの監督は誰でしょう？",
+      "options": [
+        "ジョゼップ・グアルディオラ",
+        "ユルゲン・クロップ",
+        "カルロ・アンチェロッティ",
+        "ミケル・アルテタ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2016年夏に就任し、プレミアリーグ4連覇や史上初の勝ち点100達成など、クラブに計20個もの主要タイトルをもたらした名将が退任を発表しました。",
+      "trivia": "退任後の後任の有力候補として、かつてマンチェスター・シティでアシスタントコーチを務めたエンツォ・マレスカ氏の名前が挙がっています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "uel",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ヨーロッパリーグ",
+        "アストン・ヴィラ",
+        "ウナイ・エメリ",
+        "優勝"
+      ],
+      "text": "2026年5月20日に行われたヨーロッパリーグ（EL）決勝で、フライブルクを3-0で下しアストン・ヴィラを優勝に導いた指揮官で、自身5度目のEL制覇を果たした監督は誰でしょう？",
+      "options": [
+        "ウナイ・エメリ",
+        "ジョゼ・モウリーニョ",
+        "ジャン・ピエロ・ガスペリーニ",
+        "ディエゴ・シメオネ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラはティーレマンスの先制点とブエンディアの2ゴールで勝利し、1981-82シーズンのチャンピオンズカップ以来44年ぶりとなる欧州タイトルを獲得しました。",
+      "trivia": "アストン・ヴィラの熱狂的なファンとして知られるイギリスのウィリアム皇太子も現地イスタンブールに駆けつけ、優勝後の祝賀会にも参加して大興奮していたそうです。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-20",
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "プレミアリーグ",
+        "アシスト王",
+        "ブルーノ・フェルナンデス",
+        "記録更新"
+      ],
+      "text": "2025-26シーズンのプレミアリーグで、歴代最多記録を塗り替える「21アシスト」を記録し、プレーメイカー・オブ・ザ・シーズン（アシスト王）を受賞した選手は誰でしょう？",
+      "options": [
+        "ブルーノ・フェルナンデス",
+        "ケヴィン・デ・ブライネ",
+        "マーティン・ウーデゴール",
+        "コール・パーマー"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・ユナイテッドの主将を務めるB・フェルナンデスは今季21アシストを記録。ティエリ・アンリ氏とデ・ブライネが持っていたこれまでのシーズン最多記録（20アシスト）を塗り替えました。",
+      "trivia": "圧倒的なチャンスメイク力を発揮したブルーノ・フェルナンデスは、今季のアシスト王だけでなく、同シーズンのプレミアリーグ年間最優秀選手（MVP）との個人2冠も達成しています。",
+      "referenceDate": "2026-05-25",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-05-25",
+        "expiryDate": "2026-06-01",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
