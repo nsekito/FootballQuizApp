@@ -1,0 +1,1040 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-03T04:29:23Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-06-01",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "明治安田J1百年構想リーグ",
+        "ヴィッセル神戸",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年5月30日に行われた明治安田J1百年構想リーグ プレーオフラウンド第1戦（1-2位決定戦）のヴィッセル神戸vs鹿島アントラーズの試合結果はどうなった？",
+      "options": [
+        "神戸が5-0で大勝した",
+        "鹿島が5-0で大勝した",
+        "0-0の引き分けだった",
+        "神戸が2-1で逆転勝利した"
+      ],
+      "answerIndex": 0,
+      "explanation": "WEST1位のヴィッセル神戸がEAST1位の鹿島アントラーズをホームに迎え、大迫勇也のハットトリックなどで5-0と大勝しました。",
+      "trivia": "この大会はJリーグが2026年夏からの秋春制に移行するため、2026年前半にハーフシーズンの特別大会として行われています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "national",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "親善試合",
+        "小川航基"
+      ],
+      "text": "2026年5月31日に国立競技場で行われたサッカー日本代表の親善試合（vsアイスランド代表）で、決勝ゴールを決めた選手は？",
+      "options": [
+        "小川航基",
+        "上田綺世",
+        "堂安律",
+        "南野拓実"
+      ],
+      "answerIndex": 0,
+      "explanation": "スコアレスで迎えた87分、途中出場の小川航基が決勝点となるゴールを決め、日本が1-0で勝利しました。",
+      "trivia": "この試合で日本代表は後半開始から長友佑都や小川航基らを投入するなど、多くの選手交代で流れを変えました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-31",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "名古屋グランパス",
+        "FC町田ゼルビア"
+      ],
+      "text": "2026年5月30日、明治安田J1百年構想リーグ プレーオフラウンドの名古屋グランパスvsFC町田ゼルビアの試合で、後半アディショナルタイムに美しい同点ゴールを決めた名古屋の選手は？",
+      "options": [
+        "高嶺朋樹",
+        "木村勇大",
+        "山岸祐也",
+        "稲垣祥"
+      ],
+      "answerIndex": 0,
+      "explanation": "1点ビハインドで迎えた90+2分に高嶺朋樹がペナルティエリア外からゴラッソを決め、2-2の引き分けに持ち込みました。",
+      "trivia": "この日パロマ瑞穂スタジアムで行われた試合では、前半に木村勇大もゴールを記録しています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "サンフレッチェ広島",
+        "川崎フロンターレ"
+      ],
+      "text": "2026年5月31日に行われた明治安田J1百年構想リーグ プレーオフラウンド第1戦、サンフレッチェ広島vs川崎フロンターレの試合で勝利したのはどちらのチーム？",
+      "options": [
+        "サンフレッチェ広島",
+        "川崎フロンターレ",
+        "引き分け",
+        "悪天候により中止となった"
+      ],
+      "answerIndex": 0,
+      "explanation": "広島が中村草太と加藤陸次樹のゴールにより、ホームで2-1と川崎フロンターレに先勝しました。",
+      "trivia": "両チームは地域リーグラウンドで共に4位（広島がWEST4位、川崎FがEAST4位）となり、7-8位決定戦として対戦しています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-31",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "浦和レッズ",
+        "ファジアーノ岡山"
+      ],
+      "text": "2026年5月31日に行われた明治安田J1百年構想リーグのファジアーノ岡山vs浦和レッズの試合で、浦和の同点ゴールを決めた選手は誰？",
+      "options": [
+        "ダニーロ・ボザ",
+        "中島翔哉",
+        "オナイウ阿道",
+        "サミュエル・グスタフソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "岡山がルカオのゴールで先制しましたが、70分にダニーロ・ボザが強烈なヘディングシュートを決め、1-1の引き分けに終わりました。",
+      "trivia": "ダニーロ・ボザはこの試合で、下がりながらでも力強いヘディングを放ち、その首の強さがSNS等で話題となりました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-31",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "清水エスパルス",
+        "横浜F・マリノス"
+      ],
+      "text": "2026年5月31日の清水エスパルスvs横浜F・マリノスの試合で、後半10分に見事な先制ゴールを奪った清水の選手は？",
+      "options": [
+        "小塚和季",
+        "北川航也",
+        "オ・セフン",
+        "矢島慎也"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半10分にMF小塚和季が先制ゴールを奪いましたが、その後横浜FMの谷村海那に同点弾を許し、1-1のドロー決着となりました。",
+      "trivia": "この試合は13-14位決定戦として、IAIスタジアム日本平で行われました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-31",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "セレッソ大阪",
+        "FC東京"
+      ],
+      "text": "2026年5月30日に行われたセレッソ大阪vsFC東京の試合で、後半にC大阪の同点ゴール（2点目）を決めた選手は？",
+      "options": [
+        "登里享平",
+        "柴山昌也",
+        "櫻川ソロモン",
+        "レオ・セアラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京のマルセロ・ヒアンのゴールで勝ち越された後、79分に登里享平が同点ゴールをマークし、2-2の引き分けとなりました。",
+      "trivia": "前半終了間際には柴山昌也もゴールを決めており、C大阪は2度リードを許す展開から見事に追いついています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "京都サンガF.C.",
+        "柏レイソル"
+      ],
+      "text": "2026年5月30日・31日に行われた明治安田J1百年構想リーグの京都サンガF.C.vs柏レイソルの試合結果はどうなった？",
+      "options": [
+        "柏が6-2で大勝した",
+        "京都が3-0で勝利した",
+        "1-1の引き分けだった",
+        "柏が1-0で勝利した"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏は小泉佳穂、垣田裕暉、杉岡大暉らがゴールを重ね、終了間際には小見洋太の2ゴールなども生まれ、敵地で6-2の大勝を飾りました。",
+      "trivia": "柏はこの試合、開始わずか1分で小泉佳穂のゴールで先制するなど、序盤から攻撃陣が爆発しました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "ヴィッセル神戸",
+        "大迫勇也"
+      ],
+      "text": "2026年5月30日の鹿島アントラーズ戦でハットトリックを達成したヴィッセル神戸の大迫勇也ですが、前半28分に決めた1点目はどのようなプレーから生まれた？",
+      "options": [
+        "直接フリーキック",
+        "ペナルティキック（PK）",
+        "コーナーキックからのヘディング",
+        "ミドルシュート"
+      ],
+      "answerIndex": 0,
+      "explanation": "大迫勇也は前半28分に直接FKを叩き込んで先制すると、後半にも2点を追加し、ハットトリックを達成しました。",
+      "trivia": "この試合で大迫は後半5分にボレーシュート、後半アディショナルタイム（90+4分）にヘディングシュートを決めており、多彩なゴールパターンを披露しました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "ガンバ大阪",
+        "東京ヴェルディ"
+      ],
+      "text": "2026年5月30日のガンバ大阪vs東京ヴェルディの試合で、後半開始早々（47分）に東京Vの同点ゴールを決めた選手は誰？",
+      "options": [
+        "福田湧矢",
+        "佐々木翔悟",
+        "山見大登",
+        "染野唯月"
+      ],
+      "answerIndex": 0,
+      "explanation": "42分にガンバ大阪の佐々木翔悟のゴールで先制されましたが、後半立ち上がりの47分に福田湧矢が同点ゴールを決め、1-1で引き分けました。",
+      "trivia": "福田湧矢はかつてガンバ大阪に所属していた選手であり、古巣相手の恩返しゴールとなりました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "ヴィッセル神戸",
+        "百年構想リーグ"
+      ],
+      "text": "2026年秋からのシーズン移行に伴い開催された特別大会「明治安田J1百年構想リーグ」。2026年5月に全日程を終えた地域リーグラウンドで、WESTグループの1位に輝いたクラブはどこでしょう？",
+      "options": [
+        "ヴィッセル神戸",
+        "セレッソ大阪",
+        "名古屋グランパス",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグの秋春制移行に伴う端境期の特別大会において、WESTグループはヴィッセル神戸が勝ち点35を獲得して見事1位となりました。",
+      "trivia": "この特別大会は2026年2月から6月までの限定で開催され、J1は東西2つのグループに分かれて対戦しました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "ヴィッセル神戸",
+        "鹿島アントラーズ",
+        "プレーオフ"
+      ],
+      "text": "2026年5月30日に行われた「J1百年構想リーグ」プレーオフラウンド第1戦の1-2位決定戦で、WEST1位のヴィッセル神戸がEAST1位の鹿島アントラーズ相手に記録した試合結果（スコア）はどれでしょう？",
+      "options": [
+        "神戸 5-0 鹿島",
+        "神戸 2-1 鹿島",
+        "神戸 1-1 鹿島",
+        "神戸 0-3 鹿島"
+      ],
+      "answerIndex": 0,
+      "explanation": "ノエビアスタジアム神戸で行われたプレーオフラウンド第1戦の1-2位決定戦では、ホームのヴィッセル神戸が鹿島アントラーズを5-0で圧倒し、大勝を収めました。",
+      "trivia": "プレーオフラウンドは、EASTとWESTの同順位クラブがホーム＆アウェー方式で2試合を戦い、大会の総合順位を決定するレギュレーションです。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "得点ランキング",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年の「J1百年構想リーグ」地域リーグラウンドにおいて、EASTグループの得点ランキング1位（10得点）に輝いた鹿島アントラーズの選手は誰でしょう？",
+      "options": [
+        "レオ・セアラ",
+        "鈴木優磨",
+        "アレクサンダル・チャヴリッチ",
+        "師岡柊生"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズのレオ・セアラは地域リーグラウンドで10得点を挙げ、EASTグループの得点ランキング単独トップに輝きました。",
+      "trivia": "レオ・セアラは鹿島アントラーズのEASTグループ1位通過に大きく貢献し、チームの総得点29点のうち3分の1以上を一人で稼ぎ出しました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "ベガルタ仙台",
+        "百年構想リーグ"
+      ],
+      "text": "2026年の特別大会「明治安田J2・J3百年構想リーグ」において、全4グループのうち「EAST-A」グループを1位で通過したクラブはどこでしょう？",
+      "options": [
+        "ベガルタ仙台",
+        "ブラウブリッツ秋田",
+        "ヴァンフォーレ甲府",
+        "RB大宮アルディージャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "J2・J3合同で行われた特別大会で、EAST-Aグループはベガルタ仙台が18試合で勝ち点43を記録し、2位の秋田を抑えて1位となりました。",
+      "trivia": "ちなみに「EAST-B」グループの1位はヴァンフォーレ甲府でした。J2・J3はEASTとWESTがそれぞれA・Bに分かれる4グループ制で開催されました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "名古屋グランパス",
+        "FC町田ゼルビア",
+        "プレーオフ"
+      ],
+      "text": "2026年5月30日に行われた「J1百年構想リーグ」プレーオフラウンド第1戦の5-6位決定戦は、2-2の引き分けに終わりました。対戦したクラブの組み合わせとして正しいものはどれでしょう？",
+      "options": [
+        "名古屋グランパス vs FC町田ゼルビア",
+        "サンフレッチェ広島 vs 川崎フロンターレ",
+        "セレッソ大阪 vs FC東京",
+        "ガンバ大阪 vs 東京ヴェルディ"
+      ],
+      "answerIndex": 0,
+      "explanation": "WEST3位の名古屋グランパスとEAST3位のFC町田ゼルビアによる5-6位決定戦の第1戦は、パロマ瑞穂スタジアムで行われ、2-2のドローに終わりました。",
+      "trivia": "不正解の選択肢について、広島vs川崎Fは7-8位決定戦、C大阪vsFC東京は3-4位決定戦、G大阪vs東京Vは9-10位決定戦のカードでした。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "得点ランキング",
+        "名古屋グランパス"
+      ],
+      "text": "2026年の「J1百年構想リーグ」地域リーグラウンドにおいて、WESTグループの得点ランキング1位（10得点）に輝いた選手は誰でしょう？",
+      "options": [
+        "山岸祐也",
+        "木村勇大",
+        "デニス・ヒュメット",
+        "大迫勇也"
+      ],
+      "answerIndex": 0,
+      "explanation": "名古屋グランパスの山岸祐也が10得点を挙げ、WESTグループの得点ランキング首位となりました。2位にはチームメイトの木村勇大らが8得点で続きました。",
+      "trivia": "WESTグループの得点ランキングトップ2を名古屋グランパスの選手（山岸、木村）が占め、強力な攻撃陣を見せつけました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "負傷",
+        "三笘薫"
+      ],
+      "text": "2026年5月に発表された2026年ワールドカップ日本代表メンバーにおいて、直前の試合で負傷したため残念ながら選外となった選手は誰？",
+      "options": [
+        "三笘薫",
+        "遠藤航",
+        "冨安健洋",
+        "久保建英"
+      ],
+      "answerIndex": 0,
+      "explanation": "リヴァプールの遠藤航やアヤックスの冨安健洋らは負傷を抱えながらもメンバー入りを果たしましたが、プレミアリーグで負傷した三笘薫は無念の欠場となりました。",
+      "trivia": "三笘選手は2022年カタール大会では「三笘の1ミリ」で世界的な話題を生み、日本のベスト16進出に大きく貢献しました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "長友佑都",
+        "記録達成"
+      ],
+      "text": "2026年5月に発表された2026年ワールドカップ日本代表メンバーに選出された大ベテランのDF長友佑都。出場すれば自身何大会目のW杯となる？",
+      "options": [
+        "5大会目",
+        "4大会目",
+        "6大会目",
+        "3大会目"
+      ],
+      "answerIndex": 0,
+      "explanation": "39歳の大ベテランである長友佑都は、日本代表選手としては史上初となる5大会目のワールドカップ出場権を手にしました。",
+      "trivia": "長友選手が初めてワールドカップメンバーに選ばれたのは2010年南アフリカ大会。そこから16年間、日本代表の第一線を走り続けています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "背番号",
+        "堂安律"
+      ],
+      "text": "2026年5月27日、2026年ワールドカップに臨む日本代表メンバーの背番号が発表されました。エースナンバーの「10番」を背負うことになったのは誰？",
+      "options": [
+        "堂安律",
+        "久保建英",
+        "南野拓実",
+        "鎌田大地"
+      ],
+      "answerIndex": 0,
+      "explanation": "フランクフルトでプレーする堂安律が、2026年ワールドカップで日本代表の10番をつけることになりました。",
+      "trivia": "過去のワールドカップでは、中村俊輔や香川真司、南野拓実などが日本代表のエースナンバー「10番」を背負って戦いました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "アビスパ福岡",
+        "Jリーグ",
+        "負傷"
+      ],
+      "text": "2026年5月28日、アビスパ福岡はMF福島和毅が全治6カ月の大ケガを負ったことを発表しました。診断されたケガの部位はどこ？",
+      "options": [
+        "右膝外側半月板",
+        "右足アキレス腱",
+        "左膝前十字靭帯",
+        "右足首靭帯"
+      ],
+      "answerIndex": 0,
+      "explanation": "福島和毅は5月17日のトレーニングマッチ中に負傷し、右膝外側半月板損傷で全治6カ月と診断され、5月27日に手術を行いました。",
+      "trivia": "半月板は膝の関節の間にある軟骨で、クッションの役割を果たしています。サッカー選手にとって長期間の離脱を余儀なくされる重傷の一つです。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "サンフレッチェ広島",
+        "Jリーグ",
+        "負傷",
+        "塩谷司"
+      ],
+      "text": "2026年5月31日、サンフレッチェ広島のDF塩谷司が全治4週間の負傷（右太腿二頭筋肉離れ）と発表されました。彼が負傷した5月23日のリーグ戦の対戦相手はどこだった？",
+      "options": [
+        "名古屋グランパス",
+        "浦和レッズ",
+        "ヴィッセル神戸",
+        "横浜F・マリノス"
+      ],
+      "answerIndex": 0,
+      "explanation": "塩谷司は、5月23日に行われた明治安田J1百年構想リーグ第18節の名古屋グランパス戦で負傷交代していました。",
+      "trivia": "2026年はJリーグの「秋春制」本格移行を前に、2月から昇降格なしの特別大会「明治安田Jリーグ百年構想リーグ」がハーフシーズンで開催されています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "決算",
+        "川崎フロンターレ",
+        "浦和レッズ"
+      ],
+      "text": "2026年5月26日、Jリーグは前年度のクラブ経営情報（先行発表）を公開しました。1位の浦和レッズとともに売上高が100億円を突破し、クラブ史上初めての大台に乗せたクラブはどこでしょうか？",
+      "options": [
+        "川崎フロンターレ",
+        "ガンバ大阪",
+        "ヴィッセル神戸",
+        "横浜F・マリノス"
+      ],
+      "answerIndex": 0,
+      "explanation": "川崎フロンターレは売上高101億円を記録し、クラブ史上初めて100億円を突破しました。浦和レッズ（113億円）と並び、Jリーグ史上初めて同一年度に複数クラブが100億円超えを達成しました。",
+      "trivia": "川崎フロンターレの収益大幅増には、ACLエリート準優勝による賞金や、若手選手の海外移籍に伴う移籍金などが大きく寄与したと見られています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "監督就任",
+        "アビスパ福岡",
+        "Jリーグ"
+      ],
+      "text": "2026年5月29日、特別大会である百年構想リーグで暫定的に指揮を執っていた人物が、秋から始まる2026-27シーズンより正式にトップチームの監督に就任することが発表されたJ1クラブはどこでしょうか？",
+      "options": [
+        "アビスパ福岡",
+        "京都サンガF.C.",
+        "FC東京",
+        "北海道コンサドーレ札幌"
+      ],
+      "answerIndex": 0,
+      "explanation": "アビスパ福岡は、チームの暫定監督を務めていた塚原真也氏と契約を更新し、2026-27シーズンから正式に新監督として就任することを発表しました。",
+      "trivia": "塚原真也氏は暫定監督としてチームを率いる中で、守備の課題改善やチームの土台作りに貢献し、その手腕がクラブから高く評価されました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "監督契約更新",
+        "FC東京",
+        "Jリーグ"
+      ],
+      "text": "2026年5月26日、FC東京はトップチームの指揮を執る監督との契約更新を発表し、2026-27シーズンも引き続きチームを託すこととしました。この監督は誰でしょうか？",
+      "options": [
+        "松橋力蔵",
+        "長谷川健太",
+        "アルベル",
+        "ピーター・クラモフスキー"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は松橋力蔵監督との契約を更新したことを発表しました。今季は目標の優勝には届かなかったものの、攻守にアグレッシブなスタイルを構築する手腕が評価されました。",
+      "trivia": "松橋力蔵監督は過去にアルビレックス新潟を率いてJ2優勝とJ1昇格を達成した実績を持ち、前シーズンからFC東京の指揮官に就任しています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "監督退任",
+        "京都サンガF.C.",
+        "Jリーグ"
+      ],
+      "text": "2026年5月、京都サンガF.C.は曺貴裁監督の退任を発表しました。5月30日からの特別大会プレーオフラウンドで、同氏に代わってトップチームの監督として指揮を執ることになった前ヘッドコーチは誰でしょうか？",
+      "options": [
+        "吉田達磨",
+        "長谷部茂利",
+        "四方田修平",
+        "石丸清隆"
+      ],
+      "answerIndex": 0,
+      "explanation": "京都サンガF.C.は双方合意の上での曺貴裁監督の退任を発表し、それに伴い吉田達磨ヘッドコーチがプレーオフラウンドの2試合で監督として指揮を執ることになりました。",
+      "trivia": "退任した曺貴裁監督は2021年の就任後、チームを12年ぶりのJ1復帰へと導き、J1残留や上位進出などクラブの新たな歴史を築き上げました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "特別大会",
+        "百年構想リーグ",
+        "Jリーグ",
+        "ACL"
+      ],
+      "text": "2026年5月30日より順位決定戦（プレーオフラウンド）が開始された特別大会「明治安田Jリーグ百年構想リーグ」ですが、J1の同大会優勝クラブに与えられる権利は次のうちどれでしょうか？",
+      "options": [
+        "ACLエリート2026-27出場権",
+        "天皇杯のシード権",
+        "ルヴァンカップのグループステージ免除",
+        "2026-27シーズンの勝ち点3付与"
+      ],
+      "answerIndex": 0,
+      "explanation": "秋春制移行に伴い2026年前半に開催されている特別大会「明治安田Jリーグ百年構想リーグ」において、J1の順位決定戦を制した優勝クラブにはAFCチャンピオンズリーグエリート2026-27の出場権が与えられます。",
+      "trivia": "この特別大会はJ1が東西に分かれてリーグ戦を行い、同順位同士がホーム＆アウェイで対戦して最終順位を決定するという、今後のJリーグでは見られないような特殊なフォーマットで開催されました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "ブルーアーカイブ",
+        "コラボ"
+      ],
+      "text": "2026年5月25日、JリーグとYostarが運営する人気ゲームとのコラボが発表され、話題を呼びました。生徒20名がJ1全20クラブをそれぞれ応援するこのゲームは何でしょう？",
+      "options": [
+        "ブルーアーカイブ",
+        "アークナイツ",
+        "アズールレーン",
+        "雀魂"
+      ],
+      "answerIndex": 0,
+      "explanation": "5月25日、Jリーグと『ブルーアーカイブ』のコラボが発表されました。J1全20クラブを生徒20名がそれぞれ応援する企画で、スタジアムでの特別体験や限定グッズなども予定されています。",
+      "trivia": "発表時点ではどの生徒がどのクラブを担当するかは未発表で、SNSでは「浦和レッズ担当がハナコでは？」といった予想合戦が白熱しました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ヴィッセル神戸",
+        "鹿島アントラーズ",
+        "大迫勇也",
+        "ハットトリック"
+      ],
+      "text": "2026年5月30日に行われた「明治安田J1百年構想リーグ」プレーオフラウンド第1戦のヴィッセル神戸対鹿島アントラーズで、古巣相手にハットトリックを達成し、チームを5-0の大勝に導いた選手は誰でしょう？",
+      "options": [
+        "大迫勇也",
+        "武藤嘉紀",
+        "鈴木優磨",
+        "知念慶"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィッセル神戸の大迫勇也は、前半28分に直接FKを決めて先制すると、後半にも2点を追加しハットトリックを達成。古巣の鹿島相手に5-0の快勝を収め、優勝に王手をかけました。",
+      "trivia": "この試合の3点目は、後半アディショナルタイム（90+4分）にパトリッキからのマイナスのクロスに飛び込み、体勢を崩しながらダイビングヘッドで合わせた劇的なゴールでした。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J1百年構想リーグ",
+        "鹿島アントラーズ",
+        "賞金"
+      ],
+      "text": "2026年5月24日までに全18試合を終えた「明治安田J1百年構想リーグ」地域リーグラウンド。勝ち点1につき200万円が与えられる特別大会で、EAST1位となった鹿島アントラーズの獲得賞金はいくらになったでしょう？",
+      "options": [
+        "9000万円",
+        "7000万円",
+        "5000万円",
+        "1億1000万円"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズは地域リーグラウンドで勝ち点45を積み上げ、9000万円を獲得しました。一方、WEST1位のヴィッセル神戸は勝ち点35で7000万円の獲得となっています。",
+      "trivia": "今大会の勝利給は、90分勝利で600万円、PK勝ちで400万円ですが、PK負けでも200万円が支給されるため、地道に勝ち点を積み上げることがクラブの強化費確保に直結する仕組みでした。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "オールスター",
+        "DAZNカップ"
+      ],
+      "text": "2026年6月13日にMUFGスタジアムで開催される「JリーグオールスターDAZNカップ」。その前日である6月12日に出場選手による公開練習が行われるスタジアムはどこでしょう？",
+      "options": [
+        "味の素フィールド西が丘",
+        "秩父宮ラグビー場",
+        "町田GIONスタジアム",
+        "等々力陸上競技場"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1・J2・J3の全60クラブから選出された選手たちが参加する前日公開練習は、味の素フィールド西が丘で開催されます。小中高生は無料で観覧できることでも話題となりました。",
+      "trivia": "前日練習や宿泊ホテルでは、全60クラブを代表するスター選手たちへのケータリングフードとして、シルバーパートナーであるベースフード株式会社の「BASE FOOD」が提供される予定です。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
