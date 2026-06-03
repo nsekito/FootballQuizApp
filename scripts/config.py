@@ -19,7 +19,7 @@ VERTEX_AI_LOCATION = os.getenv('VERTEX_AI_LOCATION', 'asia-northeast1')  # 参�
 API_TYPE = os.getenv('API_TYPE', 'gemini')  # デフォルト: gemini
 
 # Geminiモデル名（オプション、デフォルト: gemini-3-pro-preview）
-GEMINI_MODEL_NAME = os.getenv('GEMINI_MODEL_NAME', 'gemini-3-pro-preview')
+GEMINI_MODEL_NAME = os.getenv('GEMINI_MODEL_NAME', 'gemini-3.1-pro-preview')
 
 # Weekly Recap出力ディレクトリ（オプション、デフォルト: data/weekly_recap）
 WEEKLY_RECAP_OUTPUT_DIR = os.getenv('WEEKLY_RECAP_OUTPUT_DIR', 'data/weekly_recap')
