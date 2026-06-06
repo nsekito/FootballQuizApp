@@ -465,8 +465,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.baseline,
+            textBaseline: TextBaseline.alphabetic,
             children: [
               Stack(
                 clipBehavior: Clip.none,
@@ -477,7 +478,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                     child: Text(
                       'Kickpedia',
                       style: GoogleFonts.rajdhani(
-                        fontSize: 26,
+                        fontSize: 32,
                         fontWeight: FontWeight.w800,
                         letterSpacing: 1.0,
                         height: 1.0,
@@ -498,7 +499,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                     child: Text(
                       'Kickpedia',
                       style: GoogleFonts.rajdhani(
-                        fontSize: 26,
+                        fontSize: 32,
                         fontWeight: FontWeight.w800,
                         letterSpacing: 1.0,
                         height: 1.0,
@@ -508,30 +509,16 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                   ),
                 ],
               ),
-              const SizedBox(height: 6),
-              const Row(
-                children: [
-                  SizedBox(
-                    width: 6,
-                    height: 6,
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        color: AppColors.techGreen,
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                  ),
-                  SizedBox(width: 6),
-                  Text(
-                    'Server Status: Online',
-                    style: TextStyle(
-                      fontSize: 10,
-                      fontWeight: FontWeight.w600,
-                      color: AppColors.slate500,
-                      letterSpacing: 0.5,
-                    ),
-                  ),
-                ],
+              const SizedBox(width: 8),
+              Text(
+                '- No Football No Life -',
+                style: GoogleFonts.rajdhani(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
+                  letterSpacing: 0.8,
+                  color: AppColors.slate500,
+                  fontStyle: FontStyle.italic,
+                ),
               ),
             ],
           ),
