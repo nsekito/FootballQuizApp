@@ -13,7 +13,7 @@ import '../utils/app_date_utils.dart';
 class DatabaseService {
   static Database? _database;
   static const String _databaseName = 'questions.db';  // アセットファイル名と一致させる
-  static const int _databaseVersion = 11;  // バージョンを上げて新しいデータベースを強制的に適用
+  static const int _databaseVersion = 12;
   
   // キャッシュ用のマップ（問題ID -> Question）
   final Map<String, Question> _questionCache = {};
@@ -282,6 +282,7 @@ class DatabaseService {
       'weekly_recap_question_history',
       'daily_quiz_play_history',
       'unlocked_questions',
+      'wrong_answer_questions',
     ];
     for (final table in tables) {
       try {
@@ -512,6 +513,18 @@ class DatabaseService {
     ''');
     await db.execute('''
       CREATE INDEX IF NOT EXISTS idx_daily_quiz_play_history_play_date ON daily_quiz_play_history(play_date)
+    ''');
+
+    // 不正解問題テーブル
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS wrong_answer_questions (
+        question_id TEXT PRIMARY KEY,
+        wrong_count INTEGER NOT NULL DEFAULT 1,
+        last_wrong_at TEXT NOT NULL
+      )
+    ''');
+    await db.execute('''
+      CREATE INDEX IF NOT EXISTS idx_wrong_answer_questions_last_wrong_at ON wrong_answer_questions(last_wrong_at)
     ''');
   }
 
@@ -910,6 +923,22 @@ class DatabaseService {
       ''');
       debugPrint('daily_quiz_play_historyテーブルを追加しました');
       debugPrint('バージョン11へのマイグレーション完了');
+    }
+
+    // バージョン11から12へのマイグレーション
+    if (oldVersion < 12) {
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS wrong_answer_questions (
+          question_id TEXT PRIMARY KEY,
+          wrong_count INTEGER NOT NULL DEFAULT 1,
+          last_wrong_at TEXT NOT NULL
+        )
+      ''');
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_wrong_answer_questions_last_wrong_at ON wrong_answer_questions(last_wrong_at)
+      ''');
+      debugPrint('wrong_answer_questionsテーブルを追加しました');
+      debugPrint('バージョン12へのマイグレーション完了');
     }
   }
 
@@ -2191,6 +2220,57 @@ class DatabaseService {
   Future<void> resetUnlockedQuestions() async {
     final db = await database;
     await db.delete('unlocked_questions');
+  }
+
+  /// 不正解だった問題を記録
+  Future<void> recordWrongAnswer(String questionId) async {
+    final db = await database;
+    final now = DateTime.now().toIso8601String();
+    final existing = await db.query(
+      'wrong_answer_questions',
+      where: 'question_id = ?',
+      whereArgs: [questionId],
+    );
+
+    if (existing.isEmpty) {
+      await db.insert('wrong_answer_questions', {
+        'question_id': questionId,
+        'wrong_count': 1,
+        'last_wrong_at': now,
+      });
+    } else {
+      final count = existing.first['wrong_count'] as int;
+      await db.update(
+        'wrong_answer_questions',
+        {
+          'wrong_count': count + 1,
+          'last_wrong_at': now,
+        },
+        where: 'question_id = ?',
+        whereArgs: [questionId],
+      );
+    }
+  }
+
+  /// 正解した問題を不正解リストから削除
+  Future<void> resolveWrongAnswer(String questionId) async {
+    final db = await database;
+    await db.delete(
+      'wrong_answer_questions',
+      where: 'question_id = ?',
+      whereArgs: [questionId],
+    );
+  }
+
+  /// 不正解だった問題IDのリストを取得
+  Future<List<String>> getWrongAnswerQuestionIds() async {
+    final db = await database;
+    final result = await db.query(
+      'wrong_answer_questions',
+      columns: ['question_id'],
+      orderBy: 'last_wrong_at DESC',
+    );
+    return result.map((row) => row['question_id'] as String).toList();
   }
 
   /// 問題IDから問題を取得

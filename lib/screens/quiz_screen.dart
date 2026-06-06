@@ -503,7 +503,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   }
 
   void _selectAnswer(int index) {
-    final isCorrect = index == _questions[_currentQuestionIndex].answerIndex;
+    final question = _questions[_currentQuestionIndex];
+    final isCorrect = index == question.answerIndex;
 
     setState(() {
       _selectedAnswerIndex = index;
@@ -513,6 +514,15 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         _score++;
       }
     });
+
+    if (widget.category != AppConstants.categoryMatchRecap) {
+      final databaseService = ref.read(databaseServiceProvider);
+      if (isCorrect) {
+        unawaited(databaseService.resolveWrongAnswer(question.id));
+      } else {
+        unawaited(databaseService.recordWrongAnswer(question.id));
+      }
+    }
 
     unawaited(ref.read(soundServiceProvider).playQuizResult(isCorrect));
 

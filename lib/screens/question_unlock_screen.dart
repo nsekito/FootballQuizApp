@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import '../providers/question_unlock_provider.dart';
 import '../providers/question_service_provider.dart';
 import '../providers/user_data_provider.dart';
+import '../providers/database_provider.dart';
 import '../constants/app_constants.dart';
 import '../constants/app_colors.dart';
 import '../widgets/glass_morphism_widget.dart';
@@ -44,6 +45,8 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
   final HistoryUnlockService _historyUnlockService = HistoryUnlockService();
   int _remainingFreeUnlocks = 0;
   final ScrollController _scrollController = ScrollController();
+  bool _showOnlyWrongAnswers = false;
+  Set<String> _wrongAnswerIds = {};
 
   static const int _pageSize = 100;
 
@@ -51,6 +54,7 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
   void initState() {
     super.initState();
     _loadRemainingFreeUnlocks();
+    _loadWrongAnswerIds();
     _scrollController.addListener(_onScroll);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted && _canLoadQuestions()) {
@@ -89,6 +93,19 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
     }
   }
 
+  Future<void> _loadWrongAnswerIds() async {
+    final databaseService = ref.read(databaseServiceProvider);
+    final ids = await databaseService.getWrongAnswerQuestionIds();
+    if (mounted) {
+      setState(() => _wrongAnswerIds = Set<String>.from(ids));
+    }
+  }
+
+  List<Question> _getDisplayQuestions() {
+    if (!_showOnlyWrongAnswers) return _questions;
+    return _questions.where((q) => _wrongAnswerIds.contains(q.id)).toList();
+  }
+
   Future<void> _loadQuestions() async {
     if (!_canLoadQuestions()) return;
     if (_isLoading) return;
@@ -100,6 +117,7 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
     });
 
     try {
+      await _loadWrongAnswerIds();
       final questionService = ref.read(questionServiceProvider);
       final batch = await questionService.getQuestionsForUnlockScreen(
         category: _selectedCategory,
@@ -194,11 +212,13 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
     int? unlockedCount;
     int? totalCount;
     double? percentage;
+    final displayQuestions = _getDisplayQuestions();
     final unlockedIds = unlockedIdsAsync.valueOrNull;
-    if (unlockedIds != null && _questions.isNotEmpty) {
+    if (unlockedIds != null && displayQuestions.isNotEmpty) {
       final unlockedIdsSet = Set<String>.from(unlockedIds);
-      totalCount = _questions.length;
-      unlockedCount = _questions.where((q) => unlockedIdsSet.contains(q.id)).length;
+      totalCount = displayQuestions.length;
+      unlockedCount =
+          displayQuestions.where((q) => unlockedIdsSet.contains(q.id)).length;
       percentage = totalCount > 0 ? (unlockedCount / totalCount * 100) : 0.0;
     }
 
@@ -330,6 +350,31 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
             const SizedBox(height: 16),
             _buildRegionFilter(),
           ],
+          const SizedBox(height: 8),
+          CheckboxListTile(
+            contentPadding: EdgeInsets.zero,
+            dense: true,
+            controlAffinity: ListTileControlAffinity.leading,
+            title: const Text(
+              '過去に不正解だった問題のみ表示',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                color: AppColors.techIndigo,
+              ),
+            ),
+            value: _showOnlyWrongAnswers,
+            activeColor: AppColors.techBlue,
+            onChanged: (value) async {
+              final showOnly = value ?? false;
+              if (showOnly) {
+                await _loadWrongAnswerIds();
+              }
+              if (mounted) {
+                setState(() => _showOnlyWrongAnswers = showOnly);
+              }
+            },
+          ),
         ],
       ),
     );
@@ -635,11 +680,26 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
     return unlockedIdsAsync.when(
       data: (unlockedIds) {
         final unlockedIdsSet = Set<String>.from(unlockedIds);
+        final displayQuestions = _getDisplayQuestions();
 
         if (_questions.isEmpty) {
           return Center(
             child: Text(
               'この条件では問題がありません',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.grey.shade600,
+              ),
+            ),
+          );
+        }
+
+        if (displayQuestions.isEmpty) {
+          return Center(
+            child: Text(
+              _showOnlyWrongAnswers
+                  ? 'この条件の不正解問題はありません'
+                  : 'この条件では問題がありません',
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.grey.shade600,
@@ -654,7 +714,7 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
               child: Text(
-                '問題一覧（${_questions.length}件）',
+                '問題一覧（${displayQuestions.length}件）',
                 style: const TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
@@ -666,19 +726,24 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
               child: ListView.builder(
                 controller: _scrollController,
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                itemCount: _questions.length + (_isLoadingMore ? 1 : 0),
+                itemCount: displayQuestions.length + (_isLoadingMore ? 1 : 0),
                 itemBuilder: (context, index) {
-                  if (index >= _questions.length) {
+                  if (index >= displayQuestions.length) {
                     return const Padding(
                       padding: EdgeInsets.symmetric(vertical: 24),
                       child: Center(child: CircularProgressIndicator()),
                     );
                   }
-                  final question = _questions[index];
+                  final question = displayQuestions[index];
                   final isUnlocked = unlockedIdsSet.contains(question.id);
+                  final wasWrong = _wrongAnswerIds.contains(question.id);
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 12),
-                    child: _buildQuestionCard(question, isUnlocked),
+                    child: _buildQuestionCard(
+                      question,
+                      isUnlocked,
+                      wasWrong: wasWrong,
+                    ),
                   );
                 },
               ),
@@ -709,7 +774,11 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
     );
   }
 
-  Widget _buildQuestionCard(Question question, bool isUnlocked) {
+  Widget _buildQuestionCard(
+    Question question,
+    bool isUnlocked, {
+    bool wasWrong = false,
+  }) {
     return GlassMorphismWidget(
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -732,6 +801,10 @@ class _QuestionUnlockScreenState extends ConsumerState<QuestionUnlockScreen> {
                 CategoryDifficultyUtils.getDifficultyName(question.difficulty),
                 Colors.orange,
               ),
+              if (wasWrong) ...[
+                const SizedBox(width: 8),
+                _buildInfoChip('過去に不正解', Colors.red.shade400),
+              ],
             ],
           ),
           const SizedBox(height: 12),

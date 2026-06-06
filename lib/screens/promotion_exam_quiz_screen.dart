@@ -8,6 +8,7 @@ import 'package:intl/intl.dart';
 import '../constants/game_config.dart';
 import '../models/question.dart';
 import '../providers/question_service_provider.dart';
+import '../providers/database_provider.dart';
 import '../providers/user_data_provider.dart';
 import '../constants/app_constants.dart';
 import '../constants/app_colors.dart';
@@ -148,9 +149,17 @@ class _PromotionExamQuizScreenState extends ConsumerState<PromotionExamQuizScree
       _showAnswerResult = true;
     });
 
-    final isCorrect = index == _questions[_currentQuestionIndex].answerIndex;
+    final question = _questions[_currentQuestionIndex];
+    final isCorrect = index == question.answerIndex;
     if (isCorrect) {
       _score++;
+    }
+
+    final databaseService = ref.read(databaseServiceProvider);
+    if (isCorrect) {
+      unawaited(databaseService.resolveWrongAnswer(question.id));
+    } else {
+      unawaited(databaseService.recordWrongAnswer(question.id));
     }
 
     unawaited(ref.read(soundServiceProvider).playQuizResult(isCorrect));
