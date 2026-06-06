@@ -1,0 +1,1041 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-03T04:34:25Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-06-01",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "uecl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "カンファレンスリーグ",
+        "クリスタル・パレス",
+        "決勝"
+      ],
+      "text": "2026年5月28日に行われたUEFAカンファレンスリーグ決勝で、ラージョ・バジェカーノを破り初優勝を果たしたイングランドのクラブは？",
+      "options": [
+        "クリスタル・パレス",
+        "アストン・ヴィラ",
+        "ウェストハム・ユナイテッド",
+        "ブライトン"
+      ],
+      "answerIndex": 0,
+      "explanation": "クリスタル・パレスがラージョ・バジェカーノを破り、クラブ史上初の欧州タイトルを獲得しました。",
+      "trivia": "クリスタル・パレスはこの優勝により、2026-27シーズンのUEFAヨーロッパリーグの出場権を直接獲得しました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-28",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "決勝",
+        "パリ・サンジェルマン"
+      ],
+      "text": "2026年5月30日に行われたUEFAチャンピオンズリーグ決勝で、アーセナルをPK戦の末に破り優勝したクラブは？",
+      "options": [
+        "パリ・サンジェルマン",
+        "レアル・マドリード",
+        "バイエルン・ミュンヘン",
+        "マンチェスター・シティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "パリ・サンジェルマンは1-1で迎えたPK戦を4-3で制し、アーセナルを破ってUEFAチャンピオンズリーグ優勝を果たしました。",
+      "trivia": "パリ・サンジェルマンは今回の優勝で、チャンピオンズリーグ連覇を果たした史上2番目のクラブとなりました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "決勝",
+        "開催地"
+      ],
+      "text": "2026年5月30日のUEFAチャンピオンズリーグ決勝（パリ・サンジェルマン vs アーセナル）の舞台となった都市はどこ？",
+      "options": [
+        "ブダペスト",
+        "ミュンヘン",
+        "ロンドン",
+        "マドリード"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年のUEFAチャンピオンズリーグ決勝は、ハンガリーの首都ブダペストにあるプスカシュ・アレーナで開催されました。",
+      "trivia": "試合当日はブダペスト市内で観戦チケットを持っているファン向けに、公共交通機関の運賃が無料になるサービスが提供されました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "親善試合",
+        "日本代表",
+        "代表戦"
+      ],
+      "text": "2026年5月31日に行われたワールドカップ直前の親善試合で、日本代表が1-0で勝利した相手国は？",
+      "options": [
+        "アイスランド",
+        "フィンランド",
+        "セルビア",
+        "セネガル"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表はワールドカップに向けた親善試合でアイスランド代表と対戦し、1-0で勝利を収めました。",
+      "trivia": "この時期の親善試合は各大陸の出場国が本大会に向けた最終調整として行い、日本は北欧の強豪とテストマッチを行いました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-31",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "親善試合",
+        "アメリカ代表",
+        "代表戦"
+      ],
+      "text": "2026年5月31日に行われた親善試合で、アメリカ代表はセネガル代表と対戦し乱打戦を制しました。この試合の正しいスコアは？",
+      "options": [
+        "3-2",
+        "4-3",
+        "2-1",
+        "3-1"
+      ],
+      "answerIndex": 0,
+      "explanation": "自国開催のワールドカップを控えるアメリカ代表は、アフリカの強豪セネガル代表と対戦し、3-2で勝利しました。",
+      "trivia": "アメリカ代表は2026年W杯でカナダ、メキシコと共に共同ホスト国を務めており、本大会での躍進が期待されています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-31",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "親善試合",
+        "ブラジル代表",
+        "代表戦"
+      ],
+      "text": "2026年5月31日に行われた親善試合で、ブラジル代表が6-2の大差で勝利した相手国は？",
+      "options": [
+        "パナマ",
+        "ホンジュラス",
+        "エルサルバドル",
+        "コスタリカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブラジル代表は北中米カリブ海地域のパナマ代表と対戦し、攻撃陣が爆発して6-2で圧勝しました。",
+      "trivia": "この試合はブラジルサッカーの聖地であるリオデジャネイロの「エスタジオ・ド・マラカナン」で開催されました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-31",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "親善試合",
+        "ドイツ代表",
+        "代表戦"
+      ],
+      "text": "2026年5月31日に行われた親善試合で、ドイツ代表が4-0のクリーンシートで勝利した相手国は？",
+      "options": [
+        "フィンランド",
+        "スウェーデン",
+        "デンマーク",
+        "ノルウェー"
+      ],
+      "answerIndex": 0,
+      "explanation": "ドイツ代表はマインツで開催された親善試合でフィンランド代表と対戦し、4-0で快勝しました。",
+      "trivia": "この試合の会場となったのは、ブンデスリーガ・マインツ05のホームスタジアムである「MEWAアレーナ」でした。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-31",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "決勝",
+        "パリ・サンジェルマン"
+      ],
+      "text": "2026年5月30日に行われたUEFAチャンピオンズリーグ決勝で、マン・オブ・ザ・マッチ（MOM）に選出されたパリ・サンジェルマンの選手は誰？",
+      "options": [
+        "ヴィティーニャ",
+        "マルキーニョス",
+        "キリアン・エムバペ",
+        "ウスマン・デンベレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "延長戦の末1-1からのPK戦（4-3）で勝利を収めたこの試合で、中盤で卓越したパフォーマンスを見せたヴィティーニャがMOMに選ばれました。",
+      "trivia": "ポルトガル代表でもあるヴィティーニャは、豊富な運動量と高いパス精度でパリ・サンジェルマンのゲームメイクを牽引しました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "親善試合",
+        "メキシコ代表",
+        "代表戦"
+      ],
+      "text": "2026年5月30日に行われた親善試合で、ワールドカップ共同開催国のメキシコ代表が1-0で勝利した相手国は？",
+      "options": [
+        "オーストラリア",
+        "サウジアラビア",
+        "カタール",
+        "ヨルダン"
+      ],
+      "answerIndex": 0,
+      "explanation": "メキシコ代表はアメリカのパサデナで開催されたオーストラリア代表とのテストマッチを1-0で制しました。",
+      "trivia": "この試合が行われた「ローズボウル」は、1994年アメリカW杯の決勝戦の舞台となった歴史ある巨大スタジアムです。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "親善試合",
+        "スコットランド代表",
+        "代表戦"
+      ],
+      "text": "2026年5月30日にグラスゴーで行われた親善試合で、スコットランド代表が4-1で勝利した相手国は？",
+      "options": [
+        "キュラソー",
+        "ジャマイカ",
+        "トリニダード・トバゴ",
+        "ハイチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "スコットランド代表は本拠地ハムデン・パークで行われたキュラソー代表との親善試合を4-1で快勝しました。",
+      "trivia": "キュラソー代表はオランダ系の選手が多く在籍しており、近年北中米カリブ海地域で着実に力をつけているチームです。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "優勝"
+      ],
+      "text": "2025-26シーズンのイングランド・プレミアリーグで優勝を果たし、タイトルを奪還したクラブはどこ？",
+      "options": [
+        "アーセナル",
+        "マンチェスター・シティ",
+        "リヴァプール",
+        "アストン・ヴィラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年5月24日の最終節でクリスタル・パレスを下し、勝ち点85を獲得。2位のマンチェスター・シティを抑えて悲願のプレミアリーグ制覇を達成しました。",
+      "trivia": "今回の優勝により、アーセナルは無敗優勝を遂げた2003-04シーズン以来、実に22年ぶり通算14回目のトップリーグ制覇となりました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "uel",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ヨーロッパリーグ",
+        "アストン・ヴィラ",
+        "優勝"
+      ],
+      "text": "2025-26シーズンのUEFAヨーロッパリーグを制し、ウナイ・エメリ監督にとって自身5度目となる同大会優勝をもたらしたイングランドのクラブはどこ？",
+      "options": [
+        "アストン・ヴィラ",
+        "ウェストハム・ユナイテッド",
+        "トッテナム・ホットスパー",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "イスタンブールで行われた決勝でドイツのフライブルクを3-0で破り、同クラブにとって初のヨーロッパリーグ制覇を果たしました。",
+      "trivia": "アストン・ヴィラにとって、欧州の主要タイトル獲得は1981-82シーズンのヨーロピアンカップ（現在のチャンピオンズリーグ）以来、実に44年ぶりの快挙です。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ブンデスリーガ",
+        "バイエルン・ミュンヘン",
+        "最多得点記録"
+      ],
+      "text": "2025-26シーズンのドイツ・ブンデスリーガで、シーズン「122得点」というリーグ史上最多記録を打ち立てて優勝したクラブはどこ？",
+      "options": [
+        "バイエルン・ミュンヘン",
+        "バイヤー・レヴァークーゼン",
+        "ボルシア・ドルトムント",
+        "RBライプツィヒ"
+      ],
+      "answerIndex": 0,
+      "explanation": "バイエルンは自らが1971-72シーズンに樹立したシーズン101得点のリーグ記録を大幅に更新し、圧倒的な攻撃力で王座を奪還しました。",
+      "trivia": "このシーズンのバイエルンは1試合平均3.59得点という驚異的なペースでゴールを量産し、ハリー・ケインは36ゴールを挙げ得点王に輝きました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "コモ",
+        "チャンピオンズリーグ出場権"
+      ],
+      "text": "2025-26シーズンのイタリア・セリエAで大躍進を見せ、最終順位で4位に入り来季のチャンピオンズリーグ出場権を獲得した伏兵クラブはどこ？",
+      "options": [
+        "コモ",
+        "ボローニャ",
+        "パルマ",
+        "クレモネーゼ"
+      ],
+      "answerIndex": 0,
+      "explanation": "セリエAに旋風を巻き起こしたコモは、勝ち点71を獲得してミランやユヴェントスといった強豪を抑え、4位でフィニッシュする大番狂わせを演じました。",
+      "trivia": "2026年1月には強豪トリノを相手に6-0という記録的な大勝を収め、リーグ全体に大きな衝撃を与えました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "PSG",
+        "アーセナル",
+        "決勝"
+      ],
+      "text": "2026年5月30日に行われた2025-26シーズンのUEFAチャンピオンズリーグ決勝は、PSGとアーセナルが激突しました。この試合でアーセナルに一時先制をもたらすゴールを決めた選手は誰？",
+      "options": [
+        "カイ・ハフェルツ",
+        "マルティン・ウーデゴール",
+        "ブカヨ・サカ",
+        "ガブリエウ・マルティネッリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半6分にハフェルツのゴールでアーセナルが先制したものの、PSGが追いつき1-1のままPK戦へ突入。最終的にPSGがPK戦を4-3で制して2連覇を達成しました。",
+      "trivia": "PK戦ではアーセナルのDFガブリエウ・マガリャンイスがシュートをクロスバーの上に外し、勝負を分ける痛恨の失敗となってしまいました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "順位表"
+      ],
+      "text": "2025-26シーズンのスペイン・ラ・リーガで、レアル・マドリードを抑えて王者に輝いたバルセロナですが、全38試合を終えてのチームの敗戦数はいくつだった？",
+      "options": [
+        "6敗",
+        "3敗",
+        "4敗",
+        "8敗"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナは31勝1分6敗の勝ち点94という成績を収め、勝ち点86で2位のレアル・マドリードを引き離してリーグ連覇を果たしました。",
+      "trivia": "このシーズンのバルセロナは全38試合で引き分けがわずか「1」という非常に珍しい成績を残しており、白黒はっきりつける戦いぶりが際立ちました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "上田綺世",
+        "フェイエノールト",
+        "エールディヴィジ",
+        "得点王",
+        "オランダ"
+      ],
+      "text": "今シーズンのオランダ1部エールディヴィジで、31試合25ゴールを記録し、日本人初のリーグ得点王に輝いたフェイエノールトの選手は誰でしょう？",
+      "options": [
+        "上田綺世",
+        "小川航基",
+        "菅原由勢",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "フェイエノールトの上田綺世は、今シーズンのエールディヴィジで25ゴールを挙げ、日本人初のオランダ1部得点王に輝きました。",
+      "trivia": "上田選手はこの活躍により、エールディヴィジ史上初の日本人得点王として歴史に名を刻みました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "ブライトン",
+        "プレミアリーグ",
+        "日本代表"
+      ],
+      "text": "2026年5月25日、所属するクラブが左ハムストリングの手術に成功したことを発表し、無念のワールドカップ欠場が決定したブライトンの日本代表選手は誰でしょう？",
+      "options": [
+        "三笘薫",
+        "冨安健洋",
+        "遠藤航",
+        "伊東純也"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブライトン所属の三笘薫は、リーグ戦での負傷により左ハムストリングの手術を受け、北中米ワールドカップへの出場を断念することとなりました。",
+      "trivia": "三笘選手はW杯欠場となりましたが、今季プレミアリーグで決めたゴールが3季連続で年間ベストゴール候補にノミネートされる偉業を達成しています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "中村敬斗",
+        "スタッド・ランス",
+        "日本代表",
+        "JAL"
+      ],
+      "text": "2026年6月1日、フランスのスタッド・ランスで活躍する日本代表MF中村敬斗が、パートナーシップ契約を締結した日本の大手企業はどこでしょう？",
+      "options": [
+        "JAL（日本航空）",
+        "ANA（全日本空輸）",
+        "トヨタ自動車",
+        "サントリー"
+      ],
+      "answerIndex": 0,
+      "explanation": "JAL（日本航空）は2026年6月1日、スタッド・ランス所属の中村敬斗選手とパートナーシップ契約を締結し、世界最高峰の舞台での挑戦をサポートすると発表しました。",
+      "trivia": "中村選手はサッカー以外でも注目されており、スキンケアブランドのアンバサダーを務めたり、パリコレにゲストとして参加したりしています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "冨安健洋",
+        "アヤックス",
+        "移籍",
+        "エールディヴィジ"
+      ],
+      "text": "2026年5月、自身のSNSを通じてファンに感謝のメッセージを送り、加入からわずか半年で退団する見通しとなった冨安健洋の所属クラブはどこでしょう？",
+      "options": [
+        "アヤックス",
+        "アーセナル",
+        "PSV",
+        "フェイエノールト"
+      ],
+      "answerIndex": 0,
+      "explanation": "冨安健洋はリハビリ期間を経てオランダのアヤックスへ加入しましたが、今季限りでの退団が確実となり、SNSで感謝の言葉を綴りました。",
+      "trivia": "冨安選手はアヤックスでの公式戦出場は9試合にとどまりましたが、コンディションを戻して日本代表に復帰し、北中米W杯に向けたメンバーに選出されています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "小川航基",
+        "日本代表",
+        "アイスランド代表",
+        "キリンチャレンジカップ"
+      ],
+      "text": "2026年5月31日に行われたキリンチャレンジカップの日本代表対アイスランド代表の試合で、後半終了間際に値千金の決勝ヘディング弾を決めた海外組の選手は誰でしょう？",
+      "options": [
+        "小川航基",
+        "上田綺世",
+        "前田大然",
+        "浅野拓磨"
+      ],
+      "answerIndex": 0,
+      "explanation": "国立競技場で行われたW杯壮行試合のアイスランド戦では、0-0で迎えた後半42分に、NECナイメヘンに所属する小川航基が菅原由勢のクロスに頭で合わせ決勝点を奪いました。",
+      "trivia": "この試合では、W杯から適用される遅延行為を防止する新ルールにより、アイスランドが選手交代に手こずって1人少ない状態になった隙を突いてゴールが生まれました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-31",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "引退",
+        "プレミアリーグ",
+        "ジェイムズ・ミルナー",
+        "イングランド"
+      ],
+      "text": "2026年6月1日、プレミアリーグ歴代最多出場記録を保持する元イングランド代表MFが現役引退を発表しました。ブライトンで輝かしいキャリアを終えたこの選手は誰でしょう？",
+      "options": [
+        "ジェイムズ・ミルナー",
+        "アシュリー・ヤング",
+        "スチュワート・ダウニング",
+        "マイケル・キャリック"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジェイムズ・ミルナーは16歳でリーズ・ユナイテッドでデビューし、マンチェスター・Cやリヴァプールなどで活躍。プレミアリーグ歴代最多の658試合出場という偉大な記録を残し、40歳でブーツを脱ぎました。",
+      "trivia": "ミルナーは徹底したコンディション管理と酒を飲まないことで知られ、リヴァプール時代は開幕前の「乳酸値テスト」で常に若手たちを上回り、チーム内トップの数値を叩き出していました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アメリカ代表",
+        "ワールドカップ",
+        "マウリシオ・ポチェッティーノ",
+        "メンバー発表"
+      ],
+      "text": "2026年5月26日、自国開催となる2026年ワールドカップに臨むアメリカ代表のメンバー26名が発表されました。クリスチャン・プリシッチらを招集し、同代表を率いている指揮官は誰でしょう？",
+      "options": [
+        "マウリシオ・ポチェッティーノ",
+        "ユルゲン・クリンスマン",
+        "グレッグ・バーホルター",
+        "ジェシー・マーシュ"
+      ],
+      "answerIndex": 0,
+      "explanation": "トッテナムやチェルシーなどで指揮を執ったマウリシオ・ポチェッティーノ監督がアメリカ代表を率いており、2026年W杯に向けてウェストン・マッケニーら主力26名のリストを発表しました。",
+      "trivia": "ポチェッティーノは現役時代、2002年の日韓W杯でアルゼンチン代表としてプレーし、グループステージのイングランド戦でマイケル・オーウェンを倒して決勝点となるPKを献上した過去があります。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "バルセロナ",
+        "ニューカッスル",
+        "アンソニー・ゴードン"
+      ],
+      "text": "2026年5月下旬、ニューカッスル・ユナイテッドからFCバルセロナへ推定8000万ユーロという高額な移籍金で完全移籍したイングランド代表ウインガーは誰でしょう？",
+      "options": [
+        "アンソニー・ゴードン",
+        "ジャロッド・ボーウェン",
+        "ハーヴィー・バーンズ",
+        "エベレチ・エゼ"
+      ],
+      "answerIndex": 0,
+      "explanation": "25歳となったアンソニー・ゴードンは、欧州チャンピオンズリーグ等での活躍が評価され、ニューカッスルからバルセロナへと5年契約で大型移籍を果たしました。",
+      "trivia": "リヴァプール出身のゴードンですが、11歳まではリヴァプールFCの下部組織に所属し、その後ライバルクラブであるエヴァートンのアカデミーへと移ったという経歴を持っています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "カナダ代表",
+        "ジェシー・マーシュ",
+        "ワールドカップ",
+        "契約延長"
+      ],
+      "text": "2026年5月29日、ワールドカップ共催国のカナダ代表が本大会メンバー26名を発表しました。アルフォンソ・デイヴィスらを招集したこの指揮官は、大会直前の同月25日に2030年までの契約延長に合意しています。この監督は誰でしょう？",
+      "options": [
+        "ジェシー・マーシュ",
+        "ジョン・ハードマン",
+        "マウロ・ビエッロ",
+        "ボブ・ブラッドリー"
+      ],
+      "answerIndex": 0,
+      "explanation": "リーズやザルツブルクを指揮したアメリカ出身のジェシー・マーシュ監督が、2024年からカナダ代表を率いており、2026年W杯本大会を前に2030年までの長期契約を締結しました。",
+      "trivia": "マーシュ監督の新たな長期契約の一部は、バンクーバー・ホワイトキャップスのオーナーなど複数のフィランソロピスト（慈善家）からの資金援助によって賄われています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "リヴァプール",
+        "ジェレミー・ジャケ",
+        "レンヌ"
+      ],
+      "text": "2026-27シーズンに向けた夏の補強として、リヴァプールが推定5500万ポンド以上の移籍金で獲得した、スタッド・レンヌ出身の若手フランス人センターバックは誰でしょう？",
+      "options": [
+        "ジェレミー・ジャケ",
+        "レニー・ヨロ",
+        "ジャン＝クレール・トディボ",
+        "カステロ・ルケバ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年2月に移籍の合意が発表され、シーズン終了後の5月に改めてレンヌへの別れのメッセージを投稿した20歳のジェレミー・ジャケは、リヴァプール守備陣の新たな柱として大きな期待を集めています。",
+      "trivia": "ジャケは移籍先を選ぶ際、チェルシーなどからの関心もあったものの、「フィルジル・ファン・ダイクから直接学べる機会」と「フランス人同胞であるイブライマ・コナテの存在」が決め手になったと明かしています。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "チャンピオンズリーグ",
+        "PSG",
+        "アーセナル"
+      ],
+      "text": "2026年5月30日に行われたUEFAチャンピオンズリーグ決勝で、パリ・サンジェルマンの対戦相手となったイングランドのクラブはどこでしょうか？",
+      "options": [
+        "アーセナル",
+        "マンチェスター・シティ",
+        "リヴァプール",
+        "アストン・ヴィラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハンガリーのブダペストで行われた2026年のCL決勝は、パリ・サンジェルマンとアーセナルの対戦となりました。試合は1-1のまま延長戦を終え、PK戦にもつれ込みました。",
+      "trivia": "パリ・サンジェルマンは激闘のPK戦を4-3で制してアーセナルを破り、2年連続のチャンピオンズリーグ制覇という偉業を達成しました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "リヴァプール",
+        "プレミアリーグ",
+        "監督解任"
+      ],
+      "text": "2026年5月30日、プレミアリーグでの王座防衛に失敗したリヴァプールが解任を発表した監督は誰でしょうか？",
+      "options": [
+        "アルネ・スロット",
+        "ユルゲン・クロップ",
+        "アンドニ・イラオラ",
+        "シャビ・アロンソ"
+      ],
+      "answerIndex": 0,
+      "explanation": "前シーズンにリーグ優勝を果たしたアルネ・スロットでしたが、成績不振とロッカールームでの不和などが重なり、就任2年目で解任されることになりました。",
+      "trivia": "後任の最有力候補として、ボーンマスを率いて初のヨーロッパリーグ出場権を獲得するなど躍進を見せたアンドニ・イラオラが就任すると広く報じられました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "カンファレンスリーグ",
+        "クリスタル・パレス",
+        "マテタ"
+      ],
+      "text": "2026年5月27日に行われたUEFAカンファレンスリーグ決勝で、クリスタル・パレスにクラブ史上初となる欧州タイトルをもたらす決勝ゴールを決めた選手は誰でしょうか？",
+      "options": [
+        "ジャン＝フィリップ・マテタ",
+        "エベレチ・エゼ",
+        "マイケル・オリーズ",
+        "マルク・グエヒ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ドイツのライプツィヒで行われたラージョ・バジェカーノとの決勝戦で、51分にジャン＝フィリップ・マテタが値千金の決勝ゴールを挙げ、クリスタル・パレスが1-0で勝利しました。",
+      "trivia": "オリヴァー・グラスナー監督は前年のFAカップ制覇に続き、この大会を最後にクリスタル・パレスの監督を退任し、クラブの黄金期を築いて有終の美を飾りました。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-27",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "チャンピオンズリーグ",
+        "PSG",
+        "ヴィティーニャ"
+      ],
+      "text": "2026年5月30日に行われたUEFAチャンピオンズリーグ決勝で、公式のプレイヤー・オブ・ザ・マッチに選出されたパリ・サンジェルマンの選手は誰でしょうか？",
+      "options": [
+        "ヴィティーニャ",
+        "マルキーニョス",
+        "ウスマン・デンベレ",
+        "ウォーレン・ザイール＝エメリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルとの激闘の末、PK戦で勝利したパリ・サンジェルマンの中盤を支え、攻守にわたって圧倒的なパフォーマンスを見せたヴィティーニャが最優秀選手に選ばれました。",
+      "trivia": "試合後、プレイヤー・オブ・ザ・マッチのプレゼンターを務めたのは、バスケットボール界を代表するNBAスター選手のヤニス・アデトクンボでした。",
+      "referenceDate": "2026-06-01",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-05-30",
+        "publishDate": "2026-06-01",
+        "expiryDate": "2026-06-08",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
