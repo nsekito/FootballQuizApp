@@ -1,0 +1,1049 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-07T22:15:38Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-06-08",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "イングランド代表",
+        "ニュージーランド代表",
+        "親善試合",
+        "ハリー・ケイン"
+      ],
+      "text": "2026年6月6日に行われたイングランド対ニュージーランドの国際親善試合で、1-0の決勝点を挙げた選手は誰？",
+      "options": [
+        "ハリー・ケイン",
+        "ジュード・ベリンガム",
+        "ブカヨ・サカ",
+        "フィル・フォーデン"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半終了間際、ハリー・ケインがジェド・スペンスのクロスに頭で合わせて決勝点を奪い、イングランドが1-0で勝利しました。",
+      "trivia": "ハリー・ケインは、ニュージーランドを含めてイングランド代表として35の異なる国から得点を記録しており、これは同国代表の歴代最多記録です。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ブラジル代表",
+        "エジプト代表",
+        "親善試合",
+        "エンドリッキ"
+      ],
+      "text": "2026年6月6日のブラジル対エジプトの親善試合で、後半から出場し決勝ゴールを決めた、当時19歳の若手ストライカーは誰？",
+      "options": [
+        "エンドリッキ",
+        "ヴィニシウス・ジュニオール",
+        "ロドリゴ",
+        "ガブリエウ・マルティネッリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブルーノ・ギマランイスのゴールで先制後、エジプトに追いつかれましたが、後半から出場したエンドリッキが決勝点を奪いブラジルが2-1で勝利しました。",
+      "trivia": "この試合が行われたのはアメリカのクリーブランドにあるハンティントン・バンク・フィールドで、W杯を間近に控えた両チームの貴重なテストマッチとなりました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "スコットランド代表",
+        "ボリビア代表",
+        "親善試合",
+        "チェ・アダムス"
+      ],
+      "text": "2026年6月6日のスコットランド対ボリビアの親善試合で、前半だけで2得点を挙げる活躍を見せたスコットランド代表ストライカーは誰？",
+      "options": [
+        "チェ・アダムス",
+        "ローレンス・シャンクランド",
+        "スコット・マクトミネイ",
+        "リンドン・ダイクス"
+      ],
+      "answerIndex": 0,
+      "explanation": "スコットランドは前半だけで4ゴールを奪う猛攻を見せ、その中でチェ・アダムスが2ゴール（30分、45分）を記録し、4-0の大勝に貢献しました。",
+      "trivia": "スコットランド代表が国際試合の前半だけで4得点を挙げたのは、2015年のジブラルタル戦以来となる久々の快挙でした。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ブラジル代表",
+        "親善試合",
+        "ブルーノ・ギマランイス"
+      ],
+      "text": "2026年6月6日のブラジル対エジプトの親善試合で、前半7分に相手のミスを突いてブラジルの先制ゴールを決めたMFは誰？",
+      "options": [
+        "ブルーノ・ギマランイス",
+        "カゼミーロ",
+        "ルーカス・パケタ",
+        "ダウグラス・ルイス"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブルーノ・ギマランイスがペナルティエリア手前で相手からボールを奪い、冷静にシュートを流し込んでブラジルに先制点をもたらしました。",
+      "trivia": "ブルーノ・ギマランイスの先制後、エジプトの同点弾もブラジルのマルキーニョスのバックパスのミスから生まれており、前半の2得点はいずれもミスが絡むものでした。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ドイツ代表",
+        "アメリカ代表",
+        "親善試合",
+        "カイ・ハヴァーツ"
+      ],
+      "text": "2026年6月6日のアメリカ対ドイツの親善試合で、ドイツの先制点を挙げたアーセナル所属の選手は誰？",
+      "options": [
+        "カイ・ハヴァーツ",
+        "レロイ・サネ",
+        "ジャマル・ムシアラ",
+        "フロリアン・ヴィルツ"
+      ],
+      "answerIndex": 0,
+      "explanation": "カイ・ハヴァーツが前半2分にヨシュア・キミッヒのフリーキックからヘディングで先制点を挙げました。試合はその後レロイ・サネのゴールでドイツが2-1で勝利しました。",
+      "trivia": "この試合はアメリカのシカゴにあるソルジャー・フィールドで行われ、63,000人を超える観客が詰めかけ、W杯開幕直前の熱気を見せました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ベルギー代表",
+        "チュニジア代表",
+        "親善試合",
+        "ルディ・ガルシア"
+      ],
+      "text": "2026年6月6日、ベルギーはチュニジアとの親善試合で5-0と大勝しました。この試合でベルギー代表の指揮を執っていた監督は誰？",
+      "options": [
+        "ルディ・ガルシア",
+        "ドメニコ・テデスコ",
+        "ロベルト・マルティネス",
+        "マルク・ヴィルモッツ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ルディ・ガルシア監督率いるベルギーは、トロサールやデ・ブライネらのゴールでチュニジアを圧倒し、W杯前の最終調整を完璧な形で終えました。",
+      "trivia": "ベルギーはこの勝利により、国際試合での無敗記録を13試合（9勝4分）に伸ばし、絶好調の状態で2026年のW杯に臨むことになりました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "アルゼンチン代表",
+        "ホンジュラス代表",
+        "親善試合",
+        "ジュリアーノ・シメオネ"
+      ],
+      "text": "2026年6月6日に行われたアルゼンチン対ホンジュラスの親善試合で、後半にラウタロ・マルティネスのアシストから追加点を決めた選手は誰？",
+      "options": [
+        "ジュリアーノ・シメオネ",
+        "フリアン・アルバレス",
+        "アレハンドロ・ガルナチョ",
+        "アンヘル・ディ・マリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半にラウタロ・マルティネスのPKで先制し、後半早々にジュリアーノ・シメオネが美しい連携からゴールを奪い、アルゼンチンが2-0で勝利しました。",
+      "trivia": "この試合では大黒柱のリオネル・メッシがベンチ入りしたものの出場せず、若手を中心としたメンバー構成で世界王者の層の厚さを見せつけました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "トルコ代表",
+        "ベネズエラ代表",
+        "親善試合",
+        "ユヌス・アクギュン"
+      ],
+      "text": "2026年6月6日のトルコ対ベネズエラの親善試合で、トルコが1-1の同点から逆転となる見事なミドルシュートを決めた選手は誰？",
+      "options": [
+        "ユヌス・アクギュン",
+        "アルダ・ギュレル",
+        "ハカン・チャルハノール",
+        "カレム・アクトゥルコール"
+      ],
+      "answerIndex": 0,
+      "explanation": "ベネズエラに先制されたトルコでしたが、バリス・アルペル・ユルマズのゴールで同点に追いつき、後半にユヌス・アクギュンの鮮やかなゴールで逆転勝利を収めました。",
+      "trivia": "決勝点のアシストはレアル・マドリードでプレーするアルダ・ギュレルが記録し、トルコ代表の若き司令塔としての存在感を示しました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ポルトガル代表",
+        "チリ代表",
+        "親善試合",
+        "レッドカード"
+      ],
+      "text": "2026年6月6日のポルトガル対チリの親善試合で、前半終了間際に相手選手との小競り合いで一発退場（レッドカード）を受けたポルトガル代表選手は誰？",
+      "options": [
+        "ラファエル・レオン",
+        "ブルーノ・フェルナンデス",
+        "ベルナルド・シウバ",
+        "ルベン・ディアス"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半終了間際の乱闘騒ぎで、ポルトガルのラファエル・レオンとチリのイバン・ロマンが共に一発退場となりました。試合は10人同士となり、ポルトガルが2-1で勝利しました。",
+      "trivia": "クリスティアーノ・ロナウドはこの試合の前半のみプレーしハーフタイムに退きましたが、ポルトガルはその後ゴンサロ・ゲデスらの2得点を奪って地力を示しました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "アメリカ代表",
+        "ドイツ代表",
+        "親善試合",
+        "アントニー・ロビンソン"
+      ],
+      "text": "2026年6月6日のアメリカ対ドイツの親善試合で、前半36分に強烈なボレーシュートを突き刺し、アメリカの一時同点となるゴールを決めたディフェンダーは誰？",
+      "options": [
+        "アントニー・ロビンソン",
+        "セルジーニョ・デスト",
+        "ティム・リーム",
+        "クリス・リチャーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "0-1でリードされていたアメリカは、コーナーキックの流れから左サイドバックのアントニー・ロビンソンがボックス外から豪快なボレーシュートを決め、一時同点に追いつきました。",
+      "trivia": "アントニー・ロビンソンはイングランド生まれですが、父親がニューヨークで育った背景がありアメリカ代表を選択し、現在では左サイドの絶対的レギュラーとして活躍しています。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "PSG",
+        "アーセナル",
+        "決勝"
+      ],
+      "text": "2026年5月30日に行われた2025-26シーズンのUEFAチャンピオンズリーグで、見事連覇を達成したクラブはどこ？",
+      "options": [
+        "パリ・サンジェルマン",
+        "アーセナル",
+        "レアル・マドリード",
+        "マンチェスター・シティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年5月30日の決勝で、パリ・サンジェルマンがアーセナルをPK戦の末に下し、昨シーズンに続くCL連覇を達成しました。",
+      "trivia": "今大会の決勝はハンガリーのプスカシュ・アレーナで開催され、レアル・マドリード以来となるCL連覇（同一クラブによる連続優勝）の偉業となりました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "得点王",
+        "ハーランド"
+      ],
+      "text": "2025-26シーズンのプレミアリーグで27ゴールを記録し、得点王（ゴールデンブーツ）に輝いた選手は誰？",
+      "options": [
+        "アーリング・ハーランド",
+        "モハメド・サラー",
+        "コール・パーマー",
+        "イゴール・チアゴ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティのアーリング・ハーランドが27ゴールを挙げ、自身3度目となるプレミアリーグ得点王を獲得しました。",
+      "trivia": "ハーランドが得点王を獲得するのはこれで3度目で、アラン・シアラーやハリー・ケインと並ぶ記録となりました。なお、歴代最多記録はティエリ・アンリとモハメド・サラーの4回です。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "アメリカ代表",
+        "ドイツ代表",
+        "親善試合",
+        "ワールドカップ2026"
+      ],
+      "text": "2026年6月6日に行われたワールドカップ直前の強化試合「アメリカ代表 vs ドイツ代表」の試合結果は？",
+      "options": [
+        "アメリカ 1-2 ドイツ",
+        "アメリカ 0-2 ドイツ",
+        "アメリカ 2-1 ドイツ",
+        "アメリカ 1-1 ドイツ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アメリカのシカゴで行われたこの強化試合では、カイ・ハヴァーツとレロイ・サネのゴールにより、ドイツが2-1で勝利を収めました。アメリカの得点者はアントニー・ロビンソンでした。",
+      "trivia": "この試合は、2026年ワールドカップに向けた両チームにとって最後の強化試合として開催され、シカゴのソルジャー・フィールドには6万人以上の観客が集まりました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "得点王",
+        "エムバペ"
+      ],
+      "text": "2025-26シーズンのUEFAチャンピオンズリーグで、15ゴールを挙げて大会得点王に輝いた選手は誰？",
+      "options": [
+        "キリアン・エムバペ",
+        "アーリング・ハーランド",
+        "ハリー・ケイン",
+        "ヴィニシウス・ジュニオール"
+      ],
+      "answerIndex": 0,
+      "explanation": "パリ・サンジェルマンのキリアン・エムバペが15ゴールを記録し、2025-26シーズンのチャンピオンズリーグ得点王を獲得しました。",
+      "trivia": "エムバペが記録した15ゴールは、クリスティアーノ・ロナウドの持つCL年間最多得点記録（17ゴール）に次ぐ素晴らしい数字として高く評価されました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "イングランド代表",
+        "ハリー・ケイン",
+        "記録"
+      ],
+      "text": "2026年6月6日に行われた強化試合「イングランド代表 vs ニュージーランド代表」で、イングランドの決勝点を決めたのはハリー・ケインですが、このゴールは彼にとって代表通算何ゴール目となった？",
+      "options": [
+        "79ゴール",
+        "69ゴール",
+        "85ゴール",
+        "74ゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "フロリダ州タンパで行われたこの試合で、ハリー・ケインは前半アディショナルタイムにヘディングで決勝点を挙げ、イングランド代表での通算得点記録を「79」に伸ばしました。",
+      "trivia": "このシーズンのケインはバイエルン・ミュンヘンでも公式戦51試合で61ゴールという驚異的な数字を残し、代表戦でも6試合連続ゴールと絶好調の状態でワールドカップを迎えることになりました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "得点ランキング",
+        "ブレントフォード"
+      ],
+      "text": "2025-26シーズンのプレミアリーグで、アーリング・ハーランドに次ぐ得点ランキング2位（22ゴール）に入ったブレントフォード所属のブラジル人ストライカーは誰？",
+      "options": [
+        "イゴール・チアゴ",
+        "ジョアン・ペドロ",
+        "リシャルリソン",
+        "ガブリエウ・マルティネッリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブレントフォードのイゴール・チアゴが22ゴールを挙げ、プレミアリーグ得点ランキングの2位に入りました。この活躍によりブラジル代表にも選出されています。",
+      "trivia": "ブレントフォードはこれまでも無名に近いストライカーを発掘してきましたが、イゴール・チアゴの22ゴールは、単一シーズンにおけるブラジル人選手のプレミアリーグ最多得点記録となりました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "移籍",
+        "シャルケ",
+        "田中聡",
+        "ドイツ"
+      ],
+      "text": "2026年1月からドイツ2部のフォルトゥナ・デュッセルドルフでプレーしていたものの、チームの3部降格に伴い、2026年6月にブンデスリーガ1部への復帰を決めた名門シャルケへの移籍が決定的になったと報じられた23歳の日本人MFは誰？",
+      "options": [
+        "田中聡",
+        "田中碧",
+        "佐野海舟",
+        "松木玖生"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンフレッチェ広島からデュッセルドルフへ移籍して活躍していた田中聡ですが、チームが無念の3部へ降格。契約解除金が10分の1に減額されたこともあり、シャルケが獲得に動いたと報じられました。",
+      "trivia": "シャルケは過去に内田篤人や板倉滉、吉田麻也ら日本人が所属したことで知られる名門クラブです。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "キャンプ",
+        "メキシコ"
+      ],
+      "text": "2026年6月11日に開幕する北中米ワールドカップ。本大会直前の2026年6月上旬、サッカー日本代表が事前合宿を行ったメキシコの都市はどこ？",
+      "options": [
+        "モンテレイ",
+        "メキシコシティ",
+        "グアダラハラ",
+        "カンクン"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は2026年6月3日から、メキシコのモンテレイでワールドカップに向けた事前合宿をスタートさせました。モンテレイはメキシコ北東部の主要都市です。",
+      "trivia": "日本代表はグループステージ第2節のチュニジア代表戦を、この合宿地と同じモンテレイにあるエスタディオ・モンテレイで戦う予定です。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "久保建英",
+        "誕生日",
+        "ワールドカップ"
+      ],
+      "text": "メキシコでのワールドカップ事前合宿中である2026年6月4日、現地で25歳の誕生日を迎え、練習後にチームメイトの菅原由勢からケーキをプレゼントされた日本代表選手は誰？",
+      "options": [
+        "久保建英",
+        "菅原由勢",
+        "堂安律",
+        "冨安健洋"
+      ],
+      "answerIndex": 0,
+      "explanation": "2001年6月4日生まれの久保建英は、メキシコ・モンテレイでの合宿中に25歳の誕生日を迎えました。報道陣のインタビュー中に行われたケーキのサプライズも話題になりました。",
+      "trivia": "プロ10年目という節目の年に25歳を迎えた久保建英は、自身2度目となるワールドカップに中心選手として挑みます。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "移籍",
+        "藤枝MYFC",
+        "シンガポール"
+      ],
+      "text": "2026年6月7日、Jリーグの藤枝MYFCからシンガポール・プレミアリーグのタンピネス・ローバーズへ、1年間の期限付き移籍をすることが発表された18歳のFWは誰？",
+      "options": [
+        "山崎絢心",
+        "塩貝健人",
+        "後藤啓介",
+        "神代慶人"
+      ],
+      "answerIndex": 0,
+      "explanation": "富士市立高校から今季藤枝MYFCに加入したばかりのルーキーFW山崎絢心が、出場機会と成長を求めてシンガポールのタンピネス・ローバーズへ期限付き移籍をすることが発表されました。",
+      "trivia": "タンピネス・ローバーズは過去にも仲村京雅など日本人選手が所属しており、AFCの国際大会にも度々出場するシンガポールの強豪クラブです。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "塩貝健人",
+        "ヴォルフスブルク",
+        "日本代表",
+        "スパイク"
+      ],
+      "text": "2026年6月に発表された、アディダスの新スパイクコレクション「ROAD TO GLORY PACK」。久保建英らと共にこれをワールドカップで着用予定の選手として紹介された、2026年冬にドイツのVfLヴォルフスブルクへ移籍した若手FWは誰？",
+      "options": [
+        "塩貝健人",
+        "福田師王",
+        "小川航基",
+        "上田綺世"
+      ],
+      "answerIndex": 0,
+      "explanation": "慶應義塾大学在学中に特別指定選手としてプレーし、その後オランダ経由で2026年にドイツ1部のヴォルフスブルクへ移籍した塩貝健人は、A代表にも選出されW杯のメンバー入りを果たしました。",
+      "trivia": "塩貝は高校3年夏の時点では無名の存在でAO入試で慶應義塾大学に進学しましたが、大学リーグで得点を量産し、一気に欧州までステップアップした異色の経歴を持っています。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ブラジル代表",
+        "ワールドカップ",
+        "負傷・離脱",
+        "追加招集"
+      ],
+      "text": "2026年6月6日の親善試合で負傷したDFウェズレイの代役として、ブラジル代表のワールドカップメンバーに追加招集されたMFは誰でしょう？",
+      "options": [
+        "エデルソン",
+        "カゼミロ",
+        "ジョエリントン",
+        "ドウグラス・ルイス"
+      ],
+      "answerIndex": 0,
+      "explanation": "6月6日のエジプトとの試合で左太ももを負傷したローマ所属のDFウェズレイに代わり、急遽アタランタでプレーするMFエデルソンが追加招集されました。",
+      "trivia": "今大会でブラジル代表は最多6度目のワールドカップ優勝を目指しており、グループステージ初戦ではモロッコと対戦します。ちなみに、追加招集されたエデルソンは豊富な運動量とボール奪取能力が持ち味で、所属するアタランタの躍進を支えた実績からビッグクラブへの移籍も噂されています。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "デンマーク代表",
+        "親善試合",
+        "アクシデント",
+        "クリスティアン・エリクセン"
+      ],
+      "text": "2026年6月7日に行われた国際親善試合で、試合中に胸を押さえてピッチに倒れ込み、試合中止のアクシデントに見舞われたデンマーク代表選手は誰でしょう？",
+      "options": [
+        "クリスティアン・エリクセン",
+        "シモン・ケアー",
+        "アンドレアス・クリステンセン",
+        "ラスムス・ホイルンド"
+      ],
+      "answerIndex": 0,
+      "explanation": "ウクライナとの親善試合の後半に胸を押さえて倒れ込み、試合は中止となりました。その後、意識を取り戻したことがデンマークサッカー協会から発表されています。",
+      "trivia": "エリクセンは過去のEUROの試合中にも心機能の停止でピッチに倒れ、ピッチ上での懸命な救命処置を経て奇跡的な復帰を果たした経験があります。サッカーファンにとって彼の健康状態は常に気がかりなトピックであり、世界中から多くの無事を祈るメッセージが寄せられています。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-07",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ドイツ代表",
+        "ワールドカップ",
+        "追加招集",
+        "若手選手"
+      ],
+      "text": "2026年6月、ワールドカップ直前の練習中に左太ももを負傷して欠場が決まったドイツ代表の18歳の新星レナルト・カールの代役として、追加招集された選手は誰でしょう？",
+      "options": [
+        "アサン・ウエドラオゴ",
+        "ユスファ・ムココ",
+        "マクシミリアン・バイアー",
+        "パウル・ヴァナー"
+      ],
+      "answerIndex": 0,
+      "explanation": "アメリカでの練習中に左太ももの筋肉を断裂したバイエルンのMFレナルト・カールに代わり、RBライプツィヒ所属のアサン・ウエドラオゴが追加招集されました。",
+      "trivia": "負傷離脱したレナルト・カールは大会直前のフィンランドとのテストマッチで大勝に貢献し、本大会での先発起用も有力視されていた逸材でした。代役として選ばれたアサン・ウエドラオゴも非常に才能豊かな若手であり、思い切りの良いプレーでチームに新たな勢いをもたらすことが期待されています。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "カナダ代表",
+        "ワールドカップ",
+        "負傷・離脱",
+        "モイーズ・ボンビート"
+      ],
+      "text": "2026年6月、以前負った足の骨折の影響でテストマッチで状態が上がらず、直前でカナダ代表のワールドカップメンバーから外れることになった主力センターバックは誰でしょう？",
+      "options": [
+        "モイーズ・ボンビート",
+        "デレク・コーネリアス",
+        "カマル・ミラー",
+        "アリスター・ジョンストン"
+      ],
+      "answerIndex": 0,
+      "explanation": "以前に足を骨折したOGCニース所属のモイーズ・ボンビートは、ウズベキスタン等とのテストマッチで万全の状態に戻らず、無念のメンバー外となりました。",
+      "trivia": "ボンビートは負傷前までカナダ代表の守備の要として、直近のコパ・アメリカでのベスト4進出に大きく貢献し、世界的にも注目を集めるディフェンダーに成長していました。カナダサッカー協会もギリギリまで彼の回復を待ちましたが、最終的には苦渋の決断を下す形となりました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "イラク代表",
+        "ワールドカップ",
+        "追加招集",
+        "アーメド・マケンジ"
+      ],
+      "text": "40年ぶりにワールドカップに出場するイラク代表は、2026年6月7日にアーメド・ヤヒヤが負傷で離脱しました。代わりに代表メンバーに追加登録された選手は誰でしょう？",
+      "options": [
+        "アーメド・マケンジ",
+        "アリ・アドナン",
+        "サファ・ハディ",
+        "ジダン・イクバル"
+      ],
+      "answerIndex": 0,
+      "explanation": "イラク代表は、ハムストリングを負傷したDFアーメド・ヤヒヤに代わり、急遽アーメド・マケンジをワールドカップの最終登録メンバーに追加しました。",
+      "trivia": "今大会のイラク代表は、メキシコ大会以来40年ぶり2度目のワールドカップ出場となります。アジア予選を勝ち抜いた彼らは、グループステージで強豪フランスなどと対戦する予定になっており、今回の予期せぬメンバー変更がチームの結束力をさらに高める起爆剤になるか注目されています。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "国際親善試合",
+        "ドイツ代表",
+        "アメリカ代表"
+      ],
+      "text": "2026年6月6日、シカゴで行われたワールドカップ前哨戦となる国際親善試合で、アメリカ代表を2-1で破った欧州の強豪国はどこでしょう？",
+      "options": [
+        "ドイツ",
+        "スペイン",
+        "フランス",
+        "イタリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "ドイツ代表がカイ・ハフェルツとレロイ・サネのゴールで2-1と勝利を収めました。",
+      "trivia": "試合会場となったシカゴのソルジャー・フィールドは、同月に開幕する2026年ワールドカップの熱気を感じさせる盛り上がりを見せました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "国際親善試合",
+        "イングランド代表",
+        "ハリー・ケイン"
+      ],
+      "text": "2026年6月6日、イングランド代表はアメリカ・フロリダ州で行われた国際親善試合でニュージーランド代表に1-0で勝利しました。この試合の唯一の得点者は誰でしょう？",
+      "options": [
+        "ハリー・ケイン",
+        "マーカス・ラッシュフォード",
+        "オリー・ワトキンス",
+        "アイヴァン・トニー"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハリー・ケインが前半アディショナルタイムにジェド・スペンスのクロスを頭で合わせ、決勝ゴールを奪いました。",
+      "trivia": "この試合はワールドカップ本番の気候に体を慣らすため、気温33度の過酷な暑さの中で行われました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "国際親善試合",
+        "アルゼンチン代表",
+        "ジュリアーノ・シメオネ"
+      ],
+      "text": "2026年6月6日に行われたホンジュラスとの国際親善試合で、アルゼンチン代表は2-0で勝利しました。ラウタロ・マルティネスがPKで先制した後、後半に追加点を決めた選手は誰でしょう？",
+      "options": [
+        "ジュリアーノ・シメオネ",
+        "アレハンドロ・ガルナチョ",
+        "フリアン・アルバレス",
+        "ジオヴァニ・ロ・チェルソ"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半早々、ラウタロ・マルティネスのヒールパスを受けたジュリアーノ・シメオネが追加点を決めてリードを広げました。",
+      "trivia": "この試合ではリオネル・メッシがベンチで温存され、スカローニ監督がワールドカップに向けた選手層の厚さをテストする機会となりました。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "国際親善試合",
+        "ベルギー代表",
+        "ジェレミー・ドク"
+      ],
+      "text": "2026年6月6日、ベルギー代表は国際親善試合でチュニジア代表を5-0で粉砕しました。この試合でチーム最多のチャンス創出数を記録し、2アシストの活躍を見せた選手は誰でしょう？",
+      "options": [
+        "ジェレミー・ドク",
+        "ケヴィン・デ・ブライネ",
+        "レアンドロ・トロサール",
+        "シャルル・デ・ケテラーレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジェレミー・ドクは相手ボックス内でのタッチ数やチャンス創出数などでチームトップのスタッツを叩き出し、攻撃を牽引しました。",
+      "trivia": "圧倒的な強さを見せたこの試合は、ベルギー代表にとってワールドカップ出発前に行われた最後のホームゲームでした。",
+      "referenceDate": "2026-06-08",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-06",
+        "publishDate": "2026-06-08",
+        "expiryDate": "2026-06-15",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
