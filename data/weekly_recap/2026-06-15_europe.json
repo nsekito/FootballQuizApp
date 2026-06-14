@@ -1,0 +1,1042 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-14T22:22:33Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-06-15",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "メキシコ代表",
+        "南アフリカ代表",
+        "W杯"
+      ],
+      "text": "2026年6月11日に行われた2026年ワールドカップの開幕戦、メキシコ対南アフリカの試合結果は？",
+      "options": [
+        "メキシコが2-0で勝利",
+        "南アフリカが2-0で勝利",
+        "1-1の引き分け",
+        "メキシコが3-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "エスタディオ・アステカで行われた開幕戦は、開催国の一つであるメキシコがフリアン・キニョネスとラウル・ヒメネスのゴールにより2-0で勝利を収めました。",
+      "trivia": "メキシコがワールドカップを開催するのは1970年、1986年に続いて史上最多となる3回目です。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "アメリカ代表",
+        "パラグアイ代表",
+        "W杯"
+      ],
+      "text": "2026年6月12日、グループDの初戦でアメリカ代表はパラグアイ代表と対戦しました。アメリカは何点を奪って快勝したでしょうか？",
+      "options": [
+        "4点",
+        "3点",
+        "2点",
+        "5点"
+      ],
+      "answerIndex": 0,
+      "explanation": "カリフォルニア州のSoFiスタジアムで行われた試合で、アメリカはパラグアイを圧倒し4-1で勝利して自国開催のワールドカップで好スタートを切りました。",
+      "trivia": "アメリカがワールドカップを開催するのは1994年大会以来、32年ぶり2回目となります。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-12",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "オーストラリア代表",
+        "トルコ代表",
+        "W杯"
+      ],
+      "text": "2026年6月13日に行われたグループDの試合で、オーストラリア代表が2-0で勝利した相手国はどこでしょう？",
+      "options": [
+        "トルコ",
+        "ギリシャ",
+        "エジプト",
+        "ブルガリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "バンクーバーで行われた試合で、オーストラリアは24年ぶりにワールドカップ出場を果たしたトルコを2-0で下し、見事に初戦を白星で飾りました。",
+      "trivia": "トルコが前回ワールドカップに出場したのは日韓共催の2002年大会で、その時は見事ベスト4に進出しています。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-13",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "カナダ代表",
+        "ボスニア・ヘルツェゴビナ代表",
+        "W杯"
+      ],
+      "text": "2026年6月12日、共同開催国の1つであるカナダ代表は初戦でボスニア・ヘルツェゴビナ代表と対戦しました。この試合の結果は？",
+      "options": [
+        "1-1の引き分け",
+        "カナダが1-0で勝利",
+        "ボスニア・ヘルツェゴビナが2-1で勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "カナダ代表はボスニア・ヘルツェゴビナを相手に先制を許したものの、途中出場のサイル・ラリンが終盤に貴重な同点ゴールを決め、1-1の引き分けに持ち込みました。",
+      "trivia": "今大会はカナダにとって、史上初めて自国で開催される男子ワールドカップの試合となりました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-12",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ブラジル代表",
+        "モロッコ代表",
+        "ヴィニシウス"
+      ],
+      "text": "2026年6月13日のグループC初戦、優勝候補のブラジル代表はモロッコ代表と1-1で引き分けました。ブラジルの同点ゴールを決めた選手は誰でしょうか？",
+      "options": [
+        "ヴィニシウス・ジュニオール",
+        "ロドリゴ",
+        "ハフィーニャ",
+        "ガブリエウ・マルティネッリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合を優位に進めるモロッコに対し、ブラジルは苦戦を強いられましたが、ヴィニシウス・ジュニオールが貴重な同点ゴールを決めて初戦の黒星を免れました。",
+      "trivia": "対戦相手のモロッコは、2022年のカタール大会でアフリカ勢として史上初のベスト4進出を果たした強豪国です。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-13",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "メキシコ代表",
+        "大会第1号"
+      ],
+      "text": "2026年6月11日に行われたワールドカップ開幕戦で、大会第1号となる先制ゴールを前半9分に決めたメキシコ代表の選手は誰でしょう？",
+      "options": [
+        "フリアン・キニョネス",
+        "ラウル・ヒメネス",
+        "イルビング・ロサノ",
+        "サンティアゴ・ヒメネス"
+      ],
+      "answerIndex": 0,
+      "explanation": "コロンビア出身の帰化選手であるフリアン・キニョネスが前半9分に先制ゴールを挙げ、これが48カ国参加となった新フォーマットの記念すべき大会ファーストゴールとなりました。",
+      "trivia": "後半に2点目を追加したラウル・ヒメネスは、このゴールでメキシコ代表での通算得点数を46に伸ばし、歴代2位タイに浮上しました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "韓国代表",
+        "チェコ代表",
+        "W杯"
+      ],
+      "text": "2026年6月11日にメキシコのグアダラハラで行われたグループAの試合で、韓国代表が先制されながらも2-1で逆転勝利を収めた相手国は？",
+      "options": [
+        "チェコ",
+        "ハンガリー",
+        "スロバキア",
+        "ポーランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "グループAの試合で、韓国代表はチェコ代表に先制を許したものの、その後に見事な逆転劇を見せて2-1で初陣を白星で飾りました。",
+      "trivia": "試合が行われたグアダラハラのスタジアムは標高1,500m以上の高地にあり、アウェーチームにとって大きな適応が求められる環境でした。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "オーストラリア代表",
+        "W杯"
+      ],
+      "text": "2026年6月13日のトルコ戦でゴールを決め、オーストラリア代表の2-0の勝利に貢献した2人の選手は、コナー・メトカーフともう1人は誰でしょう？",
+      "options": [
+        "ネストリ・イランクンダ",
+        "クレイグ・グッドウィン",
+        "ミッチェル・デューク",
+        "ジャクソン・アーバイン"
+      ],
+      "answerIndex": 0,
+      "explanation": "オーストラリアの有望株であるネストリ・イランクンダとコナー・メトカーフがゴールネットを揺らし、トルコからの完封勝利の立役者となりました。",
+      "trivia": "ネストリ・イランクンダはタンザニアの難民キャンプで生まれ、オーストラリアに移住したバックグラウンドを持つ若きスター候補です。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-13",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "メキシコ代表",
+        "南アフリカ代表",
+        "レッドカード"
+      ],
+      "text": "2026年6月11日に行われたW杯開幕戦（メキシコ対南アフリカ）は荒れ模様となりましたが、この試合で両チーム合わせて計何枚のレッドカードが提示されたでしょうか？",
+      "options": [
+        "3枚",
+        "2枚",
+        "4枚",
+        "1枚"
+      ],
+      "answerIndex": 0,
+      "explanation": "南アフリカはシトレとズワネの2名が退場して9人となり、メキシコも後半アディショナルタイムにセサル・モンテスが退場したため、合計3枚のレッドカードが出ました。",
+      "trivia": "8万人超の観衆が詰めかけた歴史的なエスタディオ・アステカでの開幕戦は、異例とも言えるレッドカード連発の激しい試合となりました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "スコットランド代表",
+        "ハイチ代表",
+        "W杯"
+      ],
+      "text": "2026年6月13日、アメリカ・ボストンのジレット・スタジアムで行われたグループCの試合で、スコットランド代表が1-0の完封勝利を収めた対戦相手はどこでしょう？",
+      "options": [
+        "ハイチ",
+        "ジャマイカ",
+        "パナマ",
+        "トリニダード・トバゴ"
+      ],
+      "answerIndex": 0,
+      "explanation": "スコットランドは北中米カリブ海予選を勝ち上がってきたハイチと対戦し、1-0の僅差で勝利を収め、グループリーグ突破に向けて貴重な勝ち点3を獲得しました。",
+      "trivia": "ジレット・スタジアムはNFLのニューイングランド・ペイトリオッツの本拠地であり、今大会に向けて大規模な改修が行われました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-13",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "W杯",
+        "メキシコ代表",
+        "南アフリカ代表",
+        "試合結果"
+      ],
+      "text": "2026年6月11日に行われたFIFAワールドカップ2026の開幕戦（メキシコ対南アフリカ）の試合結果はどうなった？",
+      "options": [
+        "メキシコが2-0で勝利した",
+        "1-1の引き分けに終わった",
+        "南アフリカが2-1で勝利した",
+        "メキシコが3-1で勝利した"
+      ],
+      "answerIndex": 0,
+      "explanation": "開幕戦はメキシコシティ・スタジアムで行われ、フリアン・キニョネスとラウル・ヒメネスのゴールでメキシコが2-0で勝利しました。",
+      "trivia": "メキシコは過去のW杯開幕戦で何度も勝利を逃してきましたが、今大会でついに開幕戦初勝利を飾りました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "W杯",
+        "韓国代表",
+        "チェコ代表",
+        "試合結果"
+      ],
+      "text": "2026年6月12日に行われたW杯グループAの試合で、チェコを相手に2-1の逆転勝利を収めたアジアの国はどこ？",
+      "options": [
+        "韓国",
+        "日本",
+        "イラン",
+        "オーストラリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "韓国はチェコに先制を許したものの、ファン・インボムの同点ゴールとオ・ヒョンギュの逆転ゴールで2-1とし、白星発進を切りました。",
+      "trivia": "韓国は過去のワールドカップで先制されながら2-1で逆転勝利した試合がこれで4度目となります。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-12",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "W杯",
+        "レッドカード",
+        "メキシコ代表",
+        "スタッツ"
+      ],
+      "text": "2026年W杯開幕戦（メキシコ対南アフリカ）は荒れた展開となりましたが、この1試合で両チーム合わせて何枚のレッドカード（退場者）が出た？",
+      "options": [
+        "3枚",
+        "1枚",
+        "2枚",
+        "4枚"
+      ],
+      "answerIndex": 0,
+      "explanation": "南アフリカから2人（シトレ、ズワネ）、メキシコから1人（モンテス）の合計3人が一発退場となる波乱の幕開けとなりました。",
+      "trivia": "W杯史上1試合での最多退場記録は、2006年大会のポルトガル対オランダ戦（通称ニュルンベルクの戦い）で記録された4枚です。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "W杯",
+        "アメリカ代表",
+        "バログン",
+        "得点者"
+      ],
+      "text": "2026年6月12日に行われたアメリカ対パラグアイの試合は、開催国アメリカが4-1で大勝しました。この試合で2得点を挙げたアメリカのストライカーは誰？",
+      "options": [
+        "フォラリン・バログン",
+        "クリスチャン・プリシッチ",
+        "ウェストン・マッケニー",
+        "ティモシー・ウェア"
+      ],
+      "answerIndex": 0,
+      "explanation": "アメリカはパラグアイを圧倒し、センターFWのバログンが2得点を奪う活躍を見せ、ベスト32進出へ好スタートを切りました。",
+      "trivia": "バログンはイングランドの年代別代表でプレーしていましたが、2023年にアメリカ代表でのプレーを選択したストライカーです。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-12",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "W杯",
+        "メキシコ代表",
+        "キニョネス",
+        "帰化選手"
+      ],
+      "text": "2026年W杯開幕戦で、大会第1号ゴールとなる先制点を決めたメキシコ代表のフリアン・キニョネスは、元々どこの国の出身で帰化して代表入りした選手？",
+      "options": [
+        "コロンビア",
+        "アルゼンチン",
+        "ブラジル",
+        "ウルグアイ"
+      ],
+      "answerIndex": 0,
+      "explanation": "フリアン・キニョネスはコロンビア出身ですが、長年メキシコリーグでプレーしメキシコ国籍を取得して代表入りを果たしました。",
+      "trivia": "キニョネスの放ったシュートは相手GKの股を抜いて決まり、今大会の記念すべきファーストゴールとなりました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "W杯",
+        "韓国代表",
+        "ファン・インボム",
+        "スタッツ"
+      ],
+      "text": "2026年W杯グループAの韓国対チェコの試合で、1ゴール1アシストの活躍を見せて韓国の逆転勝利に大きく貢献した選手は誰？",
+      "options": [
+        "ファン・インボム",
+        "ソン・フンミン",
+        "イ・ガンイン",
+        "キム・ミンジェ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ファン・インボムは0-1で迎えた後半67分に同点ゴールを決め、さらに80分にはオ・ヒョンギュの逆転ゴールをアシストする大活躍を見せました。",
+      "trivia": "この試合に出場したソン・フンミンは4大会連続出場を達成し、ホン・ミョンボ監督が持つ韓国代表の記録に並びました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "遠藤航",
+        "町野修斗"
+      ],
+      "text": "2026年6月に開幕した北中米ワールドカップで、直前のケガにより無念の欠場となった日本代表の主将・遠藤航に代わり、追加招集された海外日本人選手は誰？",
+      "options": [
+        "町野修斗",
+        "田中碧",
+        "鎌田大地",
+        "鈴木唯人"
+      ],
+      "answerIndex": 0,
+      "explanation": "リバプール所属の遠藤航は負傷により大会直前で離脱となり、ドイツでプレーするFW町野修斗が急遽追加招集されました。町野は前回大会に続く直前での追加招集です。",
+      "trivia": "追加招集された町野修斗ですが、アメリカへ向かう途中で経由地のシカゴで飛行機が欠航し、足止めを食らうという不測のトラブルに見舞われました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "試合結果",
+        "オランダ代表"
+      ],
+      "text": "2026年6月14日に行われた北中米ワールドカップ・グループステージ第1節で、日本代表はどの国と対戦して2-2の引き分けスタートを切った？",
+      "options": [
+        "オランダ代表",
+        "スウェーデン代表",
+        "チュニジア代表",
+        "メキシコ代表"
+      ],
+      "answerIndex": 0,
+      "explanation": "グループFに入った日本は初戦で欧州の強豪オランダと対戦しました。2度のリードを許す苦しい展開となりましたが、粘り強く追いつき貴重な勝ち点1を手にしました。",
+      "trivia": "試合が行われたアメリカのダラス・スタジアムには6万9285人もの大観衆が詰めかけ、日本代表サポーターからは大音量の「ニッポン」コールが響き渡りました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-14",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "中村敬斗",
+        "ゴール"
+      ],
+      "text": "2026年6月14日に行われたワールドカップ初戦のオランダ戦（2-2）で、1点ビハインドの後半12分に久保建英からのパスを受けて強烈な同点ゴールを決めた選手は誰？",
+      "options": [
+        "中村敬斗",
+        "堂安律",
+        "伊東純也",
+        "前田大然"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半12分（57分）、左サイドに流れた久保建英からのマイナスの折り返しをペナルティエリア内で受けた中村敬斗が、右足を振り抜いて同点ゴールを奪いました。",
+      "trivia": "フランスのスタッド・ランスでプレーする中村敬斗は、モデルさながらの端正なルックスから海外ファッション誌で表紙を飾るなど、ピッチ外でも大きな注目を集めています。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-14",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "鎌田大地",
+        "ゴール"
+      ],
+      "text": "2026年6月14日のワールドカップ・オランダ戦において、1-2で迎えた後半44分に小川航基のヘディングシュートが自身の体に当たり、劇的な同点ゴールを記録した海外日本人選手は誰？",
+      "options": [
+        "鎌田大地",
+        "小川航基",
+        "冨安健洋",
+        "菅原由勢"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半44分（89分）、伊東純也のコーナーキックを途中出場の小川航基が頭で合わせると、コース上にいた鎌田大地に当たってネットを揺らしたため、公式記録は鎌田のゴールとなりました。",
+      "trivia": "この試合ではオランダの猛攻を受ける場面もありましたが、GK鈴木彩艶が再三の好セーブを見せ、格上相手の勝ち点1獲得に大きく貢献しました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-14",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "キャプテン",
+        "板倉滉"
+      ],
+      "text": "2026年6月に開幕した北中米ワールドカップにおいて、開幕直前に負傷離脱した遠藤航に代わり、新たに日本代表のキャプテンに指名された海外日本人選手は誰？",
+      "options": [
+        "板倉滉",
+        "守田英正",
+        "冨安健洋",
+        "久保建英"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本サッカー協会は遠藤航の離脱を発表した際、本大会で新たにチームを束ねる新主将として、守備の中心を担う板倉滉が就任することを明らかにしました。",
+      "trivia": "今大会の日本代表は、遠藤航のほかにも攻撃の絶対的エースであった三笘薫（ブライトン）が大会約1ヶ月前に負ったハムストリングの負傷により無念の選外となっています。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "World Cup 2026",
+        "メキシコ代表",
+        "フリアン・キニョネス"
+      ],
+      "text": "2026年6月11日に行われたFIFAワールドカップ2026開幕戦で、南アフリカ相手に大会第1号となる先制ゴールを決めたメキシコ代表の選手は誰でしょう？",
+      "options": [
+        "フリアン・キニョネス",
+        "ラウル・ヒメネス",
+        "サンティアゴ・ヒメネス",
+        "イルビング・ロサノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アステカ・スタジアムで行われた開幕戦の開始9分、フリアン・キニョネスが右足でネットを揺らし、大会第1号ゴールを記録しました。",
+      "trivia": "メキシコは2-0で快勝しましたが、両チーム合わせて3人の退場者（南アフリカ2名、メキシコ1名）が出る荒れ模様の開幕戦となりました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "FIFA",
+        "移籍市場",
+        "契約ルール"
+      ],
+      "text": "2026年6月11日、FIFAは選手組合（FIFPRO）などと合意し、2027年1月から全選手契約に義務付けると発表した「移籍市場の大改革」の中核となるルールは何でしょう？",
+      "options": [
+        "契約解除金（リリース条項）の設定",
+        "代理人手数料の完全撤廃",
+        "クラブ間の移籍金の廃止",
+        "サラリーキャップ制度の導入"
+      ],
+      "answerIndex": 0,
+      "explanation": "移籍を巡るトラブルや長期化を減らすため、契約時にあらかじめ移籍に必要な「契約解除金」を設定することが全選手に義務付けられることになりました。",
+      "trivia": "この大改革は、元フランス代表のラッサナ・ディアラがFIFAの移籍ルールを不当として訴え勝訴した「ディアラ裁判」が大きな契機となりました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "World Cup 2026",
+        "アメリカ代表",
+        "クリスチャン・プリシッチ"
+      ],
+      "text": "2026年6月12日に行われたワールドカップ初戦のパラグアイ戦（4-1で勝利）で、前半に活躍を見せながらも「ふくらはぎ」の負傷で大事を取ってハーフタイムで退いたアメリカ代表の10番は誰でしょう？",
+      "options": [
+        "クリスチャン・プリシッチ",
+        "ウェストン・マッケニー",
+        "フォラリン・バログン",
+        "ジョバンニ・レイナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "プリシッチは前半だけで2ゴールに絡む活躍を見せましたが、相手から受けたタックルの影響を考慮し、ポチェッティーノ監督によってハーフタイムに交代させられました。",
+      "trivia": "この試合では、モナコ所属のフォラリン・バログンが前半で2ゴールを挙げる大活躍を見せ、母国開催となるアメリカの快勝に大きく貢献しています。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-12",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "World Cup 2026",
+        "日本代表",
+        "遠藤航"
+      ],
+      "text": "2026年6月11日、左足の負傷が回復せずワールドカップ初戦の3日前に無念の離脱となり、同時に日本代表からの引退を発表した選手は誰でしょう？",
+      "options": [
+        "遠藤航",
+        "伊東純也",
+        "冨安健洋",
+        "南野拓実"
+      ],
+      "answerIndex": 0,
+      "explanation": "キャプテンとしてチームを牽引してきた遠藤航でしたが、5月末のアイスランド戦で痛めた箇所が癒えず、大会直前で代表引退を決断しました。",
+      "trivia": "遠藤の離脱に伴い、日本代表の新たなキャプテンにはアヤックス所属の板倉滉が任命され、代替選手として町野修斗が招集されました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "引退",
+        "ディヴォック・オリギ",
+        "ベルギー代表"
+      ],
+      "text": "2026年6月8日、「子供の頃の夢は果たした」として31歳の若さで現役引退を発表した、元リヴァプールやベルギー代表で活躍したストライカーは誰でしょう？",
+      "options": [
+        "ディヴォック・オリギ",
+        "クリスティアン・ベンテケ",
+        "ロメル・ルカク",
+        "ミシー・バチュアイ"
+      ],
+      "answerIndex": 0,
+      "explanation": "10代でリヴァプールに引き抜かれ、クロップ体制下で「スーパーサブ」として数々の決定的なゴールを挙げたディヴォック・オリギが31歳で引退を発表しました。",
+      "trivia": "2019年のチャンピオンズリーグ準決勝バルセロナ戦での劇的な逆転ゴール（コーナーキックからの「オリギ！」）は、伝説として今もリヴァプールファンの間で語り継がれています。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "メキシコ代表",
+        "南アフリカ代表",
+        "開幕戦"
+      ],
+      "text": "2026年6月11日、史上最多の48カ国出場となった2026年ワールドカップが開幕しました。記念すべき開幕戦のカードはどれ？",
+      "options": [
+        "メキシコ vs 南アフリカ",
+        "アメリカ vs パラグアイ",
+        "カナダ vs ボスニア・ヘルツェゴビナ",
+        "カタール vs スイス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年大会の開幕戦はメキシコシティのエスタディオ・アステカで行われ、開催国のメキシコが南アフリカと対戦しました。",
+      "trivia": "この開幕戦は2010年南アフリカ大会の開幕戦と同じカードでした。2010年は1-1の引き分けでしたが、今大会はメキシコが2-0で勝利を収めています。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "メキシコ代表",
+        "フリアン・キニョネス",
+        "開幕戦"
+      ],
+      "text": "2026年6月11日に行われたワールドカップ開幕戦「メキシコ vs 南アフリカ」で、今大会のオープニングゴールを決めた選手は誰？",
+      "options": [
+        "フリアン・キニョネス",
+        "ラウル・ヒメネス",
+        "ハビエル・エルナンデス",
+        "イルビング・ロサノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半9分にコロンビア出身の帰化選手であるフリアン・キニョネスが相手のミスを突き、今大会の第1号ゴールを記録しました。",
+      "trivia": "開幕戦のキックオフ前に行われたオープニングセレモニーでは、コロンビア出身のシャキーラとナイジェリアのBurna Boyが公式ソング「Dai Dai」を披露しました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "メキシコ代表",
+        "南アフリカ代表",
+        "レッドカード"
+      ],
+      "text": "2026年6月11日に行われたワールドカップ開幕戦「メキシコ vs 南アフリカ」は荒れ模様の試合となりました。この試合で提示されたレッドカードの合計枚数は何枚？",
+      "options": [
+        "3枚",
+        "0枚",
+        "1枚",
+        "2枚"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半に南アフリカのスフェフェロ・シトレとテンバ・ズワネが退場となり、後半アディショナルタイムにはメキシコのセサル・モンテスも退場。合計3人が退場する荒れた試合となりました。",
+      "trivia": "退場者が3人出たにもかかわらず、メキシコは2-0で快勝。追加点を決めたラウル・ヒメネスは、自身のワールドカップ初ゴールを4大会目にしてようやく記録しました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-11",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "カナダ代表",
+        "サイル・ラリン",
+        "共催国"
+      ],
+      "text": "2026年6月12日、ワールドカップ・グループBのカナダ対ボスニア・ヘルツェゴビナ戦で、共催国カナダの今大会チーム第1号ゴールを決めた選手は誰？",
+      "options": [
+        "サイル・ラリン",
+        "アルフォンソ・デイビス",
+        "ジョナサン・デイビッド",
+        "ステファン・ユースタキオ"
+      ],
+      "answerIndex": 0,
+      "explanation": "トロントで行われたボスニア・ヘルツェゴビナ戦で、サイル・ラリンがゴールを決めましたが、試合は1-1の引き分けに終わりました。",
+      "trivia": "カナダはこの試合、トロントのBMOフィールド（今大会に向けて45,000人収容に拡張）で試合を行いました。試合前にはアラニス・モリセットやマイケル・ブーブレらによるセレモニーが行われました。",
+      "referenceDate": "2026-06-15",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-12",
+        "publishDate": "2026-06-15",
+        "expiryDate": "2026-06-22",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
