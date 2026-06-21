@@ -1,0 +1,1044 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-21T22:21:33Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-06-22",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "オランダ代表"
+      ],
+      "text": "2026年6月15日（日本時間）に行われたFIFAワールドカップ2026のグループF第1節、日本代表はオランダ代表と対戦しました。この試合の結果は？",
+      "options": [
+        "2-2の引き分け",
+        "2-1で日本の勝利",
+        "0-2で日本の敗北",
+        "1-1の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "強豪オランダ相手に2度のビハインドを背負いましたが、後半終了間際に劇的な同点弾が生まれ、2-2の引き分けで貴重な勝ち点1を獲得しました。",
+      "trivia": "今大会は史上最多の48カ国が出場し、アメリカ、カナダ、メキシコの3カ国で共同開催されています。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-15",
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "中村敬斗",
+        "ワールドカップ"
+      ],
+      "text": "6月15日のW杯オランダ戦で、日本代表の大会初ゴール（一時同点となるゴール）を決めた選手は誰でしょう？",
+      "options": [
+        "中村敬斗",
+        "久保建英",
+        "堂安律",
+        "前田大然"
+      ],
+      "answerIndex": 0,
+      "explanation": "0-1で迎えた後半12分、久保建英からのパスを受けた中村敬斗がペナルティエリア手前から右足を振り抜き、見事な同点ゴールを突き刺しました。",
+      "trivia": "中村敬斗はこのゴールにより、オランダの名手フィルジル・ファン・ダイクら世界的ディフェンダーを相手に存在感を示しました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-15",
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "鎌田大地",
+        "ワールドカップ"
+      ],
+      "text": "6月15日のオランダ戦の後半終了間際、伊東純也のCKから小川航基が放ったヘディングが当たり、同点ゴールとして記録された選手は誰でしょう？",
+      "options": [
+        "鎌田大地",
+        "小川航基",
+        "伊東純也",
+        "遠藤航"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半43分（88分）、伊東のCKを小川が頭で合わせると、コース上にいた鎌田大地の頭に当たってボールがネットに突き刺さり、土壇場で試合を振り出しに戻しました。",
+      "trivia": "この試合でオランダのシュート数は11本、日本は10本と、シュート数でも互角の戦いを繰り広げました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-15",
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "チュニジア代表"
+      ],
+      "text": "2026年6月21日（日本時間）に行われた、FIFAワールドカップ2026のグループF第2節、日本対チュニジアの試合結果は？",
+      "options": [
+        "4-0で日本の勝利",
+        "2-0で日本の勝利",
+        "1-1の引き分け",
+        "3-1で日本の勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は攻守にわたってチュニジアを圧倒し、4-0での快勝を収めて決勝トーナメント進出に向けて大きく前進しました。",
+      "trivia": "日本代表にとってワールドカップでのグループステージ第2節は「鬼門」と呼ばれており、2002年大会以来久々の第2節での勝利となりました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-21",
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "上田綺世",
+        "ワールドカップ"
+      ],
+      "text": "6月21日のチュニジア戦で2ゴールを挙げ、日本人初のワールドカップ「1試合個人2得点」を達成した選手は誰でしょう？",
+      "options": [
+        "上田綺世",
+        "南野拓実",
+        "浅野拓磨",
+        "小川航基"
+      ],
+      "answerIndex": 0,
+      "explanation": "上田綺世はチュニジア戦で見事な決定力を発揮して2ゴールを挙げ、日本のワールドカップ史上初となる1試合個人2得点という歴史的快挙を成し遂げました。",
+      "trivia": "試合後、上田選手は「前回大会の悔しい思いをようやく晴らせた気がする」と喜びを語りました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-21",
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "記録"
+      ],
+      "text": "日本代表がチュニジア戦で記録した「1試合4得点」はW杯での日本最多記録です。では、これまでの最多記録だった「1試合3得点」を記録した2010年大会の対戦相手は？",
+      "options": [
+        "デンマーク",
+        "カメルーン",
+        "パラグアイ",
+        "オランダ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2010年南アフリカ大会のグループステージ第3節でデンマークに3-1で勝利した際の3得点が、これまでの日本のW杯最多得点記録でした。",
+      "trivia": "デンマーク戦では、本田圭佑と遠藤保仁が直接フリーキックからゴールを決めたことでも大きな話題になりました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-21",
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "スタジアム"
+      ],
+      "text": "日本代表がチュニジア代表に4-0で快勝した第2節の試合会場となったメキシコの都市はどこでしょう？",
+      "options": [
+        "モンテレイ",
+        "メキシコシティ",
+        "グアダラハラ",
+        "カンクン"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表はメキシコのモンテレイに移動して第2節のチュニジア戦に臨み、見事な勝利を収めました。",
+      "trivia": "今大会のメキシコでの開催都市は、首都メキシコシティ、グアダラハラ、モンテレイの3都市です。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-21",
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "worldcup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ"
+      ],
+      "text": "グループステージ第1節オランダ戦、第2節チュニジア戦を終えた日本代表。6月26日に行われる第3節の対戦相手は？",
+      "options": [
+        "スウェーデン",
+        "メキシコ",
+        "チェコ",
+        "南アフリカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "グループFに入った日本は、オランダ、チュニジアと対戦し、第3節で北欧の強豪スウェーデンと激突します。",
+      "trivia": "グループFの最終節（第3節）は、日本対スウェーデン、チュニジア対オランダの2試合が同時刻に開催されます。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "秋春制",
+        "日程"
+      ],
+      "text": "新シーズンとなる「2026/27明治安田Jリーグ」は、2026年の何月に開幕する予定と発表されているでしょう？",
+      "options": [
+        "8月",
+        "7月",
+        "9月",
+        "10月"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは2026/27シーズンから「秋春制」へ移行し、J1リーグは8月7日に、J2・J3リーグは8月8日に開幕する予定です。",
+      "trivia": "秋春制移行により、冬の厳しい寒さや積雪を考慮した「ウインターブレーク（冬の中断期間）」が設けられています。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "ルヴァンカップ"
+      ],
+      "text": "2026年6月22日、Jリーグのシーズン移行に伴い、あるカップ戦の組み合わせや1回戦の対戦カードが発表されました。その大会は？",
+      "options": [
+        "ルヴァンカップ",
+        "天皇杯",
+        "富士フイルムスーパーカップ",
+        "明治安田J1百年構想リーグ"
+      ],
+      "answerIndex": 0,
+      "explanation": "秋春制移行に伴い、各種大会のスケジュールも変更されており、6月22日には「JリーグYBCルヴァンカップ」の組み合わせ等が発表されました。",
+      "trivia": "ルヴァンカップは世界で最も長く続いている同一スポンサーによるカップ戦として、ギネス世界記録に認定されています。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-22",
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J1",
+        "順位表",
+        "百年構想リーグ"
+      ],
+      "text": "2026年前半に行われたJリーグの特別大会「明治安田J1百年構想リーグ」で優勝を飾ったクラブはどこでしょう？",
+      "options": [
+        "ヴィッセル神戸",
+        "鹿島アントラーズ",
+        "セレッソ大阪",
+        "FC町田ゼルビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月に最終戦が行われ、WESTグループ1位のヴィッセル神戸がEASTグループ1位の鹿島アントラーズを破り見事優勝を果たしました。",
+      "trivia": "秋春制移行への端境期に行われた特別大会であり、J1の20クラブが東西に分かれて地域リーグラウンドと順位決定プレーオフを戦いました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "J3",
+        "順位表"
+      ],
+      "text": "2026年前半に行われた「明治安田J2・J3百年構想リーグ」で、最終順位が総合1位となったクラブはどこでしょう？",
+      "options": [
+        "ベガルタ仙台",
+        "カターレ富山",
+        "ヴァンフォーレ甲府",
+        "ブラウブリッツ秋田"
+      ],
+      "answerIndex": 0,
+      "explanation": "J2とJ3のクラブが混在して行われた本大会では、ベガルタ仙台がEAST-Aグループを1位で通過し、総合1位に輝きました。",
+      "trivia": "最終順位の2位にはJ3のカターレ富山、3位にはテゲバジャーロ宮崎が入り、J3勢の健闘が光る大会となりました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J1",
+        "得点ランキング",
+        "スタッツ"
+      ],
+      "text": "2026年6月に終了した「明治安田J1百年構想リーグ」で10得点を挙げ、トップタイで得点ランキング首位となった選手は次のうち誰でしょう？",
+      "options": [
+        "山岸祐也",
+        "鈴木優磨",
+        "大迫勇也",
+        "エリソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "山岸祐也（名古屋）、レオ・セアラ（鹿島）、谷村海那（横浜FM）の3選手が10得点で並びトップとなりました。",
+      "trivia": "特別大会のため通常のリーグ戦の通算記録には含まれませんが、各選手は激しい得点王争いを繰り広げました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "スタッツ",
+        "ルール"
+      ],
+      "text": "2026年のJリーグ特別大会「百年構想リーグ」の地域リーグラウンドで採用された、試合が90分で同点だった場合のルールと勝点の扱いはどれでしょう？",
+      "options": [
+        "PK戦を行い、勝者に勝点2、敗者に勝点1",
+        "引き分けとして両チームに勝点1",
+        "延長戦を行い、勝者に勝点2、敗者に勝点1",
+        "PK戦を行い、勝者に勝点1、敗者に勝点0"
+      ],
+      "answerIndex": 0,
+      "explanation": "本大会は完全決着方式を採用し、90分で同点の場合はPK戦を行いました。勝点は90分勝利が3、PK勝利が2、PK敗戦が1です。",
+      "trivia": "引き分けがないルールであったため、最後まで1点を争うスリリングな展開が多く生まれ、勝点計算にも通常とは異なる戦略が求められました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J1",
+        "順位表",
+        "百年構想リーグ"
+      ],
+      "text": "2026年の「明治安田J1百年構想リーグ」の最終順位決定戦（プレーオフ）で、優勝したヴィッセル神戸と対戦したEASTグループ1位のクラブはどこでしょう？",
+      "options": [
+        "鹿島アントラーズ",
+        "FC東京",
+        "FC町田ゼルビア",
+        "川崎フロンターレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "各グループの同順位同士が対戦するプレーオフが行われ、WEST1位の神戸とEAST1位の鹿島が優勝を争いました。",
+      "trivia": "神戸は第1戦でのリードを守りきり、秋春制への端境期に行われた記念すべき大会を制覇しました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J1",
+        "得点ランキング",
+        "スタッツ"
+      ],
+      "text": "2026年の「J1百年構想リーグ」得点ランキングにおいて、上位4人（10得点が3人、9得点が1人）の中に2人の選手をランクインさせたクラブはどこでしょう？",
+      "options": [
+        "名古屋グランパス",
+        "鹿島アントラーズ",
+        "横浜F・マリノス",
+        "ヴィッセル神戸"
+      ],
+      "answerIndex": 0,
+      "explanation": "名古屋グランパスは山岸祐也が10得点（トップタイ）、木村勇大が9得点（単独4位）を挙げ、強力な攻撃陣のスタッツを見せました。",
+      "trivia": "両選手ともに前線からのハードワークも光り、名古屋のWESTグループ上位進出に大きく貢献しました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "FC町田ゼルビア",
+        "栃木シティ",
+        "移籍",
+        "バスケス・バイロン"
+      ],
+      "text": "2026年6月20日、FC町田ゼルビアのMFバスケス・バイロンが期限付き移籍することが発表されました。彼の移籍先となったクラブはどこでしょう？",
+      "options": [
+        "栃木シティ",
+        "クリアソン新宿",
+        "VONDS市原",
+        "レイラック滋賀"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月20日、FC町田ゼルビアのMFバスケス・バイロンが栃木シティへ期限付き移籍することが発表されました。",
+      "trivia": "チリ出身のバスケス・バイロンは、青森山田高校時代に全国高校サッカー選手権大会で優勝を経験しています。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ベガルタ仙台",
+        "藤枝MYFC",
+        "移籍",
+        "浅倉廉"
+      ],
+      "text": "2026年6月21日、藤枝MYFCからベガルタ仙台へ完全移籍で加入することが発表されたMFは誰でしょう？",
+      "options": [
+        "浅倉廉",
+        "榎本啓吾",
+        "杉田真彦",
+        "横山暁之"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月21日、藤枝MYFCのMF浅倉廉がベガルタ仙台へ完全移籍することが発表されました。",
+      "trivia": "浅倉廉は川崎フロンターレのアカデミー出身で、静岡学園高校、拓殖大学を経て藤枝MYFCに加入しました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "松本山雅FC",
+        "テゲバジャーロ宮崎",
+        "移籍",
+        "村越凱光"
+      ],
+      "text": "2026年6月20日と21日、松本山雅FCとテゲバジャーロ宮崎の間で、それぞれ1人ずつ選手が相手クラブへ完全移籍することが発表されました。このうち、松本山雅FCからテゲバジャーロ宮崎へ加入した選手は誰でしょう？",
+      "options": [
+        "村越凱光",
+        "力安祥伍",
+        "菊井悠介",
+        "安藤翼"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月20日に松本山雅FCのMF村越凱光がテゲバジャーロ宮崎へ、翌21日に宮崎のMF力安祥伍が松本へ完全移籍することがそれぞれ発表されました。",
+      "trivia": "テゲバジャーロ宮崎から松本山雅FCへ加入した力安祥伍は、サンフレッチェ広島ユースから明治大学を経てプロ入りしました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "藤枝MYFC",
+        "浦和レッズ",
+        "移籍",
+        "吉田舜"
+      ],
+      "text": "2026年6月20日、浦和レッズから藤枝MYFCへの完全移籍加入が発表されたGK吉田舜ですが、彼が過去に所属した経験の「ない」クラブはどれでしょう？",
+      "options": [
+        "清水エスパルス",
+        "ザスパクサツ群馬",
+        "大分トリニータ",
+        "湘南ベルマーレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "GK吉田舜は、法政大学からザスパクサツ群馬でプロ入りし、大分トリニータ、浦和レッズ、湘南ベルマーレでプレーしました。清水エスパルスには所属したことがありません。",
+      "trivia": "吉田舜は前橋育英高校3年生の時に、全国高校サッカー選手権大会で準優勝を果たし、大会優秀選手に選出されています。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "名古屋グランパス",
+        "北海道コンサドーレ札幌",
+        "移籍",
+        "高嶺朋樹"
+      ],
+      "text": "2026年6月18日、MF高嶺朋樹が北海道コンサドーレ札幌からの期限付き移籍期間満了に伴い、名古屋グランパスへ完全移籍することが発表されました。彼が過去にプレーしたベルギーのクラブはどこでしょう？",
+      "options": [
+        "KVコルトレイク",
+        "シント＝トロイデンVV",
+        "スパルタ・ロッテルダム",
+        "ポルティモネンセSC"
+      ],
+      "answerIndex": 0,
+      "explanation": "高嶺朋樹は、筑波大学から北海道コンサドーレ札幌に加入し、柏レイソルを経て、ベルギーのKVコルトレイクでプレーした経験があります。",
+      "trivia": "高嶺朋樹は筑波大学時代にユニバーシアード日本代表に選出され、夏季ユニバーシアード・ナポリ大会で金メダルを獲得しています。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ジュビロ磐田",
+        "監督交代",
+        "秋葉忠宏",
+        "Jリーグ"
+      ],
+      "text": "2026年6月15日、ジュビロ磐田が新監督の就任を発表しました。ヴィッセル神戸のコーチから就任し、かつて宿敵・清水エスパルスでも監督を務めたこの人物は誰でしょう？",
+      "options": [
+        "秋葉忠宏",
+        "大島秀夫",
+        "吉田達磨",
+        "森山佳郎"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジュビロ磐田は三浦文丈監督の契約解除に伴い、秋葉忠宏氏の監督就任を発表しました。静岡ダービーを戦う両クラブで監督を務めるのは史上初となります。",
+      "trivia": "「THIS IS FOOTBALL」などの熱い言葉で知られる秋葉監督。実は2026年の百年構想リーグ期間中は、ヴィッセル神戸でトップチームコーチを務めていました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "シーズン移行",
+        "スケジュール",
+        "日程"
+      ],
+      "text": "2026年6月16日、2026/27シーズンの明治安田Jリーグの対戦カードが発表されました。シーズン移行元年となるJ1リーグは、何月に開幕するスケジュールとなっているでしょう？",
+      "options": [
+        "8月",
+        "7月",
+        "9月",
+        "10月"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026/27シーズンのJ1リーグは8月7日に開幕し、12月19日の第20節まで年内の対戦を行います。その後ウインターブレイクを経て、翌年2月に再開するスケジュールです。",
+      "trivia": "2026年はシーズン移行に向けた特別スケジュールとなり、開幕までの前半期間には「明治安田Jリーグ百年構想リーグ」という特別大会が開催されていました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "名古屋グランパス",
+        "ユニフォーム",
+        "イベント",
+        "Jリーグ"
+      ],
+      "text": "2026年6月18日、名古屋グランパスは「2026/27シーズン 明治安田J1リーグ」のユニフォームデザイン発表イベントの開催を告知しました。会場として予定されている名古屋市内の公園はどこでしょう？",
+      "options": [
+        "Hisaya-odori Park",
+        "オアシス21",
+        "名城公園",
+        "鶴舞公園"
+      ],
+      "answerIndex": 0,
+      "explanation": "名古屋グランパスは2026年6月28日に、Hisaya-odori Park（久屋大通公園）のメディアヒロバにて新シーズンのユニフォームデザイン発表イベントを行うと発表しました。",
+      "trivia": "Hisaya-odori Parkは、名古屋のシンボルであるテレビ塔（中部電力 MIRAI TOWER）周辺の久屋大通公園を再整備して誕生した人気の商業施設エリアです。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "JFA",
+        "日本代表",
+        "プロモーション"
+      ],
+      "text": "2026年6月21日までSNSキャンペーンが実施されるなど、JリーグとJFAが共同プロモーションを展開しました。「〇〇〇〇、世界へ。」というコンセプトの〇〇〇〇に入る言葉は何でしょう？",
+      "options": [
+        "街の誇りを",
+        "日本の夢を",
+        "青の魂を",
+        "未来の光を"
+      ],
+      "answerIndex": 0,
+      "explanation": "JリーグとJFAは「街の誇りを、世界へ。」をコンセプトに、世界で活躍する日本代表選手たちと、彼らを育んだJリーグのつながりを発信する共同プロモーションを実施しています。",
+      "trivia": "このプロモーションの一環として、日本代表選手がかつて所属していたJクラブへの思いを語るTVCMやWEB動画も公開され、大きな話題を呼びました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "シーズン移行",
+        "スケジュール",
+        "レギュレーション"
+      ],
+      "text": "2026年6月16日に発表された2026/27明治安田J1リーグのスケジュールによると、リーグの最終節（第38節）はいつ行われる予定となっているでしょう？",
+      "options": [
+        "2027年6月6日",
+        "2027年5月23日",
+        "2027年5月30日",
+        "2027年6月13日"
+      ],
+      "answerIndex": 0,
+      "explanation": "シーズン移行が行われた2026/27シーズンのJ1リーグは、2026年8月7日に開幕し、ウインターブレイクを挟んで、最終節は2027年6月6日に開催されるスケジュールとなっています。",
+      "trivia": "J1リーグの最終節は2027年6月6日ですが、J2およびJ3リーグの最終節は少し早く、2027年5月23日に設定されています。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "チュニジア代表"
+      ],
+      "text": "2026年6月21日に行われたFIFAワールドカップ2026・グループステージ第2節で、日本代表が4-0で快勝した対戦相手の国はどこ？",
+      "options": [
+        "チュニジア",
+        "オランダ",
+        "スウェーデン",
+        "南アフリカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は前半に鎌田大地、上田綺世のゴールでリードを奪い、後半にも伊東純也と上田が追加点を挙げてチュニジアから勝ち点3を獲得しました。",
+      "trivia": "今大会は史上初となるアメリカ・カナダ・メキシコの3カ国共同開催で、参加国も従来の32から48チームに拡大されています。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-21",
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "鎌田大地",
+        "ワールドカップ",
+        "ゴール"
+      ],
+      "text": "2026年6月21日のW杯チュニジア戦で前半4分に先制点を挙げ、第1節のオランダ戦（6月15日）に続いて2試合連続ゴールを記録した日本代表選手は誰？",
+      "options": [
+        "鎌田大地",
+        "上田綺世",
+        "伊東純也",
+        "三笘薫"
+      ],
+      "answerIndex": 0,
+      "explanation": "鎌田大地はオランダ戦での同点ゴールに続き、チュニジア戦でもキックオフ直後の前半4分に貴重な先制ゴールを決め、日本の攻撃を牽引しました。",
+      "trivia": "2026年大会のグループFに入った日本は、第1節で強豪オランダ相手に2度リードを許しながらも追いつき、2-2の引き分けで貴重な勝ち点1を獲得しています。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-21",
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "上田綺世",
+        "ワールドカップ"
+      ],
+      "text": "2026年6月21日のW杯チュニジア戦で、自身初となるW杯でのゴールを含む2得点を挙げ、日本の4-0の勝利に大きく貢献したストライカーは誰？",
+      "options": [
+        "上田綺世",
+        "小川航基",
+        "前田大然",
+        "浅野拓磨"
+      ],
+      "answerIndex": 0,
+      "explanation": "上田綺世は前半31分に自身W杯初ゴールを記録すると、後半にもチーム4点目となる追加点を挙げ、エースストライカーとしての役割を遺憾なく発揮しました。",
+      "trivia": "今大会の上田綺世のユニフォームのネーム表記は、他の選手の多くが「頭文字＋名字（例：J.ITO）」であるのに対し、彼だけが下の名前の「AYASE」となっています。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-21",
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "秋春制",
+        "日程発表",
+        "オープニングマッチ"
+      ],
+      "text": "2026年秋からJリーグは「秋春制」に移行します。2026年6月16日に新シーズンの全日程が発表されましたが、8月7日（金）に行われるJ1オープニングマッチの対戦カードはどれ？",
+      "options": [
+        "横浜F・マリノス vs 鹿島アントラーズ",
+        "ヴィッセル神戸 vs 川崎フロンターレ",
+        "浦和レッズ vs ガンバ大阪",
+        "サンフレッチェ広島 vs FC町田ゼルビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグ初の秋春制となる2026/27シーズンの開幕戦は、8月7日にMUFGスタジアムで開催される横浜F・マリノス対鹿島アントラーズのオープニングマッチからスタートします。",
+      "trivia": "秋春制移行に伴うリブランディングの一環で、Jリーグの公式ロゴもカテゴリー別の色分けが廃止され、シンプルなモノクロデザインに統一されました。",
+      "referenceDate": "2026-06-22",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-22",
+        "expiryDate": "2026-06-29",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
