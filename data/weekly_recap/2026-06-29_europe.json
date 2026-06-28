@@ -1,0 +1,1044 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-28T22:13:44Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-06-29",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "ポルトガル代表",
+        "クリスティアーノ・ロナウド"
+      ],
+      "text": "2026年6月23日に行われたワールドカップ・グループステージのウズベキスタン戦で、ポルトガル代表のクリスティアーノ・ロナウドが達成した史上初の記録はどれ？",
+      "options": [
+        "6大会連続ゴール",
+        "W杯通算20ゴール",
+        "ハットトリックの最年長記録",
+        "W杯通算最多出場試合数"
+      ],
+      "answerIndex": 0,
+      "explanation": "クリスティアーノ・ロナウドはウズベキスタン戦で2ゴールを挙げ、自身の持つ連続大会ゴール記録を更新し、ワールドカップ6大会連続ゴールという前人未到の偉業を達成しました。",
+      "trivia": "彼の記念すべき先制ゴールは前半6分にジョアン・カンセロのクロスから生まれ、2点目はブルーノ・フェルナンデスのパスから記録されました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-23",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "南アフリカ代表",
+        "韓国代表"
+      ],
+      "text": "2026年6月24日に行われたワールドカップ・グループA最終戦で、韓国代表を1-0で破り、同国史上初のグループステージ突破（ノックアウトステージ進出）を決めたアフリカの国はどこ？",
+      "options": [
+        "南アフリカ",
+        "セネガル",
+        "ナイジェリア",
+        "ガーナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "南アフリカ代表はタペロ・マセコの決勝ゴールで韓国に1-0で勝利し、グループAをメキシコに次ぐ2位で通過。同国史上初となるワールドカップでのノックアウトステージ進出を果たしました。",
+      "trivia": "決勝ゴールを決めたタペロ・マセコは、後半の63分にペナルティエリア外の右サイドから左足のグラウンダーのシュートを鮮やかに突き刺しました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-24",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "アメリカ代表",
+        "トルコ代表"
+      ],
+      "text": "2026年6月25日のワールドカップ・グループD最終戦で、アメリカ代表はトルコ代表に敗れましたが、この試合で後半にアメリカ代表の同点ゴール（2点目）を決めた選手は誰？",
+      "options": [
+        "セバスチャン・ベルハルター",
+        "クリスチャン・プリシッチ",
+        "ウェストン・マッケニー",
+        "ユヌス・ムサ"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半早々にセバスチャン・ベルハルターが同点ゴールを決めましたが、後半アディショナルタイムにトルコのカアン・アイハンが決勝ゴールを挙げ、アメリカは2-3で敗れました。",
+      "trivia": "敗れはしたものの、アメリカ代表は勝ち点6を確保してグループDを首位で通過。ワールドカップのグループステージでの勝ち点6獲得は同国の最高記録タイです。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-25",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "アルゼンチン代表",
+        "リオネル・メッシ"
+      ],
+      "text": "2026年6月22日のワールドカップで、アルゼンチン代表のリオネル・メッシがオーストリア戦で2ゴールを挙げ、W杯通算得点記録を更新しました。この時点での彼のW杯通算ゴール数はいくつになった？",
+      "options": [
+        "18ゴール",
+        "15ゴール",
+        "16ゴール",
+        "20ゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "メッシはオーストリアとの試合で2得点を挙げ、ワールドカップでの通算得点数を「18」に伸ばし、史上最多得点記録を更新しました。",
+      "trivia": "メッシはこの試合での得点により、ワールドカップにおいて個人として「7試合連続ゴール」という大記録も同時に達成しています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-22",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "イングランド代表",
+        "ジュード・ベリンガム"
+      ],
+      "text": "2026年6月27日に行われたワールドカップ・グループL最終戦、イングランド代表がパナマ代表に2-0で勝利した試合で、1ゴール1アシストの活躍を見せた選手は誰？",
+      "options": [
+        "ジュード・ベリンガム",
+        "ハリー・ケイン",
+        "フィル・フォーデン",
+        "ブカヨ・サカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イングランド代表はジュード・ベリンガムとハリー・ケインのゴールでパナマに2-0で勝利。ベリンガムは1ゴール1アシストの活躍でグループLの首位通過に大きく貢献しました。",
+      "trivia": "イングランド代表はこの首位通過により、ラウンド32（ノックアウトステージ）でワールドカップ初勝利を挙げたばかりのコンゴ民主共和国と対戦することになりました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-27",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "コンゴ民主共和国",
+        "ウズベキスタン"
+      ],
+      "text": "2026年6月27日のグループK最終戦で、ウズベキスタン代表を3-1で下し、同国史上初となるワールドカップでの勝利とノックアウトステージ進出を決めたアフリカの国はどこ？",
+      "options": [
+        "コンゴ民主共和国",
+        "カーボベルデ",
+        "アルジェリア",
+        "ハイチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "コンゴ民主共和国代表（DRコンゴ）はウズベキスタンに3-1で勝利し、ワールドカップの歴史において初の勝ち点3を獲得。成績上位の3位チームとしてラウンド32へ進出しました。",
+      "trivia": "コンゴ民主共和国代表の前身である「ザイール代表」は1974年大会に出場していましたが、DRコンゴとしては今回が初のW杯勝利という記念すべき試合になりました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-27",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "カナダ代表",
+        "南アフリカ代表"
+      ],
+      "text": "2026年6月28日に行われたワールドカップ・ラウンド32（ノックアウトステージ初戦）で、南アフリカ代表を後半アディショナルタイムの劇的ゴールで破り、ベスト16に進出した開催国はどこ？",
+      "options": [
+        "カナダ",
+        "アメリカ",
+        "メキシコ",
+        "コスタリカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "開催国の一つであるカナダ代表は、ラウンド32で南アフリカ代表と対戦。試合終了間際の後半アディショナルタイムに劇的な決勝ゴールを奪い、1-0で勝利してベスト16進出を決めました。",
+      "trivia": "この試合はカナダのバンクーバーではなく、アメリカのロサンゼルスにあるSoFiスタジアムで行われ、超満員の観客の中でドラマチックな結末を迎えました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-28",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "スペイン代表",
+        "ウルグアイ代表"
+      ],
+      "text": "2026年6月26日に行われたワールドカップ・グループステージ最終戦、スペイン代表対ウルグアイ代表の試合で、スペインに1-0の勝利をもたらす決勝ゴールを決めた選手は誰？",
+      "options": [
+        "アレックス・バエナ",
+        "ペドリ",
+        "ラミン・ヤマル",
+        "ダニ・オルモ"
+      ],
+      "answerIndex": 0,
+      "explanation": "強豪同士の対戦となったグループHの最終戦は、アレックス・バエナが挙げた1点を守り切ったスペイン代表が1-0でウルグアイ代表を下しました。",
+      "trivia": "両チームの対戦はグループステージ屈指の好カードとして注目され、勝利したスペインは万全の状態でノックアウトステージへと向かうことになりました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-26",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "アルジェリア代表",
+        "オーストリア代表"
+      ],
+      "text": "2026年6月27日に行われたワールドカップのグループステージ最終戦で、アルジェリア代表とオーストリア代表がスリリングな打ち合いの末に引き分けました。この試合の最終スコアは？",
+      "options": [
+        "3-3",
+        "2-2",
+        "4-4",
+        "1-1"
+      ],
+      "answerIndex": 0,
+      "explanation": "オーストリアのアルナウトヴィッチとザビッツァー、アルジェリアのマフレズらが点を取り合う白熱した展開となり、今大会のベストバウトの一つとも言える3-3のドロー決着となりました。",
+      "trivia": "オーストリアがリードする展開が続きましたが、アルジェリアはリヤド・マフレズが素晴らしいフィニッシュを見せ、後半に試合を振り出しに戻す見事な粘りを見せました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-27",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "メキシコ代表",
+        "チェコ代表"
+      ],
+      "text": "2026年6月24日に行われたワールドカップで、メキシコ代表がチェコ代表に3-0で勝利し、グループステージを3連勝（勝ち点9・無失点）で終えました。この試合のマン・オブ・ザ・マッチに選ばれたメキシコの選手は誰？",
+      "options": [
+        "マテオ・チャベス",
+        "フリアン・キニョネス",
+        "アルバロ・フィダルゴ",
+        "ギジェルモ・オチョア"
+      ],
+      "answerIndex": 0,
+      "explanation": "メキシコ代表はマテオ・チャベス、フリアン・キニョネス、アルバロ・フィダルゴのゴールで快勝。この試合で活躍した若手のマテオ・チャベスがマン・オブ・ザ・マッチ（MOM）に選出されました。",
+      "trivia": "メキシコ代表がワールドカップのグループステージにおいて、全勝かつ無失点で勝ち点9を獲得するのは、同国の歴史上初めての快挙です。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-24",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "アルゼンチン代表",
+        "リオネル・メッシ",
+        "順位・スタッツ"
+      ],
+      "text": "2026年6月に行われたワールドカップのグループステージを終え、6得点を挙げて得点ランキング単独首位に立っている選手は誰でしょう？",
+      "options": [
+        "リオネル・メッシ",
+        "キリアン・エムバペ",
+        "エルリング・ハーランド",
+        "ヴィニシウス・ジュニオール"
+      ],
+      "answerIndex": 0,
+      "explanation": "アルゼンチン代表のリオネル・メッシは、グループステージの3試合で6ゴールを記録する圧倒的な活躍を見せ、得点ランキングトップに立っています。",
+      "trivia": "今大会のグループステージだけで挙げた6得点という数字は、過去の多くのワールドカップでそのまま得点王になれるほどのハイペースです。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-28",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "日本代表",
+        "グループステージ",
+        "順位・スタッツ"
+      ],
+      "text": "2026年ワールドカップのグループFに入った日本代表は、グループステージ3試合を終えて最終的に何位で決勝トーナメント進出を決めましたか？",
+      "options": [
+        "2位",
+        "1位",
+        "3位",
+        "4位"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表はオランダ、スウェーデン、チュニジアと同組のグループFを1勝2分（勝ち点5）で無敗のまま終え、首位オランダに次ぐ2位でラウンド32へ進出しました。",
+      "trivia": "日本代表はグループステージでチュニジアに4-0で快勝するなど、力強い得点力を見せてグループを突破しました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-26",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "アメリカ代表",
+        "グループステージ",
+        "順位・スタッツ"
+      ],
+      "text": "共同開催国のひとつであるアメリカ代表は、2026年ワールドカップのグループDを何位で通過したでしょう？",
+      "options": [
+        "1位",
+        "2位",
+        "3位",
+        "グループ敗退"
+      ],
+      "answerIndex": 0,
+      "explanation": "アメリカ代表はグループDで戦い、トルコ戦で敗れる波乱があったものの、他の試合で結果を残し、最終的にグループ首位でラウンド32への進出を決めました。",
+      "trivia": "アメリカ代表のFWフォラリン・バログンも開幕戦で2ゴールを挙げるなど、開催国としてホームの熱狂的なファンの前で躍動しています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-25",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "ポルトガル代表",
+        "コロンビア代表",
+        "順位・スタッツ"
+      ],
+      "text": "2026年ワールドカップのグループKにおいて、コロンビア代表に次ぐ2位となり、決勝トーナメント（ラウンド32）への進出を決めたヨーロッパの強豪国はどこでしょう？",
+      "options": [
+        "ポルトガル",
+        "イタリア",
+        "ベルギー",
+        "ドイツ"
+      ],
+      "answerIndex": 0,
+      "explanation": "グループKではコロンビアが首位通過し、ポルトガルは勝ち点4の2位で決勝トーナメントへ進出。ラウンド32ではクロアチアとの対戦が決まりました。",
+      "trivia": "ポルトガルは絶対的エースのクリスティアーノ・ロナウドを擁していますが、今大会のグループステージでは勝ち切れない試合もあり、2位での突破となりました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-28",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "オランダ代表",
+        "グループステージ",
+        "順位・スタッツ"
+      ],
+      "text": "日本代表と同組だったオランダ代表は、2026年ワールドカップのグループFを首位で通過しました。オランダがグループステージ3試合で挙げた総得点はいくつでしょう？",
+      "options": [
+        "10",
+        "7",
+        "8",
+        "11"
+      ],
+      "answerIndex": 0,
+      "explanation": "オランダ代表は日本と2-2、スウェーデンに5-1、チュニジアに3-1と、グループステージ3試合で合計10ゴールを奪う圧倒的な攻撃力を見せました。",
+      "trivia": "オランダ代表はFWブライアン・ブロビーやコーディ・ガクポなどの強力な攻撃陣が得点を量産し、得失点差+6という好成績でグループ突破を果たしました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-26",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "カーボベルデ代表",
+        "グループステージ",
+        "順位・スタッツ"
+      ],
+      "text": "2026年ワールドカップで初出場を果たし、スペインと同組のグループHでウルグアイやサウジアラビアを抑えて見事2位でグループ突破の快挙を成し遂げた国はどこでしょう？",
+      "options": [
+        "カーボベルデ",
+        "ヨルダン",
+        "キュラソー",
+        "パナマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アフリカの島国カーボベルデは、スペイン、サウジアラビア、ウルグアイという強豪揃いのグループHで2位に入り、初出場での決勝トーナメント（ラウンド32）進出を果たしました。",
+      "trivia": "カーボベルデの人口は約60万人で、今大会に出場した国の中でも最も人口が少ない国のひとつであり、彼らの快進撃は大会の大きなサプライズとなっています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-27",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "ブラジル代表"
+      ],
+      "text": "2026年6月25日、FIFAワールドカップ2026のグループF最終節で日本代表はスウェーデンと1-1で引き分け、グループ2位で決勝トーナメント進出を決めました。1回戦（ラウンド32）の対戦相手はどの国に決定したでしょうか？",
+      "options": [
+        "ブラジル",
+        "アルゼンチン",
+        "フランス",
+        "メキシコ"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表はグループFを2位で通過し、グループCを1位で通過したブラジル代表と現地時間6月29日（日本時間30日）にラウンド32で対戦することが決まりました。",
+      "trivia": "日本代表がW杯本大会でブラジルと対戦するのは、2006年のドイツ大会（1-4で敗戦）以来20年ぶり2回目となります。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-25",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "海外移籍",
+        "ベルギーリーグ",
+        "水戸ホーリーホック"
+      ],
+      "text": "2026年6月23日、J2の水戸ホーリーホックからベルギー1部のアントワープへ完全移籍することが発表された、プロデビューからわずか2ヶ月の18歳の若手MFは誰でしょうか？",
+      "options": [
+        "安藤晃希",
+        "山崎絢心",
+        "佐藤龍之介",
+        "高岡伶颯"
+      ],
+      "answerIndex": 0,
+      "explanation": "18歳の安藤晃希は、今季水戸に加入後、4月のデビュー戦から連続ゴールを決めるなど一気に注目を集め、異例のスピードでの海外挑戦を決めました。",
+      "trivia": "安藤選手はプロデビューとなったFC東京戦で、途中出場からピッチに立ってわずか1分後に初ゴールを決めるという衝撃的なデビューを飾っていました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "谷口彰悟"
+      ],
+      "text": "2026年6月25日に行われたワールドカップ・グループF第3節のスウェーデン戦で、前半35分頃に負傷した主将・板倉滉に代わって緊急出場し、日本の守備陣を統率したベテランDFは誰でしょうか？",
+      "options": [
+        "谷口彰悟",
+        "冨安健洋",
+        "町田浩樹",
+        "伊藤洋輝"
+      ],
+      "answerIndex": 0,
+      "explanation": "スウェーデン戦では板倉滉が足を痛め、急きょベンチスタートの谷口彰悟（シントトロイデン所属）がウォーミングアップなしで投入されました。",
+      "trivia": "谷口選手は現在ベルギーリーグでプレーしていますが、強豪相手にも「架空の能力の高い相手とも戦っている」と意識を高く保ち、代表での活躍につなげています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-25",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "久保建英"
+      ],
+      "text": "2026年6月28日、ワールドカップ決勝トーナメント1回戦のブラジル戦に向けた前日会見で、森保監督が左膝の負傷のため「明日の試合に出場することはない」と欠場を明言した選手は誰でしょうか？",
+      "options": [
+        "久保建英",
+        "三笘薫",
+        "南野拓実",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "久保建英は第1戦のオランダ戦で相手と接触して途中交代しており、全体練習に合流できていないためブラジル戦の欠場が明言されました。",
+      "trivia": "久保建英は前回の2022年カタール大会ではチーム最年少の21歳で選出されていましたが、今大会は名実ともにチームの中心選手として臨んでいました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "前田大然"
+      ],
+      "text": "2026年6月25日に行われたワールドカップ・グループF第3節のスウェーデン戦（1-1）で、56分に堂安律からのパスを受けて日本の先制ゴールを決めたストライカーは誰でしょうか？",
+      "options": [
+        "前田大然",
+        "上田綺世",
+        "浅野拓磨",
+        "小川航基"
+      ],
+      "answerIndex": 0,
+      "explanation": "スウェーデン戦では、後半11分（56分）に堂安律からのパスを受けた前田大然（セルティック所属）がゴールネットを揺らし、日本に貴重な先制点をもたらしました。",
+      "trivia": "前田大然は所属するセルティックでも驚異的なスプリント能力と前線からの献身的なプレスを武器にしており、世界を相手にしてもそのプレースタイルは高く評価されています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-25",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "レアル・マドリード",
+        "チェルシー",
+        "スペイン代表"
+      ],
+      "text": "2026年6月にチェルシーからレアル・マドリードへの完全移籍が発表された、スペイン代表の左サイドバックは誰？",
+      "options": [
+        "マルク・ククレジャ",
+        "アレハンドロ・バルデ",
+        "ホセ・ガヤ",
+        "ミゲル・グティエレス"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリードは2026年6月、チェルシーからスペイン代表DFマルク・ククレジャを獲得したと発表しました。移籍金はボーナス込みで最大6000万ユーロ（約5200万ポンド）と報じられています。",
+      "trivia": "ククレジャはバルセロナの下部組織出身ですが、プロキャリアを経て宿敵であるレアル・マドリードへの移籍を果たすことになりました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ワールドカップ",
+        "トルコ代表",
+        "アメリカ代表",
+        "ゴール"
+      ],
+      "text": "2026年6月25日に行われたW杯グループステージのアメリカ戦で、前半10分に同点ゴールを決め、トルコ代表の3-2の勝利に貢献した選手は誰？",
+      "options": [
+        "アルダ・ギュレル",
+        "ハカン・チャルハノール",
+        "ケナン・ユルディズ",
+        "ジェンギズ・ウンデル"
+      ],
+      "answerIndex": 0,
+      "explanation": "トルコ代表のアルダ・ギュレルは、アメリカ戦で前半10分に見事な同点ゴールを決め、チームの逆転勝利のきっかけを作りました。 試合は後半ロスタイムの勝ち越し弾によりトルコが3-2で勝利しています。",
+      "trivia": "敗れたアメリカ代表ですが、グループステージ過去最高となる勝ち点6を獲得し、すでにグループDの首位通過を決めていました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-25",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "ACミラン",
+        "PSG",
+        "ポルトガル代表"
+      ],
+      "text": "2026年6月末、PSG（パリ・サンジェルマン）からイタリアのACミランへ移籍することでクラブ間合意に達したと報じられたポルトガル代表ストライカーは誰？",
+      "options": [
+        "ゴンサロ・ラモス",
+        "ジョアン・フェリックス",
+        "ラファエル・レオン",
+        "ディオゴ・ジョッタ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ACミランはPSGと5000万ユーロ以上の移籍金でゴンサロ・ラモスを獲得することで合意に達し、メディカルチェックに向けて準備を進めていると報じられました。",
+      "trivia": "ゴンサロ・ラモスは2022年W杯のスイス戦で、クリスティアーノ・ロナウドの代わりにスタメン起用されハットトリックを達成し、世界中に名を知らしめました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ワールドカップ",
+        "ノルウェー代表",
+        "ストライカー",
+        "監督コメント"
+      ],
+      "text": "2026年6月22日に行われたW杯グループステージのセネガル戦（3-2で勝利）後、ノルウェー代表のソルバッケン監督が「彼が絶好調だったことが勝因」と名指しで称賛したストライカーは誰？",
+      "options": [
+        "アーリング・ハーランド",
+        "アレクサンダー・セルロート",
+        "ヨルゲン・ストランド・ラーセン",
+        "マルティン・ウーデゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "ノルウェー代表のストーレ・ソルバッケン監督は、セネガルに3-2で勝利した後、勝因は「絶好調（on fire）だったハーランド」の活躍にあったと語りました。",
+      "trivia": "世界トップクラスの得点力を誇るハーランドですが、実はノルウェー代表がワールドカップに出場するのは1998年大会以来、実に28年ぶりのことでした。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-22",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "バルセロナ",
+        "アトレティコ・マドリード",
+        "アルゼンチン代表"
+      ],
+      "text": "2026年6月28日の現地報道で、所属するアトレティコ・マドリードからの引き留めにあいながらも、バルセロナへの移籍を強く希望していると伝えられたアルゼンチン代表FWは誰？",
+      "options": [
+        "フリアン・アルバレス",
+        "ラウタロ・マルティネス",
+        "アンヘル・コレア",
+        "パウロ・ディバラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "フリアン・アルバレスはアトレティコ・マドリードからの引き留めにあっているものの、バルセロナのサッカースタイルに魅力を感じており、移籍を希望していると各紙で報じられました。",
+      "trivia": "アルバレスはマンチェスター・シティ時代にプレミアリーグやCLなど多くのタイトルを獲得し、アルゼンチン代表としてもW杯やコパ・アメリカを制覇した「タイトル請負人」です。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "カナダ代表",
+        "南アフリカ代表",
+        "ワールドカップ",
+        "ステファン・ユースタキオ"
+      ],
+      "text": "2026年6月28日に行われたW杯ラウンド32、カナダ対南アフリカの試合で、後半ロスタイムに劇的な決勝ゴールを決め、カナダをベスト16に導いた選手は誰でしょう？",
+      "options": [
+        "ステファン・ユースタキオ",
+        "アルフォンソ・デイヴィス",
+        "ジョナサン・デイヴィッド",
+        "サイル・ラリン"
+      ],
+      "answerIndex": 0,
+      "explanation": "ロサンゼルスで行われたラウンド32で、カナダは後半ロスタイム(92分)にステファン・ユースタキオのゴールで南アフリカを1-0で破り、ベスト16に進出しました。",
+      "trivia": "カナダはこの試合が史上初めて自国（または共催国としての開催地カナダ）以外で行ったW杯の試合であり、見事に勝利を収めました。劇的な決勝点を決めたユースタキオは、試合が行われたロサンゼルスのロサンゼルスFCでプレーしています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-28",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "コートジボワール代表",
+        "キュラソー代表",
+        "ワールドカップ",
+        "ニコラ・ペペ"
+      ],
+      "text": "2026年6月25日に行われたW杯グループE第3節でキュラソーに2-0で勝利し、同国史上初の決勝トーナメント進出を果たしたアフリカの国はどこでしょう？",
+      "options": [
+        "コートジボワール",
+        "セネガル",
+        "ガーナ",
+        "カメルーン"
+      ],
+      "answerIndex": 0,
+      "explanation": "コートジボワールはニコラ・ペペの2ゴールの活躍によりキュラソーを2-0で下し、過去3度のW杯出場で果たせなかったグループステージ突破を初めて成し遂げました。",
+      "trivia": "2ゴールを挙げたニコラ・ペペは、コートジボワール代表としてW杯1試合で複数得点を挙げた史上5人目の選手となりました。グループEは混戦となりましたが、勝ち点6を獲得しての見事な2位通過でした。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-25",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "南アフリカ代表",
+        "韓国代表",
+        "ワールドカップ",
+        "タペロ・マセコ"
+      ],
+      "text": "2026年6月24日のW杯グループA第3節で、南アフリカはタペロ・マセコのゴールにより1-0で勝利し、史上初の決勝トーナメント進出を決めました。この番狂わせで敗れた強豪国はどこでしょう？",
+      "options": [
+        "韓国",
+        "チェコ",
+        "メキシコ",
+        "日本"
+      ],
+      "answerIndex": 0,
+      "explanation": "南アフリカは63分のタペロ・マセコのゴールを守り切り、韓国に1-0で勝利。これまでの3度の出場(1998, 2002, 2010)では突破できなかったグループステージを初めて突破しました。",
+      "trivia": "敗れた韓国は、この試合でエースのソン・フンミンをスタメンから外し、13試合ぶりにW杯で彼がベンチスタートとなる采配を見せましたが、実りませんでした。一方の南アフリカは4度目の出場で悲願の突破です。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-24",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "エクアドル代表",
+        "ドイツ代表",
+        "ワールドカップ",
+        "ゴンサロ・プラタ"
+      ],
+      "text": "2026年6月25日に行われたW杯グループE第3節で、エクアドルは強豪ドイツに2-1で逆転勝利を収めました。この試合で逆転となる決勝ゴールを挙げた選手は誰でしょう？",
+      "options": [
+        "ゴンサロ・プラタ",
+        "エネル・バレンシア",
+        "モイセス・カイセド",
+        "ニルソン・アングロ"
+      ],
+      "answerIndex": 0,
+      "explanation": "エクアドルは開始早々にドイツのレロイ・サネに先制を許しましたが、ニルソン・アングロのゴールで同点とし、77分にゴンサロ・プラタが決勝点を挙げて逆転勝利を収めました。",
+      "trivia": "ドイツのレロイ・サネの先制ゴールは開始わずか109秒での得点であり、ドイツ代表にとって1934年大会以来となるW杯最速ゴール記録でした。しかし、エクアドルの執念が勝り、歴史的な逆転勝利を飾りました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-25",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    }
+  ]
+}

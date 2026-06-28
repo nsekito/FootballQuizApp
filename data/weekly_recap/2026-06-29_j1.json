@@ -1,0 +1,1045 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-28T22:08:33Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-06-29",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "スウェーデン"
+      ],
+      "text": "2026年6月26日に行われたFIFAワールドカップ2026グループステージ第3戦で、日本代表が対戦し、1-1で引き分けた相手国はどこでしょうか？",
+      "options": [
+        "スウェーデン",
+        "オランダ",
+        "チュニジア",
+        "デンマーク"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表はグループステージ第3戦でスウェーデンと対戦し、1-1で引き分けました。",
+      "trivia": "スウェーデンとは2002年の日韓W杯でも対戦する可能性がありましたが、その時は実現しませんでした。今大会がW杯での初対戦です。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-26",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "順位表"
+      ],
+      "text": "2026年6月26日の試合結果をもって確定した、FIFAワールドカップ2026における日本代表のグループFの最終順位は何位だったでしょうか？",
+      "options": [
+        "2位",
+        "1位",
+        "3位",
+        "4位"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は1勝2分（勝ち点5）の成績を収め、オランダに次ぐグループFの2位で決勝トーナメント進出を決めました。",
+      "trivia": "日本代表がワールドカップのグループステージを3戦無敗で突破したのは、2002年の日韓大会以来、24年ぶりの快挙です。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-26",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "対戦カード"
+      ],
+      "text": "2026年6月26日にグループFを2位で通過した日本代表ですが、日本時間6月30日に行われる決勝トーナメント・ラウンド32での対戦相手はどこでしょうか？",
+      "options": [
+        "ブラジル",
+        "メキシコ",
+        "ポルトガル",
+        "スペイン"
+      ],
+      "answerIndex": 0,
+      "explanation": "グループFを2位で通過した日本代表は、決勝トーナメントの初戦となるラウンド32でグループC首位のブラジル代表と対戦することが決まりました。",
+      "trivia": "2006年のドイツW杯グループステージで対戦して以来、日本がワールドカップ本大会でブラジルと対戦するのは20年ぶりのことです。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "ルヴァンカップ",
+        "大会名称"
+      ],
+      "text": "2026年6月22日、Jリーグは2026/27シーズンからリーグカップ戦の大会名称とロゴを変更することを発表しました。これまでの「YBCルヴァンカップ」から変更された新大会名は何でしょうか？",
+      "options": [
+        "ヤマザキビスケット ルヴァンカップ",
+        "ヤマザキ ルヴァンカップ",
+        "Jリーグ ルヴァンカップ",
+        "YBC ヤマザキカップ"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは秋春制へのシーズン移行のタイミングに合わせて、大会名称を「Jリーグ ヤマザキビスケット ルヴァンカップ」へ変更することを発表しました。",
+      "trivia": "大会冠スポンサーであるヤマザキビスケット株式会社（旧社名：ヤマザキナビスコ）は、1992年の第1回大会から協賛を続けており、同一企業の協賛による世界最長のカップ戦としてギネス世界記録に認定されています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "前田大然",
+        "ゴール"
+      ],
+      "text": "2026年6月26日のワールドカップ・グループステージ第3戦のスウェーデン戦で、後半に日本の先制ゴールを決めた選手は誰でしょうか？",
+      "options": [
+        "前田大然",
+        "上田綺世",
+        "堂安律",
+        "中村敬斗"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半11分（56分）、堂安律からのスルーパスを受けた前田大然が右足で流し込み、日本に先制点をもたらしました。",
+      "trivia": "前田大然選手は前回大会（2022年カタールW杯）のクロアチア戦でもゴールを決めており、これで2大会連続のワールドカップでの得点となりました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-26",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ワールドカップ",
+        "スウェーデン",
+        "得点者"
+      ],
+      "text": "2026年6月26日の日本対スウェーデン戦で、日本の先制からわずか6分後に同点ゴールを決めたスウェーデンの選手は誰でしょうか？",
+      "options": [
+        "アントニー・エランガ",
+        "アレクサンデル・イサク",
+        "ヴィクトル・ギョケレス",
+        "デヤン・クルゼフスキ"
+      ],
+      "answerIndex": 0,
+      "explanation": "62分、右サイドでボールを受けたアントニー・エランガが内側へ持ち込み、左足でゴール左隅に同点となるシュートを決めました。",
+      "trivia": "アントニー・エランガ選手は元カメルーン代表選手の父を持ち、自身はマンチェスター・ユナイテッドのアカデミーで育った俊足アタッカーです。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-26",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ワールドカップ",
+        "オランダ",
+        "順位表"
+      ],
+      "text": "日本時間2026年6月26日、日本が所属するグループFの最終戦が各地で行われました。チュニジアに3-1で勝利し、勝ち点7でグループ1位通過を決めた国はどこでしょうか？",
+      "options": [
+        "オランダ",
+        "スウェーデン",
+        "メキシコ",
+        "ポルトガル"
+      ],
+      "answerIndex": 0,
+      "explanation": "グループFではオランダが2勝1分（勝ち点7）の成績を残し、無敗でグループ首位通過を決めました。",
+      "trivia": "オランダは初戦の日本戦では2-2で引き分けましたが、その後の第2戦・第3戦で連勝を飾り、強豪国の意地を見せました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-26",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "スタジアム"
+      ],
+      "text": "グループFを2位通過した日本代表は、日本時間2026年6月30日にブラジルとラウンド32を戦います。この試合の会場となるアメリカの都市はどこでしょうか？",
+      "options": [
+        "ヒューストン",
+        "ロサンゼルス",
+        "マイアミ",
+        "ニューヨーク"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本対ブラジルの一戦は、アメリカ・テキサス州のヒューストン・スタジアムで開催されることが決まりました。",
+      "trivia": "ヒューストンはNASAのジョンソン宇宙センターがあることで知られており、「ヒューストン、問題発生だ」という有名なセリフでもおなじみの都市です。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "長友佑都",
+        "記録達成"
+      ],
+      "text": "2026年6月26日のスウェーデン戦の終盤にピッチに立ち、アジア勢として史上初となる「5大会連続でのワールドカップ出場」という偉業を達成した日本人選手は誰でしょうか？",
+      "options": [
+        "長友佑都",
+        "吉田麻也",
+        "酒井宏樹",
+        "大迫勇也"
+      ],
+      "answerIndex": 0,
+      "explanation": "長友佑都はスウェーデン戦の終盤に交代出場し、2010年、2014年、2018年、2022年に続き、5大会連続となるワールドカップ出場を果たしました。",
+      "trivia": "ワールドカップの5大会連続出場は、メッシやクリスティアーノ・ロナウドなど、世界的に見てもごく一部のレジェンドしか達成していない大記録です。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-26",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "堂安律",
+        "アシスト"
+      ],
+      "text": "2026年6月26日のワールドカップ・スウェーデン戦で、見事なスルーパスを送って前田大然の先制ゴールをアシストした日本の選手は誰でしょうか？",
+      "options": [
+        "堂安律",
+        "上田綺世",
+        "久保建英",
+        "三笘薫"
+      ],
+      "answerIndex": 0,
+      "explanation": "56分、堂安律と上田綺世の連係から堂安が絶妙なスルーパスを送り、前田大然の先制ゴールをアシストしました。",
+      "trivia": "堂安選手は右サイドからのチャンスメイクに長けており、前回大会からチームの攻撃を牽引する中心選手として活躍し続けています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-26",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "移籍",
+        "ヴィッセル神戸",
+        "アンデルソン・ロペス"
+      ],
+      "text": "2026年6月26日、かつてJ1リーグで2季連続の得点王に輝いたブラジル人FWアンデルソン・ロペスの完全移籍加入が発表されました。彼が加入した「明治安田J1百年構想リーグ」の王者クラブはどこ？",
+      "options": [
+        "ヴィッセル神戸",
+        "鹿島アントラーズ",
+        "横浜F・マリノス",
+        "FC東京"
+      ],
+      "answerIndex": 0,
+      "explanation": "かつてJ1得点王となったアンデルソン・ロペスが、シンガポールのクラブからヴィッセル神戸に電撃加入しました。",
+      "trivia": "アンデルソン・ロペスはJ1通算101得点を記録しており、日本での実績は抜群です。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "ルヴァンカップ",
+        "大会方式"
+      ],
+      "text": "2026年6月22日に日程やフォーマットが発表された「2026/27 Jリーグ ヤマザキビスケット ルヴァンカップ」。今大会において、J1・J2・J3のクラブがノックアウト方式で戦う最初のラウンドの名称は何？",
+      "options": [
+        "1stラウンド",
+        "グループステージ",
+        "予選ラウンド",
+        "ファーストラウンド"
+      ],
+      "answerIndex": 0,
+      "explanation": "今大会は1stラウンドと、そこを勝ち上がったチームなどが戦うプライムラウンドの2段階方式で実施されます。1stラウンドは9月2日からスタートします。",
+      "trivia": "秋春制への移行に伴い、ルヴァンカップも年をまたいで開催される日程となりました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "得点王",
+        "横浜F・マリノス",
+        "アンデルソン・ロペス"
+      ],
+      "text": "2026年6月26日にヴィッセル神戸への完全移籍が発表されたFWアンデルソン・ロペス。彼が過去にJリーグでプレーし、クラブ史上2人目となる「2季連続20得点」の大記録を打ち立てたクラブはどこ？",
+      "options": [
+        "横浜F・マリノス",
+        "サンフレッチェ広島",
+        "北海道コンサドーレ札幌",
+        "セレッソ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "アンデルソン・ロペスは横浜F・マリノス在籍時にJ1で2年連続の得点王に輝くなど、驚異的な得点力を見せつけました。",
+      "trivia": "彼が来日して最初に所属したクラブはサンフレッチェ広島で、その後コンサドーレ札幌でもプレーしています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "オランダ"
+      ],
+      "text": "2026年6月22日、日本代表は2026年ワールドカップのグループステージ第2戦でチュニジアと対戦し、4-1で快勝してグループ順位を上げました。では、日本が初戦で2-2と引き分けた強豪国はどこ？",
+      "options": [
+        "オランダ",
+        "ドイツ",
+        "スペイン",
+        "クロアチア"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本は強豪オランダとの初戦を2-2で引き分けた後、第2戦のチュニジア戦で快勝し、決勝トーナメント進出へ大きく前進しました。",
+      "trivia": "チュニジア戦では、初戦からスタメン4人を変更して臨み、見事な結果を出しました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "百年構想リーグ",
+        "スタッツ",
+        "アワード"
+      ],
+      "text": "2026年前半に開催された特別大会「明治安田Jリーグ百年構想リーグ」。プレーオフラウンドを含めて全グループで最も多くの得点を挙げた選手に贈られた、新たな個人賞の名称は？",
+      "options": [
+        "釜本邦茂賞",
+        "三浦知良賞",
+        "中山雅史賞",
+        "奥寺康彦賞"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本サッカー界のレジェンドの名を冠した「釜本邦茂賞」が新設され、6月に行われたJリーグオールスターDAZNカップで表彰されました。",
+      "trivia": "地域リーグラウンドにおける全グループの最多得点者は、奈良クラブの田村翔太（13得点）でした。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "ルヴァンカップ",
+        "ACL",
+        "シード"
+      ],
+      "text": "2026年6月22日に日程が発表された「2026/27 ルヴァンカップ」。本大会の準々決勝以降である「プライムラウンド」からシード出場となる、AFCチャンピオンズリーグエリート出場クラブは鹿島アントラーズとどこ？",
+      "options": [
+        "ヴィッセル神戸",
+        "FC町田ゼルビア",
+        "サンフレッチェ広島",
+        "横浜F・マリノス"
+      ],
+      "answerIndex": 0,
+      "explanation": "前シーズンのJ1順位と「明治安田J1百年構想リーグ」の順位の和が上位である鹿島と神戸の2クラブが、特例としてプライムラウンドからのシード出場となります。",
+      "trivia": "その他のACLに出場するクラブは、ルヴァンカップ1stラウンドの4回戦からの出場となります。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "ヴィッセル神戸",
+        "アンデルソン・ロペス"
+      ],
+      "text": "2026年6月26日、ライオン・シティ・セーラーズ（シンガポール）からヴィッセル神戸に完全移籍で加入することが発表された、Jリーグでのプレー経験も豊富なブラジル人ストライカーは誰でしょう？",
+      "options": [
+        "アンデルソン・ロペス",
+        "チアゴ・サンタナ",
+        "エウベル",
+        "マルコス・ジュニオール"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月26日、ヴィッセル神戸はライオン・シティ・セーラーズからFWアンデルソン・ロペスの完全移籍での獲得を発表しました。",
+      "trivia": "アンデルソン・ロペスは過去に横浜F・マリノスなどでプレーし、J1リーグ得点王に輝いたこともある屈指のストライカーです。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "清水エスパルス",
+        "木下康介",
+        "サンフレッチェ広島"
+      ],
+      "text": "2026年6月26日、サンフレッチェ広島から清水エスパルスへ完全移籍することが発表された、190cmの長身を誇るストライカーは誰でしょう？",
+      "options": [
+        "木下康介",
+        "大橋祐紀",
+        "ジャーメイン良",
+        "山崎凌吾"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月26日、清水エスパルスはサンフレッチェ広島からFW木下康介を完全移籍で獲得したことを発表しました。",
+      "trivia": "木下康介は横浜FCユースからドイツへ渡り、欧州複数クラブでのプレーを経て日本へ復帰した「逆輸入型」の選手です。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "ベガルタ仙台",
+        "中島元彦",
+        "セレッソ大阪"
+      ],
+      "text": "2026年6月26日、セレッソ大阪からベガルタ仙台へ「完全移籍」で加入することが発表されたアタッカーは誰でしょう？過去に期限付き移籍でも仙台で活躍していました。",
+      "options": [
+        "中島元彦",
+        "郷家友太",
+        "山田寛人",
+        "氣田亮真"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月26日、ベガルタ仙台はセレッソ大阪からFW中島元彦が完全移籍で加入することを発表しました。中島はかつて期限付き移籍で仙台の主力として活躍していました。",
+      "trivia": "中島元彦はセレッソ大阪のアカデミー出身で、復帰した仙台のクラブ公式サイトでは「ただいま！J1いこう！」という熱いコメントを残しました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "柏レイソル",
+        "満田誠",
+        "ガンバ大阪"
+      ],
+      "text": "2026年6月28日、ガンバ大阪から柏レイソルへ期限付き移籍することが発表された、日本代表経験もあるアタッカーは誰でしょう？直近ではヴィッセル神戸に期限付き移籍していました。",
+      "options": [
+        "満田誠",
+        "仙頭啓矢",
+        "中島翔哉",
+        "細谷真大"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月28日、柏レイソルはガンバ大阪からFW満田誠が期限付き移籍で加入することを発表しました。満田は2026年途中からヴィッセル神戸でプレーしていました。",
+      "trivia": "満田誠はサンフレッチェ広島でプロデビューし、ルーキーイヤーから背番号11を背負って大ブレイク。日本代表にも選出された経歴を持っています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "浦和レッズ",
+        "福井光輝",
+        "セレッソ大阪"
+      ],
+      "text": "2026年6月27日、セレッソ大阪から浦和レッズへ完全移籍で加入することが発表されたゴールキーパーは誰でしょう？",
+      "options": [
+        "福井光輝",
+        "キム・ジンヒョン",
+        "清水圭介",
+        "西川周作"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月27日、浦和レッズはセレッソ大阪からGK福井光輝を完全移籍で獲得したことを発表しました。",
+      "trivia": "福井光輝はFC町田ゼルビアで長年プレーした後、セレッソ大阪を経て、名門・浦和レッズへの加入を掴み取りました。セーブ技術の高さに定評があります。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ヴィッセル神戸",
+        "アンデルソン・ロペス",
+        "移籍",
+        "新体制"
+      ],
+      "text": "2026年6月26日、ヴィッセル神戸はシンガポールのクラブから、かつてJ1で2季連続得点王に輝いたブラジル人FWを完全移籍で獲得したと発表しました。その選手は誰でしょう？",
+      "options": [
+        "アンデルソン・ロペス",
+        "マルコス・ジュニオール",
+        "チアゴ・サンタナ",
+        "レオ・セアラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2023年と2024年に横浜F・マリノスでJ1得点王を獲得したアンデルソン・ロペスが、ライオン・シティ・セーラーズFCからヴィッセル神戸へ完全移籍で加入しました。",
+      "trivia": "アンデルソン・ロペスはサンフレッチェ広島、北海道コンサドーレ札幌、横浜F・マリノスでプレーしており、神戸が日本での4クラブ目となります。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ギラヴァンツ北九州",
+        "監督交代",
+        "新体制",
+        "J3"
+      ],
+      "text": "2026年6月26日、J3のギラヴァンツ北九州は、成績不振により解任された増本浩平前監督の後任として、2026-27シーズンの新監督に誰が就任することを発表したでしょう？",
+      "options": [
+        "田中遼太郎",
+        "大島秀夫",
+        "吉田謙",
+        "小林伸二"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月26日、ギラヴァンツ北九州は直前までV・ファーレン長崎のヘッドコーチを務めていた田中遼太郎氏が新監督に就任することを発表しました。",
+      "trivia": "田中遼太郎氏は北九州市出身であり、地元クラブで初めて監督としての指揮を執ることになります。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "清水エスパルス",
+        "木下康介",
+        "移籍",
+        "新体制"
+      ],
+      "text": "2026年6月26日、清水エスパルスはサンフレッチェ広島から身長190cmの大型ストライカーを完全移籍で獲得したと発表しました。その選手は誰でしょう？",
+      "options": [
+        "木下康介",
+        "大橋祐紀",
+        "加藤陸次樹",
+        "ピエロス・ソティリウ"
+      ],
+      "answerIndex": 0,
+      "explanation": "清水エスパルスは2026年6月26日、サンフレッチェ広島からFW木下康介を完全移籍で獲得したことを発表しました。",
+      "trivia": "木下康介は横浜FCユースからJリーグのクラブを経由せず、直接ドイツのフライブルクへ渡りプロデビューしたという異色の経歴を持っています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "柏レイソル",
+        "ジェフユナイテッド千葉",
+        "若原智哉",
+        "移籍"
+      ],
+      "text": "2026年6月25日、柏レイソルはGK若原智哉を完全移籍で獲得したと発表しました。若原が直近まで在籍していたクラブはどこでしょう？",
+      "options": [
+        "ジェフユナイテッド千葉",
+        "京都サンガF.C.",
+        "V・ファーレン長崎",
+        "FC町田ゼルビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月25日、柏レイソルはジェフユナイテッド千葉からGK若原智哉の完全移籍加入を発表しました。",
+      "trivia": "若原智哉は京都サンガF.C.の育成組織出身で、年代別の日本代表としても活躍してきた実績を持つゴールキーパーです。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ジェフユナイテッド千葉",
+        "ダニエル・ホール",
+        "オークランドFC",
+        "移籍"
+      ],
+      "text": "2026年6月26日、ジェフユナイテッド千葉はオークランドFC（ニュージーランド）からオーストラリア人DFダニエル・ホールを完全移籍で獲得したと発表しました。オークランドFCでダニエル・ホールと同僚だった元日本代表選手は誰でしょう？",
+      "options": [
+        "酒井宏樹",
+        "吉田麻也",
+        "長友佑都",
+        "槙野智章"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジェフユナイテッド千葉への加入が発表されたダニエル・ホールは、直前までオークランドFCで元日本代表DF酒井宏樹とともにプレーしていました。",
+      "trivia": "ダニエル・ホールが所属していたオークランドFCは、Aリーグ・メン（オーストラリア1部）に2024年から新規参入したニュージーランドのクラブです。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "スウェーデン代表"
+      ],
+      "text": "2026年6月26日に行われたFIFAワールドカップ北中米大会のグループステージ第3戦で、日本代表が引き分け、グループ2位でのラウンド32進出を決めた対戦相手は？",
+      "options": [
+        "スウェーデン代表",
+        "オランダ代表",
+        "チュニジア代表",
+        "ノルウェー代表"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表はスウェーデン代表と激闘の末に引き分け、オランダ、チュニジアと同居したグループFを勝ち点5の2位で通過しました。",
+      "trivia": "今大会から出場枠が48カ国に拡大され、グループステージは4チーム×12グループで行われ、各組上位2カ国と3位のうち成績上位8カ国の計32カ国が決勝トーナメントに進出する形式になりました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-26",
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "ブラジル代表"
+      ],
+      "text": "2026年6月28日、FIFAワールドカップ北中米大会でグループリーグを突破した日本代表が、ラウンド32（決勝トーナメント1回戦）の試合に向けてヒューストンに到着しました。この試合で対戦する強豪国は？",
+      "options": [
+        "ブラジル代表",
+        "アルゼンチン代表",
+        "フランス代表",
+        "スペイン代表"
+      ],
+      "answerIndex": 0,
+      "explanation": "グループFを2位で通過した日本代表は、現地時間6月30日にアメリカのヒューストンで行われるラウンド32で、サッカー王国のブラジル代表と対戦することが決まりました。",
+      "trivia": "日本代表は過去のワールドカップにおいてブラジル代表と2006年のドイツ大会で対戦しており、その時は玉田圭司が先制するも1-4で敗れています。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "森保一",
+        "ラモス瑠偉"
+      ],
+      "text": "2026年6月25日、W杯スウェーデン戦に向けたサポーターの決起集会に森保一監督がサプライズ登場し話題となりました。この場に同席し「あした勝つよね？当たり前だよね」とサポーターを熱狂させた元日本代表のレジェンドは誰でしょう？",
+      "options": [
+        "ラモス瑠偉",
+        "三浦知良",
+        "柱谷哲二",
+        "北澤豪"
+      ],
+      "answerIndex": 0,
+      "explanation": "決起集会には森保一監督と共に、1993年の「ドーハの悲劇」などを共に戦った盟友であるラモス瑠偉さんが参加し、サポーターと熱く勝利を誓い合いました。",
+      "trivia": "森保監督はキャンプ地を一時離れて決起集会に駆けつけ、「サポーターと心を一つにして戦う準備をする方が、明日勝つ確率が上がる」とファンに直接感謝を伝えました。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ルヴァンカップ",
+        "ベガルタ仙台",
+        "秋春制"
+      ],
+      "text": "2026/27シーズンから「秋春制」へ移行するJリーグですが、2026年6月22日にはヤマザキビスケット・ルヴァンカップの組み合わせが発表されました。1stラウンド1回戦で「ベガルタ仙台」との東北対決が決定したクラブは？",
+      "options": [
+        "福島ユナイテッドFC",
+        "ブラウブリッツ秋田",
+        "いわてグルージャ盛岡",
+        "モンテディオ山形"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月22日に発表された2026/27シーズンのルヴァンカップ1stラウンド1回戦の組み合わせで、ベガルタ仙台は同じ東北をホームとする福島ユナイテッドFCとの対戦が決定しました。",
+      "trivia": "Jリーグは2026/27シーズンから8月開幕の「秋春制」に移行するため、ルヴァンカップのスケジュールも従来とは異なり、新たな年またぎの形で行われます。",
+      "referenceDate": "2026-06-29",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-06-29",
+        "expiryDate": "2026-07-06",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
