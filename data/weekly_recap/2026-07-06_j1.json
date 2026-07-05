@@ -1,0 +1,1036 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-07-05T22:08:49Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-07-06",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "ブラジル代表"
+      ],
+      "text": "2026年6月30日に行われたFIFAワールドカップ2026のラウンド32で、日本代表を破ってラウンド16進出を決めた国はどこ？",
+      "options": [
+        "ブラジル",
+        "アルゼンチン",
+        "スペイン",
+        "イングランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は新設された「ラウンド32」で強豪ブラジルと対戦し、1-2で逆転負けを喫してベスト16進出はなりませんでした。",
+      "trivia": "この試合は史上最多48カ国が参加した2026年大会で新設された「ラウンド32」というステージでした。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-30",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ"
+      ],
+      "text": "2026年6月30日の試合結果により、日本代表が2026年ワールドカップで敗退したステージ（ラウンド）はどこ？",
+      "options": [
+        "ラウンド32",
+        "グループステージ",
+        "ラウンド16",
+        "準々決勝"
+      ],
+      "answerIndex": 0,
+      "explanation": "グループFを2位で通過した日本代表ですが、決勝トーナメント初戦のラウンド32でブラジルに敗れ、大会を去ることになりました。",
+      "trivia": "2026年大会から出場枠が48カ国に拡大されたため、決勝トーナメントは従来のラウンド16ではなくラウンド32から始まりました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-30",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "グループステージ"
+      ],
+      "text": "2026年のFIFAワールドカップにおいて、日本代表はグループFを何位で通過した？",
+      "options": [
+        "2位",
+        "1位",
+        "3位",
+        "敗退"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は1勝2分けの勝ち点5を獲得し、勝ち点7のオランダに次ぐ2位でグループステージを突破しました。",
+      "trivia": "グループFには日本、オランダ、スウェーデン、チュニジアが同居し、日本はオランダとスウェーデンに引き分けるなど粘り強さを見せました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "秋春制",
+        "開幕"
+      ],
+      "text": "2026年7月1日に試合詳細が発表された「2026/27明治安田J1リーグ」。秋春制への移行となるこのシーズンの第1節が開催される月はいつ？",
+      "options": [
+        "8月",
+        "9月",
+        "7月",
+        "10月"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年夏にシーズン移行という新たな転換期を迎えるJリーグは、2026年8月8日（一部先行開催あり）に開幕することが発表されました。",
+      "trivia": "Jリーグは長年親しまれた春秋制から秋春制（8月開幕・翌年5月閉幕）に移行し、2026/27シーズンがその最初のシーズンとなります。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "ゴール"
+      ],
+      "text": "2026年6月30日のW杯ラウンド32・ブラジル戦で、前半29分に日本代表の先制ゴールを決めた選手は誰？",
+      "options": [
+        "佐野海舟",
+        "久保建英",
+        "鎌田大地",
+        "南野拓実"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半29分に佐野海舟が代表初ゴールとなる先制点を挙げましたが、その後ブラジルに2点を奪われ逆転を許しました。",
+      "trivia": "佐野海舟はこのゴールがワールドカップという大舞台でのA代表初ゴールというメモリアルな一撃となりました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-30",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ワールドカップ",
+        "ブラジル代表",
+        "ゴール"
+      ],
+      "text": "2026年6月30日のW杯ラウンド32・ブラジル戦で、日本から1-1の同点となるヘディングシュートを決めたブラジル代表選手は誰？",
+      "options": [
+        "カゼミーロ",
+        "マルキーニョス",
+        "チアゴ・シウバ",
+        "ガブリエウ・マガリャンイス"
+      ],
+      "answerIndex": 0,
+      "explanation": "佐野のゴールで先制されたブラジルでしたが、後半11分（56分）にカゼミーロのヘディングシュートで同点に追いつきました。",
+      "trivia": "カゼミーロは強靭なフィジカルを活かし、セットプレーからのヘディングシュートで貴重な同点ゴールを奪いました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-30",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jユースカップ",
+        "川崎フロンターレ",
+        "湘南ベルマーレ"
+      ],
+      "text": "2026年7月5日に行われた「2026Jユースカップ」決勝で、湘南ベルマーレU-18を破って大会初優勝を飾ったチームはどこ？",
+      "options": [
+        "川崎フロンターレU-18",
+        "ガンバ大阪ユース",
+        "ヴィッセル神戸U-18",
+        "鹿島アントラーズユース"
+      ],
+      "answerIndex": 0,
+      "explanation": "IAIスタジアム日本平で行われた決勝は神奈川のクラブ同士の対決となり、川崎フロンターレU-18が2-1で勝利し初優勝を果たしました。",
+      "trivia": "川崎フロンターレU-18は1994年の第1回大会以降、長らくタイトルに手が届いていませんでしたが、悲願の初優勝となりました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-05",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "横浜F・マリノス",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年7月1日に試合詳細が発表された「2026/27明治安田J1リーグ」の第1節で、秋春制への移行を記念し8月7日にMUFGスタジアム（国立競技場）で開催されるカードは？",
+      "options": [
+        "横浜F・マリノス vs 鹿島アントラーズ",
+        "浦和レッズ vs FC東京",
+        "ヴィッセル神戸 vs ガンバ大阪",
+        "川崎フロンターレ vs 横浜FC"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは2026/27シーズンの開幕を記念して、8月7日（金）にMUFGスタジアム（旧：国立競技場）にて横浜FM対鹿島の試合を開催すると発表しました。",
+      "trivia": "日本のスポーツの聖地である国立競技場は、2026年からネーミングライツが導入され「MUFGスタジアム」という名称に変更されています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ワールドカップ",
+        "ブラジル代表",
+        "日本代表"
+      ],
+      "text": "2026年6月30日のW杯ラウンド32・ブラジル戦で、後半アディショナルタイムにブラジルの決勝ゴールを決めた選手は誰？",
+      "options": [
+        "ガブリエウ・マルティネッリ",
+        "ネイマール",
+        "ヴィニシウス・ジュニオール",
+        "ロドリゴ"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1で迎えた後半アディショナルタイムにガブリエウ・マルティネッリが劇的な決勝点を挙げ、ブラジルが2-1で逆転勝利を収めました。",
+      "trivia": "試合終了直前の90分を過ぎてからの決勝点となり、日本代表にとっては非常に悔しい敗退となりました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-30",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jユースカップ",
+        "川崎フロンターレ",
+        "ゴール"
+      ],
+      "text": "2026年7月5日のJユースカップ決勝で、川崎フロンターレU-18を初優勝に導く後半終了間際の決勝ゴールを挙げた選手は誰？",
+      "options": [
+        "木村風斗",
+        "十河晟央",
+        "川村求",
+        "山田凌也"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1の同点で迎えた後半44分（89分）、木村風斗が劇的な決勝ゴールを挙げ、川崎フロンターレU-18が2-1で勝利を収めました。",
+      "trivia": "決勝点をもたらした木村風斗ですが、この試合で先制点を挙げた十河晟央は今大会7得点で得点王に、川村求は大会MVPに輝いています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-05",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "ヴィッセル神戸",
+        "特別大会"
+      ],
+      "text": "2026年上半期に開催されたハーフシーズンの特別大会「明治安田J1百年構想リーグ」で、プレーオフを制して優勝したクラブはどこでしょう？",
+      "options": [
+        "ヴィッセル神戸",
+        "鹿島アントラーズ",
+        "FC東京",
+        "セレッソ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月6日に行われたプレーオフ第2戦の結果、2戦合計5-2でヴィッセル神戸が鹿島アントラーズを下し、特別大会の王者に輝きました。",
+      "trivia": "今回の特別リーグは引き分けがなく、90分で決着がつかない場合はPK戦が行われました。勝点は「90分勝=3、PK勝=2、PK負=1、90分負=0」という新ルールが採用されていました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "秋春制",
+        "横浜F・マリノス",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年8月に開幕する秋春制移行後初のシーズン「2026/27明治安田J1リーグ」。2026年8月7日の開幕戦（オープニングマッチ）として国立競技場で対戦することが発表されたカードは？",
+      "options": [
+        "横浜F・マリノス vs 鹿島アントラーズ",
+        "FC東京 vs 川崎フロンターレ",
+        "浦和レッズ vs ガンバ大阪",
+        "ヴィッセル神戸 vs サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグのシーズン移行を記念し、1993年の開幕時からJ1で戦い続けている「オリジナル10」の2クラブ、横浜FMと鹿島が国立でのオープニングマッチを飾ることが発表されました。",
+      "trivia": "Jリーグとして初めて年度を跨ぐシーズンとなる2026/27シーズンは、2026年8月上旬に開幕し、翌年2027年5月末から6月上旬にかけて閉幕するスケジュールとなります。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "移籍",
+        "ミッチェル・デューク",
+        "FC町田ゼルビア"
+      ],
+      "text": "2026年7月3日、オーストラリア代表FWミッチェル・デュークの完全移籍での加入（復帰）が発表されたJ1クラブはどこでしょう？",
+      "options": [
+        "FC町田ゼルビア",
+        "清水エスパルス",
+        "ファジアーノ岡山",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "マッカーサーFC(オーストラリア)からFC町田ゼルビアへ復帰することが発表されました。本人は「特別な思い出を一緒に作ってきた場所に戻ってこられて嬉しい」とコメントしています。",
+      "trivia": "デューク選手はこれまで清水エスパルス、ファジアーノ岡山、FC町田ゼルビアでプレーしており、長身を活かしたポストプレーなどで日本のファンにもお馴染みのストライカーです。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "ベガルタ仙台",
+        "特別大会"
+      ],
+      "text": "2026年上半期に全40クラブで行われた「明治安田J2・J3百年構想リーグ」。2026年6月のプレーオフを制して優勝したクラブはどこでしょう？",
+      "options": [
+        "ベガルタ仙台",
+        "カターレ富山",
+        "ヴァンフォーレ甲府",
+        "テゲバジャーロ宮崎"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月6日にプレーオフラウンド第2戦が行われ、EAST-Aを首位通過していたベガルタ仙台が富山をPK戦の末に下し、見事優勝を果たしました。",
+      "trivia": "このハーフシーズンのJ2・J3リーグではリーグ戦の成績による昇格・降格は行われませんでしたが、優勝した仙台は賞金を獲得し、8月からの新シーズンに向けて大きな弾みをつけました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "セレッソ大阪",
+        "FC東京",
+        "特別大会"
+      ],
+      "text": "2026年6月に最終順位が確定した特別大会「明治安田J1百年構想リーグ」で、プレーオフの3-4位決定戦を制し、最終順位が3位となったクラブはどこでしょう？",
+      "options": [
+        "セレッソ大阪",
+        "FC東京",
+        "FC町田ゼルビア",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "WESTグループ2位のセレッソ大阪が、EASTグループ2位のFC東京とプレーオフで対戦。第1戦を2-2で引き分けた後、第2戦を3-1で勝利し最終順位3位となりました。",
+      "trivia": "ちなみに特別大会で優勝したヴィッセル神戸は、2026/27シーズンのAFCチャンピオンズリーグエリート(ACLE)の日本第2代表としての出場枠を獲得しました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "月間MVP",
+        "北海道コンサドーレ札幌",
+        "荒野拓馬"
+      ],
+      "text": "2026年に開催された特別大会の5月度「KONAMI 月間MVP」で、J2・J3百年構想リーグ EAST-BグループのMVPを受賞した北海道コンサドーレ札幌の選手は誰でしょう？",
+      "options": [
+        "荒野拓馬",
+        "菅大輝",
+        "浅野雄也",
+        "鈴木武蔵"
+      ],
+      "answerIndex": 0,
+      "explanation": "各グループごとに選出される特別大会の月間MVP。EAST-Bグループでは、チームを牽引する活躍を見せた北海道コンサドーレ札幌の荒野拓馬選手が受賞しました。",
+      "trivia": "2026特別シーズンからは、月間表彰選考委員会に新たに「選手OG」のカテゴリーが設けられ、元なでしこジャパンの永里優季さんなどが選考委員として加わっています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "サンフレッチェ広島",
+        "浅野拓磨",
+        "移籍",
+        "Jリーグ"
+      ],
+      "text": "2026年6月29日、スペインのマジョルカからサンフレッチェ広島への完全移籍での加入が発表された元日本代表FWは誰でしょうか？",
+      "options": [
+        "浅野拓磨",
+        "原口元気",
+        "大迫勇也",
+        "南野拓実"
+      ],
+      "answerIndex": 0,
+      "explanation": "浅野拓磨は10年ぶりにサンフレッチェ広島へ復帰することになり、「リーグ制覇、アジア制覇を目指して全力でプレーします」と意気込みを語りました。",
+      "trivia": "浅野はサンフレッチェ広島在籍時代に「ジャガーポーズ」のゴールパフォーマンスで一躍人気となり、その後の海外クラブや日本代表でもお馴染みとなりました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "セレッソ大阪",
+        "石渡ネルソン",
+        "海外移籍",
+        "Jリーグ"
+      ],
+      "text": "2026年7月4日、海外クラブへの移籍を前提とした準備のため、セレッソ大阪のチームから離脱することが発表された若手選手は誰でしょうか？",
+      "options": [
+        "石渡ネルソン",
+        "毎熊晟矢",
+        "北野颯太",
+        "香川真司"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月4日、セレッソ大阪は石渡ネルソンと吉野恭平が海外移籍の準備のためチームを離脱することを発表しました。石渡はベルギーのシントトロイデンへの完全移籍が濃厚と報じられています。",
+      "trivia": "石渡ネルソンはナイジェリア人の父と日本人の母を持ち、恵まれたフィジカルと推進力を武器にセレッソ大阪の育成組織から台頭した期待の若手MFです。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "浦和レッズ",
+        "南野遥海",
+        "ガンバ大阪",
+        "移籍"
+      ],
+      "text": "2026年6月30日、ガンバ大阪から浦和レッズへの完全移籍加入が発表された若手FWは誰でしょうか？",
+      "options": [
+        "南野遥海",
+        "坂本一彩",
+        "唐山翔自",
+        "食野亮太郎"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズは2026年6月30日、ガンバ大阪などでプレーし、2026年前半の「明治安田J1百年構想リーグ」でも結果を残していたストライカーである南野遥海の完全移籍加入を発表しました。",
+      "trivia": "南野遥海は高校生の頃からガンバ大阪のトップチームに帯同し、J3のU-23チームでも得点を重ねるなど、早くからその得点能力が高く評価されていました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "FC東京",
+        "本間至恩",
+        "移籍",
+        "Jリーグ"
+      ],
+      "text": "2026年6月30日、DF石原広教とともにFC東京への完全移籍加入が発表された、海外クラブでのプレー経験を持つ日本人MFは誰でしょうか？",
+      "options": [
+        "本間至恩",
+        "松木玖生",
+        "小久保玲央ブライアン",
+        "鈴木唯人"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年6月30日、FC東京は海外のクラブでプレーしていたMF本間至恩と、DF石原広教の完全移籍加入を公式発表し、チームの戦力補強を進めました。",
+      "trivia": "本間至恩はアルビレックス新潟の育成組織出身で、小柄ながら圧倒的なドリブル突破を武器にJリーグを席巻し、ベルギーのクラブへとステップアップしていました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "FC町田ゼルビア",
+        "ミッチェル・デューク",
+        "オーストラリア代表",
+        "移籍"
+      ],
+      "text": "2026年7月3日、松尾佑介らとともにFC町田ゼルビアへの完全移籍加入が公式発表された、過去にも同クラブでのプレー経験があるFWは誰でしょうか？",
+      "options": [
+        "ミッチェル・デューク",
+        "アダム・タガート",
+        "トーマス・デン",
+        "ピーター・ウタカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC町田ゼルビアは2026年7月3日、オーストラリア代表FWミッチェル・デュークの完全移籍加入を発表しました。同日には松尾佑介やテテ・イェンギの加入に向けた動きも報じられました。",
+      "trivia": "ミッチェル・デュークは過去にもFC町田ゼルビアに所属してJ1昇格に大きく貢献しており、ファンからは親しみを込めて「デューク」と呼ばれ深く愛されています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "横浜F・マリノス",
+        "監督交代",
+        "スティーブ・コリカ"
+      ],
+      "text": "2026年7月2日に新体制を発表した横浜F・マリノス。大島秀夫監督の後任として新監督に就任したスティーブ・コリカ氏は、選手時代にJリーグのどのクラブに所属していたでしょうか？",
+      "options": [
+        "サンフレッチェ広島",
+        "名古屋グランパス",
+        "鹿島アントラーズ",
+        "ジェフユナイテッド千葉"
+      ],
+      "answerIndex": 0,
+      "explanation": "スティーブ・コリカ氏は2000年から2001年にかけてサンフレッチェ広島でプレーしていました。横浜F・マリノスでは大島秀夫監督の解任に伴い、秋春制となる新シーズンに向けて新指揮官に任命されました。",
+      "trivia": "オーストラリア出身のコリカ監督は、母国のシドニーFCを率いて複数回の優勝を経験しており、2020年のACLでは横浜F・マリノスとも2度対戦した過去を持っています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "FC東京",
+        "佐藤龍之介",
+        "海外移籍"
+      ],
+      "text": "2026年6月29日、FC東京からスペイン1部のバレンシアへ完全移籍することが決定的になったと発表された19歳のMFは誰でしょうか？",
+      "options": [
+        "佐藤龍之介",
+        "松木玖生",
+        "熊田直紀",
+        "荒木遼太郎"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は6月29日、19歳のMF佐藤龍之介がスペインの強豪バレンシアへ移籍することを前提とした手続きと準備のため、チームを離脱することを発表しました。",
+      "trivia": "バレンシアは過去にも日本人選手の獲得に動いたことがありましたが、今回は佐藤選手を高く評価しており、保有権を85%買い取る形でのクラブの歴史的な補強として現地でも報じられました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "ポケモン",
+        "パートナー"
+      ],
+      "text": "2026年7月5日、Jリーグはある世界的人気ゲームシリーズとのタイアップを決定し、全60クラブのパートナーキャラクターを発表すると告知しました。そのシリーズとは何でしょうか？",
+      "options": [
+        "ポケットモンスター",
+        "スーパーマリオ",
+        "ドラゴンクエスト",
+        "ファイナルファンタジー"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは『ポケットモンスター（ポケモン）』とのタイアップを決定し、7月6日に全60クラブそれぞれのパートナーポケモンを発表すると告知しました。",
+      "trivia": "Jリーグ公式X（旧Twitter）では、各クラブのエンブレムとともにピカチュウが描かれた画像が公開され、サポーターたちの間で「自分のクラブはどのポケモンになるのか」という予想で大きく盛り上がりました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "セレッソ大阪",
+        "キャンプ",
+        "秋春制"
+      ],
+      "text": "2026年7月1日、セレッソ大阪はJリーグ秋春制導入を見据え、クラブ初となる北海道での夏季トレーニングキャンプを実施すると発表しました。合宿地となる町はどこでしょうか？",
+      "options": [
+        "東川町",
+        "ニセコ町",
+        "美瑛町",
+        "富良野市"
+      ],
+      "answerIndex": 0,
+      "explanation": "セレッソ大阪は2026年7月7日から9泊10日の日程で、北海道東川町にて初の夏季キャンプを実施します。冷涼な気候を活かし、秋春制に向けたフィジカル強化を図ります。",
+      "trivia": "東川町は2026年3月に天然芝サッカー場を竣工しており、今回のJリーグクラブのキャンプ誘致は、スポーツを軸とした地域のにぎわいづくりや次世代育成の一環として行われます。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "水戸ホーリーホック",
+        "ユニフォーム",
+        "2026/27シーズン"
+      ],
+      "text": "2026年6月29日、水戸ホーリーホックが2026/27シーズンの新ユニフォームデザインを発表しました。デザインコンセプトとして掲げられた、伝統と革新を意味する造語は何でしょうか？",
+      "options": [
+        "Tradivation",
+        "Innovtion",
+        "Tradition",
+        "Reborn"
+      ],
+      "answerIndex": 0,
+      "explanation": "水戸ホーリーホックは新シーズンのデザインコンセプトに、伝統（Tradition）と革新（Innovation）を融合させた造語である「Tradivation（トラディベーション）」を採用しました。",
+      "trivia": "首周りの後ろ部分には2026/27シーズンから使用されるクラブの新しいロゴが入り、右袖には新たにホームタウンに加わった石岡市・筑西市・桜川市の3市が追加デザインされています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "ワールドカップ",
+        "ブラジル代表"
+      ],
+      "text": "2026年6月30日（日本時間）、サッカー日本代表は「FIFAワールドカップ2026」の決勝トーナメント・ラウンド32で敗退となりました。1-2で逆転負けを喫した対戦相手はどこでしょう？",
+      "options": [
+        "ブラジル",
+        "アルゼンチン",
+        "フランス",
+        "スペイン"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は前半29分に佐野海舟のゴールで先制しましたが、後半にカゼミーロとガブリエウ・マルティネッリにゴールを許し、1-2で逆転負けしました。",
+      "trivia": "今回の2026年北中米ワールドカップは出場枠がこれまでの32カ国から48カ国に拡大されました。そのため、グループステージ突破後の決勝トーナメントはこれまでのラウンド16ではなく、「ラウンド32」からスタートする形式となっています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-30",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "ポケモン",
+        "コラボ"
+      ],
+      "text": "2026年7月5日、Jリーグがある人気コンテンツとのタイアップを発表し、翌6日に全60クラブの「クラブパートナー」がお披露目されました。そのコンテンツは何でしょう？",
+      "options": [
+        "ポケモン",
+        "ドラえもん",
+        "スーパーマリオ",
+        "鬼滅の刃"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグ公式XアカウントでピカチュウとJリーグのロゴが並んだ画像が公開され、全国60クラブそれぞれのパートナーポケモンが発表されることが告知されました。",
+      "trivia": "Jリーグとポケモンのコラボ発表前日には、各クラブのサポーターの間で「自分のクラブのパートナーはどのポケモンになるのか」「チームカラー的にこのポケモンでは？」という予想合戦がSNSで大いに盛り上がりました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "セレッソ大阪",
+        "石渡ネルソン",
+        "海外移籍"
+      ],
+      "text": "2026年7月上旬、ベルギー1部のシントトロイデンへの完全移籍が濃厚と報じられたセレッソ大阪の若手MFは誰でしょう？",
+      "options": [
+        "石渡ネルソン",
+        "北野颯太",
+        "喜田陽",
+        "松木玖生"
+      ],
+      "answerIndex": 0,
+      "explanation": "セレッソ大阪の下部組織出身で、長身と推進力を武器とするU-21日本代表MF石渡ネルソンが、シントトロイデンへ移籍することが有力となりました。",
+      "trivia": "報道によると、この移籍による違約金（移籍金）は推定約3億6800万円（200万ユーロ）にのぼるとされ、実現すればセレッソ大阪にとってクラブ史上最高額の移籍金になると見られています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "秋春制",
+        "横浜F・マリノス",
+        "鹿島アントラーズ"
+      ],
+      "text": "秋春制への移行となる「2026/27明治安田J1リーグ」の試合日程が2026年7月1日に発表されました。8月7日にMUFGスタジアム（国立競技場）で行われるオープニングマッチの対戦カードは、「横浜F・マリノス vs （　）」でしょう？",
+      "options": [
+        "鹿島アントラーズ",
+        "浦和レッズ",
+        "名古屋グランパス",
+        "FC東京"
+      ],
+      "answerIndex": 0,
+      "explanation": "1993年のJリーグ開幕以来、唯一J1の舞台で戦い続けている「横浜F・マリノス」と「鹿島アントラーズ」のメモリアルな対戦が、秋春制移行後初のオープニングマッチに選ばれました。",
+      "trivia": "新シーズンの開幕を記念し、キックオフ前には30年以上積み重ねてきたJリーグの歴史と熱狂を受け継ぎ、世界と同じ時間軸で歩み始める新たな時代への幕開けを表現する一夜限りの特別演出が予定されています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1059 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-07-05T22:14:22Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-07-06",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "2026W杯",
+        "アメリカ代表",
+        "ボスニア・ヘルツェゴビナ代表",
+        "試合結果"
+      ],
+      "text": "2026年7月1日に行われた2026年ワールドカップ・ラウンド32で、アメリカ代表はどの国に勝利してラウンド16へ進出しましたか？",
+      "options": [
+        "ボスニア・ヘルツェゴビナ",
+        "セルビア",
+        "スロバキア",
+        "スロベニア"
+      ],
+      "answerIndex": 0,
+      "explanation": "アメリカ代表はボスニア・ヘルツェゴビナを2-0で下し、ラウンド16への進出を決めました。",
+      "trivia": "アメリカがワールドカップのノックアウトステージで勝利を収めるのは、2002年のメキシコ戦以来、史上2度目の快挙です。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-01",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "2026W杯",
+        "パラグアイ代表",
+        "ドイツ代表",
+        "番狂わせ"
+      ],
+      "text": "2026年6月29日の2026年ワールドカップ・ラウンド32で、強豪ドイツ代表をPK戦の末に破る大番狂わせを演じた南米の国はどこですか？",
+      "options": [
+        "パラグアイ",
+        "ウルグアイ",
+        "チリ",
+        "ペルー"
+      ],
+      "answerIndex": 0,
+      "explanation": "パラグアイ代表は1-1で迎えたPK戦を4-3で制し、優勝候補の一角であったドイツ代表を大会から敗退させました。",
+      "trivia": "パラグアイではこの歴史的勝利に国中が歓喜し、政府が急遽翌日を国民の休日に制定するほどの騒ぎとなりました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-29",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "2026W杯",
+        "ブラジル代表",
+        "日本代表",
+        "試合結果"
+      ],
+      "text": "2026年6月29日の2026年ワールドカップ・ラウンド32で、ブラジル代表が後半アディショナルタイムの劇的ゴールで2-1と辛くも勝利した相手国はどこですか？",
+      "options": [
+        "日本",
+        "韓国",
+        "イラン",
+        "サウジアラビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブラジルは日本代表の佐野海舟に先制を許しましたが、カゼミロの同点弾と終了間際の勝ち越しゴールで2-1の逆転勝利を収めました。",
+      "trivia": "ブラジルと日本がワールドカップで対戦するのは2006年大会以来2度目で、その時もブラジルが勝利を収めています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-29",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "2026W杯",
+        "メキシコ代表",
+        "エクアドル代表",
+        "開催国"
+      ],
+      "text": "2026年6月30日にエスタディオ・アステカで行われた2026年ワールドカップ・ラウンド32で、エクアドル代表を2-0で下してラウンド16へ駒を進めた開催国はどこですか？",
+      "options": [
+        "メキシコ",
+        "アメリカ",
+        "カナダ",
+        "コロンビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "共同開催国の一つであるメキシコ代表は、大観衆のホームでエクアドルを2-0で破り、ラウンド16進出を決めました。",
+      "trivia": "メキシコがワールドカップのノックアウトステージで勝利を収めたのは、自国開催だった1986年大会以来、実に40年ぶりの出来事でした。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-30",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "2026W杯",
+        "アメリカ代表",
+        "得点者",
+        "フリーキック"
+      ],
+      "text": "2026年7月1日のボスニア・ヘルツェゴビナ戦で、数的不利となっていたアメリカ代表の貴重な追加点となる直接フリーキックを82分に決めた選手は誰ですか？",
+      "options": [
+        "マリク・ティルマン",
+        "クリスチャン・プリシッチ",
+        "ウェストン・マッケニー",
+        "ジョヴァンニ・レイナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アメリカ代表は1人退場して10人となっていましたが、82分にマリク・ティルマンが見事な直接フリーキックを沈めて2-0と突き放しました。",
+      "trivia": "アメリカ代表の選手がワールドカップで直接フリーキックを決めるのは、1966年以降の記録で史上2人目という非常に珍しい快挙です。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-01",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "2026W杯",
+        "ブラジル代表",
+        "日本代表",
+        "得点者"
+      ],
+      "text": "2026年6月29日に行われたブラジル対日本のラウンド32で、後半アディショナルタイム（90+5分）にブラジルを勝利に導く劇的な決勝ゴールを決めた選手は誰ですか？",
+      "options": [
+        "ガブリエウ・マルティネッリ",
+        "ヴィニシウス・ジュニオール",
+        "ロドリゴ",
+        "エンドリッキ"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1で延長戦突入かと思われた90+5分、ブルーノ・ギマランイスからのパスを受けたガブリエウ・マルティネッリが右ポストに当たるシュートをねじ込みました。",
+      "trivia": "マルティネッリはこの試合、後半途中からの出場でしたが、限られた出場時間で見事に試合を決定づける大仕事を成し遂げました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-29",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "2026W杯",
+        "ドイツ代表",
+        "パラグアイ代表",
+        "得点者"
+      ],
+      "text": "2026年6月29日のラウンド32でパラグアイにPK戦で敗れたドイツ代表ですが、この試合の52分に一時同点となるゴールを決めていたドイツの選手は誰ですか？",
+      "options": [
+        "カイ・ハフェルツ",
+        "ジャマル・ムシアラ",
+        "レロイ・サネ",
+        "デニズ・ウンダフ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ドイツ代表は前半に先制を許しましたが、52分にカイ・ハフェルツが同点ゴールを記録し、試合を延長戦・PK戦へと持ち込みました。",
+      "trivia": "ドイツ代表は近年ワールドカップで苦戦が続いており、今回もラウンド32という早い段階での敗退となり、国内に大きな衝撃を与えました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-29",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "2026W杯",
+        "モロッコ代表",
+        "カナダ代表",
+        "ラウンド16"
+      ],
+      "text": "2026年7月4日に行われた2026年ワールドカップ・ラウンド16で、開催国の一つであるカナダ代表を3-0で破り、ベスト8に進出したアフリカの国はどこですか？",
+      "options": [
+        "モロッコ",
+        "セネガル",
+        "コートジボワール",
+        "エジプト"
+      ],
+      "answerIndex": 0,
+      "explanation": "モロッコ代表はラウンド16でカナダ代表を3-0と圧倒し、ベスト8へ勝ち上がりました。",
+      "trivia": "モロッコは前回の2022年カタール大会でもアフリカ勢史上初となるベスト4進出を果たしており、2大会連続での躍進を見せています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-04",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "2026W杯",
+        "アメリカ代表",
+        "退場劇",
+        "スタッツ"
+      ],
+      "text": "2026年7月1日のアメリカ対ボスニア・ヘルツェゴビナ戦で、先制点を挙げたアメリカ代表のフォラリン・バログンですが、その後レッドカードを受けて退場しました。彼が退場したのは後半何分ですか？",
+      "options": [
+        "64分",
+        "55分",
+        "72分",
+        "81分"
+      ],
+      "answerIndex": 0,
+      "explanation": "バログンは前半終了間際（45分）に先制ゴールを決めましたが、後半64分に相手選手へのタックルでレッドカードを提示され、退場となりました。",
+      "trivia": "バログンはこの退場により次戦（ラウンド16）が出場停止扱いとなりましたが、アメリカ側から異議申し立てが行われるなど大きな話題を呼びました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-01",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "2026W杯",
+        "パラグアイ代表",
+        "PK戦",
+        "スタッツ"
+      ],
+      "text": "2026年6月29日、パラグアイがドイツをPK戦の末に破った試合で、サドンデスにもつれ込んだPK戦（4-3）の最後に、パラグアイの勝利を決めるキックを成功させたディフェンダーは誰ですか？",
+      "options": [
+        "ホセ・カナレ",
+        "ファビアン・バルブエナ",
+        "グスタボ・ゴメス",
+        "オマル・アルデレーテ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ドイツのヨナタン・ターがサドンデスのPKを外した後、パラグアイのホセ・カナレが見事にPKを成功させ、歴史的勝利を決定づけました。",
+      "trivia": "ホセ・カナレはこのワールドカップでそれまでスタメン出場がなく、この大舞台での重要なPKキッカーというプレッシャーを見事にはねのけました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-29",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "得点ランキング",
+        "メッシ",
+        "スタッツ"
+      ],
+      "text": "2026年W杯において、7月4日時点で得点ランキングのトップとなる「7ゴール」を記録しているのは、フランス代表のキリアン・エムバペと、アルゼンチン代表の誰でしょう？",
+      "options": [
+        "リオネル・メッシ",
+        "フリアン・アルバレス",
+        "ラウタロ・マルティネス",
+        "パウロ・ディバラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "7月4日時点の2026年W杯個人スタッツにおいて、エムバペとメッシが並んで7ゴールを記録し、得点ランキングのトップに立っています。",
+      "trivia": "メッシは前回2022年大会でも7ゴールを記録していますが、得点王は8ゴールを挙げたエムバペでした。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "パラグアイ",
+        "ドイツ",
+        "試合結果"
+      ],
+      "text": "2026年W杯のラウンド32において、6月29日の試合で優勝経験国のドイツをPK戦の末に下し、ベスト16進出を決めた南米の国はどこでしょう？",
+      "options": [
+        "パラグアイ",
+        "ウルグアイ",
+        "チリ",
+        "コロンビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "6月29日に行われたラウンド32で、パラグアイは強豪ドイツと1-1で引き分けた後、PK戦を4-3で制して大金星を挙げ、ベスト16へと駒を進めました。",
+      "trivia": "パラグアイがW杯でベスト16の壁を突破してベスト8に進出したのは、2010年南アフリカ大会が唯一の記録です。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-06-29",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "クリーンシート",
+        "メキシコ",
+        "ラウル・ランヘル"
+      ],
+      "text": "2026年W杯のスタッツにおいて、7月4日時点でクリーンシート（無失点試合）数「4」を記録し、スペインのウナイ・シモンと並んでトップに立っているメキシコ代表のGKは誰でしょう？",
+      "options": [
+        "ラウル・ランヘル",
+        "ギジェルモ・オチョア",
+        "ルイス・マラゴン",
+        "アルフレド・タラベラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "メキシコ代表のラウル・ランヘルは、開催国の一角としてチームの守備を牽引し、7月4日時点で大会最多タイとなる4回のクリーンシートを記録しています。",
+      "trivia": "長くメキシコ代表の守護神を務めたオチョアは2022年大会まで5大会連続でW杯メンバー入りを果たし、「W杯男」として知られていました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "アシスト",
+        "マイケル・オリーズ",
+        "スタッツ"
+      ],
+      "text": "2026年W杯のアシストランキングにおいて、7月4日時点でトップとなる「5アシスト」を記録しているフランス代表の選手は誰でしょう？",
+      "options": [
+        "マイケル・オリーズ",
+        "アントワーヌ・グリーズマン",
+        "ウスマン・デンベレ",
+        "エドゥアルド・カマヴィンガ"
+      ],
+      "answerIndex": 0,
+      "explanation": "フランス代表のマイケル・オリーズは、7月4日時点で5アシストを記録しており、前線の選手たちのゴールを演出して大会のアシスト王争いをリードしています。",
+      "trivia": "オリーズはロンドン生まれで、ユース時代はイングランド代表でもプレー可能でしたが、最終的にフランス代表を選択しました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "ハリー・ケイン",
+        "イングランド",
+        "得点ランキング"
+      ],
+      "text": "7月1日に行われた2026年W杯ラウンド32のDRコンゴ戦で2ゴールを挙げ、7月5日時点で今大会の通算得点を「5」に伸ばしたイングランド代表のストライカーは誰でしょう？",
+      "options": [
+        "ハリー・ケイン",
+        "ジュード・ベリンガム",
+        "フィル・フォーデン",
+        "ブカヨ・サカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イングランド代表のハリー・ケインは、DRコンゴ戦での2ゴールで大会通算5得点とし、ブラジル代表のヴィニシウス・ジュニオールらと並び得点王争いの上位につけています。",
+      "trivia": "ケインは2018年ロシア大会で6得点を挙げ、イングランド代表選手としてガリー・リネカー以来2人目となるW杯得点王に輝いています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-01",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "ベルギー",
+        "セネガル",
+        "試合結果"
+      ],
+      "text": "2026年W杯のラウンド32で、7月1日にセネガル代表と対戦し、延長戦の末に3-2で勝利を収めてベスト16へ進出した国はどこでしょう？",
+      "options": [
+        "ベルギー",
+        "オランダ",
+        "ポルトガル",
+        "クロアチア"
+      ],
+      "answerIndex": 0,
+      "explanation": "7月1日に行われたラウンド32の試合で、ベルギーはアフリカの強豪セネガルと激戦を繰り広げ、延長戦の末に3-2で競り勝ちベスト16進出を決めました。",
+      "trivia": "2026年大会から参加国が48カ国に拡大されたため、決勝トーナメントは「ラウンド16」ではなく「ラウンド32」からスタートする史上初のレギュレーションとなっています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-01",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "伊藤洋輝",
+        "バイエルン・ミュンヘン",
+        "ブンデスリーガ",
+        "移籍"
+      ],
+      "text": "2026年6月、シュツットガルトで活躍した日本代表DF伊藤洋輝が、ドイツの絶対的王者へ完全移籍することが発表されました。彼が加入したクラブはどこでしょう？",
+      "options": [
+        "バイエルン・ミュンヘン",
+        "ボルシア・ドルトムント",
+        "レバークーゼン",
+        "RBライプツィヒ"
+      ],
+      "answerIndex": 0,
+      "explanation": "伊藤洋輝は2026年6月、シュツットガルトからバイエルン・ミュンヘンへの完全移籍が発表されました。移籍金は約51億円とも報じられ、大きなステップアップを果たしました。",
+      "trivia": "バイエルン・ミュンヘンのトップチームに所属する日本人選手は、宇佐美貴史、福井太智に続いてクラブ史上3人目となります。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鎌田大地",
+        "クリスタル・パレス",
+        "プレミアリーグ",
+        "移籍"
+      ],
+      "text": "2026年7月1日、日本代表MF鎌田大地のプレミアリーグ・クリスタル・パレス加入が発表されました。彼をフランクフルト時代にも指導し、今回の獲得を熱望した同クラブの監督は誰でしょう？",
+      "options": [
+        "オリバー・グラスナー",
+        "トーマス・トゥヘル",
+        "ロベルト・デ・ゼルビ",
+        "マウリツィオ・サッリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "鎌田大地は2026年7月、恩師オリバー・グラスナー監督が率いるクリスタル・パレスに完全移籍しました。フランクフルト時代には共にヨーロッパリーグ制覇を成し遂げています。",
+      "trivia": "クリスタル・パレスのトップチームに所属する日本人選手は、鎌田大地がクラブ史上初めてのことになります。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "佐野海舟",
+        "マインツ",
+        "鹿島アントラーズ",
+        "移籍"
+      ],
+      "text": "2026年7月初旬、鹿島アントラーズでプレーしていた日本代表MF佐野海舟の完全移籍が発表されました。彼が新たに加入したドイツ・ブンデスリーガのクラブはどこでしょう？",
+      "options": [
+        "1.FSVマインツ05",
+        "SCフライブルク",
+        "アイントラハト・フランクフルト",
+        "ボルシアMG"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月、鹿島アントラーズからドイツの1.FSVマインツ05への完全移籍が発表されました。高いボール奪取能力と運動量を武器に自身初の海外挑戦となります。",
+      "trivia": "マインツにはかつて岡崎慎司や武藤嘉紀も所属しており、日本人選手と縁の深いクラブとして知られています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "毎熊晟矢",
+        "AZアルクマール",
+        "エールディヴィジ",
+        "移籍"
+      ],
+      "text": "2026年6月、セレッソ大阪からオランダのエールディヴィジに所属する強豪AZアルクマールへの完全移籍が発表された日本代表DFは誰でしょう？",
+      "options": [
+        "毎熊晟矢",
+        "菅原由勢",
+        "橋岡大樹",
+        "渡辺剛"
+      ],
+      "answerIndex": 0,
+      "explanation": "毎熊晟矢は2026年6月、セレッソ大阪からオランダのAZアルクマールに完全移籍しました。同クラブでは右サイドバックのポジションでの活躍が期待されます。",
+      "trivia": "毎熊はプロ入りしたV・ファーレン長崎時代やセレッソ大阪の加入初年度に着けていた背番号「16」を、AZでも自ら希望して選んでいます。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "長谷部誠",
+        "フランクフルト",
+        "ブンデスリーガ",
+        "指導者"
+      ],
+      "text": "2026年5月に現役を引退し、同年7月からアイントラハト・フランクフルトのU-21チームでアシスタントコーチに就任した長谷部誠ですが、彼が同クラブのトップチームで選手としてプレーした期間は通算何シーズンだったでしょう？",
+      "options": [
+        "10シーズン",
+        "8シーズン",
+        "12シーズン",
+        "14シーズン"
+      ],
+      "answerIndex": 0,
+      "explanation": "長谷部誠はニュルンベルクからフランクフルトに加入後、引退するまでの10シーズンにわたって同クラブでプレーしました。引退後はクラブのU-21で指導者の道を歩み始めました。",
+      "trivia": "長谷部はフランクフルトで公式戦300試合以上に出場しており、クラブのレジェンドとしてヨーロッパリーグ優勝など数々の歴史的な功績を残しました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "レアンドロ・トロサール",
+        "アーセナル",
+        "ベシクタシュ",
+        "移籍"
+      ],
+      "text": "2026年7月、アーセナルに所属するベルギー代表FWレアンドロ・トロサールが、約2000万ユーロ（約34億円）の移籍金でトルコの「どのクラブ」とクラブ間合意に達したと報じられたでしょう？",
+      "options": [
+        "ベシクタシュ",
+        "フェネルバフチェ",
+        "ガラタサライ",
+        "トラブゾンスポル"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルとベシクタシュはクラブ間合意に達したと広く報じられており、トロサールがワールドカップの戦いを終えた後に正式に個人間交渉がまとまると見られています。",
+      "trivia": "ベシクタシュにとっては、オルクン・コクチュを獲得した時以来の大型投資になると報じられています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ナタン・アケ",
+        "マンチェスター・シティ",
+        "フェネルバフチェ",
+        "移籍"
+      ],
+      "text": "2026年7月上旬、マンチェスター・シティでプレーしていたオランダ代表DFナタン・アケの完全移籍での加入を発表した、トルコ・スュペル・リグのクラブはどこでしょう？",
+      "options": [
+        "フェネルバフチェ",
+        "ベシクタシュ",
+        "ガラタサライ",
+        "トラブゾンスポル"
+      ],
+      "answerIndex": 0,
+      "explanation": "アケはマンチェスター・シティで数々のタイトルを獲得した後、フェネルバフチェと契約を結びました。ワールドカップ終了後のオーストリア合宿からチームに合流する予定です。",
+      "trivia": "フェネルバフチェがマンチェスター・シティと移籍金の最終合意をする前にフライング気味に加入を発表したため、シティ側が驚いたという報道もありました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "フォラリン・バログン",
+        "アメリカ代表",
+        "ワールドカップ",
+        "出場停止撤回"
+      ],
+      "text": "2026年ワールドカップの決勝トーナメント1回戦（ラウンド32）ボスニア・ヘルツェゴビナ戦でレッドカードを受けたアメリカ代表FWフォラリン・バログンですが、その後「誰」がFIFAに介入・抗議したことで次戦の出場停止処分が取り消されたでしょう？",
+      "options": [
+        "ドナルド・トランプ米大統領",
+        "アメリカ合衆国国務長官",
+        "クリスティアン・プリシッチ",
+        "アメリカサッカー連盟会長"
+      ],
+      "answerIndex": 0,
+      "explanation": "トランプ大統領がFIFAのジャンニ・インファンティーノ会長に直接電話で抗議したと報じられ、極めて異例の形でバログンの出場停止処分が取り消されました。",
+      "trivia": "この決定に対して、次戦の対戦相手であったベルギー代表のルディ・ガルシア監督は「今日はエイプリルフールか」と痛烈に批判しました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ニクラス・ジューレ",
+        "引退撤回",
+        "アマチュア",
+        "ドイツ"
+      ],
+      "text": "2026年5月にプロ引退を表明していた元ドイツ代表DFニクラス・ジューレですが、2026年7月、ドイツの「何部リーグ」に相当するアマチュアクラブ（SVティーフェンバッハ）で現役復帰することが発表されたでしょう？",
+      "options": [
+        "8部リーグ",
+        "4部リーグ",
+        "5部リーグ",
+        "10部リーグ"
+      ],
+      "answerIndex": 0,
+      "explanation": "元バイエルンやドルトムントで活躍したジューレは、プロレベルのプレッシャーやビジネスから離れ、親友が監督を務める8部リーグのアマチュアチームで純粋にサッカーを楽しむために復帰しました。",
+      "trivia": "ジューレは「ビジネスやお金のためではなく、純粋にスポーツとしてのサッカーを別の視点から経験できるのが楽しみ」と加入の喜びを語っています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "キリアン・エムバペ",
+        "フランス代表",
+        "ワールドカップ",
+        "大記録"
+      ],
+      "text": "2026年7月に行われたワールドカップの決勝トーナメント1回戦・パラグアイ戦で、フランス代表のキリアン・エムバペがPKを決めました。このゴールにより、彼のワールドカップ通算得点数は「何点」に到達したと報じられたでしょう？",
+      "options": [
+        "19点",
+        "15点",
+        "17点",
+        "21点"
+      ],
+      "answerIndex": 0,
+      "explanation": "2018年、2022年大会ですでに計12得点を挙げていたエムバペは2026年大会でも得点を量産し、パラグアイ戦のゴールで通算19得点に到達する大記録を打ち立てました。",
+      "trivia": "エムバペの19得点という数字は、アンリ(6)、ジルー(5)、ジダン(5)、ベンゼマ(3)というフランスのレジェンド4人のワールドカップ通算得点をすべて足した数と同じです。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "モロッコ代表",
+        "カナダ代表",
+        "ベスト8"
+      ],
+      "text": "2026年7月に行われたFIFAワールドカップ2026のラウンド16で、開催国カナダを3-0で下し、前回大会に続いてベスト8進出を決めた国はどこでしょう？",
+      "options": [
+        "モロッコ",
+        "セネガル",
+        "コートジボワール",
+        "アルジェリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "モロッコ代表はセットプレーからのウナヒのゴールなどでカナダ代表を突き放し、3-0の快勝でベスト8への切符を手にしました。",
+      "trivia": "カナダは試合の入りこそ良かったものの、モロッコ守護神ボノの好セーブに阻まれ、カウンターから失点を重ねる結果となりました。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-04",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "フランス代表",
+        "キリアン・エムバペ",
+        "記録"
+      ],
+      "text": "2026年7月のW杯ラウンド16・パラグアイ戦で決勝点となるPKを決め、今大会7得点目でリオネル・メッシの得点ランキングトップタイに並んだフランス代表選手は誰でしょう？",
+      "options": [
+        "キリアン・エムバペ",
+        "アントワーヌ・グリーズマン",
+        "オリヴィエ・ジルー",
+        "ウスマン・デンベレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "キリアン・エムバペは、パラグアイの堅守に苦しむ中で得たPKを冷静に沈め、フランス代表を4大会連続のベスト8進出に導きました。",
+      "trivia": "このゴールにより、エムバペのワールドカップ通算得点は19となり、歴代記録上位に猛烈な勢いで迫っています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-04",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "プレミアリーグ",
+        "ノッティンガム・フォレスト",
+        "監督解任",
+        "ヴィトール・ペレイラ"
+      ],
+      "text": "2026年7月1日、プレミアリーグのノッティンガム・フォレストはヴィトール・ペレイラ監督の解任を発表しました。本人が「全くの不意打ち」と驚愕した、その解任のタイミングとはどんなものだったでしょう？",
+      "options": [
+        "契約解除条項の期限切れ2分前",
+        "夏の移籍市場が開幕する直前",
+        "新シーズンのユニフォーム発表会見中",
+        "新加入選手のメディカルチェック中"
+      ],
+      "answerIndex": 0,
+      "explanation": "クラブ上層部がオリヴァー・グラスナー氏の招へいに動いたため、2027年まで契約を残していたペレイラ監督は契約解除条項の期限が切れるわずか2分前に解任を通達されました。",
+      "trivia": "ペレイラ監督はすでに今夏のプレシーズン計画や移籍計画についてクラブと会合を行っていたため、このタイミングでの解任劇に大変驚いたとメディアに語っています。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "VAR",
+        "ポルトガル代表",
+        "クロアチア代表"
+      ],
+      "text": "2026年7月2日に行われたW杯ベスト32のポルトガル対クロアチア戦で、後半にゴールネットを揺らしたものの、共にVARのオフサイド判定で得点を取り消された両国の選手はクリスティアーノ・ロナウドと誰でしょう？",
+      "options": [
+        "イゴール・マタノビッチ",
+        "アンドレイ・クラマリッチ",
+        "ルカ・モドリッチ",
+        "イバン・ペリシッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "クロアチアのマタノビッチとポルトガルのロナウドの両者が、鮮やかにネットを揺らした直後にVARによってオフサイドの判定を受け、ゴールを取り消されました。",
+      "trivia": "試合はクロアチアのペリシッチが先制しましたが、劇的な展開の末にポルトガルが2-1で逆転勝利。トロントで開催されたこの試合は気温30度を超える猛暑でした。",
+      "referenceDate": "2026-07-06",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-02",
+        "publishDate": "2026-07-06",
+        "expiryDate": "2026-07-13",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
