@@ -1,0 +1,1041 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-07-12T22:03:05Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-07-13",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "フランス代表",
+        "モロッコ代表"
+      ],
+      "text": "2026年7月9日に行われたワールドカップ準々決勝、フランス対モロッコで2-0の勝利を収め、準決勝進出を決めたのはどちらのチームでしょうか？",
+      "options": [
+        "フランス",
+        "モロッコ",
+        "スペイン",
+        "ベルギー"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月9日の試合で、フランス代表が2-0でモロッコを下してベスト4に進出しました。前回大会でも躍進したモロッコですが、ここで敗退となりました。",
+      "trivia": "この試合はアメリカのボストン・スタジアムで開催されました。フランスは過去の大会での経験を生かし、堅実な試合運びで勝利を掴みました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-09",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "ポルトガル代表",
+        "スペイン代表",
+        "クリスティアーノ・ロナウド"
+      ],
+      "text": "2026年7月6日のワールドカップ・ラウンド16でスペインに0-1で敗れ、クリスティアーノ・ロナウドの最後のW杯が幕を閉じることになった国はどこでしょうか？",
+      "options": [
+        "ポルトガル",
+        "イタリア",
+        "クロアチア",
+        "オランダ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ポルトガル代表は強豪スペインと対戦しましたが、後半アディショナルタイムに失点し0-1で敗れました。これによりクリスティアーノ・ロナウドのワールドカップ挑戦は終わりを迎えました。",
+      "trivia": "ロナウドはこの大会で、史上初となる6大会連続でのワールドカップ出場および得点という大記録を打ち立てましたが、チームを勝利に導くことはできませんでした。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-06",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "イングランド代表",
+        "ノルウェー代表"
+      ],
+      "text": "2026年7月11日のワールドカップ準々決勝で、アーリング・ハーランド擁するノルウェーを延長戦の末に2-1で下し、ベスト4に進出した代表チームは？",
+      "options": [
+        "イングランド",
+        "ドイツ",
+        "ブラジル",
+        "オランダ"
+      ],
+      "answerIndex": 0,
+      "explanation": "トーマス・トゥヘル監督率いるイングランド代表は、ノルウェーに先制を許したものの、ジュード・ベリンガムの2ゴールで逆転し、準決勝に駒を進めました。",
+      "trivia": "この試合でイングランド代表GKのジョーダン・ピックフォードは、ピーター・シルトンを抜いて同国歴代最多となるワールドカップ通算18試合出場を達成しました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-11",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "MLS",
+        "親善試合",
+        "LAギャラクシー"
+      ],
+      "text": "2026年7月11日に行われた親善試合で、メキシコの強豪クラブ・アメリカを1-0で破ったMLS（メジャーリーグサッカー）のクラブはどこでしょうか？",
+      "options": [
+        "LAギャラクシー",
+        "インテル・マイアミ",
+        "シアトル・サウンダーズ",
+        "ロサンゼルスFC"
+      ],
+      "answerIndex": 0,
+      "explanation": "LAギャラクシーはホームでクラブ・アメリカと対戦し、ジョセフ・ペインツィルのゴールにより1-0で勝利しクリーンシートを達成しました。",
+      "trivia": "この試合の決勝点は、マルコ・ロイスのフリーキックからヤコブ・グレスネスが折り返したボールをペインツィルが押し込んで生まれました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-11",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "フランス代表",
+        "キリアン・エンバペ"
+      ],
+      "text": "2026年7月9日のワールドカップ準々決勝フランス対モロッコ戦で、前半にPKを失敗したものの、後半に見事な先制ゴールを決めて名誉挽回した選手は誰でしょうか？",
+      "options": [
+        "キリアン・エンバペ",
+        "ウスマン・デンベレ",
+        "アントワーヌ・グリーズマン",
+        "マルクス・テュラム"
+      ],
+      "answerIndex": 0,
+      "explanation": "フランス代表の主将キリアン・エンバペは前半のPKをGKボノに防がれましたが、60分にエリア外から見事なコントロールショットを沈め、先制点を挙げました。",
+      "trivia": "エンバペはこの試合後、「PKを外したことは気にしない。次は準決勝でスペインを倒し、決勝でアルゼンチンにリベンジする」と自信満々のコメントを残して話題になりました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-09",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "イングランド代表",
+        "ジュード・ベリンガム"
+      ],
+      "text": "2026年7月11日のワールドカップ準々決勝ノルウェー対イングランド戦で、前半のアディショナルタイムと延長戦にゴールを決め、イングランドを2-1の逆転勝利に導いた選手は誰でしょうか？",
+      "options": [
+        "ジュード・ベリンガム",
+        "ハリー・ケイン",
+        "フィル・フォーデン",
+        "ブカヨ・サカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イングランドが1点ビハインドで迎えた前半終了間際、ジュード・ベリンガムが同点ゴールを決めました。さらに延長前半の93分に決勝点を奪い、チームの救世主となりました。",
+      "trivia": "ベリンガムはこの大会ですでに6ゴールを記録しており、ワールドカップの単一大会におけるPKを含まない得点数として、1986年のゲーリー・リネカーに並ぶイングランド最多タイ記録となりました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-11",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "スペイン代表",
+        "ミケル・メリーノ"
+      ],
+      "text": "2026年7月10日のワールドカップ準々決勝スペイン対ベルギー戦で、ラウンド16のポルトガル戦に続いて試合終盤（88分）にスペインの決勝ゴールを決めた選手は誰でしょうか？",
+      "options": [
+        "ミケル・メリーノ",
+        "ファビアン・ルイス",
+        "ラミン・ヤマル",
+        "ペドリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "スペイン対ベルギーは1-1の同点で終盤を迎えましたが、途中出場のミケル・メリーノが88分に相手GKの弾いたボールを押し込み、スペインを準決勝へと導きました。",
+      "trivia": "ミケル・メリーノはEURO 2024の準々決勝ドイツ戦でも延長後半に劇的な決勝ゴールを決めており、「大舞台の終盤に強い男」としてスペインサポーターから絶大な信頼を得ています。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-10",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "アルゼンチン代表",
+        "エジプト代表"
+      ],
+      "text": "2026年7月7日に行われたワールドカップ・ラウンド16で、エジプトを相手に3-2の劇的な逆転勝利を収め、準々決勝に進出した南米のチームはどこでしょうか？",
+      "options": [
+        "アルゼンチン",
+        "ブラジル",
+        "ウルグアイ",
+        "コロンビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "ディフェンディングチャンピオンのアルゼンチン代表は、エジプトを相手に苦戦を強いられましたが、最終的に3-2で逆転勝利を収めてベスト8に進出しました。",
+      "trivia": "エジプト代表はエースのモハメド・サラーを中心に「黄金世代」として大会を無敗でグループ突破しましたが、王者の底力の前に惜しくも涙を呑みました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-07",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "アメリカ代表",
+        "ベルギー代表"
+      ],
+      "text": "2026年7月6日に行われたワールドカップ・ラウンド16で、開催国のひとつであるアメリカ代表はどの国に1-4で敗北を喫したでしょうか？",
+      "options": [
+        "ベルギー",
+        "オランダ",
+        "ドイツ",
+        "スペイン"
+      ],
+      "answerIndex": 0,
+      "explanation": "地元開催で上位進出が期待されたアメリカ代表でしたが、ラウンド16でベルギー代表と対戦し、1-4の大差で敗れて大会を去ることになりました。",
+      "trivia": "ベルギーはこの勝利で勢いに乗りましたが、続く準々決勝のスペイン戦では守護神のティボ・クルトワが負傷交代するアクシデントもあり、惜しくも敗退となりました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-06",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "スイス代表",
+        "コロンビア代表"
+      ],
+      "text": "2026年7月7日に行われたワールドカップ・ラウンド16、コロンビアとの試合をスコアレスドローの末にPK戦（4-3）で制し、準々決勝に進出したヨーロッパの国はどこでしょうか？",
+      "options": [
+        "スイス",
+        "デンマーク",
+        "スウェーデン",
+        "オーストリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "スイス代表とコロンビア代表のラウンド16は、0-0のまま延長戦でも決着がつかずPK戦に突入しました。スイスがPK戦を4-3で制し、アルゼンチンの待つ準々決勝へ駒を進めました。",
+      "trivia": "スイス代表がワールドカップでベスト8に進出するのは、自国開催だった1954年大会以来、実に72年ぶりの快挙となりました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-07",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "得点王",
+        "メッシ",
+        "エムバペ"
+      ],
+      "text": "2026年7月12日時点での2026年ワールドカップ得点王争いで、共に8ゴールを挙げトップタイに立っている2人の選手は誰でしょう？",
+      "options": [
+        "キリアン・エムバペとリオネル・メッシ",
+        "キリアン・エムバペとアーリング・ハーランド",
+        "リオネル・メッシとハリー・ケイン",
+        "アーリング・ハーランドとハリー・ケイン"
+      ],
+      "answerIndex": 0,
+      "explanation": "フランス代表のエムバペとアルゼンチン代表のメッシが共に8ゴールを挙げ、得点ランキングのトップに並んでいます。",
+      "trivia": "得点数が並んだ場合、FIFAの規定ではアシスト数が多い選手が上位となり、それでも並んだ場合は出場時間の短さで決まります。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "準決勝",
+        "ベスト4",
+        "トーナメント"
+      ],
+      "text": "2026年7月11日に2026年ワールドカップのベスト4が出揃いました。準決勝の対戦カードとして正しい組み合わせはどれでしょう？",
+      "options": [
+        "フランス vs スペイン、イングランド vs アルゼンチン",
+        "フランス vs ドイツ、イングランド vs ブラジル",
+        "スペイン vs ポルトガル、アルゼンチン vs オランダ",
+        "フランス vs ベルギー、イングランド vs スペイン"
+      ],
+      "answerIndex": 0,
+      "explanation": "準々決勝を勝ち抜いたフランスとスペイン、そしてイングランドとアルゼンチンがそれぞれ準決勝で激突します。",
+      "trivia": "イングランドとアルゼンチンのW杯での対戦は、過去に「神の手ゴール」や「ベッカムの退場」など数々のドラマを生んできました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "イングランド",
+        "ゴール",
+        "ベリンガム"
+      ],
+      "text": "2026年ワールドカップで、イングランド代表として得点ランキング上位につける6ゴールを記録しているのは、ハリー・ケインともう1人は誰でしょう？",
+      "options": [
+        "ジュード・ベリンガム",
+        "フィル・フォーデン",
+        "ブカヨ・サカ",
+        "コール・パーマー"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジュード・ベリンガムは準々決勝のノルウェー戦などで得点を重ね、ハリー・ケインと並ぶ今大会6ゴールを記録しています。",
+      "trivia": "ベリンガムは準々決勝のノルウェー戦で2ゴールを挙げ、延長戦の末にチームをベスト4へと導きました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "エムバペ",
+        "アシスト",
+        "スタッツ"
+      ],
+      "text": "2026年ワールドカップで、キリアン・エムバペは8ゴールでメッシと並んでいますが、アシスト数で上回り実質トップに立っています。2026年7月12日時点での彼のアシスト数はいくつでしょう？",
+      "options": [
+        "3",
+        "1",
+        "2",
+        "4"
+      ],
+      "answerIndex": 0,
+      "explanation": "エムバペは8ゴール3アシストを記録しており、8ゴール1アシストのメッシをアシスト数の差で上回っています。",
+      "trivia": "フランスのエムバペは準々決勝のモロッコ戦でも貴重な追加点を挙げ、連続での大会得点王獲得に向けて邁進しています。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "ハーランド",
+        "ノルウェー",
+        "ゴール数"
+      ],
+      "text": "2026年ワールドカップで惜しくも準々決勝で敗退したノルウェー代表のアーリング・ハーランドですが、今大会通算で何ゴールを記録したでしょう？",
+      "options": [
+        "7ゴール",
+        "5ゴール",
+        "6ゴール",
+        "8ゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハーランドは準々決勝のイングランド戦で敗退するまでに計7ゴールを挙げ、得点王争いでも上位に食い込む大活躍を見せました。",
+      "trivia": "ハーランドはベスト16のブラジル戦でも2ゴールを挙げるなど、チームをベスト8まで牽引する圧倒的な決定力を見せつけました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "試合数",
+        "記録",
+        "大会フォーマット"
+      ],
+      "text": "史上最多の48カ国が出場し、全104試合が行われる2026年ワールドカップ。2026年7月11日の準々決勝終了時点で、すでに何試合が消化されたでしょう？",
+      "options": [
+        "100試合",
+        "96試合",
+        "102試合",
+        "64試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "準決勝2試合、3位決定戦、決勝の残り4試合を残すのみとなっており、準々決勝終了時点でちょうど100試合が消化されました。",
+      "trivia": "前回大会（2022年カタール大会）の総試合数は全64試合だったため、今大会はすでにその数を大幅に超える大規模なトーナメントとなっています。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鎌田大地",
+        "クリスタル・パレス",
+        "契約延長",
+        "日本代表"
+      ],
+      "text": "2026年7月8日、イングランドのクリスタル・パレスとの契約を2027年夏まで1年間延長したことが正式発表された日本代表MFは誰でしょう？",
+      "options": [
+        "鎌田大地",
+        "遠藤航",
+        "三笘薫",
+        "田中碧"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月8日、クリスタル・パレスは日本代表MF鎌田大地との契約を2027年夏まで1年間延長したことを発表しました。他クラブからのオファーを断っての残留決断となりました。",
+      "trivia": "クリスタル・パレスの会長スティーブ・パリッシュ氏は、鎌田の残留を「素晴らしいニュースだ」と大歓迎しました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鈴木彩艶",
+        "移籍",
+        "パリ・サンジェルマン",
+        "パルマ"
+      ],
+      "text": "2026年7月上旬、イタリア紙によって、北中米ワールドカップで活躍した日本代表GK鈴木彩艶の獲得に向けて交渉を急速に進めていると報じられたフランスのクラブはどこでしょう？",
+      "options": [
+        "パリ・サンジェルマン",
+        "オリンピック・マルセイユ",
+        "ASモナコ",
+        "オリンピック・リヨン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月11日、イタリア紙『ガゼッタ・デロ・スポルト』が、欧州王者であるパリ・サンジェルマン（PSG）が鈴木彩艶の獲得に向けて交渉を急速に進めていると報じました。",
+      "trivia": "所属元のパルマのCEOは、鈴木が欧州カップ戦に出場したいという野心を持っていることから、イタリア国外のクラブへ移籍する可能性が高いと語っていました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "佐藤龍之介",
+        "バレンシア",
+        "FC東京",
+        "移籍"
+      ],
+      "text": "2026年7月上旬、海外移籍に向けた準備のためチーム活動に参加しないことが発表されたFC東京の19歳MF佐藤龍之介ですが、移籍先として決定的と報じられているスペインのクラブはどこでしょう？",
+      "options": [
+        "バレンシアCF",
+        "レアル・ソシエダ",
+        "RCDマジョルカ",
+        "ビジャレアルCF"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月上旬、FC東京は19歳のMF佐藤龍之介が海外移籍の準備のためチーム活動に参加しないことを発表しました。移籍先はスペインの強豪バレンシアCFが決定的と各メディアで報じられています。",
+      "trivia": "報道によると、このバレンシアへの移籍金は約7億4000万円を超えるとされ、現地でも大きな注目を集めています。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "前田大然",
+        "自叙伝",
+        "日本代表"
+      ],
+      "text": "2026年7月10日、自身初となる自叙伝『がむしゃら なぜ俺は、こんなに走るのか——。』の発売記念イベントに登壇した日本代表FWは誰でしょう？",
+      "options": [
+        "前田大然",
+        "浅野拓磨",
+        "上田綺世",
+        "岡崎慎司"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月10日、日本代表FW前田大然は自身初となる自叙伝『がむしゃら なぜ俺は、こんなに走るのか——。』の発売記念イベントに登壇し、ファンとの交流を行いました。",
+      "trivia": "イベントでは、北中米ワールドカップで痛感した世界との差や、「プレミアリーグでプレーしたい」という今後の移籍への思いも語られました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "佐野航大",
+        "ホッフェンハイム",
+        "NECナイメヘン",
+        "移籍"
+      ],
+      "text": "2026年7月上旬、NECナイメヘンに所属する佐野航大の獲得に動いていたものの、同じポジションの17歳MFネイサン・デ・キャットの獲得で合意したため移籍が長引く、もしくは実現しない可能性が報じられたドイツのクラブはどこでしょう？",
+      "options": [
+        "ホッフェンハイム",
+        "シュトゥットガルト",
+        "アイントラハト・フランクフルト",
+        "ボルシアMG"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月上旬、NECの佐野航大はホッフェンハイムへの移籍が有力視されていました。しかし同クラブがアンデルレヒトの17歳MFネイサン・デ・キャットの獲得で合意したため、佐野の移籍実現に暗雲が立ち込めたと報じられました。",
+      "trivia": "ホッフェンハイムがNECに提示していた佐野への移籍金オファーは、ボーナス込みで最大2000万ユーロ（約37億円）に上ったとされています。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "佐藤龍之介",
+        "バレンシア",
+        "移籍"
+      ],
+      "text": "2026年7月7日、FC東京のMF佐藤龍之介が完全移籍で加入することが発表された、スペインのラ・リーガのクラブはどこでしょう？",
+      "options": [
+        "バレンシア",
+        "レアル・ソシエダ",
+        "マジョルカ",
+        "ビジャレアル"
+      ],
+      "answerIndex": 0,
+      "explanation": "バレンシアは7日、FC東京から19歳の佐藤龍之介を完全移籍で獲得したと発表しました。トップチーム史上初の日本人選手誕生となります。",
+      "trivia": "バレンシアの歴代のトップチームに日本人選手が所属するのは今回が初めてのケースとなります。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ミッチェル・デューク",
+        "オーストラリア代表",
+        "代表引退"
+      ],
+      "text": "2026年7月11日、オーストラリア代表からの引退を発表したミッチェル・デュークが現在所属しているJリーグのクラブはどこでしょう？",
+      "options": [
+        "FC町田ゼルビア",
+        "清水エスパルス",
+        "ファジアーノ岡山",
+        "アルビレックス新潟"
+      ],
+      "answerIndex": 0,
+      "explanation": "オーストラリア代表として50試合に出場し、2022年カタールW杯でも得点を挙げたミッチェル・デュークは、自身のSNSで代表引退を発表しました。現在はFC町田ゼルビアでプレーしています。",
+      "trivia": "デュークは2022年カタールW杯のチュニジア戦で決勝ゴールを挙げており、このゴールを「キャリアの最高峰」と振り返っています。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ネイマール",
+        "ブラジル代表",
+        "ワールドカップ"
+      ],
+      "text": "2026年7月6日に行われた北中米ワールドカップ・ラウンド16で敗退し、直後にブラジル代表からの引退を示唆したネイマールですが、この試合でブラジルを破った国はどこでしょう？",
+      "options": [
+        "ノルウェー",
+        "メキシコ",
+        "パラグアイ",
+        "ベルギー"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブラジル代表はラウンド16でノルウェーに1-2で敗れ敗退。試合後、ネイマールは涙を流しながら「ここで始まり、ここで終わる」と代表引退を示唆しました。",
+      "trivia": "ネイマールがブラジル代表デビューを果たした2010年の親善試合の会場も、今回のノルウェー戦と同じメットライフ・スタジアム（ニュージャージー）でした。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-06",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "イラン・メリエ",
+        "アーセナル",
+        "移籍"
+      ],
+      "text": "2026年7月9日、プレミアリーグのアーセナルが加入を正式発表した、フランス人GKは誰でしょう？",
+      "options": [
+        "イラン・メリエ",
+        "アルフォンス・アレオラ",
+        "マイク・メニャン",
+        "ウーゴ・ロリス"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは9日、リーズを退団した26歳のフランス人GKイラン・メリエの加入を発表しました。背番号は「30」となります。",
+      "trivia": "メリエはリーズ時代にプレミアリーグなどの公式戦で215試合に出場した、経験豊富なゴールキーパーです。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "チェルシー",
+        "ジオバニー・クエンダ",
+        "移籍"
+      ],
+      "text": "2026年7月8日、チェルシーがスポルティングから移籍金約94億円で獲得を正式発表したU-21ポルトガル代表FWジオバニー・クエンダですが、クラブと結んだ契約期間は何年でしょう？",
+      "options": [
+        "8年",
+        "4年",
+        "5年",
+        "10年"
+      ],
+      "answerIndex": 0,
+      "explanation": "チェルシーはスポルティングから19歳のジオバニー・クエンダを獲得し、2034年6月30日までの「8年契約」という異例の長期契約を結んだことを発表しました。",
+      "trivia": "クエンダはスポルティング時代、トップチームデビューシーズンにクラブ史上最年少得点記録を樹立した期待のウィンガーです。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "準決勝",
+        "ベスト4"
+      ],
+      "text": "2026年7月11日までにFIFAワールドカップ2026のベスト4が出揃いました。準決勝の対戦カード「フランス対スペイン」ともう一つのカードは次のうちどれ？",
+      "options": [
+        "イングランド vs アルゼンチン",
+        "イングランド vs エジプト",
+        "ノルウェー vs アルゼンチン",
+        "ノルウェー vs ブラジル"
+      ],
+      "answerIndex": 0,
+      "explanation": "ベスト8で勝利を収めたフランス、スペイン、イングランド、アルゼンチンの4カ国が準決勝へ進出しました。準決勝のカードはフランスvsスペイン、イングランドvsアルゼンチンとなります。",
+      "trivia": "フランスは3大会連続、アルゼンチンは2大会連続のワールドカップベスト4進出となります。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "イングランド",
+        "ジュード・ベリンガム"
+      ],
+      "text": "2026年7月11日に行われたワールドカップ準々決勝のノルウェー対イングランド戦で、延長戦の末にイングランドを準決勝へ導く2ゴールを挙げた選手は誰？",
+      "options": [
+        "ジュード・ベリンガム",
+        "ハリー・ケイン",
+        "フィル・フォーデン",
+        "ブカヨ・サカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ベリンガムは0-1で迎えた前半アディショナルタイムに同点ゴールを決め、さらに延長戦突入直後の93分に決勝ゴールを挙げてイングランドの逆転勝利に大きく貢献しました。",
+      "trivia": "敗れたノルウェー代表ですが、アーリング・ハーランドが今大会5試合で7ゴールを挙げる大活躍を見せ、同国史上初となるベスト8進出の原動力となりました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-11",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "エジプト",
+        "VAR",
+        "アルゼンチン"
+      ],
+      "text": "2026年7月上旬に行われたワールドカップ決勝トーナメントのアルゼンチン対エジプト戦後、エジプトサッカー協会がFIFAに猛抗議を行いました。その最大の理由となった出来事は何？",
+      "options": [
+        "エジプトの2点目がVARで取り消され、最終的に逆転負けを喫したから",
+        "アルゼンチンの明らかなオフサイドゴールが認められたから",
+        "エジプトの選手3人が不当にレッドカードで退場させられたから",
+        "ピッチ状態が極めて悪く、試合のやり直しを求めたから"
+      ],
+      "answerIndex": 0,
+      "explanation": "エジプトは強豪アルゼンチンを相手に善戦しましたが、エジプトの2点目がVARで取り消されたことや、PK疑惑での判定に不満を抱き、試合後にFIFAへ審判団の追放を要求する事態に発展しました。",
+      "trivia": "エジプト代表のハッサン監督は試合後の会見で、「FIFAはメッシを優勝争いに残したかったのではないか」と怒りをあらわにした衝撃的な発言を残しています。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-08",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "スペイン",
+        "ミケル・メリーノ"
+      ],
+      "text": "2026年7月10日に行われたワールドカップ準々決勝で、スペインはベルギーを2-1で下しベスト4へ進出しました。この試合の終盤に決勝点となるゴールを決めたスペインの選手は誰？",
+      "options": [
+        "ミケル・メリーノ",
+        "ファビアン・ルイス",
+        "アルバロ・モラタ",
+        "ペドリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ファビアン・ルイスのゴールで先制後、ベルギーのデ・ケテラーレに同点とされましたが、88分にミケル・メリーノが劇的な決勝点を挙げ、スペインが準決勝へ駒を進めました。",
+      "trivia": "ミケル・メリーノは2024年のEUROでも準々決勝のドイツ戦の終盤（延長119分）に劇的な決勝ゴールを決めており、大舞台での勝負強さを再び発揮しました。",
+      "referenceDate": "2026-07-13",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-10",
+        "publishDate": "2026-07-13",
+        "expiryDate": "2026-07-20",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
