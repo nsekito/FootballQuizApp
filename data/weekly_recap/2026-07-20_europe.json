@@ -1,0 +1,1054 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-07-19T22:04:12Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-07-20",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "決勝戦",
+        "スペイン代表",
+        "アルゼンチン代表"
+      ],
+      "text": "2026年7月19日に行われた「FIFAワールドカップ2026」決勝戦の対戦カードはどれでしょうか？",
+      "options": [
+        "スペイン vs アルゼンチン",
+        "フランス vs アルゼンチン",
+        "スペイン vs イングランド",
+        "ブラジル vs フランス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月19日のワールドカップ決勝は、欧州王者のスペインと南米王者で前回覇者のアルゼンチンという顔合わせになりました。",
+      "trivia": "両国はサッカーの歴史と文化が深く、スペインは2010年大会以来の2度目、アルゼンチンは連覇を懸けた大一番として世界中の注目を集めました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-19",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "3位決定戦",
+        "フランス代表",
+        "イングランド代表"
+      ],
+      "text": "2026年7月18日に行われたワールドカップ2026の3位決定戦、フランス対イングランドの試合はどのような結果（スコア）に終わったでしょうか？",
+      "options": [
+        "フランス 4-6 イングランド",
+        "フランス 2-3 イングランド",
+        "フランス 1-2 イングランド",
+        "フランス 0-1 イングランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月18日の3位決定戦では両チームの攻撃陣が爆発し、イングランドが6-4という歴史的な打ち合いを制して3位に輝きました。",
+      "trivia": "ワールドカップの3位決定戦はプレッシャーから解放されるため点の取り合いになりやすい傾向がありますが、両チーム合計10ゴールは極めて異例のハイスコアです。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-18",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "準決勝",
+        "スペイン代表",
+        "フランス代表"
+      ],
+      "text": "2026年7月14日に行われたワールドカップ2026の準決勝で、優勝候補の一角フランスを2-0で破り、決勝進出を果たした国はどこでしょうか？",
+      "options": [
+        "スペイン",
+        "アルゼンチン",
+        "イングランド",
+        "ベルギー"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月14日の準決勝第1試合では、スペイン代表が堅固な守備と勝負強い攻撃を見せ、フランス代表を2-0で退けました。",
+      "trivia": "スペイン代表はこの試合まで見事な守備力を発揮し、大会を通じて相手にほとんど隙を与えない試合運びで決勝までの道のりを勝ち上がりました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-14",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "アルゼンチン代表",
+        "リオネル・メッシ"
+      ],
+      "text": "2026年7月19日のワールドカップ決勝スペイン対アルゼンチン戦において、アルゼンチン代表を牽引する39歳のキャプテンとしてスタメン出場した選手は誰でしょうか？",
+      "options": [
+        "リオネル・メッシ",
+        "アンヘル・ディ・マリア",
+        "ニコラス・オタメンディ",
+        "エミリアーノ・マルティネス"
+      ],
+      "answerIndex": 0,
+      "explanation": "39歳となったリオネル・メッシは、アルゼンチン代表の絶対的な柱として2026年大会でも躍動し、チームを再び決勝の舞台へと導きました。",
+      "trivia": "今大会でメッシは準決勝までに8ゴールを挙げるなど、年齢を感じさせない驚異的なパフォーマンスで得点王争いにも絡む活躍を見せました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-19",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "準決勝",
+        "アルゼンチン代表",
+        "イングランド代表"
+      ],
+      "text": "2026年7月15日に行われたワールドカップ2026の準決勝イングランド対アルゼンチン戦（1-2）で、アルゼンチンの全得点となる2アシストを記録して勝利に貢献した選手は誰でしょうか？",
+      "options": [
+        "リオネル・メッシ",
+        "フリアン・アルバレス",
+        "アレクシス・マック・アリスター",
+        "エンソ・フェルナンデス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月15日の準決勝でアルゼンチン代表はイングランド代表と激突し、メッシが見事な2アシストを記録してチームを2-1の勝利に導きました。",
+      "trivia": "アルゼンチン代表は決勝トーナメントに入ってから延長戦にもつれ込む苦しい試合が続きましたが、準決勝では90分間で勝負を決めることに成功しました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-15",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "決勝戦",
+        "スタジアム"
+      ],
+      "text": "2026年7月19日に歴史的なワールドカップ決勝戦（スペイン対アルゼンチン）が開催されたスタジアムは次のうちどれでしょうか？",
+      "options": [
+        "ニューヨーク/ニュージャージー・スタジアム",
+        "マイアミ・スタジアム",
+        "ロサンゼルス・スタジアム",
+        "アトランタ・スタジアム"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月19日の決勝戦は、アメリカ合衆国ニュージャージー州イーストラザフォードにあるニューヨーク/ニュージャージー・スタジアム（メットライフ・スタジアム）で開催されました。",
+      "trivia": "2026年大会は出場国が48カ国に拡大され、全104試合という過去最大の規模で行われました。決勝では特別に延長されたハーフタイムショーも予定されるなど、エンタメ面でも話題を呼びました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-19",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "決勝戦",
+        "スペイン代表"
+      ],
+      "text": "2026年7月19日のワールドカップ決勝でスペイン代表が先制点を奪いました。この試合でLa Roja（スペイン代表の愛称）に先制ゴールをもたらしたと報じられた選手は誰でしょうか？",
+      "options": [
+        "フェラン・トーレス",
+        "ラミン・ヤマル",
+        "ロドリ",
+        "ミケル・メリーノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月19日に行われた決勝戦のライブ速報では、フェラン・トーレスが均衡を破る先制ゴールを挙げ、スペイン代表にリードをもたらしたと伝えられました。",
+      "trivia": "スペイン代表の攻撃陣には、弱冠19歳の新星ラミン・ヤマルも名を連ねており、若手から中堅・ベテランまでバランスの取れた布陣で今大会を席巻しました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-19",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "3位決定戦",
+        "マイアミ"
+      ],
+      "text": "2026年7月18日にフランスとイングランドによる激しい乱打戦（4-6）が行われた、ワールドカップ2026の3位決定戦の開催都市はどこだったでしょうか？",
+      "options": [
+        "マイアミ",
+        "ロサンゼルス",
+        "ダラス",
+        "アトランタ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月18日に行われたフランス対イングランドの3位決定戦は、アメリカのフロリダ州にあるマイアミで開催されました。",
+      "trivia": "2026年のワールドカップはアメリカ、カナダ、メキシコの3カ国共催となり、アメリカ国内の様々な巨大スタジアムで熱戦が繰り広げられました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-18",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "得点王",
+        "フランス代表",
+        "ムバッペ"
+      ],
+      "text": "2026年7月18日のワールドカップ3位決定戦終了時点で、大会の得点ランキング首位（10得点）に立っていた選手は誰でしょうか？",
+      "options": [
+        "キリアン・ムバッペ",
+        "リオネル・メッシ",
+        "ジュード・ベリンガム",
+        "アーリング・ハーランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月18日時点でフランス代表のキリアン・ムバッペは今大会10ゴールを記録しており、8ゴールのメッシらを抑えてゴールデンブーツ（得点王）争いのトップに立っていました。",
+      "trivia": "大会にはノルウェー代表のアーリング・ハーランドも出場し、彼も7ゴールを挙げるなど、各国のエースストライカーたちがかつてないほどハイレベルな得点王争を展開しました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-18",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ワールドカップ",
+        "スペイン代表",
+        "ロドリ",
+        "スタッツ"
+      ],
+      "text": "2026年7月19日に行われたワールドカップ決勝において、スペイン代表の要として出場し、決勝前の段階でチームトップとなる「9回のインターセプト」を記録していたMFは誰でしょうか？",
+      "options": [
+        "ロドリ",
+        "ペドリ",
+        "ファビアン・ルイス",
+        "ガビ"
+      ],
+      "answerIndex": 0,
+      "explanation": "スペイン代表の攻守の心臓であるロドリは、2026年の大会において中盤で絶大な存在感を放ち、決勝前までにチーム最多の9回のインターセプトを記録していました。",
+      "trivia": "スペイン代表は今大会、準々決勝のベルギー戦で失点するまで見事な守備組織を構築しており、ロドリによる中盤でのボール奪取がその堅守を大きく支えていました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-19",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "フランス代表",
+        "得点王",
+        "キリアン・エンバペ"
+      ],
+      "text": "2026年7月19日のW杯3位決定戦終了時点で、大会10得点を挙げて得点ランキングの単独トップに立っているフランス代表の選手は誰でしょう？",
+      "options": [
+        "キリアン・エンバペ",
+        "アントワーヌ・グリーズマン",
+        "ウスマン・デンベレ",
+        "ランダル・コロ・ムアニ"
+      ],
+      "answerIndex": 0,
+      "explanation": "エンバペは3位決定戦のイングランド戦で2ゴールを挙げ、今大会の得点数を10に伸ばしました。2位のメッシ（8得点）をリードしています。",
+      "trivia": "1大会で2桁ゴールを記録したのは、1970年大会のゲルト・ミュラー以来、実に56年ぶりの快挙となります。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-19",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "フランス代表",
+        "アシスト",
+        "マイケル・オリーセ"
+      ],
+      "text": "2026年W杯で、3位決定戦終了時点でW杯史上最多となる1大会7アシストを記録し、アシストランキングのトップを快走しているフランス代表の選手は誰でしょう？",
+      "options": [
+        "マイケル・オリーセ",
+        "アントワーヌ・グリーズマン",
+        "キングスレイ・コマン",
+        "オーレリアン・チュアメニ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マイケル・オリーセは3位決定戦でもエンバペの2ゴールを演出するなどアシストを重ね、1大会7アシストという新記録を打ち立てました。",
+      "trivia": "今大会のフランス代表は、オリーセからエンバペへのホットラインが最大の得点源として機能しました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-19",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "プレミアリーグ",
+        "スタッツ"
+      ],
+      "text": "2026年W杯に出場している選手の所属リーグ別人数において、全体のトップとなる「154人」を輩出したリーグはどこでしょう？",
+      "options": [
+        "イングランド・プレミアリーグ",
+        "ドイツ・ブンデスリーガ",
+        "フランス・リーグ・アン",
+        "スペイン・ラ・リーガ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年W杯の出場選手が所属するリーグは、イングランド・プレミアリーグが154人で最多となり、次いでドイツ・ブンデスリーガの94人となっています。",
+      "trivia": "人数の上位5リーグはすべて欧州5大リーグで占められており、イタリア・セリエAからも66人が選出されています。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "歴代最多得点",
+        "キリアン・エンバペ",
+        "リオネル・メッシ"
+      ],
+      "text": "2026年7月19日のW杯3位決定戦で2得点を挙げたキリアン・エンバペは、W杯通算得点を「22」に伸ばしました。これにより、通算21得点で並んでいた誰の記録を抜き、歴代単独トップに立ったでしょう？",
+      "options": [
+        "リオネル・メッシ",
+        "ミロスラフ・クローゼ",
+        "クリスティアーノ・ロナウド",
+        "ロナウド（ブラジル）"
+      ],
+      "answerIndex": 0,
+      "explanation": "エンバペは通算22ゴールとし、大会中にクローゼの記録（16得点）を抜いてトップに立っていたメッシの21得点を上回り、歴代単独トップに立ちました。",
+      "trivia": "メッシはこの後の決勝戦（対スペイン）を控えているため、決勝での得点次第で再びトップに並ぶ、あるいは逆転する可能性を残しています。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-19",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "レッドカード",
+        "カタール代表",
+        "スタッツ"
+      ],
+      "text": "激しい試合が続いた2026年W杯では、7月19日時点で合計14枚のレッドカードが提示されています。その中で、チームとして最多タイとなる「2枚」のレッドカードを受けた国は、南アフリカとどこでしょう？",
+      "options": [
+        "カタール",
+        "スイス",
+        "メキシコ",
+        "チュニジア"
+      ],
+      "answerIndex": 0,
+      "explanation": "今大会では合計14枚のレッドカードが出ており、チーム別では南アフリカとカタールがそれぞれ2枚で最多となっています。",
+      "trivia": "14枚というレッドカードの総数は、17枚が提示された2010年の南アフリカ大会に次ぐ、歴代2位の多さとなっています。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "スイス代表",
+        "イエローカード",
+        "スタッツ"
+      ],
+      "text": "2026年W杯の準々決勝で、スイス代表のブレール・エンボロが「シミュレーション」によりイエローカードを受けました。W杯においてシミュレーションで警告を受けた選手は、1966年以降で彼が何人目でしょう？",
+      "options": [
+        "4人目",
+        "8人目",
+        "12人目",
+        "20人目"
+      ],
+      "answerIndex": 0,
+      "explanation": "スイス代表のエンボロはアルゼンチン戦でシミュレーション（ダイブ行為）による警告を受け、1966年以降のW杯でシミュレーションで警告を受けた史上4人目の選手となりました。",
+      "trivia": "過去にW杯でシミュレーションの警告を受けたのは、フランチェスコ・トッティ（2002年）、ルイス・ペレス（2006年）、アサモア・ギャン（2006年）の3人のみでした。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "中村草太",
+        "ル・アーヴル",
+        "サンフレッチェ広島",
+        "移籍"
+      ],
+      "text": "2026年7月17日、サンフレッチェ広島のFW中村草太がフランスリーグ・アンのクラブへ期限付き移籍することが発表されました。その移籍先クラブはどこでしょう？",
+      "options": [
+        "ル・アーヴル",
+        "ASモナコ",
+        "スタッド・ランス",
+        "パリ・サンジェルマン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月17日、サンフレッチェ広島の中村草太はフランス1部のル・アーヴルへ期限付き移籍することが発表されました。",
+      "trivia": "ル・アーヴルはフランス最古のサッカークラブとして知られ、今夏の移籍市場では水多海斗も同クラブへ加入しています。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "石渡ネルソン",
+        "シント・トロイデン",
+        "セレッソ大阪",
+        "移籍"
+      ],
+      "text": "2026年7月17日、セレッソ大阪からベルギー1部のクラブへ完全移籍することが発表された、21歳のMF石渡ネルソンの新天地はどこでしょう？",
+      "options": [
+        "シント・トロイデン",
+        "アンデルレヒト",
+        "スタンダール・リエージュ",
+        "クルブ・ブルッヘ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月17日、セレッソ大阪の石渡ネルソンがベルギーのシント・トロイデン（STVV）へ完全移籍することが発表されました。",
+      "trivia": "シント・トロイデンは日本企業が経営権を持っており、冨安健洋や遠藤航など、数多くの日本人選手が欧州挑戦の第一歩として選んできたクラブです。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "荻原拓也",
+        "OHルーヴェン",
+        "浦和レッズ",
+        "移籍"
+      ],
+      "text": "2026年7月16日、浦和レッズのDF荻原拓也がベルギー1部のOHルーヴェンに期限付き移籍することが発表されました。荻原にとって前回所属した欧州のクラブはどこでしょう？",
+      "options": [
+        "ディナモ・ザグレブ",
+        "セルティック",
+        "スパルタ・ロッテルダム",
+        "レギア・ワルシャワ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月16日の発表で、荻原拓也はOHルーヴェンに期限付き移籍することが決定しました。前回の欧州挑戦ではクロアチアの名門ディナモ・ザグレブでプレーしていました。",
+      "trivia": "OHルーヴェンには過去にも大南拓磨や明本考浩といった日本人選手が所属しており、今夏にはFW山田新の期限付き移籍加入も発表されています。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "山本天翔",
+        "ボルシア・ドルトムント",
+        "ガンバ大阪",
+        "移籍"
+      ],
+      "text": "2026年7月18日に行われたプレシーズンマッチで、ガンバ大阪から欧州へ移籍した直後にデビュー戦初ゴールを決め、「香川真司の再来」と話題になった18歳の日本人選手は誰でしょう？",
+      "options": [
+        "山本天翔",
+        "佐藤龍之介",
+        "塩貝健人",
+        "道脇豊"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガンバ大阪からボルシア・ドルトムントIIへ移籍した18歳の山本天翔は、2026年7月18日のプレシーズンマッチで実戦デビューを果たし、初ゴールを記録しました。",
+      "trivia": "山本は7月末に日本で開催されるセレッソ大阪、FC東京との国際親善試合に向けたドルトムントの来日メンバーにも選出されており、凱旋試合でのプレーが期待されています。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-18",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "喜多壱也",
+        "レアル・ソシエダ",
+        "京都サンガF.C.",
+        "移籍"
+      ],
+      "text": "期限付き移籍先のスペインの名門レアル・ソシエダBでプレーし、2026年7月15日に完全移籍を勝ち取ったことが発表された、京都サンガF.C.出身の22歳のセンターバックは誰でしょう？",
+      "options": [
+        "喜多壱也",
+        "アピアタウィア久",
+        "瀬古歩夢",
+        "中谷進之介"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月15日、レアル・ソシエダはDF喜多壱也の完全移籍での獲得を発表しました。Bチームで公式戦31試合に出場する活躍を見せ、クラブが買い取りオプションを行使しました。",
+      "trivia": "レアル・ソシエダのトップチームには日本代表の久保建英が所属しており、将来的に日本人選手がトップチームで共演する日が来るかもしれません。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "レアル・マドリード",
+        "チェルシー",
+        "移籍",
+        "ラ・リーガ"
+      ],
+      "text": "2026年7月、チェルシーからレアル・マドリードへ完全移籍したスペイン代表DFは誰でしょう？",
+      "options": [
+        "マルク・ククレジャ",
+        "アレハンドロ・バルデ",
+        "パウ・トーレス",
+        "ペドロ・ポロ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月、マルク・ククレジャはチェルシーからレアル・マドリードへ約5180万ポンドで移籍することが発表されました。守備陣の補強を狙うレアル・マドリードにとって大きな戦力となります。",
+      "trivia": "ククレジャは実はバルセロナの下部組織「ラ・マシア」の出身ですが、トップチームに定着できずに退団し、数年後に宿敵レアル・マドリードへ加入することになりました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "マンチェスター・シティ",
+        "移籍",
+        "プレミアリーグ",
+        "エリオット・アンダーソン"
+      ],
+      "text": "2026年7月、ノッティンガム・フォレストからマンチェスター・シティへ移籍したMFは誰でしょう？",
+      "options": [
+        "エリオット・アンダーソン",
+        "モルガン・ギブス＝ホワイト",
+        "ダニーロ",
+        "ライアン・イェーツ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティは、ノッティンガム・フォレストからエリオット・アンダーソンをクラブ記録となる移籍金で獲得しました。2026年夏の移籍市場において大きな話題を呼んだ補強のひとつです。",
+      "trivia": "彼はニューカッスルの下部組織出身で、その卓越したテクニックからファンやメディアから「ジョーディーのマラドーナ」と称賛されたことがあります。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アーセナル",
+        "バイエル・レバークーゼン",
+        "移籍",
+        "プレミアリーグ"
+      ],
+      "text": "2026年夏の移籍市場で、アーセナルがバイエル・レバークーゼンから約3450万ポンドで獲得したエクアドル代表DFは誰でしょう？",
+      "options": [
+        "ピエロ・インカピエ",
+        "エドモン・タプソバ",
+        "ジェレミー・フリンポン",
+        "オディロン・コスヌ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは守備陣のさらなる強化として、レバークーゼンからエクアドル代表のピエロ・インカピエを獲得しました。プレミアリーグ王座奪還に向けた重要なピースとして期待されています。",
+      "trivia": "インカピエはセンターバックと左サイドバックの両方を高いレベルでこなすことができ、シャビ・アロンソ監督の下で戦術的な柔軟性を大いに磨き上げました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "マンチェスター・ユナイテッド",
+        "チェルシー",
+        "移籍",
+        "プレミアリーグ"
+      ],
+      "text": "2026年7月、チェルシーからマンチェスター・ユナイテッドへ移籍金5000万ポンドで完全移籍したブラジル人MFは誰でしょう？",
+      "options": [
+        "アンドレイ・サントス",
+        "エンソ・フェルナンデス",
+        "モイセス・カイセド",
+        "ロメオ・ラヴィア"
+      ],
+      "answerIndex": 0,
+      "explanation": "アンドレイ・サントスはチェルシーからマンチェスター・ユナイテッドへ5000万ポンドで移籍しました。マイケル・キャリック監督の下、中盤の要として活躍が期待されています。",
+      "trivia": "彼は母国ブラジルの名門ヴァスコ・ダ・ガマの出身で、10代でU-20南米選手権の得点王に輝き、フル代表デビューも果たした超逸材です。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アーセナル",
+        "リーズ",
+        "移籍",
+        "プレミアリーグ"
+      ],
+      "text": "2026年7月にリーズ・ユナイテッドからアーセナルへフリー契約で加入したフランス人GKは誰でしょう？",
+      "options": [
+        "イラン・メリエ",
+        "アルバン・ラフォン",
+        "ギヨーム・レスト",
+        "リュカ・シュヴァリエ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは、リーズ・ユナイテッドを退団したイラン・メリエをフリートランスファーで獲得し、GKの選手層を厚くしました。国内および欧州カップ戦を見据えた補強です。",
+      "trivia": "メリエはリーズ時代の2021年に、ジョー・ハートが持っていた「プレミアリーグにおける21歳未満のGKとしての最多クリーンシート記録」を更新した経験があります。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "2026",
+        "決勝",
+        "アメリカ"
+      ],
+      "text": "2026年7月19日にいよいよ決勝戦を迎えた、2026年FIFAワールドカップ。この決勝戦の舞台となったスタジアムはどこでしょうか？",
+      "options": [
+        "メットライフ・スタジアム",
+        "エスタディオ・アステカ",
+        "SoFiスタジアム",
+        "AT&Tスタジアム"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年ワールドカップの決勝戦は、2026年7月19日にアメリカのニュージャージー州にあるメットライフ・スタジアムで開催されました。",
+      "trivia": "メットライフ・スタジアムはNFLのニューヨーク・ジャイアンツとニューヨーク・ジェッツの本拠地ですが、FIFAの規定により大会中は「ニューヨーク・ニュージャージー・スタジアム」と呼ばれています。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-19",
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "2026",
+        "大会フォーマット",
+        "試合数"
+      ],
+      "text": "今週クライマックスを迎える2026年ワールドカップは、史上初めて参加国が48カ国に拡大されました。それに伴い、大会の総試合数は前回大会の64試合から何試合に増加したでしょうか？",
+      "options": [
+        "104試合",
+        "80試合",
+        "96試合",
+        "112試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "参加国が48カ国に拡大された2026年大会では、4チームずつ12のグループに分かれてグループリーグを行い、その後上位チームによる決勝トーナメントが行われるため、総試合数が104試合に大幅増加しました。",
+      "trivia": "当初は3チームずつの16グループ制（計80試合）が検討されていましたが、グループリーグ最終戦での談合リスクなどを考慮し、現行の4チーム制フォーマットに落ち着きました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "2026",
+        "カナダ",
+        "開催地"
+      ],
+      "text": "今週閉幕する2026年ワールドカップでは、史上最多となる3カ国（アメリカ・カナダ・メキシコ）による共同開催が行われました。このうち、カナダでは今大会いくつの都市で試合が開催されているでしょうか？",
+      "options": [
+        "2都市",
+        "1都市",
+        "3都市",
+        "4都市"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年大会は全16都市で開催されていますが、カナダの開催都市はトロント（BMOフィールド）とバンクーバー（BCプレイス）の2都市のみです。",
+      "trivia": "アメリカは11都市、メキシコは3都市で開催しています。メキシコのエスタディオ・アステカは、史上初めて3回目のワールドカップ開幕戦の舞台となりました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ワールドカップ",
+        "2026",
+        "大会フォーマット",
+        "試合数"
+      ],
+      "text": "今週閉幕する2026年ワールドカップにおいて、各チームが戦う試合数はフォーマット変更に伴い最大で何試合になったでしょうか？",
+      "options": [
+        "8試合",
+        "7試合",
+        "9試合",
+        "10試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年大会から決勝トーナメントが「ラウンド32」から始まることになったため、決勝や3位決定戦まで進出したチームは、グループリーグ3試合と合わせて最大8試合を戦うことになります。",
+      "trivia": "ラウンド32が新たに導入されたことで、各グループの1位と2位だけでなく、3位のうち成績上位の8チームも決勝トーナメントに進出できるようになりました。",
+      "referenceDate": "2026-07-20",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-20",
+        "expiryDate": "2026-07-27",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
