@@ -1,0 +1,1041 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-07-26T22:07:02Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-07-27",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "アルビレックス新潟",
+        "モンテディオ山形",
+        "プレシーズンマッチ"
+      ],
+      "text": "2026年7月25日に行われたJリーグプレシーズンマッチ「アルビレックス新潟 vs モンテディオ山形」の試合結果は、次のうちどれ？",
+      "options": [
+        "3-4でモンテディオ山形が勝利",
+        "4-3でアルビレックス新潟が勝利",
+        "1-0でアルビレックス新潟が勝利",
+        "2-2の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "デンカビッグスワンスタジアムで行われた一戦は、打ち合いの末に3-4でアウェイのモンテディオ山形が勝利しました。両チームともに開幕に向けた課題と収穫を得る実戦となりました。",
+      "trivia": "この試合はNCVコミュニティチャンネルで生中継されたほか、全国のケーブルテレビ番組が視聴できる動画配信アプリ「ロコテレ」でも有料配信されました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-25",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "北海道コンサドーレ札幌",
+        "名古屋グランパス",
+        "プレシーズンマッチ"
+      ],
+      "text": "2026年7月25日に宮の沢白い恋人サッカー場で行われた「北海道コンサドーレ札幌 vs 名古屋グランパス」のプレシーズンマッチで勝利したのはどちらのクラブ？",
+      "options": [
+        "北海道コンサドーレ札幌",
+        "名古屋グランパス",
+        "両者得点なく引き分け",
+        "1-1の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合は1-0で北海道コンサドーレ札幌が勝利しました。J1クラブ同士の対戦で自分たちのやりたいことにチャレンジし、札幌が秋に開幕する新シーズンに向けて手応えを掴む結果となりました。",
+      "trivia": "2026/27シーズンからJリーグは「秋春制」に移行したため、7月下旬は各クラブがキャンプやプレシーズンマッチを行う重要な準備期間となっています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-25",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ選抜",
+        "アカデミー",
+        "リヴァプール"
+      ],
+      "text": "2026年7月24日と26日に開催された「Jリーグインターナショナルシリーズ2026 アカデミーマッチ」で、U-15 Jリーグ選抜が対戦したイングランドの強豪クラブの育成組織は？",
+      "options": [
+        "リヴァプールFC U15",
+        "マンチェスター・シティ U15",
+        "アーセナル U15",
+        "チェルシー U15"
+      ],
+      "answerIndex": 0,
+      "explanation": "昨年に引き続き、リヴァプールFC U15が来日しました。味の素フィールド西が丘を舞台に、全国から選ばれたU-15 Jリーグ選抜の選手たちと2試合の真剣勝負を行いました。",
+      "trivia": "リヴァプールFCのトップチームには日本代表キャプテンの遠藤航選手が所属しており、日本でも非常に人気と注目度が高いクラブです。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-26",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ベガルタ仙台",
+        "いわてグルージャ盛岡",
+        "練習試合"
+      ],
+      "text": "2026年7月20日に行われたベガルタ仙台と、いわてグルージャ盛岡の練習試合（45分×3本）の合計スコアは？",
+      "options": [
+        "3-1でベガルタ仙台の勝利",
+        "1-0でベガルタ仙台の勝利",
+        "2-2の引き分け",
+        "3-1でいわてグルージャ盛岡の勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "ベガルタ仙台は横山颯大、杉山耀建、安野匠が得点し、3本の合計スコア3-1でいわてグルージャ盛岡に勝利しました。",
+      "trivia": "トレーニングマッチでは出場選手全員のコンディションを確認し、多くの選手にプレー時間を与えるため、45分×3本や4本といった変則的な形式で行われることがよくあります。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-20",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ選抜",
+        "鹿島アントラーズ",
+        "アカデミー"
+      ],
+      "text": "2026年7月24日の「Jリーグインターナショナルシリーズ2026 アカデミーマッチ」第1戦で、リヴァプールFC U15相手に決勝ゴールを挙げた鹿島アントラーズジュニアユース所属の選手は誰？",
+      "options": [
+        "礒部怜夢",
+        "熊田清久郎",
+        "中村俊輔",
+        "山田直輝"
+      ],
+      "answerIndex": 0,
+      "explanation": "U-15 Jリーグ選抜に選出され、同世代ナンバーワンストライカーと評される鹿島アントラーズジュニアユースの礒部怜夢（いそべ れむ）が決勝ゴールを挙げました。",
+      "trivia": "礒部選手は小学生時代からボールコントロールとドリブルで抜群の才能を発揮しており、鹿島のエースナンバーである「40」を背負ってプレーしています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-24",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "天皇杯",
+        "福島ユナイテッドFC",
+        "三浦知良"
+      ],
+      "text": "2026年7月25日に行われた天皇杯予選・福島県代表決定戦の決勝で、J3福島が7得点で大勝しました。この試合でゴールを決め、59歳にして健在ぶりをアピールしたレジェンド選手は？",
+      "options": [
+        "三浦知良",
+        "中山雅史",
+        "遠藤保仁",
+        "小野伸二"
+      ],
+      "answerIndex": 0,
+      "explanation": "J3福島ユナイテッドFCにレンタル移籍中の三浦知良がゴールを記録しました。自身の持つ公式戦最年長ゴール記録を更新し、チームの天皇杯本戦出場に大きく貢献しました。",
+      "trivia": "三浦知良選手は1967年生まれ。プロ選手として50代後半になっても公式戦のピッチに立ち、得点まで決めるのは世界的に見ても驚異的な記録です。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-25",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "天皇杯",
+        "ガイナーレ鳥取"
+      ],
+      "text": "2026年7月26日にAxisバードスタジアムで行われた「第69回鳥取県サッカー選手権大会 決勝戦（天皇杯鳥取県代表決定戦）」で、ガイナーレ鳥取と対戦したクラブは？",
+      "options": [
+        "Yonago Genki SC",
+        "FCバレイン下関",
+        "ベルガロッソいわみ",
+        "FC神楽しまね"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガイナーレ鳥取は、米子市を中心に活動する「Yonago Genki SC」と天皇杯本戦の出場権を懸けて対戦しました。勝者は本戦1回戦で熊本県代表と対戦します。",
+      "trivia": "Yonago Genki SC（米子ゲンキSC）は、鳥取県米子市をホームタウンとする社会人サッカークラブで、中国サッカーリーグへの参入を目指して活動しています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-26",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC東京",
+        "海外移籍",
+        "バレンシア"
+      ],
+      "text": "2026年7月下旬にラ・リーガのバレンシアへの加入が決定し、「ラ・リーガでプレーすることは、小さい頃からの夢でした」とコメントを残したFC東京出身のMFは誰？",
+      "options": [
+        "佐藤龍之介",
+        "山本天翔",
+        "松木玖生",
+        "荒木遼太郎"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京で育成された若きMF佐藤龍之介がスペインの名門バレンシアに加入しました。移籍決定直後の7月26日に行われたプレシーズンマッチにもスタメン出場を果たしています。",
+      "trivia": "佐藤選手はバレンシアのプレシーズンマッチで早くも2戦連続スタメン出場を果たすなど、新天地のスペインで指揮官へのアピールを順調にスタートさせています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "北海道コンサドーレ札幌",
+        "名古屋グランパス",
+        "監督"
+      ],
+      "text": "2026年7月25日のプレシーズンマッチ「北海道コンサドーレ札幌 vs 名古屋グランパス」の試合後、名古屋の監督として「古巣対戦はできればあまり対戦はしたくない」とコメントを残した指揮官は？",
+      "options": [
+        "ミハイロ・ペトロヴィッチ",
+        "川井健太",
+        "長谷川健太",
+        "マッシモ・フィッカデンティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "長年札幌を率いたミハイロ・ペトロヴィッチ監督（ミシャ）は、2026/27シーズンから名古屋グランパスの指揮を執っており、プレシーズンマッチでいきなりの古巣対戦となりました。",
+      "trivia": "この試合では、同じく札幌から移籍した高嶺選手も出場しており、恩師であるミシャ監督とともに古巣・札幌のファンに元気な姿を見せました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-25",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "アルビレックス新潟",
+        "川澄奈穂美",
+        "配信"
+      ],
+      "text": "2026年7月25日に行われたJリーグプレシーズンマッチ「アルビレックス新潟 vs モンテディオ山形」のLIVE配信で、解説を務めたアルビレックス新潟レディース所属の選手は誰？",
+      "options": [
+        "川澄奈穂美",
+        "鮫島彩",
+        "岩渕真奈",
+        "田中美南"
+      ],
+      "answerIndex": 0,
+      "explanation": "NCVコミュニティチャンネルや動画配信アプリ「ロコテレ」で配信されたこの試合において、現役選手であり元なでしこジャパンの川澄奈穂美が解説を担当しました。",
+      "trivia": "川澄奈穂美は2011年の女子ワールドカップ優勝メンバー。長年アメリカなどでプレーした後、2023年にアルビレックス新潟レディースに電撃加入し話題となりました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-25",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "ヴィッセル神戸",
+        "順位表",
+        "百年構想リーグ"
+      ],
+      "text": "秋春制への移行に伴う端境期に行われた2026年上半期の特別大会「明治安田J1百年構想リーグ」で、プレーオフラウンドを制して初代王者に輝いたクラブはどこでしょう？",
+      "options": [
+        "ヴィッセル神戸",
+        "鹿島アントラーズ",
+        "セレッソ大阪",
+        "FC東京"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィッセル神戸はWESTグループを首位で通過し、2026年6月6日のプレーオフラウンド決勝で鹿島アントラーズを2戦合計5-2で下して特別大会の優勝を飾りました。",
+      "trivia": "この大会の優勝により、ヴィッセル神戸はAFCチャンピオンズリーグエリート(ACLE)2026/27の日本第2代表としてのリーグステージ出場権を獲得しました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "移籍",
+        "アンデルソン・ロペス",
+        "得点王"
+      ],
+      "text": "2023年と2024年のJ1得点王であり、J1通算101ゴールを記録しているFWアンデルソン・ロペスは、2026年夏にどのクラブへ完全移籍したでしょう？",
+      "options": [
+        "ヴィッセル神戸",
+        "鹿島アントラーズ",
+        "川崎フロンターレ",
+        "浦和レッズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アンデルソン・ロペスは横浜F・マリノスからヴィッセル神戸に完全移籍しました。大迫勇也や武藤嘉紀ら強力なアタッカー陣に、屈指のストライカーが加わりました。",
+      "trivia": "アンデルソン・ロペスはサンフレッチェ広島、北海道コンサドーレ札幌、横浜F・マリノスでプレーしており、ヴィッセル神戸はJリーグで4クラブ目となります。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "得点王",
+        "スタッツ",
+        "百年構想リーグ"
+      ],
+      "text": "2026年上半期の特別大会「明治安田J1百年構想リーグ」において、10得点を挙げて得点王に輝いた3選手の組み合わせとして正しいものはどれでしょう？",
+      "options": [
+        "レオ・セアラ、谷村海那、山岸祐也",
+        "アンデルソン・ロペス、大迫勇也、鈴木優磨",
+        "エリソン、山岸祐也、鈴木優磨",
+        "レオ・セアラ、エリソン、大橋祐紀"
+      ],
+      "answerIndex": 0,
+      "explanation": "10得点を記録したレオ・セアラ（鹿島）、谷村海那（横浜FM）、山岸祐也（名古屋）の3名がJ1百年構想リーグの得点王を分け合いました。",
+      "trivia": "横浜FMの谷村海那は、2024年にいわきFCでブレイクした後にJ1へとステップアップし、強豪クラブで得点王争いを演じるまでに成長しました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "ジェフユナイテッド千葉",
+        "スタッツ",
+        "移籍"
+      ],
+      "text": "17季ぶりのJ1の舞台となった2026年上半期の「J1百年構想リーグ」ではEASTグループ最多の31失点で最下位に沈み、立て直しのため2026年夏に川崎フロンターレからFWエリソンを獲得したクラブはどこでしょう？",
+      "options": [
+        "ジェフユナイテッド千葉",
+        "横浜FC",
+        "湘南ベルマーレ",
+        "水戸ホーリーホック"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジェフユナイテッド千葉は2025年のJ2で昇格を決めてJ1復帰を果たしましたが、特別大会ではJ1の壁にぶつかり最下位となりました。得点力不足解消のためエリソンを補強しました。",
+      "trivia": "ジェフユナイテッド千葉はオリジナル10の一員ですが、2009年にJ2へ降格して以来、長らくJ1復帰を逃していました。2026/27シーズンはついにトップリーグで戦うことになります。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "得点王",
+        "釜本邦茂賞",
+        "奈良クラブ"
+      ],
+      "text": "2026年上半期の「明治安田Jリーグ百年構想リーグ」において、全カテゴリー（J1・J2・J3）を通じて最も多くの得点を挙げた選手に贈られる「釜本邦茂賞」を受賞した選手は誰でしょう？",
+      "options": [
+        "田村翔太",
+        "泉柊椰",
+        "山本桜大",
+        "橋本啓吾"
+      ],
+      "answerIndex": 0,
+      "explanation": "奈良クラブのFW田村翔太が15得点を記録し、J1・J2・J3全60クラブのトップとなる得点数をマークして「釜本邦茂賞」に輝きました。",
+      "trivia": "RB大宮アルディージャの泉柊椰と山本桜大も得点を量産し、それぞれ10得点でJ2・J3百年構想リーグのEAST-Bグループ得点王を分け合いました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "テゲバジャーロ宮崎",
+        "順位表",
+        "スタッツ"
+      ],
+      "text": "2026年上半期の「明治安田J2・J3百年構想リーグ」において、堅守を武器に全40クラブ中3位と躍進し、2026-27シーズンからクラブ史上初のJ2リーグに挑むクラブはどこでしょう？",
+      "options": [
+        "テゲバジャーロ宮崎",
+        "ヴァンラーレ八戸",
+        "栃木シティ",
+        "FC大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "テゲバジャーロ宮崎は2025年のJ3で4位となりJ2昇格プレーオフを制覇。初のJ2参戦に向けた2026年の特別大会でも、全40クラブ中3位の好成績を残しました。",
+      "trivia": "テゲバジャーロ宮崎は百年構想リーグの地域リーグラウンド18試合で失点数「11」と、全40クラブで最も少ない失点数を記録する組織的な守備を見せました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "中井卓大",
+        "FC今治",
+        "移籍",
+        "Jリーグ初挑戦"
+      ],
+      "text": "2026年7月22日、スペインのCDレガネスからJ2のFC今治への完全移籍が発表された、レアル・マドリードの下部組織出身で「ピピ」の愛称で知られるMFは誰でしょう？",
+      "options": [
+        "中井卓大",
+        "久保建英",
+        "鈴木唯人",
+        "松木玖生"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月22日、FC今治はスペインのCDレガネスからMF中井卓大の完全移籍加入を発表しました。9歳からレアル・マドリードの下部組織で育った彼にとって、初のJリーグ挑戦となります。",
+      "trivia": "幼少期に悔し泣きをしていた姿からスペインで「ピピ（泣き虫）」という愛称がつけられ、親しまれています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "荒木遼太郎",
+        "鹿島アントラーズ",
+        "シント＝トロイデン",
+        "移籍"
+      ],
+      "text": "2026年7月20日、鹿島アントラーズからベルギー1部のシント＝トロイデンVVへ完全移籍することが発表された、かつてJリーグベストヤングプレーヤー賞を受賞した経験もあるMFは誰でしょう？",
+      "options": [
+        "荒木遼太郎",
+        "松木玖生",
+        "三戸舜介",
+        "鈴木唯人"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月20日、鹿島アントラーズのMF荒木遼太郎がシント＝トロイデンVVへ完全移籍することが発表されました。パリ五輪にも出場した司令塔が欧州挑戦を果たします。",
+      "trivia": "シント＝トロイデンVVは日本人選手が多く所属しており、荒木選手は「ゴールやアシストという結果でチームの勝利に貢献したい」と意気込みを語っています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "広瀬陸斗",
+        "鹿島アントラーズ",
+        "ヴィッセル神戸",
+        "移籍"
+      ],
+      "text": "2026年7月20日、ヴィッセル神戸でのリーグ・天皇杯2冠などに貢献し、3年ぶりに古巣の鹿島アントラーズへ完全移籍で復帰することが発表されたDFは誰でしょう？",
+      "options": [
+        "広瀬陸斗",
+        "初瀬亮",
+        "菊池流帆",
+        "山川哲史"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月20日、ヴィッセル神戸でリーグ・天皇杯2冠などに貢献したDF広瀬陸斗が、かつて所属していた鹿島アントラーズへ完全移籍で復帰しました。",
+      "trivia": "広瀬選手は浦和レッズの下部組織出身で、父親の広瀬治氏も元プロサッカー選手（浦和レッズ所属）として活躍していました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "中村草太",
+        "サンフレッチェ広島",
+        "ル・アーヴル",
+        "期限付き移籍"
+      ],
+      "text": "2026年7月中旬、サンフレッチェ広島からフランス1部リーグのル・アーヴルACへ期限付き移籍することが発表された、E-1サッカー選手権で日本代表デビューを果たした経験を持つFWは誰でしょう？",
+      "options": [
+        "中村草太",
+        "細谷真大",
+        "大橋祐紀",
+        "染野唯月"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月、サンフレッチェ広島のFW中村草太がフランスのル・アーヴルACに期限付き移籍することが発表されました。ル・アーヴルには日本代表DF瀬古歩夢らも所属しています。",
+      "trivia": "中村選手は明治大学時代に2年連続で関東大学リーグ1部の得点王とアシスト王をダブル受賞するという快挙を成し遂げてからプロ入りしました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "石渡ネルソン",
+        "セレッソ大阪",
+        "シント＝トロイデン",
+        "育成型期限付き移籍"
+      ],
+      "text": "2026年7月中旬、セレッソ大阪からシント＝トロイデンVVへの完全移籍が発表されたMF石渡ネルソンですが、彼が育成型期限付き移籍でプレーし、経験を積んだJリーグクラブの組み合わせとして正しいものはどれでしょう？",
+      "options": [
+        "愛媛FC・いわきFC",
+        "徳島ヴォルティス・愛媛FC",
+        "ファジアーノ岡山・いわきFC",
+        "ロアッソ熊本・徳島ヴォルティス"
+      ],
+      "answerIndex": 0,
+      "explanation": "セレッソ大阪の下部組織出身の石渡ネルソンは、愛媛FCやいわきFCでの育成型期限付き移籍を経て、2026年にC大阪へ復帰しブレイクを果たしました。",
+      "trivia": "ナイジェリア人の父と日本人の母を持つ石渡選手は、185cmの恵まれた体格を活かしたボール奪取と推進力が持ち味で、ロス五輪世代の有望株としても期待されています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "アカデミーマッチ",
+        "リヴァプールFC"
+      ],
+      "text": "2026年7月24日と26日に開催された「Jリーグインターナショナルシリーズ2026 アカデミーマッチ」で、U-15 Jリーグ選抜が対戦したプレミアリーグのクラブはどこでしょう？",
+      "options": [
+        "リヴァプールFC",
+        "マンチェスター・シティ",
+        "アーセナル",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグのアカデミー17クラブから選ばれた20名の選手たちが、リヴァプールFC U15と味の素フィールド西が丘で対戦しました。",
+      "trivia": "このアカデミーマッチでは、中村俊輔氏や山田直輝氏がU-15 Jリーグ選抜のコーチとして参加し、若き才能たちを指導しました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-24",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "イベント",
+        "コラボ"
+      ],
+      "text": "2026年7月21日にイベント詳細やグッズ情報が発表された、Jリーグと大人気コンテンツがタイアップして行われるイベント「〇〇〇Jリーグフェス」。〇〇〇に入るのは？",
+      "options": [
+        "ポケモン",
+        "ドラえもん",
+        "名探偵コナン",
+        "ハローキティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "「ポケモンJリーグフェス」の追加情報として、全60クラブのオリジナルグッズ販売や位置情報ゲーム『ポケモンGO』との連動イベントなどが発表されました。",
+      "trivia": "各クラブごとに「クラブパートナーポケモン」が設定されており、スタジアム来場者向けにオリジナルエコバッグなどが配布される予定です。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "キャンペーン",
+        "スポンサー"
+      ],
+      "text": "2026年7月24日にNTTドコモが発表した、Jリーグの観戦チケットや全60クラブの公式ユニフォームが当たるキャンペーンは、ある通信プランの契約者を対象としています。そのプラン名は？",
+      "options": [
+        "ドコモ MAX",
+        "ahamo J",
+        "eximo Jリーグパック",
+        "dポイントプレミアム"
+      ],
+      "answerIndex": 0,
+      "explanation": "「ドコモ MAX」契約者限定の特別な体験価値として、Jリーグの観戦チケットや公式ユニフォームが当たるキャンペーンがスタートしました。",
+      "trivia": "ドコモは「Jリーグオフィシャルテクノロジーパートナー」として、これまでも様々なデジタル施策を通してJリーグをサポートし続けています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "公式サイト",
+        "リニューアル"
+      ],
+      "text": "2026年7月20日、Jリーグがブランドエボリューションを体現するために新たなデザインでリニューアル公開したデジタルサービスは次のうちどれでしょう？",
+      "options": [
+        "Jリーグ公式サイト",
+        "Jリーグチケット",
+        "Jリーグオンラインストア",
+        "Jリーグ公式アプリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは2026/27シーズンの開幕を前に、新たなブランドイメージに合わせて「Jリーグ公式サイト」をリニューアルしました。",
+      "trivia": "サイトのリニューアルに伴い、より直感的に試合日程や順位表、各クラブの最新ニュースにアクセスしやすい洗練されたデザインへと改善されました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "プレシーズンマッチ",
+        "ジャパンツアー",
+        "ドルトムント",
+        "セレッソ大阪"
+      ],
+      "text": "2026年7月下旬から「BVBエボニック・ジャパンツアー2026」を開催し来日したボルシア・ドルトムントが、7月29日の初戦で親善試合を行うJリーグのクラブはどこでしょう？",
+      "options": [
+        "セレッソ大阪",
+        "FC東京",
+        "横浜F・マリノス",
+        "ガンバ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "ドルトムントは7月29日にヨドコウ桜スタジアムでセレッソ大阪と、8月1日には国立競技場でFC東京と対戦するスケジュールが組まれました。",
+      "trivia": "セレッソ大阪には、かつてドルトムントのブンデスリーガ連覇に大きく貢献した香川真司が所属しており、古巣との再会として大きな注目を集めました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "親善試合",
+        "ボルシア・ドルトムント"
+      ],
+      "text": "2026年7月末から「Japan Tour 2026」で来日したドイツの強豪ボルシア・ドルトムントは、親善試合でセレッソ大阪ともう一つのJ1クラブと対戦しました。そのクラブはどこでしょう？",
+      "options": [
+        "FC東京",
+        "横浜F・マリノス",
+        "浦和レッズ",
+        "川崎フロンターレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ドルトムントは2026年7月末から日本ツアーを実施し、7月29日にセレッソ大阪、8月1日に国立競技場でFC東京と対戦しました。",
+      "trivia": "ドルトムントにはかつて香川真司選手が所属し、ブンデスリーガ連覇に大きく貢献したため、現在でも日本で非常に人気のあるクラブです。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "WEリーグ",
+        "RB大宮アルディージャWOMEN",
+        "親善試合"
+      ],
+      "text": "2026年7月25日、クラブ初の国際親善試合で昨季の女子ブンデスリーガ無敗王者の「FCバイエルンWOMEN」と対戦したWEリーグのクラブはどこでしょう？",
+      "options": [
+        "RB大宮アルディージャWOMEN",
+        "三菱重工浦和レッズレディース",
+        "日テレ・東京ヴェルディベレーザ",
+        "INAC神戸レオネッサ"
+      ],
+      "answerIndex": 0,
+      "explanation": "欧州屈指の強豪であるFCバイエルンWOMENが来日し、2026年7月25日にNACK5スタジアム大宮でRB大宮アルディージャWOMENと対戦しました。",
+      "trivia": "大宮アルディージャは2024年にレッドブル・グループに買収され、女子チームも「RB大宮アルディージャWOMEN」として新たなスタートを切っています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-25",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "サンフレッチェ広島",
+        "移籍",
+        "海外挑戦"
+      ],
+      "text": "2026年7月、サンフレッチェ広島からフランス1部リーグ（リーグ・アン）のル・アーブルへ期限付き移籍することが発表された選手は誰でしょう？",
+      "options": [
+        "中村草太",
+        "中島洋太朗",
+        "満田誠",
+        "大橋祐紀"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンフレッチェ広島でプレーしていた中村草太選手が、2026年7月にフランス1部のル・アーブルへ期限付き移籍することが発表されました。",
+      "trivia": "中村草太選手は前橋育英高校から明治大学を経てプロ入りし、大学時代から世代屈指の攻撃的MFとして注目を集めていました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "NTTドコモ",
+        "スポンサー",
+        "秋春制"
+      ],
+      "text": "2026年7月24日、JリーグのプラチナパートナーであるNTTドコモが「ドコモ MAX」契約者限定のキャンペーンを開始しました。各クラブの観戦チケットと共に抽選で当たる特典は何でしょう？",
+      "options": [
+        "全60クラブの公式ユニフォーム",
+        "全60クラブの選手のサイン色紙",
+        "Jリーグの公式試合球",
+        "DAZNの年間視聴パス"
+      ],
+      "answerIndex": 0,
+      "explanation": "NTTドコモは秋春制となる2026/27シーズンの開幕に向け、J1からJ3までの全60クラブの観戦チケットや公式ユニフォームが当たるキャンペーンを実施しました。",
+      "trivia": "NTTドコモは2017年からJリーグとトップパートナー契約を結んでおり、全国のスタジアムの通信環境整備など様々な面からJリーグを支援しています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1043 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-07-26T22:12:41Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-07-27",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "mls",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "MLS",
+        "オーランド・シティ",
+        "アントワーヌ・グリーズマン"
+      ],
+      "text": "2026年7月22日に行われたMLSの試合で、オーランド・シティでの公式戦初ゴールとなるMLSデビュー弾を決めたフランス人ストライカーは誰？",
+      "options": [
+        "アントワーヌ・グリーズマン",
+        "キリアン・エムバペ",
+        "オリヴィエ・ジルー",
+        "ウスマン・デンベレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンノゼ・アースクエイクス戦の後半、アントワーヌ・グリーズマンが移籍後初となるゴールを記録し、チームの4-0の快勝に貢献しました。",
+      "trivia": "2018年W杯優勝メンバーであるグリーズマンは、かねてからアメリカでのプレーを希望しており、2026年の夏ついにMLSへの移籍を実現させました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-22",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "mls",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "MLS",
+        "シカゴ・ファイアー",
+        "ロベルト・レヴァンドフスキ"
+      ],
+      "text": "2026年7月22日のインテル・マイアミ戦で、MLSのシカゴ・ファイアーの選手として新天地デビューを果たしたポーランド代表ストライカーは誰？",
+      "options": [
+        "ロベルト・レヴァンドフスキ",
+        "アルカディウシュ・ミリク",
+        "クシシュトフ・ピョンテク",
+        "カロル・シフィデルスキ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ロベルト・レヴァンドフスキはシカゴ・ファイアーでのMLSデビューを果たし、先発で63分間プレーしました。試合は3-2でインテル・マイアミが勝利しています。",
+      "trivia": "この試合ではインテル・マイアミのルイス・スアレスも2ゴールを決めており、かつてバルセロナで活躍した新旧ストライカーの共演が現地で大きな話題になりました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-22",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレシーズン",
+        "アヤックス",
+        "親善試合"
+      ],
+      "text": "2026年7月26日にヨハン・クライフ・アレナでプレシーズンマッチを行い、アヤックスと対戦して1-2で敗れたイングランドのクラブはどこ？",
+      "options": [
+        "バーンリー",
+        "シェフィールド・ユナイテッド",
+        "ルートン・タウン",
+        "ノッティンガム・フォレスト"
+      ],
+      "answerIndex": 0,
+      "explanation": "アヤックスのホームで行われた親善試合では、バーンリーが挑みましたが、アヤックスがアーロン・バウマンらのゴールで2-1と勝利を収めました。",
+      "trivia": "このプレシーズンマッチはアヤックスにとって2026-27シーズンに向けた最初の実戦の一つであり、次世代を担う10代の若手選手が多く起用されました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-26",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレシーズン",
+        "リヴァプール",
+        "USAツアー"
+      ],
+      "text": "2026年7月25日、リヴァプールは「USA Summer Tour 2026」の初戦としてアメリカのナッシュビルでどのイングランドのクラブと対戦した？",
+      "options": [
+        "サンダーランド",
+        "リーズ・ユナイテッド",
+        "レクサム",
+        "アストン・ヴィラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年のUSAサマーツアーにおいて、リヴァプールはナッシュビルのジオディス・パークでサンダーランドとプレシーズンマッチを行いました。",
+      "trivia": "この夏のアメリカでのツアーにはリヴァプールやサンダーランドのほか、ハリウッド俳優がオーナーを務めるレクサムや、リーズ・ユナイテッドも参加しています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-25",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレシーズン",
+        "トッテナム",
+        "親善試合"
+      ],
+      "text": "2026年7月26日にニュージーランドで行われたプレシーズンマッチで、オークランドFCに2-0で勝利したトッテナム・ホットスパーの得点者は誰と誰？",
+      "options": [
+        "デイン・スカーレットとリシャルリソン",
+        "ソン・フンミンとティモ・ヴェルナー",
+        "デヤン・クルゼフスキとブレナン・ジョンソン",
+        "ジェームズ・マディソンとペドロ・ポロ"
+      ],
+      "answerIndex": 0,
+      "explanation": "トッテナムはオセアニアツアーの一環としてオークランドFCと対戦し、デイン・スカーレットとリシャルリソンのゴールで2-0の勝利を収めました。",
+      "trivia": "対戦相手のオークランドFCは2024年に創設され、Aリーグ・メンに参入したニュージーランドの新鋭クラブであり、トッテナムとの対戦は現地で大きな注目を集めました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-26",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "mls",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "MLS",
+        "アトランタ・ユナイテッド",
+        "ミゲル・アルミロン"
+      ],
+      "text": "2026年7月22日のシャーロットFC戦で、2点ビハインドからアトランタ・ユナイテッドを2-2の同点に導く劇的な同点ゴールを決めた選手は誰？",
+      "options": [
+        "ミゲル・アルミロン",
+        "ティアゴ・アルマダ",
+        "ギオルゴス・ギアクマキス",
+        "ジョセフ・マルティネス"
+      ],
+      "answerIndex": 0,
+      "explanation": "アトランタ・ユナイテッドは前半に2点を失いましたが、57分にエリアス・バエスが1点を返し、76分にミゲル・アルミロンが貴重な同点ゴールを決めました。",
+      "trivia": "ミゲル・アルミロンにとってこのゴールは2026年シーズンの初ゴールであり、かつてMLSを席巻した彼が古巣アトランタで再び輝きを放ちました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-22",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレシーズン",
+        "ノッティンガム・フォレスト",
+        "イゴール・ジェズス"
+      ],
+      "text": "2026年7月26日にポルトガルで行われたプレシーズンマッチで、ヴィトーリア・ギマランイス相手にノッティンガム・フォレストの唯一のゴールを決めた選手は誰？",
+      "options": [
+        "イゴール・ジェズス",
+        "モーガン・ギブス＝ホワイト",
+        "クリス・ウッド",
+        "アンソニー・エランガ"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合は1-1の引き分けに終わりましたが、ノッティンガム・フォレストはオラ・アイナのシュートの跳ね返りをブラジル人FWイゴール・ジェズスが押し込んで先制しました。",
+      "trivia": "対戦相手のヴィトーリア・ギマランイスは後半にPKで同点に追いつき、ポルトガルの地で行われたこの親善試合は最後まで互角の展開となりました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-26",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "mls",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "MLS",
+        "LAギャラクシー",
+        "カリフォルニア・クラシコ"
+      ],
+      "text": "2026年7月25日に行われたサンノゼ・アースクエイクスとの「カリフォルニア・クラシコ」で、後半アディショナルタイムにPKをストップしLAギャラクシーを1-1の引き分けに導いたGKは誰？",
+      "options": [
+        "JT・マルチンコフスキ",
+        "ジョン・マッカーシー",
+        "ジョナサン・ボンド",
+        "ノヴァク・ミチョヴィッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "LAギャラクシーのGK、JT・マルチンコフスキは、後半終了間際に劇的なPKストップを見せ、チームに貴重な勝ち点1をもたらしました。",
+      "trivia": "マルチンコフスキは対戦相手であるサンノゼのアカデミー出身で、トップチームでも5シーズンで95試合に先発出場した経歴を持つため、古巣相手の大仕事となりました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-25",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "mls",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "MLS",
+        "ミネソタ・ユナイテッド",
+        "クリーンシート"
+      ],
+      "text": "2026年7月25日のバンクーバー・ホワイトキャップス戦で5セーブを記録し0-0の引き分けに貢献した、インテル・マイアミからミネソタ・ユナイテッドに加入したGKは誰？",
+      "options": [
+        "ドレイク・カレンダー",
+        "デイン・セント・クレア",
+        "ロマン・ビュルキ",
+        "ブラッド・グザン"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテル・マイアミから移籍してきたドレイク・カレンダーは好セーブを連発し、ミネソタでの先発17試合目で5度目となるクリーンシートを達成しました。",
+      "trivia": "カレンダーはインテル・マイアミ時代に91試合に先発し10回のシャットアウトを記録するなど、リオネル・メッシらと共にチームを最後尾から支えた実力派GKです。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-25",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "mls",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "MLS",
+        "LAギャラクシー",
+        "マルコ・ロイス"
+      ],
+      "text": "2026年7月25日の「カリフォルニア・クラシコ」で、LAギャラクシーのジョセフ・ペイントシルの先制ゴールを絶妙なスルーパスでアシストした選手は誰？",
+      "options": [
+        "マルコ・ロイス",
+        "リキ・プッチ",
+        "ガブリエル・ペッキ",
+        "ディエゴ・ファグンデス"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半13分のカウンターの場面で、中央でボールを受けたマルコ・ロイスが完璧なパスを送り、これを受けたペイントシルがゴールネットを揺らしました。",
+      "trivia": "ドイツのレジェンドであるマルコ・ロイスは、2026年の夏にドルトムントからLAギャラクシーへ加入し、すぐにチームの攻撃の要として違いを見せています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-25",
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "ゴールデンブーツ",
+        "得点王",
+        "フランス代表"
+      ],
+      "text": "2026年7月19日に閉幕した「2026 FIFAワールドカップ」で、通算10ゴールを記録しゴールデンブーツ（得点王）に輝いた選手は誰でしょう？",
+      "options": [
+        "キリアン・エムバペ",
+        "リオネル・メッシ",
+        "アーリング・ハーランド",
+        "ジュード・ベリンガム"
+      ],
+      "answerIndex": 0,
+      "explanation": "フランス代表のキリアン・エムバペが10ゴールを挙げ、2大会連続となる得点王に輝きました。2位は8ゴールを記録したアルゼンチン代表のリオネル・メッシでした。",
+      "trivia": "エムバペはこの大会でワールドカップ通算得点数を22に伸ばし、ミロスラフ・クローゼの記録（16得点）を抜いて歴代単独トップに立ちました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "ゴールデンボール",
+        "最優秀選手",
+        "スペイン代表"
+      ],
+      "text": "2026年7月19日に終了した「2026 FIFAワールドカップ」で、大会最優秀選手に贈られるゴールデンボールを受賞したスペイン代表の選手は誰でしょう？",
+      "options": [
+        "ロドリ",
+        "ペドリ",
+        "ダニ・オルモ",
+        "ラミン・ヤマル"
+      ],
+      "answerIndex": 0,
+      "explanation": "スペイン代表の中盤の要として全試合で圧倒的なパフォーマンスを見せ、優勝に貢献したロドリがゴールデンボールを受賞しました。",
+      "trivia": "ロドリはクラブでのUEFAチャンピオンズリーグ優勝やバロンドール受賞に続き、ワールドカップの最優秀選手賞も手にした歴史上11人目の選手となりました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "3位決定戦",
+        "イングランド代表",
+        "スコア"
+      ],
+      "text": "2026 FIFAワールドカップの最終順位において、イングランド代表がフランス代表に勝利し3位となりました。ワールドカップの3位決定戦として史上最多得点となったこの試合の最終スコアはいくつだったでしょう？",
+      "options": [
+        "6-4",
+        "5-3",
+        "4-3",
+        "5-4"
+      ],
+      "answerIndex": 0,
+      "explanation": "3位決定戦はかつてない乱打戦となり、イングランドが6-4でフランスを破りました。イングランドは前半だけで4-0とリードを奪う圧倒的な展開を見せました。",
+      "trivia": "この試合でイングランド代表のブカヨ・サカはハットトリックを達成し、フランスの猛追を振り切って母国に大きな歓喜をもたらしました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "ゴールデングローブ",
+        "最優秀GK",
+        "スペイン代表"
+      ],
+      "text": "2026 FIFAワールドカップで、大会の最優秀ゴールキーパーに贈られる「ゴールデングローブ」を受賞した選手は誰でしょう？",
+      "options": [
+        "ウナイ・シモン",
+        "エミリアーノ・マルティネス",
+        "ジョーダン・ピックフォード",
+        "ジャンルイジ・ドンナルンマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "スペイン代表のウナイ・シモンが受賞しました。スペインは大会を通じてわずか1失点という驚異的な守備力を見せ、優勝の大きな原動力となりました。",
+      "trivia": "スペインは2026年大会において「ワールドカップ優勝チームとしての最少失点記録（1失点）」を打ち立てており、ウナイ・シモンは7試合でクリーンシートを達成しました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "決勝戦",
+        "スペイン代表",
+        "アルゼンチン代表"
+      ],
+      "text": "2026年7月19日に行われた2026 FIFAワールドカップの決勝戦「スペイン vs アルゼンチン」は、延長戦の末に1-0でスペインが優勝を果たしました。延長後半106分に決勝ゴールを決めた選手は誰でしょう？",
+      "options": [
+        "フェラン・トーレス",
+        "ニコ・ウィリアムズ",
+        "ミケル・オヤルサバル",
+        "ダニ・オルモ"
+      ],
+      "answerIndex": 0,
+      "explanation": "スコアレスで迎えた延長後半の106分、ニコ・ウィリアムズのアシストからフェラン・トーレスがゴールネットを揺らし、これがスペインを世界一に導く決勝点となりました。",
+      "trivia": "敗れたアルゼンチンはエンソ・フェルナンデスが退場処分となり10人での戦いを強いられましたが、GKエミリアーノ・マルティネスが11回のセーブを見せるなど驚異的な粘りを見せました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ワールドカップ",
+        "大会記録",
+        "総得点数",
+        "スタッツ"
+      ],
+      "text": "2026 FIFAワールドカップは出場枠が48カ国に拡大され、全104試合が行われました。この大会で記録された「総得点数」は史上最多となりましたが、全104試合で生まれた合計ゴール数はいくつでしょう？",
+      "options": [
+        "308",
+        "276",
+        "294",
+        "322"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年大会では合計308ゴールが記録され、ワールドカップ史上最多得点大会となりました。1試合平均は2.96ゴールで、過去数十年の大会と比べても非常に高い水準です。",
+      "trivia": "大会全体のゴール数増加には、3位決定戦での10ゴール（6-4）など、上位進出チームの爆発的な攻撃力が大きく影響しました。なお、大会ベストヤングプレーヤーにはスペインのパウ・クバルシが選ばれました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "前田大然",
+        "イプスウィッチ",
+        "プレミアリーグ",
+        "移籍"
+      ],
+      "text": "2026年7月25日、日本代表FW前田大然がセルティックから完全移籍で加入することが発表された、イングランド・プレミアリーグのクラブはどこでしょう？",
+      "options": [
+        "イプスウィッチ・タウン",
+        "ハル・シティ",
+        "レスター・シティ",
+        "サウサンプトン"
+      ],
+      "answerIndex": 0,
+      "explanation": "前田大然はスコットランドの名門セルティックから、2026-27シーズンにプレミアリーグへ昇格したイプスウィッチ・タウンへの完全移籍が発表されました。",
+      "trivia": "イプスウィッチ公式の加入ムービーでは、重厚なBGMに反して前田の名前の漢字が可愛らしい\"丸ゴシック体\"で表示され、日本のファンから「フォントが惜しい」とSNS上で総ツッコミを受けました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "古橋亨梧",
+        "LAギャラクシー",
+        "MLS",
+        "移籍"
+      ],
+      "text": "2026年7月21日、元日本代表FW古橋亨梧が完全移籍で加入することが発表された、アメリカ・MLSのクラブはどこでしょう？",
+      "options": [
+        "LAギャラクシー",
+        "インテル・マイアミ",
+        "ロサンゼルスFC",
+        "シアトル・サウンダーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "古橋亨梧はイングランドのバーミンガム・シティから、アメリカ・MLSのLAギャラクシーへの完全移籍を発表し、2030-31シーズンまでの5年契約を締結しました。",
+      "trivia": "古橋は2025年にレンヌへ移籍し欧州5大リーグ初挑戦を果たしましたが、出場機会に恵まれずバーミンガムを経てアメリカへ。新天地では吉田麻也や山根視来と同僚になり、日本人トリオが誕生しました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "守田英正",
+        "ハル・シティ",
+        "プレミアリーグ",
+        "移籍"
+      ],
+      "text": "2026年7月24日、日本代表MF守田英正がフリーで完全移籍したイングランドのクラブはどこでしょう？",
+      "options": [
+        "ハル・シティ",
+        "アストン・ヴィラ",
+        "フラム",
+        "リーズ・ユナイテッド"
+      ],
+      "answerIndex": 0,
+      "explanation": "ポルトガルのスポルティングを契約満了で退団した守田英正は、プレミアリーグ昇格組のハル・シティへ完全移籍しました。2年契約＋1年の延長オプションが付帯しています。",
+      "trivia": "ハル・シティ公式SNSは、守田の加入発表時に日の丸を連想させる和風の演出を用いた動画を公開しました。クラブ史上2人目の日本人選手を大々的に歓迎する姿勢に、日本のファンから喝采の声が上がりました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "荒木遼太郎",
+        "シント＝トロイデン",
+        "鹿島アントラーズ",
+        "移籍"
+      ],
+      "text": "2026年7月20日、MF荒木遼太郎が鹿島アントラーズから完全移籍で加入することが発表されたベルギー1部のクラブはどこでしょう？",
+      "options": [
+        "シント＝トロイデンVV",
+        "KAAヘント",
+        "スタンダール・リエージュ",
+        "ロイヤル・アントワープ"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズでプレーしていた荒木遼太郎は、多くの日本人選手が在籍するベルギーのシント＝トロイデンVVへの完全移籍が発表されました。",
+      "trivia": "荒木は2024年に期限付き移籍したFC東京で活躍を取り戻し、U-23日本代表としてアジアカップ優勝にも貢献しました。ベルギーでの背番号は「71」に決まり、海外挑戦という大きな夢の第一歩を踏み出しました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "プレミアリーグ",
+        "日本人選手",
+        "移籍",
+        "海外組"
+      ],
+      "text": "2026年7月下旬に守田英正と前田大然が相次いで移籍したことで、2026-27シーズンにイングランド・プレミアリーグに所属する日本人選手は計何人になったと報じられたでしょう？",
+      "options": [
+        "8人",
+        "6人",
+        "10人",
+        "12人"
+      ],
+      "answerIndex": 0,
+      "explanation": "三笘薫や遠藤航などに加え、今夏は鎌田大地、田中碧らがプレミアリーグへステップアップ。さらに守田と前田が加入したことで、日本人プレミアリーガーは計8人に拡大しました。",
+      "trivia": "この急激な日本人選手のプレミアリーグ集結に対し、韓国メディアからも「日本は狂っている」「衝撃だ」と驚きをもって報じられ、アジア内でも大きな話題となりました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "チェルシー",
+        "プレミアリーグ"
+      ],
+      "text": "2026年夏の移籍市場で、チェルシーがアストン・ヴィラから1億3800万ユーロという巨額の移籍金で獲得したイングランド人アタッカーは誰でしょう？",
+      "options": [
+        "モーガン・ロジャーズ",
+        "オリー・ワトキンス",
+        "ジェイコブ・ラムジー",
+        "コール・パーマー"
+      ],
+      "answerIndex": 0,
+      "explanation": "チェルシーはアストン・ヴィラからモーガン・ロジャーズを獲得し、この夏の大型補強の目玉としました。移籍金は1億3800万ユーロと報じられています。",
+      "trivia": "ロジャーズはウェスト・ブロムウィッチの下部組織出身で、かつてマンチェスター・シティにも在籍していました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "トッテナム",
+        "プレミアリーグ"
+      ],
+      "text": "2026年夏の移籍市場で、トッテナムが1億800万ユーロを費やして獲得したイタリア代表MFは誰でしょう？",
+      "options": [
+        "サンドロ・トナーリ",
+        "ニコロ・バレッラ",
+        "マヌエル・ロカテッリ",
+        "ダヴィデ・フラッテージ"
+      ],
+      "answerIndex": 0,
+      "explanation": "トッテナムは中盤の補強としてサンドロ・トナーリを1億800万ユーロで獲得しました。",
+      "trivia": "トッテナムは2026年の夏、他にもマテウス・フェルナンデスなどを獲得し、総額2億ユーロを超える大型補強を敢行しています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "レアル・マドリード",
+        "ラ・リーガ"
+      ],
+      "text": "2026年7月、RBライプツィヒからレアル・マドリードへ移籍金1億ユーロで合意に達したと報じられた、19歳のコートジボワール代表ウィンガーは誰でしょう？",
+      "options": [
+        "ヤン・ディオマンデ",
+        "アマド・ディアロ",
+        "シモン・アディングラ",
+        "ウスマン・ディオマンデ"
+      ],
+      "answerIndex": 0,
+      "explanation": "海外メディアの報道によると、レアル・マドリードはRBライプツィヒに所属する19歳のコートジボワール代表WGヤン・ディオマンデの獲得で合意しました。",
+      "trivia": "ライプツィヒは前年の夏に彼を約2000万ユーロで獲得しており、わずか1年で大幅な売却益を得ることになります。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "アーセナル",
+        "プレミアリーグ"
+      ],
+      "text": "2026年7月、ピエロ・インカピエらと共にアーセナルへの完全移籍が発表された、元リーズ・ユナイテッドのフランス人GKは誰でしょう？",
+      "options": [
+        "イラン・メリエ",
+        "アルバン・ラフォン",
+        "マイク・メニャン",
+        "イラン・キャブラー"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルはリーズ・ユナイテッドからフリートランスファーでGKイラン・メリエを獲得しました。同じくレバークーゼンからはDFインカピエも獲得しています。",
+      "trivia": "メリエは2019年にロリアンからリーズへ移籍して以来、長きにわたってイングランドでプレーを続けています。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "マンチェスター・シティ",
+        "プレミアリーグ"
+      ],
+      "text": "2026年夏の移籍市場で、マンチェスター・シティがノッティンガム・フォレストから1億1600万ポンドで獲得したイングランド人MFは誰でしょう？",
+      "options": [
+        "エリオット・アンダーソン",
+        "ライアン・イェーツ",
+        "モーガン・ギブス＝ホワイト",
+        "カラム・ハドソン＝オドイ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティは中盤の強化として、ノッティンガム・フォレストからエリオット・アンダーソンを1億1600万ポンド（約1億3500万ユーロ）で獲得しました。",
+      "trivia": "エリオット・アンダーソンはニューカッスルの下部組織出身で、かつては「ジョーディのマラドーナ」とも呼ばれていました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "前田大然",
+        "移籍",
+        "イプスウィッチ",
+        "プレミアリーグ"
+      ],
+      "text": "2026年7月25日、セルティックからイングランド・プレミアリーグの昇格組であるイプスウィッチへの完全移籍が発表された日本代表FWは誰でしょうか？",
+      "options": [
+        "前田大然",
+        "古橋亨梧",
+        "上田綺世",
+        "浅野拓磨"
+      ],
+      "answerIndex": 0,
+      "explanation": "前田大然はセルティックで通算212試合79得点という成績を残し、約1000万ポンドの移籍金で念願のプレミアリーグ挑戦を果たしました。",
+      "trivia": "イプスウィッチにとって、前田大然はクラブ史上初めて所属する日本人選手となります。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "守田英正",
+        "移籍",
+        "プレミアリーグ"
+      ],
+      "text": "2026年7月26日、ポルトガルのスポルティングからイングランド・プレミアリーグへの移籍が報じられた日本代表MF守田英正。彼の新天地となったクラブはどこでしょうか？",
+      "options": [
+        "ハル・シティ",
+        "フラム",
+        "サウサンプトン",
+        "レスター・シティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "守田英正はスポルティングでの活躍が評価され、プレミアリーグのハル・シティへ移籍しました。クラブは日本の国旗を連想させる特別な演出で加入を発表しました。",
+      "trivia": "ハル・シティは「タイガース」という愛称で知られ、エンブレムにも虎の顔がデザインされているクラブです。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "古橋亨梧",
+        "移籍",
+        "LAギャラクシー",
+        "MLS"
+      ],
+      "text": "2026年7月22日、FW古橋亨梧がアメリカのMLSに所属するLAギャラクシーへ移籍することが発表されました。彼が加入した時点（2026年7月）で、同クラブに所属している日本人選手の組み合わせとして正しいものはどれでしょうか？",
+      "options": [
+        "吉田麻也と山根視来",
+        "久保裕也と遠藤航",
+        "吉田麻也と川島永嗣",
+        "山根視来と酒井宏樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "LAギャラクシーには、元日本代表の吉田麻也と山根視来が既に在籍しており、古橋の加入により日本人選手が3人所属することになりました。",
+      "trivia": "LAギャラクシーは、かつてデビッド・ベッカムやズラタン・イブラヒモビッチなどの世界的なスター選手が所属していたことで知られるMLSの強豪です。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "サマーフィル",
+        "移籍",
+        "アル・ヒラル",
+        "サウジアラビア"
+      ],
+      "text": "2026年7月24日、ウェストハムに所属するオランダ代表FWが約131億円の移籍金でサウジアラビアのアル・ヒラルへ移籍することが報じられました。2026年のワールドカップ日本戦で初ゴールを挙げたことでも話題になったこの選手は誰でしょうか？",
+      "options": [
+        "サマーフィル",
+        "ハクポ",
+        "マレン",
+        "ベルフワイン"
+      ],
+      "answerIndex": 0,
+      "explanation": "オランダ代表FWクリセンシオ・サマーフィルは、イタリアのローマなどとの争奪戦の末、サウジアラビアの強豪アル・ヒラルへの高額移籍が決定しました。",
+      "trivia": "サマーフィルはイングランドのリーズやウェストハムでの活躍を経て、24歳の若さでサウジアラビアへ渡る決断を下しました。",
+      "referenceDate": "2026-07-27",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-07-27",
+        "expiryDate": "2026-08-03",
+        "season": "2025-26"
+      }
+    }
+  ]
+}
