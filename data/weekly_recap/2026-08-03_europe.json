@@ -1,0 +1,1048 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-08-02T22:09:12Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-08-03",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "バイエルン",
+        "プレシーズン",
+        "大勝",
+        "親善試合"
+      ],
+      "text": "2026年7月30日に行われたプレシーズンマッチで、バイエルン・ミュンヘンは地元アマチュアクラブのFCロッタッハ＝エーゲルンと対戦し大勝しました。この試合のスコアは次のうちどれでしょう？",
+      "options": [
+        "15-0",
+        "10-0",
+        "22-0",
+        "8-1"
+      ],
+      "answerIndex": 0,
+      "explanation": "バイエルンはテーゲルンゼーでの合宿の締めくくりとしてロッタッハ＝エーゲルンと対戦し、15-0で圧勝しました。",
+      "trivia": "バイエルンは過去のプレシーズンでも同クラブとたびたび対戦しており、2023年には27-0という記録的なスコアで勝利したこともあります。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-30",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "アーセナル",
+        "ジローナ",
+        "プレシーズン",
+        "親善試合"
+      ],
+      "text": "2026年8月1日に行われたプレシーズンマッチで、アーセナルはスペインのジローナと対戦し4-1で勝利しました。この試合が行われた場所はどこでしょう？",
+      "options": [
+        "ジローナ（スペイン）",
+        "ロンドン（イギリス）",
+        "ロサンゼルス（アメリカ）",
+        "ドバイ（UAE）"
+      ],
+      "answerIndex": 0,
+      "explanation": "この試合はスペインにあるジローナのホームスタジアム、エスタディ・モンティリビで行われ、アウェイに乗り込んだアーセナルが4-1で勝利を収めました。",
+      "trivia": "ジローナは近年ラ・リーガで躍進を遂げており、プレシーズンから欧州トップクラスの強豪クラブとのマッチメイクが組まれるようになっています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チェルシー",
+        "トッテナム",
+        "プレシーズン",
+        "ロンドン・ダービー"
+      ],
+      "text": "2026年8月1日、オーストラリアのシドニーで行われたチェルシーとトッテナム・ホットスパーによるロンドン・ダービーのプレシーズンマッチの勝敗はどうなったでしょう？",
+      "options": [
+        "トッテナムが2-1で勝利した",
+        "チェルシーが2-1で勝利した",
+        "トッテナムが3-0で勝利した",
+        "0-0の引き分けに終わった"
+      ],
+      "answerIndex": 0,
+      "explanation": "シドニーで開催された注目のロンドン・ダービーは、トッテナムがチェルシーを2-1で下して勝利を飾りました。",
+      "trivia": "プレシーズンマッチとはいえ、海を越えたオーストラリアでのダービーマッチには熱狂的な地元ファンが多数詰めかけ、スタジアムは大いに盛り上がりました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "マンチェスター・ユナイテッド",
+        "アトレティコ・マドリード",
+        "スナップドラゴン・カップ",
+        "プレシーズン"
+      ],
+      "text": "2026年8月1日にスウェーデンのストックホルムで開催された「スナップドラゴン・カップ」で、マンチェスター・ユナイテッドはアトレティコ・マドリードに何対何で勝利したでしょう？",
+      "options": [
+        "2-1",
+        "1-0",
+        "3-1",
+        "0-0（PK戦で勝利）"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・ユナイテッドは先制を許したものの後半に2ゴールを挙げて逆転し、アトレティコ・マドリードに2-1で勝利しました。",
+      "trivia": "ストックホルムのフレンズ・アレーナで行われたこの試合では、両チームともに新加入選手や若手有望株を多数起用し、充実したテストマッチとなりました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "マンチェスター・シティ",
+        "インテル",
+        "PK戦",
+        "プレシーズン"
+      ],
+      "text": "2026年8月1日に香港で行われたマンチェスター・シティとインテルのプレシーズンマッチは、1-1の同点の末にPK戦となりました。PK戦を制したチームとそのスコアはどれでしょう？",
+      "options": [
+        "インテルが3-1で勝利",
+        "シティが4-3で勝利",
+        "インテルが5-4で勝利",
+        "シティが3-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合はシティのディヴィン・ムバマとインテルのバンジャマン・パヴァールのゴールで1-1で引き分け、その後のPK戦をインテルが3-1で制しました。",
+      "trivia": "香港の啓徳（カイタク）スポーツパークで行われたこの一戦は、2023年のチャンピオンズリーグ決勝と同じカードとして現地ファンから大きな注目を集めました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "レアル・マドリード",
+        "フィオレンティーナ",
+        "エンドリッキ",
+        "プレシーズン"
+      ],
+      "text": "2026年8月1日にオーストリアで行われたレアル・マドリード対フィオレンティーナの親善試合（2-2）で、レアル・マドリードの先制点を挙げたブラジル人若手FWは誰でしょう？",
+      "options": [
+        "エンドリッキ",
+        "ロドリゴ",
+        "ヴィニシウス・ジュニオール",
+        "ハビエル・シルバ"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合開始12分、マルク・カレーラスからのクロスを受けたエンドリッキが2タッチで巧みにシュートを決め、レアル・マドリードに先制点をもたらしました。",
+      "trivia": "この試合では新加入のデンゼル・ダンフリースやカルロス・エスピといった選手たちも出場し、新しいシーズンに向けた戦力の顔見せが行われました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "CL予選",
+        "オーフスGF",
+        "PK戦"
+      ],
+      "text": "2026年7月29日に行われたUEFAチャンピオンズリーグ予選2回戦、オーフスGF（デンマーク）対レフ・ポズナン（ポーランド）の第2戦は、2戦合計スコアが5-5となりました。決着はどうやってついたでしょう？",
+      "options": [
+        "PK戦の末にオーフスGFが勝利した",
+        "延長戦の末にレフ・ポズナンが勝利した",
+        "PK戦の末にレフ・ポズナンが勝利した",
+        "アウェイゴールルールでオーフスGFが勝利した"
+      ],
+      "answerIndex": 0,
+      "explanation": "2戦合計5-5と白熱したこの対戦はPK戦にもつれ込み、デンマークのオーフスGFがポーランドのレフ・ポズナンを退けて予選3回戦へ進出しました。",
+      "trivia": "近年のUEFA主催大会ではアウェイゴールルールが廃止されているため、2戦合計スコアが同点の場合は無条件で延長戦およびPK戦が行われます。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-29",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "アストン・ヴィラ",
+        "アジアツアー",
+        "プレシーズン",
+        "プレミアリーグ"
+      ],
+      "text": "2026年8月1日、アストン・ヴィラはアジアツアーの一環としてジャカルタでインドネシア・オールスターズと対戦しました。この試合のスコアはどうなったでしょう？",
+      "options": [
+        "アストン・ヴィラが3-1で勝利",
+        "アストン・ヴィラが5-0で勝利",
+        "2-2の引き分け",
+        "インドネシアが2-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラはジャカルタで開催されたこのプレシーズンマッチで、インドネシア・オールスターズを相手に3-1で順当に勝利を収めました。",
+      "trivia": "プレミアリーグの各クラブは夏の期間を利用して世界中に赴き、アジアやアメリカのファン層拡大を目指す大規模なツアーを毎年行っています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "マンチェスター・ユナイテッド",
+        "ブライアン・ムベウモ",
+        "プレシーズン"
+      ],
+      "text": "2026年8月1日に行われたマンチェスター・ユナイテッド対アトレティコ・マドリードのプレシーズンマッチ（2-1）で、ユナイテッドの全2ゴールを挙げた選手は誰でしょう？",
+      "options": [
+        "ブライアン・ムベウモ",
+        "マーカス・ラッシュフォード",
+        "アレハンドロ・ガルナチョ",
+        "ラスムス・ホイルンド"
+      ],
+      "answerIndex": 0,
+      "explanation": "スウェーデンで行われたこの試合では、ブレントフォードでの活躍が光っていたブライアン・ムベウモが後半に2ゴールを奪い、逆転勝利の立役者となりました。",
+      "trivia": "この試合で確かな得点力を発揮したムベウモは、マイケル・キャリック監督の敷く新しい戦術への高い適応力を見せつけました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "フィオレンティーナ",
+        "モイーズ・キーン",
+        "プレシーズン",
+        "レアル・マドリード"
+      ],
+      "text": "2026年8月1日に行われたレアル・マドリード対フィオレンティーナの親善試合（2-2）で、後半にピッチに立ってからわずか2分で同点ゴール（2点目）を決めたフィオレンティーナの選手は誰でしょう？",
+      "options": [
+        "モイーズ・キーン",
+        "ロベルト・ピッコリ",
+        "クリスティアン・クアメ",
+        "ニコラス・ゴンサレス"
+      ],
+      "answerIndex": 0,
+      "explanation": "ベンチから途中出場したモイーズ・キーンは、ピッチに入ってわずか約120秒後の58分にヘディングで同点ゴールを決め、試合を振り出しに戻しました。",
+      "trivia": "フィオレンティーナは前半だけで2点のビハインドを背負いましたが、ピッコリとキーンのゴールで見事に同点に追いつき、イタリアのクラブとしての粘りを見せました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "アーセナル",
+        "プレシーズン",
+        "ジローナ"
+      ],
+      "text": "2026年8月1日に行われたプレシーズンマッチで、アーセナルはジローナと対戦しました。この試合のスコアとして正しいものはどれでしょう？",
+      "options": [
+        "アーセナルが4-1で勝利",
+        "アーセナルが3-0で勝利",
+        "2-2の引き分け",
+        "ジローナが1-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは2026年8月1日に行われたジローナとのプレシーズンマッチで、4-1の快勝を収めました。",
+      "trivia": "プレシーズンマッチ序盤から若手選手を含むメンバーが躍動し、2026-27シーズン開幕に向けて順調な仕上がりを見せています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "リーグスカップ",
+        "MLS",
+        "リーガMX"
+      ],
+      "text": "2026年8月初旬に開幕した「リーグスカップ2026」に出場する、メジャーリーグサッカー（MLS）のチーム数は次のうちどれでしょう？",
+      "options": [
+        "18チーム",
+        "29チーム",
+        "30チーム",
+        "36チーム"
+      ],
+      "answerIndex": 0,
+      "explanation": "今大会はMLSから18クラブ、メキシコのリーガMXから18クラブの計36クラブで争われます。一部のMLSクラブはUSオープンカップなどの日程を考慮し不参加となっています。",
+      "trivia": "リーグスカップの上位3クラブには、翌年のコンカカフ・チャンピオンズカップへの出場権が与えられます。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "エヴァートン",
+        "プレシーズン",
+        "ハンブルガーSV"
+      ],
+      "text": "2026年8月1日のプレシーズンマッチで、エヴァートンはハンブルガーSVに2-1で勝利しました。決勝点となった後半アディショナルタイム（94分）の得点はどのような形だったでしょうか？",
+      "options": [
+        "相手のオウンゴール",
+        "PK（ペナルティキック）",
+        "直接フリーキック",
+        "コーナーキックからのヘディング"
+      ],
+      "answerIndex": 0,
+      "explanation": "エヴァートンはヨルダン・トルナリガの94分のオウンゴールにより、劇的な形で2-1の勝利を収めました。",
+      "trivia": "エヴァートンは前半にメルリン・ロールのゴールで先制しましたが、後半早々に元レスターのパトソン・ダカに同点ゴールを許す展開でした。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "UCL",
+        "予選",
+        "スロヴァン・ブラチスラヴァ"
+      ],
+      "text": "2026年7月末に行われたUEFAチャンピオンズリーグ2026-27シーズンの予選2回戦で、FCイベリア1999を2戦合計3-1で下し、予選3回戦へ駒を進めたクラブはどこでしょう？",
+      "options": [
+        "スロヴァン・ブラチスラヴァ",
+        "フェネルバフチェ",
+        "KRCヘンク",
+        "アポエルFC"
+      ],
+      "answerIndex": 0,
+      "explanation": "スロバキア王者のスロヴァン・ブラチスラヴァが、ジョージアのイベリア1999との第2戦を1-1で引き分け、2戦合計3-1で予選3回戦への進出を決めました。",
+      "trivia": "2026-27シーズンのUEFAチャンピオンズリーグ決勝は、スペイン・マドリードの「エスタディオ・メトロポリターノ」で開催される予定です。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-29",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "マンチェスター・ユナイテッド",
+        "プレシーズン",
+        "スナップドラゴン・カップ"
+      ],
+      "text": "2026年8月1日、マンチェスター・ユナイテッドは「スナップドラゴン・カップ」としてプレシーズンマッチを行いました。この試合の対戦相手と開催地の正しい組み合わせはどれでしょう？",
+      "options": [
+        "アトレティコ・マドリード（ストックホルム）",
+        "パリ・サンジェルマン（ヨーテボリ）",
+        "リーズ・ユナイテッド（ダブリン）",
+        "ACミラン（ヴロツワフ）"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・ユナイテッドは8月1日にスウェーデンのストックホルムでアトレティコ・マドリードと対戦しました。なお、他の選択肢も同月に予定されているツアーの対戦カードです。",
+      "trivia": "この北欧ツアーの後、ユナイテッドはダブリン（アイルランド）やヴロツワフ（ポーランド）など欧州各地を巡りながら新シーズンへの最終調整を行います。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "uel",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "UEL",
+        "ヨーロッパリーグ",
+        "抽選会"
+      ],
+      "text": "2026年8月3日、スイスのニヨンで行われたUEFA主催大会の重要な行事とは次のうちどれでしょう？",
+      "options": [
+        "ヨーロッパリーグのプレーオフ抽選会",
+        "チャンピオンズリーグのリーグフェーズ抽選会",
+        "UEFAスーパーカップの開催地発表",
+        "カンファレンスリーグの予選1回戦抽選会"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026-27シーズンのUEFAヨーロッパリーグ（およびチャンピオンズリーグ）本戦出場を懸けた、プレーオフの組み合わせ抽選会が8月3日に実施されました。",
+      "trivia": "プレーオフを勝ち抜いたチームは、直接出場権を得ているチームやCLプレーオフ敗退組などと共に、フォーマットが一新されたリーグフェーズに参戦します。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-03",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "前田大然",
+        "イプスウィッチ",
+        "プレミアリーグ",
+        "移籍"
+      ],
+      "text": "2026年7月25日、日本代表FW前田大然がセルティックから完全移籍で加入することが発表された、今季からイングランド・プレミアリーグに昇格するクラブはどこ？",
+      "options": [
+        "イプスウィッチ・タウン",
+        "ハル・シティ",
+        "サウサンプトン",
+        "レスター・シティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "前田はクラブ史上初の日本人選手として、2029年夏までの3年契約でイプスウィッチ・タウンに加入しました。",
+      "trivia": "クラブが公開した加入ムービーの最後に登場した前田の名前のフォントが可愛らしい「丸ゴシック体」で、カッコいい動画とのギャップが日本のファンの間で話題になりました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "板倉滉",
+        "川口春奈",
+        "結婚",
+        "日本代表"
+      ],
+      "text": "2026年8月2日、SNSを通じて俳優・川口春奈との結婚と、第1子の妊娠を発表したサッカー日本代表DFは誰？",
+      "options": [
+        "板倉滉",
+        "冨安健洋",
+        "菅原由勢",
+        "伊藤洋輝"
+      ],
+      "answerIndex": 0,
+      "explanation": "W杯北中米大会で日本代表の主将も務めた板倉滉が、俳優の川口春奈と連名で直筆署名入りの書面を公開し、結婚を報告しました。",
+      "trivia": "発表の際に公開された板倉の直筆署名を見たファンやチームメイトからは「字が綺麗で誠実な人柄が表れている」と絶賛の声が上がりました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "プレミアリーグ",
+        "海外日本人選手",
+        "移籍",
+        "2026-27シーズン"
+      ],
+      "text": "2026年7月末時点での前田大然のイプスウィッチ加入や守田英正の移籍などにより、2026-27シーズンのイングランド・プレミアリーグでプレーする日本人選手は一気に何人となる見込みと報じられた？",
+      "options": [
+        "8人",
+        "5人",
+        "10人",
+        "12人"
+      ],
+      "answerIndex": 0,
+      "explanation": "遠藤航、三笘薫、鎌田大地、田中碧、高井幸大、坂元達裕に加え、前田と守田が加入したことで、過去最多の8人体制となる見込みです。",
+      "trivia": "アジアのライバルである韓国のメディアは、この状況を「サムライの黄金時代」と呼び、自国の選手がゼロになる可能性があることと対比して驚きをもって報じました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "古橋亨梧",
+        "LAギャラクシー",
+        "山根視来",
+        "MLS"
+      ],
+      "text": "2026年7月にFW古橋亨梧がアメリカMLSのLAギャラクシーに加入し、8月にはデビューを飾りました。同クラブには古橋を含めて3人の日本人選手が所属することになりましたが、吉田麻也ともう1人は誰？",
+      "options": [
+        "山根視来",
+        "昌子源",
+        "酒井宏樹",
+        "谷口彰悟"
+      ],
+      "answerIndex": 0,
+      "explanation": "LAギャラクシーには、2022年のカタールW杯メンバーでもある吉田麻也と山根視来が在籍しており、古橋は彼らとチームメイトになります。",
+      "trivia": "古橋は2026年8月1日のFCダラス戦で途中出場し、加入後すぐにMLSデビューを果たしました。試合は0-0のスコアレスドローでした。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "守田英正",
+        "ハル・シティ",
+        "プレミアリーグ",
+        "移籍"
+      ],
+      "text": "2026年7月24日、ポルトガルのスポルティングを退団した日本代表MF守田英正が2年契約で完全移籍した、9年ぶりのプレミアリーグ復帰を果たしたクラブはどこ？",
+      "options": [
+        "ハル・シティ",
+        "コベントリー・シティ",
+        "シェフィールド・ユナイテッド",
+        "ノッティンガム・フォレスト"
+      ],
+      "answerIndex": 0,
+      "explanation": "守田は4シーズン在籍し2度のリーグ優勝に貢献したスポルティングを離れ、プレミアリーグ昇格組のハル・シティへ加入しました。",
+      "trivia": "同じくプレミアリーグに昇格したイプスウィッチ・タウンも守田の獲得に関心を示していましたが、最終的にハル・シティが争奪戦を制したと報じられています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "日本代表",
+        "守田英正"
+      ],
+      "text": "2026年夏の移籍市場で、日本代表MFの守田英正が完全移籍したイングランドのクラブはどこ？",
+      "options": [
+        "ハル・シティ",
+        "イプスウィッチ・タウン",
+        "ブレントフォード",
+        "フラム"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年夏の移籍市場で、ポルトガルのスポルティングCPからイングランドのハル・シティへの完全移籍が決定しました。ワールドカップ後、新たな環境でのさらなる活躍が期待されています。",
+      "trivia": "ハル・シティの愛称は「タイガース」で、クラブのエンブレムにもトラが描かれています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "チェルシー",
+        "プレミアリーグ",
+        "ダニー・ウェルベック"
+      ],
+      "text": "2026年8月1日、チェルシーがブライトンから移籍金500万ポンドで獲得した35歳のベテランFWは誰？",
+      "options": [
+        "ダニー・ウェルベック",
+        "カラム・ウィルソン",
+        "ドミニク・キャルバート＝ルーウィン",
+        "ジェイミー・ヴァーディ"
+      ],
+      "answerIndex": 0,
+      "explanation": "チェルシーはブライトンからダニー・ウェルベックを移籍金500万ポンドの2年契約で獲得したと発表しました。前線の経験値不足を補うためのベテラン補強と見られています。",
+      "trivia": "ウェルベックはかつてマンチェスター・ユナイテッドやアーセナルといったプレミアリーグの強豪クラブでもプレーしていました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "レアル・マドリード",
+        "ラ・リーガ"
+      ],
+      "text": "2026年7月30日、レアル・マドリードが契約解除金を支払い、レバンテから獲得した21歳のFWは誰？",
+      "options": [
+        "カルロス・エスピ",
+        "セサル・パラシオス",
+        "ゴンサロ・ガルシア",
+        "ファクンド・マスタントゥオーノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリードは、昨季に11ゴールを挙げてブレイクしたレバンテのカルロス・エスピを2500万ユーロで獲得しました。5年契約を結び、今後の前線を担う若手として期待されています。",
+      "trivia": "この夏レアル・マドリードからは、セサル・パラシオスとゴンサロ・ガルシアの若手2選手がプレミアリーグのフラムへ移籍しています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "バルセロナ",
+        "ラ・リーガ"
+      ],
+      "text": "2026年7月31日にバルセロナがクラブ・ブルージュから850万ユーロで獲得した18歳のウインガーは誰？",
+      "options": [
+        "ジェシー・ビシウ",
+        "カリム・アデイェミ",
+        "アントニー・ゴードン",
+        "ハムザ・アブデルカリム"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナはクラブ・ブルージュからベルギーの世代別代表でもあるジェシー・ビシウを獲得しました。移籍金は850万ユーロと報じられており、まずはBチームでのプレーからスタートする予定です。",
+      "trivia": "バルセロナはこの夏、アントニー・ゴードンやカリム・アデイェミなどを獲得し、前線の補強を積極的に進めています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "日本人選手",
+        "ブンデスリーガ"
+      ],
+      "text": "2026年夏の移籍市場で、日本人選手の後藤啓介と山本理仁が揃って完全移籍したブンデスリーガのクラブはどこ？",
+      "options": [
+        "フライブルク",
+        "マインツ",
+        "アウクスブルク",
+        "ウニオン・ベルリン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年夏、アンデルレヒトでプレーしていたFW後藤啓介と、シント＝トロイデンでプレーしていたMF山本理仁がともにフライブルクへ完全移籍しました。若き日本人コンビが同じクラブでプレーすることになります。",
+      "trivia": "フライブルクは過去から多くの日本人選手が在籍しており、日本のサッカーファンにとって馴染み深いクラブの一つとして知られています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "移籍情報",
+        "日本代表",
+        "橋岡大樹",
+        "ボルシアMG"
+      ],
+      "text": "2026年7月30日、チェコ1部のスラヴィア・プラハから、ドイツ・ブンデスリーガのクラブへの期限付き移籍が発表された日本代表DFは誰でしょう？",
+      "options": [
+        "橋岡大樹",
+        "菅原由勢",
+        "板倉滉",
+        "冨安健洋"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月30日、日本代表DF橋岡大樹がチェコ1部のスラヴィア・プラハからドイツ1部のボルシアMGに買取オプション付きの期限付き移籍をすることが発表されました。背番号は「14」に決定しています。",
+      "trivia": "橋岡大樹にとって海外挑戦はベルギー（シントトロイデン）、イングランド（ルートン・タウン）、チェコ（スラヴィア・プラハ）に次いでドイツが4カ国目となります。持ち前の対人の強さとハードワークが評価され、ブンデスリーガでの活躍が期待されています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "マンチェスター・シティ",
+        "プレシーズンマッチ",
+        "インテル",
+        "マレスカ"
+      ],
+      "text": "2026年8月1日に香港で行われたプレシーズンマッチで、エンツォ・マレスカ新監督の初陣となったマンチェスター・シティと対戦し、1-1からのPK戦の末に勝利を収めたクラブはどこでしょう？",
+      "options": [
+        "インテル",
+        "ACミラン",
+        "ユヴェントス",
+        "ASローマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "香港で行われたプレシーズンマッチで、マンチェスター・シティとインテルが激突しました。試合はムバマとパヴァールのゴールで1-1で90分を終え、PK戦を3-1で制したインテルが勝利しました。",
+      "trivia": "マンチェスター・シティのエンツォ・マレスカ新監督は、直近までチェルシーなどを率いていました。初陣となったこの試合では、新加入の若手FWディヴィン・ムバマが先制点を挙げるなど、新戦力のアピールも見られました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "監督退任",
+        "コートジボワール代表",
+        "ファエ監督",
+        "ワールドカップ"
+      ],
+      "text": "2026年7月31日付で契約満了により退任したエメルス・ファエ監督は、2026年の北中米ワールドカップでどこの国の代表チームを史上初の決勝トーナメント進出に導いたでしょう？",
+      "options": [
+        "コートジボワール",
+        "セネガル",
+        "ガーナ",
+        "カメルーン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2024年1月に暫定監督としてコートジボワール代表の指揮を執り、同年のアフリカネイションズカップで優勝に導いたファエ監督は、2026年W杯でも同国を史上初の決勝トーナメント進出に導きました。",
+      "trivia": "エメルス・ファエ氏は現役時代もコートジボワール代表として通算41キャップを記録したレジェンドです。暫定監督就任直後に見事アフリカ王者に輝いた手腕は世界中から称賛されましたが、契約更新には至りませんでした。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "プレミアリーグ",
+        "ニューカッスル",
+        "監督辞任",
+        "エディ・ハウ"
+      ],
+      "text": "2026年7月末、約5年近くにわたって指揮を執ったものの自ら辞任を発表したことが報じられた、イングランド・プレミアリーグのクラブ「ニューカッスル・ユナイテッド」の監督は誰でしょう？",
+      "options": [
+        "エディ・ハウ",
+        "スティーブ・ブルース",
+        "ギャリー・モンク",
+        "グレアム・ポッター"
+      ],
+      "answerIndex": 0,
+      "explanation": "2021年秋にニューカッスル・ユナイテッドの監督に就任し、チームをチャンピオンズリーグ出場に導くなど確かな手腕を発揮したエディ・ハウ監督ですが、2026年7月末に自ら幕を下ろす決断を下しました。",
+      "trivia": "ニューカッスルがサウジアラビアの政府系ファンドに買収された直後の難しい時期に就任したエディ・ハウ監督は、派手な補強に頼るだけでなく、既存戦力のポテンシャルを引き出す緻密な指導で高い評価を得ていました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

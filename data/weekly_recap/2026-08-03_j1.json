@@ -1,0 +1,1036 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-08-02T22:03:28Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-08-03",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "セレッソ大阪",
+        "ドルトムント",
+        "国際親善試合"
+      ],
+      "text": "2026年7月29日に行われた国際親善試合「セレッソ大阪 vs ボルシア・ドルトムント」の試合結果はどうなった？",
+      "options": [
+        "セレッソ大阪が1-0で勝利",
+        "ドルトムントが1-0で勝利",
+        "1-1の引き分け",
+        "セレッソ大阪が2-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "セレッソ大阪が前半8分に奪った1点を最後まで守り切り、1-0で強豪ドルトムントから金星を挙げました。",
+      "trivia": "この試合では、かつてドルトムントで活躍した香川真司が古巣と対戦したことでも大きな注目を集めました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-29",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC東京",
+        "ドルトムント",
+        "国際親善試合"
+      ],
+      "text": "2026年8月1日に行われた国際親善試合「FC東京 vs ボルシア・ドルトムント」の試合会場はどこだった？",
+      "options": [
+        "MUFGスタジアム（国立競技場）",
+        "味の素スタジアム",
+        "日産スタジアム",
+        "埼玉スタジアム2002"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジャパンツアー第2戦となるこの試合は、東京のMUFGスタジアム（国立競技場）で開催されました。",
+      "trivia": "FC東京には室屋成などドイツでのプレー経験を持つ選手が在籍しており、ドイツの強豪との対戦が注目されていました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "浦和レッズ",
+        "RB大宮アルディージャ",
+        "さいたまダービー"
+      ],
+      "text": "2026年8月1日にプレシーズンマッチで浦和レッズと対戦した、新体制となったライバルクラブの名前は？",
+      "options": [
+        "RB大宮アルディージャ",
+        "大宮アルディージャ",
+        "レッドブルさいたま",
+        "大宮レッドブルズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "レッドブルグループの買収により新体制となった「RB大宮アルディージャ」と浦和レッズが対戦し、2-2の引き分けに終わりました。",
+      "trivia": "両チームによる「さいたまダービー」が開催されたのは約9年ぶりでした。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ちばぎんカップ",
+        "ジェフユナイテッド千葉",
+        "柏レイソル"
+      ],
+      "text": "2026年8月1日に開催された「2026/27 Jリーグプレシーズンマッチ 第31回ちばぎんカップ」の対戦カードはどれ？",
+      "options": [
+        "ジェフユナイテッド千葉 vs 柏レイソル",
+        "柏レイソル vs 浦和レッズ",
+        "ジェフユナイテッド千葉 vs FC東京",
+        "柏レイソル vs RB大宮アルディージャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "千葉県をホームタウンとするジェフユナイテッド千葉と柏レイソルが対戦する「ちばぎんカップ」が、2026/27シーズン開幕前の8月1日に開催されました。",
+      "trivia": "この大会は1995年から始まった歴史あるプレシーズンマッチで、千葉銀行が冠スポンサーを務めています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "セレッソ大阪",
+        "ドルトムント",
+        "櫻川ソロモン"
+      ],
+      "text": "2026年7月29日の国際親善試合「セレッソ大阪 vs ボルシア・ドルトムント」で、前半8分に決勝ゴールを決めたセレッソ大阪の選手は誰？",
+      "options": [
+        "櫻川ソロモン",
+        "香川真司",
+        "チアゴ・アンドラーデ",
+        "レオ・セアラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "櫻川ソロモンが前半8分にゴールネットを揺らし、これが決勝点となってセレッソ大阪が勝利しました。",
+      "trivia": "試合後にはこの試合のために用意された特別仕様のユニフォームがオークションに出品され、話題を呼びました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-07-29",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC東京",
+        "ドルトムント",
+        "ハプニング"
+      ],
+      "text": "2026年8月1日の国際親善試合「FC東京 vs ボルシア・ドルトムント」で、前半34分頃に試合が一時中断となりました。その理由は何？",
+      "options": [
+        "会場周辺で雷警報が発令されたため",
+        "観客がピッチに乱入したため",
+        "スタジアムの照明が停電したため",
+        "大雨によりピッチが冠水したため"
+      ],
+      "answerIndex": 0,
+      "explanation": "大雨のなか行われたこの試合は、前半34分頃に雷警報が発令されたため、安全を考慮して一時中断となるハプニングがありました。",
+      "trivia": "試合は再開されたものの、FC東京は後半に失点し0-1で敗れる結果となりました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "浦和レッズ",
+        "RB大宮アルディージャ",
+        "さいたまダービー"
+      ],
+      "text": "2026年8月1日に行われた「浦和レッズ vs RB大宮アルディージャ」の”さいたまダービー”は、およそ何年ぶりの開催だった？",
+      "options": [
+        "約9年ぶり",
+        "約5年ぶり",
+        "約12年ぶり",
+        "約3年ぶり"
+      ],
+      "answerIndex": 0,
+      "explanation": "両チームによるさいたまダービーは、約9年ぶりの開催となり、2-2の引き分けで痛み分けとなりました。",
+      "trivia": "両クラブの初の公式戦対戦は2000年。当時は「さいたま市」がまだ誕生しておらず、「埼玉ダービー」と呼ばれていました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "サンフレッチェ広島",
+        "テゲバジャーロ宮崎",
+        "トレーニングマッチ"
+      ],
+      "text": "2026年8月1日に行われた「サンフレッチェ広島 vs テゲバジャーロ宮崎」のトレーニングマッチ（135分）のトータルスコアはどうなった？",
+      "options": [
+        "サンフレッチェ広島が3-1で勝利",
+        "2-2の引き分け",
+        "テゲバジャーロ宮崎が2-1で勝利",
+        "サンフレッチェ広島が5-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "いちご宮崎新富サッカー場にて非公開で行われた45分×3本のトレーニングマッチは、サンフレッチェ広島がトータル3-1で勝利しました。",
+      "trivia": "テゲバジャーロ宮崎は2026-27シーズンはJ2リーグに所属しており、開幕に向けて県内でポスター配布大作戦を行うなど盛り上がりを見せています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC東京",
+        "ドルトムント",
+        "ファビオ・シウバ"
+      ],
+      "text": "2026年8月1日の国際親善試合「FC東京 vs ボルシア・ドルトムント」において、後半9分（54分）にドルトムントの決勝ゴールを決めた選手は誰？",
+      "options": [
+        "ファビオ・シウバ",
+        "マクシミリアン・バイアー",
+        "セール・ギラシ",
+        "フェリックス・ヌメチャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ファビオ・シウバがマークが甘くなった一瞬の隙を突いて強烈なシュートを叩き込み、これが決勝点となりました。",
+      "trivia": "このジャパンツアーには、ガンバ大阪からドルトムントへ期限付き移籍中の18歳の逸材、山本天翔も名を連ねていました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "浦和レッズ",
+        "RB大宮アルディージャ",
+        "さいたまダービー"
+      ],
+      "text": "2026年8月1日のプレシーズンマッチ「浦和レッズ vs RB大宮アルディージャ」の試合で、前半11分にRB大宮アルディージャの先制ゴールを決めた選手は誰？",
+      "options": [
+        "カルリーニョス ジュニオ",
+        "泉柊椰",
+        "豊川雄太",
+        "スファナット・ムエアンタ"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半11分にカルリーニョス ジュニオが先制ゴールを挙げ、その後も泉柊椰が追加点を奪いましたが、浦和が追いついてドロー決着となりました。",
+      "trivia": "この試合での浦和レッズの得点者は、前半14分の渡邊凌磨と、前半終了間際のオナイウ阿道でした。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "秋春制",
+        "スケジュール"
+      ],
+      "text": "2026年からJリーグは「秋春制」へ移行します。初の秋春制シーズンとなる「2026/27 明治安田J1リーグ」の開幕月は何月でしょうか？",
+      "options": [
+        "8月",
+        "7月",
+        "9月",
+        "10月"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026/27シーズンのJリーグは、2026年8月7日に開幕し、翌年5月に閉幕する秋春制に移行しました。",
+      "trivia": "Jリーグ創設以来続いてきた「春秋制」からの大きな転換であり、AFCチャンピオンズリーグエリートなどの国際大会とスケジュールを合わせる狙いがあります。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "ヴィッセル神戸",
+        "百年構想リーグ"
+      ],
+      "text": "秋春制移行の端境期である2026年前半に開催された特別大会「明治安田J1百年構想リーグ」で、見事優勝を果たし王者に輝いたクラブはどこでしょうか？",
+      "options": [
+        "ヴィッセル神戸",
+        "鹿島アントラーズ",
+        "サンフレッチェ広島",
+        "名古屋グランパス"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィッセル神戸はWESTグループを1位で通過し、プレーオフラウンド決勝で鹿島アントラーズを2戦合計5-2で破り優勝を果たしました。",
+      "trivia": "この特別大会の優勝クラブであるヴィッセル神戸には、賞金のほかに「AFCチャンピオンズリーグエリート2026/27」の日本代表としての出場権が与えられました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "鹿島アントラーズ",
+        "ランキング"
+      ],
+      "text": "2026年8月のJリーグ開幕直前にスポーツナビが発表した「2026-27シーズンJ1戦力ランキング」において、戦力総合評価でトップとなったクラブはどこでしょうか？",
+      "options": [
+        "鹿島アントラーズ",
+        "ヴィッセル神戸",
+        "サンフレッチェ広島",
+        "FC町田ゼルビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "スポーツナビの開幕前戦力ランキングでは、2025年のJ1王者であり「J1百年構想リーグ」のEASTグループで1位だった鹿島アントラーズが、総合91点でトップ評価を受けました。",
+      "trivia": "このランキングは「攻撃力」「守備力」「選手層」「監督力」「完成度」の5項目で評価され、鹿島は「監督力」でリーグ唯一の20点満点を獲得しました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "得点王",
+        "スタッツ"
+      ],
+      "text": "2026年2月から6月にかけて行われた特別大会「明治安田J1百年構想リーグ」で、10得点を挙げて得点王（3名タイ）に輝いた選手の一人は誰でしょうか？",
+      "options": [
+        "山岸祐也",
+        "大迫勇也",
+        "アンデルソン・ロペス",
+        "鈴木優磨"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1百年構想リーグの得点王には、10得点を挙げた山岸祐也（名古屋）、レオ・セアラ（鹿島）、谷村海那（横浜FM）の3選手が輝きました。",
+      "trivia": "この大会は地域リーグラウンドとプレーオフを含め、各クラブが短期間に試合をこなす過密日程で行われ、ストライカーの活躍がチームの浮沈を握りました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "水戸ホーリーホック",
+        "J1昇格"
+      ],
+      "text": "2026年秋春制からJ1に参戦する全20クラブのうち、前年（2025年）のJ2リーグで優勝し、クラブ史上初となるJ1昇格を果たしたチームはどこでしょうか？",
+      "options": [
+        "水戸ホーリーホック",
+        "V・ファーレン長崎",
+        "ジェフユナイテッド千葉",
+        "ファジアーノ岡山"
+      ],
+      "answerIndex": 0,
+      "explanation": "2025年のJ2リーグを制した水戸ホーリーホックは、1999年のJリーグ入会以来、悲願であった初のJ1昇格を果たしました。",
+      "trivia": "J2で四半世紀にわたり戦い続けた水戸のJ1初陣は、多くのサッカーファンから「新しい潮流の象徴」として大きな注目を集めています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "レギュレーション",
+        "百年構想リーグ"
+      ],
+      "text": "2026年前半の「明治安田J1百年構想リーグ」では特別ルールが採用されました。90分で引き分けた場合に行われる「PK戦」に勝利したチームには、勝点がいくつ与えられたでしょうか？",
+      "options": [
+        "2",
+        "3",
+        "1",
+        "0"
+      ],
+      "answerIndex": 0,
+      "explanation": "この特別大会では引き分けがなく、90分勝利で3点、PK戦勝利で2点、PK戦敗北で1点、90分敗戦で0点の勝点が与えられるレギュレーションで行われました。",
+      "trivia": "このような勝ち点方式は、過去のJリーグ創設初期などでも見られた方式で、勝敗を明確につけることでよりスリリングな展開を生み出しました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "サンフレッチェ広島",
+        "日本代表",
+        "大迫敬介"
+      ],
+      "text": "2026年7月30日、海外クラブへの移籍を前提とした手続きと準備のため、サンフレッチェ広島を離脱することが発表された日本代表GKは誰？",
+      "options": [
+        "大迫敬介",
+        "鈴木彩艶",
+        "前川黛也",
+        "谷晃生"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンフレッチェ広島は2026年7月30日、正GKとして活躍していた大迫敬介が海外移籍の準備のためチームを離脱することを発表しました。",
+      "trivia": "大迫選手は2026年の北中米ワールドカップに向けた日本代表メンバーにも選出されており、さらなる飛躍のために初の海外挑戦を決断しました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "鹿島アントラーズ",
+        "濃野公人",
+        "海外挑戦"
+      ],
+      "text": "2026年8月、鹿島アントラーズからアメリカ・MLSのD.C.ユナイテッドへの完全移籍に向けてクラブを離れ、自身のSNSで別れの挨拶を投稿した右サイドバックの選手は誰？",
+      "options": [
+        "濃野公人",
+        "毎熊晟矢",
+        "菅原由勢",
+        "半田陸"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズで活躍したDF濃野公人は、2026年夏にMLSのD.C.ユナイテッドへの完全移籍が決定。8月2日には自身のSNSで鹿島への感謝の思いを綴りました。",
+      "trivia": "24歳で海を渡る決断をした濃野に対し、元チームメートである鈴木優磨らからもSNSで熱いエールが送られ話題となりました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "RB大宮アルディージャ",
+        "神田泰斗",
+        "レッドブルグループ"
+      ],
+      "text": "2026年7月31日、RB大宮アルディージャからドイツのRBライプツィヒU19へ期限付き移籍することが発表された18歳のMFは誰？",
+      "options": [
+        "神田泰斗",
+        "後藤啓介",
+        "福田師王",
+        "高岡伶颯"
+      ],
+      "answerIndex": 0,
+      "explanation": "RB大宮アルディージャは2026年7月31日、MF神田泰斗が同じレッドブルグループ傘下であるRBライプツィヒのU19チームへ期限付き移籍することを発表しました。",
+      "trivia": "レッドブルグループに参画した大宮アルディージャから、海外のグループクラブへ若手選手が直接挑戦するという、新たな移籍ルートの象徴的な出来事となりました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "ヴィッセル神戸",
+        "大分トリニータ",
+        "相澤デイビッド"
+      ],
+      "text": "2026年7月29日、ヴィッセル神戸から大分トリニータへ育成型期限付き移籍することが発表された、身長195cmの大型ストライカーは誰？",
+      "options": [
+        "相澤デイビッド",
+        "木下康介",
+        "原大智",
+        "櫻川ソロモン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年にヴィッセル神戸に加入した相澤デイビッドですが、実戦経験を積むため、7月29日に大分トリニータへの育成型期限付き移籍が発表されました。",
+      "trivia": "相澤選手は日本文理高校から法政大学を経てプロ入りしたストライカーで、「いただいた助言を自分の中に落とし込んで成長してくる」と意気込みを語っています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "セレッソ大阪",
+        "石渡ネルソン",
+        "シント＝トロイデン"
+      ],
+      "text": "2026年7月、セレッソ大阪からベルギー1部のシント＝トロイデンVVへ完全移籍することが発表された、パリオリンピック世代のMFは誰？",
+      "options": [
+        "石渡ネルソン",
+        "荒木遼太郎",
+        "松木玖生",
+        "藤田譲瑠チマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "セレッソ大阪で成長を遂げた石渡ネルソンは、2026年7月にシント＝トロイデンVVへの完全移籍が決定し、欧州挑戦を果たすことになりました。",
+      "trivia": "ナイジェリア人の父と日本人の母を持つ石渡選手は、185cmの長身と推進力が持ち味で、シント＝トロイデンのCEOからも以前より高く評価されていました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "浦和レッズ",
+        "RB大宮アルディージャ",
+        "レッドブル"
+      ],
+      "text": "2026年8月1日に埼玉スタジアムで開催されたプレシーズンマッチ「Juiceスペシャルマッチ」で浦和レッズと対戦したのは、レッドブル・グループ参入に伴い名称を変更した何というクラブでしょう？",
+      "options": [
+        "RB大宮アルディージャ",
+        "大宮レッドブルズ",
+        "RBさいたま",
+        "大宮アルディージャRB"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月1日の試合は「浦和レッズ vs RB大宮アルディージャ」として行われ、2-2の引き分けに終わりました。大宮はレッドブル・グループの買収によりクラブ名が変更されています。",
+      "trivia": "レッドブルはこれまでザルツブルクやライプツィヒなどのクラブを買収し「RB」を冠したチームとして成功を収めており、日本での展開にも大きな注目が集まっています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-01",
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "秋春制",
+        "シーズン移行"
+      ],
+      "text": "2026/27シーズンからJリーグは歴史的な「秋春制」へ移行しました。新シーズンの明治安田Jリーグ第1節（開幕戦）は2026年の何月に開催されるでしょう？",
+      "options": [
+        "8月",
+        "7月",
+        "9月",
+        "10月"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは34年目を迎える2026/27シーズンから「秋春制」を採用し、2026年8月に開幕、冬のウインターブレイクを挟んで2027年5〜6月に閉幕する日程となりました。",
+      "trivia": "秋春制への移行は、猛暑でのパフォーマンス低下の回避や、欧州主要リーグとの移籍マーケットやACLのカレンダーとのズレを解消する目的で導入されました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "人事",
+        "レッドブル"
+      ],
+      "text": "2026年8月1日、Jリーググローバルフットボールアドバイザーを務めるある人物が、「Red Bull Football」のヘッド・オブ・グローバルサッカーに就任することが発表されました。その人物は誰でしょう？",
+      "options": [
+        "ロジャー・シュミット",
+        "ユルゲン・クロップ",
+        "ラルフ・ラングニック",
+        "アーセン・ヴェンゲル"
+      ],
+      "answerIndex": 0,
+      "explanation": "ロジャー・シュミット氏はJリーグのアドバイザーとしての活動を継続しながら、レッドブル・グループのグローバルサッカー部門トップに就任することが発表されました。",
+      "trivia": "ロジャー・シュミット監督は過去にレッドブル・ザルツブルクで指揮を執った経験があり、南野拓実選手を指導したことでも知られています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "U-21",
+        "育成"
+      ],
+      "text": "2026/27シーズンからJリーグで新たに創設され、同年8月下旬に開幕する、19歳から21歳のポストユース世代を対象とした新リーグの名称は何でしょう？",
+      "options": [
+        "U-21 Jリーグ",
+        "Jユース・エリートリーグ",
+        "Jリーグ・ネクストジェネレーション",
+        "J・リザーブリーグ"
+      ],
+      "answerIndex": 0,
+      "explanation": "高校やユース卒業後に出場機会を得にくい19歳〜21歳の選手にプロでの実戦経験を積ませるため、「U-21 Jリーグ」が新設されました。",
+      "trivia": "これまでは出場機会を求めて大学進学や下部リーグへの期限付き移籍を選ぶ若手選手が多くいましたが、この新リーグによりトップチームに近い環境での育成が期待されています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "RB大宮アルディージャ",
+        "RBライプツィヒ",
+        "海外移籍"
+      ],
+      "text": "2026年7月31日、RB大宮アルディージャからドイツ・ブンデスリーガの「RBライプツィヒU19」へ期限付き移籍することが発表された、18歳の日本人MFは誰でしょう？",
+      "options": [
+        "神田泰斗",
+        "中村草太",
+        "下田栄祐",
+        "佐藤海宏"
+      ],
+      "answerIndex": 0,
+      "explanation": "レッドブル・グループのネットワークを活かし、18歳の神田泰斗選手がRB大宮アルディージャからRBライプツィヒのU-19チームへレンタル移籍することが発表されました。",
+      "trivia": "同じグループ内のクラブ間で若手有望株をステップアップさせる手法はレッドブルグループの得意とする形であり、今後の日本人選手の新しい海外挑戦ルートとして期待されています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "森保一",
+        "監督人事"
+      ],
+      "text": "2026年のW杯終了後の7月下旬、日本サッカー協会はSAMURAI BLUE（日本代表）の森保一監督の続投を発表しました。目標として明言された次なる大会はどれでしょう？",
+      "options": [
+        "AFCアジアカップ",
+        "EAFF E-1サッカー選手権",
+        "コパ・アメリカ",
+        "FIFAアラブカップ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年の北中米W杯でベスト16入りを果たした日本代表の森保一監督は、次回AFCアジアカップまでの続投が7月下旬に発表されました。",
+      "trivia": "北中米W杯での激闘を経て、帰国時には多くのファンがSNS等で労いの言葉をかけ、特にブラジル戦での善戦が評価されての続投決定となりました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J1開幕戦",
+        "秋春制",
+        "横浜F・マリノス",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年8月7日に開幕する2026/27シーズンのJリーグ。秋春制への移行を記念してMUFGスタジアム（国立競技場）で開催される開幕戦は、横浜F・マリノスとどのクラブの対戦でしょうか？",
+      "options": [
+        "鹿島アントラーズ",
+        "浦和レッズ",
+        "川崎フロンターレ",
+        "FC東京"
+      ],
+      "answerIndex": 0,
+      "explanation": "秋春制に移行して初となる2026/27シーズンのJリーグは2026年8月7日に開幕し、記念すべき第1戦はMUFGスタジアム（国立競技場）での横浜F・マリノス対鹿島アントラーズとなりました。",
+      "trivia": "1993年のJリーグ開幕以来、一度も降格することなくJ1の舞台で戦い続けているオリジナル10の両クラブによる対戦が、新たな時代の幕開けを飾ることになりました。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "特別指定選手",
+        "いわきFC",
+        "移籍情報"
+      ],
+      "text": "2026年7月31日に2026/27シーズンのJFA・Jリーグ特別指定選手として認定されたことが発表された東海大学の中山竜之介選手ですが、受入先となったJクラブはどこでしょう？",
+      "options": [
+        "いわきFC",
+        "水戸ホーリーホック",
+        "柏レイソル",
+        "愛媛FC"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月31日、東海大学の中山竜之介選手や順天堂大学の松本琉雅選手がいわきFCのJFA・Jリーグ特別指定選手として認定されたことが各クラブから一斉に発表されました。",
+      "trivia": "特別指定選手制度は、大学や高校などの学校のサッカー部に所属したままJリーグの公式戦に出場できる仕組みで、若手選手の育成と強化を目的として導入されています。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "グッズ",
+        "デジタルカード"
+      ],
+      "text": "2026年7月30日にリリースされたJリーグ公式のデジタルトレーディングカード『J.League Fantasy Card』の2026/27 Edition1では、合計でいくつのクラブの選手カードが登場したでしょう？",
+      "options": [
+        "60クラブ",
+        "40クラブ",
+        "58クラブ",
+        "62クラブ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年7月30日にリリースされた『J.League Fantasy Card』2026/27 Edition1では、J1・J2・J3を合わせて全60クラブの選手カードが収録されました。",
+      "trivia": "このデジタルカードサービスは単にコレクションするだけでなく、自分の集めたカードでチームを編成し、実際のJリーグの試合結果と連動したファンタジースポーツとして遊ぶことができるのが特徴です。",
+      "referenceDate": "2026-08-03",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-03",
+        "expiryDate": "2026-08-10",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
