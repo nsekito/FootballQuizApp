@@ -1,0 +1,1042 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-08-09T21:44:38Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-08-10",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレシーズン",
+        "リヴァプール",
+        "ASモナコ"
+      ],
+      "text": "2026年8月9日に行われたプレシーズンマッチで、リヴァプールと対戦し3-2で逆転勝利を収めたフランスのクラブはどこでしょう？",
+      "options": [
+        "ASモナコ",
+        "パリ・サンジェルマン",
+        "マルセイユ",
+        "オリンピック・リヨン"
+      ],
+      "answerIndex": 0,
+      "explanation": "リヴァプールとモナコが8月9日に対戦し、モナコがゴロヴィンらのゴールで3-2と逆転勝利を収めました。",
+      "trivia": "この試合では、遠藤航は後半から出場しましたが、モナコの南野拓実はリハビリ中でメンバー外となり、日本人対決はお預けとなりました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-09",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレシーズン",
+        "インテル",
+        "ユヴェントス",
+        "セリエA"
+      ],
+      "text": "2026年8月8日に行われたプレシーズンマッチの「イタリアダービー」で、ユヴェントスを下して勝利したクラブはどこでしょう？",
+      "options": [
+        "インテル",
+        "ACミラン",
+        "ASローマ",
+        "ナポリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテルがユヴェントスとのプレシーズンマッチを制しました。ディマルコが先制弾を挙げ、ユヴェントスは1点差に迫るもインテルが勝利しています。",
+      "trivia": "インテルでは23歳の新星ディウフが躍動し、昨季王者の強さを見せつけました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレシーズン",
+        "バイエルン・ミュンヘン",
+        "アストン・ヴィラ"
+      ],
+      "text": "2026年8月7日に行われたプレシーズンマッチで、イングランドのアストン・ヴィラに2-1で勝利したドイツのクラブはどこでしょう？",
+      "options": [
+        "バイエルン・ミュンヘン",
+        "ボルシア・ドルトムント",
+        "RBライプツィヒ",
+        "バイエル・レバークーゼン"
+      ],
+      "answerIndex": 0,
+      "explanation": "両チームのプレシーズンマッチが8月7日に行われ、バイエルン・ミュンヘンがアストン・ヴィラに2-1で勝利を収めました。",
+      "trivia": "アストン・ヴィラは2025-26シーズンにヨーロッパリーグを制覇しており、2026年8月12日のUEFAスーパーカップでPSGと対戦する予定です。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ベルギーリーグ",
+        "伊東純也",
+        "ゲンク",
+        "海外日本人選手"
+      ],
+      "text": "2026年8月8日に行われたベルギーリーグ第1節のズルテ・ワレヘム戦で、ゲンクの伊東純也はどのような活躍を見せたでしょう？",
+      "options": [
+        "先制点をアシストした",
+        "決勝ゴールを決めた",
+        "レッドカードで退場した",
+        "PKを獲得したが外した"
+      ],
+      "answerIndex": 0,
+      "explanation": "伊東純也は前半39分に左足のピンポイントクロスでラフィウ・ドゥロシンミの先制点をアシストしましたが、チームは終盤に逆転され1-2で敗れました。",
+      "trivia": "この試合では、同じくゲンクに所属する日本人選手の横山歩夢も後半から途中出場しています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレシーズン",
+        "遠藤航",
+        "リヴァプール",
+        "海外日本人選手"
+      ],
+      "text": "2026年8月9日のプレシーズンマッチ、リヴァプール対ASモナコの試合で、後半から途中出場した遠藤航がプレーしたポジションはどこでしょう？",
+      "options": [
+        "センターバック",
+        "右サイドバック",
+        "トップ下",
+        "ウイング"
+      ],
+      "answerIndex": 0,
+      "explanation": "遠藤航は後半から投入され、本来のボランチではなく右のセンターバックとしてプレーし、ファン・ダイクとコンビを組みました。",
+      "trivia": "遠藤航にとってこの試合は、W杯直前の5月に行われたアイスランド戦以来、実に70日ぶりの実戦復帰となりました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-09",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "エールディヴィジ",
+        "アヤックス",
+        "テア・シュテーゲン"
+      ],
+      "text": "2026年8月9日のエールディヴィジ第1節でズウォレに勝利したアヤックスにおいて、新守護神として好セーブを見せた元バルセロナのGKは誰でしょう？",
+      "options": [
+        "テア・シュテーゲン",
+        "ヤン・オブラク",
+        "ティボー・クルトワ",
+        "アリソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2025-26シーズンに5位に沈んだアヤックスは大型補強を敢行し、バルセロナからテア・シュテーゲンを獲得。ズウォレとの開幕戦で好セーブを見せ、2-0の無失点勝利に貢献しました。",
+      "trivia": "アヤックスはこの夏、テア・シュテーゲンに加えてデイリー・ブリントやユリアン・ブラントなどの実力者を次々と獲得し、覇権奪還を目指しています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-09",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレシーズン",
+        "チェルシー",
+        "ACミラン"
+      ],
+      "text": "2026年8月8日のプレシーズンマッチで、チェルシーがACミランに3-0で勝利した試合において、2ゴールを挙げる活躍を見せた選手は誰でしょう？",
+      "options": [
+        "ジョアン・ペドロ",
+        "コール・パーマー",
+        "クリストファー・エンクンク",
+        "ニコラス・ジャクソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "この試合ではモイセス・カイセドが1ゴール1アシスト、ジョアン・ペドロが2ゴールを挙げ、新体制となったチェルシーが快勝しました。",
+      "trivia": "シャビ・アロンソ新監督率いるチェルシーにとって、プレシーズンとはいえ強豪相手の勝利は幸先の良いスタートとなりました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレシーズン",
+        "チェルシー",
+        "ジョホール・ダルル・タクジム"
+      ],
+      "text": "2026年8月9日、チェルシーがプレシーズンマッチで対戦し、3-3で引き分けたジョホール・ダルル・タクジム（JDT）はどこの国のクラブでしょう？",
+      "options": [
+        "マレーシア",
+        "シンガポール",
+        "タイ",
+        "インドネシア"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジョホール・ダルル・タクジム（JDT）はマレーシアリーグの王者であり、チェルシー相手に3ゴールを奪う健闘を見せドローに持ち込みました。",
+      "trivia": "JDTの3点目は、マレーシアリーグで2年連続得点王に輝いているベルグソンによる鮮やかなミドルシュートでした。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-09",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "CL予選",
+        "フェネルバフチェ"
+      ],
+      "text": "2026年8月5日に行われたUEFAチャンピオンズリーグ2026-27予選3回戦第1戦で、オーストリアのシュトゥルム・グラーツに2-0で勝利したトルコのクラブはどこでしょう？",
+      "options": [
+        "フェネルバフチェ",
+        "ガラタサライ",
+        "ベシクタシュ",
+        "トラブゾンスポル"
+      ],
+      "answerIndex": 0,
+      "explanation": "フェネルバフチェはCL予選3回戦の第1戦でシュトゥルム・グラーツと対戦し、2-0で先勝してプレーオフ進出へ前進しました。",
+      "trivia": "CL予選はチャンピオンズ・パスとリーグ・パスに分かれており、フェネルバフチェは国内リーグの上位チームが参加するリーグ・パスから出場しています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-05",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレシーズン",
+        "リヴァプール",
+        "移籍"
+      ],
+      "text": "2026年8月9日のプレシーズンマッチ・モナコ戦で、リヴァプール移籍後さっそくゴールを記録したアレクサンデル・イサクと、もう一人の新加入選手は誰でしょう？",
+      "options": [
+        "フロリアン・ヴィルツ",
+        "ジャマル・ムシアラ",
+        "シャビ・シモンズ",
+        "ジュード・ベリンガム"
+      ],
+      "answerIndex": 0,
+      "explanation": "この夏にリヴァプールへ加入したアレクサンデル・イサクとフロリアン・ヴィルツの2人が、モナコ戦で揃ってゴールを決めました。",
+      "trivia": "新監督イラオラ率いるリヴァプールは、この試合で新戦力が機能したものの、最終的に3失点を喫してモナコに逆転負けを喫しています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-09",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "移籍情報",
+        "アーセナル"
+      ],
+      "text": "2026年8月、移籍金約159億円という大型契約でニューカッスルからアーセナルに完全移籍したブラジル代表MFは誰でしょう？",
+      "options": [
+        "ブルーノ・ギマランイス",
+        "ルーカス・パケタ",
+        "ドウグラス・ルイス",
+        "ジョアン・ゴメス"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは2026年8月8日、ニューカッスルの主将を務めていたブルーノ・ギマランイスの獲得を正式発表しました。手薄だった中盤の強化に成功しています。",
+      "trivia": "ギマランイスはアーセナルでもお馴染みとなった背番号「39」を着用します。彼のキャリアを通じて思い入れのある特別な番号です。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "海外日本人選手",
+        "移籍情報",
+        "PSV"
+      ],
+      "text": "2026年8月、最大約31億円の移籍金でエールディヴィジ（オランダ）王者のPSVアイントホーフェンへ完全移籍することが決定した日本人MFは誰でしょう？",
+      "options": [
+        "佐野航大",
+        "藤田譲瑠チマ",
+        "松木玖生",
+        "鈴木唯人"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月、NECナイメヘンで大きな飛躍を遂げた佐野航大がオランダの強豪PSVへ完全移籍しました。クラブとは2031年までの5年契約を結んでいます。",
+      "trivia": "佐野はプレシーズンのチャンピオンズリーグ予選の試合直前にチームを離脱してメディカルチェックへ向かい、電撃的なステップアップを果たしました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "海外日本人選手",
+        "スタッツ"
+      ],
+      "text": "2026-27シーズンのプレミアリーグでは日本人選手の所属数が史上最多規模となり話題です。2026年8月時点でタイのメディアから「サムライの黄金時代」と称賛された、その所属見込み人数は何人でしょう？",
+      "options": [
+        "8人",
+        "6人",
+        "10人",
+        "12人"
+      ],
+      "answerIndex": 0,
+      "explanation": "遠藤航や三笘薫らに加え、新たにハル・シティへ守田英正が、イプスウィッチへ前田大然が加入するなど、2026-27シーズンのプレミアリーグには史上最多となる8人の日本人選手が所属する見込みです。",
+      "trivia": "海外メディアは、川崎フロンターレのアカデミー出身選手（三笘、田中碧、高井幸大など）が多数プレミアリーグに集結していることにも注目しています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "UEFAスーパーカップ",
+        "審判",
+        "記録"
+      ],
+      "text": "2026年8月に行われるUEFAスーパーカップ（パリ・サンジェルマン対アストン・ヴィラ）の主審に抜擢されたオマル・アルタン氏は、どこの国の出身でしょう？",
+      "options": [
+        "ソマリア",
+        "モロッコ",
+        "セネガル",
+        "エジプト"
+      ],
+      "answerIndex": 0,
+      "explanation": "オマル・アルタン氏は2026年ワールドカップで主審に選ばれながらも米国への入国を拒否される不運に見舞われましたが、UEFAがその実力を評価しスーパーカップの主審に任命しました。",
+      "trivia": "ソマリア出身の主審が欧州の主要なカップ戦の決勝を裁くのは歴史的な快挙であり、逆境からの大抜擢として世界中で大きなニュースとなりました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "レギュレーション",
+        "順位表"
+      ],
+      "text": "2026-27シーズンのUEFAチャンピオンズリーグは、スイス方式の「リーグフェーズ」を採用して3年目となります。全36チーム中、リーグフェーズの順位のみでラウンド16（決勝トーナメント）への直接進出が決まるのは上位何チームでしょう？",
+      "options": [
+        "8チーム",
+        "12チーム",
+        "16チーム",
+        "24チーム"
+      ],
+      "answerIndex": 0,
+      "explanation": "リーグフェーズの上位8チームが直接ラウンド16に進出します。9位から24位までの16チームはプレーオフに回り、勝利した8チームがラウンド16への切符を手にします。",
+      "trivia": "25位から36位のチームは敗退となり、ヨーロッパリーグなど下位の大会へ回る権利も与えられず欧州大会から完全に姿を消す厳しいルールとなっています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "リーグ・アン",
+        "移籍情報",
+        "移籍金"
+      ],
+      "text": "2026年8月、約90億円の移籍金でバルセロナからパリ・サンジェルマンへの完全移籍が決定的になったと報じられたスペイン代表アタッカーは誰でしょう？",
+      "options": [
+        "フェラン・トーレス",
+        "ダニ・オルモ",
+        "ラミン・ヤマル",
+        "ニコ・ウィリアムズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナとの契約延長が停滞していたフェラン・トーレスが、パリ・サンジェルマンと4年契約で合意したと2026年8月上旬に報じられました。",
+      "trivia": "トーレスは2026年ワールドカップの決勝戦でも得点を挙げる活躍を見せており、世界的にもその市場価値が大きく高まっていました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "eredivisie",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "佐野航大",
+        "PSV",
+        "エールディヴィジ",
+        "移籍"
+      ],
+      "text": "2026年8月8日、オランダのNECナイメヘンから同リーグの王者PSVアイントホーフェンへの完全移籍が発表された日本代表MFは誰でしょう？",
+      "options": [
+        "佐野航大",
+        "堂安律",
+        "三戸舜介",
+        "板倉滉"
+      ],
+      "answerIndex": 0,
+      "explanation": "NECで活躍した佐野航大は、5年契約でオランダ屈指の名門PSVへ完全移籍しました。移籍金はNECのクラブ史上最高額となる最大約30億円（1700万ユーロ）と報じられています。",
+      "trivia": "PSVのOBでもある堂安律がクラブ公式のビデオメッセージで「僕はタイトルをひとつしか獲れなかったので、それ以上を」とエールを送ると、佐野は「ふたつは獲らないと」と笑顔で返しました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "eredivisie",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "上田綺世",
+        "フェイエノールト",
+        "エールディヴィジ",
+        "ロッテルダムダービー"
+      ],
+      "text": "2026年8月9日に行われたエールディヴィジ開幕戦（スパルタ対フェイエノールト）で、ポストプレーから決勝点の起点となり、チームの勝利（1-0）に貢献したフェイエノールトの日本代表FWは誰でしょう？",
+      "options": [
+        "上田綺世",
+        "渡辺剛",
+        "三戸舜介",
+        "鈴木彩艶"
+      ],
+      "answerIndex": 0,
+      "explanation": "フェイエノールトの上田綺世はCFとして先発出場し、前半35分にスローインを背負いながら巧みにさばき、ゼヒエルのアシストから生まれたヴァレンテの決勝ゴールを演出しました。",
+      "trivia": "上田綺世は昨シーズンのエールディヴィジで25ゴールを挙げ得点王に輝いており、ファンからは2年連続の得点王獲得に大きな期待が寄せられています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-09",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "中島翔哉",
+        "ポルティモネンセ",
+        "ポルトガル",
+        "移籍"
+      ],
+      "text": "2026年8月4日、浦和レッズを退団していた元日本代表の「背番号10」が、ポルトガルのポルティモネンセへ加入することが発表されました。5年ぶり3度目の古巣復帰となったこの選手は誰でしょう？",
+      "options": [
+        "中島翔哉",
+        "香川真司",
+        "南野拓実",
+        "柴崎岳"
+      ],
+      "answerIndex": 0,
+      "explanation": "中島翔哉は2023年夏から浦和レッズでプレーしていましたが、2026年6月に契約満了で退団。今回、過去に二度所属して大きなインパクトを残したポルトガルのポルティモネンセへ電撃復帰しました。",
+      "trivia": "ポルティモネンセは中島翔哉の加入発表動画で、「おかえり、翔哉。黒と白の物語は、再び始まる。The legend returns」と英雄の帰還を大々的に歓迎しました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "レアル・ソシエダ",
+        "ラ・リーガ",
+        "プレシーズン"
+      ],
+      "text": "2026年8月8日に行われたプレシーズンマッチのケルン戦で、W杯での負傷から約2ヶ月ぶりに実戦復帰を果たしたレアル・ソシエダの日本代表MFは誰でしょう？",
+      "options": [
+        "久保建英",
+        "鎌田大地",
+        "伊東純也",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "久保建英は2026年の北中米ワールドカップ初戦でひざを負傷し、その後の試合を欠場。リハビリを経て、プレシーズンマッチのケルン戦の61分から途中出場し、元気な姿を見せました。",
+      "trivia": "左ひざには小さなテーピングが巻かれていましたが、スペイン紙は「あくまで予防的措置で、プレー中の感触は良好だった。彼らしいプレーをいくつか披露した」とポジティブに報じました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "坂元達裕",
+        "コヴェントリー",
+        "プレミアリーグ",
+        "プレシーズン"
+      ],
+      "text": "2026年8月8日のプレシーズンマッチ・エスパニョール戦で、後半に絶妙な飛び出しから同点ゴールを決め、逆転勝利（3-1）の立役者となったコヴェントリー・シティ所属の日本人選手は誰でしょう？",
+      "options": [
+        "坂元達裕",
+        "三好康児",
+        "橋岡大樹",
+        "大橋祐紀"
+      ],
+      "answerIndex": 0,
+      "explanation": "コヴェントリー・シティの坂元達裕はエスパニョールとの親善試合に先発フル出場し、後半24分に左足で流し込んで同点ゴールをマーク。さらに逆転、ダメ押しゴールにも絡む活躍を見せました。",
+      "trivia": "昨シーズンのチャンピオンシップで優勝し、25年ぶりにイングランド1部（プレミアリーグ）への昇格を果たしたコヴェントリーにとって、坂元は今季も攻撃のキーマンとして期待されています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "プレミアリーグ",
+        "アーセナル",
+        "ブラジル代表"
+      ],
+      "text": "2026年8月8日、移籍金7500万ポンドでニューカッスルからアーセナルに完全移籍することが発表されたブラジル代表MFは誰でしょう？",
+      "options": [
+        "ブルーノ・ギマランイス",
+        "ルーカス・パケタ",
+        "ジョエリントン",
+        "ドウグラス・ルイス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月8日、アーセナルはニューカッスルからブラジル代表MFブルーノ・ギマランイスの獲得を発表しました。移籍金は7500万ポンドに上ると報じられています。",
+      "trivia": "ギマランイスの移籍金7500万ポンドは、28歳以上のMFとしてはサッカー界における史上最高額とも報じられ、大きな話題となりました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "primeira",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "ポルティモネンセ",
+        "ポルトガルリーグ",
+        "海外日本人選手"
+      ],
+      "text": "2026年8月、浦和レッズを契約満了で退団し、自身3度目となるポルトガルのポルティモネンセへの加入が発表された元日本代表MFは誰でしょう？",
+      "options": [
+        "中島翔哉",
+        "堂安律",
+        "南野拓実",
+        "鎌田大地"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月上旬、中島翔哉はポルトガルのポルティモネンセに加入しました。彼にとって同クラブでのプレーは、これで通算3度目となります。",
+      "trivia": "ポルティモネンセでは再び背番号「10」を背負うことが決定し、過去に17ゴールを記録した相性の良いクラブでの完全復活が期待されています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "spfl",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "レンジャーズ",
+        "スコットランド",
+        "海外日本人選手"
+      ],
+      "text": "2026年8月5日、スコットランドの名門レンジャーズへの完全移籍が発表された、昨シーズンまでドイツのハノーファー等でプレーしていた日本人アタッカーは誰でしょう？",
+      "options": [
+        "横田大祐",
+        "林大地",
+        "室屋成",
+        "奥川雅也"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月5日、横田大祐がハノーファーからレンジャーズへ完全移籍しました。クラブ史上初の日本人選手として、彼にとって初のスコットランド挑戦となります。",
+      "trivia": "移籍直後に行われたヨーロッパリーグ予選のヤギエロニア・ビャウィストク戦ですぐにデビューを果たし、インタビューで「このクラブはビッグだ」と興奮を語りました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "クリスタル・パレス",
+        "プレミアリーグ",
+        "日本代表"
+      ],
+      "text": "2026年8月7日、アヤックスからフリートランスファーでイングランドのクリスタル・パレスに加入することが発表された日本代表DFは誰でしょう？",
+      "options": [
+        "冨安健洋",
+        "板倉滉",
+        "伊藤洋輝",
+        "菅原由勢"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月7日、日本代表DFの冨安健洋がクリスタル・パレスに加入しました。アーセナルや昨季後半のアヤックスを経て、再びプレミアリーグの舞台へ戻ることになります。",
+      "trivia": "冨安は「2シーズンで3つのタイトルを獲得している良い状態のクラブだ」と語り、チームへの合流に大きな期待を寄せています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "移籍",
+        "チェルシー",
+        "クリスタル・パレス",
+        "プレミアリーグ"
+      ],
+      "text": "2026年8月に日本代表DF冨安健洋を獲得したクリスタル・パレスですが、その直前に同クラブからチェルシーへと移籍金約5200万ポンドで引き抜かれていたフランス代表の主力センターバックは誰でしょう？",
+      "options": [
+        "マクサンス・ラクロワ",
+        "ブノワ・バディアシル",
+        "ウィリアン・サリバ",
+        "イブラヒマ・コナテ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年夏の移籍市場で、クリスタル・パレスの主力DFマクサンス・ラクロワがチェルシーへ完全移籍しました。クラブはその守備陣の穴を埋めるべく冨安健洋らを獲得しています。",
+      "trivia": "ラクロワは前シーズンにクリスタル・パレスで国内および欧州タイトル獲得に貢献し、リーグ屈指のDFとしての評価を引っ提げてチェルシーへとステップアップを果たしました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "UEFAスーパーカップ",
+        "PSG",
+        "アストン・ヴィラ"
+      ],
+      "text": "2026年8月12日にオーストリアで開催される「2026 UEFAスーパーカップ」の対戦カードは、次のうちどれ？",
+      "options": [
+        "パリ・サンジェルマン vs アストン・ヴィラ",
+        "レアル・マドリード vs アタランタ",
+        "マンチェスター・シティ vs セビージャ",
+        "バイエルン・ミュンヘン vs ASローマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2025-26シーズンのチャンピオンズリーグを制したパリ・サンジェルマンと、ヨーロッパリーグを制したアストン・ヴィラが欧州王者の座をかけて激突します。",
+      "trivia": "今回のUEFAスーパーカップは、オーストリア（ザルツブルクのレッドブル・アレーナ）で初めて開催されることになりました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "コミュニティ・シールド",
+        "アーセナル",
+        "マンチェスター・シティ"
+      ],
+      "text": "2026年8月16日に開催されるFAコミュニティ・シールド（アーセナル vs マンチェスター・シティ）は、特別な事情によりウェンブリー以外のスタジアムで開催されます。その会場はどこ？",
+      "options": [
+        "ミレニアム・スタジアム",
+        "オールド・トラッフォード",
+        "ヴィラ・パーク",
+        "トッテナム・ホットスパー・スタジアム"
+      ],
+      "answerIndex": 0,
+      "explanation": "ウェンブリー・スタジアムがプレシーズンのコンサート等の予定で使用できないため、2026年はウェールズのミレニアム・スタジアム（カーディフ）で開催されます。",
+      "trivia": "コミュニティ・シールドがカーディフで開催されるのは、ウェンブリーが改修工事中だった2001年から2006年以来、実に20年ぶりのこととなります。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "移籍情報",
+        "アーセナル",
+        "ブルーノ・ギマランイス"
+      ],
+      "text": "2026年8月上旬、アーセナルがニューカッスル・ユナイテッドから推定8750万ユーロの移籍金で獲得したブラジル代表MFは誰？",
+      "options": [
+        "ブルーノ・ギマランイス",
+        "ドウグラス・ルイス",
+        "ルーカス・パケタ",
+        "ジョエリントン"
+      ],
+      "answerIndex": 0,
+      "explanation": "中盤の補強を目指すアーセナルは、ニューカッスルから主軸として活躍していたブルーノ・ギマランイスを大型移籍で獲得しました。",
+      "trivia": "ブルーノ・ギマランイスは2022年1月にリヨンからニューカッスルへ加入して以来、プレミアリーグ屈指の司令塔として高い評価を得てきました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "リヴァプール",
+        "監督就任",
+        "プレシーズン"
+      ],
+      "text": "2026年8月9日に行われたモナコとのプレシーズンマッチで、アンフィールドでの初陣を飾ったリヴァプールの新監督は誰？",
+      "options": [
+        "アンドニ・イラオラ",
+        "シャビ・アロンソ",
+        "ルーベン・アモリム",
+        "ロベルト・デ・ゼルビ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026-27シーズンに向けて、リヴァプールは昨季までボーンマスなどで高い評価を得ていたアンドニ・イラオラを新監督として迎え入れました。",
+      "trivia": "イラオラ監督は現役時代、アスレティック・ビルバオの右サイドバックとして長く活躍し、スペイン代表としての出場経験も持っています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-09",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

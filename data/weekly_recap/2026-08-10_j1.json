@@ -1,0 +1,1050 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-08-09T21:39:08Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-08-10",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "開幕戦",
+        "観客動員",
+        "新記録"
+      ],
+      "text": "2026年8月7日に行われたJ1リーグ開幕戦、横浜F・マリノス対鹿島アントラーズの試合で記録された、Jリーグ史上最多となる入場者数は何人？",
+      "options": [
+        "6万3,960人",
+        "5万8,124人",
+        "6万1,235人",
+        "6万5,402人"
+      ],
+      "answerIndex": 0,
+      "explanation": "MUFGスタジアム（国立競技場）で行われたこの試合には6万3,960人が詰めかけ、2019年に記録された最多動員数を更新しました。",
+      "trivia": "この試合では鹿島が後半アディショナルタイムの劇的ゴールで逆転勝利し、「伝説の試合」と話題になりました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J2",
+        "FC今治",
+        "Jリーグデビュー",
+        "移籍"
+      ],
+      "text": "2026年夏にFC今治へ完全移籍で加入し、8月9日のJ2開幕戦（いわきFC戦）に先発出場してJリーグデビューを果たした、「ピピ」の愛称で知られる選手は？",
+      "options": [
+        "中井卓大",
+        "安部裕葵",
+        "久保建英",
+        "鈴木冬一"
+      ],
+      "answerIndex": 0,
+      "explanation": "中井卓大は9歳からレアル・マドリードの下部組織に所属。その後スペインのクラブを渡り歩き、22歳にしてJリーグ初挑戦となりました。",
+      "trivia": "今治のオーナーは元日本代表監督の岡田武史氏です。中井は今治への移籍理由の一つに、新監督がスペイン人のアベル・モウレロ・ロペス氏だったことを挙げています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-09",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "サンフレッチェ広島",
+        "復帰",
+        "ゴール"
+      ],
+      "text": "2026年夏にオーストリアのザルツブルクからサンフレッチェ広島に2年ぶりに復帰し、8月8日のJ1開幕戦で途中出場から即ゴールを決めた選手は？",
+      "options": [
+        "川村拓夢",
+        "荒木隼人",
+        "大迫敬介",
+        "満田誠"
+      ],
+      "answerIndex": 0,
+      "explanation": "川村拓夢は怪我の影響もあり、ザルツブルクからサンフレッチェ広島へ完全移籍で復帰。「このクラブでキャリアを全うしたい」と強い覚悟を語りました。",
+      "trivia": "背番号8の川村が復帰後初ゴールを決めた時間は、「令和8年8月8日88分」という奇跡的なタイミングでした。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "ジェフユナイテッド千葉",
+        "昇格",
+        "開幕戦"
+      ],
+      "text": "2026-27シーズンのJ1リーグに17シーズンぶりに復帰し、8月8日の開幕戦でサンフレッチェ広島と対戦したクラブは？",
+      "options": [
+        "ジェフユナイテッド千葉",
+        "水戸ホーリーホック",
+        "東京ヴェルディ",
+        "清水エスパルス"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジェフユナイテッド千葉は2009年以来、17シーズンぶりのJ1の舞台に立ちましたが、開幕戦は広島に0-3で敗れました。",
+      "trivia": "ジェフユナイテッド千葉はJリーグ創設時からの「オリジナル10」の一つですが、長らくJ2で苦しい時期を過ごしていました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "ガンバ大阪",
+        "移籍",
+        "ゴール"
+      ],
+      "text": "2026年シーズンからガンバ大阪に完全移籍し、8月7日のJ1開幕戦（対浦和レッズ）で待望の移籍後初出場を果たし、逆転勝利に導くゴールを決めた選手は？",
+      "options": [
+        "植中朝日",
+        "ジェバリ",
+        "山下諒也",
+        "宇佐美貴史"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜F・マリノスからガンバ大阪へ移籍した植中朝日は、開幕戦の浦和レッズ戦の終盤に出場し、移籍後初ゴールで4-3の逆転勝利の立役者となりました。",
+      "trivia": "植中はJFAアカデミー福島出身で、V・ファーレン長崎時代にはJリーグ初ゴールの試合でハットトリックを達成した記録を持っています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "V・ファーレン長崎",
+        "ゴール",
+        "外国人選手"
+      ],
+      "text": "2026年8月9日のJ1開幕戦で、8シーズンぶりのJ1を戦うV・ファーレン長崎に2878日ぶりのJ1勝利をもたらす2ゴールを挙げた選手は？",
+      "options": [
+        "チアゴ・サンタナ",
+        "マテウス・ジェズス",
+        "エジガル・ジュニオ",
+        "フアンマ・デルガド"
+      ],
+      "answerIndex": 0,
+      "explanation": "清水エスパルスや浦和レッズでも活躍したチアゴ・サンタナは、長崎のJ1復帰初戦となる京都サンガF.C.戦で2得点を挙げ、2-1の勝利に貢献しました。",
+      "trivia": "チアゴ・サンタナは清水エスパルスに所属していた2022年に、J1リーグ得点王に輝いた実績を持つストライカーです。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-09",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "水戸ホーリーホック",
+        "初昇格",
+        "開幕戦"
+      ],
+      "text": "2026年8月8日に行われた柏レイソル戦で、クラブ史上初となるJ1の舞台に立ったチームは？",
+      "options": [
+        "水戸ホーリーホック",
+        "ザスパ群馬",
+        "栃木SC",
+        "ロアッソ熊本"
+      ],
+      "answerIndex": 0,
+      "explanation": "長年J2で戦い続けてきた水戸ホーリーホックが悲願のJ1昇格を果たし、開幕戦で柏レイソルと対戦しました。",
+      "trivia": "水戸ホーリーホックは2000年のJ2参入から、実に四半世紀以上をJ2で過ごしてからのJ1初昇格となりました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "水戸ホーリーホック",
+        "初ゴール",
+        "記録達成"
+      ],
+      "text": "2026年8月8日の柏レイソル対水戸ホーリーホックの試合で、水戸のクラブ史上「J1初ゴール」をPKで決めた選手は？",
+      "options": [
+        "内野航太郎",
+        "渡邉新太",
+        "谷口海斗",
+        "根本凌"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合は1-2で敗れましたが、後半23分（68分）に内野航太郎がPKを沈め、これが水戸ホーリーホックにとって記念すべきJ1初得点となりました。",
+      "trivia": "内野航太郎は筑波大学出身のストライカーで、パリ五輪世代の代表候補としても注目されていた選手です。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "鹿島アントラーズ",
+        "劇的勝利",
+        "アディショナルタイム"
+      ],
+      "text": "2026年8月7日に行われたJ1開幕戦で、鹿島アントラーズが横浜F・マリノスを相手に4-3の逆転勝利を収めました。90+12分に劇的な決勝ゴールを決めた選手は？",
+      "options": [
+        "チャヴリッチ",
+        "鈴木優磨",
+        "名古新太郎",
+        "知念慶"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜F・マリノスに一時1-3とリードされながらも、鹿島は終盤に猛追。90+12分にチャヴリッチが決勝点を挙げ、劇的な開幕勝利を飾りました。",
+      "trivia": "この試合はMUFGスタジアム（国立競技場）で開催され、両チーム合わせて7ゴールが生まれる歴史的な激闘となりました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC町田ゼルビア",
+        "大勝",
+        "東京ダービー"
+      ],
+      "text": "2026年8月8日のJ1開幕戦で、退場者を出したFC東京を相手に5-1と大勝を収めたクラブは？",
+      "options": [
+        "FC町田ゼルビア",
+        "東京ヴェルディ",
+        "川崎フロンターレ",
+        "湘南ベルマーレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "味の素スタジアムで行われた一戦で、FC町田ゼルビアがFC東京を圧倒し、5-1の大勝で白星発進しました。",
+      "trivia": "FC町田ゼルビアはJ1昇格後も躍進を続けており、この大勝劇によって2026-27シーズンの開幕戦終了時点で首位に立ちました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "順位表",
+        "FC町田ゼルビア"
+      ],
+      "text": "2026/27シーズンのJ1リーグ第1節（2026年8月7日〜9日）で、FC東京に5-1で大勝し、単独首位発進を決めたクラブはどこでしょう？",
+      "options": [
+        "FC町田ゼルビア",
+        "サンフレッチェ広島",
+        "鹿島アントラーズ",
+        "ガンバ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月8日に行われた試合で、FC町田ゼルビアはアウェイでFC東京に5-1と大勝し、得失点差+4で第1節を首位で終えました。",
+      "trivia": "FC町田ゼルビアはシーズン移行初年度の開幕戦で5ゴールを奪うという圧巻の攻撃力を見せつけました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "試合結果",
+        "引き分け"
+      ],
+      "text": "2026年8月に開幕した2026/27シーズンのJ1リーグ第1節で、全10試合の中で唯一「引き分け」に終わった対戦カードはどれでしょう？",
+      "options": [
+        "東京ヴェルディ vs 川崎フロンターレ",
+        "ガンバ大阪 vs 浦和レッズ",
+        "セレッソ大阪 vs ファジアーノ岡山",
+        "名古屋グランパス vs 清水エスパルス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月9日に行われた東京ヴェルディ対川崎フロンターレの試合は1-1の引き分けとなり、J1第1節の中で唯一のドロー決着となりました。",
+      "trivia": "この試合の結果、両チームは「勝ち点1」を分け合う形となり、第1節終了時点で同率10位に並んでいます。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-09",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "順位表",
+        "サンフレッチェ広島"
+      ],
+      "text": "2026/27シーズンのJ1第1節終了時点で、首位のFC町田ゼルビアに次ぐ2位につけたのは、開幕節で3-0の快勝を収めたどのクラブでしょう？",
+      "options": [
+        "サンフレッチェ広島",
+        "鹿島アントラーズ",
+        "ヴィッセル神戸",
+        "セレッソ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンフレッチェ広島は2026年8月8日に行われたジェフユナイテッド千葉との開幕戦に3-0で勝利し、得失点差+3で町田に次ぐ2位スタートを切りました。",
+      "trivia": "広島は本拠地「エディオンピースウイング広島」で新シーズンの幕開けを飾り、無失点で幸先の良いスタートを切りました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "試合結果",
+        "ゴール数"
+      ],
+      "text": "2026年8月7日から開幕した2026/27シーズンのJ1リーグ第1節において、合計7ゴールが生まれる乱打戦となった試合は「横浜F・マリノス vs 鹿島アントラーズ」と、もう1試合はどれでしょう？",
+      "options": [
+        "ガンバ大阪 vs 浦和レッズ",
+        "FC東京 vs FC町田ゼルビア",
+        "サンフレッチェ広島 vs ジェフユナイテッド千葉",
+        "V・ファーレン長崎 vs 京都サンガF.C."
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月7日に行われたガンバ大阪対浦和レッズの試合は4-3でガンバ大阪が勝利し、横浜FM対鹿島（3-4）と並び、開幕戦から合計7ゴールが生まれる激闘となりました。",
+      "trivia": "この2試合が金曜日開催（フライデーナイトJリーグ）だったため、2026/27シーズンは初日から非常にゴールが多く生まれる幕開けとなりました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "順位表",
+        "スタッツ"
+      ],
+      "text": "2026/27シーズンのJ1リーグ第1節終了時点の順位表において、第1節に敗れながらも得失点差（-1）と総得点（3）が並び、同率12位となったクラブの組み合わせはどれでしょう？",
+      "options": [
+        "横浜F・マリノス と 浦和レッズ",
+        "水戸ホーリーホック と ファジアーノ岡山",
+        "FC東京 と ジェフユナイテッド千葉",
+        "京都サンガF.C. と アビスパ福岡"
+      ],
+      "answerIndex": 0,
+      "explanation": "第1節で横浜F・マリノスは鹿島に3-4、浦和レッズはG大阪に3-4で敗れたため、両クラブとも「得失点差-1、総得点3」で全く同じ成績となり、12位に並びました。",
+      "trivia": "得失点差-1のチームは6クラブありましたが、3ゴールを奪って敗北したのは横浜F・マリノスと浦和レッズのみでした。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "順位表",
+        "同率3位"
+      ],
+      "text": "2026/27明治安田J1リーグ第1節終了時点の順位表において、勝ち点3、得失点差+1、総得点4で全くの同成績となり、同率3位に並んだ2クラブの正しい組み合わせはどれでしょう？",
+      "options": [
+        "鹿島アントラーズ と ガンバ大阪",
+        "柏レイソル と セレッソ大阪",
+        "清水エスパルス と ヴィッセル神戸",
+        "V・ファーレン長崎 と 柏レイソル"
+      ],
+      "answerIndex": 0,
+      "explanation": "第1節で鹿島アントラーズは横浜FMに4-3、ガンバ大阪は浦和に4-3で勝利しました。そのため、両クラブとも「勝ち点3、得失点差+1、総得点4」となり、同率3位となりました。",
+      "trivia": "一方、2-1で勝利した柏レイソル、セレッソ大阪、V・ファーレン長崎の3クラブは「得失点差+1、総得点2」で同率5位に並んでいます。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "長友佑都",
+        "FC東京",
+        "日本代表",
+        "契約更新"
+      ],
+      "text": "2026年8月8日、FC東京の長友佑都が39歳での現役続行を表明しました。決断の際、「ワールドカップが終わっても現役を続けてほしい」と背中を押してくれた存在として報道された人物は誰でしょう？",
+      "options": [
+        "妻の平愛梨",
+        "恩師の岡田武史",
+        "元日本代表の香川真司",
+        "長年プレーした森重真人"
+      ],
+      "answerIndex": 0,
+      "explanation": "長友は現役続行の背景に家族の支えがあったことを明かしており、妻の平愛梨さんからの言葉や、ピッチで躍動する姿を子どもたちに見せたいという思いが大きな力になったと語っています。",
+      "trivia": "FC東京のチームメイトである森重真人とも再会し、「お互いに待っていたと言わんばかり」の熱い抱擁を交わして現役続行を報告したそうです。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "フアンマ・デルガド",
+        "鹿児島ユナイテッドFC",
+        "V・ファーレン長崎",
+        "移籍"
+      ],
+      "text": "2026年8月6日、かつてJ2得点王に輝いたスペイン人ストライカーのフアンマ・デルガドが、V・ファーレン長崎からJ3のどのクラブへ移籍することが発表されたでしょう？",
+      "options": [
+        "鹿児島ユナイテッドFC",
+        "FC琉球",
+        "ツエーゲン金沢",
+        "FC今治"
+      ],
+      "answerIndex": 0,
+      "explanation": "長崎や大宮、福岡などで長年活躍し「J通算90得点」を記録しているフアンマが、J2昇格を目指すJ3の鹿児島ユナイテッドFCへ新加入することが発表され、ファンを驚かせました。",
+      "trivia": "フアンマは2023年シーズンにはV・ファーレン長崎で26得点を挙げ、キャリア初のJ2得点王を獲得しています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "植中朝日",
+        "ガンバ大阪",
+        "浦和レッズ",
+        "J1"
+      ],
+      "text": "2026年8月7日に行われた新シーズンJ1第1節の浦和レッズ対ガンバ大阪戦で、移籍後初出場ながら後半41分に劇的な決勝ゴールを決め、ガンバ大阪を4-3の逆転勝利に導いた選手は誰でしょう？",
+      "options": [
+        "植中朝日",
+        "南野遥海",
+        "宇佐美貴史",
+        "中谷進之介"
+      ],
+      "answerIndex": 0,
+      "explanation": "植中朝日は昨季終了後に横浜F・マリノスからガンバ大阪へ完全移籍で加入しましたが、怪我で離脱しており、この日がG大阪での待望の公式戦デビュー戦でした。",
+      "trivia": "試合終盤に一時逆転となる恩返し弾を決めたG大阪の元チームメイト・南野遥海に対抗するように決勝弾を奪い、「ヒーローを貰っちゃいました」と試合後に笑顔で語りました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "佐野航大",
+        "PSV",
+        "NECナイメヘン",
+        "海外移籍"
+      ],
+      "text": "2026年8月8日、オランダ・エールディビジのNECナイメヘンで活躍していた日本代表MF佐野航大が、同リーグ内のどの強豪クラブへ完全移籍を果たしたでしょう？",
+      "options": [
+        "PSVアイントホーフェン",
+        "アヤックス",
+        "フェイエノールト",
+        "AZアルクマール"
+      ],
+      "answerIndex": 0,
+      "explanation": "NECナイメヘンでレギュラーを掴み、欧州でも評価を高めていた佐野航大は、オランダの強豪PSVアイントホーフェンへのステップアップ移籍を果たしました。",
+      "trivia": "移籍金は推定1500万ユーロ（約27億円）とも報じられており、UEFAチャンピオンズリーグなどの大きな舞台でのさらなる飛躍が期待されています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "三井寺眞",
+        "横浜F・マリノス",
+        "J1",
+        "記録達成"
+      ],
+      "text": "2026年8月7日、新時代の「秋春制」J1開幕戦となった横浜F・マリノス対鹿島アントラーズ戦で、J1開幕戦史上最年少（16歳4ヶ月）で先発出場しプロ初ゴールを記録したマリノスの新星は誰でしょう？",
+      "options": [
+        "三井寺眞",
+        "塩貝健人",
+        "名和田我空",
+        "徳田誉"
+      ],
+      "answerIndex": 0,
+      "explanation": "フォーリクラッセ仙台出身の16歳・三井寺眞（みいでら しん）が記念すべき開幕戦にスタメン抜擢され、前半7分に衝撃のプロ初ゴールを記録し大きな話題を集めました。",
+      "trivia": "三井寺選手は2026年4月に16歳でクラブ最年少プロ契約を締結しており、両足を巧みに操る圧倒的なドリブルセンスから『日本のヤマル』とも称されています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "2026-27シーズン",
+        "秋春制",
+        "開幕戦"
+      ],
+      "text": "2026-27シーズンから秋春制へ移行したJリーグですが、記念すべき新シーズンが開幕した日付はいつ？",
+      "options": [
+        "2026年8月7日",
+        "2026年8月14日",
+        "2026年8月1日",
+        "2026年8月22日"
+      ],
+      "answerIndex": 0,
+      "explanation": "これまでの「2月開幕・12月閉幕」からカレンダーを変え、Jリーグは2026年8月7日に秋春制として初のシーズンとなる2026-27シーズンを開幕させました。",
+      "trivia": "このシーズンのJ1開幕戦で最初に得点したのは、ガンバ大阪と対戦した浦和レッズの小森飛絢選手でした。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "スポンサー",
+        "メディア"
+      ],
+      "text": "2026年8月6日、Jリーグとサポーティングカンパニー契約を結ぶあるニュースアプリが、AIを活用した「Jリーグ全60クラブの専用チャンネル」を開設しました。そのアプリとは？",
+      "options": [
+        "SmartNews（スマートニュース）",
+        "LINE NEWS",
+        "グノシー",
+        "Yahoo!ニュース"
+      ],
+      "answerIndex": 0,
+      "explanation": "SmartNews内にJ1〜J3の全60クラブのチャンネルが一斉に開設されました。公式動画をAIで解析しテキスト記事として紹介する独自機能などが話題です。",
+      "trivia": "このチャンネルでは、試合日程や選手情報はもちろん、動画を再生できない環境向けにAIがハイライトの見どころを文章で解説する機能が搭載されています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "J3リーグ",
+        "監督ライセンス",
+        "規約改定"
+      ],
+      "text": "2026年8月に開幕した2026/27シーズンのJ3リーグから、トップチームの監督に就任するためのライセンス基準が緩和されました。新たに認められるようになった資格はどれ？",
+      "options": [
+        "JFA Aジェネラルライセンス",
+        "JFA Aライセンス U-12",
+        "JFA Bライセンス",
+        "JFA Cライセンス"
+      ],
+      "answerIndex": 0,
+      "explanation": "これまでJ3監督には最上位の「JFA Proライセンス」が必要でしたが、今シーズンから「JFA Aジェネラルライセンス」以上へと緩和され、指導者の登用枠が広がりました。",
+      "trivia": "これによりアカデミーや大学・アマチュアで実績のある指導者が直接J3の監督に就任しやすくなり、チームがJ2へ昇格した場合は翌シーズンに限りJ2でも引き続き指揮を執れる特例が設けられています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "明治安田",
+        "Jリーグ",
+        "スポンサー",
+        "イベント"
+      ],
+      "text": "2026/27シーズンのJリーグで、タイトルパートナーの明治安田生命が全60クラブと協働する「明治安田のJ活」において、スタジアム来場者に抽選で無料配布されている応援アイテムは何？",
+      "options": [
+        "オリジナルベースボールシャツ",
+        "オリジナルペンライト",
+        "特製マフラータオル",
+        "クラブロゴ入りエコバッグ"
+      ],
+      "answerIndex": 0,
+      "explanation": "スタジアム観戦のきっかけ作りと地域のにぎわい創出を目的に、明治安田ブースでアンケートに答えた人の中から各クラブ1,000名にオリジナルベースボールシャツが当たる企画がスタートしました。",
+      "trivia": "野球のユニフォーム風のデザインを取り入れることで、私服のうえから手軽に羽織れる「スタジアムファッション」としての定着が期待されています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ガンバ大阪",
+        "監督交代",
+        "J1リーグ"
+      ],
+      "text": "2026年8月7日に行われた2026/27 J1リーグ開幕戦で、浦和レッズとの激しい点の取り合いを4-3で制したガンバ大阪。今シーズンから新たにチームの指揮を執っている監督は誰？",
+      "options": [
+        "明神智和",
+        "宮本恒靖",
+        "松波正信",
+        "遠藤保仁"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガンバ大阪は今シーズンから明神智和新監督が就任。開幕戦では浦和のチョウ・キジェ監督と対戦し、新加入の植中朝日の決勝ゴールなどで4-3の逆転勝利を収めました。",
+      "trivia": "ガンバ大阪は夏に行われたオーストリアでのプレシーズンキャンプを経て新体制の戦術を磨き上げ、この劇的な開幕戦勝利につなげました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "新ルール",
+        "競技規則",
+        "秋春制"
+      ],
+      "text": "2026/27シーズンのJリーグから新たに導入された時間浪費防止のルールで、選手交代の際にベンチに退く選手は何秒以内にピッチを出なければならないと定められたでしょうか？",
+      "options": [
+        "10秒",
+        "5秒",
+        "15秒",
+        "20秒"
+      ],
+      "answerIndex": 0,
+      "explanation": "交代選手は10秒以内にピッチを出なければならず、超過した場合は交代で入る選手がリスタート後1分間ピッチに入れないペナルティが科されます。",
+      "trivia": "スローインやゴールキックの遅延に対しても「5秒カウント」が適用され、実際にボールが動いている時間を増やす取り組みが進んでいます。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "最多入場者数",
+        "横浜F・マリノス",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年8月7日に行われた2026/27シーズンのJ1開幕戦（横浜F・マリノス vs 鹿島アントラーズ）で、J1のリーグ戦における最多入場者数記録が更新されました。この試合の入場者数は何人だったでしょうか？",
+      "options": [
+        "63,960人",
+        "62,241人",
+        "59,626人",
+        "57,885人"
+      ],
+      "answerIndex": 0,
+      "explanation": "MUFGスタジアム（国立競技場）で開催された開幕記念マッチには63,960人が詰めかけ、2019年の横浜FM対FC東京（63,854人）を抜いてリーグ戦史上最多入場者数となりました。",
+      "trivia": "1993年5月15日のJリーグ初年度開幕戦（ヴェルディ川崎 vs 横浜M）は59,626人でした。これを30年以上経って超える記念すべき試合となりました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "三井寺眞",
+        "横浜F・マリノス",
+        "最年少ゴール",
+        "J1"
+      ],
+      "text": "2026年8月7日のJ1開幕戦で、J1史上最年少となる開幕スタメン出場を果たし、前半7分にプロ初ゴールを決めて話題となった横浜F・マリノスの16歳の選手は誰でしょうか？",
+      "options": [
+        "三井寺眞",
+        "徳田誉",
+        "佐藤龍之介",
+        "吉田湊海"
+      ],
+      "answerIndex": 0,
+      "explanation": "青森県出身の16歳、三井寺眞（みいでら しん）は16歳4カ月5日で開幕スタメンに抜擢されると、鮮やかな先制ゴールを挙げて満員の国立競技場を沸かせました。",
+      "trivia": "プロ契約を結んだのは16歳の誕生日当日。憧れの選手はフィル・フォーデンで、背番号も同じ「47」をつけています。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-07",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "FC東京",
+        "FC町田ゼルビア",
+        "長友佑都",
+        "退場"
+      ],
+      "text": "2026年8月8日のJ1開幕戦（FC東京 vs FC町田ゼルビア）では、試合前に現役続行を報告した長友佑都が自らコールリーダーを務めました。しかし、この試合はある選手が前半に退場したことでFC東京は1-5と大敗しました。退場した選手は誰でしょうか？",
+      "options": [
+        "橋本健人",
+        "小泉慶",
+        "俵積田晃太",
+        "室屋成"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合前に長友佑都がサポーターと共にチャントを熱唱しましたが、前半38分に左SBの橋本健人が一発退場となり、数的不利に陥ったFC東京は大敗を喫しました。",
+      "trivia": "長友選手は試合前、「めちゃくちゃ盛り上げたいんでコールリーダーさせてもらっていいですか？」と呼びかけ、伝統のチャント『東京こそすべて』を大合唱させていました。",
+      "referenceDate": "2026-08-10",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-08",
+        "publishDate": "2026-08-10",
+        "expiryDate": "2026-08-17",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
