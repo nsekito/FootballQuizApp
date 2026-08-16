@@ -1,0 +1,1043 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-08-16T21:26:34Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-08-17",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "サンフレッチェ広島",
+        "浦和レッズ",
+        "試合結果"
+      ],
+      "text": "2026年8月15日に行われたJ1第2節で、浦和レッズを相手にアウェイで1-4と大勝を収めたクラブはどこでしょう？",
+      "options": [
+        "サンフレッチェ広島",
+        "ヴィッセル神戸",
+        "鹿島アントラーズ",
+        "川崎フロンターレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月15日のJ1第2節、サンフレッチェ広島は鈴木章斗の2ゴールなど多彩な攻撃を見せ、浦和レッズに4-1で快勝しました。",
+      "trivia": "広島は浦和のホームである埼玉スタジアムでは苦戦が続いていましたが、この試合での大勝により見事な開幕連勝スタートを切りました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC町田ゼルビア",
+        "ジェフユナイテッド千葉",
+        "試合結果"
+      ],
+      "text": "2026年8月15日に行われたJ1第2節、ジェフユナイテッド千葉に4-0で快勝し、開幕2連勝で首位に立ったクラブはどこでしょう？",
+      "options": [
+        "FC町田ゼルビア",
+        "鹿島アントラーズ",
+        "清水エスパルス",
+        "柏レイソル"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月15日の試合でFC町田ゼルビアはアウェイで千葉を4-0で圧倒し、得失点差でも抜け出して首位に立ちました。",
+      "trivia": "この試合で町田は、セットプレー、クロス、中央突破、サイド攻略と、それぞれ異なる4つのパターンから得点を奪う決定力の高さを見せました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "アビスパ福岡",
+        "セレッソ大阪",
+        "試合結果"
+      ],
+      "text": "2026年8月15日に行われたJ1第2節、アビスパ福岡 vs セレッソ大阪の試合結果（スコア）は次のうちどれでしょう？",
+      "options": [
+        "3-0で福岡の勝利",
+        "1-0で福岡の勝利",
+        "2-2の引き分け",
+        "0-1でセレッソの勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月15日の試合で、アビスパ福岡はホームでセレッソ大阪に3-0で快勝を収めました。",
+      "trivia": "アビスパ福岡の藤本一輝はこの試合で見事な今シーズン初ゴールを決めてチームの勝利に貢献しています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC東京",
+        "ヴィッセル神戸",
+        "ゴール"
+      ],
+      "text": "2026年8月15日のヴィッセル神戸 vs FC東京の試合（2-2の引き分け）で、FC東京の全得点となる2ゴールを挙げた選手は誰でしょう？",
+      "options": [
+        "長倉幹樹",
+        "仲川輝人",
+        "ディエゴ・オリヴェイラ",
+        "荒木遼太郎"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月15日のヴィッセル神戸戦で、FC東京の長倉幹樹が2ゴールを奪う活躍を見せ、アウェイでの貴重な勝ち点獲得に貢献しました。",
+      "trivia": "ホームの神戸も大迫勇也と武藤嘉紀の強力なアタッカー陣がそれぞれゴールを決め、意地を見せて引き分けに持ち込みました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "サンフレッチェ広島",
+        "浦和レッズ",
+        "初ゴール"
+      ],
+      "text": "2026年8月15日のJ1第2節、浦和レッズ戦の後半16分に自身にとっての来日初ゴールを決め、サンフレッチェ広島の勝利を決定づけたストライカーは誰でしょう？",
+      "options": [
+        "セバスティアン・アレー",
+        "マルコス・ジュニオール",
+        "ピエロス・ソティリウ",
+        "ドウグラス・ヴィエイラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "セバスティアン・アレーは左CKのこぼれ球を押し込み、初先発となった試合で見事に来日初ゴールをマークしました。",
+      "trivia": "コートジボワール代表としても活躍したアレーの加入と初ゴールに、広島のサポーターからはSNSでも大きな歓喜の声が上がりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "鹿島アントラーズ",
+        "名古屋グランパス",
+        "劇的ゴール"
+      ],
+      "text": "2026年8月15日の鹿島アントラーズ vs 名古屋グランパスの試合で、後半アディショナルタイムに劇的な決勝ゴールを決め、チームを開幕2連勝に導いた鹿島のDFは誰でしょう？",
+      "options": [
+        "関川郁万",
+        "植田直通",
+        "安西幸輝",
+        "濃野公人"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月15日の試合で、関川郁万が後半アディショナルタイム8分に決勝ゴールを挙げ、鹿島アントラーズが2-1で勝利しました。",
+      "trivia": "鹿島は開幕戦の横浜F・マリノス戦に続き、2試合連続でアディショナルタイムの劇的ゴールによる勝利を飾る勝負強さを見せました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC町田ゼルビア",
+        "ジェフユナイテッド千葉",
+        "フリーキック"
+      ],
+      "text": "2026年8月15日のジェフユナイテッド千葉 vs FC町田ゼルビアの試合で、前半18分に見事な直接フリーキックを沈めて町田の先制点を挙げた選手は誰でしょう？",
+      "options": [
+        "中山雄太",
+        "下田北斗",
+        "相馬勇紀",
+        "宇野禅斗"
+      ],
+      "answerIndex": 0,
+      "explanation": "中山雄太はペナルティーエリア手前のフリーキックを左足で直接沈め、これが口火となって町田の4-0の大勝につながりました。",
+      "trivia": "日本代表経験も豊富な中山雄太は守備の要としてだけでなく、高精度の左足でのセットプレーでもチームの大きな武器となっています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "柏レイソル",
+        "東京ヴェルディ",
+        "ゴール"
+      ],
+      "text": "2026年8月14日にMUFGスタジアムで行われた東京ヴェルディ vs 柏レイソルの試合で、柏の反撃の狼煙となる同点ゴールを決めた選手は誰でしょう？",
+      "options": [
+        "遠藤渓太",
+        "マテウス・サヴィオ",
+        "細谷真大",
+        "山田雄太"
+      ],
+      "answerIndex": 0,
+      "explanation": "東京Vに開始早々先制された柏レイソルでしたが、遠藤渓太が同点ゴールを決め、その後逆転して3-1で勝利を収めました。",
+      "trivia": "遠藤渓太はFC東京からの完全移籍加入で、左サイドから鋭いドリブルと得点感覚を発揮し、早くも柏の攻撃陣を牽引しています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-14",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "ガンバ大阪",
+        "水戸ホーリーホック",
+        "ゴール"
+      ],
+      "text": "2026年8月15日に行われた水戸ホーリーホック vs ガンバ大阪の試合で、後半29分に左CKからのクロスにヘディングで合わせ、G大阪に同点をもたらしたDFは誰でしょう？",
+      "options": [
+        "中谷進之介",
+        "三浦弦太",
+        "半田陸",
+        "黒川圭介"
+      ],
+      "answerIndex": 0,
+      "explanation": "アウェイで先制を許したガンバ大阪でしたが、初瀬亮の左CKのクロスに中谷進之介が頭で合わせ、1-1の引き分けに持ち込みました。",
+      "trivia": "秋春制の2026/27シーズンからJ1に昇格した水戸ホーリーホックは、この試合で引き分けたことで念願のJ1での初勝ち点を獲得しました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "サンフレッチェ広島",
+        "浦和レッズ",
+        "ゴール"
+      ],
+      "text": "2026年8月15日に行われた浦和レッズ vs サンフレッチェ広島戦において、広島の1点目（前半16分）と4点目（後半30分）を決め、勝利に大きく貢献した選手は誰でしょう？",
+      "options": [
+        "鈴木章斗",
+        "大橋祐紀",
+        "加藤陸次樹",
+        "満田誠"
+      ],
+      "answerIndex": 0,
+      "explanation": "鈴木章斗は前半16分に川辺駿のクロスを左足で沈めて先制点を挙げると、後半30分にも塩谷司の縦パスから強烈なダイレクトシュートを決める活躍を見せました。",
+      "trivia": "サンフレッチェ広島はこの試合、26本ものシュートを放ち、そのうち21本がペナルティエリア内からのものという圧倒的な攻撃の質を見せつけました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "観客動員",
+        "新記録"
+      ],
+      "text": "秋春制の初年度となる2026/27シーズンのJリーグ。2026年8月14日から16日にかけて行われた第2節において、J1・J2・J3合計で「481,544人」の入場者数を記録しましたが、これは開幕から何節連続での1節あたり最多入場者数更新となったでしょう？",
+      "options": [
+        "2節連続",
+        "3節連続",
+        "4節連続",
+        "5節連続"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026/27シーズンのJリーグは、開幕節の476,112人に続き、第2節でも全カテゴリー合計で481,544人が来場し、2節連続で節別最多入場者数の新記録を樹立しました。",
+      "trivia": "この第2節では、J2リーグでも159,567人、J3リーグでも70,956人が来場し、それぞれのリーグ単独でも節別の歴代最多記録を塗り替えました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-16",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "水戸ホーリーホック",
+        "J1昇格",
+        "勝ち点"
+      ],
+      "text": "2026年8月15日に行われたJ1第2節で、ガンバ大阪と1-1で引き分け、クラブ史上初となるJ1での「勝ち点1」を獲得したクラブはどこでしょう？",
+      "options": [
+        "水戸ホーリーホック",
+        "ジェフユナイテッド千葉",
+        "V・ファーレン長崎",
+        "ファジアーノ岡山"
+      ],
+      "answerIndex": 0,
+      "explanation": "2025年にJ2優勝を果たし、クラブ創設から初めてJ1の舞台に昇格した水戸ホーリーホック。新スタジアムでのJ1ホーム開幕戦となったG大阪戦で、貴重な初勝ち点を手にしました。",
+      "trivia": "この試合で前半18分に先制ゴールを決めた鳥海芳樹選手は、水戸ホーリーホックにとって記念すべき「J1ホーム初ゴール」の記録者となりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "鹿島アントラーズ",
+        "関川郁万",
+        "決勝ゴール"
+      ],
+      "text": "2026年8月15日のJ1第2節・名古屋グランパス戦で、後半アディショナルタイムに劇的な決勝ゴールを挙げ、鹿島アントラーズに10年ぶりとなる開幕2連勝をもたらした選手は誰でしょう？",
+      "options": [
+        "関川郁万",
+        "植田直通",
+        "濃野公人",
+        "鈴木優磨"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1で迎えた後半アディショナルタイム（90+8分）、鹿島アントラーズのDF関川郁万が右コーナーキックからの流れで劇的な勝ち越しゴールを決めました。",
+      "trivia": "鹿島アントラーズは第1節の横浜F・マリノス戦でも試合終了間際のゴールで逆転勝利を収めており、2試合連続での劇的なラストプレーでの勝利となりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "FC町田ゼルビア",
+        "テテ・イェンギ",
+        "得点ランキング"
+      ],
+      "text": "J1第2節でジェフユナイテッド千葉に4-0で快勝し、開幕2連勝を飾ったFC町田ゼルビア。この試合で、開幕戦に続いて2戦連発となるゴールを決めたオーストラリア代表FWは誰でしょう？",
+      "options": [
+        "テテ・イェンギ",
+        "ミッチェル・デューク",
+        "オ・セフン",
+        "ナ・サンホ"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半34分、ミッチェル・デュークからのクロスをテテ・イェンギが胸トラップからの左足ボレーで沈め、開幕から2試合連続となるゴールを記録しました。",
+      "trivia": "テテ・イェンギは身長197cmの長身を誇り、オーストラリア代表として2026年のワールドカップにも出場した実力派のストライカーです。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "横浜FC",
+        "国立競技場"
+      ],
+      "text": "2026年8月16日に行われたJ2第2節「横浜FC vs ジュビロ磐田」は国立競技場で開催され、53,973人の大観衆が集まりました。この観客数は、J2リーグ1試合における歴代何位の記録でしょう？",
+      "options": [
+        "歴代2位",
+        "歴代1位",
+        "歴代3位",
+        "歴代4位"
+      ],
+      "answerIndex": 0,
+      "explanation": "国立競技場で行われたこの一戦は53,973人を動員し、J2リーグの1試合における歴代2位の入場者数記録となりました。",
+      "trivia": "J2リーグの歴代最多入場者数記録は、2024年9月に同じく国立競技場で行われた清水エスパルス対横浜FCの試合で記録された55,949人です。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-16",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "水戸ホーリーホック",
+        "観客動員",
+        "クラブ記録"
+      ],
+      "text": "2026年8月15日に行われた、水戸ホーリーホックのクラブ史上初のJ1ホーム開幕戦（ガンバ大阪戦）で記録された、クラブ最多入場者数は何人だったでしょう？",
+      "options": [
+        "13,226人",
+        "10,743人",
+        "15,339人",
+        "18,226人"
+      ],
+      "answerIndex": 0,
+      "explanation": "水戸信用金庫スタジアムで行われたこの試合には13,226人が来場し、クラブ史上ホームゲームの最多入場者数記録を更新しました。",
+      "trivia": "これまでの水戸ホーリーホックのホーム最多入場者数記録は、J2で戦っていた2025年11月の大分トリニータ戦で記録した10,743人でした。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "福元美穂",
+        "なでしこジャパン",
+        "現役引退"
+      ],
+      "text": "2026年8月、現役引退を発表していた元なでしこジャパンの選手が、地元・鹿児島県指宿市で引退報告を行いました。ロンドン五輪の銀メダル獲得にも貢献したこのGKは誰でしょう？",
+      "options": [
+        "福元美穂",
+        "海堀あゆみ",
+        "山根恵里奈",
+        "山下杏也加"
+      ],
+      "answerIndex": 0,
+      "explanation": "ロンドン五輪で正GKとして銀メダル獲得に貢献した元なでしこジャパンの福元美穂は、7月末に引退を発表し、2026年8月10日に故郷の指宿市で引退報告を行いました。",
+      "trivia": "福元美穂は岡山湯郷Belleでのプレー歴が長く、日本代表として81試合に出場し、2011年の女子ワールドカップ優勝メンバーにも名を連ねています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "加藤蓮",
+        "京都サンガF.C.",
+        "横浜F・マリノス",
+        "完全移籍"
+      ],
+      "text": "2026年8月に開幕した「秋春制」のJ1リーグで、横浜F・マリノスから京都サンガF.C.へ完全移籍し、開幕の長崎戦で新天地デビューとともにアシストを記録したDFは誰でしょう？",
+      "options": [
+        "加藤蓮",
+        "渡辺皓太",
+        "角田涼太朗",
+        "小池龍太"
+      ],
+      "answerIndex": 0,
+      "explanation": "今夏、横浜F・マリノスから京都サンガF.C.へ完全移籍で加入した加藤蓮は、秋春制移行後の開幕戦となった長崎戦に先発出場し、エリアスのゴールをアシストしました。",
+      "trivia": "加藤蓮は左右のサイドバックをこなせるユーティリティ性の高さが武器で、京都の新たな戦術におけるキーマンとして期待されています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "瀬古樹",
+        "浦和レッズ",
+        "ストーク・シティ",
+        "完全移籍"
+      ],
+      "text": "2026年8月16日、イングランドのストーク・シティからJ1の浦和レッズへ完全移籍で加入することが発表された、かつて横浜FCや川崎フロンターレでプレーしたMFは誰でしょう？",
+      "options": [
+        "瀬古樹",
+        "田中碧",
+        "三笘薫",
+        "守田英正"
+      ],
+      "answerIndex": 0,
+      "explanation": "2024年に川崎フロンターレからイングランド2部のストーク・シティへ移籍していたMF瀬古樹が、2026年8月16日に浦和レッズへの完全移籍でJリーグに復帰することが発表されました。",
+      "trivia": "瀬古樹は高い技術を誇るボランチで、明治大学時代にも中盤の要として活躍し、プロ入り後はその展開力でチームのリズムを作り出してきました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "パブロ・サバック",
+        "セレッソ大阪",
+        "シリア代表",
+        "完全移籍"
+      ],
+      "text": "2026年8月10日、リビア1部のクラブからセレッソ大阪への完全移籍が発表された、身長190cmのシリア代表FWは誰でしょう？",
+      "options": [
+        "パブロ・サバック",
+        "レオ・セアラ",
+        "カピシャーバ",
+        "ルーカス・フェルナンデス"
+      ],
+      "answerIndex": 0,
+      "explanation": "セレッソ大阪は2026年8月10日、リビアのアル・アハリ・トリポリからシリア代表FWパブロ・サバックの完全移籍加入を発表しました。長身を活かした得点力が期待されています。",
+      "trivia": "パブロ・サバックはコロンビア出身ですが、シリア国籍も有しており、過去には韓国のKリーグでもプレーした経験を持っています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "髙橋仁胡",
+        "セレッソ大阪",
+        "ホルシュタイン・キール",
+        "期限付き移籍"
+      ],
+      "text": "2026年8月12日、J1のセレッソ大阪からドイツ2部のホルシュタイン・キールへ期限付き移籍することが発表された若手DFは誰でしょう？",
+      "options": [
+        "髙橋仁胡",
+        "チェイス・アンリ",
+        "半田陸",
+        "毎熊晟矢"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月12日、セレッソ大阪に所属するDF髙橋仁胡が、ドイツのホルシュタイン・キールへ期限付き移籍することが発表されました。",
+      "trivia": "髙橋仁胡（たかはし にこ）はスペインのカタルーニャ州出身で、名門FCバルセロナの下部組織で育った経歴を持っています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "秋春制",
+        "新シーズン"
+      ],
+      "text": "2026年8月、Jリーグは歴史的な新たなシーズンをスタートさせました。長年続いた「春秋制」から移行し、新たに導入された大会方式の通称は何でしょう？",
+      "options": [
+        "秋春制",
+        "夏冬制",
+        "春夏制",
+        "冬秋制"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは2026-27シーズンより、欧州の主要リーグなどと同じ「秋春制」に完全移行し、8月に開幕して翌年5月に閉幕するカレンダーへと変更されました。",
+      "trivia": "秋春制への移行により、猛暑期での試合を避けることや、欧州リーグと移籍期間のズレが解消されることなどが期待されています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "浦和レッズ",
+        "瀬古樹",
+        "移籍"
+      ],
+      "text": "2026年8月16日、イングランド・チャンピオンシップ（英2部）のストーク・シティから、浦和レッズへ完全移籍で加入することが発表された選手は誰でしょう？",
+      "options": [
+        "瀬古樹",
+        "橋岡大樹",
+        "田中碧",
+        "川辺駿"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズは2026年8月16日、イングランド2部のストーク・シティからMF瀬古樹を獲得したことを発表しました。2シーズンぶりのJリーグ復帰となります。",
+      "trivia": "瀬古樹は過去に横浜FCや川崎フロンターレでもプレーし、高いパスセンスと豊富な運動量でチームの中盤を支える選手です。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "セレッソ大阪",
+        "ジャクソン・アーバイン",
+        "オーストラリア代表"
+      ],
+      "text": "2026年8月、セレッソ大阪がドイツのFCザンクトパウリから完全移籍で獲得したことを発表した、背番号「36」をつけるオーストラリア代表MFは誰でしょう？",
+      "options": [
+        "ジャクソン・アーバイン",
+        "ミッチェル・デューク",
+        "トーマス・デン",
+        "アワー・メイビル"
+      ],
+      "answerIndex": 0,
+      "explanation": "セレッソ大阪は2026年8月に、ドイツのFCザンクトパウリからオーストラリア代表のジャクソン・アーバインを完全移籍で獲得しました。",
+      "trivia": "アーバインは身長189cmの大型ボランチで、長髪と口ヒゲのワイルドな風貌や、私服のセンスが抜群におしゃれなことでも知られています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "スポンサー",
+        "akippa",
+        "セレッソ大阪"
+      ],
+      "text": "2026年8月13日、駐車場のシェアリングサービスを展開する「akippa（アキッパ）」が、2026-27シーズンのオフィシャルスポンサー契約を更新したと発表したJ1クラブはどこでしょう？",
+      "options": [
+        "セレッソ大阪",
+        "ガンバ大阪",
+        "FC東京",
+        "ヴィッセル神戸"
+      ],
+      "answerIndex": 0,
+      "explanation": "akippa株式会社は、2026年8月13日にJ1リーグのセレッソ大阪と2026-27シーズンのオフィシャルスポンサー契約を更新したことを発表しました。",
+      "trivia": "スタジアム周辺の駐車場不足や違法駐車問題の解消のため、akippaのような駐車場シェアサービスと提携するスポーツクラブが増えています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "ロゴ",
+        "リブランディング"
+      ],
+      "text": "2026-27シーズンの「秋春制」移行に伴い、Jリーグはブランドのリブランディングを実施しました。新しくなったJリーグ公式ロゴの変更点として正しいものはどれでしょう？",
+      "options": [
+        "カテゴリー別の色分けを廃止し、白と黒に統一した",
+        "J1からJ3まで全て赤色に統一した",
+        "英語表記を「J.LEAGUE」から「J LEAGUE」に変更した",
+        "J3のロゴにのみ地域名を入れるようにした"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは「ブランドエボリューション」の一環として、これまでJ1は赤、J2は緑のようにカテゴリー別に色分けされていた公式ロゴを廃止し、白と黒（白地に黒、または黒地に白）に統一しました。",
+      "trivia": "ロゴの色を統一することで、どのカテゴリーであっても等しく価値のある「Jリーグ」であるというメッセージが込められています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "シーズン移行",
+        "入場者数"
+      ],
+      "text": "2026年8月14日〜16日に行われた「2026/27明治安田Jリーグ」の第2節に関するニュースで、J1・J2・J3の合計で達成された歴史的な記録は何でしょうか？",
+      "options": [
+        "1節あたりの過去最多入場者数を記録した",
+        "全カテゴリーでVARが同時導入された",
+        "1節あたりの合計得点数の記録を更新した",
+        "全試合でホームチームが勝利した"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1・J2・J3合計で48万1,544人が来場し、秋春制の開幕節（第1節）の記録を上回り、2節連続で節別最多入場者数を更新しました。",
+      "trivia": "今回のシーズン移行は、単なる開催時期の変更にとどまらず、「ここから、世界だ。」というコンセプトのもと、多くのファンの注目を集めています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-16",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "鹿島アントラーズ",
+        "劇的勝利",
+        "関川郁万"
+      ],
+      "text": "2026年8月15日に行われたJ1第2節、鹿島アントラーズ対名古屋グランパスの試合で、後半アディショナルタイム（90+8分）に値千金の劇的決勝ゴールを決め、チームを開幕2連勝に導いた選手は誰でしょうか？",
+      "options": [
+        "関川郁万",
+        "鈴木優磨",
+        "仲間隼斗",
+        "植田直通"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1で迎えた試合終了間際の90+8分、DFの関川郁万が劇的な勝ち越しゴールを奪い、鹿島が2-1で勝利しました。",
+      "trivia": "鹿島アントラーズは、秋春制として開幕した2026/27シーズンの第1節（横浜F・マリノス戦）に続き、2試合連続で終盤に劇的な勝利を収めて話題になりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "町田ゼルビア",
+        "中山雄太",
+        "ジェフユナイテッド千葉"
+      ],
+      "text": "2026年8月15日に行われたJ1第2節、ジェフユナイテッド千葉対FC町田ゼルビアの試合で、前半18分に見事な直接フリーキックから先制ゴールを決めた選手は誰でしょうか？",
+      "options": [
+        "中山雄太",
+        "下田北斗",
+        "鈴木準弥",
+        "黒川淳史"
+      ],
+      "answerIndex": 0,
+      "explanation": "この試合では中山雄太が直接FKで先制点を挙げ、その後もテテ・イェンギや西村拓真らが加点し、アウェイの町田が4-0で大勝しました。",
+      "trivia": "対戦相手のジェフユナイテッド千葉は長らくJ2で戦っていましたが、悲願のJ1復帰を果たした2026/27シーズンのホーム開幕戦で、町田の強さを見せつけられる結果となりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ヴィッセル神戸",
+        "FC東京",
+        "武藤嘉紀"
+      ],
+      "text": "2026年8月15日に行われたJ1第2節、ヴィッセル神戸対FC東京の試合は2-2の引き分けに終わりましたが、後半アディショナルタイム（90+3分）に起死回生の同点ゴールを決めた神戸の選手は誰でしょうか？",
+      "options": [
+        "武藤嘉紀",
+        "大迫勇也",
+        "宮代大聖",
+        "井手口陽介"
+      ],
+      "answerIndex": 0,
+      "explanation": "1点ビハインドで迎えた90+3分、武藤嘉紀が土壇場で貴重な同点ゴールを決め、神戸がホームで勝ち点1をもぎ取りました。",
+      "trivia": "武藤嘉紀にとってFC東京はプロキャリアをスタートさせた古巣であり、かつての所属クラブ相手に劇的なゴールを決める形となりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

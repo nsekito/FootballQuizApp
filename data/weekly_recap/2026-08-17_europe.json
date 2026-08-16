@@ -1,0 +1,1038 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-08-16T21:31:05Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-08-17",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "uefa_super_cup",
+        "psg",
+        "aston_villa",
+        "champion"
+      ],
+      "text": "2026年8月12日に行われたUEFAスーパーカップで、アストン・ヴィラを下して大会連覇を達成したクラブはどこでしょうか？",
+      "options": [
+        "パリ・サンジェルマン",
+        "レアル・マドリード",
+        "マンチェスター・シティ",
+        "バイエルン・ミュンヘン"
+      ],
+      "answerIndex": 0,
+      "explanation": "パリ・サンジェルマンがアストン・ヴィラを2-1で破り、2025年に続いてUEFAスーパーカップ連覇を達成しました。",
+      "trivia": "スーパーカップの連覇は、2016年と2017年に達成したレアル・マドリード以来となる快挙です。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-12",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "aston_villa",
+        "uefa_super_cup",
+        "young_player"
+      ],
+      "text": "2026年のUEFAスーパーカップで、アストン・ヴィラで公式戦デビューを果たし、17歳という若さで同点ゴールを決めた選手は誰でしょうか？",
+      "options": [
+        "ブライアン・マジョ",
+        "ラミネ・ヤマル",
+        "アマドゥ・オナナ",
+        "ジョナサン・ロウ"
+      ],
+      "answerIndex": 0,
+      "explanation": "17歳のストライカー、ブライアン・マジョがアストン・ヴィラのデビュー戦で前半終了間際に同点となるゴールを決めました。",
+      "trivia": "ブライアン・マジョはこの得点により、UEFAスーパーカップ史上最年少での先発出場および最年少得点者となりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-12",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "psg",
+        "uefa_super_cup",
+        "motm"
+      ],
+      "text": "2026年8月12日のUEFAスーパーカップで、パリ・サンジェルマンの決勝ゴールを決め「プレイヤー・オブ・ザ・マッチ」に選出された選手は誰でしょうか？",
+      "options": [
+        "デジレ・ドゥエ",
+        "クヴィチャ・クワラツヘリア",
+        "ウスマン・デンベレ",
+        "ブラッドリー・バルコラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "デジレ・ドゥエはクワラツヘリアの先制点をアシストしたほか、後半に左足で鮮やかな決勝ゴールを決め、試合のMVPに選ばれました。",
+      "trivia": "彼は2015年以来となる、1つのUEFAスーパーカップの試合でゴールとアシストの両方を記録した選手になりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-12",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "uefa_super_cup",
+        "referee",
+        "somalia"
+      ],
+      "text": "2026年のUEFAスーパーカップの主審を務め、「ヨーロッパ以外の審判として初の同大会主審」という歴史に名を刻んだオマル・アルタンの出身国はどこでしょうか？",
+      "options": [
+        "ソマリア",
+        "エジプト",
+        "セネガル",
+        "モロッコ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ソマリア出身のオマル・アルタン主審は、CAF（アフリカサッカー連盟）とUEFAの協力の一環として、この大舞台の笛を任されました。",
+      "trivia": "彼は2026年ワールドカップの審判団に選ばれていましたが、米国の入国制限により参加できず、その直後にこの抜擢を受けました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-12",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "laliga",
+        "alaves",
+        "getafe"
+      ],
+      "text": "2026-27シーズンのラ・リーガ開幕戦（2026年8月15日）で、ヘタフェをホームに迎え3-0で快勝したクラブはどこでしょうか？",
+      "options": [
+        "アラベス",
+        "セビージャ",
+        "マジョルカ",
+        "ラージョ・バジェカーノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アラベスは終盤のテナグリアとディアスのゴールなどでヘタフェを突き放し、3-0で2026-27シーズンの白星発進を飾りました。",
+      "trivia": "アラベスの本拠地メンディソロツァで行われたこの試合は、今シーズンのラ・リーガ全体のオープニングマッチの1つでした。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "laliga",
+        "sevilla",
+        "rayo_vallecano"
+      ],
+      "text": "2026年8月15日に行われたラ・リーガ開幕戦で、セビージャはラージョ・バジェカーノに2-1で勝利しました。この試合でセビージャが挙げた2得点は、どちらもどのようなプレーからのゴールだったでしょうか？",
+      "options": [
+        "ペナルティキック (PK)",
+        "コーナーキックからのヘディング",
+        "直接フリーキック",
+        "オウンゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "セビージャは後半にグリディ（52分）とフェルナンデス（90+6分）がそれぞれPKを沈め、2-1の劇的な勝利を収めました。",
+      "trivia": "2本目のPKは試合終了間際の後半アディショナルタイムに与えられたもので、サポーターを熱狂させる決勝点となりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "friendly",
+        "ac_milan",
+        "manchester_united"
+      ],
+      "text": "2026年8月15日に行われたプレシーズンマッチで、マンチェスター・ユナイテッドを相手に4-2で勝利を収めたセリエAのクラブはどこでしょうか？",
+      "options": [
+        "ACミラン",
+        "インテル",
+        "ユヴェントス",
+        "ASローマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ACミランはマンチェスター・ユナイテッドとの親善試合に臨み、打ち合いを制して4-2で勝利しました。",
+      "trivia": "この試合のように、プレミアリーグとセリエAの名門同士の対戦はプレシーズンでも世界中のファンから大きな注目を集めます。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "friendly",
+        "chelsea",
+        "real_sociedad"
+      ],
+      "text": "2026年8月15日に行われたクラブ親善試合で、チェルシーが3-1で勝利したラ・リーガのクラブはどこでしょうか？",
+      "options": [
+        "レアル・ソシエダ",
+        "レアル・ベティス",
+        "ビジャレアル",
+        "セビージャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "チェルシーはプレシーズンのテストマッチでレアル・ソシエダと対戦し、3-1で勝利を収めました。",
+      "trivia": "プレミアリーグ勢は2026年8月末の開幕に向けて、この時期に欧州の強豪と最後の調整試合を行っていました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "friendly",
+        "inter",
+        "real_betis"
+      ],
+      "text": "2026年8月15日に行われたクラブ親善試合で、インテルが1-0で勝利したラ・リーガのクラブはどこでしょうか？",
+      "options": [
+        "レアル・ベティス",
+        "レアル・ソシエダ",
+        "バレンシア",
+        "ジローナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテルはラ・リーガのレアル・ベティスと対戦し、1-0の完封勝利でプレシーズンの調整を終えました。",
+      "trivia": "インテルは2025-26シーズンのセリエA王者であり、連覇を目指して2026年8月のリーグ開幕戦に向けて準備を進めていました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "friendly",
+        "newcastle",
+        "bayer_leverkusen"
+      ],
+      "text": "2026年8月15日に行われた親善試合で、ニューカッスル・ユナイテッドを2-1で破ったドイツ・ブンデスリーガのクラブはどこでしょうか？",
+      "options": [
+        "バイエル・レヴァークーゼン",
+        "バイエルン・ミュンヘン",
+        "ボルシア・ドルトムント",
+        "RBライプツィヒ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブンデスリーガの強豪バイエル・レヴァークーゼンが、イングランドのニューカッスル・ユナイテッドと対戦し2-1で勝利しました。",
+      "trivia": "同日にはバイエルン・ミュンヘンもRBライプツィヒとドイツ勢同士の親善試合を行い、3-1で勝利しています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "コミュニティ・シールド",
+        "アーセナル",
+        "マンチェスター・シティ"
+      ],
+      "text": "2026年8月16日に行われたFAコミュニティ・シールドで、マンチェスター・シティを3-0で破り優勝したクラブはどこか？",
+      "options": [
+        "アーセナル",
+        "チェルシー",
+        "リヴァプール",
+        "マンチェスター・ユナイテッド"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルがカラフィオーリ、ハヴァーツ、ウーデゴールのゴールで3-0の快勝を収め、今シーズン最初のタイトルを獲得しました。",
+      "trivia": "アーセナルの先制点は試合開始わずか24秒で決まり、これはコミュニティ・シールド史上最速のゴール記録となりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-16",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "UEFAスーパーカップ",
+        "パリ・サンジェルマン",
+        "アストン・ヴィラ"
+      ],
+      "text": "2026年8月12日に行われたUEFAスーパーカップで、アストン・ヴィラを2-1で下して2年連続の優勝を飾ったクラブはどこか？",
+      "options": [
+        "パリ・サンジェルマン",
+        "レアル・マドリード",
+        "バイエルン・ミュンヘン",
+        "インテル"
+      ],
+      "answerIndex": 0,
+      "explanation": "パリ・サンジェルマンがクワラツヘリアとドゥエのゴールで2-1で勝利し、2年連続のUEFAスーパーカップ制覇を達成しました。",
+      "trivia": "アストン・ヴィラはこの試合がクラブ史上初のUEFAスーパーカップ出場でしたが、惜しくも初タイトルとはなりませんでした。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-12",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "アーセナル",
+        "最速ゴール",
+        "カラフィオーリ"
+      ],
+      "text": "2026年8月16日のFAコミュニティ・シールド（アーセナル対マンチェスター・シティ）で、開始わずか24秒という大会史上最速ゴールを決めたアーセナルの選手は誰か？",
+      "options": [
+        "リッカルド・カラフィオーリ",
+        "カイ・ハヴァーツ",
+        "マルティン・ウーデゴール",
+        "ブカヨ・サカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "新加入のルイス・スケリーからのパスを受けたカラフィオーリが開始24秒でゴールを決め、アーセナルに勢いをもたらしました。",
+      "trivia": "対戦相手のマンチェスター・シティは、新監督エンツォ・マレスカの初陣でしたが、ほろ苦いスタートとなりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-16",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "セビージャ",
+        "PK"
+      ],
+      "text": "2026年8月15日に行われたラ・リーガ開幕節で、セビージャはラージョ・バジェカーノに2-1で逆転勝利を収めました。この試合でのセビージャの2得点は、どのような形で生まれたか？",
+      "options": [
+        "2点ともPK",
+        "2点ともフリーキックからの直接ゴール",
+        "2点ともコーナーキックからのヘディング",
+        "2点ともオウンゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "セビージャは52分にジョン・グリディが、後半アディショナルタイム（90+7分）にペケがそれぞれPKを沈め、劇的な逆転勝利を収めました。",
+      "trivia": "セビージャの決勝点を決めたペケは、後半アディショナルタイムのプレッシャーの中、冷静にPKを成功させました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "UEFAスーパーカップ",
+        "アストン・ヴィラ",
+        "マジョ"
+      ],
+      "text": "2026年のUEFAスーパーカップ（パリ・サンジェルマン対アストン・ヴィラ）で、前半終了間際にアストン・ヴィラの同点ゴールを決めた選手は誰か？",
+      "options": [
+        "マジョ",
+        "オリー・ワトキンス",
+        "レオン・ベイリー",
+        "ジョン・マッギン"
+      ],
+      "answerIndex": 0,
+      "explanation": "パリ・サンジェルマンが先制した後、前半45分にアストン・ヴィラのマジョが同点ゴールを決め、試合を振り出しに戻しました。",
+      "trivia": "試合は最終的に後半のデジレ・ドゥエの勝ち越しゴールにより、パリ・サンジェルマンが勝利を収めています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-12",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "ビジャレアル",
+        "連続ゴール"
+      ],
+      "text": "2026年8月16日のラ・リーガ第1節、ラシン・サンタンデール対ビジャレアル（2-2）で、ビジャレアルは前半終了間際の45分と45+1分に立て続けにゴールを奪いました。この2得点を決めた選手の組み合わせとして正しいものはどれか？",
+      "options": [
+        "ゲイェ と ペペ",
+        "ジェラール・モレノ と アレックス・バエナ",
+        "アレクサンダー・セルロート と ジェレミ・ピノ",
+        "アジョセ・ペレス と イリアス・アコマシュ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2点ビハインドで迎えた前半終了間際、ビジャレアルは45分にゲイェが、その直後の45+1分にニコラ・ペペが連続ゴールを挙げ、同点に追いつきました。",
+      "trivia": "ニコラ・ペペは新天地ビジャレアルでの開幕戦で、貴重な同点ゴールをマークする活躍を見せました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-16",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鈴木彩艶",
+        "移籍",
+        "プレミアリーグ"
+      ],
+      "text": "パリ・サンジェルマン（PSG）への移籍が土壇場で破談となった直後、2026年8月16日に日本代表GK鈴木彩艶がクラブ間合意に至ったと報じられたプレミアリーグのクラブはどこでしょう？",
+      "options": [
+        "アストン・ビラ",
+        "リヴァプール",
+        "アーセナル",
+        "マンチェスター・ユナイテッド"
+      ],
+      "answerIndex": 0,
+      "explanation": "鈴木彩艶はパリSGへの移籍が目前とされていましたが、代理人の手数料の問題などで破談となり、直後にアストン・ビラへの移籍が合意したと複数メディアで報じられました。",
+      "trivia": "報道によると、アストン・ビラとの移籍金は最大で約64億円（3500万ユーロ）に上るとされ、日本人GKとしての史上最高額を大幅に更新する見込みです。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "eredivisie",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "佐野航大",
+        "PSV",
+        "移籍"
+      ],
+      "text": "2026年8月、エールディヴィジ（オランダ1部）のNECからリーグ3連覇中の強豪PSVへ完全移籍し、同月15日の試合でデビューを飾った日本代表MFは誰でしょう？",
+      "options": [
+        "佐野航大",
+        "小川航基",
+        "斉藤光毅",
+        "三戸舜介"
+      ],
+      "answerIndex": 0,
+      "explanation": "佐野航大は今夏NECからPSVへ完全移籍を果たしました。2026年8月15日のエクセルシオール戦で途中出場して新天地デビューを飾り、ピーター・ボス監督からも高く評価されました。",
+      "trivia": "佐野はPSVにとって、堂安律（現フランクフルト）に続くクラブ史上2人目の日本人選手となります。加入時のインタビューでは堂安からビデオメッセージも届きました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "championship",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "森下龍矢",
+        "ブラックバーン",
+        "アシスト"
+      ],
+      "text": "2026年8月14日に行われた英2部チャンピオンシップ開幕戦のウルヴァーハンプトン戦で、右サイドからのピンポイントクロスとノールックパスで2ゴールを演出する活躍を見せたブラックバーンの日本人選手は誰でしょう？",
+      "options": [
+        "森下龍矢",
+        "大橋祐紀",
+        "坂元達裕",
+        "平河悠"
+      ],
+      "answerIndex": 0,
+      "explanation": "森下龍矢はブラックバーンの右ウイングとして先発出場し、前半に同点アシスト、後半には逆転ゴールの起点となるノールックパスを見せ、現地メディアから高い評価を受けました。",
+      "trivia": "この試合では、同じくブラックバーンに所属するFW大橋祐紀も後半途中から出場しており、イングランドの地で日本人コンビの共演が実現しました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-14",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "レアル・ソシエダ",
+        "親善試合"
+      ],
+      "text": "FIFAワールドカップ2026で左膝を負傷し離脱していたレアル・ソシエダの久保建英が、2026年8月15日のプレシーズンマッチで先発に復帰しました。この試合の対戦相手となったプレミアリーグのクラブはどこでしょう？",
+      "options": [
+        "チェルシー",
+        "トッテナム",
+        "ブライトン",
+        "フラム"
+      ],
+      "answerIndex": 0,
+      "explanation": "久保建英はチェルシーの本拠地スタンフォード・ブリッジで行われたプレシーズンマッチに先発出場し、63分までプレーしました。チームは1-3で敗れましたが、久保自身は攻撃の軸として機能し好評価を得ました。",
+      "trivia": "久保はW杯での負傷から約2ヶ月ぶりに実戦復帰（8月8日のケルン戦に途中出場）を果たしており、このチェルシー戦が復帰後初めての先発出場となりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "championship",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "斉藤光毅",
+        "QPR",
+        "ゴール"
+      ],
+      "text": "2026年8月15日の英2部チャンピオンシップ開幕戦で、相手3人に囲まれながらもペナルティエリア内に侵入し、3-1の逆転勝利に導く決勝ゴールを決めたQPR（クイーンズ・パーク・レンジャーズ）の日本人選手は誰でしょう？",
+      "options": [
+        "斉藤光毅",
+        "松木玖生",
+        "平河悠",
+        "三戸舜介"
+      ],
+      "answerIndex": 0,
+      "explanation": "QPRに所属する斉藤光毅は、開幕戦のポーツマス戦に先発出場しました。1-1で迎えた前半40分にドリブルで仕掛けて放ったシュートがディフレクトして決勝点となりました。",
+      "trivia": "この試合でQPRは敵地フラットン・パークで鮮やかな逆転勝利を挙げましたが、これはクラブにとって同スタジアムでの26年ぶりの白星という歴史的な快挙でした。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-15",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アトレティコ・マドリード",
+        "トッテナム",
+        "クリスティアン・ロメロ",
+        "移籍"
+      ],
+      "text": "2026年8月中旬、トッテナム・ホットスパーでディフェンスの要として活躍していたアルゼンチン代表DFクリスティアン・ロメロが、約3400万ポンドの移籍金で完全移籍したスペインのクラブはどこ？",
+      "options": [
+        "アトレティコ・マドリード",
+        "レアル・マドリード",
+        "FCバルセロナ",
+        "セビージャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月15日、トッテナムのクリスティアン・ロメロはアトレティコ・マドリードへの完全移籍が合意に達しました。同郷のディエゴ・シメオネ監督の元で新たな挑戦を始めます。",
+      "trivia": "アトレティコにはフリアン・アルバレスやジュリアーノ・シメオネ、フアン・ムッソなど多くのアルゼンチン人選手が在籍しており、ロメロにとって適応しやすい環境が整っています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "PSG",
+        "FCバルセロナ",
+        "フェラン・トーレス",
+        "移籍"
+      ],
+      "text": "2026年8月15日、スペイン代表FWフェラン・トーレスがFCバルセロナから完全移籍で加入したフランスの強豪クラブはどこ？",
+      "options": [
+        "パリ・サンジェルマン (PSG)",
+        "オリンピック・マルセイユ",
+        "ASモナコ",
+        "オリンピック・リヨン"
+      ],
+      "answerIndex": 0,
+      "explanation": "フェラン・トーレスは2031年までの契約でPSGに加入し、背番号9を背負うことが発表されました。かつてスペイン代表で共に仕事をしたルイス・エンリケ監督と再会します。",
+      "trivia": "フェラン・トーレスは、バレンシアから始まり、マンチェスター・シティ、バルセロナ、そして今回のPSGと、各国の名門クラブを次々と渡り歩いています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アストン・ヴィラ",
+        "パルマ",
+        "鈴木彩艶",
+        "海外日本人"
+      ],
+      "text": "2026年8月16日、日本代表GK鈴木彩艶がイタリアのパルマから移籍金約2990万ポンドで加入することが合意に至ったと報じられたイングランド・プレミアリーグのクラブはどこ？",
+      "options": [
+        "アストン・ヴィラ",
+        "マンチェスター・ユナイテッド",
+        "チェルシー",
+        "ブライトン"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラは正GKのエミリアーノ・マルティネスに対するユベントスからのオファーを拒否しつつ、鈴木彩艶を約2990万ポンド（約3500万ユーロ）で獲得することで合意しました。",
+      "trivia": "鈴木彩艶はパリ・サンジェルマンへの移籍も噂されていましたが、交渉が難航したことでアストン・ヴィラが獲得に動き、電撃的なプレミアリーグ挑戦が決まりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "バイエルン・ミュンヘン",
+        "LAFC",
+        "MLS",
+        "移籍"
+      ],
+      "text": "2026年8月13日、ドイツのバイエルン・ミュンヘンからアメリカ・MLSのロサンゼルスFC (LAFC) へ、2028年までの契約で完全移籍したドイツ人アタッカーは誰？",
+      "options": [
+        "アルミンド・ジーブ",
+        "パウル・ヴァナー",
+        "ガブリエル・ヴィドヴィッチ",
+        "アリアン・イブラヒモビッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "バイエルン・ミュンヘンの若手FWアルミンド・ジーブは、出場機会を求めてLAFCへの完全移籍を決断しました。2028年までの契約を結んでいます。",
+      "trivia": "LAFCはヨーロッパからの若手有望株の獲得にも積極的で、MLSがかつて言われたベテランの「隠居リーグ」ではなく、若手のステップアップの場になりつつあることを示しています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "クリスタル・パレス",
+        "ユニオン・サン＝ジロワーズ",
+        "プレミアリーグ",
+        "移籍"
+      ],
+      "text": "2026年8月15日、ベルギーのユニオン・サン＝ジロワーズから移籍金2100万ポンドでプレミアリーグのクリスタル・パレスに完全移籍した、イスラエル代表の若きウィンガーは誰？",
+      "options": [
+        "アナン・ハライリ",
+        "マノル・ソロモン",
+        "リオル・アバダ",
+        "オスカル・グローフ"
+      ],
+      "answerIndex": 0,
+      "explanation": "21歳のイスラエル代表ウィンガーであるアナン・ハライリは、ドリブルとスピードを武器にクリスタル・パレスへ完全移籍で加入しました。",
+      "trivia": "彼は加入時のインタビューで「私は力強くて速い。ドリブルが好きだけど、守備をするのも好きだ」と語り、フルバックとしてもプレー可能なユーティリティ性と攻守両面での貢献を誓っています。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "UEFAスーパーカップ",
+        "パリ・サンジェルマン",
+        "アストン・ヴィラ"
+      ],
+      "text": "2026年8月12日に行われたUEFAスーパーカップで、アストン・ヴィラを2-1で破り2年連続の優勝を果たしたクラブはどこでしょう？",
+      "options": [
+        "パリ・サンジェルマン",
+        "レアル・マドリード",
+        "バイエルン・ミュンヘン",
+        "マンチェスター・シティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月12日にオーストリアのザルツブルクで行われたUEFAスーパーカップでは、パリ・サンジェルマン（PSG）がアストン・ヴィラを2-1で下し、見事優勝を飾りました。",
+      "trivia": "PSGのUEFAスーパーカップ2連覇は、2016・2017年のレアル・マドリード以来となる快挙でした。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-12",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "UEFAスーパーカップ",
+        "アストン・ヴィラ",
+        "ブライアン・マジョ",
+        "最年少記録"
+      ],
+      "text": "2026年8月12日のUEFAスーパーカップ（PSG対アストン・ヴィラ）で、大会史上最年少となる17歳で先発出場および得点記録を更新したアストン・ヴィラの選手は誰でしょう？",
+      "options": [
+        "ブライアン・マジョ",
+        "ウォーレン・ザイール＝エメリ",
+        "ラミン・ヤマル",
+        "エンドリッキ"
+      ],
+      "answerIndex": 0,
+      "explanation": "弱冠17歳のアストン・ヴィラのFWブライアン・マジョが、前半45分に見事なボレーシュートを決め、UEFAスーパーカップの最年少先発・得点記録を更新しました。",
+      "trivia": "マジョはFIFAとの選手登録を巡る問題がクリアになり、試合出場が認められた数日後の公式戦デビュー戦でこの歴史的快挙を成し遂げました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-12",
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "プレミアリーグ",
+        "チェルシー",
+        "モーガン・ロジャーズ",
+        "移籍情報"
+      ],
+      "text": "2026年夏の移籍市場において、アストン・ヴィラからチェルシーへ移籍し、英国人選手として史上最高額となる移籍金1億1700万ポンドを記録した選手は誰でしょう？",
+      "options": [
+        "モーガン・ロジャーズ",
+        "コール・パーマー",
+        "フィル・フォーデン",
+        "ジュード・ベリンガム"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年夏、チェルシーはアストン・ヴィラからモーガン・ロジャーズを獲得し、その移籍金は英国人選手史上最高額となる1億1700万ポンドに達したと報じられました。",
+      "trivia": "アストン・ヴィラは2024年2月にミドルズブラから彼を約1500万ポンドで獲得しており、わずか2年半でその市場価値は8倍近くに跳ね上がったことになります。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "プレミアリーグ",
+        "昇格クラブ",
+        "コヴェントリー",
+        "イプスウィッチ"
+      ],
+      "text": "2026年8月21日に開幕する2026-27シーズンのプレミアリーグにおいて、チャンピオンシップから新たに昇格を果たした3クラブの組み合わせとして正しいものはどれでしょう？",
+      "options": [
+        "コヴェントリー・シティ、イプスウィッチ・タウン、ハル・シティ",
+        "リーズ・ユナイテッド、サンダーランド、バーンリー",
+        "サウサンプトン、シェフィールド・ユナイテッド、ミドルズブラ",
+        "ウェスト・ブロムウィッチ、ルートン・タウン、ノリッジ・シティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026-27シーズンのプレミアリーグには、チャンピオンシップから昇格したコヴェントリー・シティ、イプスウィッチ・タウン、ハル・シティの3クラブが新たに参戦します。",
+      "trivia": "2026-27シーズンのプレミアリーグは、夏のFIFAワールドカップ開催に伴う過密日程を考慮し、選手の休養期間を十分確保するため例年より1週間遅い8月21日の開幕となりました。",
+      "referenceDate": "2026-08-17",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-17",
+        "expiryDate": "2026-08-24",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
