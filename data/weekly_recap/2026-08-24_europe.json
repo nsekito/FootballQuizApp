@@ -1,0 +1,1049 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-08-23T21:33:45Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-08-24",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "コヴェントリー"
+      ],
+      "text": "2026-27シーズンのプレミアリーグ開幕節にあたる2026年8月21日の試合で、アーセナルが3-0で勝利した対戦相手クラブはどこ？",
+      "options": [
+        "コヴェントリー・シティ",
+        "サンダーランド",
+        "ハル・シティ",
+        "イプスウィッチ・タウン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月21日に行われた2026-27シーズンのプレミアリーグ開幕戦で、アーセナルは昇格組のコヴェントリー・シティと対戦しました。試合は3-0でアーセナルが快勝を収めています。",
+      "trivia": "アーセナルは昨シーズンのプレミアリーグ王者として連覇を目指すシーズンであり、開幕戦をホームで危なげなく飾りました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-21",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "ハル・シティ",
+        "マンチェスター・ユナイテッド",
+        "番狂わせ"
+      ],
+      "text": "2026年8月22日のプレミアリーグで、強豪マンチェスター・ユナイテッドを相手に2-0で勝利する金星を挙げたクラブは？",
+      "options": [
+        "ハル・シティ",
+        "イプスウィッチ・タウン",
+        "サンダーランド",
+        "コヴェントリー・シティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月22日の試合で、今季プレミアリーグに昇格してきたハル・シティがホームでマンチェスター・ユナイテッドと対戦し、2-0で勝利する見事な番狂わせを起こしました。",
+      "trivia": "ハル・シティはタイガーの愛称で知られ、久しぶりのトップリーグ復帰となったシーズン序盤で大きなインパクトを残しました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "ブライトン",
+        "アストン・ヴィラ",
+        "スタッツ"
+      ],
+      "text": "2026年8月23日に行われたプレミアリーグで、ブライトンはアストン・ヴィラに4-0で大勝しました。この試合で2ゴールを挙げる活躍を見せた選手は誰？",
+      "options": [
+        "ジャック・ヒンシェルウッド",
+        "三笘薫",
+        "ジョアン・ペドロ",
+        "シモン・アディングラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月23日の試合で、ブライトンはアストン・ヴィラを相手に4-0の圧勝を飾りました。この試合では若手のジャック・ヒンシェルウッドが2得点を挙げる大活躍を見せました。",
+      "trivia": "ジャック・ヒンシェルウッドはブライトンのアカデミー出身で、本職はミッドフィルダーやサイドバックながらも高い得点能力を持つ才能豊かな選手です。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "ニューカッスル",
+        "リヴァプール",
+        "劇的展開"
+      ],
+      "text": "2026年8月23日に行われたプレミアリーグ、ニューカッスル対リヴァプールの試合結果はどうなった？",
+      "options": [
+        "2-2の引き分け",
+        "リヴァプールの3-1勝利",
+        "ニューカッスルの1-0勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月23日の試合は、両チームともに譲らず2-2のドロー決着となりました。リヴァプールは後半アディショナルタイムにPKを獲得し、劇的な同点ゴールを決めて勝ち点を拾っています。",
+      "trivia": "ニューカッスルのホームであるセント・ジェームズ・パークで行われたこの一戦は、最後までどちらに転ぶか分からないプレミアリーグらしい白熱した好ゲームとなりました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "エルチェ"
+      ],
+      "text": "2026年8月23日に行われたラ・リーガの試合で、FCバルセロナがアウェイで5-0の大勝を収めました。対戦相手となったクラブは？",
+      "options": [
+        "エルチェ",
+        "レバンテ",
+        "ラシン・サンタンデール",
+        "アラベス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月23日のラ・リーガで、FCバルセロナはアウェイでエルチェと対戦し、5-0のスコアで圧勝しました。序盤戦から圧倒的な攻撃力を見せつけています。",
+      "trivia": "FCバルセロナはこの大勝によってリーグ首位に立ち、前シーズン王者の貫禄を存分に見せつけるシーズンスタートとなりました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "エスパニョール"
+      ],
+      "text": "2026年8月22日に行われたラ・リーガで、レアル・マドリードがアウェイで2-1の勝利を収めた対戦相手のクラブは？",
+      "options": [
+        "エスパニョール",
+        "マジョルカ",
+        "ラージョ・バジェカーノ",
+        "バレンシア"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月22日、レアル・マドリードはエスパニョールのホームに乗り込み、2-1で勝利しました。接戦となりましたが、勝負強さを発揮して勝ち点3を獲得しました。",
+      "trivia": "エスパニョールはバルセロナを本拠地とするクラブであり、レアル・マドリードにとってはライバル都市での重要なアウェイ戦での勝利となりました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "インテル",
+        "モンツァ",
+        "ゴール"
+      ],
+      "text": "2026年8月22日のセリエA開幕戦で、インテル・ミラノはモンツァを相手に4-1で快勝しました。この試合で開始6分に先制点を挙げた選手は誰？",
+      "options": [
+        "ハカン・チャルハノール",
+        "ピオトル・ジエリンスキ",
+        "ヤン・ビセック",
+        "ラウタロ・マルティネス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月22日の試合で、インテルはチャルハノールのゴールで前半6分に先制しました。その後、ジエリンスキやビセックなども得点を重ね、4-1で勝利しています。",
+      "trivia": "昨シーズンのセリエA王者であるインテルは、今シーズンも盤石の強さを見せつけており、多くの選手がまんべんなく得点できるのが強みです。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "ナポリ",
+        "ジェノア",
+        "移籍"
+      ],
+      "text": "2026年8月22日に行われたセリエAで、ナポリがジェノアに2-0で勝利しました。この試合の82分にナポリでのゴールを決めた、プレミアリーグから移籍してきた世界的MFは誰？",
+      "options": [
+        "ケヴィン・デ・ブライネ",
+        "ブルーノ・フェルナンデス",
+        "ベルナルド・シウバ",
+        "マルティン・ウーデゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月22日のジェノア対ナポリ戦で、ナポリは2-0で勝利しました。82分にはマンチェスター・シティから移籍してサッカー界を驚かせたケヴィン・デ・ブライネがゴールを記録しました。",
+      "trivia": "デ・ブライネのセリエA挑戦は世界中で大きな話題となりました。新天地ナポリでもその卓越したパスセンスとシュート技術は健在です。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "ユヴェントス",
+        "フロジノーネ"
+      ],
+      "text": "2026年8月23日に行われたセリエAで、ユヴェントスはフロジノーネに1-0で勝利しました。この試合で決勝点となるゴールを決めたブラジル人ディフェンダーは誰？",
+      "options": [
+        "グレイソン・ブレーメル",
+        "ダニーロ",
+        "アレックス・サンドロ",
+        "ガブリエウ・マガリャンイス"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月23日の試合で、ユヴェントスは前半22分にグレイソン・ブレーメルが決めたゴールを守り切り、アウェイでフロジノーネに1-0で勝利しました。",
+      "trivia": "ユヴェントスは堅実な守備組織をベースに戦い、セットプレーからのセンターバックの得点など、らしい試合運びで手堅く勝ち点を獲得しました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "DFBポカール",
+        "バイエル・レバークーゼン",
+        "ドイツ"
+      ],
+      "text": "2026年8月22日に行われたDFBポカール（ドイツ杯）1回戦で、バイエル・レバークーゼンはヴェーエン・ヴィースバーデンに何対何で勝利した？",
+      "options": [
+        "4-0",
+        "2-0",
+        "5-1",
+        "3-0"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月22日のDFBポカール1回戦で、バイエル・レバークーゼンはアウェイでヴェーエン・ヴィースバーデンと対戦し、4-0で危なげなく勝利を収めました。",
+      "trivia": "バイエル・レバークーゼンは近年ドイツ国内で無類の強さを誇っており、この試合でも格下相手に圧倒的なポゼッションと攻撃力を見せつけました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "インテル",
+        "順位表",
+        "2026-27シーズン"
+      ],
+      "text": "2026年8月22日に開幕した2026-27シーズンのセリエAですが、昨シーズンに21回目のスクデット（優勝）を獲得し、ディフェンディングチャンピオンとして今シーズンに臨んでいるクラブはどこでしょう？",
+      "options": [
+        "インテル",
+        "ユヴェントス",
+        "ACミラン",
+        "ナポリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテルは2025-26シーズンにクラブ史上21回目のセリエA優勝を果たし、2026-27シーズンは王者として開幕を迎えました。",
+      "trivia": "今季の開幕戦でインテルはモンツァと対戦し、チャルハノールやジエリンスキらのゴールで4-1と快勝して好スタートを切っています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "ブライトン",
+        "順位表",
+        "開幕戦"
+      ],
+      "text": "2026年8月21日〜23日に行われた2026-27シーズンのプレミアリーグ開幕節で、アストン・ヴィラに4-0で大勝し、得失点差で暫定首位に立ったクラブはどこでしょう？",
+      "options": [
+        "ブライトン",
+        "アーセナル",
+        "マンチェスター・シティ",
+        "ブレントフォード"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブライトンは2026年8月23日の開幕戦でアストン・ヴィラに4-0で完勝し、第1節終了時点で得失点差+4とし、リーグ首位に立ちました。",
+      "trivia": "この試合ではジャック・ヒンシェルウッドが2ゴールを挙げる活躍を見せ、チームの快勝に大きく貢献しました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "順位表",
+        "優勝回数"
+      ],
+      "text": "2026-27シーズンのラ・リーガにおいて、昨季にクラブ史上29回目のリーグ優勝を果たし、「2連覇中」のディフェンディングチャンピオンとして今季を迎えたクラブはどこでしょう？",
+      "options": [
+        "バルセロナ",
+        "レアル・マドリード",
+        "アトレティコ・マドリード",
+        "セビージャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナは2025-26シーズンにラ・リーガを制し、29回目のリーグタイトルを獲得するとともにリーグ2連覇を達成しました。",
+      "trivia": "2026-27シーズンのラ・リーガは通算96回目のシーズンとなります。今季もレアル・マドリードなどとの激しい優勝争いが予想されます。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "リヴァプール",
+        "スタッツ",
+        "記録"
+      ],
+      "text": "2026年8月23日のプレミアリーグ第1節、ニューカッスル対リヴァプール戦（2-2）で、試合終了間際の「99分」に劇的な同点PKを決めたリヴァプールの選手は誰でしょう？",
+      "options": [
+        "ドミニク・ソボスライ",
+        "モハメド・サラー",
+        "コーディ・ガクポ",
+        "アレクシス・マック・アリスター"
+      ],
+      "answerIndex": 0,
+      "explanation": "2-1とニューカッスルがリードして迎えた後半アディショナルタイム（99分）、ドミニク・ソボスライがプレッシャーの中PKを沈め、リヴァプールに貴重な勝ち点1をもたらしました。",
+      "trivia": "この試合の前には、両クラブに多大な貢献をしたレジェンドであり、2026年7月に亡くなったケビン・キーガン氏への感動的な追悼セレモニーが行われました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "得点ランキング",
+        "ブライトン"
+      ],
+      "text": "2026-27シーズンのプレミアリーグ開幕節（2026年8月21日〜23日）が終了した時点で、2ゴールを挙げて単独で得点ランキング首位に立ったブライトンの選手は誰でしょう？",
+      "options": [
+        "ジャック・ヒンシェルウッド",
+        "三笘薫",
+        "ジョアン・ペドロ",
+        "エヴァン・ファーガソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジャック・ヒンシェルウッドは、8月23日に行われたアストン・ヴィラ戦で2ゴールを記録し、開幕節を終えた時点で得点ランキングのトップに立ちました。",
+      "trivia": "ヒンシェルウッドは若くしてブライトンの主力として台頭しており、今季は一試合で複数得点を挙げる決定力の高さも開花させつつあります。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "ナポリ",
+        "移籍",
+        "スタッツ"
+      ],
+      "text": "2026年8月22日に行われたセリエA開幕節で、ナポリはジェノアに2-0で勝利しました。この試合の82分にナポリでのデビューゴールとなる先制点を挙げた、世界的スター選手は誰でしょう？",
+      "options": [
+        "ケビン・デ・ブライネ",
+        "ベルナルド・シウバ",
+        "イルカイ・ギュンドアン",
+        "ラヒーム・スターリング"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026-27シーズンよりナポリに加わった元マンチェスター・シティのケビン・デ・ブライネは、開幕戦のジェノア戦で82分に先制ゴールを記録し、新天地での好スタートを切りました。",
+      "trivia": "プレミアリーグで数々の記録を打ち立てた稀代のプレイメーカーであるデ・ブライネですが、セリエAという新しい舞台でもその得点能力と技術を遺憾なく発揮しています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鈴木彩艶",
+        "アストン・ヴィラ",
+        "プレミアリーグ",
+        "移籍"
+      ],
+      "text": "2026年8月、移籍金3000万ユーロ（約55.5億円）でプレミアリーグのアストン・ヴィラへ完全移籍した日本代表GKは誰でしょう？",
+      "options": [
+        "鈴木彩艶",
+        "小久保玲央ブライアン",
+        "大迫敬介",
+        "谷晃生"
+      ],
+      "answerIndex": 0,
+      "explanation": "鈴木彩艶はパルマからアストン・ヴィラへ日本人史上2番目の高額な移籍金で完全移籍しました。8月23日の開幕節ブライトン戦ではベンチスタートとなりました。",
+      "trivia": "アストン・ヴィラの正守護神であるアルゼンチン代表エミリアーノ・マルティネスが負傷離脱中のため、今後の鈴木のスタメン起用に大きな期待が寄せられています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "冨安健洋",
+        "クリスタル・パレス",
+        "プレミアリーグ",
+        "デビュー"
+      ],
+      "text": "昨季アヤックスとの契約満了後、練習生として参加していたクリスタル・パレスへ2026年8月に正式加入し、開幕節のエヴァートン戦で途中出場して鎌田大地との共演を果たした日本代表DFは誰でしょう？",
+      "options": [
+        "冨安健洋",
+        "板倉滉",
+        "菅原由勢",
+        "橋岡大樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "冨安健洋はアーセナルからアヤックスを経て、クリスタル・パレスへ加入しました。8月22日の開幕節で途中出場し、686日ぶりにプレミアリーグのピッチに立ちました。",
+      "trivia": "クラブチームで冨安健洋と鎌田大地がチームメイトとして共演するのは、2018-19シーズンのシントトロイデン（ベルギー）時代以来、実に8シーズンぶりとなります。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "中村草太",
+        "ル・アーヴル",
+        "リーグ・アン",
+        "移籍"
+      ],
+      "text": "2026年夏にサンフレッチェ広島からフランス1部（リーグ・アン）のル・アーヴルへ期限付き移籍し、8月23日の開幕節モナコ戦で途中出場して新天地デビューを果たした日本人選手は誰でしょう？",
+      "options": [
+        "中村草太",
+        "満田誠",
+        "川村拓夢",
+        "大橋祐紀"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンフレッチェ広島で活躍していた中村草太はル・アーヴルに加入し、瀬古歩夢や水多海斗らと共に「日本人トリオ」として注目を集めています。",
+      "trivia": "ル・アーヴルはフランス最古のサッカークラブとして知られ、過去にはポール・ポグバやリヤド・マフレズなどを輩出している世界的な育成の名門です。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "佐藤龍之介",
+        "バレンシア",
+        "ラ・リーガ",
+        "デビュー"
+      ],
+      "text": "今夏FC東京からスペイン1部のバレンシアに加入し、2026年8月22日のラ・リーガ第2節セルタ戦で19歳にしてスタメンデビューを飾った日本人MFは誰でしょう？",
+      "options": [
+        "佐藤龍之介",
+        "松木玖生",
+        "熊田直紀",
+        "荒木遼太郎"
+      ],
+      "answerIndex": 0,
+      "explanation": "佐藤龍之介はバレンシア加入直後ながら開幕スタメンに抜擢され、巧みなターンから決定機を演出するなど堂々としたプレーで現地から高く評価されました。",
+      "trivia": "SNS上では、佐藤の相手を背負ってからの鋭いターンに対し「香川真司のターンみたいで好き」と、往年の名選手に姿を重ねるファンの声が多く上がりました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "後藤啓介",
+        "フライブルク",
+        "カンファレンスリーグ",
+        "ゴール"
+      ],
+      "text": "ドイツのフライブルクに移籍した後藤啓介は、2026年8月20日のカンファレンスリーグ予選マザーウェル戦で移籍後初ゴールを決めました。この試合後、シュスター監督からピッチ外でのある行動が称賛されましたが、それは次のうちどれでしょう？",
+      "options": [
+        "チームのベンチを片付けた",
+        "サポーターのゴミ拾いを手伝った",
+        "対戦相手のロッカールームを清掃した",
+        "ボールボーイにユニフォームをプレゼントした"
+      ],
+      "answerIndex": 0,
+      "explanation": "後藤は後半アディショナルタイムに打点の高いヘディングで初ゴールを記録。試合後、真っ先にチームのベンチを片付ける姿に監督から「彼をさらに価値あるものにしている」と賛辞が送られました。",
+      "trivia": "後藤は2026年夏のW杯北中米大会でも、ベンチから献身的にチームメイトをサポートする姿勢を見せ、長友佑都らベテラン選手から高く評価されていました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-20",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "鈴木彩艶",
+        "移籍",
+        "アストン・ヴィラ",
+        "日本代表"
+      ],
+      "text": "2026年8月19日、日本代表GK鈴木彩艶がイタリアのパルマから完全移籍で加入することが発表された、イングランド・プレミアリーグのクラブはどこでしょう？",
+      "options": [
+        "アストン・ヴィラ",
+        "マンチェスター・ユナイテッド",
+        "アーセナル",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "パルマで正守護神として活躍し、移籍金最大約3000万ポンド（約65億円）で5年契約を結びました。日本人GKとしてプレミアリーグで新たな歴史を刻むことが期待されます。",
+      "trivia": "アストン・ヴィラは昨季プレミアリーグで4位に入り、2026-27シーズンはUEFAチャンピオンズリーグ（CL）に出場するため、世界最高峰の舞台でのプレーが見込まれます。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "レオン・ゴレツカ",
+        "移籍",
+        "アストン・ヴィラ"
+      ],
+      "text": "2026年8月、昨季限りでバイエルンを退団してフリーとなっていた中、プレミアリーグのアストン・ヴィラと加入合意に至ったと報じられたドイツ代表MFは誰でしょう？",
+      "options": [
+        "レオン・ゴレツカ",
+        "イルカイ・ギュンドアン",
+        "ヨシュア・キミッヒ",
+        "トーマス・ミュラー"
+      ],
+      "answerIndex": 0,
+      "explanation": "昨季限りでバイエルンを退団したゴレツカは、ユヴェントスやミランなどの関心も報じられましたが、最終的にアストン・ヴィラへの加入を選択したとされています。",
+      "trivia": "中盤の主力を相次いで欠く事態となっていたアストン・ヴィラにとって、欧州のトップレベルで豊富な経験を持つゴレツカは待望の補強となります。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "板倉滉",
+        "移籍",
+        "ボルシアMG",
+        "日本代表"
+      ],
+      "text": "2026年8月20日、日本代表DF板倉滉がオランダのアヤックスからわずか1年で古巣へ完全移籍で復帰することが発表されました。その復帰先のドイツのクラブはどこでしょう？",
+      "options": [
+        "ボルシアMG",
+        "シャルケ",
+        "フローニンゲン",
+        "マンチェスター・シティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "昨夏にアヤックスへ移籍したものの、新監督の構想外となったこともあり、1年で古巣であるボルシア・メンヒェングラートバッハへの復帰を決断しました。",
+      "trivia": "復帰にあたり板倉は「オファーが届いた瞬間に復帰を決めた。まるで家に帰ってきたような気分」と、古巣への深い愛着を語っています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "カーティス・ジョーンズ",
+        "移籍",
+        "インテル"
+      ],
+      "text": "2026年8月21日、リヴァプールの下部組織出身で生え抜きのMFカーティス・ジョーンズが、移籍金最大約65億円で完全移籍したセリエAのクラブはどこでしょう？",
+      "options": [
+        "インテル",
+        "ミラン",
+        "ユヴェントス",
+        "ローマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "リヴァプール一筋で公式戦228試合に出場したカーティス・ジョーンズですが、今夏インテルと5年契約を結び、キャリア初の移籍を経験することになりました。",
+      "trivia": "インテルは今夏の移籍市場で既にジョン・ストーンズなどを獲得しており、彼で3人目のイングランド代表選手の補強となりました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "エズリ・コンサ",
+        "移籍",
+        "アーセナル"
+      ],
+      "text": "2026年8月21日、イングランド代表DFエズリ・コンサがアストン・ヴィラからアーセナルへ電撃移籍しました。この緊急補強の最大の要因となった、2026年のワールドカップで背中を痛めて長期離脱が濃厚となったアーセナルの守備の要は誰でしょう？",
+      "options": [
+        "ウィリアン・サリバ",
+        "ガブリエウ・マガリャンイス",
+        "ユリエン・ティンバー",
+        "ベン・ホワイト"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルはワールドカップで負傷したサリバの代役として、センターバックと右サイドバックを高水準でこなせるコンサに白羽の矢を立て、約119億円で獲得しました。",
+      "trivia": "コンサはヴィラ時代、ロンドン郊外の自宅から練習場まで片道190kmの「遠距離通勤」をしていましたが、今回の移籍でその苦労からも解放されました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・ユナイテッド",
+        "ハル・シティ",
+        "番狂わせ"
+      ],
+      "text": "2026年8月22日に行われた2026-27シーズンのプレミアリーグ開幕戦で、昇格組ながら名門マンチェスター・ユナイテッドを2-0で破る大番狂わせを演じたクラブはどこでしょう？",
+      "options": [
+        "ハル・シティ",
+        "コヴェントリー・シティ",
+        "イプスウィッチ・タウン",
+        "サンダーランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026-27シーズンの開幕戦で、プレミアリーグ昇格組のハル・シティがマンチェスター・ユナイテッドを2-0で撃破し、新シーズン早々に大きな波乱を巻き起こしました。",
+      "trivia": "同じく昇格組のイプスウィッチ・タウンもサンダーランドに2-1で勝利しており、新参クラブの躍進が目立つ開幕週となりました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "チェルシー",
+        "プレミアリーグ",
+        "監督就任",
+        "シャビ・アロンソ"
+      ],
+      "text": "2026-27シーズンから新たにチェルシーの監督に就任し、2026年8月24日のフラム戦で新天地でのプレミアリーグ初陣を迎えたスペイン人指揮官は誰でしょう？",
+      "options": [
+        "シャビ・アロンソ",
+        "マウリシオ・ポチェッティーノ",
+        "トーマス・トゥヘル",
+        "エンツォ・マレスカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "レヴァークーゼンやレアル・マドリードを指揮して実績を残したシャビ・アロンソが、2026-27シーズンよりチェルシーの監督に就任し、新たな挑戦をスタートさせました。",
+      "trivia": "シャビ・アロンソは現役時代にリヴァプールで長くプレーしており、監督として久しぶりにプレミアリーグの舞台へ戻ってくることになりました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-24",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "移籍情報",
+        "マンチェスター・ユナイテッド",
+        "プレミアリーグ"
+      ],
+      "text": "2026年8月の夏の移籍市場終盤に、マンチェスター・ユナイテッドがブライトンから獲得を完了させたと報じられたカメルーン代表MFは誰でしょう？",
+      "options": [
+        "カルロス・バレバ",
+        "イヴ・ビスマ",
+        "モイセス・カイセド",
+        "アマドゥ・オナナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月下旬の移籍市場において、マンチェスター・ユナイテッドは中盤の補強としてブライトンから若手有望株であるカルロス・バレバを獲得したと報じられました。",
+      "trivia": "マンチェスター・ユナイテッドはこの夏の移籍市場で、バルセロナのDFアレハンドロ・バルデの獲得にも強い関心を示していると伝えられています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ブライトン",
+        "アストン・ヴィラ",
+        "スタッツ",
+        "得点ランキング"
+      ],
+      "text": "2026年8月23日に行われたプレミアリーグ開幕節のアストン・ヴィラ戦でブライトンが4-0の大勝を収めましたが、この試合で2得点を挙げて開幕節終了時点の得点ランキング単独トップに立った選手は誰でしょう？",
+      "options": [
+        "ジャック・ヒンシェルウッド",
+        "三笘薫",
+        "ジョアン・ペドロ",
+        "エヴァン・ファーガソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブライトンはアストン・ヴィラ相手に4-0の圧勝を収め、2得点を決めたジャック・ヒンシェルウッドが開幕節を終えた段階で得点ランキングの首位に立ちました。",
+      "trivia": "この試合の4-0というスコアは、2026-27シーズンのプレミアリーグ開幕節における最大得点差勝利（Biggest home win）の記録となりました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

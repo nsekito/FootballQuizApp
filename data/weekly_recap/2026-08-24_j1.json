@@ -1,0 +1,1047 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-08-23T21:28:19Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-08-24",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC町田ゼルビア",
+        "浦和レッズ",
+        "J1"
+      ],
+      "text": "2026年8月23日に行われた2026/27明治安田J1リーグ第3節で、FC町田ゼルビアは浦和レッズと対戦しました。この試合の勝者はどちらでしょう？",
+      "options": [
+        "FC町田ゼルビア",
+        "浦和レッズ",
+        "引き分け",
+        "試合延期"
+      ],
+      "answerIndex": 0,
+      "explanation": "MUFGスタジアムで行われた一戦は、FC町田ゼルビアが3-1で浦和レッズを下しました。",
+      "trivia": "FC町田ゼルビアはこれで2026/27シーズンの開幕から3連勝を飾りました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "emperor_cup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "天皇杯",
+        "三浦知良",
+        "記録更新"
+      ],
+      "text": "2026年8月19日に行われた第106回天皇杯1回戦で2ゴールを決め、大会最年長得点記録を59歳174日に更新した選手は誰でしょう？",
+      "options": [
+        "三浦知良",
+        "小野伸二",
+        "遠藤保仁",
+        "中村俊輔"
+      ],
+      "answerIndex": 0,
+      "explanation": "J3福島ユナイテッドFCに所属する三浦知良選手が大山サッカークラブ戦に出場し、2本のPKを決めて記録を更新しました。",
+      "trivia": "それまでの天皇杯最年長得点記録は、小野伸二氏が持っていた41歳255日でした。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-19",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC東京",
+        "ジェフユナイテッド千葉",
+        "J1"
+      ],
+      "text": "2026年8月22日の明治安田J1リーグ第3節でFC東京と対戦し、J1の舞台では「17年ぶり」の顔合わせとなったクラブはどこでしょう？",
+      "options": [
+        "ジェフユナイテッド千葉",
+        "ヴァンフォーレ甲府",
+        "水戸ホーリーホック",
+        "大分トリニータ"
+      ],
+      "answerIndex": 0,
+      "explanation": "今シーズンJ1に所属するジェフユナイテッド千葉とFC東京の対戦は、J1リーグ戦において実に17年ぶりのカードとなりました。試合はFC東京が2-0で勝利しています。",
+      "trivia": "両チームの対戦は、過去のリーグカップや天皇杯を除くと、J1リーグでは長らく実現していませんでした。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "スタジアム",
+        "THE国立DAY",
+        "FC町田ゼルビア"
+      ],
+      "text": "観客動員約4万7000人を記録した2026年8月23日のJ1第3節「FC町田ゼルビア vs 浦和レッズ」の試合は、どのスタジアム（2026年時点の呼称）で開催されたでしょう？",
+      "options": [
+        "MUFGスタジアム",
+        "日産スタジアム",
+        "埼玉スタジアム2002",
+        "味の素スタジアム"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグが展開する「THE国立DAY」の一環として、国立競技場（ネーミングライツによりMUFGスタジアム）で開催されました。",
+      "trivia": "2026/27シーズンのJリーグでは、8月の国立開催5試合で合計5万人を招待する大規模なキャンペーンが展開されました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC町田ゼルビア",
+        "連勝",
+        "首位"
+      ],
+      "text": "2026年8月23日の浦和レッズ戦に3-1で勝利したFC町田ゼルビアは、2026/27シーズンの開幕から何連勝を達成したでしょう？",
+      "options": [
+        "3連勝",
+        "2連勝",
+        "4連勝",
+        "5連勝"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC町田ゼルビアは浦和レッズを下して開幕3連勝を達成し、圧倒的な攻撃力で首位をキープしています。",
+      "trivia": "開幕3試合での総得点は12ゴールに達し、さらに得点者が9人と、どこからでも点が取れる強さを見せつけています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "emperor_cup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "天皇杯",
+        "三浦知良",
+        "記録"
+      ],
+      "text": "2026年8月19日の天皇杯1回戦でゴールを決めた三浦知良選手ですが、彼が前回「天皇杯の本戦」でゴールを決めたのは何年前のことだったでしょう？",
+      "options": [
+        "23年前",
+        "15年前",
+        "10年前",
+        "30年前"
+      ],
+      "answerIndex": 0,
+      "explanation": "前回は2003年12月23日、ヴィッセル神戸時代に決めたゴールであり、実に約23年ぶりの天皇杯本戦での得点となりました。",
+      "trivia": "59歳での得点というだけでも驚異的ですが、同じ主要大会で23年間ものブランクを経て再び得点したという事実も世界的に類を見ません。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-19",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "アビスパ福岡",
+        "鹿島アントラーズ",
+        "恩返し弾"
+      ],
+      "text": "2026年8月22日のJ1第3節・鹿島アントラーズ対アビスパ福岡（3-2で鹿島勝利）で、アビスパ福岡の選手として初めての古巣戦に臨み、移籍後初ゴールを決めた選手は誰でしょう？",
+      "options": [
+        "師岡柊生",
+        "染野唯月",
+        "紺野和也",
+        "金森健志"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズからアビスパ福岡へ移籍した師岡柊生選手が、古巣との初対戦で意地の移籍後初ゴールを記録しました。",
+      "trivia": "試合には敗れましたが、古巣を相手に恩返し弾を決めたことでアビスパサポーターに大きなインパクトを残しました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "emperor_cup",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "天皇杯",
+        "ラインメール青森",
+        "大勝"
+      ],
+      "text": "2026年8月19日に行われた天皇杯1回戦で、秋田大学を相手に「15-0」という衝撃的な大差で圧勝したチームはどこでしょう？",
+      "options": [
+        "ラインメール青森",
+        "ヴァンラーレ八戸",
+        "ブラウブリッツ秋田",
+        "福島ユナイテッドFC"
+      ],
+      "answerIndex": 0,
+      "explanation": "ラインメール青森は秋田大学を相手に歴史的なゴールラッシュを見せ、15-0という記録的なスコアで天皇杯1回戦を突破しました。",
+      "trivia": "同日の天皇杯1回戦では、福島ユナイテッドFCも7-0で大勝するなど、プロクラブとアマチュアのスコア差が開く試合が複数見られました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-19",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "浦和レッズ",
+        "記録",
+        "J1"
+      ],
+      "text": "2026年8月23日のFC町田ゼルビア戦に敗れ、2026/27シーズンの開幕3連敗を喫した浦和レッズ。浦和が開幕から「3連敗」となったのは何年ぶりのことでしょう？",
+      "options": [
+        "24年ぶり",
+        "10年ぶり",
+        "15年ぶり",
+        "30年ぶり"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズが開幕3連敗を喫するのは2002年以来となり、実に24年ぶり（2026年時点）の不名誉な記録となりました。",
+      "trivia": "2002年当時の浦和レッズには、のちに日本代表として活躍する長谷部誠選手などが在籍していました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC町田ゼルビア",
+        "浦和レッズ",
+        "得点者"
+      ],
+      "text": "2026年8月23日のJ1第3節、FC町田ゼルビア対浦和レッズ（3-1）の試合で、前半アディショナルタイムに浦和レッズの唯一のゴールを決めた選手は誰でしょう？",
+      "options": [
+        "渡邊凌磨",
+        "チアゴ・サンタナ",
+        "松尾佑介",
+        "小泉佳穂"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半45+2分に渡邊凌磨選手が得点し一時は1-1の同点に追いつきましたが、後半に突き放されて浦和レッズは敗れました。",
+      "trivia": "町田はこの試合で中村帆高、西村拓真、ネタ・ラヴィの3選手がゴールを決め、多様な攻撃パターンを見せつけました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "順位",
+        "鹿島アントラーズ",
+        "2026-27シーズン"
+      ],
+      "text": "2026/27シーズンの明治安田J1リーグで、第3節を終えて開幕3連勝を飾ったクラブはFC町田ゼルビア、柏レイソルと、あと一つはどこ？",
+      "options": [
+        "鹿島アントラーズ",
+        "サンフレッチェ広島",
+        "ヴィッセル神戸",
+        "浦和レッズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "第3節を終え、FC町田ゼルビア、柏レイソル、鹿島アントラーズの3クラブが開幕3連勝を達成して順位表のトップに並んでいます。",
+      "trivia": "鹿島アントラーズは国立競技場で行われた横浜F・マリノスとの開幕戦での撃ち合いを制するなど、新シーズンで好スタートを切りました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "FC町田ゼルビア",
+        "ゴール",
+        "ネタ・ラヴィ"
+      ],
+      "text": "2026年8月23日の明治安田J1リーグ第3節・浦和レッズ戦で、意図的に地面に叩きつける見事なボレーシュートで移籍後初ゴールを決めたFC町田ゼルビアのイスラエル代表MFは誰？",
+      "options": [
+        "ネタ・ラヴィ",
+        "エリキ",
+        "ナ・サンホ",
+        "マテウス・ジェズス"
+      ],
+      "answerIndex": 0,
+      "explanation": "今シーズンからFC町田ゼルビアに加入したネタ・ラヴィが、コーナーキックからのこぼれ球をダイレクトボレーで沈め、移籍後初ゴールを記録しました。",
+      "trivia": "ネタ・ラヴィはガンバ大阪から完全移籍で町田に加入しており、Jリーグ史上初のイスラエル人選手としても知られています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-23",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "横浜F・マリノス",
+        "三井寺眞",
+        "スタッツ"
+      ],
+      "text": "2026年8月22日のJ1リーグ第3節・ヴィッセル神戸戦で、前半9分に左足のボレーシュートで決勝点を挙げ、横浜F・マリノスを2連勝に導いた16歳の選手は誰？",
+      "options": [
+        "三井寺眞",
+        "名和田我空",
+        "高岡伶颯",
+        "佐藤龍之介"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜F・マリノスの16歳、三井寺眞（みいでら しん）が、天野純のクロスから鮮烈なボレーシュートを突き刺し、1-0の勝利を決定づけました。",
+      "trivia": "三井寺は16歳4ヶ月でのJ1デビューを果たし、プロ初年度から早くもトップチームの主力としてピッチで躍動しています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "得点ランキング",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年8月22日時点の明治安田J1リーグ得点ランキングで、第3節までに4得点を挙げて単独トップに立っている鹿島アントラーズの選手は誰？",
+      "options": [
+        "レオ・セアラ",
+        "チャヴリッチ",
+        "鈴木優磨",
+        "アンデルソン・ロペス"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズのレオ・セアラが開幕から好調を維持し、第3節終了時点で4得点を挙げて得点ランキングの単独トップに立っています。",
+      "trivia": "レオ・セアラに続き、同僚のチャヴリッチやサンフレッチェ広島の鈴木章斗が3得点で追う展開となっています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "最年少記録",
+        "ゴール",
+        "歴史"
+      ],
+      "text": "横浜F・マリノスの三井寺眞は2026年8月7日のJ1開幕節で得点を挙げ、史上最年少の開幕戦ゴール記録（16歳4ヶ月5日）を樹立しました。では、開幕戦に限らない「J1リーグ全体での史上最年少得点記録（15歳11ヶ月28日）」を保持している元日本代表選手は誰？",
+      "options": [
+        "森本貴幸",
+        "久保建英",
+        "柿谷曜一朗",
+        "宮市亮"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1リーグ全体での最年少得点記録は、2004年に東京ヴェルディの森本貴幸が記録した15歳11ヶ月28日です。三井寺の記録はそれに次ぐ歴代2位となります。",
+      "trivia": "森本貴幸は「和製ロナウド」と呼ばれ、15歳でJリーグデビューしすぐにゴールを決めて世間を驚かせました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "順位",
+        "大宮アルディージャ"
+      ],
+      "text": "2026/27シーズンの明治安田J2リーグで、第3節を終えて全クラブで唯一の開幕3連勝を達成し、単独首位に浮上したクラブはどこ？",
+      "options": [
+        "大宮アルディージャ",
+        "ベガルタ仙台",
+        "ジュビロ磐田",
+        "大分トリニータ"
+      ],
+      "answerIndex": 0,
+      "explanation": "明治安田J2リーグ第3節終了時点で、大宮アルディージャが開幕から無傷の3連勝を飾り、単独首位に立っています。",
+      "trivia": "J2では同節にベガルタ仙台やジュビロ磐田、大分トリニータも今季初勝利を挙げるなど、早くも激しい順位争いが始まっています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "浦和レッズ",
+        "山根視来",
+        "移籍情報",
+        "Jリーグ"
+      ],
+      "text": "2026年8月17日、MLSのLAギャラクシーから完全移籍でJ1・浦和レッズに加入し、2年半ぶりのJリーグ復帰を果たした元日本代表DFは誰でしょう？",
+      "options": [
+        "山根視来",
+        "吉田麻也",
+        "昌子源",
+        "植田直通"
+      ],
+      "answerIndex": 0,
+      "explanation": "2024年にLAギャラクシーへ移籍した山根視来が、2年半ぶりにJリーグに復帰し浦和レッズに加入することが発表されました。",
+      "trivia": "浦和レッズは山根のほかに、イングランドのストークからMF瀬古樹も獲得し、実力者の同時補強が大きな話題となりました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "川崎フロンターレ",
+        "高井幸大",
+        "トッテナム",
+        "海外移籍"
+      ],
+      "text": "2026年夏、川崎フロンターレからイングランド・プレミアリーグのトッテナム・ホットスパーへ完全移籍した若手DFは誰でしょう？",
+      "options": [
+        "高井幸大",
+        "チェイス・アンリ",
+        "半田陸",
+        "畑大雅"
+      ],
+      "answerIndex": 0,
+      "explanation": "川崎フロンターレアカデミー出身の長身CB高井幸大が、プレミアリーグのトッテナム・ホットスパーへ移籍しました。背番号は25番に決まっています。",
+      "trivia": "2026-27シーズンのプレミアリーグはU-NEXTが国内独占配信権を獲得しており、高井の活躍も同プラットフォームで視聴できます。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ガンバ大阪",
+        "ファンペ",
+        "移籍情報",
+        "Jリーグ"
+      ],
+      "text": "2026年8月23日、ガンバ大阪がスペイン1部のマラガから完全移籍で獲得したと発表した、スペイン人MFは誰でしょう？",
+      "options": [
+        "ファンペ",
+        "キケ・ガルシア",
+        "アレイシ・ガルシア",
+        "カンパーニャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガンバ大阪は中盤の補強として、カディスやマラガなどでプレーしたスペイン人MFファンペを完全移籍で獲得しました。",
+      "trivia": "同じ8月23日、ガンバ大阪は開幕戦でゴールを決めていたブラジル人FWウェルトンが「左ひざ軟骨損傷」で離脱することも併せて発表しています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "アルビレックス新潟",
+        "大竹優心",
+        "移籍情報",
+        "海外移籍"
+      ],
+      "text": "2026年8月21日、アルビレックス新潟からシンガポールプレミアリーグのバレスティア・カルサFCへ期限付き移籍することが発表された、21歳のMFは誰でしょう？",
+      "options": [
+        "大竹優心",
+        "石山青空",
+        "長谷川巧",
+        "星宇詩"
+      ],
+      "answerIndex": 0,
+      "explanation": "新潟U-18出身の大竹優心は、さらなる出場機会と成長を求めてシンガポールのバレスティア・カルサFCへ期限付き移籍することを決断しました。",
+      "trivia": "大竹は過去にY.S.C.C.横浜への期限付き移籍も経験しており、自身2度目となる武者修行での飛躍が期待されています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "浦和レッズ",
+        "瀬古樹",
+        "移籍情報",
+        "Jリーグ"
+      ],
+      "text": "2026年8月19日に浦和レッズが山根視来とともに加入会見を行った、イングランドのストークから完全移籍で加入したMFは誰でしょう？",
+      "options": [
+        "瀬古樹",
+        "坂元達裕",
+        "三好康児",
+        "橋本拳人"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズは山根視来と瀬古樹の加入会見を合同で実施しました。イングランド2部のストークでプレーしていた瀬古は、2季ぶりのJリーグ復帰となります。",
+      "trivia": "山根と瀬古はともに川崎フロンターレでのプレー経験があり、浦和の曺貴裁新体制にとって非常に大きな戦力補強となりました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "2026-27シーズン",
+        "秋春制",
+        "ルール変更"
+      ],
+      "text": "2026年8月に開幕した「2026/27シーズン」から、Jリーグの大会方式に関して歴史的な大きな変更が行われました。それは次のうちどれでしょう？",
+      "options": [
+        "秋春制への移行",
+        "プレーオフ制度の廃止",
+        "外国人枠の完全撤廃",
+        "試合時間の80分化"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月より、Jリーグは従来の「春秋制」から欧州主要リーグと同じ「秋春制」へ移行し、2026/27シーズンが開幕しました。",
+      "trivia": "Jリーグの前身である日本サッカーリーグ（JSL）の終盤（1985〜1992年）も、実は「9月開幕・3月終了」の秋春制で行われていました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "横浜F・マリノス",
+        "鹿島アントラーズ",
+        "観客動員数",
+        "MUFGスタジアム"
+      ],
+      "text": "2026年8月上旬に行われた「2026/27シーズン」開幕戦の横浜F・マリノス対鹿島アントラーズは、Jリーグのリーグ戦史上最多入場者数を記録し、8月中旬のニュースでも大きな話題となりました。この試合の観客動員数は約何人だったでしょう？",
+      "options": [
+        "約6万4000人",
+        "約5万8000人",
+        "約7万1000人",
+        "約5万4000人"
+      ],
+      "answerIndex": 0,
+      "explanation": "MUFGスタジアムで行われたこの試合は6万3960人の大観衆を集め、従来の記録を上回り、J1リーグ戦における史上最多入場者数を更新しました。",
+      "trivia": "この歴史的な開幕戦は、Jリーグのリーグ戦としては2002年以来、実に24年ぶりとなるゴールデンタイムでの地上波全国生中継が行われました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "社会貢献活動",
+        "TEAM AS ONE"
+      ],
+      "text": "2026年8月21日、テゲバジャーロ宮崎などのJクラブが週末の試合会場での「Jリーグ TEAM AS ONE募金」実施を発表しました。これは同月に発生したどの災害に対する支援を目的としたものでしょう？",
+      "options": [
+        "令和8年8月千葉豪雨",
+        "令和8年8月北海道地震",
+        "令和8年8月南海トラフ注意情報",
+        "令和8年8月九州台風"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月に発生した「令和8年8月千葉豪雨」の被害を受け、Jリーグと各クラブは連携して被災地支援のための募金活動を実施しました。",
+      "trivia": "「Jリーグ TEAM AS ONE」は、東日本大震災をきっかけに発足したJリーグ全クラブが取り組む復興支援・災害支援プロジェクトの合言葉です。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "横浜F・マリノス",
+        "スポンサー",
+        "オフィシャルスーツ",
+        "KASHIYAMA"
+      ],
+      "text": "2026年8月21日、あるオーダーメイドスーツブランドが、J1リーグ「横浜F・マリノス」の2026/27シーズンオフィシャルスーツを数量限定で販売開始すると発表しました。そのブランドは次のうちどれでしょう？",
+      "options": [
+        "KASHIYAMA",
+        "麻布テーラー",
+        "ダーバン",
+        "洋服の青山"
+      ],
+      "answerIndex": 0,
+      "explanation": "株式会社オンワードパーソナルスタイルが展開するオーダーメイドブランド『KASHIYAMA』が、横浜F・マリノスの選手や監督が移動時などに着用するオフィシャルスーツを提供・販売しています。",
+      "trivia": "オフィシャルスーツは選手だけでなく、監督やクラブスタッフも公式行事などの際に着用し、クラブの連帯感やプロフェッショナリズムを示す重要なアイテムとなっています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "契約制度",
+        "ルール変更",
+        "プロA契約"
+      ],
+      "text": "2026年8月に開幕した新シーズンにおいて、クラブ間の戦力差（格差）を広げる要因になるとして8月下旬の特集記事等で注目された、Jリーグが撤廃した選手契約に関するルールは何でしょう？",
+      "options": [
+        "プロA契約の登録人数上限",
+        "ホームグロウン選手の保有義務",
+        "外国籍選手のベンチ入り枠",
+        "移籍金（違約金）の上限"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年2月よりプロ契約制度が改定され、これまで1チーム原則27名までとされていたプロA契約（主力級選手）の登録人数上限が撤廃されました。これにより資金力のあるクラブがより多くの有力選手を抱えられるようになりました。",
+      "trivia": "プロA契約の人数上限は撤廃された一方で、自クラブの育成組織出身者をトップチームに登録する「ホームグロウン制度」の保有義務は継続して適用されています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "U-21",
+        "Jリーグ",
+        "若手育成",
+        "東京ダービー"
+      ],
+      "text": "2026年8月22日、ポストユース世代（19歳〜21歳）の強化を目的として新設された「2026/27 U-21 Jリーグ」が開幕しました。記念すべき開幕戦となったカードは何でしょう？",
+      "options": [
+        "東京ダービー（東京V vs FC東京）",
+        "大阪ダービー（G大阪 vs C大阪）",
+        "静岡ダービー（清水 vs 磐田）",
+        "神奈川ダービー（横浜FM vs 川崎F）"
+      ],
+      "answerIndex": 0,
+      "explanation": "「U-21 Jリーグ」は将来の日本サッカーを担う選手育成のため、2026/27シーズンから新設された大会です。8月22日のEAST第1節ではU-21 東京ヴェルディとU-21 FC東京による東京ダービーが開催されました。",
+      "trivia": "参加クラブは浦和、FC東京、東京V、川崎F、清水、磐田、名古屋、G大阪、神戸、岡山、長崎の11クラブで、東西に分かれてリーグ戦を行います。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J1",
+        "横浜F・マリノス",
+        "三井寺眞",
+        "最年少記録",
+        "秋春制"
+      ],
+      "text": "2026年8月7日のJ1開幕戦で史上最年少となる16歳4ヶ月でのプロデビュー＆初ゴールを記録し、8月22日の第3節ヴィッセル神戸戦でも強烈なボレーシュートで今季2点目を決めた、横浜F・マリノスの選手は誰でしょう？",
+      "options": [
+        "三井寺眞",
+        "名和田我空",
+        "佐藤龍之介",
+        "高岡伶颯"
+      ],
+      "answerIndex": 0,
+      "explanation": "三井寺眞（みいでらしん）は青森県出身の16歳。FCフォーリクラッセ仙台や横浜FMユースを経て、2026年4月にクラブ史上最年少でプロ契約を結び、開幕戦で衝撃的なJ1デビューを果たしました。",
+      "trivia": "第3節のヴィッセル神戸戦では、開始9分に天野純のクロスのこぼれ球に反応し、利き足の左足で見事なボレーシュートを突き刺し話題を呼びました。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "名古屋グランパス",
+        "Jリーグ入場者数",
+        "J1",
+        "記録達成"
+      ],
+      "text": "2026年8月22日に行われた明治安田J1リーグ第3節のガンバ大阪戦で、Jリーグ（J1・J2）史上5クラブ目となるホームゲーム通算入場者数1,050万人を達成したクラブはどこでしょう？",
+      "options": [
+        "名古屋グランパス",
+        "鹿島アントラーズ",
+        "川崎フロンターレ",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "名古屋グランパスは、2026年8月22日のガンバ大阪戦で30,651名の観客動員を記録し、クラブのJ1・J2におけるホームゲーム通算入場者数が1,050万人を突破しました。",
+      "trivia": "リーグ戦ホームゲーム通算1,050万人の達成は、浦和レッズや横浜F・マリノスなどに続くJリーグ史上5クラブ目の快挙です。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "社会貢献",
+        "TEAM AS ONE",
+        "テゲバジャーロ宮崎"
+      ],
+      "text": "2026年8月22日、テゲバジャーロ宮崎がホームゲーム会場で実施した「Jリーグ TEAM AS ONE募金」は、同年8月に発生したどの災害の被災地支援を目的としたものでしょう？",
+      "options": [
+        "令和8年8月千葉豪雨",
+        "令和8年8月宮崎台風",
+        "令和8年8月能登半島地震",
+        "令和8年8月北海道水害"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグ全体で支え合う活動の一環として、8月22日のテゲバジャーロ宮崎vs湘南ベルマーレの試合会場などで「令和8年8月千葉豪雨」による被災地支援を目的とした募金活動が行われました。",
+      "trivia": "「TEAM AS ONE」は2011年の東日本大震災を機に始まったJリーグの復興支援プロジェクトで、全国のクラブが連携して被災地への支援を行っています。",
+      "referenceDate": "2026-08-24",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-22",
+        "publishDate": "2026-08-24",
+        "expiryDate": "2026-08-31",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
