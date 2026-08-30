@@ -1,0 +1,1051 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-08-30T23:22:36Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-08-31",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "浦和レッズ",
+        "横浜F・マリノス",
+        "試合結果"
+      ],
+      "text": "2026年8月29日のJ1リーグ第4節で、開幕3連敗中だった浦和レッズが今季初勝利を飾りました。3-2で破った対戦相手はどこでしょう？",
+      "options": [
+        "横浜F・マリノス",
+        "FC東京",
+        "川崎フロンターレ",
+        "鹿島アントラーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズは2度のリードを許す苦しい展開でしたが、見事な逆転劇で横浜F・マリノスを下し、今季リーグ戦初勝利を挙げました。",
+      "trivia": "天皇杯2回戦の勝利から中2日で迎えたこの試合での逆転勝ちは、チームにとって大きなターニングポイントとなりました。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "ガンバ大阪",
+        "サンフレッチェ広島",
+        "試合結果"
+      ],
+      "text": "2026年8月29日に行われたJ1リーグ第4節、ガンバ大阪対サンフレッチェ広島の試合結果はどうなったでしょう？",
+      "options": [
+        "0-0の引き分け",
+        "ガンバ大阪が2-1で勝利",
+        "サンフレッチェ広島が1-0で勝利",
+        "2-2の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "パナソニックスタジアム吹田で行われた一戦は、両チームともチャンスを作りながらも守備陣が奮闘し、0-0のスコアレスドローに終わりました。",
+      "trivia": "両チームの堅い守備が光った試合で、最後まで均衡が崩れることはありませんでした。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "川崎フロンターレ",
+        "ジェフユナイテッド千葉",
+        "試合結果"
+      ],
+      "text": "2026年8月29日のJ1リーグ第4節で川崎フロンターレに2-4で敗れ、開幕から4連敗という苦しいスタートになったチームはどこでしょう？",
+      "options": [
+        "ジェフユナイテッド千葉",
+        "ファジアーノ岡山",
+        "清水エスパルス",
+        "水戸ホーリーホック"
+      ],
+      "answerIndex": 0,
+      "explanation": "川崎フロンターレが自慢の攻撃力を見せつけて4得点を挙げた一方で、ジェフユナイテッド千葉は開幕から4戦全敗となりました。",
+      "trivia": "今季のJ1リーグは序盤から明暗がくっきりと分かれ、開幕4連勝を飾るチームがある一方で千葉は苦しい戦いが続いています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "柏レイソル",
+        "清水エスパルス",
+        "試合結果"
+      ],
+      "text": "2026/27シーズンのJ1リーグで、2026年8月29日の第4節に勝利してクラブ史上初の「開幕4連勝」を達成し、首位争いを牽引しているクラブはどこでしょう？",
+      "options": [
+        "柏レイソル",
+        "FC町田ゼルビア",
+        "ヴィッセル神戸",
+        "名古屋グランパス"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏レイソルはアウェイで清水エスパルスと対戦し、後半26分に挙げた1点を守りきって1-0で勝利。見事クラブ史上初となる開幕4連勝を飾りました。",
+      "trivia": "J1リーグの過酷な環境で開幕4連勝を達成するのは非常に難しく、序盤の主導権を握る上で大きなアドバンテージとなります。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "ヴィッセル神戸",
+        "セレッソ大阪",
+        "得点者"
+      ],
+      "text": "2026年8月29日に行われたJ1リーグ第4節のセレッソ大阪戦で、ヴィッセル神戸に今季ホーム初勝利をもたらす決勝点（PK）を決めた選手は誰でしょう？",
+      "options": [
+        "小松蓮",
+        "大迫勇也",
+        "武藤嘉紀",
+        "宮代大聖"
+      ],
+      "answerIndex": 0,
+      "explanation": "負傷者を多く抱える苦しい台所事情の中、若手選手も躍動したヴィッセル神戸は、後半26分（71分）に小松蓮がPKを沈めて1-0で勝利しました。",
+      "trivia": "小松蓮は2025年にブラウブリッツ秋田からヴィッセル神戸へ加入し、新たなターゲットマンとして期待に応える活躍を見せています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "鹿島アントラーズ",
+        "東京ヴェルディ",
+        "得点者"
+      ],
+      "text": "2026/27シーズンのJ1開幕から4試合連続ゴールを記録し、2026年8月29日の試合でも2得点を挙げて鹿島アントラーズの開幕4連勝に大きく貢献しているブラジル人FWは誰でしょう？",
+      "options": [
+        "レオ・セアラ",
+        "チャヴリッチ",
+        "エウベル",
+        "アンデルソン・ロペス"
+      ],
+      "answerIndex": 0,
+      "explanation": "レオ・セアラは8月29日の東京ヴェルディ戦で2得点を挙げ、自身は開幕から4戦連発となる大活躍で鹿島アントラーズを牽引しています。",
+      "trivia": "鹿島アントラーズは第4節までの4試合で計11得点を奪い、そのうちレオ・セアラが得点源として爆発的な得点力を見せつけています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "浦和レッズ",
+        "横浜F・マリノス",
+        "得点者"
+      ],
+      "text": "2026年8月29日に行われた浦和レッズ対横浜F・マリノス戦で、後半途中に出場して約2分後に逆転の決勝ゴールを決めた浦和の選手は誰でしょう？",
+      "options": [
+        "南野遥海",
+        "根本健太",
+        "渡邊凌磨",
+        "安居海渡"
+      ],
+      "answerIndex": 0,
+      "explanation": "南野遥海は69分に安居海渡と交代してピッチに入り、そのわずか約2分後の71分にこぼれ球を右足で流し込んで見事な決勝点を奪いました。",
+      "trivia": "短い出場時間でも一瞬の隙を突いてゴールを決める決定力の高さから、ファンは彼に大きな期待と歓喜の声を寄せています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "FC東京",
+        "V・ファーレン長崎",
+        "試合結果"
+      ],
+      "text": "2026年8月29日に行われたJ1リーグ第4節、V・ファーレン長崎とFC東京の試合結果はどうなったでしょう？",
+      "options": [
+        "FC東京が3-0で勝利",
+        "0-0の引き分け",
+        "V・ファーレン長崎が2-1で勝利",
+        "1-1の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "アウェイに乗り込んだFC東京が終始ペースを握り、V・ファーレン長崎を相手に3-0の快勝を収めました。",
+      "trivia": "FC東京はこの試合で安定した守備と鋭い攻撃を見せ、クリーンシートでの勝利でしっかりと勝ち点3を積み上げました。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "横浜F・マリノス",
+        "浦和レッズ",
+        "得点者"
+      ],
+      "text": "2026年8月29日の浦和レッズ戦で、敗れはしたもののオフサイドラインをかいくぐる抜け出しなどから横浜F・マリノスに2ゴールをもたらした選手は誰でしょう？",
+      "options": [
+        "谷村海那",
+        "近藤友喜",
+        "水沼宏太",
+        "植中朝日"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜F・マリノスの谷村海那は前半38分と後半12分（57分）にゴールを決め、チームに2度のリードをもたらす見事な活躍を見せました。",
+      "trivia": "谷村海那の先制点は、オフサイドぎりぎりで裏へ抜け出し、鮮やかなトラップから相手GKを破る非常にテクニカルなゴールでした。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1リーグ",
+        "浦和レッズ",
+        "横浜F・マリノス",
+        "得点者"
+      ],
+      "text": "2026年8月29日の浦和レッズ対横浜F・マリノス戦において、後半に渡邊凌磨のコーナーキックから2-2の同点となるヘディングシュートを決めた浦和の選手は誰でしょう？",
+      "options": [
+        "根本健太",
+        "マテウス・サヴィオ",
+        "マリウス・ホイブラーテン",
+        "佐藤瑶大"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半19分（64分）、左コーナーキックを蹴った渡邊凌磨のボールに根本健太が高い打点のヘディングで合わせ、浦和レッズを2-2の同点に導きました。",
+      "trivia": "この同点ゴールで一気にスタジアムの熱気が高まり、直後に投入された南野遥海の逆転ゴールへと繋がる大きな伏線となりました。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "順位",
+        "柏レイソル",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026/27シーズンの明治安田J1リーグで、第4節を終えて開幕4連勝を飾った2クラブは「鹿島アントラーズ」ともう一つはどこでしょう？",
+      "options": [
+        "柏レイソル",
+        "FC町田ゼルビア",
+        "サンフレッチェ広島",
+        "ヴィッセル神戸"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月29日に行われた第4節で勝利し、柏レイソルと鹿島アントラーズが開幕から無傷の4連勝を飾りました。",
+      "trivia": "2026/27シーズンはJリーグ史上初となる「秋春制」での開催となっており、8月に開幕を迎えました。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "得点ランキング",
+        "鹿島アントラーズ",
+        "レオ・セアラ"
+      ],
+      "text": "2026年8月29日の第4節終了時点のJ1リーグ得点ランキングで、開幕から4試合で6ゴールを挙げ首位に立っている鹿島アントラーズの選手は誰でしょう？",
+      "options": [
+        "レオ・セアラ",
+        "チャヴリッチ",
+        "鈴木優磨",
+        "知念慶"
+      ],
+      "answerIndex": 0,
+      "explanation": "レオ・セアラは開幕から得点を量産し、第4節の東京ヴェルディ戦でも2ゴールを挙げるなど、早くも6ゴールを挙げて得点ランキング首位に立っています。",
+      "trivia": "レオ・セアラは過去のJリーグでも安定してゴールを量産しており、ストライカーとしての決定力の高さを新シーズンでも遺憾なく発揮しています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "順位",
+        "ジェフユナイテッド千葉"
+      ],
+      "text": "2026/27シーズンのJ1リーグで、第4節終了時点において唯一の開幕4連敗を喫し、勝ち点0で最下位に沈んでいるクラブはどこでしょう？",
+      "options": [
+        "ジェフユナイテッド千葉",
+        "浦和レッズ",
+        "東京ヴェルディ",
+        "清水エスパルス"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1を戦うジェフユナイテッド千葉は開幕から苦戦が続き、2026年8月29日までの第4節終了時点で4連敗となり、最下位の20位となっています。",
+      "trivia": "今シーズンのJ1にはジェフユナイテッド千葉のほか、水戸ホーリーホックやファジアーノ岡山など、昨季J2から昇格したクラブが多く参戦しています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J3",
+        "試合結果",
+        "FC岐阜",
+        "栃木SC"
+      ],
+      "text": "2026年8月29日に行われた明治安田J3リーグ第4節で、栃木SCに4-1で快勝し、開幕からの無敗をキープしたクラブはどこでしょう？",
+      "options": [
+        "FC岐阜",
+        "FC琉球",
+        "鹿児島ユナイテッドFC",
+        "愛媛FC"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC岐阜は8月29日に行われた第4節・栃木SC戦で4-1と快勝し、開幕からの無敗を維持して好調な序盤戦を過ごしています。",
+      "trivia": "FC岐阜のホームスタジアムである岐阜メモリアルセンター長良川競技場は、ピッチとスタンドの距離が近く熱気を感じやすいスタジアムとして知られています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "順位表",
+        "柏レイソル",
+        "鹿島アントラーズ",
+        "レギュレーション"
+      ],
+      "text": "2026/27シーズンのJ1リーグ第4節終了時点で、首位の柏レイソルと2位の鹿島アントラーズはともに勝ち点12で並んでいました。この2クラブの順位を分けた要素は何でしょう？",
+      "options": [
+        "得失点差",
+        "総得点数",
+        "直接対決の成績",
+        "反則ポイント"
+      ],
+      "answerIndex": 0,
+      "explanation": "第4節終了時点で両チームは勝ち点12で並びましたが、柏が得失点差+6、鹿島が得失点差+5だったため、わずかな差で柏レイソルが首位に立ちました。",
+      "trivia": "Jリーグの順位決定方法は、勝ち点が並んだ場合「得失点差」「総得点数」「当該チーム間の対戦成績」の順で決定されます。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "得点ランキング",
+        "横浜F・マリノス",
+        "谷村海那"
+      ],
+      "text": "2026年8月末時点のJ1リーグ得点ランキングで、トップのレオ・セアラに次ぐ単独2位の4ゴールを記録している、横浜F・マリノスの選手は誰でしょう？",
+      "options": [
+        "谷村海那",
+        "三井寺眞",
+        "エウベル",
+        "アンデルソン・ロペス"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜F・マリノスの谷村海那は開幕から好調を維持し、第4節までに4得点を挙げて得点ランキング単独2位につけています。",
+      "trivia": "いわきFCからステップアップを果たしてきた谷村海那は、前線でのハードワークと得点感覚を武器にJ1の舞台でも結果を残しています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-08-29",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "小川航基",
+        "FC町田ゼルビア",
+        "完全移籍",
+        "Jリーグ"
+      ],
+      "text": "2026年8月24日、サッカー日本代表FWの小川航基がオランダ1部からJ1・FC町田ゼルビアへ完全移籍加入することが発表されました。彼が直前まで所属していたクラブはどこでしょう？",
+      "options": [
+        "NECナイメヘン",
+        "フェイエノールト",
+        "スパルタ・ロッテルダム",
+        "AZアルクマール"
+      ],
+      "answerIndex": 0,
+      "explanation": "2023年に横浜FCからNECナイメヘンへ移籍し、オランダでゴールを量産していましたが、今回の移籍で3年ぶりのJリーグ復帰を果たしました。",
+      "trivia": "NECナイメヘンでは在籍3年間で公式戦92試合33得点をマーク。2026年のW杯本大会でも3試合に出場するなど、経験を積んでの凱旋となりました。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-24",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "荒木遼太郎",
+        "シント＝トロイデン",
+        "海外移籍",
+        "初ゴール"
+      ],
+      "text": "今夏、鹿島アントラーズからシント＝トロイデンVVへ完全移籍し、2026年8月30日に行われた試合でベルギー1部リーグ初ゴールを記録した日本人選手は誰でしょう？",
+      "options": [
+        "荒木遼太郎",
+        "石渡ネルソン",
+        "鈴木唯人",
+        "松澤海斗"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年夏に自身初の海外挑戦となるシント＝トロイデンVVへの完全移籍を果たした荒木遼太郎が、ベルギーでのデビュー戦で見事に初ゴールを決めました。",
+      "trivia": "ゴール後には、直近で大ケガに見舞われた鹿島時代の同僚・安西幸輝へ向けたゴールパフォーマンスを見せ、厚い友情でファンを沸かせました。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-30",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "伊藤敦樹",
+        "海外日本人選手",
+        "完全移籍"
+      ],
+      "text": "2026年8月28日、元浦和レッズのMF伊藤敦樹がベルギーのヘントからイングランドのクラブへ完全移籍することが発表されました。彼が加入したクラブはどこでしょう？",
+      "options": [
+        "ボルトン・ワンダラーズ",
+        "ハル・シティ",
+        "イプスウィッチ・タウン",
+        "バーミンガム・シティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "今季ヘントで構想外となっていた伊藤敦樹は、Jリーグ復帰ではなくイングランドへの初挑戦を選び、ボルトン・ワンダラーズと3年契約を結びました。",
+      "trivia": "ボルトン・ワンダラーズに所属する日本人選手としては、西澤明訓、中田英寿、宮市亮に次いでクラブ史上4人目となります。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-28",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "中山雄太",
+        "FC町田ゼルビア",
+        "海外移籍"
+      ],
+      "text": "2026年8月26日、FC町田ゼルビアを離脱し、セルビア1部の名門クラブであるレッドスター・ベオグラード（ツルヴェナ・ズヴェズダ）への移籍が基本合意に達したと報じられた日本代表DFは誰でしょう？",
+      "options": [
+        "中山雄太",
+        "谷口彰悟",
+        "板倉滉",
+        "渡辺剛"
+      ],
+      "answerIndex": 0,
+      "explanation": "今夏FC町田ゼルビアに加入していた中山雄太ですが、再び海外でのプレーを希望し、セルビア屈指の名門であるレッドスターへの移籍が基本合意に達しました。",
+      "trivia": "2026年秋春制となったJ1開幕戦でも話題を集めたFC町田ゼルビアですが、大型補強の一方で短期間での主力選手の海外移籍離脱も発生しています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-26",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "堂安律",
+        "海外移籍市場",
+        "日本代表"
+      ],
+      "text": "2026年8月28日の現地報道によると、日本代表MF堂安律に対しサウジアラビアのクラブから約33億円のオファーがありましたが、所属元のフランクフルトが売却を拒否しました。堂安にオファーを提示したとされるクラブはどこでしょう？",
+      "options": [
+        "アル・イテハド",
+        "アル・ヒラル",
+        "アル・ナスル",
+        "アル・アハリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "サウジアラビアのアル・イテハドから約33億円という巨額のオファーが届いたものの、フランクフルトは堂安を今季の重要な戦力とみなして放出を認めませんでした。",
+      "trivia": "移籍市場の締め切りが近づく中での破格のオファーでしたが、W杯でも存在感を示した堂安の価値は欧州クラブ内でも高く見積もられています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-08-28",
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "配分金",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年8月25日、Jリーグは2026/27シーズンの「理念強化配分金」の支給対象候補クラブを発表しました。総額21.6億円のうち、最多となる4億8500万円を受け取る候補となったクラブはどこでしょうか？",
+      "options": [
+        "鹿島アントラーズ",
+        "ヴィッセル神戸",
+        "サンフレッチェ広島",
+        "浦和レッズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは2024年〜2025年の成績やファン指標などの複数の基準に基づき、理念強化配分金の候補クラブを決定しました。鹿島アントラーズが最多の4億8500万円を受け取る候補となりました。",
+      "trivia": "理念強化配分金は成績や人気に応じた「結果配分」として支払われ、クラブが提出する活用計画の審査を経て11月に正式に支給が決定されます。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ルヴァンカップ",
+        "放送・配信",
+        "Jリーグ"
+      ],
+      "text": "2026年8月28日、J1・J2・J3の全60クラブが参戦する『2026/27 Jリーグ ヤマザキビスケット ルヴァンカップ』の全試合を配信することが発表された動画配信サービスはどれでしょうか？",
+      "options": [
+        "FODプレミアム",
+        "DAZN",
+        "U-NEXT",
+        "ABEMA"
+      ],
+      "answerIndex": 0,
+      "explanation": "フジテレビが運営する動画配信サービス「FODプレミアム」で、2026/27シーズンのルヴァンカップ全試合が配信されることが発表されました。注目試合は生配信も行われます。",
+      "trivia": "ルヴァンカップは全クラブが参加するノックアウト方式となったことで、より多くのクラブにタイトル獲得のチャンスが広がっています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "テゲバジャーロ宮崎",
+        "J3",
+        "ホームタウン"
+      ],
+      "text": "2026年8月27日、Jリーグから承認を受け、テゲバジャーロ宮崎のホームタウンに新たに追加された宮崎県の自治体はどこでしょうか？",
+      "options": [
+        "綾町",
+        "高鍋町",
+        "木城町",
+        "川南町"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月27日、宮崎県東諸県郡の綾町（あやちょう）がテゲバジャーロ宮崎のホームタウンに追加されることが発表されました。",
+      "trivia": "綾町は「日本最大級の照葉樹林」で知られており、ユネスコエコパークにも登録されている自然豊かな町です。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "鹿島アントラーズ",
+        "スタジアム",
+        "茨城県"
+      ],
+      "text": "2026年8月28日より、「新カシマサッカースタジアム基本計画に関するアンケート」が開始されました。このアンケート調査を実施している主体はどこでしょうか？",
+      "options": [
+        "茨城県",
+        "鹿嶋市",
+        "鹿島アントラーズ",
+        "Jリーグ"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズの新たなホームスタジアムの基本計画策定に向けた意見やニーズを把握するため、クラブや市ではなく茨城県が主体となってアンケート調査を開始しました。",
+      "trivia": "現在の県立カシマサッカースタジアムは、1993年のJリーグ開幕に合わせて建設された日本初の本格的なサッカー専用スタジアムです。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "配分金",
+        "浦和レッズ"
+      ],
+      "text": "Jリーグが2026年8月25日に発表した「2026特別シーズン ファン指標配分金」において、DAZN視聴者数などを基にした「ファン指標順位」で1位となり、最も多くの額を支給される対象となったクラブはどこでしょうか？",
+      "options": [
+        "浦和レッズ",
+        "鹿島アントラーズ",
+        "横浜F・マリノス",
+        "川崎フロンターレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1からJ3までの全クラブに配分される「ファン指標配分金」において、DAZNの視聴者数やシーズンパス販売実績などでトップの成績を収めたのは浦和レッズでした。",
+      "trivia": "ファン指標配分金は成績に関わらず、クラブのファンを増やす取り組みが直接クラブの収益につながる画期的な仕組みとして導入されています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "中山雄太",
+        "FC町田ゼルビア",
+        "移籍",
+        "海外挑戦"
+      ],
+      "text": "2026年8月30日、FC町田ゼルビアのDF中山雄太が完全移籍することが発表されました。移籍先となったセルビア1部の名門クラブはどこでしょう？",
+      "options": [
+        "レッドスター・ベオグラード",
+        "パルチザン・ベオグラード",
+        "ディナモ・ザグレブ",
+        "スパルタク・モスクワ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月30日、日本代表経験もあるDF中山雄太がFC町田ゼルビアからセルビア1部のレッドスター・ベオグラードへ完全移籍することが発表されました。",
+      "trivia": "レッドスター・ベオグラードは1991年のトヨタカップ（現クラブW杯）で優勝したこともある、東欧屈指の強豪クラブです。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "監督人事",
+        "大岩剛",
+        "森保一"
+      ],
+      "text": "北中米W杯後の日本代表の次期監督人事について、2027年3月からA代表とロス五輪代表（U-22）を兼任することが決まったと報じられた指導者は誰でしょう？",
+      "options": [
+        "大岩剛",
+        "鬼木達",
+        "川島永嗣",
+        "長谷部誠"
+      ],
+      "answerIndex": 0,
+      "explanation": "北中米W杯後、2027年1月のアジアカップまでは森保一監督が続投し、2027年3月からは大岩剛氏がロス五輪代表と兼任でA代表監督に就任することが決定したと報じられました。",
+      "trivia": "大岩剛氏は2024年のパリオリンピックでもU-23日本代表を率いており、世代別代表での確かな手腕が評価されての抜擢となりました。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "小川航基",
+        "FC町田ゼルビア",
+        "移籍",
+        "Jリーグ復帰"
+      ],
+      "text": "2026年8月24日、日本代表FW小川航基がFC町田ゼルビアへ完全移籍し、Jリーグに復帰することが発表されました。彼が直前まで所属していたオランダのクラブはどこでしょう？",
+      "options": [
+        "NECナイメヘン",
+        "スパルタ・ロッテルダム",
+        "AZアルクマール",
+        "SCヘーレンフェーン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年8月24日、欧州で実績を残し北中米W杯も経験した小川航基が、オランダのNECからFC町田ゼルビアへ完全移籍しました。全盛期でのJ復帰として大きな話題を呼びました。",
+      "trivia": "小川はNECナイメヘンでエース級の活躍を見せ、エールディビジの屈強なDFたちとのマッチアップでゴールへの嗅覚をさらに磨き上げました。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "新ルール",
+        "秋春制",
+        "IFAB"
+      ],
+      "text": "2026年8月に開幕した秋春制のJリーグで、時間稼ぎ（時間浪費行為）対策として新たに導入された「5秒ルール」の対象となるプレーはどれでしょう？",
+      "options": [
+        "スローインとゴールキック",
+        "コーナーキックとフリーキック",
+        "ペナルティキック",
+        "ゴールキーパーのボール保持"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026/27シーズンのJリーグから、実際にプレーしている時間を増やすため、スローインやゴールキックに対する「5秒ルール」や、選手交代の「10秒ルール」が導入されました。",
+      "trivia": "これらの新ルールは、先行して開催された2026年の北中米ワールドカップでも適用されており、世界的にプレー時間の確保が推進されています。",
+      "referenceDate": "2026-08-31",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-08-31",
+        "expiryDate": "2026-09-07",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
