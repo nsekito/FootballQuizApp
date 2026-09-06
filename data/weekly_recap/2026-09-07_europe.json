@@ -1,0 +1,1042 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-06T22:55:52Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-09-07",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "アストン・ヴィラ",
+        "監督"
+      ],
+      "text": "2026年9月5日のプレミアリーグ第3節、ハル・シティ対アストン・ヴィラは0-0の引き分けでした。この試合でアストン・ヴィラの指揮官としてクラブ通算200試合目の指揮を執った監督は誰でしょう？",
+      "options": [
+        "ウナイ・エメリ",
+        "ミケル・アルテタ",
+        "ペップ・グアルディオラ",
+        "アンドニ・イラオラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラを率いるウナイ・エメリ監督は、この試合で就任から200試合目という節目を迎えました。試合は両チーム譲らずスコアレスドローに終わっています。",
+      "trivia": "エメリ監督はヨーロッパリーグでの実績が非常に高く、セビージャとビジャレアルで計4度の優勝を経験しています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-05",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "リヴァプール",
+        "試合結果"
+      ],
+      "text": "2026年9月4日に行われたプレミアリーグ第3節で、イプスウィッチ・タウンはホームでリヴァプールと対戦しました。この試合の結果として正しいものはどれでしょう？",
+      "options": [
+        "リヴァプールが2-0で勝利",
+        "1-1の引き分け",
+        "イプスウィッチが1-0で勝利",
+        "リヴァプールが4-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合はアウェイのリヴァプールが終始主導権を握り、2-0で勝利を収めました。昇格組のイプスウィッチにとっては厳しい試合となりました。",
+      "trivia": "イプスウィッチ・タウンのホームスタジアムである「ポートマン・ロード」は、1884年から使用されているイングランド屈指の歴史あるスタジアムです。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-04",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "アストン・ヴィラ",
+        "日本人選手"
+      ],
+      "text": "2026年9月5日のプレミアリーグ第3節、ハル・シティ対アストン・ヴィラの試合は0-0のスコアレスドローに終わりました。この試合でアストン・ヴィラのゴールを守り、クリーンシートを達成した日本代表GKは誰でしょう？",
+      "options": [
+        "鈴木彩艶",
+        "大迫敬介",
+        "シュミット・ダニエル",
+        "小久保玲央ブライアン"
+      ],
+      "answerIndex": 0,
+      "explanation": "今季アストン・ヴィラでプレーする日本代表GKの鈴木彩艶は、ハル・シティの攻撃をシャットアウトし、見事無失点で試合を終えました。",
+      "trivia": "鈴木彩艶は浦和レッズの育成組織出身で、ガーナ人の父と日本人の母を持つアスリート家系の生まれです。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-05",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "エヴァートン",
+        "マンチェスター・ユナイテッド"
+      ],
+      "text": "2026年9月6日のプレミアリーグ第3節、エヴァートン対マンチェスター・ユナイテッドの試合は、後半アディショナルタイムの劇的な同点弾により何対何で引き分けたでしょう？",
+      "options": [
+        "2-2",
+        "1-1",
+        "3-3",
+        "0-0"
+      ],
+      "answerIndex": 0,
+      "explanation": "エヴァートンが後半96分に同点に追いつき、試合は2-2で終了しました。両チームともに勝ち点1を分け合う結果となりました。",
+      "trivia": "この試合の舞台となった「ヒル・ディッキンソン・スタジアム」は、エヴァートンが近年移転した新スタジアムで、マージー川沿いのウォーターフロントに位置しています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-06",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "得点者"
+      ],
+      "text": "2026年8月31日に行われたラ・リーガ第3節、バルセロナ対ラージョ・バジェカーノの試合は5-2でバルセロナが勝利しました。この試合でハフィーニャとともに2ゴールを記録したバルセロナの選手は誰でしょう？",
+      "options": [
+        "ラミン・ヤマル",
+        "ロベルト・レヴァンドフスキ",
+        "ペドリ",
+        "アンス・ファティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合はラミン・ヤマルとハフィーニャがそれぞれ2ゴールを挙げる活躍を見せ、バルセロナがホームでラージョを圧倒しました。",
+      "trivia": "ラミン・ヤマルはバルセロナの下部組織「ラ・マシア」出身で、15歳290日というクラブ史上最年少でのトップチームデビュー記録を持っています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-08-31",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "ローマ",
+        "得点者"
+      ],
+      "text": "2026年8月31日のセリエA第2節、レッチェに4-0で勝利したASローマ。この試合で2ゴールを挙げ、開幕から好調なスタートを切ったオランダ人FWは誰でしょう？",
+      "options": [
+        "ドニエル・マレン",
+        "ロメル・ルカク",
+        "ユリエン・ティンバー",
+        "マイロン・ボアドゥ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ドニエル・マレンが2ゴールを挙げる活躍を見せました。彼は開幕2試合で5ゴールを記録し、圧倒的な決定力でローマの攻撃を牽引しています。",
+      "trivia": "マレンはオランダのアヤックスやPSV、イングランドのアーセナルのユースで育ち、ストライカーとしての嗅覚に優れた選手です。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-31",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "アタランタ",
+        "得点者"
+      ],
+      "text": "2026年8月31日のセリエA第2節、アタランタ対ボローニャの試合は後半アディショナルタイムに劇的な決勝点が生まれ、1-0でアタランタが勝利しました。この決勝ゴールを決めたセルビア代表MFは誰でしょう？",
+      "options": [
+        "ラザール・サマルジッチ",
+        "セルゲイ・ミリンコヴィッチ＝サヴィッチ",
+        "ネマニャ・マティッチ",
+        "ドゥシャン・タディッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "スコアレスで迎えた試合終盤、ラザール・サマルジッチが劇的な決勝ゴールを決め、アタランタが勝ち点3を獲得しました。",
+      "trivia": "サマルジッチはドイツのベルリン出身ですが、自身のルーツであるセルビア代表を選択し、卓越した左足の技術で注目を集めています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-31",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "エヴァートン",
+        "得点者"
+      ],
+      "text": "2026年9月6日のプレミアリーグ第3節、エヴァートン対マンチェスター・ユナイテッドの試合は、96分の劇的なゴールでエヴァートンが2-2の同点に追いつきました。この試合でデビューを飾り、値千金の同点ミドルシュートを決めた選手は誰でしょう？",
+      "options": [
+        "エインズリー・メイトランド＝ナイルズ",
+        "タイリーク・ジョージ",
+        "カルヴィン・フィリップス",
+        "ジェームズ・ガーナー"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルなどで活躍したエインズリー・メイトランド＝ナイルズが、エヴァートンでのデビュー戦で劇的な同点ミドルシュートを沈めました。",
+      "trivia": "メイトランド＝ナイルズは複数ポジションをこなすユーティリティ性が武器ですが、彼自身は中央のミッドフィルダーでプレーすることを好んでいます。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-06",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "コモ",
+        "アシスト"
+      ],
+      "text": "2026年9月4日のセリエA第3節、セスク・ファブレガス率いるコモはジェノアに4-1で大勝し、今季初勝利を挙げました。この試合の後半からコモでのデビューを果たし、ダメ押しの4点目をアシストしたイタリア代表FWは誰でしょう？",
+      "options": [
+        "モイーズ・キーン",
+        "マリオ・バロテッリ",
+        "アンドレア・ベロッティ",
+        "フェデリコ・キエーザ"
+      ],
+      "answerIndex": 0,
+      "explanation": "移籍市場終盤にコモに加入したモイーズ・キーンが後半途中から出場し、アッサン・ディアオのゴールをアシストして勝利に貢献しました。",
+      "trivia": "モイーズ・キーンはユヴェントス出身で、2016年にセリエAでデビューした際、2000年代生まれの選手として初めて5大リーグのピッチに立った選手となりました。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-04",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "サンダーランド",
+        "得点者"
+      ],
+      "text": "2026年9月5日のプレミアリーグ第3節、ブレントフォード対サンダーランドの試合は1-1の引き分けに終わりました。後半82分にPKを決めてサンダーランドを敗戦から救ったフランス人MFは誰でしょう？",
+      "options": [
+        "エンツォ・ルフェー",
+        "アマドゥ・オナナ",
+        "クアディオ・コネ",
+        "オーレリアン・チュアメニ"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンダーランドのエンツォ・ルフェーが重圧のかかる終盤にPKを沈め、アウェイの地で貴重な勝ち点1をもたらしました。",
+      "trivia": "ルフェーはフランスのロリアンで頭角を現し、足元の技術と精度の高いパスで中盤の底からゲームを作る司令塔タイプの選手です。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-05",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "順位表",
+        "2026-27シーズン"
+      ],
+      "text": "2026-27シーズンのラ・リーガで、開幕から4連勝を飾り、2026年9月6日時点で単独首位に立っているクラブはどこでしょう？",
+      "options": [
+        "バルセロナ",
+        "レアル・マドリード",
+        "アトレティコ・マドリード",
+        "バレンシア"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナは第3節のラージョ・バジェカーノ戦（5-2）、第4節のバレンシア戦（5-0）と大勝を続け、開幕4連勝（勝ち点12）でラ・リーガの首位を独走しています。",
+      "trivia": "第4節のバレンシア戦では、敵地メスタージャでありながら5得点を奪うなど、圧倒的な得点力を見せつけています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "順位表",
+        "2026-27シーズン"
+      ],
+      "text": "2026-27シーズンのプレミアリーグ第3節を終えた時点で、マンチェスター・シティとともに開幕3連勝を飾り、首位タイに立っているクラブはどこでしょう？",
+      "options": [
+        "アーセナル",
+        "チェルシー",
+        "リヴァプール",
+        "マンチェスター・ユナイテッド"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは第3節のロンドンダービーでチェルシーを2-1で下し、マンチェスター・シティと並んで開幕3連勝（勝ち点9）を達成しました。",
+      "trivia": "アーセナルはチェルシー戦で開始わずか77秒で先制点を許しましたが、そこから見事な逆転勝利を収め無敗を維持しました。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "得点王争い",
+        "バルセロナ",
+        "ハフィーニャ"
+      ],
+      "text": "2026-27シーズンのラ・リーガで、開幕4試合を終えて6ゴールを挙げ、2026年9月6日時点で得点ランキングトップを走っているバルセロナの選手は誰でしょう？",
+      "options": [
+        "ハフィーニャ",
+        "ロベルト・レヴァンドフスキ",
+        "ラミン・ヤマル",
+        "ヴィニシウス・ジュニオール"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナのハフィーニャは開幕4試合で6得点と爆発し、得点ランキングのトップに立っています。8月31日のラージョ・バジェカーノ戦でも2ゴールを記録しました。",
+      "trivia": "同僚の若き至宝ラミン・ヤマルもラージョ・バジェカーノ戦で2ゴールを挙げる活躍を見せており、チーム内で強力な両ウイングを形成しています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "アーリング・ハーランド",
+        "記録達成",
+        "マンチェスター・シティ"
+      ],
+      "text": "マンチェスター・シティのFWアーリング・ハーランドは、2026年9月5日の試合でクラブ通算300ゴールを達成しました。クリスティアーノ・ロナウドやキリアン・エムバペよりも早い記録達成となりましたが、彼が要した試合数はいくつでしょう？",
+      "options": [
+        "384試合",
+        "350試合",
+        "398試合",
+        "412試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハーランドはリオネル・メッシ（365試合）に次ぐ史上2番目の速さとなる、通算384試合でクラブ通算300ゴールの大台に到達しました。",
+      "trivia": "ちなみにキリアン・エムバペは398試合、クリスティアーノ・ロナウドは499試合で300ゴールを達成しており、ハーランドの得点ペースの異常さが際立っています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-05",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "昇格組",
+        "デポルティーボ・ラ・コルーニャ",
+        "好スタート"
+      ],
+      "text": "2026-27シーズンのラ・リーガに昇格したクラブのうち、第4節終了時点（2026年9月6日）で無敗（2勝2分）を維持し、5位と好スタートを切っているのはどこでしょう？",
+      "options": [
+        "デポルティーボ・ラ・コルーニャ",
+        "ラシン・サンタンデール",
+        "マラガ",
+        "エルチェ"
+      ],
+      "answerIndex": 0,
+      "explanation": "古豪デポルティーボ・ラ・コルーニャは、2026-27シーズンに昇格を果たすと、開幕4試合で2勝2分の無敗を保ち5位と見事なスタートを切っています。",
+      "trivia": "デポルティーボは1999-2000シーズンにラ・リーガ優勝経験がありますが、近年は長く低迷しており、久々のトップリーグ復帰となっています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "エヴァートン",
+        "同点ゴール",
+        "劇的展開"
+      ],
+      "text": "2026年9月6日に行われたプレミアリーグ第3節、エヴァートン対マンチェスター・ユナイテッドの一戦で、後半アディショナルタイム（90+6分）にエヴァートンを救う劇的な同点ゴールを決めた新加入選手は誰でしょう？",
+      "options": [
+        "エインズリー・メイトランド＝ナイルズ",
+        "ドミニク・キャルバート＝ルーウィン",
+        "タイリク・ジョージ",
+        "ジェイドン・サンチョ"
+      ],
+      "answerIndex": 0,
+      "explanation": "エヴァートンはマンチェスター・ユナイテッドにリードを許す苦しい展開でしたが、デビュー戦となったメイトランド＝ナイルズが後半アディショナルタイムに見事な同点ゴールを決め、2-2の引き分けに持ち込みました。",
+      "trivia": "メイトランド＝ナイルズはアーセナル出身ですが、複数のクラブを渡り歩いた後、2026年夏にエヴァートンへ加入し、さっそく大仕事をやってのけました。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-06",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "上田綺世",
+        "リール",
+        "移籍",
+        "リーグ・アン"
+      ],
+      "text": "2026年8月31日、オランダのフェイエノールトからフランス・リーグアンの「リール」へ完全移籍し、その数日後のデビュー戦でさっそく初ゴールをマークした日本代表FWは誰でしょう？",
+      "options": [
+        "上田綺世",
+        "浅野拓磨",
+        "小川航基",
+        "町野修斗"
+      ],
+      "answerIndex": 0,
+      "explanation": "上田綺世は移籍金約1500万ユーロでリールに加入しました。移籍後初出場の試合では、途中出場から得意のヘディングでネットを揺らし、衝撃のフランスデビューを飾りました。",
+      "trivia": "リールで背番号「18」を選んだのは、サッカーを始めるきっかけとなった父親が、元ドイツ代表ユルゲン・クリンスマンへの憧れで18番をつけていたことに由来しています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-03",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鈴木彩艶",
+        "アストン・ヴィラ",
+        "プレミアリーグ",
+        "移籍"
+      ],
+      "text": "パリ・サンジェルマンへの移籍が土壇場で破談になった後、2026年8月にアストン・ヴィラへ完全移籍し、8月31日のアーセナル戦でプレミアリーグデビューを飾った日本代表GKは誰でしょう？",
+      "options": [
+        "鈴木彩艶",
+        "大迫敬介",
+        "小久保玲央ブライアン",
+        "谷晃生"
+      ],
+      "answerIndex": 0,
+      "explanation": "鈴木彩艶はパルマでの活躍が評価され、アストン・ヴィラへ引き抜かれました。昨季王者アーセナルとの一戦でプレミアリーグデビューを果たしています。",
+      "trivia": "シント＝トロイデン時代のGKコーチは、鈴木がハーフウェイラインを20メートルも越える距離までボールを「投げた」のを見て、その身体能力に度肝を抜かれたと語っています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-08-31",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "旗手怜央",
+        "バーンリー",
+        "移籍"
+      ],
+      "text": "2026年9月1日、旗手怜央はセルティックからイングランド2部のバーンリーへ完全移籍しました。しかし直前までは別のクラブへレンタル移籍する予定でメディカルチェックへ向かっており、バーンリーが急遽「強奪」したと報じられました。その別のクラブとはどこでしょう？",
+      "options": [
+        "ブラックバーン",
+        "サンダーランド",
+        "ミドルズブラ",
+        "クイーンズ・パーク・レンジャーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "旗手はブラックバーンへのレンタル移籍で合意し移動中でしたが、移籍市場閉鎖間際に完全移籍での獲得を提示したバーンリーが急遽介入し、ハイジャックする形で獲得しました。",
+      "trivia": "幸運なことに、バーンリーとブラックバーンの本拠地は約24キロしか離れていないため、移動中の旗手はすぐに行き先を変更することができました。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-01",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "佐野海舟",
+        "マインツ",
+        "ブンデスリーガ"
+      ],
+      "text": "移籍市場最終日にクリスタル・パレスから約55億円のオファーを受けるもチームに残留し、2026年9月6日のブンデスリーガ・ハンブルガーSV戦で先制点をアシストしたマインツの日本人MFは誰でしょう？",
+      "options": [
+        "佐野海舟",
+        "遠藤航",
+        "田中碧",
+        "川﨑颯太"
+      ],
+      "answerIndex": 0,
+      "explanation": "佐野海舟はマインツの主力として活躍しており、プレミアリーグからの巨額オファーをクラブが拒否して残留。直後の試合でパスカットからアシストを記録し、5得点での大勝に貢献しました。",
+      "trivia": "現地のデータサイトによると、中盤エリアでのインターセプト数やボール奪取数でブンデスリーガのトップに立つなど、守備的MFとして絶大な評価を得ています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 2,
+        "matchDate": "2026-09-06",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鈴木彩艶",
+        "移籍金",
+        "中島翔哉",
+        "中田英寿"
+      ],
+      "text": "2026年8月にアストン・ヴィラへ移籍した鈴木彩艶の移籍金はボーナス込みで最大約3500万ユーロ（約64億円）とされ、日本人選手の歴代最高額に並びました。では、これまで同額で単独トップだった選手は誰でしょう？",
+      "options": [
+        "中島翔哉",
+        "中田英寿",
+        "冨安健洋",
+        "香川真司"
+      ],
+      "answerIndex": 0,
+      "explanation": "鈴木の移籍金は、2019年にポルティモネンセからアル・ドゥハイル（カタール）に移籍した際の中島翔哉と並ぶ歴代最高額タイとなります。中田英寿のパルマ移籍時（約2500万ユーロ）を大きく上回る金額です。",
+      "trivia": "近年はゴールキーパーの足元の技術や攻撃の起点が重視されるようになり、フィールドプレーヤー並みの巨額の移籍金が動くようになっています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "リオネル・メッシ",
+        "アルゼンチン代表",
+        "引退"
+      ],
+      "text": "2026年9月に自身のSNSを通じて、アルゼンチン代表からの引退を発表した世界的スター選手は誰？",
+      "options": [
+        "リオネル・メッシ",
+        "アンヘル・ディ・マリア",
+        "エミリアーノ・マルティネス",
+        "ロドリゴ・デ・パウル"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年ワールドカップを最後に、メッシは自身のInstagramで代表引退を発表しました。アルゼンチン代表として歴代最多の125ゴールを記録しました。",
+      "trivia": "メッシは過去（2016年のコパ・アメリカ敗戦後）にも一度代表引退を宣言したことがありましたが、後に撤回し、悲願の2022年W杯制覇へと繋がりました。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "エンソ・フェルナンデス",
+        "マンチェスター・シティ",
+        "移籍"
+      ],
+      "text": "2026年夏の移籍市場の最終日（9月1日）、チェルシーからマンチェスター・シティへ英国史上最高額タイの巨額の移籍金で加入したアルゼンチン代表MFは誰？",
+      "options": [
+        "エンソ・フェルナンデス",
+        "アレクシス・マック・アリスター",
+        "エセキエル・パラシオス",
+        "ジオバニ・ロ・チェルソ"
+      ],
+      "answerIndex": 0,
+      "explanation": "エンソ・フェルナンデスは1億2500万ポンドという英国史上最高額に並ぶ巨額の移籍金で、デッドラインデーにマンチェスター・シティへ電撃移籍しました。",
+      "trivia": "エンソ・フェルナンデスは2023年にベンフィカからチェルシーに加入した際にも、当時の英国史上最高額となる移籍金を記録していました。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ルイス・エンリケ",
+        "パリ・サンジェルマン",
+        "契約延長"
+      ],
+      "text": "2026年9月4日、パリ・サンジェルマン（PSG）はルイス・エンリケ監督と何年までの契約延長を発表した？",
+      "options": [
+        "2030年",
+        "2028年",
+        "2029年",
+        "2032年"
+      ],
+      "answerIndex": 0,
+      "explanation": "ルイス・エンリケは従来の契約が2026-27シーズン終了まででしたが、新たに2030年までの3年間の契約延長に合意しました。同時に5名の若手選手との契約延長も発表されました。",
+      "trivia": "ルイス・エンリケはこの契約延長後の会見で「1つのクラブに3年以上とどまるのは私の長い監督キャリアの中でも初めての出来事だ」と語りました。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "マルコス・ジョレンテ",
+        "スペイン代表",
+        "引退"
+      ],
+      "text": "2026年9月3日、2026年ワールドカップでの優勝を花道にスペイン代表からの引退を発表した、アトレティコ・マドリードに所属する選手は誰？",
+      "options": [
+        "マルコス・ジョレンテ",
+        "コケ",
+        "サウール・ニゲス",
+        "ロドリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マルコス・ジョレンテは2020年にA代表デビューを果たし、通算27キャップを記録しました。2026年ワールドカップで優勝したメンバーの一員として、31歳で代表キャリアに幕を下ろしました。",
+      "trivia": "彼の父パコ・ジョレンテと大叔父のフランシスコ・ヘントも元スペイン代表選手であり、彼はスペインサッカー界を代表する名門一家の出身として知られています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "カヴァン・サリバン",
+        "MLS",
+        "記録更新"
+      ],
+      "text": "2026年9月5日の試合で、フィラデルフィア・ユニオンの16歳カヴァン・サリバンが更新したMLS（メジャーリーグサッカー）の「16歳以下の選手による1シーズンの最多得点関与記録」は、かつて誰が保持していたもの？",
+      "options": [
+        "フレディー・アドゥー",
+        "アルフォンソ・デイヴィス",
+        "クリスチャン・プリシッチ",
+        "ジョヴァンニ・レイナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "16歳のサリバンはモントリオール戦でシーズン11回目の得点関与（4ゴール7アシスト）を記録し、2005年にフレディー・アドゥーが樹立したMLS記録を21年ぶりに塗り替えました。",
+      "trivia": "カヴァン・サリバンはその圧倒的なパフォーマンスと若さから、現地メディアで「フィラデルフィアの新しいプリンス」や「サッカー界のレブロン・ジェームズ」と絶賛されています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-05",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "移籍",
+        "マンチェスター・シティ",
+        "チェルシー",
+        "デッドラインデー"
+      ],
+      "text": "2026年9月1日の夏の移籍市場最終日（デッドラインデー）に、英国史上最高額タイとなる1億2500万ポンドの移籍金でチェルシーからマンチェスター・シティへ電撃移籍したアルゼンチン代表MFは誰でしょう？",
+      "options": [
+        "エンソ・フェルナンデス",
+        "フリアン・アルバレス",
+        "アレクシス・マック・アリスター",
+        "ロドリゴ・デ・パウル"
+      ],
+      "answerIndex": 0,
+      "explanation": "エンソ・フェルナンデスは移籍市場最終日にチェルシーからマンチェスター・シティへの移籍が完了しました。移籍金は1億2500万ポンドとされ、デッドラインデー最大のビッグディールとして世界中を驚かせました。",
+      "trivia": "エンソ・フェルナンデスは、チェルシー時代の恩師であるエンツォ・マレスカとの再会を強く望んでマンチェスター・シティへの移籍を決断したと報じられています。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "移籍",
+        "エバートン",
+        "モナコ",
+        "破談"
+      ],
+      "text": "2026年9月1日の移籍市場最終日、モナコからエバートンへの移籍（移籍金4000万ポンド）がクラブ間で合意に達していたものの、メディカルチェックでの合併症と土壇場での心変わりにより直前で破談となったアメリカ代表FWは誰でしょう？",
+      "options": [
+        "フォラリン・バログン",
+        "ティモシー・ウェア",
+        "クリスティアン・プリシッチ",
+        "ジョシュ・サージェント"
+      ],
+      "answerIndex": 0,
+      "explanation": "フォラリン・バログンはエバートンへの移籍が確実視されていましたが、メディカルチェックの過程で問題が発覚したことや本人の心変わりが影響し、デッドラインデーに突如交渉が崩壊しました。",
+      "trivia": "このバログンの移籍破談によってドミノ現象が起こり、チェルシーが狙っていたモナコ所属のラミーヌ・カマラの獲得も連鎖的に白紙となりました。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "レアル・マドリード",
+        "移籍市場",
+        "ジョゼ・モウリーニョ",
+        "デッドラインデー"
+      ],
+      "text": "2026年9月1日に閉幕した夏の移籍市場で、ジョゼ・モウリーニョ監督率いるレアル・マドリードはデッドラインデーにある珍しい結末を迎え話題になりました。それは次のうちどれでしょう？",
+      "options": [
+        "獲得も放出もゼロで終了した",
+        "ゴールキーパーを3人同時に獲得した",
+        "書類提出が1分遅れて移籍が失敗した",
+        "所属選手全員を移籍リストに載せた"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリードは中盤の追加補強を画策していましたが、「既存の選手が誰一人として退団を望まない」という理由で人員整理ができず、最終日は「獲得ゼロ・放出ゼロ」という静かな結末を迎えました。",
+      "trivia": "クラブのロッカールームの選手たちが残留に固執し、誰も移籍したがらないという、強豪クラブとしては異例かつある意味で贅沢な悩みが原因で補強がストップしました。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "サウジアラビア",
+        "クリスティアーノ・ロナウド",
+        "アル・イテハド",
+        "SNS"
+      ],
+      "text": "2026年9月上旬に行われたサウジ・プロフェッショナルリーグ第4節でアル・ナスルを2-1で破った直後、公式SNSでクリスティアーノ・ロナウド擁する相手チームに対し「ズルしてもまだ負けている（Cheating and still losing）」と挑発的なメッセージを投稿し話題になったクラブはどこでしょう？",
+      "options": [
+        "アル・イテハド",
+        "アル・ヒラル",
+        "アル・アハリ",
+        "アル・シャバブ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アル・イテハドは開幕からの無敗を維持する勝利を収めた後、英語の公式X（旧Twitter）アカウントでこの刺激的な投稿を行い、世界中のサッカーファンの間で大反響を呼びました。",
+      "trivia": "この試合中、アル・イテハドの選手が監督から渡された戦術メモを読んでいたところ、元チームメイトのC・ロナウドが覗き見ようとして談笑する微笑ましいシーンもありました。",
+      "referenceDate": "2026-09-07",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-09-06",
+        "publishDate": "2026-09-07",
+        "expiryDate": "2026-09-14",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
