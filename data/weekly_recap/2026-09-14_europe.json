@@ -1,0 +1,1044 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-13T23:10:03Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-09-14",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "レアル・マドリード",
+        "インテル"
+      ],
+      "text": "2026年9月8日に行われたUEFAチャンピオンズリーグ第1節で、レアル・マドリードはインテルに何対何で勝利したでしょうか？",
+      "options": [
+        "2-1",
+        "1-0",
+        "3-1",
+        "0-0"
+      ],
+      "answerIndex": 0,
+      "explanation": "エムバペとバルベルデのゴールにより、レアル・マドリードがホームでインテルに2-1の勝利を収めました。",
+      "trivia": "レアル・マドリードのカルロ・アンチェロッティ監督の後任として就任したジョゼ・モウリーニョ監督にとって、かつて栄光を築いたインテルとの対戦でした。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-08",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・シティ",
+        "マンチェスター・ユナイテッド"
+      ],
+      "text": "2026年9月13日に行われたプレミアリーグのマンチェスター・ダービー（マンチェスター・ユナイテッド対マンチェスター・シティ）の勝者はどのチームでしょうか？",
+      "options": [
+        "マンチェスター・シティ",
+        "マンチェスター・ユナイテッド",
+        "引き分け",
+        "試合延期"
+      ],
+      "answerIndex": 0,
+      "explanation": "オールド・トラッフォードで行われたダービーは、アーリング・ハーランドの1点を守り切ったマンチェスター・シティが0-1で勝利しました。",
+      "trivia": "ハーランドの決勝ゴールは際どいオフサイド判定となりましたが、VARの介入により正当なゴールと認められました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ブンデスリーガ",
+        "フライブルク",
+        "ボルシアMG"
+      ],
+      "text": "2026年9月12日のブンデスリーガ第3節で、ボルシアMGに5-0で大勝し首位に浮上したクラブはどこでしょうか？",
+      "options": [
+        "フライブルク",
+        "ドルトムント",
+        "バイエルン・ミュンヘン",
+        "アウクスブルク"
+      ],
+      "answerIndex": 0,
+      "explanation": "フライブルクがホームでボルシアMGを5-0と圧倒し、開幕からの好調を維持して順位表のトップに立ちました。",
+      "trivia": "この試合でフライブルクのエンゲルハルトとマタノヴィッチがそれぞれ2ゴールずつを記録する大活躍を見せました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "アストン・ヴィラ",
+        "クラブ・ブルッヘ"
+      ],
+      "text": "2026年9月8日に行われたUEFAチャンピオンズリーグ第1節で、アストン・ヴィラはアウェイでクラブ・ブルッヘに何対何で勝利したでしょうか？",
+      "options": [
+        "3-2",
+        "2-0",
+        "1-1",
+        "0-1"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラはマッギンやブエンディアらのゴールにより、ベルギーのクラブ・ブルッヘを相手に3-2の撃ち合いを制しました。",
+      "trivia": "アストン・ヴィラは前半だけで3ゴールを奪う猛攻を見せ、逃げ切りに成功しました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-08",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "キリアン・エムバペ"
+      ],
+      "text": "2026年9月12日のラ・リーガ、レアル・マドリード対ラージョ・バジェカーノ戦（4-1）で、PKを含む2ゴールを挙げた選手は誰でしょうか？",
+      "options": [
+        "キリアン・エムバペ",
+        "オーレリアン・チュアメニ",
+        "エドゥアルド・カマヴィンガ",
+        "ジュード・ベリンガム"
+      ],
+      "answerIndex": 0,
+      "explanation": "キリアン・エムバペが前半14分にPKで先制点を奪うと、その後も得点を重ねてチームの4-1の大勝に貢献しました。",
+      "trivia": "この試合でモウリーニョ監督率いるレアル・マドリードは前半だけで3ゴールを奪い、前節の敗戦から見事に立ち直りました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・シティ",
+        "アーリング・ハーランド"
+      ],
+      "text": "2026年9月13日のマンチェスター・ユナイテッド対マンチェスター・シティ（0-1）で、60分に決勝点となるハーフボレーシュートを決めた選手は誰でしょうか？",
+      "options": [
+        "アーリング・ハーランド",
+        "フィル・フォーデン",
+        "ベルナルド・シウバ",
+        "ロドリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "60分、グヴァルディオルのクロスに対してアーリング・ハーランドがファーポストで巧みに合わせ、ハーフボレーで決勝点を奪いました。",
+      "trivia": "ゴール直後は肉眼でオフサイドに見えたため議論を呼びましたが、VARの厳密なチェックの結果、ゴールが認められました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "ドルトムント",
+        "セルー・ギラシ"
+      ],
+      "text": "2026年9月8日のUEFAチャンピオンズリーグ、ビジャレアル戦で後半途中から3得点を奪い、ドルトムントを3-2の逆転勝利に導いたストライカーは誰でしょうか？",
+      "options": [
+        "セルー・ギラシ",
+        "ユスファ・ムココ",
+        "カリム・アデイェミ",
+        "ドニエル・マレン"
+      ],
+      "answerIndex": 0,
+      "explanation": "セルー・ギラシは79分、84分、そしてアディショナルタイムの92分に連続ゴールを決め、ドルトムントに劇的な勝利をもたらしました。",
+      "trivia": "ドルトムントはホームのジグナル・イドゥナ・パルクで最大2点のビハインドを背負っていましたが、ギラシの驚異的な決定力でひっくり返しました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-08",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAチャンピオンズリーグ",
+        "シュトゥットガルト",
+        "エルメディン・デミロヴィッチ"
+      ],
+      "text": "2026年9月9日のUEFAチャンピオンズリーグで、シュトゥットガルトがバイキングFKに3-1で勝利しました。この試合の前半19分から31分までの間にハットトリックを達成した選手は誰でしょうか？",
+      "options": [
+        "エルメディン・デミロヴィッチ",
+        "デニズ・ウンダフ",
+        "クリス・ヒューリッヒ",
+        "アタカン・カラソル"
+      ],
+      "answerIndex": 0,
+      "explanation": "エルメディン・デミロヴィッチが19分、25分、31分と立て続けにゴールネットを揺らし、わずか12分間でハットトリックを達成しました。",
+      "trivia": "この勝利によりシュトゥットガルトはUEFAチャンピオンズリーグのリーグフェーズで素晴らしいスタートを切りました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-09",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ブンデスリーガ",
+        "バイエル・レバークーゼン",
+        "パトリック・シック"
+      ],
+      "text": "2026年9月12日のブンデスリーガ、アウクスブルク対バイエル・レバークーゼン（2-2）で、レバークーゼンを敗戦の危機から救う89分の同点ゴールを決めたのは誰でしょうか？",
+      "options": [
+        "パトリック・シック",
+        "フロリアン・ヴィルツ",
+        "ビクトル・ボニフェイス",
+        "ジェレミー・フリンポン"
+      ],
+      "answerIndex": 0,
+      "explanation": "アウクスブルクに逆転を許し苦しい展開となったレバークーゼンでしたが、89分にパトリック・シックが劇的な同点ゴールを決め、引き分けに持ち込みました。",
+      "trivia": "レバークーゼンは過去のシーズンでも終盤での「劇的ゴール」で無敗記録を伸ばしてきましたが、この試合でもその勝負強さを発揮しました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "サッスオーロ",
+        "ユベントス"
+      ],
+      "text": "2026年9月13日のセリエAで、サッスオーロがユベントスに3-2で勝利しました。この試合の90+4分に劇的な決勝ゴールを決めたサッスオーロの選手は誰でしょうか？",
+      "options": [
+        "アジッチ",
+        "エスポージト",
+        "ボウイ",
+        "ジェグロヴァ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ユベントスのジェグロヴァに後半アディショナルタイムに同点に追いつかれた直後の90+4分、アジッチが決勝点を挙げてサッスオーロに金星をもたらしました。",
+      "trivia": "この試合では80分以降になんと3ゴール（82分、89分、90+1分、90+4分と実質4ゴール）が生まれる、非常にスリリングな展開となりました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "レアル・マドリード",
+        "ラ・リーガ",
+        "キリアン・エムバペ",
+        "ゴール"
+      ],
+      "text": "2026年9月12日に行われたラ・リーガのラージョ・バジェカーノ戦で、2ゴールを挙げてレアル・マドリードを4-1の勝利に導いた選手は誰でしょう？",
+      "options": [
+        "キリアン・エムバペ",
+        "ヴィニシウス・ジュニオール",
+        "ロドリゴ",
+        "ジュード・ベリンガム"
+      ],
+      "answerIndex": 0,
+      "explanation": "キリアン・エムバペは前半14分にPKで先制点を奪うと、その後も追加点を挙げ、レアル・マドリードの4-1の勝利に大きく貢献しました。",
+      "trivia": "エムバペの1点目はPKによるもので、相手GKの逆を突く冷静なシュートでした。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "アーセナル",
+        "プレミアリーグ",
+        "連勝",
+        "順位"
+      ],
+      "text": "2026年9月12日に行われたプレミアリーグでサンダーランドに2-0で勝利し、開幕から無傷の4連勝を飾ったクラブはどこでしょう？",
+      "options": [
+        "アーセナル",
+        "マンチェスター・シティ",
+        "リヴァプール",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルはサンダーランドを下して開幕4連勝を達成し、プレミアリーグの首位戦線を牽引しています。",
+      "trivia": "サンダーランドはこのシーズン、チャンピオンシップから昇格してプレミアリーグを戦っています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "バイエル・レバークーゼン",
+        "ブンデスリーガ",
+        "パトリック・シック",
+        "同点ゴール"
+      ],
+      "text": "2026年9月12日に行われたブンデスリーガ第3節、アウクスブルク対バイエル・レバークーゼンの試合は2-2の引き分けに終わりました。この試合の89分に劇的な同点ゴールを決めたレバークーゼンの選手は誰でしょう？",
+      "options": [
+        "パトリック・シック",
+        "フロリアン・ヴィルツ",
+        "ジェレミー・フリンポン",
+        "アレハンドロ・グリマルド"
+      ],
+      "answerIndex": 0,
+      "explanation": "王者レバークーゼンはアウクスブルクに苦戦を強いられましたが、終了間際の89分にパトリック・シックが同点ゴールを決め、辛くも敗戦を免れました。",
+      "trivia": "レバークーゼンは昨シーズンも試合終盤での劇的なゴール（通称「ネバークーゼン」）で何度も勝ち点を拾ってきました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "リヴァプール",
+        "プレミアリーグ",
+        "フラム",
+        "引き分け"
+      ],
+      "text": "2026年9月12日に行われたプレミアリーグで、リヴァプールは本拠地アンフィールドでどのクラブと0-0のスコアレスドローに終わったでしょう？",
+      "options": [
+        "フラム",
+        "クリスタル・パレス",
+        "エヴァートン",
+        "ノッティンガム・フォレスト"
+      ],
+      "answerIndex": 0,
+      "explanation": "リヴァプールはホームのアンフィールドでフラムを相手に攻め込みましたが、最後までゴールを奪うことができず0-0の引き分けに終わりました。",
+      "trivia": "フラムはこの試合、アンフィールドという難しいアウェイゲームで強豪相手に貴重な勝ち点1を持ち帰ることに成功しました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チェルシー",
+        "ハル・シティ",
+        "プレミアリーグ",
+        "モハメド・ベルミ"
+      ],
+      "text": "2026年9月12日のプレミアリーグで、チェルシーはハル・シティと2-2で引き分けました。この試合の前半に2ゴールを奪い、ハル・シティに貴重な勝ち点をもたらした選手は誰でしょう？",
+      "options": [
+        "モハメド・ベルミ",
+        "ジェイデン・フィロジーン",
+        "リアム・デラップ",
+        "ファビオ・カルヴァーリョ"
+      ],
+      "answerIndex": 0,
+      "explanation": "モハメド・ベルミは前半28分と34分に立て続けにゴールを奪い、チェルシー相手に2-2のドローを演じる立役者となりました。",
+      "trivia": "チェルシーはこの試合、7分に先制しましたが、直後にベルミの連続ゴールで逆転を許すなど不安定な展開となりました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "フライブルク",
+        "ブンデスリーガ",
+        "首位浮上",
+        "大勝"
+      ],
+      "text": "2026年9月12日に行われたブンデスリーガ第3節でボルシア・メンヒェングラートバッハに5-0で大勝し、試合終了時点でリーグ単独首位に浮上したクラブはどこでしょう？",
+      "options": [
+        "フライブルク",
+        "マインツ",
+        "アウクスブルク",
+        "シュトゥットガルト"
+      ],
+      "answerIndex": 0,
+      "explanation": "フライブルクはホームでボルシア・メンヒェングラートバッハを5-0と圧倒し、この大勝によって第3節終了時点でのリーグ首位に躍り出ました。",
+      "trivia": "フライブルクはこの試合で前半だけで3ゴールを奪うなど、圧倒的な攻撃力を見せつけました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鈴木彩艶",
+        "アストン・ヴィラ",
+        "UEFAチャンピオンズリーグ",
+        "ゴールキーパー"
+      ],
+      "text": "2026年9月8日に行われたUEFAチャンピオンズリーグで、日本人GKとして史上初めて同大会のピッチに立った選手は誰でしょう？",
+      "options": [
+        "鈴木彩艶",
+        "大迫敬介",
+        "谷晃生",
+        "シュミット・ダニエル"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラに所属する鈴木彩艶は、2026年9月8日のクラブ・ブルッヘ戦に先発フル出場し、日本人GKとして初めてCL出場を果たしました。",
+      "trivia": "この試合でアストン・ヴィラは3-2で勝利。鈴木彩艶はデータサイトでも高い評価を受け、鮮烈なCLデビューを飾りました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-08",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "藤田譲瑠チマ",
+        "ザンクトパウリ",
+        "塩貝健人",
+        "ブンデスリーガ"
+      ],
+      "text": "2026年9月13日に行われたザンクトパウリ対ヴォルフスブルクの試合で、ザンクトパウリを勝利に導く今季初ゴールを決めた日本人MFは誰でしょう？",
+      "options": [
+        "藤田譲瑠チマ",
+        "堂安律",
+        "田中碧",
+        "伊藤洋輝"
+      ],
+      "answerIndex": 0,
+      "explanation": "ザンクトパウリの藤田譲瑠チマは、この試合で今季初ゴールとなる決勝点をマークし、チームの完封勝利に貢献しました。",
+      "trivia": "この試合ではヴォルフスブルクの塩貝健人も先発出場を果たしており、ブンデスリーガでの日本人対決として注目を集めました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "レアル・ソシエダ",
+        "ラ・リーガ",
+        "アトレティコ・マドリー"
+      ],
+      "text": "2026年9月13日に行われたラ・リーガで、久保建英が途中出場したものの、レアル・ソシエダが0-3で完敗を喫した対戦相手はどこでしょう？",
+      "options": [
+        "アトレティコ・マドリー",
+        "レアル・マドリー",
+        "バルセロナ",
+        "アスレティック・ビルバオ"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・ソシエダはアトレティコ・マドリーと対戦しましたが、グリマルドらにゴールを許し0-3で敗北しました。",
+      "trivia": "久保建英はこの試合で後半途中からピッチに立ちましたが、得点に絡む見せ場を作れず、チームも悔しい無得点での敗戦となりました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "坂元達裕",
+        "プレミアリーグ",
+        "ブライトン"
+      ],
+      "text": "2026年9月13日に行われたプレミアリーグ第4節「ブライトン vs コヴェントリー」における日本人選手（三笘薫、坂元達裕）の出場状況として正しいものはどれでしょう？",
+      "options": [
+        "両者ともに出場しなかった",
+        "三笘薫のみ先発した",
+        "坂元達裕のみ途中出場した",
+        "両者ともに先発した"
+      ],
+      "answerIndex": 0,
+      "explanation": "この試合はブライトンが5-0で大勝しましたが、三笘薫はケガのためメンバー外となり、坂元達裕も出番がなかったため、ピッチ上での日本人対決は実現しませんでした。",
+      "trivia": "コヴェントリーは2026-27シーズンにプレミアリーグを戦っており、坂元達裕のトップリーグでのさらなる活躍が今後期待されています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鈴木彩艶",
+        "UEFAチャンピオンズリーグ",
+        "アストン・ヴィラ",
+        "クラブ・ブルッヘ"
+      ],
+      "text": "2026年9月8日、日本人GK初の快挙となった鈴木彩艶のUEFAチャンピオンズリーグデビュー戦。アストン・ヴィラが3-2で勝利したこの試合の対戦相手は、どこの国のクラブでしょう？",
+      "options": [
+        "ベルギー",
+        "オランダ",
+        "スコットランド",
+        "ポルトガル"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラはCLリーグフェーズの初戦で、ベルギーの強豪であるクラブ・ブルッヘと対戦し3-2で勝利を収めました。",
+      "trivia": "日本人GKがCLのピッチに立つのは長年の悲願でしたが、今夏アストン・ヴィラへとステップアップを果たした鈴木が、ついにその歴史の扉を開きました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-08",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "マンチェスター・シティ",
+        "なでしこジャパン",
+        "契約延長"
+      ],
+      "text": "2026年9月11日、イングランド女子スーパーリーグのマンチェスター・シティが2030年夏までの契約延長を発表した、なでしこジャパンの選手は誰でしょう？",
+      "options": [
+        "藤野あおば",
+        "長谷川唯",
+        "清水梨紗",
+        "宮澤ひなた"
+      ],
+      "answerIndex": 0,
+      "explanation": "加入から2年でチームの主力へと成長した藤野あおばは、マンチェスター・シティとの契約を2030年夏まで延長しました。",
+      "trivia": "藤野は2024年の加入1年目から公式戦で存在感を発揮し、2025年のリーグカップ決勝でもゴールを決めるなど、異国の地で確かな実績を積み上げています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アスレティック・ビルバオ",
+        "ガーナ代表",
+        "代表引退"
+      ],
+      "text": "2026年9月11日、自身のSNS等を通じてガーナ代表からの引退を発表した、アスレティック・ビルバオに所属するFWは誰でしょう？",
+      "options": [
+        "イニャキ・ウィリアムズ",
+        "ニコ・ウィリアムズ",
+        "トーマス・パーティ",
+        "モハメド・クドゥス"
+      ],
+      "answerIndex": 0,
+      "explanation": "スペイン代表でのプレー経験もあるイニャキ・ウィリアムズですが、後にルーツであるガーナ代表へと鞍替えし、W杯に2大会連続で出場した後に代表引退を決断しました。",
+      "trivia": "実弟のニコ・ウィリアムズはスペイン代表を選択しており、兄弟で異なる代表チームのユニフォームを着て国際舞台で活躍したことでも知られています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "レアル・マドリー",
+        "トルコ代表",
+        "契約延長"
+      ],
+      "text": "2026年9月、クラブとの契約を2032年夏まで延長することで原則合意に達したと報じられた、レアル・マドリーに所属するトルコ代表MFは誰でしょう？",
+      "options": [
+        "アルダ・ギュレル",
+        "ブラヒム・ディアス",
+        "オーレリアン・チュアメニ",
+        "エドゥアルド・カマヴィンガ"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリーは、中盤の将来を担う存在として期待するアルダ・ギュレルと、2032年までの新たな6年契約を結ぶ方針を固めたと報じられました。",
+      "trivia": "ギュレルは2023年夏にフェネルバフチェから加入した際、宿敵バルセロナとの激しい争奪戦の末にマドリーを選択したことでも大きな話題となりました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ニューカッスル",
+        "イングランド代表",
+        "契約延長"
+      ],
+      "text": "2026年9月12日、ニューカッスル・ユナイテッドとの契約を2031年まで延長したことが発表された、左サイドバックを主戦場とするイングランド代表DFは誰でしょう？",
+      "options": [
+        "ルイス・ホール",
+        "キーラン・トリッピアー",
+        "ティノ・リヴラメント",
+        "ダン・バーン"
+      ],
+      "answerIndex": 0,
+      "explanation": "チェルシーからレンタルで加入した後に完全移籍を果たし、ニューカッスルで不動の左サイドバックとして定着したルイス・ホールが長期の契約延長に至りました。",
+      "trivia": "今回の新契約にはリリース条項（契約解除金）が含まれておらず、他クラブからの引き抜きを阻止するクラブ側の強い意志が窺えます。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ナポリ",
+        "コソボ代表",
+        "代表引退"
+      ],
+      "text": "2026年9月12日、母国のサッカー連盟上層部との対立などを理由に、コソボ代表からの電撃引退を発表したナポリ所属の選手は誰でしょう？",
+      "options": [
+        "アミル・ラフマニ",
+        "フヴィチャ・クワラツヘリア",
+        "スタニスラフ・ロボツカ",
+        "エリフ・エルマス"
+      ],
+      "answerIndex": 0,
+      "explanation": "ナポリの主力センターバックであり、コソボ代表で7年間にわたってキャプテンを務めてきたラフマニが、連盟の指導体制への不信感から代表引退を決断しました。",
+      "trivia": "コソボ代表は2016年にFIFAに正式加盟した比較的歴史の浅いチームであり、ラフマニは同国の代表史において通算66キャップを記録したレジェンド的存在でした。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "バレンシア",
+        "監督解任",
+        "佐藤龍之介",
+        "ラ・リーガ"
+      ],
+      "text": "2026年9月13日、成績不振によりカルロス・コルベラン監督を解任したスペイン1部リーグのバレンシア。このクラブに現在所属している日本人選手は誰でしょう？",
+      "options": [
+        "佐藤龍之介",
+        "久保建英",
+        "浅野拓磨",
+        "鈴木唯人"
+      ],
+      "answerIndex": 0,
+      "explanation": "今夏にバレンシアに加入した佐藤龍之介ですが、クラブは開幕5試合で1分4敗と最下位に沈んでおり、監督をはじめサッカー部門のCEOら幹部スタッフも一斉退任する事態となりました。",
+      "trivia": "佐藤龍之介はFC東京の下部組織出身で、若い頃から将来を嘱望され、飛び級でトップチームデビューを果たした経験を持っています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ボルシアMG",
+        "監督解任",
+        "ブンデスリーガ",
+        "日本人選手"
+      ],
+      "text": "2026年9月13日、開幕から3連敗を喫し、12失点と守備が崩壊したことでオイゲン・ポランスキ監督を解任したドイツ1部のボルシアMG。現在、このクラブに所属している日本人選手として誤っているのは誰でしょう？",
+      "options": [
+        "堂安律",
+        "板倉滉",
+        "橋岡大樹",
+        "町野修斗"
+      ],
+      "answerIndex": 0,
+      "explanation": "現在ボルシアMGには、板倉滉、橋岡大樹、町野修斗に加え、宇野禅斗の4人の日本人選手が所属しています。堂安律はフライブルクに所属しています。",
+      "trivia": "ポーランド出身のオイゲン・ポランスキ監督は現役時代にもボルシアMGでプレーし、下部組織の指導者を経てトップチームの監督に就任していましたが、志半ばでの解任となりました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "リオネル・メッシ",
+        "MLS",
+        "インテル・マイアミ",
+        "大記録"
+      ],
+      "text": "2026年9月13日のMLS・ナッシュビル戦で、インテル・マイアミに所属するリオネル・メッシがペナルティエリア外からミドルシュートを決めました。これはメッシのキャリア通算何ゴール目だったでしょう？",
+      "options": [
+        "928ゴール",
+        "901ゴール",
+        "882ゴール",
+        "955ゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "39歳のメッシはナッシュビル戦（2-2の引き分け）の62分にゴール左上隅へシュートを突き刺し、キャリア通算928ゴール目を記録しました。",
+      "trivia": "この日、今夏アトレティコ・マドリードから同じくMLSのオーランド・シティへ移籍したフランス代表のアントワーヌ・グリエーズマンも得点し、移籍後5試合連続ゴールを達成しています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "国際Aマッチ",
+        "FIFA",
+        "UEFAネーションズリーグ",
+        "ルール変更"
+      ],
+      "text": "2026-27シーズンから新たに導入された、欧州サッカーカレンダーにおける「秋のインターナショナルブレイク」のフォーマットは次のうちどれでしょう？",
+      "options": [
+        "9月と10月の代表ウィークが統合され、16日間で4試合を行う",
+        "11月の代表戦が廃止され、シーズン終了後の6月に集中開催される",
+        "移動負担を減らすため、全試合が一つの開催国での集中開催となる",
+        "クラブの負担を減らすため、代表戦の試合時間が前後半30分ずつに短縮される"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026-27シーズンより、従来9月と10月に分かれていた代表ウィークが統合されて1回となり、この間に各国代表がまとめて4試合を戦うフォーマットに変更されました。",
+      "trivia": "このカレンダー変更により、プレミアリーグなどの各国主要リーグは9月下旬から10月上旬にかけて約3週間にわたって一時中断されることになります。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1047 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-13T23:03:51Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-09-14",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J1",
+        "ガンバ大阪",
+        "FC東京"
+      ],
+      "text": "2026年9月12日、J1リーグ第7節でガンバ大阪はホームでFC東京と対戦し0-2で敗れました。この試合でFC東京の先制点を挙げたのは誰？",
+      "options": [
+        "安斎颯馬",
+        "長倉幹樹",
+        "荒木遼太郎",
+        "ディエゴ・オリヴェイラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半38分に安斎颯馬が先制点を挙げ、後半に長倉幹樹が追加点を奪いFC東京がアウェイで快勝しました。",
+      "trivia": "ガンバ大阪はこれでリーグ戦5試合勝利なしとなり、序盤から苦しい状況が続いています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J1",
+        "浦和レッズ",
+        "ファジアーノ岡山"
+      ],
+      "text": "2026年9月13日に行われたJ1リーグ第7節、浦和レッズとファジアーノ岡山の試合はどのような結果になった？",
+      "options": [
+        "ファジアーノ岡山が2-1で勝利",
+        "浦和レッズが2-1で勝利",
+        "1-1の引き分け",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1昇格組の岡山が大森博と立田悠悟のゴールで得点を重ね、アウェイで浦和レッズから2-1の金星を挙げました。",
+      "trivia": "ファジアーノ岡山はJ1昇格初年度ながら、この勝利で暫定6位と堂々たる戦いぶりを見せています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ルヴァンカップ",
+        "松本山雅FC",
+        "湘南ベルマーレ",
+        "下剋上"
+      ],
+      "text": "2026年9月9日のルヴァンカップ1回戦、松本山雅FCはJ1の湘南ベルマーレと対戦し「下剋上」を達成しました。試合の決着はどのようについた？",
+      "options": [
+        "PK戦の末に松本が勝利",
+        "延長戦の末に松本が勝利",
+        "90分に松本が決勝点を挙げ勝利",
+        "湘南のオウンゴールで松本が勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "3-3の激戦の末にもつれ込んだPK戦を4-3で制し、松本山雅FCがJ1の湘南ベルマーレを破る波乱を起こしました。",
+      "trivia": "ルヴァンカップは全クラブ参加のノックアウト方式となり、各地でジャイアントキリングのドラマが生まれています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-09",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ルヴァンカップ",
+        "東京ヴェルディ",
+        "レイラック滋賀FC"
+      ],
+      "text": "2026年9月9日のルヴァンカップ1回戦で、東京ヴェルディはレイラック滋賀FCに1-0で勝利しました。後半アディショナルタイムに劇的な決勝点を決めた選手は？",
+      "options": [
+        "キム・ヒョンウ",
+        "染野唯月",
+        "木村勇大",
+        "見木友哉"
+      ],
+      "answerIndex": 0,
+      "explanation": "東京ヴェルディはJFLのレイラック滋賀FCに苦戦しましたが、90+5分にキム・ヒョンウが値千金の決勝点を挙げ辛勝しました。",
+      "trivia": "この試合の勝利は、東京ヴェルディにとって公式戦4試合ぶりの貴重な白星となりました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-09",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "アルビレックス新潟",
+        "モンテディオ山形"
+      ],
+      "text": "2026年9月13日のJ2第6節で、アルビレックス新潟はモンテディオ山形に1-0で勝利し、順位を何位に上げましたか？",
+      "options": [
+        "2位",
+        "1位",
+        "3位",
+        "4位"
+      ],
+      "answerIndex": 0,
+      "explanation": "新潟は山形を1-0で下して勝ち点を12に伸ばし、首位の大宮アルディージャに得失点差で次ぐ2位に浮上しました。",
+      "trivia": "新潟は秋春制に移行した2026/27シーズンのJ2において、持ち前の組織的な守備で好位置につけています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 6,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ルヴァンカップ",
+        "V・ファーレン長崎",
+        "高知ユナイテッドSC"
+      ],
+      "text": "2026年9月9日のルヴァンカップ1回戦、V・ファーレン長崎は高知ユナイテッドSCに1-0で勝利しました。長崎の決勝点を挙げたのは誰？",
+      "options": [
+        "ディエゴ・ピトゥカ",
+        "エジガル・ジュニオ",
+        "マテウス・ジェズス",
+        "マルコス・ギリェルメ"
+      ],
+      "answerIndex": 0,
+      "explanation": "77分にディエゴ・ピトゥカがペナルティエリア内から左足で鮮やかなシュートを決め、これが長崎での加入後初ゴールとなりました。",
+      "trivia": "ディエゴ・ピトゥカはかつて鹿島アントラーズでもプレーし、豊富な運動量と高いパスセンスで知られるブラジル人MFです。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-09",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ヤングなでしこ",
+        "U-20女子ワールドカップ",
+        "女子サッカー"
+      ],
+      "text": "2026年9月12日のU-20女子ワールドカップ・グループステージ第3節で、日本（ヤングなでしこ）はイタリアと1-1で引き分けました。日本の同点ゴールを決めた選手は？",
+      "options": [
+        "田子夏海",
+        "中村心乃葉",
+        "津田愛乃音",
+        "松窪真心"
+      ],
+      "answerIndex": 0,
+      "explanation": "1点を追う80分、コーナーキックのセカンドボールから途中出場の田子夏海がループシュートを決めて同点に追いつきました。",
+      "trivia": "この引き分けにより、ヤングなでしこはグループステージを1勝2分の勝ち点5とし、グループ2位で決勝トーナメント進出を決めました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ルヴァンカップ",
+        "福島ユナイテッドFC",
+        "ベガルタ仙台",
+        "下剋上"
+      ],
+      "text": "2026年9月9日のルヴァンカップ1回戦で、福島ユナイテッドFCがベガルタ仙台を4-3で破る波乱がありました。この試合で福島の先制点を挙げた選手は？",
+      "options": [
+        "中村翼",
+        "岡田優希",
+        "清水一雅",
+        "塩浜遼"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半39分に中村翼が先制点を挙げると、福島ユナイテッドFCは勢いに乗り、上のカテゴリーであるベガルタ仙台から合計4ゴールを奪って打ち合いを制しました。",
+      "trivia": "福島ユナイテッドFCの寺田周平監督は、試合後「選手たちは思い切って、自分たちらしいサッカーを展開してくれた」と手応えを語りました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-09",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J1",
+        "FC町田ゼルビア",
+        "順位表"
+      ],
+      "text": "2026/27シーズンのJ1リーグは第7節まで終了し（2026年9月13日時点）、無敗で単独首位に立っているクラブはどこ？",
+      "options": [
+        "FC町田ゼルビア",
+        "ヴィッセル神戸",
+        "柏レイソル",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC町田ゼルビアは7試合を終えて5勝2分無敗で勝ち点17を獲得し、2位のヴィッセル神戸（勝ち点16）を抑えて首位に立っています。",
+      "trivia": "今シーズンから秋春制に完全移行したJリーグですが、町田は昨シーズンに引き続き序盤から強さを見せつけています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "北海道コンサドーレ札幌",
+        "ベガルタ仙台"
+      ],
+      "text": "2026年9月13日に行われたJ2第6節で、北海道コンサドーレ札幌はベガルタ仙台と1-1で引き分けました。この結果、札幌は降格圏となる何位に転落した？",
+      "options": [
+        "19位",
+        "18位",
+        "20位",
+        "17位"
+      ],
+      "answerIndex": 0,
+      "explanation": "札幌は開幕から未勝利が続き、この日の引き分けで勝ち点4となり、20チーム中19位の降格圏に転落しました。",
+      "trivia": "札幌は先制直後に被弾して追いつかれる展開が目立っており、守備の立て直しが急務とされています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 6,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "日本代表",
+        "W杯予選",
+        "バーレーン戦"
+      ],
+      "text": "2026年9月10日に行われた2026北中米W杯アジア最終予選のバーレーン戦で5-0と大勝した日本代表。第2戦を終えた時点でのグループCにおける日本の順位は？",
+      "options": [
+        "1位",
+        "2位",
+        "3位",
+        "4位"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は中国戦の7-0に続き、バーレーンにも5-0で勝利して開幕2連勝を飾り、グループCの単独首位に立っています。",
+      "trivia": "バーレーン戦の勝利により、日本はアウェイの中東での戦いという鬼門を見事に突破し、盤石のスタートを切りました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-10",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "FC町田ゼルビア",
+        "首位"
+      ],
+      "text": "明治安田J1リーグ 2026/27シーズンは第7節（2026年9月13日終了時点）を消化しましたが、この時点でリーグ唯一の「無敗」を維持し、首位に立っているチームはどこでしょう？",
+      "options": [
+        "FC町田ゼルビア",
+        "ヴィッセル神戸",
+        "柏レイソル",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC町田ゼルビアは第7節の横浜F・マリノス戦で退場者を出しながらも同点に追いつき、開幕から5勝2分の無敗で首位をキープしています。",
+      "trivia": "町田は数的不利の中で望月ヘンリー海輝の劇的な同点ボレー弾が決まり、執念のドローに持ち込みました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "WEリーグ",
+        "三菱重工浦和レッズレディース",
+        "女子サッカー"
+      ],
+      "text": "2026年9月5日に開幕した「2026/27 WEリーグ」。第3節が終了した時点（2026年9月6日）で、全勝で順位表の首位に立っているチームはどこでしょう？",
+      "options": [
+        "三菱重工浦和レッズレディース",
+        "INAC神戸レオネッサ",
+        "日テレ・東京ヴェルディベレーザ",
+        "サンフレッチェ広島レジーナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "三菱重工浦和レッズレディースは開幕から3連勝（勝ち点9）を飾り、2位のINAC神戸レオネッサ（勝ち点7）を抑えて単独首位に立っています。",
+      "trivia": "2026/27シーズンのWEリーグは「クラシエカップ」などのカップ戦と並行しながら、秋春制で長丁場のシーズンを戦います。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "ヴィッセル神戸",
+        "山川哲史"
+      ],
+      "text": "2026年9月11日に行われた明治安田J1リーグ第7節「ヴィッセル神戸 vs 鹿島アントラーズ」で、神戸に2-1の勝利をもたらす決勝のヘディングシュートを決めた選手は誰でしょう？",
+      "options": [
+        "山川哲史",
+        "大迫勇也",
+        "武藤嘉紀",
+        "宮代大聖"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1の同点に追いつかれた直後の後半32分、ジエゴのクロスに山川哲史がヘディングで合わせ、これが神戸の4連勝を決定づける決勝点となりました。",
+      "trivia": "この勝利で神戸は上位争いにしっかりと食い込む一方、敗れた鹿島は開幕4連勝のあとに手痛い3連敗を喫することになりました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-09-11",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "サンフレッチェ広島",
+        "ハットトリック",
+        "鮎川峻"
+      ],
+      "text": "2026年9月12日の明治安田J1リーグ第7節・セレッソ大阪戦で、プロ初となるJ1でのハットトリックを達成したサンフレッチェ広島の選手は誰でしょう？",
+      "options": [
+        "鮎川峻",
+        "鈴木章斗",
+        "中野就斗",
+        "加藤陸次樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "鮎川峻はセレッソ大阪戦で約4年6か月ぶりとなるJ1でのゴールを皮切りに、後半にはPKも決めてハットトリックを達成。チームも6-1で大勝しました。",
+      "trivia": "鮎川にとってJ1でのゴールは、2022年3月のFC東京戦以来1645日ぶりとなる待望の得点でした。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "日本代表",
+        "マルチゴール",
+        "W杯予選"
+      ],
+      "text": "2026年9月10日に行われたW杯アジア最終予選のバーレーン戦（5-0）で、日本代表の中で「2得点（マルチゴール）」を挙げた選手の組み合わせとして正しいものはどれでしょう？",
+      "options": [
+        "上田綺世 と 守田英正",
+        "上田綺世 と 小川航基",
+        "守田英正 と 南野拓実",
+        "南野拓実 と 三笘薫"
+      ],
+      "answerIndex": 0,
+      "explanation": "この試合では前半と後半に上田綺世がゴールを奪い、後半には守田英正が立て続けに得点。ダメ押しとなる5点目は小川航基が決めました。",
+      "trivia": "守田英正が日本代表戦で1試合2得点を挙げるのは珍しく、ボランチながらもペナルティエリア内に果敢に侵入する攻撃参加が光りました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-10",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "エリキ",
+        "ヴィッセル神戸",
+        "FC町田ゼルビア",
+        "移籍"
+      ],
+      "text": "2026年9月9日、FC町田ゼルビアからヴィッセル神戸への完全移籍が発表されたブラジル人FWは誰でしょう？",
+      "options": [
+        "エリキ",
+        "パトリック",
+        "アンデルソン・ロペス",
+        "チアゴ・アウベス"
+      ],
+      "answerIndex": 0,
+      "explanation": "エリキはFC町田ゼルビアで背番号10を背負いチームの躍進を支えましたが、2026年9月9日にヴィッセル神戸への完全移籍が発表されました。背番号は94に決定しています。",
+      "trivia": "エリキは過去に横浜F・マリノスでもプレーしており、加入直後からゴールを量産して2019シーズンのJ1リーグ優勝に大きく貢献しました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "齊藤未月",
+        "京都サンガF.C.",
+        "負傷",
+        "Jリーグ"
+      ],
+      "text": "2026年9月7日、左前十字靭帯損傷および半月板損傷で全治約9〜10か月の大ケガを負ったことが発表された、京都サンガF.C.のMFは誰でしょう？",
+      "options": [
+        "齊藤未月",
+        "川﨑颯太",
+        "松田天馬",
+        "平戸太貴"
+      ],
+      "answerIndex": 0,
+      "explanation": "京都サンガF.C.は2026年9月7日、MF齊藤未月が左前十字靭帯損傷および半月板損傷で全治約9〜10か月の離脱となったことを発表しました。8月17日に手術を実施しています。",
+      "trivia": "齊藤未月は過去にも左膝の大ケガ（関節脱臼や複合靭帯損傷など）を経験しており、全治まで約1年を要した苦労人です。ファンからは一日も早い復帰を祈る声が多く寄せられています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "一美和成",
+        "東京ヴェルディ",
+        "ファジアーノ岡山",
+        "移籍"
+      ],
+      "text": "2026年9月10日、東京ヴェルディがファジアーノ岡山からの完全移籍での獲得を発表したストライカーは誰でしょう？",
+      "options": [
+        "一美和成",
+        "小森飛絢",
+        "櫻川ソロモン",
+        "藤本佳希"
+      ],
+      "answerIndex": 0,
+      "explanation": "負傷者が続出するなど苦境に立たされていた東京ヴェルディは2026年9月10日、ガンバ大阪や京都サンガF.C.などでのプレー経験を持つFW一美和成をファジアーノ岡山から完全移籍で獲得しました。",
+      "trivia": "一美和成は名門・大津高校の出身で、2016年にガンバ大阪でプロデビューを果たしました。年代別代表にも選出された経験を持ちます。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "樋口有斗",
+        "横浜F・マリノス",
+        "福島ユナイテッドFC",
+        "移籍"
+      ],
+      "text": "2026年9月11日、横浜F・マリノスからJ3の福島ユナイテッドFCへ育成型期限付き移籍することが発表された若手MFは誰でしょう？",
+      "options": [
+        "樋口有斗",
+        "山根陸",
+        "吉尾海夏",
+        "榊原彗悟"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜F・マリノスは2026年9月11日、MF樋口有斗が福島ユナイテッドFCへ2027年6月30日までの育成型期限付き移籍をすることを発表しました。背番号は13番となります。",
+      "trivia": "樋口有斗は埼玉栄高校から中部大学を経て横浜F・マリノスに加入した経歴を持ちます。今回の移籍に際して「成長し、必ずF・マリノスの力になれる選手になる」と力強いコメントを残しています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "山﨑大地",
+        "サンフレッチェ広島",
+        "負傷",
+        "天皇杯"
+      ],
+      "text": "2026年9月10日、サンフレッチェ広島が手術を行ったことを発表し、全治約10カ月の見込みとなったDF山﨑大地ですが、彼が負傷交代したのはどの大会の試合でしょう？",
+      "options": [
+        "天皇杯2回戦",
+        "J1リーグ第10節",
+        "ルヴァンカップ準々決勝",
+        "ACL2グループステージ"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンフレッチェ広島のDF山﨑大地は、天皇杯2回戦の試合中に負傷して途中交代となり、その後手術を受けた結果、全治10カ月であることが2026年9月10日に発表されました。",
+      "trivia": "山﨑大地はサンフレッチェ広島ユースの出身で、順天堂大学に進学して経験を積んだ後、2023年に念願のトップチーム加入を果たしました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "いわきFC",
+        "監督交代",
+        "田坂和昭"
+      ],
+      "text": "2026年9月、J2のいわきFCは田村雄三監督の辞任に伴い、新監督の就任を発表しました。新たに指揮を執るのは誰でしょう？",
+      "options": [
+        "田坂和昭",
+        "大倉智",
+        "小田切道治",
+        "長澤徹"
+      ],
+      "answerIndex": 0,
+      "explanation": "いわきFCは2026年9月に田村雄三監督が辞任し、後任として田坂和昭氏が新監督に就任しました。9月12日の第6節・横浜FC戦では2-0で勝利し、チームの連敗を止めています。",
+      "trivia": "選択肢にある大倉智氏はいわきFCを運営する株式会社いわきスポーツクラブの代表取締役社長です。社長自ら公式noteで監督交代の経緯を説明し話題となりました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "AFCチャンピオンズリーグ",
+        "ガンバ大阪",
+        "JFA"
+      ],
+      "text": "2026年9月10日にJFAが発表した、2026/27シーズンの「AFCチャンピオンズリーグ Elite（ACLE）」に出場するJリーグクラブは、柏レイソル、京都サンガF.C.、ヴィッセル神戸と、あと1つはどこでしょう？",
+      "options": [
+        "ガンバ大阪",
+        "FC町田ゼルビア",
+        "サンフレッチェ広島",
+        "浦和レッズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026/27シーズンのACLEには日本から柏レイソル、京都サンガF.C.、ヴィッセル神戸、ガンバ大阪の4クラブが出場します。なお、FC町田ゼルビアはACL Twoに参戦します。",
+      "trivia": "ACLEはアジアのクラブ最高峰の大会で、今大会から大幅にフォーマットが変更されており、優勝賞金も過去最高額に設定されています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "徳島ヴォルティス",
+        "ユニフォーム",
+        "グッズ"
+      ],
+      "text": "2026年9月10日、徳島ヴォルティスの2026/27シーズンの新ユニフォームデザインを再現したスマートフォンケースが発売されました。このユニフォームには、円が連なる縁起の良い伝統的な和柄が取り入れられていますが、それは何柄でしょう？",
+      "options": [
+        "七宝柄",
+        "市松模様",
+        "青海波",
+        "麻の葉"
+      ],
+      "answerIndex": 0,
+      "explanation": "徳島ヴォルティスの2026/27シーズンのユニフォームは、クラブカラーと「VORTIS」の頭文字「V」を組み合わせた、伝統的な和柄「七宝柄（しっぽうがら）」が取り入れられています。",
+      "trivia": "七宝柄は、円が永遠に連鎖し繋がる様子から、円満や調和、ご縁などの願いが込められた大変縁起の良い柄とされています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ヴィッセル神戸",
+        "柏レイソル",
+        "ユニフォーム",
+        "ACL"
+      ],
+      "text": "2026年9月上旬、ヴィッセル神戸と柏レイソルが立て続けに販売を開始・発表した特別なユニフォームは、どの大会で着用するためのものでしょうか？",
+      "options": [
+        "AFCチャンピオンズリーグ Elite",
+        "天皇杯 JFA 全日本サッカー選手権大会",
+        "JリーグYBCルヴァンカップ",
+        "FIFAクラブワールドカップ"
+      ],
+      "answerIndex": 0,
+      "explanation": "両クラブは2026/27シーズンの「AFCチャンピオンズリーグ Elite（ACLE）」に出場するため、大会専用のユニフォームデザインを発表し、9月にそれぞれ販売を開始しました。",
+      "trivia": "AFCの主催大会では、ユニフォームのスポンサーロゴのサイズや配置に関して、Jリーグとは異なる厳密な規定が設けられているため、各クラブは専用モデルを作成します。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "いわきFC",
+        "岡庭愁人",
+        "記念グッズ"
+      ],
+      "text": "2026年9月13日、いわきFCは所属するある選手の「Jリーグ通算150試合出場」を記念し、選手考案のシートクッションなどの受注販売を開始しました。その選手は誰でしょう？",
+      "options": [
+        "岡庭愁人",
+        "谷村海那",
+        "山下優人",
+        "嵯峨理久"
+      ],
+      "answerIndex": 0,
+      "explanation": "いわきFCは、DF岡庭愁人選手のJリーグ通算150試合出場を記念し、2026年9月13日よりオンラインストアにて記念グッズの受注販売を開始しました。",
+      "trivia": "記念グッズには、ユニフォームやペナントのほか、岡庭選手自らが考案した「2WAYシートクッション」などがラインナップされ、希望者には直筆サインが入る特典も用意されました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J1リーグ",
+        "FC町田ゼルビア",
+        "首位",
+        "秋春制"
+      ],
+      "text": "2026-27シーズンの明治安田J1リーグは、2026年9月13日に第7節を終えました。この時点で5勝2分0敗の無敗をキープし、単独首位に立っているクラブはどこでしょう？",
+      "options": [
+        "FC町田ゼルビア",
+        "ヴィッセル神戸",
+        "柏レイソル",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年9月13日のJ1リーグ第7節終了時点で、FC町田ゼルビアは5勝2分0敗で勝ち点17を記録し、2位のヴィッセル神戸（勝ち点16）を抑えて単独首位に立っています。",
+      "trivia": "2026-27シーズンからJリーグは秋春制へと移行し、夏に開幕して翌年5月に閉幕するという、欧州主要リーグと同じカレンダーで戦われています。ファンにとっても新鮮なシーズン開幕となっています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-09-13",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ルヴァンカップ",
+        "東京ヴェルディ",
+        "キム・ヒョンウ",
+        "劇的勝利"
+      ],
+      "text": "2026年9月9日に行われたルヴァンカップ1回戦で、東京ヴェルディはレイラック滋賀FCに1-0で勝利しました。0-0で迎えた試合終了間際のラストプレーで、劇的な決勝ゴールを決めた選手は誰でしょう？",
+      "options": [
+        "キム・ヒョンウ",
+        "染野唯月",
+        "見木友哉",
+        "山見大登"
+      ],
+      "answerIndex": 0,
+      "explanation": "J3のレイラック滋賀FCのホーム（平和堂HATOスタジアム）に乗り込んだ東京ヴェルディは苦戦を強いられましたが、0-0で迎えた終了間際のラストプレーでキム・ヒョンウが値千金の決勝ゴールを挙げ、2回戦進出を決めました。",
+      "trivia": "今大会のルヴァンカップは1回戦から決勝まで全試合がノックアウト方式で行われており、J1・J2・J3の全クラブが参加する白熱のサバイバルカップ戦へと進化しています。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-09",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ルヴァンカップ",
+        "福島ユナイテッドFC",
+        "中村翼",
+        "ジャイアントキリング"
+      ],
+      "text": "2026年9月9日に行われたルヴァンカップ1回戦で、J3の福島ユナイテッドFCはJ2の強豪ベガルタ仙台と対戦し、4-3の乱打戦の末に勝利する下剋上を果たしました。この試合で前半39分にチームの先制点を決めた福島の選手は誰でしょう？",
+      "options": [
+        "中村翼",
+        "清水一雅",
+        "岡田優希",
+        "塩浜遼"
+      ],
+      "answerIndex": 0,
+      "explanation": "福島ユナイテッドFCはベガルタ仙台を相手に一歩も引かず、前半39分の中村翼の先制点を皮切りに4ゴールを奪取。J2クラブを撃破し、見事に2回戦へ駒を進めました。",
+      "trivia": "試合後、先制点を決めた中村翼は「普段積み上げているものを出せば必ず結果に近づくと信じていた」と語り、格上相手へのチャレンジャー精神が見事に実を結んだことを喜んでいます。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-09",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J2リーグ",
+        "湘南ベルマーレ",
+        "奥埜博亮",
+        "劇的ゴール"
+      ],
+      "text": "2026年9月12日に行われた明治安田J2リーグ第6節、ヴァンラーレ八戸 vs 湘南ベルマーレの試合は劇的な幕切れとなりました。後半アディショナルタイム（90+6分）に直接フリーキックから決勝点を奪い、湘南を1-0の勝利に導いた選手は誰でしょう？",
+      "options": [
+        "奥埜博亮",
+        "鈴木雄斗",
+        "鈴木章斗",
+        "山田寛人"
+      ],
+      "answerIndex": 0,
+      "explanation": "0-0のまま試合終了かと思われた90+6分、ペナルティエリア左手前からの直接フリーキックを湘南ベルマーレの奥埜博亮が右足で見事に沈め、これが決勝点となって1-0で勝利を収めました。",
+      "trivia": "奥埜博亮は長年Jリーグで活躍する大ベテランですが、土壇場での勝負強さと精度の高いキックは健在です。プレッシャーのかかる場面での見事な直接フリーキックでチームを救いました。",
+      "referenceDate": "2026-09-14",
+      "weeklyMeta": {
+        "matchweek": 6,
+        "matchDate": "2026-09-12",
+        "publishDate": "2026-09-14",
+        "expiryDate": "2026-09-21",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
