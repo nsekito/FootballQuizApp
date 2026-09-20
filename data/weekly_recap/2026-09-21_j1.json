@@ -1,0 +1,1052 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-20T23:07:41Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-09-21",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC町田ゼルビア",
+        "柏レイソル",
+        "勝敗"
+      ],
+      "text": "2026年9月20日に行われたJ1第8節で、ここまで今季無敗で首位を走っていたFC町田ゼルビアに今季初黒星をつけたチームはどこ？",
+      "options": [
+        "柏レイソル",
+        "ヴィッセル神戸",
+        "鹿島アントラーズ",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏レイソルは後半だけで4ゴールを奪い、4-2でFC町田ゼルビアに逆転勝利を収めました。これにより町田は今季初の黒星となり、首位から陥落しました。",
+      "trivia": "町田はこの試合まで5勝2分で無敗を維持し堅守を誇っていましたが、1試合で4失点を喫する厳しい結果となりました。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-20",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "川崎フロンターレ",
+        "鹿島アントラーズ",
+        "スコア"
+      ],
+      "text": "2026年9月19日に行われたJ1第8節、川崎フロンターレと鹿島アントラーズの激闘の結末はどうなった？",
+      "options": [
+        "3-3の引き分け",
+        "川崎フロンターレが3-0で勝利",
+        "鹿島アントラーズが2-1で勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島が後半にリードを奪うも、川崎Fが後半アディショナルタイム（90+7分）にペドロ・ホマーノの劇的ゴールで追いつき、3-3のドローに終わりました。",
+      "trivia": "この一戦は、川崎Fで数々のタイトルをもたらした鬼木達元監督が、今季から鹿島を率いて古巣・等々力に帰還した注目の試合でした。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-19",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "acle",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ACLE",
+        "鹿島アントラーズ",
+        "ニューカッスル・ジェッツ",
+        "スコア"
+      ],
+      "text": "2026年9月15日に行われたACLEリーグステージ第1節で、鹿島アントラーズはオーストラリアのニューカッスル・ジェッツを相手に何得点を奪って大勝した？",
+      "options": [
+        "7得点",
+        "5得点",
+        "4得点",
+        "8得点"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島は前半だけで5得点を奪うなど終始相手を圧倒し、最終的に7-1というスコアでACLEを白星でスタートさせました。",
+      "trivia": "鹿島のACLE（旧ACL含む）本戦出場は2019年以来、実に7年ぶりの出来事でした。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-15",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "ヴィッセル神戸",
+        "ガンバ大阪",
+        "順位"
+      ],
+      "text": "2026年9月20日のJ1第8節でガンバ大阪を1-0で下し、敗れた町田に代わってリーグ首位に浮上したチームはどこ？",
+      "options": [
+        "ヴィッセル神戸",
+        "サンフレッチェ広島",
+        "FC東京",
+        "柏レイソル"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィッセル神戸は敵地でガンバ大阪に1-0で勝利しました。同日に首位だったFC町田ゼルビアが敗れたため、神戸が勝ち点19で首位に立ちました。",
+      "trivia": "一方のガンバ大阪は、直近のACLEでは快勝していましたが、リーグ戦では2試合連続の無得点で苦戦が続いています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-20",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "柏レイソル",
+        "瀬川祐輔",
+        "得点者"
+      ],
+      "text": "2026年9月20日のJ1第8節、FC町田ゼルビア vs 柏レイソルの試合で、後半に2ゴールを決めて柏の逆転勝利（4-2）に大きく貢献した選手は？",
+      "options": [
+        "瀬川祐輔",
+        "遠藤渓太",
+        "小泉佳穂",
+        "細谷真大"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏レイソルは後半に瀬川祐輔が同点弾とダメ押しとなるチーム4点目の2ゴールを記録し、町田の堅守を打ち破り逆転勝利を収めました。",
+      "trivia": "瀬川祐輔はこの試合の2ゴールで今季7得点目とし、日本人選手として得点ランキング上位に食い込んでいます。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-20",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "acle",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ACLE",
+        "ガンバ大阪",
+        "宇佐美貴史",
+        "得点者"
+      ],
+      "text": "2026年9月15日に行われたACLEリーグステージ第1節、ガンバ大阪 vs コンアン・ハノイ（4-1でガンバ勝利）で、強烈な先制ミドルを含む2得点を挙げた選手は？",
+      "options": [
+        "宇佐美貴史",
+        "食野亮太郎",
+        "土信田悠生",
+        "ウェルトン"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガンバ大阪の背番号7・宇佐美貴史が前半29分に強烈な左足ミドルで先制点を挙げ、後半にも追加点を奪って大勝の立役者となりました。",
+      "trivia": "公式戦5試合ぶりの勝利に貢献した宇佐美は、試合後に「悪い流れを変える大きな勝利」と安堵の表情を見せました。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-15",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "鹿島アントラーズ",
+        "レオ・セアラ",
+        "得点者"
+      ],
+      "text": "2026年9月19日のJ1第8節、川崎フロンターレ vs 鹿島アントラーズ（3-3）の試合で、鹿島アントラーズの2得点を挙げたブラジル人ストライカーは？",
+      "options": [
+        "レオ・セアラ",
+        "チャヴリッチ",
+        "ヤン・マテウス",
+        "アンデルソン・ロペス"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズのレオ・セアラが前半終了間際と後半にそれぞれゴールを奪い、一時逆転に成功する活躍を見せました。",
+      "trivia": "この試合で鹿島は一歩及ばずドローとなりましたが、レオ・セアラは今季も得点を量産しており、絶対的エースとして君臨しています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-19",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "浦和レッズ",
+        "マテウス・サヴィオ",
+        "得点者"
+      ],
+      "text": "2026年9月19日に行われたJ1第8節、浦和レッズ vs 東京ヴェルディの試合（3-1で浦和勝利）で、前半に2ゴールを挙げる活躍を見せた選手は誰？",
+      "options": [
+        "マテウス・サヴィオ",
+        "南野遥海",
+        "渡邊凌磨",
+        "チアゴ・サンタナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズのマテウス・サヴィオが前半24分と同32分に立て続けにゴールを奪い、チームに主導権をもたらして3-1の快勝に貢献しました。",
+      "trivia": "浦和レッズはこの勝利によりリーグ戦の連敗ストップに成功し、上位進出への足がかりを掴みました。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-19",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "acle",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ACLE",
+        "鹿島アントラーズ",
+        "ハットトリック",
+        "チャヴリッチ"
+      ],
+      "text": "2026年9月15日のACLE第1節・ニューカッスル・ジェッツ戦（7-1）で、前半だけでハットトリックを達成した鹿島アントラーズの選手は誰？",
+      "options": [
+        "アレクサンダル・チャヴリッチ",
+        "徳田誉",
+        "レオ・セアラ",
+        "田川亨介"
+      ],
+      "answerIndex": 0,
+      "explanation": "アレクサンダル・チャヴリッチは前半11分、16分、42分に立て続けにゴールを奪い、前半のみでハットトリックを達成する離れ業を見せました。",
+      "trivia": "この試合では19歳のFW徳田誉も2ゴール1アシストの素晴らしい活躍を見せ、鹿島の大勝に大きく貢献しています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-15",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC町田ゼルビア",
+        "退場",
+        "下田北斗"
+      ],
+      "text": "2026年9月20日のJ1第8節・FC町田ゼルビア vs 柏レイソルの試合で、後半途中に投入された直後に一発退場となり、町田が数的不利に陥る要因を作ってしまった選手は？",
+      "options": [
+        "下田北斗",
+        "白崎凌兵",
+        "仙頭啓矢",
+        "昌子源"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-2で追いかける59分に交代出場した下田北斗ですが、そのわずか3分後の62分に足裏を見せた危険なファウルで一発退場となってしまいました。",
+      "trivia": "この退場により10人となった町田はその後さらに柏にゴールを許し、今季初の黒星（2-4）を喫することになりました。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-20",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1リーグ",
+        "ヴィッセル神戸",
+        "順位表"
+      ],
+      "text": "2026年9月19日・20日に行われた2026/27シーズンJ1第8節終了時点で、今季初の首位に浮上したチームはどこ？",
+      "options": [
+        "ヴィッセル神戸",
+        "柏レイソル",
+        "サンフレッチェ広島",
+        "FC町田ゼルビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "第8節でガンバ大阪に1-0で勝利し5連勝を飾ったヴィッセル神戸が、柏レイソルに敗れて勝ち点を落としたFC町田ゼルビアをかわし、今季初の首位に浮上しました。",
+      "trivia": "ヴィッセル神戸はガンバ大阪戦で試合終了間際の劇的なゴールにより勝利をもぎ取り、鮮やかに首位の座を奪い取りました。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-20",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1リーグ",
+        "得点ランキング",
+        "鹿島アントラーズ",
+        "レオ・セアラ"
+      ],
+      "text": "2026年9月19日のJ1第8節で2ゴールを挙げ、オルンガの記録を抜くJ1史上最速（7試合目の出場）でシーズン10得点に到達した選手は？",
+      "options": [
+        "レオ・セアラ",
+        "大迫勇也",
+        "マルシーニョ",
+        "谷村海那"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズのFWレオ・セアラは川崎フロンターレ戦で2ゴールを記録しました。今季7試合目の出場で早くも10得点に到達し、2020年のオルンガ（第10節）を上回るJ1最速記録となりました。",
+      "trivia": "レオ・セアラは今季開幕から驚異的なペースでゴールを量産しており、シュート決定率の高さもリーグ屈指の数値を誇っています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-19",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1リーグ",
+        "アシストランキング",
+        "個人スタッツ",
+        "浦和レッズ"
+      ],
+      "text": "2026年9月14日に更新された2026/27シーズンJ1公式スタッツで、アシストランキングの単独トップ（4アシスト）に立っていた浦和レッズの選手は？",
+      "options": [
+        "金子拓郎",
+        "マテウス・サヴィオ",
+        "渡邊凌磨",
+        "小泉佳穂"
+      ],
+      "answerIndex": 0,
+      "explanation": "第7節終了時点で発表されたJリーグ公式スタッツにおいて、浦和レッズのMF金子拓郎が4アシストを記録し、アシストランキングの単独トップに立っていました。",
+      "trivia": "アシストランキング2位グループには、3アシストで渡邊凌磨、渡井理己、久保藤次郎らがピタリと追走する激しい争いになっています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": null,
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1リーグ",
+        "個人スタッツ",
+        "スプリント",
+        "水戸ホーリーホック"
+      ],
+      "text": "2026年9月上旬のJリーグ公式データ（J1第6節終了時点）で、総スプリント回数がリーグトップタイ（129回）を記録した水戸ホーリーホックの選手は？",
+      "options": [
+        "真瀬拓海",
+        "新井晴樹",
+        "松崎快",
+        "長井一真"
+      ],
+      "answerIndex": 0,
+      "explanation": "第6節終了時点での総スプリント回数ランキングでは、水戸ホーリーホックの真瀬拓海と清水エスパルスの須貝英大がともに129回を記録し、トップタイに立っていました。",
+      "trivia": "真瀬拓海はただスプリント回数が多いだけでなく、総走行距離でもリーグ上位に食い込むほどの驚異的なスタミナを誇っています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 6,
+        "matchDate": null,
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1リーグ",
+        "個人スタッツ",
+        "走行距離",
+        "柏レイソル"
+      ],
+      "text": "2026年9月上旬のJリーグ公式データ（J1第6節終了時点）で、総走行距離がリーグトップ（69.8km）を記録した柏レイソルの選手は？",
+      "options": [
+        "中川敦瑛",
+        "細谷真大",
+        "高嶺朋樹",
+        "マテウス・サヴィオ"
+      ],
+      "answerIndex": 0,
+      "explanation": "第6節終了時点の総走行距離ランキングにおいて、柏レイソルのMF中川敦瑛が前寛之（町田）の69.6kmを抑え、69.8kmでトップに立っていました。",
+      "trivia": "中川敦瑛は1試合平均で約11.6km走っている計算になり、ボールがない場面でもチームのために献身的に走り続けています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 6,
+        "matchDate": null,
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1リーグ",
+        "個人スタッツ",
+        "デュエル",
+        "横浜F・マリノス"
+      ],
+      "text": "2026年9月14日に更新されたJリーグ公式スタッツで、デュエル勝利数がリーグトップ（32回）を記録していた横浜F・マリノスの選手は？",
+      "options": [
+        "知念慶",
+        "喜田拓也",
+        "渡辺皓太",
+        "エドゥアルド"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグ公式スタッツ（第7節終了時点）において、横浜F・マリノスのMF知念慶がデュエル勝利数32回でリーグ首位に立ち、中盤の要として圧倒的な対人の強さを見せていました。",
+      "trivia": "ストライカーからボランチへとコンバートされた知念慶は、持ち前のフィジカルの強さを生かしてボール奪取職人として新境地を開拓しています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": null,
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "FC東京",
+        "ダニ・ゴメス"
+      ],
+      "text": "2026年9月18日、FC東京がスペインのレアル・サラゴサから完全移籍で獲得したことを発表したFWは誰でしょう？",
+      "options": [
+        "ダニ・ゴメス",
+        "ボルハ・イグレシアス",
+        "フアン・ミランダ",
+        "ジェラール・モレノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は2026年9月18日、スペインのレアル・サラゴサからFWダニ・ゴメスを完全移籍で獲得したことを発表しました。",
+      "trivia": "ダニ・ゴメスはスペイン出身で、育成年代からスペインのクラブでプレーし、得点感覚に優れたストライカーとして期待されています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "東京ヴェルディ",
+        "チョ・ユミン"
+      ],
+      "text": "2026年9月19日、東京ヴェルディがUAEのシャールジャFCから完全移籍で獲得した韓国人DFは誰でしょう？",
+      "options": [
+        "チョ・ユミン",
+        "クォン・ギョンウォン",
+        "パク・ジス",
+        "チョン・スンヒョン"
+      ],
+      "answerIndex": 0,
+      "explanation": "東京ヴェルディは2026年9月19日、UAEのシャールジャFCよりDFチョ・ユミンが完全移籍で加入したことを発表しました。",
+      "trivia": "チョ・ユミンは韓国代表としてのプレー経験も持ち、対人戦の強さとリーダーシップを兼ね備えたディフェンダーです。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "移籍",
+        "柏レイソル",
+        "古澤ナベル慈宇"
+      ],
+      "text": "2026年9月18日、柏レイソルのFW古澤ナベル慈宇が期限付き移籍することが発表されました。移籍先であるタンピネス・ローバースFCはどの国のリーグに所属しているクラブでしょう？",
+      "options": [
+        "シンガポール",
+        "タイ",
+        "マレーシア",
+        "オーストラリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏レイソルは2026年9月18日、FW古澤ナベル慈宇がシンガポールリーグのタンピネス・ローバースFCへ期限付き移籍することを発表しました。",
+      "trivia": "タンピネス・ローバースFCはシンガポール・プレミアリーグにおける強豪クラブであり、これまでにも多くの日本人選手が在籍してきました。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "柏レイソル",
+        "熊坂光希"
+      ],
+      "text": "2026年9月17日、『キリンチャレンジカップ2026』に臨む日本代表メンバーが発表され、大ケガからの実戦復帰を経て招集された柏レイソルのMFは誰でしょう？",
+      "options": [
+        "熊坂光希",
+        "細谷真大",
+        "高嶺朋樹",
+        "山本桜大"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本サッカー協会は2026年9月17日に日本代表メンバーを発表し、右膝前十字靭帯断裂の重傷から復帰してJ1で活躍を見せている柏レイソルの熊坂光希が選出されました。",
+      "trivia": "森保一監督は、代表活動中に負ったケガから懸命なリハビリを経て復帰し、チームを牽引するパフォーマンスを見せていることを高く評価して再招集を決めました。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "負傷",
+        "FC東京",
+        "橋本健人"
+      ],
+      "text": "2026年9月15日、FC東京は所属するDF橋本健人が試合中に負傷したことを発表しました。診断名は何だったでしょう？",
+      "options": [
+        "右腓骨骨幹部骨折",
+        "右膝前十字靭帯損傷",
+        "左足首捻挫",
+        "左大腿二頭筋肉離れ"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は2026年9月15日、9月6日に行われた明治安田J1リーグ第6節で負傷した橋本健人の診断結果を「右腓骨骨幹部骨折」と発表しました。",
+      "trivia": "骨幹部骨折は骨の細長い中間部分の骨折を指し、長期間の治療とリハビリが必要になることが多いケガです。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "天皇杯",
+        "皇后杯",
+        "JFA",
+        "国立競技場"
+      ],
+      "text": "2026年9月18日、「天皇杯 JFA 第106回全日本サッカー選手権大会」と「皇后杯 JFA 第48回全日本女子サッカー選手権大会」の決勝が、2027年1月1日に同日開催されることが発表されました。同日開催となるのは何年ぶりでしょうか？",
+      "options": [
+        "15年ぶり",
+        "5年ぶり",
+        "10年ぶり",
+        "20年ぶり"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年9月18日にJFAより発表されました。天皇杯と皇后杯の決勝が元日に同日開催されるのは、第91回天皇杯と第33回皇后杯（2011年度）以来15年ぶりとなります。",
+      "trivia": "2011年度の決勝はどちらも国立競技場で行われ、FC東京とINAC神戸レオネッサがそれぞれ優勝を飾りました。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "acl",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "FC町田ゼルビア",
+        "ACL2",
+        "ミッチェル・デューク"
+      ],
+      "text": "2026年9月17日に行われたAFCチャンピオンズリーグ2（ACL2）のグループステージ第1節で、FC町田ゼルビアのクラブ史上初となる同大会でのゴールを決めた選手は誰でしょうか？",
+      "options": [
+        "ミッチェル・デューク",
+        "テテ・イェンギ",
+        "仙頭啓矢",
+        "西村拓真"
+      ],
+      "answerIndex": 0,
+      "explanation": "ホームで行われたカンボジア王者のPKRスヴァイリエンFC戦で、前半20分にミッチェル・デュークがミドルシュートを決め、これが町田のACL2初ゴールとなりました。試合は2-0で勝利しています。",
+      "trivia": "FC町田ゼルビアは前年度の天皇杯王者として、2026-27シーズンのACL2出場権を獲得し、初めてのアジアの舞台に挑んでいます。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-17",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "なでしこジャパン",
+        "日本代表",
+        "石井正忠"
+      ],
+      "text": "2026年9月18日、日本サッカー協会は女子日本代表（なでしこジャパン）の新たなコーチに就任する人物を発表しました。かつて鹿島アントラーズの監督としてJ1や天皇杯を制したこの人物は誰でしょうか？",
+      "options": [
+        "石井正忠",
+        "大岩剛",
+        "鬼木達",
+        "長谷川健太"
+      ],
+      "answerIndex": 0,
+      "explanation": "監督として鹿島で国内タイトルを獲得したほか、タイ代表の監督も務めた石井正忠氏が就任しました。すでになでしこジャパンのコーチを務めている教え子の内田篤人氏との共闘も話題になりました。",
+      "trivia": "石井氏は2016年のクラブワールドカップで、鹿島アントラーズを率いてレアル・マドリードと延長戦までもつれる熱戦を演じたことでも知られています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "J1リーグ",
+        "FC東京",
+        "名古屋グランパス",
+        "記者会見"
+      ],
+      "text": "2026年9月19日に行われた明治安田J1リーグ第8節の試合後、Jリーグの通例（アウェーチームの監督が先に会見する）とは異なり、ホームチームの監督が先に記者会見を行うという異例の出来事がありました。この出来事が起きた試合はどのカードでしょうか？",
+      "options": [
+        "FC東京 vs 名古屋グランパス",
+        "清水エスパルス vs ジェフユナイテッド千葉",
+        "ファジアーノ岡山 vs 京都サンガF.C.",
+        "ガンバ大阪 vs ヴィッセル神戸"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京が名古屋を1-0で下した試合後、名古屋側のチーム事情などから、FC東京の松橋力蔵監督が先に会見場に登場しました。名古屋のペトロヴィッチ監督の会見は約30分遅れで始まりました。",
+      "trivia": "Jリーグの試合後の監督会見は、アウェーチームが遠方への帰路を急ぐ事情などから、アウェーチームから先に行われるのが暗黙のルールとなっています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-19",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "U-21 Jリーグ",
+        "FC東京",
+        "川崎フロンターレ",
+        "スタジアム"
+      ],
+      "text": "若手選手の出場機会創出を目的として開催されている「U-21 Jリーグ」。2026年9月20日に開催された第3節「U-21 FC東京 vs U-21 川崎フロンターレ」の試合会場となったスタジアムはどこでしょうか？",
+      "options": [
+        "江東区夢の島競技場",
+        "味の素フィールド西が丘",
+        "駒沢オリンピック公園総合運動場",
+        "AGFフィールド"
+      ],
+      "answerIndex": 0,
+      "explanation": "U-21 FC東京とU-21 川崎フロンターレによる一戦は、江東区夢の島競技場で開催されました。試合は両チーム無得点のまま0-0の引き分けに終わっています。",
+      "trivia": "夢の島競技場はFC東京U-23時代にもJ3リーグのホームゲームで使用されていた歴史があり、FC東京の育成年代にとって馴染み深いスタジアムです。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-09-20",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "ヴィッセル神戸",
+        "首位浮上",
+        "エリキ"
+      ],
+      "text": "2026年9月20日に行われたJ1リーグ第8節で、ガンバ大阪に勝利して今季5連勝を飾り、首位に浮上したクラブはどこでしょう？",
+      "options": [
+        "ヴィッセル神戸",
+        "鹿島アントラーズ",
+        "サンフレッチェ広島",
+        "FC町田ゼルビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィッセル神戸はエリキの終盤のゴールでガンバ大阪を1-0で下し、前日まで首位だったFC町田ゼルビアをかわして首位に浮上しました。",
+      "trivia": "決勝点を挙げたエリキは、FC町田ゼルビアから古巣であるヴィッセル神戸に復帰したばかりでした。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-20",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ACLE",
+        "鹿島アントラーズ",
+        "ハットトリック",
+        "チャヴリッチ"
+      ],
+      "text": "2026年9月15日に行われたAFCチャンピオンズリーグエリート（ACLE）第1節で、鹿島アントラーズはニューカッスル・ジェッツに7-1で大勝しました。この試合の前半だけでハットトリックを達成した選手は誰でしょう？",
+      "options": [
+        "チャヴリッチ",
+        "鈴木優磨",
+        "名古新太郎",
+        "ヤン・マテウス"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズのチャヴリッチは前半だけで3ゴールを奪う大活躍を見せ、チームの7得点での大勝に大きく貢献しました。",
+      "trivia": "今大会から名称が変更されたACLEにおいて、日本勢は過去最多となる5クラブが参加しています。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-15",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "VAR",
+        "退場",
+        "アビスパ福岡",
+        "上島拓巳"
+      ],
+      "text": "2026年9月19日に行われたJ1第8節・アビスパ福岡対サンフレッチェ広島の試合で、VARが介入した結果、前半21分に一発退場となってしまった福岡のキャプテンは誰でしょう？",
+      "options": [
+        "上島拓巳",
+        "奈良竜樹",
+        "前寛之",
+        "金森健志"
+      ],
+      "answerIndex": 0,
+      "explanation": "今季初先発となったキャプテンの上島拓巳でしたが、危険なタックルにより最初はイエローカードを提示されたものの、VARのオンフィールドレビューの末にレッドカードに変更されました。",
+      "trivia": "VARがイエローカードを取り消してレッドカードに変更するケースは、主審が映像でプレーの危険性を再確認した結果によるものです。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-19",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "VAR",
+        "FC町田ゼルビア",
+        "下田北斗"
+      ],
+      "text": "2026年9月20日に行われたJ1第8節・柏レイソル戦で、FC町田ゼルビアの黒田剛監督が「あの退場は相当に厳しかった」とVAR判定に苦言を呈しました。この試合の62分に一発退場となった町田の選手は誰でしょう？",
+      "options": [
+        "下田北斗",
+        "仙頭啓矢",
+        "柴戸海",
+        "昌子源"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC町田ゼルビアの下田北斗は危険なファウルによりVAR判定の末にレッドカードを受けました。この退場も響き、町田は柏に2-4で敗れて今季初黒星を喫し、首位から陥落しました。",
+      "trivia": "試合後、黒田監督は「我々サッカー人として、みんな同じ評価をしてると思う」と厳しすぎる判定への悔しさを滲ませていました。",
+      "referenceDate": "2026-09-21",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-20",
+        "publishDate": "2026-09-21",
+        "expiryDate": "2026-09-28",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
