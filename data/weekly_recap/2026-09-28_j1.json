@@ -1,0 +1,1058 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-27T23:46:55Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-09-28",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "試合結果",
+        "RB大宮アルディージャ",
+        "ヴァンフォーレ甲府"
+      ],
+      "text": "2026年9月26日に行われた明治安田J2リーグ第8節、RB大宮アルディージャはヴァンフォーレ甲府を相手に何対何で勝利したでしょうか？",
+      "options": [
+        "5-1",
+        "3-0",
+        "4-2",
+        "2-1"
+      ],
+      "answerIndex": 0,
+      "explanation": "RB大宮アルディージャはホームのNACK5スタジアム大宮でヴァンフォーレ甲府と対戦し、5-1の大勝を収めました。",
+      "trivia": "大宮アルディージャはレッドブルグループの買収により、チーム名を「RB大宮アルディージャ」に変更して2026-27シーズンを戦っています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "試合結果",
+        "いわきFC",
+        "ベガルタ仙台"
+      ],
+      "text": "2026年9月26日の明治安田J2リーグ第8節、いわきFCとベガルタ仙台の試合で勝利したのはどちらのチームでしょうか？",
+      "options": [
+        "ベガルタ仙台",
+        "いわきFC",
+        "引き分け",
+        "試合延期"
+      ],
+      "answerIndex": 0,
+      "explanation": "ベガルタ仙台がアウェイのハワイアンズスタジアムいわきでいわきFCと対戦し、2-0で勝利を収めました。",
+      "trivia": "ベガルタ仙台はこの勝利で勝ち点を積み上げ、上位争いに向けて貴重なアウェイでの勝ち点3を獲得しました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J3",
+        "ハットトリック",
+        "FC岐阜"
+      ],
+      "text": "2026年9月27日に行われた明治安田J3リーグ第8節のカマタマーレ讃岐戦で、J3リーグ戦自身初のハットトリックを達成したFC岐阜の選手は誰でしょうか？",
+      "options": [
+        "閑田隼人",
+        "浅田琉偉",
+        "中川大夢",
+        "藤岡浩介"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC岐阜の閑田隼人選手がカマタマーレ讃岐戦でハットトリックを達成し、チームの攻撃を牽引しました。",
+      "trivia": "このハットトリックは2026-27シーズンのJ3リーグで3回目、J3通算では75回目のハットトリック記録となりました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-27",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J3",
+        "ギラヴァンツ北九州",
+        "鹿児島ユナイテッドFC"
+      ],
+      "text": "2026年9月26日の明治安田J3リーグ第8節、ギラヴァンツ北九州対鹿児島ユナイテッドFCの試合で、試合終盤に同点ゴールを決めた鹿児島の選手は誰でしょうか？",
+      "options": [
+        "フアンマ・デルガド",
+        "安光将作",
+        "高昇辰",
+        "井澤春輝"
+      ],
+      "answerIndex": 0,
+      "explanation": "途中出場のフアンマ・デルガド選手が試合終盤にゴールを決め、鹿児島ユナイテッドFCが1-1の引き分けに持ち込みました。",
+      "trivia": "ギラヴァンツ北九州は安光将作選手の2試合連続ゴールで先制しましたが、首位を走る鹿児島に粘られ勝ち点1を分け合う結果となりました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "試合結果",
+        "カターレ富山",
+        "横浜FC"
+      ],
+      "text": "2026年9月26日に行われた明治安田J2リーグ第8節、カターレ富山対横浜FCの試合結果はどうなったでしょうか？",
+      "options": [
+        "3-3の引き分け",
+        "富山が2-1で勝利",
+        "横浜FCが3-1で勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "両チームが点を取り合う激しい展開となり、結果は3-3の引き分けに終わりました。",
+      "trivia": "合計6ゴールが生まれる打ち合いとなり、観客を大いに沸かせるシーソーゲームとなりました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "試合結果",
+        "モンテディオ山形",
+        "サガン鳥栖"
+      ],
+      "text": "2026年9月26日に行われた明治安田J2リーグ第8節、モンテディオ山形とサガン鳥栖の試合結果はどうなったでしょうか？",
+      "options": [
+        "山形が2-0で勝利",
+        "鳥栖が2-0で勝利",
+        "1-1の引き分け",
+        "山形が3-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "ホームのモンテディオ山形がNDソフトスタジアム山形でサガン鳥栖を相手に2-0の完封勝利を収めました。",
+      "trivia": "サガン鳥栖はJ2通算350得点まであと1得点と迫っていましたが、この試合では無得点に終わりました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J3",
+        "試合結果",
+        "ツエーゲン金沢",
+        "ガイナーレ鳥取"
+      ],
+      "text": "2026年9月26日に行われた明治安田J3リーグ第8節、ツエーゲン金沢はガイナーレ鳥取に何対何で勝利したでしょうか？",
+      "options": [
+        "4-1",
+        "2-0",
+        "3-2",
+        "5-0"
+      ],
+      "answerIndex": 0,
+      "explanation": "ツエーゲン金沢はホームの金沢ゴーゴーカレースタジアムでガイナーレ鳥取と対戦し、4-1の快勝を収めました。",
+      "trivia": "ツエーゲン金沢はホームスタジアムのサポーターの前で大量4ゴールを奪い、攻撃陣が爆発する見事な試合運びを見せました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J3",
+        "試合結果",
+        "レノファ山口FC",
+        "SC相模原"
+      ],
+      "text": "2026年9月26日の明治安田J3リーグ第8節、レノファ山口FCとSC相模原の試合結果はどうなったでしょうか？",
+      "options": [
+        "2-2の引き分け",
+        "山口が1-0で勝利",
+        "相模原が3-1で勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "セービング陸上競技場で行われた一戦は、レノファ山口FCとSC相模原が互いに譲らず、2-2の引き分けとなりました。",
+      "trivia": "レノファ山口FCは直近のリーグ戦で3連勝中と好調を維持していましたが、この試合で連勝がストップしました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "試合結果",
+        "ブラウブリッツ秋田",
+        "アルビレックス新潟"
+      ],
+      "text": "2026年9月26日の明治安田J2リーグ第8節、ブラウブリッツ秋田対アルビレックス新潟の試合結果はどうなったでしょうか？",
+      "options": [
+        "2-2の引き分け",
+        "秋田が1-0で勝利",
+        "新潟が3-0で勝利",
+        "1-1の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "ソユースタジアムで行われた一戦は、両チームが2点ずつを奪い合い、2-2のドロー決着となりました。",
+      "trivia": "前節終了時点で首位に浮上していたアルビレックス新潟でしたが、アウェイで勝ちきれず勝ち点1の獲得にとどまりました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "試合結果",
+        "ジュビロ磐田",
+        "ヴァンラーレ八戸"
+      ],
+      "text": "2026年9月26日に行われた明治安田J2リーグ第8節、ジュビロ磐田とヴァンラーレ八戸の試合で勝利したチームはどちらでしょうか？",
+      "options": [
+        "ヴァンラーレ八戸",
+        "ジュビロ磐田",
+        "引き分け",
+        "試合延期"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴァンラーレ八戸がアウェイのヤマハスタジアムでジュビロ磐田を相手に2-1で勝利しました。",
+      "trivia": "ヴァンラーレ八戸は前節敗戦を喫していましたが、アウェイでの強豪相手に見事な勝利を挙げ、立て直しに成功しました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "柏レイソル",
+        "順位表"
+      ],
+      "text": "2026年9月20日に行われた2026/27 J1リーグ第8節で、FC町田ゼルビアとの上位対決を制し、リーグ2位に浮上したクラブはどこでしょう？",
+      "options": [
+        "柏レイソル",
+        "ヴィッセル神戸",
+        "サンフレッチェ広島",
+        "FC東京"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏レイソルは2026年9月20日のFC町田ゼルビア戦に4-2で勝利し、今季6勝目を挙げてリーグ2位に浮上しました。",
+      "trivia": "首位に立ったのは、同じ第8節でガンバ大阪とのダービーを制したヴィッセル神戸です。柏レイソルも勝点1差で猛追しており、シーズン序盤から白熱した上位争いが繰り広げられています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "ベガルタ仙台",
+        "順位表"
+      ],
+      "text": "2026年9月26日に行われたJ2第8節の結果、いわきFCに勝利して今季初の単独首位に浮上したチームはどこでしょう？",
+      "options": [
+        "ベガルタ仙台",
+        "RB大宮アルディージャ",
+        "アルビレックス新潟",
+        "湘南ベルマーレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ベガルタ仙台は9月26日のいわきFC戦に2-0で勝利。開幕節以降7試合無敗（5勝2分）となり、今季初の首位に立ちました。",
+      "trivia": "この節でヴァンフォーレ甲府に5-1の圧勝を収めたRB大宮アルディージャが、首位仙台と勝ち点1差の2位に急浮上しています。レッドブル参入による新体制下での快進撃に注目が集まっています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "得点ランキング",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026/27シーズンのJ1リーグで、第8節終了時点で10得点を挙げ、得点ランキングトップを独走している選手は誰でしょう？",
+      "options": [
+        "レオ・セアラ",
+        "瀬川祐輔",
+        "谷村海那",
+        "エリソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズのレオ・セアラは第8節終了時点ですでに10得点を記録し、2位の瀬川祐輔（7得点）らを引き離して首位を走っています。",
+      "trivia": "レオ・セアラはセレッソ大阪や横浜F・マリノス時代にも得点ランキング上位の常連でしたが、鹿島アントラーズでも不動のストライカーとして圧倒的な得点力を発揮し、チームを牽引しています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "北海道コンサドーレ札幌",
+        "順位表"
+      ],
+      "text": "2026年9月26日のJ2第8節終了時点で、開幕から7試合未勝利（2分5敗）と苦戦し、19位に沈んでいるJ1経験クラブはどこでしょう？",
+      "options": [
+        "北海道コンサドーレ札幌",
+        "サガン鳥栖",
+        "ヴァンフォーレ甲府",
+        "大分トリニータ"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1での実績も十分な北海道コンサドーレ札幌ですが、2026/27シーズンは開幕から未勝利が続き、第8節終了時点で19位の降格圏に沈んでいます。",
+      "trivia": "札幌以外にも、サガン鳥栖(17位)、ヴァンフォーレ甲府(18位)、大分トリニータ(16位)など、J1でのプレー経験が豊富なクラブがJ2の下位で苦しんでおり、近年のJ2リーグのレベルの高さと過酷さを物語っています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "柏レイソル",
+        "瀬川祐輔"
+      ],
+      "text": "2026年9月20日のJ1第8節・FC町田ゼルビア戦で、後半から出場し2得点をマーク。第8節終了時点で日本人最多となる今季7ゴール目に到達した柏レイソルの選手は誰でしょう？",
+      "options": [
+        "瀬川祐輔",
+        "細谷真大",
+        "小屋松知哉",
+        "木下康介"
+      ],
+      "answerIndex": 0,
+      "explanation": "瀬川祐輔はFC町田ゼルビア戦の後半開始から投入されると、同点弾とダメ押しの4点目を決める大活躍を見せ、日本人トップの得点数を記録しています。",
+      "trivia": "瀬川祐輔は複数ポジションをこなせるユーティリティ性を発揮してきましたが、今季は特に得点感覚が研ぎ澄まされており、ストライカーとして抜群の存在感を放っています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "大宮アルディージャ",
+        "得点ランキング"
+      ],
+      "text": "2026年9月26日のJ2第8節終了時点で、6得点を挙げてJ2得点ランキングの単独トップに立っているRB大宮アルディージャの選手は誰でしょう？",
+      "options": [
+        "カルリーニョス・ジュニオ",
+        "中島元彦",
+        "高橋潤哉",
+        "山田寛人"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年にRB大宮アルディージャとして新たなスタートを切ったチームにおいて、カルリーニョス・ジュニオは第8節終了時点で6ゴールを挙げ、得点ランキング首位に立っています。",
+      "trivia": "カルリーニョス・ジュニオは長年プレーした清水エスパルス時代にもJ2で二桁得点を記録するなど、日本のサッカーを熟知したストライカーです。大宮の強力な得点源として絶大な信頼を集めています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "川崎フロンターレ",
+        "引退",
+        "小林悠"
+      ],
+      "text": "2026年9月23日、自身の39歳の誕生日に2026年シーズン限りでの現役引退を発表した、川崎フロンターレ一筋でプレーしてきた元日本代表FWは誰でしょう？",
+      "options": [
+        "小林悠",
+        "家長昭博",
+        "登里享平",
+        "大島僚太"
+      ],
+      "answerIndex": 0,
+      "explanation": "2010年の加入から川崎フロンターレ一筋でプレーしてきた小林悠は、2026年9月23日に今季限りで現役を引退することを発表しました。",
+      "trivia": "小林悠は2017年にキャプテンとして川崎フロンターレを悲願のJ1初優勝に導き、自身もJ1得点王とリーグMVPに輝きました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "サンフレッチェ広島",
+        "初招集",
+        "中野就斗"
+      ],
+      "text": "2026年9月のキリンチャレンジカップに向けた日本代表メンバーに初招集され、28日のベネズエラ戦でA代表デビューが期待されたサンフレッチェ広島所属の選手は誰でしょう？",
+      "options": [
+        "中野就斗",
+        "大迫敬介",
+        "荒木隼人",
+        "満田誠"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年9月シリーズの日本代表には、サンフレッチェ広島の中野就斗のほかに谷村海那、松木玖生、齋藤俊輔が初招集されました。",
+      "trivia": "ベネズエラ戦の会場となったエディオンピースウイング広島は、中野就斗が所属するサンフレッチェ広島のホームスタジアムです。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "清水エスパルス",
+        "特別指定選手",
+        "小野成夢"
+      ],
+      "text": "2026年9月25日、京都産業大学サッカー部に所属する小野成夢選手が「2026/27シーズン JFA・Jリーグ特別指定選手」に認定されました。受入先となったクラブはどこでしょう？",
+      "options": [
+        "清水エスパルス",
+        "京都サンガF.C.",
+        "ガンバ大阪",
+        "セレッソ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "2027年からの清水エスパルス加入が内定している小野成夢選手は、特別指定選手として承認されたことで、承認期間中も同クラブの公式戦への出場が可能となります。",
+      "trivia": "特別指定選手制度は、大学や高校に所属したままJリーグの公式戦に出場できる制度で、有望な若手選手の育成を目的としています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "モンテディオ山形",
+        "記録達成",
+        "川井歩",
+        "氣田亮真"
+      ],
+      "text": "2026年9月27日、モンテディオ山形は所属する2選手のJリーグ通算200試合出場達成を記念したグッズの受注販売を開始しました。氣田亮真ともう一人は誰でしょう？",
+      "options": [
+        "川井歩",
+        "南秀仁",
+        "國分伸太郎",
+        "ディサロ燦シルヴァーノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "モンテディオ山形の川井歩は第5節のヴァンフォーレ甲府戦で、氣田亮真は第6節のアルビレックス新潟戦で、それぞれJリーグ通算200試合出場を達成しました。",
+      "trivia": "記念グッズとして、両選手のアクリルスタンドやキーホルダー、フェイスタオル、トートバッグなどがオンラインショップで受注販売されました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ギラヴァンツ北九州",
+        "負傷",
+        "遠藤貴成"
+      ],
+      "text": "2026年9月27日、ギラヴァンツ北九州は8月に他クラブから期限付き移籍で加入したばかりの選手が、右膝複合靱帯損傷で全治約8か月の診断を受けたと発表しました。この選手は誰でしょう？",
+      "options": [
+        "遠藤貴成",
+        "永井大士",
+        "高吉正真",
+        "小川優介"
+      ],
+      "answerIndex": 0,
+      "explanation": "遠藤貴成は9月2日に行われたルヴァンカップ1回戦で負傷し、9月25日に手術を行いました。永井大士は同日に負傷が発表された栃木SCの選手です。",
+      "trivia": "遠藤貴成は2026年8月に横浜FCから期限付き移籍で加入したばかりで、加入後わずか半月ほどでの長期離脱となってしまいました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ルヴァンカップ",
+        "スカパー！",
+        "愛媛FC",
+        "FC東京"
+      ],
+      "text": "2026年9月25日のスカパー！の発表によると、9月29日に開催される「2026/27 Jリーグ ヤマザキビスケット ルヴァンカップ」1stラウンド2回戦で、15年ぶりの公式戦対決として注目されている対戦カードはどれでしょう？",
+      "options": [
+        "愛媛FC vs FC東京",
+        "カマタマーレ讃岐 vs 柏レイソル",
+        "徳島ヴォルティス vs ガンバ大阪",
+        "FC今治 vs サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "スカパー！は9月29日に開催されるルヴァンカップ1stラウンド2回戦全16試合の生中継を発表し、その中で愛媛FCとFC東京の15年ぶりとなる公式戦での対戦を注目カードとして挙げました。",
+      "trivia": "愛媛FCとFC東京の直近の公式戦での対戦は過去の天皇杯などに遡り、Jリーグやカップ戦での対戦機会は非常に限られていました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "J2",
+        "FC今治",
+        "監督交代",
+        "久保山由清"
+      ],
+      "text": "2026年9月21日、J2リーグに所属するFC今治が監督交代を発表しました。アベル・モウレロ監督の解任に伴い、新たに就任した監督は誰でしょう？",
+      "options": [
+        "久保山由清",
+        "岡田武史",
+        "服部年宏",
+        "大島和人"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC今治は2026年9月21日、アベル・モウレロ監督の解任と、後任として久保山由清氏の監督就任を発表し、新体制での巻き返しを図ることになりました。",
+      "trivia": "FC今治の元代表取締役会長である岡田武史氏はクラブの根幹となる「岡田メソッド」を提唱しており、後任監督にもクラブ哲学の継続が求められています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "J1",
+        "ファジアーノ岡山",
+        "チケット",
+        "クラブ運営"
+      ],
+      "text": "2026年9月21日、ファジアーノ岡山は10月18日に開催されるJ1第10節ヴィッセル神戸戦のチケットが完売したことを発表しました。これにより、岡山のホームエリアの完売記録は連続で何試合目となったでしょうか？",
+      "options": [
+        "35試合",
+        "20試合",
+        "25試合",
+        "50試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "ファジアーノ岡山は、2024年のJ1昇格プレーオフから続くホームスタジアムの熱狂を維持しており、ヴィッセル神戸戦のチケット完売により、35試合連続でのホームエリア完売という記録を達成しました。",
+      "trivia": "ファジアーノ岡山はホームゲームでの高い集客力を誇り、「ファジフーズ」と呼ばれるスタジアムグルメの圧倒的な充実度も多くのファンが足を運ぶ理由の一つとなっています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "J1",
+        "清水エスパルス",
+        "特別指定選手",
+        "小野成夢"
+      ],
+      "text": "2026年9月22日、京都産業大学に所属するDF小野成夢選手が「2026/27シーズン JFA・Jリーグ特別指定選手」として認定されました。受け入れ先となったクラブはどこでしょう？",
+      "options": [
+        "清水エスパルス",
+        "京都サンガF.C.",
+        "ガンバ大阪",
+        "セレッソ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本サッカー協会（JFA）は2026年9月22日付で、京都産業大学のDF小野成夢選手を清水エスパルスを受け入れ先とするJFA・Jリーグ特別指定選手に認定しました。",
+      "trivia": "特別指定選手制度は、大学や高校のサッカー部に所属したままJリーグの公式戦に出場できる制度で、将来の日本代表を担う多くの選手がこの制度を経てプロ入りしています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "天皇杯",
+        "鹿島アントラーズ",
+        "ヴァンフォーレ甲府",
+        "試合結果"
+      ],
+      "text": "2026年9月23日に行われた「天皇杯 JFA 第106回全日本サッカー選手権大会」の3回戦で、鹿島アントラーズはヴァンフォーレ甲府と対戦しました。この試合の最終スコアはどうなったでしょうか？",
+      "options": [
+        "3-1",
+        "1-0",
+        "2-1",
+        "4-2"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年9月23日に行われた天皇杯第106回大会の3回戦で、鹿島アントラーズはヴァンフォーレ甲府と対戦し、3-1で勝利を収めて次のラウンドへと駒を進めました。",
+      "trivia": "対戦相手のヴァンフォーレ甲府は過去にJ2クラブながら天皇杯で優勝を果たすという快挙を成し遂げた経験を持つクラブですが、この年の大会では鹿島の前に敗退しました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-23",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "川崎フロンターレ",
+        "小林悠",
+        "現役引退",
+        "バンディエラ"
+      ],
+      "text": "2026年9月23日、自身の39歳の誕生日に記者会見を開き、今シーズン限りでの現役引退を表明した川崎フロンターレのストライカーは誰でしょう？",
+      "options": [
+        "小林悠",
+        "家長昭博",
+        "大島僚太",
+        "山田新"
+      ],
+      "answerIndex": 0,
+      "explanation": "小林悠は「自分自身のことを自分が信じ切れなくなった」と引退の理由を明かしました。J1通算144得点は、現役選手の中で最多の記録となっています。",
+      "trivia": "彼は大学卒業後に川崎フロンターレに加入して以来、一度も移籍することなくクラブ一筋でキャリアを全うし、「バンディエラ」としてサポーターから愛され続けました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "天皇杯",
+        "FC町田ゼルビア",
+        "小川航基",
+        "栃木シティ"
+      ],
+      "text": "2026年9月23日に行われた第106回天皇杯の3回戦で、前回王者のFC町田ゼルビアは栃木シティを2-1で破りました。この試合で決勝点となる勝ち越しゴールを決めた選手は誰でしょう？",
+      "options": [
+        "小川航基",
+        "藤尾翔太",
+        "オ・セフン",
+        "相馬勇紀"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1で迎えた後半、FC町田ゼルビアは失点直後に小川航基が勝ち越しゴールを決め、2-1で勝利して4回戦へと駒を進めました。",
+      "trivia": "天皇杯では下位カテゴリーのチームのホームスタジアムを使用する規定があり、この試合もJ2に所属する栃木シティのホームで開催されました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-23",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "FC今治",
+        "監督交代",
+        "久保山由清",
+        "J2リーグ"
+      ],
+      "text": "2026/27シーズンにおいてJ1昇格を目指すものの最下位に沈んでいたFC今治は、2026年9月21日にアベル・モウレロ監督の解任を発表しました。後任として新たにトップチームの監督に就任した人物は誰でしょう？",
+      "options": [
+        "久保山由清",
+        "服部年宏",
+        "岡田武史",
+        "工藤直人"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC今治は2026/27シーズンの成績不振を受けてアベル・モウレロ監督を解任し、コーチからの内部昇格という形で久保山由清が新監督に就任しました。",
+      "trivia": "新監督に就任した久保山由清は、現役時代に清水エスパルスなどでFWとして活躍し、引退後も長らく清水などで指導者経験を積んできた人物です。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "FC東京",
+        "長友佑都",
+        "負傷",
+        "日本代表"
+      ],
+      "text": "2026年9月21日、自身の40歳の誕生日の直後に大怪我を負ったことを明かし、SNSで「神様、スケールデカ過ぎです笑」とポジティブなメッセージを綴ったFC東京の選手は誰でしょう？",
+      "options": [
+        "長友佑都",
+        "森重真人",
+        "東慶悟",
+        "小泉慶"
+      ],
+      "answerIndex": 0,
+      "explanation": "長友佑都は2026年9月12日に40歳の誕生日を迎えましたが、その直後に膝に大怪我を負ったことが判明しました。ショッキングな診断結果にもかかわらず、SNSでは前向きな言葉を発信しています。",
+      "trivia": "彼は過去にも大怪我や体調不良を経験しながらその度に不死鳥のように蘇っており、今回の負傷に際しても多くのファンから復帰を待つ声が寄せられました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

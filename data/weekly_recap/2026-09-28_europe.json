@@ -1,0 +1,1049 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-27T23:52:33Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-09-28",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "フランス代表",
+        "UEFAネーションズリーグ",
+        "キリアン・エンバペ",
+        "負傷"
+      ],
+      "text": "2026年9月25日に行われたUEFAネーションズリーグのトルコ対フランス戦で、決勝点を決めた直後に左ひざを負傷したフランス代表キャプテンは誰でしょう？",
+      "options": [
+        "キリアン・エンバペ",
+        "アントワーヌ・グリーズマン",
+        "オーレリアン・チュアメニ",
+        "ウスマン・デンベレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジダン新監督の初陣となったこの試合でエンバペは決勝点を挙げましたが、直後に左ひざの腱を損傷しピッチを退きました。",
+      "trivia": "この負傷により、エンバペは今後の代表活動を欠場することになり、所属するレアル・マドリードもエル・クラシコを前に大きな懸念を抱えることになりました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-25",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "スペイン代表",
+        "イングランド代表",
+        "UEFAネーションズリーグ",
+        "試合結果"
+      ],
+      "text": "2026年9月26日に行われたUEFAネーションズリーグのイングランド対スペインの試合結果として正しいものはどれでしょう？",
+      "options": [
+        "スペインが3-2で勝利",
+        "イングランドが3-2で勝利",
+        "2-2の引き分け",
+        "スペインが1-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "UEFAネーションズリーグ・リーグAグループ3の強豪対決は、激しい打ち合いの末にアウェーのスペインが3-2でイングランドを下しました。",
+      "trivia": "ユーロやW杯でも常に上位を争う両国ですが、若手の台頭が著しいスペインが敵地でその勝負強さを見せつける結果となりました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "日本代表",
+        "ウルグアイ代表",
+        "親善試合",
+        "ディエゴ・フォルラン"
+      ],
+      "text": "2026年9月24日に開催されたキリンチャレンジカップ2026で日本代表はウルグアイ代表と対戦しました。この試合が初陣となったウルグアイ代表の監督は誰でしょう？",
+      "options": [
+        "ディエゴ・フォルラン",
+        "ルイス・スアレス",
+        "エディンソン・カバーニ",
+        "マルセロ・ビエルサ"
+      ],
+      "answerIndex": 0,
+      "explanation": "かつてセレッソ大阪でもプレーしたウルグアイのレジェンド、ディエゴ・フォルランが新監督として初陣を飾りましたが、結果は3-1で日本が勝利しました。",
+      "trivia": "フォルラン監督は試合後、「終盤の失点は残念だったが、日本には長い年月をかけた成長が反映されている」と日本代表を称賛しました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-24",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "海外日本人選手",
+        "田中碧",
+        "鎌田大地"
+      ],
+      "text": "2026年9月に行われたプレミアリーグ第5節のリーズ対クリスタル・パレス戦で、同じピッチに立つ日本人対決が実現しました。鎌田大地、冨安健洋ともう一人は誰でしょう？",
+      "options": [
+        "田中碧",
+        "三笘薫",
+        "遠藤航",
+        "菅原由勢"
+      ],
+      "answerIndex": 0,
+      "explanation": "リーズのボランチとして出場した田中碧が、クリスタル・パレスの鎌田大地らと激しいマッチアップを繰り広げ、プレミアリーグの舞台で日本人3選手が同時出場を果たしました。",
+      "trivia": "冨安健洋も先発出場しましたが、前半にふくらはぎを痛めてハーフタイムでの交代を余儀なくされました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "日本代表",
+        "松木玖生",
+        "ゴール",
+        "ウルグアイ代表"
+      ],
+      "text": "2026年9月24日に行われた日本代表対ウルグアイ代表の試合で、A代表デビュー戦ながら前半11分に先制ゴールを決めた選手は誰でしょう？",
+      "options": [
+        "松木玖生",
+        "塩貝健人",
+        "鈴木唯人",
+        "佐藤龍之介"
+      ],
+      "answerIndex": 0,
+      "explanation": "松木玖生はA代表デビュー戦でいきなりスタメンに抜擢され、前半11分に貴重な先制ゴールをマークして期待に応えました。",
+      "trivia": "試合後、この日途中出場でピッチに立った久保建英も「ハードワークできて一発を持っている。イングランドで揉まれてすごくいい選手になった」と松木を絶賛しています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-24",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "鈴木彩艶",
+        "プレミアリーグ",
+        "アストン・ヴィラ",
+        "海外日本人選手"
+      ],
+      "text": "2026年9月下旬に行われたプレミアリーグ第5節のトッテナム対アストン・ヴィラ戦（2-3でヴィラ勝利）で、好セーブを連発し決勝点の起点となるロングフィードも見せた日本人GKは誰でしょう？",
+      "options": [
+        "鈴木彩艶",
+        "大迫敬介",
+        "谷晃生",
+        "小久保玲央ブライアン"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラに所属する鈴木彩艶は、トッテナムとのアウェー戦で再三のピンチを救い、後半には得意のロングフィードからニコラス・ジャクソンのゴールを演出しました。",
+      "trivia": "鈴木彩艶はパルマでの活躍を経てアストン・ヴィラへステップアップし、強豪ひしめくプレミアリーグでも定位置を掴みつつあります。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "イタリア代表",
+        "ベルギー代表",
+        "UEFAネーションズリーグ",
+        "試合結果"
+      ],
+      "text": "2026年9月25日に行われたUEFAネーションズリーグ、イタリア対ベルギーの試合結果はどうなったでしょう？",
+      "options": [
+        "ベルギーが2-0で勝利",
+        "イタリアが2-0で勝利",
+        "0-0の引き分け",
+        "イタリアが3-1で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "イタリアのホームで行われたネーションズリーグの一戦は、アウェーのベルギー代表が2-0で勝利を収めました。",
+      "trivia": "同じ日に行われたグループAのもう一つの試合では、フランスがトルコを1-0で下し、強豪国がそれぞれアウェーで勝ち点3を獲得しています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-25",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "オランダ代表",
+        "ドイツ代表",
+        "UEFAネーションズリーグ",
+        "試合結果"
+      ],
+      "text": "2026年9月24日に行われたUEFAネーションズリーグ、オランダ対ドイツの試合結果はどうなったでしょう？",
+      "options": [
+        "1-1の引き分け",
+        "オランダが2-0で勝利",
+        "ドイツが2-1で勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "リーグA・グループ2の屈指の好カードとなったオランダとドイツの対決は、互いに譲らず1-1のドロー決着となりました。",
+      "trivia": "この両国は歴史的に激しいライバル関係にあり、どんな大会でも両者の対戦は「絶対に負けられない戦い」として白熱します。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-24",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "マドリードダービー",
+        "レアル・マドリード",
+        "アントニオ・リュディガー"
+      ],
+      "text": "2026年9月25日に行われたラ・リーガ第7節のアトレティコ・マドリード対レアル・マドリード（マドリードダービー）は2-1でアトレティコが勝利しました。レアル・マドリードの唯一の得点者は誰でしょう？",
+      "options": [
+        "アントニオ・リュディガー",
+        "キリアン・エンバペ",
+        "ヴィニシウス・ジュニオール",
+        "ジュード・ベリンガム"
+      ],
+      "answerIndex": 0,
+      "explanation": "アトレティコがアレックス・グリマルドらの得点でリードする中、レアル・マドリードは89分にDFのアントニオ・リュディガーが一矢報いるゴールを挙げました。",
+      "trivia": "このダービーでは、後半早々にレアル・マドリードのディーン・ハイセンが退場処分となり、数的不利に陥ったことが勝敗を大きく分けました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-09-25",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "日本代表",
+        "塩貝健人",
+        "ゴール",
+        "ウルグアイ代表"
+      ],
+      "text": "2026年9月24日の日本代表対ウルグアイ代表戦は3-1で日本が勝利しました。1-1で迎えた後半アディショナルタイムに劇的な勝ち越しゴール（決勝点）を奪ったストライカーは誰でしょう？",
+      "options": [
+        "塩貝健人",
+        "上田綺世",
+        "前田大然",
+        "小川航基"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1の同点で迎えた後半アディショナルタイム1分に塩貝健人が勝ち越しゴールを決め、その直後のアディショナルタイム6分に上田綺世がダメ押し弾を奪いました。",
+      "trivia": "この試合に先立って行われたレジェンドマッチでは、「天才」小野伸二が柳沢敦からのヒールパスを受けて見事なプレーを見せ、集まった観衆を魅了しました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-24",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "premier",
+        "manchestercity",
+        "standings"
+      ],
+      "text": "2026-27シーズンのプレミアリーグで、9月下旬時点で唯一開幕から「5戦全勝」を飾り、単独首位に立っているクラブはどこ？",
+      "options": [
+        "マンチェスター・シティ",
+        "アーセナル",
+        "リヴァプール",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティは第5節のサンダーランド戦にも5-3で勝利し、リーグ内で唯一となる開幕からの無傷の5連勝を達成しています。",
+      "trivia": "連勝を続けていたアーセナルは第5節でブライトンに敗れたため、全勝をキープしているチームはシティのみとなりました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "laliga",
+        "barcelona",
+        "standings"
+      ],
+      "text": "2026-27シーズンのスペイン・ラ・リーガで、9月下旬時点で「開幕7連勝」を達成し、圧倒的な強さで単独首位を走っているクラブは？",
+      "options": [
+        "バルセロナ",
+        "レアル・マドリード",
+        "アトレティコ・マドリード",
+        "ビジャレアル"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナは開幕から連勝街道を突き進み、ライバルのレアル・マドリードやアトレティコ・マドリードに勝ち点差をつけて首位に立っています。",
+      "trivia": "バルセロナは第7節終了時点でチーム全体で31得点を記録するなど、今シーズンは驚異的な攻撃力を見せつけています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "seriea",
+        "roma",
+        "standings"
+      ],
+      "text": "2026-27シーズンのセリエAは9月下旬時点で混戦模様となっています。インテル、ラツィオと共に無敗（勝ち点13）で並び、首位争いを繰り広げているクラブは？",
+      "options": [
+        "ASローマ",
+        "ユヴェントス",
+        "ACミラン",
+        "ナポリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "第5節を終えたセリエAでは、ASローマ、インテル、ラツィオの3クラブが4勝1分で並ぶ熱い首位争いが展開されています。",
+      "trivia": "第5節で行われたASローマとインテルの直接対決は、激しい打ち合いの末に2-2のドローに終わりました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "uwcl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "uwcl",
+        "barcelona",
+        "results"
+      ],
+      "text": "2026年9月23日に行われた2026-27シーズンのUEFA女子チャンピオンズリーグ（UWCL）リーグフェーズ第1節で、パリFCから5ゴールを奪って5-2で快勝したスペインのクラブは？",
+      "options": [
+        "バルセロナ",
+        "レアル・マドリード",
+        "アトレティコ・マドリード",
+        "レバンテ"
+      ],
+      "answerIndex": 0,
+      "explanation": "新フォーマットのリーグフェーズ方式となった女子CLの初戦で、バルセロナはパリFC相手に持ち前の攻撃力を発揮して5-2で勝利しました。",
+      "trivia": "同日に行われたチェルシー対オーストリア・ウィーンの試合は、チェルシーが1-0で勝利を収めています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-23",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "laliga",
+        "raphinha",
+        "stats"
+      ],
+      "text": "2026-27シーズンのラ・リーガで、9月下旬時点の得点ランキングにおいて12ゴールを挙げ、キリアン・エンバペらを抑えて首位を独走している選手は？",
+      "options": [
+        "ハフィーニャ",
+        "ロベルト・レヴァンドフスキ",
+        "ラミン・ヤマル",
+        "ダニ・オルモ"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナのハフィーニャは開幕7試合で12ゴールと驚異的なペースで得点を重ねており、得点王争いを快走しています。",
+      "trivia": "ランキング2位タイには、同じくバルセロナのヤマルとレアル・マドリードのエンバペが7ゴールで続いています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "uwcl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "uwcl",
+        "bayern",
+        "manchestercity"
+      ],
+      "text": "2026年9月22日に開幕した2026-27シーズンのUEFA女子チャンピオンズリーグ（UWCL）第1節で、イングランドのマンチェスター・シティと2-2の熱戦を演じたドイツのクラブは？",
+      "options": [
+        "バイエルン・ミュンヘン",
+        "VfLヴォルフスブルク",
+        "アイントラハト・フランクフルト",
+        "TSGホッフェンハイム"
+      ],
+      "answerIndex": 0,
+      "explanation": "強豪同士の激突となった開幕節の注目カードは、バイエルン・ミュンヘンとマンチェスター・シティが互いに譲らず、2-2のドロー決着となりました。",
+      "trivia": "同じく9月22日に行われた試合では、アーセナルがHBキューゲを1-0で下し、危なげなく白星スタートを切っています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-09-22",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "遠藤航",
+        "リヴァプール",
+        "チャンピオンズリーグ",
+        "プレミアリーグ"
+      ],
+      "text": "2026-27シーズンのリヴァプールにおいて、遠藤航は開幕から出番のない苦しい状況が続いていますが、9月に発表されたある主要大会のリーグフェーズ登録メンバーからも外れたことが大きな話題となりました。その大会とはどれでしょう？",
+      "options": [
+        "UEFAチャンピオンズリーグ",
+        "FAカップ",
+        "カラバオカップ",
+        "UEFAヨーロッパリーグ"
+      ],
+      "answerIndex": 0,
+      "explanation": "遠藤航は2026-27シーズンのUEFAチャンピオンズリーグ（CL）のリーグフェーズ登録メンバー25名から外れ、現地メディアでも今後の去就が大きく報じられました。",
+      "trivia": "CLの登録メンバーからは外れましたが、プレミアリーグの登録メンバーには入っているため、国内リーグ戦での出場は引き続き可能です。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "守田英正",
+        "ハル・シティ",
+        "プレミアリーグ",
+        "移籍"
+      ],
+      "text": "ポルトガルのスポルティングでリーグ優勝に貢献し、2026年夏にイングランド・プレミアリーグの昇格組クラブへフリー移籍を果たした日本代表MF守田英正。彼の新天地となったクラブはどこでしょう？",
+      "options": [
+        "ハル・シティ",
+        "イプスウィッチ・タウン",
+        "レスター・シティ",
+        "サウサンプトン"
+      ],
+      "answerIndex": 0,
+      "explanation": "守田英正は2026年夏にスポルティングCPとの契約満了を迎え、プレミアリーグに昇格したハル・シティへフリー移籍で加入しました。",
+      "trivia": "8月末のコヴェントリー戦で待望のプレミアリーグデビューを飾りましたが、実はふくらはぎを痛めた状態での強行出場だったとヤキロヴィッチ監督が明かしています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "堂安律",
+        "日本代表",
+        "ウルグアイ代表",
+        "キリンチャレンジカップ"
+      ],
+      "text": "2026年9月24日に行われたキリンチャレンジカップのウルグアイ戦で、日本代表は3-1の勝利を収めました。この試合で森保一監督からゲームキャプテンに指名され、キャプテンマークを巻いて先発出場した選手は誰でしょう？",
+      "options": [
+        "堂安律",
+        "板倉滉",
+        "守田英正",
+        "久保建英"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年9月24日のウルグアイ戦では、W杯でキャプテンを務めた板倉滉も先発していましたが、堂安律がキャプテンに指名されました。",
+      "trivia": "森保監督は「これまでの活動でも、チームのためにアクションを起こしてきたメンバーのひとり」として堂安を主将に指名した理由を語っています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-24",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "日本代表",
+        "レアル・ソシエダ",
+        "ベネズエラ代表"
+      ],
+      "text": "2026年9月28日のキリンチャレンジカップ・ベネズエラ戦に向けた練習後、久保建英はベネズエラ代表として来日したホン・アランブルとヤンヘル・エレーラの2人と再会しました。この2人が久保とともに所属しているスペインのクラブはどこでしょう？",
+      "options": [
+        "レアル・ソシエダ",
+        "ビジャレアル",
+        "マジョルカ",
+        "ヘタフェ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ホン・アランブルとヤンヘル・エレーラは、久保建英とともにスペインのレアル・ソシエダに所属するチームメイトです。",
+      "trivia": "日本での練習後に再会を果たした久保は、2人からスタメン出場することを聞かされ「ぶち抜かれてほしいなと（笑）」と笑顔でエールを送りました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "上田綺世",
+        "伊東純也",
+        "日本代表",
+        "ウルグアイ代表"
+      ],
+      "text": "2026年夏にフランスのLOSCリールへ加入し、クラブでも得点を重ねている上田綺世。2026年9月24日に行われた日本代表対ウルグアイ代表の試合では、後半アディショナルタイムにダメ押しとなるチーム3点目を決めましたが、このゴールを鮮やかなスルーパスでアシストした選手は誰でしょう？",
+      "options": [
+        "伊東純也",
+        "久保建英",
+        "堂安律",
+        "松木玖生"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年9月24日のウルグアイ戦の90+6分、伊東純也からの右サイドからの高精度のロングスルーパスに抜け出した上田綺世がゴールを決めました。",
+      "trivia": "試合後、上田はこの連係からのゴールについて「試合に入る前からすり合わせていた部分だった」と、事前の準備がしっかりと実を結んだことを明かしています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-24",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "キリアン・エムバペ",
+        "フランス代表",
+        "レアル・マドリード",
+        "ケガ"
+      ],
+      "text": "2026年9月25日に行われたUEFAネーションズリーグのトルコ戦で、決勝ゴールを決めた直後に左膝を負傷し、代表チームから離脱することになったフランス代表FWは誰でしょう？",
+      "options": [
+        "キリアン・エムバペ",
+        "アントワーヌ・グリーズマン",
+        "ウスマン・デンベレ",
+        "ランダル・コロ・ムアニ"
+      ],
+      "answerIndex": 0,
+      "explanation": "エムバペはトルコ戦でゴールを決めた直後に左膝の過伸展（ハイパーエクステンション）により負傷交代し、所属先のレアル・マドリードで治療を受けることになりました。",
+      "trivia": "この試合は、新たにフランス代表の指揮官に就任したジネディーヌ・ジダン監督の初陣でもありました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-25",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ラミン・ヤマル",
+        "スペイン代表",
+        "UEFAネーションズリーグ",
+        "イングランド代表"
+      ],
+      "text": "2026年9月26日に行われたUEFAネーションズリーグのイングランド戦で、相手DFのミスを突いて開始わずか2分で先制ゴールを挙げたスペイン代表の若手スターは誰でしょう？",
+      "options": [
+        "ラミン・ヤマル",
+        "ペドリ",
+        "ニコ・ウィリアムズ",
+        "ガビ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イングランド代表DFのマーク・グエイのミスを見逃さず、ラミン・ヤマルが開始2分でウェンブリー・スタジアムを沈黙させる先制ゴールを決めました。",
+      "trivia": "ヤマルが決めたこのゴールは、イングランド代表が聖地ウェンブリーで喫した失点としては過去約70年で最速の記録となりました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アーリング・ハーランド",
+        "ノルウェー代表",
+        "UEFAネーションズリーグ",
+        "記録"
+      ],
+      "text": "2026年9月27日のUEFAネーションズリーグ・ポルトガル戦で同点ゴールを記録し、同大会の通算得点数を「22」に伸ばして歴代最多得点記録を更新し続けているノルウェー代表ストライカーは誰でしょう？",
+      "options": [
+        "アーリング・ハーランド",
+        "アレクサンデル・セルロート",
+        "マルティン・ウーデゴール",
+        "ユルゲン・ストランド・ラーセン"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハーランドはポルトガル戦でゴールを決め、代表通算成績を57試合65ゴールとするとともに、ネーションズリーグでの通算得点数を22に伸ばして単独トップに立っています。",
+      "trivia": "ネーションズリーグの歴代得点ランキング2位はポルトガル代表のクリスティアーノ・ロナウド（15ゴール）ですが、この日のノルウェー戦でロナウドに出番はありませんでした。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-27",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アレクサンデル・イサク",
+        "リヴァプール",
+        "スウェーデン代表",
+        "ケガ"
+      ],
+      "text": "2026年9月25日のUEFAネーションズリーグ・ルーマニア戦でゴールを決めたものの、足の負傷によりスウェーデン代表から離脱し、所属クラブでの状態が心配されているストライカーは誰でしょう？",
+      "options": [
+        "アレクサンデル・イサク",
+        "ヴィクトル・ギョケレス",
+        "デヤン・クルゼフスキ",
+        "アントニー・エランガ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2025年に英国史上最高額の移籍金でリヴァプールへ加入したイサクは、ルーマニア戦にフル出場して得点も挙げましたが、試合中に足を踏まれた影響で代表チームを早期離脱しました。",
+      "trivia": "イサクはリヴァプール加入1年目の2025-26シーズンにも足の骨折による長期離脱を経験しており、クラブやファンから状態が心配されています。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-25",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ミケル・オヤルサバル",
+        "スペイン代表",
+        "イングランド代表",
+        "決勝点"
+      ],
+      "text": "2026年9月26日、2026年W杯王者のスペイン代表はUEFAネーションズリーグでイングランド代表と対戦し3-2の逆転勝利を収めました。74分に決勝ゴールを決めた、EURO 2024決勝でも同相手に決勝点を挙げた選手は誰でしょう？",
+      "options": [
+        "ミケル・オヤルサバル",
+        "ダニ・オルモ",
+        "アレックス・バエナ",
+        "フェラン・トーレス"
+      ],
+      "answerIndex": 0,
+      "explanation": "スペインはヤマルが先制後イングランドに逆転を許しましたが、バエナの同点弾に続き、途中出場のオヤルサバルがGKトラッフォードの頭上を抜くシュートを決めて3-2で勝利しました。",
+      "trivia": "トーマス・トゥヘル監督率いるイングランドは後半にPKを獲得しましたが、キッカーのハリー・ケインが足を滑らせてクロスバーに当ててしまい、絶好機を逃しました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "nationsleague",
+        "spain",
+        "england"
+      ],
+      "text": "2026年9月26日に行われたUEFAネーションズリーグのリーグAで、イングランド代表とウェンブリー・スタジアムで対戦し、3-2の逆転勝利を収めた現・世界王者はどの国でしょうか？",
+      "options": [
+        "スペイン",
+        "フランス",
+        "イタリア",
+        "ドイツ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年9月26日の試合で、スペインはラミン・ヤマルらのゴールによりイングランドに3-2で逆転勝利を収めました。",
+      "trivia": "この勝利により、スペイン代表の無敗記録はヨーロッパの代表チーム記録となる39試合連続無敗に伸びました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "nationsleague",
+        "netherlands",
+        "germany"
+      ],
+      "text": "2026年9月24日に行われたUEFAネーションズリーグのリーグAグループ2第1節で、オランダ代表と1-1で引き分けた強豪国はどこでしょうか？",
+      "options": [
+        "ドイツ",
+        "フランス",
+        "クロアチア",
+        "イタリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年9月24日に行われた試合で、オランダとドイツの強豪対決は互いに譲らず1-1のドローに終わりました。",
+      "trivia": "UEFAネーションズリーグは、親善試合を減らし、同レベルの国同士の真剣勝負を増やす目的で創設された大会です。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-24",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "nationsleague",
+        "england",
+        "harrykane"
+      ],
+      "text": "2026年9月26日のUEFAネーションズリーグ、イングランド対スペインの試合で、イングランドが2-1でリードしていた後半にPKをクロスバーに当てて失敗してしまった選手は誰でしょうか？",
+      "options": [
+        "ハリー・ケイン",
+        "アントニー・ゴードン",
+        "ジュード・ベリンガム",
+        "マーカス・ラッシュフォード"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年9月26日の試合で、ハリー・ケインは2-1とリードした後半10分に得たPKでシュートの際に少し足を滑らせ、クロスバーに当ててしまいました。その後スペインが2点を追加し3-2で逆転勝ちしています。",
+      "trivia": "トーマス・トゥヘル監督率いるイングランドはこの試合で一時逆転に成功したものの、世界王者スペインの層の厚さと勝負強さに屈する結果となりました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-26",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "nationsleague",
+        "wales",
+        "denmark"
+      ],
+      "text": "2026年9月27日に行われたUEFAネーションズリーグで、クレイグ・ベラミー監督率いるウェールズ代表が0-2で敗れ、グループ最下位に沈むことになった対戦相手の国はどこでしょうか？",
+      "options": [
+        "デンマーク",
+        "スウェーデン",
+        "ノルウェー",
+        "ポルトガル"
+      ],
+      "answerIndex": 0,
+      "explanation": "ウェールズ代表はデンマークとのアウェイ戦で2失点を喫して敗れ、24日のポルトガル戦（0-1）に続きネーションズリーグで連敗となりました。",
+      "trivia": "デンマークの2得点はともにセットプレーからのもので、ミッケル・ダムスゴーの正確なクロスがオウンゴールと追加点をもたらしました。",
+      "referenceDate": "2026-09-28",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-27",
+        "publishDate": "2026-09-28",
+        "expiryDate": "2026-10-05",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
