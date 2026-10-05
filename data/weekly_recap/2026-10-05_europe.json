@@ -1,0 +1,1042 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-10-05T00:01:21Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-10-05",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "nations-league",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "nations-league",
+        "england",
+        "tuchel"
+      ],
+      "text": "2026年10月3日に行われたUEFAネーションズリーグで、クロアチアに7-0で歴史的大勝を収めたイングランド代表。この試合を指揮した監督は誰でしょう？",
+      "options": [
+        "トーマス・トゥヘル",
+        "ギャレス・サウスゲート",
+        "リー・カースリー",
+        "ペップ・グアルディオラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月3日のネーションズリーグで、トーマス・トゥヘル監督率いるイングランドはアウェーでクロアチアに7-0の大勝を収めました。",
+      "trivia": "この勝利は、イングランドにとってネーションズリーグでの史上最大得点差での勝利記録となりました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-03",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "nations-league",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "nations-league",
+        "france",
+        "zidane"
+      ],
+      "text": "2026年10月2日に行われたUEFAネーションズリーグのフランス対イタリアの試合は、1-1の引き分けに終わりました。この試合で、フランス代表監督としてホーム初陣を飾ったのは誰でしょう？",
+      "options": [
+        "ジネディーヌ・ジダン",
+        "ディディエ・デシャン",
+        "ティエリ・アンリ",
+        "アルセーヌ・ベンゲル"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジネディーヌ・ジダン新監督のホーム初陣となったスタッド・ド・フランスでのイタリア戦は、フランスが先制するも最終的に1-1のドローに終わりました。",
+      "trivia": "両国の対戦は常に接戦となり、2024年9月のネーションズリーグでの対戦ではイタリアが3-1で勝利を収めていました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-02",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "nations-league",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "nations-league",
+        "belgium",
+        "turkey"
+      ],
+      "text": "2026年10月2日に行われたUEFAネーションズリーグ、ベルギー代表とトルコ代表の試合の勝者はどちらでしょう？",
+      "options": [
+        "ベルギー代表",
+        "トルコ代表",
+        "引き分け",
+        "試合は延期された"
+      ],
+      "answerIndex": 0,
+      "explanation": "ベルギー代表がホームでトルコ代表を3-0で下し、ネーションズリーグでの貴重な勝ち点を積み上げました。",
+      "trivia": "ベルギーは試合開始わずか10分でケビン・デ・ブライネが先制点を挙げ、そのまま主導権を握って快勝しました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-02",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "friendly",
+        "usa",
+        "record"
+      ],
+      "text": "2026年10月3日に行われた国際親善試合アメリカ対メキシコ戦で、アメリカ代表の史上最年少ゴール記録を更新した17歳の選手は誰でしょう？",
+      "options": [
+        "キャバン・サリバン",
+        "マティス・アルベール",
+        "ジオ・レイナ",
+        "クリスチャン・プリシッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティ加入が内定している17歳のキャバン・サリバンがメキシコ戦でゴールを決め、17歳と5日でアメリカ代表の最年少得点記録を更新しました。",
+      "trivia": "サリバンが記録を更新するまで、マティス・アルベールが樹立したばかりの記録がわずか5日間だけ最年少記録として保持されていました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-03",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "liga-f",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "liga-f",
+        "barcelona",
+        "el-clasico"
+      ],
+      "text": "2026年10月4日に行われた女子の「エル・クラシコ」（バルセロナ対レアル・マドリード）は、バルセロナが7-0で大勝しました。この試合で4ゴールを挙げる大活躍を見せた選手は誰でしょう？",
+      "options": [
+        "クラウディア・ピナ",
+        "アイタナ・ボンマティ",
+        "キャロライン・グラハム・ハンセン",
+        "エバ・パヨル"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナのクラウディア・ピナは前半だけで4ゴールを記録する圧巻のパフォーマンスを見せ、レアル・マドリードを粉砕しました。",
+      "trivia": "この試合はカタルーニャ地方の豪雨の影響で、キックオフが予定より2時間遅れて開催されました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-04",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "nations-league",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "nations-league",
+        "england",
+        "saka"
+      ],
+      "text": "2026年10月3日のネーションズリーグで、イングランドがクロアチアに7-0で勝利した試合で、2ゴールを記録した選手はハリー・ケインと、もう一人は誰でしょう？",
+      "options": [
+        "ブカヨ・サカ",
+        "ジュード・ベリンガム",
+        "アンソニー・ゴードン",
+        "モーガン・ロジャーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イングランドはハリー・ケインとブカヨ・サカがそれぞれ2ゴールを記録し、クロアチア相手にアウェーで7-0の歴史的な大勝を収めました。",
+      "trivia": "この試合でハリー・ケインは代表通算得点を89に伸ばし、出場試合数でもピーター・シルトンの持つ歴代最多記録まであと1試合に迫りました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-03",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "nations-league",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "nations-league",
+        "france",
+        "olise"
+      ],
+      "text": "2026年10月2日に行われたネーションズリーグのフランス対イタリア戦で、見事なフリーキックからフランスの先制点を挙げた選手は誰でしょう？",
+      "options": [
+        "マイケル・オリーズ",
+        "ラヤン・シェルキ",
+        "エドゥアルド・カマヴィンガ",
+        "ウスマン・デンベレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マイケル・オリーズは後半序盤にラヤン・シェルキからのパスを受け、バーを叩く強烈なフリーキックを決めてフランスに先制点をもたらしました。",
+      "trivia": "マイケル・オリーズは直前のベルギー戦でも見事な単独突破から決勝ゴールを決めており、代表戦で連続ゴールを記録しました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-02",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "wsl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "wsl",
+        "manchester-city",
+        "arsenal"
+      ],
+      "text": "2026年10月4日に行われた女子スーパーリーグ（WSL）のマンチェスター・シティ対アーセナルの試合は、どのような結果で終わったでしょう？",
+      "options": [
+        "4-2でマンチェスター・シティの勝利",
+        "2-1でアーセナルの勝利",
+        "1-1の引き分け",
+        "3-0でマンチェスター・シティの勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティはアーセナルに対して2度のビハインドを背負いながらも逆転し、4-2でスリリングな試合を制しました。",
+      "trivia": "この試合は女子チャンピオンズリーグのレアル・マドリード戦（1-1の引き分け）から中2日という厳しい日程で行われました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-04",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "nations-league",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "nations-league",
+        "spain",
+        "lamine-yamal"
+      ],
+      "text": "2026年10月3日に行われたネーションズリーグのチェコ戦でゴールを決め、男子サッカー史上初めて「3試合連続である条件のゴール」を達成したスペイン代表のラミン・ヤマル。その条件とは何でしょう？",
+      "options": [
+        "試合開始10分以内でのゴール",
+        "ペナルティエリア外からのゴール",
+        "ヘディングでのゴール",
+        "アディショナルタイムでのゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "ラミン・ヤマルはチェコ戦の開始6分にゴールを決め、男子選手として初めて3試合連続で試合開始10分以内にゴールを決めるという記録を打ち立てました。",
+      "trivia": "スペインはこの試合でチェコに3-1で勝利し、ネーションズリーグで好スタートを切っています。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-03",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "nations-league",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "nations-league",
+        "england",
+        "anderson"
+      ],
+      "text": "2026年10月3日のクロアチア対イングランドの試合で、イングランド代表として「デビューから20キャップ到達の最速記録（392日）」を更新した選手は誰でしょう？",
+      "options": [
+        "エリオット・アンダーソン",
+        "コール・パーマー",
+        "リコ・ルイス",
+        "ジャレル・クアンサー"
+      ],
+      "answerIndex": 0,
+      "explanation": "エリオット・アンダーソンはデビューからわずか392日で20キャップに到達し、クリス・ワドルが保持していた453日の記録を61日も更新しました。",
+      "trivia": "このクロアチア戦でアンダーソンはハリー・ケインのゴールをアシストするなど、7-0の勝利に大きく貢献しました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-03",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・シティ",
+        "順位表",
+        "イングランド"
+      ],
+      "text": "2026-27シーズンのプレミアリーグで、第5節終了時点（2026年10月上旬）で全勝の勝ち点15を記録し、単独首位に立っているクラブはどこでしょうか？",
+      "options": [
+        "マンチェスター・シティ",
+        "アーセナル",
+        "リヴァプール",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティは開幕から無傷の5連勝を飾り、勝ち点15で単独首位に立っています。序盤から力強い戦いぶりを見せています。",
+      "trivia": "マンチェスター・シティは開幕5試合で13ゴールを挙げるなど、持ち前の圧倒的な攻撃力をいかんなく発揮しています。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "FCバルセロナ",
+        "順位表",
+        "スペイン"
+      ],
+      "text": "2026-27シーズンのラ・リーガにおいて、開幕から圧倒的な強さを見せ、第7節終了時点（2026年10月上旬）で全勝の勝ち点21を獲得し首位を独走しているクラブはどこでしょうか？",
+      "options": [
+        "FCバルセロナ",
+        "レアル・マドリード",
+        "アトレティコ・マドリード",
+        "セビージャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハンジ・フリック監督率いるFCバルセロナは、開幕から圧倒的な攻撃力を見せつけ7戦全勝で首位に立っています。",
+      "trivia": "バルセロナはこの7試合で計31ゴールを記録しており、1試合平均4ゴール以上という驚異的なペースで得点を重ねています。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "得点王",
+        "アーリング・ハーランド",
+        "マンチェスター・シティ"
+      ],
+      "text": "2026年10月上旬時点でのプレミアリーグ得点ランキングにおいて、5ゴールを挙げてトップに立っているストライカーは誰でしょうか？",
+      "options": [
+        "アーリング・ハーランド",
+        "アレクサンデル・イサク",
+        "ブカヨ・サカ",
+        "ブルーノ・フェルナンデス"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーリング・ハーランドは開幕からの5試合で5ゴールを記録し、得点ランキングの首位に立っています。",
+      "trivia": "ハーランドは10月に行われたUEFAネーションズリーグのポルトガル戦で負傷交代しており、今後のリーグ戦に向けたコンディションが懸念されています。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "ASローマ",
+        "インテル",
+        "順位表"
+      ],
+      "text": "2026-27シーズンのセリエAにおいて、第5節終了時点（2026年10月3日時点）でインテルと同じ勝ち点13を獲得し、首位に並んでいるクラブはどこでしょうか？",
+      "options": [
+        "ASローマ",
+        "ユヴェントス",
+        "ACミラン",
+        "ナポリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "序盤戦のセリエAにおいて、ASローマは好調を維持し、インテルと並ぶ勝ち点13でリーグ首位を分け合っています。",
+      "trivia": "2026-27シーズンのセリエAは非常に混戦模様となっており、セスク・ファブレガス率いる昇格組のコモもリーグを賑わせています。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "ハフィーニャ",
+        "FCバルセロナ",
+        "ハットトリック"
+      ],
+      "text": "2026-27シーズンのラ・リーガにおいて、開幕7試合で2度のハットトリックを含む12ゴールという驚異的なペースで得点を量産し、得点ランキングのトップを走っているバルセロナの選手は誰でしょうか？",
+      "options": [
+        "ハフィーニャ",
+        "ラミン・ヤマル",
+        "フェラン・トーレス",
+        "ペドリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブラジル代表のハフィーニャは中央のポジションで新境地を開拓し、開幕7試合で12ゴールと爆発的な活躍を見せています。",
+      "trivia": "9月20日のセビージャ戦でハットトリックを達成したハフィーニャは、ラ・リーガにおいてバルセロナの選手として久しぶりの「完璧なハットトリック」を記録しました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・シティ",
+        "監督就任",
+        "エンツォ・マレスカ"
+      ],
+      "text": "2026-27シーズンのプレミアリーグで開幕5連勝を達成し首位に立つマンチェスター・シティですが、2026年夏に同クラブの新監督に就任した指揮官は誰でしょうか？",
+      "options": [
+        "エンツォ・マレスカ",
+        "アンドニ・イラオラ",
+        "ミケル・アルテタ",
+        "シャビ・アロンソ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ペップ・グアルディオラの後任として2026年6月に就任したエンツォ・マレスカ監督は、見事にチームを牽引し開幕5連勝の好スタートを切りました。",
+      "trivia": "同時期にリヴァプールでもアーネ・スロットの後任としてアンドニ・イラオラが新監督に就任しており、プレミアリーグの上位クラブで大きな体制変化が起きた夏となりました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "上田綺世",
+        "親善試合"
+      ],
+      "text": "2026年9月28日に行われた日本代表対ベネズエラ戦で、2ゴールを挙げてチームを逆転勝利に導いたストライカーは誰でしょう？",
+      "options": [
+        "上田綺世",
+        "小川航基",
+        "前田大然",
+        "浅野拓磨"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本はベネズエラを相手に先制を許しましたが、上田綺世が伊東純也のクロスに合わせて同点弾を決め、後半アディショナルタイムにPKを沈めて2-1で勝利しました。",
+      "trivia": "上田綺世はこの試合、同点ゴールではジャンピングボレーを見せ、ファンから「ハーランドのようだ」と称賛を浴びました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-09-28",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "鈴木彩艶",
+        "PK戦"
+      ],
+      "text": "2026年10月1日に行われたキリンカップのエクアドル戦で、0-0で迎えたPK戦にて見事なセーブを見せ、勝利の立役者となった日本代表GKは誰でしょう？",
+      "options": [
+        "鈴木彩艶",
+        "大迫敬介",
+        "谷晃生",
+        "前川黛也"
+      ],
+      "answerIndex": 0,
+      "explanation": "90分を戦い0-0で引き分けとなったエクアドル戦ですが、PK戦で鈴木彩艶が相手のキックを1本止める活躍を見せ、日本が5-4で勝利を収めました。",
+      "trivia": "鈴木彩艶は試合後のインタビューで「このスタジアムを味方につけたというか、皆さんが後押ししてくれた」とファンへ感謝を述べました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-01",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "遠藤航",
+        "リヴァプール",
+        "プレミアリーグ"
+      ],
+      "text": "2026年9月、リヴァプールに所属する遠藤航は厳しい立場に置かれています。彼が現在置かれている状況として報じられているものはどれでしょう？",
+      "options": [
+        "公式戦での出番がなくCLの登録メンバー外となった",
+        "レギュラーとして全試合にスタメン出場している",
+        "プレシーズンで大怪我を負い長期離脱している",
+        "開幕直後に別のプレミアリーグのクラブへ移籍した"
+      ],
+      "answerIndex": 0,
+      "explanation": "契約最終年を迎えた遠藤航ですが、今季から就任したイラオラ新監督のもとで出場機会を得られておらず、チャンピオンズリーグ（CL）の登録メンバーからも外れる苦境が続いています。",
+      "trivia": "遠藤航は日本代表ではキャプテンとして変わらぬリーダーシップを発揮しており、厳しい状況でも「チームのためにやれることは全てやる」姿勢を崩していません。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "ブライトン",
+        "プレミアリーグ"
+      ],
+      "text": "ブライトンに所属する三笘薫は、2026-27シーズンのカンファレンスリーグ（ECL）の登録メンバーから外れました。その主な理由は何と報じられているでしょう？",
+      "options": [
+        "5月に負ったハムストリングの負傷が長引いているため",
+        "チームの戦術に合わず監督から構想外を告げられたため",
+        "スペインのクラブへの移籍交渉が最終段階だったため",
+        "ビザの更新手続きに問題があり英国外へ出られないため"
+      ],
+      "answerIndex": 0,
+      "explanation": "三笘薫は2026年5月の試合で左ハムストリングを負傷して手術を受けました。そのリハビリが長引いており、開幕後も公式戦の欠場が続いているため、ECLの初期登録枠から外れました。",
+      "trivia": "ECLの登録枠はリストAの25名が基本であり、枠外となった選手でもグループフェーズ終了後に再び追加登録される余地は残されています。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "久保建英",
+        "スタメン"
+      ],
+      "text": "2026年10月1日に行われた日本代表対エクアドル戦で、日本は「3-4-2-1」のシステムを採用しました。この試合で右シャドー（攻撃的MF）として先発出場した選手は誰でしょう？",
+      "options": [
+        "久保建英",
+        "堂安律",
+        "南野拓実",
+        "伊東純也"
+      ],
+      "answerIndex": 0,
+      "explanation": "エクアドル戦の先発メンバーでは、2シャドーに久保建英と鈴木唯人が起用されました。久保は右シャドーとして出場し、ドリブルで積極的に仕掛けて攻撃のリズムを作りました。",
+      "trivia": "この試合で久保建英は、南米屈指のサイドバックであるエクアドル代表のエストゥピニャンと激しいマッチアップを繰り広げました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-01",
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "エンバペ",
+        "負傷",
+        "レアル・マドリード",
+        "SNS"
+      ],
+      "text": "2026年10月、負傷によりフランス代表を離脱中のレアル・マドリードFWキリアン・エンバペが、自身のSNSにある動画を投稿して物議を醸しました。ジョゼ・モウリーニョ監督が「プロ意識の欠如」と苦言を呈したことでも話題になったその行動とは何でしょうか？",
+      "options": [
+        "自転車に乗る",
+        "スキーをする",
+        "サーフィンをする",
+        "スケートボードに乗る"
+      ],
+      "answerIndex": 0,
+      "explanation": "エンバペは自転車に乗って自撮りする動画を公開しました。プロ選手は契約でサイクリングが禁止されていることが多く、レアル・マドリードのモウリーニョ監督が直近のインタビューで苦言を呈していたため大きく報じられました。",
+      "trivia": "一般的にプロサッカー選手の契約書には、怪我のリスクが高いスキーやバイクの運転、さらにはバンジージャンプなどを禁止する条項が含まれていることがよくあります。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "三笘薫",
+        "移籍",
+        "ブライトン",
+        "プレミアリーグ"
+      ],
+      "text": "2026年10月、ブライトンとの契約最終年を迎えている日本代表MF三笘薫の移籍に関する噂が報じられました。かつての恩師であるロベルト・デ・ゼルビ監督が率い、獲得に向けた再会を熱望しているとされるプレミアリーグのクラブはどこでしょうか？",
+      "options": [
+        "トッテナム",
+        "チェルシー",
+        "マンチェスター・ユナイテッド",
+        "アストン・ヴィラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "英メディアなどによると、トッテナムを率いるデ・ゼルビ監督が三笘との再会を熱望しており、冬の移籍市場に向けてリヴァプールなどと共に動向を注視していると報じられました。",
+      "trivia": "デ・ゼルビ監督はブライトン時代、三笘のドリブル突破力を高く評価しており、「ミトマは一対一において世界最高の選手の一人だ」と手放しで称賛していました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ファン・ヘッケ",
+        "負傷",
+        "オランダ代表",
+        "トッテナム"
+      ],
+      "text": "2026年10月のネーションズリーグで、オランダ代表DFヤン・ポール・ファン・ヘッケはセルビア戦で足を踏まれて負傷し、代表を離脱しました。2026年夏に彼がブライトンから完全移籍で加入し、主力として活躍しているプレミアリーグのクラブはどこでしょうか？",
+      "options": [
+        "トッテナム",
+        "マンチェスター・ユナイテッド",
+        "リヴァプール",
+        "アーセナル"
+      ],
+      "answerIndex": 0,
+      "explanation": "ファン・ヘッケは2026年夏にブライトンからトッテナムへ移籍し、レギュラーとして定着していました。今回の負傷により、代表ウィーク明けのマンチェスター・ユナイテッド戦の出場が危ぶまれています。",
+      "trivia": "試合中はアドレナリンが出ていたため痛みに気づかずフル出場しましたが、翌日のリカバリートレーニングではボールに触れないほどの激痛に襲われたそうです。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ニコ・ウィリアムズ",
+        "負傷",
+        "スペイン代表",
+        "ネーションズリーグ"
+      ],
+      "text": "2026年10月、スペイン代表FWニコ・ウィリアムズは左太ももの違和感により代表活動からの離脱を余儀なくされました。彼が負傷を抱える直前に出場していたネーションズリーグの対戦相手はどこでしょうか？",
+      "options": [
+        "クロアチア代表",
+        "セルビア代表",
+        "ドイツ代表",
+        "オランダ代表"
+      ],
+      "answerIndex": 0,
+      "explanation": "ニコ・ウィリアムズはネーションズリーグのクロアチア戦に出場した直後に問題を抱えていることが発覚し、メディカルチェックの結果その後の試合を欠場することが決まりました。",
+      "trivia": "2026年ワールドカップを制覇したスペイン代表ですが、今回の代表ウィークではエリック・ガルシアやアレハンドロ・グリマルドなど複数人の負傷離脱者を出しています。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アサネ・ディアオ",
+        "コモ",
+        "セリエA",
+        "契約延長"
+      ],
+      "text": "2026年10月、セリエAのコモは欧州強豪クラブからの関心を避けるため、ある21歳のウインガーに対し2031年までの新契約を準備していると報じられました。セスク・ファブレガス監督の下で活躍しているこの選手は誰でしょうか？",
+      "options": [
+        "アサネ・ディアオ",
+        "ニコ・パス",
+        "ガブリエル・ストレフェッツァ",
+        "パトリック・クトローネ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アサネ・ディアオはコモで右サイドの主力として台頭し、チャンピオンズリーグのRBライプツィヒ戦でも得点するなど、急速に戦術的成熟を見せています。",
+      "trivia": "ディアオは2025年4月に右足の骨折という大怪我を負いましたが、懸命なリハビリを乗り越え、セリエA屈指のドリブラーとして見事な復活を遂げました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "シオン",
+        "スタジアム",
+        "珍事"
+      ],
+      "text": "2026年10月、スイス1部のシオンが新スタジアム「チェルヴィン・コロシアム」の建設計画を発表し、世界中のサッカーファンを驚かせました。スタジアムの外周に設置される予定の、あるアトラクションとは何でしょう？",
+      "options": [
+        "ジェットコースター",
+        "観覧車",
+        "ウォータースライダー",
+        "バンジージャンプ"
+      ],
+      "answerIndex": 0,
+      "explanation": "シオンは総工費約850億円を投じ、多目的スタジアムを2030年に完成させる計画を発表しました。年間200日利用できる施設を目指し、ジェットコースターを外周に走らせるという奇抜な構想が話題を呼びました。",
+      "trivia": "シオンのクリスチャン・コンスタンティン会長は過去にも突飛な発言や行動で知られ、何度もスイスサッカー界を騒がせてきた名物会長として知られています。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ポルトガル代表",
+        "クリスティアーノ・ロナウド",
+        "ネーションズリーグ"
+      ],
+      "text": "2026年9月から10月にかけてのUEFAネーションズリーグ期間中、ポルトガル代表のクリスティアーノ・ロナウドが監督から先発落ちを明言されたことを不服とし、代表チームを離脱する騒動が起きました。この時、ポルトガル代表の指揮を執っていた監督は誰でしょう？",
+      "options": [
+        "ジョルジュ・ジェズス",
+        "ロベルト・マルティネス",
+        "ジョゼ・モウリーニョ",
+        "フェルナンド・サントス"
+      ],
+      "answerIndex": 0,
+      "explanation": "デンマーク合宿中、ジョルジュ・ジェズス監督が次戦に向けた先発落ちを明言した直後に、ロナウドが代表チームから離脱したと2026年10月1日に報じられ、大きな波紋を呼びました。",
+      "trivia": "ジョルジュ・ジェズスはスポルティングやベンフィカなど、ポルトガル国内のライバルクラブを渡り歩いてきた名将として知られています。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "バレンシア",
+        "ラ・リーガ",
+        "監督解任",
+        "ハビエル・アギーレ"
+      ],
+      "text": "今季から19歳の日本代表MF・佐藤龍之介が所属するスペインのバレンシアは、2026-27シーズン序盤の成績不振によりカルロス・コルベラン監督を解任しました。2026年10月に後任として就任した、かつて日本代表を指揮した経験も持つ監督は誰でしょう？",
+      "options": [
+        "ハビエル・アギーレ",
+        "バヒド・ハリルホジッチ",
+        "アルベルト・ザッケローニ",
+        "ヴァレリー・カルピン"
+      ],
+      "answerIndex": 0,
+      "explanation": "バレンシアは開幕5戦未勝利でカルロス・コルベラン監督を解任。後任には、北中米ワールドカップでメキシコ代表をベスト16に導き、2014年から2015年にかけて日本代表の指揮も執ったアギーレ監督が就任しました。",
+      "trivia": "アギーレ新体制の初陣となる10月のラシン戦に向け、現地メディアではフォーメーション変更の可能性が報じられ、一時出番を失っていた佐藤龍之介の起用法にも注目が集まりました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "パルマ",
+        "セリエA",
+        "監督解任",
+        "アルベルト・ジラルディーノ"
+      ],
+      "text": "昨季まで日本代表GK鈴木彩艶が所属していたイタリアのパルマは、2026-27シーズンのセリエA開幕から低調なスタートとなり、カルロス・クエスタ監督を解任しました。2026年10月に新指揮官として招聘された元イタリア代表ストライカーは誰でしょう？",
+      "options": [
+        "アルベルト・ジラルディーノ",
+        "フィリッポ・インザーギ",
+        "ルカ・トーニ",
+        "クリスティアン・ヴィエリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "パルマは鈴木彩艶や主力選手の移籍による戦力低下が響き、開幕4試合で1分け3敗と低迷。前節で初白星を挙げるも体制変更を決断し、ジラルディーノ監督を招聘しました。",
+      "trivia": "ジラルディーノは現役時代にもパルマでプレーしており、2004-05シーズンにはセリエAで23ゴールを挙げる大活躍を見せて大きく飛躍しました。",
+      "referenceDate": "2026-10-05",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-05",
+        "expiryDate": "2026-10-12",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
