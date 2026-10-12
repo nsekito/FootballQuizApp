@@ -1,0 +1,1032 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-10-12T00:27:18Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-10-12",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "フランス代表",
+        "ベルギー代表",
+        "ネーションズリーグ"
+      ],
+      "text": "2026年10月5日に行われたUEFAネーションズリーグで、フランス代表はベルギー代表に4-1で逆転勝利を収めました。この試合がホーム初勝利となった、現在のフランス代表監督は誰でしょう？",
+      "options": [
+        "ジネディーヌ・ジダン",
+        "ディディエ・デシャン",
+        "ティエリ・アンリ",
+        "ローラン・ブラン"
+      ],
+      "answerIndex": 0,
+      "explanation": "フランスはルケバキオに先制されるも、ドゥエ、シェルキ、オリーズ（2得点）のゴールで4-1と逆転勝利。就任したばかりのジダン監督にとって嬉しいホーム初勝利となりました。",
+      "trivia": "途中出場のマイケル・オリーズは、わずかな出場時間で2ゴールを奪う大活躍を見せ、ジダン監督も「驚異的だ」と手放しで絶賛しました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-05",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "イングランド代表",
+        "ハリー・ケイン",
+        "記録達成"
+      ],
+      "text": "2026年10月8日に行われたUEFAネーションズリーグのチェコ戦（3-0でイングランド勝利）で、ハリー・ケインは2ゴールを決めました。この試合で彼が出場数で並んだ、イングランド代表の歴代最多キャップ記録保持者（125キャップ）は誰でしょう？",
+      "options": [
+        "ピーター・シルトン",
+        "ウェイン・ルーニー",
+        "デビッド・ベッカム",
+        "スティーブン・ジェラード"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハリー・ケインはこの試合で代表通算125キャップ目に到達し、伝説的GKであるピーター・シルトンの持つイングランド代表歴代最多出場記録に並びました。",
+      "trivia": "この試合ではトーマス・トゥヘル監督率いるイングランドが圧倒しました。残りの1点は、アーノルドのアシストからアンソニー・ゴードンが決めています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-08",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ポルトガル代表",
+        "ノルウェー代表",
+        "ネーションズリーグ"
+      ],
+      "text": "2026年10月8日のUEFAネーションズリーグ、ポルトガル対ノルウェー戦は2-1でポルトガルが勝利しました。同点のまま迎えた終盤の86分に、ポルトガルを勝利に導く決勝ゴールを決めたストライカーは誰でしょう？",
+      "options": [
+        "ゴンサロ・ハモス",
+        "クリスティアーノ・ロナウド",
+        "ディオゴ・ジョタ",
+        "ジョアン・フェリックス"
+      ],
+      "answerIndex": 0,
+      "explanation": "ポルトガルはノルウェーのアイエルに先制されましたが、ジョアン・カンセロの強烈なシュートで同点に追いつき、最後はゴンサロ・ハモスが決勝点を挙げて逆転勝利を収めました。",
+      "trivia": "この試合、ポルトガルの絶対的エースであるクリスティアーノ・ロナウドはベンチスタートの起用に不満を持ち、キャンプを離脱していたと報じられています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-08",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "スペイン代表",
+        "クロアチア代表",
+        "ネーションズリーグ"
+      ],
+      "text": "2026年10月6日、UEFAネーションズリーグでスペイン代表はクロアチア代表に2-1で逆転勝利しました。この試合で同点弾と決勝弾の2ゴールを挙げ、チームを救ったスペインのMFは誰でしょう？",
+      "options": [
+        "ミケル・メリノ",
+        "ラミン・ヤマル",
+        "ロドリ",
+        "ペドリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "クロアチアのペリシッチに先制を許しましたが、ミケル・メリノが61分と89分に貴重なゴールを決め、スペインが鮮やかな逆転勝利を収めました。",
+      "trivia": "この勝利により、ルイス・デ・ラ・フエンテ監督率いるスペイン代表の無敗記録は「42試合」まで伸び、世界王者としての圧倒的な強さを誇示しています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-06",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ルカ・モドリッチ",
+        "クロアチア代表",
+        "記録達成"
+      ],
+      "text": "2026年10月9日に更新されたUEFAネーションズリーグの「大会最年長得点記録」ですが、クリスティアーノ・ロナウドの記録を抜いて新たに最年長ゴール記録保持者となったクロアチア代表選手は誰でしょう？",
+      "options": [
+        "ルカ・モドリッチ",
+        "イヴァン・ペリシッチ",
+        "アンドレイ・クラマリッチ",
+        "マテオ・コヴァチッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "クロアチア代表のキャプテンであるルカ・モドリッチがゴールを決め、クリスティアーノ・ロナウドが持っていたネーションズリーグの最年長得点記録を更新しました。",
+      "trivia": "モドリッチはこの時点で41歳。所属するレアル・マドリードでも代表でも、年齢を感じさせない最高峰のプレーでサッカーファンを魅了し続けています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-09",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "イタリア代表",
+        "リッカルド・カラフィオーリ",
+        "スタッツ"
+      ],
+      "text": "2026年10月5日に行われたネーションズリーグでトルコ相手に得点を決めたイタリア代表DFで、2026-27シーズン序盤の欧州5大リーグにおいて「DFの得点関与数」でトップクラスの数字を叩き出している選手は誰でしょう？",
+      "options": [
+        "リッカルド・カラフィオーリ",
+        "フェデリコ・ディマルコ",
+        "アレッサンドロ・バストーニ",
+        "ジョヴァンニ・ディ・ロレンツォ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルに所属するカラフィオーリは、プレミアリーグのリーズ戦などでゴールを決めており、イタリア代表戦での得点も含めDFとしては異例の得点関与数を誇っています。",
+      "trivia": "現地メディアの報道によると、彼より得点関与数が多いDFは、ウイングとして起用されているベルギーのマクシム・デ・カイペルのみとのことです。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-05",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "日本代表",
+        "サウジアラビア代表",
+        "W杯アジア予選"
+      ],
+      "text": "2026年10月10日に行われた2026年W杯アジア第3次予選で、日本代表は中東の強豪国と対戦し、スコアレスドロー（0-0）で引き分けました。対戦相手はどこでしょう？",
+      "options": [
+        "サウジアラビア",
+        "イラン",
+        "カタール",
+        "アラブ首長国連邦"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表はサウジアラビア代表と対戦し、互いにチャンスを作ったものの決定打を欠き、0-0の引き分けに終わりました。",
+      "trivia": "同日行われた他のアジア予選の試合では、オーストラリアが中国に2-0で勝利し、韓国はヨルダンと1-1で引き分けています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-10",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "中国代表",
+        "W杯アジア予選",
+        "FIFAランキング"
+      ],
+      "text": "2026年10月10日のW杯アジア予選でオーストラリア代表に0-2で敗れ、同月の最新FIFAランキングで96位まで転落するなど苦戦が続いている国はどこでしょう？",
+      "options": [
+        "中国",
+        "タイ",
+        "ベトナム",
+        "マレーシア"
+      ],
+      "answerIndex": 0,
+      "explanation": "中国代表は10月のアジア予選でオーストラリアに敗れるなど黒星が続いており、FIFAランキングもパレスチナやタイに抜かれて96位まで後退したと報じられました。",
+      "trivia": "中国は2002年の日韓大会を最後にW杯本大会に出場できておらず、今大会の予選でもファンの期待に応えられない厳しい戦いを強いられています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-10",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "スペイン代表",
+        "ラミン・ヤマル",
+        "ネーションズリーグ"
+      ],
+      "text": "2026年10月10日のUEFAネーションズリーグ、スペイン対チェコ（3-1でスペイン勝利）の試合で、前半6分に先制ゴールを決めたスペインの若き至宝は誰でしょう？",
+      "options": [
+        "ラミン・ヤマル",
+        "ペドリ",
+        "ガビ",
+        "ニコ・ウィリアムズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ラミン・ヤマルはチェコ戦で開始わずか6分に見事なゴールを決め、スペイン代表の3-1の快勝に大きく貢献しました。",
+      "trivia": "ヤマルはこの得点により、「3試合連続で試合開始から10分以内にゴールを決めた初の男子選手」という珍しい記録を樹立したと報じられました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-10",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ドイツ代表",
+        "ユルゲン・クロップ",
+        "監督動向"
+      ],
+      "text": "2026年10月5日のUEFAネーションズリーグで、ドイツ代表はギリシャ代表と対戦し0-0の引き分けに終わりました。この試合でドイツ代表を率いていた名将は誰でしょう？",
+      "options": [
+        "ユルゲン・クロップ",
+        "ユリアン・ナーゲルスマン",
+        "ハンジ・フリック",
+        "トーマス・トゥヘル"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月のネーションズリーグにおいて、ドイツ代表は新監督ユルゲン・クロップの指揮の下でギリシャと対戦しましたが、ゴールを奪えずスコアレスドローに終わりました。",
+      "trivia": "長年リヴァプールを指揮して数々のタイトルを獲得したユルゲン・クロップですが、ドイツ代表監督に就任して母国を率いることになり、世界中で大きな話題を呼びました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-05",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "順位表"
+      ],
+      "text": "2026年10月上旬時点のラ・リーガ（2026-27シーズン）において、開幕から無傷の8戦全勝で首位を独走しているクラブはどこ？",
+      "options": [
+        "バルセロナ",
+        "レアル・マドリード",
+        "アトレティコ・マドリード",
+        "ビジャレアル"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナは開幕から8試合で34得点7失点と圧倒的な攻撃力を見せ、全勝で勝ち点24を獲得して首位に立っています。",
+      "trivia": "ライバルのレアル・マドリードも好調ですが、バルセロナの得点力はそれを大きく上回るペースでネットを揺らしています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 8,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "得点ランキング",
+        "マンチェスター・シティ"
+      ],
+      "text": "2026年10月上旬時点のプレミアリーグ（2026-27シーズン）において、6ゴールを挙げて得点ランキングのトップに立っているマンチェスター・シティの選手は誰？",
+      "options": [
+        "アーリング・ハーランド",
+        "モハメド・サラー",
+        "フィル・フォーデン",
+        "オリー・ワトキンス"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーリング・ハーランドは今シーズンも得点を量産し、10月上旬時点で6ゴールを記録して得点ランキングの首位に立っています。",
+      "trivia": "ハーランドはプレミアリーグに加入して以来、常に得点王争いの中心に居続けており、その得点ペースは衰えることを知りません。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 6,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "順位表",
+        "勝ち点"
+      ],
+      "text": "2026年10月上旬時点のセリエA順位表において、勝ち点13で首位に並んでいる3チームに含まれないクラブは次のうちどれ？",
+      "options": [
+        "ACミラン",
+        "ASローマ",
+        "インテル",
+        "ラツィオ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ASローマ、インテル、ラツィオの3チームが4勝1分で勝ち点13を獲得し首位グループを形成していますが、ACミランは勝ち点11でそれを追う展開となっています。",
+      "trivia": "インテルは前年度の王者として連覇を目指し、今シーズンも順調な滑り出しを見せています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ネーションズリーグ",
+        "UEFA",
+        "ポルトガル"
+      ],
+      "text": "現在開催中の「UEFAネーションズリーグ 2026-27」において、2025年の前回大会を制し、ディフェンディングチャンピオンとして臨んでいる国はどこ？",
+      "options": [
+        "ポルトガル",
+        "スペイン",
+        "フランス",
+        "イタリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "ポルトガルは2024-25シーズン（2025年決勝）のネーションズリーグで優勝を果たし、2018-19シーズンに続く2度目のタイトルを獲得しました。",
+      "trivia": "スペインは前回大会こそ逃しましたが、2026年ワールドカップの王者として今大会の優勝候補筆頭に挙げられています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "得点ランキング",
+        "スタッツ"
+      ],
+      "text": "2026年10月上旬時点のセリエA（2026-27シーズン）において、6ゴールを記録し得点ランキングのトップを走っている選手は誰？",
+      "options": [
+        "ドニエル・マレン",
+        "ヨシュア・ザークツィー",
+        "コーディ・ガクポ",
+        "シャビ・シモンズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ドニエル・マレンは序盤戦でゴールを量産し、10月上旬時点で6ゴールを挙げてセリエA得点ランキングの首位に立っています。",
+      "trivia": "昨シーズン（2025-26）のセリエA得点王はインテルのラウタロ・マルティネス（17ゴール）でした。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 5,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "ブライトン",
+        "順位表"
+      ],
+      "text": "2026年10月上旬時点のプレミアリーグ順位表において、無敗をキープするマンチェスター・シティとアーセナルに次いで、勝ち点13で単独3位につけているクラブはどこ？",
+      "options": [
+        "ブライトン",
+        "ブレントフォード",
+        "エヴァートン",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブライトンは序盤戦で4勝1分1敗（得失点差+13）という好成績を収め、勝ち点15で並ぶ上位2チームをピタリと追走する3位につけています。",
+      "trivia": "今季のプレミアリーグは上位陣から下位陣まで勝ち点差が詰まっており、序盤から予測不可能な混戦模様を見せています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 6,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鎌田大地",
+        "クリスタル・パレス",
+        "プレミアリーグ"
+      ],
+      "text": "2026年10月11日に行われたプレミアリーグ第6節で、クリスタル・パレスに所属する鎌田大地がリーグ戦初ゴールを記録しました。この試合の対戦相手はどこだったでしょう？",
+      "options": [
+        "ノッティンガム・フォレスト",
+        "フラム",
+        "ブレントフォード",
+        "ワトフォード"
+      ],
+      "answerIndex": 0,
+      "explanation": "鎌田大地はノッティンガム・フォレスト戦で2シャドーの一角として先発出場し、41分に左足で同点ゴールを決めました。これが彼にとってプレミアリーグ3シーズン目での待望のリーグ戦初ゴールとなりました。",
+      "trivia": "この試合では、同じくクリスタル・パレスに所属する日本代表DFの冨安健洋もともに出場しており、日本人選手の共演が実現しました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-11",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "旗手怜央",
+        "バーンリー",
+        "イングランド"
+      ],
+      "text": "2026年10月10日に行われたイングランド2部第9節のワトフォード戦で、1ゴール1アシストの活躍を見せ、イングランド初ゴールを記録したバーンリー所属の日本人選手は誰でしょう？",
+      "options": [
+        "旗手怜央",
+        "田中碧",
+        "三好康児",
+        "坂元達裕"
+      ],
+      "answerIndex": 0,
+      "explanation": "今夏セルティックからバーンリーに加入した旗手怜央は、ワトフォード戦で13分に先制点をアシストし、25分に正確なコントロールショットでイングランド初ゴールを決めました。",
+      "trivia": "旗手の圧巻のパフォーマンスに対し、現地のSNS上では「やっと時代くるか」「また日本代表で見たい」といった絶賛の声が相次ぎました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-10",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "キリンカップ",
+        "上田綺世"
+      ],
+      "text": "2026年10月5日に国立競技場で行われた「キリンカップサッカー2026」決勝で、日本代表は2-1で勝利し優勝を飾りました。この試合の対戦相手はどの国だったでしょう？",
+      "options": [
+        "ニュージーランド代表",
+        "エクアドル代表",
+        "ウルグアイ代表",
+        "ベネズエラ代表"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は準決勝でエクアドルをPK戦の末に下し、決勝でニュージーランド代表と対戦しました。上田綺世の先制点と堂安律の勝ち越しゴールにより2-1で勝利を収めました。",
+      "trivia": "この試合では、女優の福原遥さんとの結婚を発表したばかりの久保建英がスタメン出場し、スタジアムから一際大きな歓声を集めました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-05",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "高井幸大",
+        "谷口彰悟",
+        "シント＝トロイデン"
+      ],
+      "text": "2026年10月11日に行われたベルギー1部第8節のメヘレン戦で、シント＝トロイデンに所属する2人の日本人選手が不運にもオウンゴールを記録してしまいました。高井幸大ともう一人は誰でしょう？",
+      "options": [
+        "谷口彰悟",
+        "畑大雅",
+        "荒木遼太郎",
+        "石渡ネルソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "この試合では、トッテナムから期限付き移籍中で初先発を飾った高井幸大が前半24分に、キャプテンマークを巻いた谷口彰悟が39分にそれぞれオウンゴールを献上してしまいました。",
+      "trivia": "このメヘレン戦では、シント＝トロイデンに所属する日本人選手8名全員（小久保、畑、高井、谷口、荒木、松澤、石渡、新川）がピッチに立つという珍しい記録が生まれました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-11",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鎌田大地",
+        "クリスタル・パレス",
+        "リーグカップ"
+      ],
+      "text": "クリスタル・パレスに所属する鎌田大地は、2026年9月のクラブ月間最優秀ゴール賞を受賞しました。この「鮮やかなループシュート」を決めた試合の大会名と対戦相手はどれでしょう？",
+      "options": [
+        "リーグカップのミドルスブラ戦",
+        "プレミアリーグのブライトン戦",
+        "FAカップのワトフォード戦",
+        "プレミアリーグのアーセナル戦"
+      ],
+      "answerIndex": 0,
+      "explanation": "鎌田大地はピエール・サージュ監督の下でシャドーのポジションに定着しており、リーグ杯（カラバオカップ）のミドルスブラ戦で決めた美しいループシュートが9月のクラブ月間最優秀ゴールに選ばれました。",
+      "trivia": "鎌田はフランクフルト時代にもヨーロッパリーグなどで印象的なゴールを数多く決めており、国内外のカップ戦などの大舞台での得点力に定評があります。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "引退",
+        "スペイン代表",
+        "ラ・リーガ",
+        "プレミアリーグ"
+      ],
+      "text": "2026年10月に39歳で現役引退を発表した、バルセロナやチェルシー、そしてスペイン代表などで数々のタイトルを獲得した名手は誰でしょう？",
+      "options": [
+        "ペドロ・ロドリゲス",
+        "セルヒオ・ブスケツ",
+        "ヘスス・ナバス",
+        "ダビド・シルバ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2010年W杯や2012年EUROの優勝メンバーであり、クラブでも黄金期を支えたペドロが、自身のInstagramを通じて現役引退を表明しました。",
+      "trivia": "ペドロは史上初めて、チャンピオンズリーグ、ヨーロッパリーグ、ワールドカップ、EURO、プレミアリーグ、クラブワールドカップのすべてを制覇した選手の一人として知られています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "契約延長",
+        "チェルシー",
+        "イングランド代表"
+      ],
+      "text": "2026年10月、チェルシーの中心選手として活躍するイングランド代表MFコール・パーマーが、新たに何年までの長期契約延長を結んだでしょう？",
+      "options": [
+        "2034年",
+        "2030年",
+        "2032年",
+        "2035年"
+      ],
+      "answerIndex": 0,
+      "explanation": "2023年にマンチェスター・シティから加入して以降目覚ましい活躍を見せるパーマーは、クラブとの現行契約をさらに1年延長し、異例の2034年までの超長期契約にサインしました。",
+      "trivia": "チェルシーは近年、移籍金の減価償却期間を長くして財務規則（FFP）の制限をクリアするため、若手選手と7〜8年以上の超長期契約を結ぶ手法を多用しています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アーセナル",
+        "記録達成",
+        "プレミアリーグ",
+        "ギネス記録"
+      ],
+      "text": "2026年10月に「プレミアリーグ史上最年少得点（16歳73日）」など3つのギネス世界記録に認定された、アーセナル所属の逸材は誰でしょう？",
+      "options": [
+        "マックス・ダウマン",
+        "イーサン・ヌワネリ",
+        "マイキー・ムーア",
+        "チド・オビ・マルティン"
+      ],
+      "answerIndex": 0,
+      "explanation": "昨季アーセナルでトップチームデビューを果たしたダウマンは、15歳308日でのCL史上最年少出場、プレミアリーグ史上最年少得点と最年少優勝の3つの世界記録を打ち立て、ギネス公式認定証を授与されました。",
+      "trivia": "17歳になる前に3つのギネス世界記録を樹立するという快挙は極めて稀で、ギネスの公式編集主任も「彼の活躍を見れば今の若い世代への期待の大きさがよく分かる」と絶賛しました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "レアル・マドリード",
+        "VAR",
+        "退場",
+        "ラ・リーガ"
+      ],
+      "text": "2026年10月に行われたラ・リーガのビジャレアル戦で、ゴールを決めた直後にVARが介入し、「相手選手の髪を引っ張った」として一発退場となった選手は誰でしょう？",
+      "options": [
+        "ヴィニシウス・ジュニオール",
+        "ラフィーニャ",
+        "ジュード・ベリンガム",
+        "フェデリコ・バルベルデ"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリードのヴィニシウスは、ゴール前に駆け上がる過程で相手選手の髪を引っ張っていたことがVARで判明し、暴力行為としてゴールが取り消された上に一発退場となりました。",
+      "trivia": "このレッドカードによりヴィニシウスは複数試合の出場停止が濃厚となり、月末に控える宿敵バルセロナとの「エル・クラシコ」を欠場する可能性が高まっています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "契約延長",
+        "レアル・マドリード",
+        "市場価値"
+      ],
+      "text": "2026年10月にレアル・マドリードと2031年までの契約延長に合意したと報じられたトルコ代表MFアルダ・ギュレルですが、この報道後に移籍情報サイト「Transfermarkt」で更新された彼の市場価値はいくらになったでしょう？",
+      "options": [
+        "1億ユーロ",
+        "8000万ユーロ",
+        "1億2000万ユーロ",
+        "1億5000万ユーロ"
+      ],
+      "answerIndex": 0,
+      "explanation": "21歳へと成長したギュレルはクラブと2年間の契約延長に合意し、その将来性とチームでの重要性が評価されたことで、市場価値が9000万ユーロから大台の1億ユーロへと更新されました。",
+      "trivia": "ギュレルに対してはジョゼ・モウリーニョ監督も「ビジョン、状況判断、ゲームメイク能力など、彼がチームにもたらすクオリティは信じられないレベルだ」とその才能を大絶賛しています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "チャンピオンズリーグ",
+        "Lemino",
+        "ライブ配信"
+      ],
+      "text": "2026年10月9日、欧州最高峰の戦い「UEFAチャンピオンズリーグ（2026-27シーズン）」を、10月14日のMatchday2から決勝まで全試合ライブ配信することが発表された映像配信サービスはどれでしょう？",
+      "options": [
+        "Lemino",
+        "DAZN",
+        "ABEMA",
+        "U-NEXT"
+      ],
+      "answerIndex": 0,
+      "explanation": "株式会社WOWOW Leminoが運営する映像配信サービス「Lemino」にて、2026-27シーズンのUEFAチャンピオンズリーグ全試合がライブ配信されることが発表されました。",
+      "trivia": "今季のチャンピオンズリーグには上田綺世や鈴木彩艶をはじめとする日本人選手6名が参戦しており、欧州の頂点を目指す彼らの戦いに日本からも熱い視線が注がれています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "アルゼンチン代表",
+        "リオネル・メッシ",
+        "引退試合"
+      ],
+      "text": "2026年10月6日、ブエノスアイレスで行われた親善試合で、アルゼンチン代表のリオネル・メッシが代表引退試合を行いました。この試合の対戦相手となった国はどこでしょう？",
+      "options": [
+        "ベナン",
+        "ボリビア",
+        "コロンビア",
+        "ナイジェリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "メッシは2026年のワールドカップ終了後に代表引退を決意。10月6日にエスタディオ・モヌメンタルで行われたベナン戦が、彼のアルゼンチン代表としての最後の試合となりました。",
+      "trivia": "メッシは代表引退を表明した際、「出し切った。もう出せるものはない」という手紙を公開。代表通算207試合に出場し、125得点という驚異的な記録を残して水色と白のユニフォームを脱ぎました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-06",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ペドロ",
+        "スペイン代表",
+        "引退"
+      ],
+      "text": "2026年10月9日、スペイン代表として2010年W杯と2012年EUROを制したペドロ・ロドリゲスが現役引退会見を行いました。「心も体も100%ではなかった」と語った彼ですが、現役最後に所属していたクラブはどこでしょう？",
+      "options": [
+        "ラツィオ",
+        "ASローマ",
+        "コモ",
+        "フィオレンティーナ"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナやチェルシーで活躍したペドロは、イタリアのラツィオを最後に39歳で現役を引退しました。引退会見は古巣であるカンプ・ノウで行われました。",
+      "trivia": "ペドロはキャリア通算で計25個ものタイトルを獲得。ペップ・グアルディオラ監督のことを「父であり師」と慕い、バルセロナの黄金期を支えた名脇役として愛されました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "エールディビジ",
+        "VAR",
+        "誤審"
+      ],
+      "text": "2026年10月、オランダサッカー協会がエールディビジでのある試合におけるVARの誤りを認める声明を出しました。フェイエノールト戦で主審がPKを宣告したにもかかわらず、VARの不適切な介入で取り消されたという事象ですが、この試合の対戦相手はどのクラブでしょう？",
+      "options": [
+        "AZアルクマール",
+        "アヤックス",
+        "PSVアイントホーフェン",
+        "トゥウェンテ"
+      ],
+      "answerIndex": 0,
+      "explanation": "フェイエノールト対AZの試合で、ダニー・マッケリー主審が当初与えたPKがVARの介入により取り消されましたが、後日VARセンターが「当初の主審の判定が正しかった」と映像確認を促したミスを認めました。",
+      "trivia": "VARの運用ルールは常にアップデートされており、国際サッカー評議会（IFAB）も審判の負担軽減と判定スピード向上のため、様々な技術的サポートの導入を検証し続けています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

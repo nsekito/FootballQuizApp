@@ -1,0 +1,1036 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-10-12T00:21:43Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-10-12",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "キリンカップ",
+        "SAMURAI BLUE"
+      ],
+      "text": "2026年10月5日に行われたキリンカップサッカー2026決勝で、日本代表が2-1で下して優勝を飾った対戦相手はどこでしょう？",
+      "options": [
+        "ニュージーランド",
+        "エクアドル",
+        "パナマ",
+        "ウルグアイ"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本は前半に上田綺世のゴールで先制し、一度は同点に追いつかれたものの、後半に堂安律が勝ち越しゴールを挙げてニュージーランドを2-1で下しました。",
+      "trivia": "日本代表がキリンカップサッカーで優勝するのは、2011年大会以来なんと15年ぶりの快挙でした。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-05",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "堂安律",
+        "ゴール"
+      ],
+      "text": "2026年10月5日のキリンカップサッカー2026決勝・ニュージーランド戦で、後半に日本の勝ち越しゴールを決めた選手は誰でしょう？",
+      "options": [
+        "堂安律",
+        "上田綺世",
+        "中村敬斗",
+        "久保建英"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1で迎えた後半26分（71分）、途中出場した中村敬斗からのクロスに堂安律が合わせて見事な決勝点を奪いました。",
+      "trivia": "堂安律はこの試合でキャプテンマークを巻き、右サイドだけでなく中央（2列目）でもプレーして結果を残すなど、チームを力強く牽引しました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-05",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "柏レイソル",
+        "ヴィッセル神戸"
+      ],
+      "text": "2026年10月9日のJ1第9節で、ヴィッセル神戸との激しい首位攻防戦を4-2で制し、暫定首位に浮上したクラブはどこでしょう？",
+      "options": [
+        "柏レイソル",
+        "鹿島アントラーズ",
+        "FC町田ゼルビア",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合前の時点で2位の柏レイソルと首位のヴィッセル神戸が激突。柏が藤尾翔太のゴールなどで4得点を奪い快勝し、リーグ3連勝で首位に浮上しました。",
+      "trivia": "この試合で柏レイソルは2名もの選手がアクシデントにより負傷交代する苦しい展開でしたが、交代選手たちが躍動して見事な総力戦での勝利を収めました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-09",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC東京",
+        "浦和レッズ"
+      ],
+      "text": "2026年10月10日に行われたJ1第9節の「FC東京 vs 浦和レッズ」の試合結果として正しいものはどれでしょう？",
+      "options": [
+        "3-0でFC東京の勝利",
+        "1-0でFC東京の勝利",
+        "2-1で浦和レッズの勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "味の素スタジアムで行われたこの試合は、ホームのFC東京が浦和レッズを相手に3-0で快勝を収めました。",
+      "trivia": "FC東京はこの勝利により勝ち点を積み上げ、上位争いにしっかり食らいつく安定した戦いぶりを見せています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-10",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J2",
+        "みちのくダービー",
+        "ベガルタ仙台",
+        "モンテディオ山形"
+      ],
+      "text": "2026年10月11日のJ2第10節「みちのくダービー」となったモンテディオ山形 vs ベガルタ仙台の試合結果は？",
+      "options": [
+        "1-0でベガルタ仙台の勝利",
+        "1-0でモンテディオ山形の勝利",
+        "2-1でモンテディオ山形の勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "NDソフトスタジアム山形で行われた白熱のダービーマッチは、アウェイのベガルタ仙台が1-0でモンテディオ山形を下しました。",
+      "trivia": "熱狂的な盛り上がりを見せるみちのくダービーですが、この日はベガルタ仙台が敵地で見事なクリーンシート（無失点）を達成しました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-11",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J2",
+        "湘南ベルマーレ",
+        "アルビレックス新潟"
+      ],
+      "text": "2026年10月11日に行われたJ2第10節の湘南ベルマーレ vs アルビレックス新潟戦で、後半終了間際の89分に値千金の決勝ヘディングシュートを決めた湘南の選手は誰でしょう？",
+      "options": [
+        "奥埜博亮",
+        "鈴木雄斗",
+        "ファビアン・ゴンザレス",
+        "山田寛人"
+      ],
+      "answerIndex": 0,
+      "explanation": "0-0の緊迫した展開が続いた中、後半途中からピッチに入った奥埜博亮が89分に見事なヘディングシュートを叩き込み、湘南が1-0で勝利しました。",
+      "trivia": "奥埜博亮は中盤での献身的なプレーだけでなく、このように重要な局面でゴール前に飛び込んで決める得点感覚にも定評があります。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-11",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "天皇杯",
+        "FC東京",
+        "湘南ベルマーレ"
+      ],
+      "text": "2026年10月7日に行われた第106回天皇杯3回戦で、FC東京に0-4で大敗し敗退となったJ2のクラブはどこでしょう？",
+      "options": [
+        "湘南ベルマーレ",
+        "栃木シティ",
+        "大宮アルディージャ",
+        "テゲバジャーロ宮崎"
+      ],
+      "answerIndex": 0,
+      "explanation": "レモンガススタジアム平塚で開催されたこの試合は、J1のFC東京が攻撃力を爆発させ、湘南ベルマーレを相手に4-0の完勝を収めました。",
+      "trivia": "天皇杯は番狂わせ（ジャイアントキリング）が魅力の大会ですが、この試合ではカテゴリーが上のFC東京がJ1の貫禄を完全に見せつける形となりました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-07",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "天皇杯",
+        "浦和レッズ",
+        "大宮アルディージャ"
+      ],
+      "text": "2026年10月7日に行われた第106回天皇杯3回戦で、浦和レッズが3-2で破った対戦相手はどこでしょう？",
+      "options": [
+        "RB大宮アルディージャ",
+        "ジェフユナイテッド千葉",
+        "鹿児島ユナイテッドFC",
+        "いわきFC"
+      ],
+      "answerIndex": 0,
+      "explanation": "天皇杯での実現となった「さいたまダービー」は、点の取り合いの末に浦和レッズが3-2でRB大宮アルディージャを退け、ラウンド16へ駒を進めました。",
+      "trivia": "レッドブルグループの買収により誕生した「RB大宮アルディージャ」と「浦和レッズ」のさいたまダービーは、今後の両者の対戦をさらに白熱させるきっかけになりそうです。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-07",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "柏レイソル",
+        "アクシデント"
+      ],
+      "text": "2026年10月9日に行われたJ1第9節の「柏レイソル vs ヴィッセル神戸」で、後半に脳震盪の疑いで途中交代となった柏のゴールキーパーは誰でしょう？",
+      "options": [
+        "若原智哉",
+        "松本健太",
+        "守田達弥",
+        "佐々木雅士"
+      ],
+      "answerIndex": 0,
+      "explanation": "激しい首位攻防戦となったこの試合、柏レイソルは後半71分にGK若原智哉が脳震盪により交代するアクシデントに見舞われましたが、代わって入った選手たちが奮闘し勝利しました。",
+      "trivia": "近年サッカー界では選手の安全を守るため、脳震盪が疑われる場合は通常の交代枠とは別に特例で選手交代が認められるルール（脳震盪交代枠）が整備されています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-09",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "名古屋グランパス",
+        "川崎フロンターレ"
+      ],
+      "text": "2026年10月11日に行われたJ1第9節で、Uvanceとどろきスタジアムに乗り込み、川崎フロンターレを2-1で下したアウェイチームはどこでしょう？",
+      "options": [
+        "名古屋グランパス",
+        "セレッソ大阪",
+        "サンフレッチェ広島",
+        "ガンバ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "名古屋グランパスがアウェイで川崎フロンターレから2ゴールを奪い、2-1で見事な勝利を収めました。",
+      "trivia": "名古屋グランパスはこの勝利により、残留争いを抜け出して中位・上位へ進出するための貴重な勝ち点3を積み上げることに成功しました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-11",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "柏レイソル",
+        "ヴィッセル神戸"
+      ],
+      "text": "2026年10月9日に行われた2026/27シーズンのJ1第9節で、首位のヴィッセル神戸を4-2で破り、代わって暫定首位に浮上したクラブはどこでしょう？",
+      "options": [
+        "柏レイソル",
+        "FC町田ゼルビア",
+        "サンフレッチェ広島",
+        "鹿島アントラーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏レイソルはホームでヴィッセル神戸を迎え撃ち、藤尾翔太の先制ゴールなどで4-2と快勝し、暫定首位を奪取しました。",
+      "trivia": "柏レイソルはこの試合を含めて公式戦4連勝と絶好調で、新シーズン（秋春制）序盤のJ1を大きく盛り上げています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-09",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "日本代表",
+        "キリンカップ",
+        "ニュージーランド代表"
+      ],
+      "text": "2026年10月5日に国立競技場で行われた「キリンカップサッカー2026」の決勝で、日本代表が2-1で勝利した対戦相手はどこでしょう？",
+      "options": [
+        "ニュージーランド代表",
+        "エクアドル代表",
+        "ウルグアイ代表",
+        "ベネズエラ代表"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表はキリンカップサッカー2026の決勝でニュージーランド代表と対戦し、2-1で勝利して大会優勝を飾りました。",
+      "trivia": "この試合で日本代表は約2年半ぶりにスタートから4バックシステムを採用し、アジアカップに向けた戦術の幅を広げる試みを行いました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-05",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "FC東京",
+        "長倉幹樹"
+      ],
+      "text": "2026年10月10日のJ1第9節で、FC東京の長倉幹樹が1ゴール2アシストの活躍を見せ3-0の勝利に貢献しました。この日FC東京が下した長倉の古巣クラブはどこでしょう？",
+      "options": [
+        "浦和レッズ",
+        "アルビレックス新潟",
+        "ザスパクサツ群馬",
+        "東京ユナイテッドFC"
+      ],
+      "answerIndex": 0,
+      "explanation": "長倉幹樹はかつて所属した浦和レッズを相手に、自らのゴールと味方への2アシストで全得点に絡む大活躍を見せました。",
+      "trivia": "この試合で長倉はドリブルで中央を割って強烈なシュートを決めており、青赤のエースとしてサポーターの心を掴んでいます。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-10",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "アビスパ福岡",
+        "橋本悠"
+      ],
+      "text": "2026年10月10日のJ1第9節でアビスパ福岡がファジアーノ岡山に2-1で勝利しました。この試合でJ1初得点を記録した福岡の選手は誰でしょう？",
+      "options": [
+        "橋本悠",
+        "紺野和也",
+        "ウェリントン",
+        "前寛之"
+      ],
+      "answerIndex": 0,
+      "explanation": "アビスパ福岡はホームでファジアーノ岡山と対戦し、橋本悠のJ1初得点などで2-1と勝利。チームにとって7試合ぶりの白星となりました。",
+      "trivia": "アビスパ福岡はこの勝利まで降格圏付近に沈んでおり、橋本の記念すべき初ゴールはチームを救う大きな起爆剤となりました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-10",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "柏レイソル",
+        "瀬川祐輔"
+      ],
+      "text": "2026年10月9日のJ1第9節で柏レイソルがヴィッセル神戸を撃破した試合で、途中出場の瀬川祐輔がダメ押しのゴールを挙げました。これは彼にとって今季リーグ戦通算何点目となったでしょう？",
+      "options": [
+        "8点目",
+        "5点目",
+        "10点目",
+        "3点目"
+      ],
+      "answerIndex": 0,
+      "explanation": "瀬川祐輔は神戸戦の後半39分に途中出場から4点目を記録しました。これで今季リーグ戦8得点目となり、絶好調を維持しています。",
+      "trivia": "驚くべきことに、瀬川の今季8ゴールは全て途中出場から挙げたものであり、最強のスーパーサブとして驚異的な決定力を発揮しています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-09",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "サンフレッチェ広島",
+        "得失点差"
+      ],
+      "text": "2026年10月11日時点の2026/27シーズンJ1順位表において、3位につけるサンフレッチェ広島はリーグトップの得失点差を誇っています。第8節終了時点でのその得失点差はいくつでしょう？",
+      "options": [
+        "+14",
+        "+11",
+        "+7",
+        "+16"
+      ],
+      "answerIndex": 0,
+      "explanation": "サンフレッチェ広島は第8節終了時点で20得点6失点と攻守に圧倒的なスタッツを残しており、得失点差+14を記録しています。",
+      "trivia": "新スタジアムである「エディオンピースウイング広島」での熱狂的な応援も後押しとなり、ホームでの破壊的な攻撃力が数字に表れています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "上田綺世",
+        "ゴール",
+        "キリンカップ"
+      ],
+      "text": "2026年10月5日に行われたキリンカップサッカー2026のニュージーランド代表戦で、先制ゴールを決めた日本代表のストライカーは誰？",
+      "options": [
+        "上田綺世",
+        "堂安律",
+        "小川航基",
+        "古橋亨梧"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半28分、右サイドの中野就斗からのクロスを上田綺世が左足で押し込み先制点を奪いました。試合はその後堂安律の勝ち越しゴールが生まれ、2-1で日本が勝利しました。",
+      "trivia": "この試合が行われたキリンカップサッカーは、日本が海外の代表チームを招いて行う歴史ある国際大会です。今回の勝利で日本は15年ぶりに同大会での優勝を果たしました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-05",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "なでしこジャパン",
+        "日本代表",
+        "成宮唯",
+        "追加招集"
+      ],
+      "text": "2026年10月9日、なでしこジャパン（日本女子代表）の欧州遠征において、ケガのため不参加となったFW田中美南に代わり追加招集された選手は誰？",
+      "options": [
+        "成宮唯",
+        "長谷川唯",
+        "長野風花",
+        "宮澤ひなた"
+      ],
+      "answerIndex": 0,
+      "explanation": "JFAは10月9日、FW田中美南がケガのため不参加となり、代わりにMF成宮唯を追加招集することを発表しました。なでしこジャパンはドイツ代表らと対戦する予定です。",
+      "trivia": "成宮唯は豊富な運動量と高い技術を併せ持つミッドフィルダーで、中盤からのチャンスメイクだけでなく自らゴールを狙う姿勢も魅力の選手です。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "FC東京",
+        "森重真人",
+        "J1通算出場",
+        "記録達成"
+      ],
+      "text": "2026年10月上旬の段階で、FC東京に所属する森重真人はJ1通算出場数を518試合に伸ばし、歴代単独何位に浮上した？",
+      "options": [
+        "9位",
+        "3位",
+        "5位",
+        "11位"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年9月の試合に出場したことで、森重真人は伊東輝悦を抜き、J1通算出場試合数で単独9位（518試合）に浮上しました。",
+      "trivia": "J1通算出場記録の上位には、阿部勇樹（590試合）、曽ヶ端準（533試合）、興梠慎三（526試合）、小笠原満男（525試合）などの偉大なレジェンドたちが名を連ねています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "湘南ベルマーレ",
+        "渡邊啓吾",
+        "負傷情報",
+        "Jリーグ"
+      ],
+      "text": "2026年10月5日、湘南ベルマーレが右大腿二頭筋肉離れの負傷を発表したフォワードの選手は誰？",
+      "options": [
+        "渡邊啓吾",
+        "鈴木章斗",
+        "福田翔生",
+        "ルキアン"
+      ],
+      "answerIndex": 0,
+      "explanation": "湘南ベルマーレは10月5日、9月の試合で負傷したFW渡邊啓吾が右大腿二頭筋肉離れ、MF加瀬直輝が右足関節外側靭帯損傷と診断されたことをそれぞれ発表しました。",
+      "trivia": "大腿二頭筋の肉離れ（通称ハムストリングスの肉離れ）は、スプリントを繰り返すサッカー選手にとって非常に多い負傷の一つで、復帰までに数週間から数ヶ月を要することがあります。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "東京ヴェルディ",
+        "高橋恒輝",
+        "特別指定選手",
+        "加入内定"
+      ],
+      "text": "2026年10月9日、東京ヴェルディの「2026/27シーズン JFA・Jリーグ特別指定選手」として認定されたことが発表された、大成高校に所属するゴールキーパーは誰？",
+      "options": [
+        "高橋恒輝",
+        "山本将吾",
+        "舘美駿",
+        "渡辺莉太"
+      ],
+      "answerIndex": 0,
+      "explanation": "10月9日、東京ヴェルディは大成高校に所属するGK高橋恒輝が特別指定選手に認定され、2027年1月からの加入が内定したことを発表しました。",
+      "trivia": "特別指定選手制度は、高校や大学のサッカー部に所属したままJリーグの公式戦に出場できる制度で、多くの才能ある若手選手がこの制度を利用してプロデビューを果たし、成長のきっかけを掴んでいます。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "監督交代",
+        "東京ヴェルディ",
+        "Jリーグ"
+      ],
+      "text": "2026年10月5日、開幕から未勝利が続いていた東京ヴェルディは城福浩監督との契約解除を発表しました。その後、10月8日に新しく監督に就任することが発表されたのは誰でしょう？",
+      "options": [
+        "相馬直樹",
+        "森下仁志",
+        "吉田孝行",
+        "鬼木達"
+      ],
+      "answerIndex": 0,
+      "explanation": "東京ヴェルディは開幕から8戦未勝利と低迷したことを受け、チームをJ1復帰に導いた功労者である城福浩監督との契約解除を2026年10月5日に発表しました。10月8日、後任として相馬直樹氏の就任が発表されました。",
+      "trivia": "相馬直樹監督はこれまでに川崎フロンターレ、FC町田ゼルビア、大宮アルディージャなどで指揮を執り、2025年には鹿児島ユナイテッドFCの監督を務めていました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "環境アクション",
+        "イベント"
+      ],
+      "text": "2026年10月6日より、Jリーグ全60クラブのファン・サポーターが参加し、気候アクションを通じたポイントを競うクラブ対抗のイベントが開始されました。このイベントの名称は何でしょう？",
+      "options": [
+        "サステナカップ2026",
+        "エコアクションカップ2026",
+        "クリーンスタジアム2026",
+        "グリーンピースカップ2026"
+      ],
+      "answerIndex": 0,
+      "explanation": "JリーグとNTTグループが協働し、気候アクションの輪を広げる目的で「TH!NK THE BALL PROJECT presents サステナカップ 2026」が2026年10月6日から開始されました。",
+      "trivia": "参加者は専用アプリを通じてエコバッグの持参やマイボトルの利用などの「サステナクエスト」をクリアすることで、応援するクラブにポイントを還元することができます。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "特別指定選手",
+        "東京ヴェルディ",
+        "JFA"
+      ],
+      "text": "2026年10月9日、日本サッカー協会（JFA）は、大成高校に所属するとある選手を東京ヴェルディの「2026/27シーズン JFA・Jリーグ特別指定選手」に認定したと発表しました。このGKの選手は誰でしょう？",
+      "options": [
+        "高橋恒輝",
+        "前澤拓城",
+        "小野成夢",
+        "尾川丈"
+      ],
+      "answerIndex": 0,
+      "explanation": "大成高校に所属するGKの高橋恒輝選手が、2026年10月7日付で東京ヴェルディの特別指定選手として認定され、10月9日に発表されました。",
+      "trivia": "JFA・Jリーグ特別指定選手制度は、高い能力を持つ高校生や大学生が、所属チームに登録したままJリーグの公式戦に出場できる育成を目的とした制度です。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "月間表彰",
+        "監督賞",
+        "サンフレッチェ広島"
+      ],
+      "text": "2026年10月8日、2026/27シーズンのJリーグ9月度月間表彰が発表されました。J1リーグの「月間監督賞」を受賞したのは誰でしょう？",
+      "options": [
+        "ミヒャエル・スキッベ",
+        "マチェイ・スコルジャ",
+        "黒田剛",
+        "長谷部茂利"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年9月度の「2026/27 明治安田Jリーグ 月間監督賞」（J1）は、サンフレッチェ広島を率いるミヒャエル・スキッベ監督が受賞しました。",
+      "trivia": "スキッベ監督は、母国ドイツの代表アシスタントコーチやボルシア・ドルトムントの育成部門などで豊富な指導経験を持ち、日本でも手腕を高く評価されています。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "記録達成",
+        "ジェフユナイテッド千葉",
+        "田口泰士"
+      ],
+      "text": "2026年10月11日、ジェフユナイテッド千葉は3選手のJリーグ通算出場記録達成を記念した特別プリント入りユニフォームの受注販売を開始しました。対象となった選手のうち、Jリーグ通算400試合出場という大台を達成したのは誰でしょう？",
+      "options": [
+        "田口泰士",
+        "小林祐介",
+        "田中和樹",
+        "鈴木大輔"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジェフユナイテッド千葉では、田口泰士選手がJリーグ通算400試合出場、小林祐介選手が200試合、田中和樹選手が100試合をそれぞれ達成したことを記念し、2026年10月11日より特別なユニフォームの販売を行いました。",
+      "trivia": "田口泰士選手は名古屋グランパスやジュビロ磐田でも主力としてプレーし、日本代表への選出経験も持つ経験豊富なミッドフィルダーです。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "キリンカップ",
+        "ニュージーランド代表"
+      ],
+      "text": "2026年10月5日に国立競技場で行われたキリンカップサッカー2026の決勝で、日本代表が2-1で勝利した対戦相手はどの国でしょう？",
+      "options": [
+        "ニュージーランド代表",
+        "エクアドル代表",
+        "パナマ代表",
+        "オーストラリア代表"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は10月5日に行われたキリンカップサッカー2026の決勝でニュージーランド代表と対戦し、上田綺世と堂安律のゴールによって2-1で勝利を収めました。",
+      "trivia": "日本は10月1日の第1節でエクアドル代表と対戦してPK戦の末に勝利し、決勝に駒を進めていました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-05",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "天皇杯",
+        "浦和レッズ",
+        "RB大宮アルディージャ",
+        "さいたまダービー"
+      ],
+      "text": "2026年10月7日に行われた天皇杯3回戦で、浦和レッズとRB大宮アルディージャによる「さいたまダービー」が実現しました。この試合の結果として正しいものはどれでしょう？",
+      "options": [
+        "3-2で浦和レッズが勝利",
+        "2-1でRB大宮アルディージャが勝利",
+        "0-0(PK4-3)で浦和レッズが勝利",
+        "3-1でRB大宮アルディージャが勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "10月7日に行われた天皇杯 JFA 第106回全日本サッカー選手権大会の3回戦でさいたまダービーが実現し、激闘の末に3-2でJ1の浦和レッズが勝利しました。",
+      "trivia": "大宮アルディージャは2024年にレッドブル・グループに買収され、チーム名に「RB」が冠される新体制へと移行しました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-07",
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "ダイナミックプライシング",
+        "チケット"
+      ],
+      "text": "2026/27シーズンからJ1リーグの全クラブでチケット販売に全面導入され、人気カードの価格高騰などがSNS上で賛否両論の話題を呼んでいる仕組みは何でしょう？",
+      "options": [
+        "ダイナミックプライシング",
+        "定額制サブスクリプション",
+        "完全抽選制",
+        "ブロックチェーンチケット"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026/27シーズンのJ1リーグではチケット購入において「ダイナミックプライシング（価格変動制）」が全面導入され、需要と供給に応じた価格変動がサポーターの間で大きな話題となっています。",
+      "trivia": "好カードの価格が上がる一方で、平日ナイターや雨天が予想される試合では格安でチケットが手に入るというメリットも存在します。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J1リーグ",
+        "秋春制",
+        "柏レイソル"
+      ],
+      "text": "2026/27シーズンから初の「秋春制」へ移行した明治安田J1リーグですが、2026年10月9日時点で第9節の暫定首位に立っているクラブはどこでしょう？",
+      "options": [
+        "柏レイソル",
+        "ヴィッセル神戸",
+        "サンフレッチェ広島",
+        "FC町田ゼルビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月9日時点の順位表において、柏レイソルが9試合を消化して7勝0分2敗の勝ち点21を獲得し、J1リーグの暫定首位に立っています。",
+      "trivia": "Jリーグは2026/27シーズンから欧州の主要リーグと同じカレンダーで進行する「秋春制」を導入し、新たなシーズンサイクルがスタートしました。",
+      "referenceDate": "2026-10-12",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": null,
+        "publishDate": "2026-10-12",
+        "expiryDate": "2026-10-19",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
