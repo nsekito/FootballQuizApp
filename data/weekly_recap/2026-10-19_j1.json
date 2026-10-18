@@ -1,0 +1,1043 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-10-18T22:55:47Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-10-19",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC東京",
+        "東京ヴェルディ",
+        "東京ダービー"
+      ],
+      "text": "2026年10月17日に行われたJ1第10節の「東京ダービー」、東京ヴェルディ対FC東京の試合結果はどうなった？",
+      "options": [
+        "FC東京が4-0で勝利した",
+        "東京ヴェルディが1-0で勝利した",
+        "2-2の引き分けに終わった",
+        "東京ヴェルディが4-0で勝利した"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京がアレクサンダー・ショルツの先制点などを皮切りに4ゴールを奪い、東京ダービーに快勝しました。",
+      "trivia": "FC東京はシュートを1本も打たせず、数的不利に陥った東京ヴェルディを完全に封じ込めました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "サンフレッチェ広島",
+        "京都サンガF.C.",
+        "浅野拓磨"
+      ],
+      "text": "2026年10月17日のJ1第10節で京都サンガF.C.に3-0で勝利し、復帰後初のホームゲームでアシストを記録したサンフレッチェ広島の日本代表FWは誰？",
+      "options": [
+        "浅野拓磨",
+        "大迫勇也",
+        "前田大然",
+        "上田綺世"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半途中から出場した浅野拓磨は、自慢の快足を生かしてボールを奪い、鈴木章斗のゴールをアシストしてチームの勝利に貢献しました。",
+      "trivia": "浅野にとってサンフレッチェ広島での公式戦は、海外移籍前以来となる久々のホームゲームでした。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "ガンバ大阪",
+        "清水エスパルス",
+        "劇的ゴール"
+      ],
+      "text": "2026年10月17日の清水エスパルス対ガンバ大阪の試合で、後半アディショナルタイムに同点ゴールを決め、ガンバ大阪を救った選手は？",
+      "options": [
+        "イッサム・ジェバリ",
+        "ダワン",
+        "ネタ・ラヴィ",
+        "フアン・アラーノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2点ビハインドから追い上げたガンバ大阪は、90+5分にイッサム・ジェバリが劇的な同点ゴールを決めて2-2の引き分けに持ち込みました。",
+      "trivia": "この引き分けにより、ガンバ大阪は連敗を4でストップさせ、貴重な勝ち点1を手にしました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "鹿島アントラーズ",
+        "V・ファーレン長崎",
+        "レオ・セアラ"
+      ],
+      "text": "2026年10月17日のJ1第10節、鹿島アントラーズ対V・ファーレン長崎の試合で、開始2分にPKを決めて今季12得点目をマークしたストライカーは誰？",
+      "options": [
+        "レオ・セアラ",
+        "鈴木優磨",
+        "チャヴリッチ",
+        "名古新太郎"
+      ],
+      "answerIndex": 0,
+      "explanation": "レオ・セアラが開始早々にPKを決め、鹿島アントラーズが主導権を握りました。",
+      "trivia": "この試合で鹿島は開始5分までにレオ・セアラとチャヴリッチが2ゴールを奪い、そのまま2-0で逃げ切りました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "東京ヴェルディ",
+        "退場"
+      ],
+      "text": "2026年10月17日の「東京ダービー」で、前半17分に危険なプレーで一発退場となってしまった東京ヴェルディの選手は誰？",
+      "options": [
+        "染野唯月",
+        "見木友哉",
+        "森田晃樹",
+        "山田楓喜"
+      ],
+      "answerIndex": 0,
+      "explanation": "ルーズボールを巡る競り合いで足裏を見せたハイキックが危険なプレーと判定され、染野唯月が一発退場となりました。",
+      "trivia": "数的不利に陥った東京ヴェルディはシュート0本に終わり、開幕10戦未勝利と苦しい状況が続いています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "川崎フロンターレ",
+        "セレッソ大阪"
+      ],
+      "text": "2026年10月17日のJ1第10節、川崎フロンターレがセレッソ大阪を4-2で破った試合で、今季リーグ戦初ゴールを決めた川崎フロンターレの若手MFは誰？",
+      "options": [
+        "大関友翔",
+        "脇坂泰斗",
+        "橘田健人",
+        "瀬古樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "途中出場の大関友翔がダメ押しとなるゴールを決め、激しい打ち合いを制した川崎フロンターレの勝利を決定づけました。",
+      "trivia": "大関友翔は川崎フロンターレU-18出身で、年代別日本代表にも選出されている期待のゲームメーカーです。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "浦和レッズ",
+        "水戸ホーリーホック"
+      ],
+      "text": "2026年10月17日の水戸ホーリーホック対浦和レッズの試合で、後半アディショナルタイムに値千金のJ1初ゴールを決めた浦和の選手は誰？",
+      "options": [
+        "笹修大",
+        "武田英寿",
+        "大畑歩夢",
+        "安居海渡"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブロックを敷く水戸に苦戦した浦和レッズでしたが、後半AT4分に笹修大がJ1初ゴールを挙げて劇的勝利を収めました。",
+      "trivia": "水戸ホーリーホックは開始10分に退場者を出しながらも、最後まで浦和を苦しめる粘り強い守備を見せました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "首位争い",
+        "FC東京",
+        "サンフレッチェ広島"
+      ],
+      "text": "2026年10月17日のJ1第10節終了時点で、首位サンフレッチェ広島と勝ち点23で並んでいる2位のクラブはどこ？",
+      "options": [
+        "FC東京",
+        "柏レイソル",
+        "ヴィッセル神戸",
+        "鹿島アントラーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "東京ダービーに快勝したFC東京が勝ち点を23に伸ばし、得失点差で広島に次ぐ2位につけています。",
+      "trivia": "前節まで首位だった柏レイソルは、名古屋グランパスに1-3で敗れて順位を落としました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC東京",
+        "連勝記録"
+      ],
+      "text": "2026年10月17日に行われた東京ヴェルディ戦の勝利により、FC東京はJ1リーグで何年ぶりの5連勝を達成した？",
+      "options": [
+        "17年ぶり",
+        "10年ぶり",
+        "5年ぶり",
+        "クラブ史上初"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は2009年以来、実に17年ぶりとなるJ1リーグでの5連勝を達成しました。",
+      "trivia": "このダービーマッチではアレクサンダー・ショルツ、マルセロ・ヒアン、長倉幹樹、ダニ・ゴメスと、4人の異なる選手が得点しました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "清水エスパルス",
+        "初ゴール"
+      ],
+      "text": "2026年10月17日の清水エスパルス対ガンバ大阪の試合で、前半9分にコーナーキックから加入後初ゴールをヘディングで決めた清水の選手は誰？",
+      "options": [
+        "本多勇喜",
+        "松崎快",
+        "高橋祐治",
+        "原輝綺"
+      ],
+      "answerIndex": 0,
+      "explanation": "本多勇喜が打点の高いヘディングシュートを叩き込み、清水エスパルスに加入後初ゴールとなる先制点をもたらしました。",
+      "trivia": "清水はこの試合に勝利すれば12年ぶりの4連勝でしたが、ラストプレーで追いつかれ惜しくも大記録を逃しました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "サンフレッチェ広島",
+        "順位表",
+        "首位浮上"
+      ],
+      "text": "2026年10月17日のJ1第10節で勝利し、4連勝を飾って首位に浮上したクラブはどこ？",
+      "options": [
+        "サンフレッチェ広島",
+        "FC町田ゼルビア",
+        "ヴィッセル神戸",
+        "柏レイソル"
+      ],
+      "answerIndex": 0,
+      "explanation": "10月17日に行われたJ1第10節でサンフレッチェ広島が勝利を収め、4連勝で首位に浮上しました。",
+      "trivia": "2026/27シーズンからJリーグは秋春制に移行しており、10月は序盤の首位争いが白熱する時期となっています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "RB大宮アルディージャ",
+        "順位表"
+      ],
+      "text": "2026年10月17日のJ2第11節でサガン鳥栖に敗れ今季初黒星を喫したものの、リーグ2位をキープしているクラブは？",
+      "options": [
+        "RB大宮アルディージャ",
+        "ベガルタ仙台",
+        "横浜FC",
+        "カターレ富山"
+      ],
+      "answerIndex": 0,
+      "explanation": "RB大宮アルディージャはサガン鳥栖に1-2で敗れて今季初黒星となりましたが、同節終了時点で勝ち点20の2位を維持しています。",
+      "trivia": "大宮はレッドブル・グループの経営参画に伴い、クラブ名が「RB大宮アルディージャ」へと変更されました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "FC東京",
+        "連勝記録"
+      ],
+      "text": "2026年10月のJ1第10節終了時点で、首位の広島と勝ち点20で並んでいる、17年ぶりとなる「破竹の5連勝」を達成したクラブは？",
+      "options": [
+        "FC東京",
+        "鹿島アントラーズ",
+        "セレッソ大阪",
+        "ファジアーノ岡山"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は第10節で勝利して5連勝を達成し、首位のサンフレッチェ広島と勝ち点で並びました。",
+      "trivia": "FC東京がリーグ戦で5連勝を記録するのは、実に17年ぶりの快挙です。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "ベガルタ仙台",
+        "無敗記録"
+      ],
+      "text": "J2リーグで首位を走るベガルタ仙台は、2026年10月17日の第11節（徳島戦）を引き分けた時点で、開幕節の敗戦以降「何試合連続無敗」を記録した？",
+      "options": [
+        "10試合",
+        "8試合",
+        "12試合",
+        "15試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "ベガルタ仙台は徳島ヴォルティスと0-0で引き分け、開幕戦での黒星以降、10試合連続無敗（7勝3分）を記録しています。",
+      "trivia": "仙台は手堅い守備が光っており、この10戦無敗の期間中も複数の試合でクリーンシート（無失点）を達成しています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "アルビレックス新潟",
+        "得失点差"
+      ],
+      "text": "2026年10月17日のJ2第11節で大分トリニータに1-5で大敗したアルビレックス新潟ですが、同節終了時点でリーグ3位につけています。この時点での新潟の「得失点差」はいくつ？",
+      "options": [
+        "-4",
+        "-1",
+        "+2",
+        "+5"
+      ],
+      "answerIndex": 0,
+      "explanation": "アルビレックス新潟は大分に大敗を喫したことで失点がかさみ、勝ち点20で3位ながら得点15・失点19で得失点差が「-4」という珍しいスタッツになっています。",
+      "trivia": "リーグ上位に位置しながら得失点差がマイナスになるケースは珍しく、接戦での勝利と大差での敗北が組み合わさった結果です。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "FC今治",
+        "ハットトリック",
+        "エジガル・ジュニオ"
+      ],
+      "text": "2026年10月17日に行われたJ2第11節のヴァンラーレ八戸戦（3-3）で、ハットトリックを達成したFC今治の選手は誰？",
+      "options": [
+        "エジガル・ジュニオ",
+        "ウェリントン",
+        "ルキアン",
+        "チアゴ・アウベス"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC今治のエジガル・ジュニオは、ヴァンラーレ八戸との激しい打ち合いとなった試合で3ゴールを挙げ、ハットトリックを達成しました。",
+      "trivia": "エジガル・ジュニオは過去に横浜F・マリノスやV・ファーレン長崎でもプレーし、高い決定力で日本のファンにおなじみのストライカーです。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "川崎フロンターレ",
+        "大関友翔",
+        "J1"
+      ],
+      "text": "10月17日に行われたJ1第10節のセレッソ大阪戦で、川崎フロンターレの21歳、大関友翔が今季リーグ戦初ゴールを決めました。この試合の最終スコアは次のうちどれでしょう？",
+      "options": [
+        "川崎が4-2で勝利",
+        "川崎が3-1で勝利",
+        "2-2の引き分け",
+        "セレッソが4-2で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "試合は川崎フロンターレが4-2で勝利を収めました。大関友翔は途中出場からダメ押しとなる4点目を決めて勝利に貢献しています。",
+      "trivia": "ゴールシーンでは、現役引退を表明している小林悠が相手をブロックしてコースを空けました。試合後に大関が「パスを出さなくてすみません」と小林に謝罪したという微笑ましいエピソードがあります。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "V・ファーレン長崎",
+        "加入内定",
+        "高校サッカー"
+      ],
+      "text": "10月15日、V・ファーレン長崎は鹿島学園高校のGKプムラピー・スリブンヤコ選手の来季（2027年1月）加入内定を発表しました。彼の出身国はどこでしょう？",
+      "options": [
+        "タイ",
+        "ベトナム",
+        "インドネシア",
+        "マレーシア"
+      ],
+      "answerIndex": 0,
+      "explanation": "プムラピー・スリブンヤコ選手はタイ出身のGKです。日本の高校サッカー（鹿島学園）で実力を磨き、Jクラブからのプロ入りを勝ち取りました。",
+      "trivia": "Jリーグでは近年、東南アジア出身選手の活躍が目立っています。彼もV・長崎の将来の守護神候補として大きな期待を集めています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "RB大宮アルディージャ",
+        "メンディー・サイモン友",
+        "加入内定"
+      ],
+      "text": "10月16日、RB大宮アルディージャは流通経済大柏高校のDFメンディー・サイモン友らの来季加入内定を発表しました。メンディー・サイモン友は世代別日本代表として2023年のどの大会に出場したでしょう？",
+      "options": [
+        "FIFA U-17ワールドカップ",
+        "FIFA U-20ワールドカップ",
+        "AFC U-17アジアカップ",
+        "モーリスレベロトーナメント"
+      ],
+      "answerIndex": 0,
+      "explanation": "メンディー・サイモン友選手は世代別日本代表として、2023年のFIFA U-17ワールドカップに出場し活躍しました。大宮は同校のMF古川蒼真の加入内定も同時に発表しています。",
+      "trivia": "彼はJ1クラブや欧州クラブからも関心が寄せられていましたが、大宮が12カ月以上かけて獲得に向けて動き、見事加入の決断を引き出しました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "サガン鳥栖",
+        "松本凪生",
+        "負傷"
+      ],
+      "text": "10月16日、サガン鳥栖はトレーニング中に負傷したMF松本凪生の診断結果（全治3カ月）を発表しました。彼が負傷した箇所はどこでしょう？",
+      "options": [
+        "右第5中足骨骨折",
+        "左膝前十字靭帯断裂",
+        "右足関節捻挫",
+        "左ハムストリングス肉離れ"
+      ],
+      "answerIndex": 0,
+      "explanation": "松本凪生選手は10月8日のトレーニング中に負傷し、右第5中足骨骨折で全治3カ月の診断を受けたと発表されました。",
+      "trivia": "第5中足骨（足の小指の付け根付近の骨）の骨折は「ジョーンズ骨折」とも呼ばれ、ステップや切り返しが多いサッカー選手に非常に発症しやすいケガの一つです。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "水戸ホーリーホック",
+        "渡邉新太",
+        "負傷",
+        "スタッツ"
+      ],
+      "text": "10月12日、水戸ホーリーホックは主将を務めるFW渡邉新太が左膝内側側副靭帯損傷で離脱することを発表しました。今季ここまで彼が記録していたチームトップのリーグ戦得点数はいくつでしょう？",
+      "options": [
+        "5得点",
+        "7得点",
+        "3得点",
+        "10得点"
+      ],
+      "answerIndex": 0,
+      "explanation": "渡邉新太選手は今季リーグ戦8試合に出場し、チームトップとなる5ゴールを挙げて攻撃を牽引していました。貴重な得点源の離脱はチームにとって大きな痛手となりました。",
+      "trivia": "アルビレックス新潟や大分トリニータなどを経て水戸に加入した彼は、得点力だけでなくキャプテンとして精神的支柱にもなっている重要な選手です。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "サステナカップ2026",
+        "イベント",
+        "ニュース"
+      ],
+      "text": "10月15日、Jリーグはあるファン・サポーター参加型イベントについて、利用システムの運営会社に不正アクセスがあったため開催中断を発表しました。そのイベント名は何でしょうか？",
+      "options": [
+        "サステナカップ2026",
+        "eJリーグ",
+        "Jリーグウォーキングバトル",
+        "Jリーグマスコット総選挙"
+      ],
+      "answerIndex": 0,
+      "explanation": "JリーグとNTTグループが10月6日から開催していた「サステナカップ2026」は、コミュニティプラットフォームの運営会社への不正アクセスにより10月15日に中断が発表されました。",
+      "trivia": "「サステナカップ」は日常生活で気候アクション（エコ活動など）に取り組み、ポイントを獲得して応援クラブの順位を競うイベントです。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "北海道コンサドーレ札幌",
+        "オーラルケア",
+        "クリニック",
+        "事業"
+      ],
+      "text": "10月19日、あるJリーグクラブと企業が協働して立ち上げた、道内初となるクラブ連携のオーラルケアクリニック（歯科医院）が開院します。そのクラブはどこでしょうか？",
+      "options": [
+        "北海道コンサドーレ札幌",
+        "ヴァンラーレ八戸",
+        "ブラウブリッツ秋田",
+        "いわてグルージャ盛岡"
+      ],
+      "answerIndex": 0,
+      "explanation": "10月19日に「コンサドーレオーラルケアクリニック」が開院します。これは株式会社SCOグループと北海道コンサドーレ札幌の協働によるプロジェクトの一環です。",
+      "trivia": "スポーツを通じた健康啓発を目的としており、スポーツとオーラルケアの重要性を発信していくJリーグクラブならではのユニークな取り組みとなっています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ルヴァンカップ",
+        "横浜F・マリノス",
+        "サンフレッチェ広島",
+        "大会運営"
+      ],
+      "text": "10月14日や16日に各クラブから詳細が発表された『2026/27Jリーグ ヤマザキビスケット ルヴァンカップ』の1stラウンド4回戦で、横浜F・マリノスはどのクラブと対戦するでしょうか？",
+      "options": [
+        "サンフレッチェ広島",
+        "浦和レッズ",
+        "川崎フロンターレ",
+        "セレッソ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "10月28日に行われるルヴァンカップ 1stラウンド 4回戦において、横浜F・マリノスはホームのニッパツ三ツ沢球技場でサンフレッチェ広島と対戦することが決まりました。",
+      "trivia": "2026/27シーズンのルヴァンカップは、1stラウンドを勝ち抜いたクラブと、ACLエリートなどに出場する上位クラブがプライムラウンドで激突する方式がとられています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "RB大宮アルディージャ",
+        "特別指定選手",
+        "若手育成",
+        "選手動向"
+      ],
+      "text": "10月16日、流通経済大柏高校のメンディー サイモン友選手と古川蒼真選手の2名が、2026/27シーズンの「JFA・Jリーグ特別指定選手」に認定されたと発表されました。彼らの受け入れ先となったJリーグクラブはどこでしょうか？",
+      "options": [
+        "RB大宮アルディージャ",
+        "柏レイソル",
+        "ジェフユナイテッド千葉",
+        "FC東京"
+      ],
+      "answerIndex": 0,
+      "explanation": "10月13日付で承認され、16日に発表されました。両選手とも強豪・流通経済大柏高校に所属しており、RB大宮アルディージャが受け入れ先として認定されました。",
+      "trivia": "JFA・Jリーグ特別指定選手制度は、高校や大学のサッカー部に所属したままJリーグの公式戦に出場できる制度で、有望な若手の成長を促す目的があります。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "AC長野パルセイロ",
+        "信州ダービー",
+        "記念グッズ",
+        "MVP"
+      ],
+      "text": "10月18日、信州ダービーである松本山雅FC戦に勝利したAC長野パルセイロは、MVPにあたる「ORANGE HERO」に選出された選手の記念ユニフォーム受注販売を発表しました。この試合のORANGE HEROに選出されたのは誰でしょうか？",
+      "options": [
+        "山中麗央",
+        "近藤貴司",
+        "進昂平",
+        "吉澤柊"
+      ],
+      "answerIndex": 0,
+      "explanation": "10月18日の松本戦に勝利し、AC長野パルセイロはこの試合で最も輝いた選手として山中麗央（やまなか れお）選手を「ORANGE HERO」に選出し、記念のオーセンティックユニフォームを限定販売しました。",
+      "trivia": "山中麗央選手は長野県千曲市出身で、中学・高校の途中までAC長野パルセイロのアカデミーに所属していた生え抜きの選手です。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J1リーグ",
+        "東京ダービー",
+        "FC東京"
+      ],
+      "text": "2026年10月17日に行われたJ1第10節の「東京ダービー」で、東京ヴェルディ相手に4-0で大勝し、リーグ戦5連勝を飾ったクラブはどこでしょう？",
+      "options": [
+        "FC東京",
+        "町田ゼルビア",
+        "鹿島アントラーズ",
+        "サンフレッチェ広島"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京がアレクサンダー・ショルツの先制点などを皮切りに4ゴールを奪い、東京Vを圧倒しました。東京Vは前半18分に退場者を出したことも響き、開幕10戦未勝利となりました。",
+      "trivia": "FC東京のファンは、長倉幹樹がゴールを決めた日付と分数を記した特別なフラッグを用意しており、今回の東京ダービーでの得点によって「2026.10.17.68'」という新たな記録がフラッグに刻まれました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ",
+        "サステナカップ",
+        "ニュース"
+      ],
+      "text": "2026年10月15日、Jリーグは開催中だった参加型イベント「サステナカップ2026」の開催を中断すると発表しました。その主な理由は何だったでしょう？",
+      "options": [
+        "委託先プラットフォームへの不正アクセス",
+        "記録的な大雨による通信障害",
+        "クイズ問題の出題ミスによる不公平",
+        "システムの想定外のサーバーダウン"
+      ],
+      "answerIndex": 0,
+      "explanation": "本イベントで使用していたコミュニティプラットフォームを運営する企業において、外部からの不正アクセスが発生したため、安全確保と公平性の観点から中断が決定されました。",
+      "trivia": "前年度の「サステナカップ2025」では31,694人が参加し、「サッカーリーグのファン・サポーター主導のサステナビリティ活動に1か月で参加した最多人数」としてギネス世界記録に認定されています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "RB大宮アルディージャ",
+        "J2リーグ",
+        "移籍情報",
+        "若手選手"
+      ],
+      "text": "2026年10月16日、RB大宮アルディージャは欧州クラブからも関心を集めていた流通経済大柏高校の有望株2名の来季加入内定を発表しました。DFメンディー・サイモン友と、もう1人は誰でしょう？",
+      "options": [
+        "古川蒼真",
+        "日隠ナシュ大士",
+        "鈴木海音",
+        "永野修都"
+      ],
+      "answerIndex": 0,
+      "explanation": "流通経済大柏高校で主力として活躍するDFメンディー・サイモン友とMF古川蒼真の2名がRB大宮に内定。両選手ともJFA・Jリーグ特別指定選手にも認定され、将来を有望視されています。",
+      "trivia": "RB大宮のヘッドオブスポーツであるスチュアート・ウェバー氏は「トップレベルのスカウトが12か月以上の時間をかけてプロジェクトを説明した」と語り、J1や欧州クラブとの熾烈な争奪戦を制したことを明かしました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "FC東京",
+        "J1リーグ",
+        "長倉幹樹"
+      ],
+      "text": "2026年10月17日の東京ダービーでもダメ押しのゴールを決め、今季J1リーグ開幕から10試合で「7ゴール3アシスト」と驚異的な活躍を見せているFC東京の背番号26番のエースは誰でしょう？",
+      "options": [
+        "長倉幹樹",
+        "安斎颯馬",
+        "俵積田晃太",
+        "荒木遼太郎"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズやアルビレックス新潟などを経てFC東京に加入した長倉幹樹は、前線で絶対的な柱として君臨し、チームのリーグ戦5連勝に大きく貢献しています。",
+      "trivia": "長倉幹樹はザスパクサツ群馬時代の2022年、年度途中まで在籍した東京ユナイテッドFCでの成績（9試合8得点）のみによって、同年の関東サッカーリーグ1部の得点王に輝いたという異色の経歴を持っています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1061 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-10-18T23:01:42Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-10-19",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "バルセロナ",
+        "レアル・ベティス",
+        "ラ・リーガ",
+        "試合結果"
+      ],
+      "text": "2026年10月17日に行われたラ・リーガ第9節、レアル・ベティス対バルセロナの試合結果として正しいものはどれ？",
+      "options": [
+        "バルセロナが5-2で勝利",
+        "ベティスが2-1で勝利",
+        "2-2の引き分け",
+        "バルセロナが3-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハンジ・フリック監督率いるバルセロナがアウェイで5-2の快勝を収めました。",
+      "trivia": "この勝利でバルセロナは開幕からリーグ戦9連勝を飾り、1968-69シーズンのレアル・マドリードに並ぶクラブ新記録を樹立しました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "マンチェスター・シティ",
+        "イプスウィッチ",
+        "プレミアリーグ",
+        "ハーランド"
+      ],
+      "text": "2026年10月17日のプレミアリーグ、マンチェスター・シティはイプスウィッチに3-2で勝利しました。この試合で2ゴールを挙げた選手は誰？",
+      "options": [
+        "アーリング・ハーランド",
+        "フィル・フォーデン",
+        "ベルナルド・シウバ",
+        "ケヴィン・デ・ブライネ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハーランドは34分と69分にゴールを決め、チームの勝利に大きく貢献しました。",
+      "trivia": "エンツォ・マレスカ監督率いるシティはこれで記録的なスタートを達成しました。フィル・フォーデンも1ゴールを記録しています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チェルシー",
+        "エヴァートン",
+        "プレミアリーグ",
+        "試合結果"
+      ],
+      "text": "2026年10月17日のプレミアリーグ、エヴァートン対チェルシーの試合で、チェルシーの全2ゴールを叩き出した選手は誰？",
+      "options": [
+        "ペドロ・ネト",
+        "コール・パーマー",
+        "ニコラス・ジャクソン",
+        "エンソ・フェルナンデス"
+      ],
+      "answerIndex": 0,
+      "explanation": "チェルシーがアウェイで2-0の勝利を収め、ペドロ・ネトが2得点と大活躍しました。",
+      "trivia": "ペドロ・ネトは後半開始直後の46分と、試合終了間際の90分にそれぞれゴールを決める珍しい記録を残しました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラツィオ",
+        "ユヴェントス",
+        "セリエA",
+        "監督"
+      ],
+      "text": "2026年10月18日のセリエA、ラツィオがユヴェントスに3-0で快勝しました。ラツィオの監督就任から開幕7試合で6勝を挙げ、セリエA史上初の快挙を成し遂げた指揮官は誰？",
+      "options": [
+        "ジェンナーロ・ガットゥーゾ",
+        "マウリツィオ・サッリ",
+        "イゴール・トゥドール",
+        "シモーネ・インザーギ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガットゥーゾ監督は、ラツィオの指揮官として最初の7試合で6勝を記録した史上初の監督となりました。",
+      "trivia": "ラツィオはこの勝利により首位インテルに勝ち点19で並びました。デンマーク代表のプロヴストゴーアとイサクセンがゴールを決めています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ブライトン",
+        "クリスタル・パレス",
+        "プレミアリーグ",
+        "スーパーゴール"
+      ],
+      "text": "2026年10月18日、ブライトンはクリスタル・パレスとのダービーマッチで5-0の大勝を収めました。この試合でハーフウェーライン付近（約51m）から驚愕のロングシュートを決めた選手は誰？",
+      "options": [
+        "ディエゴ・ゴメス",
+        "三笘薫",
+        "ジョアン・ペドロ",
+        "ヤシン・アヤリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ディエゴ・ゴメスが相手GKが前に出ているのを見逃さず、見事なロングシュートを沈めました。",
+      "trivia": "プレミアリーグでの51メートルからのゴールは、2017年11月にウェイン・ルーニーが記録した58メートルのゴール以来の長距離弾となりました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "アーセナル",
+        "ノッティンガム・フォレスト",
+        "プレミアリーグ",
+        "決勝ゴール"
+      ],
+      "text": "2026年10月18日のプレミアリーグ、ノッティンガム・フォレスト対アーセナルは0-1でアーセナルが勝利しました。80分に決勝ゴールを決めたのは誰？",
+      "options": [
+        "ノニ・マドゥエケ",
+        "ブカヨ・サカ",
+        "ガブリエウ・マルティネッリ",
+        "デクラン・ライス"
+      ],
+      "answerIndex": 0,
+      "explanation": "膠着状態が続く中、マドゥエケの終盤のゴールがアーセナルに貴重な勝ち点3をもたらしました。",
+      "trivia": "アーセナルは枠内シュートが少ない苦しい展開でしたが、交代出場のマドゥエケが左サイドからカットインし、ディフレクションを誘うシュートで試合を決めました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ACミラン",
+        "アタランタ",
+        "セリエA",
+        "得点者"
+      ],
+      "text": "2026年10月18日のセリエA、ACミランはアタランタに3-2で勝利しました。ミランは一時3-0とリードを広げましたが、この試合で「ミランの得点者」ではない選手は誰？",
+      "options": [
+        "クリスチャン・プリシッチ",
+        "ゴンサロ・ラモス",
+        "アドリアン・ラビオ",
+        "マリオ・ヒラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "この試合ではゴンサロ・ラモス、アドリアン・ラビオ、マリオ・ヒラがゴールを記録しました。ルベン・アモリム監督率いるミランが無敗を維持しています。",
+      "trivia": "プリシッチは前半13分にネットを揺らしましたが、VARの判定によりオフサイドでゴールは取り消されていました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "アトレティコ・マドリード",
+        "エスパニョール",
+        "ラ・リーガ",
+        "劇的勝利"
+      ],
+      "text": "2026年10月17日のラ・リーガ、エスパニョール対アトレティコ・マドリードの試合で、89分に劇的な決勝ゴールを挙げたのは誰？",
+      "options": [
+        "アレックス・バエナ",
+        "フリアン・アルバレス",
+        "アントワーヌ・グリーズマン",
+        "マルコス・ジョレンテ"
+      ],
+      "answerIndex": 0,
+      "explanation": "0-0で迎えた終盤、フリアン・アルバレスのパスを受けたアレックス・バエナが鮮やかな決勝点を沈めました。",
+      "trivia": "バエナは62分からイ・ガンインに代わって途中出場し、アトレティコに公式戦6連勝をもたらす大仕事をやってのけました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ヴェネツィア",
+        "ナポリ",
+        "セリエA",
+        "番狂わせ"
+      ],
+      "text": "2026年10月17日のセリエA、ヴェネツィアが強豪ナポリを1-0で破る番狂わせを起こしました。この試合でケヴィン・デ・ブライネのPKをストップするなどの活躍を見せたヴェネツィアのGKは誰？",
+      "options": [
+        "フィリップ・スタンコビッチ",
+        "アレックス・メレト",
+        "イェッセ・ヨロネン",
+        "エリア・カプリーレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "フィリップ・スタンコビッチがナポリの猛攻やデ・ブライネのPKを防ぎ切り、クリーンシートでチームを勝利に導きました。",
+      "trivia": "ダヴィデ・ニコラ新監督の初陣となったこの試合で、アコール・アダムスが決勝点を挙げ、スタンコビッチが好セーブを連発して劇的な勝利を飾りました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "デポルティーボ",
+        "レバンテ",
+        "ラ・リーガ",
+        "同点ゴール"
+      ],
+      "text": "2026年10月16日のラ・リーガ、デポルティーボ対レバンテは1-1の引き分けに終わりました。アウェイのレバンテを救う82分の同点ゴールを決めた選手は誰？",
+      "options": [
+        "ダニ・レケナ",
+        "ビル・ンソンゴ",
+        "ペタル・ラトコフ",
+        "チアゴ・フェルナンデス"
+      ],
+      "answerIndex": 0,
+      "explanation": "レバンテは後半に試合の主導権を握り、ダニ・レケナのゴールで貴重な勝ち点1を拾う結果となりました。",
+      "trivia": "デポルティーボがビル・ンソンゴのゴールで先制しましたが、終盤にペタル・ラトコフのアシストからダニ・レケナが同点弾を突き刺しました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-16",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "アルゼンチン代表",
+        "W杯南米予選",
+        "リオネル・メッシ",
+        "ハットトリック"
+      ],
+      "text": "2026年10月に行われたFIFAワールドカップ南米予選のボリビア戦で、見事なハットトリックを達成してアルゼンチン代表を大勝に導いた選手は誰でしょう？",
+      "options": [
+        "リオネル・メッシ",
+        "ラウタロ・マルティネス",
+        "フリアン・アルバレス",
+        "アレクシス・マック・アリスター"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月15日に組まれた第10節のボリビア戦で、代表戦に出場したリオネル・メッシがハットトリックの大活躍を見せ、アルゼンチンが勝利しました。",
+      "trivia": "アルゼンチンはこの勝利により、ブラジルやコロンビアを抑えて南米予選の首位をキープし続けています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-15",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "アーセナル",
+        "プレミアリーグ",
+        "ノニ・マドゥエケ"
+      ],
+      "text": "2026年10月18日に行われたプレミアリーグで、ノッティンガム・フォレスト相手に終盤に決勝点となるゴールを挙げ、アーセナルを1-0の勝利に導いた選手は誰でしょう？",
+      "options": [
+        "ノニ・マドゥエケ",
+        "ウィリアム・サリバ",
+        "デクラン・ライス",
+        "ブルーノ・ギマランイス"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半終盤に途中出場したノニ・マドゥエケがディフレクトしたシュートを決め、アーセナルが1-0で辛勝しました。",
+      "trivia": "ノッティンガム・フォレストはアーセナルに対して通算56敗目を喫しており、両クラブの長年の対戦成績には大きな差が開いています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "マンチェスター・シティ",
+        "プレミアリーグ",
+        "アーリング・ハーランド"
+      ],
+      "text": "2026年10月17日のプレミアリーグで、マンチェスター・シティはイプスウィッチに3-2で勝利し開幕7連勝を飾りました。この試合で2ゴールを挙げたエースストライカーは誰でしょう？",
+      "options": [
+        "アーリング・ハーランド",
+        "フィル・フォーデン",
+        "ジェレミー・ドク",
+        "マテオ・コバチッチ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イプスウィッチ戦でハーランドが2ゴールを挙げ、チームの勝利に大きく貢献しました。ただし試合終盤に足を痛めるアクシデントも発生しています。",
+      "trivia": "この日、シティのファンたちはクラブへの財務違反処分の動きに抗議するため、1980年代に流行した「膨らませるバナナ」のグッズをスタンドに持ち込みました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-10-17",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "順位表"
+      ],
+      "text": "2026年10月18日時点でのラ・リーガ順位表に関する問題です。開幕から圧倒的な強さを見せ、9戦全勝・39得点という驚異的な成績で首位を独走しているクラブはどこでしょう？",
+      "options": [
+        "バルセロナ",
+        "レアル・マドリード",
+        "アトレティコ・マドリード",
+        "ビジャレアル"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月時点で、バルセロナは9試合全勝、39得点9失点という完璧な成績を残してラ・リーガの首位に立っています。",
+      "trivia": "同じ時期、ライバルのレアル・マドリードは6勝2敗の勝ち点18に留まっており、シーズンの早い段階で大きな勝ち点差がついています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ブライトン",
+        "クリスタル・パレス",
+        "プレミアリーグ",
+        "ディエゴ・ゴメス"
+      ],
+      "text": "2026年10月18日のクリスタル・パレス戦で、ブライトンは開始10分で3ゴールを奪う猛攻を見せ5-0で大勝しました。この試合で、自陣ハーフから約50メートルの超ロングシュートを決めた選手は誰でしょう？",
+      "options": [
+        "ディエゴ・ゴメス",
+        "ヤシン・アヤリ",
+        "ジャック・ヒンシェルウッド",
+        "三笘薫"
+      ],
+      "answerIndex": 0,
+      "explanation": "パラグアイ代表MFのディエゴ・ゴメスが、自陣ハーフから相手GKの頭上を抜く50メートルの鮮やかなロングシュートを決め、話題となりました。",
+      "trivia": "ブライトンはこの勝利で開幕7試合で23ゴールに到達。開幕7試合でこれ以上の得点を記録したのは、プレミアリーグの歴史上3チームしかありません。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "イングランド代表",
+        "ハリー・ケイン"
+      ],
+      "text": "2026年10月中旬に行われたUEFAネーションズリーグ2026-27において、この時点で通算6ゴールを挙げ、得点ランキングのトップに立っている選手は誰でしょう？",
+      "options": [
+        "ハリー・ケイン",
+        "クリスティアーノ・ロナウド",
+        "アーリング・ハーランド",
+        "キリアン・エムバペ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イングランド代表のハリー・ケインが、2026年10月までの段階で6ゴールを記録し、得点ランキングの首位に立っています。",
+      "trivia": "2026-27シーズンのネーションズリーグは、全体で1試合平均約2.46ゴールが記録されており、ケインの得点力は群を抜いています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "レアル・ソシエダ",
+        "ラ・リーガ",
+        "ゴール"
+      ],
+      "text": "2026年10月18日のマラガ戦で、7試合ぶりの先発出場ながら今季初ゴールと初アシストを記録して勝利に大きく貢献した、久保建英が所属するスペインのクラブはどこでしょう？",
+      "options": [
+        "レアル・ソシエダ",
+        "レアル・マドリード",
+        "ビジャレアル",
+        "RCDマジョルカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ラ・リーガ第9節のマラガ戦に出場した久保建英は、前半3分に得意の形から今季初ゴール、後半には今季初アシストを記録し、チームの5-2の勝利に大きく貢献しました。",
+      "trivia": "久保がソシエダでゴールを決めた試合は、これまで一度も負けたことがない「不敗神話」が継続中（22勝3分け）です。10月初旬に結婚を発表して以来の嬉しい初ゴールとなりました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鎌田大地",
+        "クリスタル・パレス",
+        "プレミアリーグ",
+        "初ゴール"
+      ],
+      "text": "2026年10月のノッティンガム・フォレスト戦で、同点弾となる待望のプレミアリーグ初ゴールを記録した日本人選手は誰でしょう？",
+      "options": [
+        "鎌田大地",
+        "遠藤航",
+        "菅原由勢",
+        "松木玖生"
+      ],
+      "answerIndex": 0,
+      "explanation": "クリスタル・パレスに所属する鎌田大地は、ノッティンガム・フォレスト戦で同点弾となるプレミアリーグ初ゴールを挙げ、チームの3-1の逆転勝利に貢献しました。",
+      "trivia": "鎌田はこのゴールにより、プレミアリーグで得点を記録した13人目の日本人選手となりました。監督交代後もシャドーのポジションでレギュラーに定着しています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "後藤啓介",
+        "フライブルク",
+        "ブンデスリーガ",
+        "初ゴール"
+      ],
+      "text": "2026年10月に行われたシャルケ戦で、退場者を出して10人となったチームを救うブンデスリーガ初ゴール（決勝点）を85分に決めた若きストライカーは誰でしょう？",
+      "options": [
+        "後藤啓介",
+        "福田師王",
+        "チェイス・アンリ",
+        "佐野海舟"
+      ],
+      "answerIndex": 0,
+      "explanation": "フライブルクに所属する後藤啓介は、シャルケとの試合でチームが数的不利に陥る苦しい展開の中、劇的な決勝点となるブンデスリーガ初ゴールを挙げました。",
+      "trivia": "チームメイトの鈴木唯人が退場処分を受けるというアクシデントがありましたが、交代出場した若き長身ストライカーが見事にチームを救い出し、劇的勝利の立役者となりました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "中村敬斗",
+        "退場",
+        "スタッド・ランス",
+        "日本代表"
+      ],
+      "text": "2026年10月18日に行われた欧州サッカーのリーグ戦で、途中出場からわずか9分でまさかの一発退場となってしまった日本代表アタッカーは誰でしょう？",
+      "options": [
+        "中村敬斗",
+        "伊東純也",
+        "南野拓実",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "フランスなどで活躍する中村敬斗は、10月18日の試合で途中出場からわずか9分でレッドカードを提示され、一発退場となるアクシデントに見舞われました。",
+      "trivia": "不運な退場劇の直前、10月16日に行われたヨーロッパリーグの試合では見事な2アシストを記録しており、現地メディアからMOM（マン・オブ・ザ・マッチ）に選出されたばかりでした。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "ブライトン",
+        "クリスタル・パレス",
+        "三笘薫",
+        "鎌田大地",
+        "冨安健洋"
+      ],
+      "text": "2026年10月18日、三笘薫が所属するブライトンと、鎌田大地・冨安健洋が所属するクリスタル・パレスによる「M23ダービー」が行われました。この試合の結末として正しいものはどれでしょう？",
+      "options": [
+        "ブライトンが5人の異なる選手のゴールにより5-0で大勝した",
+        "鎌田大地が先制ゴールを決めたが、ブライトンが逆転勝利を収めた",
+        "三笘薫が怪我から復帰し、決勝点となる見事なアシストを記録した",
+        "冨安健洋がフル出場して強固な守備を見せ、スコアレスドローに終わった"
+      ],
+      "answerIndex": 0,
+      "explanation": "熱狂的なダービーマッチでしたが、三笘薫と冨安健洋は怪我によりベンチ外でした。鎌田大地は先発出場したものの、ブライトンが圧倒して5-0の大勝を飾りました。",
+      "trivia": "この試合の前半7分には、ブライトンのMFゴメスがセンターサークル付近から約51メートルの超ロングシュートを決め、スタジアムを大いに沸かせました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": 7,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "チェルシー",
+        "プレミアリーグ",
+        "契約延長",
+        "コール・パーマー",
+        "イングランド"
+      ],
+      "text": "2026年10月、チェルシーはある中心選手との契約を「2034年まで」という超長期間で延長したことを発表しました。そのイングランド代表MFは誰でしょう？",
+      "options": [
+        "コール・パーマー",
+        "エンソ・フェルナンデス",
+        "コナー・ギャラガー",
+        "ノニ・マドゥエケ"
+      ],
+      "answerIndex": 0,
+      "explanation": "パーマーは2033年までの契約を結んでいましたが、さらに1年延長され、2034年までの超長期契約を結ぶことになりました。",
+      "trivia": "チェルシーでは近年、ジョアン・ペドロやペドロ・ネトなど、2030年代まで及ぶ長期間の契約を結ぶケースが増えています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "インテル",
+        "セリエA",
+        "負傷",
+        "ラウタロ・マルティネス",
+        "アルゼンチン"
+      ],
+      "text": "2026年10月中旬に行われたUEFAチャンピオンズリーグのクラブ・ブルージュ戦でハムストリングを負傷し、約1ヶ月の離脱が発表されたインテルのアルゼンチン代表ストライカーは誰でしょう？",
+      "options": [
+        "ラウタロ・マルティネス",
+        "マルクス・テュラム",
+        "ニコロ・バレッラ",
+        "ハカン・チャルハノール"
+      ],
+      "answerIndex": 0,
+      "explanation": "10月13日の試合で2ゴールを挙げたものの負傷し、今後のリーグ戦や10月末に控えるACミランとの「ミラノダービー」の欠場が確実視されています。",
+      "trivia": "ラウタロはインテルのキャプテンとして絶対的なエースに君臨しており、彼の長期離脱はチームにとって非常に大きな痛手となります。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-13",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "バイエルン・ミュンヘン",
+        "ブンデスリーガ",
+        "契約延長",
+        "ハリー・ケイン",
+        "イングランド"
+      ],
+      "text": "2026年10月、イングランド代表FWハリー・ケインが現在所属するクラブと2029年までの契約延長で原則合意に達したと報じられました。彼が所属しているクラブはどこでしょう？",
+      "options": [
+        "バイエルン・ミュンヘン",
+        "トッテナム・ホットスパー",
+        "レアル・マドリード",
+        "パリ・サンジェルマン"
+      ],
+      "answerIndex": 0,
+      "explanation": "2023年にトッテナムからバイエルンへ加入したケインはゴールを量産しており、35歳となる2029年夏までの新契約に合意したと報じられました。",
+      "trivia": "ケインはバイエルンでも驚異的なペースで得点を重ねており、2026年のバロンドール候補の一人としても名前が挙がっています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "レアル・マドリード",
+        "ラ・リーガ",
+        "契約延長",
+        "ティボー・クルトワ",
+        "ベルギー"
+      ],
+      "text": "2026年10月、レアル・マドリードが世界的GKと2028年夏までの契約延長で原則合意に達したと報じられました。そのベルギー代表の守護神は誰でしょう？",
+      "options": [
+        "ティボー・クルトワ",
+        "ケパ・アリサバラガ",
+        "アンドリー・ルニン",
+        "シモン・ミニョレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "現在の契約は2027年まででしたが、クラブからの厚い信頼によりさらに1年延長し、2028年夏までの新契約に合意したと伝えられています。",
+      "trivia": "クルトワは2018年にチェルシーからレアル・マドリードに加入し、大ケガを乗り越えながらも世界最高のGKの一人として君臨し続けています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "インテル",
+        "セリエA",
+        "契約延長",
+        "カルロス・アウグスト",
+        "ブラジル"
+      ],
+      "text": "2026年10月、イタリア・セリエAのインテルは所属するブラジル人DFとの契約延長に向けた動きを見せていると報じられました。同月のボローニャ戦の勝利にも貢献したとされるこの選手は誰でしょう？",
+      "options": [
+        "カルロス・アウグスト",
+        "ブレーメル",
+        "ドド",
+        "ダニーロ"
+      ],
+      "answerIndex": 0,
+      "explanation": "現行契約は2028年6月までですが、インテルはチームでの彼の重要性を高く評価し、さらなる契約延長を望んでいると報じられました。",
+      "trivia": "カルロス・アウグストはモンツァでの活躍が認められて2023年にインテルに加入し、左サイドの重要な戦力として重宝されています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "レアル・マドリード",
+        "ラ・リーガ",
+        "キリアン・エムバペ",
+        "セビージャ"
+      ],
+      "text": "2026年10月18日に行われたラ・リーガの試合で、レアル・マドリードはセビージャと対戦し大勝しました。この試合で2ゴールを挙げ、勝利の立役者となった選手は誰でしょう？",
+      "options": [
+        "キリアン・エムバペ",
+        "ヴィニシウス・ジュニオール",
+        "ジュード・ベリンガム",
+        "ロドリゴ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月18日のセビージャ戦で、キリアン・エムバペがPKを含む2ゴールを記録し、レアル・マドリードの大勝に大きく貢献しました。",
+      "trivia": "この試合ではエムバペの活躍に加え、アルダ・ギュレルら若手選手も現地メディアから高い評価を受け、チームの好調ぶりを印象付けました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "レアル・マドリード",
+        "ラ・リーガ",
+        "ヴィニシウス",
+        "エル・クラシコ"
+      ],
+      "text": "2026年10月25日に予定されている「エル・クラシコ」ですが、レアル・マドリードのヴィニシウス・ジュニオールは欠場することが確定しています。その理由は、前節のビジャレアル戦でどのような反則を犯して一発退場となり、4試合の出場停止処分を受けたからでしょう？",
+      "options": [
+        "相手選手の髪の毛を引っ張った",
+        "審判に対して暴言を吐いた",
+        "ボールを観客席に強く蹴り込んだ",
+        "決定機を意図的なハンドで防いだ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィニシウスはビジャレアル戦で相手選手の髪を引っ張るという行為によりレッドカードを受け、4試合の出場停止処分となりました。これにより10月25日のバルセロナ戦を欠場します。",
+      "trivia": "この一件を受け、かつてレアル・マドリードを指揮したジョゼ・モウリーニョは「私がヴィニシウスの立場ならマドリードを去る」と擁護のコメントを残し、大きな話題を呼びました。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "エル・クラシコ",
+        "レジェンドマッチ",
+        "バルセロナ",
+        "レアル・マドリード"
+      ],
+      "text": "2026年10月13日、インドのコルカタで11月25日にバルセロナとレアル・マドリードのレジェンドマッチが開催されることが発表されました。この試合に出場予定の選手の中で、現役時代に両クラブでのプレー経験があるポルトガルのレジェンドは誰でしょう？",
+      "options": [
+        "ルイス・フィーゴ",
+        "クリスティアーノ・ロナウド",
+        "デコ",
+        "リカルド・クアレスマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ルイス・フィーゴはバルセロナでキャプテンを務めた後、ライバルであるレアル・マドリードに「禁断の移籍」を果たしたことで知られています。今回のレジェンドマッチにはカルレス・プジョルらとともに出場予定です。",
+      "trivia": "両クラブのレジェンドマッチがインドで開催されるのは今回が2回目で、前回はムンバイで行われレアル・マドリードのレジェンドチームが2-0で勝利を収めています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "アーセナル",
+        "プレミアリーグ",
+        "ノッティンガム・フォレスト",
+        "劇的勝利"
+      ],
+      "text": "2026年10月18日に行われたプレミアリーグ、アーセナル対ノッティンガム・フォレスト戦は劇的な結末を迎えました。終盤に決勝ゴールを決め、アーセナルに勝利をもたらした選手は誰でしょう？",
+      "options": [
+        "ノニ・マドゥエケ",
+        "ブカヨ・サカ",
+        "ガブリエウ・マルティネッリ",
+        "マルティン・ウーデゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月18日の試合では、終盤にノニ・マドゥエケが劇的な決勝ゴールを決め、アーセナルがノッティンガム・フォレストを劇的に下しました。",
+      "trivia": "チェルシーなどでウィンガーとして台頭したマドゥエケですが、高いドリブル突破の能力と左足のシュートセンスは新天地でも勝負強さとして発揮されています。",
+      "referenceDate": "2026-10-19",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-18",
+        "publishDate": "2026-10-19",
+        "expiryDate": "2026-10-26",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
