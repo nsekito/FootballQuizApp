@@ -1,0 +1,1038 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-11-02T00:31:37Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-11-02",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "ACミラン",
+        "インテル",
+        "ミラノダービー"
+      ],
+      "text": "2026年10月31日に行われたセリエAの「ミラノダービー」、ACミラン対インテルの試合結果はどうなったでしょうか？",
+      "options": [
+        "ACミランが3-1で勝利",
+        "インテルが3-1で勝利",
+        "2-2の引き分け",
+        "ACミランが1-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月31日のミラノダービーでは、ACミランが3-1でインテルを下しました。この試合の直前には、ミランのクリスチャン・プリシッチが新契約にサインしたことも話題となっていました。",
+      "trivia": "インテルとミランが共有するスタジアムは、インテル主催時は「ジュゼッペ・メアッツァ」、ミラン主催時は「サン・シーロ」と呼ばれるのが一般的です。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "チェルシー",
+        "マンチェスター・ユナイテッド"
+      ],
+      "text": "2026年10月31日のプレミアリーグ第9節、チェルシー対マンチェスター・ユナイテッドの試合はどちらが勝利したでしょうか？",
+      "options": [
+        "チェルシー",
+        "マンチェスター・ユナイテッド",
+        "引き分け（0-0）",
+        "引き分け（1-1）"
+      ],
+      "answerIndex": 0,
+      "explanation": "スタンフォード・ブリッジで行われたこの試合は2-0でチェルシーが勝利しました。この敗北により、マンチェスター・ユナイテッドのマイケル・キャリック監督に対するプレッシャーがさらに強まっています。",
+      "trivia": "チェルシーのホームスタジアムであるスタンフォード・ブリッジは、もともとは陸上競技場として建設された歴史があります。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "アラベス"
+      ],
+      "text": "2026年10月31日に行われたラ・リーガ第11節で、バルセロナはホームでアラベスと対戦しました。この試合のバルセロナの得点数は？",
+      "options": [
+        "6点",
+        "3点",
+        "4点",
+        "1点"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナは本拠地でアラベスを圧倒し、6-1のスコアで大勝を収めました。",
+      "trivia": "アラベスはスペインのバスク州ビトリア＝ガステイスを本拠地とするクラブで、2000-01シーズンのUEFAカップ決勝に名を連ねたことで知られています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "リーグ・アン",
+        "PSG",
+        "ル・アーヴル"
+      ],
+      "text": "2026年10月30日のリーグ・アン、ル・アーヴル対パリ・サンジェルマン（PSG）の試合結果として正しいものはどれでしょうか？",
+      "options": [
+        "PSGが5-1で勝利した",
+        "ル・アーヴルが1-0で勝利した",
+        "0-0の引き分けだった",
+        "PSGが2-1で逆転勝利した"
+      ],
+      "answerIndex": 0,
+      "explanation": "パリ・サンジェルマンはアウェーで攻撃力を爆発させ、ル・アーヴルを相手に5-1と大勝を飾りました。",
+      "trivia": "ル・アーヴルはフランス最古のサッカークラブのひとつとされ、「HAC」という略称で親しまれています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-30",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "リヴァプール"
+      ],
+      "text": "2026年11月1日、アーセナルは敵地アンフィールドでリヴァプールに1-0で勝利しました。この試合の決勝点を挙げた選手は誰でしょうか？",
+      "options": [
+        "カイ・ハヴァーツ",
+        "ブカヨ・サカ",
+        "マルティン・ウーデゴール",
+        "デクラン・ライス"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半16分にカイ・ハヴァーツが挙げたゴールが決勝点となり、アーセナルが敵地で大きな勝ち点3を手にしました。",
+      "trivia": "アンフィールドでの勝利はどのチームにとっても至難の業とされており、アーセナルにとってはタイトル争いに向けての「ステートメント・ウィン」となりました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ブンデスリーガ",
+        "バイエルン",
+        "ドルトムント",
+        "デア・クラシカー"
+      ],
+      "text": "2026年10月31日に行われたブンデスリーガの伝統の一戦「デア・クラシカー」、バイエルン・ミュンヘン対ボルシア・ドルトムントの試合結果はどうなったでしょうか？",
+      "options": [
+        "2-2の引き分け",
+        "バイエルンが3-1で勝利",
+        "ドルトムントが1-0で勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "アリアンツ・アレーナで行われたライバル対決は、ドルトムントのセルー・ギラシやバイエルンのダヨ・ウパメカノらがゴールを奪い合い、2-2のドローに終わりました。",
+      "trivia": "「デア・クラシカー」はドイツ語で「伝統の一戦」を意味しますが、歴史的なダービーというよりは近代のタイトル争いを牽引してきた2チームの対決を指します。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "アストン・ヴィラ",
+        "日本人選手"
+      ],
+      "text": "2026年10月31日のプレミアリーグ、アストン・ヴィラ対フラムは1-1の引き分けに終わりましたが、この試合で痛恨のミスから失点を招いてしまったアストン・ヴィラの日本人GKは誰でしょうか？",
+      "options": [
+        "鈴木彩艶",
+        "大迫敬介",
+        "谷晃生",
+        "前川黛也"
+      ],
+      "answerIndex": 0,
+      "explanation": "アストン・ヴィラでプレーする鈴木彩艶のミス（ハウラー）が失点に直結し、フラムに勝ち点1を分け与える結果となってしまいました。",
+      "trivia": "英語圏のサッカー用語で、GKやDFが犯すとんでもないミスのことを「ハウラー (howler)」と呼びます。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "カラバオカップ",
+        "リヴァプール",
+        "チェルシー"
+      ],
+      "text": "2026年10月28日に行われたカラバオカップ（リーグカップ）の試合で、チェルシーを破って準々決勝に進出したクラブはどこでしょうか？",
+      "options": [
+        "リヴァプール",
+        "アーセナル",
+        "マンチェスター・シティ",
+        "トッテナム"
+      ],
+      "answerIndex": 0,
+      "explanation": "リヴァプールがチェルシーに勝利してカラバオカップ準々決勝への切符を手にしました。両チームは近年カップ戦で頻繁に顔を合わせています。",
+      "trivia": "カラバオカップの「カラバオ」は、タイのエナジードリンクメーカーの名前です。これまでに「カーリング」や「キャピタル・ワン」など冠スポンサーが何度も変わっています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-28",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "ボーンマス",
+        "記録更新"
+      ],
+      "text": "2026年10月31日、ボーンマスはリーズ・ユナイテッドを2-0で下しました。この試合で自身の連続得点記録を更新したボーンマスのブラジル人FWは誰でしょうか？",
+      "options": [
+        "エヴァニウソン",
+        "ドミニク・ソランケ",
+        "ジョアン・ペドロ",
+        "リシャルリソン"
+      ],
+      "answerIndex": 0,
+      "explanation": "ボーンマスのFWエヴァニウソンがこの試合でもゴールを挙げ、好調を維持して自身の連続得点記録を伸ばしています。",
+      "trivia": "エヴァニウソンは2024年にポルトからボーンマスへクラブ史上最高額の移籍金で加入し、ドミニク・ソランケの後釜として期待された選手です。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "カラバオカップ",
+        "アーセナル",
+        "番狂わせ"
+      ],
+      "text": "2026年10月27日に行われたカラバオカップで、プレミアリーグの強豪アーセナルを撃破し、大会最大の番狂わせを起こした下部リーグのクラブはどこでしょうか？",
+      "options": [
+        "フリートウッド・タウン",
+        "イプスウィッチ・タウン",
+        "コヴェントリー・シティ",
+        "レクサム"
+      ],
+      "answerIndex": 0,
+      "explanation": "イングランドの下部リーグに所属するフリートウッド・タウンがアーセナルに勝利する大金星を挙げ、「リーグカップ最大のショックの一つ」として大きく報じられました。",
+      "trivia": "フリートウッド・タウンは、レスターでプレミアリーグ優勝を果たしたジェイミー・ヴァーディが、かつてノンリーグ時代に所属していたクラブとして有名です。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-27",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "バロンドール",
+        "ハリー・ケイン",
+        "表彰"
+      ],
+      "text": "2026年10月26日に発表された2026年の男子バロンドールを受賞した選手は誰？",
+      "options": [
+        "ハリー・ケイン",
+        "キリアン・エンバペ",
+        "ラミン・ヤマル",
+        "アーリング・ハーランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "2025-26シーズンにクラブと代表で合計73ゴールを挙げたハリー・ケインが受賞しました。イングランド人の受賞は2001年のマイケル・オーウェン以来25年ぶりです。",
+      "trivia": "ケインはキリアン・エンバペらを抑えての受賞となり、ストライカー・オブ・ザ・イヤーにあたる「ゲルト・ミュラー・トロフィー」とのダブル受賞も果たしました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "得点ランキング",
+        "バルセロナ"
+      ],
+      "text": "2026年10月末時点でラ・リーガの得点ランキングトップに立っているバルセロナの選手は誰？",
+      "options": [
+        "ラフィーニャ",
+        "ラミン・ヤマル",
+        "ロベルト・レヴァンドフスキ",
+        "ペドリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月末時点で、ラフィーニャは13ゴールを挙げてラ・リーガの得点ランキング首位に立っています。",
+      "trivia": "2位には11ゴールを挙げているレアル・マドリードのキリアン・エンバペが続いています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "バロンドール",
+        "コパ・トロフィー",
+        "ラミン・ヤマル"
+      ],
+      "text": "2026年10月26日のバロンドール授賞式で、21歳以下の最優秀選手に贈られる「コパ・トロフィー」を史上初めて3年連続で受賞したのは誰？",
+      "options": [
+        "ラミン・ヤマル",
+        "パウ・クバルシ",
+        "ウォーレン・ザイール＝エメリ",
+        "アルダ・ギュレル"
+      ],
+      "answerIndex": 0,
+      "explanation": "ラミン・ヤマルは2024年、2025年に続き、2026年もコパ・トロフィーを受賞し、前人未到の3年連続受賞を達成しました。",
+      "trivia": "ラミン・ヤマルは男子バロンドールの全体投票でも堂々の3位にランクインする快挙を成し遂げています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "順位表",
+        "ラツィオ"
+      ],
+      "text": "2026年11月1日時点で、セリエAで首位に立っているローマを本拠地とするクラブはどこ？",
+      "options": [
+        "ラツィオ",
+        "ASローマ",
+        "ユヴェントス",
+        "インテル"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月1日時点のセリエAでは、ラツィオが10試合を終えて勝ち点28を獲得し、インテルを抑えて単独首位に立っています。",
+      "trivia": "10試合を終えた段階でのセリエA得点ランキングでは、モンツァのグスタボ・バレラがトップを走っています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "バロンドール",
+        "女子サッカー",
+        "アレクシア・プテジャス"
+      ],
+      "text": "2026年10月26日に発表された女子バロンドールを受賞したアレクシア・プテジャスにとって、今回は通算何度目の受賞となった？",
+      "options": [
+        "3度目",
+        "2度目",
+        "4度目",
+        "初めて"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナ所属のアレクシア・プテジャスは、2026年に自身3度目となる女子バロンドールを受賞しました。",
+      "trivia": "バルセロナ・フェメニの選手としては、チームメイトのアイタナ・ボンマティらと並んで女子バロンドールを独占し続けています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "バロンドール",
+        "ヤシン・トロフィー",
+        "ウナイ・シモン"
+      ],
+      "text": "2026年10月26日のバロンドール授賞式で、最優秀GKに贈られる「ヤシン・トロフィー」の男子部門を受賞したスペイン人GKは誰？",
+      "options": [
+        "ウナイ・シモン",
+        "ダビド・ラヤ",
+        "ケパ・アリサバラガ",
+        "ロベルト・サンチェス"
+      ],
+      "answerIndex": 0,
+      "explanation": "アスレティック・ビルバオとスペイン代表で活躍するウナイ・シモンが、同胞のダビド・ラヤらを抑えてヤシン・トロフィーを受賞しました。",
+      "trivia": "女子のヤシン・トロフィーもバルセロナのカタ・コルが受賞しており、2026年は男女ともにスペイン人GKが最優秀GKに輝きました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鈴木彩艶",
+        "アストン・ヴィラ",
+        "プレミアリーグ"
+      ],
+      "text": "2026年10月31日のフルアム戦でスーパーセーブを連発する一方、コーナーキックの場面で痛恨のオウンゴールも記録してしまったアストン・ヴィラの日本人GKは誰でしょう？",
+      "options": [
+        "鈴木彩艶",
+        "大迫敬介",
+        "谷晃生",
+        "シュミット・ダニエル"
+      ],
+      "answerIndex": 0,
+      "explanation": "鈴木彩艶は至近距離からのシュートを右手一本で防ぐスーパーセーブを見せましたが、64分にキャッチミスからオウンゴールを献上し、試合は1-1の引き分けに終わりました。",
+      "trivia": "プレミアリーグ公式SNSは鈴木の好セーブに対し「どうやってこれを防いだんだ？」と驚きのコメントを動画付きで投稿しました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "レアル・ソシエダ",
+        "ラ・リーガ",
+        "バスクダービー"
+      ],
+      "text": "2026年11月1日に行われた「バスクダービー」のアスレティック・ビルバオ戦で、途中出場するも1-2で敗れたレアル・ソシエダに所属する日本人選手は誰でしょう？",
+      "options": [
+        "久保建英",
+        "浅野拓磨",
+        "堂安律",
+        "伊東純也"
+      ],
+      "answerIndex": 0,
+      "explanation": "久保建英は2試合連続でベンチスタートとなり、75分からピッチに立ちましたが、見せ場を作れずチームは1-2で敗れました。",
+      "trivia": "ソシエダとアスレティック・ビルバオの対戦は「バスクダービー」と呼ばれ、スペインのバスク地方を二分する伝統の一戦として熱狂的な盛り上がりを見せます。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "遠藤航",
+        "リヴァプール",
+        "プレミアリーグ",
+        "移籍情報"
+      ],
+      "text": "2026年11月1日のアーセナル戦でも出番がなく、今季ここまで公式戦の出場時間がゼロであることから、現地メディアで1月の移籍報道が過熱しているリヴァプール所属の日本人選手は誰でしょう？",
+      "options": [
+        "遠藤航",
+        "冨安健洋",
+        "守田英正",
+        "鎌田大地"
+      ],
+      "answerIndex": 0,
+      "explanation": "遠藤航はアーセナル戦でベンチ入りしたものの出場機会がなく構想外とみられており、英メディアではサウジアラビアやJリーグクラブからの関心が報じられています。",
+      "trivia": "リヴァプールの指揮官が今季からスロット監督に代わり、遠藤はこれまでとは異なるプレースタイルへの適応やポジション争いに直面しています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "菅原由勢",
+        "カリアリ",
+        "セリエA"
+      ],
+      "text": "2026年10月27日のローマ戦でセリエA移籍後初スタメンを飾るも、失点に関与してしまい現地メディアから厳しい評価を受けた、カリアリに所属する日本代表DFは誰でしょう？",
+      "options": [
+        "菅原由勢",
+        "板倉滉",
+        "町田浩樹",
+        "伊藤洋輝"
+      ],
+      "answerIndex": 0,
+      "explanation": "菅原由勢はローマ戦で3バックの右ウイングバックとして移籍後初の先発出場を果たしましたが、相手のクロス対応などで後れをとり、チームも2-4で敗北しました。",
+      "trivia": "菅原は今夏カリアリに加入しましたが、労働ビザの発給が遅れた影響で序盤戦はすぐには公式戦に出場できないアクシデントがありました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-27",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "南野拓実",
+        "モナコ",
+        "リーグ・アン"
+      ],
+      "text": "靭帯断裂の大ケガを乗り越え、2026年11月1日のパリFC戦で途中出場を果たした南野拓実ですが、所属するモナコはこの試合の敗戦でリーグ・アンの順位を何位に落としたでしょう？",
+      "options": [
+        "7位",
+        "4位",
+        "5位",
+        "9位"
+      ],
+      "answerIndex": 0,
+      "explanation": "モナコはホームでパリFCにシュート19本を浴びるなど1-3で圧倒され敗北し、試合前の4位から7位へと大きく順位を下げてしまいました。",
+      "trivia": "南野は昨年12月に負った左膝前十字靭帯断裂の重傷から、約10ヶ月（298日）の過酷なリハビリを経て今年10月に公式戦復帰を果たしました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "バロンドール",
+        "ハリー・ケイン",
+        "バイエルン・ミュンヘン",
+        "表彰"
+      ],
+      "text": "2026年10月26日にロンドンで行われた授賞式で、2026年の男子バロンドールを受賞した選手は誰でしょう？",
+      "options": [
+        "ハリー・ケイン",
+        "キリアン・エムバペ",
+        "アーリング・ハーランド",
+        "ヴィニシウス・ジュニオール"
+      ],
+      "answerIndex": 0,
+      "explanation": "バイエルン・ミュンヘンに所属するイングランド代表FWハリー・ケインが、クラブや代表での目覚ましい活躍が評価され初受賞を果たしました。",
+      "trivia": "イングランド人選手の男子バロンドール受賞は、マイケル・オーウェン以来の快挙となります。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "バロンドール",
+        "アレクシア・プテジャス",
+        "バルセロナ",
+        "女子サッカー"
+      ],
+      "text": "2026年の女子バロンドールを受賞し、自身3度目の栄誉に輝いたスペイン女子代表選手は誰でしょう？",
+      "options": [
+        "アレクシア・プテジャス",
+        "アイタナ・ボンマティ",
+        "エバ・パヨル",
+        "カディジャ・ショー"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナに所属するアレクシア・プテジャスが受賞しました。昨シーズンのクラブのタイトル獲得などに大きく貢献したことが評価されました。",
+      "trivia": "彼女は過去にも同賞を受賞しており、今回の受賞で女子バロンドールの最多受賞記録をさらに更新しました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "バロンドール",
+        "ソクラテス賞",
+        "ブカヨ・サカ",
+        "アーセナル"
+      ],
+      "text": "2026年のバロンドール授賞式で、慈善活動や人道支援に貢献した選手に贈られる「ソクラテス賞」を受賞した選手は誰でしょう？",
+      "options": [
+        "ブカヨ・サカ",
+        "マーカス・ラッシュフォード",
+        "ラヒーム・スターリング",
+        "ジュード・ベリンガム"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルに所属するイングランド代表MFのブカヨ・サカが、子どもたちへの支援活動などが評価されて同賞を受賞しました。",
+      "trivia": "ソクラテス賞は、社会的活動に熱心だったブラジルの伝説的選手ソクラテスにちなんで創設された特別な賞です。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "冨安健洋",
+        "クリスタル・パレス",
+        "日本代表",
+        "負傷"
+      ],
+      "text": "2026年10月下旬に新たな負傷が判明し、11月の代表活動への不参加が確実となった、現在クリスタル・パレスに所属している日本代表DFは誰でしょう？",
+      "options": [
+        "冨安健洋",
+        "板倉滉",
+        "菅原由勢",
+        "町田浩樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "9月からふくらはぎの負傷で離脱していた冨安健洋ですが、ピエール・サージュ監督から別の負傷を抱えたことが報告され、復帰が遅れることになりました。",
+      "trivia": "韓国メディアからも「日本の奇跡の男にまたも試練」と報じられるなど、度重なる怪我による長期離脱に同情の声が集まっています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "バロンドール",
+        "ハリー・ケイン",
+        "キリアン・エムバペ",
+        "投票"
+      ],
+      "text": "2026年の男子バロンドールの投票において、1位のハリー・ケインと2位のキリアン・エムバペのポイント差はわずかでしたが、その差は何ポイントだったでしょう？",
+      "options": [
+        "28ポイント",
+        "12ポイント",
+        "45ポイント",
+        "63ポイント"
+      ],
+      "answerIndex": 0,
+      "explanation": "100人のジャーナリストによる投票の結果、ケインはエムバペをわずか28ポイント差で上回り、大接戦を制しました。",
+      "trivia": "73ゴールを挙げて受賞したケインに対し、エムバペも自身最高位となる2位にランクインし、ハイレベルな争いとなりました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "バロンドール",
+        "ハリー・ケイン",
+        "表彰"
+      ],
+      "text": "2026年10月26日にロンドンで行われた2026年のバロンドール授賞式で、男子最優秀選手を受賞したのは誰？",
+      "options": [
+        "ハリー・ケイン",
+        "キリアン・エムバペ",
+        "ラミン・ヤマル",
+        "リオネル・メッシ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年のバロンドールはバイエルン・ミュンヘン所属のハリー・ケインが初受賞し、2位のキリアン・エムバペを僅差で抑えました。",
+      "trivia": "イングランド人選手がバロンドールを受賞するのは、2001年のマイケル・オーウェン以来実に25年ぶりの快挙です。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "バロンドール",
+        "アレクシア・プテジャス",
+        "女子サッカー"
+      ],
+      "text": "同じく2026年10月26日に発表された2026年の女子バロンドールにおいて、自身3度目の受賞を果たした選手は誰？",
+      "options": [
+        "アレクシア・プテジャス",
+        "アイタナ・ボンマティ",
+        "エバ・パヨル",
+        "カディジャ・ショー"
+      ],
+      "answerIndex": 0,
+      "explanation": "アレクシア・プテジャスが2021年、2022年に続き、通算3度目の女子バロンドールを受賞しました。",
+      "trivia": "彼女は大怪我からの復活を遂げてバルセロナのチャンピオンズリーグ優勝に貢献し、その後ロンドン・シティ・ライオネスへと移籍して新たな挑戦を始めています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・ユナイテッド",
+        "監督"
+      ],
+      "text": "2026-27シーズン序盤の成績不振により、10月末時点でプレミアリーグの「解任予想オッズ」で筆頭候補に挙げられているマンチェスター・ユナイテッドの監督は誰？",
+      "options": [
+        "マイケル・キャリック",
+        "エリック・テン・ハフ",
+        "ルーベン・アモリム",
+        "エディ・ハウ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・ユナイテッドの指揮を執るマイケル・キャリックですが、チームが一時下位に低迷するなど苦しいスタートとなり、解任の噂が絶えない状況です。",
+      "trivia": "メディアでは万が一解任された場合の後任候補として、元ニューカッスル監督のエディ・ハウや、ユリアン・ナーゲルスマンらの名前が報じられています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "監督"
+      ],
+      "text": "2026年6月に13年ぶりにレアル・マドリードの監督に復帰し、同年10月のエル・クラシコでバルセロナを下して話題になった人物は誰？",
+      "options": [
+        "ジョゼ・モウリーニョ",
+        "カルロ・アンチェロッティ",
+        "シャビ・アロンソ",
+        "ジネディーヌ・ジダン"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリードは2026年6月にジョゼ・モウリーニョを新監督として迎え入れました。復帰後初のクラシコでは見事2-1で勝利を収めています。",
+      "trivia": "モウリーニョは2010年から2013年までレアルの監督を務めており、今回の就任会見では「これは単なる仕事ではなく帰郷だ」と語り、ファンを熱狂させました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

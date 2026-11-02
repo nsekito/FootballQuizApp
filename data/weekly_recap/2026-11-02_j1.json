@@ -1,0 +1,1049 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-11-02T00:27:28Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-11-02",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "柏レイソル",
+        "浦和レッズ",
+        "試合結果"
+      ],
+      "text": "2026年10月31日に行われたJ1第13節、柏レイソル対浦和レッズの試合結果はどれでしょう？",
+      "options": [
+        "柏が4-0で勝利",
+        "浦和が2-1で勝利",
+        "0-0の引き分け",
+        "柏が1-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月31日のJ1第13節で、柏レイソルはホームに浦和レッズを迎え、4-0で快勝を収めました。",
+      "trivia": "この試合で柏は、前半37分に先制点を奪うと、後半にはさらに3点を追加して無失点勝利を飾りました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "ヴィッセル神戸",
+        "名古屋グランパス",
+        "試合結果"
+      ],
+      "text": "2026年10月31日に行われたJ1第13節、ヴィッセル神戸対名古屋グランパスの試合で勝利したチームはどれでしょう？",
+      "options": [
+        "ヴィッセル神戸",
+        "名古屋グランパス",
+        "引き分け",
+        "試合延期"
+      ],
+      "answerIndex": 0,
+      "explanation": "ノエビアスタジアム神戸で行われたこの試合は、ヴィッセル神戸が3-1で名古屋グランパスを下しました。",
+      "trivia": "神戸は先制を許したものの、武藤嘉紀らのゴールで逆転し、鮮やかな勝利を挙げています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC町田ゼルビア",
+        "ガンバ大阪",
+        "試合結果"
+      ],
+      "text": "2026年11月1日に行われたJ1第13節、前節まで首位だったFC町田ゼルビアとガンバ大阪の一戦の結果はどうなったでしょう？",
+      "options": [
+        "スコアレスドロー（0-0）",
+        "町田が1-0で勝利",
+        "G大阪が2-1で勝利",
+        "町田が3-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC町田ゼルビアはホームでガンバ大阪と対戦しましたが、両チームともに得点を奪えず、0-0のスコアレスドローに終わりました。",
+      "trivia": "町田はこの引き分けにより首位から陥落し、J1第13節終了時点で3位に後退しました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "横浜F・マリノス",
+        "川崎フロンターレ",
+        "神奈川ダービー"
+      ],
+      "text": "2026年11月1日に行われたJ1第13節、横浜F・マリノス対川崎フロンターレ（神奈川ダービー）の試合結果はどれでしょう？",
+      "options": [
+        "横浜FMが4-2で勝利",
+        "川崎が3-1で勝利",
+        "1-1の引き分け",
+        "横浜FMが1-0で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月1日に開催された注目の神奈川ダービーは、点の取り合いの末、横浜F・マリノスが4-2で川崎フロンターレを下しました。",
+      "trivia": "両チーム合わせて6ゴールが生まれる白熱したダービー戦となり、スタジアムは大いに沸きました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "ヴィッセル神戸",
+        "名古屋グランパス",
+        "得点者"
+      ],
+      "text": "2026年10月31日のJ1第13節、ヴィッセル神戸対名古屋グランパスの試合で、前半2分に名古屋の先制点を挙げた選手は誰でしょう？",
+      "options": [
+        "永井謙佑",
+        "キャスパー・ユンカー",
+        "森島司",
+        "和泉竜司"
+      ],
+      "answerIndex": 0,
+      "explanation": "名古屋グランパスはアウェイでヴィッセル神戸と対戦し、試合開始直後の前半2分に永井謙佑が先制ゴールを決めました。",
+      "trivia": "先制した名古屋でしたが、その後神戸の猛攻を受けて3失点を喫し、逆転負け（1-3）となっています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "柏レイソル",
+        "浦和レッズ",
+        "得点者"
+      ],
+      "text": "2026年10月31日のJ1第13節、柏レイソルが浦和レッズを4-0で下した試合で、前半37分に先制ゴールを決めた柏の選手は誰でしょう？",
+      "options": [
+        "小泉佳穂",
+        "細谷真大",
+        "マテウス・サヴィオ",
+        "犬飼智也"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏レイソルの小泉佳穂が、古巣である浦和レッズを相手に前半37分に先制ゴールを決めました。",
+      "trivia": "小泉はこのゴールで試合の主導権を握るきっかけを作り、柏はその後も得点を重ねて完勝しました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC東京",
+        "順位浮上",
+        "ファジアーノ岡山"
+      ],
+      "text": "2026年10月31日のJ1第13節、ファジアーノ岡山に4-0で快勝し、この節を終えてJ1リーグ首位に浮上したクラブはどこでしょう？",
+      "options": [
+        "FC東京",
+        "サンフレッチェ広島",
+        "鹿島アントラーズ",
+        "ヴィッセル神戸"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京はアウェイでファジアーノ岡山に4-0で大勝しました。この勝利により、第13節終了時点で勝点30となり、J1の単独首位に浮上しました。",
+      "trivia": "一方、前節まで首位だったFC町田ゼルビアが翌日の試合で引き分けたため、上位陣の順位が入れ替わる形となりました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "ジェフユナイテッド千葉",
+        "アビスパ福岡",
+        "試合結果"
+      ],
+      "text": "2026年11月1日のJ1第13節で、アビスパ福岡を相手に3-0の快勝を収めたクラブはどこでしょう？",
+      "options": [
+        "ジェフユナイテッド千葉",
+        "湘南ベルマーレ",
+        "サガン鳥栖",
+        "京都サンガF.C."
+      ],
+      "answerIndex": 0,
+      "explanation": "ジェフユナイテッド千葉はホームにアビスパ福岡を迎え、3-0で見事な無失点勝利を飾りました。",
+      "trivia": "千葉はこの勝利で残留争いに向けた貴重な勝点3を獲得し、勝点を10に伸ばしました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "柏レイソル",
+        "浦和レッズ",
+        "原田亘"
+      ],
+      "text": "2026年10月31日のJ1第13節・柏レイソル対浦和レッズの試合で、後半アディショナルタイム（47分）にダメ押しの4点目を決めた柏の選手は誰でしょう？",
+      "options": [
+        "原田亘",
+        "弓場堅真",
+        "杉岡大暉",
+        "古賀太陽"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏レイソルは浦和レッズを相手に終盤まで攻め手を緩めず、後半47分にDFの原田亘がチーム4点目となるダメ押しゴールを決めました。",
+      "trivia": "この試合では、45分に途中出場の久保藤次郎が3点目を決めており、アディショナルタイムだけで2つのゴールが生まれる劇的な展開となりました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J2",
+        "ジュビロ磐田",
+        "サガン鳥栖",
+        "マテウス・ペイショット"
+      ],
+      "text": "2026年10月31日に行われたJ2第14節、ジュビロ磐田対サガン鳥栖の試合で、後半開始から途中出場しゴールを決めた磐田のブラジル人FWは誰でしょう？",
+      "options": [
+        "マテウス・ペイショット",
+        "ウェルトン",
+        "レオ・セアラ",
+        "エリキ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジュビロ磐田対サガン鳥栖の一戦では、後半開始（46分）からピッチに入ったFWマテウス・ペイショットがゴールを記録しました。",
+      "trivia": "この試合でマテウス・ペイショットはゴールを決めただけでなく、イエローカードも1枚受けています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "FC東京",
+        "順位表"
+      ],
+      "text": "2026年11月1日に行われたJ1リーグ第13節の結果、開幕戦以降12試合負けなしを記録し、単独首位に浮上したクラブはどこでしょう？",
+      "options": [
+        "FC東京",
+        "FC町田ゼルビア",
+        "サンフレッチェ広島",
+        "柏レイソル"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は第13節のファジアーノ岡山戦に4-0で快勝し、開幕戦以降12試合負けなし（9勝3分）で勝ち点を30に伸ばし首位に浮上しました。",
+      "trivia": "FC東京は第13節までにリーグ最少の8失点と堅守を誇っており、首位浮上の大きな原動力となっています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "得点ランキング",
+        "鹿島アントラーズ"
+      ],
+      "text": "2026年11月1日終了時点で、J1リーグの得点ランキングで12得点を挙げ単独首位に立っている選手は誰でしょう？",
+      "options": [
+        "レオ・セアラ",
+        "鈴木章斗",
+        "瀬川祐輔",
+        "マルシーニョ"
+      ],
+      "answerIndex": 0,
+      "explanation": "鹿島アントラーズのレオ・セアラは第13節終了時点で12得点を記録し、得点ランキングのトップを走っています。",
+      "trivia": "2位にはサンフレッチェ広島の鈴木章斗が10得点で続いており、激しい得点王争いが繰り広げられています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "横浜F・マリノス",
+        "スタッツ"
+      ],
+      "text": "2026年11月1日に行われたJ1第13節の「神奈川ダービー（横浜F・マリノス vs 川崎フロンターレ）」で、古巣から先制点を奪い横浜FMの勝利に貢献した選手は誰でしょう？",
+      "options": [
+        "遠野大弥",
+        "谷村海那",
+        "小松蓮",
+        "仲川輝人"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜F・マリノスの遠野大弥が古巣である川崎フロンターレから先制点を奪いました。試合は横浜FMが4-2で勝利しています。",
+      "trivia": "この試合では遠野大弥の先制点に加え、谷村海那のリーグ戦6試合ぶりとなるゴールも生まれました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "アシストランキング",
+        "浦和レッズ"
+      ],
+      "text": "2026年10月末に更新されたJ1リーグのアシストランキングで、6アシストを記録して単独首位に立っている浦和レッズの選手は誰でしょう？",
+      "options": [
+        "金子拓郎",
+        "渡井理己",
+        "長倉幹樹",
+        "相馬勇紀"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズの金子拓郎は2026年10月26日時点で6アシストを記録し、アシストランキングのトップに立っています。",
+      "trivia": "2位には柏レイソルの渡井理己（5アシスト）、3位タイにはFC東京の長倉幹樹らが続いています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "個人スタッツ",
+        "水戸ホーリーホック"
+      ],
+      "text": "Jリーグ公式が2026年10月下旬に公開したJ1リーグの個人スタッツで、「総スプリント回数」でトップとなる253回を記録した水戸ホーリーホックの選手は誰でしょう？",
+      "options": [
+        "真瀬拓海",
+        "須貝英大",
+        "松村優太",
+        "井手口陽介"
+      ],
+      "answerIndex": 0,
+      "explanation": "水戸ホーリーホックのDF真瀬拓海は、2026年10月26日時点でリーグトップとなる総スプリント回数253回を記録しています。",
+      "trivia": "スプリント回数の2位は須貝英大の233回となっており、真瀬拓海は2位に20回もの差をつけて圧倒的な数字を誇っています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "個人スタッツ",
+        "ヴィッセル神戸"
+      ],
+      "text": "Jリーグ公式が2026年10月下旬に公開したJ1リーグの個人スタッツにおいて、「総走行距離」でリーグトップとなる142.3kmを記録したヴィッセル神戸の選手は誰でしょう？",
+      "options": [
+        "井手口陽介",
+        "稲垣祥",
+        "中川敦瑛",
+        "小泉佳穂"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヴィッセル神戸の井手口陽介は、2026年10月26日時点で総走行距離142.3kmを記録し、リーグ1位となっています。",
+      "trivia": "総走行距離ランキングの2位は名古屋グランパスの稲垣祥（141.5km）で、わずか0.8kmの僅差となっています。ちなみに稲垣はデュエル勝利数ではリーグトップです。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "西川周作",
+        "浦和レッズ",
+        "出場記録",
+        "J1最多"
+      ],
+      "text": "2026年10月31日に行われたJ1第13節の柏レイソル戦で、J1通算672試合出場を達成し、歴代最多タイ記録に並んだ浦和レッズの選手は誰でしょう？",
+      "options": [
+        "西川周作",
+        "興梠慎三",
+        "長谷部誠",
+        "権田修一"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズのGK西川周作が、大分、広島、浦和と渡り歩き、プロ22年目で遠藤保仁（元G大阪など）が持つJ1最多出場記録の672試合に並びました。長年にわたって第一線で活躍し続けてきた偉大な記録です。",
+      "trivia": "西川選手はJ1通算無失点試合数（クリーンシート）でも前人未到の200試合を達成しており、歴代トップの記録を保持しています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "香川真司",
+        "セレッソ大阪",
+        "出場記録",
+        "マイルストーン"
+      ],
+      "text": "2026年10月31日に行われた鹿島アントラーズ戦で、プロデビューから20年目にしてJ1通算100試合出場という節目を迎えたセレッソ大阪の元日本代表選手は誰でしょう？",
+      "options": [
+        "香川真司",
+        "清武弘嗣",
+        "乾貴士",
+        "南野拓実"
+      ],
+      "answerIndex": 0,
+      "explanation": "セレッソ大阪の香川真司は、若手時代をJ2で過ごし、その後長くヨーロッパの第一線で活躍していたため、プロ20年目にしてJ1通算100試合出場を達成しました。",
+      "trivia": "香川選手がヨーロッパへ旅立つ前の2010年シーズンまで、セレッソでの公式戦出場の多くはJ2リーグでのものでした（J2通算114試合）。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "トーマス・デン",
+        "横浜F・マリノス",
+        "出場記録",
+        "オーストラリア代表"
+      ],
+      "text": "2026年10月25日の試合でJ1通算100試合出場を達成し、同年11月1日の川崎フロンターレ戦で記念セレモニーが行われた、横浜F・マリノスに所属するオーストラリア代表DFは誰でしょう？",
+      "options": [
+        "トーマス・デン",
+        "エドゥアルド",
+        "アンデルソン・ロペス",
+        "ヤン・マテウス"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜F・マリノスのトーマス・デンは、10月25日の名古屋グランパス戦でJ1通算100試合出場を達成しました。11月1日の川崎戦でその記念セレモニーが実施されました。",
+      "trivia": "トーマス・デンはケニアのナイロビ出身の難民としてオーストラリアに移住した経歴を持ち、Jリーグでは浦和レッズやアルビレックス新潟でもプレーしています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "ウェルトン",
+        "ガンバ大阪",
+        "負傷",
+        "アクシデント"
+      ],
+      "text": "2026年11月1日に行われたJ1第13節のFC町田ゼルビア戦で、ドリブル突破を図った直後に左太もも裏を痛め、前半41分に無念の負傷交代となったガンバ大阪のブラジル人FWは誰でしょう？",
+      "options": [
+        "ウェルトン",
+        "イッサム・ジェバリ",
+        "ダワン",
+        "ファン・アラーノ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガンバ大阪のFWウェルトンは、左ウイングからドリブル突破を図って相手DFに阻まれた直後に自ら交代を要求し、その場に倒れ込んで角昂志郎と交代しました。",
+      "trivia": "ウェルトンは今シーズン、強靭なフィジカルと推進力あるドリブルを武器にG大阪の攻撃を牽引しており、サポーターからも愛される存在です。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "安永玲央",
+        "松本山雅FC",
+        "出場記録",
+        "J3"
+      ],
+      "text": "2026年10月31日に行われたJ3の福島ユナイテッドFC戦で、J3通算100試合出場を達成した松本山雅FCのMFは誰でしょう？",
+      "options": [
+        "安永玲央",
+        "山本龍平",
+        "村山智彦",
+        "橋内優也"
+      ],
+      "answerIndex": 0,
+      "explanation": "松本山雅FCのMF安永玲央は、10月31日の福島ユナイテッドFC戦に出場し、J3通算100試合出場を達成しました。中盤からチームを支える活躍を見せています。",
+      "trivia": "安永玲央の父親は、現役時代に横浜マリノスなどでプレーし、スペインリーグのレリダでも活躍した元プロサッカー選手の安永聡太郎です。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-31",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "監督交代",
+        "水戸ホーリーホック",
+        "樹森大介",
+        "森直樹"
+      ],
+      "text": "2026年10月26日、成績不振を理由にJ1水戸ホーリーホックが監督の解任を発表しました。解任された監督は誰でしょう？",
+      "options": [
+        "樹森大介",
+        "森直樹",
+        "城福浩",
+        "小林慶行"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月26日、水戸ホーリーホックは成績不振により樹森大介監督との契約解除を発表し、後任としてフットボールダイレクターを務めていた森直樹氏が新監督に就任しました。",
+      "trivia": "新監督の森直樹氏は、クラブをJ1初昇格に導いた立役者であり、今回がトップチームの監督への復帰となります。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-26",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "水戸ホーリーホック",
+        "連敗",
+        "J1",
+        "降格圏"
+      ],
+      "text": "2026年10月26日に監督交代を発表した水戸ホーリーホックですが、監督解任の発表時点でリーグ戦は何連敗を喫していたでしょう？",
+      "options": [
+        "6連敗",
+        "4連敗",
+        "8連敗",
+        "10連敗"
+      ],
+      "answerIndex": 0,
+      "explanation": "水戸ホーリーホックは第12節のFC東京戦で0-6の大敗を喫するなど、リーグ戦6連敗で順位が17位に沈み、監督交代を決断しました。",
+      "trivia": "水戸は監督交代後の10月31日に行われた第13節のサンフレッチェ広島戦でも0-3で敗れ、連敗は7に伸びて降格圏の19位に転落してしまいました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 12,
+        "matchDate": "2026-10-26",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "社会連携",
+        "法務省",
+        "シャレン"
+      ],
+      "text": "2026年10月30日、Jリーグと法務省による新たな連携プロジェクトの開始が発表されました。これはJクラブとどのような施設が協力して製品を共同制作する取り組みでしょう？",
+      "options": [
+        "刑事施設",
+        "児童養護施設",
+        "高齢者福祉施設",
+        "特別支援学校"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月30日、Jクラブとクラブ所在地に対応する全国の刑事施設（刑務所等）が協力し、刑務作業製品を共同で企画・制作するプロジェクトの開始が発表されました。",
+      "trivia": "このプロジェクトにはJ1からJ3まで計19クラブが参加しており、制作された製品は法務省主催の全国矯正展でお披露目される予定です。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-30",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "秋春制",
+        "シーズン移行",
+        "ルール変更"
+      ],
+      "text": "Jリーグは2026/27シーズンから大幅なカレンダー変更を行いました。8月に開幕し翌年5月に閉幕となる、この新しいシーズン制度を何と呼ぶでしょう？",
+      "options": [
+        "秋春制",
+        "春秋制",
+        "夏春制",
+        "冬秋制"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグは2026/27シーズンから、これまでの2月開幕・12月閉幕の「春秋制」から、ヨーロッパの主要リーグなどと同じ「秋春制」へ完全移行しました。",
+      "trivia": "秋春制への移行により、日本の過酷な夏の酷暑での試合を避けやすくなるだけでなく、ヨーロッパの移籍市場とスケジュールが合うため海外移籍や選手獲得がスムーズになると期待されています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "ルヴァンカップ",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ルヴァンカップ",
+        "水戸ホーリーホック",
+        "森直樹",
+        "セレッソ大阪"
+      ],
+      "text": "2026年10月26日に水戸ホーリーホックの新監督に就任した森直樹監督ですが、その初陣となった10月28日のルヴァンカップ（1stラウンド4回戦）の対戦相手はどこだったでしょう？",
+      "options": [
+        "セレッソ大阪",
+        "サンフレッチェ広島",
+        "ガンバ大阪",
+        "アビスパ福岡"
+      ],
+      "answerIndex": 0,
+      "explanation": "森直樹新監督は、10月28日に行われた2026/27 JリーグYBCルヴァンカップ1stラウンド4回戦のセレッソ大阪戦からベンチ入りし、新体制での初陣として指揮を執りました。",
+      "trivia": "ルヴァンカップでの初陣を経て、新体制のリーグ戦初陣となったのは、その3日後の10月31日に行われたJ1第13節のサンフレッチェ広島戦でした。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-10-28",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "藤枝MYFC",
+        "槙野智章",
+        "Jリーグ"
+      ],
+      "text": "2026年10月下旬、J2藤枝MYFCの監督が試合後のインタビューで審判に対する不適切な発言（判定への悪質な抗議）を行い、2試合のベンチ入り停止処分を受けました。この監督は誰でしょう？",
+      "options": [
+        "槙野智章",
+        "内田篤人",
+        "大久保嘉人",
+        "中村憲剛"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年10月24日の試合後インタビューでの発言が「審判批判」とみなされ、10月29日にJリーグ規律委員会より2試合のベンチ入り停止と罰金処分が下されました。",
+      "trivia": "この監督は試合中にも異議による警告を受けており、一般に公開されるインタビューの場での批判が加重処分（最低1試合から2試合へ）の理由となりました。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "FC町田ゼルビア",
+        "ACL2",
+        "アジア"
+      ],
+      "text": "2026年10月29日に開催されたAFCチャンピオンズリーグ2（ACL2）のグループステージ第3節で、FC町田ゼルビアは中国のどのクラブとアウェイで対戦したでしょう？",
+      "options": [
+        "上海申花",
+        "上海海港",
+        "山東泰山",
+        "北京国安"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC町田ゼルビアは2026-27シーズンのACL2に参戦しており、10月29日には上海スタジアムで上海申花と対戦しました。",
+      "trivia": "上海申花（シャンハイ・シンホワ）は中国スーパーリーグの古豪で、過去にはカルロス・テベスやディディエ・ドログバなど世界的スター選手が在籍したこともあります。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 3,
+        "matchDate": "2026-10-29",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ジュビロ磐田",
+        "特別指定選手",
+        "移籍・加入"
+      ],
+      "text": "2026年10月27日、順天堂大学の松田和輝選手が2026/27シーズンの「JFA・Jリーグ特別指定選手」に認定されました。受け入れ先となるJクラブはどこでしょう？",
+      "options": [
+        "ジュビロ磐田",
+        "清水エスパルス",
+        "名古屋グランパス",
+        "鹿島アントラーズ"
+      ],
+      "answerIndex": 0,
+      "explanation": "松田和輝選手はジュビロ磐田U-15、U-18を経て順天堂大学に進学し、2026/27シーズンからのトップチーム加入が内定しています。",
+      "trivia": "JFA・Jリーグ特別指定選手制度は、大学や高校などに所属したままJリーグの公式戦に出場できる仕組みで、若手選手の育成を目的としています。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ヴィッセル神戸",
+        "U-21Jリーグ",
+        "育成"
+      ],
+      "text": "2026年11月1日に行われた「2026/27 U-21Jリーグ 交流戦ラウンド」の第1節で、ヴィッセル神戸U-21はジュビロ磐田U-21に1-0で勝利しました。この試合で決勝点を決めた選手は誰でしょう？",
+      "options": [
+        "濱﨑健斗",
+        "浦十藏",
+        "本間ジャスティン",
+        "西岡鷹佑"
+      ],
+      "answerIndex": 0,
+      "explanation": "いぶきの森球技場で行われたU-21Jリーグ交流戦ラウンドで、後半に交代出場した濱﨑健斗が80分に決勝ゴールを挙げ、ヴィッセル神戸U-21が勝利を収めました。",
+      "trivia": "U-21Jリーグは若手選手の出場機会創出を目的としたリーグ戦です。ヴィッセル神戸U-21の手倉森誠監督は過去にU-23日本代表を率いてリオ五輪に出場した経験を持ちます。",
+      "referenceDate": "2026-11-02",
+      "weeklyMeta": {
+        "matchweek": 1,
+        "matchDate": "2026-11-01",
+        "publishDate": "2026-11-02",
+        "expiryDate": "2026-11-09",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
