@@ -1,0 +1,1050 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-11-09T00:40:42Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-11-09",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "大阪ダービー",
+        "セレッソ大阪",
+        "ガンバ大阪"
+      ],
+      "text": "2026年11月8日に行われたJ1リーグの「大阪ダービー」で、ガンバ大阪を相手に3-2で勝利し、9試合ぶりの白星を挙げたクラブはどこでしょう？",
+      "options": [
+        "セレッソ大阪",
+        "ヴィッセル神戸",
+        "京都サンガF.C.",
+        "FC町田ゼルビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月8日にパナソニックスタジアム吹田で行われた大阪ダービーは、セレッソ大阪が3-2で勝利し9試合ぶりの白星を飾りました。",
+      "trivia": "この試合でガンバ大阪の得点者には、チュニジア代表経験のあるイッサム・ジェバリらが名を連ねました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "福田師王",
+        "カールスルーエ"
+      ],
+      "text": "2026年11月4日、シンガポール遠征に臨む日本代表メンバーが発表されました。今回がA代表初招集となった、ドイツ・カールスルーエ所属の22歳のFWは誰でしょう？",
+      "options": [
+        "福田師王",
+        "鈴木唯人",
+        "塩貝健人",
+        "小川航基"
+      ],
+      "answerIndex": 0,
+      "explanation": "神村学園高からJリーグを経由せずにドイツへ渡った福田師王が、A代表初招集を果たしました。",
+      "trivia": "福田師王は高校時代、「怪物」と称され、第101回全国高校サッカー選手権では得点王に輝いています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ACLE",
+        "ガンバ大阪",
+        "イーライ・アダムス"
+      ],
+      "text": "2026年11月4日に行われたAFCチャンピオンズリーグエリート（ACLE）の浦項スティーラーズ戦で、直接FKから圧巻の加入後初ゴールを決めたガンバ大阪のオーストラリア代表FWは誰でしょう？",
+      "options": [
+        "イーライ・アダムス",
+        "ミッチェル・デューク",
+        "トーマス・デン",
+        "イッサム・ジェバリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イーライ・アダムスは後半、自ら得たFKを左足でゴール左上に決め、加入後初ゴールをマークしました。試合は3-3の引き分けに終わっています。",
+      "trivia": "イーライ・アダムスは2026年夏にガンバ大阪に加入するまで、Aリーグのニューカッスル・ジェッツなどで活躍していました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-04",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "国際親善試合",
+        "シンガポール"
+      ],
+      "text": "2026年11月14日と17日に行われる日本代表の国際親善試合「MIZUHO BLUE CHALLENGE THE KALLANG FOOTBALL SERIES」は、どの国で開催されるでしょう？",
+      "options": [
+        "シンガポール",
+        "マレーシア",
+        "タイ",
+        "インドネシア"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表はシンガポールのナショナルスタジアムで、ブラジル代表およびパラグアイ代表と対戦します。",
+      "trivia": "シンガポールのナショナルスタジアムは、開閉式の屋根を持つ多目的スタジアムで、カラン地区に位置しています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "ヴィッセル神戸",
+        "武藤嘉紀"
+      ],
+      "text": "2026年11月8日に行われたJ1リーグのヴィッセル神戸vs浦和レッズの試合で、先制点と後半アディショナルタイムの劇的同点弾を決め、チームを敗戦の危機から救った神戸の選手は誰でしょう？",
+      "options": [
+        "武藤嘉紀",
+        "大迫勇也",
+        "佐々木大樹",
+        "井手口陽介"
+      ],
+      "answerIndex": 0,
+      "explanation": "武藤嘉紀は43分に先制点を挙げると、1-2と逆転されて迎えた後半アディショナルタイムにも同点ゴールを決め、2-2のドローに持ち込みました。",
+      "trivia": "この試合が行われたのは、国立競技場を改称した「MUFGスタジアム」でした。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J2",
+        "サガン鳥栖",
+        "合戸晴矢"
+      ],
+      "text": "2026年11月3日に行われたJ2リーグ第15節の湘南ベルマーレ戦で、85分に決勝ゴールを挙げ、サガン鳥栖に今季アウェー初勝利をもたらした選手は誰でしょう？",
+      "options": [
+        "合戸晴矢",
+        "塩浜遼",
+        "富樫敬真",
+        "横山歩夢"
+      ],
+      "answerIndex": 0,
+      "explanation": "福岡大学在学中のFW合戸晴矢が途中出場から決勝点を挙げ、サガン鳥栖が1-0で湘南ベルマーレを下しました。",
+      "trivia": "合戸晴矢はこの試合の直前、11月1日に大学の試合を終えてからサガン鳥栖のチームに合流していました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-03",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "南野拓実",
+        "復帰"
+      ],
+      "text": "2026年11月4日に発表された日本代表メンバーの中で、左膝前十字靭帯損傷の大ケガを乗り越え、約1年ぶりの代表復帰を果たしたフランス・モナコ所属の選手は誰でしょう？",
+      "options": [
+        "南野拓実",
+        "伊東純也",
+        "中村敬斗",
+        "町田浩樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "南野拓実は昨年11月以来、約1年ぶりの代表復帰となりました。また、DFの町田浩樹も同じく大怪我を克服しての復帰を果たしています。",
+      "trivia": "南野拓実は、ワールドカップでは選外となったものの、「メンター」としてチームに帯同し、選手たちを裏から支えていました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "アジアカップ",
+        "AFC",
+        "日本代表"
+      ],
+      "text": "2026年11月3日、アジアサッカー連盟（AFC）は、来年1月にサウジアラビアで開催予定だったアジアカップをいつに延期すると発表したでしょう？",
+      "options": [
+        "2027年12月",
+        "2027年6月",
+        "2028年6月",
+        "2029年1月"
+      ],
+      "answerIndex": 0,
+      "explanation": "現地情勢の影響により、2027年1月開催予定だったアジアカップは、2027年12月23日から2028年1月21日への延期が発表されました。",
+      "trivia": "アジアカップまでの短期契約で日本代表の指揮を執っていた森保一監督にとって、この延期が任期にどう影響するかが注目されています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "西川周作",
+        "大記録",
+        "遠藤保仁"
+      ],
+      "text": "2026年11月8日、浦和レッズの西川周作がJ1通算最多出場記録を「673試合」に更新しました。それまで672試合で歴代単独1位だった元日本代表選手は誰でしょう？",
+      "options": [
+        "遠藤保仁",
+        "楢﨑正剛",
+        "中澤佑二",
+        "阿部勇樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "西川周作は2026年11月8日のヴィッセル神戸戦に先発出場し、遠藤保仁の記録（672試合）を抜いて歴代単独トップに立ちました。",
+      "trivia": "現在ガンバ大阪のヘッドコーチを務める遠藤保仁は、かつて日本代表で共にプレーした西川の記録更新に対し、「本当にプロ意識の高い選手だから成し遂げられた数字」と称賛しました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "坂元達裕",
+        "コベントリー"
+      ],
+      "text": "2026年11月4日に発表された日本代表メンバーで、2021年6月以来となる約5年半ぶりの代表復帰を果たした、イングランド・コベントリー所属のMFは誰でしょう？",
+      "options": [
+        "坂元達裕",
+        "田中碧",
+        "松木玖生",
+        "鈴木唯人"
+      ],
+      "answerIndex": 0,
+      "explanation": "所属クラブで好調を維持している坂元達裕が、久しぶりの代表招集を受けました。今夏からはイングランドのコベントリーでプレーしています。",
+      "trivia": "坂元達裕は鋭い切り返しを武器としており、そのキレのあるドリブルからチャンスを演出するプレースタイルで知られています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "浦和レッズ",
+        "西川周作",
+        "大記録"
+      ],
+      "text": "2026年11月8日に行われたJ1第14節のヴィッセル神戸戦に出場し、J1通算673試合出場という新記録を打ち立てた浦和レッズのゴールキーパーは誰でしょう？",
+      "options": [
+        "西川周作",
+        "権田修一",
+        "川島永嗣",
+        "東口順昭"
+      ],
+      "answerIndex": 0,
+      "explanation": "西川周作は2026年11月8日の神戸戦にフル出場し、遠藤保仁の持っていた672試合を抜き、J1通算最多出場記録を673試合に更新しました。",
+      "trivia": "西川選手のJ1デビューは2005年、当時所属していた大分トリニータでの試合でした。高校時代から天才GKとして名を馳せていました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "順位表",
+        "FC東京",
+        "首位"
+      ],
+      "text": "2026年11月8日のJ1第14節終了時点で、勝ち点33を獲得し単独首位に立っているクラブはどこでしょう？",
+      "options": [
+        "FC東京",
+        "柏レイソル",
+        "サンフレッチェ広島",
+        "ヴィッセル神戸"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は第14節で鹿島アントラーズに2-0で勝利し、勝ち点を33に伸ばして首位をキープしました。2位の柏レイソルとは勝ち点2差です。",
+      "trivia": "FC東京はこの時点で得点33、失点8と、攻守にわたってリーグトップクラスの圧倒的な数字を残しています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "ヴィッセル神戸",
+        "武藤嘉紀",
+        "劇的ゴール"
+      ],
+      "text": "2026年11月8日のJ1第14節、ヴィッセル神戸対浦和レッズの試合で、後半アディショナルタイムの90+4分に劇的な同点ゴールを決め、試合を2-2のドローに持ち込んだ神戸の選手は誰でしょう？",
+      "options": [
+        "武藤嘉紀",
+        "大迫勇也",
+        "宮代大聖",
+        "佐々木大樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-2でリードされていた90+4分、武藤嘉紀が左足で値千金の同点ゴールを決め、神戸を敗戦の危機から救いました。武藤はこの試合の先制点も挙げています。",
+      "trivia": "このゴールにより浦和レッズは土壇場で勝利を逃し、J1最多出場新記録を達成した西川周作のメモリアルゲームを白星で飾ることができませんでした。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "FC東京",
+        "無失点記録",
+        "鉄壁"
+      ],
+      "text": "2026年11月7日のJ1第14節で、首位のFC東京が鹿島アントラーズに勝利して達成した「J1タイ記録」とは次のうちどれでしょう？",
+      "options": [
+        "9試合連続無失点",
+        "9試合連続3得点以上",
+        "9試合連続逆転勝利",
+        "開幕から9試合連続無敗"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は鹿島を2-0で下し、J1タイ記録となる9試合連続無失点を達成しました。鉄壁の守備で首位を快走しています。",
+      "trivia": "サッカーにおいて無失点試合はクリーンシートと呼ばれます。J1の連続無失点記録は、過去にも強固な守備を誇った限られたチームしか達成していない偉大な記録です。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-11-07",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "ガンバ大阪",
+        "東口順昭",
+        "大阪ダービー"
+      ],
+      "text": "2026年11月8日に行われたJ1第14節の大阪ダービー（ガンバ大阪対セレッソ大阪）に出場し、自身にとってJ1通算400試合出場の節目を達成したガンバ大阪の選手は誰でしょう？",
+      "options": [
+        "東口順昭",
+        "宇佐美貴史",
+        "倉田秋",
+        "三浦弦太"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガンバ大阪の守護神である東口順昭は、この試合でJ1通算400試合出場という節目を迎えました。なお、試合は2-3でセレッソ大阪が勝利しています。",
+      "trivia": "東口順昭は大学卒業後にアルビレックス新潟でプロデビューし、その後ガンバ大阪に移籍して長年正GKとして活躍を続けています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "アルビレックス新潟",
+        "順位表",
+        "珍記録"
+      ],
+      "text": "2026年11月8日時点のJ2リーグ順位表で、首位に立ちながらも「得失点差がマイナス（-1）」という非常に珍しい状況になり話題を集めたクラブはどこでしょう？",
+      "options": [
+        "アルビレックス新潟",
+        "横浜FC",
+        "カターレ富山",
+        "テゲバジャーロ宮崎"
+      ],
+      "answerIndex": 0,
+      "explanation": "アルビレックス新潟は第16節終了時点で勝ち点32を獲得し首位に立っていますが、総得点23・総失点24となっており、首位にもかかわらず得失点差がマイナス1という珍記録となりました。",
+      "trivia": "サッカーでは通常、首位を争うチームは大きくプラスの得失点差を持ちますが、僅差での勝利が多く、負ける時に大敗しているとこのような逆転現象が起こります。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "西川周作",
+        "浦和レッズ",
+        "Jリーグ",
+        "記録達成"
+      ],
+      "text": "2026年11月8日のJ1第14節・ヴィッセル神戸戦に出場し、J1通算673試合出場を達成して歴代単独最多出場記録を更新した浦和レッズのゴールキーパーは誰？",
+      "options": [
+        "西川周作",
+        "楢﨑正剛",
+        "曽ヶ端準",
+        "川口能活"
+      ],
+      "answerIndex": 0,
+      "explanation": "西川周作は2026年11月8日の神戸戦でJ1通算673試合出場を果たし、遠藤保仁の持つ672試合の記録を抜いてJ1歴代最多出場記録の単独トップに立ちました。",
+      "trivia": "西川選手はこの日の試合で、自身がかつて目標としていた「楢﨑正剛の記録（631試合）」を遥かに超える金字塔を打ち立てました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "福田師王",
+        "招集"
+      ],
+      "text": "2026年11月4日に発表された、シンガポールでのブラジル戦・パラグアイ戦に臨むサッカー日本代表メンバーに、22歳で初招集されたフォワードは誰？",
+      "options": [
+        "福田師王",
+        "小川航基",
+        "塩貝健人",
+        "鈴木唯人"
+      ],
+      "answerIndex": 0,
+      "explanation": "22歳の福田師王が、A代表に初招集されました。この11月シリーズでは南野拓実や小川航基なども代表復帰を果たしています。",
+      "trivia": "福田師王は高校時代から神村学園で活躍し、Jリーグを経由せずに直接ヨーロッパのクラブへ加入した異色のキャリアを持っています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "三井寺眞",
+        "横浜F・マリノス",
+        "U-21日本代表",
+        "負傷"
+      ],
+      "text": "2026年11月のU-21日本代表のスペイン・エジプト遠征に16歳で“超飛び級”選出されたものの、11月7日のJ1の試合前ウォーミングアップで負傷し参加辞退となった、横浜F・マリノス所属の選手は誰？",
+      "options": [
+        "三井寺眞",
+        "石橋瀬凪",
+        "名和田我空",
+        "望月ヘンリー海輝"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜FMの16歳MF三井寺眞は、U-21日本代表に大抜擢されていましたが、11月7日のJ1岡山戦のウォーミングアップ中に左外閉鎖筋を負傷し、無念の辞退となりました。",
+      "trivia": "三井寺眞の代わりにU-21日本代表に追加招集されたのは、同じく若手有望株の石橋瀬凪でした。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-11-07",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "特別指定選手",
+        "岡留零樹",
+        "レノファ山口FC",
+        "移籍情報"
+      ],
+      "text": "日本サッカー協会は2026年11月3日、2名の選手を「2026/27シーズン JFA・Jリーグ特別指定選手」に認定しました。福岡大学のFW岡留零樹の受け入れ先となったJリーグクラブはどこ？",
+      "options": [
+        "レノファ山口FC",
+        "ツエーゲン金沢",
+        "アビスパ福岡",
+        "サガン鳥栖"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月3日付で、福岡大学の岡留零樹がレノファ山口FCの特別指定選手に、金沢学院大学の中川豪がツエーゲン金沢の特別指定選手に認定されました。",
+      "trivia": "JFA・Jリーグ特別指定選手制度は、大学や高校に所属しながらJリーグの公式戦に出場できる制度で、プロの環境で経験を積むことで選手の成長を促進する目的があります。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "西川周作",
+        "遠藤保仁",
+        "Jリーグ",
+        "出場記録"
+      ],
+      "text": "2026年11月8日、浦和レッズの西川周作がJ1通算出場記録を「673試合」とし、歴代単独トップに立ちました。それまで1位だった元日本代表MF遠藤保仁が持っていた出場記録は通算何試合？",
+      "options": [
+        "672試合",
+        "631試合",
+        "593試合",
+        "590試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "西川周作が更新する前まで、J1の歴代最多出場記録は遠藤保仁の持つ672試合でした。なお歴代3位は楢﨑正剛の631試合、4位は中澤佑二の593試合です。",
+      "trivia": "西川周作は2026年に40歳を迎えており、プロデビューから長年にわたり大きな怪我なくレギュラーを張り続けている「鉄人」としてファンから称賛されています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "アビスパ福岡",
+        "城福浩",
+        "監督交代",
+        "J1"
+      ],
+      "text": "2026年11月6日、J1最下位と苦しむアビスパ福岡が新監督として就任を発表した人物は誰？",
+      "options": [
+        "城福浩",
+        "長谷部茂利",
+        "鬼木達",
+        "川井健太"
+      ],
+      "answerIndex": 0,
+      "explanation": "アビスパ福岡は塚原真也前監督との契約解除後、かつてFC東京や東京ヴェルディなどを率いた城福浩氏の監督就任を発表しました。",
+      "trivia": "城福浩監督は就任にあたり、「やってやるという気持ちとともに緊張感とプレッシャーも感じている」と意気込みを語っています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ジュビロ磐田",
+        "秋葉忠宏",
+        "サポーター",
+        "声明"
+      ],
+      "text": "2026年11月8日に行われたJ2第16節の湘南ベルマーレ戦後、一部サポーターからのブーイングに対し「来てもらわなくて結構です」と異例の苦言を呈したジュビロ磐田の監督は誰？",
+      "options": [
+        "秋葉忠宏",
+        "横内昭展",
+        "中山雅史",
+        "鈴木政一"
+      ],
+      "answerIndex": 0,
+      "explanation": "湘南戦で試合終盤に追いつかれ引き分けた後、選手へのブーイングに対して秋葉忠宏監督が苦言を呈し、翌日にはクラブからも誹謗中傷を許さない声明が発表されました。",
+      "trivia": "秋葉監督は「選手はハードワークしてくれた。何かあるならクラブハウスに僕がいるので、いつでも話に来てほしい」と自ら矢面に立つ姿勢を見せました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 16,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "ガンバ大阪",
+        "セレッソ大阪",
+        "大阪ダービー",
+        "明神智和"
+      ],
+      "text": "2026年11月8日に行われたJ1第14節の「大阪ダービー」でセレッソ大阪に2-3で敗れ、J2降格圏の18位に転落してしまったガンバ大阪の現在の監督は誰？",
+      "options": [
+        "明神智和",
+        "遠藤保仁",
+        "ダニエル・ポヤトス",
+        "宮本恒靖"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガンバ大阪はセレッソ大阪とのダービーマッチで3失点を喫して敗れ、明神智和監督体制で厳しい残留争いを強いられる状況となっています。",
+      "trivia": "明神智和監督はガンバ大阪の黄金期を支えた元日本代表MFで、今夏にヘッドコーチの遠藤保仁らとともに新体制へと移行していました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "サステナビリティ",
+        "SPL",
+        "環境問題"
+      ],
+      "text": "Jリーグが2026年11月にランキング公表を予定している、各クラブの気候変動対策の取り組み状況を評価する仕組み「SPL」とは何の略称？",
+      "options": [
+        "Sport Positive Leagues",
+        "Sustainable Project Leagues",
+        "Social Purpose Leagues",
+        "Stadium Power Leagues"
+      ],
+      "answerIndex": 0,
+      "explanation": "「SPL（Sport Positive Leagues）」は、サッカークラブの気候アクションを数値化し、その進捗や方向性を分かりやすく把握できる仕組みです。",
+      "trivia": "SPLでは、エネルギー、廃棄物、交通など12項目の取り組みについて評価が行われ、Jリーグクラブの好事例を公表することでスポーツ界の環境活動推進を目指しています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ選抜",
+        "イングランド遠征",
+        "育成",
+        "ロジャー・シュミット"
+      ],
+      "text": "2026年11月にイングランド遠征を実施し、チェルシーFCの育成組織などと対戦する「U-16 Jリーグ選抜」で監督を務める、Jリーグのグローバルフットボールアドバイザーは誰？",
+      "options": [
+        "ロジャー・シュミット",
+        "カルレス・ロマゴサ",
+        "アルベルト・ザッケローニ",
+        "トーマス・エンゲル"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグのグローバルフットボールアドバイザーを務めるロジャー・シュミット氏が監督として指揮を執り、Jクラブのアカデミーから23名の選手がイングランド遠征に参加しました。",
+      "trivia": "この遠征では、クイーンズ・パーク・レンジャーズ（QPR）やチェルシーFCのU-17チームとのトレーニングマッチが組まれ、世界基準を肌で学ぶ機会となっています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "西川周作",
+        "Jリーグ",
+        "浦和レッズ",
+        "記録更新"
+      ],
+      "text": "2026年11月8日に行われたJ1第14節で、J1通算673試合出場を達成し、歴代単独トップとなる新記録を打ち立てた選手は誰でしょうか？",
+      "options": [
+        "西川周作",
+        "遠藤保仁",
+        "楢﨑正剛",
+        "権田修一"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズのGK西川周作がヴィッセル神戸戦に出場してJ1通算673試合目の出場を果たし、遠藤保仁氏の持つ672試合の最多出場記録を更新しました。",
+      "trivia": "記録を更新された遠藤保仁氏も、かつては楢﨑正剛氏の持つGKの最多出場記録をフィールドプレーヤーとして塗り替えるという偉業を成し遂げていました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "湘南ベルマーレ",
+        "女子サッカー",
+        "Jリーグ",
+        "ダブルヘッダー"
+      ],
+      "text": "2026年11月、トップチームのJリーグ公式戦と同日に「ウィメン公式戦」とのダブルヘッダーをレモンガススタジアム平塚で開催すると発表し、話題となったクラブはどこでしょうか？",
+      "options": [
+        "湘南ベルマーレ",
+        "アルビレックス新潟",
+        "サンフレッチェ広島",
+        "セレッソ大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "湘南ベルマーレは11月7日、同月29日に行われるJ2リーグのカターレ富山戦と同日・同会場で、湘南ベルマーレウィメンの公式戦をダブルヘッダーで開催すると発表しました。",
+      "trivia": "湘南ベルマーレウィメンの試合は神奈川県女子サッカーリーグ1部の最終節として行われ、Jリーグの試合前にメインスタンドが無料で開放される試みとなっています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Juice=Juice",
+        "Jリーグ",
+        "イベント",
+        "国立競技場"
+      ],
+      "text": "2026年11月8日にMUFGスタジアムで行われたJ1第14節の神戸vs浦和戦に特別ゲストとして来場し、ハーフタイムのライブで「音圧がすごい」と話題を呼んだ女性アイドルグループはどれでしょうか？",
+      "options": [
+        "Juice=Juice",
+        "乃木坂46",
+        "日向坂46",
+        "NiziU"
+      ],
+      "answerIndex": 0,
+      "explanation": "女性アイドルグループのJuice=Juiceが来場し、ハーフタイムにスペシャルライブを実施。その圧倒的な歌唱力とパフォーマンスがサッカーファンの間でも大きな反響を呼びました。",
+      "trivia": "この試合が行われた国立競技場は、2026年1月から三菱UFJフィナンシャル・グループとのネーミングライツ契約により「MUFGスタジアム」という呼称が使用されています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 14,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "Jリーグ選抜",
+        "ロジャー・シュミット",
+        "育成",
+        "イングランド遠征"
+      ],
+      "text": "2026年11月6日からイングランド遠征を実施している「U-16 Jリーグ選抜」の監督を務めている、Jリーググローバルフットボールアドバイザーは誰でしょうか？",
+      "options": [
+        "ロジャー・シュミット",
+        "アンジェ・ポステコグルー",
+        "ハビエル・アギーレ",
+        "アーセン・ベンゲル"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーググローバルフットボールアドバイザーを務めるドイツ出身の指導者、ロジャー・シュミット氏が監督として指揮を執り、チェルシーFCなどの育成組織と対戦します。",
+      "trivia": "シュミット氏は過去にレッドブル・ザルツブルク、バイエル・レヴァークーゼン、ベンフィカなど欧州の強豪クラブで監督を歴任した世界的な名将です。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

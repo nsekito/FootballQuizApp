@@ -1,0 +1,1041 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-11-09T00:45:06Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-11-09",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "コモ",
+        "大勝",
+        "RCランス"
+      ],
+      "text": "2026年11月4日に行われたUEFAチャンピオンズリーグ第4節で、RCランス相手にアウェイで9-1の記録的な大勝を収めたイタリアのクラブはどれ？",
+      "options": [
+        "コモ",
+        "インテル",
+        "ナポリ",
+        "ASローマ"
+      ],
+      "answerIndex": 0,
+      "explanation": "セリエAのコモは、アウェイでのRCランス戦で怒涛のゴールラッシュを見せ、9-1という歴史的なスコアで圧勝しました。",
+      "trivia": "コモはこの試合で7人の異なる選手がゴールを記録しました。セスク・ファブレガス監督の下で超攻撃的なサッカーを展開しています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-04",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・シティ",
+        "ノッティンガム・フォレスト",
+        "番狂わせ"
+      ],
+      "text": "2026年11月7日に行われたプレミアリーグ第10節で、強豪マンチェスター・シティを相手に3-1で勝利する金星を挙げたクラブはどれ？",
+      "options": [
+        "ノッティンガム・フォレスト",
+        "リーズ・ユナイテッド",
+        "エヴァートン",
+        "フラム"
+      ],
+      "answerIndex": 0,
+      "explanation": "ノッティンガム・フォレストはホームでマンチェスター・シティを迎え撃ち、見事3-1で撃破して上位争いを掻き回す結果を残しました。",
+      "trivia": "マンチェスター・シティはこの敗戦により、リーグ首位を走るアーセナルとの勝ち点差が6に広がってしまいました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-11-07",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "パリ・サンジェルマン",
+        "ビジャレアル",
+        "大勝"
+      ],
+      "text": "2026年11月3日のUEFAチャンピオンズリーグ第4節で、スペインのビジャレアルを相手にアウェイで6-0の大勝を収めたフランスのクラブは？",
+      "options": [
+        "パリ・サンジェルマン",
+        "LOSCリール",
+        "RCランス",
+        "オリンピック・マルセイユ"
+      ],
+      "answerIndex": 0,
+      "explanation": "パリ・サンジェルマンはアウェイのビジャレアル戦でゴールを量産し、6-0のクリーンシートで快勝しました。",
+      "trivia": "この勝利によりPSGはCLリーグフェーズで勝ち点12に到達し、大会全体の順位表でも首位をキープしています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-03",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "キリアン・エンバペ",
+        "バレンシア"
+      ],
+      "text": "2026年11月7日に行われたラ・リーガのバレンシア戦で、ダメ押しとなる3点目を決めてリーグ戦7試合連続ゴールを記録したレアル・マドリードの選手は誰？",
+      "options": [
+        "キリアン・エンバペ",
+        "ヴィニシウス・ジュニオール",
+        "ジュード・ベリンガム",
+        "ロドリゴ"
+      ],
+      "answerIndex": 0,
+      "explanation": "フランス代表のキリアン・エンバペは、アウェイでのバレンシア戦の後半30分にゴールを決め、ラ・リーガでの連続得点記録を「7」に伸ばしました。",
+      "trivia": "エンバペはこのゴールにより今季リーグ戦12得点目となり、得点ランキング首位を走るバルセロナのハフィーニャを猛追しています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 12,
+        "matchDate": "2026-11-07",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "フェルミン・ロペス",
+        "アトレティコ・マドリード"
+      ],
+      "text": "2026年11月8日に行われたラ・リーガ第12節のアトレティコ・マドリード対バルセロナの大一番で、同点弾と逆転弾の2ゴールを奪い、バルセロナを勝利（2-1）に導いた選手は誰？",
+      "options": [
+        "フェルミン・ロペス",
+        "ラミン・ヤマル",
+        "ロベルト・レヴァンドフスキ",
+        "ハフィーニャ"
+      ],
+      "answerIndex": 0,
+      "explanation": "フェルミン・ロペスは前半終了間際に同点ゴールを決め、さらに後半には逆転の決勝ゴールを奪う大活躍を見せました。",
+      "trivia": "この敵地での勝利により、バルセロナはレアル・マドリードを抑えてリーグ単独首位の座をキープしています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 12,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "フェネルバフチェ",
+        "リヴァプール",
+        "番狂わせ"
+      ],
+      "text": "2026年11月4日のUEFAチャンピオンズリーグ第4節で、プレミアリーグの強豪リヴァプールをホームに迎え撃ち、3-2で競り勝つ金星を挙げたトルコのクラブはどれ？",
+      "options": [
+        "フェネルバフチェ",
+        "ガラタサライ",
+        "ベシクタシュ",
+        "トラブゾンスポル"
+      ],
+      "answerIndex": 0,
+      "explanation": "トルコの名門フェネルバフチェは、ホームの熱狂的なサポーターの後押しを受け、リヴァプールとの激しい打ち合いを3-2で制しました。",
+      "trivia": "チャンピオンズリーグのリーグフェーズでは、トルコ勢のホームゲーム特有の圧倒的な雰囲気が多くのビッグクラブを苦しめています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-04",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "アーセナル",
+        "スラヴィア・プラハ"
+      ],
+      "text": "2026年11月4日に行われたUEFAチャンピオンズリーグ第4節で、アーセナルがアウェイで2-1の勝利を収めた相手クラブはどこ？",
+      "options": [
+        "スラヴィア・プラハ",
+        "LASKリンツ",
+        "スロヴァン・ブラチスラヴァ",
+        "ボデ/グリムト"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルはチェコに乗り込み、スラヴィア・プラハと対戦。敵地で苦戦を強いられながらも2-1でしっかりと勝ち点3を持ち帰りました。",
+      "trivia": "2026-27シーズンのアーセナルはプレミアリーグでも首位を走っており、国内外の過密日程の中でも安定した戦いぶりを見せています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-04",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "アルダ・ギュレル",
+        "レアル・マドリード",
+        "バレンシア"
+      ],
+      "text": "2026年11月7日のラ・リーガ・バレンシア対レアル・マドリード戦（0-3）で、1ゴール1アシストを記録して勝利に貢献したトルコ代表のMFは誰？",
+      "options": [
+        "アルダ・ギュレル",
+        "ブラヒム・ディアス",
+        "エドゥアルド・カマヴィンガ",
+        "フェデリコ・バルベルデ"
+      ],
+      "answerIndex": 0,
+      "explanation": "アルダ・ギュレルはこの試合で味方のゴールをアシストしたのに加え、自らも追加点を奪う1ゴール1アシストの活躍を見せました。",
+      "trivia": "ギュレルはジュード・ベリンガムの折り返しをダイレクトで合わせ、見事な右足のフィニッシュを沈めました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 12,
+        "matchDate": "2026-11-07",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "チャンピオンズリーグ",
+        "コモ",
+        "ハットトリック",
+        "ドゥヴィカス"
+      ],
+      "text": "2026年11月4日のチャンピオンズリーグ第4節、コモがRCランスに9-1で歴史的大勝を収めた試合において、ハットトリックを達成したコモのギリシャ代表FWは誰？",
+      "options": [
+        "アナスタシオス・ドゥヴィカス",
+        "ヴァンゲリス・パヴリディス",
+        "フォティス・ヨアニディス",
+        "コンスタンティノス・ツィミカス"
+      ],
+      "answerIndex": 0,
+      "explanation": "コモのストライカー、アナスタシオス・ドゥヴィカスはこの試合の前半から後半にかけて3得点を挙げ、チャンピオンズリーグでの今大会得点数を一気に6ゴールに伸ばしました。",
+      "trivia": "この試合での9-1というスコアは、チャンピオンズリーグにおけるアウェイチームの最大得点差勝利の一つとして歴史に名を刻みました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-04",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "ラミン・ヤマル",
+        "バルセロナ",
+        "アシスト"
+      ],
+      "text": "2026年11月8日のラ・リーガ第12節アトレティコ・マドリード対バルセロナ（1-2）で、後半にフェルミン・ロペスの決勝ゴールをアシストした選手は誰？",
+      "options": [
+        "ラミン・ヤマル",
+        "ペドリ",
+        "ダニ・オルモ",
+        "フレンキー・デ・ヨング"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半中盤、バルセロナの神童ラミン・ヤマルの絶妙なパスにフェルミン・ロペスが抜け出し、見事にアトレティコから逆転ゴールを奪いました。",
+      "trivia": "この試合でバルセロナから先制点を奪ったのは、アトレティコを率いるディエゴ・シメオネ監督の息子であるジュリアーノ・シメオネでした。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 12,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "順位表"
+      ],
+      "text": "2026年11月8日に行われたラ・リーガで、アトレティコ・マドリードに2-1で逆転勝利し、首位をキープしたクラブはどこ？",
+      "options": [
+        "バルセロナ",
+        "レアル・マドリード",
+        "ビジャレアル",
+        "レアル・ソシエダ"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナはフェルミン・ロペスの2ゴールでアトレティコ・マドリードに逆転勝利を収め、12試合を終えて勝ち点33で首位を維持しました。",
+      "trivia": "アトレティコ・マドリードはフリアン・アルバレスからのパスを受けたジュリアーノ・シメオネのゴールで先制しましたが、逆転を許す結果となりました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 12,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "PSG",
+        "順位表"
+      ],
+      "text": "2026年11月4日に第4節が終了したUEFAチャンピオンズリーグで、4連勝の勝ち点12で首位を走っているクラブはどこ？",
+      "options": [
+        "パリ・サンジェルマン",
+        "マンチェスター・シティ",
+        "アーセナル",
+        "バイエルン・ミュンヘン"
+      ],
+      "answerIndex": 0,
+      "explanation": "パリ・サンジェルマン（PSG）は第4節でビジャレアルに6-0で大勝するなど、得失点差+20の圧倒的な成績でレアル・マドリードと並び首位に立っています。",
+      "trivia": "4試合を終えて全勝（勝ち点12）をキープしているのは、パリ・サンジェルマンとレアル・マドリードの2クラブのみです。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-04",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "アーセナル",
+        "順位表"
+      ],
+      "text": "2026年11月7日時点で、イングランド・プレミアリーグの順位表の単独首位に立っているクラブはどこ？",
+      "options": [
+        "アーセナル",
+        "マンチェスター・シティ",
+        "リヴァプール",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは11月上旬時点で、2位のマンチェスター・シティに勝ち点差をつけて単独首位を走っています。",
+      "trivia": "この時期の順位表では、3位にブライトン・アンド・ホーヴ・アルビオンが食い込むなど躍進を見せています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-07",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ブンデスリーガ",
+        "ドルトムント",
+        "順位表"
+      ],
+      "text": "2026年11月7日終了時点のブンデスリーガにおいて、首位のバイエルン・ミュンヘンと勝ち点で並んでトップ争いをしているクラブはどこ？",
+      "options": [
+        "ボルシア・ドルトムント",
+        "RBライプツィヒ",
+        "バイエル・レバークーゼン",
+        "アイントラハト・フランクフルト"
+      ],
+      "answerIndex": 0,
+      "explanation": "バイエルンとドルトムントは9試合を終えて6勝3分の無敗（勝ち点21）で並んでいますが、得失点差でバイエルンが首位、ドルトムントが2位となっています。",
+      "trivia": "ドルトムントはこの時点で失点わずか7と、首位バイエルン（9失点）を上回るリーグ最少失点の堅守を見せています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-07",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "マンチェスター・ユナイテッド",
+        "ASローマ"
+      ],
+      "text": "2026年11月3日に行われたUEFAチャンピオンズリーグ第4節で、ASローマを3-2で破り、順位表の17位につけたクラブはどこ？",
+      "options": [
+        "マンチェスター・ユナイテッド",
+        "トッテナム・ホットスパー",
+        "アストン・ヴィラ",
+        "フェネルバフチェ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・ユナイテッドはオールド・トラッフォードでのローマ戦に勝利し、4試合を終えて勝ち点6とし、プレーオフ進出圏内の17位に位置しています。",
+      "trivia": "第4節終了時点で、マンチェスター・ユナイテッドの得失点差はちょうど「0」となっており、今後の勝ち抜けに向けたし烈な争いが注目されています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-03",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "チャンピオンズリーグ",
+        "コモ",
+        "大勝"
+      ],
+      "text": "2026年11月上旬に行われたUEFAチャンピオンズリーグ第4節で、RCランスを相手に9-1という記録的な大勝を収めたクラブはどこ？",
+      "options": [
+        "コモ",
+        "バイエルン・ミュンヘン",
+        "スポルティングCP",
+        "インテル"
+      ],
+      "answerIndex": 0,
+      "explanation": "セリエAからCLに参戦しているコモがRCランスに9-1という歴史的な大勝を飾り、順位表でも一気に上位へ浮上しました。",
+      "trivia": "この大勝によりコモは4試合で勝ち点9に到達し、アストン・ヴィラやバルセロナなどを凌いで第4節終了時点で暫定トップ4に入るというサプライズを起こしました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-04",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "uel",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "中村敬斗",
+        "ヨーロッパリーグ",
+        "オリンピック・リヨン"
+      ],
+      "text": "2026年11月5日に行われたヨーロッパリーグ第4節で、久保建英が所属するレアル・ソシエダと中村敬斗が所属するチームが対戦し、1-1の引き分けとなりました。中村敬斗の現在の所属クラブはどこでしょう？",
+      "options": [
+        "オリンピック・リヨン",
+        "スタッド・ランス",
+        "レアル・ソシエダ",
+        "セルティック"
+      ],
+      "answerIndex": 0,
+      "explanation": "中村敬斗はフランスのオリンピック・リヨンに所属しています。レアル・ソシエダとの試合ではスタメン出場しましたが、久保建英の出場がなく日本人対決は実現しませんでした。",
+      "trivia": "レアル・ソシエダとリヨンはどちらも過去に自国リーグ優勝を経験している古豪であり、ヨーロッパの舞台でも存在感を放つ強豪クラブです。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-05",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "古橋亨梧",
+        "MLS",
+        "ロサンゼルス・ギャラクシー"
+      ],
+      "text": "スコットランドのセルティックでエースとして活躍した日本代表FW古橋亨梧が、2026年に新たに契約を結んで移籍したアメリカ（MLS）のクラブはどこでしょう？",
+      "options": [
+        "ロサンゼルス・ギャラクシー",
+        "ロサンゼルスFC",
+        "インテル・マイアミ",
+        "ニューヨーク・シティFC"
+      ],
+      "answerIndex": 0,
+      "explanation": "古橋亨梧はセルティックからMLSのロサンゼルス・ギャラクシーへ移籍しました。同クラブには吉田麻也や山根視来らも所属しています。",
+      "trivia": "ロサンゼルス・ギャラクシーは、かつてデビッド・ベッカムやズラタン・イブラヒモビッチなどの世界的スター選手が所属していたことで知られるMLSの名門クラブです。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "堂安律",
+        "ブンデスリーガ",
+        "フランクフルト"
+      ],
+      "text": "2026年11月7日に行われたブンデスリーガ第9節パーダーボルン戦で、フランクフルトの堂安律が見せたプレーが話題を呼びました。相手選手2人に囲まれながらもボールをキープした際、称賛された堂安の特徴は何でしょう？",
+      "options": [
+        "強靭なフィジカル",
+        "圧倒的なスピード",
+        "精密なパスセンス",
+        "華麗なドリブル突破"
+      ],
+      "answerIndex": 0,
+      "explanation": "堂安律は相手選手2人に囲まれながらも、フィジカルの強さと巧みな体の使い方でボールをキープしました。倒されない強靭さが「バケモノ級」と現地やファンから高く評価されました。",
+      "trivia": "堂安律は「日本のメッシ」とも呼ばれる高いテクニックに加え、筋力トレーニングにも力を入れており、欧州の屈強なDFにも当たり負けしない身体を作り上げています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 9,
+        "matchDate": "2026-11-07",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "守田英正",
+        "プレミアリーグ",
+        "ハル・シティ"
+      ],
+      "text": "2026-27シーズンからプレミアリーグのハル・シティでプレーする守田英正ですが、2026年11月7日のアーセナル戦は負傷のためメンバー外となりました。この時に痛めたと報道されている部位はどこでしょう？",
+      "options": [
+        "鼠径部（そけい部）と内転筋",
+        "右膝の半月板",
+        "左足首の靱帯",
+        "右太もも裏（ハムストリング）"
+      ],
+      "answerIndex": 0,
+      "explanation": "守田英正は以前にも痛めていた脚と同じ側の「鼠径部と内転筋」に問題を抱え、アーセナル戦を欠場しました。試合もハル・シティが0-1で敗れています。",
+      "trivia": "鼠径部の怪我は「グロインペイン症候群」とも呼ばれ、キックやダッシュの繰り返しで発症しやすく、サッカー選手には非常に多い職業病の一つとして知られています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-11-07",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "前田大然",
+        "プレミアリーグ",
+        "イプスウィッチ"
+      ],
+      "text": "2026年夏にプレミアリーグのイプスウィッチに加入した前田大然は、2026年11月8日の第10節ボーンマス戦で3試合ぶりにスタメン出場しました。この試合で前田が起用されたポジションはどこだったでしょう？",
+      "options": [
+        "右ウイング",
+        "左ウイング",
+        "センターフォワード",
+        "トップ下"
+      ],
+      "answerIndex": 0,
+      "explanation": "前田大然はボーンマス戦に右ウイングでスタメン出場しました。序盤から前線での素早いプレスやボックス内での仕掛けでチャンスを作りましたが、チームは1-2で敗れています。",
+      "trivia": "前田大然は圧倒的なスプリント回数とスピードを最大の武器にしており、彼が前線からかける執拗なプレスは「世界最速の守備」とも評されています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-11-08",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "リオネル・メッシ",
+        "MLS",
+        "得点王"
+      ],
+      "text": "2026年11月8日、MLS（メジャーリーグサッカー）の2026年シーズンにおいて、26ゴールを挙げて2年連続の得点王（ゴールデンブーツ）に輝いたことが報じられた選手は誰でしょう？",
+      "options": [
+        "リオネル・メッシ",
+        "ルイス・スアレス",
+        "デニス・ブアンガ",
+        "クリスティアン・ベンテケ"
+      ],
+      "answerIndex": 0,
+      "explanation": "インテル・マイアミに所属するリオネル・メッシは、2026年のMLSレギュラーシーズンで26ゴールを記録し、前年に続き2年連続でゴールデンブーツを受賞しました。",
+      "trivia": "メッシはバルセロナ時代にピチーチ賞（ラ・リーガ得点王）を史上最多の8回獲得していますが、アメリカの新天地でも圧倒的な得点力を見せつけています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ベンヤミン・シェシュコ",
+        "負傷",
+        "スロベニア代表"
+      ],
+      "text": "2026年11月、怪我により2027年1月まで長期離脱することが現地メディアなどで報じられた、スロベニア代表の大型ストライカーは誰でしょう？",
+      "options": [
+        "ベンヤミン・シェシュコ",
+        "アレクサンデル・イサク",
+        "ドゥシャン・ヴラホヴィッチ",
+        "ヴィクトル・ギェケレシュ"
+      ],
+      "answerIndex": 0,
+      "explanation": "11月8日の報道によると、スロベニア代表FWのベンヤミン・シェシュコは負傷のため、来年1月まで戦線を離脱することが明らかになりました。",
+      "trivia": "シェシュコはその圧倒的な身体能力と強烈なシュート力から、しばしば「アーリング・ハーランドの再来」と称されてきました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "南野拓実",
+        "日本代表",
+        "海外日本人選手"
+      ],
+      "text": "2026年11月4日に発表された日本代表メンバーで、2025年12月の負傷や北中米W杯での選外を経て、約1年ぶりに代表復帰を果たした海外組のアタッカーは誰でしょう？",
+      "options": [
+        "南野拓実",
+        "伊東純也",
+        "鎌田大地",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "ASモナコなどに所属し活躍してきた南野拓実は、度重なる怪我の影響で2026年の北中米W杯はメンバー外となっていましたが、11月の代表戦で約1年ぶりの復帰を果たしました。",
+      "trivia": "南野拓実は「タキ」の愛称で親しまれ、過去にはリヴァプールに所属して日本人初となるプレミアリーグ優勝も経験しています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "マックス・ダウマン",
+        "アーセナル",
+        "市場価値",
+        "若手選手"
+      ],
+      "text": "2026年11月の選手市場価値アップデートで、18歳未満の選手として世界最高額となる「6350万ユーロ（約100億円）」の評価を受けた、アーセナル所属の16歳の逸材は誰でしょう？",
+      "options": [
+        "マックス・ダウマン",
+        "イーサン・ヌワネリ",
+        "チド・オビ・マルティン",
+        "マイキー・ムーア"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルの下部組織出身であるマックス・ダウマン（Max Dowman）は、15歳でトップチームデビューを果たし、16歳になった2026年11月時点で市場価値が急騰し大きな話題となりました。",
+      "trivia": "ダウマンは2026-27シーズンのEFLカップで2ゴールを挙げる活躍を見せ、たった数試合で評価額が5000万ユーロ以上も跳ね上がりました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "マンチェスター・シティ",
+        "ヨシュコ・グヴァルディオール",
+        "マーク・グエイ",
+        "負傷"
+      ],
+      "text": "2026年11月7日に行われたプレミアリーグのノッティンガム・フォレスト戦で、前半終了時に揃って負傷交代し、チームが敗れる一因となってしまったマンチェスター・シティのディフェンダー2人は誰と誰でしょう？",
+      "options": [
+        "グヴァルディオールとグエイ",
+        "ルベン・ディアスとストーンズ",
+        "アカンジとアケ",
+        "グヴァルディオールとアカンジ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティはこの日、ノッティンガム・フォレストに1-3で敗戦。先発出場していたヨシュコ・グヴァルディオールとマーク・グエイの両センターバックが、前半のみで負傷により退くというアクシデントに見舞われました。",
+      "trivia": "ハーフタイムに守備の要2人を同時に失うという不運も響き、エンツォ・マレスカ監督率いるチームは後半に追加点を許して敗れました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-07",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "チャンピオンズリーグ",
+        "リヴァプール",
+        "フェネルバフチェ"
+      ],
+      "text": "2026年11月4日に行われたチャンピオンズリーグ（CL）リーグフェーズ第4節で、リヴァプールは今季CL初黒星を喫しました。アウェーで3-2で敗れた相手のトルコのクラブはどこでしょう？",
+      "options": [
+        "フェネルバフチェ",
+        "ガラタサライ",
+        "ベシクタシュ",
+        "トラブゾンスポル"
+      ],
+      "answerIndex": 0,
+      "explanation": "リヴァプールは敵地でフェネルバフチェと対戦し、2度リードを奪う展開となりましたが、最後はヴェダト・ムリキに決勝点を奪われ3-2で敗れました。",
+      "trivia": "フェネルバフチェには元マンチェスター・ユナイテッドのメイソン・グリーンウッドも所属しており、この試合で同点ゴールを記録しています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-04",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・シティ",
+        "ノッティンガム・フォレスト"
+      ],
+      "text": "2026年11月7日に行われたプレミアリーグ第10節で、マンチェスター・シティはアウェーで3-1の敗戦を喫する波乱がありました。シティから金星を挙げたクラブはどこでしょう？",
+      "options": [
+        "ノッティンガム・フォレスト",
+        "クリスタル・パレス",
+        "サンダーランド",
+        "ハル・シティ"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティは敵地シティ・グラウンドでノッティンガム・フォレストと対戦しましたが、3-1で敗れる結果となりました。",
+      "trivia": "この敗戦により、上位争いにおいて首位を走るアーセナルや猛追するブライトンとの勝ち点差に影響が出ることとなりました。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-11-07",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "チャンピオンズリーグ",
+        "レアル・マドリード",
+        "フェデリコ・バルベルデ"
+      ],
+      "text": "2026年11月4日のチャンピオンズリーグ第4節、レアル・マドリードはAEKアテネに2度リードを許す苦しい展開から3-2で逆転勝利を収めました。92分に劇的な決勝点となるロングシュートを決めた選手は誰でしょう？",
+      "options": [
+        "フェデリコ・バルベルデ",
+        "キリアン・エンバペ",
+        "ジュード・ベリンガム",
+        "ヴィニシウス・ジュニオール"
+      ],
+      "answerIndex": 0,
+      "explanation": "マドリードはベリンガムとエンバペのゴールで2度同点に追いつき、最後は後半アディショナルタイムにバルベルデの豪快なロングシュートで劇的な勝利をもぎ取りました。",
+      "trivia": "レアル・マドリードは第3節のローマ戦でも終盤のゴールで4-3の逆転勝利を収めており、今大会でも圧倒的な勝負強さを発揮しています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-04",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "ucl",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "チャンピオンズリーグ",
+        "コモ",
+        "RCランス"
+      ],
+      "text": "2026年11月4日に行われたチャンピオンズリーグ第4節で、イタリアのコモがフランスのRCランスを相手に敵地で歴史的な大勝を収めました。この試合のスコアは次のうちどれでしょう？",
+      "options": [
+        "9-1",
+        "7-0",
+        "8-2",
+        "10-1"
+      ],
+      "answerIndex": 0,
+      "explanation": "イタリアのコモは、アウェーでRCランスを圧倒し、チャンピオンズリーグの舞台で9-1という驚異的なスコアで大勝を飾りました。",
+      "trivia": "今季のコモの躍進は目覚ましく、ギリシャ代表FWアナスタシオス・ドゥヴィカスがCLの得点ランキング上位に名を連ねるなど大きな旋風を巻き起こしています。",
+      "referenceDate": "2026-11-09",
+      "weeklyMeta": {
+        "matchweek": 4,
+        "matchDate": "2026-11-04",
+        "publishDate": "2026-11-09",
+        "expiryDate": "2026-11-16",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
