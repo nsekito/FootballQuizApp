@@ -1,0 +1,1035 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-11-16T00:58:46Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-11-16",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "イングランド代表",
+        "スペイン代表"
+      ],
+      "text": "2026年11月15日に行われたUEFAネーションズリーグのリーグAで、スペイン代表との激闘の末に3-2で勝利した国はどこでしょうか？",
+      "options": [
+        "イングランド",
+        "フランス",
+        "イタリア",
+        "ドイツ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月15日に行われたリーグAグループA3の試合で、イングランド代表がスペイン代表を3-2で破りました。",
+      "trivia": "ネーションズリーグは各国の実力が均衡したグループ分けとなるため、このような強豪同士の打ち合いが頻繁に見られます。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "フランス代表",
+        "トルコ代表"
+      ],
+      "text": "2026年11月15日のUEFAネーションズリーグで、フランス代表はどの国に対して2-1で勝利を収めたでしょうか？",
+      "options": [
+        "トルコ",
+        "ベルギー",
+        "クロアチア",
+        "ポルトガル"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月15日のリーグAグループA1第6節で、フランス代表はトルコ代表を2-1で下しました。",
+      "trivia": "トルコは公式英語表記を「Türkiye」に変更しており、UEFAの公式記録でもこの新しい名称が使用されています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "ベルギー代表",
+        "イタリア代表"
+      ],
+      "text": "2026年11月15日のUEFAネーションズリーグの試合で、イタリア代表に対して4-1の大勝を収めた国はどこでしょうか？",
+      "options": [
+        "ベルギー",
+        "オランダ",
+        "スペイン",
+        "ドイツ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月15日に行われたリーグAの試合で、ベルギー代表が強豪イタリア代表を相手に4-1という大差で勝利しました。",
+      "trivia": "イタリア代表が国際大会の公式戦で4失点以上を喫するのは非常に珍しく、この試合ではベルギーの強力な攻撃陣が爆発する形となりました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "デンマーク代表",
+        "ポルトガル代表"
+      ],
+      "text": "2026年11月14日に行われたUEFAネーションズリーグで、強豪ポルトガル代表を4-1と粉砕する番狂わせを演じた国はどこでしょうか？",
+      "options": [
+        "デンマーク",
+        "スウェーデン",
+        "スイス",
+        "ポーランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月14日の試合で、デンマーク代表が前回覇者のポルトガル代表を相手に4-1の大勝を収めました。",
+      "trivia": "ポルトガルは2025年大会を制したディフェンディングチャンピオンでしたが、この試合ではデンマークの勢いに圧倒されまさかの大敗を喫しました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "クロアチア代表",
+        "チェコ代表"
+      ],
+      "text": "2026年11月15日のUEFAネーションズリーグ・リーグAの試合で、クロアチア代表はどの国に2-1で勝利したでしょうか？",
+      "options": [
+        "チェコ",
+        "セルビア",
+        "ハンガリー",
+        "スロバキア"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月15日のリーグAグループA3で、クロアチア代表はチェコ代表を2-1で下し、勝ち点3を獲得しました。",
+      "trivia": "クロアチアとチェコは中欧の強豪として知られ、EUROなどの主要な国際大会でも度々熱戦を繰り広げています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "オーストリア代表",
+        "アイルランド代表"
+      ],
+      "text": "2026年11月14日に行われたUEFAネーションズリーグで、オーストリア代表はアイルランド代表に何対何で勝利したでしょうか？",
+      "options": [
+        "1-0",
+        "2-1",
+        "3-0",
+        "0-0（PK戦での勝利）"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月14日の試合では、オーストリア代表が1-0の僅差でアイルランド代表に勝利を収めました。",
+      "trivia": "ネーションズリーグでは実力の近いチームが同組になるシステムのため、1点を争うタイトな試合展開が頻出します。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "北アイルランド代表",
+        "ウクライナ代表"
+      ],
+      "text": "2026年11月14日に行われたUEFAネーションズリーグで、ウクライナ代表を1-0で下したイギリスの代表チームはどこでしょうか？",
+      "options": [
+        "北アイルランド",
+        "ウェールズ",
+        "スコットランド",
+        "イングランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月14日の試合で、北アイルランド代表がウクライナ代表に対して1-0の完封勝利を収めました。",
+      "trivia": "北アイルランド代表のホームスタジアムであるウィンザー・パークは、熱狂的なサポーターが作り出す圧倒的な雰囲気で有名です。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "モンテネグロ代表",
+        "キプロス代表"
+      ],
+      "text": "2026年11月15日に行われたUEFAネーションズリーグのリーグC、キプロス代表対モンテネグロ代表の試合結果として正しいものはどれでしょうか？",
+      "options": [
+        "モンテネグロが4-1で勝利",
+        "キプロスが2-0で勝利",
+        "1-1の引き分け",
+        "キプロスが3-2で勝利"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月15日に行われたリーグCの試合では、アウェイのモンテネグロ代表がキプロス代表を4-1で圧倒しました。",
+      "trivia": "モンテネグロは2006年に独立して以降、着実にサッカーのレベルを上げており、欧州の舞台でも度々印象的な結果を残しています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "フィンランド代表",
+        "サンマリノ代表"
+      ],
+      "text": "2026年11月15日に行われたUEFAネーションズリーグの試合で、フィンランド代表はサンマリノ代表に対して何対何という大スコアで勝利したでしょうか？",
+      "options": [
+        "7-2",
+        "5-0",
+        "8-1",
+        "6-3"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月15日に行われたリーグCグループC1の試合で、フィンランド代表はサンマリノ代表を相手に7-2の歴史的な大勝を収めました。",
+      "trivia": "サンマリノが大量失点する試合は珍しくありませんが、彼らが1試合で2得点を挙げるのはヨーロッパの国際試合において非常に稀な出来事です。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "アルバニア代表",
+        "ベラルーシ代表"
+      ],
+      "text": "2026年11月15日に行われたUEFAネーションズリーグ・リーグCで、アルバニア代表がアウェイで2-0の勝利を収めた対戦相手はどこでしょうか？",
+      "options": [
+        "ベラルーシ",
+        "ラトビア",
+        "アルメニア",
+        "リトアニア"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月15日に行われたリーグCの試合で、アルバニア代表はベラルーシ代表を相手に2-0で勝利しました。",
+      "trivia": "アルバニア代表は近年欧州で着実にランキングを上げており、主要大会への出場権争いでも侮れない存在となっています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "リヴァプール",
+        "順位表"
+      ],
+      "text": "2026年11月9日の試合を終えて、プレミアリーグで単独首位に立っているクラブはどこでしょう？",
+      "options": [
+        "リヴァプール",
+        "マンチェスター・シティ",
+        "アーセナル",
+        "チェルシー"
+      ],
+      "answerIndex": 0,
+      "explanation": "リヴァプールは第11節でアストン・ヴィラに2-0で勝利し、勝ち点を28に伸ばして首位をキープしました。2位以下との勝ち点差を広げています。",
+      "trivia": "アルネ・スロット監督は就任1年目ながら、リヴァプールを公式戦のほとんどで勝利に導き、驚異的なスタートを切っています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-09",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "チェルシー",
+        "アーセナル",
+        "ロンドン・ダービー"
+      ],
+      "text": "2026年11月10日に行われたプレミアリーグ第11節、チェルシー対アーセナルの「ロンドン・ダービー」の結果はどうなったでしょう？",
+      "options": [
+        "1-1の引き分け",
+        "チェルシーが2-1で勝利",
+        "アーセナルが2-0で勝利",
+        "0-0の引き分け"
+      ],
+      "answerIndex": 0,
+      "explanation": "ガブリエウ・マルティネッリのゴールでアーセナルが先制しましたが、直後にペドロ・ネトのミドルシュートでチェルシーが同点に追いつき、1-1で勝ち点1を分け合いました。",
+      "trivia": "見事な同点弾を決めたペドロ・ネトですが、このゴールがウルブスからチェルシーに加入後、プレミアリーグでの記念すべき初ゴールとなりました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-10",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・シティ",
+        "ブライトン",
+        "記録"
+      ],
+      "text": "2026年11月9日、マンチェスター・シティはブライトンに1-2で逆転負けを喫しました。これにより、ペップ・グアルディオラ監督体制で初となる公式戦何連敗を記録したでしょう？",
+      "options": [
+        "4連敗",
+        "3連敗",
+        "5連敗",
+        "6連敗"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティはトッテナム、ボーンマス、スポルティングCP、そしてブライトンに敗れ、グアルディオラ監督の指導者キャリアにおいて初となる公式戦4連敗を喫しました。",
+      "trivia": "マンチェスター・シティというクラブ単位で見ても、公式戦4連敗を喫するのはスチュアート・ピアース監督時代だった2006年以来の珍しい出来事です。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-09",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・ユナイテッド",
+        "レスター・シティ"
+      ],
+      "text": "2026年11月10日、マンチェスター・ユナイテッドはルート・ファン・ニステルローイ暫定監督の最終戦でレスター・シティに3-0で快勝しました。この試合の後半にダメ押しの3点目を決めたアルゼンチン代表選手は誰でしょう？",
+      "options": [
+        "アレハンドロ・ガルナチョ",
+        "リサンドロ・マルティネス",
+        "エンソ・フェルナンデス",
+        "フリアン・アルバレス"
+      ],
+      "answerIndex": 0,
+      "explanation": "後半途中から出場したアレハンドロ・ガルナチョが、ブルーノ・フェルナンデスのパスを受けてペナルティエリア外から見事なコントロールショットを決めました。",
+      "trivia": "ファン・ニステルローイ暫定監督は、テン・ハグ前監督解任後に指揮を執った公式戦4試合を3勝1分の無敗で終え、ルベン・アモリム新監督に見事バトンを渡しました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-10",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "イプスウィッチ・タウン",
+        "トッテナム"
+      ],
+      "text": "2026年11月10日、トッテナム・ホットスパーにアウェイで2-1で勝利し、プレミアリーグ昇格後、今季初勝利（トップリーグでの22年ぶりの勝利）を挙げたクラブはどこでしょう？",
+      "options": [
+        "イプスウィッチ・タウン",
+        "サウサンプトン",
+        "レスター・シティ",
+        "ルートン・タウン"
+      ],
+      "answerIndex": 0,
+      "explanation": "キーラン・マッケナ監督率いるイプスウィッチ・タウンが、サミー・スモディクスとリアム・デラップのゴールによりトッテナムを2-1で破り、待望の今季リーグ戦初勝利を飾りました。",
+      "trivia": "イプスウィッチ・タウンがプレミアリーグの舞台で最後に勝利を挙げていたのは、なんと日韓ワールドカップ前の2002年4月（ミドルズブラ戦）のことでした。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-10",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "リヴァプール",
+        "記録"
+      ],
+      "text": "2026年11月9日のアストン・ヴィラ戦に勝利し、開幕11試合で勝ち点28に到達したリヴァプール。クラブ史上、開幕11試合でこれより多い勝ち点（31）を獲得したシーズンが一度だけありますが、それはいつでしょう？",
+      "options": [
+        "2019-20シーズン",
+        "2018-19シーズン",
+        "2021-22シーズン",
+        "2013-14シーズン"
+      ],
+      "answerIndex": 0,
+      "explanation": "ユルゲン・クロップ監督の下で悲願のプレミアリーグ初優勝を飾った2019-20シーズンは、開幕から圧倒的な強さを誇り、11試合で勝ち点31を獲得していました。",
+      "trivia": "2019-20シーズンのリヴァプールは、開幕から27試合無敗（26勝1分）という驚異的な記録を打ち立て、そのまま独走状態でリーグを制覇しました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-09",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "日本代表",
+        "国際親善試合",
+        "ブラジル代表"
+      ],
+      "text": "2026年11月14日にシンガポールで行われた国際親善試合で、日本代表はどの国を相手に3-2の歴史的勝利を収めたでしょうか？",
+      "options": [
+        "ブラジル代表",
+        "スペイン代表",
+        "アルゼンチン代表",
+        "パラグアイ代表"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本代表は前半に久保建英と中村敬斗のゴールで先制し、同点に追いつかれながらも後半アディショナルタイムに坂元達裕が劇的な決勝点を挙げ、見事勝利を収めました。",
+      "trivia": "日本代表がブラジル代表から勝利を挙げるのは通算2勝目。北中米ワールドカップでの敗戦に対する最高のリベンジマッチとなりました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "鈴木彩艶",
+        "アストン・ヴィラ",
+        "プレミアリーグ"
+      ],
+      "text": "2026年11月上旬、日本人選手として初めてプレミアリーグの「10月度月間ベストセーブ候補」にノミネートされたアストン・ヴィラ所属のGKは誰でしょうか？",
+      "options": [
+        "鈴木彩艶",
+        "小久保玲央ブライアン",
+        "大迫敬介",
+        "谷晃生"
+      ],
+      "answerIndex": 0,
+      "explanation": "鈴木彩艶は10月31日のフルアム戦で、至近距離からの決定的なシュートを右手一本で枠外に弾き出すスーパーセーブを見せ、見事ノミネートを果たしました。",
+      "trivia": "鈴木の正確なロングフィードはエメリ監督から「チームの戦術」として組み込まれており、最後尾からビルドアップの起点としても絶大な信頼を得ています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "日本代表",
+        "レアル・ソシエダ"
+      ],
+      "text": "2026年11月14日のブラジル戦で先制ゴールを決めた久保建英は、直後にユニフォームをまくり上げ、インナーシャツのメッセージを披露しました。これは誰に向けたエールだったでしょうか？",
+      "options": [
+        "負傷した所属クラブのチームメイト",
+        "引退を表明した日本代表の先輩選手",
+        "災害に見舞われたスペインの被災地",
+        "試合当日に誕生日を迎えた自身の家族"
+      ],
+      "answerIndex": 0,
+      "explanation": "久保は「バーレ、頑張れ」というメッセージを披露し、負傷により数カ月の長期離脱を余儀なくされたレアル・ソシエダの同僚、アンデル・バレネチェアにエールを送りました。",
+      "trivia": "遠く離れたシンガポールから同僚を気遣う久保の心温まるこの行動は、スペインの地元メディアからも「美しいジェスチャー」として大々的に称賛されました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "シント＝トロイデン",
+        "ベルギーリーグ",
+        "日本人選手"
+      ],
+      "text": "2026年11月8日（日本時間9日）に行われたベルギーリーグのズルテ・ワレヘム戦で4-1の快勝を収めたシント＝トロイデン（STVV）。この試合でゴールを記録した日本人3選手の組み合わせはどれでしょうか？",
+      "options": [
+        "新川志音、石渡ネルソン、松澤海斗",
+        "小久保玲央ブライアン、谷口彰悟、畑大雅",
+        "藤田譲瑠チマ、山本理仁、小川航基",
+        "伊藤敦樹、明本考浩、小泉佳穂"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヨナス・デ・ロック新監督の初陣となったこの試合では、前半に新川と石渡が、後半に松澤がゴールを決め、日本人トリオのゴール揃い踏みでチームの連敗をストップさせました。",
+      "trivia": "先制点を決めた19歳の新川志音は171cmと小柄ですが、非常に分厚い上半身の筋肉を持っており、ベルギーの屈強なDF相手にも当たり負けしないフィジカルが武器です。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-09",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "坂元達裕",
+        "日本代表",
+        "コヴェントリー"
+      ],
+      "text": "2026年11月14日のブラジル代表戦で、後半アディショナルタイムに劇的な決勝ゴールを挙げた坂元達裕。彼にとって、この試合は約何年ぶりの日本代表戦出場だったでしょうか？",
+      "options": [
+        "約5年半ぶり",
+        "約1年半ぶり",
+        "約3年半ぶり",
+        "約7年半ぶり"
+      ],
+      "answerIndex": 0,
+      "explanation": "坂元達裕は約5年半ぶりに日本代表のピッチに立ち、途中出場のスーパーサブとして大仕事をやってのけ、自身の代表初ゴールとなる値千金の決勝点をマークしました。",
+      "trivia": "坂元は2026年11月1日に所属するコヴェントリーで強烈な左足のミドルシュートを沈め、プレミアリーグ初ゴールを記録するなど、絶好調の状態で代表戦に臨んでいました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "監督交代",
+        "移籍"
+      ],
+      "text": "2026年11月、成績不振によりマイケル・キャリック監督を解任したマンチェスター・ユナイテッドが、新監督に招聘したと発表した人物は誰でしょう？",
+      "options": [
+        "マウリシオ・ポチェッティーノ",
+        "トーマス・トゥヘル",
+        "シャビ・アロンソ",
+        "ルベン・アモリム"
+      ],
+      "answerIndex": 0,
+      "explanation": "アメリカ代表を率いていたポチェッティーノが、違約金を支払う形でユナイテッドの監督に就任しました。",
+      "trivia": "ポチェッティーノはアメリカ代表監督就任からわずか数ヶ月での電撃引き抜きとなり、涙ながらに決断を語りました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "イングランド代表",
+        "負傷"
+      ],
+      "text": "2026年11月、ノッティンガム・フォレスト戦で負傷し、イングランド代表からの離脱が発表されたマンチェスター・シティのディフェンダーは誰でしょう？",
+      "options": [
+        "マルク・グエイ",
+        "ジョン・ストーンズ",
+        "ルベン・ディアス",
+        "カイル・ウォーカー"
+      ],
+      "answerIndex": 0,
+      "explanation": "グエイはリーグ戦で臀部を負傷して代表活動を辞退し、代わりにダン・バーンが追加招集されました。",
+      "trivia": "トーマス・トゥヘル監督率いるイングランド代表にとって、ここまで厚い信頼を寄せられていた主力の離脱は大きな痛手となりました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "オランダ代表",
+        "負傷"
+      ],
+      "text": "2026年11月、UEFAネーションズリーグを戦うオランダ代表から、コンディション不良により離脱したリヴァプールの主将は誰でしょう？",
+      "options": [
+        "フィルジル・ファン・ダイク",
+        "コディ・ガクポ",
+        "ライアン・フラーフェンベルフ",
+        "マタイス・デ・リフト"
+      ],
+      "answerIndex": 0,
+      "explanation": "11月上旬のクリスタル・パレス戦にはフル出場したものの、その後の代表活動をフィットネスの問題で辞退しました。",
+      "trivia": "ファン・ダイクは10月に代表通算100キャップのメモリアルマッチを戦い終えたばかりでした。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "プレミアリーグ",
+        "ポルトガル代表",
+        "契約更新"
+      ],
+      "text": "2026年11月、所属するマンチェスター・シティとの新契約（2029年まで）に合意間近と報じられたポルトガル代表選手は誰でしょう？",
+      "options": [
+        "マテウス・ヌネス",
+        "ベルナルド・シウバ",
+        "ルベン・ディアス",
+        "ジョアン・カンセロ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ウルブズから加入後、ペップ・グアルディオラ前監督によって右サイドバックにコンバートされて才能が開花し、クラブとの長期契約延長に近づいています。",
+      "trivia": "クラブでは好調な一方で、ポルトガル代表のジョルジェ・ジェズス現監督からはしばらく招集されていません。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ブンデスリーガ2部",
+        "クロアチア",
+        "出場停止満了"
+      ],
+      "text": "2026年11月15日、ドーピング違反による4年間の出場停止処分が満了し、公式戦への復帰が可能になったハンブルガーSVのクロアチア人ディフェンダーは誰でしょう？",
+      "options": [
+        "マリオ・ヴシュコヴィッチ",
+        "パウロ・ゲレーロ",
+        "アドリアン・ムトゥ",
+        "ポール・ポグバ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2022年11月からの長期出場停止期間を経て処分が明け、古巣の練習試合にも出場してピッチへの帰還を果たしました。",
+      "trivia": "処分期間中も本人は一貫して無実を主張しており、処分満了が迫った9月からはチーム練習への合流が特別に許可されていました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "マンチェスター・ユナイテッド",
+        "監督解任",
+        "プレミアリーグ",
+        "マイケル・キャリック"
+      ],
+      "text": "2026年11月12日、プレミアリーグで開幕から10試合を終えて降格圏の18位に沈むマンチェスター・ユナイテッドが、監督の解任を発表しました。解任された監督は誰でしょう？",
+      "options": [
+        "マイケル・キャリック",
+        "エリック・テン・ハグ",
+        "ルート・ファン・ニステルローイ",
+        "オーレ・グンナー・スールシャール"
+      ],
+      "answerIndex": 0,
+      "explanation": "昨季は途中就任からチームを3位に導いたキャリック監督でしたが、今季は開幕から不振が続き、11月12日に解任が発表されました。後任には現アメリカ代表監督のマウリシオ・ポチェッティーノ氏らが噂されています。",
+      "trivia": "マンチェスター・ユナイテッドがリーグ戦で8試合連続未勝利となったのは、1989-90シーズン以来、約37年ぶりの不名誉な記録でした。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "クリスタル・パレス",
+        "監督解任",
+        "プレミアリーグ",
+        "鎌田大地"
+      ],
+      "text": "2026年11月12日、プレミアリーグで最下位に低迷しているクリスタル・パレスが監督の解任を発表しました。この出来事に伴い、日本代表の活動から早期離脱してクラブに戻ったとされる選手は誰でしょう？",
+      "options": [
+        "鎌田大地",
+        "遠藤航",
+        "三笘薫",
+        "菅原由勢"
+      ],
+      "answerIndex": 0,
+      "explanation": "クリスタル・パレスは10試合を終えて最下位に沈み、11月12日にピエール・サージュ監督を解任しました。これを受け、所属する日本代表の鎌田大地はクラブ事情によりパラグアイ戦を前に代表を離脱しました。",
+      "trivia": "鎌田は11月14日のブラジル代表戦に先発し、73分までプレーしていました。クラブの危機を救うため、急遽チームの立て直しに向けて合流することになりました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ポルトガル代表",
+        "ベルナルド・シウバ",
+        "ネーションズリーグ",
+        "負傷離脱"
+      ],
+      "text": "2026年11月15日、ポルトガル代表のベルナルド・シウバが負傷のため代表から離脱することが発表されました。彼は11月14日のネーションズリーグ第5節で一矢報いるゴールを決めていましたが、その対戦相手はどこだったでしょう？",
+      "options": [
+        "デンマーク",
+        "ウェールズ",
+        "クロアチア",
+        "スコットランド"
+      ],
+      "answerIndex": 0,
+      "explanation": "ベルナルド・シウバは11月14日のネーションズリーグ・デンマーク戦（1-4で敗北）に途中出場し、後半アディショナルタイムにゴールを決めましたが、負傷により17日のウェールズ戦を前に代表を離脱しました。",
+      "trivia": "現在レアル・マドリードに所属するベルナルド・シウバの負傷離脱は、11月21日に再開するラ・リーガのセルタ戦に向けてクラブにも大きな懸念材料となっています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ブラジル代表",
+        "ラフィーニャ",
+        "レッドカード",
+        "VAR"
+      ],
+      "text": "2026年11月14日に行われた日本代表対ブラジル代表の親善試合において、試合終了間際の日本の決勝ゴール直後、判定を巡って猛抗議を行い退場処分となったブラジル代表の選手は誰でしょう？",
+      "options": [
+        "ラフィーニャ",
+        "ヴィニシウス・ジュニオール",
+        "マルキーニョス",
+        "ルーカス・パケタ"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本の坂元達裕が決勝ゴールを決めた際、ブラジル代表のキャプテンであるラフィーニャとカルロ・アンチェロッティ監督がファウルを主張して猛抗議を行い、ともにレッドカードで退場処分を受けました。",
+      "trivia": "ラフィーニャは試合後、「日本の先制点にはハンドがあった」「3点目は明らかなファウル」とVARの運用を含めて審判を痛烈に批判するコメントを残しました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

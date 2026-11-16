@@ -1,0 +1,1043 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-11-16T00:53:51Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-11-16",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ブラジル代表",
+        "親善試合"
+      ],
+      "text": "2026年11月14日にシンガポールで行われた国際親善試合で、日本代表は強豪ブラジル代表を相手に何対何で勝利した？",
+      "options": [
+        "3-2",
+        "2-1",
+        "4-3",
+        "1-0"
+      ],
+      "answerIndex": 0,
+      "explanation": "「MIZUHO BLUE CHALLENGE」として行われた一戦で、日本代表は久保建英、中村敬斗のゴールでリードし、同点に追いつかれた後、最後に坂元達裕が決勝点を挙げて3-2で勝利しました。",
+      "trivia": "森保ジャパンにとって、2025年10月の初勝利に続くブラジル戦通算2勝目。W杯での敗戦の雪辱を見事に果たしました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ルヴァンカップ",
+        "柏レイソル",
+        "川崎フロンターレ"
+      ],
+      "text": "2026年11月15日のルヴァンカップ準々決勝第2戦で、川崎フロンターレを相手に前半3点ビハインドから5ゴールを奪い、劇的な逆転勝利で準決勝進出を決めたクラブはどこ？",
+      "options": [
+        "柏レイソル",
+        "鹿島アントラーズ",
+        "浦和レッズ",
+        "FC町田ゼルビア"
+      ],
+      "answerIndex": 0,
+      "explanation": "柏は前半に3点を先行される苦しい展開でしたが、後半に入り怒涛のゴールラッシュで一挙5得点を奪い、5-4で大逆転勝利。2戦合計7-5でベスト4入りを果たしました。",
+      "trivia": "この試合で柏が挙げた5得点はすべて前半終了間際から後半にかけて記録されたもので、ルヴァンカップの歴史に残る壮絶な打ち合いとなりました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ルヴァンカップ",
+        "ベスト4"
+      ],
+      "text": "2026年11月15日の試合結果により、2026/27シーズンのルヴァンカップ準決勝進出を決めた4クラブの組み合わせとして正しいものはどれ？",
+      "options": [
+        "鹿島、柏、町田、浦和",
+        "鹿島、川崎F、神戸、浦和",
+        "横浜FM、柏、町田、C大阪",
+        "横浜FM、川崎F、神戸、C大阪"
+      ],
+      "answerIndex": 0,
+      "explanation": "準々決勝の結果、鹿島アントラーズ、柏レイソル、FC町田ゼルビア、浦和レッズの4クラブが準決勝に進出しました。町田はクラブ史上初のベスト4進出です。",
+      "trivia": "準決勝の組み合わせは「鹿島 vs 柏」「町田 vs 浦和」となり、2027年3月にホーム＆アウェー方式で行われます。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J2",
+        "大宮アルディージャ",
+        "レッドブル"
+      ],
+      "text": "2026年11月14日のJ2リーグ第17節でベガルタ仙台と対戦し2-1で勝利した、レッドブル・グループがオーナーとなりクラブ名が変更されたチームはどこ？",
+      "options": [
+        "RB大宮アルディージャ",
+        "RB東京ヴェルディ",
+        "RB横浜FC",
+        "RBジェフユナイテッド千葉"
+      ],
+      "answerIndex": 0,
+      "explanation": "レッドブル・グループによる買収に伴い、クラブ名が「大宮アルディージャ」から「RB大宮アルディージャ」に変更されました。11月14日のアウェー仙台戦は2-1で勝利しています。",
+      "trivia": "レッドブルはこれまでザルツブルク、ライプツィヒ、ニューヨークなどにサッカークラブを保有しており、大宮はアジア初のグループクラブとなります。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 17,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ブラジル代表",
+        "坂元達裕"
+      ],
+      "text": "日本代表がブラジル代表から3-2の歴史的勝利を挙げた試合で、後半アディショナルタイムに値千金の決勝ゴールを決めた選手は誰？",
+      "options": [
+        "坂元達裕",
+        "久保建英",
+        "中村敬斗",
+        "前田大然"
+      ],
+      "answerIndex": 0,
+      "explanation": "2-2の同点で迎えた90+1分、ペナルティアーク付近でのこぼれ球に反応した坂元達裕が冷静に押し込み、劇的な勝ち越しゴールを奪いました。",
+      "trivia": "坂元達裕はこの活動で長期離脱から代表復帰を果たしたばかりであり、自身の復活を印象付ける最高の結果を残しました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ブラジル代表",
+        "アンチェロッティ"
+      ],
+      "text": "2026年11月14日の日本対ブラジル戦の終盤、日本の3点目を巡る判定に猛抗議し、レッドカードを受けて退席処分となったブラジル代表の監督は誰？",
+      "options": [
+        "カルロ・アンチェロッティ",
+        "ペップ・グアルディオラ",
+        "ユルゲン・クロップ",
+        "ドリヴァル・ジュニオール"
+      ],
+      "answerIndex": 0,
+      "explanation": "終了間際の日本の決勝点に対し、直前にファウルがあったとしてベンチから猛抗議したアンチェロッティ監督は、主将のハフィーニャとともにレッドカードで退場処分となりました。",
+      "trivia": "アンチェロッティ監督は試合後の会見で「ベンチの選手がほぼ全員ピッチに飛び出していたからだ。私がコントロールできていなかった」と退場の理由を説明しました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J2",
+        "テゲバジャーロ宮崎",
+        "アルビレックス新潟"
+      ],
+      "text": "2026年11月14日のJ2リーグ第17節で、アウェーで首位のアルビレックス新潟を3-1で撃破し、12試合負けなしで暫定2位に浮上したクラブはどこ？",
+      "options": [
+        "テゲバジャーロ宮崎",
+        "ロアッソ熊本",
+        "鹿児島ユナイテッドFC",
+        "FC琉球"
+      ],
+      "answerIndex": 0,
+      "explanation": "テゲバジャーロ宮崎はアウェーで新潟に3-1で勝利し、怒涛の12試合負けなし（6連勝）を記録。J1昇格圏内となる暫定2位に浮上する大躍進を見せています。",
+      "trivia": "J2リーグは今シーズンから秋春制（2026-27シーズン）に移行しており、11月中旬の時点ではシーズンの前半戦（第17節）を戦っています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 17,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "ブラジル代表",
+        "ヴィニシウス"
+      ],
+      "text": "日本代表戦で強烈なミドルシュートを放つなど2ゴールを挙げ、一時同点に追いつく活躍を見せたブラジル代表の背番号7のアタッカーは誰？",
+      "options": [
+        "ヴィニシウス・ジュニオール",
+        "ハフィーニャ",
+        "エステヴァン",
+        "エンドリッキ"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・マドリードでも活躍するヴィニシウス・ジュニオールは、前半33分と後半75分に鮮やかなミドルシュートを突き刺し、強烈な個の力を見せつけました。",
+      "trivia": "この11月のブラジル代表活動では、エースナンバーである背番号「10」をハフィーニャが背負っており、ヴィニシウスはおなじみの「7」をつけてプレーしました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ルヴァンカップ",
+        "柏レイソル",
+        "山内日向汰"
+      ],
+      "text": "2026年11月15日のルヴァンカップ準々決勝・川崎戦で柏レイソルが逆転勝利を収めましたが、直近のリーグ戦に続き古巣の川崎を相手にゴールを決めた柏の選手は誰？",
+      "options": [
+        "山内日向汰",
+        "細谷真大",
+        "マテウス・サヴィオ",
+        "垣田裕暉"
+      ],
+      "answerIndex": 0,
+      "explanation": "川崎フロンターレの下部組織出身である山内日向汰は、リーグ戦（第14節）での2ゴールに続き、ルヴァン杯第2戦でも貴重な得点を挙げ、古巣への\"恩返し\"を果たしました。",
+      "trivia": "山内日向汰は川崎U-18からトップチームに昇格できず桐蔭横浜大へ進学。その後川崎に入団しましたが、今季から柏レイソルに移籍してブレイクを果たしました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J3",
+        "ツエーゲン金沢",
+        "土佐陸翼"
+      ],
+      "text": "2026年11月15日のJ3リーグ第17節で、ツエーゲン金沢が2-1でロアッソ熊本に勝利しました。この試合の開始早々2分にペナルティエリア外から鮮やかな先制ゴールを決めた金沢の選手は誰？",
+      "options": [
+        "土佐陸翼",
+        "嶋田慎太郎",
+        "大谷駿斗",
+        "四宮悠成"
+      ],
+      "answerIndex": 0,
+      "explanation": "金沢の土佐陸翼は、開始わずか2分にペナルティエリアの外から右足でゴール左下へコントロールショットを決め、チームの勝利に大きく貢献しました。",
+      "trivia": "今季のツエーゲン金沢は、先制に成功した試合の勝率が非常に高く、この試合の勝利で先制時の勝率をさらに伸ばしています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 17,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "ベガルタ仙台",
+        "順位表"
+      ],
+      "text": "2026/27シーズンの明治安田J2リーグで、11月15日の第17節を終えて首位に返り咲いたクラブはどこでしょう？",
+      "options": [
+        "ベガルタ仙台",
+        "RB大宮アルディージャ",
+        "テゲバジャーロ宮崎",
+        "アルビレックス新潟"
+      ],
+      "answerIndex": 0,
+      "explanation": "11月15日に行われた第17節でブラウブリッツ秋田に4-0で勝利したベガルタ仙台が、RB大宮アルディージャと勝ち点33で並び、得失点差で首位に立ちました。",
+      "trivia": "秋春制へ移行した2026/27シーズンは、例年の終盤戦にあたる時期にリーグ中盤戦を戦うという新しいサイクルになっています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 17,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J3",
+        "FC岐阜",
+        "奈良クラブ"
+      ],
+      "text": "2026/27明治安田J3リーグで、11月15日の第17節終了時点で同勝ち点（32）で首位を争っている2チームは、FC岐阜ともう一つはどこでしょう？",
+      "options": [
+        "奈良クラブ",
+        "SC相模原",
+        "レノファ山口FC",
+        "鹿児島ユナイテッドFC"
+      ],
+      "answerIndex": 0,
+      "explanation": "第17節終了時点で、FC岐阜と奈良クラブが勝ち点32で並び、得失点差によりFC岐阜が首位、奈良クラブが2位となっています。",
+      "trivia": "奈良クラブは第17節で栃木SCに敗れましたが、シーズン序盤から安定した強さを誇り上位をキープしています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 17,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "北海道コンサドーレ札幌",
+        "サガン鳥栖"
+      ],
+      "text": "2026年11月15日に行われた明治安田J2リーグ第17節で、サガン鳥栖に敗れ連勝が「6」でストップしてしまったクラブはどこでしょう？",
+      "options": [
+        "北海道コンサドーレ札幌",
+        "湘南ベルマーレ",
+        "藤枝MYFC",
+        "いわきFC"
+      ],
+      "answerIndex": 0,
+      "explanation": "北海道コンサドーレ札幌は第17節でサガン鳥栖に1-2で敗れ、破竹の連勝記録が6でストップしました。",
+      "trivia": "連勝は止まったものの、チームはJ1昇格プレーオフ圏内の争いに向けて高いモチベーションを維持しています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 17,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "栃木シティ",
+        "大分トリニータ"
+      ],
+      "text": "2026年11月14日に行われた明治安田J2リーグ第17節で、アウェイの栃木シティが大分トリニータから奪った得点数は何点でしょう？",
+      "options": [
+        "6点",
+        "4点",
+        "5点",
+        "7点"
+      ],
+      "answerIndex": 0,
+      "explanation": "栃木シティはこの試合で圧倒的な攻撃力を爆発させ、アウェイながら大分トリニータに6-1で大勝を収めました。",
+      "trivia": "アウェイでの大量得点はチームの士気を大きく高めるだけでなく、シーズン終了時の得失点差争いでも重要な意味を持ちます。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 17,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J2",
+        "RB大宮アルディージャ",
+        "順位表"
+      ],
+      "text": "2026年11月15日終了時点（第17節終了時）のJ2リーグ順位表で、首位と同勝ち点で2位につけるRB大宮アルディージャの「得失点差」はいくつでしょう？",
+      "options": [
+        "+13",
+        "+17",
+        "+11",
+        "+15"
+      ],
+      "answerIndex": 0,
+      "explanation": "RB大宮アルディージャは17試合を終えて勝ち点33で首位の仙台と並んでいますが、得失点差が+13（仙台は+17）のため2位となっています。",
+      "trivia": "レッドブル・グループの参画により「RB大宮アルディージャ」へと生まれ変わった同クラブは、積極的な補強と強固な組織力で上位を走っています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 17,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "Jリーグ",
+        "J3",
+        "鹿児島ユナイテッドFC",
+        "順位表"
+      ],
+      "text": "2026年11月15日終了時点（第17節終了時）の明治安田J3リーグにおいて、勝ち点31で3位タイに並んでいるクラブは、SC相模原、レノファ山口FCと、もう一つはどこでしょう？",
+      "options": [
+        "鹿児島ユナイテッドFC",
+        "FC大阪",
+        "愛媛FC",
+        "ツエーゲン金沢"
+      ],
+      "answerIndex": 0,
+      "explanation": "第17節終了時点のJ3リーグは非常に混戦となっており、SC相模原、レノファ山口FC、鹿児島ユナイテッドFCの3チームが勝ち点31で並んでいます。",
+      "trivia": "勝ち点1差の中に上位5チームがひしめく大混戦となっており、今後の1勝が大きく順位を変動させる熱い展開が続いています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": 17,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "J1",
+        "FC東京",
+        "長倉幹樹",
+        "月間MVP"
+      ],
+      "text": "2026年11月13日に発表された、2026/27明治安田J1リーグの10月度「KONAMI月間MVP」を受賞したFC東京の選手は誰でしょう？",
+      "options": [
+        "長倉幹樹",
+        "荒木遼太郎",
+        "松木玖生",
+        "ディエゴ・オリヴェイラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月13日に発表されたJ1の10月度月間MVPには、FC東京の長倉幹樹が選出されました。",
+      "trivia": "この月、FC東京は松橋力蔵監督もJ1月間監督賞を受賞し、ダブル受賞となっています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "福田師王",
+        "カールスルーエ",
+        "初招集"
+      ],
+      "text": "2026年11月の日本代表メンバーに初招集された、ドイツ2部カールスルーエで活躍するFWは誰でしょう？",
+      "options": [
+        "福田師王",
+        "後藤啓介",
+        "熊田直紀",
+        "鈴木唯人"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月のシンガポール遠征で、ドイツ2部カールスルーエで好調なパフォーマンスを見せている福田師王が初招集されました。",
+      "trivia": "福田師王は高校卒業後、Jリーグを経由せずに直接ドイツへ渡りプロキャリアをスタートさせています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "南野拓実",
+        "ケガ・復帰"
+      ],
+      "text": "2026年11月14日のブラジル代表戦で、約1年ぶりの日本代表戦出場を果たした南野拓実。彼が長期離脱を余儀なくされた大ケガの箇所はどこでしょう？",
+      "options": [
+        "左膝前十字靭帯断裂",
+        "右アキレス腱断裂",
+        "第5中足骨骨折",
+        "右膝半月板損傷"
+      ],
+      "answerIndex": 0,
+      "explanation": "南野拓実は前年の12月に左膝前十字靭帯断裂の大ケガを負い、ワールドカップも欠場。長いリハビリを経て日本代表への復帰を果たしました。",
+      "trivia": "南野はワールドカップに選手としては出場できませんでしたが、チームを支えるメンターとして帯同していました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "FC東京",
+        "佐藤恵允",
+        "ケガ・離脱"
+      ],
+      "text": "2026年11月14日、FC東京は背番号「10」を背負うFW佐藤恵允の離脱を発表しました。その離脱の理由はどれでしょう？",
+      "options": [
+        "無痛性甲状腺炎",
+        "虫垂炎",
+        "右膝前十字靭帯断裂",
+        "左足首捻挫"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は佐藤恵允が無痛性甲状腺炎の診断を受け、当面の間は症状を見ながら復帰に向けたプロセスを進めていくと発表しました。",
+      "trivia": "過去には2011年にヴィッセル神戸に在籍していた茂木弘人も同じ病気で約2ヶ月間離脱したことがあります。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "J2",
+        "北海道コンサドーレ札幌",
+        "田川知樹",
+        "月間MVP"
+      ],
+      "text": "2026年11月に発表された2026/27明治安田J2リーグの10月度「KONAMI月間MVP」は、今季GKとして初めての受賞となりました。選出された北海道コンサドーレ札幌の選手は誰でしょう？",
+      "options": [
+        "田川知樹",
+        "菅野孝憲",
+        "中村桐耶",
+        "児玉潤"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月13日に発表されたJ2の10月度月間MVPには、北海道コンサドーレ札幌のGK田川知樹が選ばれました。今季GKがMVPに選ばれるのは初のことです。",
+      "trivia": "この月、札幌は川井健太監督が監督賞、木實快斗がヤングプレーヤー賞を受賞し、1つのクラブが同じ月に3賞を獲得しました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "J1",
+        "アビスパ福岡",
+        "監督就任",
+        "城福浩"
+      ],
+      "text": "2026年11月11日からアビスパ福岡のトップチーム新監督として合流し、指揮を執り始めた人物は誰でしょうか？",
+      "options": [
+        "城福浩",
+        "塚原真也",
+        "長谷部茂利",
+        "金明輝"
+      ],
+      "answerIndex": 0,
+      "explanation": "アビスパ福岡は、成績不振で解任された塚原真也前監督の後任として、城福浩氏が新監督に就任したことを発表し、同氏は2026年11月11日からチームに合流しました。",
+      "trivia": "城福新監督は前任の東京ヴェルディを退任してからわずか1ヶ月でのスピード現場復帰となりました。J1での残留争いから優勝争いまでを経験した豊富な実績で、最下位に沈むチームの立て直しを図ります。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "J2",
+        "栃木SC",
+        "監督就任"
+      ],
+      "text": "2026年11月11日、栃木SCは暫定的に指揮を執っていた人物が、正式にトップチームの監督に就任したことを発表しました。その人物は誰でしょうか？",
+      "options": [
+        "濱崎芳己",
+        "米山篤志",
+        "時崎悠",
+        "小林伸二"
+      ],
+      "answerIndex": 0,
+      "explanation": "栃木SCは2026年11月11日、米山篤志前監督の解任後から暫定監督としてチームを指揮していた濱崎芳己氏が正式に監督に就任することを発表しました。",
+      "trivia": "濱崎新監督は暫定監督就任時に「前へ！前へ！前へ！」という力強いスローガンを掲げており、選手たちに最後まで諦めないプレーと闘う姿勢を求めています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "J3",
+        "FC大阪",
+        "スタジアム",
+        "Jリーグ規約"
+      ],
+      "text": "2026年11月12日、J3のFC大阪はJリーグ規約のある規定を満たすことが難しい状況であると公表しました。ホームゲームの「何%」以上をホームスタジアムで開催しなければならないという規定でしょうか？",
+      "options": [
+        "80%",
+        "70%",
+        "60%",
+        "50%"
+      ],
+      "answerIndex": 0,
+      "explanation": "Jリーグ規約第40条第2項により、リーグ戦のホームゲームの80%以上をホームスタジアムで実施しなければならないと定められており、FC大阪は本拠地の花園ラグビー場での開催がこの基準を満たすことが困難であると認めました。",
+      "trivia": "規約では理事会の承認を得た場合は例外となると記載されていますが、クラブライセンスの施設基準にも関わる項目であるため、クラブにとってスタジアムの安定確保は大きな課題となっています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "J2",
+        "北海道コンサドーレ札幌",
+        "月間表彰"
+      ],
+      "text": "2026年11月13日に発表された「2026/27明治安田J2リーグ10月度KONAMI月間監督賞」を受賞した、北海道コンサドーレ札幌の監督は誰でしょうか？",
+      "options": [
+        "川井健太",
+        "ミハイロ・ペトロヴィッチ",
+        "四方田修平",
+        "名波浩"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月13日、J2リーグの10月度月間監督賞が発表され、北海道コンサドーレ札幌を率いる川井健太監督が受賞しました。",
+      "trivia": "同月のJ2リーグ月間表彰では、コンサドーレ札幌から月間MVPに田川知樹選手、ヤングプレーヤー賞に木實快斗選手も選ばれており、チームが個人賞を席巻する形となりました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "J1",
+        "浦和レッズ",
+        "イベント"
+      ],
+      "text": "2026年11月13日、浦和レッズはイオンシネマ浦和美園で京都サンガF.C.戦のパブリックビューイングを開催することを発表しました。このイベントにゲストとして参加するクラブOBは誰でしょうか？",
+      "options": [
+        "那須大亮",
+        "鈴木啓太",
+        "坪井慶介",
+        "阿部勇樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "浦和レッズは、2026年11月21日に開催されるアウェイでの京都サンガF.C.戦に向けて、クラブOBの那須大亮氏をゲストに迎えたパブリックビューイングの開催を発表しました。",
+      "trivia": "那須大亮氏はYouTuberとしても精力的に活動しており、現役時代さながらの熱い情熱と巧みなトーク力で、試合中の生解説やトークショーを大いに盛り上げてくれるはずです。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "ブラジル代表",
+        "坂元達裕",
+        "国際親善試合"
+      ],
+      "text": "2026年11月14日にシンガポールで行われた国際親善試合で、日本代表（SAMURAI BLUE）は強豪ブラジル代表に2-1で勝利しました。この試合で終了間際に劇的な決勝ゴールを決めた選手は誰でしょうか？",
+      "options": [
+        "坂元達裕",
+        "南野拓実",
+        "久保建英",
+        "伊東純也"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月14日のブラジル代表戦で、日本は終了間際に坂元達裕のゴールで勝利をつかみ、前回のワールドカップラウンド32で敗れた雪辱を果たしました。",
+      "trivia": "この試合はシンガポール・ナショナルスタジアムで開催され、カルロ・アンチェロッティ監督率いるブラジルを相手に劇的な勝利を飾りました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-14",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "ルヴァンカップ",
+        "Jリーグ",
+        "浦和レッズ",
+        "FC町田ゼルビア"
+      ],
+      "text": "2026年11月15日に「2026/27 Jリーグ ヤマザキビスケット ルヴァンカップ」のプライムラウンド準々決勝第2戦が終了し、準決勝に進出する4クラブが決定しました。ベスト4に進出したクラブの正しい組み合わせはどれでしょうか？",
+      "options": [
+        "浦和レッズ、FC町田ゼルビア、柏レイソル、鹿島アントラーズ",
+        "ヴィッセル神戸、横浜F・マリノス、浦和レッズ、鹿島アントラーズ",
+        "FC町田ゼルビア、ヴィッセル神戸、サンフレッチェ広島、川崎フロンターレ",
+        "浦和レッズ、FC町田ゼルビア、横浜F・マリノス、柏レイソル"
+      ],
+      "answerIndex": 0,
+      "explanation": "準々決勝を勝ち抜いたのは、浦和レッズ、FC町田ゼルビア、柏レイソル、鹿島アントラーズの4クラブです。これにより、準決勝は浦和対町田、柏対鹿島のカードとなりました。",
+      "trivia": "2026/27シーズンからJリーグは秋春制に完全移行しており、今大会のルヴァンカップ決勝戦は2027年5月に開催される予定です。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-15",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "鎌田大地",
+        "クリスタル・パレス",
+        "イングランド"
+      ],
+      "text": "2026年11月14日、日本サッカー協会はシンガポールで行われるパラグアイ代表戦を前に、ある日本代表選手がクラブ事情によりチームを離脱することを発表しました。イングランド・プレミアリーグのクラブに所属するこの選手は誰でしょうか？",
+      "options": [
+        "鎌田大地",
+        "三笘薫",
+        "遠藤航",
+        "冨安健洋"
+      ],
+      "answerIndex": 0,
+      "explanation": "クリスタル・パレスに所属する鎌田大地が、クラブ事情によりチームを離脱することが2026年11月14日に日本サッカー協会から発表されました。",
+      "trivia": "代表戦期間中にケガではなく「クラブ事情」で主力選手が離脱することは異例であり、過密日程の中で所属クラブと日本代表の間で調整が行われた結果と見られています。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "U-21日本代表",
+        "スペイン代表",
+        "海外遠征",
+        "国際親善試合"
+      ],
+      "text": "2026年11月にU-21日本代表は海外遠征を実施し、国際親善試合を2試合行いました。このうち、11月13日に対戦した相手国はどこでしょうか？",
+      "options": [
+        "U-21スペイン代表",
+        "U-21ドイツ代表",
+        "U-21フランス代表",
+        "U-21イングランド代表"
+      ],
+      "answerIndex": 0,
+      "explanation": "U-21日本代表は11月の海外遠征で、13日にスペイン・アルメンドラレホでU-21スペイン代表と対戦し、17日にはエジプト・カイロでU-21エジプト代表と対戦しました。",
+      "trivia": "このU-21日本代表の2試合はABEMAで無料生配信され、将来のA代表を担う若き日本代表の海外での戦いぶりが多くのファンに視聴されました。",
+      "referenceDate": "2026-11-16",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-13",
+        "publishDate": "2026-11-16",
+        "expiryDate": "2026-11-23",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
