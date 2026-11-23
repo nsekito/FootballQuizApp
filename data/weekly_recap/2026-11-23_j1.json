@@ -1,0 +1,1044 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-11-23T01:31:07Z",
+  "category": "match_recap",
+  "league_type": "j1",
+  "date": "2026-11-23",
+  "questions": [
+    {
+      "id": "w_00001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC東京",
+        "J1",
+        "新記録",
+        "無失点"
+      ],
+      "text": "2026年11月21日に行われたJ1第15節、FC東京はセレッソ大阪に3-0で勝利し、J1新記録となる連続無失点試合数を樹立しました。その試合数はいくつでしょう？",
+      "options": [
+        "10試合",
+        "9試合",
+        "11試合",
+        "12試合"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京はセレッソ大阪を3-0で下し、4連勝を飾りました。同時に、これまで名古屋グランパスが持っていた9試合連続を上回る、10試合連続無失点のJ1新記録を打ち立てています。",
+      "trivia": "これまでのJ1連続無失点記録は2021年に名古屋グランパスが達成した9試合（823分）でした。FC東京の強固な守備網がどこまで記録を伸ばすか、大きな注目を集めています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00002",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J1",
+        "FC東京",
+        "サンフレッチェ広島",
+        "順位表"
+      ],
+      "text": "2026年11月21日のJ1第15節終了時点で、首位を独走するFC東京と、2位に浮上したサンフレッチェ広島の勝ち点差はいくつに開いたでしょう？",
+      "options": [
+        "5",
+        "3",
+        "7",
+        "10"
+      ],
+      "answerIndex": 0,
+      "explanation": "J1第15節終了時点で、首位のFC東京は勝ち点36、2位のサンフレッチェ広島は勝ち点31となり、両者の差は5に開きました。",
+      "trivia": "FC東京は第15節のセレッソ大阪戦で14試合負けなしという圧倒的な成績を残しており、秋春制移行後の初シーズンで序盤から独走態勢を築きつつあります。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00003",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "日本代表",
+        "森保一",
+        "親善試合"
+      ],
+      "text": "2026年11月17日に行われたサッカー日本代表の親善試合で、1-2で敗戦し森保一監督のラストマッチとなった対戦相手はどの国でしょう？",
+      "options": [
+        "パラグアイ代表",
+        "ブラジル代表",
+        "ウルグアイ代表",
+        "コロンビア代表"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月17日にシンガポールで行われた親善試合で、日本代表はパラグアイ代表に1-2で敗れました。この試合をもって約8年半続いた森保体制が幕を閉じました。",
+      "trivia": "森保一監督は2018年夏の就任以降、2度のワールドカップで指揮を執り、歴代最長の在任期間と最多勝利数を誇るなど、日本サッカー史に残る名将として記憶されています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-17",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "V・ファーレン長崎",
+        "FC町田ゼルビア",
+        "J1"
+      ],
+      "text": "2026年11月21日に行われたJ1第15節、V・ファーレン長崎はアウェイでスコアレスドローに終わりました。対戦相手となったクラブはどこでしょう？",
+      "options": [
+        "FC町田ゼルビア",
+        "ヴィッセル神戸",
+        "名古屋グランパス",
+        "アビスパ福岡"
+      ],
+      "answerIndex": 0,
+      "explanation": "V・ファーレン長崎はアウェイでFC町田ゼルビアと対戦し、0-0のスコアレスドローに終わりました。前節の広島戦での大勝の勢いを持ち込みたかったものの、連勝とはなりませんでした。",
+      "trivia": "長崎は秋春制に移行した2026-27シーズンでJ1の舞台を戦っています。この試合では守備陣が奮闘し、手堅くアウェイで貴重な勝ち点1を積み上げました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC東京",
+        "セレッソ大阪",
+        "仲川輝人"
+      ],
+      "text": "2026年11月21日のJ1第15節、セレッソ大阪との試合でFC東京の先制点を挙げた選手は誰でしょう？",
+      "options": [
+        "仲川輝人",
+        "長倉幹樹",
+        "橋本拳人",
+        "ディエゴ・オリヴェイラ"
+      ],
+      "answerIndex": 0,
+      "explanation": "セレッソ大阪戦の前半8分、MF高宇洋のスルーパスから仲川輝人が抜け出し、FC東京に貴重な先制点をもたらしました。",
+      "trivia": "この試合では仲川輝人の他に、後半に長倉幹樹と途中出場の橋本拳人がゴールを決め、3-0という盤石のスコアでFC東京が勝利を収めています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "横浜F・マリノス",
+        "サンフレッチェ広島",
+        "二田理央"
+      ],
+      "text": "2026年11月21日のJ1第15節、サンフレッチェ広島と横浜F・マリノスの一戦は2-2の引き分けに終わりました。横浜FMを敗戦の危機から救う同点ゴールを後半アディショナルタイムに決めた選手は誰でしょう？",
+      "options": [
+        "二田理央",
+        "田中雄大",
+        "アンデルソン・ロペス",
+        "エウベル"
+      ],
+      "answerIndex": 0,
+      "explanation": "広島に2度リードを許す苦しい展開の中、横浜F・マリノスは後半アディショナルタイム3分に二田理央が土壇場で同点ゴールを決め、2-2の引き分けに持ち込みました。",
+      "trivia": "二田理央は若くして海外クラブを経験したストライカーです。終盤の交代枠をうまく活用し、最後まで攻め続けた横浜FMの勝負強さが光る試合となりました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00007",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "ジェフユナイテッド千葉",
+        "柏レイソル",
+        "千葉ダービー"
+      ],
+      "text": "柏レイソルとジェフユナイテッド千葉による2026年11月のJ1第15節「千葉ダービー」は、千葉が1-0で勝利しました。この試合の決勝点を決めた選手は誰でしょう？",
+      "options": [
+        "呉屋大翔",
+        "杉山直宏",
+        "小森飛絢",
+        "風間宏矢"
+      ],
+      "answerIndex": 0,
+      "explanation": "ジェフユナイテッド千葉は後半31分に呉屋大翔がゴールを決め、柏レイソルを相手に1-0で勝利しました。これで千葉は3連勝を飾っています。",
+      "trivia": "柏レイソルとジェフユナイテッド千葉が激突する『千葉ダービー』は、両チームのサポーターにとって非常に熱くなる一戦です。今回は敵地に乗り込んだ千葉が意地を見せました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00008",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "FC東京",
+        "J1",
+        "新記録",
+        "クリーンシート"
+      ],
+      "text": "2026年11月21日のJ1第15節でFC東京が樹立した「10試合連続クリーンシート」のJ1新記録。この記録達成に伴い、連続無失点時間は何分に更新されたでしょう？",
+      "options": [
+        "937分",
+        "855分",
+        "1012分",
+        "903分"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は第15節のセレッソ大阪戦で連続無失点試合数を10に伸ばすとともに、連続無失点時間を「937分」に更新し、J1新記録を打ち立てました。",
+      "trivia": "サッカーにおいて連続無失点時間は、ゴールキーパーだけでなくディフェンス陣やチーム全体の守備意識の高さを示す重要な指標です。10試合以上ゴールを許さないのは驚異的な記録です。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00009",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "水戸ホーリーホック",
+        "ヴィッセル神戸",
+        "連敗ストップ"
+      ],
+      "text": "2026年11月20日に行われたJ1第15節、水戸ホーリーホックはアウェイでヴィッセル神戸に勝利しました。これにより、水戸は長かった連敗をストップさせましたが、その連敗数はいくつだったでしょう？",
+      "options": [
+        "8連敗",
+        "6連敗",
+        "7連敗",
+        "9連敗"
+      ],
+      "answerIndex": 0,
+      "explanation": "水戸ホーリーホックはアウェイでヴィッセル神戸と対戦し、敵地で勝利を収めました。これにより、チームの不名誉な連敗を「8」でストップさせています。",
+      "trivia": "長い連敗から抜け出すためには、チーム全体のメンタル面の切り替えが不可欠です。退場者を出したとはいえ強豪・神戸を相手に敵地で白星を挙げたことは、水戸にとって大きな自信につながりました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-20",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00010",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j3",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-jp-match",
+      "tags": [
+        "J3",
+        "高知ユナイテッドSC",
+        "福島ユナイテッドFC"
+      ],
+      "text": "2026年11月21日に行われたJ3第18節、高知ユナイテッドSCと福島ユナイテッドFCの試合は、激しい打ち合いの末に引き分けとなりました。この試合の最終スコアはどうなったでしょう？",
+      "options": [
+        "3-3",
+        "2-2",
+        "4-4",
+        "1-1"
+      ],
+      "answerIndex": 0,
+      "explanation": "J3第18節の高知ユナイテッドSCと福島ユナイテッドFCの一戦は、前半を0-1で折り返した後、後半に両チーム合わせて5ゴールが生まれる展開となり、最終的に3-3で引き分けました。",
+      "trivia": "福島ユナイテッドFCは一時リードしながらも後半に追いつかれる展開となりました。連戦が続く中、監督も試合後のコメントで『勝ち切るための強さが足りない』と課題を口にしています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 18,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "FC東京",
+        "記録"
+      ],
+      "text": "2026-27シーズンのJ1リーグで首位を快走するFC東京ですが、2026年11月21日の第15節終了時点で達成した「J1新記録」は何でしょうか？",
+      "options": [
+        "10試合連続無失点",
+        "開幕15試合無敗",
+        "10試合連続3得点以上",
+        "開幕から全試合得点"
+      ],
+      "answerIndex": 0,
+      "explanation": "FC東京は第15節でセレッソ大阪に3-0で勝利し、10試合連続無失点のJ1新記録を達成しました。第15節終了時点で勝ち点を36に伸ばしています。",
+      "trivia": "これまでのJ1連続無失点記録は名古屋グランパスなどが記録していた9試合でしたが、FC東京がついにその大記録を塗り替えました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "日本代表",
+        "森保一",
+        "監督"
+      ],
+      "text": "2026年11月17日のパラグアイ戦をもって退任したサッカー日本代表の森保一監督ですが、約8年間の在任期間における通算勝利数はいくつだったでしょうか？",
+      "options": [
+        "77勝",
+        "67勝",
+        "87勝",
+        "97勝"
+      ],
+      "answerIndex": 0,
+      "explanation": "2018年から日本代表を率いた森保一監督は、通算113試合を指揮して77勝17分19敗という成績を残し、2026年11月をもって退任しました。",
+      "trivia": "森保監督は日本代表の歴代監督の中で最長の在任期間と最多の勝利数を誇り、日本サッカーの歴史に深く名を刻みました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-17",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J1",
+        "アビスパ福岡",
+        "順位表"
+      ],
+      "text": "2026年11月21日の第15節終了時点で、2026-27シーズンのJ1リーグ最下位（20位）に沈んでいるチームはどこでしょうか？",
+      "options": [
+        "アビスパ福岡",
+        "ガンバ大阪",
+        "水戸ホーリーホック",
+        "V・ファーレン長崎"
+      ],
+      "answerIndex": 0,
+      "explanation": "アビスパ福岡は第15節終了時点で2勝2分11敗の勝ち点8にとどまり、リーグ最下位の20位と苦しい戦いが続いています。",
+      "trivia": "福岡は第15節の川崎フロンターレ戦から新たに城福浩監督が就任しましたが、初陣は0-1で惜敗となりました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "日本代表",
+        "ブラジル代表",
+        "坂元達裕"
+      ],
+      "text": "2026年11月14日に行われた国際親善試合で、日本代表はブラジル代表に3-2で勝利しました。この試合の後半アディショナルタイムに劇的な決勝ゴールを決めた選手は誰でしょうか？",
+      "options": [
+        "坂元達裕",
+        "久保建英",
+        "中村敬斗",
+        "前田大然"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本は久保建英と中村敬斗のゴールでリードした後に追いつかれましたが、試合終了間際の後半アディショナルタイムに坂元達裕が決勝ゴールを奪い、3-2で勝利しました。",
+      "trivia": "日本代表は2025年10月にもブラジルに3-2で勝利しており、サッカー王国を相手に複数回の勝利を収める快挙を成し遂げています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "日本代表",
+        "パラグアイ代表",
+        "福田師王"
+      ],
+      "text": "森保一監督のラストマッチとなった2026年11月17日のパラグアイ戦（1-2で敗戦）において、日本代表の唯一の得点を挙げた選手は誰でしょうか？",
+      "options": [
+        "福田師王",
+        "久保建英",
+        "堂安律",
+        "伊東純也"
+      ],
+      "answerIndex": 0,
+      "explanation": "パラグアイ戦では、後半40分に途中出場の福田師王がA代表デビュー戦でゴールを決めましたが、反撃及ばず1-2で敗れました。",
+      "trivia": "福田師王は高校卒業後に直接ドイツへ渡った異色の経歴を持つストライカーで、A代表デビュー戦での初ゴールという結果を残しました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-17",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j2",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-jp-standings",
+      "tags": [
+        "J2",
+        "アルビレックス新潟",
+        "順位表"
+      ],
+      "text": "上位6チームが勝ち点わずか4差の中にひしめく大混戦となっている2026-27シーズンのJ2リーグですが、2026年11月21日の第18節終了時点で首位に立っているチームはどこでしょうか？",
+      "options": [
+        "アルビレックス新潟",
+        "ベガルタ仙台",
+        "RB大宮アルディージャ",
+        "横浜FC"
+      ],
+      "answerIndex": 0,
+      "explanation": "アルビレックス新潟は第18節で栃木シティに3-0で勝利し、勝ち点を35に伸ばして再びJ2の首位に浮上しました。",
+      "trivia": "第18節終了時点で、1位の新潟から6位の横浜FCまでの勝ち点差はわずか4。1試合の結果で順位が大きく入れ替わる「魔境」となっています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 18,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "福田師王",
+        "代表デビュー",
+        "初ゴール"
+      ],
+      "text": "2026年11月17日に行われた日本代表のパラグアイ戦で、A代表デビュー戦ながら見事な初ゴールを記録した選手は誰でしょう？",
+      "options": [
+        "福田師王",
+        "後藤啓介",
+        "鈴木唯人",
+        "塩貝健人"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月17日のパラグアイ戦で後半から出場した福田師王は、85分に久保建英のフリーキックのこぼれ球をヘディングで押し込み、代表デビュー戦で初ゴールを記録しました。",
+      "trivia": "福田師王は高校卒業後、Jリーグを経ずにドイツのボルシアMGへ直接加入し話題となったストライカーです。なお、このパラグアイ戦は森保一監督の日本代表でのラストマッチとなりました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-17",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00018",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "日本代表",
+        "佐野海舟",
+        "佐野航大",
+        "兄弟出場"
+      ],
+      "text": "2026年11月17日に行われた日本代表のパラグアイ戦で、「兄弟そろっての先発出場」を果たした2人の選手は誰でしょう？",
+      "options": [
+        "佐野海舟と佐野航大",
+        "高木俊幸と高木善朗",
+        "森崎和幸と森崎浩司",
+        "遠藤保仁と遠藤彰弘"
+      ],
+      "answerIndex": 0,
+      "explanation": "この試合では、MFの佐野海舟（マインツ）と佐野航大（PSV）の兄弟が揃ってスタメンに名を連ね、ダブルボランチとしてプレーしました。",
+      "trivia": "Jリーグでの兄弟出場は多数ありますが、日本代表のピッチに兄弟が同時に立ってプレーするのは非常に稀なケースです。この試合は日本代表にとって歴史的な一戦となりました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-17",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00019",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "横浜F・マリノス",
+        "坪井湧也",
+        "入籍",
+        "Jリーグ"
+      ],
+      "text": "2026年11月22日、J1の横浜F・マリノスに所属するあるゴールキーパーが結婚（入籍）したことを発表しました。その選手は誰でしょう？",
+      "options": [
+        "坪井湧也",
+        "ポープ・ウィリアム",
+        "白坂楓馬",
+        "飯倉大樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "横浜F・マリノスのGK坪井湧也が2026年11月22日に入籍を発表しました。クラブを通じて「笑顔溢れる幸せな家庭を築いていきたい」とコメントしています。",
+      "trivia": "坪井湧也はヴィッセル神戸のアカデミー出身で、中央大学を経てプロ入りしました。その後ジュビロ磐田などを経て、横浜F・マリノスへ加入しています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00020",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "松原快晟",
+        "カマタマーレ讃岐",
+        "移籍",
+        "ラインメール青森FC"
+      ],
+      "text": "2026年11月17日、カマタマーレ讃岐に所属するGK松原快晟が、育成型期限付き移籍先を「EDO ALL UNITED」から別のJFLクラブへ変更したと発表しました。新たな移籍先はどこでしょう？",
+      "options": [
+        "ラインメール青森FC",
+        "クリアソン新宿",
+        "ヴィアティン三重",
+        "高知ユナイテッドSC"
+      ],
+      "answerIndex": 0,
+      "explanation": "GK松原快晟は2026年3月から関東1部のEDO ALL UNITEDでプレーしていましたが、11月17日に移籍を解除し、新たにJFLのラインメール青森FCへ育成型期限付き移籍することが発表されました。",
+      "trivia": "ラインメール青森FCはこの時点でJFLの5位につけており、J3昇格に向けて終盤戦の戦力補強として若きGKの松原快晟を迎え入れました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00021",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-jp-player",
+      "tags": [
+        "なでしこリーグ",
+        "唐橋万結",
+        "引退",
+        "ASハリマアルビオン"
+      ],
+      "text": "2026年11月20日、なでしこリーグ1部のASハリマアルビオンに所属し、かつてアルビレックス新潟レディースなどでもプレーしたある選手が、今シーズン限りでの現役引退を発表しました。その選手は誰でしょう？",
+      "options": [
+        "唐橋万結",
+        "千葉園子",
+        "正野可菜子",
+        "川﨑咲耶"
+      ],
+      "answerIndex": 0,
+      "explanation": "ASハリマアルビオンのMF唐橋万結が、23年間のサッカー人生に終止符を打つことを発表しました。「サッカーが私の世界を広げてくれた」と感謝のコメントを残しています。",
+      "trivia": "唐橋万結は新潟県出身で、アルビレックス新潟レディースの下部組織からトップチームに昇格し活躍しました。ASハリマアルビオンには約1年半在籍しました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00022",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "チケット",
+        "インバウンド",
+        "Jリーグ"
+      ],
+      "text": "2026年11月16日、J1リーグ全20クラブが導入したと発表された、会員登録不要・英語対応のインバウンド向けチケット販売サイトの名称は？",
+      "options": [
+        "QUICKぴあ",
+        "FASTぴあ",
+        "SPEEDぴあ",
+        "GLOBALぴあ"
+      ],
+      "answerIndex": 0,
+      "explanation": "海外からの観戦客が会員登録や氏名・住所入力なしでチケットを購入できる「QUICKぴあ」が、2026年11月までにJ1全20クラブに導入されました。",
+      "trivia": "2025年のJリーグの英語でのチケット販売枚数は約34,000枚で、最も多い出身国・地域は香港だそうです。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00023",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "監督交代",
+        "アビスパ福岡",
+        "J1"
+      ],
+      "text": "2026年11月にアビスパ福岡の新監督に就任し、21日の川崎フロンターレ戦で初陣を迎えた人物は？",
+      "options": [
+        "城福浩",
+        "長谷部茂利",
+        "金明輝",
+        "塚原真也"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月6日に就任が発表された城福浩監督は、第15節の川崎フロンターレ戦で福岡の指揮官として初陣を飾りました。",
+      "trivia": "城福監督にとって、初陣の相手となった川崎Fに所属する谷口栄斗は東京V時代に師と仰いだ教え子にあたります。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00024",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "Jリーグ",
+        "ニュース",
+        "情報漏洩"
+      ],
+      "text": "2026年11月18日、Jリーグ公式サービスで利用する外部ウェブツールへの不正アクセスにより、約何件の情報漏洩が発生したと発表された？",
+      "options": [
+        "約238万件",
+        "約128万件",
+        "約358万件",
+        "約478万件"
+      ],
+      "answerIndex": 0,
+      "explanation": "「Jリーグチケット」等で使用する外部ツール「KARTE」への不正アクセスにより、計238万件超の情報が漏洩しました。なお、パスワードやクレジットカード情報は対象外でした。",
+      "trivia": "Jリーグは、漏洩の対象となった利用者に順次メールで連絡を行うとともに、関係会社を装った不審なメールに注意するよう呼びかけています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00025",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "DAZN",
+        "U-21 Jリーグ",
+        "配信アプリ"
+      ],
+      "text": "2026年11月16日、「DAZN」と「U-21 Jリーグ」参加クラブが協力し、若手選手がサポーターと交流する応援イベントを開催すると発表しました。使用されるライブ配信アプリはどれ？",
+      "options": [
+        "ミクチャ",
+        "17LIVE",
+        "SHOWROOM",
+        "ツイキャス"
+      ],
+      "answerIndex": 0,
+      "explanation": "スポーツチャンネル「DAZN」と若手の育成・強化を目的とした「U-21 Jリーグ」が協力し、ライブ配信アプリ「ミクチャ」を利用したサポーター参加型の応援イベントを開催します。",
+      "trivia": "この企画の第一弾として、2026年11月22日から川崎フロンターレの選手による配信がスタートする予定となっています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00026",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "クラブ・リーグの動向",
+      "categoryId": "weekly-jp-club",
+      "tags": [
+        "アカデミー",
+        "ユース",
+        "国際大会"
+      ],
+      "text": "2026年11月19日、12月に「2026 Jリーグインターナショナルユースカップ」が開催されることが発表されました。Jクラブに加え、計4カ国の海外チームが参加しますが、そのうち含まれていない国はどれ？",
+      "options": [
+        "アルゼンチン",
+        "コートジボワール",
+        "ブラジル",
+        "ポルトガル"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブラジル（CRフラメンゴ）、韓国（蔚山HD FC）、コートジボワール（ASECミモザ）、ポルトガル（SLベンフィカ）の4カ国のチームが海外から参加します。",
+      "trivia": "日本からは、2026 Jユースカップで優勝した川崎フロンターレU-18と、準優勝の湘南ベルマーレU-18がアカデミー代表として参加します。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "japan",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "日本代表",
+        "森保一",
+        "パラグアイ",
+        "監督退任"
+      ],
+      "text": "2026年11月17日に行われた国際親善試合で、約8年にわたりサッカー日本代表を率いてきた森保一監督のラストマッチの対戦相手となった国はどこでしょう？",
+      "options": [
+        "パラグアイ",
+        "ブラジル",
+        "ウルグアイ",
+        "アルゼンチン"
+      ],
+      "answerIndex": 0,
+      "explanation": "森保一監督は、通算113試合にわたって日本代表を指揮し、2026年11月17日のパラグアイ戦（1-2で敗戦）を最後に退任しました。",
+      "trivia": "森保監督は就任以来、試合中に常にメモ帳を持ち歩いて書き込む姿が話題となり、そのメモ帳はファンの間で「デスノート」などと呼ばれることもありました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-17",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J1",
+        "ガンバ大阪",
+        "ファジアーノ岡山",
+        "VAR",
+        "退場"
+      ],
+      "text": "2026年11月21日のJ1第15節・ガンバ大阪対ファジアーノ岡山戦で、VARによって「人違い」が確認され、判定が覆って一発退場となったガンバ大阪の選手は誰でしょう？",
+      "options": [
+        "初瀬亮",
+        "三浦弦太",
+        "宇佐美貴史",
+        "中谷進之介"
+      ],
+      "answerIndex": 0,
+      "explanation": "前半44分、当初は岡山の選手にレッドカードが提示されましたが、VARの介入によって初瀬亮の相手選手への踏みつけ行為と判明し、初瀬が一発退場となりました。",
+      "trivia": "VARによる「人違い（Mistaken Identity）」の確認は、VARが介入できる4つの事象（ゴール、PK、一発退場、人違い）の1つとして明確にルール化されています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J1",
+        "ヴィッセル神戸",
+        "水戸ホーリーホック",
+        "DOGSO",
+        "山川哲史"
+      ],
+      "text": "2026年11月20日に行われたJ1第15節・ヴィッセル神戸対水戸ホーリーホック戦で、後半に神戸のDF山川哲史が一発退場となった理由は何でしょう？",
+      "options": [
+        "トラップミスをカバーしようとしてDOGSOを犯した",
+        "相手選手への報復となる暴力行為を行った",
+        "判定に異議を唱えて2枚目のイエローカードを受けた",
+        "ペナルティエリア内で意図的なハンドをした"
+      ],
+      "answerIndex": 0,
+      "explanation": "1-1で迎えた後半13分、山川哲史は自身のトラップが流れてボールを奪われかけ、スライディングで相手を倒してしまいDOGSO（決定的な得点機会の阻止）と判定されました。",
+      "trivia": "DOGSO（Denying an Obvious Goal-Scoring Opportunity）が成立するには「反則とゴールの距離」「プレーの方向」「守備側競技者の位置と数」「ボールをコントロールできる可能性」の4要件をすべて満たす必要があります。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 15,
+        "matchDate": "2026-11-20",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_00030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "japan",
+      "league": "j1",
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-jp-buzz",
+      "tags": [
+        "J1",
+        "Jリーグ",
+        "SUBU",
+        "コラボ",
+        "グッズ"
+      ],
+      "text": "2026年11月20日、Jリーグとある「冬のサンダル」ブランドによるコラボレーション第2弾が発売され話題となりました。J1全20クラブのモデルも登場したこのブランド名は何でしょう？",
+      "options": [
+        "SUBU",
+        "TEVA",
+        "KEEN",
+        "Crocs"
+      ],
+      "answerIndex": 0,
+      "explanation": "10周年を迎えた冬のサンダルブランド「SUBU（スブ）」とJリーグのコラボ第二弾が発売され、J1全20クラブのエンブレムやカラーを取り入れたモデルが展開されました。",
+      "trivia": "「SUBU」は「誰も知らない冬のサンダル」をコンセプトに日本で誕生したブランドで、ダウンジャケットのような暖かさと起毛素材のインソールが特徴です。ちょっとしたお出かけに最適とサポーターの間でも人気を集めています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-20",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    }
+  ]
+}

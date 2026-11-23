@@ -1,0 +1,1049 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-11-23T01:36:20Z",
+  "category": "match_recap",
+  "league_type": "europe",
+  "date": "2026-11-23",
+  "questions": [
+    {
+      "id": "w_10001",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "マンチェスター・ユナイテッド",
+        "リヴァプール",
+        "監督交代"
+      ],
+      "text": "2026年11月22日、プレミアリーグでリヴァプールがマンチェスター・ユナイテッドに4-0で快勝しました。この試合からマンチェスター・ユナイテッドの新監督として指揮を執ったのは誰でしょう？",
+      "options": [
+        "マウリシオ・ポチェッティーノ",
+        "エリック・テン・ハフ",
+        "トーマス・トゥヘル",
+        "ルート・ファン・ニステルローイ"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月22日のリヴァプール戦は、マウリシオ・ポチェッティーノ新監督の初陣でしたが、前半8分での退場者もあり0-4という厳しい船出となりました。",
+      "trivia": "この試合でユナイテッドは前半開始わずか8分でレニー・ヨロが退場となり、早い時間帯で10人での戦いを強いられました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-22",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10002",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "リヴァプール",
+        "スタッツ",
+        "大記録"
+      ],
+      "text": "2026年11月22日のリヴァプール対マンチェスター・ユナイテッド戦で、プレミアリーグの1試合における「ビッグチャンス創出数」の記録を更新（5回）し、10本のキーパスを記録して大勝に貢献したリヴァプールの選手は誰でしょう？",
+      "options": [
+        "フロリアン・ヴィルツ",
+        "ドミニク・ソボスライ",
+        "トレント・アレクサンダー＝アーノルド",
+        "リオ・ングモハ"
+      ],
+      "answerIndex": 0,
+      "explanation": "リヴァプールのフロリアン・ヴィルツはこの試合で自身もゴールを挙げたほか、数多くのチャンスを演出し、単一試合でのビッグチャンス創出数のリーグ新記録を樹立しました。",
+      "trivia": "この試合ではヴィルツだけでなく、若手ウィンガーのリオ・ングモハもゴールを決め、アンフィールドを沸かせました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-22",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10003",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "プレミアリーグ",
+        "ボーンマス",
+        "連勝記録"
+      ],
+      "text": "2026年11月21日、プレミアリーグでボーンマスはノッティンガム・フォレストを2-0で下し、クラブの連勝記録を伸ばしました。この勝利により、ボーンマスはリーグ戦で何連勝となったでしょう？",
+      "options": [
+        "9連勝",
+        "7連勝",
+        "5連勝",
+        "11連勝"
+      ],
+      "answerIndex": 0,
+      "explanation": "ボーンマスはエヴァニウソンとクライファートのゴールでノッティンガム・フォレストを下し、プレミアリーグで驚異の9連勝を達成しました。",
+      "trivia": "アンドニ・イラオラ監督率いるボーンマスは、この快進撃でリーグの上位争いに名乗りを上げ、センセーションを巻き起こしています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10004",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "レアル・マドリード",
+        "ムバッペ",
+        "PK"
+      ],
+      "text": "2026年11月21日のラ・リーガ第13節セルタ・ビーゴ戦で、レアル・マドリードのキリアン・ムバッペは前半にPKを失敗してしまいました。クラブと代表を含め、彼の直近6回のPKで失敗したのはこれで何回目だったでしょう？",
+      "options": [
+        "3回目",
+        "1回目",
+        "5回目",
+        "一度も失敗していない"
+      ],
+      "answerIndex": 0,
+      "explanation": "ムバッペはセルタ戦でPKを大きく上に外してしまい、クラブと代表を含めた直近6本のPKのうち3本を失敗するという珍しいスランプに陥っています。",
+      "trivia": "試合は苦戦を強いられましたが、ジュード・ベリンガムの同点弾と途中出場のカルロス・エスピの劇的ゴールにより、レアル・マドリードが2-1で逆転勝利を収めました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10005",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ラ・リーガ",
+        "バルセロナ",
+        "逆転勝利",
+        "ビジャレアル"
+      ],
+      "text": "2026年11月22日のラ・リーガで、首位バルセロナはビジャレアル相手に前半を0-2で折り返しましたが、後半に3ゴールを奪い逆転勝利しました。この試合の後半に、自身のクロスから相手のオウンゴールを誘発し、決勝点をもたらしたバルセロナの選手は誰でしょう？",
+      "options": [
+        "エリック・ガルシア",
+        "ラミネ・ヤマル",
+        "ジェラール・マルティン",
+        "ペドリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "バルセロナは後半に猛反撃を見せ、同点に追いついた後の66分にエリック・ガルシアのクロスが相手DFパウ・ナバーロのオウンゴールを誘発し、3-2の逆転勝利を飾りました。",
+      "trivia": "ビジャレアルは前半7分までにカナダ代表のタジョン・ブキャナンとタニ・オルワセイがゴールを決め、バルサを大いに苦しめました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-11-22",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10006",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "ASローマ",
+        "大勝",
+        "パルマ"
+      ],
+      "text": "2026年11月21日に行われたセリエAの試合で、ASローマはアウェーでパルマに5-1と大勝しました。この試合で、1人で4ゴールを決める圧巻のパフォーマンスを見せたローマの選手は誰でしょう？",
+      "options": [
+        "ドニエル・マレン",
+        "パウロ・ディバラ",
+        "アルテム・ドフビク",
+        "マティアス・スーレ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ローマのドニエル・マレンはパルマ戦で決定力を爆発させ、1試合で4ゴールを奪う大活躍でチームを5-1の大勝に導きました。",
+      "trivia": "この試合では、マレンの4ゴールの他にも、アルゼンチンの若手ロドリゴ・モラがローマのゴールラッシュに加わる1点を決めています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 12,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10007",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ブンデスリーガ",
+        "ボルシア・ドルトムント",
+        "首位浮上",
+        "決勝ゴール"
+      ],
+      "text": "2026年11月21日のブンデスリーガ第10節で、ボルシア・ドルトムントはボルシアMGに1-0で勝利し、バイエルン・ミュンヘンを抜いて首位に浮上しました。この試合で終盤に値千金の決勝ゴールを決めた選手は誰でしょう？",
+      "options": [
+        "フェリックス・ヌメチャ",
+        "ユリアン・ブラント",
+        "セバスティアン・ハラー",
+        "ニクラス・フュルクルク"
+      ],
+      "answerIndex": 0,
+      "explanation": "0-0で迎えた80分、フェリックス・ヌメチャが決勝ゴールを挙げ、ドルトムントを1-0の勝利とブンデスリーガ首位浮上に導きました。",
+      "trivia": "この試合が行われた時点でドルトムントは勝ち点24となり、引き分けたバイエルンを勝ち点2差で上回ってトップに立ちました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10008",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "セリエA",
+        "コモ",
+        "アシスト",
+        "ファブレガス"
+      ],
+      "text": "2026年11月21日、セスク・ファブレガス監督が率いるコモはカリアリに2-0で勝利し、セリエAで4位に浮上しました。この試合で2つのゴールを正確なクロスからアシストした、コモのブラジル人DFは誰でしょう？",
+      "options": [
+        "ヤン・コウト",
+        "ダニ・アウヴェス",
+        "マイコン",
+        "マルキーニョス"
+      ],
+      "answerIndex": 0,
+      "explanation": "右サイドバックのヤン・コウトが正確なクロスで2つのヘディングゴール（ラモンとダ・クーニャ）をお膳立てし、コモの勝利に大きく貢献しました。",
+      "trivia": "昇格組ながら快進撃を続けるコモは、これでセリエAのホームゲームで無失点の3連勝を達成。これはクラブにとって1984年以来となる快挙です。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 12,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10009",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ブンデスリーガ",
+        "バイエルン・ミュンヘン",
+        "引き分け",
+        "若手選手"
+      ],
+      "text": "2026年11月20日のブンデスリーガで、首位を走っていたバイエルン・ミュンヘンはホームでケルンと1-1で引き分けました。この試合でバイエルンの同点ゴールを決めた選手は誰でしょう？",
+      "options": [
+        "ナサニエル・ブラウン",
+        "ジャマル・ムシアラ",
+        "マイケル・オリーズ",
+        "マティス・テル"
+      ],
+      "answerIndex": 0,
+      "explanation": "バイエルンはケルンのマイキー・ムーアに先制を許しましたが、37分に左サイドバックなどでプレーするナサニエル・ブラウンが同点ゴールを決め、1-1の引き分けに持ち込みました。",
+      "trivia": "ナサニエル・ブラウンは元々ニュルンベルクやアイントラハト・フランクフルトでプレーしていた、世代別ドイツ代表経験もある有望株です。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 10,
+        "matchDate": "2026-11-20",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10010",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "試合・結果",
+      "categoryId": "weekly-world-match",
+      "tags": [
+        "ネーションズリーグ",
+        "ドイツ代表",
+        "オランダ代表",
+        "大勝"
+      ],
+      "text": "2026年11月17日に行われたUEFAネーションズリーグのリーグフェーズで、オランダ代表を相手に5-0という記録的な大勝を収めた国はどこでしょう？",
+      "options": [
+        "ドイツ",
+        "フランス",
+        "スペイン",
+        "イタリア"
+      ],
+      "answerIndex": 0,
+      "explanation": "2026年11月17日のUEFAネーションズリーグで、ドイツ代表は強豪オランダ代表を圧倒し、5-0で大勝する結果を残しました。",
+      "trivia": "ドイツとオランダは長年のライバル関係にありますが、両者の対戦でこれほどの大差がつく試合は非常に珍しい出来事です。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-17",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10011",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "ligue1",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "リーグ・アン",
+        "順位",
+        "フランス"
+      ],
+      "text": "2026年11月下旬現在、2026-27シーズンのフランス・リーグアンで首位を走っているクラブはどこでしょう？",
+      "options": [
+        "パリ・サンジェルマン",
+        "リール",
+        "マルセイユ",
+        "モナコ"
+      ],
+      "answerIndex": 0,
+      "explanation": "パリ・サンジェルマン（PSG）は開幕から好調を維持し、11試合で勝ち点26を獲得。2位のリールに勝ち点差をつけて首位に立っています。",
+      "trivia": "今シーズンはパリFCも3位につけるなど躍進しており、パリを本拠地とするクラブの活躍が目立っています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10012",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "順位",
+        "イングランド"
+      ],
+      "text": "2026年11月22日時点のプレミアリーグ順位表で、マンチェスター・シティなどを抑えて首位に立っているロンドンのクラブはどこでしょう？",
+      "options": [
+        "アーセナル",
+        "チェルシー",
+        "トッテナム・ホットスパー",
+        "クリスタル・パレス"
+      ],
+      "answerIndex": 0,
+      "explanation": "アーセナルは11試合を終えて9勝1分1敗の勝ち点28を獲得し、2位以下に大きく差をつけて首位を快走しています。",
+      "trivia": "アーセナルはこの時点で総失点がわずか7と、鉄壁の守備が際立っています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10013",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ネーションズリーグ",
+        "イングランド代表",
+        "スペイン代表"
+      ],
+      "text": "2026年11月17日にリーグフェーズが終了したUEFAネーションズリーグ（2026-27）で、グループA3を首位で通過した国はどこでしょう？",
+      "options": [
+        "イングランド",
+        "スペイン",
+        "クロアチア",
+        "チェコ"
+      ],
+      "answerIndex": 0,
+      "explanation": "トーマス・トゥヘル監督率いるイングランドは、11月15日に敵地で世界王者のスペインに3-2で勝利するなど好調を維持し、グループ首位で準々決勝進出を決めました。",
+      "trivia": "イングランドはこのスペイン戦の勝利で、アウェイでの国際Aマッチ10連勝という記録を打ち立てました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-17",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10014",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "seriea",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "セリエA",
+        "ラツィオ",
+        "順位"
+      ],
+      "text": "2026年11月下旬時点のセリエAにおいて、無敗（12試合で10勝2分）で単独首位に立っているクラブはどこでしょう？",
+      "options": [
+        "ラツィオ",
+        "ローマ",
+        "インテル",
+        "ユヴェントス"
+      ],
+      "answerIndex": 0,
+      "explanation": "ラツィオは開幕12試合で10勝2分という圧倒的な成績を残し、勝ち点32でセリエAの首位を走っています。",
+      "trivia": "同じ街を本拠地とするライバルのローマも2位につけており、2026-27シーズン序盤はローマ勢が上位を席巻しています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 12,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10015",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "ネーションズリーグ",
+        "イングランド代表",
+        "ハリー・ケイン",
+        "得点王"
+      ],
+      "text": "2026年11月にリーグフェーズを終えたUEFAネーションズリーグ2026-27で、8ゴールを挙げて得点ランキングのトップに立っているイングランド代表の選手は誰でしょう？",
+      "options": [
+        "ハリー・ケイン",
+        "ジュード・ベリンガム",
+        "コール・パーマー",
+        "ブカヨ・サカ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ケインはクロアチア戦やチェコ戦での2得点を含め、リーグフェーズ6試合で8ゴールを記録し、得点ランキングの首位に立ちました。",
+      "trivia": "ケインはこの11月のクロアチア戦でイングランド代表歴代最多となる126キャップ目を達成し、自らPKで記念のゴールを決めています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-17",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10016",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "順位・スタッツ",
+      "categoryId": "weekly-world-standings",
+      "tags": [
+        "プレミアリーグ",
+        "ブライトン",
+        "三笘薫",
+        "順位"
+      ],
+      "text": "2026年11月22日時点のプレミアリーグで、三笘薫が所属するブライトンは何位につけているでしょう？",
+      "options": [
+        "2位",
+        "4位",
+        "6位",
+        "8位"
+      ],
+      "answerIndex": 0,
+      "explanation": "ブライトンは11試合を終えて7勝1分3敗の好成績を収め、マンチェスター・シティを得失点差で上回り堂々の2位につけています。",
+      "trivia": "ブライトンはこの時点で総得点26を記録しており、リーグトップクラスの破壊力を見せつけています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10017",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": "laliga",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "久保建英",
+        "レアル・ソシエダ",
+        "ラ・リーガ",
+        "海外日本人選手"
+      ],
+      "text": "2026年11月22日に行われたラ・リーガ第13節で、ラシン・サンタンデール相手に後半から途中出場したレアル・ソシエダの日本人選手は誰でしょう？",
+      "options": [
+        "久保建英",
+        "浅野拓磨",
+        "南野拓実",
+        "堂安律"
+      ],
+      "answerIndex": 0,
+      "explanation": "レアル・ソシエダの久保建英は、11月の日本代表活動から帰還直後ということもあり、ラシン・サンタンデール戦で68分から途中出場しました。",
+      "trivia": "久保建英は11月の代表活動で強豪ブラジル相手に先制ゴールを決める活躍を見せていましたが、ソシエダ帰還後の初戦ではGKのミスなどもあり2-3で悔しい敗戦を喫しています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 13,
+        "matchDate": "2026-11-22",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10018",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "伊東純也",
+        "ゲンク",
+        "ベルギーリーグ",
+        "海外日本人選手"
+      ],
+      "text": "2026年11月21日に行われたベルギーリーグ第12節のラ・ルヴィエール戦で、右サイドから2つのアシストを記録してゲンクの勝利に貢献した日本代表選手は誰でしょう？",
+      "options": [
+        "伊東純也",
+        "中村敬斗",
+        "藤本寛也",
+        "渡辺剛"
+      ],
+      "answerIndex": 0,
+      "explanation": "伊東純也はラ・ルヴィエール戦で前半に2つの鋭いクロスからアシストを記録し、チームの3-0での快勝に大きく貢献しました。",
+      "trivia": "2026年からティミー・シモンス新監督が就任したゲンクにおいて、伊東純也は変わらず攻撃の核として絶大な信頼を寄せられています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 12,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10019",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "坂元達裕",
+        "コベントリー",
+        "プレミアリーグ",
+        "海外日本人選手"
+      ],
+      "text": "2026年11月21日に行われたプレミアリーグ第11節、クリスタル・パレス戦で鮮やかな左足のボレーシュートを決め、コベントリーの勝利に貢献した日本人選手は誰でしょう？",
+      "options": [
+        "坂元達裕",
+        "鎌田大地",
+        "菅原由勢",
+        "橋岡大樹"
+      ],
+      "answerIndex": 0,
+      "explanation": "坂元達裕は胸トラップから左足の豪快なボレーを突き刺し、現地メディアから「最高のフィニッシュ」と絶賛される活躍でコベントリーを3-2の勝利に導きました。",
+      "trivia": "対戦相手のクリスタル・パレスには鎌田大地が所属しており、この試合ではトップ下でフル出場していたため、プレミアリーグでの熱い日本人対決となりました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10020",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "守田英正",
+        "三笘薫",
+        "プレミアリーグ",
+        "海外日本人選手"
+      ],
+      "text": "2026年11月22日にプレミアリーグのハル・シティ対ブライトン戦が行われました。ケガのため両名とも欠場となりましたが、この試合で実現が期待されていた「元川崎フロンターレ対決」は、三笘薫ともう一人は誰でしょう？",
+      "options": [
+        "守田英正",
+        "旗手怜央",
+        "谷口彰悟",
+        "田中碧"
+      ],
+      "answerIndex": 0,
+      "explanation": "ハル・シティに所属する守田英正と、ブライトンの三笘薫による元川崎フロンターレ対決が期待されましたが、両者とも負傷のため欠場し、実現はお預けとなりました。",
+      "trivia": "守田英正は2026年の夏にポルトガルのスポルティングからイングランドのハル・シティへ移籍し、念願のプレミアリーグ挑戦を果たしています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": 11,
+        "matchDate": "2026-11-22",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10021",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "海外日本人選手",
+      "categoryId": "weekly-world-japanese",
+      "tags": [
+        "三笘薫",
+        "ブライトン",
+        "プレミアリーグ",
+        "海外日本人選手"
+      ],
+      "text": "左ハムストリングの手術を受け、長期離脱中となっているブライトンの三笘薫について、ファビアン・ヒュルツェラー監督は2026年11月20日の会見で復帰まであとどれくらいかかると見通しを語ったでしょう？",
+      "options": [
+        "1〜2週間",
+        "3〜4日",
+        "1〜2ヶ月",
+        "半年"
+      ],
+      "answerIndex": 0,
+      "explanation": "ヒュルツェラー監督は三笘の復帰が近づいているとしながらも、「あと1、2週間」必要と述べ、万全の状態での復帰を慎重に待つ姿勢を示しました。",
+      "trivia": "三笘薫は2026年5月のウルヴァーハンプトン戦で負傷して手術を受けた影響で、2026年に開催された北中米ワールドカップも無念の欠場となっていました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10022",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "クリスティアーノ・ロナウド",
+        "ポルトガル代表",
+        "引退",
+        "記録達成"
+      ],
+      "text": "2026年11月にポルトガル代表からの引退を発表したクリスティアーノ・ロナウド。彼が23年の代表キャリアで積み上げた、男子代表における歴代最多ゴール数は次のうちどれ？",
+      "options": [
+        "146ゴール",
+        "138ゴール",
+        "129ゴール",
+        "154ゴール"
+      ],
+      "answerIndex": 0,
+      "explanation": "2003年のデビューから23年間ポルトガル代表を牽引したロナウドは、男子の代表歴代最多となる146ゴール（234試合出場）という大記録を残して代表キャリアに幕を下ろしました。",
+      "trivia": "ポルトガルサッカー連盟は、長年彼が背負った背番号「7」のユニフォームのデザインを永久に変更し、事実上の「永久欠番」にする特別な措置をとると発表しました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10023",
+      "quizType": "weekly",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ロメル・ルカク",
+        "ベルギー代表",
+        "引退",
+        "記録達成"
+      ],
+      "text": "2026年11月16日にベルギー代表からの引退を発表した、同国歴代最多となる通算94ゴールを記録した大型ストライカーは誰？",
+      "options": [
+        "ロメル・ルカク",
+        "ケビン・デ・ブライネ",
+        "ドリース・メルテンス",
+        "ミシー・バチュアイ"
+      ],
+      "answerIndex": 0,
+      "explanation": "ルカクは2010年の代表デビュー以来、ベルギーの絶対的エースとして活躍し、歴代最多の94ゴールという記録を残して代表のユニフォームを脱ぐことになりました。",
+      "trivia": "ルカクはベルギー代表の歴代得点ランキングで2位のエデン・アザール（33ゴール）に大差をつけており、当分破られることのない不滅の記録となっています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      },
+      "difficulty": "normal"
+    },
+    {
+      "id": "w_10024",
+      "quizType": "weekly",
+      "region": "world",
+      "league": "bundesliga",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ハリー・ケイン",
+        "バイエルン",
+        "負傷",
+        "バロンドール"
+      ],
+      "text": "2026年のバロンドールを受賞した矢先、2026年11月20日に行われたブンデスリーガのケルン戦で左足首の靱帯を断裂する大ケガを負ってしまったストライカーは誰？",
+      "options": [
+        "ハリー・ケイン",
+        "キリアン・エムバペ",
+        "アーリング・ハーランド",
+        "ロベルト・レヴァンドフスキ"
+      ],
+      "answerIndex": 0,
+      "explanation": "イングランド人として25年ぶりにバロンドールを受賞したケインでしたが、ケルン戦での接触プレーで重傷を負い、手術と数ヶ月の離脱を余儀なくされました。",
+      "trivia": "2026年のバロンドール授賞式は、初代受賞者であるスタンリー・マシューズに敬意を表し、史上初めてパリではなくロンドンで開催されました。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-20",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      },
+      "difficulty": "normal"
+    },
+    {
+      "id": "w_10025",
+      "quizType": "weekly",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "アーリング・ハーランド",
+        "ノルウェー代表",
+        "UEFAネーションズリーグ"
+      ],
+      "text": "2026年11月17日に行われたUEFAネーションズリーグで、後半アディショナルタイム（96分）に劇的な決勝PKを沈め、ノルウェー代表を準々決勝進出に導いたストライカーは誰？",
+      "options": [
+        "アーリング・ハーランド",
+        "アレクサンダー・セルロート",
+        "マルティン・ウーデゴール",
+        "ヨルゲン・ストランド・ラーセン"
+      ],
+      "answerIndex": 0,
+      "explanation": "マンチェスター・シティでも活躍するノルウェー代表の絶対的エース、ハーランドが土壇場でPKを決め、チームをネーションズリーグのベスト8へと導きました。",
+      "trivia": "代表戦でも圧倒的な得点力を誇るハーランドですが、これまでワールドカップやEUROなどの主要国際大会への出場経験はなく、チームの悲願達成に期待がかかっています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-17",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      },
+      "difficulty": "normal"
+    },
+    {
+      "id": "w_10026",
+      "quizType": "weekly",
+      "region": "world",
+      "league": "premier",
+      "team": null,
+      "teamId": null,
+      "category": "選手の動向",
+      "categoryId": "weekly-world-player",
+      "tags": [
+        "ダビド・ラヤ",
+        "アーセナル",
+        "プレミアリーグ",
+        "負傷"
+      ],
+      "text": "2026年11月21日に行われたプレミアリーグのニューカッスル戦で、相手選手と衝突して肩を負傷し、途中交代を余儀なくされたアーセナルの正GKは誰？",
+      "options": [
+        "ダビド・ラヤ",
+        "ケパ・アリサバラガ",
+        "イラン・メリエ",
+        "アーロン・ラムズデール"
+      ],
+      "answerIndex": 0,
+      "explanation": "ダビド・ラヤはウィリアム・オスラとの接触で肩を痛め、70分に同じスペイン出身のケパ・アリサバラガとの交代でピッチを後にしました。",
+      "trivia": "アーセナルは今季もリーグ戦で非常に少ない失点数を維持しており、ラヤはチームの堅守を支える絶対的な守護神として過去数シーズンにわたりゴールデングローブ賞を獲得しています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-21",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      },
+      "difficulty": "normal"
+    },
+    {
+      "id": "w_10027",
+      "quizType": "weekly",
+      "difficulty": "easy",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "スペイン代表",
+        "フランス代表"
+      ],
+      "text": "2026年11月20日、UEFAネーションズリーグ2026-27の準々決勝組み合わせ抽選が行われました。デ・ラ・フエンテ監督率いる世界王者スペイン代表は、ジネディーヌ・ジダン監督が就任したどの国と対戦することが決まったでしょう？",
+      "options": [
+        "フランス",
+        "イタリア",
+        "ポルトガル",
+        "ドイツ"
+      ],
+      "answerIndex": 0,
+      "explanation": "スイスのニヨンで行われた抽選会の結果、準々決勝の最注目カードとしてスペイン対フランスが実現しました。このほか、ドイツ対ベルギー、イングランド対ノルウェー、オランダ対ポルトガルの対戦も決まっています。",
+      "trivia": "フランス代表のジダン監督は、W杯2026終了後にディディエ・デシャンの後任として指揮官に就任し、新たな代表の顔として母国を率いています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10028",
+      "quizType": "weekly",
+      "difficulty": "normal",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "ドイツ代表",
+        "フロリアン・ヴィルツ"
+      ],
+      "text": "2026年11月16日に行われたUEFAネーションズリーグの試合で、ユルゲン・クロップ監督率いるドイツ代表はオランダ代表に5-0で大勝しました。この試合で2得点を挙げる活躍を見せた選手は誰でしょう？",
+      "options": [
+        "フロリアン・ヴィルツ",
+        "カイ・ハフェルツ",
+        "ジャマル・ムシアラ",
+        "セルジュ・ニャブリ"
+      ],
+      "answerIndex": 0,
+      "explanation": "クロップ新体制のドイツ代表は若手とベテランが躍動し、宿敵オランダを相手にヴィルツの2ゴールなどの活躍で5ゴールを奪う圧勝劇を演じ、グループ首位での準々決勝進出を決めました。",
+      "trivia": "ドイツ語で1試合2得点を意味する「ドッペルパック」は、ブンデスリーガなどでよく使われるサッカー用語として知られています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": "2026-11-16",
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10029",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "UEFAネーションズリーグ",
+        "イングランド代表",
+        "ノルウェー代表"
+      ],
+      "text": "2026年11月20日に行われたUEFAネーションズリーグ2026-27の準々決勝組み合わせ抽選で、トーマス・トゥヘル監督率いるイングランド代表の対戦相手に決まった国はどこでしょう？",
+      "options": [
+        "ノルウェー",
+        "デンマーク",
+        "スウェーデン",
+        "クロアチア"
+      ],
+      "answerIndex": 0,
+      "explanation": "イングランドは、アーリング・ハーランドやマルティン・ウーデゴールらを擁するノルウェーと準々決勝で激突することが決定しました。試合は2027年3月にホーム＆アウェー方式で行われます。",
+      "trivia": "トーマス・トゥヘルはイングランド代表監督に就任して以降、前任のサウスゲート時代とは異なる新たな戦術の浸透を図りながら結果を残しています。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    },
+    {
+      "id": "w_10030",
+      "quizType": "weekly",
+      "difficulty": "hard",
+      "region": "world",
+      "league": null,
+      "team": null,
+      "teamId": null,
+      "category": "今週の注目ニュース",
+      "categoryId": "weekly-world-buzz",
+      "tags": [
+        "ドイツ代表",
+        "ベルギー代表",
+        "ケヴィン・デ・ブライネ"
+      ],
+      "text": "UEFAネーションズリーグ準々決勝でベルギー代表との対戦が決まったドイツ代表のユルゲン・クロップ監督が、2026年11月のインタビューで「私がプレミアリーグで見た中で最も偉大な選手の一人」と称賛し、警戒を強めているベルギーの選手は誰でしょう？",
+      "options": [
+        "ケヴィン・デ・ブライネ",
+        "ジェレミー・ドク",
+        "レアンドロ・トロサール",
+        "ロメル・ルカク"
+      ],
+      "answerIndex": 0,
+      "explanation": "クロップ監督はベルギーとの対戦を前に現地メディアの取材に応じ、マンチェスター・シティなどで活躍し続けるデ・ブライネを名指しして最大の警戒対象として挙げています。",
+      "trivia": "クロップとデ・ブライネは、リヴァプールとマンチェスター・シティというプレミアリーグ屈指のライバルチームに所属し、長年しのぎを削ってきた関係です。",
+      "referenceDate": "2026-11-23",
+      "weeklyMeta": {
+        "matchweek": null,
+        "matchDate": null,
+        "publishDate": "2026-11-23",
+        "expiryDate": "2026-11-30",
+        "season": "2026-27"
+      }
+    }
+  ]
+}
